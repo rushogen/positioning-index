@@ -40,6 +40,18 @@ export const PLAIN_WINDOW = 300_000;
  *   text  -- compared as strings, magnitude is normalised edit distance
  *   list  -- compared as sets, protected by the list-collapse rule
  *   enum  -- small closed vocabulary, any change is significant
+ *
+ * `localeSensitive` marks the signals whose value is routinely decided by where
+ * the request came from rather than by what the company decided. Every published
+ * price is one: notion.com/pricing serves EUR to a European address and USD to a
+ * US one, with an identical `<html lang>` and an identical canonical URL. A
+ * change to one of these across a change of crawl origin is a context fault, not
+ * drift, and src/diff.js refuses to publish it.
+ *
+ * The flag is deliberately narrow. It is not the whole of the rule: any signal
+ * at all whose value carries a currency token is treated the same way when that
+ * currency moves, so a proof point reading "$2.4M saved" is protected without
+ * having to be listed here.
  */
 export const SIGNALS = {
   headline:            { page: 'home',    kind: 'text', label: 'Hero headline' },
@@ -49,10 +61,10 @@ export const SIGNALS = {
   meta_description:    { page: 'home',    kind: 'text', label: 'Meta description' },
   customer_logos:      { page: 'home',    kind: 'list', label: 'Customer logos' },
   proof_points:        { page: 'home',    kind: 'list', label: 'Proof points' },
-  pricing_tiers:       { page: 'pricing', kind: 'list', label: 'Pricing tiers' },
-  pricing_entry_price: { page: 'pricing', kind: 'text', label: 'Entry price' },
-  pricing_free_tier:   { page: 'pricing', kind: 'enum', label: 'Free tier' },
-  pricing_seat_minimum:{ page: 'pricing', kind: 'text', label: 'Seat minimum' },
+  pricing_tiers:       { page: 'pricing', kind: 'list', label: 'Pricing tiers', localeSensitive: true },
+  pricing_entry_price: { page: 'pricing', kind: 'text', label: 'Entry price', localeSensitive: true },
+  pricing_free_tier:   { page: 'pricing', kind: 'enum', label: 'Free tier', localeSensitive: true },
+  pricing_seat_minimum:{ page: 'pricing', kind: 'text', label: 'Seat minimum', localeSensitive: true },
   pricing_meta_title:  { page: 'pricing', kind: 'text', label: 'Pricing page title' },
 };
 

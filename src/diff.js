@@ -23,19 +23,29 @@
  *   P3  Content variant changed        -> HTML vs agent-markdown are not comparable.
  *   P4  Extraction yield collapsed     -> the page was redesigned; re-baseline.
  *   P5  Extractor version changed      -> WE changed; re-baseline, emit nothing.
+ *   P6  Crawl origin changed           -> WHERE WE STOOD changed, not the page.
  *
  *   SIGNAL LEVEL
  *   S1  No prior state                 -> baseline, no event.
  *   S2  null now, value before         -> PARSER FAULT. Never an event.
  *   S3  Sustained null + healthy page  -> confirmed removal, one event.
  *   S4  Confidence dropped sharply     -> suspect our method, not their copy.
+ *   S8  Origin shifted, price signal   -> CONTEXT FAULT. Never an event.
+ *   S9  Currency moved, amounts proportionate -> locale routing. Never an event.
  *   S5  List shrank past the threshold -> suspect our selector, not their logos.
  *   S6  Value equal after canonicalisation -> unchanged.
  *   S7  Otherwise                      -> a real change.
+ *
+ * S8 and S9 were added on 2026-08-07 after this index published two false change
+ * events about Notion's pricing (see CORRECTIONS.md). They are the sibling of
+ * S2, not its replacement: S2 says a missing value is our parser breaking, S8
+ * and S9 say a moved value can be our vantage point moving. Same asymmetry, same
+ * rule -- record the observation, publish nothing, never silently drop it.
  */
 
 import { fnv1a } from './hash.js';
 import { SIGNALS } from './extract/index.js';
+import { describeOrigin, originsDiffer } from './crawl/origin.js';
 
 // --------------------------------------------------------------------- knobs
 
@@ -84,6 +94,151 @@ export const CONFIDENCE_DROP = 0.3;
  * remember a year.
  */
 export const RECENT_MEMORY = 6;
+
+/**
+ * The band of after/before ratios that a currency change can plausibly be an
+ * exchange-rate artefact rather than a repricing.
+ *
+ * Notion's EUR 9.5 and USD 10 are the same plan at the same price, quoted in two
+ * currencies: a ratio of 1.05. Nobody reprices by 5% and changes currency in the
+ * same release; a site that geo-routes does exactly that on every request. A
+ * doubling or a halving is out of the band, because no pair of currencies this
+ * index will ever see is that far apart at the price points it observes.
+ */
+export const FX_RATIO_MIN = 0.5;
+export const FX_RATIO_MAX = 2.0;
+
+/**
+ * How far apart the per-tier ratios may be and still count as one conversion.
+ *
+ * A currency conversion moves every tier by the same factor, give or take
+ * rounding to a marketing-friendly number (9.5 -> 10 is 1.053, 19.5 -> 20 is
+ * 1.026). A repricing moves the tiers by different amounts on purpose. 1.35
+ * accommodates the rounding on small numbers without accommodating a genuine
+ * restructure of the price list.
+ */
+export const FX_RATIO_SPREAD = 1.35;
+
+/**
+ * How many consecutive observations of the same new currency, from the same
+ * crawl origin, before the new value is adopted as the baseline.
+ *
+ * It is adopted SILENTLY. The index will not report a currency-only price change
+ * at all, ever, because it cannot tell one from locale routing and the whole
+ * project is built on refusing to guess in that direction. Three runs from a
+ * stable origin is enough to stop comparing against a value we can no longer
+ * observe; it is not enough to make a public claim, and no claim is made.
+ */
+export const CURRENCY_CONFIRMATIONS = 3;
+
+// ------------------------------------------------------------------ currency
+
+const CURRENCY_SYMBOLS = { $: 'USD', '€': 'EUR', '£': 'GBP', '¥': 'JPY', '₹': 'INR' };
+
+/**
+ * Currency-bearing tokens in a plain value string: `EUR 9.5`, `$12`, `12 €`.
+ *
+ * Used for signals with no structured JSON behind them -- a proof point reading
+ * "$2.4M saved", a headline quoting a price -- so that the currency rule below
+ * protects them without every such signal having to be listed in the registry.
+ */
+const CURRENCY_TOKEN = /\b([A-Z]{3})\s*([\d][\d.,]*)|([$€£¥₹])\s*([\d][\d.,]*)|([\d][\d.,]*)\s*([$€£¥₹])/g;
+
+const toAmount = (s) => {
+  const n = Number.parseFloat(String(s).replace(/,(?=\d{3}\b)/g, '').replace(',', '.'));
+  return Number.isFinite(n) ? n : null;
+};
+
+/**
+ * The currencies a value quotes, and the amounts quoted in them, keyed so that
+ * before and after can be lined up.
+ *
+ * Structured JSON is preferred because it keys by tier name, which survives a
+ * reordered pricing table. The text scan keys by position, which does not, and
+ * is only reached for signals that have no JSON.
+ */
+export function currencyProfile(value, json) {
+  const parsed = typeof json === 'string' ? safeJson(json) : json;
+  const currencies = new Set();
+  const amounts = new Map();
+
+  if (parsed && Array.isArray(parsed.tiers)) {
+    for (const t of parsed.tiers) {
+      if (t?.currency) currencies.add(String(t.currency).toUpperCase());
+      if (typeof t?.amount === 'number') amounts.set(String(t.name ?? amounts.size), t.amount);
+    }
+    if (currencies.size) return { currencies, amounts, source: 'json' };
+  }
+
+  if (parsed && (parsed.currency || typeof parsed.amount === 'number')) {
+    if (parsed.currency) currencies.add(String(parsed.currency).toUpperCase());
+    if (typeof parsed.amount === 'number') amounts.set(String(parsed.tier ?? 'value'), parsed.amount);
+    if (currencies.size) return { currencies, amounts, source: 'json' };
+  }
+
+  let i = 0;
+  for (const m of String(value ?? '').matchAll(CURRENCY_TOKEN)) {
+    const code = m[1] ?? CURRENCY_SYMBOLS[m[3]] ?? CURRENCY_SYMBOLS[m[6]];
+    const amount = toAmount(m[2] ?? m[4] ?? m[5]);
+    if (!code) continue;
+    currencies.add(code.toUpperCase());
+    if (amount != null) amounts.set(`#${i++}`, amount);
+  }
+  return { currencies, amounts, source: 'text' };
+}
+
+/** Does this value quote a price in some currency at all? */
+export function carriesCurrency(value, json) {
+  return currencyProfile(value, json).currencies.size > 0;
+}
+
+/**
+ * Did the currency move, and if so, did the numbers move with it proportionately?
+ *
+ * A proportionate move is the signature of locale routing: the same price list,
+ * converted. A disproportionate one is a repricing that happens to have changed
+ * currency too, and that IS news -- so it is not suppressed.
+ *
+ * @returns {null|{from: string, to: string, proportionate: boolean, min: number|null, max: number|null}}
+ */
+export function currencyShift(before, after) {
+  const A = currencyProfile(before?.value, before?.json);
+  const B = currencyProfile(after?.value, after?.json);
+  if (!A.currencies.size || !B.currencies.size) return null;
+
+  const from = [...A.currencies].sort().join(',');
+  const to = [...B.currencies].sort().join(',');
+  if (from === to) return null;
+
+  const ratios = [];
+  let comparable = true;
+  for (const [key, a] of A.amounts) {
+    const b = B.amounts.get(key);
+    if (typeof b !== 'number') continue;
+    if (a === 0 && b === 0) continue;          // free stays free; carries no rate
+    if (a === 0 || b === 0) { comparable = false; break; }
+    ratios.push(b / a);
+  }
+
+  if (!comparable || !ratios.length) return { from, to, proportionate: false, min: null, max: null };
+
+  const min = Math.min(...ratios);
+  const max = Math.max(...ratios);
+  const proportionate = min >= FX_RATIO_MIN && max <= FX_RATIO_MAX && max / min <= FX_RATIO_SPREAD;
+  return { from, to, proportionate, min, max };
+}
+
+/**
+ * Is this signal one whose value the crawl origin can decide?
+ *
+ * Two ways to qualify: it is flagged `localeSensitive` in the signal registry
+ * (every published price is), or the value it holds -- before or after -- quotes
+ * a currency, whatever signal it happens to be.
+ */
+export function localeSensitive(signal, before, after) {
+  if (SIGNALS[signal]?.localeSensitive) return true;
+  return carriesCurrency(before?.value, before?.json) || carriesCurrency(after?.value, after?.json);
+}
 
 // ---------------------------------------------------------------- comparison
 
@@ -182,8 +337,15 @@ export function listDelta(beforeItems, afterItems) {
  *
  * `previousYield` is the number of signals that produced a value on the last
  * successful run of this page. `currentYield` is this run's. Returns
- * { diffable, status, reason }, where `status` is written straight to
- * fetches.status.
+ * { diffable, status, reason, originShift }, where `status` is written straight
+ * to the run ledger and the observation.
+ *
+ * `origin` / `previousOrigin` are the crawl origins of this observation and of
+ * the last one (src/crawl/origin.js). Unlike every other gate here, an origin
+ * shift does NOT close the gate: the hero headline of a US-routed page is still
+ * comparable with the hero headline of a German-routed one, and muting the whole
+ * page would throw away real signal to protect the price fields. It is the
+ * price fields that get protected, one rule down, in diffSignal.
  */
 export function gatePage({
   fetchOk,
@@ -192,6 +354,8 @@ export function gatePage({
   previous = {},
   currentYield,
   previousYield,
+  origin = null,
+  previousOrigin = null,
 }) {
   if (!fetchOk) {
     return { diffable: false, status: 'error', reason: fetchReason ?? 'fetch failed', rebaseline: false };
@@ -258,7 +422,23 @@ export function gatePage({
     };
   }
 
-  return { diffable: true, status: 'ok', reason: null, rebaseline: false };
+  // P6 -- the page is fine; we moved. notion.com/pricing quotes EUR to a German
+  // address and USD to a US one, with the same <html lang="en"> and the same
+  // canonical URL, so P2 sees nothing. The observation is recorded, the run is
+  // classified `origin-shift` so the ledger says why, and the price signals stay
+  // unpublished.
+  if (originsDiffer(previousOrigin, origin) === 'different') {
+    return {
+      diffable: true,
+      status: 'origin-shift',
+      reason: `crawl origin ${describeOrigin(previousOrigin)} -> ${describeOrigin(origin)}; ` +
+        'locale-sensitive signals are not comparable across it',
+      rebaseline: false,
+      originShift: true,
+    };
+  }
+
+  return { diffable: true, status: 'ok', reason: null, rebaseline: false, originShift: false };
 }
 
 // ----------------------------------------------------------- signal-level diff
@@ -272,10 +452,15 @@ export function gatePage({
  * @param {object|null} args.state    signal_state row, or null if never seen
  * @param {boolean} args.pageHealthy  did the rest of the page extract normally
  * @param {string} args.now           ISO timestamp for this run
+ * @param {boolean} [args.originShift] did this page's crawl origin move since the
+ *                                     last observation (src/crawl/origin.js)
+ * @param {string} [args.originId]     the current origin's comparison key, used
+ *                                     to require that a currency change is
+ *                                     corroborated from a STABLE vantage point
  *
  * @returns {{outcome: string, reason: string|null, event: object|null, state: object}}
  */
-export function diffSignal({ signal, current, state, pageHealthy = true, now }) {
+export function diffSignal({ signal, current, state, pageHealthy = true, now, originShift = false, originId = 'unknown' }) {
   const meta = SIGNALS[signal];
   if (!meta) throw new Error(`unknown signal: ${signal}`);
 
@@ -295,6 +480,8 @@ export function diffSignal({ signal, current, state, pageHealthy = true, now }) 
     suspect: state?.suspect ? 1 : 0,
     total_changes: state?.total_changes ?? 0,
     recent_hashes: state?.recent_hashes ?? null,
+    currency_shift_runs: state?.currency_shift_runs ?? 0,
+    currency_shift_key: state?.currency_shift_key ?? null,
   };
 
   const settle = (outcome, reason = null, event = null) => ({ outcome, reason, event, state: nextState });
@@ -314,6 +501,8 @@ export function diffSignal({ signal, current, state, pageHealthy = true, now }) 
     nextState.last_good_confidence = current?.confidence ?? null;
     nextState.consecutive_nulls = 0;
     nextState.suspect = 0;
+    nextState.currency_shift_runs = 0;
+    nextState.currency_shift_key = null;
   };
 
   // ---- S1: never seen before. Establish the baseline, publish nothing.
@@ -412,6 +601,61 @@ export function diffSignal({ signal, current, state, pageHealthy = true, now }) 
       'suppressed',
       `extraction method downgraded ${state.last_good_method} (${prevConf}) -> ${current.method} (${current.confidence}); ` +
       'value difference attributed to the fallback, not to the page'
+    );
+  }
+
+  const before_ = { value: before, json: state.last_good_json ?? null };
+  const after_ = { value, json: current?.json ?? null };
+
+  // ---- S8: we moved, they did not. The sibling of S2.
+  //
+  // A price that reads EUR 9.5 from Frankfurt and USD 10 from Virginia has not
+  // moved; we have. The observation is already recorded by the caller; what is
+  // withheld is the claim. The last known-good value is deliberately NOT
+  // overwritten, exactly as in S4: the next reading from the origin we baselined
+  // against must diff against what we actually believed, not against a value we
+  // only saw because we were standing somewhere else.
+  if (originShift && localeSensitive(signal, before_, after_)) {
+    nextState.suspect = 1;
+    nextState.currency_shift_runs = 0;
+    nextState.currency_shift_key = null;
+    return settle(
+      'origin-shift',
+      `${meta.label.toLowerCase()} differs across a change of crawl origin; ` +
+      'a locale-sensitive value observed from a different vantage point is a context fault, not drift'
+    );
+  }
+
+  // ---- S9: the currency moved and the numbers came with it, proportionately.
+  //
+  // Strong evidence of locale routing even when the origin looks unchanged --
+  // and origin can look unchanged for two honest reasons: the observation
+  // predates origin recording, or the origin probe failed and returned unknown.
+  // This rule needs neither. It needs corroboration instead: the same currency,
+  // from the same origin, CURRENCY_CONFIRMATIONS times, before the new value is
+  // adopted -- and even then it is adopted silently, never published.
+  const shift = currencyShift(before_, after_);
+  if (shift && shift.proportionate) {
+    const key = `${shift.to}@${originId}`;
+    nextState.currency_shift_key = key;
+    nextState.currency_shift_runs = state.currency_shift_key === key ? (state.currency_shift_runs ?? 0) + 1 : 1;
+
+    if (nextState.currency_shift_runs >= CURRENCY_CONFIRMATIONS) {
+      commitGood();
+      return settle(
+        'currency-rebaselined',
+        `${shift.from} -> ${shift.to} held for ${CURRENCY_CONFIRMATIONS} consecutive observations from ${originId}; ` +
+        'adopting the new baseline without publishing a change, because a currency-only move ' +
+        'cannot be told apart from locale routing'
+      );
+    }
+
+    nextState.suspect = 1;
+    return settle(
+      'currency-shift',
+      `currency ${shift.from} -> ${shift.to} with amounts moving proportionately ` +
+      `(x${shift.min.toFixed(3)}-${shift.max.toFixed(3)}); reads as locale routing rather than repricing ` +
+      `(corroboration ${nextState.currency_shift_runs} of ${CURRENCY_CONFIRMATIONS})`
     );
   }
 
@@ -515,7 +759,7 @@ function summariseList(signal, added, removed, meta) {
  * closes, every signal is still observed and stored (the time series stays
  * complete) but no events are produced.
  */
-export function diffPage({ extraction, states, gate, now }) {
+export function diffPage({ extraction, states, gate, now, origin = null }) {
   const results = [];
   const events = [];
 
@@ -545,7 +789,11 @@ export function diffPage({ extraction, states, gate, now }) {
       continue;
     }
 
-    const r = diffSignal({ signal, current, state, pageHealthy, now });
+    const r = diffSignal({
+      signal, current, state, pageHealthy, now,
+      originShift: gate.originShift === true,
+      originId: origin?.id ?? 'unknown',
+    });
     results.push(r);
     if (r.event) events.push(r.event);
   }
@@ -567,5 +815,7 @@ export function emptyState(signal) {
     suspect: 0,
     total_changes: 0,
     recent_hashes: null,
+    currency_shift_runs: 0,
+    currency_shift_key: null,
   };
 }
