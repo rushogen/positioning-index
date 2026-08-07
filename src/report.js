@@ -13,7 +13,48 @@
  * success AND no signal flagged suspect. Every other state names its problem.
  */
 
+import { isRetraction } from './store/files.js';
+
 const HOUR = 3_600_000;
+
+/**
+ * Split data/events.ndjson into what may be published and what was withdrawn.
+ *
+ * `data/events.ndjson` holds two kinds of line: change events, and retractions
+ * of change events. A retraction names the (slug, signal, detected_at) triple it
+ * withdraws and says why. Nothing is ever deleted, so this function is the only
+ * place that decides what the public feed shows -- and it shows only events that
+ * have not been retracted.
+ *
+ * The retracted events are not hidden. They are annotated with the retraction
+ * and published separately at `docs/api/retractions.json`, alongside
+ * CORRECTIONS.md, because a corrections log nobody can audit is a press release.
+ *
+ * @returns {{published: object[], retracted: object[], retractions: object[]}}
+ */
+export function partitionEvents(rows) {
+  const retractions = rows.filter(isRetraction);
+  const byKey = new Map(retractions.map((r) => [`${r.slug}|${r.signal}|${r.detected_at}`, r]));
+
+  const published = [];
+  const retracted = [];
+  for (const e of rows) {
+    if (isRetraction(e)) continue;
+    const r = byKey.get(`${e.slug}|${e.signal}|${e.detected_at}`);
+    if (r) {
+      retracted.push({
+        ...e,
+        retracted: true,
+        retracted_at: r.retracted_at ?? null,
+        retraction_reason: r.reason ?? null,
+        correction: r.correction ?? null,
+      });
+    } else {
+      published.push(e);
+    }
+  }
+  return { published, retracted, retractions };
+}
 
 /**
  * @param {object} row  aggregated per-company crawl facts
@@ -24,6 +65,10 @@ export function classifyHealth(row, cutoff) {
   if (row.last_status === 'blocked') return 'blocked';
   if (!row.last_ok_at || Date.parse(row.last_ok_at) < cutoff) return 'stale';
   if (row.last_status === 'changed-structure') return 'structure-changed';
+  // Read successfully, but from somewhere else than last time, so its
+  // locale-sensitive signals are held back. Its own state, not an error and not
+  // a clean bill of health.
+  if (row.last_status === 'origin-shift') return 'origin-shift';
   if (row.last_status === 'error') return 'error';
   if (row.suspect_signals > 0) return 'degraded';
   return 'ok';
@@ -58,7 +103,11 @@ export function currentSignals(records) {
 export function companyHealth({ companies, queue, series, events, asOf, staleAfterHours = 48 }) {
   const cutoff = Date.parse(asOf) - staleAfterHours * HOUR;
   const changesBySlug = new Map();
-  for (const e of events) changesBySlug.set(e.slug, (changesBySlug.get(e.slug) ?? 0) + 1);
+  // Retracted events are not changes. A company whose only two "changes" were
+  // withdrawn must show zero, not two.
+  for (const e of partitionEvents(events).published) {
+    changesBySlug.set(e.slug, (changesBySlug.get(e.slug) ?? 0) + 1);
+  }
 
   return companies.map((c) => {
     const entries = ['home', 'pricing'].map((k) => queue.get(`${c.slug}/${k}`)).filter(Boolean);
@@ -88,6 +137,7 @@ export function companyHealth({ companies, queue, series, events, asOf, staleAft
 /** Index-wide counters for the header of the public page. */
 export function indexStats({ companies, queue, series, events, runs, asOf }) {
   const at = Date.parse(asOf);
+  const { published, retracted } = partitionEvents(events);
   const recentRuns = runs.filter((r) => Date.parse(r.finished_at ?? r.started_at) >= at - 24 * HOUR);
   const recentResults = recentRuns.flatMap((r) => r.results ?? []);
 
@@ -110,9 +160,12 @@ export function indexStats({ companies, queue, series, events, runs, asOf }) {
     companies: companies.length,
     targets: companies.reduce((n, c) => n + (c.pricing_url ? 2 : 1), 0),
     observations,
-    changes: events.length,
-    changes_7d: events.filter((e) => e.detected_at >= since(7)).length,
-    changes_30d: events.filter((e) => e.detected_at >= since(30)).length,
+    changes: published.length,
+    changes_7d: published.filter((e) => e.detected_at >= since(7)).length,
+    changes_30d: published.filter((e) => e.detected_at >= since(30)).length,
+    // Published on the front page on purpose. An index that hides its own
+    // withdrawn claims is asking to be trusted rather than checked.
+    retracted_changes: retracted.length,
     first_observation: first,
     last_observation: last,
     last_successful_fetch: maxOf([...queue.values()].map((q) => q.last_ok_at)),
@@ -139,9 +192,16 @@ export function categoryDistribution({ series, limit = 20 }) {
     .slice(0, limit);
 }
 
-/** The public feed, newest first. */
+/**
+ * The public feed, newest first.
+ *
+ * Retracted events never appear here, and neither do the retraction lines
+ * themselves. This is the single choke point: everything the site shows as a
+ * change goes through it, so an event that was withdrawn cannot leak back into
+ * the feed through a caller that forgot to filter.
+ */
 export function recentChanges(events, { limit = 200 } = {}) {
-  return events
+  return partitionEvents(events).published
     .slice()
     .sort((a, b) => b.detected_at.localeCompare(a.detected_at) || a.slug.localeCompare(b.slug) || a.signal.localeCompare(b.signal))
     .slice(0, limit);

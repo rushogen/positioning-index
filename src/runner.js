@@ -38,6 +38,7 @@ import { extract, signalsFor, EXTRACTOR_VERSION } from './extract/index.js';
 import { canonical, diffPage, gatePage } from './diff.js';
 import { fetchPage, nextDueAt } from './crawl/fetch.js';
 import { MIN_HOST_INTERVAL_MS } from './crawl/agent.js';
+import { UNKNOWN_ORIGIN, describeOrigin, resolveOrigin } from './crawl/origin.js';
 import { fnv1a } from './hash.js';
 import { applyResult, iso } from './store/files.js';
 
@@ -126,6 +127,7 @@ export function interleaveHosts(targets) {
  */
 export async function crawlTarget(target, ctx, { now = Date.now(), fetchImpl = fetch } = {}) {
   const { store, robotsStore } = ctx;
+  const origin = ctx.origin ?? UNKNOWN_ORIGIN;
   const nowIso = iso(now);
   const key = `${target.slug}/${target.kind}`;
   const q = ctx.queue.get(key) ?? {};
@@ -152,6 +154,7 @@ export async function crawlTarget(target, ctx, { now = Date.now(), fetchImpl = f
       at: nowIso,
       status: fetched.status,
       reason: fetched.reason ?? null,
+      origin: origin.id,
       http: fetched.httpStatus ?? null,
       bytes: fetched.bytes ?? 0,
       duration_ms: fetched.durationMs ?? 0,
@@ -185,15 +188,23 @@ export async function crawlTarget(target, ctx, { now = Date.now(), fetchImpl = f
   const states = carryState(previousRecord, q.last_ok_at ?? null);
   const previousYield = Object.values(states).filter((s) => s.last_good_value != null).length;
 
+  // Where the previous observation of this page was crawled from. Observations
+  // written before 2026-08-07 carry no origin at all; that reads as `unknown`,
+  // which the origin rule treats as "cannot rule out a shift" rather than as
+  // "no shift". See src/crawl/origin.js.
+  const previousOrigin = previousRecord?.origin ?? null;
+
   const gate = gatePage({
     fetchOk: true,
     extraction,
     previous: previousRecord?.doc ?? {},
     currentYield,
     previousYield,
+    origin,
+    previousOrigin,
   });
 
-  const { results, events } = diffPage({ extraction, states, gate, now: nowIso });
+  const { results, events } = diffPage({ extraction, states, gate, now: nowIso, origin });
 
   const observation = {
     observed_at: nowIso,
@@ -206,6 +217,12 @@ export async function crawlTarget(target, ctx, { now = Date.now(), fetchImpl = f
     bytes: fetched.bytes,
     signals_found: currentYield,
     signals_expected: expected.length,
+    // WHERE we stood when we read this page. Recorded on every observation,
+    // because a value that depends on the client's address is not interpretable
+    // without it -- and for the first eight months of this index it was not
+    // recorded anywhere, which is how two false Notion pricing events reached
+    // the public feed. See CORRECTIONS.md.
+    origin,
     doc: {
       lang: extraction.lang,
       canonical: extraction.canonical,
@@ -229,6 +246,7 @@ export async function crawlTarget(target, ctx, { now = Date.now(), fetchImpl = f
   };
 
   const parserFaults = results.filter((r) => r.outcome === 'parser-fault').length;
+  const contextFaults = results.filter((r) => r.outcome === 'origin-shift' || r.outcome === 'currency-shift').length;
 
   const result = {
     slug: target.slug,
@@ -237,12 +255,14 @@ export async function crawlTarget(target, ctx, { now = Date.now(), fetchImpl = f
     at: nowIso,
     status: gate.status,
     reason: gate.reason ?? null,
+    origin: origin.id,
     http: fetched.httpStatus,
     bytes: fetched.bytes,
     duration_ms: fetched.durationMs,
     yield: `${currentYield}/${expected.length}`,
     events: events.length,
     parser_faults: parserFaults,
+    context_faults: contextFaults,
     etag: fetched.etag ?? null,
     last_modified: fetched.lastModified ?? null,
     content_hash: fetched.contentHash ?? null,
@@ -261,6 +281,7 @@ export async function crawlTarget(target, ctx, { now = Date.now(), fetchImpl = f
     name: target.name,
     segment: target.segment,
     kind: target.kind,
+    origin: origin.id,
     signal: e.signal,
     change_type: e.change_type,
     before_value: e.before_value ?? null,
@@ -273,7 +294,14 @@ export async function crawlTarget(target, ctx, { now = Date.now(), fetchImpl = f
     summary: e.summary ?? null,
   }));
 
-  return { result, observation, events: decorated, crawlDelayMs, suppressed: results.filter((r) => r.outcome === 'suppressed').length };
+  return {
+    result,
+    observation,
+    events: decorated,
+    crawlDelayMs,
+    suppressed: results.filter((r) => r.outcome === 'suppressed').length,
+    contextFaults,
+  };
 }
 
 /**
@@ -308,6 +336,8 @@ function carryState(record, lastOkAt) {
  * @param {number} [opts.limit]
  * @param {boolean} [opts.dryRun]   fetch and extract, write absolutely nothing
  * @param {string} [opts.trigger]   'local' | 'github-actions' | ...
+ * @param {object} [opts.origin]    pre-resolved crawl origin; resolved here when
+ *                                  omitted, at most once per run
  * @param {function} [opts.clock]   epoch-ms source; injected so tests can walk days
  * @param {function} [opts.onResult] progress callback, one call per target
  */
@@ -320,6 +350,7 @@ export async function runCrawl({
   limit = 12,
   dryRun = false,
   trigger = 'local',
+  origin = null,
   clock = () => Date.now(),
   fetchImpl = fetch,
   sleep = realSleep,
@@ -330,7 +361,14 @@ export async function runCrawl({
   const queue = await store.queue();
   const selected = selectTargets(targets, queue, { mode, company, limit, now: clock() });
 
-  const ctx = { store, robotsStore, queue };
+  // Resolved once, before anything is fetched, and never again: every target in
+  // a run shares one vantage point, so paying for the lookup per page would buy
+  // nothing. A failure here yields an `unknown` origin and the crawl proceeds --
+  // not knowing where we stood is a fact worth recording, and it is never a
+  // reason to skip a run.
+  const runOrigin = origin ?? await resolveOrigin({ fetchImpl });
+
+  const ctx = { store, robotsStore, queue, origin: runOrigin };
   const results = [];
   const allEvents = [];
   let observationsWritten = 0;
@@ -383,6 +421,10 @@ export async function runCrawl({
   const run = {
     run: startedAt,
     trigger,
+    // `trigger` says who asked for the run; `origin` says where it physically
+    // stood while it read the web. They are not the same question, and only the
+    // second one explains why a price came back in euros.
+    origin: runOrigin,
     mode: mode === 'company' ? `company:${company}` : mode,
     dry_run: dryRun || undefined,
     started_at: startedAt,
@@ -393,8 +435,10 @@ export async function runCrawl({
     blocked: count('blocked'),
     error: count('error'),
     structure: count('changed-structure'),
+    origin_shift: count('origin-shift'),
     changes: allEvents.length,
     parser_faults: results.reduce((n, r) => n + (r.parser_faults ?? 0), 0),
+    context_faults: results.reduce((n, r) => n + (r.context_faults ?? 0), 0),
     observations: observationsWritten,
     results,
   };
@@ -429,7 +473,9 @@ export function commitMessage(run) {
   if (run.blocked) notes.push(`${run.blocked} blocked`);
   if (run.error) notes.push(`${run.error} error${run.error === 1 ? '' : 's'}`);
   if (run.structure) notes.push(`${run.structure} restructured`);
+  if (run.origin_shift) notes.push(`${run.origin_shift} origin-shifted`);
   if (run.parser_faults) notes.push(`${run.parser_faults} parser fault${run.parser_faults === 1 ? '' : 's'}`);
+  if (run.context_faults) notes.push(`${run.context_faults} context fault${run.context_faults === 1 ? '' : 's'}`);
 
   return notes.length ? `${head}, ${notes.join(', ')}` : head;
 }

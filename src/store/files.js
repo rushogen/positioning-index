@@ -20,8 +20,10 @@
  * -----------------------
  *   data/companies/<slug>.ndjson  the series. One line per observation that
  *                                 carried new information. Append-only.
- *   data/events.ndjson            the feed. One line per published change.
- *                                 Append-only.
+ *   data/events.ndjson            the feed. One line per published change, plus
+ *                                 one line per retraction of an earlier change.
+ *                                 Append-only: a wrong claim is withdrawn by
+ *                                 adding a line, never by removing one.
  *   data/runs.ndjson              the ledger. One line per run, ALWAYS, even
  *                                 when the run found nothing and changed
  *                                 nothing. Append-only.
@@ -62,6 +64,9 @@
 
 import { appendFile, mkdir, readFile, readdir, writeFile } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
+
+/** Fetch statuses that mean "we read this page and understood it". */
+export const SUCCESSFUL_STATUSES = new Set(['ok', 'unchanged', 'origin-shift']);
 
 /** ISO-8601 UTC to the second. Lexicographic order == chronological order. */
 export function iso(d = new Date()) {
@@ -176,7 +181,12 @@ export function applyResult(queue, r) {
     last_attempted_at: r.at,
     last_status: r.status,
     last_reason: r.reason ?? null,
-    last_ok_at: (r.status === 'ok' || r.status === 'unchanged') ? r.at : (prev.last_ok_at ?? null),
+    last_origin: r.origin ?? prev.last_origin ?? null,
+    // `origin-shift` is a SUCCESSFUL read. The page was fetched, parsed and
+    // stored in full; the only thing withheld was the publication of its
+    // locale-sensitive signals. Counting it as a failure would make the health
+    // page cry stale over a crawl that worked perfectly.
+    last_ok_at: SUCCESSFUL_STATUSES.has(r.status) ? r.at : (prev.last_ok_at ?? null),
     next_due_at: r.next_due_at ?? null,
     etag: r.etag ?? null,
     last_modified: r.last_modified ?? null,
@@ -272,7 +282,11 @@ export class FileStore {
    */
   async appendEvents(events) {
     if (!events.length) return 0;
-    const seen = new Set((await this.readEvents()).map((e) => `${e.slug} ${e.signal} ${e.detected_at}`));
+    const seen = new Set(
+      (await this.readEvents())
+        .filter((e) => !isRetraction(e))
+        .map((e) => `${e.slug} ${e.signal} ${e.detected_at}`)
+    );
     let written = 0;
     for (const e of events) {
       const key = `${e.slug} ${e.signal} ${e.detected_at}`;
@@ -284,10 +298,34 @@ export class FileStore {
     return written;
   }
 
+  /**
+   * Retract a previously published change event.
+   *
+   * A retraction is an APPEND, never a deletion and never an edit. The wrong
+   * claim stays in the file exactly as it was published, and a later line says
+   * it was withdrawn, why, and when. Deleting it would be the one thing an
+   * archive whose whole value is "you can check this against a history nobody
+   * can quietly rewrite" must never do -- and a reader who saw the false event
+   * before it was retracted deserves to find out that it was, not to find that
+   * it never happened.
+   *
+   * The public feed excludes retracted events (src/report.js); the raw file and
+   * `docs/api/retractions.json` keep both halves of the story.
+   */
+  async appendRetraction(record) {
+    await appendLine(this.eventsPath, { ...record, record: 'retraction' });
+    return 1;
+  }
+
   /** Always called, exactly once per run. This is the receipt. */
   async appendRun(record) {
     await appendLine(this.runsPath, record);
   }
+}
+
+/** Is this line of data/events.ndjson a retraction rather than a change event? */
+export function isRetraction(row) {
+  return row?.record === 'retraction';
 }
 
 /**
