@@ -41,6 +41,18 @@ const NOT_A_COMPANY = new RegExp(
   ].join('|') + ')$', 'i'
 );
 
+/**
+ * Words that disqualify a candidate wherever they appear, not just when they
+ * are the whole string. "/hero-background.png" normalises to "hero background",
+ * which passes a whole-string check but is obviously not a customer.
+ */
+const GENERIC_WORD = new Set([
+  'hero', 'background', 'banner', 'icon', 'arrow', 'screenshot', 'illustration',
+  'placeholder', 'avatar', 'thumbnail', 'thumb', 'pattern', 'gradient', 'spacer',
+  'divider', 'sprite', 'blob', 'shape', 'graphic', 'wordmark', 'favicon', 'og',
+  'header', 'footer', 'nav', 'menu', 'button', 'badge', 'sticker', 'emoji',
+]);
+
 /** Decoration words to peel off a candidate before judging it. */
 const DECORATION = /\b(?:logo(?:type|mark)?s?|wordmark|icon|colou?r(?:ed)?|white|black|dark|light|mono(?:chrome)?|grey|gray|red|blue|green|yellow|orange|purple|inverted|full|primary|secondary|small|large|new|final|copy|vector|svg|png|webp|transparent|2x|3x|v\d+)\b/gi;
 
@@ -67,9 +79,22 @@ function normaliseName(candidate) {
   if (s.length < 2 || s.length > 30) return null;
   if (NOT_A_COMPANY.test(s)) return null;
   if (!/[A-Za-z]/.test(s)) return null;
+  const words = s.split(' ');
   // Anything with more than four words is a sentence, not a company name.
-  if (s.split(' ').length > 4) return null;
+  if (words.length > 4) return null;
+  if (words.some((w) => GENERIC_WORD.has(w.toLowerCase()))) return null;
   return s;
+}
+
+/**
+ * Title-case a name derived from a filename.
+ *
+ * "/logos/vercel.svg" and alt="Vercel" must produce the same string, or a site
+ * simply adding alt text to its existing logo wall would read as swapping every
+ * customer at once.
+ */
+function titleCase(s) {
+  return s.replace(/\b[a-z]/g, (c) => c.toUpperCase());
 }
 
 /** Company name out of an image src: take the basename and clean it up. */
@@ -79,7 +104,8 @@ function nameFromSrc(src) {
   const base = path.slice(path.lastIndexOf('/') + 1);
   if (!base) return null;
   // Next.js image proxy: /_next/image?url=... -- already stripped by split('?').
-  return normaliseName(decodeURIComponent(base));
+  const n = normaliseName(decodeURIComponent(base));
+  return n ? titleCase(n) : null;
 }
 
 function nameFromAlt(alt) {
@@ -177,15 +203,19 @@ const COUNT_NOUNS =
 const CLAIM_VERBS =
   'faster|slower|quicker|fewer|more|less|higher|lower|better|cheaper|greater|larger|smaller|' +
   'increase|decrease|reduction|growth|uplift|improvement|savings|saved|reduced|increased|' +
-  'improved|boost|lift|roi|return|accuracy|uptime|coverage|adoption|efficiency|productivity';
+  'improved|boost|lift|roi|return|accuracy|uptime|coverage|adoption|efficiency|productivity|' +
+  'cut|cuts|save|saves|slash|slashes|speed|accelerate|shorten|shrink|eliminate|grow|grew|' +
+  'scale|convert|retain|close|win|resolve|deflect|automate';
 
 const PATTERNS = [
   // 10x faster deployments
   { re: new RegExp(`\\b(\\d{1,4}(?:[.,]\\d+)?\\s*[x×])\\s+((?:${CLAIM_VERBS})(?:\\s+[a-z][a-z-]{1,18}){0,2})`, 'gi'), kind: 'multiplier' },
   // 40% faster / 99.99% uptime
   { re: new RegExp(`\\b(\\d{1,3}(?:[.,]\\d{1,3})?\\s*%)\\s+((?:${CLAIM_VERBS})(?:\\s+[a-z][a-z-]{1,18}){0,2})`, 'gi'), kind: 'percent' },
-  // reduce onboarding time by 60%
+  // reduce onboarding time by 60%  (verb-anchored, high precision)
   { re: new RegExp(`\\b((?:${CLAIM_VERBS})(?:\\s+[a-z][a-z-]{1,18}){0,3})\\s+by\\s+(\\d{1,3}(?:[.,]\\d{1,2})?\\s*%)`, 'gi'), kind: 'percent-trailing', swap: true },
+  // ...anything by N%  (catches phrasings our verb list does not know)
+  { re: /\b((?:[a-z][a-z-]{2,18}\s+){1,3})by\s+(\d{1,3}(?:[.,]\d{1,2})?\s*%)/gi, kind: 'percent-trailing', swap: true },
   // 10,000+ teams / 5M developers
   { re: new RegExp(`\\b(\\d{1,3}(?:[,.]\\d{3})+|\\d{1,4}(?:\\.\\d)?\\s*(?:k|m|bn?)\\b|\\d{2,6})\\s*\\+?\\s+(${COUNT_NOUNS})\\b`, 'gi'), kind: 'count' },
   // $2.4M saved / €500k in revenue
