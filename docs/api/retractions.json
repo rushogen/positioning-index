@@ -1,6 +1,28 @@
 {
  "retracted": [
   {
+   "detected_at": "2026-08-07T15:53:34Z",
+   "slug": "airtable",
+   "name": "Airtable",
+   "segment": "product-dev",
+   "kind": "home",
+   "origin": "github-actions:US",
+   "signal": "customer_logos",
+   "change_type": "added",
+   "before_value": null,
+   "after_value": "Azure, Box, ChatGPT, Claude, Dropbox, Ebay, GitHub, Google, Jira, Openai, Salesforce, Slack, Snowflake, Tableau, Virgin Voyages",
+   "before_json": null,
+   "after_json": "{\"names\":[\"Azure\",\"Box\",\"ChatGPT\",\"Claude\",\"Dropbox\",\"Ebay\",\"GitHub\",\"Google\",\"Jira\",\"Openai\",\"Salesforce\",\"Slack\",\"Snowflake\",\"Tableau\",\"Virgin Voyages\"],\"count\":15,\"lead\":\"Trusted by 500,000+ companies <span class=\\\"SolidCta-module-scss-modul\"}",
+   "previous_seen_at": null,
+   "magnitude": 1,
+   "oscillating": 0,
+   "summary": "Customer logos first observed: \"Azure, Box, ChatGPT, Claude, Dropbox, Ebay, GitHub, Google, Jira, Openai, Salesforce, S…\"",
+   "retracted": true,
+   "retracted_at": "2026-08-07T16:10:12Z",
+   "retraction_reason": "Airtable did not add a logo wall. The 11:10:09Z observation extracted no customer logos and the 15:53:34Z one extracted fifteen, and the index published that transition as an addition. A logo wall our extractor could not read and a logo wall that did not exist produce the same null, so the transition out of it cannot distinguish 'they added it' from 'we finally read it'. Rule S10 now records this as a signal acquisition and publishes nothing.",
+   "correction": "CORRECTIONS.md#2026-08-07-airtable-acquisition"
+  },
+  {
    "detected_at": "2026-08-07T11:18:26Z",
    "slug": "notion",
    "name": "Notion",

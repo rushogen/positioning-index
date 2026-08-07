@@ -163,6 +163,10 @@ h3 { font-size: 1rem; font-weight: 600; margin: 0 0 .4rem; }
 .tag.oscillating { color: var(--warn); border-color: var(--warn); cursor: help; }
 .tag.retracted { color: var(--bad); border-color: var(--bad); }
 
+/* Deliberately the quietest tag on the page. It reports an absence -- nobody
+   has looked again yet -- and an absence should not shout. */
+.tag.once { color: var(--ink-3); border-style: dashed; background: none; cursor: help; }
+
 /* A withdrawn claim is struck through rather than deleted: it was published,
    somebody may have read it, and the record of that is the point. */
 .change.retracted .summary,

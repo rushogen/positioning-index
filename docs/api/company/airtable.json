@@ -199,24 +199,6 @@
    "segment": "product-dev",
    "kind": "home",
    "origin": "github-actions:US",
-   "signal": "customer_logos",
-   "change_type": "added",
-   "before_value": null,
-   "after_value": "Azure, Box, ChatGPT, Claude, Dropbox, Ebay, GitHub, Google, Jira, Openai, Salesforce, Slack, Snowflake, Tableau, Virgin Voyages",
-   "before_json": null,
-   "after_json": "{\"names\":[\"Azure\",\"Box\",\"ChatGPT\",\"Claude\",\"Dropbox\",\"Ebay\",\"GitHub\",\"Google\",\"Jira\",\"Openai\",\"Salesforce\",\"Slack\",\"Snowflake\",\"Tableau\",\"Virgin Voyages\"],\"count\":15,\"lead\":\"Trusted by 500,000+ companies <span class=\\\"SolidCta-module-scss-modul\"}",
-   "previous_seen_at": null,
-   "magnitude": 1,
-   "oscillating": 0,
-   "summary": "Customer logos first observed: \"Azure, Box, ChatGPT, Claude, Dropbox, Ebay, GitHub, Google, Jira, Openai, Salesforce, S…\""
-  },
-  {
-   "detected_at": "2026-08-07T15:53:34Z",
-   "slug": "airtable",
-   "name": "Airtable",
-   "segment": "product-dev",
-   "kind": "home",
-   "origin": "github-actions:US",
    "signal": "headline",
    "change_type": "modified",
    "before_value": "All your teams, all their workflows—connected in one workspace",
@@ -226,7 +208,8 @@
    "previous_seen_at": "2026-08-07T11:10:09Z",
    "magnitude": 0.823,
    "oscillating": 0,
-   "summary": "Hero headline changed from \"All your teams, all their workflows—connected in one workspace\" to \"AI transformed individual work. Airtable transforms teamwork.\""
+   "summary": "Hero headline changed from \"All your teams, all their workflows—connected in one workspace\" to \"AI transformed individual work. Airtable transforms teamwork.\"",
+   "confirmed": 0
   },
   {
    "detected_at": "2026-08-07T15:53:34Z",
@@ -244,7 +227,8 @@
    "previous_seen_at": "2026-08-07T11:10:09Z",
    "magnitude": 0.833,
    "oscillating": 0,
-   "summary": "Proof points: added 100 companies, 50 projects, 500,000 companies, 60% cut creative-brief processing +5 more; removed 02 agents"
+   "summary": "Proof points: added 100 companies, 50 projects, 500,000 companies, 60% cut creative-brief processing +5 more; removed 02 agents",
+   "confirmed": 0
   },
   {
    "detected_at": "2026-08-07T15:53:34Z",
@@ -262,7 +246,8 @@
    "previous_seen_at": "2026-08-07T11:10:09Z",
    "magnitude": 0.775,
    "oscillating": 0,
-   "summary": "Hero subhead changed from \"Build AI-powered workflows that unify data, maximize collaboration, and set your teams …\" to \"It turns individual gains into team momentum — the apps, workflows, and agents one pers…\""
+   "summary": "Hero subhead changed from \"Build AI-powered workflows that unify data, maximize collaboration, and set your teams …\" to \"It turns individual gains into team momentum — the apps, workflows, and agents one pers…\"",
+   "confirmed": 0
   }
  ],
  "fetches": [
