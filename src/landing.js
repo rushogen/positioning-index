@@ -21,7 +21,7 @@
  * counts here are far too small to carry a word like "dominant".
  */
 
-import { barChart, companyLink, coverageNote, detailsTable, escapeHtml, stackChart } from './charts.js';
+import { barChart, companyLink, coverageNote, detailsTable, escapeHtml, shareBars, stackChart } from './charts.js';
 
 /** The whole landing view, as HTML. */
 export function renderPositioning(insights) {
@@ -33,6 +33,7 @@ export function renderPositioning(insights) {
     proofSection(insights.proof_claims),
     logoSection(insights.logo_mentions),
     pricingSection(insights.pricing),
+    segmentSection(insights.segments),
   ].join('\n\n');
 }
 
@@ -428,6 +429,257 @@ function pricingSection(pricing) {
         rows: free.coverage.missing ?? [],
       }),
   });
+}
+
+// --------------------------------------------------------------- 7 segments
+
+/**
+ * The same questions, cut by what kind of company is asking them.
+ *
+ * Everything below is generated, including the decision about what to show. The
+ * page does not carry a hand-written list of interesting cuts; it carries every
+ * cut src/insights.js computes, and prints the ones that cleared the minimum
+ * cell size and the fragility rule as charts and the ones that did not as a
+ * list of reasons. If the next crawl makes a withheld cut reportable it appears
+ * on its own, and if it makes a drawn one fragile it disappears on its own.
+ *
+ * That is the only arrangement that survives contact with cells of 6 to 16. A
+ * human choosing which segment differences to show, after seeing them, is
+ * choosing the finding.
+ */
+function segmentSection(seg) {
+  const sizes = seg.groups.map((g) => g.n).sort((a, b) => a - b);
+  const drawn = seg.cuts.filter((c) => c.drawn);
+  const withheld = seg.cuts.filter((c) => !c.drawn);
+
+  // The AI question is the one this section was built to answer, so it leads
+  // when it survives the rules. When it does not, the section says so and the
+  // next surviving cut leads instead -- rather than the page quietly reordering
+  // itself around whatever came out best.
+  const lead = drawn.find((c) => c.key === 'ai') ?? drawn[0] ?? null;
+  const rest = drawn.filter((c) => c !== lead);
+
+  const takeaway = lead
+    ? `Folded into <b>${seg.groups.length} groups</b> of ${sizes[0]} to ${sizes[sizes.length - 1]} companies, ` +
+      `the segments do part company on ${lead.subject}: ` +
+      `<b>${lead.top.yes} of ${lead.top.readable}</b> readable companies in ${escapeHtml(lead.top.label)}, ` +
+      `against <b>${lead.bottom.yes} of ${lead.bottom.readable}</b> in ${escapeHtml(lead.bottom.label)}. ` +
+      `That is a gap ${wide(lead.spread)}. ` +
+      `${drawn.length} of the ${seg.cuts.length} cuts computed here survive the two rules below; the ` +
+      `${withheld.length} that do not are listed with the reason rather than drawn faintly.`
+    : `None of the ${seg.cuts.length} cuts computed here survives the minimum cell size and the fragility ` +
+      'rule, so this section has no chart in it. The reasons are below.';
+
+  const chart = [
+    lead ? cutBlock(lead) : '',
+    rest.length
+      ? '<h4 class="sub-chart-head">The other cuts that survived the rules</h4>\n' +
+        `<div class="cut-grid">\n${rest.map((c) => cutBlock(c)).join('\n')}\n</div>`
+      : '',
+    withheldBlock(withheld, seg),
+  ].filter(Boolean).join('\n');
+
+  return section({
+    id: 'p-segments',
+    heading: 'Whether the segment changes the story',
+    takeaway,
+    chart,
+    coverage: segmentCoverage(seg),
+    method:
+      `seed/companies.json labels every company with one of fourteen segments, and seven of those hold ` +
+      `three companies or fewer &mdash; one holds a single company. A bar over one company invites a ` +
+      'conclusion about a market from one homepage, so the fourteen are folded into ' +
+      `${seg.groups.length} groups. A seed segment is never split: all of its companies move together, so the ` +
+      'grouping can be disagreed with as a whole rather than audited company by company. The full mapping, ' +
+      'with every company in it, opens below. ' +
+      `Two rules then decide what is drawn. A cell computed over fewer than <b>${seg.min_cell_n}</b> ` +
+      `companies is not drawn at all &mdash; at six, one company is 17 percentage points &mdash; and a cut where ` +
+      `fewer than ${seg.min_groups_drawn} of the ${seg.groups.length} groups clear that floor is withheld entirely. ` +
+      `A cut whose best and worst group are within <b>${seg.fragile_flips} companies</b> of each other is also ` +
+      'withheld, because a reader looks at the bars and not at the caveat. ' +
+      'Every bar states its own count and denominator, and no percentage on this page appears without them.',
+    inspect: mappingTable(seg) + matrixTable(seg),
+  });
+}
+
+/** One cut: its bars, and how many companies the spread is worth. */
+function cutBlock(cut) {
+  const rows = cut.ranked.concat(cut.cells.filter((c) => c.suppressed))
+    .map((c) => ({
+      label: c.short,
+      part: c.yes,
+      whole: c.readable,
+      of: c.n,
+      suppressed: c.suppressed,
+    }));
+
+  const notes = [
+    `Top to bottom this spread is ${wide(cut.spread)}: that many companies in ${escapeHtml(cut.bottom.short)} ` +
+    `changing one line would tie it with ${escapeHtml(cut.top.short)}.`,
+  ];
+
+  const k = cut.lead_over_runner_up;
+  if (k === 0) {
+    notes.push(`${escapeHtml(cut.top.short)} and ${escapeHtml(cut.runner_up.short)} are level at the top.`);
+  } else if (k != null && k <= 2) {
+    notes.push(
+      `${wideCount(k)} would tie the top two, so the <i>order</i> of these bars is not a finding &mdash; ` +
+      'only the distance between the ends is.'
+    );
+  }
+
+  return '<div class="cut">\n' +
+    `<h4>${escapeHtml(cut.label)}</h4>\n` +
+    shareBars({ rows, unit: cut.denominator }) + '\n' +
+    `<p class="cut-note">${notes.join(' ')}</p>\n` +
+    '</div>';
+}
+
+/**
+ * The cuts that were computed and not drawn, each with the rule that stopped it.
+ *
+ * This is the part of the section that took the most work and it is the part
+ * worth reading. Three of the questions worth asking of this data cannot be
+ * answered by it, and saying which three is a finding rather than a gap.
+ */
+function withheldBlock(withheld, seg) {
+  if (!withheld.length) return '';
+
+  const items = withheld.map((cut) => {
+    const reasons = [];
+
+    if (cut.withheld.rule === 'coverage') {
+      const clear = cut.cells.filter((c) => !c.suppressed);
+      reasons.push(
+        `only ${cut.withheld.drawable} of the ${cut.withheld.groups} groups have ${seg.min_cell_n} or more ` +
+        `${escapeHtml(cut.denominator)}` +
+        (clear.length
+          ? ` (${clear.map((c) => `${escapeHtml(c.short)} ${c.readable}`).join(', ')})`
+          : '') +
+        '.'
+      );
+      // A cut where nearly everybody answers the same way has nothing left for a
+      // segment to explain even where the cells are big enough, and saying only
+      // "coverage" would imply a better crawl would produce a finding.
+      const share = cut.overall.readable ? cut.overall.yes / cut.overall.readable : 0;
+      if (cut.overall.readable && (share >= 0.9 || share <= 0.1)) {
+        reasons.push(
+          `Across the whole set ${cut.overall.yes} of the ${cut.overall.readable} readable answers are the ` +
+          'same, so there would be little for a segment to explain even at full coverage.'
+        );
+      }
+    } else {
+      reasons.push(
+        `best group to worst is ${wide(cut.withheld.spread)}, inside the ${seg.fragile_flips}-company margin ` +
+        'this page treats as no difference at all ' +
+        `(${escapeHtml(cut.top.short)} ${cut.top.yes} of ${cut.top.readable}, ` +
+        `${escapeHtml(cut.bottom.short)} ${cut.bottom.yes} of ${cut.bottom.readable}).`
+      );
+    }
+
+    return `<li><b>${escapeHtml(cut.label)}</b> &mdash; ${reasons.join(' ')}</li>`;
+  });
+
+  return '<h4 class="sub-chart-head">Cuts we computed and did not draw</h4>\n' +
+    `<ul class="withheld">\n${items.join('\n')}\n</ul>`;
+}
+
+/** The section's own coverage line: the grouping first, then every denominator. */
+function segmentCoverage(seg) {
+  const parts = [
+    `Every <b>${seg.coverage.readable} of ${seg.coverage.tracked}</b> companies falls into exactly one group; ` +
+    'none is dropped and none is counted twice.',
+  ];
+
+  if (seg.ungrouped.length) {
+    parts.push(
+      `${seg.ungrouped.length} carry a seed segment this mapping does not know and are missing from every ` +
+      `bar above: ${seg.ungrouped.map((c) => escapeHtml(c.name)).join(', ')}.`
+    );
+  }
+
+  // One line per distinct denominator rather than per cut: five of the nine cuts
+  // share the proof-points denominator, and printing "52 of 60" five times
+  // reads as five separate measurements.
+  const denominators = new Map();
+  for (const cut of seg.cuts) {
+    const key = `${cut.overall.readable}|${cut.denominator}`;
+    if (!denominators.has(key)) denominators.set(key, cut);
+  }
+  parts.push(
+    'Each cut has its own denominator, and every bar prints it: ' +
+    [...denominators.values()]
+      .map((c) => `<b>${c.overall.readable} of ${c.overall.tracked}</b> ${escapeHtml(c.denominator)}`)
+      .join('; ') +
+    '. Not readable means we could not extract it, not that the company does not do it.'
+  );
+
+  parts.push(
+    `A group cell computed over fewer than ${seg.min_cell_n} companies is drawn as &ldquo;too few to say&rdquo; ` +
+    'with its own n, never as a short bar.'
+  );
+
+  return `<p class="coverage">${parts.join(' ')}</p>`;
+}
+
+/** Which seed segments went where, and which companies came with them. */
+function mappingTable(seg) {
+  return detailsTable({
+    summary: `Show how the 14 seed segments fold into ${seg.groups.length} groups`,
+    columns: [
+      {
+        label: 'Group',
+        get: (g) => `<b>${escapeHtml(g.label)}</b><br><span class="quiet">${g.why}</span>`,
+      },
+      { label: 'Companies', class: 'num', get: (g) => String(g.n) },
+      {
+        label: 'Seed segments',
+        get: (g) => '<ul class="quotes">' + g.segments.map((s) =>
+          `<li><code>${escapeHtml(s.segment)}</code> &mdash; ${s.n}</li>`).join('') + '</ul>',
+      },
+      { label: 'The companies', get: (g) => g.companies.map(companyLink).join(', ') },
+    ],
+    rows: seg.groups,
+  });
+}
+
+/** Every cut against every group, drawn or not, as the numbers behind it. */
+function matrixTable(seg) {
+  const groupColumns = seg.groups.map((g) => ({
+    label: `${g.short} (${g.n})`,
+    class: 'num',
+    get: (cut) => {
+      const c = cut.cells.find((x) => x.group === g.key);
+      if (c.suppressed) {
+        return `<span class="quiet">too few &mdash; ${c.readable} of ${c.n} readable</span>`;
+      }
+      return `<b>${c.yes} of ${c.readable}</b> <span class="quiet">${Math.round((c.yes / c.readable) * 100)}%</span>`;
+    },
+  }));
+
+  return detailsTable({
+    summary: `Show all ${seg.cuts.length} cuts by group, including the ${seg.withheld.length} not drawn`,
+    columns: [
+      { label: 'Cut', get: (cut) => `<b>${escapeHtml(cut.label)}</b>` },
+      ...groupColumns,
+      {
+        label: 'Drawn',
+        get: (cut) => (cut.drawn
+          ? `yes &mdash; spread ${cut.spread}`
+          : `<span class="quiet">no &mdash; ${cut.withheld.rule === 'coverage' ? 'coverage' : `spread ${cut.withheld.spread}`}</span>`),
+      },
+    ],
+    rows: seg.cuts,
+  });
+}
+
+/** "a gap 3 companies wide" -- the phrase the fragility rule exists to produce. */
+function wide(n) {
+  return `${wideCount(n)} wide`;
+}
+
+function wideCount(n) {
+  return `<b>${n} ${n === 1 ? 'company' : 'companies'}</b>`;
 }
 
 // ------------------------------------------------------------------ helpers

@@ -181,6 +181,9 @@ console.log(
   `${positioning.category_nouns.coverage.readable} category labels, ` +
   `${positioning.ai_mentions.mentions.length} companies using AI language, ` +
   `${positioning.pricing.entry_price.coverage.readable} readable entry prices\n` +
+  `  segments: ${positioning.segments.groups.length} groups, ` +
+  `${positioning.segments.drawn.length} of ${positioning.segments.cuts.length} cuts drawn, ` +
+  `${positioning.segments.withheld.length} withheld (${positioning.segments.withheld.join(', ')})\n` +
   `  as of ${asOf}${lastRun ? '' : '  (no crawl has been run yet)'}`
 );
 
