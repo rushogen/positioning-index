@@ -14,6 +14,7 @@
     "test:watch": "node --test --watch tests/*.test.js",
     "crawl": "node bin/crawl.js",
     "build": "node bin/build-site.js",
+    "retract": "node bin/retract.js",
     "probe": "node scripts/probe.js",
     "check-seed": "node scripts/check-seed.js"
   }

@@ -65,11 +65,14 @@ export function classifyHealth(row, cutoff) {
   if (row.last_status === 'blocked') return 'blocked';
   if (!row.last_ok_at || Date.parse(row.last_ok_at) < cutoff) return 'stale';
   if (row.last_status === 'changed-structure') return 'structure-changed';
+  if (row.last_status === 'error') return 'error';
   // Read successfully, but from somewhere else than last time, so its
   // locale-sensitive signals are held back. Its own state, not an error and not
-  // a clean bill of health.
-  if (row.last_status === 'origin-shift') return 'origin-shift';
-  if (row.last_status === 'error') return 'error';
+  // a clean bill of health -- and reported ahead of `degraded`, because those
+  // signals are not suspected extraction failures and saying so would be wrong.
+  // Either of the company's two pages having shifted is enough: they are crawled
+  // in the same run, and a tie on the attempt timestamp must not decide this.
+  if (row.last_status === 'origin-shift' || row.origin_shifted) return 'origin-shift';
   if (row.suspect_signals > 0) return 'degraded';
   return 'ok';
 }
@@ -123,6 +126,8 @@ export function companyHealth({ companies, queue, series, events, asOf, staleAft
       last_ok_at: maxOf(entries.map((e) => e.last_ok_at)),
       last_status: newest?.last_status ?? null,
       last_reason: newest?.last_reason ?? null,
+      last_origin: newest?.last_origin ?? null,
+      origin_shifted: entries.some((e) => e.last_status === 'origin-shift'),
       suspect_signals: values.filter((s) => s.suspect).length,
       live_signals: values.filter((s) => s.last_good_value != null).length,
       total_changes: changesBySlug.get(c.slug) ?? 0,
