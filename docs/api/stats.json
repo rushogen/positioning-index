@@ -1,21 +1,49 @@
 {
  "companies": 60,
  "targets": 120,
- "observations": 17,
- "changes": 0,
- "changes_7d": 0,
- "changes_30d": 0,
+ "observations": 126,
+ "changes": 4,
+ "changes_7d": 4,
+ "changes_30d": 4,
  "retracted_changes": 2,
  "first_observation": "2026-08-07T11:00:38Z",
- "last_observation": "2026-08-07T11:45:33Z",
- "last_successful_fetch": "2026-08-07T11:45:33Z",
- "runs": 5,
- "last_run_at": "2026-08-07T11:45:33Z",
- "fetches_24h": 20,
- "blocked_24h": 0,
- "errors_24h": 0,
- "suspect_signals": 0,
+ "last_observation": "2026-08-07T15:53:35Z",
+ "last_successful_fetch": "2026-08-07T15:53:36Z",
+ "runs": 6,
+ "last_run_at": "2026-08-07T15:53:36Z",
+ "fetches_24h": 140,
+ "blocked_24h": 2,
+ "errors_24h": 1,
+ "suspect_signals": 2,
  "categories": [
+  {
+   "label": "agentic infrastructure",
+   "n": 1
+  },
+  {
+   "label": "agentic web platform for modern businesses",
+   "n": 1
+  },
+  {
+   "label": "ai agents",
+   "n": 1
+  },
+  {
+   "label": "ai era ship software",
+   "n": 1
+  },
+  {
+   "label": "ai platform for enterprises",
+   "n": 1
+  },
+  {
+   "label": "ai platform for marketers",
+   "n": 1
+  },
+  {
+   "label": "ai sales platform for smarter",
+   "n": 1
+  },
   {
    "label": "ai work platform for people",
    "n": 1
@@ -25,23 +53,47 @@
    "n": 1
   },
   {
+   "label": "ai-powered customer engagement platform",
+   "n": 1
+  },
+  {
+   "label": "ai-powered developer platform",
+   "n": 1
+  },
+  {
+   "label": "ai-powered service",
+   "n": 1
+  },
+  {
+   "label": "autonomous agents",
+   "n": 1
+  },
+  {
+   "label": "autonomous b2c crm",
+   "n": 1
+  },
+  {
+   "label": "braze customer engagement platform",
+   "n": 1
+  },
+  {
    "label": "collaboration layer",
    "n": 1
   },
   {
-   "label": "intelligent canvas for infinite creativity",
+   "label": "collaboration software for software",
    "n": 1
   },
   {
-   "label": "one workspace",
+   "label": "crm for agentic revenue",
    "n": 1
   },
   {
-   "label": "os for human-agent teams",
+   "label": "customer service",
    "n": 1
   },
   {
-   "label": "product development system for teams and agents",
+   "label": "effective crm for closing deals",
    "n": 1
   }
  ],
@@ -111,5 +163,5 @@
    "label": "Pricing page title"
   }
  },
- "generated_at": "2026-08-07T11:45:33Z"
+ "generated_at": "2026-08-07T15:53:36Z"
 }

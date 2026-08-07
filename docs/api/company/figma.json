@@ -182,6 +182,30 @@
   {
    "kind": "pricing",
    "url": "https://www.figma.com/pricing/",
+   "fetched_at": "2026-08-07T15:53:36Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 1499772,
+   "duration_ms": 431,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.figma.com/",
+   "fetched_at": "2026-08-07T15:52:35Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 1499966,
+   "duration_ms": 544,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.figma.com/pricing/",
    "fetched_at": "2026-08-07T11:11:12Z",
    "http_status": 200,
    "status": "ok",
