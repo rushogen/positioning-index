@@ -1,6 +1,6 @@
 # Methodology
 
-**Version 1.2** — corresponds to extractor version `1.0.0`.
+**Version 1.3** — corresponds to extractor version `1.0.0`.
 
 This document states exactly how each signal is measured, what counts as a
 change, and what the index will refuse to claim. It is versioned because the
@@ -311,7 +311,8 @@ because the phrasing lives in body copy or a footnote rather than in a plan card
 
 Null means "no minimum found", not "no minimum exists". Most companies publish
 none, so this signal is null for most of the index most of the time. The removal
-rules in §4.3 apply before the index would ever claim a minimum was dropped.
+rules in §4.3 apply before the index would ever claim a minimum was dropped, and
+§4.11 applies before it would claim one was introduced.
 
 ### 2.10 `pricing_meta_title`
 
@@ -446,11 +447,13 @@ homepage in German.
 ### 4.2 First sighting is a baseline
 
 The first time a signal is observed for a company, the value is recorded and
-**no event is emitted**. Otherwise day one of the index would emit roughly 700
-"added" events into an empty feed and mean nothing.
+**no event is emitted**. The first observation of a *target* therefore emits
+nothing at all, for any of its signals: it is a recording, not news. Otherwise
+day one of the index would emit roughly 700 events into an empty feed and mean
+nothing.
 
-An `added` event is emitted only when a signal that previously had no value
-acquires one — a company introducing a seat minimum, for instance.
+Nor is a signal that acquires a value *later* an addition. That case is §4.11,
+and it is the reason no rule in this document emits an `added` event any more.
 
 ### 4.3 A null is a parser failure, not a removal
 
@@ -471,6 +474,10 @@ What happens instead:
 
 If the page itself is unhealthy — fewer than half its signals extracting — no
 removal is ever confirmed, however long the absence lasts.
+
+The mirror of this rule is §4.11, and it took until v1.3 to write down: if a null
+is not evidence that a value was removed, a value is not evidence that one was
+added.
 
 ### 4.4 A confidence downgrade is our problem, not theirs
 
@@ -582,6 +589,63 @@ distinguish one from locale routing, and the asymmetry in §4 resolves that towa
 saying nothing. A currency change accompanied by a *disproportionate* price move
 is a genuine repricing and is published normally.
 
+### 4.11 A value appearing where there was none is an acquisition, not an addition
+
+**If a signal that had no value produces one, that is recorded as a signal
+acquisition and no change event is emitted.** This is the mirror image of §4.3,
+and it exists for the same reason: a null means *we have no value*, which is a
+statement about our reading and not about their page.
+
+*"Our extractor finally succeeded"* and *"the company finally added it"* are one
+transition wearing two hats. A logo wall rendered from CSS sprites that later
+ships as plain `<img>` tags produces exactly the same null-then-value pair as a
+logo wall that genuinely did not exist last week, and nothing in the pair
+separates them.
+
+What happens instead:
+
+- The observation is recorded in full, including the value.
+- The outcome is classified `acquisition`, beside `parser-fault` and
+  `origin-shift`, and counted in the run ledger and the commit subject. A
+  suppression nobody can see is indistinguishable from a crawler that found
+  nothing.
+- The value does **not** become the signal's known-good baseline yet.
+
+**Corroboration.** The same value must be read **three** consecutive times, from
+a healthy page, before it is adopted — the same number as §4.10, because the two
+rules ask the same question with the same evidence, which is repetition. A read
+that returns byte-identical content counts, since identical bytes cannot hold a
+different value. A read of a page we understood poorly does not count and resets
+the window, and a value that differs from the previous reading restarts it: a
+signal whose first value never settles never acquires a baseline, and therefore
+never publishes anything at all.
+
+Adoption is **silent**. No event is emitted when it happens.
+
+**Where there is evidence, the record says so.** If the previous read of the page
+was classified `changed-structure`, had another signal in a parser fault, yielded
+materially less than this one (the same 50% threshold as §4.1, inverted), or ran
+a different extractor version, the acquisition is recorded as extractor recovery
+with high confidence and the reason string names the evidence. None of this
+changes what is published — nothing is, either way. It changes what an auditor
+reading the archive in a year has to work with, because *"we could not tell"* and
+*"we could tell, and it was us"* are different findings.
+
+The consequence, stated plainly because it is a real limitation and not a detail:
+**this index will not report the moment a company first adds a logo wall, a proof
+point or a seat minimum.** It cannot distinguish that moment from the moment our
+extractor first managed to read one. A false *"company X added Y"* costs more
+than a missed one, and the asymmetry in §4 resolves that toward silence.
+
+A second consequence, smaller and worth knowing: for the three readings the
+corroboration window lasts, the site shows the signal as having no established
+value while the raw observation lines plainly contain one. The observation is
+right and the summary lags it.
+
+This rule was added in v1.3, after `airtable.com` produced a false
+`customer_logos` addition in the first full sweep. `CORRECTIONS.md` has the
+account.
+
 ---
 
 ## 5. What this index does not claim
@@ -589,6 +653,11 @@ is a genuine repricing and is published normally.
 - **Not intent.** It records what was published and when. Whether a change was
   strategic, a copy test, a CMS migration or an intern is outside what a crawler
   can know.
+- **Not the moment something appeared.** A change event needs two values this
+  index actually read. It cannot report a first appearance, because a signal that
+  was null and is now not null is at least as likely to be our extractor
+  recovering as their page gaining something (§4.11). Where a value shows up, it
+  is adopted quietly and reported only once it moves again.
 - **Not completeness.** Pricing tables rendered entirely client-side are
   invisible to us; `vercel.com/pricing` is one such page and reports null tiers
   rather than a guess. Sites that refuse identified automated clients are
@@ -612,6 +681,21 @@ is a genuine repricing and is published normally.
 ---
 
 ## 6. Version history
+
+**v1.3** — 2026-08-07. The asymmetry is closed in the other direction. New §4.11
+(a value appearing where there was none is an acquisition, not an addition);
+§4.2 and §5 updated accordingly. §4.3 has said since v1.0 that a value going
+missing is our parser breaking; nothing said the same about a value arriving, and
+the first full sweep of 120 targets published `airtable/home customer_logos` as
+an addition on the strength of that gap. It was retracted the same day;
+`CORRECTIONS.md` is the account.
+
+**No signal definition changed** and the extractor version stays `1.0.0`: §2
+describes the same measurements it did under v1.2, and values recorded before and
+after this change are comparable. §4 gained one rule and it only ever suppresses.
+Nothing that was previously suppressed is now published; one class of claim that
+was previously permitted — `added` events — is now permitted nowhere, and no code
+path emits one.
 
 **v1.2** — 2026-08-07. Crawl origin becomes part of the measurement. New §1.1
 (pinned `Accept-Language`), §1.2 (how the origin is resolved and which one is

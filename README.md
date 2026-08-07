@@ -32,7 +32,7 @@ a commit.
 
 Every claim this index has published and then withdrawn is listed in
 [`CORRECTIONS.md`](CORRECTIONS.md), with what was wrong and what changed. It
-already has an entry. That is on purpose: a corrections log that starts empty
+already has two. That is on purpose: a corrections log that starts empty
 tells you nothing about whether anyone is checking.
 
 Built by Ruslan Shogenov. MIT licensed.
@@ -71,7 +71,8 @@ Not the crawling. The crawling is a `fetch()` call.
 
 The hard part is telling **"this company changed its headline"** apart from
 **"our selector broke"**. Those look identical in the data — yesterday there was
-a value, today there isn't, or there's a different one — and getting it wrong in
+a value and today there isn't, or there wasn't and today there is, or it moved —
+and getting it wrong in
 the optimistic direction means the index publishes fiction. *"Notion removed its
 free plan."* *"Figma dropped 14 customer logos."* Those are claims a GTM team
 would act on. If they turn out to be artefacts of a CSS refactor, the index is
@@ -91,6 +92,17 @@ actually believed rather than against the gap. After two consecutive nulls the
 signal is marked suspect and shown as such on the public health page. Only after
 five consecutive nulls, *and* only if the rest of the page kept extracting
 normally throughout, is a removal confirmed — once.
+
+**A value appearing is not an addition.** The mirror of the rule above, and the
+one this index shipped without. If extraction returns a value where it
+previously returned nothing, that is recorded as a *signal acquisition*, not as
+"company X added Y". A logo wall built from CSS sprites that later ships as
+plain `<img>` tags produces the same null-then-value pair as a logo wall that
+did not exist last week, and nothing in the pair separates them. The value is
+adopted as the baseline after three consecutive readings hold, and adopted
+silently. The consequence is worth stating flatly: **this index will not report
+the moment a company first publishes a logo wall or a proof point.** A false
+"company X added Y" costs more than a missed one.
 
 **Derived signals fail together.** `pricing_free_tier: "no"` is a value, not an
 absence. If tier extraction fails we do not know whether a free tier exists, so
@@ -252,7 +264,8 @@ npm run crawl            ──▶  fold data/runs.ndjson into the crawl queue
                               ├─▶ one conditional GET per page, strictly serial
                               ├─▶ extract 12 signals  (bounded regex, no DOM parser)
                               ├─▶ gate + diff against the last stored observation
-                              │    (parser faults and origin shifts publish nothing)
+                              │    (parser faults, origin shifts and signal
+                              │     acquisitions publish nothing)
                               ├─▶ append to data/companies/<slug>.ndjson, data/events.ndjson
                               └─▶ append ONE run record to data/runs.ndjson, always
 
@@ -386,12 +399,12 @@ data/
   runs.ndjson         one record per run, always
 docs/                 the generated site, served by GitHub Pages
 public/               the site's source: HTML, CSS, one JS file, no dependencies
-tests/                153 tests, node:test, no runner dependency
+tests/                162 tests, node:test, no runner dependency
 scripts/
   probe.js            run the extractor against live URLs, report timings
   check-seed.js       validate seed URLs, structurally or live
 seed/companies.json   60 companies, 120 URLs
-METHODOLOGY.md        how each signal is measured, v1.2
+METHODOLOGY.md        how each signal is measured, v1.3
 CORRECTIONS.md        every claim published and then withdrawn, and why
 .github/workflows/crawl.yml   the button
 ```
@@ -407,7 +420,7 @@ years should not have a supply chain.
 Node 20 or newer. Nothing to install.
 
 ```bash
-npm test                              # 153 tests, no network
+npm test                              # 162 tests, no network
 npm run crawl                         # the most overdue batch (12 pages)
 npm run crawl -- --company linear     # one company, both its pages
 npm run crawl -- --all                # every target in the seed list
@@ -516,9 +529,23 @@ its weaknesses should not be trusted about its strengths.
    "Vercel removed its pricing" — but it is missing data, and it will get more
    common.
 
-2. **Split-tested heroes.** Detected and flagged (§4.7 of the methodology), not
-   solved. A company running a persistent multi-variant test will show
-   oscillating changes that are noise.
+2. **Split-tested heroes, and a change nobody has looked at twice.** Detected
+   and flagged (§4.7 of the methodology), not solved. A company running a
+   persistent multi-variant test will show oscillating changes that are noise.
+
+   The live example is in the archive. On 2026-08-07 this index published three
+   changes to `airtable.com` — headline, subhead and proof points — and they
+   stand: each is a transition between two strings we actually read. But
+   Airtable is documented in this repository as A/B-testing its `<h1>`; that is
+   why §4.7 exists. The oscillation detector reports `osc=0` for that headline
+   change **only because it has not yet seen the value flap back**, and an
+   absence of second readings is not evidence of a stable one. A single
+   observation cannot distinguish a repositioning from a running experiment, and
+   this index will publish the first one before it can rule out the second.
+
+   What it does about it is small and deliberately so: an event the page has not
+   been read again since is tagged `seen once` in the feed. That tag claims
+   nothing except that nobody has looked twice yet.
 
 3. **Geography. One vantage point at a time, and the canonical one is CI.**
    Pages are fetched from wherever the crawl runs, and the crawler makes one
@@ -583,8 +610,15 @@ its weaknesses should not be trusted about its strengths.
    is an elaborate snapshot. That is unavoidable and is precisely why it had to
    be started.
 
-8. **It has already been wrong once.** Two false change events about Notion's
-   pricing, published and retracted on 2026-08-07. The cause, the fix and what
-   remains unsolved are in [`CORRECTIONS.md`](CORRECTIONS.md). Listed here rather
-   than only there because a limitations section that omits the one confirmed
-   failure is a marketing page.
+8. **A signal that has never had a value measures our reach, not the market.**
+   `linear.app` publishes no logo wall this extractor can read, and the index
+   cannot tell that from a company that publishes none. The removal rules refuse
+   to claim the second; §4.11 refuses to claim the first in reverse. Honest, and
+   still a gap.
+
+9. **It has already been wrong twice.** Two false change events about Notion's
+   pricing, and one about Airtable's customer logos — all published and
+   retracted on 2026-08-07, the day of the first full sweep. The causes, the
+   fixes and what remains unsolved are in [`CORRECTIONS.md`](CORRECTIONS.md).
+   Listed here rather than only there because a limitations section that omits
+   the confirmed failures is a marketing page.
