@@ -1,8 +1,10 @@
 #:schema node_modules/wrangler/config-schema.json
 name = "positioning-index"
 main = "src/index.js"
+# No compatibility_flags: nothing under src/ imports a node: builtin, so the
+# Worker runs on the bare runtime. (scripts/ and tests/ do use node:sqlite, but
+# they never ship.)
 compatibility_date = "2026-01-15"
-compatibility_flags = ["nodejs_compat"]
 
 # Static assets are served by Cloudflare's asset pipeline before the Worker
 # runs. They are free and unmetered, and requests they serve do not count
