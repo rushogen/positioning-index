@@ -164,6 +164,8 @@ const CATEGORY_NOUNS = [
   'lakehouse', 'warehouse', 'infrastructure', 'marketplace', 'workspace', 'framework',
   'helpdesk', 'copilot', 'assistant', 'teammate', 'notebook', 'directory', 'dashboard',
   'automation', 'toolkit', 'platform', 'database', 'registry', 'planner', 'tracker',
+  'whiteboard', 'workbench', 'repository', 'pipeline', 'gateway', 'runtime', 'sandbox',
+  'canvas', 'studio', 'console', 'ledger', 'cloud', 'graph', 'mesh', 'fabric', 'desk',
   'browser', 'builder', 'network', 'service', 'software', 'solution', 'suite', 'system',
   'engine', 'editor', 'inbox', 'layer', 'stack', 'agent', 'agents', 'tool', 'tools',
   'app', 'apps', 'hub', 'os', 'wiki', 'crm', 'erp', 'cdp', 'cms', 'ide', 'api', 'sdk',

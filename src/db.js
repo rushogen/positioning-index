@@ -169,23 +169,23 @@ export async function persistPage(db, { companyId, fetchId, runId, now, observat
   const evStmt = db.prepare(`
     INSERT OR IGNORE INTO change_events
       (company_id, run_id, signal, detected_at, previous_seen_at, before_value, after_value,
-       before_json, after_json, change_type, magnitude, summary)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+       before_json, after_json, change_type, magnitude, oscillating, summary)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
   `);
   for (const e of events) {
     stmts.push(evStmt.bind(
       companyId, runId, e.signal, now, e.previous_seen_at ?? null,
       e.before_value ?? null, e.after_value ?? null,
       e.before_json ?? null, e.after_json ?? null,
-      e.change_type, e.magnitude ?? null, e.summary ?? null
+      e.change_type, e.magnitude ?? null, e.oscillating ?? 0, e.summary ?? null
     ));
   }
 
   const stStmt = db.prepare(`
     INSERT INTO signal_state
       (company_id, signal, last_observed_at, last_good_at, last_good_value, last_good_json,
-       last_good_hash, last_good_method, consecutive_nulls, suspect, total_changes)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+       last_good_hash, last_good_method, consecutive_nulls, suspect, total_changes, recent_hashes)
+    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
     ON CONFLICT(company_id, signal) DO UPDATE SET
       last_observed_at = excluded.last_observed_at,
       last_good_at = excluded.last_good_at,
@@ -195,13 +195,14 @@ export async function persistPage(db, { companyId, fetchId, runId, now, observat
       last_good_method = excluded.last_good_method,
       consecutive_nulls = excluded.consecutive_nulls,
       suspect = excluded.suspect,
-      total_changes = excluded.total_changes
+      total_changes = excluded.total_changes,
+      recent_hashes = excluded.recent_hashes
   `);
   for (const s of states) {
     stmts.push(stStmt.bind(
       companyId, s.signal, s.last_observed_at, s.last_good_at, s.last_good_value,
       s.last_good_json, s.last_good_hash, s.last_good_method,
-      s.consecutive_nulls ?? 0, s.suspect ?? 0, s.total_changes ?? 0
+      s.consecutive_nulls ?? 0, s.suspect ?? 0, s.total_changes ?? 0, s.recent_hashes ?? null
     ));
   }
 
@@ -222,7 +223,7 @@ export async function recentChanges(db, { limit = 60, signal = null, slug = null
 
   const { results } = await db.prepare(`
     SELECT e.id, e.detected_at, e.signal, e.change_type, e.before_value, e.after_value,
-           e.magnitude, e.summary, e.previous_seen_at, c.slug, c.name, c.segment
+           e.magnitude, e.oscillating, e.summary, e.previous_seen_at, c.slug, c.name, c.segment
     FROM change_events e
     JOIN companies c ON c.id = e.company_id
     ${clause}
@@ -250,7 +251,10 @@ export async function companyHealth(db, { staleAfterHours = 48 } = {}) {
       (SELECT f.reason FROM fetches f WHERE f.company_id = c.id ORDER BY f.fetched_at DESC LIMIT 1) AS last_reason,
       (SELECT COUNT(*) FROM signal_state s WHERE s.company_id = c.id AND s.suspect = 1) AS suspect_signals,
       (SELECT COUNT(*) FROM signal_state s WHERE s.company_id = c.id AND s.last_good_value IS NOT NULL) AS live_signals,
-      (SELECT COUNT(*) FROM change_events e WHERE e.company_id = c.id) AS total_changes
+      (SELECT COUNT(*) FROM change_events e WHERE e.company_id = c.id) AS total_changes,
+      (SELECT s.last_good_value FROM signal_state s WHERE s.company_id = c.id AND s.signal = 'category_label') AS category,
+      (SELECT s.last_good_value FROM signal_state s WHERE s.company_id = c.id AND s.signal = 'pricing_entry_price') AS entry_price,
+      (SELECT s.last_good_value FROM signal_state s WHERE s.company_id = c.id AND s.signal = 'headline') AS headline
     FROM companies c
     WHERE c.active = 1
     ORDER BY c.name COLLATE NOCASE
@@ -278,7 +282,7 @@ export async function companyDetail(db, slug, { historyLimit = 100 } = {}) {
   const [state, events, fetches] = await Promise.all([
     db.prepare('SELECT * FROM signal_state WHERE company_id = ? ORDER BY signal').bind(company.id).all(),
     db.prepare(`
-      SELECT id, detected_at, signal, change_type, before_value, after_value, magnitude, summary, previous_seen_at
+      SELECT id, detected_at, signal, change_type, before_value, after_value, magnitude, oscillating, summary, previous_seen_at
       FROM change_events WHERE company_id = ? ORDER BY detected_at DESC, id DESC LIMIT ?
     `).bind(company.id, historyLimit).all(),
     db.prepare(`

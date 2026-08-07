@@ -9,3 +9,5 @@ dist/
 .seed.generated.sql
 coverage/
 .probe-cache/
+
+.demo/

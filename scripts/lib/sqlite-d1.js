@@ -1,6 +1,8 @@
 /**
  * A D1-compatible shim over node:sqlite.
  *
+ * Used by tests/ and by scripts/demo.js. Never shipped to the Worker.
+ *
  * D1 is SQLite, and the subset of its API this project uses is small:
  * prepare().bind().first()/all()/run() plus batch(). Implementing that over
  * node:sqlite lets the integration test exercise the real scheduled handler,

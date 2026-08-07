@@ -12,8 +12,11 @@
 
 import { readFile } from 'node:fs/promises';
 
-const seed = JSON.parse(await readFile(new URL('../seed/companies.json', import.meta.url), 'utf8'));
 const q = (v) => (v == null ? 'NULL' : `'${String(v).replace(/'/g, "''")}'`);
+
+/** Exported so scripts/demo.js can seed a local database without shelling out. */
+export async function buildSeedSql() {
+const seed = JSON.parse(await readFile(new URL('../seed/companies.json', import.meta.url), 'utf8'));
 const now = new Date().toISOString().replace(/\.\d{3}Z$/, 'Z');
 
 const out = [];
@@ -50,4 +53,10 @@ for (const c of seed.companies) {
 
 out.push('');
 out.push(`-- ${slot} crawl targets. At one tick every 5 minutes that is a full sweep every ${(slot * 5 / 60).toFixed(1)} hours.`);
-console.log(out.join('\n'));
+  return out.join('\n');
+}
+
+// CLI: node scripts/build-seed-sql.js > seed.sql
+if (import.meta.url === `file://${process.argv[1]}`) {
+  console.log(await buildSeedSql());
+}

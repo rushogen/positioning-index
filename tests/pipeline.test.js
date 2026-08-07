@@ -18,7 +18,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 
-import { makeDb, mockFetch } from './support/d1.js';
+import { makeDb, mockFetch } from '../scripts/lib/sqlite-d1.js';
 import { tick, daily } from '../src/scheduled.js';
 import { companyHealth, indexStats, recentChanges, companyDetail } from '../src/db.js';
 

@@ -15,11 +15,13 @@
     "probe": "node scripts/probe.js",
     "check-seed": "node scripts/check-seed.js",
     "dev": "wrangler dev",
-    "deploy": "wrangler deploy",
+    "deploy": "npm run sync:docs && wrangler deploy",
     "db:init": "wrangler d1 execute positioning_index --remote --file=./schema.sql",
     "db:init:local": "wrangler d1 execute positioning_index --local --file=./schema.sql",
     "db:seed": "node scripts/build-seed-sql.js > .seed.generated.sql && wrangler d1 execute positioning_index --remote --file=./.seed.generated.sql",
-    "db:seed:local": "node scripts/build-seed-sql.js > .seed.generated.sql && wrangler d1 execute positioning_index --local --file=./.seed.generated.sql"
+    "db:seed:local": "node scripts/build-seed-sql.js > .seed.generated.sql && wrangler d1 execute positioning_index --local --file=./.seed.generated.sql",
+    "sync:docs": "node scripts/sync-docs.js",
+    "demo": "node scripts/demo.js"
   },
   "devDependencies": {
     "wrangler": "^4.0.0"
