@@ -11,6 +11,7 @@
  */
 
 import { readFile } from 'node:fs/promises';
+import { pathToFileURL } from 'node:url';
 
 const q = (v) => (v == null ? 'NULL' : `'${String(v).replace(/'/g, "''")}'`);
 
@@ -57,6 +58,10 @@ out.push(`-- ${slot} crawl targets. At one tick every 5 minutes that is a full s
 }
 
 // CLI: node scripts/build-seed-sql.js > seed.sql
-if (import.meta.url === `file://${process.argv[1]}`) {
+//
+// pathToFileURL rather than `file://${process.argv[1]}`: import.meta.url is
+// percent-encoded, so the naive comparison silently fails for any checkout
+// whose path contains a space, and the script prints nothing.
+if (import.meta.url === pathToFileURL(process.argv[1]).href) {
   console.log(await buildSeedSql());
 }
