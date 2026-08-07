@@ -684,6 +684,351 @@ export function logoMentions({ companies, series, limit = 12 }) {
   };
 }
 
+// --------------------------------------------------------- segment breakdown
+
+/**
+ * The five buckets the seed's fourteen `segment` values are folded into.
+ *
+ * WHY THE SEED SEGMENTS ARE NOT USED DIRECTLY
+ * -------------------------------------------
+ * seed/companies.json labels each company with one of fourteen segments, and
+ * seven of them hold three companies or fewer -- `security` holds exactly one.
+ * A bar chart with a cell of n=1 invites the reader to conclude something about
+ * "security companies" from Vanta's homepage, which is the precise false
+ * precision the rest of this file exists to refuse. Fourteen segments over
+ * sixty companies is a taxonomy for a directory, not a denominator.
+ *
+ * So the segments are folded into five groups of 7 to 16. That fold is a
+ * judgement, and it is therefore written down here in full, printed on the site
+ * as a table, and constrained by one rule that keeps it honest:
+ *
+ *   A seed segment is never split. Every company carrying `segment: "design"`
+ *   is in the same group as every other one. The mapping is thirteen-plus-one
+ *   whole segments moved into five boxes, so the only way to disagree with it
+ *   is to disagree with a box -- not to discover that we quietly put Figma in
+ *   one place and Miro in another to make a number come out.
+ *
+ * The rationale for each fold is authored prose (`why`), because it is an
+ * opinion about which markets cohere and pretending otherwise would be worse
+ * than owning it. The counts beside it are computed.
+ */
+export const SEGMENT_GROUPS = [
+  {
+    key: 'dev',
+    label: 'Developer & infrastructure',
+    short: 'Dev & infrastructure',
+    segments: ['dev-infra', 'observability', 'security'],
+    why:
+      'Sold to the engineering organisation and bought on the same budget: hosting and delivery, ' +
+      'the tools that watch it in production, and the compliance automation that reports on it. ' +
+      'Observability is two companies on its own and security is one, which is why neither is a bar.',
+  },
+  {
+    key: 'data',
+    label: 'Data & analytics',
+    short: 'Data & analytics',
+    segments: ['analytics', 'data'],
+    why:
+      'Warehouses, pipelines and the products that read them. The seed splits the store from the ' +
+      'question asked of it; the buyer and the pitch are the same, so the two are one bucket here.',
+  },
+  {
+    key: 'work',
+    label: 'Work & product',
+    short: 'Work & product',
+    segments: ['automation', 'design', 'product-dev', 'work-mgmt'],
+    why:
+      'How a company builds things and runs itself day to day: issue trackers, docs, whiteboards, ' +
+      'chat, and the glue between them. The biggest bucket at 16, and the most internally varied &mdash; ' +
+      'it is the one to be most sceptical of.',
+  },
+  {
+    key: 'gtm',
+    label: 'Go-to-market & support',
+    short: 'Go-to-market',
+    segments: ['gtm', 'marketing', 'support'],
+    why:
+      'Everything pointed at a customer: finding them, marketing to them, selling to them, and ' +
+      'answering them afterwards. Support sits here rather than with work management because a ' +
+      'helpdesk is sold to the revenue side of the house.',
+  },
+  {
+    key: 'ops',
+    label: 'Finance & people ops',
+    short: 'Finance & people',
+    segments: ['fintech-ops', 'hr-ops'],
+    why:
+      'The back office: money in and out, and payroll, hiring and reviews. At 7 companies this is ' +
+      'the smallest group and the one where a single homepage moves a bar furthest.',
+  },
+];
+
+/**
+ * The smallest denominator that gets a mark drawn.
+ *
+ * At six companies one of them is 17 percentage points, which is already wider
+ * than most of the differences this page reports. At four it is 25 points, and
+ * a bar that one homepage edit moves a quarter of its length is a decoration.
+ * A cell below the floor is not rounded, not pooled and not quietly omitted --
+ * it is drawn as the words "too few to say" with its own n beside it.
+ */
+export const MIN_CELL_N = 6;
+
+/**
+ * How many of the five groups must clear the floor before a cut is drawn at all.
+ *
+ * A comparison across two or three groups of a sixty-company set is not a
+ * segment breakdown, it is two or three numbers with a chart around them.
+ */
+export const MIN_GROUPS_DRAWN = 4;
+
+/**
+ * The number of companies whose answer, if flipped, makes a spread meaningless.
+ *
+ * A cut whose extremes are this close is withheld rather than drawn with a
+ * caveat, because a reader looks at the bars and not at the caveat.
+ */
+export const FRAGILE_FLIPS = 2;
+
+const SEGMENT_TO_GROUP = new Map(
+  SEGMENT_GROUPS.flatMap((g) => g.segments.map((s) => [s, g.key]))
+);
+
+/** The group key a seed segment folds into, or null if the mapping misses it. */
+export function groupOfSegment(segment) {
+  return SEGMENT_TO_GROUP.get(segment) ?? null;
+}
+
+/**
+ * How many companies in `low` would have to change their answer for its share
+ * to reach `high`'s. The width of a difference, in companies.
+ *
+ * This is the number the copy on the site is required to print next to any
+ * comparison of two groups, because with cells of 7 to 16 it is usually one or
+ * two, and "go-to-market leads finance by 50 points" and "three companies
+ * separate them" are the same fact told honestly and dishonestly.
+ *
+ * Solved in integers -- the smallest k with
+ * `(low.yes + k) * high.readable >= high.yes * low.readable` -- so the answer
+ * is exact and the build stays byte-stable. Returns 0 when `low` already
+ * matches or beats `high`, and null when either cell has no denominator.
+ */
+export function flipsToTie(high, low) {
+  if (!high?.readable || !low?.readable) return null;
+  const gap = (high.yes * low.readable) - (low.yes * high.readable);
+  if (gap <= 0) return 0;
+  return Math.ceil(gap / high.readable);
+}
+
+/**
+ * The yes/no/unreadable test behind each cut, and what each denominator means.
+ *
+ * Every `read` returns `true`, `false`, or `null` for "we could not read this",
+ * and null is never folded into false. That is the same rule the rest of the
+ * file runs on, applied one group at a time, where it bites hardest: a segment
+ * cell has a tenth of the set's denominator and so a tenth of its tolerance for
+ * a missing value quietly becoming a zero.
+ *
+ * The list is fixed and every cut in it is computed. Which ones end up drawn is
+ * decided by the rules below from the numbers, not chosen here by looking at
+ * the answers -- picking the cuts that came out interesting is how a chart
+ * starts lying without anybody writing down a false number.
+ */
+const SEGMENT_CUTS = [
+  {
+    key: 'ai',
+    label: 'Uses AI or agent language',
+    // How the cut is named mid-sentence by the copy on the site. Authored
+    // rather than derived from `label`, because lower-casing a label to drop it
+    // into a sentence turns "AI" into "ai".
+    subject: 'AI and agent language',
+    denominator: 'companies whose headline, subhead or category label we can read',
+    read: (signals) => {
+      const values = AI_FIELDS.map((f) => signalValue(signals, f));
+      if (values.every((v) => !v)) return null;
+      return values.some((v) => aiTermsIn(v).length > 0);
+    },
+  },
+  {
+    key: 'platform',
+    label: 'Calls itself a platform',
+    subject: 'the word &ldquo;platform&rdquo;',
+    denominator: 'companies whose category label we can read',
+    read: (signals) => {
+      const label = signalValue(signals, 'category_label');
+      return label ? categoryNounOf(label) === 'platform' : null;
+    },
+  },
+  ...[...new Map([...CLAIM_KINDS.values()].map((k) => [k.key, k])).values()].map((kind) => ({
+    key: `proof-${kind.key}`,
+    label: `Proves with ${kind.label.toLowerCase()}`,
+    subject: `${kind.label.toLowerCase()} as proof`,
+    denominator: 'companies with at least one quantified claim we can read',
+    read: (signals) => {
+      const proof = signalJson(signals, 'proof_points');
+      if (!proof?.items?.length) return null;
+      return proof.items.some((item) => CLAIM_KINDS.get(item.kind)?.key === kind.key);
+    },
+  })),
+  {
+    key: 'free-tier',
+    label: 'Publishes a free tier',
+    subject: 'a published free tier',
+    denominator: 'companies whose pricing page we can read',
+    read: (signals) => {
+      const value = signalValue(signals, 'pricing_free_tier');
+      if (value !== 'yes' && value !== 'no') return null;
+      return value === 'yes';
+    },
+  },
+];
+
+/**
+ * Every cut, by group, with the decision about whether it may be drawn.
+ *
+ * The shape is deliberately verbose. `cells` carries the counts in the fixed
+ * group order for the table; `ranked` carries the drawable ones sorted for the
+ * chart; `spread` carries the width of the difference in companies; and
+ * `withheld` carries a machine-readable reason when the cut is not drawn, so
+ * the site can print why rather than silently showing five sections where a
+ * previous build showed eight.
+ *
+ * `share` is only present on a cell that cleared the floor, so a suppressed
+ * cell has no percentage for a renderer to reach for by accident.
+ */
+export function segmentBreakdown({ companies, series }) {
+  const rows = latestByCompany({ companies, series });
+
+  const members = new Map(SEGMENT_GROUPS.map((g) => [g.key, []]));
+  const ungrouped = [];
+  for (const row of rows) {
+    const key = groupOfSegment(row.segment);
+    if (key) members.get(key).push(row);
+    else ungrouped.push({ slug: row.slug, name: row.name, text: row.segment ?? null });
+  }
+
+  const groups = SEGMENT_GROUPS.map((g) => ({
+    key: g.key,
+    label: g.label,
+    short: g.short,
+    why: g.why,
+    n: members.get(g.key).length,
+    segments: g.segments
+      .map((s) => ({ segment: s, n: rows.filter((r) => r.segment === s).length }))
+      .sort((a, b) => b.n - a.n || a.segment.localeCompare(b.segment, 'en')),
+    companies: sortByName(members.get(g.key).map((r) => ({ slug: r.slug, name: r.name, text: r.segment }))),
+  }));
+
+  const cuts = SEGMENT_CUTS.map((cut) => {
+    const cells = SEGMENT_GROUPS.map((g) => cell(g, members.get(g.key), cut.read));
+
+    const drawable = cells.filter((c) => !c.suppressed);
+    const ranked = drawable
+      .slice()
+      .sort((a, b) => (b.yes * a.readable) - (a.yes * b.readable) || a.label.localeCompare(b.label, 'en'));
+
+    const top = ranked[0] ?? null;
+    const bottom = ranked.length > 1 ? ranked[ranked.length - 1] : null;
+    const runnerUp = ranked.length > 1 ? ranked[1] : null;
+    const spread = bottom ? flipsToTie(top, bottom) : null;
+
+    // First matching rule wins, so the reason a cut is missing is stable across
+    // builds rather than depending on which check happened to run first.
+    let withheld = null;
+    if (drawable.length < MIN_GROUPS_DRAWN) {
+      withheld = { rule: 'coverage', drawable: drawable.length, groups: cells.length };
+    } else if (spread != null && spread <= FRAGILE_FLIPS) {
+      withheld = { rule: 'flat', spread };
+    }
+
+    const totals = cells.reduce(
+      (acc, c) => ({
+        yes: acc.yes + c.yes,
+        no: acc.no + c.no,
+        unreadable: acc.unreadable + c.unreadable,
+      }),
+      { yes: 0, no: 0, unreadable: 0 }
+    );
+
+    return {
+      key: cut.key,
+      label: cut.label,
+      subject: cut.subject,
+      denominator: cut.denominator,
+      cells,
+      ranked,
+      top,
+      runner_up: runnerUp,
+      bottom,
+      spread,
+      // How many companies would tie the first two, which is the number that
+      // decides whether the *order* of the bars means anything at all.
+      lead_over_runner_up: runnerUp ? flipsToTie(top, runnerUp) : null,
+      drawn: withheld === null,
+      withheld,
+      overall: {
+        ...totals,
+        readable: totals.yes + totals.no,
+        tracked: rows.length,
+      },
+    };
+  });
+
+  return {
+    groups,
+    cuts,
+    drawn: cuts.filter((c) => c.drawn).map((c) => c.key),
+    withheld: cuts.filter((c) => !c.drawn).map((c) => c.key),
+    min_cell_n: MIN_CELL_N,
+    min_groups_drawn: MIN_GROUPS_DRAWN,
+    fragile_flips: FRAGILE_FLIPS,
+    // Never expected to be non-empty: every seed segment is mapped above. It is
+    // returned anyway, because the way this breaks is somebody adding a
+    // fifteenth segment to the seed and no chart ever mentioning those
+    // companies again.
+    ungrouped: sortByName(ungrouped),
+    coverage: coverage(rows.length, rows.length - ungrouped.length, ungrouped, null),
+  };
+}
+
+/** One group's answer to one cut. Nulls are their own count, never a `no`. */
+function cell(group, rows, read) {
+  const yes = [];
+  const no = [];
+  const unreadable = [];
+
+  for (const row of rows) {
+    const entry = { slug: row.slug, name: row.name };
+    const value = read(row.signals);
+    if (value === null) unreadable.push(entry);
+    else if (value) yes.push(entry);
+    else no.push(entry);
+  }
+
+  const readable = yes.length + no.length;
+  const suppressed = readable < MIN_CELL_N;
+
+  return {
+    group: group.key,
+    label: group.label,
+    short: group.short,
+    n: rows.length,
+    readable,
+    yes: yes.length,
+    no: no.length,
+    unreadable: unreadable.length,
+    // Absent rather than null-and-present on a suppressed cell: there is no
+    // percentage to print, so there is nothing here to print it from.
+    ...(suppressed ? {} : { share: Math.round((yes.length / readable) * 1000) / 10 }),
+    suppressed,
+    companies: {
+      yes: sortByName(yes),
+      no: sortByName(no),
+      unreadable: sortByName(unreadable),
+    },
+  };
+}
+
 // ------------------------------------------------------------------- bundle
 
 /**
@@ -700,6 +1045,7 @@ export function stateOfPositioning({ companies, series }) {
     proof_claims: proofClaims({ companies, series }),
     logo_mentions: logoMentions({ companies, series }),
     pricing: pricingShape({ companies, series }),
+    segments: segmentBreakdown({ companies, series }),
   };
 }
 
