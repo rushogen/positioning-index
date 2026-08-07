@@ -1,0 +1,444 @@
+/**
+ * The landing view: what 60 B2B SaaS companies are saying right now.
+ *
+ * This is rendered to a string at build time and written straight into
+ * docs/index.html, which means the whole of the page's actual argument -- the
+ * numbers, the charts, the coverage notes and the companies behind every bar --
+ * is there before a line of JavaScript runs. The tabs need a script; the
+ * findings do not.
+ *
+ * ON THE COPY
+ * -----------
+ * Every takeaway below is generated from the numbers rather than typed next to
+ * them, so it cannot drift out of date when the next crawl lands. That
+ * constrains the phrasing, deliberately. A sentence that would stop being true
+ * at a different value is a sentence this file cannot write, which rules out
+ * most of the ways a chart caption goes wrong.
+ *
+ * The register is the one the rest of the repository uses: say the number, say
+ * what it is out of, stop. Seven headlines out of 59 is seven headlines out of
+ * 59. It is not a trend, a shift, a wave, or the future of anything, and the
+ * counts here are far too small to carry a word like "dominant".
+ */
+
+import { barChart, companyLink, coverageNote, detailsTable, escapeHtml, stackChart } from './charts.js';
+
+/** The whole landing view, as HTML. */
+export function renderPositioning(insights) {
+  return [
+    kpiRow(insights),
+    headlineSection(insights.headline_words),
+    categorySection(insights.category_nouns),
+    aiSection(insights.ai_mentions),
+    proofSection(insights.proof_claims),
+    logoSection(insights.logo_mentions),
+    pricingSection(insights.pricing),
+  ].join('\n\n');
+}
+
+// ------------------------------------------------------------------ kpi row
+
+function kpiRow({ headline_words: words, category_nouns: nouns, ai_mentions: ai, pricing }) {
+  const platform = nouns.groups.find((g) => g.noun === 'platform');
+  const topWord = words.words[0];
+
+  const tiles = [
+    {
+      label: 'Companies read',
+      value: words.coverage.tracked,
+      sub: `${words.coverage.readable} with a readable hero headline`,
+    },
+    {
+      label: 'Say AI or agents',
+      value: ai.mentions.length,
+      sub: `of ${ai.coverage.readable} readable, in headline, subhead or category`,
+    },
+    {
+      label: 'Call themselves a platform',
+      value: platform ? platform.n : 0,
+      sub: `of ${nouns.coverage.readable} readable category labels`,
+    },
+    {
+      label: `Headlines saying &ldquo;${escapeHtml(topWord?.word ?? '&mdash;')}&rdquo;`,
+      value: topWord?.n ?? 0,
+      sub: `of ${words.coverage.readable}, the most of any word`,
+    },
+  ];
+
+  return '<dl class="kpis">\n' + tiles.map((t) =>
+    `<div><dt>${t.label}</dt><dd>${t.value}</dd><p>${t.sub}</p></div>`
+  ).join('\n') + '\n</dl>';
+}
+
+// --------------------------------------------------------------- 1 headlines
+
+function headlineSection(words) {
+  const [first, second] = words.words;
+  const platform = words.words.find((w) => w.word === 'platform');
+
+  const takeaway = first
+    ? `The word most B2B SaaS homepages reach for right now is <b>&ldquo;${escapeHtml(first.word)}&rdquo;</b>, ` +
+      `in ${first.n} of ${words.coverage.readable} hero headlines` +
+      (second ? `, just ahead of &ldquo;${escapeHtml(second.word)}&rdquo; at ${second.n}` : '') +
+      (platform && platform !== first ? `, with the old default &ldquo;platform&rdquo; on ${platform.n}` : '') +
+      '. Two companies separate the top three, so this is a photograph of one morning, not a trend.'
+    : 'No hero headline is currently readable.';
+
+  return section({
+    id: 'p-headlines',
+    heading: 'What the headlines say',
+    takeaway,
+    chart: barChart({
+      rows: words.words.map((w) => ({ label: w.word, n: w.n, note: `${w.n} of ${words.coverage.readable} headlines` })),
+    }),
+    coverage: coverageNote(words.coverage, { unit: 'companies', reason: 'no hero headline extracted' }),
+    method:
+      'Counted once per company, not once per occurrence, so a headline that repeats a word still votes once. ' +
+      'Words are lowercased and split on punctuation, nothing is stemmed &mdash; &ldquo;agent&rdquo; and &ldquo;agents&rdquo; are ' +
+      'different claims &mdash; and the standard English stopword list is removed along with everything ' +
+      `shorter than three letters. That last rule is what keeps &ldquo;AI&rdquo; out of this chart; it has its own ` +
+      `section below. ${words.distinct_words} distinct words appear in total, the great majority of them once.`,
+    inspect: detailsTable({
+      summary: 'Show the headlines behind each word',
+      columns: [
+        { label: 'Word', get: (w) => `<b>${escapeHtml(w.word)}</b>` },
+        { label: 'Companies', class: 'num', get: (w) => String(w.n) },
+        {
+          label: 'The headlines',
+          get: (w) => '<ul class="quotes">' + w.companies.map((c) =>
+            `<li>${companyLink(c)} &mdash; ${escapeHtml(c.text)}</li>`).join('') + '</ul>',
+        },
+      ],
+      rows: words.words,
+    }),
+  });
+}
+
+// -------------------------------------------------------------- 2 categories
+
+function categorySection(nouns) {
+  const [first, second] = nouns.groups;
+
+  const takeaway = first
+    ? `Asked what they <i>are</i>, <b>${first.n} of ${nouns.coverage.readable}</b> companies still say ` +
+      `<b>${escapeHtml(first.noun)}</b>` +
+      (second
+        ? `, nearly ${Math.floor(first.n / second.n)} times the next answer, &ldquo;${escapeHtml(second.noun)}&rdquo;, at ${second.n}` +
+          (second.n < 10 ? ', and nothing else reaches double figures' : '')
+        : '') +
+      '. Whatever the headlines are doing, the noun has not moved with them.'
+    : 'No category label is currently readable.';
+
+  const rows = nouns.groups.map((g) => ({
+    label: g.noun,
+    n: g.n,
+    note: `${g.n} of ${nouns.coverage.readable} category labels`,
+  }));
+  if (nouns.unmatched.length) {
+    // Quiet, because this row measures the vocabulary rather than the market.
+    rows.push({
+      label: 'no noun we recognise',
+      n: nouns.unmatched.length,
+      tone: 'quiet',
+      note: 'the label carries no noun in our vocabulary',
+    });
+  }
+
+  return section({
+    id: 'p-categories',
+    heading: 'What they call themselves',
+    takeaway,
+    chart: barChart({ rows }),
+    coverage: coverageNote(nouns.coverage, { unit: 'companies', reason: 'no category label extracted' }),
+    method:
+      'The category label is the noun phrase a company uses for itself &mdash; &ldquo;the AI workspace&rdquo;, ' +
+      '&ldquo;CRM for agentic revenue&rdquo;. Each label is grouped by the first noun in it that appears in a ' +
+      'fixed vocabulary, read left to right, because English puts the head noun before its qualifiers: ' +
+      '&ldquo;AI platform for marketers&rdquo; is a platform, not a marketer. Singular and plural are grouped ' +
+      'together here, unlike in the headline count, because as a self-description they are the same claim. ' +
+      'A label with no noun we know is not forced into a bucket &mdash; it is shown as it is. ' +
+      'Extraction of this signal is a scored guess over a fixed vocabulary and is the least reliable of the twelve.',
+    inspect: detailsTable({
+      summary: 'Show every category label, grouped',
+      columns: [
+        { label: 'Noun', get: (g) => `<b>${escapeHtml(g.noun)}</b>` },
+        { label: 'Companies', class: 'num', get: (g) => String(g.n) },
+        {
+          label: 'The labels',
+          get: (g) => '<ul class="quotes">' + g.companies.map((c) =>
+            `<li>${companyLink(c)} &mdash; ${escapeHtml(c.text)}</li>`).join('') + '</ul>',
+        },
+      ],
+      rows: nouns.groups.concat(
+        nouns.unmatched.length
+          ? [{ noun: 'no noun we recognise', n: nouns.unmatched.length, companies: nouns.unmatched }]
+          : []
+      ),
+    }),
+  });
+}
+
+// ---------------------------------------------------------------------- 3 AI
+
+const FIELD_LABELS = {
+  headline: 'hero headline',
+  subhead: 'hero subhead',
+  category_label: 'category label',
+};
+
+function aiSection(ai) {
+  const mentions = ai.mentions.length;
+  const quiet = ai.quiet.length;
+  const quietNames = ai.quiet.slice(0, 3).map((c) => c.name);
+
+  const takeaway =
+    `<b>${mentions} of ${ai.coverage.readable}</b> companies put AI, agent, copilot or autonomous language ` +
+    `into the first three things a visitor reads. The ${quiet} that do not are the interesting list` +
+    (quietNames.length ? `, and it includes ${escapeHtml(quietNames.join(', '))}` : '') +
+    '.';
+
+  const stack = stackChart({
+    segments: [
+      { label: 'use AI or agent language', n: mentions, tone: 'lead' },
+      { label: 'do not', n: quiet, tone: 'quiet' },
+      {
+        label: 'not readable',
+        n: ai.coverage.unreadable,
+        tone: 'none',
+        note: '(we could read none of the three fields)',
+      },
+    ],
+  });
+
+  const byTerm = barChart({
+    rows: ai.by_term.map((t) => ({
+      label: t.term === 'ai' ? 'AI' : t.term,
+      n: t.n,
+      note: `${t.n} of ${ai.coverage.readable} companies`,
+    })),
+  });
+
+  const byField = barChart({
+    rows: ai.by_field.map((f) => ({
+      label: FIELD_LABELS[f.field] ?? f.field,
+      n: f.n,
+      note: `${f.n} of ${ai.coverage.readable} companies`,
+    })),
+  });
+
+  return section({
+    id: 'p-ai',
+    heading: 'How many are selling AI',
+    takeaway,
+    chart:
+      `${stack}\n` +
+      `<div class="chart-pair">\n` +
+      `<div><h4>Which word</h4>${byTerm}</div>\n` +
+      `<div><h4>Where it appears</h4>${byField}</div>\n` +
+      `</div>`,
+    coverage: coverageNote(ai.coverage, {
+      unit: 'companies',
+      reason: 'none of the headline, subhead or category label could be read',
+    }),
+    method:
+      'A company counts if any of its hero headline, hero subhead or category label contains one of four ' +
+      'term families, matched as whole words: <b>ai</b> (so &ldquo;AI-powered&rdquo; counts and &ldquo;said&rdquo; does not), ' +
+      '<b>agent / agents / agentic</b>, <b>copilot</b>, <b>autonomous / autonomy</b>. ' +
+      'The list is the definition &mdash; nothing is fuzzy-matched, and a company that sells AI without using ' +
+      'any of these four words is counted as not using them, which is the honest limit of a word count. ' +
+      'A company appears once no matter how many of the three fields mention it, so the two smaller charts ' +
+      'below add up to more than the number above.',
+    inspect: detailsTable({
+      summary: `Show all ${mentions + quiet} companies and what they say`,
+      columns: [
+        { label: 'Company', get: (c) => companyLink(c) },
+        { label: 'Uses AI language', get: (c) => (c.terms ? escapeHtml(c.terms.map((t) => (t === 'ai' ? 'AI' : t)).join(', ')) : '<span class="quiet">no</span>') },
+        { label: 'Where', get: (c) => escapeHtml((c.fields ?? []).map((f) => FIELD_LABELS[f] ?? f).join(', ')) },
+        { label: 'Headline', get: (c) => escapeHtml(c.text ?? '') },
+      ],
+      rows: ai.mentions.concat(ai.quiet).sort((a, b) => a.name.localeCompare(b.name, 'en')),
+    }),
+  });
+}
+
+// ----------------------------------------------------------- 4 proof points
+
+function proofSection(proof) {
+  const [first, second] = proof.kinds;
+  const time = proof.kinds.find((k) => k.key === 'time');
+
+  const takeaway = first
+    ? `When these companies prove something, they count things. ${first.n} of ${proof.coverage.readable} ` +
+      `use a <b>${escapeHtml(first.label.toLowerCase())}</b> claim` +
+      (second ? ` and ${second.n} use a ${escapeHtml(second.label.toLowerCase())} claim` : '') +
+      (time ? `. Only ${time.n} promise a time to result, which is the claim buyers actually ask about` : '') +
+      '.'
+    : 'No proof points are currently readable.';
+
+  return section({
+    id: 'p-proof',
+    heading: 'What they use as proof',
+    takeaway,
+    chart: barChart({
+      rows: proof.kinds.map((k) => ({
+        label: k.label,
+        n: k.n,
+        note: `${k.n} companies, ${k.claims} claims`,
+      })),
+    }),
+    coverage: coverageNote(proof.coverage, { unit: 'companies', reason: 'no quantified claim extracted' }),
+    method:
+      `Bars count <b>companies</b>, not claims: a homepage with eleven percentage claims has one opinion ` +
+      `about how to prove things, and counting claims would let one verbose page outvote ten others. ` +
+      `${proof.total_claims} individual claims were read across ${proof.coverage.readable} companies, and a company ` +
+      'appears in every category it uses, so the bars sum to more than that. ' +
+      '&ldquo;40% faster&rdquo; and &ldquo;faster by 40%&rdquo; are one category, because the difference between them is ' +
+      'a property of our regexes rather than of the market.',
+    inspect: detailsTable({
+      summary: 'Show the claims behind each category',
+      columns: [
+        { label: 'Category', get: (k) => `<b>${escapeHtml(k.label)}</b><br><span class="quiet">${escapeHtml(k.note)}</span>` },
+        { label: 'Companies', class: 'num', get: (k) => String(k.n) },
+        {
+          label: 'The claims',
+          get: (k) => '<ul class="quotes">' + k.companies.map((c) =>
+            `<li>${companyLink(c)} &mdash; ${escapeHtml(c.text)}</li>`).join('') + '</ul>',
+        },
+      ],
+      rows: proof.kinds,
+    }),
+  });
+}
+
+// ----------------------------------------------------------------- 5 logos
+
+function logoSection(logos) {
+  const [first, second] = logos.logos;
+
+  const takeaway = first
+    ? `The customer named on the most homepages is <b>${escapeHtml(first.logo)}</b>, on ${first.n} of ` +
+      `${logos.coverage.readable} readable logo walls` +
+      (second ? `, then ${escapeHtml(second.logo)} on ${second.n}` : '') +
+      `. With ${logos.distinct_logos} distinct names across ${logos.coverage.readable} walls and none above ` +
+      `${first.n}, there is no logo the whole category leans on.`
+    : 'No customer logos are currently readable.';
+
+  return section({
+    id: 'p-logos',
+    heading: 'Whose logo is everyone using',
+    takeaway,
+    chart: barChart({
+      rows: logos.logos.map((l) => ({
+        label: l.logo,
+        n: l.n,
+        note: `cited by ${l.n} of ${logos.coverage.readable} companies`,
+      })),
+    }),
+    coverage: coverageNote(logos.coverage, { unit: 'companies', reason: 'no logo wall this extractor could read' }),
+    method:
+      'This is the shallowest measurement on the page and the numbers below are a floor, not a count. ' +
+      'Logo names are read from image <code>alt</code> text, image filenames and inline SVG titles, so a wall ' +
+      'built from CSS sprites or a single flat image reads as no logos at all &mdash; which is why 14 companies ' +
+      'are missing rather than empty. Spellings are case-folded before counting, because the same customer is ' +
+      '&ldquo;OpenAI&rdquo; on one page and &ldquo;Openai&rdquo; on the next; the spelling shown is the most common one.',
+    inspect: detailsTable({
+      summary: 'Show who cites each logo',
+      columns: [
+        { label: 'Logo', get: (l) => `<b>${escapeHtml(l.logo)}</b>` },
+        { label: 'Cited by', class: 'num', get: (l) => String(l.n) },
+        { label: 'On these homepages', get: (l) => l.companies.map(companyLink).join(', ') },
+      ],
+      rows: logos.logos,
+    }),
+  });
+}
+
+// ---------------------------------------------------------------- 6 pricing
+
+function pricingSection(pricing) {
+  const free = pricing.free_tier;
+  const entry = pricing.entry_price;
+  const readable = free.coverage.readable;
+
+  const takeaway =
+    `Of the ${readable} pricing pages this crawler can read, <b>${free.yes.length} publish a free tier</b> and ` +
+    `${free.no.length} do not. That says almost nothing about the other ${free.coverage.unreadable} companies: ` +
+    'their pricing is behind a "contact sales" button or rendered by JavaScript we do not run, and a page we ' +
+    'cannot read is not a company without a free plan.';
+
+  const freeStack = stackChart({
+    segments: [
+      { label: 'publish a free tier', n: free.yes.length, tone: 'lead' },
+      { label: 'publish pricing, no free tier', n: free.no.length, tone: 'quiet' },
+      {
+        label: 'pricing not readable',
+        n: free.coverage.unreadable,
+        tone: 'none',
+        note: '(not the same as having no free tier)',
+      },
+    ],
+  });
+
+  const currencies = entry.currencies.map((c) => `${c.n} in ${escapeHtml(c.currency)}`).join(', ');
+
+  const buckets = barChart({
+    rows: entry.buckets.map((b) => ({
+      label: b.label,
+      n: b.n,
+      note: `${b.n} of ${entry.coverage.readable} readable entry prices`,
+    })),
+  });
+
+  return section({
+    id: 'p-pricing',
+    heading: 'What the pricing pages show',
+    takeaway,
+    chart:
+      `${freeStack}\n` +
+      `<h4 class="sub-chart-head">Cheapest published paid price, where we could read one ` +
+      `(${entry.coverage.readable} companies)</h4>\n${buckets}`,
+    coverage: coverageNote(free.coverage, {
+      unit: 'companies',
+      reason: 'pricing page blocked, behind "contact sales", or rendered client-side',
+    }),
+    method:
+      `Two different denominators, kept apart because they are two different measurements: ${readable} pricing ` +
+      `pages yield a readable tier list, and only ${entry.coverage.readable} of those also yield a number. ` +
+      `${pricing.tiers.contact_sales.length} of the readable pages carry at least one tier with no price on it at all. ` +
+      `Amounts are not currency-converted &mdash; ${currencies} &mdash; because a converted figure is a number no page ` +
+      'ever published. The lowest bucket is real rather than a rounding artefact: a usage-priced product’s ' +
+      'cheapest published number is a per-unit rate, not a seat price. ' +
+      `The median of the ${entry.coverage.readable} readable entry prices is ${entry.median}, which describes these ` +
+      'few numbers and is not a market price.',
+    inspect:
+      detailsTable({
+        summary: `Show the ${entry.coverage.readable} readable entry prices`,
+        columns: [
+          { label: 'Company', get: (c) => companyLink(c) },
+          { label: 'Entry price', class: 'mono', get: (c) => escapeHtml(c.text) },
+          { label: 'Tier', get: (c) => escapeHtml(c.tier ?? '—') },
+        ],
+        rows: entry.companies,
+      }) +
+      detailsTable({
+        summary: `Show the ${free.coverage.unreadable} companies whose pricing we cannot read`,
+        columns: [
+          { label: 'Company', get: (c) => companyLink(c) },
+        ],
+        rows: free.coverage.missing ?? [],
+      }),
+  });
+}
+
+// ------------------------------------------------------------------ helpers
+
+function section({ id, heading, takeaway, chart, coverage, method, inspect }) {
+  return `<section class="finding" id="${escapeHtml(id)}">
+<h3>${escapeHtml(heading)}</h3>
+<p class="takeaway">${takeaway}</p>
+${chart}
+${coverage}
+<details class="method"><summary>How this is measured</summary><p>${method}</p></details>
+${inspect}
+</section>`;
+}
