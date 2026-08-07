@@ -1,0 +1,146 @@
+# Run the crawl and commit the result.
+#
+# WHY workflow_dispatch IS THE PRIMARY TRIGGER
+# --------------------------------------------
+# GitHub disables scheduled workflows in a repository that has had no activity
+# for 60 days. It emails the owner and stops; it does not fail, and nothing in
+# the data says anything happened. For an archive whose entire value is "we
+# looked on this date and here is what we saw", a silent stop is the worst
+# possible failure: months later the history looks like a market that went quiet
+# rather than a crawler that did.
+#
+# So the button is the contract. A run happens because someone asked for one,
+# and data/runs.ndjson gets a line every time -- which means a gap in the ledger
+# means exactly one thing, and it is never ambiguous.
+#
+# The schedule below is commented out on purpose. Uncommenting it is fine, as
+# long as you know that (a) it will be disabled after 60 quiet days, and (b) the
+# only thing that keeps it alive is pushing to the repository, which a bot
+# commit from this very workflow does NOT count as. Treat it as a convenience
+# that decays, not as the mechanism.
+
+name: crawl
+
+on:
+  workflow_dispatch:
+    inputs:
+      scope:
+        description: 'What to crawl'
+        type: choice
+        default: batch
+        options: [batch, all, company]
+      company:
+        description: 'Company slug, when scope is "company" (e.g. linear)'
+        type: string
+        required: false
+      limit:
+        description: 'Batch size, when scope is "batch"'
+        type: string
+        default: '12'
+      dry_run:
+        description: 'Fetch and extract, write nothing'
+        type: boolean
+        default: false
+
+  # schedule:
+  #   # 06:17 UTC. Off-the-hour on purpose: everybody's cron fires at :00.
+  #   - cron: '17 6 * * *'
+
+# Needed to push the crawl result back. Nothing else is required, and nothing
+# else is granted.
+permissions:
+  contents: write
+
+# Two manual runs must never interleave: both would read the same ledger, both
+# would append, and one would push over the other's commit. Queue them instead
+# of cancelling -- a half-finished crawl that never wrote its run record is the
+# one outcome this project refuses to produce.
+concurrency:
+  group: crawl
+  cancel-in-progress: false
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      # No dependencies to install: the project has none. This is the whole
+      # build step.
+      - name: Test
+        run: npm test
+
+      - name: Crawl
+        id: crawl
+        env:
+          SCOPE: ${{ inputs.scope }}
+          COMPANY: ${{ inputs.company }}
+          LIMIT: ${{ inputs.limit }}
+          DRY_RUN: ${{ inputs.dry_run }}
+        run: |
+          set -euo pipefail
+          args=()
+          case "${SCOPE:-batch}" in
+            all)     args+=(--all) ;;
+            company)
+              if [ -z "${COMPANY:-}" ]; then
+                echo "::error::scope=company requires a company slug"; exit 1
+              fi
+              args+=(--company "$COMPANY") ;;
+            *)       args+=(--limit "${LIMIT:-12}") ;;
+          esac
+          if [ "${DRY_RUN:-false}" = "true" ]; then args+=(--dry-run); fi
+          node bin/crawl.js "${args[@]}"
+
+      - name: Build the site
+        if: ${{ inputs.dry_run != true }}
+        run: npm run build
+
+      - name: Commit
+        if: ${{ inputs.dry_run != true }}
+        env:
+          MESSAGE: ${{ steps.crawl.outputs.commit_message }}
+        run: |
+          set -euo pipefail
+          git config user.name  'positioning-index'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data docs
+          if git diff --cached --quiet; then
+            # Should not happen: a run always appends to data/runs.ndjson. If it
+            # does, say so loudly rather than reporting a green, empty success.
+            echo "::warning::nothing to commit -- the run left no record, which should be impossible"
+            exit 0
+          fi
+          # Three layers stop this from retriggering itself, in order of how much
+          # they are actually relied on:
+          #   1. there is no push: trigger in this file, so a commit triggers nothing
+          #   2. pushes made with GITHUB_TOKEN do not start workflow runs at all
+          #   3. [skip ci], for whoever adds a push: trigger later
+          git commit \
+            -m "$MESSAGE" \
+            -m "Ran on ${{ github.run_id }} via ${{ github.event_name }}." \
+            -m "[skip ci]"
+          git push
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "### Crawl"
+            echo ""
+            echo "- targets: ${{ steps.crawl.outputs.targets || '—' }}"
+            echo "- changes: ${{ steps.crawl.outputs.changes || '—' }}"
+            echo "- blocked: ${{ steps.crawl.outputs.blocked || '—' }}"
+            echo "- errors:  ${{ steps.crawl.outputs.errors || '—' }}"
+            echo ""
+            echo "A high blocked count is expected here and is not a fault: GitHub"
+            echo "runners use cloud IP ranges, and a number of the tracked sites"
+            echo "refuse identified crawlers from them. Blocked is recorded as"
+            echo "blocked, never as an error and never as silence."
+          } >> "$GITHUB_STEP_SUMMARY"
