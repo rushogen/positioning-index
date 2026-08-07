@@ -39,7 +39,7 @@ import { FileStore } from '../src/store/files.js';
 import { SIGNALS } from '../src/extract/index.js';
 import { BOT_NAME, CONTACT_URL, USER_AGENT } from '../src/crawl/agent.js';
 import {
-  categoryDistribution, companyDetail, companyHealth, indexStats, recentChanges,
+  categoryDistribution, companyDetail, companyHealth, indexStats, partitionEvents, recentChanges,
 } from '../src/report.js';
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
@@ -69,6 +69,12 @@ const stats = indexStats(model);
 const health = companyHealth(model);
 const changes = recentChanges(events, { limit: 500 });
 
+// Everything data/events.ndjson says was published in error. It is written out
+// on purpose and linked from the page: a corrections log that only its author
+// can read is a press release. `changes` above already excludes these -- that
+// exclusion is what makes the retraction mean anything.
+const { retracted } = partitionEvents(events);
+
 // --------------------------------------------------------------------- write
 
 await rm(outDir, { recursive: true, force: true });
@@ -89,6 +95,11 @@ for (const name of ['index.html', 'style.css', 'app.js']) {
 // download .md.
 await copyFile(join(ROOT, 'METHODOLOGY.md'), join(outDir, 'methodology.txt'));
 
+// The corrections log ships with the site, not just with the repository. An
+// index whose failures are only visible to people who clone it is not being
+// honest, it is being quiet.
+await copyFile(join(ROOT, 'CORRECTIONS.md'), join(outDir, 'corrections.txt'));
+
 await writeFile(join(outDir, 'crawler.txt'), crawlerDisclosure(), 'utf8');
 await writeFile(join(outDir, 'robots.txt'), 'User-agent: *\nAllow: /\n', 'utf8');
 
@@ -102,6 +113,11 @@ await writeJson('api/stats.json', {
 await writeJson('api/companies.json', { companies });
 await writeJson('api/health.json', { companies: health });
 await writeJson('api/changes.json', { changes });
+await writeJson('api/retractions.json', {
+  retracted: retracted
+    .slice()
+    .sort((a, b) => b.detected_at.localeCompare(a.detected_at) || a.slug.localeCompare(b.slug) || a.signal.localeCompare(b.signal)),
+});
 
 for (const company of companies) {
   const detail = companyDetail({
@@ -138,7 +154,7 @@ for (const company of companies) {
 console.log(
   `built ${outDir}\n` +
   `  ${companies.length} companies, ${stats.observations} observation line(s), ` +
-  `${events.length} change event(s), ${runs.length} run(s)\n` +
+  `${stats.changes} published change event(s), ${retracted.length} retracted, ${runs.length} run(s)\n` +
   `  as of ${asOf}${lastRun ? '' : '  (no crawl has been run yet)'}`
 );
 

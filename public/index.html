@@ -67,12 +67,29 @@
       </label>
     </div>
     <p class="note">
-      A change is only published when the page was read successfully and the
-      value moved from one known value to another. When extraction fails, the
-      index records a fault and says nothing &mdash; a broken selector is not a
-      repositioning. <a href="methodology.txt">How each signal is measured</a>.
+      A change is only published when the page was read successfully, from the
+      same place as last time, and the value moved from one known value to
+      another. When extraction fails, or when the crawl ran from a different
+      country than the previous reading, the index records the observation and
+      says nothing &mdash; a broken selector is not a repositioning, and neither
+      is a price quoted in a different currency because the request came from a
+      different continent.
+      <a href="methodology.txt">How each signal is measured</a> &middot;
+      <a href="corrections.txt">Corrections log</a>.
     </p>
     <ol class="feed" id="feed"><li class="loading">Loading&hellip;</li></ol>
+
+    <section id="retractions-section" hidden>
+      <h3>Retracted</h3>
+      <p class="note">
+        Claims this index published and then withdrew. They are excluded from
+        the feed above and kept here instead, struck through, with the reason.
+        Nothing is deleted: the wrong line is still in
+        <code>data/events.ndjson</code>, with a later line saying it was
+        withdrawn. <a href="corrections.txt">What went wrong, in full</a>.
+      </p>
+      <ol class="feed" id="retractions"></ol>
+    </section>
   </section>
 
   <!-- --------------------------------------------------------- companies -->
@@ -147,7 +164,10 @@
         and from the pricing page the tier list, entry price, whether a free tier
         is published, and any seat minimum.
       </p>
-      <p><a href="methodology.txt">Methodology, v1.1</a></p>
+      <p>
+        <a href="methodology.txt">Methodology, v1.2</a> &middot;
+        <a href="corrections.txt">Corrections</a>
+      </p>
     </div>
     <div>
       <h3>How it crawls</h3>

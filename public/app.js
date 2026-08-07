@@ -32,12 +32,16 @@
 const API = {
   stats: 'api/stats.json',
   changes: 'api/changes.json',
+  retractions: 'api/retractions.json',
   companies: 'api/companies.json',
   health: 'api/health.json',
   company: (slug) => `api/company/${encodeURIComponent(slug)}.json`,
 };
 
-const state = { stats: null, changes: null, health: null, signalMeta: {}, signalFilter: '', segmentFilter: '' };
+const state = {
+  stats: null, changes: null, retracted: null, health: null,
+  signalMeta: {}, signalFilter: '', segmentFilter: '',
+};
 
 // --------------------------------------------------------------- utilities
 
@@ -146,15 +150,21 @@ async function loadStats() {
 
 function renderChange(c) {
   const isText = c.before_value != null && c.after_value != null;
-  return h('li', { class: 'change' },
+  return h('li', { class: `change${c.retracted ? ' retracted' : ''}` },
     h('div', { class: 'change-head' },
       h('span', { class: 'co' }, h('a', { href: `#/company/${c.slug}` }, c.name)),
       h('span', { class: `tag ${c.change_type}` }, c.change_type),
       h('span', { class: 'tag' }, signalLabel(c.signal)),
       c.oscillating ? h('span', { class: 'tag oscillating', title: 'This page has held this value before. Most likely an A/B test cycling rather than a repositioning.' }, 'A/B?') : null,
+      c.retracted ? h('span', { class: 'tag retracted', title: 'Published in error and withdrawn. It is kept here, struck through, rather than deleted.' }, 'retracted') : null,
       h('time', { datetime: c.detected_at }, fmtDate(c.detected_at)),
     ),
     h('p', { class: 'summary' }, c.summary || `${signalLabel(c.signal)} changed`),
+    c.retracted
+      ? h('p', { class: 'why' },
+          `Retracted ${fmtDate(c.retracted_at)}: ${c.retraction_reason || 'published in error'} `,
+          h('a', { href: 'corrections.txt' }, 'Corrections log'))
+      : null,
     isText
       ? h('div', { class: 'diff' },
           h('p', { class: 'was' }, h('span', { class: 'marker' }, '− '), c.before_value),
@@ -193,9 +203,34 @@ async function renderFeed() {
         ? 'No changes recorded for that signal yet.'
         : 'No changes recorded yet. The first sweep establishes a baseline and publishes nothing; ' +
           'differences appear from the second sweep onward.'));
-    return;
+  } else {
+    list.replaceChildren(...shown.map(renderChange));
   }
-  list.replaceChildren(...shown.map(renderChange));
+
+  await renderRetractions();
+}
+
+/**
+ * Claims this index published and then withdrew.
+ *
+ * They are excluded from the feed above -- that exclusion is the whole point of
+ * a retraction -- and shown here instead, struck through, with the reason. An
+ * index that hides its own withdrawn claims is asking to be trusted rather than
+ * checked, and this one has already been wrong once in public.
+ */
+async function renderRetractions() {
+  const section = $('#retractions-section');
+  const list = $('#retractions');
+  if (!state.retracted) {
+    try {
+      state.retracted = (await getJSON(API.retractions)).retracted || [];
+    } catch {
+      state.retracted = [];
+    }
+  }
+  const shown = state.retracted.filter((c) => !state.signalFilter || c.signal === state.signalFilter);
+  section.hidden = shown.length === 0;
+  if (shown.length) list.replaceChildren(...shown.map(renderChange));
 }
 
 // --------------------------------------------------------------- companies
@@ -262,6 +297,7 @@ const HEALTH_MEANING = {
   ok: 'read successfully and every signal is extracting',
   degraded: 'read successfully, but at least one signal is a suspected extraction failure',
   'structure-changed': 'the page parsed but we understood far less of it than before; change detection is paused',
+  'origin-shift': 'read successfully, but from a different country or machine than last time; prices and other locale-sensitive signals are recorded and held back rather than published',
   stale: 'no successful read recently',
   error: 'the last attempt failed',
   blocked: 'the site declines automated clients, or robots.txt disallows it',
@@ -289,7 +325,7 @@ async function renderHealth() {
 
   // Problems first, then healthy, then never-attempted. Someone opening this
   // page is asking "what is broken", so the answer goes at the top.
-  const order = ['error', 'stale', 'structure-changed', 'degraded', 'blocked', 'ok', 'pending'];
+  const order = ['error', 'stale', 'structure-changed', 'origin-shift', 'degraded', 'blocked', 'ok', 'pending'];
   const sorted = [...data.companies].sort((a, b) => order.indexOf(a.health) - order.indexOf(b.health) || a.name.localeCompare(b.name));
 
   tbody.replaceChildren(...sorted.map((c) => h('tr', {},
