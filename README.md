@@ -132,7 +132,7 @@ reservation of rights is not a grey area. So:
 - **Identified.** The User-Agent is truthful and links to a disclosure page:
 
   ```
-  PositioningIndexBot/1.0 (+https://github.com/rshogenov/positioning-index#crawling-policy;
+  PositioningIndexBot/1.0 (+https://github.com/rushogen/positioning-index#crawling-policy;
   marketing-page positioning research; one request per page per day; honours robots.txt)
   ```
 

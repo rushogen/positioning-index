@@ -22,7 +22,7 @@ export const BOT_VERSION = '1.0';
 export const BOT_TOKEN = BOT_NAME.toLowerCase();
 
 /** Where a site operator can read about us and find an opt-out. */
-export const CONTACT_URL = 'https://github.com/rshogenov/positioning-index#crawling-policy';
+export const CONTACT_URL = 'https://github.com/rushogen/positioning-index#crawling-policy';
 
 export const USER_AGENT =
   `${BOT_NAME}/${BOT_VERSION} (+${CONTACT_URL}; marketing-page positioning research; ` +
