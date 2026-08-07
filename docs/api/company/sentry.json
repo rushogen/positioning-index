@@ -10,8 +10,8 @@
  "signals": [
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-07T15:52:16Z",
-   "last_good_at": "2026-08-07T15:52:16Z",
+   "last_observed_at": "2026-08-07T23:19:53Z",
+   "last_good_at": "2026-08-07T23:19:53Z",
    "last_good_value": "error tracking software",
    "last_good_json": null,
    "last_good_hash": "36e19e53",
@@ -22,12 +22,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"36e19e53\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-07T15:52:16Z",
-   "last_good_at": "2026-08-07T15:52:16Z",
+   "last_observed_at": "2026-08-07T23:19:53Z",
+   "last_good_at": "2026-08-07T23:19:53Z",
    "last_good_value": "Anthropic, Disney, Instacart, quote mark",
    "last_good_json": "{\"names\":[\"Anthropic\",\"Disney\",\"Instacart\",\"quote mark\"],\"count\":4,\"lead\":\"Loved by developers worldwide <div class=\\\"flex-grid-cell \\\" style=\\\"--\"}",
    "last_good_hash": "c306ebad",
@@ -38,12 +40,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"c306ebad\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-07T15:52:16Z",
-   "last_good_at": "2026-08-07T15:52:16Z",
+   "last_observed_at": "2026-08-07T23:19:53Z",
+   "last_good_at": "2026-08-07T23:19:53Z",
    "last_good_value": "Code breaks, fix it faster",
    "last_good_json": null,
    "last_good_hash": "4069cc41",
@@ -54,12 +58,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"4069cc41\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-07T15:52:16Z",
-   "last_good_at": "2026-08-07T15:52:16Z",
+   "last_observed_at": "2026-08-07T23:19:53Z",
+   "last_good_at": "2026-08-07T23:19:53Z",
    "last_good_value": "Application performance monitoring for developers & software teams to see errors clearer, solve issues faster & continue learning continuously. Get started at sentry.io.",
    "last_good_json": null,
    "last_good_hash": "decbba8f",
@@ -70,12 +76,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"decbba8f\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-07T15:52:16Z",
-   "last_good_at": "2026-08-07T15:52:16Z",
+   "last_observed_at": "2026-08-07T23:19:53Z",
+   "last_good_at": "2026-08-07T23:19:53Z",
    "last_good_value": "Application Performance Monitoring & Error Tracking Software | Sentry",
    "last_good_json": null,
    "last_good_hash": "7b0e85e0",
@@ -86,12 +94,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"7b0e85e0\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-07T15:53:16Z",
-   "last_good_at": "2026-08-07T15:53:16Z",
+   "last_observed_at": "2026-08-07T23:18:52Z",
+   "last_good_at": "2026-08-07T23:18:52Z",
    "last_good_value": "USD 26/month",
    "last_good_json": "{\"amount\":26,\"currency\":\"USD\",\"period\":\"month\",\"unit\":null,\"tier\":\"team\"}",
    "last_good_hash": "ae5cf234",
@@ -102,12 +112,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"ae5cf234\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-07T15:53:16Z",
-   "last_good_at": "2026-08-07T15:53:16Z",
+   "last_observed_at": "2026-08-07T23:18:52Z",
+   "last_good_at": "2026-08-07T23:18:52Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true}",
    "last_good_hash": "4e9f3590",
@@ -118,12 +130,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"4e9f3590\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-07T15:53:16Z",
-   "last_good_at": "2026-08-07T15:53:16Z",
+   "last_observed_at": "2026-08-07T23:18:52Z",
+   "last_good_at": "2026-08-07T23:18:52Z",
    "last_good_value": "Pricing: Free Developer Plan, Pay as You Grow | Sentry",
    "last_good_json": null,
    "last_good_hash": "f0842de1",
@@ -134,28 +148,32 @@
    "total_changes": 0,
    "recent_hashes": "[\"f0842de1\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-07T15:53:16Z",
+   "last_observed_at": "2026-08-07T23:18:52Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-07T15:53:16Z",
-   "last_good_at": "2026-08-07T15:53:16Z",
+   "last_observed_at": "2026-08-07T23:18:52Z",
+   "last_good_at": "2026-08-07T23:18:52Z",
    "last_good_value": "developer free | team USD 26/month | business USD 80/month | enterprise free",
    "last_good_json": "{\"tiers\":[{\"name\":\"developer\",\"amount\":0,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"team\",\"amount\":26,\"currency\":\"USD\",\"period\":\"month\",\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"business\",\"amount\":80,\"currency\":\"USD\",\"period\":\"month\",\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"enterprise\",\"amount\":0,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"}],\"count\":4}",
    "last_good_hash": "45905cf3",
@@ -166,28 +184,32 @@
    "total_changes": 0,
    "recent_hashes": "[\"45905cf3\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-07T15:52:16Z",
+   "last_observed_at": "2026-08-07T23:19:53Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-07T15:52:16Z",
-   "last_good_at": "2026-08-07T15:52:16Z",
+   "last_observed_at": "2026-08-07T23:19:53Z",
+   "last_good_at": "2026-08-07T23:19:53Z",
    "last_good_value": "Application monitoring software considered \"not bad\" by millions of developers.",
    "last_good_json": null,
    "last_good_hash": "904bb6d6",
@@ -198,11 +220,37 @@
    "total_changes": 0,
    "recent_hashes": "[\"904bb6d6\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   }
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://sentry.io/welcome/",
+   "fetched_at": "2026-08-07T23:19:53Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 627289,
+   "duration_ms": 129,
+   "signals_found": 6,
+   "signals_expected": 7
+  },
+  {
+   "kind": "pricing",
+   "url": "https://sentry.io/pricing/",
+   "fetched_at": "2026-08-07T23:18:52Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 1118423,
+   "duration_ms": 228,
+   "signals_found": 4,
+   "signals_expected": 5
+  },
   {
    "kind": "pricing",
    "url": "https://sentry.io/pricing/",

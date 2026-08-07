@@ -10,8 +10,8 @@
  "signals": [
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-07T15:52:24Z",
-   "last_good_at": "2026-08-07T15:52:24Z",
+   "last_observed_at": "2026-08-07T23:19:42Z",
+   "last_good_at": "2026-08-07T23:19:42Z",
    "last_good_value": "infrastructure",
    "last_good_json": null,
    "last_good_hash": "bf3ec10e",
@@ -22,12 +22,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"bf3ec10e\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-07T15:52:24Z",
-   "last_good_at": "2026-08-07T15:52:24Z",
+   "last_observed_at": "2026-08-07T23:19:42Z",
+   "last_good_at": "2026-08-07T23:19:42Z",
    "last_good_value": "Cursor, Figma, Hubspot, Intercom, Keith Jones, Kyle Ketchum, Openai, Snapchat Svgrepo Com, Stripe, Ups, Vanta",
    "last_good_json": "{\"names\":[\"Cursor\",\"Figma\",\"Hubspot\",\"Intercom\",\"Keith Jones\",\"Kyle Ketchum\",\"Openai\",\"Snapchat Svgrepo Com\",\"Stripe\",\"Ups\",\"Vanta\"],\"count\":11,\"lead\":\"Trusted by more than 500,000+ leading GTM teams of all sizes. Inspired by our <a\"}",
    "last_good_hash": "33c1f2b1",
@@ -38,12 +40,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"33c1f2b1\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-07T15:52:24Z",
-   "last_good_at": "2026-08-07T15:52:24Z",
+   "last_observed_at": "2026-08-07T23:19:42Z",
+   "last_good_at": "2026-08-07T23:19:42Z",
    "last_good_value": "Build systems to grow revenue",
    "last_good_json": null,
    "last_good_hash": "d7486585",
@@ -54,12 +58,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"d7486585\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-07T15:52:24Z",
-   "last_good_at": "2026-08-07T15:52:24Z",
+   "last_observed_at": "2026-08-07T23:19:42Z",
+   "last_good_at": "2026-08-07T23:19:42Z",
    "last_good_value": "Infrastructure to get any data, run agentic workflows, and launch GTM plays.",
    "last_good_json": null,
    "last_good_hash": "d28cd058",
@@ -70,12 +76,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"d28cd058\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-07T15:52:24Z",
-   "last_good_at": "2026-08-07T15:52:24Z",
+   "last_observed_at": "2026-08-07T23:19:42Z",
+   "last_good_at": "2026-08-07T23:19:42Z",
    "last_good_value": "Clay | Build systems to grow revenue",
    "last_good_json": null,
    "last_good_hash": "3ea06e12",
@@ -86,12 +94,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"3ea06e12\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-07T15:53:24Z",
-   "last_good_at": "2026-08-07T15:53:24Z",
+   "last_observed_at": "2026-08-07T23:18:42Z",
+   "last_good_at": "2026-08-07T23:18:42Z",
    "last_good_value": "USD 167/month",
    "last_good_json": "{\"amount\":167,\"currency\":\"USD\",\"period\":\"month\",\"unit\":null,\"tier\":\"Launch\"}",
    "last_good_hash": "e1fa4232",
@@ -102,12 +112,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"e1fa4232\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-07T15:53:24Z",
-   "last_good_at": "2026-08-07T15:53:24Z",
+   "last_observed_at": "2026-08-07T23:18:42Z",
+   "last_good_at": "2026-08-07T23:18:42Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true}",
    "last_good_hash": "4e9f3590",
@@ -118,12 +130,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"4e9f3590\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-07T15:53:24Z",
-   "last_good_at": "2026-08-07T15:53:24Z",
+   "last_observed_at": "2026-08-07T23:18:42Z",
+   "last_good_at": "2026-08-07T23:18:42Z",
    "last_good_value": "Compare plans, features & costs | Clay.com",
    "last_good_json": null,
    "last_good_hash": "95a0401b",
@@ -134,28 +148,32 @@
    "total_changes": 0,
    "recent_hashes": "[\"95a0401b\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-07T15:53:24Z",
+   "last_observed_at": "2026-08-07T23:18:42Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-07T15:53:24Z",
-   "last_good_at": "2026-08-07T15:53:24Z",
+   "last_observed_at": "2026-08-07T23:18:42Z",
+   "last_good_at": "2026-08-07T23:18:42Z",
    "last_good_value": "Free free | Launch USD 167/month | Growth USD 446/month | Company custom",
    "last_good_json": "{\"tiers\":[{\"name\":\"Free\",\"amount\":0,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"free-phrase\"},{\"name\":\"Launch\",\"amount\":167,\"currency\":\"USD\",\"period\":\"month\",\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Growth\",\"amount\":446,\"currency\":\"USD\",\"period\":\"month\",\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Company\",\"amount\":null,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"contact-sales\"}],\"count\":4}",
    "last_good_hash": "e3ce7881",
@@ -166,12 +184,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"e3ce7881\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-07T15:52:24Z",
-   "last_good_at": "2026-08-07T15:52:24Z",
+   "last_observed_at": "2026-08-07T23:19:42Z",
+   "last_good_at": "2026-08-07T23:19:42Z",
    "last_good_value": "$5b valuation",
    "last_good_json": "{\"items\":[{\"claim\":\"$5b valuation\",\"kind\":\"money\"}],\"count\":1}",
    "last_good_hash": "81198fef",
@@ -182,12 +202,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"81198fef\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-07T15:52:24Z",
-   "last_good_at": "2026-08-07T15:52:24Z",
+   "last_observed_at": "2026-08-07T23:19:42Z",
+   "last_good_at": "2026-08-07T23:19:42Z",
    "last_good_value": "Infrastructure to get any data, run agentic workflows, and launch GTM plays.",
    "last_good_json": null,
    "last_good_hash": "d28cd058",
@@ -198,11 +220,37 @@
    "total_changes": 0,
    "recent_hashes": "[\"d28cd058\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   }
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.clay.com/",
+   "fetched_at": "2026-08-07T23:19:42Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 495881,
+   "duration_ms": 134,
+   "signals_found": 7,
+   "signals_expected": 7
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.clay.com/pricing",
+   "fetched_at": "2026-08-07T23:18:42Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 523557,
+   "duration_ms": 106,
+   "signals_found": 4,
+   "signals_expected": 5
+  },
   {
    "kind": "pricing",
    "url": "https://www.clay.com/pricing",

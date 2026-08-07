@@ -10,8 +10,8 @@
  "signals": [
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-07T15:52:16Z",
-   "last_good_at": "2026-08-07T15:52:16Z",
+   "last_observed_at": "2026-08-07T23:18:41Z",
+   "last_good_at": "2026-08-07T23:18:41Z",
    "last_good_value": "runtime",
    "last_good_json": null,
    "last_good_hash": "44c0392b",
@@ -22,12 +22,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"44c0392b\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-07T15:52:16Z",
-   "last_good_at": "2026-08-07T15:52:16Z",
+   "last_observed_at": "2026-08-07T23:18:41Z",
+   "last_good_at": "2026-08-07T23:18:41Z",
    "last_good_value": "Dior, Discord, Gamma, Hireology, Honeycomb, Instagram, LinkedIn, Paramount, Poka, Relay Network, Savage X Fenty, twitter, Veeam, YouTube",
    "last_good_json": "{\"names\":[\"Dior\",\"Discord\",\"Gamma\",\"Hireology\",\"Honeycomb\",\"Instagram\",\"LinkedIn\",\"Paramount\",\"Poka\",\"Relay Network\",\"Savage X Fenty\",\"twitter\",\"Veeam\",\"YouTube\"],\"count\":14,\"lead\":null}",
    "last_good_hash": "a2e7e3d2",
@@ -38,12 +40,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"a2e7e3d2\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-07T15:52:16Z",
-   "last_good_at": "2026-08-07T15:52:16Z",
+   "last_observed_at": "2026-08-07T23:18:41Z",
+   "last_good_at": "2026-08-07T23:18:41Z",
    "last_good_value": "Move at AI speed. Stay in control.",
    "last_good_json": null,
    "last_good_hash": "b6aca515",
@@ -54,12 +58,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"b6aca515\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-07T15:52:16Z",
-   "last_good_at": "2026-08-07T15:52:16Z",
+   "last_observed_at": "2026-08-07T23:18:41Z",
+   "last_good_at": "2026-08-07T23:18:41Z",
    "last_good_value": "LaunchDarkly helps teams safely manage code and AI agents in production with feature flags, progressive delivery, automated rollback, and runtime control.",
    "last_good_json": null,
    "last_good_hash": "f446aab8",
@@ -70,12 +76,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"f446aab8\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-07T15:52:16Z",
-   "last_good_at": "2026-08-07T15:52:16Z",
+   "last_observed_at": "2026-08-07T23:18:41Z",
+   "last_good_at": "2026-08-07T23:18:41Z",
    "last_good_value": "Runtime Control for AI-Era Software | Feature Flags & AI Agent Control | LaunchDarkly",
    "last_good_json": null,
    "last_good_hash": "16fe8efe",
@@ -86,28 +94,32 @@
    "total_changes": 0,
    "recent_hashes": "[\"16fe8efe\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-07T15:53:16Z",
+   "last_observed_at": "2026-08-07T23:19:42Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-07T15:53:16Z",
-   "last_good_at": "2026-08-07T15:53:16Z",
+   "last_observed_at": "2026-08-07T23:19:42Z",
+   "last_good_at": "2026-08-07T23:19:42Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true}",
    "last_good_hash": "4e9f3590",
@@ -118,12 +130,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"4e9f3590\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-07T15:53:16Z",
-   "last_good_at": "2026-08-07T15:53:16Z",
+   "last_observed_at": "2026-08-07T23:19:42Z",
+   "last_good_at": "2026-08-07T23:19:42Z",
    "last_good_value": "Pricing | LaunchDarkly",
    "last_good_json": null,
    "last_good_hash": "d17ac667",
@@ -134,28 +148,32 @@
    "total_changes": 0,
    "recent_hashes": "[\"d17ac667\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-07T15:53:16Z",
+   "last_observed_at": "2026-08-07T23:19:42Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-07T15:53:16Z",
-   "last_good_at": "2026-08-07T15:53:16Z",
+   "last_observed_at": "2026-08-07T23:19:42Z",
+   "last_good_at": "2026-08-07T23:19:42Z",
    "last_good_value": "Developer free | Enterprise custom | Free trial free",
    "last_good_json": "{\"tiers\":[{\"name\":\"Developer\",\"amount\":0,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Enterprise\",\"amount\":null,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"contact-sales\"},{\"name\":\"Free trial\",\"amount\":0,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"free-phrase\"}],\"count\":3}",
    "last_good_hash": "c7136e63",
@@ -166,12 +184,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"c7136e63\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-07T15:52:16Z",
-   "last_good_at": "2026-08-07T15:52:16Z",
+   "last_observed_at": "2026-08-07T23:18:41Z",
+   "last_good_at": "2026-08-07T23:18:41Z",
    "last_good_value": "13 seconds",
    "last_good_json": "{\"items\":[{\"claim\":\"13 seconds\",\"kind\":\"time\"}],\"count\":1}",
    "last_good_hash": "aeedb974",
@@ -182,12 +202,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"aeedb974\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-07T15:52:16Z",
-   "last_good_at": "2026-08-07T15:52:16Z",
+   "last_observed_at": "2026-08-07T23:18:41Z",
+   "last_good_at": "2026-08-07T23:18:41Z",
    "last_good_value": "The runtime control layer for AI development, de-risking releases, and enabling systems that heal and optimize themselves.",
    "last_good_json": null,
    "last_good_hash": "00504ff5",
@@ -198,11 +220,37 @@
    "total_changes": 0,
    "recent_hashes": "[\"00504ff5\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   }
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://launchdarkly.com/pricing/",
+   "fetched_at": "2026-08-07T23:19:42Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 620874,
+   "duration_ms": 156,
+   "signals_found": 3,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://launchdarkly.com/",
+   "fetched_at": "2026-08-07T23:18:41Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 698798,
+   "duration_ms": 186,
+   "signals_found": 7,
+   "signals_expected": 7
+  },
   {
    "kind": "pricing",
    "url": "https://launchdarkly.com/pricing/",

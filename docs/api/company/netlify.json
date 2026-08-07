@@ -206,6 +206,30 @@
   {
    "kind": "pricing",
    "url": "https://www.netlify.com/pricing/",
+   "fetched_at": "2026-08-07T23:19:37Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 228368,
+   "duration_ms": 346,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.netlify.com/",
+   "fetched_at": "2026-08-07T23:18:36Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 409531,
+   "duration_ms": 183,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.netlify.com/pricing/",
    "fetched_at": "2026-08-07T15:53:15Z",
    "http_status": 200,
    "status": "ok",

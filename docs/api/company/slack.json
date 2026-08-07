@@ -10,8 +10,8 @@
  "signals": [
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-07T15:52:13Z",
-   "last_good_at": "2026-08-07T15:52:13Z",
+   "last_observed_at": "2026-08-07T23:18:34Z",
+   "last_good_at": "2026-08-07T23:18:34Z",
    "last_good_value": "ai agents",
    "last_good_json": null,
    "last_good_hash": "ac421dc7",
@@ -22,12 +22,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"ac421dc7\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-07T15:52:13Z",
-   "last_good_at": "2026-08-07T15:52:13Z",
+   "last_observed_at": "2026-08-07T23:18:34Z",
+   "last_good_at": "2026-08-07T23:18:34Z",
    "last_good_value": "Chat, Compete Teams Promo, G2 Best Results Spring, G2 Easiest Setup Spring, G2 Leader Business Spring, G2 Leader Enterprise Spring, GM, IBM, List, OpenAI, Paramount, Pencil, Promo State Of Work, Promo Ways, Slackbot, Stripe, Target, Updated Img Promo 1, Zap",
    "last_good_json": "{\"names\":[\"Chat\",\"Compete Teams Promo\",\"G2 Best Results Spring\",\"G2 Easiest Setup Spring\",\"G2 Leader Business Spring\",\"G2 Leader Enterprise Spring\",\"GM\",\"IBM\",\"List\",\"OpenAI\",\"Paramount\",\"Pencil\",\"Promo State Of Work\",\"Promo Ways\",\"Slackbot\",\"Stripe\",\"Target\",\"Updated Img Promo 1\",\"Zap\"],\"count\":19,\"lead\":\"Trusted by top teams <ul class=\\\"o-section--feature-companies__logos\"}",
    "last_good_hash": "819f6dbe",
@@ -38,12 +40,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"819f6dbe\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-07T15:52:13Z",
-   "last_good_at": "2026-08-07T15:52:13Z",
+   "last_observed_at": "2026-08-07T23:18:34Z",
+   "last_good_at": "2026-08-07T23:18:34Z",
    "last_good_value": "All your people and AI agents working together.",
    "last_good_json": null,
    "last_good_hash": "764193c8",
@@ -54,12 +58,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"764193c8\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-07T15:52:13Z",
-   "last_good_at": "2026-08-07T15:52:13Z",
+   "last_observed_at": "2026-08-07T23:18:34Z",
+   "last_good_at": "2026-08-07T23:18:34Z",
    "last_good_value": "Boost productivity and save time with Slack — the AI work platform for managing projects, automating workflows, and connecting teams securely. Start working smarter today.",
    "last_good_json": null,
    "last_good_hash": "95427f9a",
@@ -70,12 +76,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"95427f9a\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-07T15:52:13Z",
-   "last_good_at": "2026-08-07T15:52:13Z",
+   "last_observed_at": "2026-08-07T23:18:34Z",
+   "last_good_at": "2026-08-07T23:18:34Z",
    "last_good_value": "Slack | AI Work Platform & Productivity Tools",
    "last_good_json": null,
    "last_good_hash": "40952460",
@@ -86,12 +94,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"40952460\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-07T15:53:14Z",
-   "last_good_at": "2026-08-07T15:53:14Z",
+   "last_observed_at": "2026-08-07T23:19:35Z",
+   "last_good_at": "2026-08-07T23:19:35Z",
    "last_good_value": "USD 8.75",
    "last_good_json": "{\"amount\":8.75,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"tier\":\"Pro\"}",
    "last_good_hash": "b275e853",
@@ -102,12 +112,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"b275e853\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-07T15:53:14Z",
-   "last_good_at": "2026-08-07T15:53:14Z",
+   "last_observed_at": "2026-08-07T23:19:35Z",
+   "last_good_at": "2026-08-07T23:19:35Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true}",
    "last_good_hash": "4e9f3590",
@@ -118,12 +130,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"4e9f3590\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-07T15:53:14Z",
-   "last_good_at": "2026-08-07T15:53:14Z",
+   "last_observed_at": "2026-08-07T23:19:35Z",
+   "last_good_at": "2026-08-07T23:19:35Z",
    "last_good_value": "Slack Pricing Plans: Find the Right Fit for Your Team | Slack",
    "last_good_json": null,
    "last_good_hash": "21efdfad",
@@ -134,28 +148,32 @@
    "total_changes": 0,
    "recent_hashes": "[\"21efdfad\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-07T15:53:14Z",
+   "last_observed_at": "2026-08-07T23:19:35Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-07T15:53:14Z",
-   "last_good_at": "2026-08-07T15:53:14Z",
+   "last_observed_at": "2026-08-07T23:19:35Z",
+   "last_good_at": "2026-08-07T23:19:35Z",
    "last_good_value": "Free free | Pro USD 8.75 | Enterprise+ custom",
    "last_good_json": "{\"tiers\":[{\"name\":\"Free\",\"amount\":0,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Pro\",\"amount\":8.75,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Enterprise+\",\"amount\":null,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"contact-sales\"}],\"count\":3}",
    "last_good_hash": "74b07731",
@@ -166,12 +184,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"74b07731\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-07T15:52:13Z",
-   "last_good_at": "2026-08-07T15:52:13Z",
+   "last_observed_at": "2026-08-07T23:18:34Z",
+   "last_good_at": "2026-08-07T23:18:34Z",
    "last_good_value": "1.7m apps | 35% increase in time | 700m messages",
    "last_good_json": "{\"items\":[{\"claim\":\"1.7m apps\",\"kind\":\"count\"},{\"claim\":\"35% increase in time\",\"kind\":\"percent\"},{\"claim\":\"700m messages\",\"kind\":\"count\"}],\"count\":3}",
    "last_good_hash": "5907996b",
@@ -182,12 +202,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"5907996b\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-07T15:52:13Z",
-   "last_good_at": "2026-08-07T15:52:13Z",
+   "last_observed_at": "2026-08-07T23:18:34Z",
+   "last_good_at": "2026-08-07T23:18:34Z",
    "last_good_value": "Slack connects your team. Slackbot multiplies what they can do.",
    "last_good_json": null,
    "last_good_hash": "e66645d4",
@@ -198,11 +220,37 @@
    "total_changes": 0,
    "recent_hashes": "[\"e66645d4\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   }
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://slack.com/pricing",
+   "fetched_at": "2026-08-07T23:19:35Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 721974,
+   "duration_ms": 428,
+   "signals_found": 4,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://slack.com/",
+   "fetched_at": "2026-08-07T23:18:34Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 257495,
+   "duration_ms": 378,
+   "signals_found": 7,
+   "signals_expected": 7
+  },
   {
    "kind": "pricing",
    "url": "https://slack.com/pricing",

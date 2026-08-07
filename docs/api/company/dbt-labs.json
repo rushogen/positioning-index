@@ -204,6 +204,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "home",
+   "url": "https://www.getdbt.com/",
+   "fetched_at": "2026-08-07T23:19:53Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 49,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.getdbt.com/pricing",
+   "fetched_at": "2026-08-07T23:18:52Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 67,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
    "kind": "pricing",
    "url": "https://www.getdbt.com/pricing",
    "fetched_at": "2026-08-07T15:53:21Z",

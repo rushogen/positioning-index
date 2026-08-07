@@ -204,6 +204,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "home",
+   "url": "https://www.loom.com/",
+   "fetched_at": "2026-08-07T23:19:54Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 62,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.loom.com/pricing",
+   "fetched_at": "2026-08-07T23:18:53Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 96,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
    "kind": "pricing",
    "url": "https://www.loom.com/pricing",
    "fetched_at": "2026-08-07T15:53:13Z",

@@ -10,8 +10,8 @@
  "signals": [
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-07T15:52:21Z",
-   "last_good_at": "2026-08-07T15:52:21Z",
+   "last_observed_at": "2026-08-07T23:18:35Z",
+   "last_good_at": "2026-08-07T23:18:35Z",
    "last_good_value": "only helpdesk",
    "last_good_json": null,
    "last_good_hash": "245dced3",
@@ -22,12 +22,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"245dced3\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-07T15:52:21Z",
-   "last_good_at": "2026-08-07T15:52:21Z",
+   "last_observed_at": "2026-08-07T23:18:35Z",
+   "last_good_at": "2026-08-07T23:18:35Z",
    "last_good_value": "Headshot of Isabel Larrow, Ims Image",
    "last_good_json": "{\"names\":[\"Headshot of Isabel Larrow\",\"Ims Image\"],\"count\":2,\"lead\":\"Trusted by 30,000 + leading brands <div class=\\\"mx-auto my-6 hidden w-full px-6 @\"}",
    "last_good_hash": "d99a08af",
@@ -38,12 +40,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"d99a08af\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-07T15:52:21Z",
-   "last_good_at": "2026-08-07T15:52:21Z",
+   "last_observed_at": "2026-08-07T23:18:35Z",
+   "last_good_at": "2026-08-07T23:18:35Z",
    "last_good_value": "The only helpdesk designed for the AI Agent era",
    "last_good_json": null,
    "last_good_hash": "30c538e8",
@@ -54,12 +58,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"30c538e8\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-07T15:52:21Z",
-   "last_good_at": "2026-08-07T15:52:21Z",
+   "last_observed_at": "2026-08-07T23:18:35Z",
+   "last_good_at": "2026-08-07T23:18:35Z",
    "last_good_value": "The only helpdesk with a natively integrated AI Agent. Deliver perfect customer experiences with the highest-performing platform. Start your free trial today.",
    "last_good_json": null,
    "last_good_hash": "e8173898",
@@ -70,12 +76,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"e8173898\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-07T15:52:21Z",
-   "last_good_at": "2026-08-07T15:52:21Z",
+   "last_observed_at": "2026-08-07T23:18:35Z",
+   "last_good_at": "2026-08-07T23:18:35Z",
    "last_good_value": "Intercom | The only helpdesk designed for the AI Agent era",
    "last_good_json": null,
    "last_good_hash": "c185f34d",
@@ -86,12 +94,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"c185f34d\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-07T15:53:22Z",
-   "last_good_at": "2026-08-07T15:53:22Z",
+   "last_observed_at": "2026-08-07T23:19:35Z",
+   "last_good_at": "2026-08-07T23:19:35Z",
    "last_good_value": "USD 0.99",
    "last_good_json": "{\"amount\":0.99,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"tier\":\"Fin AI Agent\"}",
    "last_good_hash": "e8bbd825",
@@ -102,12 +112,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"e8bbd825\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-07T15:53:22Z",
-   "last_good_at": "2026-08-07T15:53:22Z",
+   "last_observed_at": "2026-08-07T23:19:35Z",
+   "last_good_at": "2026-08-07T23:19:35Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true}",
    "last_good_hash": "4e9f3590",
@@ -118,12 +130,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"4e9f3590\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-07T15:53:22Z",
-   "last_good_at": "2026-08-07T15:53:22Z",
+   "last_observed_at": "2026-08-07T23:19:35Z",
+   "last_good_at": "2026-08-07T23:19:35Z",
    "last_good_value": "Intercom Pricing | Plans for every team size",
    "last_good_json": null,
    "last_good_hash": "6c194c0a",
@@ -134,28 +148,32 @@
    "total_changes": 0,
    "recent_hashes": "[\"6c194c0a\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-07T15:53:22Z",
+   "last_observed_at": "2026-08-07T23:19:35Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-07T15:53:22Z",
-   "last_good_at": "2026-08-07T15:53:22Z",
+   "last_observed_at": "2026-08-07T23:19:35Z",
+   "last_good_at": "2026-08-07T23:19:35Z",
    "last_good_value": "Essential USD 39 | Advanced USD 99 | Expert USD 139 | Fin AI Agent USD 0.99",
    "last_good_json": "{\"tiers\":[{\"name\":\"Essential\",\"amount\":39,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"json-ld\"},{\"name\":\"Advanced\",\"amount\":99,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"json-ld\"},{\"name\":\"Expert\",\"amount\":139,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"json-ld\"},{\"name\":\"Fin AI Agent\",\"amount\":0.99,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"json-ld\"}],\"count\":4}",
    "last_good_hash": "10b40e64",
@@ -166,12 +184,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"10b40e64\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-07T15:52:21Z",
-   "last_good_at": "2026-08-07T15:52:21Z",
+   "last_observed_at": "2026-08-07T23:18:35Z",
+   "last_good_at": "2026-08-07T23:18:35Z",
    "last_good_value": "$0.99 per outcome learn | $29 per seat | 100% coverage across your | 31% more customer conversations | 350 integrations",
    "last_good_json": "{\"items\":[{\"claim\":\"$0.99 per outcome learn\",\"kind\":\"money\"},{\"claim\":\"$29 per seat\",\"kind\":\"money\"},{\"claim\":\"100% coverage across your\",\"kind\":\"percent\"},{\"claim\":\"31% more customer conversations\",\"kind\":\"percent\"},{\"claim\":\"350 integrations\",\"kind\":\"count\"}],\"count\":5}",
    "last_good_hash": "3edf4058",
@@ -182,12 +202,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"3edf4058\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-07T15:52:21Z",
-   "last_good_at": "2026-08-07T15:52:21Z",
+   "last_observed_at": "2026-08-07T23:18:35Z",
+   "last_good_at": "2026-08-07T23:18:35Z",
    "last_good_value": "Intercom is the only helpdesk with a natively integrated AI Agent , Fin , meaning every customer conversation improves the next one, enabling perfect experiences that were never possible before.",
    "last_good_json": null,
    "last_good_hash": "d045e4eb",
@@ -198,11 +220,37 @@
    "total_changes": 0,
    "recent_hashes": "[\"d045e4eb\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   }
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://www.intercom.com/pricing",
+   "fetched_at": "2026-08-07T23:19:35Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 1236062,
+   "duration_ms": 405,
+   "signals_found": 4,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://www.intercom.com/",
+   "fetched_at": "2026-08-07T23:18:35Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 1499922,
+   "duration_ms": 533,
+   "signals_found": 7,
+   "signals_expected": 7
+  },
   {
    "kind": "pricing",
    "url": "https://www.intercom.com/pricing",

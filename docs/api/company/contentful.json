@@ -10,24 +10,26 @@
  "signals": [
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-07T15:52:27Z",
+   "last_observed_at": "2026-08-07T23:19:50Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-07T15:52:27Z",
-   "last_good_at": "2026-08-07T15:52:27Z",
+   "last_observed_at": "2026-08-07T23:19:50Z",
+   "last_good_at": "2026-08-07T23:19:50Z",
    "last_good_value": "Amazon Web Services (AWS), Atlassian, Audible, BigCommerce, Biogen ( ), Danone, Docusign, E577 4ac6 8c10, KFC, Mailchimp, Microsoft, Palmata 3x2, Palmata by Contentful, Rapha, Ruggable, SumUp",
    "last_good_json": "{\"names\":[\"Amazon Web Services (AWS)\",\"Atlassian\",\"Audible\",\"BigCommerce\",\"Biogen ( )\",\"Danone\",\"Docusign\",\"E577 4ac6 8c10\",\"KFC\",\"Mailchimp\",\"Microsoft\",\"Palmata 3x2\",\"Palmata by Contentful\",\"Rapha\",\"Ruggable\",\"SumUp\"],\"count\":16,\"lead\":null}",
    "last_good_hash": "aae6ef1d",
@@ -38,12 +40,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"aae6ef1d\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-07T15:52:27Z",
-   "last_good_at": "2026-08-07T15:52:27Z",
+   "last_observed_at": "2026-08-07T23:19:50Z",
+   "last_good_at": "2026-08-07T23:19:50Z",
    "last_good_value": "Built for humans. Ready for agents.",
    "last_good_json": null,
    "last_good_hash": "6a00fc5c",
@@ -54,12 +58,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"6a00fc5c\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-07T15:52:27Z",
-   "last_good_at": "2026-08-07T15:52:27Z",
+   "last_observed_at": "2026-08-07T23:19:50Z",
+   "last_good_at": "2026-08-07T23:19:50Z",
    "last_good_value": "Contentful lets you create content that customers trust and agents understand. With built-in personalization and AEO-ready content, you can scale fast across channels, markets, and brands without sacrificing quality or control.",
    "last_good_json": null,
    "last_good_hash": "b2cd330e",
@@ -70,12 +76,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"b2cd330e\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-07T15:52:27Z",
-   "last_good_at": "2026-08-07T15:52:27Z",
+   "last_observed_at": "2026-08-07T23:19:50Z",
+   "last_good_at": "2026-08-07T23:19:50Z",
    "last_good_value": "Built for humans. Ready for agents. | Contentful",
    "last_good_json": null,
    "last_good_hash": "9555fdc0",
@@ -86,44 +94,50 @@
    "total_changes": 0,
    "recent_hashes": "[\"9555fdc0\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-07T15:53:28Z",
+   "last_observed_at": "2026-08-07T23:18:48Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-07T15:53:28Z",
+   "last_observed_at": "2026-08-07T23:18:48Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-07T15:53:28Z",
-   "last_good_at": "2026-08-07T15:53:28Z",
+   "last_observed_at": "2026-08-07T23:18:48Z",
+   "last_good_at": "2026-08-07T23:18:48Z",
    "last_good_value": "Contentful Pricing | Contentful",
    "last_good_json": null,
    "last_good_hash": "4f97d79d",
@@ -134,44 +148,50 @@
    "total_changes": 0,
    "recent_hashes": "[\"4f97d79d\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-07T15:53:28Z",
+   "last_observed_at": "2026-08-07T23:18:48Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-07T15:53:28Z",
+   "last_observed_at": "2026-08-07T23:18:48Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-07T15:52:27Z",
-   "last_good_at": "2026-08-07T15:52:27Z",
+   "last_observed_at": "2026-08-07T23:19:50Z",
+   "last_good_at": "2026-08-07T23:19:50Z",
    "last_good_value": "10x increase in content | 25% increase in conversions | 78% increase | 7x increase in ctr | 99.99% uptime provided by | 99.99% uptime sla",
    "last_good_json": "{\"items\":[{\"claim\":\"10x increase in content\",\"kind\":\"multiplier\"},{\"claim\":\"25% increase in conversions\",\"kind\":\"percent\"},{\"claim\":\"78% increase\",\"kind\":\"percent\"},{\"claim\":\"7x increase in ctr\",\"kind\":\"multiplier\"},{\"claim\":\"99.99% uptime provided by\",\"kind\":\"percent\"},{\"claim\":\"99.99% uptime sla\",\"kind\":\"percent\"}],\"count\":6}",
    "last_good_hash": "4e08c587",
@@ -182,12 +202,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"4e08c587\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-07T15:52:27Z",
-   "last_good_at": "2026-08-07T15:52:27Z",
+   "last_observed_at": "2026-08-07T23:19:50Z",
+   "last_good_at": "2026-08-07T23:19:50Z",
    "last_good_value": "Contentful lets you create content that customers trust and agents understand. With built-in personalization and AEO-ready content, you can scale fast across channels, markets, and brands without sacrificing quality or control.",
    "last_good_json": null,
    "last_good_hash": "b2cd330e",
@@ -198,11 +220,37 @@
    "total_changes": 0,
    "recent_hashes": "[\"b2cd330e\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   }
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.contentful.com/",
+   "fetched_at": "2026-08-07T23:19:50Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 817966,
+   "duration_ms": 1525,
+   "signals_found": 6,
+   "signals_expected": 7
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.contentful.com/pricing/",
+   "fetched_at": "2026-08-07T23:18:48Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 735610,
+   "duration_ms": 2206,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
   {
    "kind": "pricing",
    "url": "https://www.contentful.com/pricing/",

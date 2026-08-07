@@ -10,8 +10,8 @@
  "signals": [
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-07T15:52:26Z",
-   "last_good_at": "2026-08-07T15:52:26Z",
+   "last_observed_at": "2026-08-07T23:19:41Z",
+   "last_good_at": "2026-08-07T23:19:41Z",
    "last_good_value": "autonomous b2c crm",
    "last_good_json": null,
    "last_good_hash": "3a9b182c",
@@ -22,12 +22,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"3a9b182c\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-07T15:52:26Z",
-   "last_good_at": "2026-08-07T15:52:26Z",
+   "last_observed_at": "2026-08-07T23:19:41Z",
+   "last_good_at": "2026-08-07T23:19:41Z",
    "last_good_value": "109x25, 132x25, 137x25, 158x25, 174x25, 1872x1872, 1875x1875, 37x35, 38x35, 47x27, 49ers, 59x25, 62x25, 74x25, 75x25, 76x25, 80x25, 93x25, Aerosoles, Claire, Corepower Yoga, Daily Harvest, Dollar Shave Club, Funko, Glossier, Mattel, Merit Beauty, Skullcandy, The Body Shop, True Food Kitchen, Unilever, Vans, Vuori",
    "last_good_json": "{\"names\":[\"109x25\",\"132x25\",\"137x25\",\"158x25\",\"174x25\",\"1872x1872\",\"1875x1875\",\"37x35\",\"38x35\",\"47x27\",\"49ers\",\"59x25\",\"62x25\",\"74x25\",\"75x25\",\"76x25\",\"80x25\",\"93x25\",\"Aerosoles\",\"Claire\",\"Corepower Yoga\",\"Daily Harvest\",\"Dollar Shave Club\",\"Funko\",\"Glossier\",\"Mattel\",\"Merit Beauty\",\"Skullcandy\",\"The Body Shop\",\"True Food Kitchen\",\"Unilever\",\"Vans\",\"Vuori\"],\"count\":33,\"lead\":\"backed by SLAs.\\\\\\\"\\\\n }\\\\n }\\\\n ]\\\\n }\\\\n ]\\\\n}\\\"],\\\"includeInHreflangTags\\\":[0,true],\\\"ind\"}",
    "last_good_hash": "e0f37649",
@@ -38,12 +40,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"e0f37649\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-07T15:52:26Z",
-   "last_good_at": "2026-08-07T15:52:26Z",
+   "last_observed_at": "2026-08-07T23:19:41Z",
+   "last_good_at": "2026-08-07T23:19:41Z",
    "last_good_value": "the AUTONOMOUS B2C CRM",
    "last_good_json": null,
    "last_good_hash": "f961b9b1",
@@ -54,12 +58,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"f961b9b1\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-07T15:52:26Z",
-   "last_good_at": "2026-08-07T15:52:26Z",
+   "last_observed_at": "2026-08-07T23:19:41Z",
+   "last_good_at": "2026-08-07T23:19:41Z",
    "last_good_value": "Klaviyo unifies AI-powered email marketing and SMS to drive growth, retention, and measurable results. Build personalized, omnichannel experiences across WhatsApp, ecommerce, and more with K:AI Agents.",
    "last_good_json": null,
    "last_good_hash": "a5230921",
@@ -70,12 +76,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"a5230921\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-07T15:52:26Z",
-   "last_good_at": "2026-08-07T15:52:26Z",
+   "last_observed_at": "2026-08-07T23:19:41Z",
+   "last_good_at": "2026-08-07T23:19:41Z",
    "last_good_value": "Klaviyo: AI Email Marketing & SMS | B2C CRM",
    "last_good_json": null,
    "last_good_hash": "53a71852",
@@ -86,12 +94,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"53a71852\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-07T15:53:26Z",
-   "last_good_at": "2026-08-07T15:53:26Z",
+   "last_observed_at": "2026-08-07T23:18:41Z",
+   "last_good_at": "2026-08-07T23:18:41Z",
    "last_good_value": "USD 20",
    "last_good_json": "{\"amount\":20,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"tier\":\"Email Plan (entry)\"}",
    "last_good_hash": "2a454d3f",
@@ -102,12 +112,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"2a454d3f\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-07T15:53:26Z",
-   "last_good_at": "2026-08-07T15:53:26Z",
+   "last_observed_at": "2026-08-07T23:18:41Z",
+   "last_good_at": "2026-08-07T23:18:41Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true}",
    "last_good_hash": "4e9f3590",
@@ -118,12 +130,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"4e9f3590\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-07T15:53:26Z",
-   "last_good_at": "2026-08-07T15:53:26Z",
+   "last_observed_at": "2026-08-07T23:18:41Z",
+   "last_good_at": "2026-08-07T23:18:41Z",
    "last_good_value": "Klaviyo Pricing | Start Free with Email & SMS",
    "last_good_json": null,
    "last_good_hash": "253f352f",
@@ -134,28 +148,32 @@
    "total_changes": 0,
    "recent_hashes": "[\"253f352f\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-07T15:53:26Z",
+   "last_observed_at": "2026-08-07T23:18:41Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-07T15:53:26Z",
-   "last_good_at": "2026-08-07T15:53:26Z",
+   "last_observed_at": "2026-08-07T23:18:41Z",
+   "last_good_at": "2026-08-07T23:18:41Z",
    "last_good_value": "Free Plan free | Email Plan (entry) USD 20 | Email + SMS Plan (entry) USD 35",
    "last_good_json": "{\"tiers\":[{\"name\":\"Free Plan\",\"amount\":0,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"json-ld\"},{\"name\":\"Email Plan (entry)\",\"amount\":20,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"json-ld\"},{\"name\":\"Email + SMS Plan (entry)\",\"amount\":35,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"json-ld\"}],\"count\":3}",
    "last_good_hash": "fd2ad4a2",
@@ -166,12 +184,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"fd2ad4a2\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-07T15:52:26Z",
-   "last_good_at": "2026-08-07T15:52:26Z",
+   "last_observed_at": "2026-08-07T23:19:41Z",
+   "last_good_at": "2026-08-07T23:19:41Z",
    "last_good_value": "18% savings in tech | 20% less time to | 205,000 customers | 30% lower total cost | 350 apps",
    "last_good_json": "{\"items\":[{\"claim\":\"18% savings in tech\",\"kind\":\"percent\"},{\"claim\":\"20% less time to\",\"kind\":\"percent\"},{\"claim\":\"205,000 customers\",\"kind\":\"count\"},{\"claim\":\"30% lower total cost\",\"kind\":\"percent\"},{\"claim\":\"350 apps\",\"kind\":\"count\"}],\"count\":5}",
    "last_good_hash": "35883679",
@@ -182,12 +202,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"35883679\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-07T15:52:26Z",
-   "last_good_at": "2026-08-07T15:52:26Z",
+   "last_observed_at": "2026-08-07T23:19:41Z",
+   "last_good_at": "2026-08-07T23:19:41Z",
    "last_good_value": "Build and optimize your omnichannel campaigns and deliver personalized, 24/7 support—all from a prompt.",
    "last_good_json": null,
    "last_good_hash": "cd1470b9",
@@ -198,11 +220,37 @@
    "total_changes": 0,
    "recent_hashes": "[\"cd1470b9\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   }
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.klaviyo.com/",
+   "fetched_at": "2026-08-07T23:19:41Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 518333,
+   "duration_ms": 211,
+   "signals_found": 7,
+   "signals_expected": 7
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.klaviyo.com/pricing",
+   "fetched_at": "2026-08-07T23:18:41Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 577913,
+   "duration_ms": 211,
+   "signals_found": 4,
+   "signals_expected": 5
+  },
   {
    "kind": "pricing",
    "url": "https://www.klaviyo.com/pricing",

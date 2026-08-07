@@ -10,24 +10,26 @@
  "signals": [
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-07T15:52:29Z",
+   "last_observed_at": "2026-08-07T23:19:52Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-07T15:52:29Z",
-   "last_good_at": "2026-08-07T15:52:29Z",
+   "last_observed_at": "2026-08-07T23:19:52Z",
+   "last_good_at": "2026-08-07T23:19:52Z",
    "last_good_value": "Cursor, Dropbox, Lowe, Mastercard, Meta, Nvidia, Okta, Person giving a presentation, Samsung, Shopify",
    "last_good_json": "{\"names\":[\"Cursor\",\"Dropbox\",\"Lowe\",\"Mastercard\",\"Meta\",\"Nvidia\",\"Okta\",\"Person giving a presentation\",\"Samsung\",\"Shopify\"],\"count\":10,\"lead\":\"Trusted by 3 million+ businesses. \\\"/> <link rel=\\\"alternate\\\" hrefLang=\\\"en\\\" href=\\\"\"}",
    "last_good_hash": "c776619d",
@@ -38,12 +40,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"c776619d\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-07T15:52:29Z",
-   "last_good_at": "2026-08-07T15:52:29Z",
+   "last_observed_at": "2026-08-07T23:19:52Z",
+   "last_good_at": "2026-08-07T23:19:52Z",
    "last_good_value": "Your tools. Your rules. Any AI.",
    "last_good_json": null,
    "last_good_hash": "b02a9d2d",
@@ -54,12 +58,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"b02a9d2d\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-07T15:52:29Z",
-   "last_good_at": "2026-08-07T15:52:29Z",
+   "last_observed_at": "2026-08-07T23:19:52Z",
+   "last_good_at": "2026-08-07T23:19:52Z",
    "last_good_value": "Build and scale AI workflows and agents across 9,000+ apps with Zapier—the most connected AI orchestration platform. Trusted by 3 million+ businesses.",
    "last_good_json": null,
    "last_good_hash": "7d2a36b7",
@@ -70,12 +76,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"7d2a36b7\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-07T15:52:29Z",
-   "last_good_at": "2026-08-07T15:52:29Z",
+   "last_observed_at": "2026-08-07T23:19:52Z",
+   "last_good_at": "2026-08-07T23:19:52Z",
    "last_good_value": "Zapier: Automate AI Workflows, Agents, and Apps",
    "last_good_json": null,
    "last_good_hash": "299f8cc9",
@@ -86,7 +94,9 @@
    "total_changes": 0,
    "recent_hashes": "[\"299f8cc9\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_entry_price",
@@ -170,8 +180,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-07T15:52:29Z",
-   "last_good_at": "2026-08-07T15:52:29Z",
+   "last_observed_at": "2026-08-07T23:19:52Z",
+   "last_good_at": "2026-08-07T23:19:52Z",
    "last_good_value": "$1 million increase in potential | $1m recovered pipeline using | $40k+ headcount savings per | 42 hours | 450k agents | 5.5x roi with zapier | 87% reduction in lead | 9,000 apps | 9,000 integrations | fortune 500",
    "last_good_json": "{\"items\":[{\"claim\":\"$1 million increase in potential\",\"kind\":\"money\"},{\"claim\":\"$1m recovered pipeline using\",\"kind\":\"money\"},{\"claim\":\"$40k+ headcount savings per\",\"kind\":\"money\"},{\"claim\":\"42 hours\",\"kind\":\"count\"},{\"claim\":\"450k agents\",\"kind\":\"count\"},{\"claim\":\"5.5x roi with zapier\",\"kind\":\"multiplier\"},{\"claim\":\"87% reduction in lead\",\"kind\":\"percent\"},{\"claim\":\"9,000 apps\",\"kind\":\"count\"},{\"claim\":\"9,000 integrations\",\"kind\":\"count\"},{\"claim\":\"fortune 500\",\"kind\":\"rank\"}],\"count\":10}",
    "last_good_hash": "7b86c012",
@@ -182,12 +192,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"7b86c012\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-07T15:52:29Z",
-   "last_good_at": "2026-08-07T15:52:29Z",
+   "last_observed_at": "2026-08-07T23:19:52Z",
+   "last_good_at": "2026-08-07T23:19:52Z",
    "last_good_value": "Zapier gives teams one place to set guardrails, manage model access, and see everything — so everyone can build with AI confidently, on any model, without waiting for permission.",
    "last_good_json": null,
    "last_good_hash": "95a27b0b",
@@ -198,11 +210,37 @@
    "total_changes": 0,
    "recent_hashes": "[\"95a27b0b\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   }
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://zapier.com/",
+   "fetched_at": "2026-08-07T23:19:52Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 579527,
+   "duration_ms": 90,
+   "signals_found": 6,
+   "signals_expected": 7
+  },
+  {
+   "kind": "pricing",
+   "url": "https://zapier.com/pricing",
+   "fetched_at": "2026-08-07T23:18:50Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 1499862,
+   "duration_ms": 475,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
   {
    "kind": "pricing",
    "url": "https://zapier.com/pricing",

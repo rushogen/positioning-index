@@ -8,5 +8,18 @@
  },
  "signals": [],
  "events": [],
- "fetches": []
+ "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.sap.com/",
+   "fetched_at": "2026-08-07T23:17:08Z",
+   "http_status": null,
+   "status": "blocked",
+   "reason": "robots.txt: Disallow: /",
+   "bytes": 0,
+   "duration_ms": 400,
+   "signals_found": 0,
+   "signals_expected": 0
+  }
+ ]
 }

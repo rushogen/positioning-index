@@ -80,8 +80,8 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-07T15:53:35Z",
-   "last_good_at": "2026-08-07T11:11:16Z",
+   "last_observed_at": "2026-08-07T23:19:48Z",
+   "last_good_at": "2026-08-07T15:53:35Z",
    "last_good_value": "EUR 10/month",
    "last_good_json": "{\"amount\":10,\"currency\":\"EUR\",\"period\":\"month\",\"unit\":null,\"tier\":\"Free\"}",
    "last_good_hash": "e273ab19",
@@ -91,13 +91,15 @@
    "suspect": 1,
    "total_changes": 0,
    "recent_hashes": "[\"e273ab19\"]",
-   "currency_shift_runs": 1,
-   "currency_shift_key": "USD@github-actions:US"
+   "currency_shift_runs": 2,
+   "currency_shift_key": "USD@github-actions:US",
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-07T15:53:35Z",
-   "last_good_at": "2026-08-07T15:53:35Z",
+   "last_observed_at": "2026-08-07T23:19:48Z",
+   "last_good_at": "2026-08-07T23:19:48Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true}",
    "last_good_hash": "4e9f3590",
@@ -108,12 +110,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"4e9f3590\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-07T15:53:35Z",
-   "last_good_at": "2026-08-07T15:53:35Z",
+   "last_observed_at": "2026-08-07T23:19:48Z",
+   "last_good_at": "2026-08-07T23:19:48Z",
    "last_good_value": "monday.com pricing and plans",
    "last_good_json": null,
    "last_good_hash": "232c96b1",
@@ -124,28 +128,32 @@
    "total_changes": 0,
    "recent_hashes": "[\"232c96b1\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-07T15:53:35Z",
+   "last_observed_at": "2026-08-07T23:19:48Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 2,
+   "consecutive_nulls": 3,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-07T15:53:35Z",
-   "last_good_at": "2026-08-07T11:11:16Z",
+   "last_observed_at": "2026-08-07T23:19:48Z",
+   "last_good_at": "2026-08-07T15:53:35Z",
    "last_good_value": "Free EUR 10/month | Basic EUR 90 | Standard EUR 120 | Pro EUR 190 | Enterprise custom | Ultimate custom",
    "last_good_json": "{\"tiers\":[{\"name\":\"Free\",\"amount\":10,\"currency\":\"EUR\",\"period\":\"month\",\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Basic\",\"amount\":90,\"currency\":\"EUR\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Standard\",\"amount\":120,\"currency\":\"EUR\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Pro\",\"amount\":190,\"currency\":\"EUR\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Enterprise\",\"amount\":null,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"contact-sales\"},{\"name\":\"Ultimate\",\"amount\":null,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"contact-sales\"}],\"count\":6}",
    "last_good_hash": "b8ca5ef1",
@@ -155,8 +163,10 @@
    "suspect": 1,
    "total_changes": 0,
    "recent_hashes": "[\"b8ca5ef1\"]",
-   "currency_shift_runs": 1,
-   "currency_shift_key": "USD@github-actions:US"
+   "currency_shift_runs": 2,
+   "currency_shift_key": "USD@github-actions:US",
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "proof_points",
@@ -189,6 +199,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://monday.com/pricing",
+   "fetched_at": "2026-08-07T23:19:48Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 1426024,
+   "duration_ms": 736,
+   "signals_found": 4,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://monday.com/",
+   "fetched_at": "2026-08-07T23:18:47Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 556937,
+   "duration_ms": 437,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
   {
    "kind": "pricing",
    "url": "https://monday.com/pricing",

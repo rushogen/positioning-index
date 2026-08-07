@@ -10,8 +10,8 @@
  "signals": [
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-07T15:52:17Z",
-   "last_good_at": "2026-08-07T15:52:17Z",
+   "last_observed_at": "2026-08-07T23:18:41Z",
+   "last_good_at": "2026-08-07T23:18:41Z",
    "last_good_value": "ai-powered developer platform",
    "last_good_json": null,
    "last_good_hash": "0509657f",
@@ -22,12 +22,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"0509657f\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-07T15:52:17Z",
-   "last_good_at": "2026-08-07T15:52:17Z",
+   "last_observed_at": "2026-08-07T23:18:41Z",
+   "last_good_at": "2026-08-07T23:18:41Z",
    "last_good_value": "Figma, Mercado Libre, Mercedes Benz",
    "last_good_json": "{\"names\":[\"Figma\",\"Mercado Libre\",\"Mercedes Benz\"],\"count\":3,\"lead\":\"From startups to enterprises, GitHub scales with teams of any size in any indust\"}",
    "last_good_hash": "5eb94447",
@@ -38,12 +40,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"5eb94447\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-07T15:52:17Z",
-   "last_good_at": "2026-08-07T15:52:17Z",
+   "last_observed_at": "2026-08-07T23:18:41Z",
+   "last_good_at": "2026-08-07T23:18:41Z",
    "last_good_value": "The future of building happens together",
    "last_good_json": null,
    "last_good_hash": "c1c98bf1",
@@ -54,12 +58,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"c1c98bf1\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-07T15:52:17Z",
-   "last_good_at": "2026-08-07T15:52:17Z",
+   "last_observed_at": "2026-08-07T23:18:41Z",
+   "last_good_at": "2026-08-07T23:18:41Z",
    "last_good_value": "Join the world's most widely adopted, AI-powered developer platform where millions of developers, businesses, and the largest open source community build software that advances humanity.",
    "last_good_json": null,
    "last_good_hash": "897281b4",
@@ -70,12 +76,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"897281b4\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-07T15:52:17Z",
-   "last_good_at": "2026-08-07T15:52:17Z",
+   "last_observed_at": "2026-08-07T23:18:41Z",
+   "last_good_at": "2026-08-07T23:18:41Z",
    "last_good_value": "GitHub · Change is constant. GitHub keeps you ahead. · GitHub",
    "last_good_json": null,
    "last_good_hash": "e15827da",
@@ -86,44 +94,50 @@
    "total_changes": 0,
    "recent_hashes": "[\"e15827da\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-07T15:53:17Z",
+   "last_observed_at": "2026-08-07T23:19:42Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-07T15:53:17Z",
+   "last_observed_at": "2026-08-07T23:19:42Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-07T15:53:17Z",
-   "last_good_at": "2026-08-07T15:53:17Z",
+   "last_observed_at": "2026-08-07T23:19:42Z",
+   "last_good_at": "2026-08-07T23:19:42Z",
    "last_good_value": "Pricing · Plans for every developer · GitHub",
    "last_good_json": null,
    "last_good_hash": "2e1b7eea",
@@ -134,44 +148,50 @@
    "total_changes": 0,
    "recent_hashes": "[\"2e1b7eea\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-07T15:53:17Z",
+   "last_observed_at": "2026-08-07T23:19:42Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-07T15:53:17Z",
+   "last_observed_at": "2026-08-07T23:19:42Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-07T15:52:17Z",
-   "last_good_at": "2026-08-07T15:52:17Z",
+   "last_observed_at": "2026-08-07T23:18:41Z",
+   "last_good_at": "2026-08-07T23:18:41Z",
    "last_good_value": "25% boosts developer speed | 25% speed | 50% cuts coding time",
    "last_good_json": "{\"items\":[{\"claim\":\"25% boosts developer speed\",\"kind\":\"percent-trailing\"},{\"claim\":\"25% speed\",\"kind\":\"percent-trailing\"},{\"claim\":\"50% cuts coding time\",\"kind\":\"percent-trailing\"}],\"count\":3}",
    "last_good_hash": "9fd31bc3",
@@ -182,12 +202,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"9fd31bc3\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-07T15:52:17Z",
-   "last_good_at": "2026-08-07T15:52:17Z",
+   "last_observed_at": "2026-08-07T23:18:41Z",
+   "last_good_at": "2026-08-07T23:18:41Z",
    "last_good_value": "Tools and trends evolve, but collaboration endures. With GitHub, developers, agents, and code come together on one platform.",
    "last_good_json": null,
    "last_good_hash": "809579ea",
@@ -198,11 +220,37 @@
    "total_changes": 0,
    "recent_hashes": "[\"809579ea\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   }
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://github.com/pricing",
+   "fetched_at": "2026-08-07T23:19:42Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 701678,
+   "duration_ms": 396,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://github.com/",
+   "fetched_at": "2026-08-07T23:18:41Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 572690,
+   "duration_ms": 210,
+   "signals_found": 7,
+   "signals_expected": 7
+  },
   {
    "kind": "pricing",
    "url": "https://github.com/pricing",

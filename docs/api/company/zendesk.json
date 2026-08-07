@@ -10,8 +10,8 @@
  "signals": [
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-07T15:52:25Z",
-   "last_good_at": "2026-08-07T15:52:25Z",
+   "last_observed_at": "2026-08-07T23:19:47Z",
+   "last_good_at": "2026-08-07T23:19:47Z",
    "last_good_value": "ai-powered service",
    "last_good_json": null,
    "last_good_hash": "d9639d99",
@@ -22,12 +22,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"d9639d99\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-07T15:52:25Z",
-   "last_good_at": "2026-08-07T15:52:25Z",
+   "last_observed_at": "2026-08-07T23:19:47Z",
+   "last_good_at": "2026-08-07T23:19:47Z",
    "last_good_value": "SeatGeek, SeatGeek testimonial, Vimeo, Vimeo testimonial",
    "last_good_json": "{\"names\":[\"SeatGeek\",\"SeatGeek testimonial\",\"Vimeo\",\"Vimeo testimonial\"],\"count\":4,\"lead\":\"From startups to enterprises, we deliver the specialized support you need to win\"}",
    "last_good_hash": "2dd49551",
@@ -38,12 +40,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"2dd49551\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-07T15:52:25Z",
-   "last_good_at": "2026-08-07T15:52:25Z",
+   "last_observed_at": "2026-08-07T23:19:47Z",
+   "last_good_at": "2026-08-07T23:19:47Z",
    "last_good_value": "AI-powered service platform",
    "last_good_json": null,
    "last_good_hash": "cd56c5a4",
@@ -54,12 +58,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"cd56c5a4\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-07T15:52:25Z",
-   "last_good_at": "2026-08-07T15:52:25Z",
+   "last_observed_at": "2026-08-07T23:19:47Z",
+   "last_good_at": "2026-08-07T23:19:47Z",
    "last_good_value": "Move beyond deflection with AI agents that resolve issues end-to-end. Improve service quality, speed, and scale. Start your free trial.",
    "last_good_json": null,
    "last_good_hash": "0ae5ccc1",
@@ -70,12 +76,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"0ae5ccc1\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-07T15:52:25Z",
-   "last_good_at": "2026-08-07T15:52:25Z",
+   "last_observed_at": "2026-08-07T23:19:47Z",
+   "last_good_at": "2026-08-07T23:19:47Z",
    "last_good_value": "AI-Powered Service Platform | Zendesk",
    "last_good_json": null,
    "last_good_hash": "301c7b00",
@@ -86,12 +94,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"301c7b00\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-07T15:53:25Z",
-   "last_good_at": "2026-08-07T15:53:25Z",
+   "last_observed_at": "2026-08-07T23:18:46Z",
+   "last_good_at": "2026-08-07T23:18:46Z",
    "last_good_value": "USD 19/month",
    "last_good_json": "{\"amount\":19,\"currency\":\"USD\",\"period\":\"month\",\"unit\":null,\"tier\":\"Support Team\"}",
    "last_good_hash": "fe8c1b1e",
@@ -102,12 +112,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"fe8c1b1e\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-07T15:53:25Z",
-   "last_good_at": "2026-08-07T15:53:25Z",
+   "last_observed_at": "2026-08-07T23:18:46Z",
+   "last_good_at": "2026-08-07T23:18:46Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true}",
    "last_good_hash": "4e9f3590",
@@ -118,12 +130,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"4e9f3590\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-07T15:53:25Z",
-   "last_good_at": "2026-08-07T15:53:25Z",
+   "last_observed_at": "2026-08-07T23:18:46Z",
+   "last_good_at": "2026-08-07T23:18:46Z",
    "last_good_value": "Zendesk Pricing Plans | Starting from $19/month",
    "last_good_json": null,
    "last_good_hash": "d6a3054a",
@@ -134,28 +148,32 @@
    "total_changes": 0,
    "recent_hashes": "[\"d6a3054a\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-07T15:53:25Z",
+   "last_observed_at": "2026-08-07T23:18:46Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-07T15:53:25Z",
-   "last_good_at": "2026-08-07T15:53:25Z",
+   "last_observed_at": "2026-08-07T23:18:46Z",
+   "last_good_at": "2026-08-07T23:18:46Z",
    "last_good_value": "Support Team USD 19/month | Suite Team USD 55/month | Suite Professional USD 115/month",
    "last_good_json": "{\"tiers\":[{\"name\":\"Support Team\",\"amount\":19,\"currency\":\"USD\",\"period\":\"month\",\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Suite Team\",\"amount\":55,\"currency\":\"USD\",\"period\":\"month\",\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Suite Professional\",\"amount\":115,\"currency\":\"USD\",\"period\":\"month\",\"unit\":null,\"source\":\"heuristic\"}],\"count\":3}",
    "last_good_hash": "39a73ddf",
@@ -166,12 +184,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"39a73ddf\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-07T15:52:25Z",
-   "last_good_at": "2026-08-07T15:52:25Z",
+   "last_observed_at": "2026-08-07T23:19:47Z",
+   "last_good_at": "2026-08-07T23:19:47Z",
    "last_good_value": "1,800 apps | 11 % decrease in email | 2 x increase in ai | 36 % increase in ai | 51.5 % automate | 6 % increase in automated | 80,000 companies",
    "last_good_json": "{\"items\":[{\"claim\":\"1,800 apps\",\"kind\":\"count\"},{\"claim\":\"11 % decrease in email\",\"kind\":\"percent\"},{\"claim\":\"2 x increase in ai\",\"kind\":\"multiplier\"},{\"claim\":\"36 % increase in ai\",\"kind\":\"percent\"},{\"claim\":\"51.5 % automate\",\"kind\":\"percent\"},{\"claim\":\"6 % increase in automated\",\"kind\":\"percent\"},{\"claim\":\"80,000 companies\",\"kind\":\"count\"}],\"count\":7}",
    "last_good_hash": "2431ce17",
@@ -182,12 +202,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"2431ce17\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-07T15:52:25Z",
-   "last_good_at": "2026-08-07T15:52:25Z",
+   "last_observed_at": "2026-08-07T23:19:47Z",
+   "last_good_at": "2026-08-07T23:19:47Z",
    "last_good_value": "Self-improving AI agents that learn, adapt, and outperform. On every channel, on any platform.",
    "last_good_json": null,
    "last_good_hash": "baf6cd45",
@@ -198,11 +220,37 @@
    "total_changes": 0,
    "recent_hashes": "[\"baf6cd45\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   }
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.zendesk.com/",
+   "fetched_at": "2026-08-07T23:19:47Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 864675,
+   "duration_ms": 56,
+   "signals_found": 7,
+   "signals_expected": 7
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.zendesk.com/pricing/",
+   "fetched_at": "2026-08-07T23:18:46Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 1087940,
+   "duration_ms": 105,
+   "signals_found": 4,
+   "signals_expected": 5
+  },
   {
    "kind": "pricing",
    "url": "https://www.zendesk.com/pricing/",

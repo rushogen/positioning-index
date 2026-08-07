@@ -10,8 +10,8 @@
  "signals": [
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-07T15:52:26Z",
-   "last_good_at": "2026-08-07T15:52:26Z",
+   "last_observed_at": "2026-08-07T23:19:44Z",
+   "last_good_at": "2026-08-07T23:19:44Z",
    "last_good_value": "ai-powered customer engagement platform",
    "last_good_json": null,
    "last_good_hash": "59b8716c",
@@ -22,12 +22,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"59b8716c\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-07T15:52:26Z",
-   "last_good_at": "2026-08-07T15:52:26Z",
+   "last_observed_at": "2026-08-07T23:19:44Z",
+   "last_good_at": "2026-08-07T23:19:44Z",
    "last_good_value": "Angi, billie, Buffer, Cursor, Customer.io dashboard screen, Imax, Lemonade, Lovable, mixpanel, Modern office, Monarch, Notion, Simon Heaton, Sue Cho, Sue Cho Monarch Money, vibe.co, Wispr Flow, Woman using laptop",
    "last_good_json": "{\"names\":[\"Angi\",\"billie\",\"Buffer\",\"Cursor\",\"Customer.io dashboard screen\",\"Imax\",\"Lemonade\",\"Lovable\",\"mixpanel\",\"Modern office\",\"Monarch\",\"Notion\",\"Simon Heaton\",\"Sue Cho\",\"Sue Cho Monarch Money\",\"vibe.co\",\"Wispr Flow\",\"Woman using laptop\"],\"count\":18,\"lead\":\"trusted by 9,000+ brands <div class=\\\"bg-surface flex size-full items-center jus\"}",
    "last_good_hash": "67d691b2",
@@ -38,12 +40,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"67d691b2\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-07T15:52:26Z",
-   "last_good_at": "2026-08-07T15:52:26Z",
+   "last_observed_at": "2026-08-07T23:19:44Z",
+   "last_good_at": "2026-08-07T23:19:44Z",
    "last_good_value": "More impact from every m e s s a g e",
    "last_good_json": null,
    "last_good_hash": "fbbf3d04",
@@ -54,12 +58,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"fbbf3d04\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-07T15:52:26Z",
-   "last_good_at": "2026-08-07T15:52:26Z",
+   "last_observed_at": "2026-08-07T23:19:44Z",
+   "last_good_at": "2026-08-07T23:19:44Z",
    "last_good_value": "Customer.io is a customer engagement platform for creating personalized journeys across email, push, SMS, and in-app messaging.",
    "last_good_json": null,
    "last_good_hash": "3e547873",
@@ -70,12 +76,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"3e547873\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-07T15:52:26Z",
-   "last_good_at": "2026-08-07T15:52:26Z",
+   "last_observed_at": "2026-08-07T23:19:44Z",
+   "last_good_at": "2026-08-07T23:19:44Z",
    "last_good_value": "Customer.io: AI-Powered Customer Engagement Platform",
    "last_good_json": null,
    "last_good_hash": "332db9c6",
@@ -86,12 +94,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"332db9c6\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-07T15:53:26Z",
-   "last_good_at": "2026-08-07T15:53:26Z",
+   "last_observed_at": "2026-08-07T23:18:44Z",
+   "last_good_at": "2026-08-07T23:18:44Z",
    "last_good_value": "USD 100/month",
    "last_good_json": "{\"amount\":100,\"currency\":\"USD\",\"period\":\"month\",\"unit\":null,\"tier\":\"Essentials\"}",
    "last_good_hash": "acbba7a1",
@@ -102,12 +112,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"acbba7a1\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-07T15:53:26Z",
-   "last_good_at": "2026-08-07T15:53:26Z",
+   "last_observed_at": "2026-08-07T23:18:44Z",
+   "last_good_at": "2026-08-07T23:18:44Z",
    "last_good_value": "no",
    "last_good_json": "{\"free\":false}",
    "last_good_hash": "62366ffa",
@@ -118,12 +130,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"62366ffa\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-07T15:53:26Z",
-   "last_good_at": "2026-08-07T15:53:26Z",
+   "last_observed_at": "2026-08-07T23:18:44Z",
+   "last_good_at": "2026-08-07T23:18:44Z",
    "last_good_value": "Pricing + Plans | Customer.io",
    "last_good_json": null,
    "last_good_hash": "5aa4467a",
@@ -134,28 +148,32 @@
    "total_changes": 0,
    "recent_hashes": "[\"5aa4467a\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-07T15:53:26Z",
+   "last_observed_at": "2026-08-07T23:18:44Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-07T15:53:26Z",
-   "last_good_at": "2026-08-07T15:53:26Z",
+   "last_observed_at": "2026-08-07T23:18:44Z",
+   "last_good_at": "2026-08-07T23:18:44Z",
    "last_good_value": "Essentials USD 100/month | Premium USD 1000/month | Enterprise custom",
    "last_good_json": "{\"tiers\":[{\"name\":\"Essentials\",\"amount\":100,\"currency\":\"USD\",\"period\":\"month\",\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Premium\",\"amount\":1000,\"currency\":\"USD\",\"period\":\"month\",\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Enterprise\",\"amount\":null,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"contact-sales\"}],\"count\":3}",
    "last_good_hash": "95998a73",
@@ -166,12 +184,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"95998a73\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-07T15:52:26Z",
-   "last_good_at": "2026-08-07T15:52:26Z",
+   "last_observed_at": "2026-08-07T23:19:44Z",
+   "last_good_at": "2026-08-07T23:19:44Z",
    "last_good_value": "22% increase in email | 28% increase in click-through | 4.4% boost in key | 9,000 brands",
    "last_good_json": "{\"items\":[{\"claim\":\"22% increase in email\",\"kind\":\"percent\"},{\"claim\":\"28% increase in click-through\",\"kind\":\"percent\"},{\"claim\":\"4.4% boost in key\",\"kind\":\"percent\"},{\"claim\":\"9,000 brands\",\"kind\":\"count\"}],\"count\":4}",
    "last_good_hash": "e07e37be",
@@ -182,12 +202,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"e07e37be\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-07T15:52:26Z",
-   "last_good_at": "2026-08-07T15:52:26Z",
+   "last_observed_at": "2026-08-07T23:19:44Z",
+   "last_good_at": "2026-08-07T23:19:44Z",
    "last_good_value": "Turn customer data into personalized experiences with a platform that gets more powerful over time.",
    "last_good_json": null,
    "last_good_hash": "09f38003",
@@ -198,11 +220,37 @@
    "total_changes": 0,
    "recent_hashes": "[\"09f38003\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   }
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://customer.io/",
+   "fetched_at": "2026-08-07T23:19:44Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 514321,
+   "duration_ms": 84,
+   "signals_found": 7,
+   "signals_expected": 7
+  },
+  {
+   "kind": "pricing",
+   "url": "https://customer.io/pricing",
+   "fetched_at": "2026-08-07T23:18:44Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 603851,
+   "duration_ms": 124,
+   "signals_found": 4,
+   "signals_expected": 5
+  },
   {
    "kind": "pricing",
    "url": "https://customer.io/pricing",

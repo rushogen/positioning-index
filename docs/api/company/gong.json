@@ -10,8 +10,8 @@
  "signals": [
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-07T15:52:22Z",
-   "last_good_at": "2026-08-07T15:52:22Z",
+   "last_observed_at": "2026-08-07T23:19:39Z",
+   "last_good_at": "2026-08-07T23:19:39Z",
    "last_good_value": "sales",
    "last_good_json": null,
    "last_good_hash": "869c16b7",
@@ -22,12 +22,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"869c16b7\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-07T15:52:22Z",
-   "last_good_at": "2026-08-07T15:52:22Z",
+   "last_observed_at": "2026-08-07T23:19:39Z",
+   "last_good_at": "2026-08-07T23:19:39Z",
    "last_good_value": "592x474, 720x391, 721x390, ADP, Anthropic, Frontline Education, Revenue AI OS, Sprout Social, SurveyMonkey",
    "last_good_json": "{\"names\":[\"592x474\",\"720x391\",\"721x390\",\"ADP\",\"Anthropic\",\"Frontline Education\",\"Revenue AI OS\",\"Sprout Social\",\"SurveyMonkey\"],\"count\":9,\"lead\":\"Trusted by 5,000+ customers <section class=\\\"relative isolate scroll-mt-16 text-b\"}",
    "last_good_hash": "0a6a267f",
@@ -38,12 +40,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"0a6a267f\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-07T15:52:22Z",
-   "last_good_at": "2026-08-07T15:52:22Z",
+   "last_observed_at": "2026-08-07T23:19:39Z",
+   "last_good_at": "2026-08-07T23:19:39Z",
    "last_good_value": "Revenue AI Built To",
    "last_good_json": null,
    "last_good_hash": "c599317c",
@@ -54,12 +58,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"c599317c\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-07T15:52:22Z",
-   "last_good_at": "2026-08-07T15:52:22Z",
+   "last_observed_at": "2026-08-07T23:19:39Z",
+   "last_good_at": "2026-08-07T23:19:39Z",
    "last_good_value": "Gong Revenue AI OS helps your entire GTM organization win. Drive growth with multimodal revenue signal processing, specialized AI agents, and purpose-built applications.",
    "last_good_json": null,
    "last_good_hash": "a3f3a0fd",
@@ -70,12 +76,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"a3f3a0fd\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-07T15:52:22Z",
-   "last_good_at": "2026-08-07T15:52:22Z",
+   "last_observed_at": "2026-08-07T23:19:39Z",
+   "last_good_at": "2026-08-07T23:19:39Z",
    "last_good_value": "Gong - Revenue AI OS",
    "last_good_json": null,
    "last_good_hash": "613db983",
@@ -86,44 +94,50 @@
    "total_changes": 0,
    "recent_hashes": "[\"613db983\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-07T15:53:23Z",
+   "last_observed_at": "2026-08-07T23:18:38Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-07T15:53:23Z",
+   "last_observed_at": "2026-08-07T23:18:38Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-07T15:53:23Z",
-   "last_good_at": "2026-08-07T15:53:23Z",
+   "last_observed_at": "2026-08-07T23:18:38Z",
+   "last_good_at": "2026-08-07T23:18:38Z",
    "last_good_value": "Gong Revenue AI Pricing",
    "last_good_json": null,
    "last_good_hash": "d515b244",
@@ -134,44 +148,50 @@
    "total_changes": 0,
    "recent_hashes": "[\"d515b244\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-07T15:53:23Z",
+   "last_observed_at": "2026-08-07T23:18:38Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-07T15:53:23Z",
+   "last_observed_at": "2026-08-07T23:18:38Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-07T15:52:22Z",
-   "last_good_at": "2026-08-07T15:52:22Z",
+   "last_observed_at": "2026-08-07T23:19:39Z",
+   "last_good_at": "2026-08-07T23:19:39Z",
    "last_good_value": "10 hours | 32% buyer response rates | 32% lift buyer response rates | 400 integrations | 46% decrease in ramp | 5,000 customers | 6,700 hours | 64% more productive with | 64% the revenue team",
    "last_good_json": "{\"items\":[{\"claim\":\"10 hours\",\"kind\":\"count\"},{\"claim\":\"32% buyer response rates\",\"kind\":\"percent-trailing\"},{\"claim\":\"32% lift buyer response rates\",\"kind\":\"percent-trailing\"},{\"claim\":\"400 integrations\",\"kind\":\"count\"},{\"claim\":\"46% decrease in ramp\",\"kind\":\"percent\"},{\"claim\":\"5,000 customers\",\"kind\":\"count\"},{\"claim\":\"6,700 hours\",\"kind\":\"count\"},{\"claim\":\"64% more productive with\",\"kind\":\"percent\"},{\"claim\":\"64% the revenue team\",\"kind\":\"percent-trailing\"}],\"count\":9}",
    "last_good_hash": "e8050bc9",
@@ -182,12 +202,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"e8050bc9\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-07T15:52:22Z",
-   "last_good_at": "2026-08-07T15:52:22Z",
+   "last_observed_at": "2026-08-07T23:19:39Z",
+   "last_good_at": "2026-08-07T23:19:39Z",
    "last_good_value": "Capture every interaction, analyze what's working, and automate what happens next — ring the gong, deal after deal, quarter after quarter.",
    "last_good_json": null,
    "last_good_hash": "1b7cdd91",
@@ -198,11 +220,37 @@
    "total_changes": 0,
    "recent_hashes": "[\"1b7cdd91\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   }
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.gong.io/",
+   "fetched_at": "2026-08-07T23:19:39Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 1498882,
+   "duration_ms": 127,
+   "signals_found": 7,
+   "signals_expected": 7
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.gong.io/pricing",
+   "fetched_at": "2026-08-07T23:18:38Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 300903,
+   "duration_ms": 323,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
   {
    "kind": "pricing",
    "url": "https://www.gong.io/pricing",

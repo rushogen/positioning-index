@@ -1,6 +1,63 @@
 {
  "changes": [
   {
+   "detected_at": "2026-08-07T23:18:47Z",
+   "slug": "airtable",
+   "name": "Airtable",
+   "segment": "product-dev",
+   "kind": "home",
+   "origin": "github-actions:US",
+   "signal": "headline",
+   "change_type": "modified",
+   "before_value": "AI transformed individual work. Airtable transforms teamwork.",
+   "after_value": "All your teams, all their workflows—connected in one workspace",
+   "before_json": null,
+   "after_json": null,
+   "previous_seen_at": "2026-08-07T15:53:34Z",
+   "magnitude": 0.823,
+   "oscillating": 1,
+   "summary": "Hero headline changed from \"AI transformed individual work. Airtable transforms teamwork.\" to \"All your teams, all their workflows—connected in one workspace\" (a value this page has held recently -- likely an A/B test rather than a repositioning)",
+   "confirmed": 0
+  },
+  {
+   "detected_at": "2026-08-07T23:18:47Z",
+   "slug": "airtable",
+   "name": "Airtable",
+   "segment": "product-dev",
+   "kind": "home",
+   "origin": "github-actions:US",
+   "signal": "subhead",
+   "change_type": "modified",
+   "before_value": "It turns individual gains into team momentum — the apps, workflows, and agents one person builds become systems the whole company runs on.",
+   "after_value": "Build AI-powered workflows that unify data, maximize collaboration, and set your teams up for long-term success. No code required.",
+   "before_json": null,
+   "after_json": null,
+   "previous_seen_at": "2026-08-07T15:53:34Z",
+   "magnitude": 0.775,
+   "oscillating": 1,
+   "summary": "Hero subhead changed from \"It turns individual gains into team momentum — the apps, workflows, and agents one pers…\" to \"Build AI-powered workflows that unify data, maximize collaboration, and set your teams …\" (a value this page has held recently -- likely an A/B test rather than a repositioning)",
+   "confirmed": 0
+  },
+  {
+   "detected_at": "2026-08-07T23:18:37Z",
+   "slug": "amplitude",
+   "name": "Amplitude",
+   "segment": "analytics",
+   "kind": "pricing",
+   "origin": "github-actions:US",
+   "signal": "pricing_meta_title",
+   "change_type": "modified",
+   "before_value": "Amplitude Pricing Options | Fast, Intelligent Customer Behavior Insights with Affordable Pricing Plans",
+   "after_value": "Amplitude Pricing",
+   "before_json": null,
+   "after_json": null,
+   "previous_seen_at": "2026-08-07T15:53:19Z",
+   "magnitude": 0.833,
+   "oscillating": 0,
+   "summary": "Pricing page title changed from \"Amplitude Pricing Options | Fast, Intelligent Customer Behavior Insights with Affordabl…\" to \"Amplitude Pricing\"",
+   "confirmed": 0
+  },
+  {
    "detected_at": "2026-08-07T15:53:34Z",
    "slug": "airtable",
    "name": "Airtable",
@@ -17,7 +74,7 @@
    "magnitude": 0.823,
    "oscillating": 0,
    "summary": "Hero headline changed from \"All your teams, all their workflows—connected in one workspace\" to \"AI transformed individual work. Airtable transforms teamwork.\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-07T15:53:34Z",
@@ -36,7 +93,7 @@
    "magnitude": 0.833,
    "oscillating": 0,
    "summary": "Proof points: added 100 companies, 50 projects, 500,000 companies, 60% cut creative-brief processing +5 more; removed 02 agents",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-07T15:53:34Z",
@@ -55,7 +112,7 @@
    "magnitude": 0.775,
    "oscillating": 0,
    "summary": "Hero subhead changed from \"Build AI-powered workflows that unify data, maximize collaboration, and set your teams …\" to \"It turns individual gains into team momentum — the apps, workflows, and agents one pers…\"",
-   "confirmed": 0
+   "confirmed": 1
   }
  ]
 }

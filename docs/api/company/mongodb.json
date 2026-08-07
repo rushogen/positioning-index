@@ -206,6 +206,30 @@
   {
    "kind": "pricing",
    "url": "https://www.mongodb.com/pricing",
+   "fetched_at": "2026-08-07T23:19:52Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 826410,
+   "duration_ms": 1077,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.mongodb.com/",
+   "fetched_at": "2026-08-07T23:18:51Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 494,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.mongodb.com/pricing",
    "fetched_at": "2026-08-07T15:53:17Z",
    "http_status": 200,
    "status": "ok",

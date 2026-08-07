@@ -10,8 +10,8 @@
  "signals": [
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-07T15:52:15Z",
-   "last_good_at": "2026-08-07T15:52:15Z",
+   "last_observed_at": "2026-08-07T23:18:42Z",
+   "last_good_at": "2026-08-07T23:18:42Z",
    "last_good_value": "one platform for your apps",
    "last_good_json": null,
    "last_good_hash": "42f7688c",
@@ -22,28 +22,32 @@
    "total_changes": 0,
    "recent_hashes": "[\"42f7688c\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-07T15:52:15Z",
+   "last_observed_at": "2026-08-07T23:18:42Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-07T15:52:15Z",
-   "last_good_at": "2026-08-07T15:52:15Z",
+   "last_observed_at": "2026-08-07T23:18:42Z",
+   "last_good_at": "2026-08-07T23:18:42Z",
    "last_good_value": "Everything we learned from powering 20% of the Internet—yours by default",
    "last_good_json": null,
    "last_good_hash": "51d3f3ad",
@@ -54,12 +58,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"51d3f3ad\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-07T15:52:15Z",
-   "last_good_at": "2026-08-07T15:52:15Z",
+   "last_observed_at": "2026-08-07T23:18:42Z",
+   "last_good_at": "2026-08-07T23:18:42Z",
    "last_good_value": "Welcome to Cloudflare - Powering the next generation of applications",
    "last_good_json": null,
    "last_good_hash": "68723169",
@@ -70,12 +76,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"68723169\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-07T15:52:15Z",
-   "last_good_at": "2026-08-07T15:52:15Z",
+   "last_observed_at": "2026-08-07T23:18:42Z",
+   "last_good_at": "2026-08-07T23:18:42Z",
    "last_good_value": "Cloudflare: Build for the agent era",
    "last_good_json": null,
    "last_good_hash": "0314cf8b",
@@ -86,7 +94,9 @@
    "total_changes": 0,
    "recent_hashes": "[\"0314cf8b\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_entry_price",
@@ -170,8 +180,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-07T15:52:15Z",
-   "last_good_at": "2026-08-07T15:52:15Z",
+   "last_observed_at": "2026-08-07T23:18:42Z",
+   "last_good_at": "2026-08-07T23:18:42Z",
    "last_good_value": "$0 forever ztna | $7 per active user | 100% uptime sla | 100% uptime sla chat | 4.5x faster faster for | 50 employees | 50 users | fortune 500",
    "last_good_json": "{\"items\":[{\"claim\":\"$0 forever ztna\",\"kind\":\"money\"},{\"claim\":\"$7 per active user\",\"kind\":\"money\"},{\"claim\":\"100% uptime sla\",\"kind\":\"percent\"},{\"claim\":\"100% uptime sla chat\",\"kind\":\"percent\"},{\"claim\":\"4.5x faster faster for\",\"kind\":\"multiplier\"},{\"claim\":\"50 employees\",\"kind\":\"count\"},{\"claim\":\"50 users\",\"kind\":\"count\"},{\"claim\":\"fortune 500\",\"kind\":\"rank\"}],\"count\":8}",
    "last_good_hash": "da309fd3",
@@ -182,12 +192,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"da309fd3\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-07T15:52:15Z",
-   "last_good_at": "2026-08-07T15:52:15Z",
+   "last_observed_at": "2026-08-07T23:18:42Z",
+   "last_good_at": "2026-08-07T23:18:42Z",
    "last_good_value": "One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure.",
    "last_good_json": null,
    "last_good_hash": "ea717cdc",
@@ -198,11 +210,37 @@
    "total_changes": 0,
    "recent_hashes": "[\"ea717cdc\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   }
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://www.cloudflare.com/plans/",
+   "fetched_at": "2026-08-07T23:19:43Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 661443,
+   "duration_ms": 412,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.cloudflare.com/",
+   "fetched_at": "2026-08-07T23:18:42Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 1305128,
+   "duration_ms": 747,
+   "signals_found": 6,
+   "signals_expected": 7
+  },
   {
    "kind": "pricing",
    "url": "https://www.cloudflare.com/plans/",

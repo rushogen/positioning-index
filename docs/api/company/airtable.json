@@ -10,56 +10,62 @@
  "signals": [
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-07T15:53:34Z",
-   "last_good_at": "2026-08-07T11:10:09Z",
+   "last_observed_at": "2026-08-07T23:18:47Z",
+   "last_good_at": "2026-08-07T23:18:47Z",
    "last_good_value": "one workspace",
    "last_good_json": null,
    "last_good_hash": "6ea6323e",
    "last_good_method": "pattern:h1",
    "last_good_confidence": 0.85,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 0,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": "[\"6ea6323e\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-07T15:53:34Z",
+   "last_observed_at": "2026-08-07T23:18:47Z",
    "last_good_at": "2026-08-07T15:53:34Z",
    "last_good_value": "Azure, Box, ChatGPT, Claude, Dropbox, Ebay, GitHub, Google, Jira, Openai, Salesforce, Slack, Snowflake, Tableau, Virgin Voyages",
    "last_good_json": "{\"names\":[\"Azure\",\"Box\",\"ChatGPT\",\"Claude\",\"Dropbox\",\"Ebay\",\"GitHub\",\"Google\",\"Jira\",\"Openai\",\"Salesforce\",\"Slack\",\"Snowflake\",\"Tableau\",\"Virgin Voyages\"],\"count\":15,\"lead\":\"Trusted by 500,000+ companies <span class=\\\"SolidCta-module-scss-modul\"}",
    "last_good_hash": "b021db21",
    "last_good_method": "proof-region",
    "last_good_confidence": 0.85,
-   "consecutive_nulls": 0,
+   "consecutive_nulls": 1,
    "suspect": 0,
    "total_changes": 1,
    "recent_hashes": "[\"b021db21\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-07T15:53:34Z",
-   "last_good_at": "2026-08-07T15:53:34Z",
-   "last_good_value": "AI transformed individual work. Airtable transforms teamwork.",
+   "last_observed_at": "2026-08-07T23:18:47Z",
+   "last_good_at": "2026-08-07T23:18:47Z",
+   "last_good_value": "All your teams, all their workflows—connected in one workspace",
    "last_good_json": null,
-   "last_good_hash": "9a7cd0ff",
+   "last_good_hash": "d55494c2",
    "last_good_method": "h1",
    "last_good_confidence": 1,
    "consecutive_nulls": 0,
    "suspect": 0,
-   "total_changes": 1,
-   "recent_hashes": "[\"9a7cd0ff\",\"d55494c2\"]",
+   "total_changes": 2,
+   "recent_hashes": "[\"d55494c2\",\"9a7cd0ff\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-07T15:53:34Z",
-   "last_good_at": "2026-08-07T15:53:34Z",
+   "last_observed_at": "2026-08-07T23:18:47Z",
+   "last_good_at": "2026-08-07T23:18:47Z",
    "last_good_value": "500,000+ brands use Airtable to enable real-time collaboration, automate repetitive tasks & manual work, and streamline business processes in minutes. Join them.",
    "last_good_json": null,
    "last_good_hash": "d0344f0d",
@@ -70,12 +76,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"d0344f0d\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-07T15:53:34Z",
-   "last_good_at": "2026-08-07T15:53:34Z",
+   "last_observed_at": "2026-08-07T23:18:47Z",
+   "last_good_at": "2026-08-07T23:18:47Z",
    "last_good_value": "Airtable: Build Enterprise-ready AI Workflows, Apps & Agents | Airtable",
    "last_good_json": null,
    "last_good_hash": "46e46296",
@@ -86,7 +94,9 @@
    "total_changes": 0,
    "recent_hashes": "[\"46e46296\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_entry_price",
@@ -160,7 +170,7 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-07T15:53:34Z",
+   "last_observed_at": "2026-08-07T23:18:47Z",
    "last_good_at": "2026-08-07T15:53:34Z",
    "last_good_value": "10,000 hours | 100 companies | 100m records | 50 projects | 500,000 companies | 60% cut creative-brief processing | 60% reduction in creative | 70% faster turnaround time | 70% faster unify global | 90% faster feedback triage | fortune 100",
    "last_good_json": "{\"items\":[{\"claim\":\"10,000 hours\",\"kind\":\"count\"},{\"claim\":\"100 companies\",\"kind\":\"count\"},{\"claim\":\"100m records\",\"kind\":\"count\"},{\"claim\":\"50 projects\",\"kind\":\"count\"},{\"claim\":\"500,000 companies\",\"kind\":\"count\"},{\"claim\":\"60% cut creative-brief processing\",\"kind\":\"percent-trailing\"},{\"claim\":\"60% reduction in creative\",\"kind\":\"percent\"},{\"claim\":\"70% faster turnaround time\",\"kind\":\"percent\"},{\"claim\":\"70% faster unify global\",\"kind\":\"percent\"},{\"claim\":\"90% faster feedback triage\",\"kind\":\"percent\"},{\"claim\":\"fortune 100\",\"kind\":\"rank\"}],\"count\":11}",
@@ -168,30 +178,72 @@
    "last_good_method": "regex-claims",
    "last_good_confidence": 0.7,
    "consecutive_nulls": 0,
-   "suspect": 0,
+   "suspect": 1,
    "total_changes": 1,
    "recent_hashes": "[\"9952bc4d\",\"71905339\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-07T15:53:34Z",
-   "last_good_at": "2026-08-07T15:53:34Z",
-   "last_good_value": "It turns individual gains into team momentum — the apps, workflows, and agents one person builds become systems the whole company runs on.",
+   "last_observed_at": "2026-08-07T23:18:47Z",
+   "last_good_at": "2026-08-07T23:18:47Z",
+   "last_good_value": "Build AI-powered workflows that unify data, maximize collaboration, and set your teams up for long-term success. No code required.",
    "last_good_json": null,
-   "last_good_hash": "d364d104",
+   "last_good_hash": "d009e506",
    "last_good_method": "p-after-h1",
    "last_good_confidence": 0.9,
    "consecutive_nulls": 0,
    "suspect": 0,
-   "total_changes": 1,
-   "recent_hashes": "[\"d364d104\",\"d009e506\"]",
+   "total_changes": 2,
+   "recent_hashes": "[\"d009e506\",\"d364d104\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   }
  ],
  "events": [
+  {
+   "detected_at": "2026-08-07T23:18:47Z",
+   "slug": "airtable",
+   "name": "Airtable",
+   "segment": "product-dev",
+   "kind": "home",
+   "origin": "github-actions:US",
+   "signal": "headline",
+   "change_type": "modified",
+   "before_value": "AI transformed individual work. Airtable transforms teamwork.",
+   "after_value": "All your teams, all their workflows—connected in one workspace",
+   "before_json": null,
+   "after_json": null,
+   "previous_seen_at": "2026-08-07T15:53:34Z",
+   "magnitude": 0.823,
+   "oscillating": 1,
+   "summary": "Hero headline changed from \"AI transformed individual work. Airtable transforms teamwork.\" to \"All your teams, all their workflows—connected in one workspace\" (a value this page has held recently -- likely an A/B test rather than a repositioning)",
+   "confirmed": 0
+  },
+  {
+   "detected_at": "2026-08-07T23:18:47Z",
+   "slug": "airtable",
+   "name": "Airtable",
+   "segment": "product-dev",
+   "kind": "home",
+   "origin": "github-actions:US",
+   "signal": "subhead",
+   "change_type": "modified",
+   "before_value": "It turns individual gains into team momentum — the apps, workflows, and agents one person builds become systems the whole company runs on.",
+   "after_value": "Build AI-powered workflows that unify data, maximize collaboration, and set your teams up for long-term success. No code required.",
+   "before_json": null,
+   "after_json": null,
+   "previous_seen_at": "2026-08-07T15:53:34Z",
+   "magnitude": 0.775,
+   "oscillating": 1,
+   "summary": "Hero subhead changed from \"It turns individual gains into team momentum — the apps, workflows, and agents one pers…\" to \"Build AI-powered workflows that unify data, maximize collaboration, and set your teams …\" (a value this page has held recently -- likely an A/B test rather than a repositioning)",
+   "confirmed": 0
+  },
   {
    "detected_at": "2026-08-07T15:53:34Z",
    "slug": "airtable",
@@ -209,7 +261,7 @@
    "magnitude": 0.823,
    "oscillating": 0,
    "summary": "Hero headline changed from \"All your teams, all their workflows—connected in one workspace\" to \"AI transformed individual work. Airtable transforms teamwork.\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-07T15:53:34Z",
@@ -228,7 +280,7 @@
    "magnitude": 0.833,
    "oscillating": 0,
    "summary": "Proof points: added 100 companies, 50 projects, 500,000 companies, 60% cut creative-brief processing +5 more; removed 02 agents",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-07T15:53:34Z",
@@ -247,10 +299,34 @@
    "magnitude": 0.775,
    "oscillating": 0,
    "summary": "Hero subhead changed from \"Build AI-powered workflows that unify data, maximize collaboration, and set your teams …\" to \"It turns individual gains into team momentum — the apps, workflows, and agents one pers…\"",
-   "confirmed": 0
+   "confirmed": 1
   }
  ],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://airtable.com/pricing",
+   "fetched_at": "2026-08-07T23:19:47Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 328524,
+   "duration_ms": 294,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.airtable.com/",
+   "fetched_at": "2026-08-07T23:18:47Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 441892,
+   "duration_ms": 404,
+   "signals_found": 6,
+   "signals_expected": 7
+  },
   {
    "kind": "home",
    "url": "https://www.airtable.com/",

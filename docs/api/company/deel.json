@@ -206,6 +206,30 @@
   {
    "kind": "pricing",
    "url": "https://www.deel.com/pricing/",
+   "fetched_at": "2026-08-07T23:19:55Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 666058,
+   "duration_ms": 79,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.deel.com/",
+   "fetched_at": "2026-08-07T23:18:54Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 960795,
+   "duration_ms": 196,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.deel.com/pricing/",
    "fetched_at": "2026-08-07T15:53:30Z",
    "http_status": 200,
    "status": "ok",

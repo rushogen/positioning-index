@@ -10,8 +10,8 @@
  "signals": [
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-07T15:52:19Z",
-   "last_good_at": "2026-08-07T15:52:19Z",
+   "last_observed_at": "2026-08-07T23:18:51Z",
+   "last_good_at": "2026-08-07T23:18:51Z",
    "last_good_value": "product intelligence platform for the ai era",
    "last_good_json": null,
    "last_good_hash": "e6c064a2",
@@ -22,28 +22,32 @@
    "total_changes": 0,
    "recent_hashes": "[\"e6c064a2\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-07T15:52:19Z",
+   "last_observed_at": "2026-08-07T23:18:51Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-07T15:52:19Z",
-   "last_good_at": "2026-08-07T15:52:19Z",
+   "last_observed_at": "2026-08-07T23:18:51Z",
+   "last_good_at": "2026-08-07T23:18:51Z",
    "last_good_value": "Build faster, with direction",
    "last_good_json": null,
    "last_good_hash": "e11f07cd",
@@ -54,12 +58,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"e11f07cd\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-07T15:52:19Z",
-   "last_good_at": "2026-08-07T15:52:19Z",
+   "last_observed_at": "2026-08-07T23:18:51Z",
+   "last_good_at": "2026-08-07T23:18:51Z",
    "last_good_value": "Mixpanel is the product intelligence platform for the AI era, combining analytics, session replay, experiments, feature flags, and AI-powered insights.",
    "last_good_json": null,
    "last_good_hash": "44937b28",
@@ -70,12 +76,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"44937b28\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-07T15:52:19Z",
-   "last_good_at": "2026-08-07T15:52:19Z",
+   "last_observed_at": "2026-08-07T23:18:51Z",
+   "last_good_at": "2026-08-07T23:18:51Z",
    "last_good_value": "Product Intelligence Platform for the AI Era | Mixpanel",
    "last_good_json": null,
    "last_good_hash": "fea564a2",
@@ -86,44 +94,50 @@
    "total_changes": 0,
    "recent_hashes": "[\"fea564a2\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-07T15:53:19Z",
+   "last_observed_at": "2026-08-07T23:19:53Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-07T15:53:19Z",
+   "last_observed_at": "2026-08-07T23:19:53Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-07T15:53:19Z",
-   "last_good_at": "2026-08-07T15:53:19Z",
+   "last_observed_at": "2026-08-07T23:19:53Z",
+   "last_good_at": "2026-08-07T23:19:53Z",
    "last_good_value": "Mixpanel Pricing: Find Your Plan & Get Started | Mixpanel",
    "last_good_json": null,
    "last_good_hash": "654b12d9",
@@ -134,44 +148,50 @@
    "total_changes": 0,
    "recent_hashes": "[\"654b12d9\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-07T15:53:19Z",
+   "last_observed_at": "2026-08-07T23:19:53Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-07T15:53:19Z",
+   "last_observed_at": "2026-08-07T23:19:53Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-07T15:52:19Z",
-   "last_good_at": "2026-08-07T15:52:19Z",
+   "last_observed_at": "2026-08-07T23:18:51Z",
+   "last_good_at": "2026-08-07T23:18:51Z",
    "last_good_value": "$1.2m mom | 29 k customers | 354 % roi",
    "last_good_json": "{\"items\":[{\"claim\":\"$1.2m mom\",\"kind\":\"money\"},{\"claim\":\"29 k customers\",\"kind\":\"count\"},{\"claim\":\"354 % roi\",\"kind\":\"percent\"}],\"count\":3}",
    "last_good_hash": "b2e3bf66",
@@ -182,12 +202,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"b2e3bf66\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-07T15:52:19Z",
-   "last_good_at": "2026-08-07T15:52:19Z",
+   "last_observed_at": "2026-08-07T23:18:51Z",
+   "last_good_at": "2026-08-07T23:18:51Z",
    "last_good_value": "Product intelligence for the AI era: ground every decision in customer truth, wherever you build",
    "last_good_json": null,
    "last_good_hash": "1101e740",
@@ -198,11 +220,37 @@
    "total_changes": 0,
    "recent_hashes": "[\"1101e740\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   }
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://mixpanel.com/pricing/",
+   "fetched_at": "2026-08-07T23:19:53Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 1250033,
+   "duration_ms": 359,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://mixpanel.com/home/",
+   "fetched_at": "2026-08-07T23:18:51Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 1265734,
+   "duration_ms": 715,
+   "signals_found": 6,
+   "signals_expected": 7
+  },
   {
    "kind": "pricing",
    "url": "https://mixpanel.com/pricing/",

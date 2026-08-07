@@ -204,6 +204,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "home",
+   "url": "https://calendly.com/",
+   "fetched_at": "2026-08-07T23:19:54Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 1235920,
+   "duration_ms": 304,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://calendly.com/pricing",
+   "fetched_at": "2026-08-07T23:18:53Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 598993,
+   "duration_ms": 375,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
    "kind": "pricing",
    "url": "https://calendly.com/pricing",
    "fetched_at": "2026-08-07T15:53:32Z",

@@ -90,24 +90,26 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-07T15:53:30Z",
+   "last_observed_at": "2026-08-07T23:18:36Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-07T15:53:30Z",
-   "last_good_at": "2026-08-07T15:53:30Z",
+   "last_observed_at": "2026-08-07T23:18:36Z",
+   "last_good_at": "2026-08-07T23:18:36Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true}",
    "last_good_hash": "4e9f3590",
@@ -118,12 +120,14 @@
    "total_changes": 0,
    "recent_hashes": "[\"4e9f3590\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-07T15:53:30Z",
-   "last_good_at": "2026-08-07T15:53:30Z",
+   "last_observed_at": "2026-08-07T23:18:36Z",
+   "last_good_at": "2026-08-07T23:18:36Z",
    "last_good_value": "Ramp Pricing and Plans",
    "last_good_json": null,
    "last_good_hash": "807a97be",
@@ -134,28 +138,32 @@
    "total_changes": 0,
    "recent_hashes": "[\"807a97be\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-07T15:53:30Z",
+   "last_observed_at": "2026-08-07T23:18:36Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 1,
+   "consecutive_nulls": 2,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-07T15:53:30Z",
-   "last_good_at": "2026-08-07T15:53:30Z",
+   "last_observed_at": "2026-08-07T23:18:36Z",
+   "last_good_at": "2026-08-07T23:18:36Z",
    "last_good_value": "Free free | Enterprise custom",
    "last_good_json": "{\"tiers\":[{\"name\":\"Free\",\"amount\":0,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"free-phrase\"},{\"name\":\"Enterprise\",\"amount\":null,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"contact-sales\"}],\"count\":2}",
    "last_good_hash": "9a08ddc1",
@@ -166,7 +174,9 @@
    "total_changes": 0,
    "recent_hashes": "[\"9a08ddc1\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "proof_points",
@@ -203,6 +213,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://ramp.com/",
+   "fetched_at": "2026-08-07T23:19:36Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 14032,
+   "duration_ms": 138,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://ramp.com/pricing",
+   "fetched_at": "2026-08-07T23:18:36Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 1499894,
+   "duration_ms": 678,
+   "signals_found": 3,
+   "signals_expected": 5
+  },
   {
    "kind": "pricing",
    "url": "https://ramp.com/pricing",

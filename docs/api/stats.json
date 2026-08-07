@@ -1,23 +1,67 @@
 {
  "companies": 200,
  "targets": 309,
- "observations": 126,
- "changes": 3,
- "changes_7d": 3,
- "changes_30d": 3,
+ "observations": 368,
+ "changes": 6,
+ "changes_7d": 6,
+ "changes_30d": 6,
  "retracted_changes": 3,
  "first_observation": "2026-08-07T11:00:38Z",
- "last_observation": "2026-08-07T15:53:35Z",
- "last_successful_fetch": "2026-08-07T15:53:36Z",
- "runs": 6,
- "last_run_at": "2026-08-07T15:53:36Z",
- "fetches_24h": 140,
- "blocked_24h": 2,
- "errors_24h": 1,
- "suspect_signals": 2,
+ "last_observation": "2026-08-07T23:19:55Z",
+ "last_successful_fetch": "2026-08-07T23:19:55Z",
+ "runs": 7,
+ "last_run_at": "2026-08-07T23:19:55Z",
+ "fetches_24h": 449,
+ "blocked_24h": 19,
+ "errors_24h": 3,
+ "suspect_signals": 3,
  "categories": [
   {
+   "label": "one platform",
+   "n": 5
+  },
+  {
+   "label": "ai agents",
+   "n": 2
+  },
+  {
+   "label": "business software",
+   "n": 2
+  },
+  {
+   "label": "communications infrastructure",
+   "n": 2
+  },
+  {
+   "label": "agentic crm",
+   "n": 1
+  },
+  {
+   "label": "agentic cs platform",
+   "n": 1
+  },
+  {
+   "label": "agentic cx suite for retail",
+   "n": 1
+  },
+  {
+   "label": "agentic document generation platform",
+   "n": 1
+  },
+  {
+   "label": "agentic financial operations platform",
+   "n": 1
+  },
+  {
    "label": "agentic infrastructure",
+   "n": 1
+  },
+  {
+   "label": "agentic product management system",
+   "n": 1
+  },
+  {
+   "label": "agentic security platform",
    "n": 1
   },
   {
@@ -25,75 +69,31 @@
    "n": 1
   },
   {
-   "label": "ai agents",
+   "label": "ai agent",
+   "n": 1
+  },
+  {
+   "label": "ai automation for critical processes",
+   "n": 1
+  },
+  {
+   "label": "ai banking software",
+   "n": 1
+  },
+  {
+   "label": "ai brand protection platform",
+   "n": 1
+  },
+  {
+   "label": "ai customer experience automation",
+   "n": 1
+  },
+  {
+   "label": "ai development platform",
    "n": 1
   },
   {
    "label": "ai era ship software",
-   "n": 1
-  },
-  {
-   "label": "ai platform for enterprises",
-   "n": 1
-  },
-  {
-   "label": "ai platform for marketers",
-   "n": 1
-  },
-  {
-   "label": "ai sales platform for smarter",
-   "n": 1
-  },
-  {
-   "label": "ai work platform for people",
-   "n": 1
-  },
-  {
-   "label": "ai workspace",
-   "n": 1
-  },
-  {
-   "label": "ai-powered customer engagement platform",
-   "n": 1
-  },
-  {
-   "label": "ai-powered developer platform",
-   "n": 1
-  },
-  {
-   "label": "ai-powered service",
-   "n": 1
-  },
-  {
-   "label": "autonomous agents",
-   "n": 1
-  },
-  {
-   "label": "autonomous b2c crm",
-   "n": 1
-  },
-  {
-   "label": "braze customer engagement platform",
-   "n": 1
-  },
-  {
-   "label": "collaboration layer",
-   "n": 1
-  },
-  {
-   "label": "collaboration software for software",
-   "n": 1
-  },
-  {
-   "label": "crm for agentic revenue",
-   "n": 1
-  },
-  {
-   "label": "customer service",
-   "n": 1
-  },
-  {
-   "label": "effective crm for closing deals",
    "n": 1
   }
  ],
@@ -163,5 +163,5 @@
    "label": "Pricing page title"
   }
  },
- "generated_at": "2026-08-07T15:53:36Z"
+ "generated_at": "2026-08-07T23:19:55Z"
 }
