@@ -71,20 +71,38 @@ export function collapse(s) {
 }
 
 /**
- * Remove everything that contains text but is not content: scripts, styles,
- * inline SVG (huge on modern sites, and full of <title> elements that would
- * poison title extraction), templates, comments.
+ * Remove markup that carries text but is not content: scripts, styles,
+ * noscript, templates, comments.
  *
- * Called once per page; every other function operates on the result.
+ * Inline SVG is deliberately KEPT here. Customer logo walls are very often
+ * inline <svg><title>Shopify</title>, and dropping them early would lose the
+ * single richest source for that signal.
  */
-export function stripNonContent(html) {
+export function stripCode(html) {
   return html
     .replace(/<!--[\s\S]*?-->/g, ' ')
     .replace(/<script\b[^>]*>[\s\S]*?<\/script\s*>/gi, ' ')
     .replace(/<style\b[^>]*>[\s\S]*?<\/style\s*>/gi, ' ')
     .replace(/<noscript\b[^>]*>[\s\S]*?<\/noscript\s*>/gi, ' ')
-    .replace(/<svg\b[^>]*>[\s\S]*?<\/svg\s*>/gi, ' ')
     .replace(/<template\b[^>]*>[\s\S]*?<\/template\s*>/gi, ' ');
+}
+
+/**
+ * Second pass, run over the output of stripCode. Drops inline SVG, which on a
+ * modern marketing page can be 40% of the bytes and whose <title> elements
+ * would otherwise poison <title> and heading extraction.
+ *
+ * Two passes rather than one because the second only ever runs over the
+ * already-reduced string, so the extra cost is small and the logo extractor
+ * gets the markup it needs.
+ */
+export function stripSvg(html) {
+  return html.replace(/<svg\b[^>]*>[\s\S]*?<\/svg\s*>/gi, ' ');
+}
+
+/** Convenience: both passes. */
+export function stripNonContent(html) {
+  return stripSvg(stripCode(html));
 }
 
 /** Tags to text: strip markup, decode entities, collapse whitespace. */
@@ -115,8 +133,14 @@ export function attr(tag, name) {
 export function* elements(html, name, opts = {}) {
   const isVoid = opts.void === true;
   const limit = opts.limit ?? 400;
+  // Bounded lookahead for the closing tag. Everything this module iterates
+  // (headings, paragraphs, img, svg, meta, title) has small inner content, so
+  // a fixed window keeps the whole loop O(elements) instead of O(elements x
+  // document length). The earlier version called html.toLowerCase() per
+  // element, which made a 1.2MB page cost ~160ms on its own.
+  const maxInner = opts.maxInner ?? 24_000;
   const open = new RegExp(`<${name}\\b[^>]*>`, 'gi');
-  const closeStr = `</${name}`;
+  const close = new RegExp(`</${name}\\s*>`, 'i');
   let count = 0;
   let m;
   while ((m = open.exec(html)) !== null) {
@@ -127,12 +151,83 @@ export function* elements(html, name, opts = {}) {
       continue;
     }
     const from = m.index + tag.length;
-    const end = html.toLowerCase().indexOf(closeStr, from);
-    // Unclosed tag: take a bounded slice rather than running to end of document.
-    const inner = end === -1 ? html.slice(from, from + 2000) : html.slice(from, end);
+    const window = html.slice(from, from + maxInner);
+    const cm = close.exec(window);
+    // Unclosed (or absurdly long) element: take a bounded slice rather than
+    // running to the end of the document.
+    const inner = cm ? window.slice(0, cm.index) : window.slice(0, 2000);
     yield { tag, inner, index: m.index };
-    if (end !== -1) open.lastIndex = end;
+    if (cm) open.lastIndex = from + cm.index;
   }
+}
+
+/**
+ * Drop `aria-hidden="true"` subtrees.
+ *
+ * This is not a nicety, it is how you read a modern hero correctly. Linear's
+ * <h1> contains three visually-duplicated copies of the headline (a mobile
+ * variant, a desktop variant, and per-word animation spans) all wrapped in
+ * aria-hidden="true", plus one canonical copy in a visually-hidden span. Naive
+ * tag-stripping returns the headline three times. Honouring aria-hidden returns
+ * exactly the string a screen reader would announce, which is the string the
+ * company actually wrote.
+ *
+ * Bounded: only runs on fragments, uses a depth counter, gives up past a cap.
+ */
+export function removeAriaHidden(fragment) {
+  if (!fragment || fragment.length > 40_000 || !/aria-hidden/i.test(fragment)) return fragment;
+  const opener = /<([a-zA-Z][\w-]*)\b[^>]*\baria-hidden\s*=\s*["']?true["']?[^>]*>/gi;
+  let out = fragment;
+  for (let pass = 0; pass < 8; pass++) {
+    opener.lastIndex = 0;
+    const m = opener.exec(out);
+    if (!m) break;
+    const tagName = m[1];
+    if (m[0].endsWith('/>')) { out = out.slice(0, m.index) + out.slice(m.index + m[0].length); continue; }
+    // Walk forward counting nested same-name tags to find the true close.
+    const scan = new RegExp(`<(/?)${tagName}\\b[^>]*>`, 'gi');
+    scan.lastIndex = m.index + m[0].length;
+    let depth = 1;
+    let end = -1;
+    let step;
+    while ((step = scan.exec(out)) !== null) {
+      depth += step[1] ? -1 : 1;
+      if (depth === 0) { end = step.index + step[0].length; break; }
+    }
+    if (end === -1) { out = out.slice(0, m.index); break; }
+    out = out.slice(0, m.index) + ' ' + out.slice(end);
+  }
+  return out;
+}
+
+/**
+ * Collapse a string that is the same phrase repeated.
+ *
+ * Responsive markup frequently renders the headline two or three times and
+ * hides all but one with CSS, which we cannot evaluate. If the text is P
+ * repeated (optionally ending mid-repeat, because `clean` may have truncated
+ * it), return P.
+ */
+export function dedupeRepeats(s) {
+  if (!s || s.length < 24) return s;
+  const probe = s.slice(0, Math.min(40, Math.floor(s.length / 2)));
+  const next = s.indexOf(probe, 1);
+  if (next < 4) return s;
+  const unit = s.slice(0, next).trim();
+  if (unit.length < 8) return s;
+  // Every subsequent chunk must be the unit, or a prefix of it (truncated tail).
+  for (let i = next; i < s.length; i += unit.length + 1) {
+    const chunk = s.slice(i, i + unit.length).trim();
+    if (chunk.length === 0) break;
+    if (unit.startsWith(chunk) || chunk.startsWith(unit)) continue;
+    return s;
+  }
+  return unit;
+}
+
+/** Text of a heading: aria-hidden dropped, tags stripped, repeats collapsed. */
+export function headingText(inner) {
+  return dedupeRepeats(text(removeAriaHidden(inner)));
 }
 
 /** First matching element, or null. */
