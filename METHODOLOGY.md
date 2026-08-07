@@ -1,6 +1,6 @@
 # Methodology
 
-**Version 1.3** — corresponds to extractor version `1.0.0`.
+**Version 1.4** — corresponds to extractor version `1.0.0`.
 
 This document states exactly how each signal is measured, what counts as a
 change, and what the index will refuse to claim. It is versioned because the
@@ -648,6 +648,154 @@ account.
 
 ---
 
+## 4A. Derived cross-sectional measures
+
+Everything above is about one company over time. The published site also reports
+the whole set at one moment — the words in 59 hero headlines, the noun 52
+companies claim, how many use AI language. Those are the numbers a reader sees
+first, so the rules that produce them belong here rather than in a comment.
+
+They are computed in `src/insights.js`, tested in `tests/insights.test.js`, and
+published as `docs/api/positioning.json` so any figure on the page can be
+checked against the file that produced it.
+
+### 4A.1 The denominator is always stated, and it is never 60
+
+Every aggregate carries a coverage block: how many companies are tracked, how
+many the number was actually computed over, and how many were unreadable. The
+site prints it under the chart. `pricing_free_tier` is readable for 32 of 60
+companies; the other 28 are **not** companies without a free tier, they are
+companies whose pricing page could not be read, and the chart says so in those
+words.
+
+Nothing is imputed. There is no mean over missing values, no "assume no", no
+filling a gap with the mode. §4.3's rule that a null is a parser failure rather
+than a removal is the same rule here: a null is excluded from the count and
+named, never converted to a zero.
+
+### 4A.2 Last known-good, with the freshness declared
+
+Aggregates count `last_good_value`, which is what §4.3 retains when extraction
+fails. That is the consistent choice — a broken selector is not a company that
+stopped saying something — but it means a count can include a value that did not
+extract this morning.
+
+So the coverage block carries two more numbers:
+
+| | meaning |
+|---|---|
+| `held` | the value is counted, but the most recent read of that page produced nothing and this is the last value seen |
+| `suspect` | the null has repeated enough that the signal is flagged and change detection on it is paused (§4.3) |
+
+This is why the site reports 52 readable category labels where the raw latest
+observations hold 51. Airtable's did not extract on 2026-08-07 and its previous
+value is being held; the chart counts it and the coverage line says one of the 52
+is held.
+
+### 4A.3 Word frequency
+
+Hero headlines are lowercased and split on every character that is not a letter
+or a digit. An apostrophe is a separator like any other, so "you're" yields
+"you" and a two-letter tail.
+
+- **Tokens shorter than three characters are dropped.** This is what excludes
+  "ai" from the word count, deliberately: AI language is measured separately in
+  §4A.5 rather than sitting in a word count as one row that dominates and
+  explains nothing.
+- **Stopwords are the published NLTK English list**, minus the fragments this
+  split cannot produce. A stopword list assembled by hand while looking at the
+  results is a way of choosing the answer.
+- **Nothing is stemmed.** "agent" and "agents" are counted apart, because they
+  are different claims: a plural noun about a plural thing, and a singular
+  product.
+- **One vote per company.** A headline that repeats a word contributes one. The
+  unit of this index is the company, and a company that repeats itself has not
+  doubled its opinion.
+
+### 4A.4 Category noun grouping
+
+Each `category_label` (§2.3) is grouped by the **first** noun in it that appears
+in a fixed vocabulary, reading left to right. Left to right because English puts
+the head noun of a marketing category before its qualifiers: "AI platform for
+marketers" is a platform, not a marketer.
+
+The vocabulary is a literal list in `src/insights.js` and is not extended to make
+a chart tidier. Singular and plural map to one group here — unlike §4A.3 —
+because as a self-description they are the same claim. "agentic" is not "agent";
+nothing is stemmed or fuzzy-matched.
+
+A label containing no noun in the vocabulary is **not** forced into a bucket. It
+is counted as readable, reported separately, and shown verbatim, and its bar on
+the site is drawn in the neutral tone because it measures the vocabulary rather
+than the market.
+
+This grouping inherits §2.3's weakness in full. Category label extraction is a
+scored guess over a fixed noun vocabulary and is the least reliable of the twelve
+signals; a distribution built on it is no better.
+
+### 4A.5 AI language
+
+A company counts as using AI language if any of `headline`, `subhead` or
+`category_label` contains one of four term families, matched as whole tokens:
+
+| family | tokens |
+|---|---|
+| ai | `ai` |
+| agent | `agent`, `agents`, `agentic` |
+| copilot | `copilot`, `copilots` |
+| autonomous | `autonomous`, `autonomy` |
+
+Whole tokens, so "AI-powered" counts and "said" does not. The list is the
+definition: a company selling AI without using any of these four words counts as
+not using them, which is the honest limit of a word count and is stated on the
+page.
+
+Three buckets, and they account for every tracked company exactly once: uses the
+language, does not, and could not be read. A company we could not read is neither
+a mention nor a non-mention. A company appears once however many of the three
+fields mention it, so the per-field counts sum to more than the company count.
+
+### 4A.6 Proof point kinds
+
+Companies, not claims. A homepage with eleven percentage claims has one opinion
+about how to prove things, and counting claims would let one verbose page outvote
+ten others. Total claim counts are published alongside.
+
+The extractor's `percent` and `percent-trailing` kinds (§2.6) are reported as one
+category. The difference between "40% faster" and "faster by 40%" is a property
+of our regexes, not of the market, and publishing it as two bars would report the
+first as if it were the second.
+
+### 4A.7 Logo counts
+
+Counted per company citing, not per appearance, and case-folded first, because
+the same customer is "OpenAI" on one page and "Openai" on the next. The spelling
+displayed is the most common original; ties are broken by `en` collation so the
+choice does not depend on which file was read first.
+
+These numbers are a **floor and not a count**. §2.5 reads logo names from `alt`
+text, image filenames and inline SVG titles, so a wall built from CSS sprites or
+a single flat image reads as no logos at all. Fourteen of the sixty companies are
+missing from this measure rather than empty.
+
+### 4A.8 Price distribution
+
+Amounts are **not currency-converted**. Twenty-two of the twenty-three readable
+entry prices are USD and one is EUR; converting would require a rate this project
+does not have and would put a number in the archive that no page ever published.
+The currency mix is published with the chart.
+
+Buckets are half-open (`[min, max)`) so each price lands in exactly one. The
+lowest bucket is real rather than a rounding artefact: for a usage-priced product
+the cheapest published number is a per-unit rate, not a seat price, and §2.8's
+entry-price rule takes the cheapest paid number on the page.
+
+A median is published for the readable entry prices, labelled with its n. It
+describes twenty-three numbers. It is not a market price and the site does not
+call it one.
+
+---
+
 ## 5. What this index does not claim
 
 - **Not intent.** It records what was published and when. Whether a change was
@@ -681,6 +829,26 @@ account.
 ---
 
 ## 6. Version history
+
+**v1.4** — 2026-08-07. The breadth axis gets a definition. New §4A, covering the
+cross-sectional measures the published site now leads with: word frequency,
+category noun grouping, AI language, proof point kinds, logo counts and the price
+distribution. They existed as data from the first sweep and were on no page; the
+site was built entirely around change over time, so a one-day-old archive showed
+three events across sixty companies and read as an empty crawler dashboard.
+
+None of this is a new measurement. §4A defines how the twelve signals in §2 are
+*counted*, and every rule in it is a rule about refusing to overstate: the
+denominator is always published and is never sixty, a null is excluded and named
+rather than zeroed, held and suspect values are declared, and small counts are
+reported as counts.
+
+**No signal definition changed** and the extractor version stays `1.0.0`. §1
+through §4 are untouched; values recorded before and after this version are
+comparable. Two bugs in the new aggregation code were found and fixed before
+publication: a two-character token floor that silently removed "os" from the
+category vocabulary, and an apostrophe-stripping step that let contraction
+fragments through the stopword list.
 
 **v1.3** — 2026-08-07. The asymmetry is closed in the other direction. New §4.11
 (a value appearing where there was none is an acquisition, not an addition);

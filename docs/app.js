@@ -1,6 +1,18 @@
 /*
   The public index, in plain JavaScript.
 
+  WHAT THIS FILE IS NOT RESPONSIBLE FOR
+  ------------------------------------
+  The landing view. Every chart, number, coverage note and table of companies on
+  "The state of positioning" is written into index.html by bin/build-site.js and
+  is already on screen when this file starts. Nothing below renders it, and with
+  scripting switched off it still reads correctly. That is deliberate: the
+  findings are the product, and gating them behind a fetch would mean a page
+  that says nothing until a JSON file arrives.
+
+  What is left here is the three secondary views -- the change feed, the company
+  list, the crawl health table -- and the router between them.
+
   No framework, no build step, no CDN. Three reasons, in order of how much they
   actually mattered:
 
@@ -108,11 +120,13 @@ async function loadStats() {
       if (small) el.classList.add('small');
     }
   };
-  set('companies', fmtNum(s.companies));
+  // These now live on the crawl-health tab rather than the masthead. Crawl
+  // counters are diagnostics: they say whether the numbers on the front page
+  // can be trusted, which is not the same thing as being the point.
   set('observations', fmtNum(s.observations));
-  set('changes_30d', fmtNum(s.changes_30d));
   set('runs', fmtNum(s.runs));
-  set('first_observation', fmtDate(s.first_observation));
+  set('changes', fmtNum(s.changes));
+  set('retracted_changes', fmtNum(s.retracted_changes));
   set('last_successful_fetch', relative(s.last_successful_fetch), true);
 
   // The banner is the honesty valve: if the crawl is unhealthy, the page says
@@ -276,24 +290,6 @@ async function renderCompanies() {
   tbody.replaceChildren(...(rows.length ? rows : [h('tr', {}, h('td', { colspan: 5, class: 'empty' }, 'Nothing matches that filter.'))]));
 }
 
-// --------------------------------------------------------------- categories
-
-async function renderCategories() {
-  const ul = $('#categories');
-  const s = state.stats ?? (await getJSON(API.stats));
-  const cats = s.categories || [];
-  if (!cats.length) {
-    ul.replaceChildren(h('li', { class: 'empty' }, 'No category labels extracted yet.'));
-    return;
-  }
-  const max = Math.max(...cats.map((c) => c.n));
-  ul.replaceChildren(...cats.map((c) => h('li', {},
-    h('span', { class: 'label', title: c.label }, c.label),
-    h('span', { class: 'bar', style: `width:${Math.round((c.n / max) * 100)}%` }),
-    h('span', { class: 'n' }, c.n),
-  )));
-}
-
 // ------------------------------------------------------------------ health
 
 const HEALTH_MEANING = {
@@ -415,7 +411,7 @@ async function renderCompany(slug) {
 
 // ------------------------------------------------------------------ router
 
-const VIEWS = ['feed', 'companies', 'categories', 'health', 'company'];
+const VIEWS = ['positioning', 'feed', 'companies', 'health', 'company'];
 
 function show(view) {
   for (const v of VIEWS) $(`#view-${v}`).hidden = v !== view;
@@ -432,14 +428,24 @@ async function route() {
     return;
   }
   if (parts[0] === 'companies') { show('companies'); await renderCompanies(); return; }
-  if (parts[0] === 'categories') { show('categories'); await renderCategories(); return; }
+  // `#/categories` was its own tab before the landing view existed. It is now a
+  // section of the front page, and the old link still lands on it.
+  if (parts[0] === 'categories') { location.replace('#/'); return; }
+  if (parts[0] === 'changes') { show('feed'); await renderFeed(); return; }
   if (parts[0] === 'health') { show('health'); await renderHealth(); return; }
 
-  show('feed');
-  await renderFeed();
+  // The landing view is already in the document. Showing it is all there is
+  // to do, and it is what an unrecognised route falls back to.
+  show('positioning');
 }
 
-window.addEventListener('hashchange', () => { route(); window.scrollTo(0, 0); });
+// A route is a hash that starts with a slash. Anything else is an in-page
+// anchor into a section of the landing view, and scrolling those back to the
+// top would defeat the link.
+window.addEventListener('hashchange', () => {
+  route();
+  if (location.hash.startsWith('#/') || location.hash === '') window.scrollTo(0, 0);
+});
 
 $('#signal-filter').addEventListener('change', (e) => { state.signalFilter = e.target.value; renderFeed(); });
 $('#segment-filter').addEventListener('change', (e) => { state.segmentFilter = e.target.value; renderCompanies(); });

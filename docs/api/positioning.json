@@ -1,0 +1,4945 @@
+{
+ "headline_words": {
+  "words": [
+   {
+    "word": "agents",
+    "n": 7,
+    "companies": [
+     {
+      "slug": "contentful",
+      "name": "Contentful",
+      "text": "Built for humans. Ready for agents."
+     },
+     {
+      "slug": "databricks",
+      "name": "Databricks",
+      "text": "The database your AI agents deserve"
+     },
+     {
+      "slug": "fivetran",
+      "name": "Fivetran",
+      "text": "Automated data for autonomous agents"
+     },
+     {
+      "slug": "linear",
+      "name": "Linear",
+      "text": "The product development system for teams and agents"
+     },
+     {
+      "slug": "monday",
+      "name": "monday.com",
+      "text": "People and agents working as one team"
+     },
+     {
+      "slug": "notion",
+      "name": "Notion",
+      "text": "Where teams and agents Think together."
+     },
+     {
+      "slug": "slack",
+      "name": "Slack",
+      "text": "All your people and AI agents working together."
+     }
+    ]
+   },
+   {
+    "word": "teams",
+    "n": 6,
+    "companies": [
+     {
+      "slug": "amplitude",
+      "name": "Amplitude",
+      "text": "A new era for product teams"
+     },
+     {
+      "slug": "asana",
+      "name": "Asana",
+      "text": "The OS for human-agent teams"
+     },
+     {
+      "slug": "atlassian",
+      "name": "Atlassian",
+      "text": "Collaboration for Software, IT & Business Teams"
+     },
+     {
+      "slug": "hubspot",
+      "name": "HubSpot",
+      "text": "Where go-to-market teams go to grow scale close retain grow"
+     },
+     {
+      "slug": "linear",
+      "name": "Linear",
+      "text": "The product development system for teams and agents"
+     },
+     {
+      "slug": "notion",
+      "name": "Notion",
+      "text": "Where teams and agents Think together."
+     }
+    ]
+   },
+   {
+    "word": "platform",
+    "n": 5,
+    "companies": [
+     {
+      "slug": "apollo",
+      "name": "Apollo.io",
+      "text": "The AI sales platform for smarter, faster revenue growth"
+     },
+     {
+      "slug": "bill",
+      "name": "BILL",
+      "text": "Meet BILL. Your AI-powered financial operations platform."
+     },
+     {
+      "slug": "mongodb",
+      "name": "MongoDB",
+      "text": "One data platform. Unlimited AI potential."
+     },
+     {
+      "slug": "twilio",
+      "name": "Twilio",
+      "text": "The platform for conversations in the AI era"
+     },
+     {
+      "slug": "zendesk",
+      "name": "Zendesk",
+      "text": "AI-powered service platform"
+     }
+    ]
+   },
+   {
+    "word": "revenue",
+    "n": 5,
+    "companies": [
+     {
+      "slug": "apollo",
+      "name": "Apollo.io",
+      "text": "The AI sales platform for smarter, faster revenue growth"
+     },
+     {
+      "slug": "attio",
+      "name": "Attio",
+      "text": "Welcome to agentic revenue."
+     },
+     {
+      "slug": "clay",
+      "name": "Clay",
+      "text": "Build systems to grow revenue"
+     },
+     {
+      "slug": "gong",
+      "name": "Gong",
+      "text": "Revenue AI Built To"
+     },
+     {
+      "slug": "stripe",
+      "name": "Stripe",
+      "text": "Financial infrastructure to grow your revenue. Accept payments, offer financial services, and implement custom revenue models—from your first transaction to your billionth."
+     }
+    ]
+   },
+   {
+    "word": "together",
+    "n": 5,
+    "companies": [
+     {
+      "slug": "github",
+      "name": "GitHub",
+      "text": "The future of building happens together"
+     },
+     {
+      "slug": "lattice",
+      "name": "Lattice",
+      "text": "People + AI: Succeeding Together"
+     },
+     {
+      "slug": "notion",
+      "name": "Notion",
+      "text": "Where teams and agents Think together."
+     },
+     {
+      "slug": "segment",
+      "name": "Segment",
+      "text": "Segment ❤️ Twilio. We're finally moving in together on Twilio.com!"
+     },
+     {
+      "slug": "slack",
+      "name": "Slack",
+      "text": "All your people and AI agents working together."
+     }
+    ]
+   },
+   {
+    "word": "faster",
+    "n": 4,
+    "companies": [
+     {
+      "slug": "apollo",
+      "name": "Apollo.io",
+      "text": "The AI sales platform for smarter, faster revenue growth"
+     },
+     {
+      "slug": "gitlab",
+      "name": "GitLab",
+      "text": "Ship faster. With trust."
+     },
+     {
+      "slug": "mixpanel",
+      "name": "Mixpanel",
+      "text": "Build faster, with direction"
+     },
+     {
+      "slug": "sentry",
+      "name": "Sentry",
+      "text": "Code breaks, fix it faster"
+     }
+    ]
+   },
+   {
+    "word": "powered",
+    "n": 4,
+    "companies": [
+     {
+      "slug": "bill",
+      "name": "BILL",
+      "text": "Meet BILL. Your AI-powered financial operations platform."
+     },
+     {
+      "slug": "datadog",
+      "name": "Datadog",
+      "text": "AI-Powered Observability and Security"
+     },
+     {
+      "slug": "typeform",
+      "name": "Typeform",
+      "text": "Forms & Automated Workflows, Powered by AI | Typeform"
+     },
+     {
+      "slug": "zendesk",
+      "name": "Zendesk",
+      "text": "AI-powered service platform"
+     }
+    ]
+   },
+   {
+    "word": "build",
+    "n": 3,
+    "companies": [
+     {
+      "slug": "clay",
+      "name": "Clay",
+      "text": "Build systems to grow revenue"
+     },
+     {
+      "slug": "mixpanel",
+      "name": "Mixpanel",
+      "text": "Build faster, with direction"
+     },
+     {
+      "slug": "supabase",
+      "name": "Supabase",
+      "text": "Build in a weekend Scale to millions"
+     }
+    ]
+   },
+   {
+    "word": "built",
+    "n": 3,
+    "companies": [
+     {
+      "slug": "brex",
+      "name": "Brex",
+      "text": "Finance built for speed and control."
+     },
+     {
+      "slug": "contentful",
+      "name": "Contentful",
+      "text": "Built for humans. Ready for agents."
+     },
+     {
+      "slug": "gong",
+      "name": "Gong",
+      "text": "Revenue AI Built To"
+     }
+    ]
+   },
+   {
+    "word": "data",
+    "n": 3,
+    "companies": [
+     {
+      "slug": "dbt-labs",
+      "name": "dbt Labs",
+      "text": "The open standard for modern, AI-ready data transformation"
+     },
+     {
+      "slug": "fivetran",
+      "name": "Fivetran",
+      "text": "Automated data for autonomous agents"
+     },
+     {
+      "slug": "mongodb",
+      "name": "MongoDB",
+      "text": "One data platform. Unlimited AI potential."
+     }
+    ]
+   },
+   {
+    "word": "era",
+    "n": 3,
+    "companies": [
+     {
+      "slug": "amplitude",
+      "name": "Amplitude",
+      "text": "A new era for product teams"
+     },
+     {
+      "slug": "intercom",
+      "name": "Intercom",
+      "text": "The only helpdesk designed for the AI Agent era"
+     },
+     {
+      "slug": "twilio",
+      "name": "Twilio",
+      "text": "The platform for conversations in the AI era"
+     }
+    ]
+   },
+   {
+    "word": "grow",
+    "n": 3,
+    "companies": [
+     {
+      "slug": "clay",
+      "name": "Clay",
+      "text": "Build systems to grow revenue"
+     },
+     {
+      "slug": "hubspot",
+      "name": "HubSpot",
+      "text": "Where go-to-market teams go to grow scale close retain grow"
+     },
+     {
+      "slug": "stripe",
+      "name": "Stripe",
+      "text": "Financial infrastructure to grow your revenue. Accept payments, offer financial services, and implement custom revenue models—from your first transaction to your billionth."
+     }
+    ]
+   }
+  ],
+  "coverage": {
+   "tracked": 60,
+   "readable": 59,
+   "unreadable": 1,
+   "held": 0,
+   "suspect": 0,
+   "missing": [
+    {
+     "slug": "ramp",
+     "name": "Ramp"
+    }
+   ]
+  },
+  "distinct_words": 175
+ },
+ "category_nouns": {
+  "groups": [
+   {
+    "noun": "platform",
+    "n": 19,
+    "companies": [
+     {
+      "slug": "apollo",
+      "name": "Apollo.io",
+      "text": "ai sales platform for smarter"
+     },
+     {
+      "slug": "bill",
+      "name": "BILL",
+      "text": "financial operations platform for businesses"
+     },
+     {
+      "slug": "braze",
+      "name": "Braze",
+      "text": "braze customer engagement platform"
+     },
+     {
+      "slug": "cloudflare",
+      "name": "Cloudflare",
+      "text": "one platform for your apps"
+     },
+     {
+      "slug": "customer-io",
+      "name": "Customer.io",
+      "text": "ai-powered customer engagement platform"
+     },
+     {
+      "slug": "databricks",
+      "name": "Databricks",
+      "text": "ai platform for enterprises"
+     },
+     {
+      "slug": "deel",
+      "name": "Deel",
+      "text": "one powerful platform"
+     },
+     {
+      "slug": "elastic",
+      "name": "Elastic",
+      "text": "elasticsearch platform"
+     },
+     {
+      "slug": "github",
+      "name": "GitHub",
+      "text": "ai-powered developer platform"
+     },
+     {
+      "slug": "gitlab",
+      "name": "GitLab",
+      "text": "intelligent orchestration platform for devsecops"
+     },
+     {
+      "slug": "hightouch",
+      "name": "Hightouch",
+      "text": "ai platform for marketers"
+     },
+     {
+      "slug": "lattice",
+      "name": "Lattice",
+      "text": "hr platform"
+     },
+     {
+      "slug": "mixpanel",
+      "name": "Mixpanel",
+      "text": "product intelligence platform for the ai era"
+     },
+     {
+      "slug": "monday",
+      "name": "monday.com",
+      "text": "ai work platform for people"
+     },
+     {
+      "slug": "mongodb",
+      "name": "MongoDB",
+      "text": "one data platform"
+     },
+     {
+      "slug": "segment",
+      "name": "Segment",
+      "text": "twilio segment customer data platform"
+     },
+     {
+      "slug": "supabase",
+      "name": "Supabase",
+      "text": "postgres development platform"
+     },
+     {
+      "slug": "twilio",
+      "name": "Twilio",
+      "text": "platform for conversations in the ai era"
+     },
+     {
+      "slug": "webflow",
+      "name": "Webflow",
+      "text": "agentic web platform for modern businesses"
+     }
+    ]
+   },
+   {
+    "noun": "software",
+    "n": 5,
+    "companies": [
+     {
+      "slug": "atlassian",
+      "name": "Atlassian",
+      "text": "collaboration software for software"
+     },
+     {
+      "slug": "brex",
+      "name": "Brex",
+      "text": "modern finance software"
+     },
+     {
+      "slug": "calendly",
+      "name": "Calendly",
+      "text": "online appointment scheduling software"
+     },
+     {
+      "slug": "pendo",
+      "name": "Pendo",
+      "text": "ai era ship software"
+     },
+     {
+      "slug": "sentry",
+      "name": "Sentry",
+      "text": "error tracking software"
+     }
+    ]
+   },
+   {
+    "noun": "infrastructure",
+    "n": 4,
+    "companies": [
+     {
+      "slug": "clay",
+      "name": "Clay",
+      "text": "infrastructure"
+     },
+     {
+      "slug": "netlify",
+      "name": "Netlify",
+      "text": "production infrastructure"
+     },
+     {
+      "slug": "stripe",
+      "name": "Stripe",
+      "text": "financial infrastructure"
+     },
+     {
+      "slug": "vercel",
+      "name": "Vercel",
+      "text": "agentic infrastructure"
+     }
+    ]
+   },
+   {
+    "noun": "crm",
+    "n": 3,
+    "companies": [
+     {
+      "slug": "attio",
+      "name": "Attio",
+      "text": "crm for agentic revenue"
+     },
+     {
+      "slug": "klaviyo",
+      "name": "Klaviyo",
+      "text": "autonomous b2c crm"
+     },
+     {
+      "slug": "pipedrive",
+      "name": "Pipedrive",
+      "text": "effective crm for closing deals"
+     }
+    ]
+   },
+   {
+    "noun": "system",
+    "n": 3,
+    "companies": [
+     {
+      "slug": "front",
+      "name": "Front",
+      "text": "one coordinated system"
+     },
+     {
+      "slug": "linear",
+      "name": "Linear",
+      "text": "product development system for teams and agents"
+     },
+     {
+      "slug": "rippling",
+      "name": "Rippling",
+      "text": "workforce management system"
+     }
+    ]
+   },
+   {
+    "noun": "agent",
+    "n": 2,
+    "companies": [
+     {
+      "slug": "fivetran",
+      "name": "Fivetran",
+      "text": "autonomous agents"
+     },
+     {
+      "slug": "slack",
+      "name": "Slack",
+      "text": "ai agents"
+     }
+    ]
+   },
+   {
+    "noun": "app",
+    "n": 2,
+    "companies": [
+     {
+      "slug": "clickup",
+      "name": "ClickUp",
+      "text": "everything app for work"
+     },
+     {
+      "slug": "retool",
+      "name": "Retool",
+      "text": "vibe-coded apps"
+     }
+    ]
+   },
+   {
+    "noun": "layer",
+    "n": 2,
+    "companies": [
+     {
+      "slug": "metabase",
+      "name": "Metabase",
+      "text": "semantic layer"
+     },
+     {
+      "slug": "miro",
+      "name": "Miro",
+      "text": "collaboration layer"
+     }
+    ]
+   },
+   {
+    "noun": "service",
+    "n": 2,
+    "companies": [
+     {
+      "slug": "hubspot",
+      "name": "HubSpot",
+      "text": "customer service"
+     },
+     {
+      "slug": "zendesk",
+      "name": "Zendesk",
+      "text": "ai-powered service"
+     }
+    ]
+   },
+   {
+    "noun": "workspace",
+    "n": 2,
+    "companies": [
+     {
+      "slug": "airtable",
+      "name": "Airtable",
+      "text": "one workspace"
+     },
+     {
+      "slug": "notion",
+      "name": "Notion",
+      "text": "ai workspace"
+     }
+    ]
+   },
+   {
+    "noun": "canvas",
+    "n": 1,
+    "companies": [
+     {
+      "slug": "figma",
+      "name": "Figma",
+      "text": "intelligent canvas for infinite creativity"
+     }
+    ]
+   },
+   {
+    "noun": "cloud",
+    "n": 1,
+    "companies": [
+     {
+      "slug": "snowflake",
+      "name": "Snowflake",
+      "text": "snowflake ai data cloud"
+     }
+    ]
+   },
+   {
+    "noun": "helpdesk",
+    "n": 1,
+    "companies": [
+     {
+      "slug": "intercom",
+      "name": "Intercom",
+      "text": "only helpdesk"
+     }
+    ]
+   },
+   {
+    "noun": "os",
+    "n": 1,
+    "companies": [
+     {
+      "slug": "asana",
+      "name": "Asana",
+      "text": "os for human-agent teams"
+     }
+    ]
+   },
+   {
+    "noun": "runtime",
+    "n": 1,
+    "companies": [
+     {
+      "slug": "launchdarkly",
+      "name": "LaunchDarkly",
+      "text": "runtime"
+     }
+    ]
+   },
+   {
+    "noun": "stack",
+    "n": 1,
+    "companies": [
+     {
+      "slug": "datadog",
+      "name": "Datadog",
+      "text": "see inside any stack"
+     }
+    ]
+   },
+   {
+    "noun": "tool",
+    "n": 1,
+    "companies": [
+     {
+      "slug": "loom",
+      "name": "Loom",
+      "text": "online screen recording tool"
+     }
+    ]
+   }
+  ],
+  "unmatched": [
+   {
+    "slug": "gong",
+    "name": "Gong",
+    "text": "sales"
+   }
+  ],
+  "coverage": {
+   "tracked": 60,
+   "readable": 52,
+   "unreadable": 8,
+   "held": 1,
+   "suspect": 0,
+   "missing": [
+    {
+     "slug": "amplitude",
+     "name": "Amplitude"
+    },
+    {
+     "slug": "contentful",
+     "name": "Contentful"
+    },
+    {
+     "slug": "dbt-labs",
+     "name": "dbt Labs"
+    },
+    {
+     "slug": "posthog",
+     "name": "PostHog"
+    },
+    {
+     "slug": "ramp",
+     "name": "Ramp"
+    },
+    {
+     "slug": "typeform",
+     "name": "Typeform"
+    },
+    {
+     "slug": "vanta",
+     "name": "Vanta"
+    },
+    {
+     "slug": "zapier",
+     "name": "Zapier"
+    }
+   ]
+  }
+ },
+ "ai_mentions": {
+  "mentions": [
+   {
+    "slug": "airtable",
+    "name": "Airtable",
+    "terms": [
+     "agent",
+     "ai"
+    ],
+    "fields": [
+     "headline",
+     "subhead"
+    ],
+    "text": "AI transformed individual work. Airtable transforms teamwork."
+   },
+   {
+    "slug": "amplitude",
+    "name": "Amplitude",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "subhead"
+    ],
+    "text": "A new era for product teams"
+   },
+   {
+    "slug": "apollo",
+    "name": "Apollo.io",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "headline",
+     "category_label"
+    ],
+    "text": "The AI sales platform for smarter, faster revenue growth"
+   },
+   {
+    "slug": "asana",
+    "name": "Asana",
+    "terms": [
+     "agent"
+    ],
+    "fields": [
+     "headline",
+     "category_label"
+    ],
+    "text": "The OS for human-agent teams"
+   },
+   {
+    "slug": "atlassian",
+    "name": "Atlassian",
+    "terms": [
+     "agent",
+     "ai"
+    ],
+    "fields": [
+     "subhead"
+    ],
+    "text": "Collaboration for Software, IT & Business Teams"
+   },
+   {
+    "slug": "attio",
+    "name": "Attio",
+    "terms": [
+     "agent"
+    ],
+    "fields": [
+     "headline",
+     "category_label"
+    ],
+    "text": "Welcome to agentic revenue."
+   },
+   {
+    "slug": "bill",
+    "name": "BILL",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "headline"
+    ],
+    "text": "Meet BILL. Your AI-powered financial operations platform."
+   },
+   {
+    "slug": "braze",
+    "name": "Braze",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "headline"
+    ],
+    "text": "Rewrite the rules of customer engagement with AI"
+   },
+   {
+    "slug": "clay",
+    "name": "Clay",
+    "terms": [
+     "agent"
+    ],
+    "fields": [
+     "subhead"
+    ],
+    "text": "Build systems to grow revenue"
+   },
+   {
+    "slug": "cloudflare",
+    "name": "Cloudflare",
+    "terms": [
+     "agent"
+    ],
+    "fields": [
+     "subhead"
+    ],
+    "text": "Everything we learned from powering 20% of the Internet—yours by default"
+   },
+   {
+    "slug": "contentful",
+    "name": "Contentful",
+    "terms": [
+     "agent"
+    ],
+    "fields": [
+     "headline",
+     "subhead"
+    ],
+    "text": "Built for humans. Ready for agents."
+   },
+   {
+    "slug": "customer-io",
+    "name": "Customer.io",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "category_label"
+    ],
+    "text": "More impact from every m e s s a g e"
+   },
+   {
+    "slug": "databricks",
+    "name": "Databricks",
+    "terms": [
+     "agent",
+     "ai"
+    ],
+    "fields": [
+     "headline",
+     "category_label"
+    ],
+    "text": "The database your AI agents deserve"
+   },
+   {
+    "slug": "datadog",
+    "name": "Datadog",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "headline"
+    ],
+    "text": "AI-Powered Observability and Security"
+   },
+   {
+    "slug": "dbt-labs",
+    "name": "dbt Labs",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "headline",
+     "subhead"
+    ],
+    "text": "The open standard for modern, AI-ready data transformation"
+   },
+   {
+    "slug": "elastic",
+    "name": "Elastic",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "subhead"
+    ],
+    "text": "Better retrieval. Better answers."
+   },
+   {
+    "slug": "fivetran",
+    "name": "Fivetran",
+    "terms": [
+     "agent",
+     "ai",
+     "autonomous"
+    ],
+    "fields": [
+     "headline",
+     "subhead",
+     "category_label"
+    ],
+    "text": "Automated data for autonomous agents"
+   },
+   {
+    "slug": "front",
+    "name": "Front",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "headline",
+     "subhead"
+    ],
+    "text": "AI for simple support is everywhere. Complex customer operations demand Front."
+   },
+   {
+    "slug": "github",
+    "name": "GitHub",
+    "terms": [
+     "agent",
+     "ai"
+    ],
+    "fields": [
+     "subhead",
+     "category_label"
+    ],
+    "text": "The future of building happens together"
+   },
+   {
+    "slug": "gong",
+    "name": "Gong",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "headline"
+    ],
+    "text": "Revenue AI Built To"
+   },
+   {
+    "slug": "hightouch",
+    "name": "Hightouch",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "subhead",
+     "category_label"
+    ],
+    "text": "Marketing looks different here"
+   },
+   {
+    "slug": "hubspot",
+    "name": "HubSpot",
+    "terms": [
+     "agent"
+    ],
+    "fields": [
+     "subhead"
+    ],
+    "text": "Where go-to-market teams go to grow scale close retain grow"
+   },
+   {
+    "slug": "intercom",
+    "name": "Intercom",
+    "terms": [
+     "agent",
+     "ai"
+    ],
+    "fields": [
+     "headline",
+     "subhead"
+    ],
+    "text": "The only helpdesk designed for the AI Agent era"
+   },
+   {
+    "slug": "klaviyo",
+    "name": "Klaviyo",
+    "terms": [
+     "autonomous"
+    ],
+    "fields": [
+     "headline",
+     "category_label"
+    ],
+    "text": "the AUTONOMOUS B2C CRM"
+   },
+   {
+    "slug": "lattice",
+    "name": "Lattice",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "headline",
+     "subhead"
+    ],
+    "text": "People + AI: Succeeding Together"
+   },
+   {
+    "slug": "launchdarkly",
+    "name": "LaunchDarkly",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "headline",
+     "subhead"
+    ],
+    "text": "Move at AI speed. Stay in control."
+   },
+   {
+    "slug": "linear",
+    "name": "Linear",
+    "terms": [
+     "agent",
+     "ai"
+    ],
+    "fields": [
+     "headline",
+     "subhead",
+     "category_label"
+    ],
+    "text": "The product development system for teams and agents"
+   },
+   {
+    "slug": "loom",
+    "name": "Loom",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "subhead"
+    ],
+    "text": "One video is worth a thousand words"
+   },
+   {
+    "slug": "metabase",
+    "name": "Metabase",
+    "terms": [
+     "agent",
+     "ai"
+    ],
+    "fields": [
+     "headline",
+     "subhead"
+    ],
+    "text": "Open source AI analytics you can verify"
+   },
+   {
+    "slug": "miro",
+    "name": "Miro",
+    "terms": [
+     "agent",
+     "ai"
+    ],
+    "fields": [
+     "headline",
+     "subhead"
+    ],
+    "text": "The collaboration layer your AI tools are missing."
+   },
+   {
+    "slug": "mixpanel",
+    "name": "Mixpanel",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "subhead",
+     "category_label"
+    ],
+    "text": "Build faster, with direction"
+   },
+   {
+    "slug": "monday",
+    "name": "monday.com",
+    "terms": [
+     "agent",
+     "ai"
+    ],
+    "fields": [
+     "headline",
+     "subhead",
+     "category_label"
+    ],
+    "text": "People and agents working as one team"
+   },
+   {
+    "slug": "mongodb",
+    "name": "MongoDB",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "headline"
+    ],
+    "text": "One data platform. Unlimited AI potential."
+   },
+   {
+    "slug": "netlify",
+    "name": "Netlify",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "subhead"
+    ],
+    "text": "Push your ideas to the web"
+   },
+   {
+    "slug": "notion",
+    "name": "Notion",
+    "terms": [
+     "agent",
+     "ai"
+    ],
+    "fields": [
+     "headline",
+     "subhead",
+     "category_label"
+    ],
+    "text": "Where teams and agents Think together."
+   },
+   {
+    "slug": "pendo",
+    "name": "Pendo",
+    "terms": [
+     "agent",
+     "ai"
+    ],
+    "fields": [
+     "headline",
+     "subhead",
+     "category_label"
+    ],
+    "text": "The antidote to AI slop."
+   },
+   {
+    "slug": "pipedrive",
+    "name": "Pipedrive",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "subhead"
+    ],
+    "text": "The easy and effective CRM for closing deals"
+   },
+   {
+    "slug": "retool",
+    "name": "Retool",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "subhead"
+    ],
+    "text": "Secure your vibe-coded apps"
+   },
+   {
+    "slug": "rippling",
+    "name": "Rippling",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "headline",
+     "subhead"
+    ],
+    "text": "AI that knows your company, and acts like it"
+   },
+   {
+    "slug": "slack",
+    "name": "Slack",
+    "terms": [
+     "agent",
+     "ai"
+    ],
+    "fields": [
+     "headline",
+     "category_label"
+    ],
+    "text": "All your people and AI agents working together."
+   },
+   {
+    "slug": "snowflake",
+    "name": "Snowflake",
+    "terms": [
+     "agent",
+     "ai"
+    ],
+    "fields": [
+     "subhead",
+     "category_label"
+    ],
+    "text": "Code Work"
+   },
+   {
+    "slug": "twilio",
+    "name": "Twilio",
+    "terms": [
+     "agent",
+     "ai"
+    ],
+    "fields": [
+     "headline",
+     "subhead",
+     "category_label"
+    ],
+    "text": "The platform for conversations in the AI era"
+   },
+   {
+    "slug": "typeform",
+    "name": "Typeform",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "headline",
+     "subhead"
+    ],
+    "text": "Forms & Automated Workflows, Powered by AI | Typeform"
+   },
+   {
+    "slug": "vercel",
+    "name": "Vercel",
+    "terms": [
+     "agent"
+    ],
+    "fields": [
+     "headline",
+     "subhead",
+     "category_label"
+    ],
+    "text": "Agentic Infrastructure"
+   },
+   {
+    "slug": "webflow",
+    "name": "Webflow",
+    "terms": [
+     "agent",
+     "ai"
+    ],
+    "fields": [
+     "subhead",
+     "category_label"
+    ],
+    "text": "Make your website a growth engine"
+   },
+   {
+    "slug": "zapier",
+    "name": "Zapier",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "headline",
+     "subhead"
+    ],
+    "text": "Your tools. Your rules. Any AI."
+   },
+   {
+    "slug": "zendesk",
+    "name": "Zendesk",
+    "terms": [
+     "agent",
+     "ai"
+    ],
+    "fields": [
+     "headline",
+     "subhead",
+     "category_label"
+    ],
+    "text": "AI-powered service platform"
+   }
+  ],
+  "quiet": [
+   {
+    "slug": "brex",
+    "name": "Brex",
+    "text": "Finance built for speed and control."
+   },
+   {
+    "slug": "calendly",
+    "name": "Calendly",
+    "text": "Free Online Appointment Scheduling Software | Calendly"
+   },
+   {
+    "slug": "clickup",
+    "name": "ClickUp",
+    "text": "Software to replace all software"
+   },
+   {
+    "slug": "deel",
+    "name": "Deel",
+    "text": "Hire, manage, pay, & equip anyone, anywhere"
+   },
+   {
+    "slug": "figma",
+    "name": "Figma",
+    "text": "The intelligent canvas for infinite creativity"
+   },
+   {
+    "slug": "gitlab",
+    "name": "GitLab",
+    "text": "Ship faster. With trust."
+   },
+   {
+    "slug": "posthog",
+    "name": "PostHog",
+    "text": "Shift your product into self-driving mode"
+   },
+   {
+    "slug": "segment",
+    "name": "Segment",
+    "text": "Segment ❤️ Twilio. We're finally moving in together on Twilio.com!"
+   },
+   {
+    "slug": "sentry",
+    "name": "Sentry",
+    "text": "Code breaks, fix it faster"
+   },
+   {
+    "slug": "stripe",
+    "name": "Stripe",
+    "text": "Financial infrastructure to grow your revenue. Accept payments, offer financial services, and implement custom revenue models—from your first transaction to your billionth."
+   },
+   {
+    "slug": "supabase",
+    "name": "Supabase",
+    "text": "Build in a weekend Scale to millions"
+   },
+   {
+    "slug": "vanta",
+    "name": "Vanta",
+    "text": "Trust is everything"
+   }
+  ],
+  "by_field": [
+   {
+    "field": "headline",
+    "n": 31,
+    "companies": [
+     {
+      "slug": "airtable",
+      "name": "Airtable",
+      "text": "AI transformed individual work. Airtable transforms teamwork."
+     },
+     {
+      "slug": "apollo",
+      "name": "Apollo.io",
+      "text": "The AI sales platform for smarter, faster revenue growth"
+     },
+     {
+      "slug": "asana",
+      "name": "Asana",
+      "text": "The OS for human-agent teams"
+     },
+     {
+      "slug": "attio",
+      "name": "Attio",
+      "text": "Welcome to agentic revenue."
+     },
+     {
+      "slug": "bill",
+      "name": "BILL",
+      "text": "Meet BILL. Your AI-powered financial operations platform."
+     },
+     {
+      "slug": "braze",
+      "name": "Braze",
+      "text": "Rewrite the rules of customer engagement with AI"
+     },
+     {
+      "slug": "contentful",
+      "name": "Contentful",
+      "text": "Built for humans. Ready for agents."
+     },
+     {
+      "slug": "databricks",
+      "name": "Databricks",
+      "text": "The database your AI agents deserve"
+     },
+     {
+      "slug": "datadog",
+      "name": "Datadog",
+      "text": "AI-Powered Observability and Security"
+     },
+     {
+      "slug": "dbt-labs",
+      "name": "dbt Labs",
+      "text": "The open standard for modern, AI-ready data transformation"
+     },
+     {
+      "slug": "fivetran",
+      "name": "Fivetran",
+      "text": "Automated data for autonomous agents"
+     },
+     {
+      "slug": "front",
+      "name": "Front",
+      "text": "AI for simple support is everywhere. Complex customer operations demand Front."
+     },
+     {
+      "slug": "gong",
+      "name": "Gong",
+      "text": "Revenue AI Built To"
+     },
+     {
+      "slug": "intercom",
+      "name": "Intercom",
+      "text": "The only helpdesk designed for the AI Agent era"
+     },
+     {
+      "slug": "klaviyo",
+      "name": "Klaviyo",
+      "text": "the AUTONOMOUS B2C CRM"
+     },
+     {
+      "slug": "lattice",
+      "name": "Lattice",
+      "text": "People + AI: Succeeding Together"
+     },
+     {
+      "slug": "launchdarkly",
+      "name": "LaunchDarkly",
+      "text": "Move at AI speed. Stay in control."
+     },
+     {
+      "slug": "linear",
+      "name": "Linear",
+      "text": "The product development system for teams and agents"
+     },
+     {
+      "slug": "metabase",
+      "name": "Metabase",
+      "text": "Open source AI analytics you can verify"
+     },
+     {
+      "slug": "miro",
+      "name": "Miro",
+      "text": "The collaboration layer your AI tools are missing."
+     },
+     {
+      "slug": "monday",
+      "name": "monday.com",
+      "text": "People and agents working as one team"
+     },
+     {
+      "slug": "mongodb",
+      "name": "MongoDB",
+      "text": "One data platform. Unlimited AI potential."
+     },
+     {
+      "slug": "notion",
+      "name": "Notion",
+      "text": "Where teams and agents Think together."
+     },
+     {
+      "slug": "pendo",
+      "name": "Pendo",
+      "text": "The antidote to AI slop."
+     },
+     {
+      "slug": "rippling",
+      "name": "Rippling",
+      "text": "AI that knows your company, and acts like it"
+     },
+     {
+      "slug": "slack",
+      "name": "Slack",
+      "text": "All your people and AI agents working together."
+     },
+     {
+      "slug": "twilio",
+      "name": "Twilio",
+      "text": "The platform for conversations in the AI era"
+     },
+     {
+      "slug": "typeform",
+      "name": "Typeform",
+      "text": "Forms & Automated Workflows, Powered by AI | Typeform"
+     },
+     {
+      "slug": "vercel",
+      "name": "Vercel",
+      "text": "Agentic Infrastructure"
+     },
+     {
+      "slug": "zapier",
+      "name": "Zapier",
+      "text": "Your tools. Your rules. Any AI."
+     },
+     {
+      "slug": "zendesk",
+      "name": "Zendesk",
+      "text": "AI-powered service platform"
+     }
+    ]
+   },
+   {
+    "field": "subhead",
+    "n": 35,
+    "companies": [
+     {
+      "slug": "airtable",
+      "name": "Airtable",
+      "text": "It turns individual gains into team momentum — the apps, workflows, and agents one person builds become systems the whole company runs on."
+     },
+     {
+      "slug": "amplitude",
+      "name": "Amplitude",
+      "text": "From analytics to feedback to code, Amplitude brings AI into every step of building self-improving products."
+     },
+     {
+      "slug": "atlassian",
+      "name": "Atlassian",
+      "text": "Teams and AI agents plan, execute, and deliver together in Jira, Confluence, Loom, and Rovo — the teamwork platform for the AI era."
+     },
+     {
+      "slug": "clay",
+      "name": "Clay",
+      "text": "Infrastructure to get any data, run agentic workflows, and launch GTM plays."
+     },
+     {
+      "slug": "cloudflare",
+      "name": "Cloudflare",
+      "text": "One platform for your apps, agents, and workforce. Build, secure, and scale without managing infrastructure."
+     },
+     {
+      "slug": "contentful",
+      "name": "Contentful",
+      "text": "Contentful lets you create content that customers trust and agents understand. With built-in personalization and AEO-ready content, you can scale fast across channels, markets, and brands without sacrificing quality or control."
+     },
+     {
+      "slug": "dbt-labs",
+      "name": "dbt Labs",
+      "text": "dbt combines SQL-based development with real-time validation and stateful intelligence, so you can build, test, and deploy AI-ready data pipelines quickly and confidently."
+     },
+     {
+      "slug": "elastic",
+      "name": "Elastic",
+      "text": "Elasticsearch brings context to AI."
+     },
+     {
+      "slug": "fivetran",
+      "name": "Fivetran",
+      "text": "Securely move, manage, and transform data to power analytics, operations, and AI at scale."
+     },
+     {
+      "slug": "front",
+      "name": "Front",
+      "text": "Only Front brings teams, conversations, and AI into one coordinated system, so customer operations stay fast, accurate, and in control."
+     },
+     {
+      "slug": "github",
+      "name": "GitHub",
+      "text": "Tools and trends evolve, but collaboration endures. With GitHub, developers, agents, and code come together on one platform."
+     },
+     {
+      "slug": "hightouch",
+      "name": "Hightouch",
+      "text": "Go from insight to live campaign in minutes – powered by all your data, brand knowledge, and AI."
+     },
+     {
+      "slug": "hubspot",
+      "name": "HubSpot",
+      "text": "Unite marketing, sales, and customer service on one agentic customer platform that delivers results fast."
+     },
+     {
+      "slug": "intercom",
+      "name": "Intercom",
+      "text": "Intercom is the only helpdesk with a natively integrated AI Agent , Fin , meaning every customer conversation improves the next one, enabling perfect experiences that were never possible before."
+     },
+     {
+      "slug": "lattice",
+      "name": "Lattice",
+      "text": "Join 5,000+ forward-thinking teams using Lattice’s HR and AI tools to manage people and performance — all on one trusted platform."
+     },
+     {
+      "slug": "launchdarkly",
+      "name": "LaunchDarkly",
+      "text": "The runtime control layer for AI development, de-risking releases, and enabling systems that heal and optimize themselves."
+     },
+     {
+      "slug": "linear",
+      "name": "Linear",
+      "text": "Purpose-built for planning and building products. Designed for the AI era."
+     },
+     {
+      "slug": "loom",
+      "name": "Loom",
+      "text": "Easily record and share AI-powered video messages with your teammates and customers to supercharge productivity"
+     },
+     {
+      "slug": "metabase",
+      "name": "Metabase",
+      "text": "Metabase gives you answers guided by your semantic layer — your metrics and business logic — whether reached by an agent or a teammate. Inspect the query behind every answer."
+     },
+     {
+      "slug": "miro",
+      "name": "Miro",
+      "text": "Where teams and their agents think, plan and build together"
+     },
+     {
+      "slug": "mixpanel",
+      "name": "Mixpanel",
+      "text": "Product intelligence for the AI era: ground every decision in customer truth, wherever you build"
+     },
+     {
+      "slug": "monday",
+      "name": "monday.com",
+      "text": "The AI workspace where people and agents drive business results together"
+     },
+     {
+      "slug": "netlify",
+      "name": "Netlify",
+      "text": "Create with AI or code, deploy instantly on production infrastructure. One platform to build and ship."
+     },
+     {
+      "slug": "notion",
+      "name": "Notion",
+      "text": "Capture context, find answers, and automate tasks with AI built for your team."
+     },
+     {
+      "slug": "pendo",
+      "name": "Pendo",
+      "text": "The companies winning the AI era ship software people genuinely love to use. Pendo surfaces where users and agents struggle and then helps you act on it, turning experience gaps into business results."
+     },
+     {
+      "slug": "pipedrive",
+      "name": "Pipedrive",
+      "text": "Pipedrive lets you track your sales pipeline, optimize leads, manage deals with AI and automate your entire sales process so you can focus on selling."
+     },
+     {
+      "slug": "retool",
+      "name": "Retool",
+      "text": "Build, deploy, and manage internal tools with Retool's unified engine. Connect to any database, API, or LLM. Leverage AI throughout your business."
+     },
+     {
+      "slug": "rippling",
+      "name": "Rippling",
+      "text": "HR, IT, and Finance data all on one platform, so AI can answer questions, automate work, and help teams get more done."
+     },
+     {
+      "slug": "snowflake",
+      "name": "Snowflake",
+      "text": "Bring agentic AI to all your data"
+     },
+     {
+      "slug": "twilio",
+      "name": "Twilio",
+      "text": "The Twilio platform empowers humans and AI agents to work together, coordinate across channels, and pick up every customer conversation where the last one left off."
+     },
+     {
+      "slug": "typeform",
+      "name": "Typeform",
+      "text": "Build AI-powered forms that get 3.5x more data — then trigger automated workflows to enrich leads, follow up, and grow revenue. No code. Start free."
+     },
+     {
+      "slug": "vercel",
+      "name": "Vercel",
+      "text": "For coding agents to ship apps and agents automated by agents."
+     },
+     {
+      "slug": "webflow",
+      "name": "Webflow",
+      "text": "Build your brand. Rank in AI search. Drive real revenue. All with Webflow."
+     },
+     {
+      "slug": "zapier",
+      "name": "Zapier",
+      "text": "Zapier gives teams one place to set guardrails, manage model access, and see everything — so everyone can build with AI confidently, on any model, without waiting for permission."
+     },
+     {
+      "slug": "zendesk",
+      "name": "Zendesk",
+      "text": "Self-improving AI agents that learn, adapt, and outperform. On every channel, on any platform."
+     }
+    ]
+   },
+   {
+    "field": "category_label",
+    "n": 20,
+    "companies": [
+     {
+      "slug": "apollo",
+      "name": "Apollo.io",
+      "text": "ai sales platform for smarter"
+     },
+     {
+      "slug": "asana",
+      "name": "Asana",
+      "text": "os for human-agent teams"
+     },
+     {
+      "slug": "attio",
+      "name": "Attio",
+      "text": "crm for agentic revenue"
+     },
+     {
+      "slug": "customer-io",
+      "name": "Customer.io",
+      "text": "ai-powered customer engagement platform"
+     },
+     {
+      "slug": "databricks",
+      "name": "Databricks",
+      "text": "ai platform for enterprises"
+     },
+     {
+      "slug": "fivetran",
+      "name": "Fivetran",
+      "text": "autonomous agents"
+     },
+     {
+      "slug": "github",
+      "name": "GitHub",
+      "text": "ai-powered developer platform"
+     },
+     {
+      "slug": "hightouch",
+      "name": "Hightouch",
+      "text": "ai platform for marketers"
+     },
+     {
+      "slug": "klaviyo",
+      "name": "Klaviyo",
+      "text": "autonomous b2c crm"
+     },
+     {
+      "slug": "linear",
+      "name": "Linear",
+      "text": "product development system for teams and agents"
+     },
+     {
+      "slug": "mixpanel",
+      "name": "Mixpanel",
+      "text": "product intelligence platform for the ai era"
+     },
+     {
+      "slug": "monday",
+      "name": "monday.com",
+      "text": "ai work platform for people"
+     },
+     {
+      "slug": "notion",
+      "name": "Notion",
+      "text": "ai workspace"
+     },
+     {
+      "slug": "pendo",
+      "name": "Pendo",
+      "text": "ai era ship software"
+     },
+     {
+      "slug": "slack",
+      "name": "Slack",
+      "text": "ai agents"
+     },
+     {
+      "slug": "snowflake",
+      "name": "Snowflake",
+      "text": "snowflake ai data cloud"
+     },
+     {
+      "slug": "twilio",
+      "name": "Twilio",
+      "text": "platform for conversations in the ai era"
+     },
+     {
+      "slug": "vercel",
+      "name": "Vercel",
+      "text": "agentic infrastructure"
+     },
+     {
+      "slug": "webflow",
+      "name": "Webflow",
+      "text": "agentic web platform for modern businesses"
+     },
+     {
+      "slug": "zendesk",
+      "name": "Zendesk",
+      "text": "ai-powered service"
+     }
+    ]
+   }
+  ],
+  "by_term": [
+   {
+    "term": "ai",
+    "n": 39,
+    "companies": [
+     {
+      "slug": "airtable",
+      "name": "Airtable",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead"
+      ],
+      "text": "AI transformed individual work. Airtable transforms teamwork."
+     },
+     {
+      "slug": "amplitude",
+      "name": "Amplitude",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "subhead"
+      ],
+      "text": "A new era for product teams"
+     },
+     {
+      "slug": "apollo",
+      "name": "Apollo.io",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "category_label"
+      ],
+      "text": "The AI sales platform for smarter, faster revenue growth"
+     },
+     {
+      "slug": "atlassian",
+      "name": "Atlassian",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "subhead"
+      ],
+      "text": "Collaboration for Software, IT & Business Teams"
+     },
+     {
+      "slug": "bill",
+      "name": "BILL",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "headline"
+      ],
+      "text": "Meet BILL. Your AI-powered financial operations platform."
+     },
+     {
+      "slug": "braze",
+      "name": "Braze",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "headline"
+      ],
+      "text": "Rewrite the rules of customer engagement with AI"
+     },
+     {
+      "slug": "customer-io",
+      "name": "Customer.io",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "category_label"
+      ],
+      "text": "More impact from every m e s s a g e"
+     },
+     {
+      "slug": "databricks",
+      "name": "Databricks",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "category_label"
+      ],
+      "text": "The database your AI agents deserve"
+     },
+     {
+      "slug": "datadog",
+      "name": "Datadog",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "headline"
+      ],
+      "text": "AI-Powered Observability and Security"
+     },
+     {
+      "slug": "dbt-labs",
+      "name": "dbt Labs",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead"
+      ],
+      "text": "The open standard for modern, AI-ready data transformation"
+     },
+     {
+      "slug": "elastic",
+      "name": "Elastic",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "subhead"
+      ],
+      "text": "Better retrieval. Better answers."
+     },
+     {
+      "slug": "fivetran",
+      "name": "Fivetran",
+      "terms": [
+       "agent",
+       "ai",
+       "autonomous"
+      ],
+      "fields": [
+       "headline",
+       "subhead",
+       "category_label"
+      ],
+      "text": "Automated data for autonomous agents"
+     },
+     {
+      "slug": "front",
+      "name": "Front",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead"
+      ],
+      "text": "AI for simple support is everywhere. Complex customer operations demand Front."
+     },
+     {
+      "slug": "github",
+      "name": "GitHub",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "subhead",
+       "category_label"
+      ],
+      "text": "The future of building happens together"
+     },
+     {
+      "slug": "gong",
+      "name": "Gong",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "headline"
+      ],
+      "text": "Revenue AI Built To"
+     },
+     {
+      "slug": "hightouch",
+      "name": "Hightouch",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "subhead",
+       "category_label"
+      ],
+      "text": "Marketing looks different here"
+     },
+     {
+      "slug": "intercom",
+      "name": "Intercom",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead"
+      ],
+      "text": "The only helpdesk designed for the AI Agent era"
+     },
+     {
+      "slug": "lattice",
+      "name": "Lattice",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead"
+      ],
+      "text": "People + AI: Succeeding Together"
+     },
+     {
+      "slug": "launchdarkly",
+      "name": "LaunchDarkly",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead"
+      ],
+      "text": "Move at AI speed. Stay in control."
+     },
+     {
+      "slug": "linear",
+      "name": "Linear",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead",
+       "category_label"
+      ],
+      "text": "The product development system for teams and agents"
+     },
+     {
+      "slug": "loom",
+      "name": "Loom",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "subhead"
+      ],
+      "text": "One video is worth a thousand words"
+     },
+     {
+      "slug": "metabase",
+      "name": "Metabase",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead"
+      ],
+      "text": "Open source AI analytics you can verify"
+     },
+     {
+      "slug": "miro",
+      "name": "Miro",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead"
+      ],
+      "text": "The collaboration layer your AI tools are missing."
+     },
+     {
+      "slug": "mixpanel",
+      "name": "Mixpanel",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "subhead",
+       "category_label"
+      ],
+      "text": "Build faster, with direction"
+     },
+     {
+      "slug": "monday",
+      "name": "monday.com",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead",
+       "category_label"
+      ],
+      "text": "People and agents working as one team"
+     },
+     {
+      "slug": "mongodb",
+      "name": "MongoDB",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "headline"
+      ],
+      "text": "One data platform. Unlimited AI potential."
+     },
+     {
+      "slug": "netlify",
+      "name": "Netlify",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "subhead"
+      ],
+      "text": "Push your ideas to the web"
+     },
+     {
+      "slug": "notion",
+      "name": "Notion",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead",
+       "category_label"
+      ],
+      "text": "Where teams and agents Think together."
+     },
+     {
+      "slug": "pendo",
+      "name": "Pendo",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead",
+       "category_label"
+      ],
+      "text": "The antidote to AI slop."
+     },
+     {
+      "slug": "pipedrive",
+      "name": "Pipedrive",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "subhead"
+      ],
+      "text": "The easy and effective CRM for closing deals"
+     },
+     {
+      "slug": "retool",
+      "name": "Retool",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "subhead"
+      ],
+      "text": "Secure your vibe-coded apps"
+     },
+     {
+      "slug": "rippling",
+      "name": "Rippling",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead"
+      ],
+      "text": "AI that knows your company, and acts like it"
+     },
+     {
+      "slug": "slack",
+      "name": "Slack",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "category_label"
+      ],
+      "text": "All your people and AI agents working together."
+     },
+     {
+      "slug": "snowflake",
+      "name": "Snowflake",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "subhead",
+       "category_label"
+      ],
+      "text": "Code Work"
+     },
+     {
+      "slug": "twilio",
+      "name": "Twilio",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead",
+       "category_label"
+      ],
+      "text": "The platform for conversations in the AI era"
+     },
+     {
+      "slug": "typeform",
+      "name": "Typeform",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead"
+      ],
+      "text": "Forms & Automated Workflows, Powered by AI | Typeform"
+     },
+     {
+      "slug": "webflow",
+      "name": "Webflow",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "subhead",
+       "category_label"
+      ],
+      "text": "Make your website a growth engine"
+     },
+     {
+      "slug": "zapier",
+      "name": "Zapier",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead"
+      ],
+      "text": "Your tools. Your rules. Any AI."
+     },
+     {
+      "slug": "zendesk",
+      "name": "Zendesk",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead",
+       "category_label"
+      ],
+      "text": "AI-powered service platform"
+     }
+    ]
+   },
+   {
+    "term": "agent",
+    "n": 24,
+    "companies": [
+     {
+      "slug": "airtable",
+      "name": "Airtable",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead"
+      ],
+      "text": "AI transformed individual work. Airtable transforms teamwork."
+     },
+     {
+      "slug": "asana",
+      "name": "Asana",
+      "terms": [
+       "agent"
+      ],
+      "fields": [
+       "headline",
+       "category_label"
+      ],
+      "text": "The OS for human-agent teams"
+     },
+     {
+      "slug": "atlassian",
+      "name": "Atlassian",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "subhead"
+      ],
+      "text": "Collaboration for Software, IT & Business Teams"
+     },
+     {
+      "slug": "attio",
+      "name": "Attio",
+      "terms": [
+       "agent"
+      ],
+      "fields": [
+       "headline",
+       "category_label"
+      ],
+      "text": "Welcome to agentic revenue."
+     },
+     {
+      "slug": "clay",
+      "name": "Clay",
+      "terms": [
+       "agent"
+      ],
+      "fields": [
+       "subhead"
+      ],
+      "text": "Build systems to grow revenue"
+     },
+     {
+      "slug": "cloudflare",
+      "name": "Cloudflare",
+      "terms": [
+       "agent"
+      ],
+      "fields": [
+       "subhead"
+      ],
+      "text": "Everything we learned from powering 20% of the Internet—yours by default"
+     },
+     {
+      "slug": "contentful",
+      "name": "Contentful",
+      "terms": [
+       "agent"
+      ],
+      "fields": [
+       "headline",
+       "subhead"
+      ],
+      "text": "Built for humans. Ready for agents."
+     },
+     {
+      "slug": "databricks",
+      "name": "Databricks",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "category_label"
+      ],
+      "text": "The database your AI agents deserve"
+     },
+     {
+      "slug": "fivetran",
+      "name": "Fivetran",
+      "terms": [
+       "agent",
+       "ai",
+       "autonomous"
+      ],
+      "fields": [
+       "headline",
+       "subhead",
+       "category_label"
+      ],
+      "text": "Automated data for autonomous agents"
+     },
+     {
+      "slug": "github",
+      "name": "GitHub",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "subhead",
+       "category_label"
+      ],
+      "text": "The future of building happens together"
+     },
+     {
+      "slug": "hubspot",
+      "name": "HubSpot",
+      "terms": [
+       "agent"
+      ],
+      "fields": [
+       "subhead"
+      ],
+      "text": "Where go-to-market teams go to grow scale close retain grow"
+     },
+     {
+      "slug": "intercom",
+      "name": "Intercom",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead"
+      ],
+      "text": "The only helpdesk designed for the AI Agent era"
+     },
+     {
+      "slug": "linear",
+      "name": "Linear",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead",
+       "category_label"
+      ],
+      "text": "The product development system for teams and agents"
+     },
+     {
+      "slug": "metabase",
+      "name": "Metabase",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead"
+      ],
+      "text": "Open source AI analytics you can verify"
+     },
+     {
+      "slug": "miro",
+      "name": "Miro",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead"
+      ],
+      "text": "The collaboration layer your AI tools are missing."
+     },
+     {
+      "slug": "monday",
+      "name": "monday.com",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead",
+       "category_label"
+      ],
+      "text": "People and agents working as one team"
+     },
+     {
+      "slug": "notion",
+      "name": "Notion",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead",
+       "category_label"
+      ],
+      "text": "Where teams and agents Think together."
+     },
+     {
+      "slug": "pendo",
+      "name": "Pendo",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead",
+       "category_label"
+      ],
+      "text": "The antidote to AI slop."
+     },
+     {
+      "slug": "slack",
+      "name": "Slack",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "category_label"
+      ],
+      "text": "All your people and AI agents working together."
+     },
+     {
+      "slug": "snowflake",
+      "name": "Snowflake",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "subhead",
+       "category_label"
+      ],
+      "text": "Code Work"
+     },
+     {
+      "slug": "twilio",
+      "name": "Twilio",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead",
+       "category_label"
+      ],
+      "text": "The platform for conversations in the AI era"
+     },
+     {
+      "slug": "vercel",
+      "name": "Vercel",
+      "terms": [
+       "agent"
+      ],
+      "fields": [
+       "headline",
+       "subhead",
+       "category_label"
+      ],
+      "text": "Agentic Infrastructure"
+     },
+     {
+      "slug": "webflow",
+      "name": "Webflow",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "subhead",
+       "category_label"
+      ],
+      "text": "Make your website a growth engine"
+     },
+     {
+      "slug": "zendesk",
+      "name": "Zendesk",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead",
+       "category_label"
+      ],
+      "text": "AI-powered service platform"
+     }
+    ]
+   },
+   {
+    "term": "autonomous",
+    "n": 2,
+    "companies": [
+     {
+      "slug": "fivetran",
+      "name": "Fivetran",
+      "terms": [
+       "agent",
+       "ai",
+       "autonomous"
+      ],
+      "fields": [
+       "headline",
+       "subhead",
+       "category_label"
+      ],
+      "text": "Automated data for autonomous agents"
+     },
+     {
+      "slug": "klaviyo",
+      "name": "Klaviyo",
+      "terms": [
+       "autonomous"
+      ],
+      "fields": [
+       "headline",
+       "category_label"
+      ],
+      "text": "the AUTONOMOUS B2C CRM"
+     }
+    ]
+   }
+  ],
+  "coverage": {
+   "tracked": 60,
+   "readable": 59,
+   "unreadable": 1,
+   "held": 1,
+   "suspect": 0,
+   "missing": [
+    {
+     "slug": "ramp",
+     "name": "Ramp"
+    }
+   ]
+  }
+ },
+ "proof_claims": {
+  "kinds": [
+   {
+    "key": "count",
+    "label": "Scale counts",
+    "note": "customers, users, records, teams",
+    "n": 44,
+    "claims": 85,
+    "companies": [
+     {
+      "slug": "airtable",
+      "name": "Airtable",
+      "text": "10,000 hours · 100 companies · 100m records · 50 projects · 500,000 companies"
+     },
+     {
+      "slug": "amplitude",
+      "name": "Amplitude",
+      "text": "2m events · 4,900 customers"
+     },
+     {
+      "slug": "apollo",
+      "name": "Apollo.io",
+      "text": "30m companies · 600,000 companies"
+     },
+     {
+      "slug": "asana",
+      "name": "Asana",
+      "text": "100 companies"
+     },
+     {
+      "slug": "attio",
+      "name": "Attio",
+      "text": "10 accounts · 30,000 customers"
+     },
+     {
+      "slug": "bill",
+      "name": "BILL",
+      "text": "30 hours · 500k businesses"
+     },
+     {
+      "slug": "braze",
+      "name": "Braze",
+      "text": "750 brands"
+     },
+     {
+      "slug": "brex",
+      "name": "Brex",
+      "text": "756 hours"
+     },
+     {
+      "slug": "calendly",
+      "name": "Calendly",
+      "text": "100 integrations · 500 companies"
+     },
+     {
+      "slug": "clickup",
+      "name": "ClickUp",
+      "text": "10,000 users · 30k hours · 500 companies · 92,400 hours · 92,400 organizations"
+     },
+     {
+      "slug": "cloudflare",
+      "name": "Cloudflare",
+      "text": "50 employees · 50 users"
+     },
+     {
+      "slug": "customer-io",
+      "name": "Customer.io",
+      "text": "9,000 brands"
+     },
+     {
+      "slug": "databricks",
+      "name": "Databricks",
+      "text": "20,000 customers"
+     },
+     {
+      "slug": "dbt-labs",
+      "name": "dbt Labs",
+      "text": "80k teams"
+     },
+     {
+      "slug": "deel",
+      "name": "Deel",
+      "text": "10 people · 40,000 companies · 40,000 customers"
+     },
+     {
+      "slug": "fivetran",
+      "name": "Fivetran",
+      "text": "35,000 users"
+     },
+     {
+      "slug": "front",
+      "name": "Front",
+      "text": "160 integrations · 9,300 companies · 9,300 customers"
+     },
+     {
+      "slug": "gong",
+      "name": "Gong",
+      "text": "10 hours · 400 integrations · 5,000 customers · 6,700 hours"
+     },
+     {
+      "slug": "hightouch",
+      "name": "Hightouch",
+      "text": "300 integrations"
+     },
+     {
+      "slug": "hubspot",
+      "name": "HubSpot",
+      "text": "2,000 integrations · 299,000 customers"
+     },
+     {
+      "slug": "intercom",
+      "name": "Intercom",
+      "text": "350 integrations"
+     },
+     {
+      "slug": "klaviyo",
+      "name": "Klaviyo",
+      "text": "205,000 customers · 350 apps"
+     },
+     {
+      "slug": "lattice",
+      "name": "Lattice",
+      "text": "2,000 hours · 30 hours"
+     },
+     {
+      "slug": "loom",
+      "name": "Loom",
+      "text": "400,000 companies"
+     },
+     {
+      "slug": "metabase",
+      "name": "Metabase",
+      "text": "100,000 companies · 100k teams"
+     },
+     {
+      "slug": "miro",
+      "name": "Miro",
+      "text": "100m people · 250 apps · 250,000 companies"
+     },
+     {
+      "slug": "mixpanel",
+      "name": "Mixpanel",
+      "text": "29 k customers"
+     },
+     {
+      "slug": "monday",
+      "name": "monday.com",
+      "text": "105k hours"
+     },
+     {
+      "slug": "netlify",
+      "name": "Netlify",
+      "text": "10m developers · 60m apps"
+     },
+     {
+      "slug": "notion",
+      "name": "Notion",
+      "text": "100m users"
+     },
+     {
+      "slug": "pendo",
+      "name": "Pendo",
+      "text": "14,000 teams · 18k agents"
+     },
+     {
+      "slug": "pipedrive",
+      "name": "Pipedrive",
+      "text": "100,000 companies · 500 apps · 500 integrations"
+     },
+     {
+      "slug": "posthog",
+      "name": "PostHog",
+      "text": "500,000 teams"
+     },
+     {
+      "slug": "retool",
+      "name": "Retool",
+      "text": "10,000 teams · 20,000 hours · 36,000 hours"
+     },
+     {
+      "slug": "rippling",
+      "name": "Rippling",
+      "text": "30,000 customers"
+     },
+     {
+      "slug": "slack",
+      "name": "Slack",
+      "text": "1.7m apps · 700m messages"
+     },
+     {
+      "slug": "stripe",
+      "name": "Stripe",
+      "text": "100 companies · 100k stores · 150k transactions · 150k users"
+     },
+     {
+      "slug": "supabase",
+      "name": "Supabase",
+      "text": "200,000 users"
+     },
+     {
+      "slug": "typeform",
+      "name": "Typeform",
+      "text": "150,000 businesses"
+     },
+     {
+      "slug": "vanta",
+      "name": "Vanta",
+      "text": "16,000 customers"
+     },
+     {
+      "slug": "vercel",
+      "name": "Vercel",
+      "text": "20,000 companies"
+     },
+     {
+      "slug": "webflow",
+      "name": "Webflow",
+      "text": "300,000 brands"
+     },
+     {
+      "slug": "zapier",
+      "name": "Zapier",
+      "text": "42 hours · 450k agents · 9,000 apps · 9,000 integrations"
+     },
+     {
+      "slug": "zendesk",
+      "name": "Zendesk",
+      "text": "1,800 apps · 80,000 companies"
+     }
+    ]
+   },
+   {
+    "key": "percent",
+    "label": "Percentage gains",
+    "note": "\"40% faster\", \"cut costs by 30%\"",
+    "n": 35,
+    "claims": 112,
+    "companies": [
+     {
+      "slug": "airtable",
+      "name": "Airtable",
+      "text": "60% cut creative-brief processing · 60% reduction in creative · 70% faster turnaround time · 70% faster unify global · 90% faster feedback triage"
+     },
+     {
+      "slug": "amplitude",
+      "name": "Amplitude",
+      "text": "40% higher activation madison"
+     },
+     {
+      "slug": "apollo",
+      "name": "Apollo.io",
+      "text": "64% lower tech stack · 70% increase in sales · 75% more meetings while"
+     },
+     {
+      "slug": "attio",
+      "name": "Attio",
+      "text": "83% faster lead triage"
+     },
+     {
+      "slug": "bill",
+      "name": "BILL",
+      "text": "20% efficiency in our office · 20% efficiency increase with · 20% our office · 67% faster close with · 80% faster close with · 80% faster payables with · 90% faster payment processing"
+     },
+     {
+      "slug": "braze",
+      "name": "Braze",
+      "text": "15% decrease in order · 21% increase in revenue · 30% increase in transactions · 300% increase in rate · 457% roi and payback"
+     },
+     {
+      "slug": "calendly",
+      "name": "Calendly",
+      "text": "160 % increase in customers · 169 % return on investment · 20 % decrease in scheduling · 26 % increase in website"
+     },
+     {
+      "slug": "clickup",
+      "name": "ClickUp",
+      "text": "384% roi over three · 400% more done"
+     },
+     {
+      "slug": "cloudflare",
+      "name": "Cloudflare",
+      "text": "100% uptime sla · 100% uptime sla chat"
+     },
+     {
+      "slug": "contentful",
+      "name": "Contentful",
+      "text": "25% increase in conversions · 78% increase · 99.99% uptime provided by · 99.99% uptime sla"
+     },
+     {
+      "slug": "customer-io",
+      "name": "Customer.io",
+      "text": "22% increase in email · 28% increase in click-through · 4.4% boost in key"
+     },
+     {
+      "slug": "elastic",
+      "name": "Elastic",
+      "text": "30% and reduces mttr · 30% efficiency and reduces mttr · 50% trusted · 62 % reduction in overall · 80% incident resolution time · 80% slashes incident resolution time"
+     },
+     {
+      "slug": "fivetran",
+      "name": "Fivetran",
+      "text": "30% performance · 50% cutting data costs"
+     },
+     {
+      "slug": "front",
+      "name": "Front",
+      "text": "40% our productivity improve · 40% productivity improve"
+     },
+     {
+      "slug": "github",
+      "name": "GitHub",
+      "text": "25% boosts developer speed · 25% speed · 50% cuts coding time"
+     },
+     {
+      "slug": "gitlab",
+      "name": "GitLab",
+      "text": "17% boost in developer · 400% roi · 50% faster vulnerability detection · 82% decrease in cycle · 97% reduction in time"
+     },
+     {
+      "slug": "gong",
+      "name": "Gong",
+      "text": "32% buyer response rates · 32% lift buyer response rates · 46% decrease in ramp · 64% more productive with · 64% the revenue team"
+     },
+     {
+      "slug": "hubspot",
+      "name": "HubSpot",
+      "text": "129% more leads · 17% increase in response · 36% more deals · 37% improvement in ticket · 59% increase in members · 7% increase in customer"
+     },
+     {
+      "slug": "intercom",
+      "name": "Intercom",
+      "text": "100% coverage across your · 31% more customer conversations"
+     },
+     {
+      "slug": "klaviyo",
+      "name": "Klaviyo",
+      "text": "18% savings in tech · 20% less time to · 30% lower total cost"
+     },
+     {
+      "slug": "lattice",
+      "name": "Lattice",
+      "text": "20% increased sales · 20% usairtours increased sales · 27% reduced attrition · 27% vantagewest reduced attrition"
+     },
+     {
+      "slug": "mixpanel",
+      "name": "Mixpanel",
+      "text": "354 % roi"
+     },
+     {
+      "slug": "monday",
+      "name": "monday.com",
+      "text": "25% reduction in project · 346% roi according to · 40% faster production time · 517% growth in annual"
+     },
+     {
+      "slug": "mongodb",
+      "name": "MongoDB",
+      "text": "240% improvement in api · 30% improvement in resource · 50% faster · 60% reduction in scaling"
+     },
+     {
+      "slug": "netlify",
+      "name": "Netlify",
+      "text": "99.99% uptime · 99.99% uptime go to"
+     },
+     {
+      "slug": "notion",
+      "name": "Notion",
+      "text": "98% demo play trusted"
+     },
+     {
+      "slug": "pendo",
+      "name": "Pendo",
+      "text": "350% increase in weekly · 400% increase in nps · 60% accelerate · 60% decrease in support · 70% increase in deals · 71% faster roadmap decisions"
+     },
+     {
+      "slug": "retool",
+      "name": "Retool",
+      "text": "80% faster development read"
+     },
+     {
+      "slug": "slack",
+      "name": "Slack",
+      "text": "35% increase in time"
+     },
+     {
+      "slug": "stripe",
+      "name": "Stripe",
+      "text": "65% decreases support costs"
+     },
+     {
+      "slug": "typeform",
+      "name": "Typeform",
+      "text": "40% increased sales leads · 75% cut time to hire · 75% hire"
+     },
+     {
+      "slug": "vanta",
+      "name": "Vanta",
+      "text": "20% faster deal cycles"
+     },
+     {
+      "slug": "webflow",
+      "name": "Webflow",
+      "text": "1,170% increase in traffic · 20% increase in site-wide · 44% faster project timelines · 56% increase in form · 67% decrease in dev · 67% fewer dev tickets · 98% increase in speed"
+     },
+     {
+      "slug": "zapier",
+      "name": "Zapier",
+      "text": "87% reduction in lead"
+     },
+     {
+      "slug": "zendesk",
+      "name": "Zendesk",
+      "text": "11 % decrease in email · 36 % increase in ai · 51.5 % automate · 6 % increase in automated"
+     }
+    ]
+   },
+   {
+    "key": "money",
+    "label": "Money amounts",
+    "note": "\"$2.4M saved\", \"$1B processed\"",
+    "n": 17,
+    "claims": 39,
+    "companies": [
+     {
+      "slug": "attio",
+      "name": "Attio",
+      "text": "$107,000 arr high brightloop · $125m series · $86,000 arr high vela"
+     },
+     {
+      "slug": "bill",
+      "name": "BILL",
+      "text": "$10k+ average monthly savings · $345b total payment volume"
+     },
+     {
+      "slug": "brex",
+      "name": "Brex",
+      "text": "$0 per user · $1.00 per share · $12 per user · $6m additional fdic insurance"
+     },
+     {
+      "slug": "clay",
+      "name": "Clay",
+      "text": "$5b valuation"
+     },
+     {
+      "slug": "clickup",
+      "name": "ClickUp",
+      "text": "$3.9m clickup projects drove · $3.9m revenue gains by"
+     },
+     {
+      "slug": "cloudflare",
+      "name": "Cloudflare",
+      "text": "$0 forever ztna · $7 per active user"
+     },
+     {
+      "slug": "deel",
+      "name": "Deel",
+      "text": "$20b+ compliantly processed global"
+     },
+     {
+      "slug": "fivetran",
+      "name": "Fivetran",
+      "text": "$1.15m annually by reducing"
+     },
+     {
+      "slug": "intercom",
+      "name": "Intercom",
+      "text": "$0.99 per outcome learn · $29 per seat"
+     },
+     {
+      "slug": "mixpanel",
+      "name": "Mixpanel",
+      "text": "$1.2m mom"
+     },
+     {
+      "slug": "monday",
+      "name": "monday.com",
+      "text": "$250k saved yearly to"
+     },
+     {
+      "slug": "mongodb",
+      "name": "MongoDB",
+      "text": "$15 million revenue to the"
+     },
+     {
+      "slug": "retool",
+      "name": "Retool",
+      "text": "$3m+ profit generated and · $6m and · $8m and"
+     },
+     {
+      "slug": "stripe",
+      "name": "Stripe",
+      "text": "$0.01 per · $100m arr and · $3b ai audio leader · $40b for businesses while · $5 billion online and in-store"
+     },
+     {
+      "slug": "typeform",
+      "name": "Typeform",
+      "text": "$3.67 million sales viva scaled"
+     },
+     {
+      "slug": "webflow",
+      "name": "Webflow",
+      "text": "$10m pipeline generated · $200m new pipeline generated · $300k annual savings · $500k dev cost reduction · $6 million · $6m cost savings annually"
+     },
+     {
+      "slug": "zapier",
+      "name": "Zapier",
+      "text": "$1 million increase in potential · $1m recovered pipeline using · $40k+ headcount savings per"
+     }
+    ]
+   },
+   {
+    "key": "multiplier",
+    "label": "Multipliers",
+    "note": "\"10x faster\"",
+    "n": 15,
+    "claims": 23,
+    "companies": [
+     {
+      "slug": "brex",
+      "name": "Brex",
+      "text": "30x higher credit limits"
+     },
+     {
+      "slug": "cloudflare",
+      "name": "Cloudflare",
+      "text": "4.5x faster faster for"
+     },
+     {
+      "slug": "contentful",
+      "name": "Contentful",
+      "text": "10x increase in content · 7x increase in ctr"
+     },
+     {
+      "slug": "dbt-labs",
+      "name": "dbt Labs",
+      "text": "10x faster implementation delivering"
+     },
+     {
+      "slug": "elastic",
+      "name": "Elastic",
+      "text": "10 x faster at half · 30x faster than prom"
+     },
+     {
+      "slug": "gitlab",
+      "name": "GitLab",
+      "text": "13x faster security scanning · 20x decrease in pipeline · 6x faster time to · 80x faster ci pipeline"
+     },
+     {
+      "slug": "lattice",
+      "name": "Lattice",
+      "text": "3.5x higher check-in cycle"
+     },
+     {
+      "slug": "miro",
+      "name": "Miro",
+      "text": "2x faster time to · 3.6x faster time to"
+     },
+     {
+      "slug": "mongodb",
+      "name": "MongoDB",
+      "text": "3x faster learn more"
+     },
+     {
+      "slug": "pendo",
+      "name": "Pendo",
+      "text": "20x increase in feature · 3x faster outreach to"
+     },
+     {
+      "slug": "retool",
+      "name": "Retool",
+      "text": "10x increase in patients · 10x reduction in dev"
+     },
+     {
+      "slug": "typeform",
+      "name": "Typeform",
+      "text": "3.5x more data"
+     },
+     {
+      "slug": "webflow",
+      "name": "Webflow",
+      "text": "3x more interactive elements"
+     },
+     {
+      "slug": "zapier",
+      "name": "Zapier",
+      "text": "5.5x roi with zapier"
+     },
+     {
+      "slug": "zendesk",
+      "name": "Zendesk",
+      "text": "2 x increase in ai"
+     }
+    ]
+   },
+   {
+    "key": "rank",
+    "label": "Rankings and lists",
+    "note": "\"Fortune 500\", \"G2 leader\"",
+    "n": 12,
+    "claims": 13,
+    "companies": [
+     {
+      "slug": "airtable",
+      "name": "Airtable",
+      "text": "fortune 100"
+     },
+     {
+      "slug": "asana",
+      "name": "Asana",
+      "text": "fortune 100"
+     },
+     {
+      "slug": "calendly",
+      "name": "Calendly",
+      "text": "fortune 500"
+     },
+     {
+      "slug": "clickup",
+      "name": "ClickUp",
+      "text": "fortune 500 · g2 #1"
+     },
+     {
+      "slug": "cloudflare",
+      "name": "Cloudflare",
+      "text": "fortune 500"
+     },
+     {
+      "slug": "databricks",
+      "name": "Databricks",
+      "text": "fortune 500"
+     },
+     {
+      "slug": "elastic",
+      "name": "Elastic",
+      "text": "fortune 500"
+     },
+     {
+      "slug": "figma",
+      "name": "Figma",
+      "text": "fortune 500"
+     },
+     {
+      "slug": "monday",
+      "name": "monday.com",
+      "text": "fortune 500"
+     },
+     {
+      "slug": "notion",
+      "name": "Notion",
+      "text": "fortune 100"
+     },
+     {
+      "slug": "stripe",
+      "name": "Stripe",
+      "text": "fortune 100"
+     },
+     {
+      "slug": "zapier",
+      "name": "Zapier",
+      "text": "fortune 500"
+     }
+    ]
+   },
+   {
+    "key": "time",
+    "label": "Time to result",
+    "note": "\"in under 5 minutes\"",
+    "n": 6,
+    "claims": 6,
+    "companies": [
+     {
+      "slug": "fivetran",
+      "name": "Fivetran",
+      "text": "2 minutes"
+     },
+     {
+      "slug": "launchdarkly",
+      "name": "LaunchDarkly",
+      "text": "13 seconds"
+     },
+     {
+      "slug": "monday",
+      "name": "monday.com",
+      "text": "5 minutes"
+     },
+     {
+      "slug": "netlify",
+      "name": "Netlify",
+      "text": "30 seconds"
+     },
+     {
+      "slug": "pendo",
+      "name": "Pendo",
+      "text": "40 minutes"
+     },
+     {
+      "slug": "webflow",
+      "name": "Webflow",
+      "text": "10 days"
+     }
+    ]
+   }
+  ],
+  "total_claims": 278,
+  "coverage": {
+   "tracked": 60,
+   "readable": 52,
+   "unreadable": 8,
+   "held": 0,
+   "suspect": 0,
+   "missing": [
+    {
+     "slug": "atlassian",
+     "name": "Atlassian"
+    },
+    {
+     "slug": "datadog",
+     "name": "Datadog"
+    },
+    {
+     "slug": "linear",
+     "name": "Linear"
+    },
+    {
+     "slug": "ramp",
+     "name": "Ramp"
+    },
+    {
+     "slug": "segment",
+     "name": "Segment"
+    },
+    {
+     "slug": "sentry",
+     "name": "Sentry"
+    },
+    {
+     "slug": "snowflake",
+     "name": "Snowflake"
+    },
+    {
+     "slug": "twilio",
+     "name": "Twilio"
+    }
+   ]
+  }
+ },
+ "logo_mentions": {
+  "logos": [
+   {
+    "key": "openai",
+    "logo": "OpenAI",
+    "n": 7,
+    "companies": [
+     {
+      "slug": "airtable",
+      "name": "Airtable",
+      "text": "Openai"
+     },
+     {
+      "slug": "brex",
+      "name": "Brex",
+      "text": "OpenAI"
+     },
+     {
+      "slug": "clay",
+      "name": "Clay",
+      "text": "Openai"
+     },
+     {
+      "slug": "fivetran",
+      "name": "Fivetran",
+      "text": "OpenAI"
+     },
+     {
+      "slug": "notion",
+      "name": "Notion",
+      "text": "OpenAI"
+     },
+     {
+      "slug": "retool",
+      "name": "Retool",
+      "text": "Openai"
+     },
+     {
+      "slug": "slack",
+      "name": "Slack",
+      "text": "OpenAI"
+     }
+    ]
+   },
+   {
+    "key": "figma",
+    "logo": "Figma",
+    "n": 6,
+    "companies": [
+     {
+      "slug": "amplitude",
+      "name": "Amplitude",
+      "text": "Figma"
+     },
+     {
+      "slug": "clay",
+      "name": "Clay",
+      "text": "Figma"
+     },
+     {
+      "slug": "github",
+      "name": "GitHub",
+      "text": "Figma"
+     },
+     {
+      "slug": "netlify",
+      "name": "Netlify",
+      "text": "Figma"
+     },
+     {
+      "slug": "notion",
+      "name": "Notion",
+      "text": "Figma"
+     },
+     {
+      "slug": "supabase",
+      "name": "Supabase",
+      "text": "Figma"
+     }
+    ]
+   },
+   {
+    "key": "cursor",
+    "logo": "Cursor",
+    "n": 5,
+    "companies": [
+     {
+      "slug": "clay",
+      "name": "Clay",
+      "text": "Cursor"
+     },
+     {
+      "slug": "customer-io",
+      "name": "Customer.io",
+      "text": "Cursor"
+     },
+     {
+      "slug": "notion",
+      "name": "Notion",
+      "text": "Cursor"
+     },
+     {
+      "slug": "vanta",
+      "name": "Vanta",
+      "text": "cursor"
+     },
+     {
+      "slug": "zapier",
+      "name": "Zapier",
+      "text": "Cursor"
+     }
+    ]
+   },
+   {
+    "key": "nvidia",
+    "logo": "Nvidia",
+    "n": 5,
+    "companies": [
+     {
+      "slug": "amplitude",
+      "name": "Amplitude",
+      "text": "NVIDIA"
+     },
+     {
+      "slug": "gitlab",
+      "name": "GitLab",
+      "text": "nvidia"
+     },
+     {
+      "slug": "notion",
+      "name": "Notion",
+      "text": "Nvidia"
+     },
+     {
+      "slug": "retool",
+      "name": "Retool",
+      "text": "Nvidia"
+     },
+     {
+      "slug": "zapier",
+      "name": "Zapier",
+      "text": "Nvidia"
+     }
+    ]
+   },
+   {
+    "key": "anthropic",
+    "logo": "Anthropic",
+    "n": 4,
+    "companies": [
+     {
+      "slug": "amplitude",
+      "name": "Amplitude",
+      "text": "Anthropic"
+     },
+     {
+      "slug": "gong",
+      "name": "Gong",
+      "text": "Anthropic"
+     },
+     {
+      "slug": "mongodb",
+      "name": "MongoDB",
+      "text": "Anthropic"
+     },
+     {
+      "slug": "sentry",
+      "name": "Sentry",
+      "text": "Anthropic"
+     }
+    ]
+   },
+   {
+    "key": "hubspot",
+    "logo": "Hubspot",
+    "n": 4,
+    "companies": [
+     {
+      "slug": "clay",
+      "name": "Clay",
+      "text": "Hubspot"
+     },
+     {
+      "slug": "fivetran",
+      "name": "Fivetran",
+      "text": "HubSpot"
+     },
+     {
+      "slug": "loom",
+      "name": "Loom",
+      "text": "HubSpot"
+     },
+     {
+      "slug": "typeform",
+      "name": "Typeform",
+      "text": "Hubspot"
+     }
+    ]
+   },
+   {
+    "key": "ramp",
+    "logo": "Ramp",
+    "n": 4,
+    "companies": [
+     {
+      "slug": "amplitude",
+      "name": "Amplitude",
+      "text": "Ramp"
+     },
+     {
+      "slug": "notion",
+      "name": "Notion",
+      "text": "Ramp"
+     },
+     {
+      "slug": "retool",
+      "name": "Retool",
+      "text": "Ramp"
+     },
+     {
+      "slug": "vanta",
+      "name": "Vanta",
+      "text": "ramp"
+     }
+    ]
+   },
+   {
+    "key": "slack",
+    "logo": "Slack",
+    "n": 4,
+    "companies": [
+     {
+      "slug": "airtable",
+      "name": "Airtable",
+      "text": "Slack"
+     },
+     {
+      "slug": "figma",
+      "name": "Figma",
+      "text": "slack"
+     },
+     {
+      "slug": "hubspot",
+      "name": "HubSpot",
+      "text": "Slack"
+     },
+     {
+      "slug": "typeform",
+      "name": "Typeform",
+      "text": "Slack"
+     }
+    ]
+   },
+   {
+    "key": "stripe",
+    "logo": "Stripe",
+    "n": 4,
+    "companies": [
+     {
+      "slug": "clay",
+      "name": "Clay",
+      "text": "Stripe"
+     },
+     {
+      "slug": "figma",
+      "name": "Figma",
+      "text": "stripe"
+     },
+     {
+      "slug": "retool",
+      "name": "Retool",
+      "text": "Stripe"
+     },
+     {
+      "slug": "slack",
+      "name": "Slack",
+      "text": "Stripe"
+     }
+    ]
+   },
+   {
+    "key": "canva",
+    "logo": "Canva",
+    "n": 3,
+    "companies": [
+     {
+      "slug": "braze",
+      "name": "Braze",
+      "text": "Canva"
+     },
+     {
+      "slug": "fivetran",
+      "name": "Fivetran",
+      "text": "Canva"
+     },
+     {
+      "slug": "monday",
+      "name": "monday.com",
+      "text": "canva"
+     }
+    ]
+   },
+   {
+    "key": "discord",
+    "logo": "Discord",
+    "n": 3,
+    "companies": [
+     {
+      "slug": "lattice",
+      "name": "Lattice",
+      "text": "Discord"
+     },
+     {
+      "slug": "launchdarkly",
+      "name": "LaunchDarkly",
+      "text": "Discord"
+     },
+     {
+      "slug": "notion",
+      "name": "Notion",
+      "text": "Discord"
+     }
+    ]
+   },
+   {
+    "key": "docusign",
+    "logo": "Docusign",
+    "n": 3,
+    "companies": [
+     {
+      "slug": "contentful",
+      "name": "Contentful",
+      "text": "Docusign"
+     },
+     {
+      "slug": "elastic",
+      "name": "Elastic",
+      "text": "Docusign"
+     },
+     {
+      "slug": "webflow",
+      "name": "Webflow",
+      "text": "Docusign"
+     }
+    ]
+   }
+  ],
+  "distinct_logos": 505,
+  "coverage": {
+   "tracked": 60,
+   "readable": 46,
+   "unreadable": 14,
+   "held": 0,
+   "suspect": 0,
+   "missing": [
+    {
+     "slug": "asana",
+     "name": "Asana"
+    },
+    {
+     "slug": "atlassian",
+     "name": "Atlassian"
+    },
+    {
+     "slug": "attio",
+     "name": "Attio"
+    },
+    {
+     "slug": "cloudflare",
+     "name": "Cloudflare"
+    },
+    {
+     "slug": "databricks",
+     "name": "Databricks"
+    },
+    {
+     "slug": "datadog",
+     "name": "Datadog"
+    },
+    {
+     "slug": "linear",
+     "name": "Linear"
+    },
+    {
+     "slug": "miro",
+     "name": "Miro"
+    },
+    {
+     "slug": "mixpanel",
+     "name": "Mixpanel"
+    },
+    {
+     "slug": "posthog",
+     "name": "PostHog"
+    },
+    {
+     "slug": "ramp",
+     "name": "Ramp"
+    },
+    {
+     "slug": "rippling",
+     "name": "Rippling"
+    },
+    {
+     "slug": "segment",
+     "name": "Segment"
+    },
+    {
+     "slug": "vercel",
+     "name": "Vercel"
+    }
+   ]
+  }
+ },
+ "pricing": {
+  "free_tier": {
+   "yes": [
+    {
+     "slug": "amplitude",
+     "name": "Amplitude"
+    },
+    {
+     "slug": "asana",
+     "name": "Asana"
+    },
+    {
+     "slug": "atlassian",
+     "name": "Atlassian"
+    },
+    {
+     "slug": "attio",
+     "name": "Attio"
+    },
+    {
+     "slug": "calendly",
+     "name": "Calendly"
+    },
+    {
+     "slug": "clay",
+     "name": "Clay"
+    },
+    {
+     "slug": "clickup",
+     "name": "ClickUp"
+    },
+    {
+     "slug": "cloudflare",
+     "name": "Cloudflare"
+    },
+    {
+     "slug": "dbt-labs",
+     "name": "dbt Labs"
+    },
+    {
+     "slug": "fivetran",
+     "name": "Fivetran"
+    },
+    {
+     "slug": "gitlab",
+     "name": "GitLab"
+    },
+    {
+     "slug": "intercom",
+     "name": "Intercom"
+    },
+    {
+     "slug": "klaviyo",
+     "name": "Klaviyo"
+    },
+    {
+     "slug": "launchdarkly",
+     "name": "LaunchDarkly"
+    },
+    {
+     "slug": "linear",
+     "name": "Linear"
+    },
+    {
+     "slug": "loom",
+     "name": "Loom"
+    },
+    {
+     "slug": "metabase",
+     "name": "Metabase"
+    },
+    {
+     "slug": "miro",
+     "name": "Miro"
+    },
+    {
+     "slug": "monday",
+     "name": "monday.com"
+    },
+    {
+     "slug": "mongodb",
+     "name": "MongoDB"
+    },
+    {
+     "slug": "netlify",
+     "name": "Netlify"
+    },
+    {
+     "slug": "notion",
+     "name": "Notion"
+    },
+    {
+     "slug": "pendo",
+     "name": "Pendo"
+    },
+    {
+     "slug": "ramp",
+     "name": "Ramp"
+    },
+    {
+     "slug": "retool",
+     "name": "Retool"
+    },
+    {
+     "slug": "sentry",
+     "name": "Sentry"
+    },
+    {
+     "slug": "slack",
+     "name": "Slack"
+    },
+    {
+     "slug": "supabase",
+     "name": "Supabase"
+    },
+    {
+     "slug": "zapier",
+     "name": "Zapier"
+    },
+    {
+     "slug": "zendesk",
+     "name": "Zendesk"
+    }
+   ],
+   "no": [
+    {
+     "slug": "brex",
+     "name": "Brex"
+    },
+    {
+     "slug": "customer-io",
+     "name": "Customer.io"
+    }
+   ],
+   "coverage": {
+    "tracked": 60,
+    "readable": 32,
+    "unreadable": 28,
+    "held": 0,
+    "suspect": 0,
+    "missing": [
+     {
+      "slug": "airtable",
+      "name": "Airtable"
+     },
+     {
+      "slug": "apollo",
+      "name": "Apollo.io"
+     },
+     {
+      "slug": "bill",
+      "name": "BILL"
+     },
+     {
+      "slug": "braze",
+      "name": "Braze"
+     },
+     {
+      "slug": "contentful",
+      "name": "Contentful"
+     },
+     {
+      "slug": "databricks",
+      "name": "Databricks"
+     },
+     {
+      "slug": "datadog",
+      "name": "Datadog"
+     },
+     {
+      "slug": "deel",
+      "name": "Deel"
+     },
+     {
+      "slug": "elastic",
+      "name": "Elastic"
+     },
+     {
+      "slug": "figma",
+      "name": "Figma"
+     },
+     {
+      "slug": "front",
+      "name": "Front"
+     },
+     {
+      "slug": "github",
+      "name": "GitHub"
+     },
+     {
+      "slug": "gong",
+      "name": "Gong"
+     },
+     {
+      "slug": "hightouch",
+      "name": "Hightouch"
+     },
+     {
+      "slug": "hubspot",
+      "name": "HubSpot"
+     },
+     {
+      "slug": "lattice",
+      "name": "Lattice"
+     },
+     {
+      "slug": "mixpanel",
+      "name": "Mixpanel"
+     },
+     {
+      "slug": "pipedrive",
+      "name": "Pipedrive"
+     },
+     {
+      "slug": "posthog",
+      "name": "PostHog"
+     },
+     {
+      "slug": "rippling",
+      "name": "Rippling"
+     },
+     {
+      "slug": "segment",
+      "name": "Segment"
+     },
+     {
+      "slug": "snowflake",
+      "name": "Snowflake"
+     },
+     {
+      "slug": "stripe",
+      "name": "Stripe"
+     },
+     {
+      "slug": "twilio",
+      "name": "Twilio"
+     },
+     {
+      "slug": "typeform",
+      "name": "Typeform"
+     },
+     {
+      "slug": "vanta",
+      "name": "Vanta"
+     },
+     {
+      "slug": "vercel",
+      "name": "Vercel"
+     },
+     {
+      "slug": "webflow",
+      "name": "Webflow"
+     }
+    ]
+   }
+  },
+  "tiers": {
+   "companies": [
+    {
+     "slug": "amplitude",
+     "name": "Amplitude",
+     "text": "Free free | Plus free"
+    },
+    {
+     "slug": "asana",
+     "name": "Asana",
+     "text": "Starter USD 10.99 | Advanced USD 24.99"
+    },
+    {
+     "slug": "atlassian",
+     "name": "Atlassian",
+     "text": "Jira Free free | Jira Standard USD 7.91/[object Object] | Jira Premium USD 14.54/[object Object]"
+    },
+    {
+     "slug": "attio",
+     "name": "Attio",
+     "text": "Free free | Enterprise custom"
+    },
+    {
+     "slug": "brex",
+     "name": "Brex",
+     "text": "Enterprise custom | Custom pricing custom | Essentials custom | Premium custom"
+    },
+    {
+     "slug": "calendly",
+     "name": "Calendly",
+     "text": "Free free | Always free free"
+    },
+    {
+     "slug": "clay",
+     "name": "Clay",
+     "text": "Free free | Launch USD 167/month | Growth USD 446/month | Company custom"
+    },
+    {
+     "slug": "clickup",
+     "name": "ClickUp",
+     "text": "free forever free | unlimited USD 7/user/month | business USD 12/user/month | enterprise USD 750"
+    },
+    {
+     "slug": "cloudflare",
+     "name": "Cloudflare",
+     "text": "Free free | Pro USD 20 | Business USD 200 | Advanced Certificate Manager USD 10/month"
+    },
+    {
+     "slug": "customer-io",
+     "name": "Customer.io",
+     "text": "Essentials USD 100/month | Premium USD 1000/month | Enterprise custom"
+    },
+    {
+     "slug": "dbt-labs",
+     "name": "dbt Labs",
+     "text": "Starter USD 100/user/month | Enterprise custom | Enterprise+ custom"
+    },
+    {
+     "slug": "fivetran",
+     "name": "Fivetran",
+     "text": "Free free | Free Plan overview free"
+    },
+    {
+     "slug": "gitlab",
+     "name": "GitLab",
+     "text": "Free free | Premium USD 29"
+    },
+    {
+     "slug": "intercom",
+     "name": "Intercom",
+     "text": "Essential USD 39 | Advanced USD 99 | Expert USD 139 | Fin AI Agent USD 0.99"
+    },
+    {
+     "slug": "klaviyo",
+     "name": "Klaviyo",
+     "text": "Free Plan free | Email Plan (entry) USD 20 | Email + SMS Plan (entry) USD 35"
+    },
+    {
+     "slug": "launchdarkly",
+     "name": "LaunchDarkly",
+     "text": "Developer free | Enterprise custom | Free trial free"
+    },
+    {
+     "slug": "linear",
+     "name": "Linear",
+     "text": "Free free | Basic USD 10/user/month | Business USD 16/user/month"
+    },
+    {
+     "slug": "loom",
+     "name": "Loom",
+     "text": "Starter free | Business USD 18/user/month | Business + AI USD 24/user/month | Enterprise custom"
+    },
+    {
+     "slug": "metabase",
+     "name": "Metabase",
+     "text": "Starter USD 100/month | Pro USD 575/month | Enterprise USD 20000/year | Advanced transforms USD 0.02"
+    },
+    {
+     "slug": "miro",
+     "name": "Miro",
+     "text": "Free free | Enterprise custom | Enterprise Guard custom"
+    },
+    {
+     "slug": "monday",
+     "name": "monday.com",
+     "text": "Free EUR 10/month | Basic EUR 90 | Standard EUR 120 | Pro EUR 190 | Enterprise custom | Ultimate custom"
+    },
+    {
+     "slug": "mongodb",
+     "name": "MongoDB",
+     "text": "Free free | Dedicated USD 0.08 | Free Cluster free"
+    },
+    {
+     "slug": "netlify",
+     "name": "Netlify",
+     "text": "Free free | Personal USD 9/month | Pro USD 20/month"
+    },
+    {
+     "slug": "notion",
+     "name": "Notion",
+     "text": "Free free | Plus USD 10 | Business USD 20 | Enterprise custom | Custom Agents USD 10/month"
+    },
+    {
+     "slug": "pendo",
+     "name": "Pendo",
+     "text": "Free free | Core custom | Ultimate custom"
+    },
+    {
+     "slug": "ramp",
+     "name": "Ramp",
+     "text": "Free free | Enterprise custom"
+    },
+    {
+     "slug": "retool",
+     "name": "Retool",
+     "text": "Free free | Enterprise USD 10/month"
+    },
+    {
+     "slug": "sentry",
+     "name": "Sentry",
+     "text": "developer free | team USD 26/month | business USD 80/month | enterprise free"
+    },
+    {
+     "slug": "slack",
+     "name": "Slack",
+     "text": "Free free | Pro USD 8.75 | Enterprise+ custom"
+    },
+    {
+     "slug": "supabase",
+     "name": "Supabase",
+     "text": "Free free | Pro USD 25/month | Team USD 599/month | Enterprise custom | Advanced disk configurations USD 0.12 | Custom Domain USD 100/month"
+    },
+    {
+     "slug": "zapier",
+     "name": "Zapier",
+     "text": "Free free | Professional USD 19.99/month | Team USD 69/month | Enterprise custom | Agents Free free | Agents Pro USD 400/year | Agents Enterprise custom | Chatbots Free free"
+    },
+    {
+     "slug": "zendesk",
+     "name": "Zendesk",
+     "text": "Support Team USD 19/month | Suite Team USD 55/month | Suite Professional USD 115/month"
+    }
+   ],
+   "contact_sales": [
+    {
+     "slug": "attio",
+     "name": "Attio",
+     "text": "Enterprise"
+    },
+    {
+     "slug": "brex",
+     "name": "Brex",
+     "text": "Custom pricing, Enterprise, Essentials, Premium"
+    },
+    {
+     "slug": "clay",
+     "name": "Clay",
+     "text": "Company"
+    },
+    {
+     "slug": "customer-io",
+     "name": "Customer.io",
+     "text": "Enterprise"
+    },
+    {
+     "slug": "dbt-labs",
+     "name": "dbt Labs",
+     "text": "Enterprise, Enterprise+"
+    },
+    {
+     "slug": "launchdarkly",
+     "name": "LaunchDarkly",
+     "text": "Enterprise"
+    },
+    {
+     "slug": "loom",
+     "name": "Loom",
+     "text": "Enterprise"
+    },
+    {
+     "slug": "miro",
+     "name": "Miro",
+     "text": "Enterprise, Enterprise Guard"
+    },
+    {
+     "slug": "monday",
+     "name": "monday.com",
+     "text": "Enterprise, Ultimate"
+    },
+    {
+     "slug": "notion",
+     "name": "Notion",
+     "text": "Enterprise"
+    },
+    {
+     "slug": "pendo",
+     "name": "Pendo",
+     "text": "Core, Ultimate"
+    },
+    {
+     "slug": "ramp",
+     "name": "Ramp",
+     "text": "Enterprise"
+    },
+    {
+     "slug": "slack",
+     "name": "Slack",
+     "text": "Enterprise+"
+    },
+    {
+     "slug": "supabase",
+     "name": "Supabase",
+     "text": "Enterprise"
+    },
+    {
+     "slug": "zapier",
+     "name": "Zapier",
+     "text": "Agents Enterprise, Enterprise"
+    }
+   ],
+   "coverage": {
+    "tracked": 60,
+    "readable": 32,
+    "unreadable": 28,
+    "held": 0,
+    "suspect": 1,
+    "missing": null
+   }
+  },
+  "entry_price": {
+   "buckets": [
+    {
+     "key": "under-1",
+     "label": "Under 1.00",
+     "n": 4,
+     "companies": [
+      {
+       "slug": "metabase",
+       "name": "Metabase",
+       "amount": 0.02,
+       "currency": "USD",
+       "tier": "Advanced transforms",
+       "text": "USD 0.02"
+      },
+      {
+       "slug": "mongodb",
+       "name": "MongoDB",
+       "amount": 0.08,
+       "currency": "USD",
+       "tier": "Dedicated",
+       "text": "USD 0.08"
+      },
+      {
+       "slug": "supabase",
+       "name": "Supabase",
+       "amount": 0.12,
+       "currency": "USD",
+       "tier": "Advanced disk configurations",
+       "text": "USD 0.12"
+      },
+      {
+       "slug": "intercom",
+       "name": "Intercom",
+       "amount": 0.99,
+       "currency": "USD",
+       "tier": "Fin AI Agent",
+       "text": "USD 0.99"
+      }
+     ]
+    },
+    {
+     "key": "1-9",
+     "label": "1.00 to 9.99",
+     "n": 4,
+     "companies": [
+      {
+       "slug": "clickup",
+       "name": "ClickUp",
+       "amount": 7,
+       "currency": "USD",
+       "tier": "unlimited",
+       "text": "USD 7/user/month"
+      },
+      {
+       "slug": "atlassian",
+       "name": "Atlassian",
+       "amount": 7.91,
+       "currency": "USD",
+       "tier": "Jira Standard",
+       "text": "USD 7.91/[object Object]"
+      },
+      {
+       "slug": "slack",
+       "name": "Slack",
+       "amount": 8.75,
+       "currency": "USD",
+       "tier": "Pro",
+       "text": "USD 8.75"
+      },
+      {
+       "slug": "netlify",
+       "name": "Netlify",
+       "amount": 9,
+       "currency": "USD",
+       "tier": "Personal",
+       "text": "USD 9/month"
+      }
+     ]
+    },
+    {
+     "key": "10-19",
+     "label": "10.00 to 19.99",
+     "n": 9,
+     "companies": [
+      {
+       "slug": "cloudflare",
+       "name": "Cloudflare",
+       "amount": 10,
+       "currency": "USD",
+       "tier": "Advanced Certificate Manager",
+       "text": "USD 10/month"
+      },
+      {
+       "slug": "linear",
+       "name": "Linear",
+       "amount": 10,
+       "currency": "USD",
+       "tier": "Basic",
+       "text": "USD 10/user/month"
+      },
+      {
+       "slug": "monday",
+       "name": "monday.com",
+       "amount": 10,
+       "currency": "EUR",
+       "tier": "Free",
+       "text": "EUR 10/month"
+      },
+      {
+       "slug": "notion",
+       "name": "Notion",
+       "amount": 10,
+       "currency": "USD",
+       "tier": "Plus",
+       "text": "USD 10"
+      },
+      {
+       "slug": "retool",
+       "name": "Retool",
+       "amount": 10,
+       "currency": "USD",
+       "tier": "Enterprise",
+       "text": "USD 10/month"
+      },
+      {
+       "slug": "asana",
+       "name": "Asana",
+       "amount": 10.99,
+       "currency": "USD",
+       "tier": "Starter",
+       "text": "USD 10.99"
+      },
+      {
+       "slug": "loom",
+       "name": "Loom",
+       "amount": 18,
+       "currency": "USD",
+       "tier": "Business",
+       "text": "USD 18/user/month"
+      },
+      {
+       "slug": "zendesk",
+       "name": "Zendesk",
+       "amount": 19,
+       "currency": "USD",
+       "tier": "Support Team",
+       "text": "USD 19/month"
+      },
+      {
+       "slug": "zapier",
+       "name": "Zapier",
+       "amount": 19.99,
+       "currency": "USD",
+       "tier": "Professional",
+       "text": "USD 19.99/month"
+      }
+     ]
+    },
+    {
+     "key": "20-49",
+     "label": "20.00 to 49.99",
+     "n": 3,
+     "companies": [
+      {
+       "slug": "klaviyo",
+       "name": "Klaviyo",
+       "amount": 20,
+       "currency": "USD",
+       "tier": "Email Plan (entry)",
+       "text": "USD 20"
+      },
+      {
+       "slug": "sentry",
+       "name": "Sentry",
+       "amount": 26,
+       "currency": "USD",
+       "tier": "team",
+       "text": "USD 26/month"
+      },
+      {
+       "slug": "gitlab",
+       "name": "GitLab",
+       "amount": 29,
+       "currency": "USD",
+       "tier": "Premium",
+       "text": "USD 29"
+      }
+     ]
+    },
+    {
+     "key": "50-99",
+     "label": "50.00 to 99.99",
+     "n": 0,
+     "companies": []
+    },
+    {
+     "key": "100-plus",
+     "label": "100.00 and up",
+     "n": 3,
+     "companies": [
+      {
+       "slug": "customer-io",
+       "name": "Customer.io",
+       "amount": 100,
+       "currency": "USD",
+       "tier": "Essentials",
+       "text": "USD 100/month"
+      },
+      {
+       "slug": "dbt-labs",
+       "name": "dbt Labs",
+       "amount": 100,
+       "currency": "USD",
+       "tier": "Starter",
+       "text": "USD 100/user/month"
+      },
+      {
+       "slug": "clay",
+       "name": "Clay",
+       "amount": 167,
+       "currency": "USD",
+       "tier": "Launch",
+       "text": "USD 167/month"
+      }
+     ]
+    }
+   ],
+   "companies": [
+    {
+     "slug": "metabase",
+     "name": "Metabase",
+     "amount": 0.02,
+     "currency": "USD",
+     "tier": "Advanced transforms",
+     "text": "USD 0.02"
+    },
+    {
+     "slug": "mongodb",
+     "name": "MongoDB",
+     "amount": 0.08,
+     "currency": "USD",
+     "tier": "Dedicated",
+     "text": "USD 0.08"
+    },
+    {
+     "slug": "supabase",
+     "name": "Supabase",
+     "amount": 0.12,
+     "currency": "USD",
+     "tier": "Advanced disk configurations",
+     "text": "USD 0.12"
+    },
+    {
+     "slug": "intercom",
+     "name": "Intercom",
+     "amount": 0.99,
+     "currency": "USD",
+     "tier": "Fin AI Agent",
+     "text": "USD 0.99"
+    },
+    {
+     "slug": "clickup",
+     "name": "ClickUp",
+     "amount": 7,
+     "currency": "USD",
+     "tier": "unlimited",
+     "text": "USD 7/user/month"
+    },
+    {
+     "slug": "atlassian",
+     "name": "Atlassian",
+     "amount": 7.91,
+     "currency": "USD",
+     "tier": "Jira Standard",
+     "text": "USD 7.91/[object Object]"
+    },
+    {
+     "slug": "slack",
+     "name": "Slack",
+     "amount": 8.75,
+     "currency": "USD",
+     "tier": "Pro",
+     "text": "USD 8.75"
+    },
+    {
+     "slug": "netlify",
+     "name": "Netlify",
+     "amount": 9,
+     "currency": "USD",
+     "tier": "Personal",
+     "text": "USD 9/month"
+    },
+    {
+     "slug": "cloudflare",
+     "name": "Cloudflare",
+     "amount": 10,
+     "currency": "USD",
+     "tier": "Advanced Certificate Manager",
+     "text": "USD 10/month"
+    },
+    {
+     "slug": "linear",
+     "name": "Linear",
+     "amount": 10,
+     "currency": "USD",
+     "tier": "Basic",
+     "text": "USD 10/user/month"
+    },
+    {
+     "slug": "monday",
+     "name": "monday.com",
+     "amount": 10,
+     "currency": "EUR",
+     "tier": "Free",
+     "text": "EUR 10/month"
+    },
+    {
+     "slug": "notion",
+     "name": "Notion",
+     "amount": 10,
+     "currency": "USD",
+     "tier": "Plus",
+     "text": "USD 10"
+    },
+    {
+     "slug": "retool",
+     "name": "Retool",
+     "amount": 10,
+     "currency": "USD",
+     "tier": "Enterprise",
+     "text": "USD 10/month"
+    },
+    {
+     "slug": "asana",
+     "name": "Asana",
+     "amount": 10.99,
+     "currency": "USD",
+     "tier": "Starter",
+     "text": "USD 10.99"
+    },
+    {
+     "slug": "loom",
+     "name": "Loom",
+     "amount": 18,
+     "currency": "USD",
+     "tier": "Business",
+     "text": "USD 18/user/month"
+    },
+    {
+     "slug": "zendesk",
+     "name": "Zendesk",
+     "amount": 19,
+     "currency": "USD",
+     "tier": "Support Team",
+     "text": "USD 19/month"
+    },
+    {
+     "slug": "zapier",
+     "name": "Zapier",
+     "amount": 19.99,
+     "currency": "USD",
+     "tier": "Professional",
+     "text": "USD 19.99/month"
+    },
+    {
+     "slug": "klaviyo",
+     "name": "Klaviyo",
+     "amount": 20,
+     "currency": "USD",
+     "tier": "Email Plan (entry)",
+     "text": "USD 20"
+    },
+    {
+     "slug": "sentry",
+     "name": "Sentry",
+     "amount": 26,
+     "currency": "USD",
+     "tier": "team",
+     "text": "USD 26/month"
+    },
+    {
+     "slug": "gitlab",
+     "name": "GitLab",
+     "amount": 29,
+     "currency": "USD",
+     "tier": "Premium",
+     "text": "USD 29"
+    },
+    {
+     "slug": "customer-io",
+     "name": "Customer.io",
+     "amount": 100,
+     "currency": "USD",
+     "tier": "Essentials",
+     "text": "USD 100/month"
+    },
+    {
+     "slug": "dbt-labs",
+     "name": "dbt Labs",
+     "amount": 100,
+     "currency": "USD",
+     "tier": "Starter",
+     "text": "USD 100/user/month"
+    },
+    {
+     "slug": "clay",
+     "name": "Clay",
+     "amount": 167,
+     "currency": "USD",
+     "tier": "Launch",
+     "text": "USD 167/month"
+    }
+   ],
+   "currencies": [
+    {
+     "currency": "USD",
+     "n": 22
+    },
+    {
+     "currency": "EUR",
+     "n": 1
+    }
+   ],
+   "median": 10,
+   "coverage": {
+    "tracked": 60,
+    "readable": 23,
+    "unreadable": 37,
+    "held": 0,
+    "suspect": 1,
+    "missing": [
+     {
+      "slug": "airtable",
+      "name": "Airtable"
+     },
+     {
+      "slug": "amplitude",
+      "name": "Amplitude"
+     },
+     {
+      "slug": "apollo",
+      "name": "Apollo.io"
+     },
+     {
+      "slug": "attio",
+      "name": "Attio"
+     },
+     {
+      "slug": "bill",
+      "name": "BILL"
+     },
+     {
+      "slug": "braze",
+      "name": "Braze"
+     },
+     {
+      "slug": "brex",
+      "name": "Brex"
+     },
+     {
+      "slug": "calendly",
+      "name": "Calendly"
+     },
+     {
+      "slug": "contentful",
+      "name": "Contentful"
+     },
+     {
+      "slug": "databricks",
+      "name": "Databricks"
+     },
+     {
+      "slug": "datadog",
+      "name": "Datadog"
+     },
+     {
+      "slug": "deel",
+      "name": "Deel"
+     },
+     {
+      "slug": "elastic",
+      "name": "Elastic"
+     },
+     {
+      "slug": "figma",
+      "name": "Figma"
+     },
+     {
+      "slug": "fivetran",
+      "name": "Fivetran"
+     },
+     {
+      "slug": "front",
+      "name": "Front"
+     },
+     {
+      "slug": "github",
+      "name": "GitHub"
+     },
+     {
+      "slug": "gong",
+      "name": "Gong"
+     },
+     {
+      "slug": "hightouch",
+      "name": "Hightouch"
+     },
+     {
+      "slug": "hubspot",
+      "name": "HubSpot"
+     },
+     {
+      "slug": "lattice",
+      "name": "Lattice"
+     },
+     {
+      "slug": "launchdarkly",
+      "name": "LaunchDarkly"
+     },
+     {
+      "slug": "miro",
+      "name": "Miro"
+     },
+     {
+      "slug": "mixpanel",
+      "name": "Mixpanel"
+     },
+     {
+      "slug": "pendo",
+      "name": "Pendo"
+     },
+     {
+      "slug": "pipedrive",
+      "name": "Pipedrive"
+     },
+     {
+      "slug": "posthog",
+      "name": "PostHog"
+     },
+     {
+      "slug": "ramp",
+      "name": "Ramp"
+     },
+     {
+      "slug": "rippling",
+      "name": "Rippling"
+     },
+     {
+      "slug": "segment",
+      "name": "Segment"
+     },
+     {
+      "slug": "snowflake",
+      "name": "Snowflake"
+     },
+     {
+      "slug": "stripe",
+      "name": "Stripe"
+     },
+     {
+      "slug": "twilio",
+      "name": "Twilio"
+     },
+     {
+      "slug": "typeform",
+      "name": "Typeform"
+     },
+     {
+      "slug": "vanta",
+      "name": "Vanta"
+     },
+     {
+      "slug": "vercel",
+      "name": "Vercel"
+     },
+     {
+      "slug": "webflow",
+      "name": "Webflow"
+     }
+    ]
+   }
+  }
+ },
+ "generated_at": "2026-08-07T15:53:36Z"
+}

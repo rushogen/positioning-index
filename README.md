@@ -5,11 +5,25 @@ companies, records how they describe themselves, and detects when that
 description changes. It runs on demand — locally or from a button on GitHub —
 and every crawl lands as a public, timestamped commit.
 
-The value is not the snapshot. It is the time series. You can ask any model what
-Linear's homepage says today; no model can tell you what it said in March,
-whether the word "platform" replaced "tool" in June, or which twelve companies
-quietly dropped their free tier last quarter. That record has to be kept
-deliberately, starting before you need it.
+There are two things in here and the second one takes months to arrive.
+
+**Today**, it is a cross-section: sixty companies' current positioning, read the
+same way on the same morning and counted. What noun they claim (19 of 52 say
+"platform"; nothing else reaches double figures). What their headlines are made
+of ("agents" leads at 7 of 59, ahead of "platform" at 5). How many put AI or
+agent language in the first three things a visitor reads (47 of 59). What they
+use as proof, whose logo they borrow, and what their pricing pages actually
+publish. Any one of those is a search away for one company; nobody has them for
+sixty read the same way.
+
+**Over time**, it is the series, and that is the part no model can reconstruct
+for you. You can ask anything what Linear's homepage says today; nothing can tell
+you what it said in March, whether "platform" replaced "tool" in June, or which
+twelve companies quietly dropped their free tier last quarter. That record has to
+be kept deliberately, starting before you need it.
+
+The first is what makes the site worth opening on day one. The second is why it
+exists.
 
 **The record is this repository's git history.** The product is change over
 time; git is a diff store. So every crawl is a commit, every observation is a
@@ -377,7 +391,11 @@ bin/
   retract.js          withdraw a published event by appending, never deleting
 src/
   runner.js           select targets, crawl them politely, write what they mean
-  report.js           read models: health, stats, feed, per-company detail
+  report.js           read models over time: health, stats, feed, per-company detail
+  insights.js         read models across the set: word counts, category nouns, AI
+                      language, pricing shape, proof kinds, logo counts
+  charts.js           inline SVG bars and part-to-whole marks, no viewBox
+  landing.js          the front page, composed from insights.js at build time
   diff.js             change detection, gates, parser- and context-fault discrimination
   hash.js             FNV-1a
   store/
@@ -399,12 +417,12 @@ data/
   runs.ndjson         one record per run, always
 docs/                 the generated site, served by GitHub Pages
 public/               the site's source: HTML, CSS, one JS file, no dependencies
-tests/                162 tests, node:test, no runner dependency
+tests/                199 tests, node:test, no runner dependency
 scripts/
   probe.js            run the extractor against live URLs, report timings
   check-seed.js       validate seed URLs, structurally or live
 seed/companies.json   60 companies, 120 URLs
-METHODOLOGY.md        how each signal is measured, v1.3
+METHODOLOGY.md        how each signal is measured and counted, v1.4
 CORRECTIONS.md        every claim published and then withdrawn, and why
 .github/workflows/crawl.yml   the button
 ```
@@ -420,7 +438,7 @@ years should not have a supply chain.
 Node 20 or newer. Nothing to install.
 
 ```bash
-npm test                              # 162 tests, no network
+npm test                              # 199 tests, no network
 npm run crawl                         # the most overdue batch (12 pages)
 npm run crawl -- --company linear     # one company, both its pages
 npm run crawl -- --all                # every target in the seed list
@@ -606,9 +624,18 @@ its weaknesses should not be trusted about its strengths.
    useful and wrong often enough to need the confidence scores it carries. Every
    value on the site shows the method that produced it.
 
-7. **The index is young.** Drift is only visible over months. On day one this
-   is an elaborate snapshot. That is unavoidable and is precisely why it had to
-   be started.
+7. **The index is young, and the cross-section is one morning.** Drift is only
+   visible over months, so on day one the time series has three events in it.
+   That is unavoidable and is precisely why it had to be started.
+
+   The front page therefore leads with the cross-section instead, and that has
+   its own limit worth naming: it is a single reading. "agents appears in 7 of
+   59 headlines" is a fact about one morning's fetch of 59 pages. It is not a
+   trend, it does not become one by being charted, and the page is written so
+   that it cannot accidentally say otherwise — every takeaway sentence is
+   generated from the numbers rather than typed beside them, which rules out
+   most of the ways a chart caption goes wrong. What turns these counts into
+   something with a direction is the second reading, and the one after that.
 
 8. **A signal that has never had a value measures our reach, not the market.**
    `linear.app` publishes no logo wall this extractor can read, and the index
