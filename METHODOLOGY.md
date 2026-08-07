@@ -1,6 +1,6 @@
 # Methodology
 
-**Version 1.4** — corresponds to extractor version `1.0.0`.
+**Version 1.5** — corresponds to extractor version `1.0.0`.
 
 This document states exactly how each signal is measured, what counts as a
 change, and what the index will refuse to claim. It is versioned because the
@@ -794,6 +794,88 @@ A median is published for the readable entry prices, labelled with its n. It
 describes twenty-three numbers. It is not a market price and the site does not
 call it one.
 
+### 4A.9 Segment grouping
+
+`seed/companies.json` labels every company with one of **fourteen** segments.
+Seven of them hold three companies or fewer and one holds a single company:
+
+```
+dev-infra 7 · data 7 · product-dev 6 · work-mgmt 6 · gtm 6 · marketing 6
+analytics 5 · fintech-ops 4 · support 3 · hr-ops 3
+design 2 · observability 2 · automation 2 · security 1
+```
+
+Charting those directly would put a bar over one company next to a bar over
+seven and invite a conclusion about "security companies" from one homepage. The
+fourteen are therefore folded into **five groups** of 7 to 16:
+
+| Group | n | Seed segments |
+|---|---|---|
+| Developer & infrastructure | 10 | `dev-infra`, `observability`, `security` |
+| Data & analytics | 12 | `data`, `analytics` |
+| Work & product | 16 | `product-dev`, `work-mgmt`, `automation`, `design` |
+| Go-to-market & support | 15 | `gtm`, `marketing`, `support` |
+| Finance & people ops | 7 | `fintech-ops`, `hr-ops` |
+
+The fold is a judgement and is published as one. Three properties keep it
+auditable rather than convenient:
+
+- **A seed segment is never split.** Every company carrying a given `segment`
+  moves as one. The mapping is fourteen whole segments moved into five boxes, so
+  the only way to disagree with it is to disagree with a box — not to discover
+  that two companies were placed individually to make a number come out.
+- **The mapping is on the page**, with the rationale for each fold and every
+  company in it, in a table the reader opens.
+- **The groups partition the seed.** No company is dropped and none is counted
+  twice; a company whose segment the mapping does not know is reported by name,
+  and there is a test that fails if one appears.
+
+**The minimum cell.** A group cell computed over fewer than **six** readable
+companies is not drawn. At six, one company is 17 percentage points; at four it
+is 25, and a bar that one homepage edit moves a quarter of its length is a
+decoration. A suppressed cell is not rounded, pooled or omitted — it keeps its
+row and reads "too few to say" with its own n, because a group that vanishes
+from a chart reads as a group that scored zero.
+
+**The width of a difference.** For two cells, the site computes the smallest
+number of companies in the lower cell that would have to change their answer for
+its share to reach the higher one's — the smallest `k` satisfying
+
+```
+(low.yes + k) × high.readable  ≥  high.yes × low.readable
+```
+
+solved in integers. This number is printed next to every comparison. With cells
+of 6 to 16 it is usually one to four, and *"go-to-market leads finance by 50
+points"* and *"three companies separate them"* are the same fact told
+dishonestly and honestly.
+
+**What gets drawn.** Nine cuts are computed. Two rules, applied in order, decide
+which are published, and both are computed from the numbers rather than chosen
+by looking at them:
+
+1. **Coverage.** A cut where fewer than four of the five groups clear the
+   minimum cell is withheld. A comparison across two or three groups of a
+   sixty-company set is not a segment breakdown.
+2. **Fragility.** A cut whose best and worst group are within **two companies**
+   of each other is withheld. A reader looks at the bars, not at the caveat.
+
+A withheld cut is listed on the page with its rule and its numbers. On
+2026-08-07 that is four of the nine: proof by scale count and by multiplier and
+by time-to-result are all flat within two companies, and free-tier prevalence
+fails coverage — pricing is readable for 32 of 60 companies overall, which leaves
+three groups of five cells too small to draw, and 30 of those 32 readable pages
+publish a free tier anyway, so there is little left for a segment to explain.
+
+Selecting the cuts after seeing which came out interesting would be the ordinary
+way this analysis goes wrong, and the rules above exist to make it impossible:
+the list of nine is fixed in the source, and the site publishes the ones that
+survive plus the reasons the others did not.
+
+**Percentages never travel alone.** Every share on this section of the site is
+rendered in the same string as the counts that produced it (`4 of 6 · 67%`), on
+the bar itself rather than in a tooltip or a footnote.
+
 ---
 
 ## 5. What this index does not claim
@@ -825,10 +907,36 @@ call it one.
   `data/runs.ndjson` says otherwise, and the site says which it was.
 - **Not causal.** Two companies adopting the same category noun in the same
   month is an observation, not an influence.
+- **Not a segment effect.** §4A.9 groups sixty companies into five buckets and
+  reports where they differ. A difference between two buckets of 6 to 16
+  companies is a description of those companies, not an effect of the market
+  they sell into: nothing here is a significance test, no group is a sample of
+  anything, and the seed is sixty companies one person chose. The number the
+  site prints next to every such comparison is how many companies would have to
+  change their homepage to erase it, and on most cuts that number is two or
+  three.
 
 ---
 
 ## 6. Version history
+
+**v1.5** — 2026-08-07. The `segment` field in the seed becomes a published cut.
+New §4A.9: the fourteen seed segments are folded into five groups of 7 to 16, a
+cell under six readable companies is not drawn, and every comparison carries the
+number of companies that would have to change to erase it. §5 gains a
+corresponding refusal.
+
+The section is as much about what cannot be said as what can. Nine cuts are
+computed and four are withheld by rule — three because the spread between the
+best and worst group is within two companies, and free-tier prevalence because
+pricing is readable for only 32 of 60 and three of the five groups fall below the
+minimum cell. The withheld cuts are published with their reasons, because a cut
+this data cannot support is a finding about the data.
+
+**No signal definition changed** and the extractor version stays `1.0.0`. §1
+through §4 are untouched and no stored value is affected; §4A.9 defines how the
+existing seed metadata is *grouped and counted*, and the grouping is a judgement
+published in full rather than derived from the data.
 
 **v1.4** — 2026-08-07. The breadth axis gets a definition. New §4A, covering the
 cross-sectional measures the published site now leads with: word frequency,

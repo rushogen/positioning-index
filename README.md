@@ -13,8 +13,13 @@ same way on the same morning and counted. What noun they claim (19 of 52 say
 of ("agents" leads at 7 of 59, ahead of "platform" at 5). How many put AI or
 agent language in the first three things a visitor reads (47 of 59). What they
 use as proof, whose logo they borrow, and what their pricing pages actually
-publish. Any one of those is a search away for one company; nobody has them for
-sixty read the same way.
+publish. And where the segment changes the answer: every one of the fifteen
+go-to-market and support companies whose homepage we can read uses AI or agent
+language, against three of the six readable finance and people-ops companies —
+a gap three companies wide, which the page says out loud.
+
+Any one of those is a search away for one company; nobody has them for sixty read
+the same way.
 
 **Over time**, it is the series, and that is the part no model can reconstruct
 for you. You can ask anything what Linear's homepage says today; nothing can tell
@@ -156,6 +161,26 @@ currency that moves while the numbers stay proportionate is treated as routing
 rather than repricing even within one origin, because that rule needs no origin
 at all and therefore also protects the eight months of archive recorded before
 any origin was written down.
+
+**A cell too small is not a finding.** The seed labels every company with one of
+fourteen segments, and seven of those hold three companies or fewer — one holds
+exactly one. Charted directly, that draws a bar over Vanta and invites a
+conclusion about "security companies". So the fourteen fold into five groups of 7
+to 16, whole segments at a time, with the mapping published on the page; a group
+cell computed over fewer than six readable companies is drawn as the words *"too
+few to say"* rather than as a short bar; and every comparison prints how many
+companies would have to change their homepage to erase it. On most cuts that
+number is two or three, and *"go-to-market leads finance by 50 points"* and
+*"three companies separate them"* are the same fact told dishonestly and
+honestly.
+
+Nine such cuts are computed and four are withheld by rule — three because the
+best and worst group are within two companies of each other, and free-tier
+prevalence because pricing is readable for only 32 of 60 companies, which leaves
+three of the five groups too small to draw at all. The withheld cuts are listed
+on the page with their reasons and their numbers. Choosing which segment
+differences to show *after seeing them* is the ordinary way this analysis goes
+wrong; the rules are in the source and the site publishes whatever survives them.
 
 **An experiment is not a repositioning.** `airtable.com` served two different
 `<h1>` strings to two requests minutes apart. Each signal remembers its last six
@@ -393,8 +418,9 @@ src/
   runner.js           select targets, crawl them politely, write what they mean
   report.js           read models over time: health, stats, feed, per-company detail
   insights.js         read models across the set: word counts, category nouns, AI
-                      language, pricing shape, proof kinds, logo counts
-  charts.js           inline SVG bars and part-to-whole marks, no viewBox
+                      language, pricing shape, proof kinds, logo counts, and the
+                      segment breakdown with its minimum-cell and fragility rules
+  charts.js           inline SVG bars, share bars and part-to-whole marks, no viewBox
   landing.js          the front page, composed from insights.js at build time
   diff.js             change detection, gates, parser- and context-fault discrimination
   hash.js             FNV-1a
@@ -417,12 +443,12 @@ data/
   runs.ndjson         one record per run, always
 docs/                 the generated site, served by GitHub Pages
 public/               the site's source: HTML, CSS, one JS file, no dependencies
-tests/                199 tests, node:test, no runner dependency
+tests/                218 tests, node:test, no runner dependency
 scripts/
   probe.js            run the extractor against live URLs, report timings
   check-seed.js       validate seed URLs, structurally or live
 seed/companies.json   60 companies, 120 URLs
-METHODOLOGY.md        how each signal is measured and counted, v1.4
+METHODOLOGY.md        how each signal is measured and counted, v1.5
 CORRECTIONS.md        every claim published and then withdrawn, and why
 .github/workflows/crawl.yml   the button
 ```
@@ -643,7 +669,20 @@ its weaknesses should not be trusted about its strengths.
    to claim the second; §4.11 refuses to claim the first in reverse. Honest, and
    still a gap.
 
-9. **It has already been wrong twice.** Two false change events about Notion's
+9. **The segment groups are five buckets of sixty companies one person chose.**
+   The fold from fourteen seed segments into five is a judgement, published in
+   full with its rationale and every company in it, so it can be argued with —
+   but arguing with it is the only recourse, because there is no external
+   taxonomy this defers to. Nothing in the breakdown is a significance test and
+   no group is a sample of anything: a difference between two buckets of 6 to 16
+   companies describes those companies and not the markets they sell into. The
+   rules that decide what gets drawn (minimum cell of six, withhold anything
+   inside a two-company spread) are conservative and still not conservative
+   enough to turn sixty homepages into a claim about an industry. What the page
+   can honestly say, it says with the number of companies that would flip it
+   printed alongside.
+
+10. **It has already been wrong twice.** Two false change events about Notion's
    pricing, and one about Airtable's customer logos — all published and
    retracted on 2026-08-07, the day of the first full sweep. The causes, the
    fixes and what remains unsolved are in [`CORRECTIONS.md`](CORRECTIONS.md).
