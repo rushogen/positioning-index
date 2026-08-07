@@ -119,14 +119,32 @@ export function latestByCompany({ companies, series }) {
  * The three-character floor is what excludes "ai" -- deliberately. AI language
  * is its own measurement (see aiMentions) rather than one row in a word count
  * where it would dominate and say nothing.
+ *
+ * An apostrophe is a separator like any other, which is why "you're" becomes
+ * "you" and a two-letter tail the floor removes. That pairs with the stopword
+ * list below, whose odd-looking entries ("don", "aren", "couldn") are exactly
+ * the heads this split produces.
  */
 export function tokenize(text) {
+  return words(text).filter((t) => t.length >= 3);
+}
+
+/**
+ * The same split with no length floor.
+ *
+ * The floor above is a property of the *word count*, where two-letter tokens
+ * are noise and "ai" needs its own measurement rather than one dominant row.
+ * It is not a property of the language. Applying it to the category vocabulary
+ * silently deleted "os" from that vocabulary, so `asana`'s "OS for human-agent
+ * teams" was filed under "agent" -- a wrong answer that looked entirely
+ * plausible in the chart. Hence two functions with two jobs.
+ */
+export function words(text) {
   if (text == null) return [];
   return String(text)
     .toLowerCase()
-    .replace(/[‘’ʼ']/g, '')
     .split(/[^a-z0-9]+/)
-    .filter((t) => t.length >= 3 && /^[a-z]/.test(t));
+    .filter((t) => t.length > 0 && /^[a-z]/.test(t));
 }
 
 /**
@@ -185,7 +203,7 @@ export function headlineWords({ companies, series, limit = 12, field = 'headline
 
   const words = [...counts.entries()]
     .map(([word, examples]) => ({ word, n: examples.length, companies: sortByName(examples) }))
-    .sort((a, b) => b.n - a.n || a.word.localeCompare(b.word))
+    .sort((a, b) => b.n - a.n || a.word.localeCompare(b.word, 'en'))
     .slice(0, limit);
 
   return {
@@ -251,7 +269,7 @@ export const CATEGORY_NOUNS = new Map(Object.entries({
 
 /** The noun a single category label claims, or null if the vocabulary misses it. */
 export function categoryNounOf(label) {
-  for (const token of tokenize(label)) {
+  for (const token of words(label)) {
     const noun = CATEGORY_NOUNS.get(token);
     if (noun) return noun;
   }
@@ -292,7 +310,7 @@ export function categoryNouns({ companies, series }) {
   return {
     groups: [...groups.entries()]
       .map(([noun, members]) => ({ noun, n: members.length, companies: sortByName(members) }))
-      .sort((a, b) => b.n - a.n || a.noun.localeCompare(b.noun)),
+      .sort((a, b) => b.n - a.n || a.noun.localeCompare(b.noun, 'en')),
     unmatched: sortByName(unmatched),
     coverage: coverage(rows.length, rows.length - missing.length, missing, freshness.counts),
   };
@@ -317,10 +335,10 @@ export const AI_TERMS = new Map(Object.entries({
 
 /** The AI/agent term families present in one string, sorted and de-duplicated. */
 export function aiTermsIn(text) {
-  if (text == null) return [];
   const found = new Set();
-  for (const raw of String(text).toLowerCase().replace(/[‘’ʼ']/g, '').split(/[^a-z0-9]+/)) {
-    const family = AI_TERMS.get(raw);
+  // The unfloored split, because "ai" is two characters and is the whole point.
+  for (const token of words(text)) {
+    const family = AI_TERMS.get(token);
     if (family) found.add(family);
   }
   return [...found].sort();
@@ -392,7 +410,7 @@ export function aiMentions({ companies, series }) {
     })),
     by_term: [...byTerm.entries()]
       .map(([term, members]) => ({ term, n: members.length, companies: sortByName(members) }))
-      .sort((a, b) => b.n - a.n || a.term.localeCompare(b.term)),
+      .sort((a, b) => b.n - a.n || a.term.localeCompare(b.term, 'en')),
     coverage: coverage(rows.length, rows.length - missing.length, missing, freshness.counts),
   };
 }
@@ -487,7 +505,7 @@ export function pricingShape({ companies, series }) {
       key: b.key,
       label: b.label,
       n: members.length,
-      companies: members.slice().sort((a, b2) => a.amount - b2.amount || a.name.localeCompare(b2.name)),
+      companies: members.slice().sort((a, b2) => a.amount - b2.amount || a.name.localeCompare(b2.name, 'en')),
     };
   });
 
@@ -509,10 +527,10 @@ export function pricingShape({ companies, series }) {
     },
     entry_price: {
       buckets,
-      companies: entries.slice().sort((a, b) => a.amount - b.amount || a.name.localeCompare(b.name)),
+      companies: entries.slice().sort((a, b) => a.amount - b.amount || a.name.localeCompare(b.name, 'en')),
       currencies: [...currencies.entries()]
         .map(([currency, n]) => ({ currency, n }))
-        .sort((a, b) => b.n - a.n || a.currency.localeCompare(b.currency)),
+        .sort((a, b) => b.n - a.n || a.currency.localeCompare(b.currency, 'en')),
       // The median of a set this small is a description of these 23 numbers and
       // nothing more. It is returned because it is cheap and labelled on the
       // site with its n, never as "the market price".
@@ -599,7 +617,7 @@ export function proofClaims({ companies, series }) {
         claims: bucket.claims,
         companies: sortByName(bucket.companies),
       }))
-      .sort((a, b) => b.n - a.n || a.label.localeCompare(b.label)),
+      .sort((a, b) => b.n - a.n || a.label.localeCompare(b.label, 'en')),
     total_claims: totalClaims,
     coverage: coverage(rows.length, readable, sortByName(missing), freshness.counts),
   };
@@ -653,11 +671,11 @@ export function logoMentions({ companies, series, limit = 12 }) {
     .map(([key, bucket]) => ({
       key,
       logo: [...bucket.spellings.entries()]
-        .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))[0][0],
+        .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], 'en'))[0][0],
       n: bucket.companies.length,
       companies: sortByName(bucket.companies),
     }))
-    .sort((a, b) => b.n - a.n || a.logo.localeCompare(b.logo));
+    .sort((a, b) => b.n - a.n || a.logo.localeCompare(b.logo, 'en'));
 
   return {
     logos: logos.slice(0, limit),
@@ -726,5 +744,5 @@ function tally() {
 }
 
 function sortByName(entries) {
-  return entries.slice().sort((a, b) => a.name.localeCompare(b.name, 'en') || a.slug.localeCompare(b.slug));
+  return entries.slice().sort((a, b) => a.name.localeCompare(b.name, 'en') || a.slug.localeCompare(b.slug, 'en'));
 }
