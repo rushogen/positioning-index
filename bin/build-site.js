@@ -40,6 +40,7 @@ import { SIGNALS } from '../src/extract/index.js';
 import { BOT_NAME, CONTACT_URL, USER_AGENT } from '../src/crawl/agent.js';
 import {
   categoryDistribution, companyDetail, companyHealth, indexStats, partitionEvents, recentChanges,
+  withConfirmation,
 } from '../src/report.js';
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
@@ -67,7 +68,9 @@ const asOf = lastRun?.finished_at ?? lastRun?.started_at ?? '1970-01-01T00:00:00
 const model = { companies, queue, series, events, runs, asOf };
 const stats = indexStats(model);
 const health = companyHealth(model);
-const changes = recentChanges(events, { limit: 500 });
+// Carrying `confirmed` so the page can say which of these have been read again
+// since, and which have been seen exactly once. See src/report.js.
+const changes = withConfirmation(recentChanges(events, { limit: 500 }), queue);
 
 // Everything data/events.ndjson says was published in error. It is written out
 // on purpose and linked from the page: a corrections log that only its author

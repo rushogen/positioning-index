@@ -156,6 +156,9 @@ function renderChange(c) {
       h('span', { class: `tag ${c.change_type}` }, c.change_type),
       h('span', { class: 'tag' }, signalLabel(c.signal)),
       c.oscillating ? h('span', { class: 'tag oscillating', title: 'This page has held this value before. Most likely an A/B test cycling rather than a repositioning.' }, 'A/B?') : null,
+      !c.retracted && !c.confirmed
+        ? h('span', { class: 'tag once', title: 'This page has not been read again since. One observation cannot tell a repositioning from an experiment that is still running.' }, 'seen once')
+        : null,
       c.retracted ? h('span', { class: 'tag retracted', title: 'Published in error and withdrawn. It is kept here, struck through, rather than deleted.' }, 'retracted') : null,
       h('time', { datetime: c.detected_at }, fmtDate(c.detected_at)),
     ),
@@ -388,6 +391,8 @@ async function renderCompany(slug) {
           h('time', { datetime: e.detected_at }, fmtDate(e.detected_at)),
           h('span', { class: `tag ${e.change_type}` }, signalLabel(e.signal)),
           ' ',
+          e.confirmed ? null : h('span', { class: 'tag once', title: 'This page has not been read again since.' }, 'seen once'),
+          e.confirmed ? '' : ' ',
           e.summary || '',
         )))
       : h('p', { class: 'note' },

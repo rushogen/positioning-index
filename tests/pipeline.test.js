@@ -24,7 +24,7 @@ import { join } from 'node:path';
 import { mockFetch } from './helpers/mock-fetch.js';
 import { FileStore, memoryRobotsStore } from '../src/store/files.js';
 import { runCrawl, commitMessage, interleaveHosts, selectTargets, targetsFromSeed } from '../src/runner.js';
-import { companyHealth, indexStats, recentChanges, companyDetail } from '../src/report.js';
+import { companyHealth, indexStats, recentChanges, companyDetail, withConfirmation } from '../src/report.js';
 import { MIN_HOST_INTERVAL_MS } from '../src/crawl/agent.js';
 
 const HOST = 'https://acme.test';
@@ -174,6 +174,78 @@ test('a full five-day life cycle', async (t) => {
   const r5 = await run(T(5));
   assert.equal(r5.run.results[0].status, 'ok');
   assert.equal((await store.readEvents()).length, before, 'recovering to the previously known value is not a change');
+});
+
+// ---------------------------------------------------------------------------
+
+test('a logo wall appearing on a live page publishes nothing until it is corroborated', async (t) => {
+  const store = await scratch(t);
+  // Same page throughout except for the wall: fewer than three readable names
+  // is not a wall, so day 1 extracts null exactly as a broken selector would.
+  const WITHOUT = homepage({ headline: 'The issue tracker teams actually enjoy', subhead: 'Track bugs, plan sprints, ship software on time.', logos: ['Figma'] });
+  const WITH = homepage({ headline: 'The issue tracker teams actually enjoy', subhead: 'Track bugs, plan sprints, ship software on time.', logos: ['Figma', 'Stripe', 'Linear', 'Vercel'] });
+
+  let homeBody = WITHOUT;
+  const fetchImpl = mockFetch({
+    [ROBOTS]: { body: 'User-agent: *\nAllow: /\n', headers: { 'content-type': 'text/plain' } },
+    [HOME]: () => homeBody,
+  });
+  const run = runner(store, fetchImpl);
+
+  await run(T(1));
+  const day1 = (await seriesOf(store, 'acme')).at(-1);
+  assert.equal(day1.signals.customer_logos, null, 'the fixture must actually start with no readable wall');
+
+  homeBody = WITH;
+  for (const day of [2, 3]) {
+    const r = await run(T(day));
+    assert.equal(r.run.changes, 0, `day ${day}: a wall we could not read before is not a wall they just built`);
+    assert.equal(r.run.results[0].acquisitions, 1, 'and the run ledger says an acquisition is being withheld');
+    assert.equal((await seriesOf(store, 'acme')).at(-1).state.customer_logos.last_good_value, null);
+  }
+
+  // Third consecutive reading of the same value: adopted, still silently.
+  const r4 = await run(T(4));
+  assert.equal(r4.run.changes, 0, 'adoption is not a change event either');
+  assert.equal(r4.run.results[0].acquisitions, 1);
+
+  const adopted = (await seriesOf(store, 'acme')).at(-1).state.customer_logos;
+  assert.equal(adopted.last_good_value, 'Figma, Linear, Stripe, Vercel');
+  assert.equal(adopted.total_changes, 0);
+  assert.equal((await store.readEvents()).length, 0, 'nothing reached the feed at any point');
+
+  // From here it is a normal signal: a swap against the adopted baseline is a
+  // real value -> value change and publishes.
+  homeBody = homepage({ headline: 'The issue tracker teams actually enjoy', subhead: 'Track bugs, plan sprints, ship software on time.', logos: ['Figma', 'Stripe', 'Linear', 'Ramp'] });
+  const r5 = await run(T(5));
+  assert.equal(r5.run.changes, 1);
+  assert.match((await store.readEvents())[0].summary, /added Ramp; removed Vercel/);
+});
+
+test('a change nobody has looked at twice is marked as seen once', async (t) => {
+  const store = await scratch(t);
+  let homeBody = DAY1;
+  const fetchImpl = mockFetch({
+    [ROBOTS]: { body: 'User-agent: *\nAllow: /\n', headers: { 'content-type': 'text/plain' } },
+    [HOME]: () => homeBody,
+  });
+  const run = runner(store, fetchImpl);
+
+  await run(T(1));
+  homeBody = DAY3;
+  await run(T(2));
+
+  const queue = await store.queue();
+  const events = await store.readEvents();
+
+  const fresh = withConfirmation(recentChanges(events), queue);
+  assert.ok(fresh.length >= 1);
+  assert.ok(fresh.every((e) => e.confirmed === 0), 'the page has not been read since the change was detected');
+
+  // Read it again. The value held, and the site stops hedging.
+  await run(T(3));
+  const later = withConfirmation(recentChanges(events), await store.queue());
+  assert.ok(later.every((e) => e.confirmed === 1));
 });
 
 // ---------------------------------------------------------------------------

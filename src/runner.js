@@ -35,7 +35,7 @@
  */
 
 import { extract, signalsFor, EXTRACTOR_VERSION } from './extract/index.js';
-import { canonical, diffPage, gatePage } from './diff.js';
+import { canonical, corroborateAcquisitions, diffPage, gatePage } from './diff.js';
 import { fetchPage, nextDueAt } from './crawl/fetch.js';
 import { MIN_HOST_INTERVAL_MS } from './crawl/agent.js';
 import { UNKNOWN_ORIGIN, describeOrigin, resolveOrigin } from './crawl/origin.js';
@@ -147,6 +147,25 @@ export async function crawlTarget(target, ctx, { now = Date.now(), fetchImpl = f
   // ---- Nothing to parse. The ledger still learns what happened and why.
   if (fetched.status !== 'ok') {
     const failures = fetched.status === 'unchanged' ? 0 : (q.consecutive_failures ?? 0) + 1;
+
+    // One exception to "nothing to parse": a body whose hash has not moved is
+    // proof that a value we saw last time is still there, and that is what a
+    // pending acquisition (S10) is waiting for. Nothing else about the
+    // observation changes, so the store appends a line only if a counter
+    // actually advanced -- the same rule that lets a moving null counter through.
+    let carried = null;
+    let carriedAcquisitions = 0;
+    if (fetched.status === 'unchanged') {
+      const previousRecord = await store.lastObservation(target.slug, target.kind);
+      const states = corroborateAcquisitions(previousRecord, nowIso);
+      if (states) {
+        carried = { ...previousRecord, observed_at: nowIso, state: states };
+        carriedAcquisitions = Object.entries(states)
+          .filter(([s, v]) => v.acquisition_runs !== previousRecord.state[s]?.acquisition_runs)
+          .length;
+      }
+    }
+
     const result = {
       slug: target.slug,
       kind: target.kind,
@@ -161,6 +180,7 @@ export async function crawlTarget(target, ctx, { now = Date.now(), fetchImpl = f
       yield: null,
       events: 0,
       parser_faults: 0,
+      acquisitions: carriedAcquisitions,
       etag: fetched.etag ?? q.etag ?? null,
       last_modified: fetched.lastModified ?? q.last_modified ?? null,
       content_hash: fetched.contentHash ?? q.content_hash ?? null,
@@ -173,7 +193,7 @@ export async function crawlTarget(target, ctx, { now = Date.now(), fetchImpl = f
         now,
       })),
     };
-    return { result, observation: null, events: [], crawlDelayMs };
+    return { result, observation: carried, events: [], crawlDelayMs, acquisitions: carriedAcquisitions };
   }
 
   // ---- Extract.

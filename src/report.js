@@ -57,6 +57,27 @@ export function partitionEvents(rows) {
 }
 
 /**
+ * Mark each event with whether the page has been read again since it fired.
+ *
+ * A change event is one observation, and one observation cannot tell a
+ * repositioning from an experiment that happens to be running. `airtable.com` is
+ * documented in this repository as A/B-testing its `<h1>`; the oscillation
+ * detector in src/diff.js reports `osc=0` for its headline change only because
+ * it has not yet seen the value flap back, and an absence of second readings is
+ * not evidence of a stable one.
+ *
+ * So `confirmed` says exactly one thing and claims nothing else: the page was
+ * successfully read again after this event was detected. It is not a judgement
+ * about intent, permanence, or whether the change was real.
+ */
+export function withConfirmation(events, queue) {
+  return events.map((e) => {
+    const lastOk = queue?.get(`${e.slug}/${e.kind}`)?.last_ok_at ?? null;
+    return { ...e, confirmed: lastOk != null && lastOk > e.detected_at ? 1 : 0 };
+  });
+}
+
+/**
  * @param {object} row  aggregated per-company crawl facts
  * @param {number} cutoff  epoch ms; a success older than this counts as stale
  */
@@ -228,7 +249,7 @@ export function companyDetail({ company, queue, records, events, runs, historyLi
     signals: Object.entries(signals)
       .map(([signal, state]) => ({ signal, ...state }))
       .sort((a, b) => a.signal.localeCompare(b.signal)),
-    events: recentChanges(events.filter((e) => e.slug === company.slug), { limit: historyLimit }),
+    events: withConfirmation(recentChanges(events.filter((e) => e.slug === company.slug), { limit: historyLimit }), queue),
     fetches: attempts
       .sort((a, b) => String(b.at).localeCompare(String(a.at)))
       .slice(0, fetchLimit),

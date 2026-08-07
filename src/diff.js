@@ -524,6 +524,84 @@ export function recoveryEvidence({
   return found;
 }
 
+/**
+ * Make an observed value the signal's known-good baseline.
+ *
+ * Pure, so that the two places that adopt a value -- a normal successful diff,
+ * and a pending acquisition corroborated by a byte-identical re-read -- cannot
+ * drift into adopting it differently.
+ *
+ * @param {object} state    the state to build on
+ * @param {object} current  { value, hash?, json?, method?, confidence? }
+ */
+export function adoptValue(state, current, now) {
+  const hash = current.hash ?? fnv1a(canonical(current.value));
+  const recent = parseRecent(state?.recent_hashes);
+  const json = current.json == null ? null
+    : typeof current.json === 'string' ? current.json : JSON.stringify(current.json);
+
+  return {
+    ...state,
+    last_observed_at: now,
+    last_good_at: now,
+    last_good_value: current.value,
+    last_good_json: json,
+    last_good_hash: hash,
+    last_good_method: current.method ?? null,
+    last_good_confidence: current.confidence ?? null,
+    consecutive_nulls: 0,
+    suspect: 0,
+    recent_hashes: JSON.stringify([hash, ...recent.filter((x) => x !== hash)].slice(0, RECENT_MEMORY)),
+    currency_shift_runs: 0,
+    currency_shift_key: null,
+    acquisition_runs: 0,
+    acquisition_hash: null,
+  };
+}
+
+/**
+ * Advance a pending S10 acquisition across a read that returned identical bytes.
+ *
+ * A conditional GET that comes back 304, or a body whose hash has not moved,
+ * short-circuits before extraction -- there is nothing to extract that we have
+ * not already extracted. That is the STRONGEST corroboration a value can get:
+ * the bytes that produced it have not moved, so the value has not either.
+ *
+ * Without this the counter could only advance on runs where something else on
+ * the page happened to change, and a value on a stable page would stay
+ * unadopted indefinitely -- shown on the public site as a signal we do not
+ * extract, when in fact we have extracted it every day for a week. That is the
+ * exact species of quiet dishonesty this project is built to avoid.
+ *
+ * @param {object|null} record  the last stored observation of this page
+ * @returns {object|null} a new state map, or null if nothing was pending
+ */
+export function corroborateAcquisitions(record, now) {
+  if (!record?.state) return null;
+
+  const out = {};
+  let advanced = 0;
+  for (const [signal, state] of Object.entries(record.state)) {
+    const observed = record.signals?.[signal] ?? null;
+    const pending = state && state.last_good_value == null && (state.acquisition_runs ?? 0) > 0;
+
+    // The hash check is belt and braces: identical bytes cannot yield a
+    // different value, and if they somehow did we would rather count nothing.
+    if (!pending || !observed?.value || observed.hash !== state.acquisition_hash) {
+      out[signal] = { ...state };
+      continue;
+    }
+
+    advanced++;
+    const runs = (state.acquisition_runs ?? 0) + 1;
+    out[signal] = runs >= ACQUISITION_CONFIRMATIONS
+      ? adoptValue(state, observed, now)
+      : { ...state, last_observed_at: now, acquisition_runs: runs };
+  }
+
+  return advanced ? out : null;
+}
+
 // ----------------------------------------------------------- signal-level diff
 
 /**
@@ -581,21 +659,9 @@ export function diffSignal({
   const recent = parseRecent(state?.recent_hashes);
 
   const commitGood = () => {
-    nextState.recent_hashes = JSON.stringify(
-      [hash, ...recent.filter((x) => x !== hash)].slice(0, RECENT_MEMORY)
-    );
-    nextState.last_good_at = now;
-    nextState.last_good_value = value;
-    nextState.last_good_json = current?.json ? JSON.stringify(current.json) : null;
-    nextState.last_good_hash = hash;
-    nextState.last_good_method = current?.method ?? null;
-    nextState.last_good_confidence = current?.confidence ?? null;
-    nextState.consecutive_nulls = 0;
-    nextState.suspect = 0;
-    nextState.currency_shift_runs = 0;
-    nextState.currency_shift_key = null;
-    nextState.acquisition_runs = 0;
-    nextState.acquisition_hash = null;
+    Object.assign(nextState, adoptValue(nextState, {
+      value, hash, json: current?.json, method: current?.method, confidence: current?.confidence,
+    }, now));
   };
 
   // ---- S1: never seen before. Establish the baseline, publish nothing.
