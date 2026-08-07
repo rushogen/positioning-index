@@ -159,8 +159,8 @@ event, and a change of origin suppresses every currency-bearing signal on the
 page — which is recorded as `origin-shift`, not as silence. Separately, a
 currency that moves while the numbers stay proportionate is treated as routing
 rather than repricing even within one origin, because that rule needs no origin
-at all and therefore also protects the eight months of archive recorded before
-any origin was written down.
+at all and therefore will also protect any reading recorded before the origin
+gate existed, should the archive ever be extended backwards.
 
 **A cell too small is not a finding.** The seed labels every company with one of
 fourteen segments, and seven of those hold three companies or fewer — one holds
@@ -395,8 +395,8 @@ Nothing, and there is no account that can start billing.
 | Resource | Limit | Used |
 |---|---|---|
 | GitHub Actions | 2,000 min/month on a free account, unlimited on a public repository | a full sweep is dominated by politeness delays, not compute |
-| GitHub Pages | 1GB site, 100GB/month bandwidth | `docs/` is under 1MB |
-| Repository size | soft warning at 1GB | the append-only NDJSON grows by roughly a megabyte a year, and git deltas it well |
+| GitHub Pages | 1GB site, 100GB/month bandwidth | `docs/` is 1.0MB at 60 companies, and most of that is one generated JSON file |
+| Repository size | soft warning at 1GB | `data/runs.ndjson` costs about 400 bytes per target crawled — roughly 50kB for a full sweep of the current seed. The per-company series grows only when a value actually changes, so it stays small; the ledger is the part that grows with every run |
 | Database | — | there isn't one |
 
 The previous version of this project ran on Cloudflare Workers and D1, and the

@@ -10,11 +10,112 @@ credibility than a hundred true ones earn. When one gets out, the useful respons
 is not to quietly delete it — it is to say what happened in enough detail that a
 reader can judge whether the fix is any good.
 
+The same standard applies to claims this index makes about **itself**. A wrong
+number in the README is a published claim, it is read by more people than any
+individual event, and it is not exempt because it was prose rather than data.
+The 2026-08-08 entry below is the first of that kind.
+
 **Nothing here is deleted.** A retracted event stays in `data/events.ndjson`
 exactly as it was published, with a later line recording that it was withdrawn,
 why, and when. The public feed excludes retracted events; `docs/api/retractions.json`
 lists them. Both halves of the story stay in the git history, which is the whole
 premise of the project.
+
+---
+
+## 2026-08-08 — The README described an eight-month archive. There was one day of it. {#2026-08-08-archive-age}
+
+**Retracted:** three claims in `README.md`, and one in this file.
+
+| Where | What was published |
+|---|---|
+| `README.md`, crawling gates | *"…also protects the **eight months of archive** recorded before any origin was written down."* |
+| `README.md`, cost table | *"`docs/` is **under 1MB**"* |
+| `README.md`, cost table | *"the append-only NDJSON grows by roughly **a megabyte a year**"* |
+| `CORRECTIONS.md`, Notion entry | *"The archive **also contains a genuinely mixed-origin stretch**: everything recorded before 2026-08-07…"* |
+
+### What actually happened
+
+There is no eight-month archive. There is no mixed-origin stretch. Every
+`observed_at` in `data/companies/` reads `2026-08-07`, the first archive commit
+landed the same day, and the corpus at the time of writing is 126 observations
+across 60 companies, 6 runs and 9 events.
+
+The other two are measurements that were true when written and were never
+re-checked:
+
+```
+docs/                 claimed  under 1MB      measured  1,068 kB
+data/ growth          claimed  ~1 MB/year     measured  ~400 bytes per target
+                                                        crawled, so ~50 kB per
+                                                        full sweep of the seed
+```
+
+The growth figure was not merely stale, it was the wrong shape. `data/` does not
+grow at a rate per year; it grows at a rate per target crawled, because
+`data/runs.ndjson` records one result per target on every run while the
+per-company series only appends when a value actually changes. Stated as an
+annual figure it hid the variable that matters, which is how many pages the seed
+holds.
+
+### Why the existing gates did not catch it
+
+Because there are none. Every gate in this project guards the path from a fetched
+page to a published event. Nothing at all guards the path from a fact about the
+project to a sentence in the README.
+
+That is the whole finding, and it is uncomfortable in proportion to how careful
+the rest of the pipeline is. The extractor will not attribute its own version
+bump to a company. The diff engine will not call a null a removal. The run ledger
+gets a line whether or not anything happened, specifically so that silence cannot
+be mistaken for calm. And a paragraph three screens above all of that described
+an archive that did not exist, in a document whose argument is *the record is
+this repository's git history* — a record which, at the time, said plainly that
+it was one day old.
+
+The eight-month sentence appears to be a forward-looking description written
+while the origin rules were being designed, left in the present tense. Nobody
+re-read it against `git log`. The two cost-table numbers were measured once and
+then the thing they measured grew.
+
+### What changed
+
+1. **The archive-age claim is gone.** The currency rule (S9) is now described as
+   protecting readings recorded before the origin gate existed *should the
+   archive ever be extended backwards*, which is what it actually does. The same
+   correction is applied to the "What is still not solved" section of the
+   2026-08-07 Notion entry above, which asserted the same non-existent stretch.
+
+2. **The cost table quotes measurements with their scale attached.** `docs/` is
+   1.0MB at 60 companies, and the note says most of it is one generated JSON
+   file, so the number moves for a legible reason. Repository growth is stated
+   per target crawled rather than per year, with the ledger named as the part
+   that grows on every run.
+
+3. **This log now covers claims about the index itself**, stated in the preamble.
+   The distinction between "a false event" and "a false sentence" was never
+   argued for; it was just never considered.
+
+### What is not retracted
+
+Nothing in `data/`. No observation, event or run record was wrong, and the
+crawling and diff rules the README describes are all implemented as described.
+What was wrong was the prose reporting on the state of the archive, in three
+places, and this is not a data correction.
+
+### What is still not solved
+
+The generated pages cannot drift from the data, because `bin/build-site.js`
+computes them from it. `README.md`, `METHODOLOGY.md` and this file are written by
+hand and can say anything. 87kB of hand-written prose currently documents 126
+observations, and every claim in it about corpus size, file size or growth rate
+is a number a human typed and no test reads.
+
+The honest fix is to generate the numbers rather than type them — a small set of
+build-time placeholders in the README, filled from the same fold the site uses,
+so a stale figure becomes impossible rather than merely embarrassing. That is not
+done. Until it is, the cost table is accurate as of 2026-08-08 and carries the
+same guarantee as any other sentence somebody typed once.
 
 ---
 
@@ -252,8 +353,10 @@ the prices a European buyer sees. Where a company geo-routes, this index records
 what a US-based client is shown, and says so. Anyone who needs the European
 figure has to fetch it from Europe, and this crawler is not a multi-region fleet.
 
-The archive also contains a genuinely mixed-origin stretch: everything recorded
-before 2026-08-07 carries no origin field, because the field did not exist. Those
-observations are marked `unknown` rather than backfilled with a guess. The
-currency rule (S9) is what protects them, since it does not depend on knowing
-where anything was read from.
+Observations recorded before the origin field existed would carry no origin, and
+would be marked `unknown` rather than backfilled with a guess. The currency rule
+(S9) is what protects them, since it does not depend on knowing where anything
+was read from. In practice the archive contains no such stretch: the field
+landed on 2026-08-07, the same day as the first observations, so every line in
+`data/companies/` carries an origin. The rule is there for an archive extended
+backwards, not for one that exists.
