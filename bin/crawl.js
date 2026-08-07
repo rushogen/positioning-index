@@ -25,6 +25,7 @@ import { join } from 'node:path';
 
 import { FileStore, fileRobotsStore, memoryRobotsStore } from '../src/store/files.js';
 import { commitMessage, runCrawl } from '../src/runner.js';
+import { describeOrigin, resolveOrigin } from '../src/crawl/origin.js';
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 
@@ -80,9 +81,16 @@ const onResult = (r) => {
   );
 };
 
+// Resolved before the banner so the operator can see where this run is standing
+// before it fetches anything. A local run against pages last read from CI will
+// produce origin-shift records, and knowing that up front beats discovering it
+// in the summary.
+const origin = await resolveOrigin();
+
 console.log(
   `\n  positioning-index  ${mode === 'company' ? `company:${company}` : mode}` +
-  `${dryRun ? '  (dry run: nothing will be written)' : ''}\n`
+  `${dryRun ? '  (dry run: nothing will be written)' : ''}` +
+  `\n  origin: ${describeOrigin(origin)}${origin.country ? '' : `  [${origin.method}]`}\n`
 );
 
 let outcome;
@@ -96,6 +104,7 @@ try {
     limit,
     dryRun,
     trigger: process.env.GITHUB_ACTIONS === 'true' ? 'github-actions' : 'local',
+    origin,
     onResult,
   });
 } catch (err) {
@@ -113,11 +122,22 @@ const message = commitMessage(run);
 
 console.log(
   `\n  ${run.targets} target(s): ${run.ok} ok, ${run.unchanged} unchanged, ` +
-  `${run.blocked} blocked, ${run.error} error, ${run.structure} restructured` +
+  `${run.blocked} blocked, ${run.error} error, ${run.structure} restructured, ` +
+  `${run.origin_shift} origin-shifted` +
   `\n  ${run.changes} change event(s), ${run.parser_faults} parser fault(s), ` +
+  `${run.context_faults} context fault(s), ` +
   `${run.observations} observation line(s) ${dryRun ? 'would be' : ''} written` +
   `\n  ${DIM}${message}${OFF}\n`
 );
+
+if (run.origin_shift) {
+  console.log(
+    `  ${YELLOW}${run.origin_shift} page(s) were last read from a different origin.${OFF}\n` +
+    '  Their prices and other locale-sensitive signals were recorded but not published.\n' +
+    '  This is expected when a local run follows a CI run; GitHub Actions is the\n' +
+    '  canonical origin. See METHODOLOGY.md section 1.2.\n'
+  );
+}
 
 // GitHub Actions reads these to build the commit and decide whether to push.
 if (process.env.GITHUB_OUTPUT) {
@@ -127,6 +147,8 @@ if (process.env.GITHUB_OUTPUT) {
     `changes=${run.changes}`,
     `blocked=${run.blocked}`,
     `errors=${run.error}`,
+    `origin=${origin.id}`,
+    `origin_shift=${run.origin_shift}`,
     '',
   ].join('\n'), 'utf8');
 }
