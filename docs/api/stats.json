@@ -2,9 +2,10 @@
  "companies": 60,
  "targets": 120,
  "observations": 15,
- "changes": 2,
- "changes_7d": 2,
- "changes_30d": 2,
+ "changes": 0,
+ "changes_7d": 0,
+ "changes_30d": 0,
+ "retracted_changes": 2,
  "first_observation": "2026-08-07T11:00:38Z",
  "last_observation": "2026-08-07T11:18:26Z",
  "last_successful_fetch": "2026-08-07T11:18:26Z",
@@ -83,22 +84,26 @@
   "pricing_tiers": {
    "page": "pricing",
    "kind": "list",
-   "label": "Pricing tiers"
+   "label": "Pricing tiers",
+   "localeSensitive": true
   },
   "pricing_entry_price": {
    "page": "pricing",
    "kind": "text",
-   "label": "Entry price"
+   "label": "Entry price",
+   "localeSensitive": true
   },
   "pricing_free_tier": {
    "page": "pricing",
    "kind": "enum",
-   "label": "Free tier"
+   "label": "Free tier",
+   "localeSensitive": true
   },
   "pricing_seat_minimum": {
    "page": "pricing",
    "kind": "text",
-   "label": "Seat minimum"
+   "label": "Seat minimum",
+   "localeSensitive": true
   },
   "pricing_meta_title": {
    "page": "pricing",

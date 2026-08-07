@@ -161,6 +161,14 @@ h3 { font-size: 1rem; font-weight: 600; margin: 0 0 .4rem; }
 .tag.added    { color: var(--ok); }
 .tag.removed  { color: var(--bad); }
 .tag.oscillating { color: var(--warn); border-color: var(--warn); cursor: help; }
+.tag.retracted { color: var(--bad); border-color: var(--bad); }
+
+/* A withdrawn claim is struck through rather than deleted: it was published,
+   somebody may have read it, and the record of that is the point. */
+.change.retracted .summary,
+.change.retracted .diff { text-decoration: line-through; color: var(--ink-3); }
+.change.retracted .why { text-decoration: none; color: var(--bad); font-size: .82rem; margin: .5rem 0 0; }
+
 
 .summary { margin: 0 0 .6rem; font-size: .98rem; }
 
@@ -204,7 +212,7 @@ h3 { font-size: 1rem; font-weight: 600; margin: 0 0 .4rem; }
   border-radius: 50%; margin-right: .4rem; background: currentColor;
 }
 .state.ok { color: var(--ok); }
-.state.degraded, .state.structure-changed { color: var(--warn); }
+.state.degraded, .state.structure-changed, .state.origin-shift { color: var(--warn); }
 .state.stale, .state.error { color: var(--bad); }
 .state.blocked { color: var(--info); }
 .state.pending { color: var(--ink-3); }
