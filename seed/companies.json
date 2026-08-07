@@ -38,7 +38,7 @@
     { "slug": "intercom",     "name": "Intercom",      "segment": "support",       "hq_country": "US", "homepage_url": "https://www.intercom.com/",           "pricing_url": "https://www.intercom.com/pricing" },
     { "slug": "gong",         "name": "Gong",          "segment": "gtm",           "hq_country": "US", "homepage_url": "https://www.gong.io/",                "pricing_url": "https://www.gong.io/pricing/" },
     { "slug": "apollo",       "name": "Apollo.io",     "segment": "gtm",           "hq_country": "US", "homepage_url": "https://www.apollo.io/",              "pricing_url": "https://www.apollo.io/pricing" },
-    { "slug": "zoominfo",     "name": "ZoomInfo",      "segment": "gtm",           "hq_country": "US", "homepage_url": "https://www.zoominfo.com/",           "pricing_url": "https://www.zoominfo.com/pricing" },
+    { "slug": "pendo",        "name": "Pendo",         "segment": "analytics",     "hq_country": "US", "homepage_url": "https://www.pendo.io/",               "pricing_url": "https://www.pendo.io/pricing/" },
     { "slug": "clay",         "name": "Clay",          "segment": "gtm",           "hq_country": "US", "homepage_url": "https://www.clay.com/",               "pricing_url": "https://www.clay.com/pricing" },
     { "slug": "attio",        "name": "Attio",         "segment": "gtm",           "hq_country": "GB", "homepage_url": "https://attio.com/",                  "pricing_url": "https://attio.com/pricing" },
     { "slug": "pipedrive",    "name": "Pipedrive",     "segment": "gtm",           "hq_country": "EE", "homepage_url": "https://www.pipedrive.com/",          "pricing_url": "https://www.pipedrive.com/en/pricing" },
@@ -54,14 +54,14 @@
     { "slug": "retool",       "name": "Retool",        "segment": "automation",    "hq_country": "US", "homepage_url": "https://retool.com/",                 "pricing_url": "https://retool.com/pricing" },
     { "slug": "ramp",         "name": "Ramp",          "segment": "fintech-ops",   "hq_country": "US", "homepage_url": "https://ramp.com/",                   "pricing_url": "https://ramp.com/pricing" },
     { "slug": "brex",         "name": "Brex",          "segment": "fintech-ops",   "hq_country": "US", "homepage_url": "https://www.brex.com/",               "pricing_url": "https://www.brex.com/pricing" },
-    { "slug": "mercury",      "name": "Mercury",       "segment": "fintech-ops",   "hq_country": "US", "homepage_url": "https://mercury.com/",                "pricing_url": "https://mercury.com/pricing" },
+    { "slug": "bill",         "name": "BILL",          "segment": "fintech-ops",   "hq_country": "US", "homepage_url": "https://www.bill.com/",               "pricing_url": "https://www.bill.com/product/pricing" },
     { "slug": "deel",         "name": "Deel",          "segment": "hr-ops",        "hq_country": "US", "homepage_url": "https://www.deel.com/",               "pricing_url": "https://www.deel.com/pricing/" },
     { "slug": "rippling",     "name": "Rippling",      "segment": "hr-ops",        "hq_country": "US", "homepage_url": "https://www.rippling.com/",           "pricing_url": "https://www.rippling.com/pricing" },
-    { "slug": "gusto",        "name": "Gusto",         "segment": "hr-ops",        "hq_country": "US", "homepage_url": "https://gusto.com/",                  "pricing_url": "https://gusto.com/product/pricing" },
+    { "slug": "lattice",      "name": "Lattice",       "segment": "hr-ops",        "hq_country": "US", "homepage_url": "https://lattice.com/",                "pricing_url": "https://lattice.com/pricing" },
     { "slug": "vanta",        "name": "Vanta",         "segment": "security",      "hq_country": "US", "homepage_url": "https://www.vanta.com/",              "pricing_url": "https://www.vanta.com/pricing" },
     { "slug": "twilio",       "name": "Twilio",        "segment": "dev-infra",     "hq_country": "US", "homepage_url": "https://www.twilio.com/en-us",        "pricing_url": "https://www.twilio.com/en-us/pricing" },
     { "slug": "stripe",       "name": "Stripe",        "segment": "fintech-ops",   "hq_country": "US", "homepage_url": "https://stripe.com/",                 "pricing_url": "https://stripe.com/pricing" },
     { "slug": "calendly",     "name": "Calendly",      "segment": "work-mgmt",     "hq_country": "US", "homepage_url": "https://calendly.com/",               "pricing_url": "https://calendly.com/pricing" },
-    { "slug": "algolia",      "name": "Algolia",       "segment": "dev-infra",     "hq_country": "US", "homepage_url": "https://www.algolia.com/",            "pricing_url": "https://www.algolia.com/pricing" }
+    { "slug": "elastic",      "name": "Elastic",       "segment": "dev-infra",     "hq_country": "NL", "homepage_url": "https://www.elastic.co/",             "pricing_url": "https://www.elastic.co/pricing" }
   ]
 }
