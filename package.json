@@ -1,0 +1,27 @@
+{
+  "name": "positioning-index",
+  "version": "1.0.0",
+  "description": "A longitudinal tracker of how B2B SaaS companies position themselves, and how that positioning drifts over time.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "author": "Ruslan Shogenov",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test tests/",
+    "test:watch": "node --test --watch tests/",
+    "probe": "node scripts/probe.js",
+    "check-seed": "node scripts/check-seed.js",
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:init": "wrangler d1 execute positioning_index --remote --file=./schema.sql",
+    "db:init:local": "wrangler d1 execute positioning_index --local --file=./schema.sql",
+    "db:seed": "node scripts/build-seed-sql.js > .seed.generated.sql && wrangler d1 execute positioning_index --remote --file=./.seed.generated.sql",
+    "db:seed:local": "node scripts/build-seed-sql.js > .seed.generated.sql && wrangler d1 execute positioning_index --local --file=./.seed.generated.sql"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

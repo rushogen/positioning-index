@@ -1,0 +1,11 @@
+node_modules/
+.wrangler/
+.dev.vars
+.env
+.env.*
+dist/
+*.log
+.DS_Store
+.seed.generated.sql
+coverage/
+.probe-cache/
