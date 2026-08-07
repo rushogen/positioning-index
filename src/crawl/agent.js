@@ -28,12 +28,36 @@ export const USER_AGENT =
   `${BOT_NAME}/${BOT_VERSION} (+${CONTACT_URL}; marketing-page positioning research; ` +
   `one request per page per day; honours robots.txt)`;
 
+/**
+ * The one language preference this crawler ever expresses, on every request,
+ * from every origin, forever.
+ *
+ * Content negotiation is a variable we can hold still, so we hold it still. A
+ * header that varied with the machine -- or that was absent, letting each origin
+ * pick a default -- would put a second uncontrolled locale input next to the one
+ * we cannot control at all, which is the client IP. Pinning it means that when a
+ * page does come back localised anyway, we know it was routed by address rather
+ * than negotiated by request.
+ *
+ * `en-US` first rather than a bare `en` because it is explicit about the region
+ * as well as the language, and because en-US matches the origin this index
+ * treats as canonical (a GitHub Actions runner). `en;q=0.9` keeps any English
+ * variant acceptable rather than risking a 406 or a fallback locale from a site
+ * that only publishes `en-GB`.
+ *
+ * This reduces one source of variance. It does not eliminate geo-routing: sites
+ * that pick a currency from the client IP -- notion.com/pricing among them --
+ * ignore Accept-Language entirely. That residue is what src/crawl/origin.js and
+ * the origin rules in src/diff.js exist to handle.
+ */
+export const ACCEPT_LANGUAGE = 'en-US,en;q=0.9';
+
 /** Headers sent on every request. Deliberately boring; we do not pretend to be a browser. */
 export function crawlHeaders(extra = {}) {
   return {
     'user-agent': USER_AGENT,
     accept: 'text/html,application/xhtml+xml;q=0.9,*/*;q=0.1',
-    'accept-language': 'en',
+    'accept-language': ACCEPT_LANGUAGE,
     'accept-encoding': 'gzip',
     from: CONTACT_URL,
     ...extra,
