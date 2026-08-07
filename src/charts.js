@@ -48,6 +48,11 @@
  * variables, so light and dark are handled there and there is no second
  * palette. Every value is also printed as text, which is what licenses the
  * deliberately recessive contrast of the `none` tone.
+ *
+ * The share bars added for the segment breakdown introduce no fourth tone. They
+ * are one series, so they are `lead`, and the 100% rail behind them is drawn in
+ * the existing `--rule` -- chrome, the same substance as a grid line, carrying
+ * no value of its own.
  */
 
 /** Text that came off someone's marketing page is data, never markup. */
@@ -115,6 +120,73 @@ export function barChart({ rows, unit = 'companies' }) {
   });
 
   return `<ol class="bars-svg" aria-label="${escapeHtml(`ranked by number of ${unit}`)}">\n${items.join('\n')}\n</ol>`;
+}
+
+/**
+ * A share bar: what fraction of each group answers yes, on a fixed 0-100% axis.
+ *
+ * WHY THIS IS NOT `barChart`
+ * --------------------------
+ * `barChart` scales every bar against the largest count, which is right for
+ * "which of these words is used most" and wrong for "which of these groups says
+ * this most often". The groups have different sizes, so 13 of 15 and 6 of 6 are
+ * not comparable as counts at all. This chart plots the rate, and the track is
+ * the whole denominator: a bar that fills the rail is every readable company in
+ * that group. The rail is drawn rather than implied, because a percentage
+ * without a visible 100% is a bar whose length means nothing.
+ *
+ * One series, so one colour and no legend. The rail is chrome in the existing
+ * `--rule` tone, not a second data colour.
+ *
+ * WHAT EVERY ROW MUST CARRY
+ * -------------------------
+ * The count and its denominator, as text, in the row -- not in a `title`, not
+ * in a footnote under the chart. `4 of 6 &middot; 67%` is a claim a reader can
+ * size immediately; `67%` is one they cannot, and on cells this small the
+ * difference between the two is the whole argument. The percentage never
+ * appears without the counts that produced it, which is why they are one string
+ * built in one place here rather than two fields a caller could use separately.
+ *
+ * A row below the minimum denominator is passed in with `suppressed` and draws
+ * no mark at all. It still occupies a row and still states its n, because a
+ * group that silently vanishes from a chart reads as a group that scored zero.
+ *
+ * @param {object} args
+ * @param {{label: string, part: number, whole: number, of: number,
+ *          suppressed?: boolean}[]} args.rows  already sorted by the caller
+ * @param {string} args.unit  what the denominator counts, for the list label
+ */
+export function shareBars({ rows, unit = 'companies' }) {
+  const items = rows.map((row) => {
+    if (row.suppressed) {
+      return `<li class="bar-row share-row muted">` +
+        `<span class="bar-label">${escapeHtml(row.label)}</span>` +
+        `<span class="share-suppressed">too few to say &mdash; ${row.whole} of ${row.of} readable</span>` +
+        `<span class="bar-value">&mdash;</span>` +
+        '</li>';
+    }
+
+    const width = pct(row.part, row.whole);
+    const marks =
+      `<rect class="share-rail" x="0" y="${(BAR_ROW_HEIGHT - BAR_HEIGHT) / 2}" width="100%" height="${BAR_HEIGHT}" rx="4"></rect>` +
+      (row.part > 0
+        ? `<rect class="bar-fill" x="0" y="${(BAR_ROW_HEIGHT - BAR_HEIGHT) / 2}" width="${width}%" height="${BAR_HEIGHT}" rx="4"></rect>` +
+          // Same squared-off baseline end as barChart, so the mark grows out of
+          // the axis instead of floating as a pill.
+          (width >= 3 ? `<rect class="bar-fill" x="0" y="${(BAR_ROW_HEIGHT - BAR_HEIGHT) / 2}" width="4" height="${BAR_HEIGHT}"></rect>` : '')
+        : '');
+
+    return `<li class="bar-row share-row">` +
+      `<span class="bar-label">${escapeHtml(row.label)}</span>` +
+      `<svg class="bar-track" width="100%" height="${BAR_ROW_HEIGHT}" aria-hidden="true" focusable="false">${marks}</svg>` +
+      // The geometry keeps two decimals so the output is byte-stable; the text
+      // beside it is rounded to whole points, because 55.56% is a precision
+      // nine companies cannot support and reads as though it could.
+      `<span class="bar-value"><b>${row.part} of ${row.whole}</b> <span class="share-pct">${Math.round((row.part / row.whole) * 100)}%</span></span>` +
+      '</li>';
+  });
+
+  return `<ol class="bars-svg" aria-label="${escapeHtml(`share of each group, out of ${unit}`)}">\n${items.join('\n')}\n</ol>`;
 }
 
 /**

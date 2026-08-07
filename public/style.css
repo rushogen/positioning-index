@@ -317,6 +317,43 @@ h3 { font-size: 1rem; font-weight: 600; margin: 0 0 .4rem; }
 .bar-fill.quiet { fill: var(--chart-quiet); }
 .bar-value { font-size: .88rem; font-variant-numeric: tabular-nums; color: var(--ink-2); text-align: right; }
 
+/* --------------------------------------------------- share bars (0-100%) */
+
+/*
+  The segment breakdown plots a rate, not a count, so the track is the whole
+  denominator and the rail behind the mark is the visible 100%. The rail is
+  --rule: chrome, the same substance as a grid line, not a fourth chart tone.
+  It sits below 3:1 against the surface on purpose -- it encodes nothing, and
+  every number the bar carries is printed as text in the same row.
+
+  The value column is wider than the ranked charts' because it holds the count,
+  its denominator and the percentage together. They are one string and they stay
+  one string: a percentage on a cell of six companies, on its own, is the exact
+  false precision this section exists to avoid.
+*/
+.share-row { grid-template-columns: minmax(6.5rem, 10.5rem) 1fr minmax(6.4rem, auto); }
+.share-rail { fill: var(--rule); }
+.bar-value b { font-weight: 620; color: var(--ink); }
+.share-pct { color: var(--ink-3); }
+.share-suppressed { font-size: .82rem; color: var(--ink-3); font-style: italic; align-self: center; }
+.bar-row.muted .bar-label { color: var(--ink-2); }
+
+.cut { margin: 0 0 .4rem; }
+.cut-grid {
+  display: grid; gap: 1.7rem 2.2rem; margin-top: .4rem;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+}
+.cut-note { margin: .5rem 0 0; font-size: .82rem; color: var(--ink-2); max-width: 46em; }
+
+/* The list of questions this data cannot answer. Set like the coverage note,
+   because it is one: it reports an absence and it is not a footnote. */
+.withheld {
+  list-style: none; margin: .6rem 0 0; padding: 0 0 0 .7rem;
+  border-left: 2px solid var(--rule); max-width: 52em;
+}
+.withheld li { font-size: .84rem; color: var(--ink-2); margin-bottom: .5rem; }
+.withheld b { color: var(--ink); font-weight: 620; }
+
 /* --------------------------------------------------- part-to-whole (svg) */
 
 .stack { display: block; margin: .2rem 0 .7rem; }
@@ -407,6 +444,9 @@ footer h2 { font-size: 1.05rem; margin-bottom: 1rem; }
   .bar-label { grid-column: 1; grid-row: 1; }
   .bar-value { grid-column: 2; grid-row: 1; }
   .bar-track { grid-column: 1 / -1; grid-row: 2; }
+  /* The suppressed row takes the track's place rather than being squeezed into
+     a column beside the label, so "too few to say" is never truncated. */
+  .share-suppressed { grid-column: 1 / -1; grid-row: 2; }
   .kpis dd { font-size: 1.7rem; }
   .takeaway { font-size: 1rem; }
 }
@@ -419,6 +459,9 @@ footer h2 { font-size: 1.05rem; margin-bottom: 1rem; }
 */
 @media (forced-colors: active) {
   .bar-fill, .seg.lead { fill: Highlight; }
+  /* The rail is chrome, so it becomes an outline rather than a fill the mode
+     would collapse into the same colour as the mark sitting on it. */
+  .share-rail { fill: Canvas; stroke: GrayText; stroke-width: 1; }
   .seg.quiet { fill: GrayText; }
   .seg.none { fill: Canvas; stroke: GrayText; stroke-width: 1; }
   .seg-gap { fill: Canvas; }
