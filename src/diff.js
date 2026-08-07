@@ -74,6 +74,17 @@ export const LIST_COLLAPSE_RATIO = 0.4;
  */
 export const CONFIDENCE_DROP = 0.3;
 
+/**
+ * How many previous values a signal remembers.
+ *
+ * A/B-tested heroes rotate between a small set of variants. Without memory,
+ * every rotation reads as a repositioning and the feed fills with noise from
+ * companies that are simply running an experiment. Six is enough to catch a
+ * two- or three-way split test across a few days without pretending we can
+ * remember a year.
+ */
+export const RECENT_MEMORY = 6;
+
 // ---------------------------------------------------------------- comparison
 
 /**
@@ -283,11 +294,18 @@ export function diffSignal({ signal, current, state, pageHealthy = true, now }) 
     consecutive_nulls: state?.consecutive_nulls ?? 0,
     suspect: state?.suspect ? 1 : 0,
     total_changes: state?.total_changes ?? 0,
+    recent_hashes: state?.recent_hashes ?? null,
   };
 
   const settle = (outcome, reason = null, event = null) => ({ outcome, reason, event, state: nextState });
 
+  /** Hashes this signal has held recently, newest first. */
+  const recent = parseRecent(state?.recent_hashes);
+
   const commitGood = () => {
+    nextState.recent_hashes = JSON.stringify(
+      [hash, ...recent.filter((x) => x !== hash)].slice(0, RECENT_MEMORY)
+    );
     nextState.last_good_at = now;
     nextState.last_good_value = value;
     nextState.last_good_json = current?.json ? JSON.stringify(current.json) : null;
@@ -421,11 +439,13 @@ export function diffSignal({ signal, current, state, pageHealthy = true, now }) 
       after_json: current?.json ? JSON.stringify(current.json) : null,
       previous_seen_at: state.last_good_at,
       magnitude: Number(magnitude.toFixed(3)),
+      oscillating: recent.includes(hash) ? 1 : 0,
       summary: summariseList(signal, added, removed, meta),
     });
   }
 
   // ---- S7: a real change.
+  const oscillates = recent.includes(hash);
   commitGood();
   nextState.total_changes = (state.total_changes ?? 0) + 1;
   return settle('changed', null, {
@@ -437,8 +457,22 @@ export function diffSignal({ signal, current, state, pageHealthy = true, now }) 
     after_json: current?.json ? JSON.stringify(current.json) : null,
     previous_seen_at: state.last_good_at,
     magnitude: Number(textMagnitude(before, value).toFixed(3)),
-    summary: summarise(signal, 'modified', before, value, meta),
+    // Back to something it recently was: an experiment cycling, not a rewrite.
+    oscillating: oscillates ? 1 : 0,
+    summary: oscillates
+      ? `${summarise(signal, 'modified', before, value, meta)} (a value this page has held recently -- likely an A/B test rather than a repositioning)`
+      : summarise(signal, 'modified', before, value, meta),
   });
+}
+
+function parseRecent(json) {
+  if (!json) return [];
+  try {
+    const v = JSON.parse(json);
+    return Array.isArray(v) ? v.filter((x) => typeof x === 'string') : [];
+  } catch {
+    return [];
+  }
 }
 
 // ------------------------------------------------------------------ summaries
@@ -532,5 +566,6 @@ export function emptyState(signal) {
     consecutive_nulls: 0,
     suspect: 0,
     total_changes: 0,
+    recent_hashes: null,
   };
 }

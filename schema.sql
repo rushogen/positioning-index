@@ -185,6 +185,10 @@ CREATE TABLE IF NOT EXISTS change_events (
   --           and absence held for REMOVAL_CONFIRMATIONS consecutive runs)
   change_type       TEXT NOT NULL CHECK (change_type IN ('added','modified','removed')),
   magnitude         REAL,                       -- 0..1 normalised edit distance for text signals
+  -- 1 = the new value is one this signal has held recently. Almost always an
+  -- A/B test or a rotating hero rather than a repositioning, so the public feed
+  -- labels it instead of presenting it as news.
+  oscillating       INTEGER NOT NULL DEFAULT 0,
   summary           TEXT,                       -- one-line human phrasing, precomputed for the feed
   UNIQUE (company_id, signal, detected_at)
 ) STRICT;
@@ -212,6 +216,11 @@ CREATE TABLE IF NOT EXISTS signal_state (
   consecutive_nulls  INTEGER NOT NULL DEFAULT 0,
   suspect            INTEGER NOT NULL DEFAULT 0, -- 1 = we think our parser is broken, not their page
   total_changes      INTEGER NOT NULL DEFAULT 0,
+  -- JSON array of the last few value hashes. A/B-tested heroes flip between a
+  -- small set of variants; if an incoming value is one we have recently held,
+  -- this is a rotation, not drift. Observed live on airtable.com, which served
+  -- two different <h1> strings to two requests minutes apart.
+  recent_hashes      TEXT,
   PRIMARY KEY (company_id, signal)
 ) STRICT;
 
@@ -241,7 +250,7 @@ GROUP BY c.id;
 CREATE VIEW IF NOT EXISTS v_recent_changes AS
 SELECT
   e.id, e.detected_at, e.signal, e.change_type, e.before_value, e.after_value,
-  e.before_json, e.after_json, e.magnitude, e.summary, e.previous_seen_at,
+  e.before_json, e.after_json, e.magnitude, e.oscillating, e.summary, e.previous_seen_at,
   c.slug, c.name, c.segment
 FROM change_events e
 JOIN companies c ON c.id = e.company_id

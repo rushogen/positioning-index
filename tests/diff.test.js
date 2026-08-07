@@ -10,7 +10,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 
 import {
-  CONFIDENCE_DROP, LIST_COLLAPSE_RATIO, REMOVAL_CONFIRMATIONS, SUSPECT_AFTER,
+  CONFIDENCE_DROP, LIST_COLLAPSE_RATIO, RECENT_MEMORY, REMOVAL_CONFIRMATIONS, SUSPECT_AFTER,
   canonical, diffPage, diffSignal, editDistance, emptyState, gatePage, listDelta, textMagnitude,
 } from '../src/diff.js';
 
@@ -240,6 +240,47 @@ test('listDelta reports both directions and a bounded magnitude', () => {
   assert.deepEqual(d.added, ['d']);
   assert.deepEqual(d.removed, ['a']);
   assert.ok(d.magnitude > 0 && d.magnitude < 1);
+});
+
+// ---------------------------------------------------------------------------
+// A/B tests: a value the page has recently held is a rotation, not drift
+// ---------------------------------------------------------------------------
+
+test('a hero cycling between two variants is flagged as oscillating', () => {
+  const A = 'AI transformed individual work. Acme transforms teamwork';
+  const B = 'All your teams, all their workflows, connected in one workspace';
+
+  // Day 1: baseline on A.
+  let r = diffSignal({ signal: 'headline', current: sig(A), state: null, pageHealthy: true, now: NOW });
+  let state = r.state;
+  assert.equal(r.event, null);
+
+  // Day 2: flips to B. We have never seen B, so this reports as a plain change.
+  r = diffSignal({ signal: 'headline', current: sig(B), state, pageHealthy: true, now: NOW });
+  state = r.state;
+  assert.equal(r.outcome, 'changed');
+  assert.equal(r.event.oscillating, 0, 'the first time a variant appears we cannot know it is a test');
+
+  // Day 3: flips back to A. Now we know.
+  r = diffSignal({ signal: 'headline', current: sig(A), state, pageHealthy: true, now: NOW });
+  assert.equal(r.outcome, 'changed');
+  assert.equal(r.event.oscillating, 1);
+  assert.match(r.event.summary, /likely an A\/B test rather than a repositioning/);
+});
+
+test('memory of previous values is bounded', () => {
+  let state = null;
+  for (let i = 0; i < RECENT_MEMORY * 3; i++) {
+    state = diffSignal({ signal: 'headline', current: sig(`Distinct headline number ${i}`), state, pageHealthy: true, now: NOW }).state;
+  }
+  assert.equal(JSON.parse(state.recent_hashes).length, RECENT_MEMORY);
+});
+
+test('a genuine one-way repositioning is never flagged as oscillating', () => {
+  let state = diffSignal({ signal: 'headline', current: sig('The issue tracker teams love'), state: null, pageHealthy: true, now: NOW }).state;
+  const r = diffSignal({ signal: 'headline', current: sig('The product development system for teams and agents'), state, pageHealthy: true, now: NOW });
+  assert.equal(r.event.oscillating, 0);
+  assert.doesNotMatch(r.event.summary, /A\/B/);
 });
 
 // ---------------------------------------------------------------------------
