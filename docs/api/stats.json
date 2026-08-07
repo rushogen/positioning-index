@@ -1,16 +1,16 @@
 {
  "companies": 60,
  "targets": 120,
- "observations": 14,
- "changes": 0,
- "changes_7d": 0,
- "changes_30d": 0,
+ "observations": 15,
+ "changes": 2,
+ "changes_7d": 2,
+ "changes_30d": 2,
  "first_observation": "2026-08-07T11:00:38Z",
- "last_observation": "2026-08-07T11:11:16Z",
- "last_successful_fetch": "2026-08-07T11:11:16Z",
- "runs": 3,
- "last_run_at": "2026-08-07T11:11:17Z",
- "fetches_24h": 16,
+ "last_observation": "2026-08-07T11:18:26Z",
+ "last_successful_fetch": "2026-08-07T11:18:26Z",
+ "runs": 4,
+ "last_run_at": "2026-08-07T11:18:26Z",
+ "fetches_24h": 18,
  "blocked_24h": 0,
  "errors_24h": 0,
  "suspect_signals": 0,
@@ -106,5 +106,5 @@
    "label": "Pricing page title"
   }
  },
- "generated_at": "2026-08-07T11:11:17Z"
+ "generated_at": "2026-08-07T11:18:26Z"
 }

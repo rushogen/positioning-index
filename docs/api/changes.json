@@ -1,3 +1,38 @@
 {
- "changes": []
+ "changes": [
+  {
+   "detected_at": "2026-08-07T11:18:26Z",
+   "slug": "notion",
+   "name": "Notion",
+   "segment": "product-dev",
+   "kind": "pricing",
+   "signal": "pricing_entry_price",
+   "change_type": "modified",
+   "before_value": "EUR 9.5",
+   "after_value": "USD 10",
+   "before_json": "{\"amount\":9.5,\"currency\":\"EUR\",\"period\":null,\"unit\":null,\"tier\":\"Plus\"}",
+   "after_json": "{\"amount\":10,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"tier\":\"Plus\"}",
+   "previous_seen_at": "2026-08-07T11:11:09Z",
+   "magnitude": 0.857,
+   "oscillating": 0,
+   "summary": "Entry price moved from EUR 9.5 to USD 10"
+  },
+  {
+   "detected_at": "2026-08-07T11:18:26Z",
+   "slug": "notion",
+   "name": "Notion",
+   "segment": "product-dev",
+   "kind": "pricing",
+   "signal": "pricing_tiers",
+   "change_type": "modified",
+   "before_value": "Free free | Plus EUR 9.5 | Business EUR 19.5 | Enterprise custom | Custom Agents USD 10/month",
+   "after_value": "Free free | Plus USD 10 | Business USD 20 | Enterprise custom | Custom Agents USD 10/month",
+   "before_json": "{\"tiers\":[{\"name\":\"Free\",\"amount\":0,\"currency\":\"EUR\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Plus\",\"amount\":9.5,\"currency\":\"EUR\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Business\",\"amount\":19.5,\"currency\":\"EUR\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Enterprise\",\"amount\":null,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"contact-sales\"},{\"name\":\"Custom Agents\",\"amount\":10,\"currency\":\"USD\",\"period\":\"month\",\"unit\":null,\"source\":\"heuristic\"}],\"count\":5}",
+   "after_json": "{\"tiers\":[{\"name\":\"Free\",\"amount\":0,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Plus\",\"amount\":10,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Business\",\"amount\":20,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Enterprise\",\"amount\":null,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"contact-sales\"},{\"name\":\"Custom Agents\",\"amount\":10,\"currency\":\"USD\",\"period\":\"month\",\"unit\":null,\"source\":\"heuristic\"}],\"count\":5}",
+   "previous_seen_at": "2026-08-07T11:11:09Z",
+   "magnitude": 0,
+   "oscillating": 0,
+   "summary": "Pricing tiers reordered"
+  }
+ ]
 }
