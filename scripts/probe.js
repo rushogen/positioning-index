@@ -10,8 +10,9 @@
  *   node scripts/probe.js linear --json       machine-readable
  *
  * This is the tool that answers "do the selectors actually work", and it is the
- * same code path the Worker runs. Extraction time is reported separately from
- * network time, because only the former counts against the Worker CPU budget.
+ * same code path a crawl runs. Extraction time is reported separately from
+ * network time, because they fail for entirely different reasons and lumping
+ * them together hides which one just got worse.
  */
 
 import { readFile } from 'node:fs/promises';
@@ -84,11 +85,11 @@ for (const job of list) {
   }
   const netMs = Date.now() - t0;
 
-  // Measure cold and warm separately. The first call in a fresh isolate pays
-  // regex compilation and JIT warm-up; a Cloudflare isolate is reused across
-  // many invocations, so the warm number is the one that describes steady
-  // state. Reporting only the warm number would be flattering; reporting only
-  // the cold one would be wrong.
+  // Measure cold and warm separately. The first call in a fresh process pays
+  // regex compilation and JIT warm-up; a run sweeps many pages in one process,
+  // so the warm number is the one that describes steady state. Reporting only
+  // the warm number would be flattering; reporting only the cold one would be
+  // wrong.
   const t1 = process.hrtime.bigint();
   const out = netErr ? null : extract(job.kind, body, finalUrl, { brand: job.brand, contentType });
   const coldMs = Number(process.hrtime.bigint() - t1) / 1e6;

@@ -267,7 +267,7 @@ export function interpretRobotsStatus(status) {
 /**
  * Fetch and cache robots.txt for a host.
  *
- * `store` is a tiny interface so this is testable without D1:
+ * `store` is a tiny interface, so this is testable without touching disk:
  *   get(host) -> {body, http_status, expires_at, crawl_delay_s} | null
  *   put(host, record) -> void
  *
