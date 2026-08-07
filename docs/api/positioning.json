@@ -4941,5 +4941,8414 @@
    }
   }
  },
+ "segments": {
+  "groups": [
+   {
+    "key": "dev",
+    "label": "Developer & infrastructure",
+    "short": "Dev & infrastructure",
+    "why": "Sold to the engineering organisation and bought on the same budget: hosting and delivery, the tools that watch it in production, and the compliance automation that reports on it. Observability is two companies on its own and security is one, which is why neither is a bar.",
+    "n": 10,
+    "segments": [
+     {
+      "segment": "dev-infra",
+      "n": 7
+     },
+     {
+      "segment": "observability",
+      "n": 2
+     },
+     {
+      "segment": "security",
+      "n": 1
+     }
+    ],
+    "companies": [
+     {
+      "slug": "cloudflare",
+      "name": "Cloudflare",
+      "text": "dev-infra"
+     },
+     {
+      "slug": "datadog",
+      "name": "Datadog",
+      "text": "observability"
+     },
+     {
+      "slug": "elastic",
+      "name": "Elastic",
+      "text": "dev-infra"
+     },
+     {
+      "slug": "launchdarkly",
+      "name": "LaunchDarkly",
+      "text": "dev-infra"
+     },
+     {
+      "slug": "netlify",
+      "name": "Netlify",
+      "text": "dev-infra"
+     },
+     {
+      "slug": "sentry",
+      "name": "Sentry",
+      "text": "observability"
+     },
+     {
+      "slug": "supabase",
+      "name": "Supabase",
+      "text": "dev-infra"
+     },
+     {
+      "slug": "twilio",
+      "name": "Twilio",
+      "text": "dev-infra"
+     },
+     {
+      "slug": "vanta",
+      "name": "Vanta",
+      "text": "security"
+     },
+     {
+      "slug": "vercel",
+      "name": "Vercel",
+      "text": "dev-infra"
+     }
+    ]
+   },
+   {
+    "key": "data",
+    "label": "Data & analytics",
+    "short": "Data & analytics",
+    "why": "Warehouses, pipelines and the products that read them. The seed splits the store from the question asked of it; the buyer and the pitch are the same, so the two are one bucket here.",
+    "n": 12,
+    "segments": [
+     {
+      "segment": "data",
+      "n": 7
+     },
+     {
+      "segment": "analytics",
+      "n": 5
+     }
+    ],
+    "companies": [
+     {
+      "slug": "amplitude",
+      "name": "Amplitude",
+      "text": "analytics"
+     },
+     {
+      "slug": "databricks",
+      "name": "Databricks",
+      "text": "data"
+     },
+     {
+      "slug": "dbt-labs",
+      "name": "dbt Labs",
+      "text": "data"
+     },
+     {
+      "slug": "fivetran",
+      "name": "Fivetran",
+      "text": "data"
+     },
+     {
+      "slug": "hightouch",
+      "name": "Hightouch",
+      "text": "data"
+     },
+     {
+      "slug": "metabase",
+      "name": "Metabase",
+      "text": "analytics"
+     },
+     {
+      "slug": "mixpanel",
+      "name": "Mixpanel",
+      "text": "analytics"
+     },
+     {
+      "slug": "mongodb",
+      "name": "MongoDB",
+      "text": "data"
+     },
+     {
+      "slug": "pendo",
+      "name": "Pendo",
+      "text": "analytics"
+     },
+     {
+      "slug": "posthog",
+      "name": "PostHog",
+      "text": "analytics"
+     },
+     {
+      "slug": "segment",
+      "name": "Segment",
+      "text": "data"
+     },
+     {
+      "slug": "snowflake",
+      "name": "Snowflake",
+      "text": "data"
+     }
+    ]
+   },
+   {
+    "key": "work",
+    "label": "Work & product",
+    "short": "Work & product",
+    "why": "How a company builds things and runs itself day to day: issue trackers, docs, whiteboards, chat, and the glue between them. The biggest bucket at 16, and the most internally varied &mdash; it is the one to be most sceptical of.",
+    "n": 16,
+    "segments": [
+     {
+      "segment": "product-dev",
+      "n": 6
+     },
+     {
+      "segment": "work-mgmt",
+      "n": 6
+     },
+     {
+      "segment": "automation",
+      "n": 2
+     },
+     {
+      "segment": "design",
+      "n": 2
+     }
+    ],
+    "companies": [
+     {
+      "slug": "airtable",
+      "name": "Airtable",
+      "text": "product-dev"
+     },
+     {
+      "slug": "asana",
+      "name": "Asana",
+      "text": "work-mgmt"
+     },
+     {
+      "slug": "atlassian",
+      "name": "Atlassian",
+      "text": "product-dev"
+     },
+     {
+      "slug": "calendly",
+      "name": "Calendly",
+      "text": "work-mgmt"
+     },
+     {
+      "slug": "clickup",
+      "name": "ClickUp",
+      "text": "work-mgmt"
+     },
+     {
+      "slug": "figma",
+      "name": "Figma",
+      "text": "design"
+     },
+     {
+      "slug": "github",
+      "name": "GitHub",
+      "text": "product-dev"
+     },
+     {
+      "slug": "gitlab",
+      "name": "GitLab",
+      "text": "product-dev"
+     },
+     {
+      "slug": "linear",
+      "name": "Linear",
+      "text": "product-dev"
+     },
+     {
+      "slug": "loom",
+      "name": "Loom",
+      "text": "work-mgmt"
+     },
+     {
+      "slug": "miro",
+      "name": "Miro",
+      "text": "design"
+     },
+     {
+      "slug": "monday",
+      "name": "monday.com",
+      "text": "work-mgmt"
+     },
+     {
+      "slug": "notion",
+      "name": "Notion",
+      "text": "product-dev"
+     },
+     {
+      "slug": "retool",
+      "name": "Retool",
+      "text": "automation"
+     },
+     {
+      "slug": "slack",
+      "name": "Slack",
+      "text": "work-mgmt"
+     },
+     {
+      "slug": "zapier",
+      "name": "Zapier",
+      "text": "automation"
+     }
+    ]
+   },
+   {
+    "key": "gtm",
+    "label": "Go-to-market & support",
+    "short": "Go-to-market",
+    "why": "Everything pointed at a customer: finding them, marketing to them, selling to them, and answering them afterwards. Support sits here rather than with work management because a helpdesk is sold to the revenue side of the house.",
+    "n": 15,
+    "segments": [
+     {
+      "segment": "gtm",
+      "n": 6
+     },
+     {
+      "segment": "marketing",
+      "n": 6
+     },
+     {
+      "segment": "support",
+      "n": 3
+     }
+    ],
+    "companies": [
+     {
+      "slug": "apollo",
+      "name": "Apollo.io",
+      "text": "gtm"
+     },
+     {
+      "slug": "attio",
+      "name": "Attio",
+      "text": "gtm"
+     },
+     {
+      "slug": "braze",
+      "name": "Braze",
+      "text": "marketing"
+     },
+     {
+      "slug": "clay",
+      "name": "Clay",
+      "text": "gtm"
+     },
+     {
+      "slug": "contentful",
+      "name": "Contentful",
+      "text": "marketing"
+     },
+     {
+      "slug": "customer-io",
+      "name": "Customer.io",
+      "text": "marketing"
+     },
+     {
+      "slug": "front",
+      "name": "Front",
+      "text": "support"
+     },
+     {
+      "slug": "gong",
+      "name": "Gong",
+      "text": "gtm"
+     },
+     {
+      "slug": "hubspot",
+      "name": "HubSpot",
+      "text": "gtm"
+     },
+     {
+      "slug": "intercom",
+      "name": "Intercom",
+      "text": "support"
+     },
+     {
+      "slug": "klaviyo",
+      "name": "Klaviyo",
+      "text": "marketing"
+     },
+     {
+      "slug": "pipedrive",
+      "name": "Pipedrive",
+      "text": "gtm"
+     },
+     {
+      "slug": "typeform",
+      "name": "Typeform",
+      "text": "marketing"
+     },
+     {
+      "slug": "webflow",
+      "name": "Webflow",
+      "text": "marketing"
+     },
+     {
+      "slug": "zendesk",
+      "name": "Zendesk",
+      "text": "support"
+     }
+    ]
+   },
+   {
+    "key": "ops",
+    "label": "Finance & people ops",
+    "short": "Finance & people",
+    "why": "The back office: money in and out, and payroll, hiring and reviews. At 7 companies this is the smallest group and the one where a single homepage moves a bar furthest.",
+    "n": 7,
+    "segments": [
+     {
+      "segment": "fintech-ops",
+      "n": 4
+     },
+     {
+      "segment": "hr-ops",
+      "n": 3
+     }
+    ],
+    "companies": [
+     {
+      "slug": "bill",
+      "name": "BILL",
+      "text": "fintech-ops"
+     },
+     {
+      "slug": "brex",
+      "name": "Brex",
+      "text": "fintech-ops"
+     },
+     {
+      "slug": "deel",
+      "name": "Deel",
+      "text": "hr-ops"
+     },
+     {
+      "slug": "lattice",
+      "name": "Lattice",
+      "text": "hr-ops"
+     },
+     {
+      "slug": "ramp",
+      "name": "Ramp",
+      "text": "fintech-ops"
+     },
+     {
+      "slug": "rippling",
+      "name": "Rippling",
+      "text": "hr-ops"
+     },
+     {
+      "slug": "stripe",
+      "name": "Stripe",
+      "text": "fintech-ops"
+     }
+    ]
+   }
+  ],
+  "cuts": [
+   {
+    "key": "ai",
+    "label": "Uses AI or agent language",
+    "subject": "AI and agent language",
+    "denominator": "companies whose headline, subhead or category label we can read",
+    "cells": [
+     {
+      "group": "dev",
+      "label": "Developer & infrastructure",
+      "short": "Dev & infrastructure",
+      "n": 10,
+      "readable": 10,
+      "yes": 7,
+      "no": 3,
+      "unreadable": 0,
+      "share": 70,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "cloudflare",
+         "name": "Cloudflare"
+        },
+        {
+         "slug": "datadog",
+         "name": "Datadog"
+        },
+        {
+         "slug": "elastic",
+         "name": "Elastic"
+        },
+        {
+         "slug": "launchdarkly",
+         "name": "LaunchDarkly"
+        },
+        {
+         "slug": "netlify",
+         "name": "Netlify"
+        },
+        {
+         "slug": "twilio",
+         "name": "Twilio"
+        },
+        {
+         "slug": "vercel",
+         "name": "Vercel"
+        }
+       ],
+       "no": [
+        {
+         "slug": "sentry",
+         "name": "Sentry"
+        },
+        {
+         "slug": "supabase",
+         "name": "Supabase"
+        },
+        {
+         "slug": "vanta",
+         "name": "Vanta"
+        }
+       ],
+       "unreadable": []
+      }
+     },
+     {
+      "group": "data",
+      "label": "Data & analytics",
+      "short": "Data & analytics",
+      "n": 12,
+      "readable": 12,
+      "yes": 10,
+      "no": 2,
+      "unreadable": 0,
+      "share": 83.3,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "amplitude",
+         "name": "Amplitude"
+        },
+        {
+         "slug": "databricks",
+         "name": "Databricks"
+        },
+        {
+         "slug": "dbt-labs",
+         "name": "dbt Labs"
+        },
+        {
+         "slug": "fivetran",
+         "name": "Fivetran"
+        },
+        {
+         "slug": "hightouch",
+         "name": "Hightouch"
+        },
+        {
+         "slug": "metabase",
+         "name": "Metabase"
+        },
+        {
+         "slug": "mixpanel",
+         "name": "Mixpanel"
+        },
+        {
+         "slug": "mongodb",
+         "name": "MongoDB"
+        },
+        {
+         "slug": "pendo",
+         "name": "Pendo"
+        },
+        {
+         "slug": "snowflake",
+         "name": "Snowflake"
+        }
+       ],
+       "no": [
+        {
+         "slug": "posthog",
+         "name": "PostHog"
+        },
+        {
+         "slug": "segment",
+         "name": "Segment"
+        }
+       ],
+       "unreadable": []
+      }
+     },
+     {
+      "group": "work",
+      "label": "Work & product",
+      "short": "Work & product",
+      "n": 16,
+      "readable": 16,
+      "yes": 12,
+      "no": 4,
+      "unreadable": 0,
+      "share": 75,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
+        {
+         "slug": "asana",
+         "name": "Asana"
+        },
+        {
+         "slug": "atlassian",
+         "name": "Atlassian"
+        },
+        {
+         "slug": "github",
+         "name": "GitHub"
+        },
+        {
+         "slug": "linear",
+         "name": "Linear"
+        },
+        {
+         "slug": "loom",
+         "name": "Loom"
+        },
+        {
+         "slug": "miro",
+         "name": "Miro"
+        },
+        {
+         "slug": "monday",
+         "name": "monday.com"
+        },
+        {
+         "slug": "notion",
+         "name": "Notion"
+        },
+        {
+         "slug": "retool",
+         "name": "Retool"
+        },
+        {
+         "slug": "slack",
+         "name": "Slack"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
+        }
+       ],
+       "no": [
+        {
+         "slug": "calendly",
+         "name": "Calendly"
+        },
+        {
+         "slug": "clickup",
+         "name": "ClickUp"
+        },
+        {
+         "slug": "figma",
+         "name": "Figma"
+        },
+        {
+         "slug": "gitlab",
+         "name": "GitLab"
+        }
+       ],
+       "unreadable": []
+      }
+     },
+     {
+      "group": "gtm",
+      "label": "Go-to-market & support",
+      "short": "Go-to-market",
+      "n": 15,
+      "readable": 15,
+      "yes": 15,
+      "no": 0,
+      "unreadable": 0,
+      "share": 100,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "apollo",
+         "name": "Apollo.io"
+        },
+        {
+         "slug": "attio",
+         "name": "Attio"
+        },
+        {
+         "slug": "braze",
+         "name": "Braze"
+        },
+        {
+         "slug": "clay",
+         "name": "Clay"
+        },
+        {
+         "slug": "contentful",
+         "name": "Contentful"
+        },
+        {
+         "slug": "customer-io",
+         "name": "Customer.io"
+        },
+        {
+         "slug": "front",
+         "name": "Front"
+        },
+        {
+         "slug": "gong",
+         "name": "Gong"
+        },
+        {
+         "slug": "hubspot",
+         "name": "HubSpot"
+        },
+        {
+         "slug": "intercom",
+         "name": "Intercom"
+        },
+        {
+         "slug": "klaviyo",
+         "name": "Klaviyo"
+        },
+        {
+         "slug": "pipedrive",
+         "name": "Pipedrive"
+        },
+        {
+         "slug": "typeform",
+         "name": "Typeform"
+        },
+        {
+         "slug": "webflow",
+         "name": "Webflow"
+        },
+        {
+         "slug": "zendesk",
+         "name": "Zendesk"
+        }
+       ],
+       "no": [],
+       "unreadable": []
+      }
+     },
+     {
+      "group": "ops",
+      "label": "Finance & people ops",
+      "short": "Finance & people",
+      "n": 7,
+      "readable": 6,
+      "yes": 3,
+      "no": 3,
+      "unreadable": 1,
+      "share": 50,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "bill",
+         "name": "BILL"
+        },
+        {
+         "slug": "lattice",
+         "name": "Lattice"
+        },
+        {
+         "slug": "rippling",
+         "name": "Rippling"
+        }
+       ],
+       "no": [
+        {
+         "slug": "brex",
+         "name": "Brex"
+        },
+        {
+         "slug": "deel",
+         "name": "Deel"
+        },
+        {
+         "slug": "stripe",
+         "name": "Stripe"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "ramp",
+         "name": "Ramp"
+        }
+       ]
+      }
+     }
+    ],
+    "ranked": [
+     {
+      "group": "gtm",
+      "label": "Go-to-market & support",
+      "short": "Go-to-market",
+      "n": 15,
+      "readable": 15,
+      "yes": 15,
+      "no": 0,
+      "unreadable": 0,
+      "share": 100,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "apollo",
+         "name": "Apollo.io"
+        },
+        {
+         "slug": "attio",
+         "name": "Attio"
+        },
+        {
+         "slug": "braze",
+         "name": "Braze"
+        },
+        {
+         "slug": "clay",
+         "name": "Clay"
+        },
+        {
+         "slug": "contentful",
+         "name": "Contentful"
+        },
+        {
+         "slug": "customer-io",
+         "name": "Customer.io"
+        },
+        {
+         "slug": "front",
+         "name": "Front"
+        },
+        {
+         "slug": "gong",
+         "name": "Gong"
+        },
+        {
+         "slug": "hubspot",
+         "name": "HubSpot"
+        },
+        {
+         "slug": "intercom",
+         "name": "Intercom"
+        },
+        {
+         "slug": "klaviyo",
+         "name": "Klaviyo"
+        },
+        {
+         "slug": "pipedrive",
+         "name": "Pipedrive"
+        },
+        {
+         "slug": "typeform",
+         "name": "Typeform"
+        },
+        {
+         "slug": "webflow",
+         "name": "Webflow"
+        },
+        {
+         "slug": "zendesk",
+         "name": "Zendesk"
+        }
+       ],
+       "no": [],
+       "unreadable": []
+      }
+     },
+     {
+      "group": "data",
+      "label": "Data & analytics",
+      "short": "Data & analytics",
+      "n": 12,
+      "readable": 12,
+      "yes": 10,
+      "no": 2,
+      "unreadable": 0,
+      "share": 83.3,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "amplitude",
+         "name": "Amplitude"
+        },
+        {
+         "slug": "databricks",
+         "name": "Databricks"
+        },
+        {
+         "slug": "dbt-labs",
+         "name": "dbt Labs"
+        },
+        {
+         "slug": "fivetran",
+         "name": "Fivetran"
+        },
+        {
+         "slug": "hightouch",
+         "name": "Hightouch"
+        },
+        {
+         "slug": "metabase",
+         "name": "Metabase"
+        },
+        {
+         "slug": "mixpanel",
+         "name": "Mixpanel"
+        },
+        {
+         "slug": "mongodb",
+         "name": "MongoDB"
+        },
+        {
+         "slug": "pendo",
+         "name": "Pendo"
+        },
+        {
+         "slug": "snowflake",
+         "name": "Snowflake"
+        }
+       ],
+       "no": [
+        {
+         "slug": "posthog",
+         "name": "PostHog"
+        },
+        {
+         "slug": "segment",
+         "name": "Segment"
+        }
+       ],
+       "unreadable": []
+      }
+     },
+     {
+      "group": "work",
+      "label": "Work & product",
+      "short": "Work & product",
+      "n": 16,
+      "readable": 16,
+      "yes": 12,
+      "no": 4,
+      "unreadable": 0,
+      "share": 75,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
+        {
+         "slug": "asana",
+         "name": "Asana"
+        },
+        {
+         "slug": "atlassian",
+         "name": "Atlassian"
+        },
+        {
+         "slug": "github",
+         "name": "GitHub"
+        },
+        {
+         "slug": "linear",
+         "name": "Linear"
+        },
+        {
+         "slug": "loom",
+         "name": "Loom"
+        },
+        {
+         "slug": "miro",
+         "name": "Miro"
+        },
+        {
+         "slug": "monday",
+         "name": "monday.com"
+        },
+        {
+         "slug": "notion",
+         "name": "Notion"
+        },
+        {
+         "slug": "retool",
+         "name": "Retool"
+        },
+        {
+         "slug": "slack",
+         "name": "Slack"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
+        }
+       ],
+       "no": [
+        {
+         "slug": "calendly",
+         "name": "Calendly"
+        },
+        {
+         "slug": "clickup",
+         "name": "ClickUp"
+        },
+        {
+         "slug": "figma",
+         "name": "Figma"
+        },
+        {
+         "slug": "gitlab",
+         "name": "GitLab"
+        }
+       ],
+       "unreadable": []
+      }
+     },
+     {
+      "group": "dev",
+      "label": "Developer & infrastructure",
+      "short": "Dev & infrastructure",
+      "n": 10,
+      "readable": 10,
+      "yes": 7,
+      "no": 3,
+      "unreadable": 0,
+      "share": 70,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "cloudflare",
+         "name": "Cloudflare"
+        },
+        {
+         "slug": "datadog",
+         "name": "Datadog"
+        },
+        {
+         "slug": "elastic",
+         "name": "Elastic"
+        },
+        {
+         "slug": "launchdarkly",
+         "name": "LaunchDarkly"
+        },
+        {
+         "slug": "netlify",
+         "name": "Netlify"
+        },
+        {
+         "slug": "twilio",
+         "name": "Twilio"
+        },
+        {
+         "slug": "vercel",
+         "name": "Vercel"
+        }
+       ],
+       "no": [
+        {
+         "slug": "sentry",
+         "name": "Sentry"
+        },
+        {
+         "slug": "supabase",
+         "name": "Supabase"
+        },
+        {
+         "slug": "vanta",
+         "name": "Vanta"
+        }
+       ],
+       "unreadable": []
+      }
+     },
+     {
+      "group": "ops",
+      "label": "Finance & people ops",
+      "short": "Finance & people",
+      "n": 7,
+      "readable": 6,
+      "yes": 3,
+      "no": 3,
+      "unreadable": 1,
+      "share": 50,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "bill",
+         "name": "BILL"
+        },
+        {
+         "slug": "lattice",
+         "name": "Lattice"
+        },
+        {
+         "slug": "rippling",
+         "name": "Rippling"
+        }
+       ],
+       "no": [
+        {
+         "slug": "brex",
+         "name": "Brex"
+        },
+        {
+         "slug": "deel",
+         "name": "Deel"
+        },
+        {
+         "slug": "stripe",
+         "name": "Stripe"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "ramp",
+         "name": "Ramp"
+        }
+       ]
+      }
+     }
+    ],
+    "top": {
+     "group": "gtm",
+     "label": "Go-to-market & support",
+     "short": "Go-to-market",
+     "n": 15,
+     "readable": 15,
+     "yes": 15,
+     "no": 0,
+     "unreadable": 0,
+     "share": 100,
+     "suppressed": false,
+     "companies": {
+      "yes": [
+       {
+        "slug": "apollo",
+        "name": "Apollo.io"
+       },
+       {
+        "slug": "attio",
+        "name": "Attio"
+       },
+       {
+        "slug": "braze",
+        "name": "Braze"
+       },
+       {
+        "slug": "clay",
+        "name": "Clay"
+       },
+       {
+        "slug": "contentful",
+        "name": "Contentful"
+       },
+       {
+        "slug": "customer-io",
+        "name": "Customer.io"
+       },
+       {
+        "slug": "front",
+        "name": "Front"
+       },
+       {
+        "slug": "gong",
+        "name": "Gong"
+       },
+       {
+        "slug": "hubspot",
+        "name": "HubSpot"
+       },
+       {
+        "slug": "intercom",
+        "name": "Intercom"
+       },
+       {
+        "slug": "klaviyo",
+        "name": "Klaviyo"
+       },
+       {
+        "slug": "pipedrive",
+        "name": "Pipedrive"
+       },
+       {
+        "slug": "typeform",
+        "name": "Typeform"
+       },
+       {
+        "slug": "webflow",
+        "name": "Webflow"
+       },
+       {
+        "slug": "zendesk",
+        "name": "Zendesk"
+       }
+      ],
+      "no": [],
+      "unreadable": []
+     }
+    },
+    "runner_up": {
+     "group": "data",
+     "label": "Data & analytics",
+     "short": "Data & analytics",
+     "n": 12,
+     "readable": 12,
+     "yes": 10,
+     "no": 2,
+     "unreadable": 0,
+     "share": 83.3,
+     "suppressed": false,
+     "companies": {
+      "yes": [
+       {
+        "slug": "amplitude",
+        "name": "Amplitude"
+       },
+       {
+        "slug": "databricks",
+        "name": "Databricks"
+       },
+       {
+        "slug": "dbt-labs",
+        "name": "dbt Labs"
+       },
+       {
+        "slug": "fivetran",
+        "name": "Fivetran"
+       },
+       {
+        "slug": "hightouch",
+        "name": "Hightouch"
+       },
+       {
+        "slug": "metabase",
+        "name": "Metabase"
+       },
+       {
+        "slug": "mixpanel",
+        "name": "Mixpanel"
+       },
+       {
+        "slug": "mongodb",
+        "name": "MongoDB"
+       },
+       {
+        "slug": "pendo",
+        "name": "Pendo"
+       },
+       {
+        "slug": "snowflake",
+        "name": "Snowflake"
+       }
+      ],
+      "no": [
+       {
+        "slug": "posthog",
+        "name": "PostHog"
+       },
+       {
+        "slug": "segment",
+        "name": "Segment"
+       }
+      ],
+      "unreadable": []
+     }
+    },
+    "bottom": {
+     "group": "ops",
+     "label": "Finance & people ops",
+     "short": "Finance & people",
+     "n": 7,
+     "readable": 6,
+     "yes": 3,
+     "no": 3,
+     "unreadable": 1,
+     "share": 50,
+     "suppressed": false,
+     "companies": {
+      "yes": [
+       {
+        "slug": "bill",
+        "name": "BILL"
+       },
+       {
+        "slug": "lattice",
+        "name": "Lattice"
+       },
+       {
+        "slug": "rippling",
+        "name": "Rippling"
+       }
+      ],
+      "no": [
+       {
+        "slug": "brex",
+        "name": "Brex"
+       },
+       {
+        "slug": "deel",
+        "name": "Deel"
+       },
+       {
+        "slug": "stripe",
+        "name": "Stripe"
+       }
+      ],
+      "unreadable": [
+       {
+        "slug": "ramp",
+        "name": "Ramp"
+       }
+      ]
+     }
+    },
+    "spread": 3,
+    "lead_over_runner_up": 2,
+    "drawn": true,
+    "withheld": null,
+    "overall": {
+     "yes": 47,
+     "no": 12,
+     "unreadable": 1,
+     "readable": 59,
+     "tracked": 60
+    }
+   },
+   {
+    "key": "platform",
+    "label": "Calls itself a platform",
+    "subject": "the word &ldquo;platform&rdquo;",
+    "denominator": "companies whose category label we can read",
+    "cells": [
+     {
+      "group": "dev",
+      "label": "Developer & infrastructure",
+      "short": "Dev & infrastructure",
+      "n": 10,
+      "readable": 9,
+      "yes": 4,
+      "no": 5,
+      "unreadable": 1,
+      "share": 44.4,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "cloudflare",
+         "name": "Cloudflare"
+        },
+        {
+         "slug": "elastic",
+         "name": "Elastic"
+        },
+        {
+         "slug": "supabase",
+         "name": "Supabase"
+        },
+        {
+         "slug": "twilio",
+         "name": "Twilio"
+        }
+       ],
+       "no": [
+        {
+         "slug": "datadog",
+         "name": "Datadog"
+        },
+        {
+         "slug": "launchdarkly",
+         "name": "LaunchDarkly"
+        },
+        {
+         "slug": "netlify",
+         "name": "Netlify"
+        },
+        {
+         "slug": "sentry",
+         "name": "Sentry"
+        },
+        {
+         "slug": "vercel",
+         "name": "Vercel"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "vanta",
+         "name": "Vanta"
+        }
+       ]
+      }
+     },
+     {
+      "group": "data",
+      "label": "Data & analytics",
+      "short": "Data & analytics",
+      "n": 12,
+      "readable": 9,
+      "yes": 5,
+      "no": 4,
+      "unreadable": 3,
+      "share": 55.6,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "databricks",
+         "name": "Databricks"
+        },
+        {
+         "slug": "hightouch",
+         "name": "Hightouch"
+        },
+        {
+         "slug": "mixpanel",
+         "name": "Mixpanel"
+        },
+        {
+         "slug": "mongodb",
+         "name": "MongoDB"
+        },
+        {
+         "slug": "segment",
+         "name": "Segment"
+        }
+       ],
+       "no": [
+        {
+         "slug": "fivetran",
+         "name": "Fivetran"
+        },
+        {
+         "slug": "metabase",
+         "name": "Metabase"
+        },
+        {
+         "slug": "pendo",
+         "name": "Pendo"
+        },
+        {
+         "slug": "snowflake",
+         "name": "Snowflake"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "amplitude",
+         "name": "Amplitude"
+        },
+        {
+         "slug": "dbt-labs",
+         "name": "dbt Labs"
+        },
+        {
+         "slug": "posthog",
+         "name": "PostHog"
+        }
+       ]
+      }
+     },
+     {
+      "group": "work",
+      "label": "Work & product",
+      "short": "Work & product",
+      "n": 16,
+      "readable": 15,
+      "yes": 3,
+      "no": 12,
+      "unreadable": 1,
+      "share": 20,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "github",
+         "name": "GitHub"
+        },
+        {
+         "slug": "gitlab",
+         "name": "GitLab"
+        },
+        {
+         "slug": "monday",
+         "name": "monday.com"
+        }
+       ],
+       "no": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
+        {
+         "slug": "asana",
+         "name": "Asana"
+        },
+        {
+         "slug": "atlassian",
+         "name": "Atlassian"
+        },
+        {
+         "slug": "calendly",
+         "name": "Calendly"
+        },
+        {
+         "slug": "clickup",
+         "name": "ClickUp"
+        },
+        {
+         "slug": "figma",
+         "name": "Figma"
+        },
+        {
+         "slug": "linear",
+         "name": "Linear"
+        },
+        {
+         "slug": "loom",
+         "name": "Loom"
+        },
+        {
+         "slug": "miro",
+         "name": "Miro"
+        },
+        {
+         "slug": "notion",
+         "name": "Notion"
+        },
+        {
+         "slug": "retool",
+         "name": "Retool"
+        },
+        {
+         "slug": "slack",
+         "name": "Slack"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "zapier",
+         "name": "Zapier"
+        }
+       ]
+      }
+     },
+     {
+      "group": "gtm",
+      "label": "Go-to-market & support",
+      "short": "Go-to-market",
+      "n": 15,
+      "readable": 13,
+      "yes": 4,
+      "no": 9,
+      "unreadable": 2,
+      "share": 30.8,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "apollo",
+         "name": "Apollo.io"
+        },
+        {
+         "slug": "braze",
+         "name": "Braze"
+        },
+        {
+         "slug": "customer-io",
+         "name": "Customer.io"
+        },
+        {
+         "slug": "webflow",
+         "name": "Webflow"
+        }
+       ],
+       "no": [
+        {
+         "slug": "attio",
+         "name": "Attio"
+        },
+        {
+         "slug": "clay",
+         "name": "Clay"
+        },
+        {
+         "slug": "front",
+         "name": "Front"
+        },
+        {
+         "slug": "gong",
+         "name": "Gong"
+        },
+        {
+         "slug": "hubspot",
+         "name": "HubSpot"
+        },
+        {
+         "slug": "intercom",
+         "name": "Intercom"
+        },
+        {
+         "slug": "klaviyo",
+         "name": "Klaviyo"
+        },
+        {
+         "slug": "pipedrive",
+         "name": "Pipedrive"
+        },
+        {
+         "slug": "zendesk",
+         "name": "Zendesk"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "contentful",
+         "name": "Contentful"
+        },
+        {
+         "slug": "typeform",
+         "name": "Typeform"
+        }
+       ]
+      }
+     },
+     {
+      "group": "ops",
+      "label": "Finance & people ops",
+      "short": "Finance & people",
+      "n": 7,
+      "readable": 6,
+      "yes": 3,
+      "no": 3,
+      "unreadable": 1,
+      "share": 50,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "bill",
+         "name": "BILL"
+        },
+        {
+         "slug": "deel",
+         "name": "Deel"
+        },
+        {
+         "slug": "lattice",
+         "name": "Lattice"
+        }
+       ],
+       "no": [
+        {
+         "slug": "brex",
+         "name": "Brex"
+        },
+        {
+         "slug": "rippling",
+         "name": "Rippling"
+        },
+        {
+         "slug": "stripe",
+         "name": "Stripe"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "ramp",
+         "name": "Ramp"
+        }
+       ]
+      }
+     }
+    ],
+    "ranked": [
+     {
+      "group": "data",
+      "label": "Data & analytics",
+      "short": "Data & analytics",
+      "n": 12,
+      "readable": 9,
+      "yes": 5,
+      "no": 4,
+      "unreadable": 3,
+      "share": 55.6,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "databricks",
+         "name": "Databricks"
+        },
+        {
+         "slug": "hightouch",
+         "name": "Hightouch"
+        },
+        {
+         "slug": "mixpanel",
+         "name": "Mixpanel"
+        },
+        {
+         "slug": "mongodb",
+         "name": "MongoDB"
+        },
+        {
+         "slug": "segment",
+         "name": "Segment"
+        }
+       ],
+       "no": [
+        {
+         "slug": "fivetran",
+         "name": "Fivetran"
+        },
+        {
+         "slug": "metabase",
+         "name": "Metabase"
+        },
+        {
+         "slug": "pendo",
+         "name": "Pendo"
+        },
+        {
+         "slug": "snowflake",
+         "name": "Snowflake"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "amplitude",
+         "name": "Amplitude"
+        },
+        {
+         "slug": "dbt-labs",
+         "name": "dbt Labs"
+        },
+        {
+         "slug": "posthog",
+         "name": "PostHog"
+        }
+       ]
+      }
+     },
+     {
+      "group": "ops",
+      "label": "Finance & people ops",
+      "short": "Finance & people",
+      "n": 7,
+      "readable": 6,
+      "yes": 3,
+      "no": 3,
+      "unreadable": 1,
+      "share": 50,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "bill",
+         "name": "BILL"
+        },
+        {
+         "slug": "deel",
+         "name": "Deel"
+        },
+        {
+         "slug": "lattice",
+         "name": "Lattice"
+        }
+       ],
+       "no": [
+        {
+         "slug": "brex",
+         "name": "Brex"
+        },
+        {
+         "slug": "rippling",
+         "name": "Rippling"
+        },
+        {
+         "slug": "stripe",
+         "name": "Stripe"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "ramp",
+         "name": "Ramp"
+        }
+       ]
+      }
+     },
+     {
+      "group": "dev",
+      "label": "Developer & infrastructure",
+      "short": "Dev & infrastructure",
+      "n": 10,
+      "readable": 9,
+      "yes": 4,
+      "no": 5,
+      "unreadable": 1,
+      "share": 44.4,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "cloudflare",
+         "name": "Cloudflare"
+        },
+        {
+         "slug": "elastic",
+         "name": "Elastic"
+        },
+        {
+         "slug": "supabase",
+         "name": "Supabase"
+        },
+        {
+         "slug": "twilio",
+         "name": "Twilio"
+        }
+       ],
+       "no": [
+        {
+         "slug": "datadog",
+         "name": "Datadog"
+        },
+        {
+         "slug": "launchdarkly",
+         "name": "LaunchDarkly"
+        },
+        {
+         "slug": "netlify",
+         "name": "Netlify"
+        },
+        {
+         "slug": "sentry",
+         "name": "Sentry"
+        },
+        {
+         "slug": "vercel",
+         "name": "Vercel"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "vanta",
+         "name": "Vanta"
+        }
+       ]
+      }
+     },
+     {
+      "group": "gtm",
+      "label": "Go-to-market & support",
+      "short": "Go-to-market",
+      "n": 15,
+      "readable": 13,
+      "yes": 4,
+      "no": 9,
+      "unreadable": 2,
+      "share": 30.8,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "apollo",
+         "name": "Apollo.io"
+        },
+        {
+         "slug": "braze",
+         "name": "Braze"
+        },
+        {
+         "slug": "customer-io",
+         "name": "Customer.io"
+        },
+        {
+         "slug": "webflow",
+         "name": "Webflow"
+        }
+       ],
+       "no": [
+        {
+         "slug": "attio",
+         "name": "Attio"
+        },
+        {
+         "slug": "clay",
+         "name": "Clay"
+        },
+        {
+         "slug": "front",
+         "name": "Front"
+        },
+        {
+         "slug": "gong",
+         "name": "Gong"
+        },
+        {
+         "slug": "hubspot",
+         "name": "HubSpot"
+        },
+        {
+         "slug": "intercom",
+         "name": "Intercom"
+        },
+        {
+         "slug": "klaviyo",
+         "name": "Klaviyo"
+        },
+        {
+         "slug": "pipedrive",
+         "name": "Pipedrive"
+        },
+        {
+         "slug": "zendesk",
+         "name": "Zendesk"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "contentful",
+         "name": "Contentful"
+        },
+        {
+         "slug": "typeform",
+         "name": "Typeform"
+        }
+       ]
+      }
+     },
+     {
+      "group": "work",
+      "label": "Work & product",
+      "short": "Work & product",
+      "n": 16,
+      "readable": 15,
+      "yes": 3,
+      "no": 12,
+      "unreadable": 1,
+      "share": 20,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "github",
+         "name": "GitHub"
+        },
+        {
+         "slug": "gitlab",
+         "name": "GitLab"
+        },
+        {
+         "slug": "monday",
+         "name": "monday.com"
+        }
+       ],
+       "no": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
+        {
+         "slug": "asana",
+         "name": "Asana"
+        },
+        {
+         "slug": "atlassian",
+         "name": "Atlassian"
+        },
+        {
+         "slug": "calendly",
+         "name": "Calendly"
+        },
+        {
+         "slug": "clickup",
+         "name": "ClickUp"
+        },
+        {
+         "slug": "figma",
+         "name": "Figma"
+        },
+        {
+         "slug": "linear",
+         "name": "Linear"
+        },
+        {
+         "slug": "loom",
+         "name": "Loom"
+        },
+        {
+         "slug": "miro",
+         "name": "Miro"
+        },
+        {
+         "slug": "notion",
+         "name": "Notion"
+        },
+        {
+         "slug": "retool",
+         "name": "Retool"
+        },
+        {
+         "slug": "slack",
+         "name": "Slack"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "zapier",
+         "name": "Zapier"
+        }
+       ]
+      }
+     }
+    ],
+    "top": {
+     "group": "data",
+     "label": "Data & analytics",
+     "short": "Data & analytics",
+     "n": 12,
+     "readable": 9,
+     "yes": 5,
+     "no": 4,
+     "unreadable": 3,
+     "share": 55.6,
+     "suppressed": false,
+     "companies": {
+      "yes": [
+       {
+        "slug": "databricks",
+        "name": "Databricks"
+       },
+       {
+        "slug": "hightouch",
+        "name": "Hightouch"
+       },
+       {
+        "slug": "mixpanel",
+        "name": "Mixpanel"
+       },
+       {
+        "slug": "mongodb",
+        "name": "MongoDB"
+       },
+       {
+        "slug": "segment",
+        "name": "Segment"
+       }
+      ],
+      "no": [
+       {
+        "slug": "fivetran",
+        "name": "Fivetran"
+       },
+       {
+        "slug": "metabase",
+        "name": "Metabase"
+       },
+       {
+        "slug": "pendo",
+        "name": "Pendo"
+       },
+       {
+        "slug": "snowflake",
+        "name": "Snowflake"
+       }
+      ],
+      "unreadable": [
+       {
+        "slug": "amplitude",
+        "name": "Amplitude"
+       },
+       {
+        "slug": "dbt-labs",
+        "name": "dbt Labs"
+       },
+       {
+        "slug": "posthog",
+        "name": "PostHog"
+       }
+      ]
+     }
+    },
+    "runner_up": {
+     "group": "ops",
+     "label": "Finance & people ops",
+     "short": "Finance & people",
+     "n": 7,
+     "readable": 6,
+     "yes": 3,
+     "no": 3,
+     "unreadable": 1,
+     "share": 50,
+     "suppressed": false,
+     "companies": {
+      "yes": [
+       {
+        "slug": "bill",
+        "name": "BILL"
+       },
+       {
+        "slug": "deel",
+        "name": "Deel"
+       },
+       {
+        "slug": "lattice",
+        "name": "Lattice"
+       }
+      ],
+      "no": [
+       {
+        "slug": "brex",
+        "name": "Brex"
+       },
+       {
+        "slug": "rippling",
+        "name": "Rippling"
+       },
+       {
+        "slug": "stripe",
+        "name": "Stripe"
+       }
+      ],
+      "unreadable": [
+       {
+        "slug": "ramp",
+        "name": "Ramp"
+       }
+      ]
+     }
+    },
+    "bottom": {
+     "group": "work",
+     "label": "Work & product",
+     "short": "Work & product",
+     "n": 16,
+     "readable": 15,
+     "yes": 3,
+     "no": 12,
+     "unreadable": 1,
+     "share": 20,
+     "suppressed": false,
+     "companies": {
+      "yes": [
+       {
+        "slug": "github",
+        "name": "GitHub"
+       },
+       {
+        "slug": "gitlab",
+        "name": "GitLab"
+       },
+       {
+        "slug": "monday",
+        "name": "monday.com"
+       }
+      ],
+      "no": [
+       {
+        "slug": "airtable",
+        "name": "Airtable"
+       },
+       {
+        "slug": "asana",
+        "name": "Asana"
+       },
+       {
+        "slug": "atlassian",
+        "name": "Atlassian"
+       },
+       {
+        "slug": "calendly",
+        "name": "Calendly"
+       },
+       {
+        "slug": "clickup",
+        "name": "ClickUp"
+       },
+       {
+        "slug": "figma",
+        "name": "Figma"
+       },
+       {
+        "slug": "linear",
+        "name": "Linear"
+       },
+       {
+        "slug": "loom",
+        "name": "Loom"
+       },
+       {
+        "slug": "miro",
+        "name": "Miro"
+       },
+       {
+        "slug": "notion",
+        "name": "Notion"
+       },
+       {
+        "slug": "retool",
+        "name": "Retool"
+       },
+       {
+        "slug": "slack",
+        "name": "Slack"
+       }
+      ],
+      "unreadable": [
+       {
+        "slug": "zapier",
+        "name": "Zapier"
+       }
+      ]
+     }
+    },
+    "spread": 6,
+    "lead_over_runner_up": 1,
+    "drawn": true,
+    "withheld": null,
+    "overall": {
+     "yes": 19,
+     "no": 33,
+     "unreadable": 8,
+     "readable": 52,
+     "tracked": 60
+    }
+   },
+   {
+    "key": "proof-count",
+    "label": "Proves with scale counts",
+    "subject": "scale counts as proof",
+    "denominator": "companies with at least one quantified claim we can read",
+    "cells": [
+     {
+      "group": "dev",
+      "label": "Developer & infrastructure",
+      "short": "Dev & infrastructure",
+      "n": 10,
+      "readable": 7,
+      "yes": 5,
+      "no": 2,
+      "unreadable": 3,
+      "share": 71.4,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "cloudflare",
+         "name": "Cloudflare"
+        },
+        {
+         "slug": "netlify",
+         "name": "Netlify"
+        },
+        {
+         "slug": "supabase",
+         "name": "Supabase"
+        },
+        {
+         "slug": "vanta",
+         "name": "Vanta"
+        },
+        {
+         "slug": "vercel",
+         "name": "Vercel"
+        }
+       ],
+       "no": [
+        {
+         "slug": "elastic",
+         "name": "Elastic"
+        },
+        {
+         "slug": "launchdarkly",
+         "name": "LaunchDarkly"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "datadog",
+         "name": "Datadog"
+        },
+        {
+         "slug": "sentry",
+         "name": "Sentry"
+        },
+        {
+         "slug": "twilio",
+         "name": "Twilio"
+        }
+       ]
+      }
+     },
+     {
+      "group": "data",
+      "label": "Data & analytics",
+      "short": "Data & analytics",
+      "n": 12,
+      "readable": 10,
+      "yes": 9,
+      "no": 1,
+      "unreadable": 2,
+      "share": 90,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "amplitude",
+         "name": "Amplitude"
+        },
+        {
+         "slug": "databricks",
+         "name": "Databricks"
+        },
+        {
+         "slug": "dbt-labs",
+         "name": "dbt Labs"
+        },
+        {
+         "slug": "fivetran",
+         "name": "Fivetran"
+        },
+        {
+         "slug": "hightouch",
+         "name": "Hightouch"
+        },
+        {
+         "slug": "metabase",
+         "name": "Metabase"
+        },
+        {
+         "slug": "mixpanel",
+         "name": "Mixpanel"
+        },
+        {
+         "slug": "pendo",
+         "name": "Pendo"
+        },
+        {
+         "slug": "posthog",
+         "name": "PostHog"
+        }
+       ],
+       "no": [
+        {
+         "slug": "mongodb",
+         "name": "MongoDB"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "segment",
+         "name": "Segment"
+        },
+        {
+         "slug": "snowflake",
+         "name": "Snowflake"
+        }
+       ]
+      }
+     },
+     {
+      "group": "work",
+      "label": "Work & product",
+      "short": "Work & product",
+      "n": 16,
+      "readable": 14,
+      "yes": 11,
+      "no": 3,
+      "unreadable": 2,
+      "share": 78.6,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
+        {
+         "slug": "asana",
+         "name": "Asana"
+        },
+        {
+         "slug": "calendly",
+         "name": "Calendly"
+        },
+        {
+         "slug": "clickup",
+         "name": "ClickUp"
+        },
+        {
+         "slug": "loom",
+         "name": "Loom"
+        },
+        {
+         "slug": "miro",
+         "name": "Miro"
+        },
+        {
+         "slug": "monday",
+         "name": "monday.com"
+        },
+        {
+         "slug": "notion",
+         "name": "Notion"
+        },
+        {
+         "slug": "retool",
+         "name": "Retool"
+        },
+        {
+         "slug": "slack",
+         "name": "Slack"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
+        }
+       ],
+       "no": [
+        {
+         "slug": "figma",
+         "name": "Figma"
+        },
+        {
+         "slug": "github",
+         "name": "GitHub"
+        },
+        {
+         "slug": "gitlab",
+         "name": "GitLab"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "atlassian",
+         "name": "Atlassian"
+        },
+        {
+         "slug": "linear",
+         "name": "Linear"
+        }
+       ]
+      }
+     },
+     {
+      "group": "gtm",
+      "label": "Go-to-market & support",
+      "short": "Go-to-market",
+      "n": 15,
+      "readable": 15,
+      "yes": 13,
+      "no": 2,
+      "unreadable": 0,
+      "share": 86.7,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "apollo",
+         "name": "Apollo.io"
+        },
+        {
+         "slug": "attio",
+         "name": "Attio"
+        },
+        {
+         "slug": "braze",
+         "name": "Braze"
+        },
+        {
+         "slug": "customer-io",
+         "name": "Customer.io"
+        },
+        {
+         "slug": "front",
+         "name": "Front"
+        },
+        {
+         "slug": "gong",
+         "name": "Gong"
+        },
+        {
+         "slug": "hubspot",
+         "name": "HubSpot"
+        },
+        {
+         "slug": "intercom",
+         "name": "Intercom"
+        },
+        {
+         "slug": "klaviyo",
+         "name": "Klaviyo"
+        },
+        {
+         "slug": "pipedrive",
+         "name": "Pipedrive"
+        },
+        {
+         "slug": "typeform",
+         "name": "Typeform"
+        },
+        {
+         "slug": "webflow",
+         "name": "Webflow"
+        },
+        {
+         "slug": "zendesk",
+         "name": "Zendesk"
+        }
+       ],
+       "no": [
+        {
+         "slug": "clay",
+         "name": "Clay"
+        },
+        {
+         "slug": "contentful",
+         "name": "Contentful"
+        }
+       ],
+       "unreadable": []
+      }
+     },
+     {
+      "group": "ops",
+      "label": "Finance & people ops",
+      "short": "Finance & people",
+      "n": 7,
+      "readable": 6,
+      "yes": 6,
+      "no": 0,
+      "unreadable": 1,
+      "share": 100,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "bill",
+         "name": "BILL"
+        },
+        {
+         "slug": "brex",
+         "name": "Brex"
+        },
+        {
+         "slug": "deel",
+         "name": "Deel"
+        },
+        {
+         "slug": "lattice",
+         "name": "Lattice"
+        },
+        {
+         "slug": "rippling",
+         "name": "Rippling"
+        },
+        {
+         "slug": "stripe",
+         "name": "Stripe"
+        }
+       ],
+       "no": [],
+       "unreadable": [
+        {
+         "slug": "ramp",
+         "name": "Ramp"
+        }
+       ]
+      }
+     }
+    ],
+    "ranked": [
+     {
+      "group": "ops",
+      "label": "Finance & people ops",
+      "short": "Finance & people",
+      "n": 7,
+      "readable": 6,
+      "yes": 6,
+      "no": 0,
+      "unreadable": 1,
+      "share": 100,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "bill",
+         "name": "BILL"
+        },
+        {
+         "slug": "brex",
+         "name": "Brex"
+        },
+        {
+         "slug": "deel",
+         "name": "Deel"
+        },
+        {
+         "slug": "lattice",
+         "name": "Lattice"
+        },
+        {
+         "slug": "rippling",
+         "name": "Rippling"
+        },
+        {
+         "slug": "stripe",
+         "name": "Stripe"
+        }
+       ],
+       "no": [],
+       "unreadable": [
+        {
+         "slug": "ramp",
+         "name": "Ramp"
+        }
+       ]
+      }
+     },
+     {
+      "group": "data",
+      "label": "Data & analytics",
+      "short": "Data & analytics",
+      "n": 12,
+      "readable": 10,
+      "yes": 9,
+      "no": 1,
+      "unreadable": 2,
+      "share": 90,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "amplitude",
+         "name": "Amplitude"
+        },
+        {
+         "slug": "databricks",
+         "name": "Databricks"
+        },
+        {
+         "slug": "dbt-labs",
+         "name": "dbt Labs"
+        },
+        {
+         "slug": "fivetran",
+         "name": "Fivetran"
+        },
+        {
+         "slug": "hightouch",
+         "name": "Hightouch"
+        },
+        {
+         "slug": "metabase",
+         "name": "Metabase"
+        },
+        {
+         "slug": "mixpanel",
+         "name": "Mixpanel"
+        },
+        {
+         "slug": "pendo",
+         "name": "Pendo"
+        },
+        {
+         "slug": "posthog",
+         "name": "PostHog"
+        }
+       ],
+       "no": [
+        {
+         "slug": "mongodb",
+         "name": "MongoDB"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "segment",
+         "name": "Segment"
+        },
+        {
+         "slug": "snowflake",
+         "name": "Snowflake"
+        }
+       ]
+      }
+     },
+     {
+      "group": "gtm",
+      "label": "Go-to-market & support",
+      "short": "Go-to-market",
+      "n": 15,
+      "readable": 15,
+      "yes": 13,
+      "no": 2,
+      "unreadable": 0,
+      "share": 86.7,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "apollo",
+         "name": "Apollo.io"
+        },
+        {
+         "slug": "attio",
+         "name": "Attio"
+        },
+        {
+         "slug": "braze",
+         "name": "Braze"
+        },
+        {
+         "slug": "customer-io",
+         "name": "Customer.io"
+        },
+        {
+         "slug": "front",
+         "name": "Front"
+        },
+        {
+         "slug": "gong",
+         "name": "Gong"
+        },
+        {
+         "slug": "hubspot",
+         "name": "HubSpot"
+        },
+        {
+         "slug": "intercom",
+         "name": "Intercom"
+        },
+        {
+         "slug": "klaviyo",
+         "name": "Klaviyo"
+        },
+        {
+         "slug": "pipedrive",
+         "name": "Pipedrive"
+        },
+        {
+         "slug": "typeform",
+         "name": "Typeform"
+        },
+        {
+         "slug": "webflow",
+         "name": "Webflow"
+        },
+        {
+         "slug": "zendesk",
+         "name": "Zendesk"
+        }
+       ],
+       "no": [
+        {
+         "slug": "clay",
+         "name": "Clay"
+        },
+        {
+         "slug": "contentful",
+         "name": "Contentful"
+        }
+       ],
+       "unreadable": []
+      }
+     },
+     {
+      "group": "work",
+      "label": "Work & product",
+      "short": "Work & product",
+      "n": 16,
+      "readable": 14,
+      "yes": 11,
+      "no": 3,
+      "unreadable": 2,
+      "share": 78.6,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
+        {
+         "slug": "asana",
+         "name": "Asana"
+        },
+        {
+         "slug": "calendly",
+         "name": "Calendly"
+        },
+        {
+         "slug": "clickup",
+         "name": "ClickUp"
+        },
+        {
+         "slug": "loom",
+         "name": "Loom"
+        },
+        {
+         "slug": "miro",
+         "name": "Miro"
+        },
+        {
+         "slug": "monday",
+         "name": "monday.com"
+        },
+        {
+         "slug": "notion",
+         "name": "Notion"
+        },
+        {
+         "slug": "retool",
+         "name": "Retool"
+        },
+        {
+         "slug": "slack",
+         "name": "Slack"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
+        }
+       ],
+       "no": [
+        {
+         "slug": "figma",
+         "name": "Figma"
+        },
+        {
+         "slug": "github",
+         "name": "GitHub"
+        },
+        {
+         "slug": "gitlab",
+         "name": "GitLab"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "atlassian",
+         "name": "Atlassian"
+        },
+        {
+         "slug": "linear",
+         "name": "Linear"
+        }
+       ]
+      }
+     },
+     {
+      "group": "dev",
+      "label": "Developer & infrastructure",
+      "short": "Dev & infrastructure",
+      "n": 10,
+      "readable": 7,
+      "yes": 5,
+      "no": 2,
+      "unreadable": 3,
+      "share": 71.4,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "cloudflare",
+         "name": "Cloudflare"
+        },
+        {
+         "slug": "netlify",
+         "name": "Netlify"
+        },
+        {
+         "slug": "supabase",
+         "name": "Supabase"
+        },
+        {
+         "slug": "vanta",
+         "name": "Vanta"
+        },
+        {
+         "slug": "vercel",
+         "name": "Vercel"
+        }
+       ],
+       "no": [
+        {
+         "slug": "elastic",
+         "name": "Elastic"
+        },
+        {
+         "slug": "launchdarkly",
+         "name": "LaunchDarkly"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "datadog",
+         "name": "Datadog"
+        },
+        {
+         "slug": "sentry",
+         "name": "Sentry"
+        },
+        {
+         "slug": "twilio",
+         "name": "Twilio"
+        }
+       ]
+      }
+     }
+    ],
+    "top": {
+     "group": "ops",
+     "label": "Finance & people ops",
+     "short": "Finance & people",
+     "n": 7,
+     "readable": 6,
+     "yes": 6,
+     "no": 0,
+     "unreadable": 1,
+     "share": 100,
+     "suppressed": false,
+     "companies": {
+      "yes": [
+       {
+        "slug": "bill",
+        "name": "BILL"
+       },
+       {
+        "slug": "brex",
+        "name": "Brex"
+       },
+       {
+        "slug": "deel",
+        "name": "Deel"
+       },
+       {
+        "slug": "lattice",
+        "name": "Lattice"
+       },
+       {
+        "slug": "rippling",
+        "name": "Rippling"
+       },
+       {
+        "slug": "stripe",
+        "name": "Stripe"
+       }
+      ],
+      "no": [],
+      "unreadable": [
+       {
+        "slug": "ramp",
+        "name": "Ramp"
+       }
+      ]
+     }
+    },
+    "runner_up": {
+     "group": "data",
+     "label": "Data & analytics",
+     "short": "Data & analytics",
+     "n": 12,
+     "readable": 10,
+     "yes": 9,
+     "no": 1,
+     "unreadable": 2,
+     "share": 90,
+     "suppressed": false,
+     "companies": {
+      "yes": [
+       {
+        "slug": "amplitude",
+        "name": "Amplitude"
+       },
+       {
+        "slug": "databricks",
+        "name": "Databricks"
+       },
+       {
+        "slug": "dbt-labs",
+        "name": "dbt Labs"
+       },
+       {
+        "slug": "fivetran",
+        "name": "Fivetran"
+       },
+       {
+        "slug": "hightouch",
+        "name": "Hightouch"
+       },
+       {
+        "slug": "metabase",
+        "name": "Metabase"
+       },
+       {
+        "slug": "mixpanel",
+        "name": "Mixpanel"
+       },
+       {
+        "slug": "pendo",
+        "name": "Pendo"
+       },
+       {
+        "slug": "posthog",
+        "name": "PostHog"
+       }
+      ],
+      "no": [
+       {
+        "slug": "mongodb",
+        "name": "MongoDB"
+       }
+      ],
+      "unreadable": [
+       {
+        "slug": "segment",
+        "name": "Segment"
+       },
+       {
+        "slug": "snowflake",
+        "name": "Snowflake"
+       }
+      ]
+     }
+    },
+    "bottom": {
+     "group": "dev",
+     "label": "Developer & infrastructure",
+     "short": "Dev & infrastructure",
+     "n": 10,
+     "readable": 7,
+     "yes": 5,
+     "no": 2,
+     "unreadable": 3,
+     "share": 71.4,
+     "suppressed": false,
+     "companies": {
+      "yes": [
+       {
+        "slug": "cloudflare",
+        "name": "Cloudflare"
+       },
+       {
+        "slug": "netlify",
+        "name": "Netlify"
+       },
+       {
+        "slug": "supabase",
+        "name": "Supabase"
+       },
+       {
+        "slug": "vanta",
+        "name": "Vanta"
+       },
+       {
+        "slug": "vercel",
+        "name": "Vercel"
+       }
+      ],
+      "no": [
+       {
+        "slug": "elastic",
+        "name": "Elastic"
+       },
+       {
+        "slug": "launchdarkly",
+        "name": "LaunchDarkly"
+       }
+      ],
+      "unreadable": [
+       {
+        "slug": "datadog",
+        "name": "Datadog"
+       },
+       {
+        "slug": "sentry",
+        "name": "Sentry"
+       },
+       {
+        "slug": "twilio",
+        "name": "Twilio"
+       }
+      ]
+     }
+    },
+    "spread": 2,
+    "lead_over_runner_up": 1,
+    "drawn": false,
+    "withheld": {
+     "rule": "flat",
+     "spread": 2
+    },
+    "overall": {
+     "yes": 44,
+     "no": 8,
+     "unreadable": 8,
+     "readable": 52,
+     "tracked": 60
+    }
+   },
+   {
+    "key": "proof-percent",
+    "label": "Proves with percentage gains",
+    "subject": "percentage gains as proof",
+    "denominator": "companies with at least one quantified claim we can read",
+    "cells": [
+     {
+      "group": "dev",
+      "label": "Developer & infrastructure",
+      "short": "Dev & infrastructure",
+      "n": 10,
+      "readable": 7,
+      "yes": 4,
+      "no": 3,
+      "unreadable": 3,
+      "share": 57.1,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "cloudflare",
+         "name": "Cloudflare"
+        },
+        {
+         "slug": "elastic",
+         "name": "Elastic"
+        },
+        {
+         "slug": "netlify",
+         "name": "Netlify"
+        },
+        {
+         "slug": "vanta",
+         "name": "Vanta"
+        }
+       ],
+       "no": [
+        {
+         "slug": "launchdarkly",
+         "name": "LaunchDarkly"
+        },
+        {
+         "slug": "supabase",
+         "name": "Supabase"
+        },
+        {
+         "slug": "vercel",
+         "name": "Vercel"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "datadog",
+         "name": "Datadog"
+        },
+        {
+         "slug": "sentry",
+         "name": "Sentry"
+        },
+        {
+         "slug": "twilio",
+         "name": "Twilio"
+        }
+       ]
+      }
+     },
+     {
+      "group": "data",
+      "label": "Data & analytics",
+      "short": "Data & analytics",
+      "n": 12,
+      "readable": 10,
+      "yes": 5,
+      "no": 5,
+      "unreadable": 2,
+      "share": 50,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "amplitude",
+         "name": "Amplitude"
+        },
+        {
+         "slug": "fivetran",
+         "name": "Fivetran"
+        },
+        {
+         "slug": "mixpanel",
+         "name": "Mixpanel"
+        },
+        {
+         "slug": "mongodb",
+         "name": "MongoDB"
+        },
+        {
+         "slug": "pendo",
+         "name": "Pendo"
+        }
+       ],
+       "no": [
+        {
+         "slug": "databricks",
+         "name": "Databricks"
+        },
+        {
+         "slug": "dbt-labs",
+         "name": "dbt Labs"
+        },
+        {
+         "slug": "hightouch",
+         "name": "Hightouch"
+        },
+        {
+         "slug": "metabase",
+         "name": "Metabase"
+        },
+        {
+         "slug": "posthog",
+         "name": "PostHog"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "segment",
+         "name": "Segment"
+        },
+        {
+         "slug": "snowflake",
+         "name": "Snowflake"
+        }
+       ]
+      }
+     },
+     {
+      "group": "work",
+      "label": "Work & product",
+      "short": "Work & product",
+      "n": 16,
+      "readable": 14,
+      "yes": 10,
+      "no": 4,
+      "unreadable": 2,
+      "share": 71.4,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
+        {
+         "slug": "calendly",
+         "name": "Calendly"
+        },
+        {
+         "slug": "clickup",
+         "name": "ClickUp"
+        },
+        {
+         "slug": "github",
+         "name": "GitHub"
+        },
+        {
+         "slug": "gitlab",
+         "name": "GitLab"
+        },
+        {
+         "slug": "monday",
+         "name": "monday.com"
+        },
+        {
+         "slug": "notion",
+         "name": "Notion"
+        },
+        {
+         "slug": "retool",
+         "name": "Retool"
+        },
+        {
+         "slug": "slack",
+         "name": "Slack"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
+        }
+       ],
+       "no": [
+        {
+         "slug": "asana",
+         "name": "Asana"
+        },
+        {
+         "slug": "figma",
+         "name": "Figma"
+        },
+        {
+         "slug": "loom",
+         "name": "Loom"
+        },
+        {
+         "slug": "miro",
+         "name": "Miro"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "atlassian",
+         "name": "Atlassian"
+        },
+        {
+         "slug": "linear",
+         "name": "Linear"
+        }
+       ]
+      }
+     },
+     {
+      "group": "gtm",
+      "label": "Go-to-market & support",
+      "short": "Go-to-market",
+      "n": 15,
+      "readable": 15,
+      "yes": 13,
+      "no": 2,
+      "unreadable": 0,
+      "share": 86.7,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "apollo",
+         "name": "Apollo.io"
+        },
+        {
+         "slug": "attio",
+         "name": "Attio"
+        },
+        {
+         "slug": "braze",
+         "name": "Braze"
+        },
+        {
+         "slug": "contentful",
+         "name": "Contentful"
+        },
+        {
+         "slug": "customer-io",
+         "name": "Customer.io"
+        },
+        {
+         "slug": "front",
+         "name": "Front"
+        },
+        {
+         "slug": "gong",
+         "name": "Gong"
+        },
+        {
+         "slug": "hubspot",
+         "name": "HubSpot"
+        },
+        {
+         "slug": "intercom",
+         "name": "Intercom"
+        },
+        {
+         "slug": "klaviyo",
+         "name": "Klaviyo"
+        },
+        {
+         "slug": "typeform",
+         "name": "Typeform"
+        },
+        {
+         "slug": "webflow",
+         "name": "Webflow"
+        },
+        {
+         "slug": "zendesk",
+         "name": "Zendesk"
+        }
+       ],
+       "no": [
+        {
+         "slug": "clay",
+         "name": "Clay"
+        },
+        {
+         "slug": "pipedrive",
+         "name": "Pipedrive"
+        }
+       ],
+       "unreadable": []
+      }
+     },
+     {
+      "group": "ops",
+      "label": "Finance & people ops",
+      "short": "Finance & people",
+      "n": 7,
+      "readable": 6,
+      "yes": 3,
+      "no": 3,
+      "unreadable": 1,
+      "share": 50,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "bill",
+         "name": "BILL"
+        },
+        {
+         "slug": "lattice",
+         "name": "Lattice"
+        },
+        {
+         "slug": "stripe",
+         "name": "Stripe"
+        }
+       ],
+       "no": [
+        {
+         "slug": "brex",
+         "name": "Brex"
+        },
+        {
+         "slug": "deel",
+         "name": "Deel"
+        },
+        {
+         "slug": "rippling",
+         "name": "Rippling"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "ramp",
+         "name": "Ramp"
+        }
+       ]
+      }
+     }
+    ],
+    "ranked": [
+     {
+      "group": "gtm",
+      "label": "Go-to-market & support",
+      "short": "Go-to-market",
+      "n": 15,
+      "readable": 15,
+      "yes": 13,
+      "no": 2,
+      "unreadable": 0,
+      "share": 86.7,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "apollo",
+         "name": "Apollo.io"
+        },
+        {
+         "slug": "attio",
+         "name": "Attio"
+        },
+        {
+         "slug": "braze",
+         "name": "Braze"
+        },
+        {
+         "slug": "contentful",
+         "name": "Contentful"
+        },
+        {
+         "slug": "customer-io",
+         "name": "Customer.io"
+        },
+        {
+         "slug": "front",
+         "name": "Front"
+        },
+        {
+         "slug": "gong",
+         "name": "Gong"
+        },
+        {
+         "slug": "hubspot",
+         "name": "HubSpot"
+        },
+        {
+         "slug": "intercom",
+         "name": "Intercom"
+        },
+        {
+         "slug": "klaviyo",
+         "name": "Klaviyo"
+        },
+        {
+         "slug": "typeform",
+         "name": "Typeform"
+        },
+        {
+         "slug": "webflow",
+         "name": "Webflow"
+        },
+        {
+         "slug": "zendesk",
+         "name": "Zendesk"
+        }
+       ],
+       "no": [
+        {
+         "slug": "clay",
+         "name": "Clay"
+        },
+        {
+         "slug": "pipedrive",
+         "name": "Pipedrive"
+        }
+       ],
+       "unreadable": []
+      }
+     },
+     {
+      "group": "work",
+      "label": "Work & product",
+      "short": "Work & product",
+      "n": 16,
+      "readable": 14,
+      "yes": 10,
+      "no": 4,
+      "unreadable": 2,
+      "share": 71.4,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
+        {
+         "slug": "calendly",
+         "name": "Calendly"
+        },
+        {
+         "slug": "clickup",
+         "name": "ClickUp"
+        },
+        {
+         "slug": "github",
+         "name": "GitHub"
+        },
+        {
+         "slug": "gitlab",
+         "name": "GitLab"
+        },
+        {
+         "slug": "monday",
+         "name": "monday.com"
+        },
+        {
+         "slug": "notion",
+         "name": "Notion"
+        },
+        {
+         "slug": "retool",
+         "name": "Retool"
+        },
+        {
+         "slug": "slack",
+         "name": "Slack"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
+        }
+       ],
+       "no": [
+        {
+         "slug": "asana",
+         "name": "Asana"
+        },
+        {
+         "slug": "figma",
+         "name": "Figma"
+        },
+        {
+         "slug": "loom",
+         "name": "Loom"
+        },
+        {
+         "slug": "miro",
+         "name": "Miro"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "atlassian",
+         "name": "Atlassian"
+        },
+        {
+         "slug": "linear",
+         "name": "Linear"
+        }
+       ]
+      }
+     },
+     {
+      "group": "dev",
+      "label": "Developer & infrastructure",
+      "short": "Dev & infrastructure",
+      "n": 10,
+      "readable": 7,
+      "yes": 4,
+      "no": 3,
+      "unreadable": 3,
+      "share": 57.1,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "cloudflare",
+         "name": "Cloudflare"
+        },
+        {
+         "slug": "elastic",
+         "name": "Elastic"
+        },
+        {
+         "slug": "netlify",
+         "name": "Netlify"
+        },
+        {
+         "slug": "vanta",
+         "name": "Vanta"
+        }
+       ],
+       "no": [
+        {
+         "slug": "launchdarkly",
+         "name": "LaunchDarkly"
+        },
+        {
+         "slug": "supabase",
+         "name": "Supabase"
+        },
+        {
+         "slug": "vercel",
+         "name": "Vercel"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "datadog",
+         "name": "Datadog"
+        },
+        {
+         "slug": "sentry",
+         "name": "Sentry"
+        },
+        {
+         "slug": "twilio",
+         "name": "Twilio"
+        }
+       ]
+      }
+     },
+     {
+      "group": "data",
+      "label": "Data & analytics",
+      "short": "Data & analytics",
+      "n": 12,
+      "readable": 10,
+      "yes": 5,
+      "no": 5,
+      "unreadable": 2,
+      "share": 50,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "amplitude",
+         "name": "Amplitude"
+        },
+        {
+         "slug": "fivetran",
+         "name": "Fivetran"
+        },
+        {
+         "slug": "mixpanel",
+         "name": "Mixpanel"
+        },
+        {
+         "slug": "mongodb",
+         "name": "MongoDB"
+        },
+        {
+         "slug": "pendo",
+         "name": "Pendo"
+        }
+       ],
+       "no": [
+        {
+         "slug": "databricks",
+         "name": "Databricks"
+        },
+        {
+         "slug": "dbt-labs",
+         "name": "dbt Labs"
+        },
+        {
+         "slug": "hightouch",
+         "name": "Hightouch"
+        },
+        {
+         "slug": "metabase",
+         "name": "Metabase"
+        },
+        {
+         "slug": "posthog",
+         "name": "PostHog"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "segment",
+         "name": "Segment"
+        },
+        {
+         "slug": "snowflake",
+         "name": "Snowflake"
+        }
+       ]
+      }
+     },
+     {
+      "group": "ops",
+      "label": "Finance & people ops",
+      "short": "Finance & people",
+      "n": 7,
+      "readable": 6,
+      "yes": 3,
+      "no": 3,
+      "unreadable": 1,
+      "share": 50,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "bill",
+         "name": "BILL"
+        },
+        {
+         "slug": "lattice",
+         "name": "Lattice"
+        },
+        {
+         "slug": "stripe",
+         "name": "Stripe"
+        }
+       ],
+       "no": [
+        {
+         "slug": "brex",
+         "name": "Brex"
+        },
+        {
+         "slug": "deel",
+         "name": "Deel"
+        },
+        {
+         "slug": "rippling",
+         "name": "Rippling"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "ramp",
+         "name": "Ramp"
+        }
+       ]
+      }
+     }
+    ],
+    "top": {
+     "group": "gtm",
+     "label": "Go-to-market & support",
+     "short": "Go-to-market",
+     "n": 15,
+     "readable": 15,
+     "yes": 13,
+     "no": 2,
+     "unreadable": 0,
+     "share": 86.7,
+     "suppressed": false,
+     "companies": {
+      "yes": [
+       {
+        "slug": "apollo",
+        "name": "Apollo.io"
+       },
+       {
+        "slug": "attio",
+        "name": "Attio"
+       },
+       {
+        "slug": "braze",
+        "name": "Braze"
+       },
+       {
+        "slug": "contentful",
+        "name": "Contentful"
+       },
+       {
+        "slug": "customer-io",
+        "name": "Customer.io"
+       },
+       {
+        "slug": "front",
+        "name": "Front"
+       },
+       {
+        "slug": "gong",
+        "name": "Gong"
+       },
+       {
+        "slug": "hubspot",
+        "name": "HubSpot"
+       },
+       {
+        "slug": "intercom",
+        "name": "Intercom"
+       },
+       {
+        "slug": "klaviyo",
+        "name": "Klaviyo"
+       },
+       {
+        "slug": "typeform",
+        "name": "Typeform"
+       },
+       {
+        "slug": "webflow",
+        "name": "Webflow"
+       },
+       {
+        "slug": "zendesk",
+        "name": "Zendesk"
+       }
+      ],
+      "no": [
+       {
+        "slug": "clay",
+        "name": "Clay"
+       },
+       {
+        "slug": "pipedrive",
+        "name": "Pipedrive"
+       }
+      ],
+      "unreadable": []
+     }
+    },
+    "runner_up": {
+     "group": "work",
+     "label": "Work & product",
+     "short": "Work & product",
+     "n": 16,
+     "readable": 14,
+     "yes": 10,
+     "no": 4,
+     "unreadable": 2,
+     "share": 71.4,
+     "suppressed": false,
+     "companies": {
+      "yes": [
+       {
+        "slug": "airtable",
+        "name": "Airtable"
+       },
+       {
+        "slug": "calendly",
+        "name": "Calendly"
+       },
+       {
+        "slug": "clickup",
+        "name": "ClickUp"
+       },
+       {
+        "slug": "github",
+        "name": "GitHub"
+       },
+       {
+        "slug": "gitlab",
+        "name": "GitLab"
+       },
+       {
+        "slug": "monday",
+        "name": "monday.com"
+       },
+       {
+        "slug": "notion",
+        "name": "Notion"
+       },
+       {
+        "slug": "retool",
+        "name": "Retool"
+       },
+       {
+        "slug": "slack",
+        "name": "Slack"
+       },
+       {
+        "slug": "zapier",
+        "name": "Zapier"
+       }
+      ],
+      "no": [
+       {
+        "slug": "asana",
+        "name": "Asana"
+       },
+       {
+        "slug": "figma",
+        "name": "Figma"
+       },
+       {
+        "slug": "loom",
+        "name": "Loom"
+       },
+       {
+        "slug": "miro",
+        "name": "Miro"
+       }
+      ],
+      "unreadable": [
+       {
+        "slug": "atlassian",
+        "name": "Atlassian"
+       },
+       {
+        "slug": "linear",
+        "name": "Linear"
+       }
+      ]
+     }
+    },
+    "bottom": {
+     "group": "ops",
+     "label": "Finance & people ops",
+     "short": "Finance & people",
+     "n": 7,
+     "readable": 6,
+     "yes": 3,
+     "no": 3,
+     "unreadable": 1,
+     "share": 50,
+     "suppressed": false,
+     "companies": {
+      "yes": [
+       {
+        "slug": "bill",
+        "name": "BILL"
+       },
+       {
+        "slug": "lattice",
+        "name": "Lattice"
+       },
+       {
+        "slug": "stripe",
+        "name": "Stripe"
+       }
+      ],
+      "no": [
+       {
+        "slug": "brex",
+        "name": "Brex"
+       },
+       {
+        "slug": "deel",
+        "name": "Deel"
+       },
+       {
+        "slug": "rippling",
+        "name": "Rippling"
+       }
+      ],
+      "unreadable": [
+       {
+        "slug": "ramp",
+        "name": "Ramp"
+       }
+      ]
+     }
+    },
+    "spread": 3,
+    "lead_over_runner_up": 3,
+    "drawn": true,
+    "withheld": null,
+    "overall": {
+     "yes": 35,
+     "no": 17,
+     "unreadable": 8,
+     "readable": 52,
+     "tracked": 60
+    }
+   },
+   {
+    "key": "proof-money",
+    "label": "Proves with money amounts",
+    "subject": "money amounts as proof",
+    "denominator": "companies with at least one quantified claim we can read",
+    "cells": [
+     {
+      "group": "dev",
+      "label": "Developer & infrastructure",
+      "short": "Dev & infrastructure",
+      "n": 10,
+      "readable": 7,
+      "yes": 1,
+      "no": 6,
+      "unreadable": 3,
+      "share": 14.3,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "cloudflare",
+         "name": "Cloudflare"
+        }
+       ],
+       "no": [
+        {
+         "slug": "elastic",
+         "name": "Elastic"
+        },
+        {
+         "slug": "launchdarkly",
+         "name": "LaunchDarkly"
+        },
+        {
+         "slug": "netlify",
+         "name": "Netlify"
+        },
+        {
+         "slug": "supabase",
+         "name": "Supabase"
+        },
+        {
+         "slug": "vanta",
+         "name": "Vanta"
+        },
+        {
+         "slug": "vercel",
+         "name": "Vercel"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "datadog",
+         "name": "Datadog"
+        },
+        {
+         "slug": "sentry",
+         "name": "Sentry"
+        },
+        {
+         "slug": "twilio",
+         "name": "Twilio"
+        }
+       ]
+      }
+     },
+     {
+      "group": "data",
+      "label": "Data & analytics",
+      "short": "Data & analytics",
+      "n": 12,
+      "readable": 10,
+      "yes": 3,
+      "no": 7,
+      "unreadable": 2,
+      "share": 30,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "fivetran",
+         "name": "Fivetran"
+        },
+        {
+         "slug": "mixpanel",
+         "name": "Mixpanel"
+        },
+        {
+         "slug": "mongodb",
+         "name": "MongoDB"
+        }
+       ],
+       "no": [
+        {
+         "slug": "amplitude",
+         "name": "Amplitude"
+        },
+        {
+         "slug": "databricks",
+         "name": "Databricks"
+        },
+        {
+         "slug": "dbt-labs",
+         "name": "dbt Labs"
+        },
+        {
+         "slug": "hightouch",
+         "name": "Hightouch"
+        },
+        {
+         "slug": "metabase",
+         "name": "Metabase"
+        },
+        {
+         "slug": "pendo",
+         "name": "Pendo"
+        },
+        {
+         "slug": "posthog",
+         "name": "PostHog"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "segment",
+         "name": "Segment"
+        },
+        {
+         "slug": "snowflake",
+         "name": "Snowflake"
+        }
+       ]
+      }
+     },
+     {
+      "group": "work",
+      "label": "Work & product",
+      "short": "Work & product",
+      "n": 16,
+      "readable": 14,
+      "yes": 4,
+      "no": 10,
+      "unreadable": 2,
+      "share": 28.6,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "clickup",
+         "name": "ClickUp"
+        },
+        {
+         "slug": "monday",
+         "name": "monday.com"
+        },
+        {
+         "slug": "retool",
+         "name": "Retool"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
+        }
+       ],
+       "no": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
+        {
+         "slug": "asana",
+         "name": "Asana"
+        },
+        {
+         "slug": "calendly",
+         "name": "Calendly"
+        },
+        {
+         "slug": "figma",
+         "name": "Figma"
+        },
+        {
+         "slug": "github",
+         "name": "GitHub"
+        },
+        {
+         "slug": "gitlab",
+         "name": "GitLab"
+        },
+        {
+         "slug": "loom",
+         "name": "Loom"
+        },
+        {
+         "slug": "miro",
+         "name": "Miro"
+        },
+        {
+         "slug": "notion",
+         "name": "Notion"
+        },
+        {
+         "slug": "slack",
+         "name": "Slack"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "atlassian",
+         "name": "Atlassian"
+        },
+        {
+         "slug": "linear",
+         "name": "Linear"
+        }
+       ]
+      }
+     },
+     {
+      "group": "gtm",
+      "label": "Go-to-market & support",
+      "short": "Go-to-market",
+      "n": 15,
+      "readable": 15,
+      "yes": 5,
+      "no": 10,
+      "unreadable": 0,
+      "share": 33.3,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "attio",
+         "name": "Attio"
+        },
+        {
+         "slug": "clay",
+         "name": "Clay"
+        },
+        {
+         "slug": "intercom",
+         "name": "Intercom"
+        },
+        {
+         "slug": "typeform",
+         "name": "Typeform"
+        },
+        {
+         "slug": "webflow",
+         "name": "Webflow"
+        }
+       ],
+       "no": [
+        {
+         "slug": "apollo",
+         "name": "Apollo.io"
+        },
+        {
+         "slug": "braze",
+         "name": "Braze"
+        },
+        {
+         "slug": "contentful",
+         "name": "Contentful"
+        },
+        {
+         "slug": "customer-io",
+         "name": "Customer.io"
+        },
+        {
+         "slug": "front",
+         "name": "Front"
+        },
+        {
+         "slug": "gong",
+         "name": "Gong"
+        },
+        {
+         "slug": "hubspot",
+         "name": "HubSpot"
+        },
+        {
+         "slug": "klaviyo",
+         "name": "Klaviyo"
+        },
+        {
+         "slug": "pipedrive",
+         "name": "Pipedrive"
+        },
+        {
+         "slug": "zendesk",
+         "name": "Zendesk"
+        }
+       ],
+       "unreadable": []
+      }
+     },
+     {
+      "group": "ops",
+      "label": "Finance & people ops",
+      "short": "Finance & people",
+      "n": 7,
+      "readable": 6,
+      "yes": 4,
+      "no": 2,
+      "unreadable": 1,
+      "share": 66.7,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "bill",
+         "name": "BILL"
+        },
+        {
+         "slug": "brex",
+         "name": "Brex"
+        },
+        {
+         "slug": "deel",
+         "name": "Deel"
+        },
+        {
+         "slug": "stripe",
+         "name": "Stripe"
+        }
+       ],
+       "no": [
+        {
+         "slug": "lattice",
+         "name": "Lattice"
+        },
+        {
+         "slug": "rippling",
+         "name": "Rippling"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "ramp",
+         "name": "Ramp"
+        }
+       ]
+      }
+     }
+    ],
+    "ranked": [
+     {
+      "group": "ops",
+      "label": "Finance & people ops",
+      "short": "Finance & people",
+      "n": 7,
+      "readable": 6,
+      "yes": 4,
+      "no": 2,
+      "unreadable": 1,
+      "share": 66.7,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "bill",
+         "name": "BILL"
+        },
+        {
+         "slug": "brex",
+         "name": "Brex"
+        },
+        {
+         "slug": "deel",
+         "name": "Deel"
+        },
+        {
+         "slug": "stripe",
+         "name": "Stripe"
+        }
+       ],
+       "no": [
+        {
+         "slug": "lattice",
+         "name": "Lattice"
+        },
+        {
+         "slug": "rippling",
+         "name": "Rippling"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "ramp",
+         "name": "Ramp"
+        }
+       ]
+      }
+     },
+     {
+      "group": "gtm",
+      "label": "Go-to-market & support",
+      "short": "Go-to-market",
+      "n": 15,
+      "readable": 15,
+      "yes": 5,
+      "no": 10,
+      "unreadable": 0,
+      "share": 33.3,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "attio",
+         "name": "Attio"
+        },
+        {
+         "slug": "clay",
+         "name": "Clay"
+        },
+        {
+         "slug": "intercom",
+         "name": "Intercom"
+        },
+        {
+         "slug": "typeform",
+         "name": "Typeform"
+        },
+        {
+         "slug": "webflow",
+         "name": "Webflow"
+        }
+       ],
+       "no": [
+        {
+         "slug": "apollo",
+         "name": "Apollo.io"
+        },
+        {
+         "slug": "braze",
+         "name": "Braze"
+        },
+        {
+         "slug": "contentful",
+         "name": "Contentful"
+        },
+        {
+         "slug": "customer-io",
+         "name": "Customer.io"
+        },
+        {
+         "slug": "front",
+         "name": "Front"
+        },
+        {
+         "slug": "gong",
+         "name": "Gong"
+        },
+        {
+         "slug": "hubspot",
+         "name": "HubSpot"
+        },
+        {
+         "slug": "klaviyo",
+         "name": "Klaviyo"
+        },
+        {
+         "slug": "pipedrive",
+         "name": "Pipedrive"
+        },
+        {
+         "slug": "zendesk",
+         "name": "Zendesk"
+        }
+       ],
+       "unreadable": []
+      }
+     },
+     {
+      "group": "data",
+      "label": "Data & analytics",
+      "short": "Data & analytics",
+      "n": 12,
+      "readable": 10,
+      "yes": 3,
+      "no": 7,
+      "unreadable": 2,
+      "share": 30,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "fivetran",
+         "name": "Fivetran"
+        },
+        {
+         "slug": "mixpanel",
+         "name": "Mixpanel"
+        },
+        {
+         "slug": "mongodb",
+         "name": "MongoDB"
+        }
+       ],
+       "no": [
+        {
+         "slug": "amplitude",
+         "name": "Amplitude"
+        },
+        {
+         "slug": "databricks",
+         "name": "Databricks"
+        },
+        {
+         "slug": "dbt-labs",
+         "name": "dbt Labs"
+        },
+        {
+         "slug": "hightouch",
+         "name": "Hightouch"
+        },
+        {
+         "slug": "metabase",
+         "name": "Metabase"
+        },
+        {
+         "slug": "pendo",
+         "name": "Pendo"
+        },
+        {
+         "slug": "posthog",
+         "name": "PostHog"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "segment",
+         "name": "Segment"
+        },
+        {
+         "slug": "snowflake",
+         "name": "Snowflake"
+        }
+       ]
+      }
+     },
+     {
+      "group": "work",
+      "label": "Work & product",
+      "short": "Work & product",
+      "n": 16,
+      "readable": 14,
+      "yes": 4,
+      "no": 10,
+      "unreadable": 2,
+      "share": 28.6,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "clickup",
+         "name": "ClickUp"
+        },
+        {
+         "slug": "monday",
+         "name": "monday.com"
+        },
+        {
+         "slug": "retool",
+         "name": "Retool"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
+        }
+       ],
+       "no": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
+        {
+         "slug": "asana",
+         "name": "Asana"
+        },
+        {
+         "slug": "calendly",
+         "name": "Calendly"
+        },
+        {
+         "slug": "figma",
+         "name": "Figma"
+        },
+        {
+         "slug": "github",
+         "name": "GitHub"
+        },
+        {
+         "slug": "gitlab",
+         "name": "GitLab"
+        },
+        {
+         "slug": "loom",
+         "name": "Loom"
+        },
+        {
+         "slug": "miro",
+         "name": "Miro"
+        },
+        {
+         "slug": "notion",
+         "name": "Notion"
+        },
+        {
+         "slug": "slack",
+         "name": "Slack"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "atlassian",
+         "name": "Atlassian"
+        },
+        {
+         "slug": "linear",
+         "name": "Linear"
+        }
+       ]
+      }
+     },
+     {
+      "group": "dev",
+      "label": "Developer & infrastructure",
+      "short": "Dev & infrastructure",
+      "n": 10,
+      "readable": 7,
+      "yes": 1,
+      "no": 6,
+      "unreadable": 3,
+      "share": 14.3,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "cloudflare",
+         "name": "Cloudflare"
+        }
+       ],
+       "no": [
+        {
+         "slug": "elastic",
+         "name": "Elastic"
+        },
+        {
+         "slug": "launchdarkly",
+         "name": "LaunchDarkly"
+        },
+        {
+         "slug": "netlify",
+         "name": "Netlify"
+        },
+        {
+         "slug": "supabase",
+         "name": "Supabase"
+        },
+        {
+         "slug": "vanta",
+         "name": "Vanta"
+        },
+        {
+         "slug": "vercel",
+         "name": "Vercel"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "datadog",
+         "name": "Datadog"
+        },
+        {
+         "slug": "sentry",
+         "name": "Sentry"
+        },
+        {
+         "slug": "twilio",
+         "name": "Twilio"
+        }
+       ]
+      }
+     }
+    ],
+    "top": {
+     "group": "ops",
+     "label": "Finance & people ops",
+     "short": "Finance & people",
+     "n": 7,
+     "readable": 6,
+     "yes": 4,
+     "no": 2,
+     "unreadable": 1,
+     "share": 66.7,
+     "suppressed": false,
+     "companies": {
+      "yes": [
+       {
+        "slug": "bill",
+        "name": "BILL"
+       },
+       {
+        "slug": "brex",
+        "name": "Brex"
+       },
+       {
+        "slug": "deel",
+        "name": "Deel"
+       },
+       {
+        "slug": "stripe",
+        "name": "Stripe"
+       }
+      ],
+      "no": [
+       {
+        "slug": "lattice",
+        "name": "Lattice"
+       },
+       {
+        "slug": "rippling",
+        "name": "Rippling"
+       }
+      ],
+      "unreadable": [
+       {
+        "slug": "ramp",
+        "name": "Ramp"
+       }
+      ]
+     }
+    },
+    "runner_up": {
+     "group": "gtm",
+     "label": "Go-to-market & support",
+     "short": "Go-to-market",
+     "n": 15,
+     "readable": 15,
+     "yes": 5,
+     "no": 10,
+     "unreadable": 0,
+     "share": 33.3,
+     "suppressed": false,
+     "companies": {
+      "yes": [
+       {
+        "slug": "attio",
+        "name": "Attio"
+       },
+       {
+        "slug": "clay",
+        "name": "Clay"
+       },
+       {
+        "slug": "intercom",
+        "name": "Intercom"
+       },
+       {
+        "slug": "typeform",
+        "name": "Typeform"
+       },
+       {
+        "slug": "webflow",
+        "name": "Webflow"
+       }
+      ],
+      "no": [
+       {
+        "slug": "apollo",
+        "name": "Apollo.io"
+       },
+       {
+        "slug": "braze",
+        "name": "Braze"
+       },
+       {
+        "slug": "contentful",
+        "name": "Contentful"
+       },
+       {
+        "slug": "customer-io",
+        "name": "Customer.io"
+       },
+       {
+        "slug": "front",
+        "name": "Front"
+       },
+       {
+        "slug": "gong",
+        "name": "Gong"
+       },
+       {
+        "slug": "hubspot",
+        "name": "HubSpot"
+       },
+       {
+        "slug": "klaviyo",
+        "name": "Klaviyo"
+       },
+       {
+        "slug": "pipedrive",
+        "name": "Pipedrive"
+       },
+       {
+        "slug": "zendesk",
+        "name": "Zendesk"
+       }
+      ],
+      "unreadable": []
+     }
+    },
+    "bottom": {
+     "group": "dev",
+     "label": "Developer & infrastructure",
+     "short": "Dev & infrastructure",
+     "n": 10,
+     "readable": 7,
+     "yes": 1,
+     "no": 6,
+     "unreadable": 3,
+     "share": 14.3,
+     "suppressed": false,
+     "companies": {
+      "yes": [
+       {
+        "slug": "cloudflare",
+        "name": "Cloudflare"
+       }
+      ],
+      "no": [
+       {
+        "slug": "elastic",
+        "name": "Elastic"
+       },
+       {
+        "slug": "launchdarkly",
+        "name": "LaunchDarkly"
+       },
+       {
+        "slug": "netlify",
+        "name": "Netlify"
+       },
+       {
+        "slug": "supabase",
+        "name": "Supabase"
+       },
+       {
+        "slug": "vanta",
+        "name": "Vanta"
+       },
+       {
+        "slug": "vercel",
+        "name": "Vercel"
+       }
+      ],
+      "unreadable": [
+       {
+        "slug": "datadog",
+        "name": "Datadog"
+       },
+       {
+        "slug": "sentry",
+        "name": "Sentry"
+       },
+       {
+        "slug": "twilio",
+        "name": "Twilio"
+       }
+      ]
+     }
+    },
+    "spread": 4,
+    "lead_over_runner_up": 5,
+    "drawn": true,
+    "withheld": null,
+    "overall": {
+     "yes": 17,
+     "no": 35,
+     "unreadable": 8,
+     "readable": 52,
+     "tracked": 60
+    }
+   },
+   {
+    "key": "proof-multiplier",
+    "label": "Proves with multipliers",
+    "subject": "multipliers as proof",
+    "denominator": "companies with at least one quantified claim we can read",
+    "cells": [
+     {
+      "group": "dev",
+      "label": "Developer & infrastructure",
+      "short": "Dev & infrastructure",
+      "n": 10,
+      "readable": 7,
+      "yes": 2,
+      "no": 5,
+      "unreadable": 3,
+      "share": 28.6,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "cloudflare",
+         "name": "Cloudflare"
+        },
+        {
+         "slug": "elastic",
+         "name": "Elastic"
+        }
+       ],
+       "no": [
+        {
+         "slug": "launchdarkly",
+         "name": "LaunchDarkly"
+        },
+        {
+         "slug": "netlify",
+         "name": "Netlify"
+        },
+        {
+         "slug": "supabase",
+         "name": "Supabase"
+        },
+        {
+         "slug": "vanta",
+         "name": "Vanta"
+        },
+        {
+         "slug": "vercel",
+         "name": "Vercel"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "datadog",
+         "name": "Datadog"
+        },
+        {
+         "slug": "sentry",
+         "name": "Sentry"
+        },
+        {
+         "slug": "twilio",
+         "name": "Twilio"
+        }
+       ]
+      }
+     },
+     {
+      "group": "data",
+      "label": "Data & analytics",
+      "short": "Data & analytics",
+      "n": 12,
+      "readable": 10,
+      "yes": 3,
+      "no": 7,
+      "unreadable": 2,
+      "share": 30,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "dbt-labs",
+         "name": "dbt Labs"
+        },
+        {
+         "slug": "mongodb",
+         "name": "MongoDB"
+        },
+        {
+         "slug": "pendo",
+         "name": "Pendo"
+        }
+       ],
+       "no": [
+        {
+         "slug": "amplitude",
+         "name": "Amplitude"
+        },
+        {
+         "slug": "databricks",
+         "name": "Databricks"
+        },
+        {
+         "slug": "fivetran",
+         "name": "Fivetran"
+        },
+        {
+         "slug": "hightouch",
+         "name": "Hightouch"
+        },
+        {
+         "slug": "metabase",
+         "name": "Metabase"
+        },
+        {
+         "slug": "mixpanel",
+         "name": "Mixpanel"
+        },
+        {
+         "slug": "posthog",
+         "name": "PostHog"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "segment",
+         "name": "Segment"
+        },
+        {
+         "slug": "snowflake",
+         "name": "Snowflake"
+        }
+       ]
+      }
+     },
+     {
+      "group": "work",
+      "label": "Work & product",
+      "short": "Work & product",
+      "n": 16,
+      "readable": 14,
+      "yes": 4,
+      "no": 10,
+      "unreadable": 2,
+      "share": 28.6,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "gitlab",
+         "name": "GitLab"
+        },
+        {
+         "slug": "miro",
+         "name": "Miro"
+        },
+        {
+         "slug": "retool",
+         "name": "Retool"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
+        }
+       ],
+       "no": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
+        {
+         "slug": "asana",
+         "name": "Asana"
+        },
+        {
+         "slug": "calendly",
+         "name": "Calendly"
+        },
+        {
+         "slug": "clickup",
+         "name": "ClickUp"
+        },
+        {
+         "slug": "figma",
+         "name": "Figma"
+        },
+        {
+         "slug": "github",
+         "name": "GitHub"
+        },
+        {
+         "slug": "loom",
+         "name": "Loom"
+        },
+        {
+         "slug": "monday",
+         "name": "monday.com"
+        },
+        {
+         "slug": "notion",
+         "name": "Notion"
+        },
+        {
+         "slug": "slack",
+         "name": "Slack"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "atlassian",
+         "name": "Atlassian"
+        },
+        {
+         "slug": "linear",
+         "name": "Linear"
+        }
+       ]
+      }
+     },
+     {
+      "group": "gtm",
+      "label": "Go-to-market & support",
+      "short": "Go-to-market",
+      "n": 15,
+      "readable": 15,
+      "yes": 4,
+      "no": 11,
+      "unreadable": 0,
+      "share": 26.7,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "contentful",
+         "name": "Contentful"
+        },
+        {
+         "slug": "typeform",
+         "name": "Typeform"
+        },
+        {
+         "slug": "webflow",
+         "name": "Webflow"
+        },
+        {
+         "slug": "zendesk",
+         "name": "Zendesk"
+        }
+       ],
+       "no": [
+        {
+         "slug": "apollo",
+         "name": "Apollo.io"
+        },
+        {
+         "slug": "attio",
+         "name": "Attio"
+        },
+        {
+         "slug": "braze",
+         "name": "Braze"
+        },
+        {
+         "slug": "clay",
+         "name": "Clay"
+        },
+        {
+         "slug": "customer-io",
+         "name": "Customer.io"
+        },
+        {
+         "slug": "front",
+         "name": "Front"
+        },
+        {
+         "slug": "gong",
+         "name": "Gong"
+        },
+        {
+         "slug": "hubspot",
+         "name": "HubSpot"
+        },
+        {
+         "slug": "intercom",
+         "name": "Intercom"
+        },
+        {
+         "slug": "klaviyo",
+         "name": "Klaviyo"
+        },
+        {
+         "slug": "pipedrive",
+         "name": "Pipedrive"
+        }
+       ],
+       "unreadable": []
+      }
+     },
+     {
+      "group": "ops",
+      "label": "Finance & people ops",
+      "short": "Finance & people",
+      "n": 7,
+      "readable": 6,
+      "yes": 2,
+      "no": 4,
+      "unreadable": 1,
+      "share": 33.3,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "brex",
+         "name": "Brex"
+        },
+        {
+         "slug": "lattice",
+         "name": "Lattice"
+        }
+       ],
+       "no": [
+        {
+         "slug": "bill",
+         "name": "BILL"
+        },
+        {
+         "slug": "deel",
+         "name": "Deel"
+        },
+        {
+         "slug": "rippling",
+         "name": "Rippling"
+        },
+        {
+         "slug": "stripe",
+         "name": "Stripe"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "ramp",
+         "name": "Ramp"
+        }
+       ]
+      }
+     }
+    ],
+    "ranked": [
+     {
+      "group": "ops",
+      "label": "Finance & people ops",
+      "short": "Finance & people",
+      "n": 7,
+      "readable": 6,
+      "yes": 2,
+      "no": 4,
+      "unreadable": 1,
+      "share": 33.3,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "brex",
+         "name": "Brex"
+        },
+        {
+         "slug": "lattice",
+         "name": "Lattice"
+        }
+       ],
+       "no": [
+        {
+         "slug": "bill",
+         "name": "BILL"
+        },
+        {
+         "slug": "deel",
+         "name": "Deel"
+        },
+        {
+         "slug": "rippling",
+         "name": "Rippling"
+        },
+        {
+         "slug": "stripe",
+         "name": "Stripe"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "ramp",
+         "name": "Ramp"
+        }
+       ]
+      }
+     },
+     {
+      "group": "data",
+      "label": "Data & analytics",
+      "short": "Data & analytics",
+      "n": 12,
+      "readable": 10,
+      "yes": 3,
+      "no": 7,
+      "unreadable": 2,
+      "share": 30,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "dbt-labs",
+         "name": "dbt Labs"
+        },
+        {
+         "slug": "mongodb",
+         "name": "MongoDB"
+        },
+        {
+         "slug": "pendo",
+         "name": "Pendo"
+        }
+       ],
+       "no": [
+        {
+         "slug": "amplitude",
+         "name": "Amplitude"
+        },
+        {
+         "slug": "databricks",
+         "name": "Databricks"
+        },
+        {
+         "slug": "fivetran",
+         "name": "Fivetran"
+        },
+        {
+         "slug": "hightouch",
+         "name": "Hightouch"
+        },
+        {
+         "slug": "metabase",
+         "name": "Metabase"
+        },
+        {
+         "slug": "mixpanel",
+         "name": "Mixpanel"
+        },
+        {
+         "slug": "posthog",
+         "name": "PostHog"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "segment",
+         "name": "Segment"
+        },
+        {
+         "slug": "snowflake",
+         "name": "Snowflake"
+        }
+       ]
+      }
+     },
+     {
+      "group": "dev",
+      "label": "Developer & infrastructure",
+      "short": "Dev & infrastructure",
+      "n": 10,
+      "readable": 7,
+      "yes": 2,
+      "no": 5,
+      "unreadable": 3,
+      "share": 28.6,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "cloudflare",
+         "name": "Cloudflare"
+        },
+        {
+         "slug": "elastic",
+         "name": "Elastic"
+        }
+       ],
+       "no": [
+        {
+         "slug": "launchdarkly",
+         "name": "LaunchDarkly"
+        },
+        {
+         "slug": "netlify",
+         "name": "Netlify"
+        },
+        {
+         "slug": "supabase",
+         "name": "Supabase"
+        },
+        {
+         "slug": "vanta",
+         "name": "Vanta"
+        },
+        {
+         "slug": "vercel",
+         "name": "Vercel"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "datadog",
+         "name": "Datadog"
+        },
+        {
+         "slug": "sentry",
+         "name": "Sentry"
+        },
+        {
+         "slug": "twilio",
+         "name": "Twilio"
+        }
+       ]
+      }
+     },
+     {
+      "group": "work",
+      "label": "Work & product",
+      "short": "Work & product",
+      "n": 16,
+      "readable": 14,
+      "yes": 4,
+      "no": 10,
+      "unreadable": 2,
+      "share": 28.6,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "gitlab",
+         "name": "GitLab"
+        },
+        {
+         "slug": "miro",
+         "name": "Miro"
+        },
+        {
+         "slug": "retool",
+         "name": "Retool"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
+        }
+       ],
+       "no": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
+        {
+         "slug": "asana",
+         "name": "Asana"
+        },
+        {
+         "slug": "calendly",
+         "name": "Calendly"
+        },
+        {
+         "slug": "clickup",
+         "name": "ClickUp"
+        },
+        {
+         "slug": "figma",
+         "name": "Figma"
+        },
+        {
+         "slug": "github",
+         "name": "GitHub"
+        },
+        {
+         "slug": "loom",
+         "name": "Loom"
+        },
+        {
+         "slug": "monday",
+         "name": "monday.com"
+        },
+        {
+         "slug": "notion",
+         "name": "Notion"
+        },
+        {
+         "slug": "slack",
+         "name": "Slack"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "atlassian",
+         "name": "Atlassian"
+        },
+        {
+         "slug": "linear",
+         "name": "Linear"
+        }
+       ]
+      }
+     },
+     {
+      "group": "gtm",
+      "label": "Go-to-market & support",
+      "short": "Go-to-market",
+      "n": 15,
+      "readable": 15,
+      "yes": 4,
+      "no": 11,
+      "unreadable": 0,
+      "share": 26.7,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "contentful",
+         "name": "Contentful"
+        },
+        {
+         "slug": "typeform",
+         "name": "Typeform"
+        },
+        {
+         "slug": "webflow",
+         "name": "Webflow"
+        },
+        {
+         "slug": "zendesk",
+         "name": "Zendesk"
+        }
+       ],
+       "no": [
+        {
+         "slug": "apollo",
+         "name": "Apollo.io"
+        },
+        {
+         "slug": "attio",
+         "name": "Attio"
+        },
+        {
+         "slug": "braze",
+         "name": "Braze"
+        },
+        {
+         "slug": "clay",
+         "name": "Clay"
+        },
+        {
+         "slug": "customer-io",
+         "name": "Customer.io"
+        },
+        {
+         "slug": "front",
+         "name": "Front"
+        },
+        {
+         "slug": "gong",
+         "name": "Gong"
+        },
+        {
+         "slug": "hubspot",
+         "name": "HubSpot"
+        },
+        {
+         "slug": "intercom",
+         "name": "Intercom"
+        },
+        {
+         "slug": "klaviyo",
+         "name": "Klaviyo"
+        },
+        {
+         "slug": "pipedrive",
+         "name": "Pipedrive"
+        }
+       ],
+       "unreadable": []
+      }
+     }
+    ],
+    "top": {
+     "group": "ops",
+     "label": "Finance & people ops",
+     "short": "Finance & people",
+     "n": 7,
+     "readable": 6,
+     "yes": 2,
+     "no": 4,
+     "unreadable": 1,
+     "share": 33.3,
+     "suppressed": false,
+     "companies": {
+      "yes": [
+       {
+        "slug": "brex",
+        "name": "Brex"
+       },
+       {
+        "slug": "lattice",
+        "name": "Lattice"
+       }
+      ],
+      "no": [
+       {
+        "slug": "bill",
+        "name": "BILL"
+       },
+       {
+        "slug": "deel",
+        "name": "Deel"
+       },
+       {
+        "slug": "rippling",
+        "name": "Rippling"
+       },
+       {
+        "slug": "stripe",
+        "name": "Stripe"
+       }
+      ],
+      "unreadable": [
+       {
+        "slug": "ramp",
+        "name": "Ramp"
+       }
+      ]
+     }
+    },
+    "runner_up": {
+     "group": "data",
+     "label": "Data & analytics",
+     "short": "Data & analytics",
+     "n": 12,
+     "readable": 10,
+     "yes": 3,
+     "no": 7,
+     "unreadable": 2,
+     "share": 30,
+     "suppressed": false,
+     "companies": {
+      "yes": [
+       {
+        "slug": "dbt-labs",
+        "name": "dbt Labs"
+       },
+       {
+        "slug": "mongodb",
+        "name": "MongoDB"
+       },
+       {
+        "slug": "pendo",
+        "name": "Pendo"
+       }
+      ],
+      "no": [
+       {
+        "slug": "amplitude",
+        "name": "Amplitude"
+       },
+       {
+        "slug": "databricks",
+        "name": "Databricks"
+       },
+       {
+        "slug": "fivetran",
+        "name": "Fivetran"
+       },
+       {
+        "slug": "hightouch",
+        "name": "Hightouch"
+       },
+       {
+        "slug": "metabase",
+        "name": "Metabase"
+       },
+       {
+        "slug": "mixpanel",
+        "name": "Mixpanel"
+       },
+       {
+        "slug": "posthog",
+        "name": "PostHog"
+       }
+      ],
+      "unreadable": [
+       {
+        "slug": "segment",
+        "name": "Segment"
+       },
+       {
+        "slug": "snowflake",
+        "name": "Snowflake"
+       }
+      ]
+     }
+    },
+    "bottom": {
+     "group": "gtm",
+     "label": "Go-to-market & support",
+     "short": "Go-to-market",
+     "n": 15,
+     "readable": 15,
+     "yes": 4,
+     "no": 11,
+     "unreadable": 0,
+     "share": 26.7,
+     "suppressed": false,
+     "companies": {
+      "yes": [
+       {
+        "slug": "contentful",
+        "name": "Contentful"
+       },
+       {
+        "slug": "typeform",
+        "name": "Typeform"
+       },
+       {
+        "slug": "webflow",
+        "name": "Webflow"
+       },
+       {
+        "slug": "zendesk",
+        "name": "Zendesk"
+       }
+      ],
+      "no": [
+       {
+        "slug": "apollo",
+        "name": "Apollo.io"
+       },
+       {
+        "slug": "attio",
+        "name": "Attio"
+       },
+       {
+        "slug": "braze",
+        "name": "Braze"
+       },
+       {
+        "slug": "clay",
+        "name": "Clay"
+       },
+       {
+        "slug": "customer-io",
+        "name": "Customer.io"
+       },
+       {
+        "slug": "front",
+        "name": "Front"
+       },
+       {
+        "slug": "gong",
+        "name": "Gong"
+       },
+       {
+        "slug": "hubspot",
+        "name": "HubSpot"
+       },
+       {
+        "slug": "intercom",
+        "name": "Intercom"
+       },
+       {
+        "slug": "klaviyo",
+        "name": "Klaviyo"
+       },
+       {
+        "slug": "pipedrive",
+        "name": "Pipedrive"
+       }
+      ],
+      "unreadable": []
+     }
+    },
+    "spread": 1,
+    "lead_over_runner_up": 1,
+    "drawn": false,
+    "withheld": {
+     "rule": "flat",
+     "spread": 1
+    },
+    "overall": {
+     "yes": 15,
+     "no": 37,
+     "unreadable": 8,
+     "readable": 52,
+     "tracked": 60
+    }
+   },
+   {
+    "key": "proof-rank",
+    "label": "Proves with rankings and lists",
+    "subject": "rankings and lists as proof",
+    "denominator": "companies with at least one quantified claim we can read",
+    "cells": [
+     {
+      "group": "dev",
+      "label": "Developer & infrastructure",
+      "short": "Dev & infrastructure",
+      "n": 10,
+      "readable": 7,
+      "yes": 2,
+      "no": 5,
+      "unreadable": 3,
+      "share": 28.6,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "cloudflare",
+         "name": "Cloudflare"
+        },
+        {
+         "slug": "elastic",
+         "name": "Elastic"
+        }
+       ],
+       "no": [
+        {
+         "slug": "launchdarkly",
+         "name": "LaunchDarkly"
+        },
+        {
+         "slug": "netlify",
+         "name": "Netlify"
+        },
+        {
+         "slug": "supabase",
+         "name": "Supabase"
+        },
+        {
+         "slug": "vanta",
+         "name": "Vanta"
+        },
+        {
+         "slug": "vercel",
+         "name": "Vercel"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "datadog",
+         "name": "Datadog"
+        },
+        {
+         "slug": "sentry",
+         "name": "Sentry"
+        },
+        {
+         "slug": "twilio",
+         "name": "Twilio"
+        }
+       ]
+      }
+     },
+     {
+      "group": "data",
+      "label": "Data & analytics",
+      "short": "Data & analytics",
+      "n": 12,
+      "readable": 10,
+      "yes": 1,
+      "no": 9,
+      "unreadable": 2,
+      "share": 10,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "databricks",
+         "name": "Databricks"
+        }
+       ],
+       "no": [
+        {
+         "slug": "amplitude",
+         "name": "Amplitude"
+        },
+        {
+         "slug": "dbt-labs",
+         "name": "dbt Labs"
+        },
+        {
+         "slug": "fivetran",
+         "name": "Fivetran"
+        },
+        {
+         "slug": "hightouch",
+         "name": "Hightouch"
+        },
+        {
+         "slug": "metabase",
+         "name": "Metabase"
+        },
+        {
+         "slug": "mixpanel",
+         "name": "Mixpanel"
+        },
+        {
+         "slug": "mongodb",
+         "name": "MongoDB"
+        },
+        {
+         "slug": "pendo",
+         "name": "Pendo"
+        },
+        {
+         "slug": "posthog",
+         "name": "PostHog"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "segment",
+         "name": "Segment"
+        },
+        {
+         "slug": "snowflake",
+         "name": "Snowflake"
+        }
+       ]
+      }
+     },
+     {
+      "group": "work",
+      "label": "Work & product",
+      "short": "Work & product",
+      "n": 16,
+      "readable": 14,
+      "yes": 8,
+      "no": 6,
+      "unreadable": 2,
+      "share": 57.1,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
+        {
+         "slug": "asana",
+         "name": "Asana"
+        },
+        {
+         "slug": "calendly",
+         "name": "Calendly"
+        },
+        {
+         "slug": "clickup",
+         "name": "ClickUp"
+        },
+        {
+         "slug": "figma",
+         "name": "Figma"
+        },
+        {
+         "slug": "monday",
+         "name": "monday.com"
+        },
+        {
+         "slug": "notion",
+         "name": "Notion"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
+        }
+       ],
+       "no": [
+        {
+         "slug": "github",
+         "name": "GitHub"
+        },
+        {
+         "slug": "gitlab",
+         "name": "GitLab"
+        },
+        {
+         "slug": "loom",
+         "name": "Loom"
+        },
+        {
+         "slug": "miro",
+         "name": "Miro"
+        },
+        {
+         "slug": "retool",
+         "name": "Retool"
+        },
+        {
+         "slug": "slack",
+         "name": "Slack"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "atlassian",
+         "name": "Atlassian"
+        },
+        {
+         "slug": "linear",
+         "name": "Linear"
+        }
+       ]
+      }
+     },
+     {
+      "group": "gtm",
+      "label": "Go-to-market & support",
+      "short": "Go-to-market",
+      "n": 15,
+      "readable": 15,
+      "yes": 0,
+      "no": 15,
+      "unreadable": 0,
+      "share": 0,
+      "suppressed": false,
+      "companies": {
+       "yes": [],
+       "no": [
+        {
+         "slug": "apollo",
+         "name": "Apollo.io"
+        },
+        {
+         "slug": "attio",
+         "name": "Attio"
+        },
+        {
+         "slug": "braze",
+         "name": "Braze"
+        },
+        {
+         "slug": "clay",
+         "name": "Clay"
+        },
+        {
+         "slug": "contentful",
+         "name": "Contentful"
+        },
+        {
+         "slug": "customer-io",
+         "name": "Customer.io"
+        },
+        {
+         "slug": "front",
+         "name": "Front"
+        },
+        {
+         "slug": "gong",
+         "name": "Gong"
+        },
+        {
+         "slug": "hubspot",
+         "name": "HubSpot"
+        },
+        {
+         "slug": "intercom",
+         "name": "Intercom"
+        },
+        {
+         "slug": "klaviyo",
+         "name": "Klaviyo"
+        },
+        {
+         "slug": "pipedrive",
+         "name": "Pipedrive"
+        },
+        {
+         "slug": "typeform",
+         "name": "Typeform"
+        },
+        {
+         "slug": "webflow",
+         "name": "Webflow"
+        },
+        {
+         "slug": "zendesk",
+         "name": "Zendesk"
+        }
+       ],
+       "unreadable": []
+      }
+     },
+     {
+      "group": "ops",
+      "label": "Finance & people ops",
+      "short": "Finance & people",
+      "n": 7,
+      "readable": 6,
+      "yes": 1,
+      "no": 5,
+      "unreadable": 1,
+      "share": 16.7,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "stripe",
+         "name": "Stripe"
+        }
+       ],
+       "no": [
+        {
+         "slug": "bill",
+         "name": "BILL"
+        },
+        {
+         "slug": "brex",
+         "name": "Brex"
+        },
+        {
+         "slug": "deel",
+         "name": "Deel"
+        },
+        {
+         "slug": "lattice",
+         "name": "Lattice"
+        },
+        {
+         "slug": "rippling",
+         "name": "Rippling"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "ramp",
+         "name": "Ramp"
+        }
+       ]
+      }
+     }
+    ],
+    "ranked": [
+     {
+      "group": "work",
+      "label": "Work & product",
+      "short": "Work & product",
+      "n": 16,
+      "readable": 14,
+      "yes": 8,
+      "no": 6,
+      "unreadable": 2,
+      "share": 57.1,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
+        {
+         "slug": "asana",
+         "name": "Asana"
+        },
+        {
+         "slug": "calendly",
+         "name": "Calendly"
+        },
+        {
+         "slug": "clickup",
+         "name": "ClickUp"
+        },
+        {
+         "slug": "figma",
+         "name": "Figma"
+        },
+        {
+         "slug": "monday",
+         "name": "monday.com"
+        },
+        {
+         "slug": "notion",
+         "name": "Notion"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
+        }
+       ],
+       "no": [
+        {
+         "slug": "github",
+         "name": "GitHub"
+        },
+        {
+         "slug": "gitlab",
+         "name": "GitLab"
+        },
+        {
+         "slug": "loom",
+         "name": "Loom"
+        },
+        {
+         "slug": "miro",
+         "name": "Miro"
+        },
+        {
+         "slug": "retool",
+         "name": "Retool"
+        },
+        {
+         "slug": "slack",
+         "name": "Slack"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "atlassian",
+         "name": "Atlassian"
+        },
+        {
+         "slug": "linear",
+         "name": "Linear"
+        }
+       ]
+      }
+     },
+     {
+      "group": "dev",
+      "label": "Developer & infrastructure",
+      "short": "Dev & infrastructure",
+      "n": 10,
+      "readable": 7,
+      "yes": 2,
+      "no": 5,
+      "unreadable": 3,
+      "share": 28.6,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "cloudflare",
+         "name": "Cloudflare"
+        },
+        {
+         "slug": "elastic",
+         "name": "Elastic"
+        }
+       ],
+       "no": [
+        {
+         "slug": "launchdarkly",
+         "name": "LaunchDarkly"
+        },
+        {
+         "slug": "netlify",
+         "name": "Netlify"
+        },
+        {
+         "slug": "supabase",
+         "name": "Supabase"
+        },
+        {
+         "slug": "vanta",
+         "name": "Vanta"
+        },
+        {
+         "slug": "vercel",
+         "name": "Vercel"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "datadog",
+         "name": "Datadog"
+        },
+        {
+         "slug": "sentry",
+         "name": "Sentry"
+        },
+        {
+         "slug": "twilio",
+         "name": "Twilio"
+        }
+       ]
+      }
+     },
+     {
+      "group": "ops",
+      "label": "Finance & people ops",
+      "short": "Finance & people",
+      "n": 7,
+      "readable": 6,
+      "yes": 1,
+      "no": 5,
+      "unreadable": 1,
+      "share": 16.7,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "stripe",
+         "name": "Stripe"
+        }
+       ],
+       "no": [
+        {
+         "slug": "bill",
+         "name": "BILL"
+        },
+        {
+         "slug": "brex",
+         "name": "Brex"
+        },
+        {
+         "slug": "deel",
+         "name": "Deel"
+        },
+        {
+         "slug": "lattice",
+         "name": "Lattice"
+        },
+        {
+         "slug": "rippling",
+         "name": "Rippling"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "ramp",
+         "name": "Ramp"
+        }
+       ]
+      }
+     },
+     {
+      "group": "data",
+      "label": "Data & analytics",
+      "short": "Data & analytics",
+      "n": 12,
+      "readable": 10,
+      "yes": 1,
+      "no": 9,
+      "unreadable": 2,
+      "share": 10,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "databricks",
+         "name": "Databricks"
+        }
+       ],
+       "no": [
+        {
+         "slug": "amplitude",
+         "name": "Amplitude"
+        },
+        {
+         "slug": "dbt-labs",
+         "name": "dbt Labs"
+        },
+        {
+         "slug": "fivetran",
+         "name": "Fivetran"
+        },
+        {
+         "slug": "hightouch",
+         "name": "Hightouch"
+        },
+        {
+         "slug": "metabase",
+         "name": "Metabase"
+        },
+        {
+         "slug": "mixpanel",
+         "name": "Mixpanel"
+        },
+        {
+         "slug": "mongodb",
+         "name": "MongoDB"
+        },
+        {
+         "slug": "pendo",
+         "name": "Pendo"
+        },
+        {
+         "slug": "posthog",
+         "name": "PostHog"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "segment",
+         "name": "Segment"
+        },
+        {
+         "slug": "snowflake",
+         "name": "Snowflake"
+        }
+       ]
+      }
+     },
+     {
+      "group": "gtm",
+      "label": "Go-to-market & support",
+      "short": "Go-to-market",
+      "n": 15,
+      "readable": 15,
+      "yes": 0,
+      "no": 15,
+      "unreadable": 0,
+      "share": 0,
+      "suppressed": false,
+      "companies": {
+       "yes": [],
+       "no": [
+        {
+         "slug": "apollo",
+         "name": "Apollo.io"
+        },
+        {
+         "slug": "attio",
+         "name": "Attio"
+        },
+        {
+         "slug": "braze",
+         "name": "Braze"
+        },
+        {
+         "slug": "clay",
+         "name": "Clay"
+        },
+        {
+         "slug": "contentful",
+         "name": "Contentful"
+        },
+        {
+         "slug": "customer-io",
+         "name": "Customer.io"
+        },
+        {
+         "slug": "front",
+         "name": "Front"
+        },
+        {
+         "slug": "gong",
+         "name": "Gong"
+        },
+        {
+         "slug": "hubspot",
+         "name": "HubSpot"
+        },
+        {
+         "slug": "intercom",
+         "name": "Intercom"
+        },
+        {
+         "slug": "klaviyo",
+         "name": "Klaviyo"
+        },
+        {
+         "slug": "pipedrive",
+         "name": "Pipedrive"
+        },
+        {
+         "slug": "typeform",
+         "name": "Typeform"
+        },
+        {
+         "slug": "webflow",
+         "name": "Webflow"
+        },
+        {
+         "slug": "zendesk",
+         "name": "Zendesk"
+        }
+       ],
+       "unreadable": []
+      }
+     }
+    ],
+    "top": {
+     "group": "work",
+     "label": "Work & product",
+     "short": "Work & product",
+     "n": 16,
+     "readable": 14,
+     "yes": 8,
+     "no": 6,
+     "unreadable": 2,
+     "share": 57.1,
+     "suppressed": false,
+     "companies": {
+      "yes": [
+       {
+        "slug": "airtable",
+        "name": "Airtable"
+       },
+       {
+        "slug": "asana",
+        "name": "Asana"
+       },
+       {
+        "slug": "calendly",
+        "name": "Calendly"
+       },
+       {
+        "slug": "clickup",
+        "name": "ClickUp"
+       },
+       {
+        "slug": "figma",
+        "name": "Figma"
+       },
+       {
+        "slug": "monday",
+        "name": "monday.com"
+       },
+       {
+        "slug": "notion",
+        "name": "Notion"
+       },
+       {
+        "slug": "zapier",
+        "name": "Zapier"
+       }
+      ],
+      "no": [
+       {
+        "slug": "github",
+        "name": "GitHub"
+       },
+       {
+        "slug": "gitlab",
+        "name": "GitLab"
+       },
+       {
+        "slug": "loom",
+        "name": "Loom"
+       },
+       {
+        "slug": "miro",
+        "name": "Miro"
+       },
+       {
+        "slug": "retool",
+        "name": "Retool"
+       },
+       {
+        "slug": "slack",
+        "name": "Slack"
+       }
+      ],
+      "unreadable": [
+       {
+        "slug": "atlassian",
+        "name": "Atlassian"
+       },
+       {
+        "slug": "linear",
+        "name": "Linear"
+       }
+      ]
+     }
+    },
+    "runner_up": {
+     "group": "dev",
+     "label": "Developer & infrastructure",
+     "short": "Dev & infrastructure",
+     "n": 10,
+     "readable": 7,
+     "yes": 2,
+     "no": 5,
+     "unreadable": 3,
+     "share": 28.6,
+     "suppressed": false,
+     "companies": {
+      "yes": [
+       {
+        "slug": "cloudflare",
+        "name": "Cloudflare"
+       },
+       {
+        "slug": "elastic",
+        "name": "Elastic"
+       }
+      ],
+      "no": [
+       {
+        "slug": "launchdarkly",
+        "name": "LaunchDarkly"
+       },
+       {
+        "slug": "netlify",
+        "name": "Netlify"
+       },
+       {
+        "slug": "supabase",
+        "name": "Supabase"
+       },
+       {
+        "slug": "vanta",
+        "name": "Vanta"
+       },
+       {
+        "slug": "vercel",
+        "name": "Vercel"
+       }
+      ],
+      "unreadable": [
+       {
+        "slug": "datadog",
+        "name": "Datadog"
+       },
+       {
+        "slug": "sentry",
+        "name": "Sentry"
+       },
+       {
+        "slug": "twilio",
+        "name": "Twilio"
+       }
+      ]
+     }
+    },
+    "bottom": {
+     "group": "gtm",
+     "label": "Go-to-market & support",
+     "short": "Go-to-market",
+     "n": 15,
+     "readable": 15,
+     "yes": 0,
+     "no": 15,
+     "unreadable": 0,
+     "share": 0,
+     "suppressed": false,
+     "companies": {
+      "yes": [],
+      "no": [
+       {
+        "slug": "apollo",
+        "name": "Apollo.io"
+       },
+       {
+        "slug": "attio",
+        "name": "Attio"
+       },
+       {
+        "slug": "braze",
+        "name": "Braze"
+       },
+       {
+        "slug": "clay",
+        "name": "Clay"
+       },
+       {
+        "slug": "contentful",
+        "name": "Contentful"
+       },
+       {
+        "slug": "customer-io",
+        "name": "Customer.io"
+       },
+       {
+        "slug": "front",
+        "name": "Front"
+       },
+       {
+        "slug": "gong",
+        "name": "Gong"
+       },
+       {
+        "slug": "hubspot",
+        "name": "HubSpot"
+       },
+       {
+        "slug": "intercom",
+        "name": "Intercom"
+       },
+       {
+        "slug": "klaviyo",
+        "name": "Klaviyo"
+       },
+       {
+        "slug": "pipedrive",
+        "name": "Pipedrive"
+       },
+       {
+        "slug": "typeform",
+        "name": "Typeform"
+       },
+       {
+        "slug": "webflow",
+        "name": "Webflow"
+       },
+       {
+        "slug": "zendesk",
+        "name": "Zendesk"
+       }
+      ],
+      "unreadable": []
+     }
+    },
+    "spread": 9,
+    "lead_over_runner_up": 2,
+    "drawn": true,
+    "withheld": null,
+    "overall": {
+     "yes": 12,
+     "no": 40,
+     "unreadable": 8,
+     "readable": 52,
+     "tracked": 60
+    }
+   },
+   {
+    "key": "proof-time",
+    "label": "Proves with time to result",
+    "subject": "time to result as proof",
+    "denominator": "companies with at least one quantified claim we can read",
+    "cells": [
+     {
+      "group": "dev",
+      "label": "Developer & infrastructure",
+      "short": "Dev & infrastructure",
+      "n": 10,
+      "readable": 7,
+      "yes": 2,
+      "no": 5,
+      "unreadable": 3,
+      "share": 28.6,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "launchdarkly",
+         "name": "LaunchDarkly"
+        },
+        {
+         "slug": "netlify",
+         "name": "Netlify"
+        }
+       ],
+       "no": [
+        {
+         "slug": "cloudflare",
+         "name": "Cloudflare"
+        },
+        {
+         "slug": "elastic",
+         "name": "Elastic"
+        },
+        {
+         "slug": "supabase",
+         "name": "Supabase"
+        },
+        {
+         "slug": "vanta",
+         "name": "Vanta"
+        },
+        {
+         "slug": "vercel",
+         "name": "Vercel"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "datadog",
+         "name": "Datadog"
+        },
+        {
+         "slug": "sentry",
+         "name": "Sentry"
+        },
+        {
+         "slug": "twilio",
+         "name": "Twilio"
+        }
+       ]
+      }
+     },
+     {
+      "group": "data",
+      "label": "Data & analytics",
+      "short": "Data & analytics",
+      "n": 12,
+      "readable": 10,
+      "yes": 2,
+      "no": 8,
+      "unreadable": 2,
+      "share": 20,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "fivetran",
+         "name": "Fivetran"
+        },
+        {
+         "slug": "pendo",
+         "name": "Pendo"
+        }
+       ],
+       "no": [
+        {
+         "slug": "amplitude",
+         "name": "Amplitude"
+        },
+        {
+         "slug": "databricks",
+         "name": "Databricks"
+        },
+        {
+         "slug": "dbt-labs",
+         "name": "dbt Labs"
+        },
+        {
+         "slug": "hightouch",
+         "name": "Hightouch"
+        },
+        {
+         "slug": "metabase",
+         "name": "Metabase"
+        },
+        {
+         "slug": "mixpanel",
+         "name": "Mixpanel"
+        },
+        {
+         "slug": "mongodb",
+         "name": "MongoDB"
+        },
+        {
+         "slug": "posthog",
+         "name": "PostHog"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "segment",
+         "name": "Segment"
+        },
+        {
+         "slug": "snowflake",
+         "name": "Snowflake"
+        }
+       ]
+      }
+     },
+     {
+      "group": "work",
+      "label": "Work & product",
+      "short": "Work & product",
+      "n": 16,
+      "readable": 14,
+      "yes": 1,
+      "no": 13,
+      "unreadable": 2,
+      "share": 7.1,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "monday",
+         "name": "monday.com"
+        }
+       ],
+       "no": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
+        {
+         "slug": "asana",
+         "name": "Asana"
+        },
+        {
+         "slug": "calendly",
+         "name": "Calendly"
+        },
+        {
+         "slug": "clickup",
+         "name": "ClickUp"
+        },
+        {
+         "slug": "figma",
+         "name": "Figma"
+        },
+        {
+         "slug": "github",
+         "name": "GitHub"
+        },
+        {
+         "slug": "gitlab",
+         "name": "GitLab"
+        },
+        {
+         "slug": "loom",
+         "name": "Loom"
+        },
+        {
+         "slug": "miro",
+         "name": "Miro"
+        },
+        {
+         "slug": "notion",
+         "name": "Notion"
+        },
+        {
+         "slug": "retool",
+         "name": "Retool"
+        },
+        {
+         "slug": "slack",
+         "name": "Slack"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "atlassian",
+         "name": "Atlassian"
+        },
+        {
+         "slug": "linear",
+         "name": "Linear"
+        }
+       ]
+      }
+     },
+     {
+      "group": "gtm",
+      "label": "Go-to-market & support",
+      "short": "Go-to-market",
+      "n": 15,
+      "readable": 15,
+      "yes": 1,
+      "no": 14,
+      "unreadable": 0,
+      "share": 6.7,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "webflow",
+         "name": "Webflow"
+        }
+       ],
+       "no": [
+        {
+         "slug": "apollo",
+         "name": "Apollo.io"
+        },
+        {
+         "slug": "attio",
+         "name": "Attio"
+        },
+        {
+         "slug": "braze",
+         "name": "Braze"
+        },
+        {
+         "slug": "clay",
+         "name": "Clay"
+        },
+        {
+         "slug": "contentful",
+         "name": "Contentful"
+        },
+        {
+         "slug": "customer-io",
+         "name": "Customer.io"
+        },
+        {
+         "slug": "front",
+         "name": "Front"
+        },
+        {
+         "slug": "gong",
+         "name": "Gong"
+        },
+        {
+         "slug": "hubspot",
+         "name": "HubSpot"
+        },
+        {
+         "slug": "intercom",
+         "name": "Intercom"
+        },
+        {
+         "slug": "klaviyo",
+         "name": "Klaviyo"
+        },
+        {
+         "slug": "pipedrive",
+         "name": "Pipedrive"
+        },
+        {
+         "slug": "typeform",
+         "name": "Typeform"
+        },
+        {
+         "slug": "zendesk",
+         "name": "Zendesk"
+        }
+       ],
+       "unreadable": []
+      }
+     },
+     {
+      "group": "ops",
+      "label": "Finance & people ops",
+      "short": "Finance & people",
+      "n": 7,
+      "readable": 6,
+      "yes": 0,
+      "no": 6,
+      "unreadable": 1,
+      "share": 0,
+      "suppressed": false,
+      "companies": {
+       "yes": [],
+       "no": [
+        {
+         "slug": "bill",
+         "name": "BILL"
+        },
+        {
+         "slug": "brex",
+         "name": "Brex"
+        },
+        {
+         "slug": "deel",
+         "name": "Deel"
+        },
+        {
+         "slug": "lattice",
+         "name": "Lattice"
+        },
+        {
+         "slug": "rippling",
+         "name": "Rippling"
+        },
+        {
+         "slug": "stripe",
+         "name": "Stripe"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "ramp",
+         "name": "Ramp"
+        }
+       ]
+      }
+     }
+    ],
+    "ranked": [
+     {
+      "group": "dev",
+      "label": "Developer & infrastructure",
+      "short": "Dev & infrastructure",
+      "n": 10,
+      "readable": 7,
+      "yes": 2,
+      "no": 5,
+      "unreadable": 3,
+      "share": 28.6,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "launchdarkly",
+         "name": "LaunchDarkly"
+        },
+        {
+         "slug": "netlify",
+         "name": "Netlify"
+        }
+       ],
+       "no": [
+        {
+         "slug": "cloudflare",
+         "name": "Cloudflare"
+        },
+        {
+         "slug": "elastic",
+         "name": "Elastic"
+        },
+        {
+         "slug": "supabase",
+         "name": "Supabase"
+        },
+        {
+         "slug": "vanta",
+         "name": "Vanta"
+        },
+        {
+         "slug": "vercel",
+         "name": "Vercel"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "datadog",
+         "name": "Datadog"
+        },
+        {
+         "slug": "sentry",
+         "name": "Sentry"
+        },
+        {
+         "slug": "twilio",
+         "name": "Twilio"
+        }
+       ]
+      }
+     },
+     {
+      "group": "data",
+      "label": "Data & analytics",
+      "short": "Data & analytics",
+      "n": 12,
+      "readable": 10,
+      "yes": 2,
+      "no": 8,
+      "unreadable": 2,
+      "share": 20,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "fivetran",
+         "name": "Fivetran"
+        },
+        {
+         "slug": "pendo",
+         "name": "Pendo"
+        }
+       ],
+       "no": [
+        {
+         "slug": "amplitude",
+         "name": "Amplitude"
+        },
+        {
+         "slug": "databricks",
+         "name": "Databricks"
+        },
+        {
+         "slug": "dbt-labs",
+         "name": "dbt Labs"
+        },
+        {
+         "slug": "hightouch",
+         "name": "Hightouch"
+        },
+        {
+         "slug": "metabase",
+         "name": "Metabase"
+        },
+        {
+         "slug": "mixpanel",
+         "name": "Mixpanel"
+        },
+        {
+         "slug": "mongodb",
+         "name": "MongoDB"
+        },
+        {
+         "slug": "posthog",
+         "name": "PostHog"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "segment",
+         "name": "Segment"
+        },
+        {
+         "slug": "snowflake",
+         "name": "Snowflake"
+        }
+       ]
+      }
+     },
+     {
+      "group": "work",
+      "label": "Work & product",
+      "short": "Work & product",
+      "n": 16,
+      "readable": 14,
+      "yes": 1,
+      "no": 13,
+      "unreadable": 2,
+      "share": 7.1,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "monday",
+         "name": "monday.com"
+        }
+       ],
+       "no": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
+        {
+         "slug": "asana",
+         "name": "Asana"
+        },
+        {
+         "slug": "calendly",
+         "name": "Calendly"
+        },
+        {
+         "slug": "clickup",
+         "name": "ClickUp"
+        },
+        {
+         "slug": "figma",
+         "name": "Figma"
+        },
+        {
+         "slug": "github",
+         "name": "GitHub"
+        },
+        {
+         "slug": "gitlab",
+         "name": "GitLab"
+        },
+        {
+         "slug": "loom",
+         "name": "Loom"
+        },
+        {
+         "slug": "miro",
+         "name": "Miro"
+        },
+        {
+         "slug": "notion",
+         "name": "Notion"
+        },
+        {
+         "slug": "retool",
+         "name": "Retool"
+        },
+        {
+         "slug": "slack",
+         "name": "Slack"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "atlassian",
+         "name": "Atlassian"
+        },
+        {
+         "slug": "linear",
+         "name": "Linear"
+        }
+       ]
+      }
+     },
+     {
+      "group": "gtm",
+      "label": "Go-to-market & support",
+      "short": "Go-to-market",
+      "n": 15,
+      "readable": 15,
+      "yes": 1,
+      "no": 14,
+      "unreadable": 0,
+      "share": 6.7,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "webflow",
+         "name": "Webflow"
+        }
+       ],
+       "no": [
+        {
+         "slug": "apollo",
+         "name": "Apollo.io"
+        },
+        {
+         "slug": "attio",
+         "name": "Attio"
+        },
+        {
+         "slug": "braze",
+         "name": "Braze"
+        },
+        {
+         "slug": "clay",
+         "name": "Clay"
+        },
+        {
+         "slug": "contentful",
+         "name": "Contentful"
+        },
+        {
+         "slug": "customer-io",
+         "name": "Customer.io"
+        },
+        {
+         "slug": "front",
+         "name": "Front"
+        },
+        {
+         "slug": "gong",
+         "name": "Gong"
+        },
+        {
+         "slug": "hubspot",
+         "name": "HubSpot"
+        },
+        {
+         "slug": "intercom",
+         "name": "Intercom"
+        },
+        {
+         "slug": "klaviyo",
+         "name": "Klaviyo"
+        },
+        {
+         "slug": "pipedrive",
+         "name": "Pipedrive"
+        },
+        {
+         "slug": "typeform",
+         "name": "Typeform"
+        },
+        {
+         "slug": "zendesk",
+         "name": "Zendesk"
+        }
+       ],
+       "unreadable": []
+      }
+     },
+     {
+      "group": "ops",
+      "label": "Finance & people ops",
+      "short": "Finance & people",
+      "n": 7,
+      "readable": 6,
+      "yes": 0,
+      "no": 6,
+      "unreadable": 1,
+      "share": 0,
+      "suppressed": false,
+      "companies": {
+       "yes": [],
+       "no": [
+        {
+         "slug": "bill",
+         "name": "BILL"
+        },
+        {
+         "slug": "brex",
+         "name": "Brex"
+        },
+        {
+         "slug": "deel",
+         "name": "Deel"
+        },
+        {
+         "slug": "lattice",
+         "name": "Lattice"
+        },
+        {
+         "slug": "rippling",
+         "name": "Rippling"
+        },
+        {
+         "slug": "stripe",
+         "name": "Stripe"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "ramp",
+         "name": "Ramp"
+        }
+       ]
+      }
+     }
+    ],
+    "top": {
+     "group": "dev",
+     "label": "Developer & infrastructure",
+     "short": "Dev & infrastructure",
+     "n": 10,
+     "readable": 7,
+     "yes": 2,
+     "no": 5,
+     "unreadable": 3,
+     "share": 28.6,
+     "suppressed": false,
+     "companies": {
+      "yes": [
+       {
+        "slug": "launchdarkly",
+        "name": "LaunchDarkly"
+       },
+       {
+        "slug": "netlify",
+        "name": "Netlify"
+       }
+      ],
+      "no": [
+       {
+        "slug": "cloudflare",
+        "name": "Cloudflare"
+       },
+       {
+        "slug": "elastic",
+        "name": "Elastic"
+       },
+       {
+        "slug": "supabase",
+        "name": "Supabase"
+       },
+       {
+        "slug": "vanta",
+        "name": "Vanta"
+       },
+       {
+        "slug": "vercel",
+        "name": "Vercel"
+       }
+      ],
+      "unreadable": [
+       {
+        "slug": "datadog",
+        "name": "Datadog"
+       },
+       {
+        "slug": "sentry",
+        "name": "Sentry"
+       },
+       {
+        "slug": "twilio",
+        "name": "Twilio"
+       }
+      ]
+     }
+    },
+    "runner_up": {
+     "group": "data",
+     "label": "Data & analytics",
+     "short": "Data & analytics",
+     "n": 12,
+     "readable": 10,
+     "yes": 2,
+     "no": 8,
+     "unreadable": 2,
+     "share": 20,
+     "suppressed": false,
+     "companies": {
+      "yes": [
+       {
+        "slug": "fivetran",
+        "name": "Fivetran"
+       },
+       {
+        "slug": "pendo",
+        "name": "Pendo"
+       }
+      ],
+      "no": [
+       {
+        "slug": "amplitude",
+        "name": "Amplitude"
+       },
+       {
+        "slug": "databricks",
+        "name": "Databricks"
+       },
+       {
+        "slug": "dbt-labs",
+        "name": "dbt Labs"
+       },
+       {
+        "slug": "hightouch",
+        "name": "Hightouch"
+       },
+       {
+        "slug": "metabase",
+        "name": "Metabase"
+       },
+       {
+        "slug": "mixpanel",
+        "name": "Mixpanel"
+       },
+       {
+        "slug": "mongodb",
+        "name": "MongoDB"
+       },
+       {
+        "slug": "posthog",
+        "name": "PostHog"
+       }
+      ],
+      "unreadable": [
+       {
+        "slug": "segment",
+        "name": "Segment"
+       },
+       {
+        "slug": "snowflake",
+        "name": "Snowflake"
+       }
+      ]
+     }
+    },
+    "bottom": {
+     "group": "ops",
+     "label": "Finance & people ops",
+     "short": "Finance & people",
+     "n": 7,
+     "readable": 6,
+     "yes": 0,
+     "no": 6,
+     "unreadable": 1,
+     "share": 0,
+     "suppressed": false,
+     "companies": {
+      "yes": [],
+      "no": [
+       {
+        "slug": "bill",
+        "name": "BILL"
+       },
+       {
+        "slug": "brex",
+        "name": "Brex"
+       },
+       {
+        "slug": "deel",
+        "name": "Deel"
+       },
+       {
+        "slug": "lattice",
+        "name": "Lattice"
+       },
+       {
+        "slug": "rippling",
+        "name": "Rippling"
+       },
+       {
+        "slug": "stripe",
+        "name": "Stripe"
+       }
+      ],
+      "unreadable": [
+       {
+        "slug": "ramp",
+        "name": "Ramp"
+       }
+      ]
+     }
+    },
+    "spread": 2,
+    "lead_over_runner_up": 1,
+    "drawn": false,
+    "withheld": {
+     "rule": "flat",
+     "spread": 2
+    },
+    "overall": {
+     "yes": 6,
+     "no": 46,
+     "unreadable": 8,
+     "readable": 52,
+     "tracked": 60
+    }
+   },
+   {
+    "key": "free-tier",
+    "label": "Publishes a free tier",
+    "subject": "a published free tier",
+    "denominator": "companies whose pricing page we can read",
+    "cells": [
+     {
+      "group": "dev",
+      "label": "Developer & infrastructure",
+      "short": "Dev & infrastructure",
+      "n": 10,
+      "readable": 5,
+      "yes": 5,
+      "no": 0,
+      "unreadable": 5,
+      "suppressed": true,
+      "companies": {
+       "yes": [
+        {
+         "slug": "cloudflare",
+         "name": "Cloudflare"
+        },
+        {
+         "slug": "launchdarkly",
+         "name": "LaunchDarkly"
+        },
+        {
+         "slug": "netlify",
+         "name": "Netlify"
+        },
+        {
+         "slug": "sentry",
+         "name": "Sentry"
+        },
+        {
+         "slug": "supabase",
+         "name": "Supabase"
+        }
+       ],
+       "no": [],
+       "unreadable": [
+        {
+         "slug": "datadog",
+         "name": "Datadog"
+        },
+        {
+         "slug": "elastic",
+         "name": "Elastic"
+        },
+        {
+         "slug": "twilio",
+         "name": "Twilio"
+        },
+        {
+         "slug": "vanta",
+         "name": "Vanta"
+        },
+        {
+         "slug": "vercel",
+         "name": "Vercel"
+        }
+       ]
+      }
+     },
+     {
+      "group": "data",
+      "label": "Data & analytics",
+      "short": "Data & analytics",
+      "n": 12,
+      "readable": 6,
+      "yes": 6,
+      "no": 0,
+      "unreadable": 6,
+      "share": 100,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "amplitude",
+         "name": "Amplitude"
+        },
+        {
+         "slug": "dbt-labs",
+         "name": "dbt Labs"
+        },
+        {
+         "slug": "fivetran",
+         "name": "Fivetran"
+        },
+        {
+         "slug": "metabase",
+         "name": "Metabase"
+        },
+        {
+         "slug": "mongodb",
+         "name": "MongoDB"
+        },
+        {
+         "slug": "pendo",
+         "name": "Pendo"
+        }
+       ],
+       "no": [],
+       "unreadable": [
+        {
+         "slug": "databricks",
+         "name": "Databricks"
+        },
+        {
+         "slug": "hightouch",
+         "name": "Hightouch"
+        },
+        {
+         "slug": "mixpanel",
+         "name": "Mixpanel"
+        },
+        {
+         "slug": "posthog",
+         "name": "PostHog"
+        },
+        {
+         "slug": "segment",
+         "name": "Segment"
+        },
+        {
+         "slug": "snowflake",
+         "name": "Snowflake"
+        }
+       ]
+      }
+     },
+     {
+      "group": "work",
+      "label": "Work & product",
+      "short": "Work & product",
+      "n": 16,
+      "readable": 13,
+      "yes": 13,
+      "no": 0,
+      "unreadable": 3,
+      "share": 100,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "asana",
+         "name": "Asana"
+        },
+        {
+         "slug": "atlassian",
+         "name": "Atlassian"
+        },
+        {
+         "slug": "calendly",
+         "name": "Calendly"
+        },
+        {
+         "slug": "clickup",
+         "name": "ClickUp"
+        },
+        {
+         "slug": "gitlab",
+         "name": "GitLab"
+        },
+        {
+         "slug": "linear",
+         "name": "Linear"
+        },
+        {
+         "slug": "loom",
+         "name": "Loom"
+        },
+        {
+         "slug": "miro",
+         "name": "Miro"
+        },
+        {
+         "slug": "monday",
+         "name": "monday.com"
+        },
+        {
+         "slug": "notion",
+         "name": "Notion"
+        },
+        {
+         "slug": "retool",
+         "name": "Retool"
+        },
+        {
+         "slug": "slack",
+         "name": "Slack"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
+        }
+       ],
+       "no": [],
+       "unreadable": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
+        {
+         "slug": "figma",
+         "name": "Figma"
+        },
+        {
+         "slug": "github",
+         "name": "GitHub"
+        }
+       ]
+      }
+     },
+     {
+      "group": "gtm",
+      "label": "Go-to-market & support",
+      "short": "Go-to-market",
+      "n": 15,
+      "readable": 6,
+      "yes": 5,
+      "no": 1,
+      "unreadable": 9,
+      "share": 83.3,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "attio",
+         "name": "Attio"
+        },
+        {
+         "slug": "clay",
+         "name": "Clay"
+        },
+        {
+         "slug": "intercom",
+         "name": "Intercom"
+        },
+        {
+         "slug": "klaviyo",
+         "name": "Klaviyo"
+        },
+        {
+         "slug": "zendesk",
+         "name": "Zendesk"
+        }
+       ],
+       "no": [
+        {
+         "slug": "customer-io",
+         "name": "Customer.io"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "apollo",
+         "name": "Apollo.io"
+        },
+        {
+         "slug": "braze",
+         "name": "Braze"
+        },
+        {
+         "slug": "contentful",
+         "name": "Contentful"
+        },
+        {
+         "slug": "front",
+         "name": "Front"
+        },
+        {
+         "slug": "gong",
+         "name": "Gong"
+        },
+        {
+         "slug": "hubspot",
+         "name": "HubSpot"
+        },
+        {
+         "slug": "pipedrive",
+         "name": "Pipedrive"
+        },
+        {
+         "slug": "typeform",
+         "name": "Typeform"
+        },
+        {
+         "slug": "webflow",
+         "name": "Webflow"
+        }
+       ]
+      }
+     },
+     {
+      "group": "ops",
+      "label": "Finance & people ops",
+      "short": "Finance & people",
+      "n": 7,
+      "readable": 2,
+      "yes": 1,
+      "no": 1,
+      "unreadable": 5,
+      "suppressed": true,
+      "companies": {
+       "yes": [
+        {
+         "slug": "ramp",
+         "name": "Ramp"
+        }
+       ],
+       "no": [
+        {
+         "slug": "brex",
+         "name": "Brex"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "bill",
+         "name": "BILL"
+        },
+        {
+         "slug": "deel",
+         "name": "Deel"
+        },
+        {
+         "slug": "lattice",
+         "name": "Lattice"
+        },
+        {
+         "slug": "rippling",
+         "name": "Rippling"
+        },
+        {
+         "slug": "stripe",
+         "name": "Stripe"
+        }
+       ]
+      }
+     }
+    ],
+    "ranked": [
+     {
+      "group": "data",
+      "label": "Data & analytics",
+      "short": "Data & analytics",
+      "n": 12,
+      "readable": 6,
+      "yes": 6,
+      "no": 0,
+      "unreadable": 6,
+      "share": 100,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "amplitude",
+         "name": "Amplitude"
+        },
+        {
+         "slug": "dbt-labs",
+         "name": "dbt Labs"
+        },
+        {
+         "slug": "fivetran",
+         "name": "Fivetran"
+        },
+        {
+         "slug": "metabase",
+         "name": "Metabase"
+        },
+        {
+         "slug": "mongodb",
+         "name": "MongoDB"
+        },
+        {
+         "slug": "pendo",
+         "name": "Pendo"
+        }
+       ],
+       "no": [],
+       "unreadable": [
+        {
+         "slug": "databricks",
+         "name": "Databricks"
+        },
+        {
+         "slug": "hightouch",
+         "name": "Hightouch"
+        },
+        {
+         "slug": "mixpanel",
+         "name": "Mixpanel"
+        },
+        {
+         "slug": "posthog",
+         "name": "PostHog"
+        },
+        {
+         "slug": "segment",
+         "name": "Segment"
+        },
+        {
+         "slug": "snowflake",
+         "name": "Snowflake"
+        }
+       ]
+      }
+     },
+     {
+      "group": "work",
+      "label": "Work & product",
+      "short": "Work & product",
+      "n": 16,
+      "readable": 13,
+      "yes": 13,
+      "no": 0,
+      "unreadable": 3,
+      "share": 100,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "asana",
+         "name": "Asana"
+        },
+        {
+         "slug": "atlassian",
+         "name": "Atlassian"
+        },
+        {
+         "slug": "calendly",
+         "name": "Calendly"
+        },
+        {
+         "slug": "clickup",
+         "name": "ClickUp"
+        },
+        {
+         "slug": "gitlab",
+         "name": "GitLab"
+        },
+        {
+         "slug": "linear",
+         "name": "Linear"
+        },
+        {
+         "slug": "loom",
+         "name": "Loom"
+        },
+        {
+         "slug": "miro",
+         "name": "Miro"
+        },
+        {
+         "slug": "monday",
+         "name": "monday.com"
+        },
+        {
+         "slug": "notion",
+         "name": "Notion"
+        },
+        {
+         "slug": "retool",
+         "name": "Retool"
+        },
+        {
+         "slug": "slack",
+         "name": "Slack"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
+        }
+       ],
+       "no": [],
+       "unreadable": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
+        {
+         "slug": "figma",
+         "name": "Figma"
+        },
+        {
+         "slug": "github",
+         "name": "GitHub"
+        }
+       ]
+      }
+     },
+     {
+      "group": "gtm",
+      "label": "Go-to-market & support",
+      "short": "Go-to-market",
+      "n": 15,
+      "readable": 6,
+      "yes": 5,
+      "no": 1,
+      "unreadable": 9,
+      "share": 83.3,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "attio",
+         "name": "Attio"
+        },
+        {
+         "slug": "clay",
+         "name": "Clay"
+        },
+        {
+         "slug": "intercom",
+         "name": "Intercom"
+        },
+        {
+         "slug": "klaviyo",
+         "name": "Klaviyo"
+        },
+        {
+         "slug": "zendesk",
+         "name": "Zendesk"
+        }
+       ],
+       "no": [
+        {
+         "slug": "customer-io",
+         "name": "Customer.io"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "apollo",
+         "name": "Apollo.io"
+        },
+        {
+         "slug": "braze",
+         "name": "Braze"
+        },
+        {
+         "slug": "contentful",
+         "name": "Contentful"
+        },
+        {
+         "slug": "front",
+         "name": "Front"
+        },
+        {
+         "slug": "gong",
+         "name": "Gong"
+        },
+        {
+         "slug": "hubspot",
+         "name": "HubSpot"
+        },
+        {
+         "slug": "pipedrive",
+         "name": "Pipedrive"
+        },
+        {
+         "slug": "typeform",
+         "name": "Typeform"
+        },
+        {
+         "slug": "webflow",
+         "name": "Webflow"
+        }
+       ]
+      }
+     }
+    ],
+    "top": {
+     "group": "data",
+     "label": "Data & analytics",
+     "short": "Data & analytics",
+     "n": 12,
+     "readable": 6,
+     "yes": 6,
+     "no": 0,
+     "unreadable": 6,
+     "share": 100,
+     "suppressed": false,
+     "companies": {
+      "yes": [
+       {
+        "slug": "amplitude",
+        "name": "Amplitude"
+       },
+       {
+        "slug": "dbt-labs",
+        "name": "dbt Labs"
+       },
+       {
+        "slug": "fivetran",
+        "name": "Fivetran"
+       },
+       {
+        "slug": "metabase",
+        "name": "Metabase"
+       },
+       {
+        "slug": "mongodb",
+        "name": "MongoDB"
+       },
+       {
+        "slug": "pendo",
+        "name": "Pendo"
+       }
+      ],
+      "no": [],
+      "unreadable": [
+       {
+        "slug": "databricks",
+        "name": "Databricks"
+       },
+       {
+        "slug": "hightouch",
+        "name": "Hightouch"
+       },
+       {
+        "slug": "mixpanel",
+        "name": "Mixpanel"
+       },
+       {
+        "slug": "posthog",
+        "name": "PostHog"
+       },
+       {
+        "slug": "segment",
+        "name": "Segment"
+       },
+       {
+        "slug": "snowflake",
+        "name": "Snowflake"
+       }
+      ]
+     }
+    },
+    "runner_up": {
+     "group": "work",
+     "label": "Work & product",
+     "short": "Work & product",
+     "n": 16,
+     "readable": 13,
+     "yes": 13,
+     "no": 0,
+     "unreadable": 3,
+     "share": 100,
+     "suppressed": false,
+     "companies": {
+      "yes": [
+       {
+        "slug": "asana",
+        "name": "Asana"
+       },
+       {
+        "slug": "atlassian",
+        "name": "Atlassian"
+       },
+       {
+        "slug": "calendly",
+        "name": "Calendly"
+       },
+       {
+        "slug": "clickup",
+        "name": "ClickUp"
+       },
+       {
+        "slug": "gitlab",
+        "name": "GitLab"
+       },
+       {
+        "slug": "linear",
+        "name": "Linear"
+       },
+       {
+        "slug": "loom",
+        "name": "Loom"
+       },
+       {
+        "slug": "miro",
+        "name": "Miro"
+       },
+       {
+        "slug": "monday",
+        "name": "monday.com"
+       },
+       {
+        "slug": "notion",
+        "name": "Notion"
+       },
+       {
+        "slug": "retool",
+        "name": "Retool"
+       },
+       {
+        "slug": "slack",
+        "name": "Slack"
+       },
+       {
+        "slug": "zapier",
+        "name": "Zapier"
+       }
+      ],
+      "no": [],
+      "unreadable": [
+       {
+        "slug": "airtable",
+        "name": "Airtable"
+       },
+       {
+        "slug": "figma",
+        "name": "Figma"
+       },
+       {
+        "slug": "github",
+        "name": "GitHub"
+       }
+      ]
+     }
+    },
+    "bottom": {
+     "group": "gtm",
+     "label": "Go-to-market & support",
+     "short": "Go-to-market",
+     "n": 15,
+     "readable": 6,
+     "yes": 5,
+     "no": 1,
+     "unreadable": 9,
+     "share": 83.3,
+     "suppressed": false,
+     "companies": {
+      "yes": [
+       {
+        "slug": "attio",
+        "name": "Attio"
+       },
+       {
+        "slug": "clay",
+        "name": "Clay"
+       },
+       {
+        "slug": "intercom",
+        "name": "Intercom"
+       },
+       {
+        "slug": "klaviyo",
+        "name": "Klaviyo"
+       },
+       {
+        "slug": "zendesk",
+        "name": "Zendesk"
+       }
+      ],
+      "no": [
+       {
+        "slug": "customer-io",
+        "name": "Customer.io"
+       }
+      ],
+      "unreadable": [
+       {
+        "slug": "apollo",
+        "name": "Apollo.io"
+       },
+       {
+        "slug": "braze",
+        "name": "Braze"
+       },
+       {
+        "slug": "contentful",
+        "name": "Contentful"
+       },
+       {
+        "slug": "front",
+        "name": "Front"
+       },
+       {
+        "slug": "gong",
+        "name": "Gong"
+       },
+       {
+        "slug": "hubspot",
+        "name": "HubSpot"
+       },
+       {
+        "slug": "pipedrive",
+        "name": "Pipedrive"
+       },
+       {
+        "slug": "typeform",
+        "name": "Typeform"
+       },
+       {
+        "slug": "webflow",
+        "name": "Webflow"
+       }
+      ]
+     }
+    },
+    "spread": 1,
+    "lead_over_runner_up": 0,
+    "drawn": false,
+    "withheld": {
+     "rule": "coverage",
+     "drawable": 3,
+     "groups": 5
+    },
+    "overall": {
+     "yes": 30,
+     "no": 2,
+     "unreadable": 28,
+     "readable": 32,
+     "tracked": 60
+    }
+   }
+  ],
+  "drawn": [
+   "ai",
+   "platform",
+   "proof-percent",
+   "proof-money",
+   "proof-rank"
+  ],
+  "withheld": [
+   "proof-count",
+   "proof-multiplier",
+   "proof-time",
+   "free-tier"
+  ],
+  "min_cell_n": 6,
+  "min_groups_drawn": 4,
+  "fragile_flips": 2,
+  "ungrouped": [],
+  "coverage": {
+   "tracked": 60,
+   "readable": 60,
+   "unreadable": 0,
+   "held": 0,
+   "suspect": 0,
+   "missing": []
+  }
+ },
  "generated_at": "2026-08-07T15:53:36Z"
 }
