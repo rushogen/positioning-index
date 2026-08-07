@@ -8,11 +8,17 @@
      someone else, which under TDDDG section 25 turns a static page into one
      that needs a consent dialogue. Self-hosting everything means there is
      nothing to consent to.
-  2. Static assets on Cloudflare are free and unmetered and do not count against
-     the Worker request quota. Server-rendering would spend budget to produce
-     the same bytes.
+  2. There is no server. This is GitHub Pages serving files that bin/build-site.js
+     generated from data/, so anything the page cannot do with a static file it
+     does not do at all.
   3. The page is four tables and a list. A framework would be more code than the
      thing it renders.
+
+  There is no API either: the "endpoints" below are files on disk, and every
+  path is relative so the site works at a repository subpath
+  (user.github.io/positioning-index/) exactly as it does at a domain root.
+  Filtering happens in the browser because a static file cannot take a query
+  string.
 
   All rendering goes through h() / text nodes, never innerHTML with data in it,
   so a headline containing markup is displayed rather than executed. Page
@@ -24,11 +30,11 @@
 'use strict';
 
 const API = {
-  stats: '/api/stats',
-  changes: '/api/changes',
-  companies: '/api/companies',
-  health: '/api/health',
-  company: (slug) => `/api/company/${encodeURIComponent(slug)}`,
+  stats: 'api/stats.json',
+  changes: 'api/changes.json',
+  companies: 'api/companies.json',
+  health: 'api/health.json',
+  company: (slug) => `api/company/${encodeURIComponent(slug)}.json`,
 };
 
 const state = { stats: null, changes: null, health: null, signalMeta: {}, signalFilter: '', segmentFilter: '' };
@@ -101,6 +107,7 @@ async function loadStats() {
   set('companies', fmtNum(s.companies));
   set('observations', fmtNum(s.observations));
   set('changes_30d', fmtNum(s.changes_30d));
+  set('runs', fmtNum(s.runs));
   set('first_observation', fmtDate(s.first_observation));
   set('last_successful_fetch', relative(s.last_successful_fetch), true);
 
@@ -112,7 +119,11 @@ async function loadStats() {
     ? (Date.now() - Date.parse(s.last_successful_fetch)) / 3600_000
     : Infinity;
   if (!Number.isFinite(staleHours) || staleHours > 36) {
-    problems.push('No page has been read successfully in over 36 hours. Everything below may be out of date.');
+    problems.push(
+      'No page has been read successfully in over 36 hours, so everything below may be out of date. ' +
+      'This index is crawled on demand rather than by a hosted scheduler: it advances when a run is ' +
+      'triggered, and says so plainly when one has not been.'
+    );
   }
   if (s.suspect_signals > 0) {
     problems.push(`${s.suspect_signals} signal${s.suspect_signals === 1 ? ' is' : 's are'} currently flagged as a suspected extraction failure and excluded from change detection.`);
@@ -162,23 +173,29 @@ function renderChange(c) {
 
 async function renderFeed() {
   const list = $('#feed');
-  const qs = state.signalFilter ? `?signal=${encodeURIComponent(state.signalFilter)}&limit=80` : '?limit=80';
-  let data;
-  try {
-    data = await getJSON(API.changes + qs);
-  } catch (err) {
-    list.replaceChildren(h('li', { class: 'empty' }, `Could not load changes: ${err.message}`));
-    return;
+  if (!state.changes) {
+    try {
+      state.changes = (await getJSON(API.changes)).changes;
+    } catch (err) {
+      list.replaceChildren(h('li', { class: 'empty' }, `Could not load changes: ${err.message}`));
+      return;
+    }
   }
-  state.changes = data.changes;
 
-  if (!data.changes.length) {
+  // A static file cannot take a query string, so the filter is applied here.
+  const shown = state.changes
+    .filter((c) => !state.signalFilter || c.signal === state.signalFilter)
+    .slice(0, 80);
+
+  if (!shown.length) {
     list.replaceChildren(h('li', { class: 'empty' },
-      'No changes recorded yet. The first sweep establishes a baseline and publishes nothing; ' +
-      'differences appear from the second sweep onward.'));
+      state.signalFilter
+        ? 'No changes recorded for that signal yet.'
+        : 'No changes recorded yet. The first sweep establishes a baseline and publishes nothing; ' +
+          'differences appear from the second sweep onward.'));
     return;
   }
-  list.replaceChildren(...data.changes.map(renderChange));
+  list.replaceChildren(...shown.map(renderChange));
 }
 
 // --------------------------------------------------------------- companies

@@ -105,27 +105,43 @@ async function appendLine(path, record) {
  *
  * Everything ending in `_at` is excluded: a value that is still there today is
  * not news just because today has a different date. Everything else -- the
- * values, the extraction method and confidence, the status, the parser-health
- * counters -- is.
+ * values, the extraction method and confidence, the page status, the
+ * parser-health counters -- is.
+ *
+ * One exception, and it is load-bearing. `consecutive_nulls` counts up on every
+ * run for a signal that has never produced a value at all: linear.app publishes
+ * no logo wall we can read, so `customer_logos` is null today, tomorrow, and in
+ * eight years. Counting that is meaningless -- the removal rule in src/diff.js
+ * requires a last known-good value before the counter means anything -- and
+ * including it here would append an identical line on every single run and undo
+ * de-duplication entirely. So the counter is only part of the fingerprint when
+ * there is a value it could be the loss of.
  */
 export function observationFingerprint(record) {
-  const strip = (obj) => {
+  const sortDeep = (obj) => {
     if (obj == null || typeof obj !== 'object') return obj;
-    if (Array.isArray(obj)) return obj.map(strip);
+    if (Array.isArray(obj)) return obj.map(sortDeep);
     const out = {};
     for (const k of Object.keys(obj).sort()) {
       if (k.endsWith('_at')) continue;
-      out[k] = strip(obj[k]);
+      out[k] = sortDeep(obj[k]);
     }
     return out;
   };
-  return JSON.stringify(strip({
+
+  const state = {};
+  for (const [signal, s] of Object.entries(record.state ?? {})) {
+    const { consecutive_nulls, ...rest } = s ?? {};
+    state[signal] = s?.last_good_value == null ? rest : { ...rest, consecutive_nulls };
+  }
+
+  return JSON.stringify(sortDeep({
     kind: record.kind,
     status: record.status,
     reason: record.reason,
     doc: record.doc,
     signals: record.signals,
-    state: record.state,
+    state,
   }));
 }
 

@@ -7,7 +7,7 @@
 <meta name="description" content="A daily record of how B2B SaaS companies describe themselves, and how that description drifts over time.">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>&#9678;</text></svg>">
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="style.css">
 <!--
   No third-party requests. No fonts from a CDN, no analytics, no embeds.
 
@@ -27,17 +27,20 @@
   <div class="wrap">
     <h1><a href="#/">The B2B SaaS Positioning Index</a></h1>
     <p class="standfirst">
-      Every day, this reads the homepage and pricing page of
+      This reads the homepage and pricing page of
       <span data-stat="companies">60</span> B2B SaaS companies and records what they
       call themselves. It has been doing that since
       <span data-stat="first_observation">&mdash;</span>. The point is not today's
-      snapshot; it is the difference between today's and last month's.
+      snapshot; it is the difference between today's and last month's. Every
+      crawl is a commit in a public repository, so the record below can be
+      checked line by line against a history nobody can quietly rewrite.
     </p>
 
     <dl class="stats" id="stats">
       <div><dt>Companies</dt><dd data-stat="companies">&mdash;</dd></div>
       <div><dt>Observations</dt><dd data-stat="observations">&mdash;</dd></div>
       <div><dt>Changes, 30 days</dt><dd data-stat="changes_30d">&mdash;</dd></div>
+      <div><dt>Crawl runs</dt><dd data-stat="runs">&mdash;</dd></div>
       <div><dt>Last successful fetch</dt><dd data-stat="last_successful_fetch">&mdash;</dd></div>
     </dl>
 
@@ -67,7 +70,7 @@
       A change is only published when the page was read successfully and the
       value moved from one known value to another. When extraction fails, the
       index records a fault and says nothing &mdash; a broken selector is not a
-      repositioning. <a href="/methodology.txt">How each signal is measured</a>.
+      repositioning. <a href="methodology.txt">How each signal is measured</a>.
     </p>
     <ol class="feed" id="feed"><li class="loading">Loading&hellip;</li></ol>
   </section>
@@ -144,7 +147,7 @@
         and from the pricing page the tier list, entry price, whether a free tier
         is published, and any seat minimum.
       </p>
-      <p><a href="/methodology.txt">Methodology, v1.0</a></p>
+      <p><a href="methodology.txt">Methodology, v1.0</a></p>
     </div>
     <div>
       <h3>How it crawls</h3>
@@ -155,14 +158,16 @@
         declarations are honoured too. If robots.txt cannot be read, nothing is
         fetched.
       </p>
-      <p><a href="/crawler">Crawler disclosure and opt-out</a></p>
+      <p><a href="crawler.txt">Crawler disclosure and opt-out</a></p>
     </div>
     <div>
-      <h3>What it is not</h3>
+      <h3>Where it lives</h3>
       <p>
-        Not a scraper of anything behind a login. Not a rented API that a policy
-        change can switch off. Not a claim that any change here was strategic
-        &mdash; it records what was published, and when.
+        Nothing here is hosted infrastructure. A crawl is a command someone
+        runs; the result is committed as newline-delimited JSON, and this page
+        is generated from those files. Not a scraper of anything behind a login,
+        not a rented API a policy change can switch off, and not a claim that
+        any change was strategic &mdash; it records what was published, and when.
       </p>
       <p>Built by Ruslan Shogenov. MIT licensed.</p>
     </div>
@@ -172,6 +177,6 @@
   </p>
 </footer>
 
-<script src="/app.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

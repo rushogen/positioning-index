@@ -90,6 +90,26 @@ test('a moving parser-health counter IS new information and is appended', async 
   assert.equal((await store.readCompany('acme')).length, 3);
 });
 
+test('a signal that has never had a value does not churn the file', async (t) => {
+  // linear.app publishes no logo wall this extractor can read, so the null
+  // counter for customer_logos climbs on every run forever. It means nothing --
+  // a removal cannot be confirmed for a value we never had -- and if it reached
+  // the fingerprint every run would append an identical line.
+  const store = await scratch(t);
+  const never = (n) => observation({
+    observed_at: `2026-08-0${n}T00:00:00Z`,
+    signals: { ...observation().signals, customer_logos: null },
+    state: {
+      ...observation().state,
+      customer_logos: { last_good_at: null, last_good_value: null, consecutive_nulls: n, suspect: 0 },
+    },
+  });
+  assert.equal(await store.appendObservation('acme', never(1)), true);
+  assert.equal(await store.appendObservation('acme', never(2)), false);
+  assert.equal(await store.appendObservation('acme', never(3)), false);
+  assert.equal((await store.readCompany('acme')).length, 1);
+});
+
 test('the two pages of one company de-duplicate independently', async (t) => {
   const store = await scratch(t);
   await store.appendObservation('acme', observation());
