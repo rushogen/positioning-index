@@ -8,7 +8,7 @@
  */
 
 import {
-  HERO_WINDOW, attr, clean, collapse, elements, firstElement, jsonLd, meta, text,
+  HERO_WINDOW, attr, clean, collapse, elements, firstElement, headingText, jsonLd, meta, text,
 } from './html.js';
 
 const ok = (value, method, confidence, json) =>
@@ -19,7 +19,7 @@ const ok = (value, method, confidence, json) =>
 // ---------------------------------------------------------------------------
 
 export function extractMetaTitle(doc, raw) {
-  const t = firstElement(doc, 'title');
+  const t = firstElement(doc, 'title', { maxInner: 600 });
   const fromTag = t ? clean(text(t.inner), 300) : null;
   if (fromTag) return ok(fromTag, 'title', 1.0);
 
@@ -83,9 +83,9 @@ export function extractHeadline(doc, { brand } = {}) {
     { html: hero, method: 'h1', confidence: 1.0, offset: 0 },
     { html: doc, method: 'h1-below-fold', confidence: 0.75, offset: 0 },
   ]) {
-    for (const el of elements(scope.html, 'h1', { limit: 20 })) {
+    for (const el of elements(scope.html, 'h1', { limit: 20, maxInner: 8000 })) {
       if (isHidden(el.tag)) continue;
-      const value = clean(text(el.inner), MAX_HEADLINE);
+      const value = clean(headingText(el.inner), MAX_HEADLINE);
       if (!acceptableHeadline(value, brand)) continue;
       return { ...ok(value, scope.method, scope.confidence), index: el.index + el.tag.length };
     }
@@ -126,9 +126,9 @@ export function extractSubhead(doc, headline) {
   if (headline && headline.index >= 0) {
     const window = doc.slice(headline.index, headline.index + SUBHEAD_LOOKAHEAD);
     for (const tag of ['p', 'h2', 'h3']) {
-      for (const el of elements(window, tag, { limit: 12 })) {
+      for (const el of elements(window, tag, { limit: 12, maxInner: 4000 })) {
         if (isHidden(el.tag)) continue;
-        const value = clean(text(el.inner), MAX_SUB);
+        const value = clean(headingText(el.inner), MAX_SUB);
         if (!value || value.length < MIN_SUB || value.length > MAX_SUB) continue;
         if (headline.value && value === headline.value) continue;
         // Reject legal/nav boilerplate that sometimes sits next to a hero.
@@ -185,7 +185,20 @@ const MODIFIER_STOP = new Set([
 const MODIFIER_WORD = /^[A-Za-z][A-Za-z0-9+&/.-]*$/;
 
 /**
+ * Nouns weak enough that, standing alone with no modifier and no "for X"
+ * object, they say nothing about positioning. "Where teams and agents think
+ * together" should not yield the category "agents".
+ */
+const WEAK_STANDALONE = new Set([
+  'agent', 'agents', 'tool', 'tools', 'app', 'apps', 'software', 'solution',
+  'service', 'system', 'suite', 'engine', 'layer', 'stack', 'hub', 'network',
+  'framework', 'builder', 'editor', 'inbox', 'api', 'sdk', 'os', 'automation',
+]);
+
+/**
  * Pull "<up to 3 modifiers> <category noun> [for <object>]" out of one string.
+ *
+ * Returns a structured result so the caller can score competing candidates.
  * Exported for direct unit testing -- this is the fiddliest heuristic we have.
  */
 export function categoryFromText(input) {
@@ -226,23 +239,45 @@ export function categoryFromText(input) {
   if (phrase.length < 3 || phrase.length > 70) return null;
   // A naked two-letter noun ("os", "ai") with no modifier and no object is noise.
   if (phrase.length <= 3 && !object) return null;
-  return phrase;
+  // "agents" on its own is a word in a sentence, not a category claim.
+  if (modifiers.length === 0 && !object && WEAK_STANDALONE.has(noun.toLowerCase())) return null;
+
+  return { phrase, noun: noun.toLowerCase(), modifiers, object: object ? object.trim() : null };
 }
 
 /**
- * Category label, best source first.
+ * schema.org's `applicationCategory` vocabulary ("BusinessApplication",
+ * "DeveloperApplication", "WebApplication") is a fixed taxonomy chosen for
+ * search engines. It never changes when positioning changes, so treating it as
+ * a category label would silently flatten the most interesting signal we have.
+ * Only free-text values are accepted.
+ */
+function isSchemaOrgEnum(v) {
+  const compact = v.replace(/\s+/g, '');
+  return /application$/i.test(compact) || /^other$/i.test(compact);
+}
+
+/**
+ * Category label.
  *
- * JSON-LD `applicationCategory` is a machine-readable self-declaration and beats
- * anything we can infer from prose, so it wins when present.
+ * Rather than taking the first source that yields anything, every source is
+ * turned into a candidate and scored. A rich phrase from a weaker source (the
+ * meta title's "AI workspace") beats a bare noun scraped out of the <h1>
+ * ("agents"), which is the right answer for how these pages are actually
+ * written.
  */
 export function extractCategory(doc, raw, { headline, metaTitle, metaDescription, subhead } = {}) {
+  const candidates = [];
+
   for (const node of jsonLd(raw)) {
     const type = node['@type'];
     const types = Array.isArray(type) ? type : [type];
     if (!types.some((t) => typeof t === 'string' && /SoftwareApplication|WebApplication|Product/i.test(t))) continue;
     const cat = node.applicationCategory ?? node.applicationSubCategory ?? node.category;
     const v = clean(typeof cat === 'string' ? cat : null, 70);
-    if (v && /[a-z]/i.test(v)) return ok(v.toLowerCase(), 'json-ld:applicationCategory', 0.95);
+    if (v && /[a-z]/i.test(v) && !isSchemaOrgEnum(v)) {
+      candidates.push({ phrase: v.toLowerCase(), method: 'json-ld:applicationCategory', base: 0.95, bonus: 0.3 });
+    }
   }
 
   const sources = [
@@ -251,10 +286,17 @@ export function extractCategory(doc, raw, { headline, metaTitle, metaDescription
     ['subhead', subhead?.value, 0.6],
     ['meta-description', metaDescription?.value, 0.5],
   ];
-  for (const [method, value, confidence] of sources) {
+  for (const [method, value, base] of sources) {
     if (!value) continue;
-    const phrase = categoryFromText(value);
-    if (phrase) return ok(phrase, `pattern:${method}`, confidence);
+    const parsed = categoryFromText(value);
+    if (!parsed) continue;
+    // A phrase with modifiers and an object is a real category claim.
+    const bonus = Math.min(parsed.modifiers.length, 2) * 0.12 + (parsed.object ? 0.2 : 0);
+    candidates.push({ phrase: parsed.phrase, method: `pattern:${method}`, base, bonus });
   }
-  return null;
+
+  if (candidates.length === 0) return null;
+  candidates.sort((a, b) => (b.base + b.bonus) - (a.base + a.bonus));
+  const best = candidates[0];
+  return ok(best.phrase, best.method, Math.round(Math.min(0.99, best.base) * 100) / 100);
 }
