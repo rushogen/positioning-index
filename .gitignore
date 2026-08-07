@@ -1,13 +1,13 @@
 node_modules/
-.wrangler/
-.dev.vars
 .env
 .env.*
-dist/
 *.log
 .DS_Store
-.seed.generated.sql
 coverage/
 .probe-cache/
 
-.demo/
+# The robots.txt cache. Third-party content on someone else's schedule; keeping
+# it out of the history means the log stays a log of positioning, not of other
+# people's robots files. A CI runner starts cold and fetches robots.txt once per
+# host per run, which is the politeness budget the crawler documents anyway.
+.cache/
