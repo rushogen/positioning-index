@@ -10,8 +10,8 @@
  "signals": [
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-07T11:10:08Z",
-   "last_good_at": "2026-08-07T11:10:08Z",
+   "last_observed_at": "2026-08-07T11:45:33Z",
+   "last_good_at": "2026-08-07T11:45:33Z",
    "last_good_value": "ai workspace",
    "last_good_json": null,
    "last_good_hash": "080559ee",
@@ -20,12 +20,14 @@
    "consecutive_nulls": 0,
    "suspect": 0,
    "total_changes": 0,
-   "recent_hashes": "[\"080559ee\"]"
+   "recent_hashes": "[\"080559ee\"]",
+   "currency_shift_runs": 0,
+   "currency_shift_key": null
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-07T11:10:08Z",
-   "last_good_at": "2026-08-07T11:10:08Z",
+   "last_observed_at": "2026-08-07T11:45:33Z",
+   "last_good_at": "2026-08-07T11:45:33Z",
    "last_good_value": "1Password, Affirm, Cursor, Discord, Figma, Loreal, Nvidia, OpenAI, Ramp, RiotGames, Toyota, Vercel",
    "last_good_json": "{\"names\":[\"1Password\",\"Affirm\",\"Cursor\",\"Discord\",\"Figma\",\"Loreal\",\"Nvidia\",\"OpenAI\",\"Ramp\",\"RiotGames\",\"Toyota\",\"Vercel\"],\"count\":12,\"lead\":\"Trusted by teams at\\\"}\\\"/> <link\"}",
    "last_good_hash": "1646d728",
@@ -34,12 +36,14 @@
    "consecutive_nulls": 0,
    "suspect": 0,
    "total_changes": 0,
-   "recent_hashes": "[\"1646d728\"]"
+   "recent_hashes": "[\"1646d728\"]",
+   "currency_shift_runs": 0,
+   "currency_shift_key": null
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-07T11:10:08Z",
-   "last_good_at": "2026-08-07T11:10:08Z",
+   "last_observed_at": "2026-08-07T11:45:33Z",
+   "last_good_at": "2026-08-07T11:45:33Z",
    "last_good_value": "Where teams and agents Think together.",
    "last_good_json": null,
    "last_good_hash": "02332963",
@@ -48,12 +52,14 @@
    "consecutive_nulls": 0,
    "suspect": 0,
    "total_changes": 0,
-   "recent_hashes": "[\"02332963\"]"
+   "recent_hashes": "[\"02332963\"]",
+   "currency_shift_runs": 0,
+   "currency_shift_key": null
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-07T11:10:08Z",
-   "last_good_at": "2026-08-07T11:10:08Z",
+   "last_observed_at": "2026-08-07T11:45:33Z",
+   "last_good_at": "2026-08-07T11:45:33Z",
    "last_good_value": "Build Custom Agents, search across all your apps, and automate busywork. The AI workspace where teams get more done, faster.",
    "last_good_json": null,
    "last_good_hash": "d202b249",
@@ -62,12 +68,14 @@
    "consecutive_nulls": 0,
    "suspect": 0,
    "total_changes": 0,
-   "recent_hashes": "[\"d202b249\"]"
+   "recent_hashes": "[\"d202b249\"]",
+   "currency_shift_runs": 0,
+   "currency_shift_key": null
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-07T11:10:08Z",
-   "last_good_at": "2026-08-07T11:10:08Z",
+   "last_observed_at": "2026-08-07T11:45:33Z",
+   "last_good_at": "2026-08-07T11:45:33Z",
    "last_good_value": "The AI workspace that works for you. | Notion",
    "last_good_json": null,
    "last_good_hash": "0ccc0c71",
@@ -76,12 +84,14 @@
    "consecutive_nulls": 0,
    "suspect": 0,
    "total_changes": 0,
-   "recent_hashes": "[\"0ccc0c71\"]"
+   "recent_hashes": "[\"0ccc0c71\"]",
+   "currency_shift_runs": 0,
+   "currency_shift_key": null
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-07T11:18:26Z",
-   "last_good_at": "2026-08-07T11:18:26Z",
+   "last_observed_at": "2026-08-07T11:44:33Z",
+   "last_good_at": "2026-08-07T11:44:33Z",
    "last_good_value": "USD 10",
    "last_good_json": "{\"amount\":10,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"tier\":\"Plus\"}",
    "last_good_hash": "b83dde04",
@@ -90,12 +100,14 @@
    "consecutive_nulls": 0,
    "suspect": 0,
    "total_changes": 1,
-   "recent_hashes": "[\"b83dde04\",\"b5cfd481\"]"
+   "recent_hashes": "[\"b83dde04\",\"b5cfd481\"]",
+   "currency_shift_runs": 0,
+   "currency_shift_key": null
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-07T11:18:26Z",
-   "last_good_at": "2026-08-07T11:18:26Z",
+   "last_observed_at": "2026-08-07T11:44:33Z",
+   "last_good_at": "2026-08-07T11:44:33Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true}",
    "last_good_hash": "4e9f3590",
@@ -104,12 +116,14 @@
    "consecutive_nulls": 0,
    "suspect": 0,
    "total_changes": 0,
-   "recent_hashes": "[\"4e9f3590\"]"
+   "recent_hashes": "[\"4e9f3590\"]",
+   "currency_shift_runs": 0,
+   "currency_shift_key": null
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-07T11:18:26Z",
-   "last_good_at": "2026-08-07T11:18:26Z",
+   "last_observed_at": "2026-08-07T11:44:33Z",
+   "last_good_at": "2026-08-07T11:44:33Z",
    "last_good_value": "Notion Pricing Plans: Free, Plus, Business, & Enterprise.",
    "last_good_json": null,
    "last_good_hash": "54e8e64d",
@@ -118,26 +132,30 @@
    "consecutive_nulls": 0,
    "suspect": 0,
    "total_changes": 0,
-   "recent_hashes": "[\"54e8e64d\"]"
+   "recent_hashes": "[\"54e8e64d\"]",
+   "currency_shift_runs": 0,
+   "currency_shift_key": null
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-07T11:18:26Z",
+   "last_observed_at": "2026-08-07T11:44:33Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
    "last_good_hash": null,
    "last_good_method": null,
    "last_good_confidence": null,
-   "consecutive_nulls": 2,
+   "consecutive_nulls": 3,
    "suspect": 0,
    "total_changes": 0,
-   "recent_hashes": null
+   "recent_hashes": null,
+   "currency_shift_runs": 0,
+   "currency_shift_key": null
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-07T11:18:26Z",
-   "last_good_at": "2026-08-07T11:18:26Z",
+   "last_observed_at": "2026-08-07T11:44:33Z",
+   "last_good_at": "2026-08-07T11:44:33Z",
    "last_good_value": "Free free | Plus USD 10 | Business USD 20 | Enterprise custom | Custom Agents USD 10/month",
    "last_good_json": "{\"tiers\":[{\"name\":\"Free\",\"amount\":0,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Plus\",\"amount\":10,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Business\",\"amount\":20,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Enterprise\",\"amount\":null,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"contact-sales\"},{\"name\":\"Custom Agents\",\"amount\":10,\"currency\":\"USD\",\"period\":\"month\",\"unit\":null,\"source\":\"heuristic\"}],\"count\":5}",
    "last_good_hash": "dc1f2155",
@@ -146,12 +164,14 @@
    "consecutive_nulls": 0,
    "suspect": 0,
    "total_changes": 1,
-   "recent_hashes": "[\"dc1f2155\",\"c72eb2fd\"]"
+   "recent_hashes": "[\"dc1f2155\",\"c72eb2fd\"]",
+   "currency_shift_runs": 0,
+   "currency_shift_key": null
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-07T11:10:08Z",
-   "last_good_at": "2026-08-07T11:10:08Z",
+   "last_observed_at": "2026-08-07T11:45:33Z",
+   "last_good_at": "2026-08-07T11:45:33Z",
    "last_good_value": "100m users | 98% demo play trusted | fortune 100",
    "last_good_json": "{\"items\":[{\"claim\":\"100m users\",\"kind\":\"count\"},{\"claim\":\"98% demo play trusted\",\"kind\":\"percent-trailing\"},{\"claim\":\"fortune 100\",\"kind\":\"rank\"}],\"count\":3}",
    "last_good_hash": "ee84c5e5",
@@ -160,12 +180,14 @@
    "consecutive_nulls": 0,
    "suspect": 0,
    "total_changes": 0,
-   "recent_hashes": "[\"ee84c5e5\"]"
+   "recent_hashes": "[\"ee84c5e5\"]",
+   "currency_shift_runs": 0,
+   "currency_shift_key": null
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-07T11:10:08Z",
-   "last_good_at": "2026-08-07T11:10:08Z",
+   "last_observed_at": "2026-08-07T11:45:33Z",
+   "last_good_at": "2026-08-07T11:45:33Z",
    "last_good_value": "Capture context, find answers, and automate tasks with AI built for your team.",
    "last_good_json": null,
    "last_good_hash": "b5320c6a",
@@ -174,11 +196,37 @@
    "consecutive_nulls": 0,
    "suspect": 0,
    "total_changes": 0,
-   "recent_hashes": "[\"b5320c6a\"]"
+   "recent_hashes": "[\"b5320c6a\"]",
+   "currency_shift_runs": 0,
+   "currency_shift_key": null
   }
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.notion.com/",
+   "fetched_at": "2026-08-07T11:45:33Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 249574,
+   "duration_ms": 444,
+   "signals_found": 7,
+   "signals_expected": 7
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.notion.com/pricing",
+   "fetched_at": "2026-08-07T11:44:33Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 429354,
+   "duration_ms": 129,
+   "signals_found": 4,
+   "signals_expected": 5
+  },
   {
    "kind": "pricing",
    "url": "https://www.notion.com/pricing",
