@@ -39,7 +39,7 @@ import { canonical, diffPage, gatePage } from './diff.js';
 import { fetchPage, nextDueAt } from './crawl/fetch.js';
 import { MIN_HOST_INTERVAL_MS } from './crawl/agent.js';
 import { fnv1a } from './hash.js';
-import { iso } from './store/files.js';
+import { applyResult, iso } from './store/files.js';
 
 const realSleep = (ms) => (ms > 0 ? new Promise((r) => setTimeout(r, ms)) : Promise.resolve());
 
@@ -372,13 +372,7 @@ export async function runCrawl({
       observationsWritten++;
     }
 
-    queue.set(`${target.slug}/${target.kind}`, {
-      ...(queue.get(`${target.slug}/${target.kind}`) ?? {}),
-      ...outcome.result,
-      last_attempted_at: outcome.result.at,
-      last_status: outcome.result.status,
-      consecutive_failures: outcome.result.failures,
-    });
+    applyResult(queue, outcome.result);
 
     results.push(outcome.result);
     allEvents.push(...outcome.events);

@@ -19,8 +19,7 @@
  * operator to ignore red builds.
  */
 
-import { readFile } from 'node:fs/promises';
-import { appendFile } from 'node:fs/promises';
+import { appendFile, readFile } from 'node:fs/promises';
 import { fileURLToPath } from 'node:url';
 import { join } from 'node:path';
 

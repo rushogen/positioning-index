@@ -155,24 +155,34 @@ export function observationFingerprint(record) {
 export function queueFromRuns(runs) {
   const queue = new Map();
   for (const run of runs) {
-    for (const r of run.results ?? []) {
-      const key = `${r.slug}/${r.kind}`;
-      const prev = queue.get(key) ?? {};
-      queue.set(key, {
-        slug: r.slug,
-        kind: r.kind,
-        last_attempted_at: r.at,
-        last_status: r.status,
-        last_reason: r.reason ?? null,
-        last_ok_at: (r.status === 'ok' || r.status === 'unchanged') ? r.at : (prev.last_ok_at ?? null),
-        next_due_at: r.next_due_at ?? null,
-        etag: r.etag ?? null,
-        last_modified: r.last_modified ?? null,
-        content_hash: r.content_hash ?? null,
-        consecutive_failures: r.failures ?? 0,
-      });
-    }
+    for (const r of run.results ?? []) applyResult(queue, r);
   }
+  return queue;
+}
+
+/**
+ * Fold one target result into the queue, in place.
+ *
+ * Exported so the runner can keep its in-memory queue in exactly the shape a
+ * later replay of the ledger will rebuild: a target's state must not depend on
+ * whether it was read from disk or produced a moment ago.
+ */
+export function applyResult(queue, r) {
+  const key = `${r.slug}/${r.kind}`;
+  const prev = queue.get(key) ?? {};
+  queue.set(key, {
+    slug: r.slug,
+    kind: r.kind,
+    last_attempted_at: r.at,
+    last_status: r.status,
+    last_reason: r.reason ?? null,
+    last_ok_at: (r.status === 'ok' || r.status === 'unchanged') ? r.at : (prev.last_ok_at ?? null),
+    next_due_at: r.next_due_at ?? null,
+    etag: r.etag ?? null,
+    last_modified: r.last_modified ?? null,
+    content_hash: r.content_hash ?? null,
+    consecutive_failures: r.failures ?? 0,
+  });
   return queue;
 }
 
