@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "dbt-labs",
+  "name": "dbt Labs",
+  "segment": "data",
+  "hq_country": "US",
+  "homepage_url": "https://www.getdbt.com/",
+  "pricing_url": "https://www.getdbt.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

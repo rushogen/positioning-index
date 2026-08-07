@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "clickup",
+  "name": "ClickUp",
+  "segment": "work-mgmt",
+  "hq_country": "US",
+  "homepage_url": "https://clickup.com/",
+  "pricing_url": "https://clickup.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

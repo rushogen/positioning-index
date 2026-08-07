@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "pipedrive",
+  "name": "Pipedrive",
+  "segment": "gtm",
+  "hq_country": "EE",
+  "homepage_url": "https://www.pipedrive.com/",
+  "pricing_url": "https://www.pipedrive.com/en/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

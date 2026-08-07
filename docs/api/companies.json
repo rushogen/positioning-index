@@ -1,0 +1,484 @@
+{
+ "companies": [
+  {
+   "slug": "airtable",
+   "name": "Airtable",
+   "segment": "product-dev",
+   "hq_country": "US",
+   "homepage_url": "https://www.airtable.com/",
+   "pricing_url": "https://www.airtable.com/pricing"
+  },
+  {
+   "slug": "amplitude",
+   "name": "Amplitude",
+   "segment": "analytics",
+   "hq_country": "US",
+   "homepage_url": "https://amplitude.com/",
+   "pricing_url": "https://amplitude.com/pricing"
+  },
+  {
+   "slug": "apollo",
+   "name": "Apollo.io",
+   "segment": "gtm",
+   "hq_country": "US",
+   "homepage_url": "https://www.apollo.io/",
+   "pricing_url": "https://www.apollo.io/pricing"
+  },
+  {
+   "slug": "asana",
+   "name": "Asana",
+   "segment": "work-mgmt",
+   "hq_country": "US",
+   "homepage_url": "https://asana.com/",
+   "pricing_url": "https://asana.com/pricing"
+  },
+  {
+   "slug": "atlassian",
+   "name": "Atlassian",
+   "segment": "product-dev",
+   "hq_country": "AU",
+   "homepage_url": "https://www.atlassian.com/",
+   "pricing_url": "https://www.atlassian.com/software/jira/pricing"
+  },
+  {
+   "slug": "attio",
+   "name": "Attio",
+   "segment": "gtm",
+   "hq_country": "GB",
+   "homepage_url": "https://attio.com/",
+   "pricing_url": "https://attio.com/pricing"
+  },
+  {
+   "slug": "bill",
+   "name": "BILL",
+   "segment": "fintech-ops",
+   "hq_country": "US",
+   "homepage_url": "https://www.bill.com/",
+   "pricing_url": "https://www.bill.com/product/pricing"
+  },
+  {
+   "slug": "braze",
+   "name": "Braze",
+   "segment": "marketing",
+   "hq_country": "US",
+   "homepage_url": "https://www.braze.com/",
+   "pricing_url": "https://www.braze.com/pricing"
+  },
+  {
+   "slug": "brex",
+   "name": "Brex",
+   "segment": "fintech-ops",
+   "hq_country": "US",
+   "homepage_url": "https://www.brex.com/",
+   "pricing_url": "https://www.brex.com/pricing"
+  },
+  {
+   "slug": "calendly",
+   "name": "Calendly",
+   "segment": "work-mgmt",
+   "hq_country": "US",
+   "homepage_url": "https://calendly.com/",
+   "pricing_url": "https://calendly.com/pricing"
+  },
+  {
+   "slug": "clay",
+   "name": "Clay",
+   "segment": "gtm",
+   "hq_country": "US",
+   "homepage_url": "https://www.clay.com/",
+   "pricing_url": "https://www.clay.com/pricing"
+  },
+  {
+   "slug": "clickup",
+   "name": "ClickUp",
+   "segment": "work-mgmt",
+   "hq_country": "US",
+   "homepage_url": "https://clickup.com/",
+   "pricing_url": "https://clickup.com/pricing"
+  },
+  {
+   "slug": "cloudflare",
+   "name": "Cloudflare",
+   "segment": "dev-infra",
+   "hq_country": "US",
+   "homepage_url": "https://www.cloudflare.com/",
+   "pricing_url": "https://www.cloudflare.com/plans/"
+  },
+  {
+   "slug": "contentful",
+   "name": "Contentful",
+   "segment": "marketing",
+   "hq_country": "DE",
+   "homepage_url": "https://www.contentful.com/",
+   "pricing_url": "https://www.contentful.com/pricing/"
+  },
+  {
+   "slug": "customer-io",
+   "name": "Customer.io",
+   "segment": "marketing",
+   "hq_country": "US",
+   "homepage_url": "https://customer.io/",
+   "pricing_url": "https://customer.io/pricing"
+  },
+  {
+   "slug": "databricks",
+   "name": "Databricks",
+   "segment": "data",
+   "hq_country": "US",
+   "homepage_url": "https://www.databricks.com/",
+   "pricing_url": "https://www.databricks.com/product/pricing"
+  },
+  {
+   "slug": "datadog",
+   "name": "Datadog",
+   "segment": "observability",
+   "hq_country": "US",
+   "homepage_url": "https://www.datadoghq.com/",
+   "pricing_url": "https://www.datadoghq.com/pricing/"
+  },
+  {
+   "slug": "dbt-labs",
+   "name": "dbt Labs",
+   "segment": "data",
+   "hq_country": "US",
+   "homepage_url": "https://www.getdbt.com/",
+   "pricing_url": "https://www.getdbt.com/pricing"
+  },
+  {
+   "slug": "deel",
+   "name": "Deel",
+   "segment": "hr-ops",
+   "hq_country": "US",
+   "homepage_url": "https://www.deel.com/",
+   "pricing_url": "https://www.deel.com/pricing/"
+  },
+  {
+   "slug": "elastic",
+   "name": "Elastic",
+   "segment": "dev-infra",
+   "hq_country": "NL",
+   "homepage_url": "https://www.elastic.co/",
+   "pricing_url": "https://www.elastic.co/pricing"
+  },
+  {
+   "slug": "figma",
+   "name": "Figma",
+   "segment": "design",
+   "hq_country": "US",
+   "homepage_url": "https://www.figma.com/",
+   "pricing_url": "https://www.figma.com/pricing/"
+  },
+  {
+   "slug": "fivetran",
+   "name": "Fivetran",
+   "segment": "data",
+   "hq_country": "US",
+   "homepage_url": "https://www.fivetran.com/",
+   "pricing_url": "https://www.fivetran.com/pricing"
+  },
+  {
+   "slug": "front",
+   "name": "Front",
+   "segment": "support",
+   "hq_country": "US",
+   "homepage_url": "https://front.com/",
+   "pricing_url": "https://front.com/pricing"
+  },
+  {
+   "slug": "github",
+   "name": "GitHub",
+   "segment": "product-dev",
+   "hq_country": "US",
+   "homepage_url": "https://github.com/",
+   "pricing_url": "https://github.com/pricing"
+  },
+  {
+   "slug": "gitlab",
+   "name": "GitLab",
+   "segment": "product-dev",
+   "hq_country": "US",
+   "homepage_url": "https://about.gitlab.com/",
+   "pricing_url": "https://about.gitlab.com/pricing/"
+  },
+  {
+   "slug": "gong",
+   "name": "Gong",
+   "segment": "gtm",
+   "hq_country": "US",
+   "homepage_url": "https://www.gong.io/",
+   "pricing_url": "https://www.gong.io/pricing/"
+  },
+  {
+   "slug": "hightouch",
+   "name": "Hightouch",
+   "segment": "data",
+   "hq_country": "US",
+   "homepage_url": "https://hightouch.com/",
+   "pricing_url": "https://hightouch.com/pricing"
+  },
+  {
+   "slug": "hubspot",
+   "name": "HubSpot",
+   "segment": "gtm",
+   "hq_country": "US",
+   "homepage_url": "https://www.hubspot.com/",
+   "pricing_url": "https://www.hubspot.com/pricing/marketing"
+  },
+  {
+   "slug": "intercom",
+   "name": "Intercom",
+   "segment": "support",
+   "hq_country": "US",
+   "homepage_url": "https://www.intercom.com/",
+   "pricing_url": "https://www.intercom.com/pricing"
+  },
+  {
+   "slug": "klaviyo",
+   "name": "Klaviyo",
+   "segment": "marketing",
+   "hq_country": "US",
+   "homepage_url": "https://www.klaviyo.com/",
+   "pricing_url": "https://www.klaviyo.com/pricing"
+  },
+  {
+   "slug": "lattice",
+   "name": "Lattice",
+   "segment": "hr-ops",
+   "hq_country": "US",
+   "homepage_url": "https://lattice.com/",
+   "pricing_url": "https://lattice.com/pricing"
+  },
+  {
+   "slug": "launchdarkly",
+   "name": "LaunchDarkly",
+   "segment": "dev-infra",
+   "hq_country": "US",
+   "homepage_url": "https://launchdarkly.com/",
+   "pricing_url": "https://launchdarkly.com/pricing/"
+  },
+  {
+   "slug": "linear",
+   "name": "Linear",
+   "segment": "product-dev",
+   "hq_country": "US",
+   "homepage_url": "https://linear.app/",
+   "pricing_url": "https://linear.app/pricing"
+  },
+  {
+   "slug": "loom",
+   "name": "Loom",
+   "segment": "work-mgmt",
+   "hq_country": "US",
+   "homepage_url": "https://www.loom.com/",
+   "pricing_url": "https://www.loom.com/pricing"
+  },
+  {
+   "slug": "metabase",
+   "name": "Metabase",
+   "segment": "analytics",
+   "hq_country": "US",
+   "homepage_url": "https://www.metabase.com/",
+   "pricing_url": "https://www.metabase.com/pricing/"
+  },
+  {
+   "slug": "miro",
+   "name": "Miro",
+   "segment": "design",
+   "hq_country": "NL",
+   "homepage_url": "https://miro.com/",
+   "pricing_url": "https://miro.com/pricing/"
+  },
+  {
+   "slug": "mixpanel",
+   "name": "Mixpanel",
+   "segment": "analytics",
+   "hq_country": "US",
+   "homepage_url": "https://mixpanel.com/",
+   "pricing_url": "https://mixpanel.com/pricing/"
+  },
+  {
+   "slug": "monday",
+   "name": "monday.com",
+   "segment": "work-mgmt",
+   "hq_country": "IL",
+   "homepage_url": "https://monday.com/",
+   "pricing_url": "https://monday.com/pricing"
+  },
+  {
+   "slug": "mongodb",
+   "name": "MongoDB",
+   "segment": "data",
+   "hq_country": "US",
+   "homepage_url": "https://www.mongodb.com/",
+   "pricing_url": "https://www.mongodb.com/pricing"
+  },
+  {
+   "slug": "netlify",
+   "name": "Netlify",
+   "segment": "dev-infra",
+   "hq_country": "US",
+   "homepage_url": "https://www.netlify.com/",
+   "pricing_url": "https://www.netlify.com/pricing/"
+  },
+  {
+   "slug": "notion",
+   "name": "Notion",
+   "segment": "product-dev",
+   "hq_country": "US",
+   "homepage_url": "https://www.notion.com/",
+   "pricing_url": "https://www.notion.com/pricing"
+  },
+  {
+   "slug": "pendo",
+   "name": "Pendo",
+   "segment": "analytics",
+   "hq_country": "US",
+   "homepage_url": "https://www.pendo.io/",
+   "pricing_url": "https://www.pendo.io/pricing/"
+  },
+  {
+   "slug": "pipedrive",
+   "name": "Pipedrive",
+   "segment": "gtm",
+   "hq_country": "EE",
+   "homepage_url": "https://www.pipedrive.com/",
+   "pricing_url": "https://www.pipedrive.com/en/pricing"
+  },
+  {
+   "slug": "posthog",
+   "name": "PostHog",
+   "segment": "analytics",
+   "hq_country": "US",
+   "homepage_url": "https://posthog.com/",
+   "pricing_url": "https://posthog.com/pricing"
+  },
+  {
+   "slug": "ramp",
+   "name": "Ramp",
+   "segment": "fintech-ops",
+   "hq_country": "US",
+   "homepage_url": "https://ramp.com/",
+   "pricing_url": "https://ramp.com/pricing"
+  },
+  {
+   "slug": "retool",
+   "name": "Retool",
+   "segment": "automation",
+   "hq_country": "US",
+   "homepage_url": "https://retool.com/",
+   "pricing_url": "https://retool.com/pricing"
+  },
+  {
+   "slug": "rippling",
+   "name": "Rippling",
+   "segment": "hr-ops",
+   "hq_country": "US",
+   "homepage_url": "https://www.rippling.com/",
+   "pricing_url": "https://www.rippling.com/pricing"
+  },
+  {
+   "slug": "segment",
+   "name": "Segment",
+   "segment": "data",
+   "hq_country": "US",
+   "homepage_url": "https://segment.com/",
+   "pricing_url": "https://segment.com/pricing/"
+  },
+  {
+   "slug": "sentry",
+   "name": "Sentry",
+   "segment": "observability",
+   "hq_country": "US",
+   "homepage_url": "https://sentry.io/welcome/",
+   "pricing_url": "https://sentry.io/pricing/"
+  },
+  {
+   "slug": "slack",
+   "name": "Slack",
+   "segment": "work-mgmt",
+   "hq_country": "US",
+   "homepage_url": "https://slack.com/",
+   "pricing_url": "https://slack.com/pricing"
+  },
+  {
+   "slug": "snowflake",
+   "name": "Snowflake",
+   "segment": "data",
+   "hq_country": "US",
+   "homepage_url": "https://www.snowflake.com/en/",
+   "pricing_url": "https://www.snowflake.com/en/pricing-options/"
+  },
+  {
+   "slug": "stripe",
+   "name": "Stripe",
+   "segment": "fintech-ops",
+   "hq_country": "US",
+   "homepage_url": "https://stripe.com/",
+   "pricing_url": "https://stripe.com/pricing"
+  },
+  {
+   "slug": "supabase",
+   "name": "Supabase",
+   "segment": "dev-infra",
+   "hq_country": "US",
+   "homepage_url": "https://supabase.com/",
+   "pricing_url": "https://supabase.com/pricing"
+  },
+  {
+   "slug": "twilio",
+   "name": "Twilio",
+   "segment": "dev-infra",
+   "hq_country": "US",
+   "homepage_url": "https://www.twilio.com/en-us",
+   "pricing_url": "https://www.twilio.com/en-us/pricing"
+  },
+  {
+   "slug": "typeform",
+   "name": "Typeform",
+   "segment": "marketing",
+   "hq_country": "ES",
+   "homepage_url": "https://www.typeform.com/",
+   "pricing_url": "https://www.typeform.com/pricing/"
+  },
+  {
+   "slug": "vanta",
+   "name": "Vanta",
+   "segment": "security",
+   "hq_country": "US",
+   "homepage_url": "https://www.vanta.com/",
+   "pricing_url": "https://www.vanta.com/pricing"
+  },
+  {
+   "slug": "vercel",
+   "name": "Vercel",
+   "segment": "dev-infra",
+   "hq_country": "US",
+   "homepage_url": "https://vercel.com/",
+   "pricing_url": "https://vercel.com/pricing"
+  },
+  {
+   "slug": "webflow",
+   "name": "Webflow",
+   "segment": "marketing",
+   "hq_country": "US",
+   "homepage_url": "https://webflow.com/",
+   "pricing_url": "https://webflow.com/pricing"
+  },
+  {
+   "slug": "zapier",
+   "name": "Zapier",
+   "segment": "automation",
+   "hq_country": "US",
+   "homepage_url": "https://zapier.com/",
+   "pricing_url": "https://zapier.com/pricing"
+  },
+  {
+   "slug": "zendesk",
+   "name": "Zendesk",
+   "segment": "support",
+   "hq_country": "US",
+   "homepage_url": "https://www.zendesk.com/",
+   "pricing_url": "https://www.zendesk.com/pricing/"
+  }
+ ]
+}

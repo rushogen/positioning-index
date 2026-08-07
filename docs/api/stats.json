@@ -1,0 +1,110 @@
+{
+ "companies": 60,
+ "targets": 120,
+ "observations": 14,
+ "changes": 0,
+ "changes_7d": 0,
+ "changes_30d": 0,
+ "first_observation": "2026-08-07T11:00:38Z",
+ "last_observation": "2026-08-07T11:11:16Z",
+ "last_successful_fetch": "2026-08-07T11:11:16Z",
+ "runs": 3,
+ "last_run_at": "2026-08-07T11:11:17Z",
+ "fetches_24h": 16,
+ "blocked_24h": 0,
+ "errors_24h": 0,
+ "suspect_signals": 0,
+ "categories": [
+  {
+   "label": "ai work platform for people",
+   "n": 1
+  },
+  {
+   "label": "ai workspace",
+   "n": 1
+  },
+  {
+   "label": "collaboration layer",
+   "n": 1
+  },
+  {
+   "label": "intelligent canvas for infinite creativity",
+   "n": 1
+  },
+  {
+   "label": "one workspace",
+   "n": 1
+  },
+  {
+   "label": "os for human-agent teams",
+   "n": 1
+  },
+  {
+   "label": "product development system for teams and agents",
+   "n": 1
+  }
+ ],
+ "signals": {
+  "headline": {
+   "page": "home",
+   "kind": "text",
+   "label": "Hero headline"
+  },
+  "subhead": {
+   "page": "home",
+   "kind": "text",
+   "label": "Hero subhead"
+  },
+  "category_label": {
+   "page": "home",
+   "kind": "text",
+   "label": "Category label"
+  },
+  "meta_title": {
+   "page": "home",
+   "kind": "text",
+   "label": "Meta title"
+  },
+  "meta_description": {
+   "page": "home",
+   "kind": "text",
+   "label": "Meta description"
+  },
+  "customer_logos": {
+   "page": "home",
+   "kind": "list",
+   "label": "Customer logos"
+  },
+  "proof_points": {
+   "page": "home",
+   "kind": "list",
+   "label": "Proof points"
+  },
+  "pricing_tiers": {
+   "page": "pricing",
+   "kind": "list",
+   "label": "Pricing tiers"
+  },
+  "pricing_entry_price": {
+   "page": "pricing",
+   "kind": "text",
+   "label": "Entry price"
+  },
+  "pricing_free_tier": {
+   "page": "pricing",
+   "kind": "enum",
+   "label": "Free tier"
+  },
+  "pricing_seat_minimum": {
+   "page": "pricing",
+   "kind": "text",
+   "label": "Seat minimum"
+  },
+  "pricing_meta_title": {
+   "page": "pricing",
+   "kind": "text",
+   "label": "Pricing page title"
+  }
+ },
+ "generated_at": "2026-08-07T11:11:17Z"
+}

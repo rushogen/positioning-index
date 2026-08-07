@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "deel",
+  "name": "Deel",
+  "segment": "hr-ops",
+  "hq_country": "US",
+  "homepage_url": "https://www.deel.com/",
+  "pricing_url": "https://www.deel.com/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

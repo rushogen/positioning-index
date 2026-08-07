@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "cloudflare",
+  "name": "Cloudflare",
+  "segment": "dev-infra",
+  "hq_country": "US",
+  "homepage_url": "https://www.cloudflare.com/",
+  "pricing_url": "https://www.cloudflare.com/plans/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

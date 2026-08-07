@@ -1,0 +1,47 @@
+PositioningIndexBot -- crawler disclosure
+============================================================
+
+User-Agent
+  PositioningIndexBot/1.0 (+https://github.com/rushogen/positioning-index#crawling-policy; marketing-page positioning research; one request per page per day; honours robots.txt)
+
+What it does
+  Fetches the publicly accessible homepage and pricing page of the B2B SaaS
+  companies listed at https://github.com/rushogen/positioning-index#crawling-policy, and records a small number of short
+  factual strings from them: the hero headline and subhead, the category noun,
+  the meta title and description, published pricing tier names and prices,
+  customer logo names, and quantified marketing claims.
+
+  The purpose is to observe how software companies change their own positioning
+  over time. Nothing is republished at length; the index stores short excerpts
+  and links back to the source page.
+
+Rate
+  At most one request per page per day. Requests are strictly serial, and two
+  requests to the same host are separated by at least 60 seconds, or by the
+  host's Crawl-delay where that is longer. robots.txt is fetched at most once
+  per host per run.
+
+  The crawler is not always-on. It runs when a person or a manually triggered
+  workflow asks it to, and then the process exits.
+
+What it honours
+  robots.txt per RFC 9309, including per-agent groups, longest-match rule
+  precedence, and Crawl-delay.
+  Content-Signal declarations (content-signals.org). This crawler indexes; it
+  does not train models and does not supply a generative system.
+  HTTP 429 and Retry-After.
+  If a robots.txt cannot be fetched, or returns 5xx, we do not crawl.
+
+How to stop it
+  Add this to your robots.txt:
+
+      User-agent: PositioningIndexBot
+      Disallow: /
+
+  It takes effect within 24 hours, which is the robots.txt cache lifetime.
+  Or open an issue at https://github.com/rushogen/positioning-index#crawling-policy and the domain will be removed from the
+  seed list entirely.
+
+Not collected
+  No personal data. No authenticated pages. No form submissions. No pages
+  outside the two URLs published per company in seed/companies.json.

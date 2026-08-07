@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "pendo",
+  "name": "Pendo",
+  "segment": "analytics",
+  "hq_country": "US",
+  "homepage_url": "https://www.pendo.io/",
+  "pricing_url": "https://www.pendo.io/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

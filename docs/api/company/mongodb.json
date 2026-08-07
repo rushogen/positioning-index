@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "mongodb",
+  "name": "MongoDB",
+  "segment": "data",
+  "hq_country": "US",
+  "homepage_url": "https://www.mongodb.com/",
+  "pricing_url": "https://www.mongodb.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

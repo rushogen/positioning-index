@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "fivetran",
+  "name": "Fivetran",
+  "segment": "data",
+  "hq_country": "US",
+  "homepage_url": "https://www.fivetran.com/",
+  "pricing_url": "https://www.fivetran.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

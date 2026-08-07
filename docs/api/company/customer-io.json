@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "customer-io",
+  "name": "Customer.io",
+  "segment": "marketing",
+  "hq_country": "US",
+  "homepage_url": "https://customer.io/",
+  "pricing_url": "https://customer.io/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "twilio",
+  "name": "Twilio",
+  "segment": "dev-infra",
+  "hq_country": "US",
+  "homepage_url": "https://www.twilio.com/en-us",
+  "pricing_url": "https://www.twilio.com/en-us/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

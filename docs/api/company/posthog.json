@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "posthog",
+  "name": "PostHog",
+  "segment": "analytics",
+  "hq_country": "US",
+  "homepage_url": "https://posthog.com/",
+  "pricing_url": "https://posthog.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

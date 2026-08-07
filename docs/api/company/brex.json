@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "brex",
+  "name": "Brex",
+  "segment": "fintech-ops",
+  "hq_country": "US",
+  "homepage_url": "https://www.brex.com/",
+  "pricing_url": "https://www.brex.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

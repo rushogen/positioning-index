@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "mixpanel",
+  "name": "Mixpanel",
+  "segment": "analytics",
+  "hq_country": "US",
+  "homepage_url": "https://mixpanel.com/",
+  "pricing_url": "https://mixpanel.com/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

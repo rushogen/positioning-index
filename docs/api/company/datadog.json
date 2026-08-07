@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "datadog",
+  "name": "Datadog",
+  "segment": "observability",
+  "hq_country": "US",
+  "homepage_url": "https://www.datadoghq.com/",
+  "pricing_url": "https://www.datadoghq.com/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

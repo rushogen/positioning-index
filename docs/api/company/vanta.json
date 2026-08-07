@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "vanta",
+  "name": "Vanta",
+  "segment": "security",
+  "hq_country": "US",
+  "homepage_url": "https://www.vanta.com/",
+  "pricing_url": "https://www.vanta.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

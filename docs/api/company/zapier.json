@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "zapier",
+  "name": "Zapier",
+  "segment": "automation",
+  "hq_country": "US",
+  "homepage_url": "https://zapier.com/",
+  "pricing_url": "https://zapier.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

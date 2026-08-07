@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "apollo",
+  "name": "Apollo.io",
+  "segment": "gtm",
+  "hq_country": "US",
+  "homepage_url": "https://www.apollo.io/",
+  "pricing_url": "https://www.apollo.io/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

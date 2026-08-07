@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The B2B SaaS Positioning Index</title>
+<meta name="description" content="A timestamped record of how B2B SaaS companies describe themselves, and how that description drifts over time.">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>&#9678;</text></svg>">
+<link rel="stylesheet" href="style.css">
+<!--
+  No third-party requests. No fonts from a CDN, no analytics, no embeds.
+
+  Partly that is engineering hygiene, and partly it is the law the author works
+  under: TDDDG section 25 makes storing or reading information on a visitor's
+  device conditional on consent, and loading a font or a script from someone
+  else's server discloses the visitor's IP address to that server. The simplest
+  way to need no consent banner is to need no third parties. Everything here is
+  served from the same origin, and the page sets no cookies and no storage.
+-->
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="wrap">
+    <h1><a href="#/">The B2B SaaS Positioning Index</a></h1>
+    <p class="standfirst">
+      This reads the homepage and pricing page of
+      <span data-stat="companies">60</span> B2B SaaS companies and records what they
+      call themselves. It has been doing that since
+      <span data-stat="first_observation">&mdash;</span>. The point is not today's
+      snapshot; it is the difference between today's and last month's. Every
+      crawl is a commit in a public repository, so the record below can be
+      checked line by line against a history nobody can quietly rewrite.
+    </p>
+
+    <dl class="stats" id="stats">
+      <div><dt>Companies</dt><dd data-stat="companies">&mdash;</dd></div>
+      <div><dt>Observations</dt><dd data-stat="observations">&mdash;</dd></div>
+      <div><dt>Changes, 30 days</dt><dd data-stat="changes_30d">&mdash;</dd></div>
+      <div><dt>Crawl runs</dt><dd data-stat="runs">&mdash;</dd></div>
+      <div><dt>Last successful fetch</dt><dd data-stat="last_successful_fetch">&mdash;</dd></div>
+    </dl>
+
+    <p class="crawl-banner" id="crawl-banner" hidden></p>
+  </div>
+</header>
+
+<nav class="tabs wrap" aria-label="Sections">
+  <a href="#/" data-tab="feed" class="on">Changes</a>
+  <a href="#/companies" data-tab="companies">Companies</a>
+  <a href="#/categories" data-tab="categories">Categories</a>
+  <a href="#/health" data-tab="health">Crawl health</a>
+</nav>
+
+<main id="main" class="wrap">
+
+  <!-- ------------------------------------------------------ changes feed -->
+  <section id="view-feed" class="view">
+    <div class="view-head">
+      <h2>Detected changes</h2>
+      <label class="filter">
+        Signal
+        <select id="signal-filter"><option value="">all signals</option></select>
+      </label>
+    </div>
+    <p class="note">
+      A change is only published when the page was read successfully and the
+      value moved from one known value to another. When extraction fails, the
+      index records a fault and says nothing &mdash; a broken selector is not a
+      repositioning. <a href="methodology.txt">How each signal is measured</a>.
+    </p>
+    <ol class="feed" id="feed"><li class="loading">Loading&hellip;</li></ol>
+  </section>
+
+  <!-- --------------------------------------------------------- companies -->
+  <section id="view-companies" class="view" hidden>
+    <div class="view-head">
+      <h2>Companies tracked</h2>
+      <label class="filter">
+        Segment
+        <select id="segment-filter"><option value="">all segments</option></select>
+      </label>
+    </div>
+    <table class="grid" id="companies-table">
+      <thead><tr>
+        <th scope="col">Company</th>
+        <th scope="col">Calls itself</th>
+        <th scope="col">Entry price</th>
+        <th scope="col" class="num">Changes</th>
+        <th scope="col">State</th>
+      </tr></thead>
+      <tbody><tr><td colspan="5" class="loading">Loading&hellip;</td></tr></tbody>
+    </table>
+  </section>
+
+  <!-- -------------------------------------------------------- categories -->
+  <section id="view-categories" class="view" hidden>
+    <h2>What they call themselves</h2>
+    <p class="note">
+      The category noun is the most compressed statement of positioning a
+      company publishes. Counted across the current value for every company we
+      can currently read.
+    </p>
+    <ul class="bars" id="categories"><li class="loading">Loading&hellip;</li></ul>
+  </section>
+
+  <!-- ------------------------------------------------------------ health -->
+  <section id="view-health" class="view" hidden>
+    <h2>Crawl health</h2>
+    <p class="note">
+      Published because an index that quietly stops working while still saying
+      &ldquo;no changes&rdquo; is worse than no index. Every state below is
+      derived from the last fetch attempt, not from the last success.
+    </p>
+    <ul class="legend" id="health-legend"></ul>
+    <table class="grid" id="health-table">
+      <thead><tr>
+        <th scope="col">Company</th>
+        <th scope="col">State</th>
+        <th scope="col">Last successful read</th>
+        <th scope="col" class="num">Live signals</th>
+        <th scope="col">Detail</th>
+      </tr></thead>
+      <tbody><tr><td colspan="5" class="loading">Loading&hellip;</td></tr></tbody>
+    </table>
+  </section>
+
+  <!-- ------------------------------------------------------------ company -->
+  <section id="view-company" class="view" hidden>
+    <p><a href="#/companies" class="back">&larr; All companies</a></p>
+    <div id="company-detail"></div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <h2>About this index</h2>
+  <div class="cols">
+    <div>
+      <h3>What it measures</h3>
+      <p>
+        Twelve signals per company: hero headline and subhead, the category noun,
+        meta title and description, customer logo names, quantified proof points,
+        and from the pricing page the tier list, entry price, whether a free tier
+        is published, and any seat minimum.
+      </p>
+      <p><a href="methodology.txt">Methodology, v1.1</a></p>
+    </div>
+    <div>
+      <h3>How it crawls</h3>
+      <p>
+        Public marketing pages only, at most one request per page per day, from a
+        named user agent that links back to a disclosure page. robots.txt is
+        honoured per RFC 9309 including Crawl-delay, and Content-Signal
+        declarations are honoured too. If robots.txt cannot be read, nothing is
+        fetched.
+      </p>
+      <p><a href="crawler.txt">Crawler disclosure and opt-out</a></p>
+    </div>
+    <div>
+      <h3>Where it lives</h3>
+      <p>
+        Nothing here is hosted infrastructure. A crawl is a command someone
+        runs; the result is committed as newline-delimited JSON, and this page
+        is generated from those files. Not a scraper of anything behind a login,
+        not a rented API a policy change can switch off, and not a claim that
+        any change was strategic &mdash; it records what was published, and when.
+      </p>
+      <p>Built by Ruslan Shogenov. MIT licensed.</p>
+    </div>
+  </div>
+  <p class="colophon">
+    No cookies, no storage, no third-party requests, no analytics. Times are UTC.
+  </p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

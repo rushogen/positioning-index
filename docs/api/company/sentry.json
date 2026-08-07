@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "sentry",
+  "name": "Sentry",
+  "segment": "observability",
+  "hq_country": "US",
+  "homepage_url": "https://sentry.io/welcome/",
+  "pricing_url": "https://sentry.io/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "atlassian",
+  "name": "Atlassian",
+  "segment": "product-dev",
+  "hq_country": "AU",
+  "homepage_url": "https://www.atlassian.com/",
+  "pricing_url": "https://www.atlassian.com/software/jira/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "metabase",
+  "name": "Metabase",
+  "segment": "analytics",
+  "hq_country": "US",
+  "homepage_url": "https://www.metabase.com/",
+  "pricing_url": "https://www.metabase.com/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "retool",
+  "name": "Retool",
+  "segment": "automation",
+  "hq_country": "US",
+  "homepage_url": "https://retool.com/",
+  "pricing_url": "https://retool.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

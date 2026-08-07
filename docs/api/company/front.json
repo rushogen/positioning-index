@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "front",
+  "name": "Front",
+  "segment": "support",
+  "hq_country": "US",
+  "homepage_url": "https://front.com/",
+  "pricing_url": "https://front.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "github",
+  "name": "GitHub",
+  "segment": "product-dev",
+  "hq_country": "US",
+  "homepage_url": "https://github.com/",
+  "pricing_url": "https://github.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

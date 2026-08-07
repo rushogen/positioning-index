@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "elastic",
+  "name": "Elastic",
+  "segment": "dev-infra",
+  "hq_country": "NL",
+  "homepage_url": "https://www.elastic.co/",
+  "pricing_url": "https://www.elastic.co/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

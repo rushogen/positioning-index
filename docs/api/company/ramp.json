@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "ramp",
+  "name": "Ramp",
+  "segment": "fintech-ops",
+  "hq_country": "US",
+  "homepage_url": "https://ramp.com/",
+  "pricing_url": "https://ramp.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

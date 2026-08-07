@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "gong",
+  "name": "Gong",
+  "segment": "gtm",
+  "hq_country": "US",
+  "homepage_url": "https://www.gong.io/",
+  "pricing_url": "https://www.gong.io/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "klaviyo",
+  "name": "Klaviyo",
+  "segment": "marketing",
+  "hq_country": "US",
+  "homepage_url": "https://www.klaviyo.com/",
+  "pricing_url": "https://www.klaviyo.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

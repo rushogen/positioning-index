@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "slack",
+  "name": "Slack",
+  "segment": "work-mgmt",
+  "hq_country": "US",
+  "homepage_url": "https://slack.com/",
+  "pricing_url": "https://slack.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

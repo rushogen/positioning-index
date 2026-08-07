@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "rippling",
+  "name": "Rippling",
+  "segment": "hr-ops",
+  "hq_country": "US",
+  "homepage_url": "https://www.rippling.com/",
+  "pricing_url": "https://www.rippling.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

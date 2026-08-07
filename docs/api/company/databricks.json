@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "databricks",
+  "name": "Databricks",
+  "segment": "data",
+  "hq_country": "US",
+  "homepage_url": "https://www.databricks.com/",
+  "pricing_url": "https://www.databricks.com/product/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

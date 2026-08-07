@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "amplitude",
+  "name": "Amplitude",
+  "segment": "analytics",
+  "hq_country": "US",
+  "homepage_url": "https://amplitude.com/",
+  "pricing_url": "https://amplitude.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

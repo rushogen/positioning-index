@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "stripe",
+  "name": "Stripe",
+  "segment": "fintech-ops",
+  "hq_country": "US",
+  "homepage_url": "https://stripe.com/",
+  "pricing_url": "https://stripe.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

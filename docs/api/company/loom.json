@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "loom",
+  "name": "Loom",
+  "segment": "work-mgmt",
+  "hq_country": "US",
+  "homepage_url": "https://www.loom.com/",
+  "pricing_url": "https://www.loom.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

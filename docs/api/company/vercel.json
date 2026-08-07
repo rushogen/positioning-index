@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "vercel",
+  "name": "Vercel",
+  "segment": "dev-infra",
+  "hq_country": "US",
+  "homepage_url": "https://vercel.com/",
+  "pricing_url": "https://vercel.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

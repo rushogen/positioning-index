@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "netlify",
+  "name": "Netlify",
+  "segment": "dev-infra",
+  "hq_country": "US",
+  "homepage_url": "https://www.netlify.com/",
+  "pricing_url": "https://www.netlify.com/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

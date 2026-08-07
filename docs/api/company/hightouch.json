@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "hightouch",
+  "name": "Hightouch",
+  "segment": "data",
+  "hq_country": "US",
+  "homepage_url": "https://hightouch.com/",
+  "pricing_url": "https://hightouch.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

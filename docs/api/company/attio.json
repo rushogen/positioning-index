@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "attio",
+  "name": "Attio",
+  "segment": "gtm",
+  "hq_country": "GB",
+  "homepage_url": "https://attio.com/",
+  "pricing_url": "https://attio.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

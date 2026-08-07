@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "lattice",
+  "name": "Lattice",
+  "segment": "hr-ops",
+  "hq_country": "US",
+  "homepage_url": "https://lattice.com/",
+  "pricing_url": "https://lattice.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

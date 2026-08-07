@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "braze",
+  "name": "Braze",
+  "segment": "marketing",
+  "hq_country": "US",
+  "homepage_url": "https://www.braze.com/",
+  "pricing_url": "https://www.braze.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

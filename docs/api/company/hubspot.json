@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "hubspot",
+  "name": "HubSpot",
+  "segment": "gtm",
+  "hq_country": "US",
+  "homepage_url": "https://www.hubspot.com/",
+  "pricing_url": "https://www.hubspot.com/pricing/marketing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

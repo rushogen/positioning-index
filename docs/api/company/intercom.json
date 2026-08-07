@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "intercom",
+  "name": "Intercom",
+  "segment": "support",
+  "hq_country": "US",
+  "homepage_url": "https://www.intercom.com/",
+  "pricing_url": "https://www.intercom.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "calendly",
+  "name": "Calendly",
+  "segment": "work-mgmt",
+  "hq_country": "US",
+  "homepage_url": "https://calendly.com/",
+  "pricing_url": "https://calendly.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

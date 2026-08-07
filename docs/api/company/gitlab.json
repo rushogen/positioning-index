@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "gitlab",
+  "name": "GitLab",
+  "segment": "product-dev",
+  "hq_country": "US",
+  "homepage_url": "https://about.gitlab.com/",
+  "pricing_url": "https://about.gitlab.com/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

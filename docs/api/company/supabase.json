@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "supabase",
+  "name": "Supabase",
+  "segment": "dev-infra",
+  "hq_country": "US",
+  "homepage_url": "https://supabase.com/",
+  "pricing_url": "https://supabase.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

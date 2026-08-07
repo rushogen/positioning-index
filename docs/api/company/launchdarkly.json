@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "launchdarkly",
+  "name": "LaunchDarkly",
+  "segment": "dev-infra",
+  "hq_country": "US",
+  "homepage_url": "https://launchdarkly.com/",
+  "pricing_url": "https://launchdarkly.com/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

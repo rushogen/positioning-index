@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "clay",
+  "name": "Clay",
+  "segment": "gtm",
+  "hq_country": "US",
+  "homepage_url": "https://www.clay.com/",
+  "pricing_url": "https://www.clay.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

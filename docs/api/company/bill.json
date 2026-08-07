@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "bill",
+  "name": "BILL",
+  "segment": "fintech-ops",
+  "hq_country": "US",
+  "homepage_url": "https://www.bill.com/",
+  "pricing_url": "https://www.bill.com/product/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}
