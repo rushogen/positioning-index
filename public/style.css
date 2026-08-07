@@ -19,6 +19,33 @@
   --info: #5b3fb5;
   --add: #e8f4ec;
   --del: #fbeceb;
+
+  /*
+    Chart tones. Three, and they are an emphasis palette rather than a
+    categorical one: the accent above carries the thing being counted, and the
+    other two are neutrals for "the other side of the same count" and "we could
+    not read this". No new hues -- --chart-lead IS --accent.
+
+    Checked with the data-viz palette validator against the surface these
+    actually render on (--panel), in both modes:
+
+      light  lead 6.65:1  quiet 4.98:1  none 1.92:1
+             worst pair chart-none/chart-quiet -- CVD dE 18.5, normal-vision 20.8
+      dark   lead 6.82:1  quiet 3.43:1  none 1.70:1
+             worst pair chart-quiet/chart-lead -- CVD dE 18.8, normal-vision 19.4
+
+    --chart-none is deliberately below the 3:1 mark used for marks that must be
+    read from colour alone. That is legal here and only here, because it never
+    is read from colour alone: its count is printed in the legend beside it, it
+    is named in the coverage line under every chart, and the companies in it are
+    listed in the table that opens below. A tone that means "absence" should
+    recede; a tone that means "absence" and cannot be resolved any other way
+    would be a lie.
+  */
+  --chart-lead: var(--accent);
+  --chart-quiet: #6b7079;
+  --chart-none: #bebbb4;
+
   --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
   --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   --wrap: 74rem;
@@ -40,6 +67,10 @@
     --info: #ab93f5;
     --add: #17301f;
     --del: #34191a;
+
+    /* Selected for the dark surface, not flipped. See the note above. */
+    --chart-quiet: #767a83;
+    --chart-none: #40434a;
   }
 }
 
@@ -224,13 +255,104 @@ h3 { font-size: 1rem; font-weight: 600; margin: 0 0 .4rem; }
 .legend { list-style: none; display: flex; flex-wrap: wrap; gap: 1.1rem; padding: 0; margin: 0 0 1.2rem; }
 .legend li { font-size: .84rem; color: var(--ink-2); }
 
-/* -------------------------------------------------------------------- bars */
+/* ------------------------------------------------------- the landing view */
 
-.bars { list-style: none; padding: 0; margin: 0; }
-.bars li { display: grid; grid-template-columns: minmax(9rem, 22rem) 1fr auto; gap: .7rem; align-items: center; padding: .3rem 0; }
-.bars .label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.bars .bar { height: 10px; border-radius: 3px; background: var(--accent); opacity: .8; min-width: 3px; }
-.bars .n { font-variant-numeric: tabular-nums; color: var(--ink-3); font-size: .85rem; }
+/*
+  A KPI row, not a chart. Four numbers whose job is to be read, not compared,
+  and a one-bar bar chart of each would say less than the number does.
+
+  Proportional figures on purpose: tabular-nums gives every digit the width of a
+  zero, which makes a large standalone number look loose. Tabular figures are
+  for columns that have to line up vertically, and there is a table below for
+  that.
+*/
+.kpis {
+  display: grid; gap: 1px; margin: 0 0 2.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  background: var(--rule); border: 1px solid var(--rule);
+  border-radius: 6px; overflow: hidden;
+}
+.kpis div { background: var(--panel); padding: .85rem 1rem; }
+.kpis dt { font-size: .74rem; text-transform: uppercase; letter-spacing: .07em; color: var(--ink-3); }
+.kpis dd { margin: .1rem 0 0; font-size: 2rem; font-weight: 600; font-variant-numeric: proportional-nums; line-height: 1.1; }
+.kpis p { margin: .15rem 0 0; font-size: .78rem; color: var(--ink-3); }
+
+.finding { margin: 0 0 3rem; max-width: 58rem; }
+.finding h3 { font-size: 1.15rem; margin-bottom: .5rem; }
+.finding h4 { font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-3); margin: 0 0 .5rem; font-weight: 600; }
+.sub-chart-head { margin-top: 1.6rem !important; text-transform: none !important; letter-spacing: 0 !important; font-size: .86rem !important; color: var(--ink-2) !important; }
+
+/* The sentence the section exists for. Set above the chart because a reader
+   who stops after one line should still leave with the finding. */
+.takeaway { margin: 0 0 1.1rem; font-size: 1.05rem; line-height: 1.5; max-width: 46em; }
+.takeaway b { font-weight: 620; }
+
+/* The n, and what was unreadable. Never optional, never a footnote in a
+   different colour to the point where nobody reads it. */
+.coverage {
+  margin: .8rem 0 0; font-size: .82rem; color: var(--ink-2);
+  border-left: 2px solid var(--rule); padding-left: .7rem; max-width: 52em;
+}
+.coverage b { font-variant-numeric: tabular-nums; }
+
+.chart-pair { display: grid; gap: 1.6rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); margin-top: 1.6rem; }
+
+/* --------------------------------------------------------- bar charts (svg) */
+
+/*
+  The SVG in each row has no viewBox, so one user unit is one CSS pixel at every
+  width and nothing about the mark distorts or shrinks. The label and the value
+  are HTML rather than SVG text for the same reason: they reflow, they respond
+  to browser zoom and to a reader's minimum font size, and they can be selected
+  and searched. See the header of src/charts.js.
+*/
+.bars-svg { list-style: none; padding: 0; margin: 0; }
+.bar-row {
+  display: grid; grid-template-columns: minmax(5.5rem, 9.5rem) 1fr 2.2rem;
+  gap: .7rem; align-items: center; padding: .18rem 0;
+}
+.bar-label { font-size: .9rem; overflow-wrap: anywhere; }
+.bar-track { display: block; overflow: visible; }
+.bar-fill { fill: var(--chart-lead); }
+.bar-fill.quiet { fill: var(--chart-quiet); }
+.bar-value { font-size: .88rem; font-variant-numeric: tabular-nums; color: var(--ink-2); text-align: right; }
+
+/* --------------------------------------------------- part-to-whole (svg) */
+
+.stack { display: block; margin: .2rem 0 .7rem; }
+.seg.lead  { fill: var(--chart-lead); }
+.seg.quiet { fill: var(--chart-quiet); }
+.seg.none  { fill: var(--chart-none); }
+/* Touching marks are separated by a gap in the surface colour, never by a
+   border drawn round them. */
+.seg-gap { fill: var(--panel); }
+
+.chart-legend { list-style: none; display: flex; flex-wrap: wrap; gap: .4rem 1.3rem; padding: 0; margin: 0; }
+.chart-legend li { font-size: .86rem; color: var(--ink-2); display: flex; align-items: baseline; gap: .4rem; flex-wrap: wrap; }
+.chart-legend b { font-variant-numeric: tabular-nums; color: var(--ink); }
+.chart-legend .legend-note { color: var(--ink-3); font-size: .8rem; }
+.swatch { width: .7rem; height: .7rem; border-radius: 2px; display: inline-block; flex: none; align-self: center; }
+.swatch.lead  { background: var(--chart-lead); }
+.swatch.quiet { background: var(--chart-quiet); }
+.swatch.none  { background: var(--chart-none); }
+
+/* ------------------------------------------------- method and table views */
+
+.finding details { margin-top: .9rem; }
+.finding summary {
+  cursor: pointer; font-size: .85rem; color: var(--accent);
+  padding: .2rem 0; width: fit-content;
+}
+.finding summary:hover { text-decoration: underline; }
+details.method p { margin: .5rem 0 0; font-size: .85rem; color: var(--ink-2); max-width: 60em; }
+details.inspect { border-top: 1px solid var(--rule-2); padding-top: .5rem; }
+details.inspect .grid { margin-top: .7rem; font-size: .85rem; }
+details.inspect .grid td { vertical-align: top; }
+
+.quotes { list-style: none; margin: 0; padding: 0; }
+.quotes li { padding: .1rem 0; overflow-wrap: anywhere; }
+.quotes a { text-decoration: none; font-weight: 560; }
+.quotes a:hover { text-decoration: underline; }
 
 /* ----------------------------------------------------------------- company */
 
@@ -273,6 +395,32 @@ footer h2 { font-size: 1.05rem; margin-bottom: 1rem; }
   .grid td::before { content: attr(data-label) ": "; color: var(--ink-3); font-size: .78rem; }
   .grid td.co-name::before { content: ""; }
   .grid .num { text-align: left; }
-  .bars li { grid-template-columns: 1fr auto; }
-  .bars .bar { display: none; }
+}
+
+/*
+  Narrow screens: the bar drops to its own line under the label rather than
+  being squeezed into a column too small to read. The mark never disappears --
+  it is the chart -- and the label never truncates.
+*/
+@media (max-width: 34rem) {
+  .bar-row { grid-template-columns: 1fr auto; row-gap: .05rem; padding: .3rem 0; }
+  .bar-label { grid-column: 1; grid-row: 1; }
+  .bar-value { grid-column: 2; grid-row: 1; }
+  .bar-track { grid-column: 1 / -1; grid-row: 2; }
+  .kpis dd { font-size: 1.7rem; }
+  .takeaway { font-size: 1rem; }
+}
+
+/*
+  Forced-colors (Windows high contrast) replaces the palette wholesale, so the
+  fills would collapse into one colour. The stacked bars keep their boundaries
+  because the 2px separators are drawn in the surface colour, which the mode
+  maps to its own background; the counts are in the legend either way.
+*/
+@media (forced-colors: active) {
+  .bar-fill, .seg.lead { fill: Highlight; }
+  .seg.quiet { fill: GrayText; }
+  .seg.none { fill: Canvas; stroke: GrayText; stroke-width: 1; }
+  .seg-gap { fill: Canvas; }
+  .swatch { border: 1px solid CanvasText; }
 }

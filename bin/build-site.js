@@ -42,6 +42,8 @@ import {
   categoryDistribution, companyDetail, companyHealth, indexStats, partitionEvents, recentChanges,
   withConfirmation,
 } from '../src/report.js';
+import { stateOfPositioning } from '../src/insights.js';
+import { renderPositioning } from '../src/landing.js';
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const argv = process.argv.slice(2);
@@ -78,6 +80,12 @@ const changes = withConfirmation(recentChanges(events, { limit: 500 }), queue);
 // exclusion is what makes the retraction mean anything.
 const { retracted } = partitionEvents(events);
 
+// The cross-sectional read: what all 60 companies are saying today, as opposed
+// to what moved. It is the landing view, and it is rendered to HTML here rather
+// than fetched by the page, so the charts and their numbers exist in the file
+// with scripting switched off. See src/charts.js for why the SVG has no viewBox.
+const positioning = stateOfPositioning({ companies, series });
+
 // --------------------------------------------------------------------- write
 
 await rm(outDir, { recursive: true, force: true });
@@ -89,9 +97,16 @@ const writeJson = (rel, body) => writeFile(join(outDir, rel), `${JSON.stringify(
 // path beginning with an underscore.
 await writeFile(join(outDir, '.nojekyll'), '', 'utf8');
 
-for (const name of ['index.html', 'style.css', 'app.js']) {
+for (const name of ['style.css', 'app.js']) {
   await copyFile(join(ROOT, 'public', name), join(outDir, name));
 }
+
+// index.html is the one file that is generated rather than copied, because the
+// landing view is baked into it. Every substitution is a comment marker that
+// must be present -- a silently un-substituted template would ship a page with
+// a hole in it, and this build is the only thing standing between data/ and
+// what the public reads.
+await writeFile(join(outDir, 'index.html'), renderIndexHtml(await readFile(join(ROOT, 'public', 'index.html'), 'utf8')), 'utf8');
 
 // METHODOLOGY.md lives at the repository root because that is where a reader on
 // GitHub looks for it. Served as .txt because browsers render .txt inline and
@@ -112,6 +127,10 @@ await writeJson('api/stats.json', {
   signals: SIGNALS,
   generated_at: asOf,
 });
+
+// The same numbers the landing view prints, in the form a script can read, so
+// every bar on the page can be checked against the file that produced it.
+await writeJson('api/positioning.json', { ...positioning, generated_at: asOf });
 
 await writeJson('api/companies.json', { companies });
 await writeJson('api/health.json', { companies: health });
@@ -158,10 +177,40 @@ console.log(
   `built ${outDir}\n` +
   `  ${companies.length} companies, ${stats.observations} observation line(s), ` +
   `${stats.changes} published change event(s), ${retracted.length} retracted, ${runs.length} run(s)\n` +
+  `  landing view: ${positioning.headline_words.coverage.readable} headlines, ` +
+  `${positioning.category_nouns.coverage.readable} category labels, ` +
+  `${positioning.ai_mentions.mentions.length} companies using AI language, ` +
+  `${positioning.pricing.entry_price.coverage.readable} readable entry prices\n` +
   `  as of ${asOf}${lastRun ? '' : '  (no crawl has been run yet)'}`
 );
 
 // ---------------------------------------------------------------------------
+
+/**
+ * Fill the three markers in public/index.html.
+ *
+ * Throws on a missing marker rather than shipping the page without it. A
+ * template hole is invisible in a diff of a generated directory and would put
+ * an empty landing view in front of every visitor, which is exactly the class
+ * of silent failure the rest of this project refuses to allow.
+ */
+function renderIndexHtml(template) {
+  const substitutions = [
+    ['<!--POSITIONING-->', renderPositioning(positioning)],
+    ['<!--COMPANY-COUNT-->', String(companies.length)],
+    // Date only. The page is a reading of one morning and says so; a timestamp
+    // to the second would suggest a precision the crawl does not have, since a
+    // full sweep is spread over an hour of politeness delays.
+    ['<!--AS-OF-->', asOf.slice(0, 10)],
+  ];
+
+  let out = template;
+  for (const [marker, value] of substitutions) {
+    if (!out.includes(marker)) throw new Error(`public/index.html is missing the ${marker} marker`);
+    out = out.split(marker).join(value);
+  }
+  return out;
+}
 
 /**
  * The crawler disclosure, served at /crawler.txt.
