@@ -8,12 +8,17 @@
 
 import test from 'node:test';
 import assert from 'node:assert/strict';
+import { readFile } from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
+import { join } from 'node:path';
 
 import {
-  CONFIDENCE_DROP, LIST_COLLAPSE_RATIO, RECENT_MEMORY, REMOVAL_CONFIRMATIONS, SUSPECT_AFTER,
+  ACQUISITION_CONFIRMATIONS, CONFIDENCE_DROP, LIST_COLLAPSE_RATIO, RECENT_MEMORY,
+  REMOVAL_CONFIRMATIONS, SUSPECT_AFTER,
   canonical, diffPage, diffSignal, editDistance, emptyState, gatePage, listDelta, textMagnitude,
 } from '../src/diff.js';
 
+const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const NOW = '2026-08-07T03:00:00Z';
 const EARLIER = '2026-08-06T03:00:00Z';
 
@@ -126,7 +131,7 @@ test('a confirmed removal is not re-emitted on subsequent runs', () => {
 });
 
 // ---------------------------------------------------------------------------
-// Baselines and additions
+// Baselines
 // ---------------------------------------------------------------------------
 
 test('first sighting establishes a baseline without emitting an event', () => {
@@ -136,18 +141,217 @@ test('first sighting establishes a baseline without emitting an event', () => {
   assert.equal(r.state.last_good_value, 'Meet the new standard');
 });
 
-test('a signal that appears for the first time after we have history is an addition', () => {
-  const state = { ...emptyState('pricing_seat_minimum'), last_observed_at: EARLIER, consecutive_nulls: 9 };
+test('a first observation of a target publishes no events at all', () => {
+  // Every signal at once, including one that did not extract, against no prior
+  // state whatsoever -- which is what the very first read of a new company is.
+  const first = extraction({
+    signals: {
+      headline: sig('The workspace that works'),
+      subhead: sig('For teams who ship'),
+      category_label: null,
+      meta_title: sig('Acme — the workspace that works'),
+    },
+  });
+  const gate = { diffable: true, status: 'ok', reason: null, rebaseline: false };
+  const { events, results } = diffPage({ extraction: first, states: {}, gate, now: NOW });
+
+  assert.equal(events.length, 0, 'a baseline is a recording, not news');
+  assert.deepEqual(
+    results.map((r) => r.outcome).sort(),
+    ['baseline', 'baseline', 'baseline', 'baseline-empty'],
+    'every signal is a baseline; the one that did not extract is a baseline-empty'
+  );
+  // Recorded, though. Silence on the feed is not silence in the archive.
+  assert.equal(results.find((r) => r.state.signal === 'headline').state.last_good_value, 'The workspace that works');
+});
+
+// ---------------------------------------------------------------------------
+// S10 -- a value appearing where there was none
+//
+// The mirror of the parser-fault rule at the top of this file, and the reason
+// this section exists: `airtable/home customer_logos` was published as an
+// addition on 2026-08-07 and retracted the same day. The first test replays it
+// out of the archive, exactly as tests/origin.test.js replays the Notion
+// incident, so the fixture cannot drift from what was actually recorded.
+// ---------------------------------------------------------------------------
+
+/** Rebuild an extractor result from a stored observation line. */
+const extractionOf = (record) => ({
+  extractorVersion: record.doc.extractorVersion,
+  variant: record.doc.variant,
+  extractable: true,
+  lang: record.doc.lang,
+  canonical: record.doc.canonical,
+  signals: Object.fromEntries(Object.entries(record.signals).map(([name, s]) => [
+    name,
+    s && s.value != null ? { value: s.value, method: s.method, confidence: s.confidence, json: s.json } : null,
+  ])),
+});
+
+async function airtableHomePair() {
+  const raw = await readFile(join(ROOT, 'data', 'companies', 'airtable.ndjson'), 'utf8');
+  const rows = raw.split('\n').filter(Boolean).map((l) => JSON.parse(l));
+  const before = rows.find((r) => r.kind === 'home' && r.observed_at === '2026-08-07T11:10:09Z');
+  const after = rows.find((r) => r.kind === 'home' && r.observed_at === '2026-08-07T15:53:34Z');
+  assert.ok(before && after, 'the two observations from the incident must still be in the archive');
+  assert.equal(before.signals.customer_logos, null);
+  assert.match(after.signals.customer_logos.value, /^Azure, Box, ChatGPT/);
+  return { before, after };
+}
+
+test('null to a value is a signal acquisition, not an addition', async () => {
+  const { before, after } = await airtableHomePair();
+  const extract = extractionOf(after);
+  const gate = { diffable: true, status: 'ok', reason: null, rebaseline: false };
+
+  const { events, results } = diffPage({
+    extraction: extract,
+    states: before.state,
+    gate,
+    now: after.observed_at,
+    previous: { status: before.status, yield: before.signals_found, extractorVersion: before.doc.extractorVersion },
+  });
+
+  const logos = results.find((r) => r.state.signal === 'customer_logos');
+  assert.equal(logos.outcome, 'acquisition');
+  assert.equal(logos.event, null, 'a logo wall we could not read before is not a logo wall they just built');
+  assert.equal(events.filter((e) => e.signal === 'customer_logos').length, 0);
+  assert.match(logos.reason, /signal acquisition rather than an addition/);
+
+  // The value is recorded but not yet believed: the baseline stays empty until
+  // the reading is corroborated, exactly as S4 and S8 hold their baselines.
+  assert.equal(logos.state.last_good_value, null);
+  assert.equal(logos.state.acquisition_runs, 1);
+  assert.equal(logos.state.total_changes, 0, 'an acquisition is not a change and must not be counted as one');
+
+  // And the three genuine value -> value transitions on the same page are
+  // untouched. This rule suppresses one signal, not a page.
+  assert.deepEqual(
+    events.map((e) => e.signal).sort(),
+    ['headline', 'proof_points', 'subhead'],
+  );
+});
+
+test('an acquisition following a parser fault or structure change is recognised as extractor recovery', () => {
+  const states = {
+    customer_logos: { ...emptyState('customer_logos'), last_observed_at: EARLIER, consecutive_nulls: 3, suspect: 1 },
+    // A signal that HAD a value and lost it: the extractor was demonstrably
+    // mis-reading this page at the moment the logo wall was reading null.
+    headline: { ...stateWith('The workspace that works'), signal: 'headline', consecutive_nulls: 1 },
+  };
+  const names = ['Amazon', 'Cursor', 'Figma', 'OpenAI', 'Ramp', 'Shopify'];
+  const page = {
+    extractorVersion: '1.0.0', variant: 'html', extractable: true, lang: 'en',
+    canonical: 'https://example.com/',
+    signals: {
+      customer_logos: { value: names.join(', '), method: 'proof-region', confidence: 0.85, json: { names, count: names.length } },
+      headline: sig('The workspace that works'),
+    },
+  };
+  const gate = { diffable: true, status: 'ok', reason: null, rebaseline: false };
+
+  const { events, results } = diffPage({
+    extraction: page, states, gate, now: NOW,
+    previous: { status: 'changed-structure', yield: 0, extractorVersion: '1.0.0' },
+  });
+
+  const logos = results.find((r) => r.state.signal === 'customer_logos');
+  assert.equal(logos.outcome, 'acquisition');
+  assert.equal(events.length, 0);
+  assert.match(logos.reason, /high confidence as extractor recovery rather than a real addition/);
+  assert.match(logos.reason, /classified changed-structure/);
+  assert.match(logos.reason, /another signal on this page was in a parser fault/);
+  assert.match(logos.reason, /flagged as a suspected extraction failure/);
+});
+
+test('an acquired value is adopted only after corroboration, and never published', () => {
+  let state = { ...emptyState('pricing_seat_minimum'), last_observed_at: EARLIER, consecutive_nulls: 9 };
+  const current = { value: '25 seats', method: 'regex:seat-minimum', confidence: 0.8 };
+  const outcomes = [];
+
+  for (let run = 1; run <= ACQUISITION_CONFIRMATIONS + 1; run++) {
+    const r = diffSignal({ signal: 'pricing_seat_minimum', current, state, pageHealthy: true, now: NOW });
+    assert.equal(r.event, null, `run ${run} must publish nothing`);
+    outcomes.push(r.outcome);
+    state = r.state;
+  }
+
+  assert.deepEqual(outcomes, [
+    ...Array(ACQUISITION_CONFIRMATIONS - 1).fill('acquisition'),
+    'acquisition-adopted',
+    'unchanged',
+  ]);
+  assert.equal(state.last_good_value, '25 seats', 'adopted silently once corroborated');
+  assert.equal(state.acquisition_runs, 0);
+  assert.equal(state.total_changes, 0, 'nothing about an adoption is a change');
+});
+
+test('an unhealthy read never corroborates an acquisition', () => {
+  let state = { ...emptyState('pricing_seat_minimum'), last_observed_at: EARLIER, consecutive_nulls: 2 };
+  const current = { value: '25 seats', method: 'regex:seat-minimum', confidence: 0.8 };
+
+  for (let run = 1; run <= ACQUISITION_CONFIRMATIONS * 3; run++) {
+    const r = diffSignal({ signal: 'pricing_seat_minimum', current, state, pageHealthy: false, now: NOW });
+    assert.equal(r.outcome, 'acquisition');
+    assert.equal(r.event, null);
+    state = r.state;
+  }
+  assert.equal(state.last_good_value, null, 'a page we do not understand cannot corroborate anything');
+});
+
+test('an acquired value that keeps moving never becomes a baseline', () => {
+  let state = { ...emptyState('customer_logos'), last_observed_at: EARLIER, consecutive_nulls: 1 };
+  for (let run = 1; run <= ACQUISITION_CONFIRMATIONS * 2; run++) {
+    const names = ['Amazon', 'Cursor', 'Figma'].slice(0, 2 + (run % 2));
+    const r = diffSignal({
+      signal: 'customer_logos',
+      current: { value: names.join(', '), method: 'proof-region', confidence: 0.85, json: { names, count: names.length } },
+      state, pageHealthy: true, now: NOW,
+    });
+    assert.equal(r.event, null);
+    assert.ok(r.state.acquisition_runs <= 1, 'a value that differs from the last one restarts the count');
+    state = r.state;
+  }
+  assert.equal(state.last_good_value, null);
+});
+
+test('value to null is still a parser fault while null to a value is an acquisition', () => {
+  // The two halves of the asymmetry on one page, in one run. Neither publishes.
+  const states = {
+    headline: { ...stateWith('The workspace that works'), signal: 'headline' },
+    category_label: { ...emptyState('category_label'), last_observed_at: EARLIER, consecutive_nulls: 1 },
+  };
+  const page = {
+    extractorVersion: '1.0.0', variant: 'html', extractable: true, lang: 'en',
+    canonical: 'https://example.com/',
+    signals: { headline: null, category_label: sig('system of record') },
+  };
+  const gate = { diffable: true, status: 'ok', reason: null, rebaseline: false };
+  const { events, results } = diffPage({ extraction: page, states, gate, now: NOW });
+
+  assert.equal(events.length, 0);
+  assert.equal(results.find((r) => r.state.signal === 'headline').outcome, 'parser-fault');
+  assert.equal(results.find((r) => r.state.signal === 'category_label').outcome, 'acquisition');
+  // The known-good headline survives the fault; the new category does not yet
+  // become known-good. Both directions keep comparing against what we believed.
+  assert.equal(results.find((r) => r.state.signal === 'headline').state.last_good_value, 'The workspace that works');
+  assert.equal(results.find((r) => r.state.signal === 'category_label').state.last_good_value, null);
+});
+
+test('a genuine value to value change still publishes normally', () => {
   const r = diffSignal({
-    signal: 'pricing_seat_minimum',
-    current: { value: '25 seats', method: 'regex:seat-minimum', confidence: 0.8 },
-    state,
+    signal: 'headline',
+    current: sig('The system for product development'),
+    state: stateWith('Plan and build products'),
     pageHealthy: true,
     now: NOW,
   });
-  assert.equal(r.outcome, 'added');
-  assert.equal(r.event.change_type, 'added');
-  assert.match(r.event.summary, /Introduced a seat minimum of 25 seats/);
+
+  assert.equal(r.outcome, 'changed');
+  assert.equal(r.event.change_type, 'modified');
+  assert.equal(r.event.before_value, 'Plan and build products');
+  assert.equal(r.event.after_value, 'The system for product development');
+  assert.equal(r.state.total_changes, 1);
 });
 
 // ---------------------------------------------------------------------------

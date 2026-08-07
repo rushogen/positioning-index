@@ -29,6 +29,7 @@
  *   S1  No prior state                 -> baseline, no event.
  *   S2  null now, value before         -> PARSER FAULT. Never an event.
  *   S3  Sustained null + healthy page  -> confirmed removal, one event.
+ *   S10 value now, null before         -> SIGNAL ACQUISITION. Never an event.
  *   S4  Confidence dropped sharply     -> suspect our method, not their copy.
  *   S8  Origin shifted, price signal   -> CONTEXT FAULT. Never an event.
  *   S9  Currency moved, amounts proportionate -> locale routing. Never an event.
@@ -41,6 +42,14 @@
  * S2, not its replacement: S2 says a missing value is our parser breaking, S8
  * and S9 say a moved value can be our vantage point moving. Same asymmetry, same
  * rule -- record the observation, publish nothing, never silently drop it.
+ *
+ * S10 was added the same day, for the same reason and from the same family. S2
+ * had been suspicious of value -> null since the first commit and the engine was
+ * not suspicious of null -> value at all, which is an asymmetry with no
+ * justification behind it: "our selector finally worked" and "they finally added
+ * it" are one transition wearing two hats. The index published
+ * `airtable/home customer_logos` as an addition on the strength of that gap. It
+ * no longer publishes any of them.
  */
 
 import { fnv1a } from './hash.js';
@@ -130,6 +139,23 @@ export const FX_RATIO_SPREAD = 1.35;
  * observe; it is not enough to make a public claim, and no claim is made.
  */
 export const CURRENCY_CONFIRMATIONS = 3;
+
+/**
+ * How many consecutive observations of the same newly-appeared value, from a
+ * healthy read, before it is adopted as the signal's baseline.
+ *
+ * Three, deliberately the same number as CURRENCY_CONFIRMATIONS above, because
+ * the two rules are answering the same question -- "is this value ours or
+ * theirs?" -- with the same evidence, which is repetition. A second reading rules
+ * out a one-off render; a third rules out a page that alternates. There is no
+ * separate theory here that would justify a separate number.
+ *
+ * As with the currency rule, adoption is SILENT. The index will not report the
+ * moment a company first publishes a logo wall or a proof point, because it
+ * cannot tell that moment apart from the moment our extractor first managed to
+ * read one.
+ */
+export const ACQUISITION_CONFIRMATIONS = 3;
 
 // ------------------------------------------------------------------ currency
 
@@ -441,6 +467,63 @@ export function gatePage({
   return { diffable: true, status: 'ok', reason: null, rebaseline: false, originShift: false };
 }
 
+/**
+ * Positive evidence that a value appearing where there was none is OUR extractor
+ * recovering rather than THEIR page gaining something.
+ *
+ * S10 withholds the claim either way, so none of this changes what is published.
+ * What it changes is what the recorded reason is allowed to say, and that is not
+ * cosmetic: the reason string is what somebody auditing this archive in a year
+ * has to work with, and "we could not tell" and "we could tell, and it was us"
+ * are different findings that must not be written down the same way.
+ *
+ * Facts are read from the PREVIOUS observation of the page, because the question
+ * is whether the previous read was broken, not whether this one is.
+ *
+ * @returns {string[]} the evidence, phrased for the reason string
+ */
+export function recoveryEvidence({
+  previousStatus = null,
+  previousYield = null,
+  currentYield = null,
+  previousExtractorVersion = null,
+  extractorVersion = null,
+  states = {},
+} = {}) {
+  const found = [];
+
+  if (previousStatus === 'changed-structure') {
+    found.push('the previous read of this page was classified changed-structure');
+  }
+
+  // Normally unreachable, and kept anyway: P5 closes the gate on a version bump
+  // and re-baselines before any signal is diffed. This catches the case P5
+  // cannot -- a previous observation recorded before the extractor version was
+  // written down at all, which is most of the archive's first day.
+  if (previousExtractorVersion && extractorVersion && previousExtractorVersion !== extractorVersion) {
+    found.push(`the extractor moved ${previousExtractorVersion} -> ${extractorVersion} since the previous read`);
+  }
+
+  // The mirror of P4. P4 asks whether the yield collapsed since last time and
+  // calls that a redesign; this asks whether it recovered, on the same threshold,
+  // and calls that our selectors coming back.
+  if (
+    typeof previousYield === 'number' && typeof currentYield === 'number' &&
+    currentYield >= 3 && previousYield < currentYield * STRUCTURE_YIELD_RATIO
+  ) {
+    found.push(`signal yield rose ${previousYield} -> ${currentYield} since the previous read`);
+  }
+
+  // A signal that HAD a value and lost it is in a parser fault right now. One of
+  // those on the page means the extractor was demonstrably mis-reading it at the
+  // moment the acquired signal was reading null.
+  if (Object.values(states).some((s) => (s?.consecutive_nulls ?? 0) > 0 && s?.last_good_value != null)) {
+    found.push('another signal on this page was in a parser fault at the previous read');
+  }
+
+  return found;
+}
+
 // ----------------------------------------------------------- signal-level diff
 
 /**
@@ -457,10 +540,16 @@ export function gatePage({
  * @param {string} [args.originId]     the current origin's comparison key, used
  *                                     to require that a currency change is
  *                                     corroborated from a STABLE vantage point
+ * @param {string[]} [args.recovery]   page-level evidence that this run's
+ *                                     extraction recovered from a broken one
+ *                                     (recoveryEvidence, below); read by S10
  *
  * @returns {{outcome: string, reason: string|null, event: object|null, state: object}}
  */
-export function diffSignal({ signal, current, state, pageHealthy = true, now, originShift = false, originId = 'unknown' }) {
+export function diffSignal({
+  signal, current, state, pageHealthy = true, now,
+  originShift = false, originId = 'unknown', recovery = [],
+}) {
   const meta = SIGNALS[signal];
   if (!meta) throw new Error(`unknown signal: ${signal}`);
 
@@ -482,6 +571,8 @@ export function diffSignal({ signal, current, state, pageHealthy = true, now, or
     recent_hashes: state?.recent_hashes ?? null,
     currency_shift_runs: state?.currency_shift_runs ?? 0,
     currency_shift_key: state?.currency_shift_key ?? null,
+    acquisition_runs: state?.acquisition_runs ?? 0,
+    acquisition_hash: state?.acquisition_hash ?? null,
   };
 
   const settle = (outcome, reason = null, event = null) => ({ outcome, reason, event, state: nextState });
@@ -503,6 +594,8 @@ export function diffSignal({ signal, current, state, pageHealthy = true, now, or
     nextState.suspect = 0;
     nextState.currency_shift_runs = 0;
     nextState.currency_shift_key = null;
+    nextState.acquisition_runs = 0;
+    nextState.acquisition_hash = null;
   };
 
   // ---- S1: never seen before. Establish the baseline, publish nothing.
@@ -562,21 +655,58 @@ export function diffSignal({ signal, current, state, pageHealthy = true, now, or
   // ---- We have a value. Was there a previous one?
   const before = state.last_good_value;
 
+  // ---- S10: nothing before, something now. The mirror image of S2, and the
+  // rule this engine spent its first 45 commits without.
+  //
+  // "Our extractor finally succeeded" and "the company finally added it" are the
+  // same transition. Nothing in the pair distinguishes them: a logo wall
+  // rendered from CSS sprites that later ships as plain <img> tags looks
+  // identical, in the data, to a logo wall that did not exist last week.
+  // Publishing it asserts the second reading when the first is at least as
+  // likely, and "company X added Y" is exactly the kind of claim a reader would
+  // act on and could check. So the observation is recorded and the claim is not
+  // made -- the same trade S2 makes in the other direction.
+  //
+  // The value is not adopted as the baseline until it has been read again,
+  // unchanged, from a healthy page, ACQUISITION_CONFIRMATIONS times. Until then
+  // the signal keeps comparing against nothing, exactly as S4 and S8 keep
+  // comparing against the last value we were confident about.
   if (!before) {
-    commitGood();
-    nextState.total_changes = (state.total_changes ?? 0) + 1;
-    const event = {
-      signal,
-      change_type: 'added',
-      before_value: null,
-      after_value: value,
-      before_json: null,
-      after_json: current?.json ? JSON.stringify(current.json) : null,
-      previous_seen_at: null,
-      magnitude: 1,
-      summary: summarise(signal, 'added', null, value, meta),
-    };
-    return settle('added', null, event);
+    const evidence = [...recovery];
+    if (state.suspect) {
+      evidence.push('this signal was flagged as a suspected extraction failure before the value appeared');
+    }
+
+    // The extractor is producing output again, so the null streak is over and
+    // nothing about this signal is a suspected failure any more. What is not yet
+    // established is the VALUE, and that is what the acquisition counter tracks.
+    nextState.consecutive_nulls = 0;
+    nextState.suspect = 0;
+    nextState.acquisition_hash = hash;
+    nextState.acquisition_runs = !pageHealthy
+      ? 0
+      : state.acquisition_hash === hash ? (state.acquisition_runs ?? 0) + 1 : 1;
+
+    const descriptor = `${meta.label.toLowerCase()} now extracts as ${q(value)} where the signal had no value`;
+
+    if (nextState.acquisition_runs >= ACQUISITION_CONFIRMATIONS) {
+      commitGood();
+      return settle(
+        'acquisition-adopted',
+        `${descriptor}; unchanged across ${ACQUISITION_CONFIRMATIONS} consecutive healthy reads, ` +
+        'so it is adopted as the baseline without publishing a change, because a value appearing ' +
+        'where there was none cannot be told apart from an extractor that finally succeeded'
+      );
+    }
+
+    return settle(
+      'acquisition',
+      `${descriptor}; recorded as a signal acquisition rather than an addition, because ` +
+      (evidence.length
+        ? `this reads with high confidence as extractor recovery rather than a real addition (${evidence.join('; ')})`
+        : 'an extractor that finally succeeded and a page that finally gained the thing are the same transition') +
+      ` (corroboration ${nextState.acquisition_runs} of ${ACQUISITION_CONFIRMATIONS})`
+    );
   }
 
   // ---- S6: identical after canonicalisation.
@@ -731,14 +861,20 @@ const PHRASING = {
   meta_description:    { modified: (a, b) => `Meta description rewritten` },
   pricing_entry_price: { modified: (a, b) => `Entry price moved from ${a} to ${b}` },
   pricing_free_tier:   { modified: (a, b) => (b === 'no' ? 'Free tier no longer published' : 'Free tier now published') },
-  pricing_seat_minimum:{ modified: (a, b) => `Seat minimum changed from ${a} to ${b}`, added: (_, b) => `Introduced a seat minimum of ${b}`, removed: (a) => `Dropped its ${a} seat minimum` },
+  pricing_seat_minimum:{ modified: (a, b) => `Seat minimum changed from ${a} to ${b}`, removed: (a) => `Dropped its ${a} seat minimum` },
   pricing_meta_title:  { modified: (a, b) => `Pricing page title changed from ${q(a)} to ${q(b)}` },
 };
 
+/**
+ * There is no `added` phrasing here, and that is not an omission. Since S10 the
+ * engine emits no `added` events at all: a value appearing where there was none
+ * is recorded as an acquisition and adopted silently. The only summaries that
+ * reach the public feed describe a value that moved between two things we
+ * actually observed, or one that went away and stayed away.
+ */
 function summarise(signal, type, before, after, meta) {
   const custom = PHRASING[signal]?.[type];
   if (custom) return custom(before, after);
-  if (type === 'added') return `${meta.label} first observed: ${q(after)}`;
   if (type === 'removed') return `${meta.label} no longer published (was ${q(before)})`;
   return `${meta.label} changed from ${q(before)} to ${q(after)}`;
 }
@@ -758,14 +894,28 @@ function summariseList(signal, added, removed, meta) {
  * Diff every signal on a page. Applies the page-level gate first; when the gate
  * closes, every signal is still observed and stored (the time series stays
  * complete) but no events are produced.
+ *
+ * `previous` carries the page-level facts of the previous observation --
+ * `{ status, yield, extractorVersion }` straight off the last line of the
+ * company's file. They are not needed to decide anything; they are what lets S10
+ * say WHY a value appeared, rather than only that it did.
  */
-export function diffPage({ extraction, states, gate, now, origin = null }) {
+export function diffPage({ extraction, states, gate, now, origin = null, previous = {} }) {
   const results = [];
   const events = [];
 
   const signalNames = Object.keys(extraction.signals);
   const currentYield = signalNames.filter((s) => extraction.signals[s]).length;
   const pageHealthy = gate.diffable && currentYield >= Math.max(1, Math.ceil(signalNames.length * 0.5));
+
+  const recovery = recoveryEvidence({
+    previousStatus: previous.status ?? null,
+    previousYield: typeof previous.yield === 'number' ? previous.yield : null,
+    currentYield,
+    previousExtractorVersion: previous.extractorVersion ?? null,
+    extractorVersion: extraction.extractorVersion ?? null,
+    states,
+  });
 
   for (const signal of signalNames) {
     const current = extraction.signals[signal];
@@ -784,6 +934,8 @@ export function diffPage({ extraction, states, gate, now, origin = null }) {
         carried.last_good_method = current.method;
         carried.last_good_confidence = current.confidence;
         carried.consecutive_nulls = 0;
+        carried.acquisition_runs = 0;
+        carried.acquisition_hash = null;
       }
       results.push({ signal, outcome: 'suppressed', reason: gate.reason, event: null, state: carried });
       continue;
@@ -793,6 +945,7 @@ export function diffPage({ extraction, states, gate, now, origin = null }) {
       signal, current, state, pageHealthy, now,
       originShift: gate.originShift === true,
       originId: origin?.id ?? 'unknown',
+      recovery,
     });
     results.push(r);
     if (r.event) events.push(r.event);
@@ -817,5 +970,7 @@ export function emptyState(signal) {
     recent_hashes: null,
     currency_shift_runs: 0,
     currency_shift_key: null,
+    acquisition_runs: 0,
+    acquisition_hash: null,
   };
 }

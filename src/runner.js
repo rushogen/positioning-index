@@ -204,7 +204,17 @@ export async function crawlTarget(target, ctx, { now = Date.now(), fetchImpl = f
     previousOrigin,
   });
 
-  const { results, events } = diffPage({ extraction, states, gate, now: nowIso, origin });
+  // The page-level facts of the previous observation. Nothing gates on them; S10
+  // uses them to say whether a value that appeared out of nowhere appeared on a
+  // page that had just been read badly.
+  const { results, events } = diffPage({
+    extraction, states, gate, now: nowIso, origin,
+    previous: {
+      status: previousRecord?.status ?? null,
+      yield: previousRecord?.signals_found ?? null,
+      extractorVersion: previousRecord?.doc?.extractorVersion ?? null,
+    },
+  });
 
   const observation = {
     observed_at: nowIso,
@@ -247,6 +257,11 @@ export async function crawlTarget(target, ctx, { now = Date.now(), fetchImpl = f
 
   const parserFaults = results.filter((r) => r.outcome === 'parser-fault').length;
   const contextFaults = results.filter((r) => r.outcome === 'origin-shift' || r.outcome === 'currency-shift').length;
+  // Signals that gained a value where they had none. Counted and reported for
+  // the same reason parser faults are: an acquisition publishes nothing, and a
+  // suppression nobody can see is indistinguishable from a crawler that found
+  // nothing.
+  const acquisitions = results.filter((r) => r.outcome === 'acquisition' || r.outcome === 'acquisition-adopted').length;
 
   const result = {
     slug: target.slug,
@@ -263,6 +278,7 @@ export async function crawlTarget(target, ctx, { now = Date.now(), fetchImpl = f
     events: events.length,
     parser_faults: parserFaults,
     context_faults: contextFaults,
+    acquisitions,
     etag: fetched.etag ?? null,
     last_modified: fetched.lastModified ?? null,
     content_hash: fetched.contentHash ?? null,
@@ -301,6 +317,7 @@ export async function crawlTarget(target, ctx, { now = Date.now(), fetchImpl = f
     crawlDelayMs,
     suppressed: results.filter((r) => r.outcome === 'suppressed').length,
     contextFaults,
+    acquisitions,
   };
 }
 
@@ -439,6 +456,7 @@ export async function runCrawl({
     changes: allEvents.length,
     parser_faults: results.reduce((n, r) => n + (r.parser_faults ?? 0), 0),
     context_faults: results.reduce((n, r) => n + (r.context_faults ?? 0), 0),
+    acquisitions: results.reduce((n, r) => n + (r.acquisitions ?? 0), 0),
     observations: observationsWritten,
     results,
   };
@@ -476,6 +494,7 @@ export function commitMessage(run) {
   if (run.origin_shift) notes.push(`${run.origin_shift} origin-shifted`);
   if (run.parser_faults) notes.push(`${run.parser_faults} parser fault${run.parser_faults === 1 ? '' : 's'}`);
   if (run.context_faults) notes.push(`${run.context_faults} context fault${run.context_faults === 1 ? '' : 's'}`);
+  if (run.acquisitions) notes.push(`${run.acquisitions} acquisition${run.acquisitions === 1 ? '' : 's'}`);
 
   return notes.length ? `${head}, ${notes.join(', ')}` : head;
 }
