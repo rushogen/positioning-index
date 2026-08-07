@@ -1,6 +1,6 @@
 # Methodology
 
-**Version 1.0** — corresponds to extractor version `1.0.0`.
+**Version 1.1** — corresponds to extractor version `1.0.0`.
 
 This document states exactly how each signal is measured, what counts as a
 change, and what the index will refuse to claim. It is versioned because the
@@ -27,7 +27,12 @@ Nothing behind a login. No app subdomains. No APIs. No search engines. No
 third-party data. The full list of URLs is `seed/companies.json`, and it is
 part of the repository, so the input set is auditable.
 
-Each page is fetched at most once per day.
+Each page is fetched at most once per day. Observation is **on demand**: a crawl
+happens when a person or a manually triggered workflow asks for one, and then
+the process exits. There is no hosted scheduler and nothing runs continuously.
+That has one consequence a reader has to know about, and §3.2 states it in full:
+the record advances only when somebody advances it, and the archive says
+explicitly when it last did.
 
 ---
 
@@ -267,15 +272,71 @@ before the tiers themselves are updated.
 
 ## 3. Storage
 
-Every run writes one `observations` row per signal, **including the null ones**.
-The series is a record of what we measured, not only of what we found; a gap in
-the data and a null measurement are different facts and are stored differently.
+### 3.1 Three append-only files
 
-`observations` is append-only. No code path issues `UPDATE` or `DELETE` against
-it.
+Everything is newline-delimited JSON in `data/`, versioned by git. Nothing is
+stored as a binary, ever, because a binary makes `git diff` meaningless and the
+diff is the point.
 
-Each observation stores the value, its structured form where applicable, the
-method that produced it, the confidence, and the extractor version.
+| File | Contents |
+|---|---|
+| `data/companies/<slug>.ndjson` | the series: one line per observation of one page |
+| `data/events.ndjson` | the feed: one line per published change event |
+| `data/runs.ndjson` | the ledger: one line per crawl run, always |
+
+Each observation line records every declared signal for that page **including
+the null ones**, together with the value's structured form where applicable, the
+method that produced it, the confidence, the extractor version, the document
+facts (language, canonical URL, content variant), and the parser-health state
+the diff engine derived from it. A gap in the data and a null measurement are
+different facts and are stored differently.
+
+No code path rewrites an existing line. The only write operation is append.
+
+Nothing mutable is stored separately, because there is nothing mutable to store:
+the crawl queue (when each page is next due, its ETag, its content hash, its
+consecutive failure count) is a fold over `data/runs.ndjson`, and the current
+state of each signal is the last line of the company's own file. There is
+therefore no file that can disagree with the history, because there is no file
+besides the history.
+
+### 3.2 What a run ledger is for
+
+**A run record is written on every run, unconditionally** — including a run that
+found nothing due, crawled nothing and changed nothing.
+
+This is the single most important integrity property in the system. An archive
+whose value is "nothing moved last month" is worthless unless it can also prove
+it looked. "We ran and nothing had changed" and "nobody ran the crawler for six
+weeks" produce identical silence in the series, and the only thing that tells
+them apart is a receipt written every single time. A gap in `data/runs.ndjson`
+therefore means exactly one thing, and it is never ambiguous.
+
+The public health page reads the same ledger, which is why it can say "no
+successful read in nine days" rather than showing a calm, plausible, stale
+index.
+
+### 3.3 Why an unchanged observation is not appended
+
+An observation is appended only when it differs from the previous observation of
+the same page. A company that has not touched its homepage in four months would
+otherwise contribute a hundred and twenty byte-identical lines, and `git log -p`
+on its file — which is how a reader is meant to inspect the series — would be a
+hundred and twenty repetitions with the signal buried in them.
+
+Nothing is lost. "We looked and it was the same" is recorded in the run ledger,
+which names every target it touched and what happened to it. **The series says
+what was true; the ledger says when we checked.** When a value does change, the
+event's `previous_seen_at` is taken from the ledger, so it reports when the old
+value was last confirmed rather than when it first appeared.
+
+The comparison ignores timestamps and includes the parser-health counters, so an
+advancing null counter is itself new information and does get its own line. That
+matters: the removal rule in §4.3 counts consecutive nulls, and a
+de-duplication that swallowed them would silently disable it. The one exception
+is a signal that has *never* produced a value — `linear.app` publishes no logo
+wall this extractor can read — where the counter can never mean anything,
+because a removal cannot be confirmed for a value we never had.
 
 ---
 
@@ -391,15 +452,28 @@ descriptive only; it never gates whether an event is emitted.
   invisible to us; `vercel.com/pricing` is one such page and reports null tiers
   rather than a guess. Sites that refuse identified automated clients are
   recorded as `blocked` and contribute no data.
-- **Not a single global view.** Pages are fetched from wherever the Worker runs.
+- **Not a single global view.** Pages are fetched from wherever the crawl runs.
   Companies that geo-route or split-test serve different content to different
-  requests, and the index sees one of those.
+  requests, and the index sees one of those. A crawl from a laptop in Germany
+  and a crawl from a GitHub runner in a US cloud region do not necessarily see
+  the same page, and the second is refused outright more often — see §5, and the
+  README's note on block rates.
+- **Not continuous.** The record advances when a crawl is triggered, not on a
+  clock. A quiet stretch in the data is a quiet stretch in the crawling until
+  `data/runs.ndjson` says otherwise, and the site says which it was.
 - **Not causal.** Two companies adopting the same category noun in the same
   month is an observation, not an influence.
 
 ---
 
 ## 6. Version history
+
+**v1.1** — 2026-08-07. Storage moved from a hosted SQL database to append-only
+NDJSON in git, and observation from a hosted cron to on-demand runs. §1, §3 and
+§5 changed accordingly. **No signal definition and no change rule changed**, and
+the extractor version stays `1.0.0`: §2 and §4 describe the same measurements
+they did under v1.0, so values recorded before and after this change are
+comparable.
 
 **v1.0** — 2026-08-07. Initial release. 12 signals, 60 companies, extractor
 `1.0.0`.

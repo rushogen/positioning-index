@@ -1,14 +1,34 @@
 # The B2B SaaS Positioning Index
 
 A tracker that reads the homepage and pricing page of 60 well-known B2B SaaS
-companies every day, records how they describe themselves, and detects when that
-description changes.
+companies, records how they describe themselves, and detects when that
+description changes. It runs on demand — locally or from a button on GitHub —
+and every crawl lands as a public, timestamped commit.
 
 The value is not the snapshot. It is the time series. You can ask any model what
 Linear's homepage says today; no model can tell you what it said in March,
 whether the word "platform" replaced "tool" in June, or which twelve companies
 quietly dropped their free tier last quarter. That record has to be kept
 deliberately, starting before you need it.
+
+**The record is this repository's git history.** The product is change over
+time; git is a diff store. So every crawl is a commit, every observation is a
+line of newline-delimited JSON, and the history of the data is the history of
+the repository:
+
+```
+$ git log -p data/companies/linear.ndjson
+```
+
+...is a chronological list of every time Linear's positioning moved, with the
+before and the after side by side, in a commit nobody can backdate. Nothing is
+stored as a binary. A SQLite file would hold exactly the same information and
+none of the legibility: an opaque blob rewritten whole on every write, so every
+commit is a full-file replacement and `git log -p` says nothing at all.
+
+There is no server, no database and no always-on anything. A crawl is a command
+you run — on your laptop, or by pressing a button on GitHub — and the result is
+a commit.
 
 Built by Ruslan Shogenov. MIT licensed.
 
@@ -98,7 +118,8 @@ flagged as a likely A/B test rather than presented as news.
 
 A crawler that dies silently at 3am and reports "no changes" is the worst
 possible outcome for a public index, because it is indistinguishable from a calm
-week.
+week. That is true of a crawler nobody remembered to run, too, which is why
+`data/runs.ndjson` gets a line whether or not anything happened.
 
 Every fetch attempt is stored with a status — `ok`, `unchanged`, `blocked`,
 `changed-structure`, `error` — and a human-readable reason. `blocked` is
@@ -117,8 +138,10 @@ Those statuses roll up into a per-company health state published on the site:
 | `blocked` | robots.txt disallows, or the site refuses automated clients |
 
 The homepage shows a warning banner when nothing has been read successfully in
-36 hours, or when any signal is flagged suspect. "No changes detected" and "we
-have not successfully read this page in nine days" never look the same.
+36 hours, or when any signal is flagged suspect, and it says in the same breath
+that this index advances only when a crawl is triggered. "No changes detected",
+"we have not successfully read this page in nine days" and "nobody has run the
+crawler since March" never look the same.
 
 ## Crawling policy
 
@@ -144,8 +167,9 @@ reservation of rights is not a grey area. So:
   matching token, **longest-matching-path** rule precedence with `Allow` winning
   ties — the part most implementations get wrong — `*` and `$` patterns matched
   by a linear segment walk rather than a constructed regex, and empty `Disallow`
-  treated as permission. `Crawl-delay` is honoured. Cached 24 hours, so
-  robots.txt costs one request per host per day.
+  treated as permission. `Crawl-delay` is honoured. Cached 24 hours, and never
+  fetched more than once per host per run — so on a cold CI runner robots.txt
+  costs exactly one request per host, and locally it usually costs none.
 
 - **Fails closed.** 4xx means no restrictions. 401/403 is an explicit refusal.
   5xx, a timeout, or any fetch error means we do not crawl at all. Given the
@@ -157,9 +181,17 @@ reservation of rights is not a grey area. So:
   present. This crawler indexes; it does not train models and does not feed a
   generative system, so the other two cost nothing to respect.
 
-- **One request per host per invocation.** Not by convention — by construction.
-  The scheduler claims exactly one overdue page per cron tick, so a single
-  invocation physically cannot burst against anyone.
+- **One request per host at a time, spaced by a real delay.** Not by convention
+  — by construction. There is no concurrency anywhere in the runner: requests are
+  strictly serial, and before it touches a host it has already touched, the
+  runner sleeps until at least `MIN_HOST_INTERVAL_MS` (60 seconds) or that host's
+  `Crawl-delay` has passed, whichever is longer. Target order interleaves hosts
+  so the wait is usually already spent. A run physically cannot burst against
+  anyone, and `--all` is slower than it could be for exactly that reason.
+
+  This is also why `npm run crawl -- --company linear` takes about a minute: two
+  pages on one host means one 60-second pause, and the crawler does not have a
+  flag to skip it.
 
 - **One request per page per day**, with `If-None-Match` and
   `If-Modified-Since`, so an unchanged page costs the origin a 304 and costs us
@@ -176,7 +208,8 @@ User-agent: PositioningIndexBot
 Disallow: /
 ```
 
-The deployed Worker serves the same policy in plain text at `/crawler`.
+The published site serves the same policy in plain text at `/crawler.txt`,
+generated from `bin/build-site.js` so it cannot drift from the code.
 
 One more thing worth stating, because it came up in the seed list: page content
 is *data we display*, never *instructions we follow*. `ramp.com` publishes a
@@ -186,34 +219,81 @@ extractor treats every byte of every page as inert text.
 ## How it works
 
 ```
-cron */5  ──▶  claim the single most overdue target
-               │
-               ├─▶ robots.txt check (cached 24h, fails closed)
-               ├─▶ one conditional GET
-               ├─▶ extract 12 signals  (bounded regex, no DOM parser)
-               ├─▶ gate + diff against stored state
-               └─▶ write observations, events, state  (one atomic D1 batch)
+npm run crawl            ──▶  fold data/runs.ndjson into the crawl queue
+                              select the most overdue batch
+                              │
+                              ├─▶ robots.txt check (once per host, fails closed)
+                              ├─▶ one conditional GET per page, strictly serial
+                              ├─▶ extract 12 signals  (bounded regex, no DOM parser)
+                              ├─▶ gate + diff against the last stored observation
+                              ├─▶ append to data/companies/<slug>.ndjson, data/events.ndjson
+                              └─▶ append ONE run record to data/runs.ndjson, always
 
-cron 00:05 ──▶ close yesterday's run, open today's
+npm run build            ──▶  regenerate docs/ from data/, deterministically
 
-fetch()    ──▶ /            static assets (free, unmetered)
-               /api/*       D1 reads, cached 15 min at the edge
-               /crawler     the policy above, in plain text
+git commit && git push   ──▶  the archive advances in public
 ```
 
-The crawl is a **queue, not a loop**. Cloudflare's free plan gives a Worker 10ms
-of CPU per invocation, and these pages are 300kB–1.5MB. A cron that looped over
-sixty companies would be killed partway through and leave the index silently
-half-updated — the exact failure this project is built to avoid. Instead each
-tick does one page and stops. 288 ticks a day against 120 targets sweeps the
-whole index in about ten hours with slack for retries, and uses two of the five
-Cron Triggers the free plan allows.
+Local and CI run the identical code path. The GitHub Actions workflow shells out
+to `node bin/crawl.js` with the same arguments you would type. There is no
+emulator, no `wrangler dev`, and no "production" build that behaves differently
+from the one you tested.
 
-**No DOM parser.** Building a DOM over a megabyte of marketing HTML costs tens of
-milliseconds. Extraction is bounded, non-backtracking regex over a size-capped
-string, with one shared plain-text pass. The first version called
-`toLowerCase()` once per element while looking for closing tags, which made a
-1.2MB page cost 168ms on its own; fixing that took it to 5ms warm.
+### Three files, three jobs
+
+```
+data/companies/<slug>.ndjson   the series  — one line per observation
+data/events.ndjson             the feed    — one line per published change
+data/runs.ndjson               the ledger  — one line per run, always
+```
+
+Everything mutable is a fold over those logs. The crawl queue — when each page is
+next due, its ETag, its content hash, its consecutive failure count — is the last
+result recorded for each target in the ledger. The current state of each signal
+is the last line of the company's own file. There is no file that can disagree
+with the history, because there is no file besides the history.
+
+### "Ran and found nothing" is not "did not run"
+
+This is the single most important integrity property in the system, and it is the
+reason `data/runs.ndjson` exists.
+
+An archive whose value is *"nothing moved last month"* is worthless unless it can
+also prove it looked. In the series those two situations produce identical
+silence. So **a run record is written unconditionally** — including a run that
+found nothing due, crawled nothing, and changed nothing. It costs one line and it
+means a gap in the ledger has exactly one interpretation: nobody ran it.
+
+The site reads the same ledger, which is why it can say *"no successful read in
+nine days"* instead of showing a calm, plausible, stale index.
+
+### Why an unchanged observation is not appended
+
+A company that has not touched its homepage in four months would otherwise
+contribute 120 byte-identical lines, and `git log -p` on its file — the way you
+are meant to read the series — would be 120 repetitions with the signal buried in
+them. So an observation is appended only when it differs from the previous
+observation of the same page.
+
+Nothing is lost: "we looked and it was the same" is in the run ledger, which
+names every target it touched and what happened. The series says what was true;
+the ledger says when we checked. When a value does change, `previous_seen_at` is
+taken from the ledger, so the event reports when the old value was last
+confirmed rather than when it first appeared.
+
+### No DOM parser
+
+Building a DOM over a megabyte of marketing HTML costs tens of milliseconds.
+Extraction is bounded, non-backtracking regex over a size-capped string, with one
+shared plain-text pass. The first version called `toLowerCase()` once per element
+while looking for closing tags, which made a 1.2MB page cost 168ms on its own;
+fixing that took it to 5ms warm.
+
+That optimisation was originally forced by a 10ms CPU ceiling that no longer
+applies. It is kept because it is still the difference between a full sweep that
+spends its time waiting politely on the network and one that spends it burning
+CPU, and because a fast extractor is what makes `--dry-run` a usable way to check
+a selector against sixty live pages.
 
 Measured against live pages with `npm run probe`:
 
@@ -225,34 +305,42 @@ summary  12/12 pages extracted  signal yield 52/72 (72%)
          cold p50 18.78ms  max 42.51ms  |  largest page 2216kB
 ```
 
-Warm is the steady state, since a Cloudflare isolate is reused across
-invocations; cold is the first call in a fresh isolate. Both are reported
-because quoting only the warm number would be flattering and only the cold one
-would be wrong.
+Warm is the steady state, since one process sweeps many pages; cold is the first
+call in a fresh process. Both are reported because quoting only the warm number
+would be flattering and only the cold one would be wrong.
 
-### Staying inside the free tier
+### What it costs to run
 
-| Limit | Free plan | Used |
+Nothing, and there is no account that can start billing.
+
+| Resource | Limit | Used |
 |---|---|---|
-| Worker requests | 100k/day | static assets don't count; API cached 15 min at the edge |
-| CPU per invocation | 10ms | fetch handler does D1 reads and JSON only; parsing lives in the scheduled handler |
-| D1 storage | 5GB | ~1,300 observation rows/day |
-| D1 rows written | 100k/day | ~1.5k, about 1.5% |
-| Cron Triggers | 5 | 2 |
+| GitHub Actions | 2,000 min/month on a free account, unlimited on a public repository | a full sweep is dominated by politeness delays, not compute |
+| GitHub Pages | 1GB site, 100GB/month bandwidth | `docs/` is under 1MB |
+| Repository size | soft warning at 1GB | the append-only NDJSON grows by roughly a megabyte a year, and git deltas it well |
+| Database | — | there isn't one |
 
-The free plan has no payment method attached and cannot bill. It fails closed:
-if the index outgrows these limits it stops rather than quietly generating an
-invoice. For something that must run unattended, that is a feature.
+The previous version of this project ran on Cloudflare Workers and D1, and the
+free plan there was also genuinely free. The reason for moving was not cost. It
+was that the deployment was a *place the data lived* — a database you had to be
+logged in to inspect, whose history was invisible, and whose contents nobody
+downstream could verify. Putting the data in git makes the archive itself the
+artefact, and makes every claim in it independently checkable by anyone with a
+clone.
 
 ## Repository
 
 ```
+bin/
+  crawl.js            the CLI runner: batch, one company, full sweep, dry run
+  build-site.js       generates docs/ from data/, deterministically
 src/
-  index.js            Worker entry: public API + crawler disclosure
-  scheduled.js        one page per cron tick
+  runner.js           select targets, crawl them politely, write what they mean
+  report.js           read models: health, stats, feed, per-company detail
   diff.js             change detection, gates, parser-failure discrimination
-  db.js               D1 access layer
   hash.js             FNV-1a
+  store/
+    files.js          the append-only NDJSON store
   crawl/
     agent.js          crawler identity and politeness constants
     robots.js         RFC 9309 parser, matcher, cache
@@ -263,52 +351,113 @@ src/
     hero.js           headline, subhead, category label, meta tags
     proof.js          customer logos, quantified claims
     pricing.js        tiers, entry price, free tier, seat minimum
-public/               the index page: HTML, CSS, one JS file, no dependencies
-tests/                125 tests, node:test, no runner dependency
+data/
+  companies/*.ndjson  the series, append-only
+  events.ndjson       published change events, append-only
+  runs.ndjson         one record per run, always
+docs/                 the generated site, served by GitHub Pages
+public/               the site's source: HTML, CSS, one JS file, no dependencies
+tests/                139 tests, node:test, no runner dependency
 scripts/
   probe.js            run the extractor against live URLs, report timings
-  demo.js             run the whole stack locally against the real internet
   check-seed.js       validate seed URLs, structurally or live
-schema.sql            D1 schema
 seed/companies.json   60 companies, 120 URLs
-METHODOLOGY.md        how each signal is measured, v1.0
+METHODOLOGY.md        how each signal is measured, v1.1
+.github/workflows/crawl.yml   the button
 ```
 
-## Running it locally
+**Zero dependencies.** `npm install` installs nothing, `node_modules/` never
+appears, and there is no lockfile to audit or renovate. The test runner is
+`node:test`, the HTTP client is `fetch`, the storage engine is
+`fs.appendFile`. A project whose entire purpose is to still be running in three
+years should not have a supply chain.
+
+## Running it
+
+Node 20 or newer. Nothing to install.
 
 ```bash
-npm install
-npm test                              # 125 tests, no network
+npm test                              # 139 tests, no network
+npm run crawl                         # the most overdue batch (12 pages)
+npm run crawl -- --company linear     # one company, both its pages
+npm run crawl -- --all                # every target in the seed list
+npm run crawl -- --dry-run            # fetch and extract, write nothing
+npm run crawl -- --limit 30           # a bigger batch
+npm run build                         # regenerate docs/ from data/
 npm run probe -- linear notion vercel # extract from live pages, print everything
-npm run demo -- --fresh --crawl 12    # crawl 12 real targets, serve on :8787
 ```
 
-`npm run demo` applies the real schema to a SQLite file, seeds it from
-`seed/companies.json`, crawls real sites one target at a time through the real
-scheduled handler, and serves the real public page against the real query layer.
-D1 *is* SQLite, so the only thing missing is Cloudflare. This is what verified
-the pipeline before any deploy.
+A crawl writes to `data/`, and `npm run build` regenerates `docs/`. Then commit
+both. The commit subject the crawler suggests is printed at the end of the run:
 
-The test suite runs the same handler against the same `schema.sql` in an
-in-memory database, with only the network mocked — a mock data layer would
-happily agree with a broken query. `tests/pipeline.test.js` walks five days:
-baseline publishes nothing, an unchanged body short-circuits, a rewritten hero
-produces exactly one headline change and one category change, a redesign that
-breaks every selector produces zero events while still recording observations,
-and recovery is not a change.
+```
+$ npm run crawl -- --company linear
 
-## Deploying
+    1  ok                linear/home                5/7
+    2  ok                linear/pricing             4/5
 
-```bash
-npx wrangler d1 create positioning_index     # put the id in wrangler.toml
-npm run db:init                              # apply schema.sql
-npm run db:seed                              # load the 60 companies
-npm run deploy
+  2 target(s): 2 ok, 0 unchanged, 0 blocked, 0 error, 0 restructured
+  0 change event(s), 0 parser fault(s), 2 observation line(s) written
+  data: no changes across 2 targets
 ```
 
-The first sweep establishes a baseline and publishes nothing. Change events
-begin on the second sweep, roughly 24 hours later. That is not a bug to fix —
-it is the shape of the product.
+Nothing is due more often than once a day per page, so a second `npm run crawl`
+straight afterwards will correctly do nothing — and still write a run record
+saying so. `--company` and `--all` override the batch selection but never the
+politeness delays.
+
+### On GitHub
+
+**Actions → crawl → Run workflow.** Pick a scope (`batch`, `all`, or `company`
+plus a slug), press the green button. The workflow runs the tests, runs the same
+`bin/crawl.js`, rebuilds `docs/`, and commits the result with a message
+describing what actually moved:
+
+```
+data: 3 changes across 12 targets (linear, notion, figma), 2 blocked
+```
+
+`dry_run` is available as an input if you want to see what a sweep would find
+without committing anything.
+
+The site is `docs/` on the default branch: enable it once under **Settings →
+Pages → Deploy from a branch → main → /docs** and every crawl commit publishes
+itself. Nothing else deploys, because there is nothing else to deploy.
+
+### The 60-day problem, stated plainly
+
+**GitHub disables scheduled workflows in a repository that has had no activity
+for 60 days.** It emails the owner and stops. It does not fail. Nothing in the
+data says anything happened.
+
+For this project specifically, that is the worst available failure mode. Months
+later the history would look like a market that went quiet rather than a crawler
+that did — which is precisely the confusion the whole diff engine exists to
+prevent, arriving through the back door of a platform default.
+
+So `workflow_dispatch` is the primary trigger and the `schedule:` block ships
+commented out in `.github/workflows/crawl.yml`. Uncomment it if you want to, but
+know two things first: it will be disabled after 60 quiet days, and a bot commit
+pushed by the workflow itself **does not** count as the activity that keeps it
+alive. Treat a schedule as a convenience that decays, not as the mechanism.
+
+The defence that actually works is `data/runs.ndjson`. Whatever else fails, the
+ledger records every run that happened, so the archive can always distinguish a
+quiet market from a stopped crawler — and the site says which.
+
+### How the tests exercise all of this
+
+`tests/pipeline.test.js` runs the real runner against a real file store in a
+temporary directory, with only the network mocked. The NDJSON that lands on disk
+is the NDJSON a real crawl would commit — a mock store would happily agree with a
+broken writer. It walks five days: baseline publishes nothing, an unchanged body
+short-circuits, a rewritten hero produces exactly one headline change and one
+category change, a redesign that breaks every selector produces zero events while
+still recording observations, and recovery is not a change.
+
+`tests/store.test.js` pins the storage contract itself: files are only ever
+appended to, a run always leaves a receipt, an identical re-observation is not
+appended, and a moving parser-health counter always is.
 
 ## Known limitations
 
@@ -325,14 +474,34 @@ its weaknesses should not be trusted about its strengths.
    solved. A company running a persistent multi-variant test will show
    oscillating changes that are noise.
 
-3. **Geography.** Pages are fetched from wherever the Worker runs. Sites that
-   geo-route serve a locale-specific page and the index sees one of them. The
-   language gate prevents false change events; it does not give a global view.
+3. **Geography, and it now varies by operator.** Pages are fetched from wherever
+   the crawl runs. Sites that geo-route serve a locale-specific page and the
+   index sees one of them. The language gate prevents false change events; it
+   does not give a global view. A crawl from a laptop in Germany and a crawl from
+   a GitHub runner in a US cloud region do not necessarily see the same page, so
+   the `trigger` field on every run record says which produced it.
 
-4. **Bot walls.** Some sites refuse identified crawlers outright. Two are kept in
-   the seed list deliberately — `pipedrive.com/pricing` returns 403 while its
-   homepage returns 200 — because dropping them would make the index look
-   healthier than the open web actually is.
+4. **Bot walls, and a higher `blocked` rate from GitHub.** Some sites refuse
+   identified crawlers outright. Two are kept in the seed list deliberately —
+   `pipedrive.com/pricing` returns 403 while its homepage returns 200 — because
+   dropping them would make the index look healthier than the open web actually
+   is.
+
+   **Expect more of them from Actions than from a laptop.** GitHub runners use
+   published cloud IP ranges, and a large share of commercial WAF configurations
+   treat those ranges as presumptively hostile regardless of what the User-Agent
+   says or what robots.txt allows. A sweep from a residential connection and the
+   same sweep from CI will not produce the same number of `blocked` results, and
+   the CI number will be worse.
+
+   This is not breakage and the system does not treat it as breakage. `blocked`
+   is a distinct status from `error` precisely because it means *the origin saw
+   who we are and declined*, which is information. It backs the target off hard,
+   it shows on the health page in its own colour, it never becomes a change
+   event, and it never becomes silence. If a run from Actions reports a third of
+   the index blocked, that is the honest measurement of what an identified
+   crawler can reach from a cloud IP — not a bug to hide by pretending to be a
+   browser.
 
 5. **Agent-specific content variants.** `ramp.com` serves `text/markdown` to
    every non-browser client. That is recorded as `blocked` with a specific
