@@ -30,6 +30,11 @@ There is no server, no database and no always-on anything. A crawl is a command
 you run — on your laptop, or by pressing a button on GitHub — and the result is
 a commit.
 
+Every claim this index has published and then withdrawn is listed in
+[`CORRECTIONS.md`](CORRECTIONS.md), with what was wrong and what changed. It
+already has an entry. That is on purpose: a corrections log that starts empty
+tells you nothing about whether anyone is checking.
+
 Built by Ruslan Shogenov. MIT licensed.
 
 ## What it records
@@ -109,6 +114,23 @@ redirected to localised pages. A crawler that ignores `<html lang>` reports that
 Klaviyo rewrote its homepage in German. Language and canonical-URL shifts
 suppress diffs and re-baseline.
 
+**A different vantage point is not a price change.** This one was learned the
+expensive way. On 2026-08-07 the index published *"Notion's entry price moved
+from EUR 9.5 to USD 10"*. Notion had changed nothing: the first reading came
+from a laptop in Germany and the second, seven minutes later, from a GitHub
+Actions runner in the US. `notion.com/pricing` picks its currency from the
+client's IP, and both responses declared `lang="en"` and the same canonical
+URL, so the language gate above saw nothing at all. The events were retracted
+the same day; [`CORRECTIONS.md`](CORRECTIONS.md) is the full account.
+
+So the crawl origin is now recorded on every observation, every run and every
+event, and a change of origin suppresses every currency-bearing signal on the
+page — which is recorded as `origin-shift`, not as silence. Separately, a
+currency that moves while the numbers stay proportionate is treated as routing
+rather than repricing even within one origin, because that rule needs no origin
+at all and therefore also protects the eight months of archive recorded before
+any origin was written down.
+
 **An experiment is not a repositioning.** `airtable.com` served two different
 `<h1>` strings to two requests minutes apart. Each signal remembers its last six
 values; a change back to something the page recently held is recorded but
@@ -122,9 +144,11 @@ week. That is true of a crawler nobody remembered to run, too, which is why
 `data/runs.ndjson` gets a line whether or not anything happened.
 
 Every fetch attempt is stored with a status — `ok`, `unchanged`, `blocked`,
-`changed-structure`, `error` — and a human-readable reason. `blocked` is
-deliberately distinct from `error`: it means the origin saw who we are and
-declined, which is information, not a bug.
+`changed-structure`, `origin-shift`, `error` — and a human-readable reason.
+`blocked` is deliberately distinct from `error`: it means the origin saw who we
+are and declined, which is information, not a bug. `origin-shift` is likewise
+distinct from both: the page was read perfectly, from somewhere else than last
+time.
 
 Those statuses roll up into a per-company health state published on the site:
 
@@ -133,6 +157,7 @@ Those statuses roll up into a per-company health state published on the site:
 | `ok` | read successfully, every signal extracting |
 | `degraded` | read successfully, but a signal is a suspected extraction failure |
 | `structure-changed` | the page parsed but we understood far less of it; change detection paused |
+| `origin-shift` | read successfully, but from a different country or machine than last time; prices and other locale-sensitive signals are recorded and held back rather than published |
 | `stale` | no successful read recently |
 | `error` | last attempt failed |
 | `blocked` | robots.txt disallows, or the site refuses automated clients |
@@ -221,11 +246,13 @@ extractor treats every byte of every page as inert text.
 ```
 npm run crawl            ──▶  fold data/runs.ndjson into the crawl queue
                               select the most overdue batch
+                              resolve the crawl origin (once, best-effort)
                               │
                               ├─▶ robots.txt check (once per host, fails closed)
                               ├─▶ one conditional GET per page, strictly serial
                               ├─▶ extract 12 signals  (bounded regex, no DOM parser)
                               ├─▶ gate + diff against the last stored observation
+                              │    (parser faults and origin shifts publish nothing)
                               ├─▶ append to data/companies/<slug>.ndjson, data/events.ndjson
                               └─▶ append ONE run record to data/runs.ndjson, always
 
@@ -334,15 +361,17 @@ clone.
 bin/
   crawl.js            the CLI runner: batch, one company, full sweep, dry run
   build-site.js       generates docs/ from data/, deterministically
+  retract.js          withdraw a published event by appending, never deleting
 src/
   runner.js           select targets, crawl them politely, write what they mean
   report.js           read models: health, stats, feed, per-company detail
-  diff.js             change detection, gates, parser-failure discrimination
+  diff.js             change detection, gates, parser- and context-fault discrimination
   hash.js             FNV-1a
   store/
     files.js          the append-only NDJSON store
   crawl/
-    agent.js          crawler identity and politeness constants
+    agent.js          crawler identity, pinned Accept-Language, politeness constants
+    origin.js         where the crawl ran from, and how two origins compare
     robots.js         RFC 9309 parser, matcher, cache
     fetch.js          conditional fetch with classified outcomes
   extract/
@@ -353,16 +382,17 @@ src/
     pricing.js        tiers, entry price, free tier, seat minimum
 data/
   companies/*.ndjson  the series, append-only
-  events.ndjson       published change events, append-only
+  events.ndjson       published change events and their retractions, append-only
   runs.ndjson         one record per run, always
 docs/                 the generated site, served by GitHub Pages
 public/               the site's source: HTML, CSS, one JS file, no dependencies
-tests/                139 tests, node:test, no runner dependency
+tests/                153 tests, node:test, no runner dependency
 scripts/
   probe.js            run the extractor against live URLs, report timings
   check-seed.js       validate seed URLs, structurally or live
 seed/companies.json   60 companies, 120 URLs
-METHODOLOGY.md        how each signal is measured, v1.1
+METHODOLOGY.md        how each signal is measured, v1.2
+CORRECTIONS.md        every claim published and then withdrawn, and why
 .github/workflows/crawl.yml   the button
 ```
 
@@ -377,7 +407,7 @@ years should not have a supply chain.
 Node 20 or newer. Nothing to install.
 
 ```bash
-npm test                              # 139 tests, no network
+npm test                              # 153 tests, no network
 npm run crawl                         # the most overdue batch (12 pages)
 npm run crawl -- --company linear     # one company, both its pages
 npm run crawl -- --all                # every target in the seed list
@@ -385,7 +415,15 @@ npm run crawl -- --dry-run            # fetch and extract, write nothing
 npm run crawl -- --limit 30           # a bigger batch
 npm run build                         # regenerate docs/ from data/
 npm run probe -- linear notion vercel # extract from live pages, print everything
+npm run retract -- --help             # withdraw a published event, by appending
 ```
+
+A crawl makes one extra HTTP request before it starts: a Cloudflare edge trace
+that reports which country the run is egressing from, so the origin can be
+recorded (`METHODOLOGY.md` §1.2). It has its own short timeout, it never blocks
+the crawl, and it records `unknown` rather than a guess when it fails. Set
+`POSITIONING_ORIGIN_PROBE=off` to skip it, or `POSITIONING_ORIGIN_COUNTRY=DE` to
+state it explicitly.
 
 A crawl writes to `data/`, and `npm run build` regenerates `docs/`. Then commit
 both. The commit subject the crawler suggests is printed at the end of the run:
@@ -459,6 +497,14 @@ still recording observations, and recovery is not a change.
 appended to, a run always leaves a receipt, an identical re-observation is not
 appended, and a moving parser-health counter always is.
 
+`tests/origin.test.js` opens by replaying the Notion incident out of the archive
+itself — it rebuilds the extractor result from the two lines still sitting in
+`data/companies/notion.ndjson`, with the real `EUR 9.5` and `USD 10` and the real
+tier lists, and asserts the diff engine now produces zero events and classifies
+the page `origin-shift`. The test after it asserts the same pair is still caught
+when neither side has an origin recorded, which is the state every observation
+written before the fix is in.
+
 ## Known limitations
 
 Listed because they are real, and because an index whose author will not name
@@ -474,12 +520,30 @@ its weaknesses should not be trusted about its strengths.
    solved. A company running a persistent multi-variant test will show
    oscillating changes that are noise.
 
-3. **Geography, and it now varies by operator.** Pages are fetched from wherever
-   the crawl runs. Sites that geo-route serve a locale-specific page and the
-   index sees one of them. The language gate prevents false change events; it
-   does not give a global view. A crawl from a laptop in Germany and a crawl from
-   a GitHub runner in a US cloud region do not necessarily see the same page, so
-   the `trigger` field on every run record says which produced it.
+3. **Geography. One vantage point at a time, and the canonical one is CI.**
+   Pages are fetched from wherever the crawl runs, and the crawler makes one
+   request per page, so it sees one locale's version of a geo-routed page and
+   never all of them.
+
+   **GitHub Actions is the canonical origin going forward**, because it is
+   reproducible and documented and a laptop is neither. Local runs stay fully
+   supported — they are the right way to develop against live pages — but a local
+   run against a page last read from CI now produces an `origin-shift` record
+   rather than a change event, and that is the intended, visible outcome.
+
+   The origin of every observation, run and event is recorded (`environment`
+   exactly, `country` best-effort). A change of origin suppresses every
+   currency-bearing signal on the page; a proportionate currency move is treated
+   as routing even within one origin. Two consequences worth stating flatly:
+
+   - **The archive is mixed-origin before 2026-08-07.** Those observations carry
+     no origin field, because it did not exist. They are marked `unknown` and are
+     not backfilled with a guess.
+   - **This index will never report a currency-only price change.** It cannot
+     tell one from locale routing. Where a company geo-routes, what is recorded
+     is what a US-based client is shown; a European buyer sees something else,
+     and getting that number requires fetching from Europe, which this crawler
+     does not do.
 
 4. **Bot walls, and a higher `blocked` rate from GitHub.** Some sites refuse
    identified crawlers outright. Two are kept in the seed list deliberately —
@@ -518,3 +582,9 @@ its weaknesses should not be trusted about its strengths.
 7. **The index is young.** Drift is only visible over months. On day one this
    is an elaborate snapshot. That is unavoidable and is precisely why it had to
    be started.
+
+8. **It has already been wrong once.** Two false change events about Notion's
+   pricing, published and retracted on 2026-08-07. The cause, the fix and what
+   remains unsolved are in [`CORRECTIONS.md`](CORRECTIONS.md). Listed here rather
+   than only there because a limitations section that omits the one confirmed
+   failure is a marketing page.

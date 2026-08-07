@@ -1,6 +1,6 @@
 # Methodology
 
-**Version 1.1** — corresponds to extractor version `1.0.0`.
+**Version 1.2** — corresponds to extractor version `1.0.0`.
 
 This document states exactly how each signal is measured, what counts as a
 change, and what the index will refuse to claim. It is versioned because the
@@ -33,6 +33,57 @@ the process exits. There is no hosted scheduler and nothing runs continuously.
 That has one consequence a reader has to know about, and §3.2 states it in full:
 the record advances only when somebody advances it, and the archive says
 explicitly when it last did.
+
+### 1.1 How the page is requested
+
+Content negotiation is a variable, so it is held still. Every request from every
+machine sends exactly the same language preference:
+
+```
+Accept-Language: en-US,en;q=0.9
+```
+
+`en-US` rather than a bare `en` because it is explicit about the region as well
+as the language, and because it matches the origin this index treats as canonical
+(§1.2). `en;q=0.9` keeps any English variant acceptable rather than risking a 406
+or a fallback locale from a site that only publishes `en-GB`.
+
+**This reduces one source of variance. It does not eliminate geo-routing.** Sites
+that choose a currency or a locale from the client's IP address ignore
+`Accept-Language` entirely — `notion.com/pricing` is one of them, and finding
+that out cost this index two false change events (see `CORRECTIONS.md`). What is
+left after pinning the header is handled by §1.2 and §4.9.
+
+### 1.2 Where the page is requested from
+
+**Every observation and every run records the crawl origin.** Two fields:
+
+| Field | How it is obtained | Can it be unknown? |
+|---|---|---|
+| `environment` | `local` or `github-actions`, from the variables GitHub Actions sets | no |
+| `country` / `region` | one Cloudflare edge trace per run — no key, no account, no quota — reporting the ISO 3166-1 country the request egressed from | yes |
+
+The country lookup is best-effort by design. It has its own short timeout, it
+never throws, and it never delays or cancels a crawl. When it fails, the origin
+is recorded as `unknown`, and `unknown` is treated downstream as *cannot rule out
+a shift*, never as *no shift*.
+
+The country is **never** inferred from a system timezone, a system locale or an
+environment variable naming a region. A laptop configured in one place and
+connected through another would then produce a confident lie, and this index
+prefers a stated gap to an unstated guess.
+
+**GitHub Actions is the canonical origin.** It is reproducible, it is documented
+in `.github/workflows/crawl.yml`, and anybody can re-run it. A laptop is none of
+those things. Local runs remain fully supported and are the right way to develop
+against live pages, but a local run against a page last read from CI produces an
+`origin-shift` record (§4.9) rather than a change event — which is the correct,
+visible outcome rather than a silent one.
+
+Observations recorded before 2026-08-07 carry no origin field at all, because the
+field did not exist. They read as `unknown` and are **not** backfilled with a
+guess. §4.10 is what protects that stretch of the archive, because it needs no
+origin.
 
 ---
 
@@ -281,17 +332,33 @@ diff is the point.
 | File | Contents |
 |---|---|
 | `data/companies/<slug>.ndjson` | the series: one line per observation of one page |
-| `data/events.ndjson` | the feed: one line per published change event |
+| `data/events.ndjson` | the feed: one line per published change event, plus one line per retraction of an earlier event |
 | `data/runs.ndjson` | the ledger: one line per crawl run, always |
 
 Each observation line records every declared signal for that page **including
 the null ones**, together with the value's structured form where applicable, the
 method that produced it, the confidence, the extractor version, the document
-facts (language, canonical URL, content variant), and the parser-health state
-the diff engine derived from it. A gap in the data and a null measurement are
-different facts and are stored differently.
+facts (language, canonical URL, content variant), the **crawl origin** (§1.2),
+and the parser-health state the diff engine derived from it. A gap in the data
+and a null measurement are different facts and are stored differently.
 
 No code path rewrites an existing line. The only write operation is append.
+
+### 3.1.1 How a wrong claim is withdrawn
+
+By **appending**, never by deleting and never by editing. A retraction is a line
+in `data/events.ndjson` naming the `(slug, signal, detected_at)` of the event it
+withdraws, with a stated reason and a link to the entry in `CORRECTIONS.md`.
+
+The wrong claim stays in the file exactly as it was published. The public feed
+excludes retracted events; `docs/api/retractions.json` and the site list them
+separately, struck through. Deleting the line would be the one thing an archive
+whose whole premise is *"check this against a history nobody can quietly
+rewrite"* must never do — and a reader who acted on a false event deserves to
+find out that it was withdrawn, not to find that it never happened.
+
+`npm run retract` is the only supported way to write one. It refuses to retract
+an event that was never published, and refuses to run without a reason.
 
 Nothing mutable is stored separately, because there is nothing mutable to store:
 the crawl queue (when each page is next due, its ETag, its content hash, its
@@ -360,6 +427,16 @@ events are produced for any signal on it**:
 | Canonical URL changed | `ok`, re-baselined | a different page is not a changed page |
 | Signal yield fell below 50% of its previous level | `changed-structure` | the page was redesigned; our selectors need review |
 | Extractor version changed | `ok`, re-baselined | *we* changed, and that is not their news |
+
+One gate does **not** suppress the whole page:
+
+| Gate | Recorded status | Effect |
+|---|---|---|
+| Crawl origin changed (§1.2) | `origin-shift` | only locale-sensitive signals are withheld — see §4.9 |
+
+A hero headline read from Virginia is still comparable with one read from
+Frankfurt, and muting the whole page would discard real signal in order to
+protect the price fields. It is the price fields that get protected.
 
 The language gate is not theoretical. Fetched from Germany during development,
 `klaviyo.com`, `stripe.com`, `zendesk.com` and `snowflake.com` all redirected to
@@ -441,6 +518,70 @@ For text signals, normalised Levenshtein distance over the first 200 characters,
 0 to 1. For list signals, Jaccard distance over the item sets. Magnitude is
 descriptive only; it never gates whether an event is emitted.
 
+### 4.9 A value that depends on where we stood is not their news
+
+**If the crawl origin (§1.2) differs from the origin of the previous observation
+of the same page, no change event is emitted for any locale-sensitive signal on
+it.** This is the sibling of §4.3: §4.3 says a value that went missing is our
+parser breaking, and §4.9 says a value that moved can be our vantage point
+moving.
+
+A signal is locale-sensitive if either of these holds:
+
+- it is one of the published-price signals — `pricing_tiers`,
+  `pricing_entry_price`, `pricing_free_tier`, `pricing_seat_minimum`; or
+- the value it holds, before or after, **quotes a currency at all**. This catches
+  a proof point reading *"$2.4M saved"* or a headline quoting a price, without
+  every such signal having to be enumerated.
+
+What happens instead: the observation is recorded in full, the page is recorded
+with status `origin-shift`, the signal is marked suspect, and **the last
+known-good value is not overwritten** — exactly as in §4.4, so that the next
+reading from the origin we baselined against is compared with what we actually
+believed rather than with a value we only saw because we were standing somewhere
+else.
+
+Origins are compared conservatively. A difference is only asserted when it can be
+proved: a different `environment`, or two known and different countries. If either
+side's country is unknown, the comparison returns *indeterminate* and this rule
+does not fire — muting the index every time a probe timed out would be its own
+kind of dishonesty. §4.10 is what covers the indeterminate case.
+
+This rule was added in v1.2, after `notion.com/pricing` produced two false change
+events. `CORRECTIONS.md` has the full account.
+
+### 4.10 A currency that moves while the numbers stay proportionate is routing
+
+**If the currency changes and every comparable amount changes by the same factor,
+that is a converted price list, not a repricing, and no event is emitted.**
+
+Concretely: `EUR 9.5 → USD 10` is a ratio of 1.053; `EUR 19.5 → USD 20` is 1.026.
+Nobody reprices by five per cent and switches currency in the same release. A
+site that geo-routes does exactly that on every request.
+
+The test is applied per tier, matched by tier name so a reordered pricing table
+does not defeat it, and it holds only when:
+
+- every ratio lies within 0.5–2.0 of 1, and
+- the largest ratio is at most 1.35 times the smallest.
+
+A tier that is free in one currency and free in the other carries no rate and is
+ignored. A tier that is free in one and priced in the other fails the test.
+
+**This rule needs no origin at all**, which is the point of it: it covers the two
+cases where the origin is unknown — an observation recorded before v1.2, and a
+probe that failed.
+
+It requires corroboration before the new value is adopted: the same currency,
+from the same origin, for **three** consecutive observations. Any change of
+origin restarts the count. Even then the new value is adopted **silently**.
+
+The consequence, stated plainly because it is a real limitation and not a
+detail: **this index will never report a currency-only price change.** It cannot
+distinguish one from locale routing, and the asymmetry in §4 resolves that toward
+saying nothing. A currency change accompanied by a *disproportionate* price move
+is a genuine repricing and is published normally.
+
 ---
 
 ## 5. What this index does not claim
@@ -452,11 +593,15 @@ descriptive only; it never gates whether an event is emitted.
   invisible to us; `vercel.com/pricing` is one such page and reports null tiers
   rather than a guess. Sites that refuse identified automated clients are
   recorded as `blocked` and contribute no data.
-- **Not a single global view.** Pages are fetched from wherever the crawl runs.
-  Companies that geo-route or split-test serve different content to different
-  requests, and the index sees one of those. A crawl from a laptop in Germany
-  and a crawl from a GitHub runner in a US cloud region do not necessarily see
-  the same page, and the second is refused outright more often — see §5, and the
+- **Not a single global view.** Pages are fetched from one place at a time,
+  because the crawler makes one request per page. Companies that geo-route serve
+  different content to different addresses and the index sees one of them. From
+  v1.2 the canonical origin is a GitHub Actions runner (§1.2), so the series is
+  internally consistent — but where a company geo-routes, what is recorded is
+  what a US-based client is shown, and that is not what a European buyer sees.
+  Anyone who needs the European figure has to fetch it from Europe; this is not
+  a multi-region crawler and is not going to become one. A crawl from a GitHub
+  runner is also refused outright more often than one from a laptop — see the
   README's note on block rates.
 - **Not continuous.** The record advances when a crawl is triggered, not on a
   clock. A quiet stretch in the data is a quiet stretch in the crawling until
@@ -467,6 +612,23 @@ descriptive only; it never gates whether an event is emitted.
 ---
 
 ## 6. Version history
+
+**v1.2** — 2026-08-07. Crawl origin becomes part of the measurement. New §1.1
+(pinned `Accept-Language`), §1.2 (how the origin is resolved and which one is
+canonical), §3.1.1 (how a wrong claim is withdrawn), §4.9 (an origin shift is a
+context fault) and §4.10 (a proportionate currency move is routing, not
+repricing). §3.1, §4.1 and §5 updated accordingly.
+
+Prompted by a real failure: two false change events about `notion.com/pricing`,
+published on 2026-08-07 and retracted the same day. `CORRECTIONS.md` is the full
+account.
+
+**No signal definition changed** and the extractor version stays `1.0.0`: §2
+describes the same measurements it did under v1.1, and values recorded before and
+after this change are comparable *within one origin*. §4 gained two rules, both of
+which only ever suppress. Nothing that was previously suppressed is now published,
+so no claim this index has made becomes newly permissible under v1.2 — only fewer
+claims are permissible than before.
 
 **v1.1** — 2026-08-07. Storage moved from a hosted SQL database to append-only
 NDJSON in git, and observation from a hosted cron to on-demand runs. §1, §3 and
