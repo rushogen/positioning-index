@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "autodesk",
+  "name": "Autodesk",
+  "segment": "industrial",
+  "hq_country": "US",
+  "homepage_url": "https://www.autodesk.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

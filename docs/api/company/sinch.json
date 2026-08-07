@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "sinch",
+  "name": "Sinch",
+  "segment": "ccaas",
+  "hq_country": "SE",
+  "homepage_url": "https://sinch.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

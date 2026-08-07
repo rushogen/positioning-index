@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "crowdstrike",
+  "name": "CrowdStrike",
+  "segment": "security",
+  "hq_country": "US",
+  "homepage_url": "https://www.crowdstrike.com/",
+  "pricing_url": "https://www.crowdstrike.com/products/bundles/falcon-go/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

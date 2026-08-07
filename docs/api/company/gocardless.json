@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "gocardless",
+  "name": "GoCardless",
+  "segment": "payments",
+  "hq_country": "GB",
+  "homepage_url": "https://gocardless.com/",
+  "pricing_url": "https://gocardless.com/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "unity",
+  "name": "Unity",
+  "segment": "product-dev",
+  "hq_country": "DK",
+  "homepage_url": "https://unity.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

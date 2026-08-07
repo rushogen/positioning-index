@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "mambu",
+  "name": "Mambu",
+  "segment": "banking-tech",
+  "hq_country": "DE",
+  "homepage_url": "https://mambu.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

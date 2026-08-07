@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "scandit",
+  "name": "Scandit",
+  "segment": "industrial",
+  "hq_country": "CH",
+  "homepage_url": "https://www.scandit.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

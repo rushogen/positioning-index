@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "sitecore",
+  "name": "Sitecore",
+  "segment": "marketing",
+  "hq_country": "DK",
+  "homepage_url": "https://www.sitecore.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

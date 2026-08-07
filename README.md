@@ -163,24 +163,25 @@ at all and therefore will also protect any reading recorded before the origin
 gate existed, should the archive ever be extended backwards.
 
 **A cell too small is not a finding.** The seed labels every company with one of
-fourteen segments, and seven of those hold three companies or fewer — one holds
-exactly one. Charted directly, that draws a bar over Vanta and invites a
-conclusion about "security companies". So the fourteen fold into five groups of 7
-to 16, whole segments at a time, with the mapping published on the page; a group
-cell computed over fewer than six readable companies is drawn as the words *"too
-few to say"* rather than as a short bar; and every comparison prints how many
-companies would have to change their homepage to erase it. On most cuts that
-number is two or three, and *"go-to-market leads finance by 50 points"* and
+twenty-nine segments, and ten of those hold fewer than six companies — one holds
+exactly one. Charted directly, that draws a bar over Celonis and invites a
+conclusion about "process mining companies". So the twenty-nine fold into ten
+groups of 11 to 27, whole segments at a time, with the mapping published on the
+page; a group cell computed over fewer than six readable companies is drawn as
+the words *"too few to say"* rather than as a short bar; and every comparison
+prints how many companies would have to change their homepage to erase it. When
+that number is two or three, *"go-to-market leads finance by 50 points"* and
 *"three companies separate them"* are the same fact told dishonestly and
 honestly.
 
-Nine such cuts are computed and four are withheld by rule — three because the
-best and worst group are within two companies of each other, and free-tier
-prevalence because pricing is readable for only 32 of 60 companies, which leaves
-three of the five groups too small to draw at all. The withheld cuts are listed
-on the page with their reasons and their numbers. Choosing which segment
-differences to show *after seeing them* is the ordinary way this analysis goes
-wrong; the rules are in the source and the site publishes whatever survives them.
+Cuts are withheld by rule rather than by taste: one when fewer than eight of the
+ten groups can answer it, one when the best and worst group are within two
+companies of each other. Withheld cuts are listed on the page with their reasons
+and their numbers, and the live counts are on the page rather than typed here,
+because a figure typed into a README is a figure nobody re-checks. Choosing which
+segment differences to show *after seeing them* is the ordinary way this analysis
+goes wrong; the rules are in the source and the site publishes whatever survives
+them.
 
 **An experiment is not a repositioning.** `airtable.com` served two different
 `<h1>` strings to two requests minutes apart. Each signal remembers its last six

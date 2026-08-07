@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "docusign",
+  "name": "Docusign",
+  "segment": "clm-esign",
+  "hq_country": "US",
+  "homepage_url": "https://www.docusign.com/",
+  "pricing_url": "https://www.docusign.com/products-and-pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

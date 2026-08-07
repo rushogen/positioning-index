@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "aveva",
+  "name": "AVEVA",
+  "segment": "industrial",
+  "hq_country": "GB",
+  "homepage_url": "https://www.aveva.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

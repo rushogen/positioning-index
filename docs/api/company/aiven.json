@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "aiven",
+  "name": "Aiven",
+  "segment": "dev-infra",
+  "hq_country": "FI",
+  "homepage_url": "https://aiven.io/",
+  "pricing_url": "https://aiven.io/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

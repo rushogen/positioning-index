@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "navex",
+  "name": "NAVEX",
+  "segment": "grc",
+  "hq_country": "US",
+  "homepage_url": "https://www.navex.com/en-us/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

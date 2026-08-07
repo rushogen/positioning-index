@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "dixa",
+  "name": "Dixa",
+  "segment": "support",
+  "hq_country": "DK",
+  "homepage_url": "https://www.dixa.com/",
+  "pricing_url": "https://www.dixa.com/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

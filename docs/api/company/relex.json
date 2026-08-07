@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "relex",
+  "name": "RELEX Solutions",
+  "segment": "industrial",
+  "hq_country": "FI",
+  "homepage_url": "https://www.relexsolutions.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

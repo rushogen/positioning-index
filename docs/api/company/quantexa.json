@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "quantexa",
+  "name": "Quantexa",
+  "segment": "data",
+  "hq_country": "GB",
+  "homepage_url": "https://www.quantexa.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

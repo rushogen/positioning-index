@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "pega",
+  "name": "Pegasystems",
+  "segment": "bpm",
+  "hq_country": "US",
+  "homepage_url": "https://www.pega.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

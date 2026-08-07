@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "luminance",
+  "name": "Luminance",
+  "segment": "legal-tech",
+  "hq_country": "GB",
+  "homepage_url": "https://www.luminance.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

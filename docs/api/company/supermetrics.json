@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "supermetrics",
+  "name": "Supermetrics",
+  "segment": "analytics",
+  "hq_country": "FI",
+  "homepage_url": "https://supermetrics.com/",
+  "pricing_url": "https://supermetrics.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

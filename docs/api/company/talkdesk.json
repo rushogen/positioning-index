@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "talkdesk",
+  "name": "Talkdesk",
+  "segment": "ccaas",
+  "hq_country": "PT",
+  "homepage_url": "https://www.talkdesk.com/",
+  "pricing_url": "https://www.talkdesk.com/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

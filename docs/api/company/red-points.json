@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "red-points",
+  "name": "Red Points",
+  "segment": "grc",
+  "hq_country": "ES",
+  "homepage_url": "https://www.redpoints.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

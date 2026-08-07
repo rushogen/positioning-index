@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "workiva",
+  "name": "Workiva",
+  "segment": "grc",
+  "hq_country": "US",
+  "homepage_url": "https://www.workiva.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

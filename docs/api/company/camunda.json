@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "camunda",
+  "name": "Camunda",
+  "segment": "bpm",
+  "hq_country": "DE",
+  "homepage_url": "https://camunda.com/",
+  "pricing_url": "https://camunda.com/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

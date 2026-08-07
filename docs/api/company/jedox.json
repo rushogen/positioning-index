@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "jedox",
+  "name": "Jedox",
+  "segment": "analytics",
+  "hq_country": "DE",
+  "homepage_url": "https://www.jedox.com/en/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

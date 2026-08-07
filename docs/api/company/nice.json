@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "nice",
+  "name": "NICE",
+  "segment": "ccaas",
+  "hq_country": "IL",
+  "homepage_url": "https://www.nice.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

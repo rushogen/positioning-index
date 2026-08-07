@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "backbase",
+  "name": "Backbase",
+  "segment": "banking-tech",
+  "hq_country": "NL",
+  "homepage_url": "https://www.backbase.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

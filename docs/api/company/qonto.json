@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "qonto",
+  "name": "Qonto",
+  "segment": "fintech-ops",
+  "hq_country": "FR",
+  "homepage_url": "https://qonto.com/en",
+  "pricing_url": "https://qonto.com/en/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

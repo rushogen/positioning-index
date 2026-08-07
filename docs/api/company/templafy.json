@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "templafy",
+  "name": "Templafy",
+  "segment": "work-mgmt",
+  "hq_country": "DK",
+  "homepage_url": "https://www.templafy.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

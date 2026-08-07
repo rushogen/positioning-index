@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "juro",
+  "name": "Juro",
+  "segment": "clm-esign",
+  "hq_country": "GB",
+  "homepage_url": "https://juro.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

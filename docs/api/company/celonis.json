@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "celonis",
+  "name": "Celonis",
+  "segment": "process-mining",
+  "hq_country": "DE",
+  "homepage_url": "https://www.celonis.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "proton",
+  "name": "Proton",
+  "segment": "security",
+  "hq_country": "CH",
+  "homepage_url": "https://proton.me/",
+  "pricing_url": "https://proton.me/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

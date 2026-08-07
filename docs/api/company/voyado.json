@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "voyado",
+  "name": "Voyado",
+  "segment": "marketing",
+  "hq_country": "SE",
+  "homepage_url": "https://voyado.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

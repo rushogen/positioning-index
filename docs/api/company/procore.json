@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "procore",
+  "name": "Procore",
+  "segment": "industrial",
+  "hq_country": "US",
+  "homepage_url": "https://www.procore.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

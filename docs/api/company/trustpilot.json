@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "trustpilot",
+  "name": "Trustpilot",
+  "segment": "marketing",
+  "hq_country": "DK",
+  "homepage_url": "https://business.trustpilot.com/",
+  "pricing_url": "https://business.trustpilot.com/plans"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

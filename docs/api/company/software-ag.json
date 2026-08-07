@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "software-ag",
+  "name": "Software AG",
+  "segment": "data",
+  "hq_country": "DE",
+  "homepage_url": "https://www.softwareag.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

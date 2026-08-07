@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "ivanti",
+  "name": "Ivanti",
+  "segment": "itsm",
+  "hq_country": "US",
+  "homepage_url": "https://www.ivanti.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

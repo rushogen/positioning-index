@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "outsystems",
+  "name": "OutSystems",
+  "segment": "bpm",
+  "hq_country": "PT",
+  "homepage_url": "https://www.outsystems.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "ledgy",
+  "name": "Ledgy",
+  "segment": "fintech-ops",
+  "hq_country": "CH",
+  "homepage_url": "https://ledgy.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

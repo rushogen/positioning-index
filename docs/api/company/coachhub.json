@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "coachhub",
+  "name": "CoachHub",
+  "segment": "hr-ops",
+  "hq_country": "DE",
+  "homepage_url": "https://www.coachhub.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

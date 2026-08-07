@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "bird",
+  "name": "Bird",
+  "segment": "marketing",
+  "hq_country": "NL",
+  "homepage_url": "https://bird.com/",
+  "pricing_url": "https://bird.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

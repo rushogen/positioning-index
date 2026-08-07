@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "jaggaer",
+  "name": "JAGGAER",
+  "segment": "procurement",
+  "hq_country": "US",
+  "homepage_url": "https://www.jaggaer.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

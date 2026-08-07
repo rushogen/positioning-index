@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "paddle",
+  "name": "Paddle",
+  "segment": "payments",
+  "hq_country": "GB",
+  "homepage_url": "https://www.paddle.com/",
+  "pricing_url": "https://www.paddle.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

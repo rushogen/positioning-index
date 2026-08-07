@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "aircall",
+  "name": "Aircall",
+  "segment": "ccaas",
+  "hq_country": "FR",
+  "homepage_url": "https://aircall.io/",
+  "pricing_url": "https://aircall.io/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

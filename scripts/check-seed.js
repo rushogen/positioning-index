@@ -2,13 +2,20 @@
 /**
  * Seed validator.
  *
- *   node scripts/check-seed.js          structural checks only (fast, offline)
- *   node scripts/check-seed.js --live   also make one real request per URL
+ *   node scripts/check-seed.js                          structural checks only (fast, offline)
+ *   node scripts/check-seed.js --live                   also make one real request per URL
+ *   node scripts/check-seed.js --file <path> [--live]   check a candidate file instead
  *
  * The live mode is deliberately slow. It sends one request at a time with a
  * pause between hosts, using the same User-Agent the crawler uses in
  * production. Running it against 60 companies takes a couple of minutes; that
  * is the correct speed for touching other people's servers.
+ *
+ * `--file` exists so a proposed expansion can be checked before any of it is
+ * promoted into the seed. A candidate file is held to every structural rule the
+ * seed is held to, except the company-count range: that range guards against
+ * somebody truncating the canonical seed, and a candidate list is legitimately
+ * any size. The count is still reported.
  */
 
 import { readFile } from 'node:fs/promises';
@@ -17,10 +24,21 @@ import { USER_AGENT } from '../src/crawl/agent.js';
 const LIVE = process.argv.includes('--live');
 const PAUSE_MS = 400;
 
+const fileFlag = process.argv.indexOf('--file');
+const filePath = fileFlag === -1 ? null : process.argv[fileFlag + 1];
+if (fileFlag !== -1 && !filePath) {
+  console.error('  FAIL  --file needs a path');
+  process.exit(1);
+}
+const CANONICAL = filePath === null;
+
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
-const seedPath = new URL('../seed/companies.json', import.meta.url);
+const seedPath = CANONICAL
+  ? new URL('../seed/companies.json', import.meta.url)
+  : new URL(filePath, `file://${process.cwd()}/`);
 const seed = JSON.parse(await readFile(seedPath, 'utf8'));
+if (!CANONICAL) console.log(`checking candidate file: ${filePath}\n`);
 
 let problems = 0;
 const fail = (msg) => { problems++; console.error(`  FAIL  ${msg}`); };
@@ -52,7 +70,9 @@ for (const c of seed.companies) {
 console.log(`structure: ${seed.companies.length} companies, ${slugs.size} unique slugs, ${hosts.size} distinct hosts`);
 
 const count = seed.companies.length;
-if (count < 40 || count > 60) fail(`company count ${count} outside the intended 40-60 range`);
+if (CANONICAL && (count < 40 || count > 260)) {
+  fail(`company count ${count} outside the intended 40-260 range`);
+}
 
 if (!LIVE) {
   console.log(problems ? `\n${problems} problem(s)` : '\nok (structural only -- pass --live to hit the network)');

@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "payfit",
+  "name": "PayFit",
+  "segment": "hr-ops",
+  "hq_country": "FR",
+  "homepage_url": "https://payfit.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

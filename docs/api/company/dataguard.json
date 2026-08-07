@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "dataguard",
+  "name": "DataGuard",
+  "segment": "grc",
+  "hq_country": "DE",
+  "homepage_url": "https://www.dataguard.com/",
+  "pricing_url": "https://www.dataguard.com/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "visma",
+  "name": "Visma",
+  "segment": "erp",
+  "hq_country": "NO",
+  "homepage_url": "https://www.visma.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

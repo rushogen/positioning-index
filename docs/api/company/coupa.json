@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "coupa",
+  "name": "Coupa",
+  "segment": "procurement",
+  "hq_country": "US",
+  "homepage_url": "https://www.coupa.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

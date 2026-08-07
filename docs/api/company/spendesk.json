@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "spendesk",
+  "name": "Spendesk",
+  "segment": "fintech-ops",
+  "hq_country": "FR",
+  "homepage_url": "https://www.spendesk.com/",
+  "pricing_url": "https://www.spendesk.com/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "sennder",
+  "name": "sennder",
+  "segment": "industrial",
+  "hq_country": "DE",
+  "homepage_url": "https://www.sennder.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

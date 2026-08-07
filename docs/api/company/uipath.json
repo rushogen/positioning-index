@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "uipath",
+  "name": "UiPath",
+  "segment": "automation",
+  "hq_country": "US",
+  "homepage_url": "https://www.uipath.com/",
+  "pricing_url": "https://www.uipath.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

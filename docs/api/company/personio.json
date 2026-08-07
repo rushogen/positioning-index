@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "personio",
+  "name": "Personio",
+  "segment": "hr-ops",
+  "hq_country": "DE",
+  "homepage_url": "https://www.personio.com/",
+  "pricing_url": "https://www.personio.com/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "matillion",
+  "name": "Matillion",
+  "segment": "data",
+  "hq_country": "GB",
+  "homepage_url": "https://www.matillion.com/",
+  "pricing_url": "https://www.matillion.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

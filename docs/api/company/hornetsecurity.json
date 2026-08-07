@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "hornetsecurity",
+  "name": "Hornetsecurity",
+  "segment": "security",
+  "hq_country": "DE",
+  "homepage_url": "https://www.hornetsecurity.com/en/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

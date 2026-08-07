@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "scaleway",
+  "name": "Scaleway",
+  "segment": "dev-infra",
+  "hq_country": "FR",
+  "homepage_url": "https://www.scaleway.com/en/",
+  "pricing_url": "https://www.scaleway.com/en/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "tricentis",
+  "name": "Tricentis",
+  "segment": "product-dev",
+  "hq_country": "AT",
+  "homepage_url": "https://www.tricentis.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

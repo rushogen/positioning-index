@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "teamleader",
+  "name": "Teamleader",
+  "segment": "work-mgmt",
+  "hq_country": "BE",
+  "homepage_url": "https://www.teamleader.eu/",
+  "pricing_url": "https://www.teamleader.eu/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "snyk",
+  "name": "Snyk",
+  "segment": "security",
+  "hq_country": "GB",
+  "homepage_url": "https://snyk.io/",
+  "pricing_url": "https://snyk.io/plans/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

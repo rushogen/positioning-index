@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "collibra",
+  "name": "Collibra",
+  "segment": "data",
+  "hq_country": "BE",
+  "homepage_url": "https://www.collibra.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

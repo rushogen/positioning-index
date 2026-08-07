@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "doctolib",
+  "name": "Doctolib",
+  "segment": "healthcare-it",
+  "hq_country": "FR",
+  "homepage_url": "https://www.doctolib.fr/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

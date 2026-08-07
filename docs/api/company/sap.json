@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "sap",
+  "name": "SAP",
+  "segment": "erp",
+  "hq_country": "DE",
+  "homepage_url": "https://www.sap.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

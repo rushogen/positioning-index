@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "sailpoint",
+  "name": "SailPoint",
+  "segment": "identity",
+  "hq_country": "US",
+  "homepage_url": "https://www.sailpoint.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

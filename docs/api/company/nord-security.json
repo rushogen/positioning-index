@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "nord-security",
+  "name": "Nord Security",
+  "segment": "security",
+  "hq_country": "LT",
+  "homepage_url": "https://nordsecurity.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

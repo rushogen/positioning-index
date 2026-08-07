@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "nexthink",
+  "name": "Nexthink",
+  "segment": "observability",
+  "hq_country": "CH",
+  "homepage_url": "https://www.nexthink.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

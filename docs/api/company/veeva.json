@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "veeva",
+  "name": "Veeva Systems",
+  "segment": "healthcare-it",
+  "hq_country": "US",
+  "homepage_url": "https://www.veeva.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

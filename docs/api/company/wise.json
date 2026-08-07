@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "wise",
+  "name": "Wise",
+  "segment": "payments",
+  "hq_country": "GB",
+  "homepage_url": "https://wise.com/business/",
+  "pricing_url": "https://wise.com/gb/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

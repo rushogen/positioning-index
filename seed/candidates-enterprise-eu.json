@@ -1,0 +1,2484 @@
+{
+  "version": "0.1-proposal",
+  "created": "2026-08-08",
+  "status": "UNVERIFIED CANDIDATES — not part of the seed",
+  "note": "Proposed expansion of seed/companies.json from 60 to 200, weighted toward enterprise-tier and EU-headquartered B2B SaaS. Every URL here is a candidate written from knowledge and has NOT been checked. Nothing enters seed/companies.json until `node scripts/check-seed.js --live` returns usable HTML for it and a human has confirmed the page is what the slug says it is. `pricing_url` is omitted where no public pricing page is believed to exist; that omission is itself a claim and needs the same confirmation as a URL. The `tier` field is a review annotation for auditing the weighting and must NOT be carried into the seed: it is a sourced judgement, not a crawled fact, and E5 was cut for exactly that reason.",
+  "segments_new": [
+    "erp",
+    "identity",
+    "grc",
+    "process-mining",
+    "bpm",
+    "clm-esign",
+    "industrial",
+    "healthcare-it",
+    "banking-tech",
+    "payments",
+    "ccaas",
+    "itsm",
+    "procurement",
+    "legal-tech",
+    "localization"
+  ],
+  "segments_new_note": "16 segments the current taxonomy does not cover. METHODOLOGY v1.5 folds 14 segments into 5 groups; that fold was designed around the old taxonomy and must be redone before any segment cut is published against this corpus.",
+  "companies": [
+    {
+      "slug": "sap",
+      "name": "SAP",
+      "segment": "erp",
+      "hq_country": "DE",
+      "tier": "enterprise",
+      "homepage_url": "https://www.sap.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 60281b -> https://www.sap.com/index.html",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "celonis",
+      "name": "Celonis",
+      "segment": "process-mining",
+      "hq_country": "DE",
+      "tier": "enterprise",
+      "homepage_url": "https://www.celonis.com/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok-no-pricing-page",
+        "home": "200 19290b",
+        "pricing": "200 15190b -> https://www.celonis.com/company/contact-us"
+      },
+      "pricing_url_status": "CONFIRMED ABSENT: declared /pricing/ 301s to /company/contact-us (observed 2026-08-08). No public pricing page found. This is an observation, not an inference."
+    },
+    {
+      "slug": "personio",
+      "name": "Personio",
+      "segment": "hr-ops",
+      "hq_country": "DE",
+      "tier": "mid",
+      "homepage_url": "https://www.personio.com/",
+      "pricing_url": "https://www.personio.com/pricing/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "blocked",
+        "home": "429 (twice)",
+        "pricing": "429 (twice)",
+        "note": "Rate-limits our identified User-Agent. Recorded as blocked, not removed: a company that declines automated clients is a fact about the corpus, and the health model already has a state for it."
+      }
+    },
+    {
+      "slug": "teamviewer",
+      "name": "TeamViewer",
+      "segment": "itsm",
+      "hq_country": "DE",
+      "tier": "enterprise",
+      "homepage_url": "https://www.teamviewer.com/en/",
+      "pricing_url": "https://www.teamviewer.com/en/pricing/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 376426b",
+        "pricing": "200 550358b -> https://www.teamviewer.com/de/pricing/overview/"
+      }
+    },
+    {
+      "slug": "camunda",
+      "name": "Camunda",
+      "segment": "bpm",
+      "hq_country": "DE",
+      "tier": "enterprise",
+      "homepage_url": "https://camunda.com/",
+      "pricing_url": "https://camunda.com/pricing/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 112405b",
+        "pricing": "200 250062b"
+      }
+    },
+    {
+      "slug": "deepl",
+      "name": "DeepL",
+      "segment": "localization",
+      "hq_country": "DE",
+      "tier": "mid",
+      "homepage_url": "https://www.deepl.com/en/translator",
+      "pricing_url": "https://www.deepl.com/en/pro",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 982455b",
+        "pricing": "200 521710b"
+      }
+    },
+    {
+      "slug": "staffbase",
+      "name": "Staffbase",
+      "segment": "marketing",
+      "hq_country": "DE",
+      "tier": "enterprise",
+      "homepage_url": "https://staffbase.com/en/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 374817b -> https://staffbase.com/",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "cognigy",
+      "name": "Cognigy",
+      "segment": "ccaas",
+      "hq_country": "DE",
+      "tier": "enterprise",
+      "homepage_url": "https://www.cognigy.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 608225b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "parloa",
+      "name": "Parloa",
+      "segment": "ccaas",
+      "hq_country": "DE",
+      "tier": "enterprise",
+      "homepage_url": "https://www.parloa.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 186263b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "jedox",
+      "name": "Jedox",
+      "segment": "analytics",
+      "hq_country": "DE",
+      "tier": "enterprise",
+      "homepage_url": "https://www.jedox.com/en/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 1572681b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "usercentrics",
+      "name": "Usercentrics",
+      "segment": "grc",
+      "hq_country": "DE",
+      "tier": "mid",
+      "homepage_url": "https://usercentrics.com/",
+      "pricing_url": "https://usercentrics.com/pricing/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 1031184b",
+        "pricing": "200 1385023b"
+      }
+    },
+    {
+      "slug": "software-ag",
+      "name": "Software AG",
+      "segment": "data",
+      "hq_country": "DE",
+      "tier": "enterprise",
+      "homepage_url": "https://www.softwareag.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 284974b -> https://www.softwareag.com/en/",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "suse",
+      "name": "SUSE",
+      "segment": "dev-infra",
+      "hq_country": "DE",
+      "tier": "enterprise",
+      "homepage_url": "https://www.suse.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 159438b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "nextcloud",
+      "name": "Nextcloud",
+      "segment": "work-mgmt",
+      "hq_country": "DE",
+      "tier": "mid",
+      "homepage_url": "https://nextcloud.com/",
+      "pricing_url": "https://nextcloud.com/pricing/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 239188b",
+        "pricing": "200 242843b"
+      }
+    },
+    {
+      "slug": "nemetschek",
+      "name": "Nemetschek",
+      "segment": "industrial",
+      "hq_country": "DE",
+      "tier": "enterprise",
+      "homepage_url": "https://www.nemetschek.com/en",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 149746b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "mambu",
+      "name": "Mambu",
+      "segment": "banking-tech",
+      "hq_country": "DE",
+      "tier": "enterprise",
+      "homepage_url": "https://mambu.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 387735b -> https://mambu.com/en",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "hornetsecurity",
+      "name": "Hornetsecurity",
+      "segment": "security",
+      "hq_country": "DE",
+      "tier": "mid",
+      "homepage_url": "https://www.hornetsecurity.com/en/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 204938b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "sennder",
+      "name": "sennder",
+      "segment": "industrial",
+      "hq_country": "DE",
+      "tier": "enterprise",
+      "homepage_url": "https://www.sennder.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 208228b -> https://www.sennder.com/de",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "dynatrace",
+      "name": "Dynatrace",
+      "segment": "observability",
+      "hq_country": "AT",
+      "tier": "enterprise",
+      "homepage_url": "https://www.dynatrace.com/",
+      "pricing_url": "https://www.dynatrace.com/pricing/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 149062b",
+        "pricing": "200 129911b"
+      }
+    },
+    {
+      "slug": "tricentis",
+      "name": "Tricentis",
+      "segment": "product-dev",
+      "hq_country": "AT",
+      "tier": "enterprise",
+      "homepage_url": "https://www.tricentis.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok-no-pricing-page",
+        "home": "200 336391b (first attempt failed, 200 on retry)",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "bitmovin",
+      "name": "Bitmovin",
+      "segment": "dev-infra",
+      "hq_country": "AT",
+      "tier": "mid",
+      "homepage_url": "https://bitmovin.com/",
+      "pricing_url": "https://bitmovin.com/pricing/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "blocked",
+        "home": "403 5880b",
+        "pricing": "403 5904b"
+      }
+    },
+    {
+      "slug": "nexthink",
+      "name": "Nexthink",
+      "segment": "observability",
+      "hq_country": "CH",
+      "tier": "enterprise",
+      "homepage_url": "https://www.nexthink.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 300073b -> https://nexthink.com/en",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "scandit",
+      "name": "Scandit",
+      "segment": "industrial",
+      "hq_country": "CH",
+      "tier": "enterprise",
+      "homepage_url": "https://www.scandit.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 188619b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "coachhub",
+      "name": "CoachHub",
+      "segment": "hr-ops",
+      "hq_country": "DE",
+      "tier": "enterprise",
+      "homepage_url": "https://www.coachhub.com/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok-no-pricing-page",
+        "home": "200 175485b",
+        "pricing": null
+      },
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent."
+    },
+    {
+      "slug": "avaloq",
+      "name": "Avaloq",
+      "segment": "banking-tech",
+      "hq_country": "CH",
+      "tier": "enterprise",
+      "homepage_url": "https://www.avaloq.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 169693b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "temenos",
+      "name": "Temenos",
+      "segment": "banking-tech",
+      "hq_country": "CH",
+      "tier": "enterprise",
+      "homepage_url": "https://www.temenos.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 194505b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "proton",
+      "name": "Proton",
+      "segment": "security",
+      "hq_country": "CH",
+      "tier": "mid",
+      "homepage_url": "https://proton.me/",
+      "pricing_url": "https://proton.me/pricing",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 436117b",
+        "pricing": "200 738445b"
+      }
+    },
+    {
+      "slug": "ledgy",
+      "name": "Ledgy",
+      "segment": "fintech-ops",
+      "hq_country": "CH",
+      "tier": "mid",
+      "homepage_url": "https://ledgy.com/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok-no-pricing-page",
+        "home": "200 512019b",
+        "pricing": "404 317025b"
+      },
+      "pricing_url_status": "CONFIRMED ABSENT: declared /pricing returns 404 (observed 2026-08-08). No public pricing page found. This is an observation, not an inference."
+    },
+    {
+      "slug": "acronis",
+      "name": "Acronis",
+      "segment": "security",
+      "hq_country": "CH",
+      "tier": "enterprise",
+      "homepage_url": "https://www.acronis.com/en-us/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 543379b -> https://www.acronis.com/en/",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "veeam",
+      "name": "Veeam",
+      "segment": "dev-infra",
+      "hq_country": "CH",
+      "tier": "enterprise",
+      "homepage_url": "https://www.veeam.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 249219b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "adyen",
+      "name": "Adyen",
+      "segment": "payments",
+      "hq_country": "NL",
+      "tier": "enterprise",
+      "homepage_url": "https://www.adyen.com/",
+      "pricing_url": "https://www.adyen.com/pricing",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 1136645b",
+        "pricing": "200 700152b"
+      }
+    },
+    {
+      "slug": "mendix",
+      "name": "Mendix",
+      "segment": "bpm",
+      "hq_country": "NL",
+      "tier": "enterprise",
+      "homepage_url": "https://www.mendix.com/",
+      "pricing_url": "https://www.mendix.com/pricing/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 311666b",
+        "pricing": "200 321538b"
+      }
+    },
+    {
+      "slug": "backbase",
+      "name": "Backbase",
+      "segment": "banking-tech",
+      "hq_country": "NL",
+      "tier": "enterprise",
+      "homepage_url": "https://www.backbase.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 521183b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "mollie",
+      "name": "Mollie",
+      "segment": "payments",
+      "hq_country": "NL",
+      "tier": "mid",
+      "homepage_url": "https://www.mollie.com/",
+      "pricing_url": "https://www.mollie.com/pricing",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 1556364b",
+        "pricing": "200 1842077b"
+      }
+    },
+    {
+      "slug": "bird",
+      "name": "Bird",
+      "segment": "marketing",
+      "hq_country": "NL",
+      "tier": "enterprise",
+      "homepage_url": "https://bird.com/",
+      "pricing_url": "https://bird.com/pricing",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 1428778b -> https://bird.com/en-de",
+        "pricing": "200 395585b -> https://bird.com/en-de/pricing"
+      }
+    },
+    {
+      "slug": "afas",
+      "name": "AFAS Software",
+      "segment": "erp",
+      "hq_country": "NL",
+      "tier": "enterprise",
+      "homepage_url": "https://www.afas.nl/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 570525b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "dassault",
+      "name": "Dassault Systèmes",
+      "segment": "industrial",
+      "hq_country": "FR",
+      "tier": "enterprise",
+      "homepage_url": "https://www.3ds.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 463781b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "dataiku",
+      "name": "Dataiku",
+      "segment": "data",
+      "hq_country": "FR",
+      "tier": "enterprise",
+      "homepage_url": "https://www.dataiku.com/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok-no-pricing-page",
+        "home": "200 374645b",
+        "pricing": "200 278823b -> https://www.dataiku.com/product"
+      },
+      "pricing_url_status": "CONFIRMED ABSENT: declared /product/plans-and-features/ 301s to /product (observed 2026-08-08). No public pricing page found. This is an observation, not an inference."
+    },
+    {
+      "slug": "contentsquare",
+      "name": "Contentsquare",
+      "segment": "analytics",
+      "hq_country": "FR",
+      "tier": "enterprise",
+      "homepage_url": "https://contentsquare.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 514041b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "mirakl",
+      "name": "Mirakl",
+      "segment": "industrial",
+      "hq_country": "FR",
+      "tier": "enterprise",
+      "homepage_url": "https://www.mirakl.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 209385b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "doctolib",
+      "name": "Doctolib",
+      "segment": "healthcare-it",
+      "hq_country": "FR",
+      "tier": "enterprise",
+      "homepage_url": "https://www.doctolib.fr/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 1597933b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "payfit",
+      "name": "PayFit",
+      "segment": "hr-ops",
+      "hq_country": "FR",
+      "tier": "mid",
+      "homepage_url": "https://payfit.com/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok-no-pricing-page",
+        "home": "200 376644b",
+        "pricing": "200 376644b -> https://payfit.com/"
+      },
+      "pricing_url_status": "CONFIRMED ABSENT: declared /pricing/ 301s to the homepage, byte-identical body (observed 2026-08-08). No public pricing page found. This is an observation, not an inference."
+    },
+    {
+      "slug": "spendesk",
+      "name": "Spendesk",
+      "segment": "fintech-ops",
+      "hq_country": "FR",
+      "tier": "mid",
+      "homepage_url": "https://www.spendesk.com/",
+      "pricing_url": "https://www.spendesk.com/pricing/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 495424b",
+        "pricing": "200 334576b"
+      }
+    },
+    {
+      "slug": "qonto",
+      "name": "Qonto",
+      "segment": "fintech-ops",
+      "hq_country": "FR",
+      "tier": "mid",
+      "homepage_url": "https://qonto.com/en",
+      "pricing_url": "https://qonto.com/en/pricing",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 521888b",
+        "pricing": "200 1476137b"
+      }
+    },
+    {
+      "slug": "aircall",
+      "name": "Aircall",
+      "segment": "ccaas",
+      "hq_country": "FR",
+      "tier": "mid",
+      "homepage_url": "https://aircall.io/",
+      "pricing_url": "https://aircall.io/pricing/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 310242b",
+        "pricing": "200 347830b"
+      }
+    },
+    {
+      "slug": "ovhcloud",
+      "name": "OVHcloud",
+      "segment": "dev-infra",
+      "hq_country": "FR",
+      "tier": "enterprise",
+      "homepage_url": "https://www.ovhcloud.com/en/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 1006959b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "scaleway",
+      "name": "Scaleway",
+      "segment": "dev-infra",
+      "hq_country": "FR",
+      "tier": "mid",
+      "homepage_url": "https://www.scaleway.com/en/",
+      "pricing_url": "https://www.scaleway.com/en/pricing/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 375482b",
+        "pricing": "200 347329b"
+      }
+    },
+    {
+      "slug": "brevo",
+      "name": "Brevo",
+      "segment": "marketing",
+      "hq_country": "FR",
+      "tier": "mid",
+      "homepage_url": "https://www.brevo.com/",
+      "pricing_url": "https://www.brevo.com/pricing/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 544715b",
+        "pricing": "200 630146b"
+      }
+    },
+    {
+      "slug": "pennylane",
+      "name": "Pennylane",
+      "segment": "fintech-ops",
+      "hq_country": "FR",
+      "tier": "mid",
+      "homepage_url": "https://www.pennylane.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 459201b -> https://www.pennylane.com/fr",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "alan",
+      "name": "Alan",
+      "segment": "healthcare-it",
+      "hq_country": "FR",
+      "tier": "mid",
+      "homepage_url": "https://alan.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 1303732b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "sinch",
+      "name": "Sinch",
+      "segment": "ccaas",
+      "hq_country": "SE",
+      "tier": "enterprise",
+      "homepage_url": "https://sinch.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 432410b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "fortnox",
+      "name": "Fortnox",
+      "segment": "erp",
+      "hq_country": "SE",
+      "tier": "mid",
+      "homepage_url": "https://www.fortnox.se/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 1101326b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "mentimeter",
+      "name": "Mentimeter",
+      "segment": "work-mgmt",
+      "hq_country": "SE",
+      "tier": "mid",
+      "homepage_url": "https://www.mentimeter.com/",
+      "pricing_url": "https://www.mentimeter.com/plans",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 585274b",
+        "pricing": "200 552617b"
+      }
+    },
+    {
+      "slug": "voyado",
+      "name": "Voyado",
+      "segment": "marketing",
+      "hq_country": "SE",
+      "tier": "enterprise",
+      "homepage_url": "https://voyado.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 137722b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "tink",
+      "name": "Tink",
+      "segment": "banking-tech",
+      "hq_country": "SE",
+      "tier": "enterprise",
+      "homepage_url": "https://tink.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 282405b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "templafy",
+      "name": "Templafy",
+      "segment": "work-mgmt",
+      "hq_country": "DK",
+      "tier": "enterprise",
+      "homepage_url": "https://www.templafy.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 271323b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "pleo",
+      "name": "Pleo",
+      "segment": "fintech-ops",
+      "hq_country": "DK",
+      "tier": "mid",
+      "homepage_url": "https://www.pleo.io/",
+      "pricing_url": "https://www.pleo.io/en/pricing",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 222229b -> https://www.pleo.io/de",
+        "pricing": "200 275243b"
+      }
+    },
+    {
+      "slug": "siteimprove",
+      "name": "Siteimprove",
+      "segment": "marketing",
+      "hq_country": "DK",
+      "tier": "enterprise",
+      "homepage_url": "https://www.siteimprove.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 761814b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "trustpilot",
+      "name": "Trustpilot",
+      "segment": "marketing",
+      "hq_country": "DK",
+      "tier": "enterprise",
+      "homepage_url": "https://business.trustpilot.com/",
+      "pricing_url": "https://business.trustpilot.com/plans",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 329063b",
+        "pricing": "200 587884b -> https://business.trustpilot.com/pricing"
+      }
+    },
+    {
+      "slug": "dixa",
+      "name": "Dixa",
+      "segment": "support",
+      "hq_country": "DK",
+      "tier": "mid",
+      "homepage_url": "https://www.dixa.com/",
+      "pricing_url": "https://www.dixa.com/pricing/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 170665b",
+        "pricing": "200 396200b"
+      }
+    },
+    {
+      "slug": "sitecore",
+      "name": "Sitecore",
+      "segment": "marketing",
+      "hq_country": "DK",
+      "tier": "enterprise",
+      "homepage_url": "https://www.sitecore.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 597857b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "visma",
+      "name": "Visma",
+      "segment": "erp",
+      "hq_country": "NO",
+      "tier": "enterprise",
+      "homepage_url": "https://www.visma.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 94238b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "cognite",
+      "name": "Cognite",
+      "segment": "industrial",
+      "hq_country": "NO",
+      "tier": "enterprise",
+      "homepage_url": "https://www.cognite.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 632697b -> https://www.cognite.com/en",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "xeneta",
+      "name": "Xeneta",
+      "segment": "industrial",
+      "hq_country": "NO",
+      "tier": "enterprise",
+      "homepage_url": "https://www.xeneta.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 205392b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "aiven",
+      "name": "Aiven",
+      "segment": "dev-infra",
+      "hq_country": "FI",
+      "tier": "enterprise",
+      "homepage_url": "https://aiven.io/",
+      "pricing_url": "https://aiven.io/pricing",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 271179b",
+        "pricing": "200 1168381b -> https://aiven.io/pricing/postgresql"
+      }
+    },
+    {
+      "slug": "relex",
+      "name": "RELEX Solutions",
+      "segment": "industrial",
+      "hq_country": "FI",
+      "tier": "enterprise",
+      "homepage_url": "https://www.relexsolutions.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 200320b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "m-files",
+      "name": "M-Files",
+      "segment": "work-mgmt",
+      "hq_country": "FI",
+      "tier": "enterprise",
+      "homepage_url": "https://www.m-files.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 805135b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "supermetrics",
+      "name": "Supermetrics",
+      "segment": "analytics",
+      "hq_country": "FI",
+      "tier": "mid",
+      "homepage_url": "https://supermetrics.com/",
+      "pricing_url": "https://supermetrics.com/pricing",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 689129b",
+        "pricing": "200 1543759b"
+      }
+    },
+    {
+      "slug": "sage",
+      "name": "Sage",
+      "segment": "erp",
+      "hq_country": "GB",
+      "tier": "enterprise",
+      "homepage_url": "https://www.sage.com/en-gb/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "blocked",
+        "home": "403 4546b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "darktrace",
+      "name": "Darktrace",
+      "segment": "security",
+      "hq_country": "GB",
+      "tier": "enterprise",
+      "homepage_url": "https://www.darktrace.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 1723670b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "thought-machine",
+      "name": "Thought Machine",
+      "segment": "banking-tech",
+      "hq_country": "GB",
+      "tier": "enterprise",
+      "homepage_url": "https://thoughtmachine.net/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 166380b -> https://www.thoughtmachine.net/",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "quantexa",
+      "name": "Quantexa",
+      "segment": "data",
+      "hq_country": "GB",
+      "tier": "enterprise",
+      "homepage_url": "https://www.quantexa.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 952778b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "complyadvantage",
+      "name": "ComplyAdvantage",
+      "segment": "grc",
+      "hq_country": "GB",
+      "tier": "enterprise",
+      "homepage_url": "https://complyadvantage.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 92296b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "gocardless",
+      "name": "GoCardless",
+      "segment": "payments",
+      "hq_country": "GB",
+      "tier": "mid",
+      "homepage_url": "https://gocardless.com/",
+      "pricing_url": "https://gocardless.com/pricing/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 331465b -> https://gocardless.com/de-de",
+        "pricing": "200 283472b"
+      }
+    },
+    {
+      "slug": "paddle",
+      "name": "Paddle",
+      "segment": "payments",
+      "hq_country": "GB",
+      "tier": "mid",
+      "homepage_url": "https://www.paddle.com/",
+      "pricing_url": "https://www.paddle.com/pricing",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 1118172b",
+        "pricing": "200 1274265b"
+      }
+    },
+    {
+      "slug": "matillion",
+      "name": "Matillion",
+      "segment": "data",
+      "hq_country": "GB",
+      "tier": "enterprise",
+      "homepage_url": "https://www.matillion.com/",
+      "pricing_url": "https://www.matillion.com/pricing",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 54367b",
+        "pricing": "200 262465b"
+      }
+    },
+    {
+      "slug": "idnow",
+      "name": "IDnow",
+      "segment": "identity",
+      "hq_country": "DE",
+      "tier": "enterprise",
+      "homepage_url": "https://idnow.io/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok-no-pricing-page",
+        "home": "200 187031b",
+        "pricing": null
+      },
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent."
+    },
+    {
+      "slug": "snyk",
+      "name": "Snyk",
+      "segment": "security",
+      "hq_country": "GB",
+      "tier": "enterprise",
+      "homepage_url": "https://snyk.io/",
+      "pricing_url": "https://snyk.io/plans/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 178006b",
+        "pricing": "200 172109b"
+      }
+    },
+    {
+      "slug": "juro",
+      "name": "Juro",
+      "segment": "clm-esign",
+      "hq_country": "GB",
+      "tier": "mid",
+      "homepage_url": "https://juro.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 134312b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "luminance",
+      "name": "Luminance",
+      "segment": "legal-tech",
+      "hq_country": "GB",
+      "tier": "enterprise",
+      "homepage_url": "https://www.luminance.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 138741b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "workhuman",
+      "name": "Workhuman",
+      "segment": "hr-ops",
+      "hq_country": "IE",
+      "tier": "enterprise",
+      "homepage_url": "https://www.workhuman.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 975366b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "fenergo",
+      "name": "Fenergo",
+      "segment": "grc",
+      "hq_country": "IE",
+      "tier": "enterprise",
+      "homepage_url": "https://www.fenergo.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 140764b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "factorial",
+      "name": "Factorial",
+      "segment": "hr-ops",
+      "hq_country": "ES",
+      "tier": "mid",
+      "homepage_url": "https://factorialhr.com/",
+      "pricing_url": "https://factorialhr.com/pricing",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 577268b",
+        "pricing": "200 505992b -> https://factorialhr.com/pricing-plans"
+      }
+    },
+    {
+      "slug": "red-points",
+      "name": "Red Points",
+      "segment": "grc",
+      "hq_country": "ES",
+      "tier": "enterprise",
+      "homepage_url": "https://www.redpoints.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 429895b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "odoo",
+      "name": "Odoo",
+      "segment": "erp",
+      "hq_country": "BE",
+      "tier": "mid",
+      "homepage_url": "https://www.odoo.com/",
+      "pricing_url": "https://www.odoo.com/pricing",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 97216b",
+        "pricing": "200 119484b"
+      }
+    },
+    {
+      "slug": "collibra",
+      "name": "Collibra",
+      "segment": "data",
+      "hq_country": "BE",
+      "tier": "enterprise",
+      "homepage_url": "https://www.collibra.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 442023b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "showpad",
+      "name": "Showpad",
+      "segment": "gtm",
+      "hq_country": "BE",
+      "tier": "enterprise",
+      "homepage_url": "https://www.showpad.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 472385b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "teamleader",
+      "name": "Teamleader",
+      "segment": "work-mgmt",
+      "hq_country": "BE",
+      "tier": "mid",
+      "homepage_url": "https://www.teamleader.eu/",
+      "pricing_url": "https://www.teamleader.eu/pricing",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 115548b",
+        "pricing": "200 245140b"
+      }
+    },
+    {
+      "slug": "silverfin",
+      "name": "Silverfin",
+      "segment": "fintech-ops",
+      "hq_country": "BE",
+      "tier": "enterprise",
+      "homepage_url": "https://www.silverfin.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "blocked",
+        "home": "403 103b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "jetbrains",
+      "name": "JetBrains",
+      "segment": "product-dev",
+      "hq_country": "CZ",
+      "tier": "mid",
+      "homepage_url": "https://www.jetbrains.com/",
+      "pricing_url": "https://www.jetbrains.com/store/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 44398b",
+        "pricing": "200 66174b"
+      }
+    },
+    {
+      "slug": "productboard",
+      "name": "Productboard",
+      "segment": "product-dev",
+      "hq_country": "CZ",
+      "tier": "mid",
+      "homepage_url": "https://www.productboard.com/",
+      "pricing_url": "https://www.productboard.com/pricing/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 751983b",
+        "pricing": "200 742867b"
+      }
+    },
+    {
+      "slug": "rossum",
+      "name": "Rossum",
+      "segment": "automation",
+      "hq_country": "CZ",
+      "tier": "enterprise",
+      "homepage_url": "https://rossum.ai/",
+      "pricing_url": "https://rossum.ai/pricing/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 134368b",
+        "pricing": "200 112494b"
+      }
+    },
+    {
+      "slug": "outsystems",
+      "name": "OutSystems",
+      "segment": "bpm",
+      "hq_country": "PT",
+      "tier": "enterprise",
+      "homepage_url": "https://www.outsystems.com/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok-no-pricing-page",
+        "home": "200 332091b",
+        "pricing": "404 52540b"
+      },
+      "pricing_url_status": "CONFIRMED ABSENT: declared /pricing/ returns 404 (observed 2026-08-08). No public pricing page found. This is an observation, not an inference."
+    },
+    {
+      "slug": "talkdesk",
+      "name": "Talkdesk",
+      "segment": "ccaas",
+      "hq_country": "PT",
+      "tier": "enterprise",
+      "homepage_url": "https://www.talkdesk.com/",
+      "pricing_url": "https://www.talkdesk.com/pricing/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 552449b",
+        "pricing": "200 477218b"
+      }
+    },
+    {
+      "slug": "feedzai",
+      "name": "Feedzai",
+      "segment": "grc",
+      "hq_country": "PT",
+      "tier": "enterprise",
+      "homepage_url": "https://www.feedzai.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 145777b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "unbabel",
+      "name": "Unbabel",
+      "segment": "localization",
+      "hq_country": "PT",
+      "tier": "enterprise",
+      "homepage_url": "https://unbabel.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 168923b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "docplanner",
+      "name": "Docplanner",
+      "segment": "healthcare-it",
+      "hq_country": "PL",
+      "tier": "enterprise",
+      "homepage_url": "https://www.docplanner.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 56867b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "livechat",
+      "name": "LiveChat",
+      "segment": "support",
+      "hq_country": "PL",
+      "tier": "mid",
+      "homepage_url": "https://www.livechat.com/",
+      "pricing_url": "https://www.livechat.com/pricing/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 273968b",
+        "pricing": "200 1283144b"
+      }
+    },
+    {
+      "slug": "veriff",
+      "name": "Veriff",
+      "segment": "identity",
+      "hq_country": "EE",
+      "tier": "enterprise",
+      "homepage_url": "https://www.veriff.com/",
+      "pricing_url": "https://www.veriff.com/pricing",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 539695b",
+        "pricing": "200 535795b -> https://www.veriff.com/plans/self-serve"
+      }
+    },
+    {
+      "slug": "nord-security",
+      "name": "Nord Security",
+      "segment": "security",
+      "hq_country": "LT",
+      "tier": "mid",
+      "homepage_url": "https://nordsecurity.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 623514b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "lokalise",
+      "name": "Lokalise",
+      "segment": "localization",
+      "hq_country": "LV",
+      "tier": "mid",
+      "homepage_url": "https://lokalise.com/",
+      "pricing_url": "https://lokalise.com/pricing",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 1395745b",
+        "pricing": "200 1992226b"
+      }
+    },
+    {
+      "slug": "unity",
+      "name": "Unity",
+      "segment": "product-dev",
+      "hq_country": "DK",
+      "tier": "enterprise",
+      "homepage_url": "https://unity.com/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok-no-pricing-page",
+        "home": "200 441004b",
+        "pricing": "200 647565b -> https://unity.com/products"
+      },
+      "pricing_url_status": "CONFIRMED ABSENT: declared /products/compare-plans 301s to /products (observed 2026-08-08). No public pricing page found. This is an observation, not an inference."
+    },
+    {
+      "slug": "wise",
+      "name": "Wise",
+      "segment": "payments",
+      "hq_country": "GB",
+      "tier": "mid",
+      "homepage_url": "https://wise.com/business/",
+      "pricing_url": "https://wise.com/gb/pricing/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 1216626b",
+        "pricing": "200 572794b"
+      }
+    },
+    {
+      "slug": "salesforce",
+      "name": "Salesforce",
+      "segment": "gtm",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.salesforce.com/",
+      "pricing_url": "https://www.salesforce.com/sales/pricing/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 587540b -> https://www.salesforce.com/de/?ir=1&bc=HL",
+        "pricing": "200 1065342b -> https://www.salesforce.com/sales/pricing/?bc=HL"
+      }
+    },
+    {
+      "slug": "servicenow",
+      "name": "ServiceNow",
+      "segment": "itsm",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.servicenow.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "blocked",
+        "home": "403 372b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "workday",
+      "name": "Workday",
+      "segment": "hr-ops",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.workday.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 297875b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "oracle",
+      "name": "Oracle",
+      "segment": "erp",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.oracle.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "blocked",
+        "home": "403 1450b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "okta",
+      "name": "Okta",
+      "segment": "identity",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.okta.com/",
+      "pricing_url": "https://www.okta.com/pricing/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 397837b",
+        "pricing": "200 561633b"
+      }
+    },
+    {
+      "slug": "crowdstrike",
+      "name": "CrowdStrike",
+      "segment": "security",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.crowdstrike.com/",
+      "pricing_url": "https://www.crowdstrike.com/products/bundles/falcon-go/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 402053b -> https://www.crowdstrike.com/en-us/",
+        "pricing": "200 321025b -> https://www.crowdstrike.com/en-us/pricing/falcon-go/"
+      }
+    },
+    {
+      "slug": "zscaler",
+      "name": "Zscaler",
+      "segment": "security",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.zscaler.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 378226b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "palo-alto",
+      "name": "Palo Alto Networks",
+      "segment": "security",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.paloaltonetworks.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 614438b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "sailpoint",
+      "name": "SailPoint",
+      "segment": "identity",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.sailpoint.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 623586b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "signicat",
+      "name": "Signicat",
+      "segment": "identity",
+      "hq_country": "NO",
+      "tier": "enterprise",
+      "homepage_url": "https://www.signicat.com/",
+      "pricing_url": "https://www.signicat.com/pricing",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 225976b",
+        "pricing": "200 136062b"
+      }
+    },
+    {
+      "slug": "onetrust",
+      "name": "OneTrust",
+      "segment": "grc",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.onetrust.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 216169b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "dataguard",
+      "name": "DataGuard",
+      "segment": "grc",
+      "hq_country": "DE",
+      "tier": "enterprise",
+      "homepage_url": "https://www.dataguard.com/",
+      "pricing_url": "https://www.dataguard.com/pricing/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 260950b",
+        "pricing": "200 369207b"
+      }
+    },
+    {
+      "slug": "drata",
+      "name": "Drata",
+      "segment": "grc",
+      "hq_country": "US",
+      "tier": "mid",
+      "homepage_url": "https://drata.com/",
+      "pricing_url": "https://drata.com/pricing",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "blocked",
+        "home": "403 5933b",
+        "pricing": "403 5954b"
+      }
+    },
+    {
+      "slug": "docusign",
+      "name": "Docusign",
+      "segment": "clm-esign",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.docusign.com/",
+      "pricing_url": "https://www.docusign.com/products-and-pricing",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 960716b",
+        "pricing": "200 1022103b -> https://ecom.docusign.com/de-DE/plans-and-pricing/esignature"
+      }
+    },
+    {
+      "slug": "ironclad",
+      "name": "Ironclad",
+      "segment": "clm-esign",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://ironcladapp.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 507814b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "icertis",
+      "name": "Icertis",
+      "segment": "clm-esign",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.icertis.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 108464b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "coupa",
+      "name": "Coupa",
+      "segment": "procurement",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.coupa.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "blocked",
+        "home": "403 5852b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "veeva",
+      "name": "Veeva Systems",
+      "segment": "healthcare-it",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.veeva.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 305912b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "definitive-hc",
+      "name": "Definitive Healthcare",
+      "segment": "healthcare-it",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.definitivehc.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 193231b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "relativity",
+      "name": "Relativity",
+      "segment": "legal-tech",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.relativity.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 88682b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "pega",
+      "name": "Pegasystems",
+      "segment": "bpm",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.pega.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 433604b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "appian",
+      "name": "Appian",
+      "segment": "bpm",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://appian.com/",
+      "pricing_url": "https://appian.com/products/pricing.html",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 584636b",
+        "pricing": "200 530265b -> https://appian.com/products/pricing"
+      }
+    },
+    {
+      "slug": "uipath",
+      "name": "UiPath",
+      "segment": "automation",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.uipath.com/",
+      "pricing_url": "https://www.uipath.com/pricing",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 729549b",
+        "pricing": "200 649999b"
+      }
+    },
+    {
+      "slug": "genesys",
+      "name": "Genesys",
+      "segment": "ccaas",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.genesys.com/",
+      "pricing_url": "https://www.genesys.com/pricing",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 486545b",
+        "pricing": "200 712183b"
+      }
+    },
+    {
+      "slug": "nice",
+      "name": "NICE",
+      "segment": "ccaas",
+      "hq_country": "IL",
+      "tier": "enterprise",
+      "homepage_url": "https://www.nice.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 372571b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "autodesk",
+      "name": "Autodesk",
+      "segment": "industrial",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.autodesk.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "blocked",
+        "home": "403 368b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "ptc",
+      "name": "PTC",
+      "segment": "industrial",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.ptc.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 131644b -> https://www.ptc.com/en",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "aveva",
+      "name": "AVEVA",
+      "segment": "industrial",
+      "hq_country": "GB",
+      "tier": "enterprise",
+      "homepage_url": "https://www.aveva.com/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok-no-pricing-page",
+        "home": "200 279974b",
+        "pricing": null
+      },
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent."
+    },
+    {
+      "slug": "procore",
+      "name": "Procore",
+      "segment": "industrial",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.procore.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 452975b -> https://www.procore.com/de",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "anaplan",
+      "name": "Anaplan",
+      "segment": "fintech-ops",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.anaplan.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 358815b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "blackline",
+      "name": "BlackLine",
+      "segment": "fintech-ops",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.blackline.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 2213677b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "avalara",
+      "name": "Avalara",
+      "segment": "fintech-ops",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.avalara.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 549619b -> https://www.avalara.com/us/en/index.html",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "workiva",
+      "name": "Workiva",
+      "segment": "grc",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.workiva.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "blocked",
+        "home": "403 919b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "diligent",
+      "name": "Diligent",
+      "segment": "grc",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.diligent.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 818316b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "navex",
+      "name": "NAVEX",
+      "segment": "grc",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.navex.com/en-us/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 853720b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "jaggaer",
+      "name": "JAGGAER",
+      "segment": "procurement",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.jaggaer.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "blocked",
+        "home": "403 103b",
+        "pricing": null
+      }
+    },
+    {
+      "slug": "ivanti",
+      "name": "Ivanti",
+      "segment": "itsm",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.ivanti.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "ok",
+        "home": "200 87179b",
+        "pricing": null
+      }
+    }
+  ],
+  "reserve": [
+    {
+      "slug": "ibm",
+      "name": "IBM",
+      "segment": "data",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.ibm.com/"
+    },
+    {
+      "slug": "splunk",
+      "name": "Splunk",
+      "segment": "observability",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.splunk.com/"
+    },
+    {
+      "slug": "palantir",
+      "name": "Palantir",
+      "segment": "data",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.palantir.com/"
+    },
+    {
+      "slug": "confluent",
+      "name": "Confluent",
+      "segment": "data",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.confluent.io/",
+      "pricing_url": "https://www.confluent.io/confluent-cloud/pricing/"
+    },
+    {
+      "slug": "hashicorp",
+      "name": "HashiCorp",
+      "segment": "dev-infra",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.hashicorp.com/"
+    },
+    {
+      "slug": "informatica",
+      "name": "Informatica",
+      "segment": "data",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.informatica.com/"
+    },
+    {
+      "slug": "alteryx",
+      "name": "Alteryx",
+      "segment": "analytics",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.alteryx.com/"
+    },
+    {
+      "slug": "qualtrics",
+      "name": "Qualtrics",
+      "segment": "analytics",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.qualtrics.com/"
+    },
+    {
+      "slug": "sprinklr",
+      "name": "Sprinklr",
+      "segment": "marketing",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.sprinklr.com/"
+    },
+    {
+      "slug": "seismic",
+      "name": "Seismic",
+      "segment": "gtm",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://seismic.com/"
+    },
+    {
+      "slug": "outreach",
+      "name": "Outreach",
+      "segment": "gtm",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.outreach.io/"
+    },
+    {
+      "slug": "zoominfo",
+      "name": "ZoomInfo",
+      "segment": "gtm",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.zoominfo.com/"
+    },
+    {
+      "slug": "gainsight",
+      "name": "Gainsight",
+      "segment": "support",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.gainsight.com/"
+    },
+    {
+      "slug": "box",
+      "name": "Box",
+      "segment": "work-mgmt",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.box.com/",
+      "pricing_url": "https://www.box.com/pricing"
+    },
+    {
+      "slug": "smartsheet",
+      "name": "Smartsheet",
+      "segment": "work-mgmt",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.smartsheet.com/",
+      "pricing_url": "https://www.smartsheet.com/pricing"
+    },
+    {
+      "slug": "neo4j",
+      "name": "Neo4j",
+      "segment": "data",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://neo4j.com/",
+      "pricing_url": "https://neo4j.com/pricing/"
+    },
+    {
+      "slug": "cockroach-labs",
+      "name": "Cockroach Labs",
+      "segment": "data",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.cockroachlabs.com/",
+      "pricing_url": "https://www.cockroachlabs.com/pricing/"
+    },
+    {
+      "slug": "clickhouse",
+      "name": "ClickHouse",
+      "segment": "data",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://clickhouse.com/",
+      "pricing_url": "https://clickhouse.com/pricing"
+    },
+    {
+      "slug": "redis",
+      "name": "Redis",
+      "segment": "data",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://redis.io/",
+      "pricing_url": "https://redis.io/pricing/"
+    },
+    {
+      "slug": "monte-carlo",
+      "name": "Monte Carlo",
+      "segment": "data",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.montecarlodata.com/"
+    },
+    {
+      "slug": "atlan",
+      "name": "Atlan",
+      "segment": "data",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://atlan.com/"
+    },
+    {
+      "slug": "thoughtspot",
+      "name": "ThoughtSpot",
+      "segment": "analytics",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.thoughtspot.com/",
+      "pricing_url": "https://www.thoughtspot.com/pricing"
+    },
+    {
+      "slug": "sas",
+      "name": "SAS",
+      "segment": "analytics",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.sas.com/en_us/home.html"
+    },
+    {
+      "slug": "new-relic",
+      "name": "New Relic",
+      "segment": "observability",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://newrelic.com/",
+      "pricing_url": "https://newrelic.com/pricing"
+    },
+    {
+      "slug": "pagerduty",
+      "name": "PagerDuty",
+      "segment": "observability",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.pagerduty.com/",
+      "pricing_url": "https://www.pagerduty.com/pricing/"
+    },
+    {
+      "slug": "highspot",
+      "name": "Highspot",
+      "segment": "gtm",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.highspot.com/"
+    },
+    {
+      "slug": "6sense",
+      "name": "6sense",
+      "segment": "gtm",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://6sense.com/"
+    },
+    {
+      "slug": "demandbase",
+      "name": "Demandbase",
+      "segment": "gtm",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.demandbase.com/"
+    },
+    {
+      "slug": "freshworks",
+      "name": "Freshworks",
+      "segment": "itsm",
+      "hq_country": "US",
+      "tier": "mid",
+      "homepage_url": "https://www.freshworks.com/",
+      "pricing_url": "https://www.freshworks.com/pricing/"
+    }
+  ],
+  "reserve_note": "US-headquartered candidates in segments the existing seed already covers (data, analytics, observability, gtm, work-mgmt). Held back to keep the 140 weighted toward EU and toward segments the corpus has none of. Promote from here if live verification kills entries above.",
+  "verification": {
+    "ran": "2026-08-08",
+    "tool": "node scripts/check-seed.js --file seed/candidates-enterprise-eu.json --live",
+    "urls_checked": 194,
+    "urls_usable": 176,
+    "origin": "local, Germany",
+    "origin_caveat": "This run egressed from Germany. The canonical crawl origin is a US GitHub Actions runner, so every locale redirect recorded here describes what a German client sees, not what the corpus will record. Salesforce, a US company, redirected to /de. Locale findings from this run are not portable to the canonical origin.",
+    "counts": {
+      "ok": 119,
+      "ok-no-pricing-page": 10,
+      "blocked": 11
+    },
+    "fixes_applied": "2026-08-08: 6 pricing URLs removed and recorded as confirmed-absent with evidence; 5 companies replaced like-for-like by segment after their domains redirected offsite (retired list retained); tricentis retained after a 200 on retry; personio retained as blocked. Replacements were NOT drawn from the reserve: the reserve is US companies in already-covered segments, so using it here would have reduced both the EU share and the net-new segment coverage."
+  },
+  "retired": [
+    {
+      "slug": "beekeeper",
+      "name": "Beekeeper",
+      "segment": "hr-ops",
+      "hq_country": "CH",
+      "tier": "mid",
+      "homepage_url": "https://www.beekeeper.io/",
+      "pricing_url": "https://www.beekeeper.io/pricing/",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "redirects-offsite",
+        "home": "200 347829b -> https://www.lumapps.com/beekeeper?utm_source=beekeeper&utm_medium=referral&utm_campaign=domain_migration&utm_content=%2F",
+        "pricing": "200 456286b -> https://www.lumapps.com/?utm_source=beekeeper&utm_medium=referral&utm_campaign=domain_migration&utm_content=%2Fpricing",
+        "observed_redirect_to": "https://www.lumapps.com/beekeeper",
+        "interpretation": "OBSERVED: the domain redirects offsite. INFERRED and UNCONFIRMED: acquisition or rebrand. The redirect is the fact; the reason is not."
+      },
+      "retired_reason": "domain redirects offsite; replaced like-for-like by segment",
+      "replaced_by": "coachhub"
+    },
+    {
+      "slug": "onfido",
+      "name": "Onfido",
+      "segment": "identity",
+      "hq_country": "GB",
+      "tier": "enterprise",
+      "homepage_url": "https://onfido.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "redirects-offsite",
+        "home": "403 21915b -> https://www.entrust.com/products/identity-verification?edc_redirect=Onfido-Redirect",
+        "pricing": null,
+        "observed_redirect_to": "https://www.entrust.com/products/identity-verification",
+        "interpretation": "OBSERVED: the domain redirects offsite. INFERRED and UNCONFIRMED: acquisition or rebrand. The redirect is the fact; the reason is not."
+      },
+      "retired_reason": "domain redirects offsite; replaced like-for-like by segment",
+      "replaced_by": "idnow"
+    },
+    {
+      "slug": "cyberark",
+      "name": "CyberArk",
+      "segment": "identity",
+      "hq_country": "IL",
+      "tier": "enterprise",
+      "homepage_url": "https://www.cyberark.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "redirects-offsite",
+        "home": "200 595045b -> https://www.paloaltonetworks.com/idira",
+        "pricing": null,
+        "observed_redirect_to": "https://www.paloaltonetworks.com/idira",
+        "interpretation": "OBSERVED: the domain redirects offsite. INFERRED and UNCONFIRMED: acquisition or rebrand. The redirect is the fact; the reason is not."
+      },
+      "retired_reason": "domain redirects offsite; replaced like-for-like by segment",
+      "replaced_by": "signicat"
+    },
+    {
+      "slug": "auditboard",
+      "name": "AuditBoard",
+      "segment": "grc",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.auditboard.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "redirects-offsite",
+        "home": "200 275562b -> https://optro.ai/",
+        "pricing": null,
+        "observed_redirect_to": "https://optro.ai/",
+        "interpretation": "OBSERVED: the domain redirects offsite. INFERRED and UNCONFIRMED: acquisition or rebrand. The redirect is the fact; the reason is not."
+      },
+      "retired_reason": "domain redirects offsite; replaced like-for-like by segment",
+      "replaced_by": "dataguard"
+    },
+    {
+      "slug": "ansys",
+      "name": "Ansys",
+      "segment": "industrial",
+      "hq_country": "US",
+      "tier": "enterprise",
+      "homepage_url": "https://www.ansys.com/",
+      "pricing_url_status": "unknown -- no public pricing page believed to exist, NOT confirmed. Check before treating as absent.",
+      "verified": {
+        "checked": "2026-08-08",
+        "result": "redirects-offsite",
+        "home": "200 1076841b -> https://ansys.synopsys.com/",
+        "pricing": null,
+        "observed_redirect_to": "https://ansys.synopsys.com/",
+        "interpretation": "OBSERVED: the domain redirects offsite. INFERRED and UNCONFIRMED: acquisition or rebrand. The redirect is the fact; the reason is not."
+      },
+      "retired_reason": "domain redirects offsite; replaced like-for-like by segment",
+      "replaced_by": "aveva"
+    }
+  ]
+}

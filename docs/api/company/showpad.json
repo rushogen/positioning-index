@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "showpad",
+  "name": "Showpad",
+  "segment": "gtm",
+  "hq_country": "BE",
+  "homepage_url": "https://www.showpad.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

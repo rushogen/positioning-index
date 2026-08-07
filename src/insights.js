@@ -687,26 +687,44 @@ export function logoMentions({ companies, series, limit = 12 }) {
 // --------------------------------------------------------- segment breakdown
 
 /**
- * The five buckets the seed's fourteen `segment` values are folded into.
+ * The ten buckets the seed's twenty-nine `segment` values are folded into.
  *
  * WHY THE SEED SEGMENTS ARE NOT USED DIRECTLY
  * -------------------------------------------
- * seed/companies.json labels each company with one of fourteen segments, and
- * seven of them hold three companies or fewer -- `security` holds exactly one.
- * A bar chart with a cell of n=1 invites the reader to conclude something about
- * "security companies" from Vanta's homepage, which is the precise false
- * precision the rest of this file exists to refuse. Fourteen segments over
- * sixty companies is a taxonomy for a directory, not a denominator.
+ * seed/companies.json labels each company with one of twenty-nine segments, and
+ * ten of them hold fewer than six companies -- `process-mining` holds exactly
+ * one. A bar chart with a cell of n=1 invites the reader to conclude something
+ * about "process mining companies" from Celonis's homepage, which is the precise
+ * false precision the rest of this file exists to refuse. Twenty-nine segments
+ * over two hundred companies is a taxonomy for a directory, not a denominator.
  *
- * So the segments are folded into five groups of 7 to 16. That fold is a
+ * So the segments are folded into ten groups of 11 to 27. That fold is a
  * judgement, and it is therefore written down here in full, printed on the site
  * as a table, and constrained by one rule that keeps it honest:
  *
  *   A seed segment is never split. Every company carrying `segment: "design"`
- *   is in the same group as every other one. The mapping is thirteen-plus-one
- *   whole segments moved into five boxes, so the only way to disagree with it
- *   is to disagree with a box -- not to discover that we quietly put Figma in
- *   one place and Miro in another to make a number come out.
+ *   is in the same group as every other one. The mapping is twenty-nine whole
+ *   segments moved into ten boxes, so the only way to disagree with it is to
+ *   disagree with a box -- not to discover that we quietly put Figma in one
+ *   place and Miro in another to make a number come out.
+ *
+ * WHAT CHANGED WHEN THE SEED GREW TO 200 (2026-08-08)
+ * ---------------------------------------------------
+ * Five groups over sixty companies became ten over two hundred. Three of the
+ * original five are unchanged. Two moved, and both moves are worth stating
+ * because a reader comparing an old chart to a new one will see them:
+ *
+ *   `support` left the go-to-market group. The old rationale was that a
+ *   helpdesk is sold to the revenue side of the house. That held when support
+ *   was three companies; it stopped holding when the seed gained seven
+ *   contact-centre vendors, whose buyer is a VP of Service and not a CRO. The
+ *   two now sit together in `service`.
+ *
+ *   `fintech-ops` and `hr-ops` stayed together as the back office, and the new
+ *   banking and payments vendors did NOT join them. Selling software to a bank
+ *   is not the same business as selling expense management to everybody, and
+ *   pooling them would have produced a 33-company bucket whose only shared
+ *   property is the word "money".
  *
  * The rationale for each fold is authored prose (`why`), because it is an
  * opinion about which markets cohere and pretending otherwise would be worse
@@ -720,8 +738,8 @@ export const SEGMENT_GROUPS = [
     segments: ['dev-infra', 'observability', 'security'],
     why:
       'Sold to the engineering organisation and bought on the same budget: hosting and delivery, ' +
-      'the tools that watch it in production, and the compliance automation that reports on it. ' +
-      'Observability is two companies on its own and security is one, which is why neither is a bar.',
+      'the tools that watch it in production, and the products that defend it. Observability is ' +
+      'four companies on its own, which is why it is not a bar.',
   },
   {
     key: 'data',
@@ -739,27 +757,77 @@ export const SEGMENT_GROUPS = [
     segments: ['automation', 'design', 'product-dev', 'work-mgmt'],
     why:
       'How a company builds things and runs itself day to day: issue trackers, docs, whiteboards, ' +
-      'chat, and the glue between them. The biggest bucket at 16, and the most internally varied &mdash; ' +
-      'it is the one to be most sceptical of.',
+      'chat, and the glue between them. Internally the most varied group here, and the one to be ' +
+      'most sceptical of.',
   },
   {
     key: 'gtm',
-    label: 'Go-to-market & support',
+    label: 'Go-to-market',
     short: 'Go-to-market',
-    segments: ['gtm', 'marketing', 'support'],
+    segments: ['gtm', 'marketing', 'localization'],
     why:
-      'Everything pointed at a customer: finding them, marketing to them, selling to them, and ' +
-      'answering them afterwards. Support sits here rather than with work management because a ' +
-      'helpdesk is sold to the revenue side of the house.',
+      'Everything pointed at winning a customer: finding them, marketing to them and selling to ' +
+      'them. Localisation sits here because translating a product is a market-entry decision made ' +
+      'on the revenue side, not an engineering one.',
   },
   {
-    key: 'ops',
+    key: 'service',
+    label: 'Customer service',
+    short: 'Service',
+    segments: ['support', 'ccaas'],
+    why:
+      'What happens after the sale: helpdesks, and the contact-centre platforms the same ' +
+      'organisation runs. Split out from go-to-market when the seed grew, because a VP of Service ' +
+      'and a CRO do not sign the same contracts.',
+  },
+  {
+    key: 'risk',
+    label: 'Risk, compliance & identity',
+    short: 'Risk & compliance',
+    segments: ['grc', 'identity', 'clm-esign', 'legal-tech'],
+    why:
+      'The veto holders. Compliance automation, access and identity, contract lifecycle and legal ' +
+      'work. Grouped by who has to approve the purchase rather than by what the software does, ' +
+      'because in this corner of the market those are the same question.',
+  },
+  {
+    key: 'enterprise',
+    label: 'Enterprise applications',
+    short: 'Enterprise apps',
+    segments: ['erp', 'bpm', 'process-mining', 'procurement', 'itsm'],
+    why:
+      'The system-of-record layer: resource planning, process modelling and mining, procurement ' +
+      'and service management. Long cycles, an IT buyer, and the part of the market least likely ' +
+      'to publish a price.',
+  },
+  {
+    key: 'backoffice',
     label: 'Finance & people ops',
     short: 'Finance & people',
     segments: ['fintech-ops', 'hr-ops'],
     why:
-      'The back office: money in and out, and payroll, hiring and reviews. At 7 companies this is ' +
-      'the smallest group and the one where a single homepage moves a bar furthest.',
+      'The back office of an ordinary company: money in and out, and payroll, hiring and reviews. ' +
+      'Sold horizontally to a finance or people lead at almost any company.',
+  },
+  {
+    key: 'fin-infra',
+    label: 'Financial infrastructure',
+    short: 'Financial infra',
+    segments: ['banking-tech', 'payments'],
+    why:
+      'Software sold to institutions that move money: core banking, payment acceptance and the ' +
+      'rails underneath. Deliberately not pooled with the back office &mdash; the buyer is a bank ' +
+      'or a PSP, and the sale is nothing like an expense-management deal.',
+  },
+  {
+    key: 'vertical',
+    label: 'Industry & vertical software',
+    short: 'Vertical software',
+    segments: ['industrial', 'healthcare-it'],
+    why:
+      'Sold into one industry rather than across all of them: engineering, design and simulation ' +
+      'for the physical world, and the clinical and life-sciences stack. The common property is ' +
+      'that the buyer works in the industry, not in a horizontal function.',
   },
 ];
 
@@ -775,12 +843,17 @@ export const SEGMENT_GROUPS = [
 export const MIN_CELL_N = 6;
 
 /**
- * How many of the five groups must clear the floor before a cut is drawn at all.
+ * How many of the ten groups must clear the floor before a cut is drawn at all.
  *
- * A comparison across two or three groups of a sixty-company set is not a
+ * A comparison across two or three groups of a two-hundred-company set is not a
  * segment breakdown, it is two or three numbers with a chart around them.
+ *
+ * This was 4 of 5 when there were five groups. Ten groups made 4 a much weaker
+ * rule than the one originally written down -- four fifths of the chart present
+ * became two fifths -- so it moves to 8 to hold the same standard. The number
+ * changed so that the guarantee would not.
  */
-export const MIN_GROUPS_DRAWN = 4;
+export const MIN_GROUPS_DRAWN = 8;
 
 /**
  * The number of companies whose answer, if flipped, makes a spread meaningless.

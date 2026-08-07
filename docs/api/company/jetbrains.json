@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "jetbrains",
+  "name": "JetBrains",
+  "segment": "product-dev",
+  "hq_country": "CZ",
+  "homepage_url": "https://www.jetbrains.com/",
+  "pricing_url": "https://www.jetbrains.com/store/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

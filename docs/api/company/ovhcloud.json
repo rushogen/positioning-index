@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "ovhcloud",
+  "name": "OVHcloud",
+  "segment": "dev-infra",
+  "hq_country": "FR",
+  "homepage_url": "https://www.ovhcloud.com/en/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "unbabel",
+  "name": "Unbabel",
+  "segment": "localization",
+  "hq_country": "PT",
+  "homepage_url": "https://unbabel.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

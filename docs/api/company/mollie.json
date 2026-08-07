@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "mollie",
+  "name": "Mollie",
+  "segment": "payments",
+  "hq_country": "NL",
+  "homepage_url": "https://www.mollie.com/",
+  "pricing_url": "https://www.mollie.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

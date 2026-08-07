@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "appian",
+  "name": "Appian",
+  "segment": "bpm",
+  "hq_country": "US",
+  "homepage_url": "https://appian.com/",
+  "pricing_url": "https://appian.com/products/pricing.html"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

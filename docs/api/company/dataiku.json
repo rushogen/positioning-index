@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "dataiku",
+  "name": "Dataiku",
+  "segment": "data",
+  "hq_country": "FR",
+  "homepage_url": "https://www.dataiku.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

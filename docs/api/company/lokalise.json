@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "lokalise",
+  "name": "Lokalise",
+  "segment": "localization",
+  "hq_country": "LV",
+  "homepage_url": "https://lokalise.com/",
+  "pricing_url": "https://lokalise.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

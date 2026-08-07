@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "complyadvantage",
+  "name": "ComplyAdvantage",
+  "segment": "grc",
+  "hq_country": "GB",
+  "homepage_url": "https://complyadvantage.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

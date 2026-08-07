@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "alan",
+  "name": "Alan",
+  "segment": "healthcare-it",
+  "hq_country": "FR",
+  "homepage_url": "https://alan.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

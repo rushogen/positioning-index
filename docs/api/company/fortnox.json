@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "fortnox",
+  "name": "Fortnox",
+  "segment": "erp",
+  "hq_country": "SE",
+  "homepage_url": "https://www.fortnox.se/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

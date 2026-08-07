@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "parloa",
+  "name": "Parloa",
+  "segment": "ccaas",
+  "hq_country": "DE",
+  "homepage_url": "https://www.parloa.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

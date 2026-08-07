@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "suse",
+  "name": "SUSE",
+  "segment": "dev-infra",
+  "hq_country": "DE",
+  "homepage_url": "https://www.suse.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

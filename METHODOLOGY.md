@@ -1,6 +1,6 @@
 # Methodology
 
-**Version 1.5** — corresponds to extractor version `1.0.0`.
+**Version 1.6** — corresponds to extractor version `1.0.0`.
 
 This document states exactly how each signal is measured, what counts as a
 change, and what the index will refuse to claim. It is versioned because the
@@ -796,32 +796,49 @@ call it one.
 
 ### 4A.9 Segment grouping
 
-`seed/companies.json` labels every company with one of **fourteen** segments.
-Seven of them hold three companies or fewer and one holds a single company:
+`seed/companies.json` labels every company with one of **twenty-nine** segments.
+Ten of them hold fewer than six companies and one holds a single company:
 
 ```
-dev-infra 7 · data 7 · product-dev 6 · work-mgmt 6 · gtm 6 · marketing 6
-analytics 5 · fintech-ops 4 · support 3 · hr-ops 3
-design 2 · observability 2 · automation 2 · security 1
+marketing 13 · fintech-ops 13 · dev-infra 13 · industrial 12 · data 12
+work-mgmt 11 · grc 11 · security 10 · product-dev 10 · hr-ops 9 · gtm 8
+analytics 8 · erp 7 · ccaas 7 · banking-tech 6 · support 5 · payments 5
+identity 5 · healthcare-it 5 · bpm 5 · observability 4 · clm-esign 4
+automation 4 · localization 3 · itsm 3 · procurement 2 · legal-tech 2
+design 2 · process-mining 1
 ```
 
 Charting those directly would put a bar over one company next to a bar over
-seven and invite a conclusion about "security companies" from one homepage. The
-fourteen are therefore folded into **five groups** of 7 to 16:
+thirteen and invite a conclusion about "process mining companies" from one
+homepage. The twenty-nine are therefore folded into **ten groups** of 11 to 27:
 
 | Group | n | Seed segments |
 |---|---|---|
-| Developer & infrastructure | 10 | `dev-infra`, `observability`, `security` |
-| Data & analytics | 12 | `data`, `analytics` |
-| Work & product | 16 | `product-dev`, `work-mgmt`, `automation`, `design` |
-| Go-to-market & support | 15 | `gtm`, `marketing`, `support` |
-| Finance & people ops | 7 | `fintech-ops`, `hr-ops` |
+| Developer & infrastructure | 27 | `dev-infra`, `observability`, `security` |
+| Work & product | 27 | `product-dev`, `work-mgmt`, `automation`, `design` |
+| Go-to-market | 24 | `gtm`, `marketing`, `localization` |
+| Risk, compliance & identity | 22 | `grc`, `identity`, `clm-esign`, `legal-tech` |
+| Finance & people ops | 22 | `fintech-ops`, `hr-ops` |
+| Data & analytics | 20 | `data`, `analytics` |
+| Enterprise applications | 18 | `erp`, `bpm`, `process-mining`, `procurement`, `itsm` |
+| Industry & vertical software | 17 | `industrial`, `healthcare-it` |
+| Customer service | 12 | `support`, `ccaas` |
+| Financial infrastructure | 11 | `banking-tech`, `payments` |
+
+Two of the original five groups changed when the seed grew to 200 on 2026-08-08,
+and both changes are stated because a reader comparing an old chart to a new one
+will see them. `support` left go-to-market: the old rationale was that a helpdesk
+is sold to the revenue side of the house, which held when support was three
+companies and stopped holding when the seed gained seven contact-centre vendors
+whose buyer is a VP of Service. And the new banking and payments vendors did not
+join the back office, because selling core banking to a bank is not the same
+business as selling expense management to everybody.
 
 The fold is a judgement and is published as one. Three properties keep it
 auditable rather than convenient:
 
 - **A seed segment is never split.** Every company carrying a given `segment`
-  moves as one. The mapping is fourteen whole segments moved into five boxes, so
+  moves as one. The mapping is twenty-nine whole segments moved into ten boxes, so
   the only way to disagree with it is to disagree with a box — not to discover
   that two companies were placed individually to make a number come out.
 - **The mapping is on the page**, with the rationale for each fold and every
@@ -854,18 +871,19 @@ dishonestly and honestly.
 which are published, and both are computed from the numbers rather than chosen
 by looking at them:
 
-1. **Coverage.** A cut where fewer than four of the five groups clear the
+1. **Coverage.** A cut where fewer than eight of the ten groups clear the
    minimum cell is withheld. A comparison across two or three groups of a
-   sixty-company set is not a segment breakdown.
+   two-hundred-company set is not a segment breakdown. The threshold was four of
+   five when there were five groups; it moved to eight of ten so that the
+   guarantee would not weaken when the number of groups doubled.
 2. **Fragility.** A cut whose best and worst group are within **two companies**
    of each other is withheld. A reader looks at the bars, not at the caveat.
 
-A withheld cut is listed on the page with its rule and its numbers. On
-2026-08-07 that is four of the nine: proof by scale count and by multiplier and
-by time-to-result are all flat within two companies, and free-tier prevalence
-fails coverage — pricing is readable for 32 of 60 companies overall, which leaves
-three groups of five cells too small to draw, and 30 of those 32 readable pages
-publish a free tier anyway, so there is little left for a segment to explain.
+A withheld cut is listed on the page with its rule and its numbers. Which cuts
+those are on any given day is computed, published on the site, and deliberately
+not restated here: a worked example typed into this document is a figure that
+stops being true at the next crawl and that nobody re-reads. See the segment
+section of the published page for the current list.
 
 Selecting the cuts after seeing which came out interesting would be the ordinary
 way this analysis goes wrong, and the rules above exist to make it impossible:
@@ -919,6 +937,29 @@ the bar itself rather than in a tooltip or a footnote.
 ---
 
 ## 6. Version history
+
+**v1.6** — 2026-08-08. The seed grows from 60 companies to 200, weighted toward
+enterprise-tier and EU-headquartered vendors, and §4A.9 is rewritten around it.
+Twenty-nine segments now fold into ten groups of 11 to 27; the coverage rule
+moves from four-of-five groups to eight-of-ten so that doubling the number of
+groups does not quietly halve the standard. Two folds changed and both are stated
+in §4A.9: `support` joined the new customer-service group, and the new banking
+and payments vendors were kept out of the back office.
+
+Two consequences of the weighting are measurement facts and not opinions, and
+they belong here rather than in a launch note. First, **the block rate rises with
+enterprise tier**: verifying the 140 new URLs on 2026-08-08 found 12 companies
+refusing an identified crawler, against 2 in the original 60. That is not random
+noise, it is correlated with exactly the tier the expansion was meant to measure,
+so enterprise cells will be thinner than their seed counts suggest and the
+per-cell coverage block is the only honest place to read them. Second, **fewer of
+these companies publish a price at all**, and six of them were confirmed by
+observation to route `/pricing` to a contact-sales page, a product page or the
+homepage. A missing pricing page is now sometimes a finding rather than a gap,
+and §4.6's rules for reading one are unchanged.
+
+No signal definition changed and the extractor version stays `1.0.0`. No stored
+value is affected: §4A.9 defines how existing seed metadata is grouped.
 
 **v1.5** — 2026-08-07. The `segment` field in the seed becomes a published cut.
 New §4A.9: the fourteen seed segments are folded into five groups of 7 to 16, a

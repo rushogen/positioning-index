@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "docplanner",
+  "name": "Docplanner",
+  "segment": "healthcare-it",
+  "hq_country": "PL",
+  "homepage_url": "https://www.docplanner.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

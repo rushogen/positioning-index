@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "blackline",
+  "name": "BlackLine",
+  "segment": "fintech-ops",
+  "hq_country": "US",
+  "homepage_url": "https://www.blackline.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

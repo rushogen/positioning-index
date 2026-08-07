@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "livechat",
+  "name": "LiveChat",
+  "segment": "support",
+  "hq_country": "PL",
+  "homepage_url": "https://www.livechat.com/",
+  "pricing_url": "https://www.livechat.com/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

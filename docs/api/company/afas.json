@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "afas",
+  "name": "AFAS Software",
+  "segment": "erp",
+  "hq_country": "NL",
+  "homepage_url": "https://www.afas.nl/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

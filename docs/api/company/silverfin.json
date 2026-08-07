@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "silverfin",
+  "name": "Silverfin",
+  "segment": "fintech-ops",
+  "hq_country": "BE",
+  "homepage_url": "https://www.silverfin.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

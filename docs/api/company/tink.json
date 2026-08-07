@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "tink",
+  "name": "Tink",
+  "segment": "banking-tech",
+  "hq_country": "SE",
+  "homepage_url": "https://tink.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

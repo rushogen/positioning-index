@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "dassault",
+  "name": "Dassault Systèmes",
+  "segment": "industrial",
+  "hq_country": "FR",
+  "homepage_url": "https://www.3ds.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

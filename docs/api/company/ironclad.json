@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "ironclad",
+  "name": "Ironclad",
+  "segment": "clm-esign",
+  "hq_country": "US",
+  "homepage_url": "https://ironcladapp.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "mentimeter",
+  "name": "Mentimeter",
+  "segment": "work-mgmt",
+  "hq_country": "SE",
+  "homepage_url": "https://www.mentimeter.com/",
+  "pricing_url": "https://www.mentimeter.com/plans"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

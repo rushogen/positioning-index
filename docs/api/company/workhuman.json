@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "workhuman",
+  "name": "Workhuman",
+  "segment": "hr-ops",
+  "hq_country": "IE",
+  "homepage_url": "https://www.workhuman.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

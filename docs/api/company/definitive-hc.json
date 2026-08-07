@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "definitive-hc",
+  "name": "Definitive Healthcare",
+  "segment": "healthcare-it",
+  "hq_country": "US",
+  "homepage_url": "https://www.definitivehc.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

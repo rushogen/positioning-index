@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "bitmovin",
+  "name": "Bitmovin",
+  "segment": "dev-infra",
+  "hq_country": "AT",
+  "homepage_url": "https://bitmovin.com/",
+  "pricing_url": "https://bitmovin.com/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

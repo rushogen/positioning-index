@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "sage",
+  "name": "Sage",
+  "segment": "erp",
+  "hq_country": "GB",
+  "homepage_url": "https://www.sage.com/en-gb/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

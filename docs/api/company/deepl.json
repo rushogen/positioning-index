@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "deepl",
+  "name": "DeepL",
+  "segment": "localization",
+  "hq_country": "DE",
+  "homepage_url": "https://www.deepl.com/en/translator",
+  "pricing_url": "https://www.deepl.com/en/pro"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

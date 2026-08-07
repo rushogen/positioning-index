@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "avaloq",
+  "name": "Avaloq",
+  "segment": "banking-tech",
+  "hq_country": "CH",
+  "homepage_url": "https://www.avaloq.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

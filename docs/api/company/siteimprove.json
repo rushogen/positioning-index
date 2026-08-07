@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "siteimprove",
+  "name": "Siteimprove",
+  "segment": "marketing",
+  "hq_country": "DK",
+  "homepage_url": "https://www.siteimprove.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

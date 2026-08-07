@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "drata",
+  "name": "Drata",
+  "segment": "grc",
+  "hq_country": "US",
+  "homepage_url": "https://drata.com/",
+  "pricing_url": "https://drata.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

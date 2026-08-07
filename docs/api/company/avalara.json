@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "avalara",
+  "name": "Avalara",
+  "segment": "fintech-ops",
+  "hq_country": "US",
+  "homepage_url": "https://www.avalara.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

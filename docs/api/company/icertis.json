@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "icertis",
+  "name": "Icertis",
+  "segment": "clm-esign",
+  "hq_country": "US",
+  "homepage_url": "https://www.icertis.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

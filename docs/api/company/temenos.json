@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "temenos",
+  "name": "Temenos",
+  "segment": "banking-tech",
+  "hq_country": "CH",
+  "homepage_url": "https://www.temenos.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

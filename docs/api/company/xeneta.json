@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "xeneta",
+  "name": "Xeneta",
+  "segment": "industrial",
+  "hq_country": "NO",
+  "homepage_url": "https://www.xeneta.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

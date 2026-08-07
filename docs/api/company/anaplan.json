@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "anaplan",
+  "name": "Anaplan",
+  "segment": "fintech-ops",
+  "hq_country": "US",
+  "homepage_url": "https://www.anaplan.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

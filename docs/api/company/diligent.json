@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "diligent",
+  "name": "Diligent",
+  "segment": "grc",
+  "hq_country": "US",
+  "homepage_url": "https://www.diligent.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

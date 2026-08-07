@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "workday",
+  "name": "Workday",
+  "segment": "hr-ops",
+  "hq_country": "US",
+  "homepage_url": "https://www.workday.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

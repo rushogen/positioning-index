@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "usercentrics",
+  "name": "Usercentrics",
+  "segment": "grc",
+  "hq_country": "DE",
+  "homepage_url": "https://usercentrics.com/",
+  "pricing_url": "https://usercentrics.com/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

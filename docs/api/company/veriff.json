@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "veriff",
+  "name": "Veriff",
+  "segment": "identity",
+  "hq_country": "EE",
+  "homepage_url": "https://www.veriff.com/",
+  "pricing_url": "https://www.veriff.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

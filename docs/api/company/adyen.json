@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "adyen",
+  "name": "Adyen",
+  "segment": "payments",
+  "hq_country": "NL",
+  "homepage_url": "https://www.adyen.com/",
+  "pricing_url": "https://www.adyen.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

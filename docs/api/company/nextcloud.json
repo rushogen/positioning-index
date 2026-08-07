@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "nextcloud",
+  "name": "Nextcloud",
+  "segment": "work-mgmt",
+  "hq_country": "DE",
+  "homepage_url": "https://nextcloud.com/",
+  "pricing_url": "https://nextcloud.com/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

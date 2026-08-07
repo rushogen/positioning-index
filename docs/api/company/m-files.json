@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "m-files",
+  "name": "M-Files",
+  "segment": "work-mgmt",
+  "hq_country": "FI",
+  "homepage_url": "https://www.m-files.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

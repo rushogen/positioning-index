@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "productboard",
+  "name": "Productboard",
+  "segment": "product-dev",
+  "hq_country": "CZ",
+  "homepage_url": "https://www.productboard.com/",
+  "pricing_url": "https://www.productboard.com/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

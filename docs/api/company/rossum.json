@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "rossum",
+  "name": "Rossum",
+  "segment": "automation",
+  "hq_country": "CZ",
+  "homepage_url": "https://rossum.ai/",
+  "pricing_url": "https://rossum.ai/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "thought-machine",
+  "name": "Thought Machine",
+  "segment": "banking-tech",
+  "hq_country": "GB",
+  "homepage_url": "https://thoughtmachine.net/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

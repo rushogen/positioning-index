@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "genesys",
+  "name": "Genesys",
+  "segment": "ccaas",
+  "hq_country": "US",
+  "homepage_url": "https://www.genesys.com/",
+  "pricing_url": "https://www.genesys.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

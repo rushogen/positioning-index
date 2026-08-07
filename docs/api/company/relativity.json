@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "relativity",
+  "name": "Relativity",
+  "segment": "legal-tech",
+  "hq_country": "US",
+  "homepage_url": "https://www.relativity.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

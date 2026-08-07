@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "zscaler",
+  "name": "Zscaler",
+  "segment": "security",
+  "hq_country": "US",
+  "homepage_url": "https://www.zscaler.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

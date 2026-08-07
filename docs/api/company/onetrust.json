@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "onetrust",
+  "name": "OneTrust",
+  "segment": "grc",
+  "hq_country": "US",
+  "homepage_url": "https://www.onetrust.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

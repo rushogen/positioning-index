@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "oracle",
+  "name": "Oracle",
+  "segment": "erp",
+  "hq_country": "US",
+  "homepage_url": "https://www.oracle.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

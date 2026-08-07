@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "cognite",
+  "name": "Cognite",
+  "segment": "industrial",
+  "hq_country": "NO",
+  "homepage_url": "https://www.cognite.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

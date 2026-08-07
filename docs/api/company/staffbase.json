@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "staffbase",
+  "name": "Staffbase",
+  "segment": "marketing",
+  "hq_country": "DE",
+  "homepage_url": "https://staffbase.com/en/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

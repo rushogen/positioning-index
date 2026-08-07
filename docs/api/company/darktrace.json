@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "darktrace",
+  "name": "Darktrace",
+  "segment": "security",
+  "hq_country": "GB",
+  "homepage_url": "https://www.darktrace.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

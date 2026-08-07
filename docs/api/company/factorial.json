@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "factorial",
+  "name": "Factorial",
+  "segment": "hr-ops",
+  "hq_country": "ES",
+  "homepage_url": "https://factorialhr.com/",
+  "pricing_url": "https://factorialhr.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "servicenow",
+  "name": "ServiceNow",
+  "segment": "itsm",
+  "hq_country": "US",
+  "homepage_url": "https://www.servicenow.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

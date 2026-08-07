@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "teamviewer",
+  "name": "TeamViewer",
+  "segment": "itsm",
+  "hq_country": "DE",
+  "homepage_url": "https://www.teamviewer.com/en/",
+  "pricing_url": "https://www.teamviewer.com/en/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

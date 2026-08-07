@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "mirakl",
+  "name": "Mirakl",
+  "segment": "industrial",
+  "hq_country": "FR",
+  "homepage_url": "https://www.mirakl.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

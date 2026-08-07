@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "feedzai",
+  "name": "Feedzai",
+  "segment": "grc",
+  "hq_country": "PT",
+  "homepage_url": "https://www.feedzai.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

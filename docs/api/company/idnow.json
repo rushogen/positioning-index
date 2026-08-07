@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "idnow",
+  "name": "IDnow",
+  "segment": "identity",
+  "hq_country": "DE",
+  "homepage_url": "https://idnow.io/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

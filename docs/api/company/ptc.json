@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "ptc",
+  "name": "PTC",
+  "segment": "industrial",
+  "hq_country": "US",
+  "homepage_url": "https://www.ptc.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

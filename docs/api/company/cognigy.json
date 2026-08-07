@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "cognigy",
+  "name": "Cognigy",
+  "segment": "ccaas",
+  "hq_country": "DE",
+  "homepage_url": "https://www.cognigy.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

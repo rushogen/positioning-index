@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "veeam",
+  "name": "Veeam",
+  "segment": "dev-infra",
+  "hq_country": "CH",
+  "homepage_url": "https://www.veeam.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

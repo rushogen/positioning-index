@@ -541,8 +541,11 @@ test('flipsToTie is the number of companies a difference is worth', () => {
 
 test(`a cut whose ends are within ${FRAGILE_FLIPS} companies is withheld, not drawn with a caveat`, () => {
   const six = (yes) => Array(6).fill(null).map((_, i) => (i < yes ? AI : PLAIN));
+  // One segment per group, so every group is drawable and the cut is withheld
+  // on fragility rather than on coverage.
   const out = segmentBreakdown(segModel({
-    'dev-infra': six(3), analytics: six(3), 'product-dev': six(3), gtm: six(4), 'hr-ops': six(3),
+    'dev-infra': six(3), analytics: six(3), 'product-dev': six(3), gtm: six(4), support: six(3),
+    grc: six(3), erp: six(3), 'hr-ops': six(3), payments: six(3), industrial: six(3),
   }));
   const cut = cutNamed(out, 'ai');
 
@@ -555,7 +558,8 @@ test(`a cut whose ends are within ${FRAGILE_FLIPS} companies is withheld, not dr
 test('a cut with a real spread survives, and reports how wide it is', () => {
   const six = (yes) => Array(6).fill(null).map((_, i) => (i < yes ? AI : PLAIN));
   const out = segmentBreakdown(segModel({
-    'dev-infra': six(6), analytics: six(6), 'product-dev': six(5), gtm: six(5), 'hr-ops': six(0),
+    'dev-infra': six(6), analytics: six(6), 'product-dev': six(5), gtm: six(5), support: six(5),
+    grc: six(5), erp: six(5), 'hr-ops': six(0), payments: six(5), industrial: six(5),
   }));
   const cut = cutNamed(out, 'ai');
 
@@ -568,21 +572,26 @@ test('a cut with a real spread survives, and reports how wide it is', () => {
 });
 
 test(`a cut fewer than ${MIN_GROUPS_DRAWN} groups can support is withheld on coverage, before fragility`, () => {
-  // Two groups readable and big, three too small: a two-group comparison of a
-  // sixty-company set is not a segment breakdown.
+  // Two groups readable and big, the other eight too small: a two-group
+  // comparison of a two-hundred-company set is not a segment breakdown.
   const out = segmentBreakdown(segModel({
     'dev-infra': Array(8).fill(AI),
     analytics: Array(8).fill(PLAIN),
     'product-dev': [AI, undefined, undefined],
     gtm: [PLAIN, undefined, undefined],
+    support: [AI, undefined],
+    grc: [PLAIN, undefined],
+    erp: [AI, undefined],
     'hr-ops': [AI, undefined],
+    payments: [PLAIN, undefined],
+    industrial: [AI, undefined],
   }));
   const cut = cutNamed(out, 'ai');
 
   assert.equal(cut.drawn, false);
   assert.equal(cut.withheld.rule, 'coverage', 'coverage is checked first, so the reason is stable');
   assert.equal(cut.withheld.drawable, 2);
-  assert.equal(cut.withheld.groups, 5);
+  assert.equal(cut.withheld.groups, 10);
   // The spread is enormous -- 8 of 8 against 0 of 8 -- and it still does not
   // rescue a cut that only two groups can answer.
   assert.equal(cut.spread, 8);

@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "signicat",
+  "name": "Signicat",
+  "segment": "identity",
+  "hq_country": "NO",
+  "homepage_url": "https://www.signicat.com/",
+  "pricing_url": "https://www.signicat.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

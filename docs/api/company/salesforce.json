@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "salesforce",
+  "name": "Salesforce",
+  "segment": "gtm",
+  "hq_country": "US",
+  "homepage_url": "https://www.salesforce.com/",
+  "pricing_url": "https://www.salesforce.com/sales/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

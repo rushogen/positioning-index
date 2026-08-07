@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "pleo",
+  "name": "Pleo",
+  "segment": "fintech-ops",
+  "hq_country": "DK",
+  "homepage_url": "https://www.pleo.io/",
+  "pricing_url": "https://www.pleo.io/en/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

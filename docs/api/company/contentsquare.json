@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "contentsquare",
+  "name": "Contentsquare",
+  "segment": "analytics",
+  "hq_country": "FR",
+  "homepage_url": "https://contentsquare.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

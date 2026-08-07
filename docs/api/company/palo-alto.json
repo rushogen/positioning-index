@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "palo-alto",
+  "name": "Palo Alto Networks",
+  "segment": "security",
+  "hq_country": "US",
+  "homepage_url": "https://www.paloaltonetworks.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

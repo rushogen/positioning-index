@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "mendix",
+  "name": "Mendix",
+  "segment": "bpm",
+  "hq_country": "NL",
+  "homepage_url": "https://www.mendix.com/",
+  "pricing_url": "https://www.mendix.com/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "pennylane",
+  "name": "Pennylane",
+  "segment": "fintech-ops",
+  "hq_country": "FR",
+  "homepage_url": "https://www.pennylane.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "acronis",
+  "name": "Acronis",
+  "segment": "security",
+  "hq_country": "CH",
+  "homepage_url": "https://www.acronis.com/en-us/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

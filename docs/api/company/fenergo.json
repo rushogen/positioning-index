@@ -1,0 +1,12 @@
+{
+ "company": {
+  "slug": "fenergo",
+  "name": "Fenergo",
+  "segment": "grc",
+  "hq_country": "IE",
+  "homepage_url": "https://www.fenergo.com/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

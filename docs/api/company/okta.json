@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "okta",
+  "name": "Okta",
+  "segment": "identity",
+  "hq_country": "US",
+  "homepage_url": "https://www.okta.com/",
+  "pricing_url": "https://www.okta.com/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

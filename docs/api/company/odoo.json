@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "odoo",
+  "name": "Odoo",
+  "segment": "erp",
+  "hq_country": "BE",
+  "homepage_url": "https://www.odoo.com/",
+  "pricing_url": "https://www.odoo.com/pricing"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}

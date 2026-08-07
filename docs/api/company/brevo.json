@@ -1,0 +1,13 @@
+{
+ "company": {
+  "slug": "brevo",
+  "name": "Brevo",
+  "segment": "marketing",
+  "hq_country": "FR",
+  "homepage_url": "https://www.brevo.com/",
+  "pricing_url": "https://www.brevo.com/pricing/"
+ },
+ "signals": [],
+ "events": [],
+ "fetches": []
+}
