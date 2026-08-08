@@ -291,6 +291,57 @@
     ]
    },
    {
+    "word": "teams",
+    "n": 9,
+    "companies": [
+     {
+      "slug": "airtable",
+      "name": "Airtable",
+      "text": "All your teams, all their workflows—connected in one workspace"
+     },
+     {
+      "slug": "amplitude",
+      "name": "Amplitude",
+      "text": "A new era for product teams"
+     },
+     {
+      "slug": "asana",
+      "name": "Asana",
+      "text": "The OS for human-agent teams"
+     },
+     {
+      "slug": "atlassian",
+      "name": "Atlassian",
+      "text": "Collaboration for Software, IT & Business Teams"
+     },
+     {
+      "slug": "genesys",
+      "name": "Genesys",
+      "text": "Loyal customers. Efficient teams. That’s CX done right."
+     },
+     {
+      "slug": "hubspot",
+      "name": "HubSpot",
+      "text": "Where go-to-market teams go to grow scale close retain grow"
+     },
+     {
+      "slug": "jetbrains",
+      "name": "JetBrains",
+      "text": "JetBrains: Essential tools for software developers and teams"
+     },
+     {
+      "slug": "linear",
+      "name": "Linear",
+      "text": "The product development system for teams and agents"
+     },
+     {
+      "slug": "notion",
+      "name": "Notion",
+      "text": "Where teams and agents Think together."
+     }
+    ]
+   },
+   {
     "word": "business",
     "n": 8,
     "companies": [
@@ -379,52 +430,6 @@
       "slug": "usercentrics",
       "name": "Usercentrics",
       "text": "Collect consent, govern your data, and put AI to work with confidence"
-     }
-    ]
-   },
-   {
-    "word": "teams",
-    "n": 8,
-    "companies": [
-     {
-      "slug": "amplitude",
-      "name": "Amplitude",
-      "text": "A new era for product teams"
-     },
-     {
-      "slug": "asana",
-      "name": "Asana",
-      "text": "The OS for human-agent teams"
-     },
-     {
-      "slug": "atlassian",
-      "name": "Atlassian",
-      "text": "Collaboration for Software, IT & Business Teams"
-     },
-     {
-      "slug": "genesys",
-      "name": "Genesys",
-      "text": "Loyal customers. Efficient teams. That’s CX done right."
-     },
-     {
-      "slug": "hubspot",
-      "name": "HubSpot",
-      "text": "Where go-to-market teams go to grow scale close retain grow"
-     },
-     {
-      "slug": "jetbrains",
-      "name": "JetBrains",
-      "text": "JetBrains: Essential tools for software developers and teams"
-     },
-     {
-      "slug": "linear",
-      "name": "Linear",
-      "text": "The product development system for teams and agents"
-     },
-     {
-      "slug": "notion",
-      "name": "Notion",
-      "text": "Where teams and agents Think together."
      }
     ]
    },
@@ -552,28 +557,33 @@
     ]
    },
    {
-    "word": "work",
+    "word": "one",
     "n": 7,
     "companies": [
      {
       "slug": "airtable",
       "name": "Airtable",
-      "text": "AI transformed individual work. Airtable transforms teamwork."
+      "text": "All your teams, all their workflows—connected in one workspace"
      },
      {
-      "slug": "m-files",
-      "name": "M-Files",
-      "text": "Put context-first document management to work."
+      "slug": "loom",
+      "name": "Loom",
+      "text": "One video is worth a thousand words"
      },
      {
-      "slug": "productboard",
-      "name": "Productboard",
-      "text": "Where 100x product makers do their best work"
+      "slug": "monday",
+      "name": "monday.com",
+      "text": "People and agents working as one team"
      },
      {
-      "slug": "snowflake",
-      "name": "Snowflake",
-      "text": "Code Work"
+      "slug": "mongodb",
+      "name": "MongoDB",
+      "text": "One data platform. Unlimited AI potential."
+     },
+     {
+      "slug": "odoo",
+      "name": "Odoo",
+      "text": "All your business on one platform."
      },
      {
       "slug": "staffbase",
@@ -581,14 +591,9 @@
       "text": "Finally, one platform to reach every employee. Wherever they work."
      },
      {
-      "slug": "usercentrics",
-      "name": "Usercentrics",
-      "text": "Collect consent, govern your data, and put AI to work with confidence"
-     },
-     {
-      "slug": "workday",
-      "name": "Workday",
-      "text": "Put AI agents to work for you."
+      "slug": "teamleader",
+      "name": "Teamleader",
+      "text": "Just one platform to run your whole business."
      }
     ]
    },
@@ -710,7 +715,7 @@
     }
    ]
   },
-  "distinct_words": 483
+  "distinct_words": 479
  },
  "category_nouns": {
   "groups": [
@@ -1842,14 +1847,12 @@
     "slug": "airtable",
     "name": "Airtable",
     "terms": [
-     "agent",
      "ai"
     ],
     "fields": [
-     "headline",
      "subhead"
     ],
-    "text": "AI transformed individual work. Airtable transforms teamwork."
+    "text": "All your teams, all their workflows—connected in one workspace"
    },
    {
     "slug": "aiven",
@@ -3378,7 +3381,7 @@
    {
     "slug": "deel",
     "name": "Deel",
-    "text": "Hire, manage, pay, & equip anyone, anywhere."
+    "text": "Hire, manage, pay, & equip anyone, anywhere"
    },
    {
     "slug": "deepl",
@@ -3629,7 +3632,7 @@
   "by_field": [
    {
     "field": "headline",
-    "n": 75,
+    "n": 74,
     "companies": [
      {
       "slug": "acronis",
@@ -3640,11 +3643,6 @@
       "slug": "aircall",
       "name": "Aircall",
       "text": "Customer communications, evolved with AI that handles customer interactions, end to end."
-     },
-     {
-      "slug": "airtable",
-      "name": "Airtable",
-      "text": "AI transformed individual work. Airtable transforms teamwork."
      },
      {
       "slug": "anaplan",
@@ -4025,7 +4023,7 @@
      {
       "slug": "airtable",
       "name": "Airtable",
-      "text": "It turns individual gains into team momentum — the apps, workflows, and agents one person builds become systems the whole company runs on."
+      "text": "Build AI-powered workflows that unify data, maximize collaboration, and set your teams up for long-term success. No code required."
      },
      {
       "slug": "amplitude",
@@ -4335,7 +4333,7 @@
      {
       "slug": "salesforce",
       "name": "Salesforce",
-      "text": "Your agents, your team, your data — working together so every customer interaction reflects your business at its best."
+      "text": "Where people, agents, apps, and data all come together on one integrated, trusted platform, working inside the systems that run your business."
      },
      {
       "slug": "scaleway",
@@ -4817,14 +4815,12 @@
       "slug": "airtable",
       "name": "Airtable",
       "terms": [
-       "agent",
        "ai"
       ],
       "fields": [
-       "headline",
        "subhead"
       ],
-      "text": "AI transformed individual work. Airtable transforms teamwork."
+      "text": "All your teams, all their workflows—connected in one workspace"
      },
      {
       "slug": "aiven",
@@ -6128,7 +6124,7 @@
    },
    {
     "term": "agent",
-    "n": 54,
+    "n": 53,
     "companies": [
      {
       "slug": "acronis",
@@ -6143,19 +6139,6 @@
        "category_label"
       ],
       "text": "AI-native cyber platform"
-     },
-     {
-      "slug": "airtable",
-      "name": "Airtable",
-      "terms": [
-       "agent",
-       "ai"
-      ],
-      "fields": [
-       "headline",
-       "subhead"
-      ],
-      "text": "AI transformed individual work. Airtable transforms teamwork."
      },
      {
       "slug": "anaplan",
@@ -7000,7 +6983,7 @@
     "label": "Scale counts",
     "note": "customers, users, records, teams",
     "n": 97,
-    "claims": 181,
+    "claims": 179,
     "companies": [
      {
       "slug": "acronis",
@@ -7015,7 +6998,7 @@
      {
       "slug": "airtable",
       "name": "Airtable",
-      "text": "10,000 hours · 100 companies · 100m records · 50 projects · 500,000 companies"
+      "text": "02 agents · 10,000 hours · 100m records"
      },
      {
       "slug": "aiven",
@@ -7493,8 +7476,8 @@
     "key": "percent",
     "label": "Percentage gains",
     "note": "\"40% faster\", \"cut costs by 30%\"",
-    "n": 83,
-    "claims": 247,
+    "n": 82,
+    "claims": 239,
     "companies": [
      {
       "slug": "acronis",
@@ -7505,11 +7488,6 @@
       "slug": "adyen",
       "name": "Adyen",
       "text": "10% and increased conversion · 10% increased conversion"
-     },
-     {
-      "slug": "airtable",
-      "name": "Airtable",
-      "text": "60% cut creative-brief processing · 60% reduction in creative · 70% faster turnaround time · 70% faster unify global · 90% faster feedback triage"
      },
      {
       "slug": "aiven",
@@ -7809,7 +7787,7 @@
      {
       "slug": "salesforce",
       "name": "Salesforce",
-      "text": "30 % reduction in call · 33 % increase in employee · 34 % increase in employee · 39 % faster delivery of"
+      "text": "15% more marketing pipeline"
      },
      {
       "slug": "scandit",
@@ -7917,8 +7895,8 @@
     "key": "money",
     "label": "Money amounts",
     "note": "\"$2.4M saved\", \"$1B processed\"",
-    "n": 44,
-    "claims": 105,
+    "n": 45,
+    "claims": 106,
     "companies": [
      {
       "slug": "acronis",
@@ -8079,6 +8057,11 @@
       "slug": "sailpoint",
       "name": "SailPoint",
       "text": "$200 on your pass"
+     },
+     {
+      "slug": "salesforce",
+      "name": "Salesforce",
+      "text": "$25 usd"
      },
      {
       "slug": "scaleway",
@@ -8262,7 +8245,7 @@
      {
       "slug": "salesforce",
       "name": "Salesforce",
-      "text": "16 x faster delivery of"
+      "text": "1.8x higher lead conversion"
      },
      {
       "slug": "sinch",
@@ -8305,14 +8288,9 @@
     "key": "rank",
     "label": "Rankings and lists",
     "note": "\"Fortune 500\", \"G2 leader\"",
-    "n": 25,
-    "claims": 27,
+    "n": 24,
+    "claims": 26,
     "companies": [
-     {
-      "slug": "airtable",
-      "name": "Airtable",
-      "text": "fortune 100"
-     },
      {
       "slug": "asana",
       "name": "Asana",
@@ -8515,7 +8493,7 @@
     ]
    }
   ],
-  "total_claims": 618,
+  "total_claims": 608,
   "coverage": {
    "tracked": 200,
    "readable": 145,
@@ -20315,17 +20293,13 @@
       "short": "Work & product",
       "n": 27,
       "readable": 21,
-      "yes": 16,
-      "no": 5,
+      "yes": 15,
+      "no": 6,
       "unreadable": 6,
-      "share": 76.2,
+      "share": 71.4,
       "suppressed": false,
       "companies": {
        "yes": [
-        {
-         "slug": "airtable",
-         "name": "Airtable"
-        },
         {
          "slug": "calendly",
          "name": "Calendly"
@@ -20388,6 +20362,10 @@
         }
        ],
        "no": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
         {
          "slug": "asana",
          "name": "Asana"
@@ -21273,17 +21251,13 @@
       "short": "Work & product",
       "n": 27,
       "readable": 21,
-      "yes": 16,
-      "no": 5,
+      "yes": 15,
+      "no": 6,
       "unreadable": 6,
-      "share": 76.2,
+      "share": 71.4,
       "suppressed": false,
       "companies": {
        "yes": [
-        {
-         "slug": "airtable",
-         "name": "Airtable"
-        },
         {
          "slug": "calendly",
          "name": "Calendly"
@@ -21346,6 +21320,10 @@
         }
        ],
        "no": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
         {
          "slug": "asana",
          "name": "Asana"
@@ -22365,8 +22343,8 @@
     "drawn": true,
     "withheld": null,
     "overall": {
-     "yes": 83,
-     "no": 62,
+     "yes": 82,
+     "no": 63,
      "unreadable": 55,
      "readable": 145,
      "tracked": 200
@@ -22740,10 +22718,10 @@
       "short": "Go-to-market",
       "n": 24,
       "readable": 21,
-      "yes": 4,
-      "no": 17,
+      "yes": 5,
+      "no": 16,
       "unreadable": 3,
-      "share": 19,
+      "share": 23.8,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -22754,6 +22732,10 @@
         {
          "slug": "clay",
          "name": "Clay"
+        },
+        {
+         "slug": "salesforce",
+         "name": "Salesforce"
         },
         {
          "slug": "typeform",
@@ -22812,10 +22794,6 @@
         {
          "slug": "pipedrive",
          "name": "Pipedrive"
-        },
-        {
-         "slug": "salesforce",
-         "name": "Salesforce"
         },
         {
          "slug": "showpad",
@@ -24178,10 +24156,10 @@
       "short": "Go-to-market",
       "n": 24,
       "readable": 21,
-      "yes": 4,
-      "no": 17,
+      "yes": 5,
+      "no": 16,
       "unreadable": 3,
-      "share": 19,
+      "share": 23.8,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -24192,6 +24170,10 @@
         {
          "slug": "clay",
          "name": "Clay"
+        },
+        {
+         "slug": "salesforce",
+         "name": "Salesforce"
         },
         {
          "slug": "typeform",
@@ -24250,10 +24232,6 @@
         {
          "slug": "pipedrive",
          "name": "Pipedrive"
-        },
-        {
-         "slug": "salesforce",
-         "name": "Salesforce"
         },
         {
          "slug": "showpad",
@@ -24650,8 +24628,8 @@
     "drawn": true,
     "withheld": null,
     "overall": {
-     "yes": 44,
-     "no": 101,
+     "yes": 45,
+     "no": 100,
      "unreadable": 55,
      "readable": 145,
      "tracked": 200
@@ -27175,17 +27153,13 @@
       "short": "Work & product",
       "n": 27,
       "readable": 21,
-      "yes": 9,
-      "no": 12,
+      "yes": 8,
+      "no": 13,
       "unreadable": 6,
-      "share": 42.9,
+      "share": 38.1,
       "suppressed": false,
       "companies": {
        "yes": [
-        {
-         "slug": "airtable",
-         "name": "Airtable"
-        },
         {
          "slug": "asana",
          "name": "Asana"
@@ -27220,6 +27194,10 @@
         }
        ],
        "no": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
         {
          "slug": "github",
          "name": "GitHub"
@@ -28053,17 +28031,13 @@
       "short": "Work & product",
       "n": 27,
       "readable": 21,
-      "yes": 9,
-      "no": 12,
+      "yes": 8,
+      "no": 13,
       "unreadable": 6,
-      "share": 42.9,
+      "share": 38.1,
       "suppressed": false,
       "companies": {
        "yes": [
-        {
-         "slug": "airtable",
-         "name": "Airtable"
-        },
         {
          "slug": "asana",
          "name": "Asana"
@@ -28098,6 +28072,10 @@
         }
        ],
        "no": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
         {
          "slug": "github",
          "name": "GitHub"
@@ -29050,17 +29028,13 @@
      "short": "Work & product",
      "n": 27,
      "readable": 21,
-     "yes": 9,
-     "no": 12,
+     "yes": 8,
+     "no": 13,
      "unreadable": 6,
-     "share": 42.9,
+     "share": 38.1,
      "suppressed": false,
      "companies": {
       "yes": [
-       {
-        "slug": "airtable",
-        "name": "Airtable"
-       },
        {
         "slug": "asana",
         "name": "Asana"
@@ -29095,6 +29069,10 @@
        }
       ],
       "no": [
+       {
+        "slug": "airtable",
+        "name": "Airtable"
+       },
        {
         "slug": "github",
         "name": "GitHub"
@@ -29288,12 +29266,12 @@
      }
     },
     "spread": 10,
-    "lead_over_runner_up": 1,
+    "lead_over_runner_up": 2,
     "drawn": true,
     "withheld": null,
     "overall": {
-     "yes": 25,
-     "no": 120,
+     "yes": 24,
+     "no": 121,
      "unreadable": 55,
      "readable": 145,
      "tracked": 200
@@ -33465,5 +33443,5 @@
    "missing": []
   }
  },
- "generated_at": "2026-08-08T07:33:50Z"
+ "generated_at": "2026-08-08T07:52:08Z"
 }

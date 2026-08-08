@@ -13,6 +13,30 @@
   {
    "kind": "pricing",
    "url": "https://www.personio.com/pricing/",
+   "fetched_at": "2026-08-08T07:52:07Z",
+   "http_status": 429,
+   "status": "blocked",
+   "reason": "HTTP 429: the origin refuses identified automated clients",
+   "bytes": 0,
+   "duration_ms": 46,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.personio.com/",
+   "fetched_at": "2026-08-08T07:51:06Z",
+   "http_status": 429,
+   "status": "blocked",
+   "reason": "HTTP 429: the origin refuses identified automated clients",
+   "bytes": 0,
+   "duration_ms": 176,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.personio.com/pricing/",
    "fetched_at": "2026-08-08T07:33:48Z",
    "http_status": 429,
    "status": "blocked",

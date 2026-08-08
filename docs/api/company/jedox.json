@@ -9,7 +9,7 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-08T07:31:58Z",
+   "last_observed_at": "2026-08-08T07:50:42Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -27,7 +27,7 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-08T07:31:58Z",
+   "last_observed_at": "2026-08-08T07:50:42Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -45,7 +45,7 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-08T07:31:58Z",
+   "last_observed_at": "2026-08-08T07:50:42Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -63,7 +63,7 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-08T07:31:58Z",
+   "last_observed_at": "2026-08-08T07:50:42Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -81,7 +81,7 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-08T07:31:58Z",
+   "last_observed_at": "2026-08-08T07:50:42Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -99,7 +99,7 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-08T07:31:58Z",
+   "last_observed_at": "2026-08-08T07:50:42Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -117,7 +117,7 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-08T07:31:58Z",
+   "last_observed_at": "2026-08-08T07:50:42Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -135,8 +135,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-08T07:31:58Z",
-   "last_good_at": "2026-08-08T07:31:58Z",
+   "last_observed_at": "2026-08-08T07:50:42Z",
+   "last_good_at": "2026-08-08T07:50:42Z",
    "last_good_value": 23571,
    "last_good_json": null,
    "last_good_hash": "996abe65",
@@ -153,8 +153,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-08T07:31:58Z",
-   "last_good_at": "2026-08-08T07:31:58Z",
+   "last_observed_at": "2026-08-08T07:50:42Z",
+   "last_good_at": "2026-08-08T07:50:42Z",
    "last_good_value": "performance management software",
    "last_good_json": null,
    "last_good_hash": "abc00849",
@@ -171,7 +171,7 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-08T07:31:58Z",
+   "last_observed_at": "2026-08-08T07:50:42Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -189,8 +189,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-08T07:31:58Z",
-   "last_good_at": "2026-08-08T07:31:58Z",
+   "last_observed_at": "2026-08-08T07:50:42Z",
+   "last_good_at": "2026-08-08T07:50:42Z",
    "last_good_value": "Adaptable AI-driven FP&A and performance management software",
    "last_good_json": null,
    "last_good_hash": "c7da3a4c",
@@ -207,8 +207,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-08T07:31:58Z",
-   "last_good_at": "2026-08-08T07:31:58Z",
+   "last_observed_at": "2026-08-08T07:50:42Z",
+   "last_good_at": "2026-08-08T07:50:42Z",
    "last_good_value": "Excel-like FP&A, no-code modeling and reporting with JedoxAI and best practice solutions drive adoption and a self-sufficient Finance team.",
    "last_good_json": null,
    "last_good_hash": "7725d36a",
@@ -225,8 +225,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-08T07:31:58Z",
-   "last_good_at": "2026-08-08T07:31:58Z",
+   "last_observed_at": "2026-08-08T07:50:42Z",
+   "last_good_at": "2026-08-08T07:50:42Z",
    "last_good_value": "Adaptable AI-driven FP&A and performance management software",
    "last_good_json": null,
    "last_good_hash": "c7da3a4c",
@@ -243,7 +243,7 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-08T07:31:58Z",
+   "last_observed_at": "2026-08-08T07:50:42Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -261,8 +261,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-08T07:31:58Z",
-   "last_good_at": "2026-08-08T07:31:58Z",
+   "last_observed_at": "2026-08-08T07:50:42Z",
+   "last_good_at": "2026-08-08T07:50:42Z",
    "last_good_value": "Excel-like FP&A, no-code modeling and reporting with JedoxAI and best practice solutions drive adoption and a self-sufficient Finance team.",
    "last_good_json": null,
    "last_good_hash": "7725d36a",
@@ -280,6 +280,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.jedox.com/en/",
+   "fetched_at": "2026-08-08T07:50:42Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.1.0 -> 1.2.0; re-baselining",
+   "bytes": 1499984,
+   "duration_ms": 635,
+   "signals_found": 6,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.jedox.com/en/",

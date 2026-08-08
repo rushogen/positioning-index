@@ -17,7 +17,7 @@
    "magnitude": 1,
    "oscillating": 0,
    "summary": "Form fields changed from \"1\" to \"0\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:32:57Z",
@@ -36,7 +36,7 @@
    "magnitude": 0.75,
    "oscillating": 0,
    "summary": "Word count changed from \"1102\" to \"1077\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:31:43Z",
@@ -55,7 +55,7 @@
    "magnitude": 0.667,
    "oscillating": 0,
    "summary": "Elements present: added logo_wall, proof, media; removed pricing_block",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:31:43Z",
@@ -74,7 +74,7 @@
    "magnitude": 0.5,
    "oscillating": 0,
    "summary": "Section count changed from \"16\" to \"15\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:31:43Z",
@@ -93,7 +93,7 @@
    "magnitude": 0.246,
    "oscillating": 0,
    "summary": "Section sequence changed from \"hero > integrations > other > pricing > testimonial > other > testimonial > other > tes…\" to \"hero > testimonial > media > other > logos > proof > other > testimonial > other > inte…\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:31:43Z",
@@ -112,7 +112,7 @@
    "magnitude": 0.75,
    "oscillating": 0,
    "summary": "Word count changed from \"1289\" to \"1374\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:31:43Z",
@@ -131,7 +131,7 @@
    "magnitude": 0.283,
    "oscillating": 0,
    "summary": "Meta title changed from \"Salesforce: The #1 Agentic AI CRM | Salesforce\" to \"Salesforce: The #1 Agentic AI CRM\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:31:43Z",
@@ -150,7 +150,7 @@
    "magnitude": 1,
    "oscillating": 0,
    "summary": "Proof points: added 16 x faster delivery of, 30 % reduction in call, 33 % increase in employee, 34 % increase in employee +1 more; removed $25 usd, 1.8x higher lead conversion, 15% more marketing pipeline",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:31:43Z",
@@ -169,7 +169,7 @@
    "magnitude": 0.683,
    "oscillating": 0,
    "summary": "Hero subhead changed from \"Where people, agents, apps, and data all come together on one integrated, trusted platf…\" to \"Your agents, your team, your data — working together so every customer interaction refl…\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:28:45Z",
