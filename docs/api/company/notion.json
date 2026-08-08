@@ -374,6 +374,30 @@
   {
    "kind": "home",
    "url": "https://www.notion.com/",
+   "fetched_at": "2026-08-08T07:33:18Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 249574,
+   "duration_ms": 346,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.notion.com/pricing",
+   "fetched_at": "2026-08-08T07:32:18Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 429354,
+   "duration_ms": 128,
+   "signals_found": 4,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://www.notion.com/",
    "fetched_at": "2026-08-08T07:28:35Z",
    "http_status": 200,
    "status": "ok",

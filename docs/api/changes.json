@@ -1,6 +1,177 @@
 {
  "changes": [
   {
+   "detected_at": "2026-08-08T07:32:57Z",
+   "slug": "asana",
+   "name": "Asana",
+   "segment": "work-mgmt",
+   "kind": "home",
+   "origin": "github-actions:US",
+   "signal": "anatomy_form_fields",
+   "change_type": "modified",
+   "before_value": "1",
+   "after_value": "0",
+   "before_json": null,
+   "after_json": null,
+   "previous_seen_at": "2026-08-08T07:27:30Z",
+   "magnitude": 1,
+   "oscillating": 0,
+   "summary": "Form fields changed from \"1\" to \"0\"",
+   "confirmed": 0
+  },
+  {
+   "detected_at": "2026-08-08T07:32:57Z",
+   "slug": "asana",
+   "name": "Asana",
+   "segment": "work-mgmt",
+   "kind": "home",
+   "origin": "github-actions:US",
+   "signal": "anatomy_word_count",
+   "change_type": "modified",
+   "before_value": 1102,
+   "after_value": 1077,
+   "before_json": null,
+   "after_json": null,
+   "previous_seen_at": "2026-08-08T07:27:30Z",
+   "magnitude": 0.75,
+   "oscillating": 0,
+   "summary": "Word count changed from \"1102\" to \"1077\"",
+   "confirmed": 0
+  },
+  {
+   "detected_at": "2026-08-08T07:31:43Z",
+   "slug": "salesforce",
+   "name": "Salesforce",
+   "segment": "gtm",
+   "kind": "home",
+   "origin": "github-actions:US",
+   "signal": "anatomy_elements",
+   "change_type": "modified",
+   "before_value": "testimonial, pricing_block, integrations",
+   "after_value": "logo_wall, proof, testimonial, integrations, media",
+   "before_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":true,\"integrations\":true,\"media\":false}}",
+   "after_json": "{\"present\":{\"logo_wall\":true,\"proof\":true,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":true,\"media\":true}}",
+   "previous_seen_at": "2026-08-08T07:28:12Z",
+   "magnitude": 0.667,
+   "oscillating": 0,
+   "summary": "Elements present: added logo_wall, proof, media; removed pricing_block",
+   "confirmed": 0
+  },
+  {
+   "detected_at": "2026-08-08T07:31:43Z",
+   "slug": "salesforce",
+   "name": "Salesforce",
+   "segment": "gtm",
+   "kind": "home",
+   "origin": "github-actions:US",
+   "signal": "anatomy_section_count",
+   "change_type": "modified",
+   "before_value": "16",
+   "after_value": "15",
+   "before_json": null,
+   "after_json": null,
+   "previous_seen_at": "2026-08-08T07:28:12Z",
+   "magnitude": 0.5,
+   "oscillating": 0,
+   "summary": "Section count changed from \"16\" to \"15\"",
+   "confirmed": 0
+  },
+  {
+   "detected_at": "2026-08-08T07:31:43Z",
+   "slug": "salesforce",
+   "name": "Salesforce",
+   "segment": "gtm",
+   "kind": "home",
+   "origin": "github-actions:US",
+   "signal": "anatomy_sections",
+   "change_type": "modified",
+   "before_value": "hero > integrations > other > pricing > testimonial > other > testimonial > other > testimonial > other > integrations > features > testimonial > features > testimonial > features",
+   "after_value": "hero > testimonial > media > other > logos > proof > other > testimonial > other > integrations > features > testimonial > features > testimonial > features",
+   "before_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":43,\"merged\":1},{\"position\":2,\"type\":\"integrations\",\"heading\":\"Welcome to the Agentic Enterprise\",\"words\":102,\"merged\":1},{\"position\":3,\"type\":\"other\",\"heading\":\"See why customers trust us to help them grow\",\"words\":9,\"merged\":1},{\"position\":4,\"type\":\"pricing\",\"heading\":\"Built-in AI for every part of your business\",\"words\":61,\"merged\":1},{\"position\":5,\"type\":\"testimonial\",\"heading\":\"4M+ conversations handled by Agentforce and counting\",\"words\":65,\"merged\":1},{\"position\":6,\"type\":\"other\",\"heading\":\"Sinan Deriş\",\"words\":12,\"merged\":3},{\"position\":7,\"type\":\"testimonial\",\"heading\":\"Joey Graziano\",\"words\":15,\"merged\":2},{\"position\":8,\"type\":\"other\",\"heading\":\"Madalina Lazar Vopel\",\"words\":9,\"merged\":1},{\"position\":9,\"type\":\"testimonial\",\"heading\":\"Velia Carboni\",\"words\":8,\"merged\":1},{\"position\":10,\"type\":\"other\",\"heading\":\"Salesforce is the platform for the Agentic Enterprise\",\"words\":46,\"merged\":1},{\"position\":11,\"type\":\"integrations\",\"heading\":\"Launch faster with 16+ Agentforce solutions, built for your industry\",\"words\":176,\"merged\":1},{\"position\":12,\"type\":\"features\",\"heading\":\"See why analysts agree Salesforce should be your Agentic AI partner\",\"words\":59,\"merged\":2},{\"position\":13,\"type\":\"testimonial\",\"heading\":\"We believe that business is the greatest platform for change\",\"words\":75,\"merged\":1},{\"position\":14,\"type\":\"features\",\"heading\":\"Find the insights, experts, and tools to fuel your AI success\",\"words\":44,\"merged\":1},{\"position\":15,\"type\":\"testimonial\",\"heading\":\"There’s nothing to install, no credit card required, free for 30 days\",\"words\":15,\"merged\":1},{\"position\":16,\"type\":\"features\",\"heading\":\"Frequently Asked Questions\",\"words\":440,\"merged\":1}]}",
+   "after_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":33,\"merged\":1},{\"position\":2,\"type\":\"testimonial\",\"heading\":\"See what’s possible when your agents and team work from the same trusted source of truth\",\"words\":20,\"merged\":1},{\"position\":3,\"type\":\"media\",\"heading\":\"People and agents, working as one.\",\"words\":10,\"merged\":4},{\"position\":4,\"type\":\"other\",\"heading\":\"Every source, unified in real time.\",\"words\":9,\"merged\":1},{\"position\":5,\"type\":\"logos\",\"heading\":\"Customers of every size, business, and industry succeed with Salesforce\",\"words\":10,\"merged\":1},{\"position\":6,\"type\":\"proof\",\"heading\":\"Every business can be an Agentic Enterprise\",\"words\":133,\"merged\":1},{\"position\":7,\"type\":\"other\",\"heading\":\"A single platform for the Agentic Enterprise\",\"words\":48,\"merged\":3},{\"position\":8,\"type\":\"testimonial\",\"heading\":\"Deploy trusted agents that act with purpose\",\"words\":45,\"merged\":1},{\"position\":9,\"type\":\"other\",\"heading\":\"Turn data into decisions for every human and agent\",\"words\":46,\"merged\":2},{\"position\":10,\"type\":\"integrations\",\"heading\":\"Launch faster with 16+ Agentforce solutions, built for your industry\",\"words\":176,\"merged\":1},{\"position\":11,\"type\":\"features\",\"heading\":\"See why analysts agree Salesforce should be your Agentic AI partner\",\"words\":59,\"merged\":2},{\"position\":12,\"type\":\"testimonial\",\"heading\":\"We believe that business is the greatest platform for change\",\"words\":75,\"merged\":1},{\"position\":13,\"type\":\"features\",\"heading\":\"Find the insights, experts, and tools to fuel your AI success\",\"words\":44,\"merged\":1},{\"position\":14,\"type\":\"testimonial\",\"heading\":\"There’s nothing to install, no credit card required, free for 30 days\",\"words\":15,\"merged\":1},{\"position\":15,\"type\":\"features\",\"heading\":\"Frequently Asked Questions\",\"words\":440,\"merged\":1}]}",
+   "previous_seen_at": "2026-08-08T07:28:12Z",
+   "magnitude": 0.246,
+   "oscillating": 0,
+   "summary": "Section sequence changed from \"hero > integrations > other > pricing > testimonial > other > testimonial > other > tes…\" to \"hero > testimonial > media > other > logos > proof > other > testimonial > other > inte…\"",
+   "confirmed": 0
+  },
+  {
+   "detected_at": "2026-08-08T07:31:43Z",
+   "slug": "salesforce",
+   "name": "Salesforce",
+   "segment": "gtm",
+   "kind": "home",
+   "origin": "github-actions:US",
+   "signal": "anatomy_word_count",
+   "change_type": "modified",
+   "before_value": 1289,
+   "after_value": 1374,
+   "before_json": null,
+   "after_json": null,
+   "previous_seen_at": "2026-08-08T07:28:12Z",
+   "magnitude": 0.75,
+   "oscillating": 0,
+   "summary": "Word count changed from \"1289\" to \"1374\"",
+   "confirmed": 0
+  },
+  {
+   "detected_at": "2026-08-08T07:31:43Z",
+   "slug": "salesforce",
+   "name": "Salesforce",
+   "segment": "gtm",
+   "kind": "home",
+   "origin": "github-actions:US",
+   "signal": "meta_title",
+   "change_type": "modified",
+   "before_value": "Salesforce: The #1 Agentic AI CRM | Salesforce",
+   "after_value": "Salesforce: The #1 Agentic AI CRM",
+   "before_json": null,
+   "after_json": null,
+   "previous_seen_at": "2026-08-08T07:28:12Z",
+   "magnitude": 0.283,
+   "oscillating": 0,
+   "summary": "Meta title changed from \"Salesforce: The #1 Agentic AI CRM | Salesforce\" to \"Salesforce: The #1 Agentic AI CRM\"",
+   "confirmed": 0
+  },
+  {
+   "detected_at": "2026-08-08T07:31:43Z",
+   "slug": "salesforce",
+   "name": "Salesforce",
+   "segment": "gtm",
+   "kind": "home",
+   "origin": "github-actions:US",
+   "signal": "proof_points",
+   "change_type": "modified",
+   "before_value": "$25 usd | 1.8x higher lead conversion | 15% more marketing pipeline",
+   "after_value": "16 x faster delivery of | 30 % reduction in call | 33 % increase in employee | 34 % increase in employee | 39 % faster delivery of",
+   "before_json": "{\"items\":[{\"claim\":\"$25 usd\",\"kind\":\"money\"},{\"claim\":\"1.8x higher lead conversion\",\"kind\":\"multiplier\"},{\"claim\":\"15% more marketing pipeline\",\"kind\":\"percent\"}],\"count\":3}",
+   "after_json": "{\"items\":[{\"claim\":\"16 x faster delivery of\",\"kind\":\"multiplier\"},{\"claim\":\"30 % reduction in call\",\"kind\":\"percent\"},{\"claim\":\"33 % increase in employee\",\"kind\":\"percent\"},{\"claim\":\"34 % increase in employee\",\"kind\":\"percent\"},{\"claim\":\"39 % faster delivery of\",\"kind\":\"percent\"}],\"count\":5}",
+   "previous_seen_at": "2026-08-08T07:28:12Z",
+   "magnitude": 1,
+   "oscillating": 0,
+   "summary": "Proof points: added 16 x faster delivery of, 30 % reduction in call, 33 % increase in employee, 34 % increase in employee +1 more; removed $25 usd, 1.8x higher lead conversion, 15% more marketing pipeline",
+   "confirmed": 0
+  },
+  {
+   "detected_at": "2026-08-08T07:31:43Z",
+   "slug": "salesforce",
+   "name": "Salesforce",
+   "segment": "gtm",
+   "kind": "home",
+   "origin": "github-actions:US",
+   "signal": "subhead",
+   "change_type": "modified",
+   "before_value": "Where people, agents, apps, and data all come together on one integrated, trusted platform, working inside the systems that run your business.",
+   "after_value": "Your agents, your team, your data — working together so every customer interaction reflects your business at its best.",
+   "before_json": null,
+   "after_json": null,
+   "previous_seen_at": "2026-08-08T07:28:12Z",
+   "magnitude": 0.683,
+   "oscillating": 0,
+   "summary": "Hero subhead changed from \"Where people, agents, apps, and data all come together on one integrated, trusted platf…\" to \"Your agents, your team, your data — working together so every customer interaction refl…\"",
+   "confirmed": 0
+  },
+  {
    "detected_at": "2026-08-08T07:28:45Z",
    "slug": "zapier",
    "name": "Zapier",
@@ -17,7 +188,7 @@
    "magnitude": 1,
    "oscillating": 0,
    "summary": "Calls to action changed from \"6\" to \"10\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:28:45Z",
@@ -36,7 +207,7 @@
    "magnitude": 0.25,
    "oscillating": 0,
    "summary": "Elements present: removed faq",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:28:45Z",
@@ -55,7 +226,7 @@
    "magnitude": 1,
    "oscillating": 0,
    "summary": "Section count changed from \"9\" to \"14\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:28:45Z",
@@ -74,7 +245,7 @@
    "magnitude": 0.466,
    "oscillating": 0,
    "summary": "Section sequence changed from \"hero > integrations > testimonial > other > cta > testimonial > logos > features > faq\" to \"hero > logos > testimonial > other > integrations > testimonial > other > testimonial >…\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:28:45Z",
@@ -93,7 +264,7 @@
    "magnitude": 0.5,
    "oscillating": 0,
    "summary": "Word count changed from \"1105\" to \"2165\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:28:45Z",
@@ -112,7 +283,7 @@
    "magnitude": 0.5,
    "oscillating": 1,
    "summary": "Customer logos: added Dropbox, Person giving a presentation, Shopify; removed Allstate, Experian, Google, HP",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:28:45Z",
@@ -131,7 +302,7 @@
    "magnitude": 0.8,
    "oscillating": 1,
    "summary": "Hero headline changed from \"The automation layer for agentic AI\" to \"Your tools. Your rules. Any AI.\" (a value this page has held recently -- likely an A/B test rather than a repositioning)",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:28:45Z",
@@ -150,7 +321,7 @@
    "magnitude": 0.833,
    "oscillating": 1,
    "summary": "Proof points: added $1 million increase in potential, $1m recovered pipeline using, $40k+ headcount savings per, 42 hours +4 more; removed 100 hours, 20 hours",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:28:45Z",
@@ -169,7 +340,7 @@
    "magnitude": 0.725,
    "oscillating": 1,
    "summary": "Hero subhead changed from \"One MCP connection. 9,000+ apps. Set your policies and work across any model, surface, …\" to \"Zapier gives teams one place to set guardrails, manage model access, and see everything…\" (a value this page has held recently -- likely an A/B test rather than a repositioning)",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:28:12Z",
@@ -188,7 +359,7 @@
    "magnitude": 0.667,
    "oscillating": 0,
    "summary": "Elements present: added pricing_block; removed logo_wall, proof, media",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:28:12Z",
@@ -207,7 +378,7 @@
    "magnitude": 0.5,
    "oscillating": 0,
    "summary": "Section count changed from \"15\" to \"16\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:28:12Z",
@@ -226,7 +397,7 @@
    "magnitude": 0.246,
    "oscillating": 0,
    "summary": "Section sequence changed from \"hero > testimonial > media > other > logos > proof > other > testimonial > other > inte…\" to \"hero > integrations > other > pricing > testimonial > other > testimonial > other > tes…\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:28:12Z",
@@ -245,7 +416,7 @@
    "magnitude": 0.75,
    "oscillating": 0,
    "summary": "Word count changed from \"1374\" to \"1289\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:28:12Z",
@@ -264,7 +435,7 @@
    "magnitude": 0.283,
    "oscillating": 1,
    "summary": "Meta title changed from \"Salesforce: The #1 Agentic AI CRM\" to \"Salesforce: The #1 Agentic AI CRM | Salesforce\" (a value this page has held recently -- likely an A/B test rather than a repositioning)",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:28:12Z",
@@ -283,7 +454,7 @@
    "magnitude": 1,
    "oscillating": 1,
    "summary": "Proof points: added $25 usd, 1.8x higher lead conversion, 15% more marketing pipeline; removed 16 x faster delivery of, 30 % reduction in call, 33 % increase in employee, 34 % increase in employee +1 more",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:28:12Z",
@@ -302,7 +473,7 @@
    "magnitude": 0.683,
    "oscillating": 1,
    "summary": "Hero subhead changed from \"Your agents, your team, your data — working together so every customer interaction refl…\" to \"Where people, agents, apps, and data all come together on one integrated, trusted platf…\" (a value this page has held recently -- likely an A/B test rather than a repositioning)",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:27:30Z",
@@ -321,7 +492,7 @@
    "magnitude": 1,
    "oscillating": 0,
    "summary": "Form fields changed from \"0\" to \"1\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:27:30Z",
@@ -340,7 +511,7 @@
    "magnitude": 0.75,
    "oscillating": 0,
    "summary": "Word count changed from \"1077\" to \"1102\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:27:27Z",
@@ -359,7 +530,7 @@
    "magnitude": 0.333,
    "oscillating": 0,
    "summary": "Word count changed from \"906\" to \"907\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:27:27Z",
@@ -378,7 +549,7 @@
    "magnitude": 0.5,
    "oscillating": 0,
    "summary": "Proof points: added 2,300 stores",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:26:54Z",
@@ -397,7 +568,7 @@
    "magnitude": 0.049,
    "oscillating": 1,
    "summary": "Customer logos: added Executives in board room; removed Security Platforms",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-07T23:18:47Z",

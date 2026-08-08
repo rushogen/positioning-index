@@ -283,6 +283,18 @@
   {
    "kind": "home",
    "url": "https://www.showpad.com/",
+   "fetched_at": "2026-08-08T07:31:40Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 472464,
+   "duration_ms": 284,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
+  {
+   "kind": "home",
+   "url": "https://www.showpad.com/",
    "fetched_at": "2026-08-08T07:28:05Z",
    "http_status": 200,
    "status": "ok",

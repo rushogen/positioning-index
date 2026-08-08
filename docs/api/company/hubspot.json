@@ -244,7 +244,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-07T15:53:22Z",
+   "last_observed_at": "2026-08-08T07:32:04Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -260,7 +260,7 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-07T15:53:22Z",
+   "last_observed_at": "2026-08-08T07:32:04Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -276,8 +276,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-07T15:53:22Z",
-   "last_good_at": "2026-08-07T15:53:22Z",
+   "last_observed_at": "2026-08-08T07:32:04Z",
+   "last_good_at": "2026-08-08T07:32:04Z",
    "last_good_value": "Marketing Software Pricing | HubSpot",
    "last_good_json": null,
    "last_good_hash": "2516e9c5",
@@ -288,11 +288,13 @@
    "total_changes": 0,
    "recent_hashes": "[\"2516e9c5\"]",
    "currency_shift_runs": 0,
-   "currency_shift_key": null
+   "currency_shift_key": null,
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-07T15:53:22Z",
+   "last_observed_at": "2026-08-08T07:32:04Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -308,7 +310,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-07T15:53:22Z",
+   "last_observed_at": "2026-08-08T07:32:04Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -361,6 +363,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.hubspot.com/",
+   "fetched_at": "2026-08-08T07:33:05Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 622965,
+   "duration_ms": 163,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.hubspot.com/pricing/marketing",
+   "fetched_at": "2026-08-08T07:32:04Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.0.0 -> 1.1.0; re-baselining",
+   "bytes": 75216,
+   "duration_ms": 117,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
   {
    "kind": "home",
    "url": "https://www.hubspot.com/",

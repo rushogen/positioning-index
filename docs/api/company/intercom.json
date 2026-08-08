@@ -372,6 +372,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "pricing",
+   "url": "https://www.intercom.com/pricing",
+   "fetched_at": "2026-08-08T07:32:52Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 1236061,
+   "duration_ms": 467,
+   "signals_found": 4,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://www.intercom.com/",
+   "fetched_at": "2026-08-08T07:31:28Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 1499922,
+   "duration_ms": 399,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
+  {
    "kind": "home",
    "url": "https://www.intercom.com/",
    "fetched_at": "2026-08-08T07:28:34Z",

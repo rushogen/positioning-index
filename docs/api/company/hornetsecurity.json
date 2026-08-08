@@ -283,6 +283,18 @@
   {
    "kind": "home",
    "url": "https://www.hornetsecurity.com/en/",
+   "fetched_at": "2026-08-08T07:31:25Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 204938,
+   "duration_ms": 253,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
+  {
+   "kind": "home",
+   "url": "https://www.hornetsecurity.com/en/",
    "fetched_at": "2026-08-08T07:27:42Z",
    "http_status": 200,
    "status": "ok",

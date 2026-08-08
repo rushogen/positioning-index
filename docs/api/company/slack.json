@@ -372,6 +372,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "pricing",
+   "url": "https://slack.com/pricing",
+   "fetched_at": "2026-08-08T07:33:12Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 721990,
+   "duration_ms": 1088,
+   "signals_found": 4,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://slack.com/",
+   "fetched_at": "2026-08-08T07:32:12Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 257522,
+   "duration_ms": 201,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
+  {
    "kind": "home",
    "url": "https://slack.com/",
    "fetched_at": "2026-08-08T07:28:30Z",

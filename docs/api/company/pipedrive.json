@@ -284,6 +284,30 @@
   {
    "kind": "pricing",
    "url": "https://www.pipedrive.com/en/pricing",
+   "fetched_at": "2026-08-08T07:33:03Z",
+   "http_status": 403,
+   "status": "blocked",
+   "reason": "HTTP 403: the origin refuses identified automated clients",
+   "bytes": 0,
+   "duration_ms": 29,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.pipedrive.com/",
+   "fetched_at": "2026-08-08T07:31:57Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 406220,
+   "duration_ms": 143,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.pipedrive.com/en/pricing",
    "fetched_at": "2026-08-08T07:29:04Z",
    "http_status": 403,
    "status": "blocked",

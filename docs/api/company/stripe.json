@@ -372,6 +372,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "home",
+   "url": "https://stripe.com/",
+   "fetched_at": "2026-08-08T07:33:16Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 645063,
+   "duration_ms": 59,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
+  {
+   "kind": "pricing",
+   "url": "https://stripe.com/pricing",
+   "fetched_at": "2026-08-08T07:32:15Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 967871,
+   "duration_ms": 495,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
+  {
    "kind": "pricing",
    "url": "https://stripe.com/pricing",
    "fetched_at": "2026-08-08T07:29:06Z",

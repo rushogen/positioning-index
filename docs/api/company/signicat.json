@@ -374,6 +374,30 @@
   {
    "kind": "pricing",
    "url": "https://www.signicat.com/pricing",
+   "fetched_at": "2026-08-08T07:32:51Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 136331,
+   "duration_ms": 346,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://www.signicat.com/",
+   "fetched_at": "2026-08-08T07:31:26Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 226271,
+   "duration_ms": 883,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.signicat.com/pricing",
    "fetched_at": "2026-08-08T07:28:26Z",
    "http_status": 200,
    "status": "ok",

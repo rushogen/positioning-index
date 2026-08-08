@@ -283,6 +283,18 @@
   {
    "kind": "home",
    "url": "https://voyado.com/",
+   "fetched_at": "2026-08-08T07:32:21Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 137722,
+   "duration_ms": 1178,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
+  {
+   "kind": "home",
+   "url": "https://voyado.com/",
    "fetched_at": "2026-08-08T07:27:28Z",
    "http_status": 200,
    "status": "ok",

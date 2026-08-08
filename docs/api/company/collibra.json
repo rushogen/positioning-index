@@ -283,6 +283,18 @@
   {
    "kind": "home",
    "url": "https://www.collibra.com/",
+   "fetched_at": "2026-08-08T07:31:46Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 442376,
+   "duration_ms": 129,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
+  {
+   "kind": "home",
+   "url": "https://www.collibra.com/",
    "fetched_at": "2026-08-08T07:27:37Z",
    "http_status": 200,
    "status": "ok",

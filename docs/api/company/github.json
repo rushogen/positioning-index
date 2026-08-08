@@ -374,6 +374,30 @@
   {
    "kind": "home",
    "url": "https://github.com/",
+   "fetched_at": "2026-08-08T07:32:54Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 572691,
+   "duration_ms": 33,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
+  {
+   "kind": "pricing",
+   "url": "https://github.com/pricing",
+   "fetched_at": "2026-08-08T07:31:34Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 701671,
+   "duration_ms": 48,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://github.com/",
    "fetched_at": "2026-08-08T07:28:43Z",
    "http_status": 200,
    "status": "ok",

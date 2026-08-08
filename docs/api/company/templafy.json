@@ -283,6 +283,18 @@
   {
    "kind": "home",
    "url": "https://www.templafy.com/",
+   "fetched_at": "2026-08-08T07:32:06Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 271323,
+   "duration_ms": 1020,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
+  {
+   "kind": "home",
+   "url": "https://www.templafy.com/",
    "fetched_at": "2026-08-08T07:27:49Z",
    "http_status": 200,
    "status": "ok",
