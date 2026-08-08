@@ -140,6 +140,30 @@
   {
    "kind": "home",
    "url": "https://webflow.com/",
+   "fetched_at": "2026-08-08T07:18:58Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 624252,
+   "duration_ms": 466,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://webflow.com/pricing",
+   "fetched_at": "2026-08-08T07:17:15Z",
+   "http_status": null,
+   "status": "error",
+   "reason": "network error: fetch failed",
+   "bytes": 0,
+   "duration_ms": 391,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://webflow.com/",
    "fetched_at": "2026-08-07T23:19:34Z",
    "http_status": 200,
    "status": "ok",

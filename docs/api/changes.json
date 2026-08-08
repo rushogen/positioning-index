@@ -17,7 +17,7 @@
    "magnitude": 0.823,
    "oscillating": 1,
    "summary": "Hero headline changed from \"AI transformed individual work. Airtable transforms teamwork.\" to \"All your teams, all their workflows—connected in one workspace\" (a value this page has held recently -- likely an A/B test rather than a repositioning)",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-07T23:18:47Z",
@@ -36,7 +36,7 @@
    "magnitude": 0.775,
    "oscillating": 1,
    "summary": "Hero subhead changed from \"It turns individual gains into team momentum — the apps, workflows, and agents one pers…\" to \"Build AI-powered workflows that unify data, maximize collaboration, and set your teams …\" (a value this page has held recently -- likely an A/B test rather than a repositioning)",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-07T23:18:37Z",
@@ -55,7 +55,7 @@
    "magnitude": 0.833,
    "oscillating": 0,
    "summary": "Pricing page title changed from \"Amplitude Pricing Options | Fast, Intelligent Customer Behavior Insights with Affordabl…\" to \"Amplitude Pricing\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-07T15:53:34Z",

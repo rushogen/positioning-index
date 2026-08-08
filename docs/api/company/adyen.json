@@ -228,6 +228,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "home",
+   "url": "https://www.adyen.com/",
+   "fetched_at": "2026-08-08T07:19:06Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 1136645,
+   "duration_ms": 170,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.adyen.com/pricing",
+   "fetched_at": "2026-08-08T07:17:30Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 700152,
+   "duration_ms": 128,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
    "kind": "pricing",
    "url": "https://www.adyen.com/pricing",
    "fetched_at": "2026-08-07T23:19:01Z",

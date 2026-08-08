@@ -228,6 +228,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "home",
+   "url": "https://www.pleo.io/us",
+   "fetched_at": "2026-08-08T07:19:02Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 123,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.pleo.io/en/pricing",
+   "fetched_at": "2026-08-08T07:17:25Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 275243,
+   "duration_ms": 1387,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
    "kind": "pricing",
    "url": "https://www.pleo.io/en/pricing",
    "fetched_at": "2026-08-07T23:19:05Z",

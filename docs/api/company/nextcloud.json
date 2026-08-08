@@ -100,8 +100,8 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-07T23:18:58Z",
-   "last_good_at": "2026-08-07T23:18:58Z",
+   "last_observed_at": "2026-08-08T07:17:52Z",
+   "last_good_at": "2026-08-08T07:17:52Z",
    "last_good_value": "EUR 71.29/year",
    "last_good_json": "{\"amount\":71.29,\"currency\":\"EUR\",\"period\":\"year\",\"unit\":null,\"tier\":\"Standard\"}",
    "last_good_hash": "1d13acc4",
@@ -118,8 +118,8 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-07T23:18:58Z",
-   "last_good_at": "2026-08-07T23:18:58Z",
+   "last_observed_at": "2026-08-08T07:17:52Z",
+   "last_good_at": "2026-08-08T07:17:52Z",
    "last_good_value": "no",
    "last_good_json": "{\"free\":false}",
    "last_good_hash": "62366ffa",
@@ -136,8 +136,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-07T23:18:58Z",
-   "last_good_at": "2026-08-07T23:18:58Z",
+   "last_observed_at": "2026-08-08T07:17:52Z",
+   "last_good_at": "2026-08-08T07:17:52Z",
    "last_good_value": "Nextcloud Enterprise pricing",
    "last_good_json": null,
    "last_good_hash": "c45930be",
@@ -154,8 +154,8 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-07T23:18:58Z",
-   "last_good_at": "2026-08-07T23:18:58Z",
+   "last_observed_at": "2026-08-08T07:17:52Z",
+   "last_good_at": "2026-08-08T07:17:52Z",
    "last_good_value": "100 users",
    "last_good_json": "{\"seats\":100,\"unit\":\"user\"}",
    "last_good_hash": "6f5ab96c",
@@ -172,8 +172,8 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-07T23:18:58Z",
-   "last_good_at": "2026-08-07T23:18:58Z",
+   "last_observed_at": "2026-08-08T07:17:52Z",
+   "last_good_at": "2026-08-08T07:17:52Z",
    "last_good_value": "Standard EUR 71.29/year | Premium EUR 104.99/year | Ultimate EUR 204.75/year",
    "last_good_json": "{\"tiers\":[{\"name\":\"Standard\",\"amount\":71.29,\"currency\":\"EUR\",\"period\":\"year\",\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Premium\",\"amount\":104.99,\"currency\":\"EUR\",\"period\":\"year\",\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Ultimate\",\"amount\":204.75,\"currency\":\"EUR\",\"period\":\"year\",\"unit\":null,\"source\":\"heuristic\"}],\"count\":3}",
    "last_good_hash": "29a7c0fa",
@@ -227,6 +227,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://nextcloud.com/",
+   "fetched_at": "2026-08-08T07:19:18Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 538,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://nextcloud.com/pricing/",
+   "fetched_at": "2026-08-08T07:17:52Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.0.0 -> 1.1.0; re-baselining",
+   "bytes": 242843,
+   "duration_ms": 1477,
+   "signals_found": 5,
+   "signals_expected": 5
+  },
   {
    "kind": "pricing",
    "url": "https://nextcloud.com/pricing/",

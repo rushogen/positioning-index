@@ -139,6 +139,18 @@
   {
    "kind": "home",
    "url": "https://www.pega.com/",
+   "fetched_at": "2026-08-08T07:18:00Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 66,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.pega.com/",
    "fetched_at": "2026-08-07T23:18:25Z",
    "http_status": 200,
    "status": "ok",

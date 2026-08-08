@@ -230,6 +230,30 @@
   {
    "kind": "home",
    "url": "https://www.figma.com/",
+   "fetched_at": "2026-08-08T07:19:19Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 22,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.figma.com/pricing/",
+   "fetched_at": "2026-08-08T07:17:58Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 299,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.figma.com/",
    "fetched_at": "2026-08-07T23:19:46Z",
    "http_status": 200,
    "status": "ok",

@@ -230,6 +230,30 @@
   {
    "kind": "pricing",
    "url": "https://www.jetbrains.com/store/",
+   "fetched_at": "2026-08-08T07:19:14Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 60343,
+   "duration_ms": 99,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.jetbrains.com/",
+   "fetched_at": "2026-08-08T07:17:40Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 44398,
+   "duration_ms": 57,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.jetbrains.com/store/",
    "fetched_at": "2026-08-07T23:19:10Z",
    "http_status": 200,
    "status": "ok",

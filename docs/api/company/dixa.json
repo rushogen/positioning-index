@@ -228,6 +228,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "home",
+   "url": "https://www.dixa.com/",
+   "fetched_at": "2026-08-08T07:19:20Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 170665,
+   "duration_ms": 64,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.dixa.com/pricing",
+   "fetched_at": "2026-08-08T07:18:00Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 396200,
+   "duration_ms": 235,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
    "kind": "pricing",
    "url": "https://www.dixa.com/pricing",
    "fetched_at": "2026-08-07T23:19:06Z",

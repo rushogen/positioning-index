@@ -228,6 +228,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "home",
+   "url": "https://qonto.com/en",
+   "fetched_at": "2026-08-08T07:19:18Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 35,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://qonto.com/en/pricing",
+   "fetched_at": "2026-08-08T07:17:50Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 63,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
    "kind": "pricing",
    "url": "https://qonto.com/en/pricing",
    "fetched_at": "2026-08-07T23:19:03Z",

@@ -230,6 +230,30 @@
   {
    "kind": "pricing",
    "url": "https://factorialhr.com/pricing-plans",
+   "fetched_at": "2026-08-08T07:19:02Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 217,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://factorialhr.com/",
+   "fetched_at": "2026-08-08T07:17:26Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 56,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://factorialhr.com/pricing-plans",
    "fetched_at": "2026-08-07T23:19:09Z",
    "http_status": 200,
    "status": "ok",

@@ -1,19 +1,19 @@
 {
  "companies": 200,
  "targets": 309,
- "observations": 368,
+ "observations": 469,
  "changes": 6,
  "changes_7d": 6,
  "changes_30d": 6,
  "retracted_changes": 3,
  "first_observation": "2026-08-07T11:00:38Z",
- "last_observation": "2026-08-07T23:19:55Z",
- "last_successful_fetch": "2026-08-07T23:19:55Z",
- "runs": 7,
- "last_run_at": "2026-08-07T23:19:55Z",
- "fetches_24h": 449,
- "blocked_24h": 19,
- "errors_24h": 3,
+ "last_observation": "2026-08-08T07:19:54Z",
+ "last_successful_fetch": "2026-08-08T07:19:58Z",
+ "runs": 8,
+ "last_run_at": "2026-08-08T07:19:59Z",
+ "fetches_24h": 758,
+ "blocked_24h": 36,
+ "errors_24h": 5,
  "suspect_signals": 3,
  "categories": [
   {
@@ -98,70 +98,130 @@
   }
  ],
  "signals": {
+  "anatomy_sections": {
+   "page": "home",
+   "kind": "text",
+   "label": "Section sequence",
+   "family": "anatomy"
+  },
+  "anatomy_section_count": {
+   "page": "home",
+   "kind": "text",
+   "label": "Section count",
+   "family": "anatomy"
+  },
+  "anatomy_cta_count": {
+   "page": "home",
+   "kind": "text",
+   "label": "Calls to action",
+   "family": "anatomy"
+  },
+  "anatomy_nav_links": {
+   "page": "home",
+   "kind": "text",
+   "label": "Nav links",
+   "family": "anatomy"
+  },
+  "anatomy_footer_links": {
+   "page": "home",
+   "kind": "text",
+   "label": "Footer links",
+   "family": "anatomy"
+  },
+  "anatomy_word_count": {
+   "page": "home",
+   "kind": "text",
+   "label": "Word count",
+   "family": "anatomy"
+  },
+  "anatomy_form_fields": {
+   "page": "home",
+   "kind": "text",
+   "label": "Form fields",
+   "family": "anatomy"
+  },
+  "anatomy_elements": {
+   "page": "home",
+   "kind": "list",
+   "label": "Elements present",
+   "family": "anatomy"
+  },
   "headline": {
    "page": "home",
    "kind": "text",
-   "label": "Hero headline"
+   "label": "Hero headline",
+   "family": "hero"
   },
   "subhead": {
    "page": "home",
    "kind": "text",
-   "label": "Hero subhead"
+   "label": "Hero subhead",
+   "family": "hero"
   },
   "category_label": {
    "page": "home",
    "kind": "text",
-   "label": "Category label"
+   "label": "Category label",
+   "family": "hero"
   },
   "meta_title": {
    "page": "home",
    "kind": "text",
-   "label": "Meta title"
+   "label": "Meta title",
+   "family": "hero"
   },
   "meta_description": {
    "page": "home",
    "kind": "text",
-   "label": "Meta description"
+   "label": "Meta description",
+   "family": "hero"
   },
   "customer_logos": {
    "page": "home",
    "kind": "list",
-   "label": "Customer logos"
+   "label": "Customer logos",
+   "family": "proof"
   },
   "proof_points": {
    "page": "home",
    "kind": "list",
-   "label": "Proof points"
+   "label": "Proof points",
+   "family": "proof"
   },
   "pricing_tiers": {
    "page": "pricing",
    "kind": "list",
    "label": "Pricing tiers",
-   "localeSensitive": true
+   "localeSensitive": true,
+   "family": "pricing"
   },
   "pricing_entry_price": {
    "page": "pricing",
    "kind": "text",
    "label": "Entry price",
-   "localeSensitive": true
+   "localeSensitive": true,
+   "family": "pricing"
   },
   "pricing_free_tier": {
    "page": "pricing",
    "kind": "enum",
    "label": "Free tier",
-   "localeSensitive": true
+   "localeSensitive": true,
+   "family": "pricing"
   },
   "pricing_seat_minimum": {
    "page": "pricing",
    "kind": "text",
    "label": "Seat minimum",
-   "localeSensitive": true
+   "localeSensitive": true,
+   "family": "pricing"
   },
   "pricing_meta_title": {
    "page": "pricing",
    "kind": "text",
-   "label": "Pricing page title"
+   "label": "Pricing page title",
+   "family": "pricing"
   }
  },
- "generated_at": "2026-08-07T23:19:55Z"
+ "generated_at": "2026-08-08T07:19:59Z"
 }

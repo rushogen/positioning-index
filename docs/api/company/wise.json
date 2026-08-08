@@ -230,6 +230,30 @@
   {
    "kind": "pricing",
    "url": "https://wise.com/gb/pricing/",
+   "fetched_at": "2026-08-08T07:19:25Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 572809,
+   "duration_ms": 457,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://wise.com/business/",
+   "fetched_at": "2026-08-08T07:18:22Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 1223539,
+   "duration_ms": 1035,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://wise.com/gb/pricing/",
    "fetched_at": "2026-08-07T23:19:19Z",
    "http_status": 200,
    "status": "ok",

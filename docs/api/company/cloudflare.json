@@ -220,6 +220,30 @@
   {
    "kind": "pricing",
    "url": "https://www.cloudflare.com/plans/",
+   "fetched_at": "2026-08-08T07:19:24Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 661443,
+   "duration_ms": 151,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.cloudflare.com/",
+   "fetched_at": "2026-08-08T07:18:19Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 1305128,
+   "duration_ms": 1104,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.cloudflare.com/plans/",
    "fetched_at": "2026-08-07T23:19:43Z",
    "http_status": 200,
    "status": "unchanged",

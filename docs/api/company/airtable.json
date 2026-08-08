@@ -223,7 +223,7 @@
    "magnitude": 0.823,
    "oscillating": 1,
    "summary": "Hero headline changed from \"AI transformed individual work. Airtable transforms teamwork.\" to \"All your teams, all their workflows—connected in one workspace\" (a value this page has held recently -- likely an A/B test rather than a repositioning)",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-07T23:18:47Z",
@@ -242,7 +242,7 @@
    "magnitude": 0.775,
    "oscillating": 1,
    "summary": "Hero subhead changed from \"It turns individual gains into team momentum — the apps, workflows, and agents one pers…\" to \"Build AI-powered workflows that unify data, maximize collaboration, and set your teams …\" (a value this page has held recently -- likely an A/B test rather than a repositioning)",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-07T15:53:34Z",
@@ -303,6 +303,30 @@
   }
  ],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.airtable.com/",
+   "fetched_at": "2026-08-08T07:19:21Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 441892,
+   "duration_ms": 257,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://airtable.com/pricing",
+   "fetched_at": "2026-08-08T07:18:06Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 328524,
+   "duration_ms": 361,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
   {
    "kind": "pricing",
    "url": "https://airtable.com/pricing",
