@@ -100,7 +100,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-07T23:19:10Z",
+   "last_observed_at": "2026-08-08T07:28:49Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -118,7 +118,7 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-07T23:19:10Z",
+   "last_observed_at": "2026-08-08T07:28:49Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -136,8 +136,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-07T23:19:10Z",
-   "last_good_at": "2026-08-07T23:19:10Z",
+   "last_observed_at": "2026-08-08T07:28:49Z",
+   "last_good_at": "2026-08-08T07:28:49Z",
    "last_good_value": "Choose the package that suits you | Flexible & clear | From €37.5 EUR | Teamleader",
    "last_good_json": null,
    "last_good_hash": "1b6cc75e",
@@ -154,7 +154,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-07T23:19:10Z",
+   "last_observed_at": "2026-08-08T07:28:49Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -172,7 +172,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-07T23:19:10Z",
+   "last_observed_at": "2026-08-08T07:28:49Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -227,6 +227,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://www.teamleader.eu/pricing",
+   "fetched_at": "2026-08-08T07:28:49Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.0.0 -> 1.1.0; re-baselining",
+   "bytes": 264949,
+   "duration_ms": 156,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://www.teamleader.eu/",
+   "fetched_at": "2026-08-08T07:27:49Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 100,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
   {
    "kind": "home",
    "url": "https://www.teamleader.eu/",

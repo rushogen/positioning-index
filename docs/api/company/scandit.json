@@ -139,6 +139,18 @@
   {
    "kind": "home",
    "url": "https://www.scandit.com/",
+   "fetched_at": "2026-08-08T07:27:37Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 188619,
+   "duration_ms": 176,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.scandit.com/",
    "fetched_at": "2026-08-08T07:18:58Z",
    "http_status": 200,
    "status": "unchanged",

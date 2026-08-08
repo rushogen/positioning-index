@@ -12,6 +12,18 @@
   {
    "kind": "home",
    "url": "https://www.tricentis.com/",
+   "fetched_at": "2026-08-08T07:26:49Z",
+   "http_status": null,
+   "status": "error",
+   "reason": "network error: fetch failed",
+   "bytes": 0,
+   "duration_ms": 120,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.tricentis.com/",
    "fetched_at": "2026-08-08T07:17:15Z",
    "http_status": null,
    "status": "error",

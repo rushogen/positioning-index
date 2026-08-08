@@ -230,6 +230,30 @@
   {
    "kind": "pricing",
    "url": "https://snyk.io/plans/",
+   "fetched_at": "2026-08-08T07:28:45Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 172109,
+   "duration_ms": 119,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://snyk.io/",
+   "fetched_at": "2026-08-08T07:27:45Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 178006,
+   "duration_ms": 230,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://snyk.io/plans/",
    "fetched_at": "2026-08-08T07:18:59Z",
    "http_status": 200,
    "status": "unchanged",

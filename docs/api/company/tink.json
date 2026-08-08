@@ -139,6 +139,18 @@
   {
    "kind": "home",
    "url": "https://tink.com/",
+   "fetched_at": "2026-08-08T07:27:50Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 1140,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://tink.com/",
    "fetched_at": "2026-08-08T07:17:38Z",
    "http_status": 304,
    "status": "unchanged",

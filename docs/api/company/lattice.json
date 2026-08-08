@@ -204,6 +204,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "pricing",
+   "url": "https://lattice.com/pricing",
+   "fetched_at": "2026-08-08T07:28:17Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 37,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://lattice.com/",
+   "fetched_at": "2026-08-08T07:27:02Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 89,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
    "kind": "home",
    "url": "https://lattice.com/",
    "fetched_at": "2026-08-08T07:19:23Z",

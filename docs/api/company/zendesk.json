@@ -228,6 +228,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "pricing",
+   "url": "https://www.zendesk.com/pricing/",
+   "fetched_at": "2026-08-08T07:28:34Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 1087938,
+   "duration_ms": 75,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.zendesk.com/",
+   "fetched_at": "2026-08-08T07:27:33Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 864675,
+   "duration_ms": 196,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
    "kind": "home",
    "url": "https://www.zendesk.com/",
    "fetched_at": "2026-08-08T07:19:02Z",

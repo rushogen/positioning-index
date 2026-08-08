@@ -139,6 +139,18 @@
   {
    "kind": "home",
    "url": "https://www.quantexa.com/",
+   "fetched_at": "2026-08-08T07:28:07Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 952778,
+   "duration_ms": 981,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.quantexa.com/",
    "fetched_at": "2026-08-08T07:18:21Z",
    "http_status": 200,
    "status": "unchanged",

@@ -370,6 +370,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "home",
+   "url": "https://www.metabase.com/",
+   "fetched_at": "2026-08-08T07:28:38Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 198,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.metabase.com/pricing",
+   "fetched_at": "2026-08-08T07:27:38Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 321,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
    "kind": "pricing",
    "url": "https://www.metabase.com/pricing",
    "fetched_at": "2026-08-08T07:19:22Z",

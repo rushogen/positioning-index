@@ -1,9 +1,9 @@
 {
  "quality": {
-  "sections": 443,
-  "other": 75,
-  "named": 368,
-  "other_share": 16.9,
+  "sections": 488,
+  "other": 90,
+  "named": 398,
+  "other_share": 18.4,
   "companies_with_other": [
    {
     "slug": "afas",
@@ -18,6 +18,24 @@
     "of": 19
    },
    {
+    "slug": "salesforce",
+    "name": "Salesforce",
+    "other": 4,
+    "of": 16
+   },
+   {
+    "slug": "zapier",
+    "name": "Zapier",
+    "other": 4,
+    "of": 14
+   },
+   {
+    "slug": "figma",
+    "name": "Figma",
+    "other": 3,
+    "of": 7
+   },
+   {
     "slug": "genesys",
     "name": "Genesys",
     "other": 3,
@@ -30,10 +48,10 @@
     "of": 8
    },
    {
-    "slug": "salesforce",
-    "name": "Salesforce",
+    "slug": "talkdesk",
+    "name": "Talkdesk",
     "other": 3,
-    "of": 15
+    "of": 9
    },
    {
     "slug": "veriff",
@@ -72,6 +90,12 @@
     "of": 8
    },
    {
+    "slug": "docusign",
+    "name": "Docusign",
+    "other": 2,
+    "of": 5
+   },
+   {
     "slug": "hornetsecurity",
     "name": "Hornetsecurity",
     "other": 2,
@@ -100,30 +124,6 @@
     "name": "RELEX Solutions",
     "other": 2,
     "of": 9
-   },
-   {
-    "slug": "rossum",
-    "name": "Rossum",
-    "other": 2,
-    "of": 12
-   },
-   {
-    "slug": "sailpoint",
-    "name": "SailPoint",
-    "other": 2,
-    "of": 9
-   },
-   {
-    "slug": "unbabel",
-    "name": "Unbabel",
-    "other": 2,
-    "of": 12
-   },
-   {
-    "slug": "veeam",
-    "name": "Veeam",
-    "other": 2,
-    "of": 8
    }
   ],
   "note": "A section type is this project’s opinion about a span of markup, not a value read off the page. `other` is what the classifier could not name, and it is counted rather than absorbed into a neighbouring type. There is no hand-labelled validation set yet, so this share is the only published measure of how well the classifier is doing."
@@ -132,11 +132,11 @@
   "positions": [
    {
     "position": 1,
-    "n": 64,
+    "n": 70,
     "types": [
      {
       "type": "hero",
-      "n": 64,
+      "n": 70,
       "share": 100,
       "companies": [
        {
@@ -170,6 +170,10 @@
        {
         "slug": "avaloq",
         "name": "Avaloq"
+       },
+       {
+        "slug": "aveva",
+        "name": "AVEVA"
        },
        {
         "slug": "bill",
@@ -212,8 +216,16 @@
         "name": "Diligent"
        },
        {
+        "slug": "docusign",
+        "name": "Docusign"
+       },
+       {
         "slug": "feedzai",
         "name": "Feedzai"
+       },
+       {
+        "slug": "figma",
+        "name": "Figma"
        },
        {
         "slug": "genesys",
@@ -288,6 +300,10 @@
         "name": "Pendo"
        },
        {
+        "slug": "pipedrive",
+        "name": "Pipedrive"
+       },
+       {
         "slug": "ptc",
         "name": "PTC"
        },
@@ -340,6 +356,10 @@
         "name": "Signicat"
        },
        {
+        "slug": "siteimprove",
+        "name": "Siteimprove"
+       },
+       {
         "slug": "slack",
         "name": "Slack"
        },
@@ -354,6 +374,10 @@
        {
         "slug": "stripe",
         "name": "Stripe"
+       },
+       {
+        "slug": "talkdesk",
+        "name": "Talkdesk"
        },
        {
         "slug": "teamviewer",
@@ -401,12 +425,12 @@
    },
    {
     "position": 2,
-    "n": 64,
+    "n": 70,
     "types": [
      {
       "type": "other",
-      "n": 19,
-      "share": 29.7,
+      "n": 20,
+      "share": 28.6,
       "companies": [
        {
         "slug": "acronis",
@@ -477,6 +501,10 @@
         "name": "SailPoint"
        },
        {
+        "slug": "talkdesk",
+        "name": "Talkdesk"
+       },
+       {
         "slug": "usercentrics",
         "name": "Usercentrics"
        },
@@ -488,8 +516,8 @@
      },
      {
       "type": "testimonial",
-      "n": 14,
-      "share": 21.9,
+      "n": 13,
+      "share": 18.6,
       "companies": [
        {
         "slug": "asana",
@@ -520,10 +548,6 @@
         "name": "PTC"
        },
        {
-        "slug": "salesforce",
-        "name": "Salesforce"
-       },
-       {
         "slug": "sentry",
         "name": "Sentry"
        },
@@ -550,13 +574,64 @@
       ]
      },
      {
+      "type": "integrations",
+      "n": 10,
+      "share": 14.3,
+      "companies": [
+       {
+        "slug": "alan",
+        "name": "Alan"
+       },
+       {
+        "slug": "customer-io",
+        "name": "Customer.io"
+       },
+       {
+        "slug": "docusign",
+        "name": "Docusign"
+       },
+       {
+        "slug": "okta",
+        "name": "Okta"
+       },
+       {
+        "slug": "pipedrive",
+        "name": "Pipedrive"
+       },
+       {
+        "slug": "rippling",
+        "name": "Rippling"
+       },
+       {
+        "slug": "salesforce",
+        "name": "Salesforce"
+       },
+       {
+        "slug": "siteimprove",
+        "name": "Siteimprove"
+       },
+       {
+        "slug": "veeam",
+        "name": "Veeam"
+       },
+       {
+        "slug": "veriff",
+        "name": "Veriff"
+       }
+      ]
+     },
+     {
       "type": "logos",
-      "n": 8,
-      "share": 12.5,
+      "n": 10,
+      "share": 14.3,
       "companies": [
        {
         "slug": "anaplan",
         "name": "Anaplan"
+       },
+       {
+        "slug": "aveva",
+        "name": "AVEVA"
        },
        {
         "slug": "brevo",
@@ -585,37 +660,6 @@
        {
         "slug": "templafy",
         "name": "Templafy"
-       }
-      ]
-     },
-     {
-      "type": "integrations",
-      "n": 7,
-      "share": 10.9,
-      "companies": [
-       {
-        "slug": "alan",
-        "name": "Alan"
-       },
-       {
-        "slug": "customer-io",
-        "name": "Customer.io"
-       },
-       {
-        "slug": "okta",
-        "name": "Okta"
-       },
-       {
-        "slug": "rippling",
-        "name": "Rippling"
-       },
-       {
-        "slug": "veeam",
-        "name": "Veeam"
-       },
-       {
-        "slug": "veriff",
-        "name": "Veriff"
        },
        {
         "slug": "zapier",
@@ -626,7 +670,7 @@
      {
       "type": "proof",
       "n": 5,
-      "share": 7.8,
+      "share": 7.1,
       "companies": [
        {
         "slug": "appian",
@@ -651,9 +695,32 @@
       ]
      },
      {
+      "type": "features",
+      "n": 4,
+      "share": 5.7,
+      "companies": [
+       {
+        "slug": "crowdstrike",
+        "name": "CrowdStrike"
+       },
+       {
+        "slug": "deel",
+        "name": "Deel"
+       },
+       {
+        "slug": "figma",
+        "name": "Figma"
+       },
+       {
+        "slug": "notion",
+        "name": "Notion"
+       }
+      ]
+     },
+     {
       "type": "faq",
       "n": 3,
-      "share": 4.7,
+      "share": 4.3,
       "companies": [
        {
         "slug": "scaleway",
@@ -670,28 +737,9 @@
       ]
      },
      {
-      "type": "features",
-      "n": 3,
-      "share": 4.7,
-      "companies": [
-       {
-        "slug": "crowdstrike",
-        "name": "CrowdStrike"
-       },
-       {
-        "slug": "deel",
-        "name": "Deel"
-       },
-       {
-        "slug": "notion",
-        "name": "Notion"
-       }
-      ]
-     },
-     {
       "type": "pricing",
       "n": 3,
-      "share": 4.7,
+      "share": 4.3,
       "companies": [
        {
         "slug": "odoo",
@@ -710,7 +758,7 @@
      {
       "type": "cta",
       "n": 1,
-      "share": 1.6,
+      "share": 1.4,
       "companies": [
        {
         "slug": "relativity",
@@ -721,7 +769,7 @@
      {
       "type": "media",
       "n": 1,
-      "share": 1.6,
+      "share": 1.4,
       "companies": [
        {
         "slug": "github",
@@ -733,12 +781,12 @@
    },
    {
     "position": 3,
-    "n": 64,
+    "n": 70,
     "types": [
      {
       "type": "testimonial",
-      "n": 24,
-      "share": 37.5,
+      "n": 25,
+      "share": 35.7,
       "companies": [
        {
         "slug": "afas",
@@ -821,6 +869,10 @@
         "name": "Scaleway"
        },
        {
+        "slug": "siteimprove",
+        "name": "Siteimprove"
+       },
+       {
         "slug": "stripe",
         "name": "Stripe"
        },
@@ -840,8 +892,8 @@
      },
      {
       "type": "other",
-      "n": 10,
-      "share": 15.6,
+      "n": 14,
+      "share": 20,
       "companies": [
        {
         "slug": "appian",
@@ -856,6 +908,14 @@
         "name": "Diligent"
        },
        {
+        "slug": "docusign",
+        "name": "Docusign"
+       },
+       {
+        "slug": "figma",
+        "name": "Figma"
+       },
+       {
         "slug": "notion",
         "name": "Notion"
        },
@@ -864,12 +924,20 @@
         "name": "Odoo"
        },
        {
+        "slug": "pipedrive",
+        "name": "Pipedrive"
+       },
+       {
         "slug": "ptc",
         "name": "PTC"
        },
        {
         "slug": "rossum",
         "name": "Rossum"
+       },
+       {
+        "slug": "salesforce",
+        "name": "Salesforce"
        },
        {
         "slug": "sentry",
@@ -887,8 +955,8 @@
      },
      {
       "type": "features",
-      "n": 8,
-      "share": 12.5,
+      "n": 9,
+      "share": 12.9,
       "companies": [
        {
         "slug": "acronis",
@@ -911,6 +979,10 @@
         "name": "Relativity"
        },
        {
+        "slug": "talkdesk",
+        "name": "Talkdesk"
+       },
+       {
         "slug": "teamviewer",
         "name": "TeamViewer"
        },
@@ -927,7 +999,7 @@
      {
       "type": "integrations",
       "n": 7,
-      "share": 10.9,
+      "share": 10,
       "companies": [
        {
         "slug": "anaplan",
@@ -962,7 +1034,7 @@
      {
       "type": "cta",
       "n": 6,
-      "share": 9.4,
+      "share": 8.6,
       "companies": [
        {
         "slug": "asana",
@@ -993,7 +1065,7 @@
      {
       "type": "proof",
       "n": 5,
-      "share": 7.8,
+      "share": 7.1,
       "companies": [
        {
         "slug": "hornetsecurity",
@@ -1020,7 +1092,7 @@
      {
       "type": "pricing",
       "n": 2,
-      "share": 3.1,
+      "share": 2.9,
       "companies": [
        {
         "slug": "crowdstrike",
@@ -1035,7 +1107,7 @@
      {
       "type": "logos",
       "n": 1,
-      "share": 1.6,
+      "share": 1.4,
       "companies": [
        {
         "slug": "clickup",
@@ -1046,11 +1118,11 @@
      {
       "type": "media",
       "n": 1,
-      "share": 1.6,
+      "share": 1.4,
       "companies": [
        {
-        "slug": "salesforce",
-        "name": "Salesforce"
+        "slug": "aveva",
+        "name": "AVEVA"
        }
       ]
      }
@@ -1058,12 +1130,12 @@
    },
    {
     "position": 4,
-    "n": 61,
+    "n": 67,
     "types": [
      {
       "type": "testimonial",
-      "n": 19,
-      "share": 31.1,
+      "n": 21,
+      "share": 31.3,
       "companies": [
        {
         "slug": "acronis",
@@ -1098,6 +1170,10 @@
         "name": "Pendo"
        },
        {
+        "slug": "pipedrive",
+        "name": "Pipedrive"
+       },
+       {
         "slug": "ptc",
         "name": "PTC"
        },
@@ -1128,6 +1204,10 @@
        {
         "slug": "software-ag",
         "name": "Software AG"
+       },
+       {
+        "slug": "talkdesk",
+        "name": "Talkdesk"
        },
        {
         "slug": "teamviewer",
@@ -1146,7 +1226,7 @@
      {
       "type": "other",
       "n": 15,
-      "share": 24.6,
+      "share": 22.4,
       "companies": [
        {
         "slug": "afas",
@@ -1189,12 +1269,12 @@
         "name": "Rippling"
        },
        {
-        "slug": "salesforce",
-        "name": "Salesforce"
-       },
-       {
         "slug": "scaleway",
         "name": "Scaleway"
+       },
+       {
+        "slug": "siteimprove",
+        "name": "Siteimprove"
        },
        {
         "slug": "veeam",
@@ -1212,8 +1292,8 @@
      },
      {
       "type": "proof",
-      "n": 9,
-      "share": 14.8,
+      "n": 10,
+      "share": 14.9,
       "companies": [
        {
         "slug": "appian",
@@ -1222,6 +1302,10 @@
        {
         "slug": "asana",
         "name": "Asana"
+       },
+       {
+        "slug": "docusign",
+        "name": "Docusign"
        },
        {
         "slug": "feedzai",
@@ -1254,9 +1338,40 @@
       ]
      },
      {
+      "type": "logos",
+      "n": 6,
+      "share": 9,
+      "companies": [
+       {
+        "slug": "anaplan",
+        "name": "Anaplan"
+       },
+       {
+        "slug": "aveva",
+        "name": "AVEVA"
+       },
+       {
+        "slug": "figma",
+        "name": "Figma"
+       },
+       {
+        "slug": "retool",
+        "name": "Retool"
+       },
+       {
+        "slug": "unbabel",
+        "name": "Unbabel"
+       },
+       {
+        "slug": "usercentrics",
+        "name": "Usercentrics"
+       }
+      ]
+     },
+     {
       "type": "integrations",
       "n": 5,
-      "share": 8.2,
+      "share": 7.5,
       "companies": [
        {
         "slug": "genesys",
@@ -1283,7 +1398,7 @@
      {
       "type": "cta",
       "n": 4,
-      "share": 6.6,
+      "share": 6,
       "companies": [
        {
         "slug": "clickup",
@@ -1306,7 +1421,7 @@
      {
       "type": "features",
       "n": 4,
-      "share": 6.6,
+      "share": 6,
       "companies": [
        {
         "slug": "deel",
@@ -1327,36 +1442,24 @@
       ]
      },
      {
-      "type": "logos",
-      "n": 4,
-      "share": 6.6,
-      "companies": [
-       {
-        "slug": "anaplan",
-        "name": "Anaplan"
-       },
-       {
-        "slug": "retool",
-        "name": "Retool"
-       },
-       {
-        "slug": "unbabel",
-        "name": "Unbabel"
-       },
-       {
-        "slug": "usercentrics",
-        "name": "Usercentrics"
-       }
-      ]
-     },
-     {
       "type": "media",
       "n": 1,
-      "share": 1.6,
+      "share": 1.5,
       "companies": [
        {
         "slug": "odoo",
         "name": "Odoo"
+       }
+      ]
+     },
+     {
+      "type": "pricing",
+      "n": 1,
+      "share": 1.5,
+      "companies": [
+       {
+        "slug": "salesforce",
+        "name": "Salesforce"
        }
       ]
      }
@@ -1364,12 +1467,12 @@
    },
    {
     "position": 5,
-    "n": 55,
+    "n": 61,
     "types": [
      {
       "type": "testimonial",
-      "n": 16,
-      "share": 29.1,
+      "n": 17,
+      "share": 27.9,
       "companies": [
        {
         "slug": "anaplan",
@@ -1428,6 +1531,10 @@
         "name": "Retool"
        },
        {
+        "slug": "salesforce",
+        "name": "Salesforce"
+       },
+       {
         "slug": "snowflake",
         "name": "Snowflake"
        },
@@ -1438,9 +1545,64 @@
       ]
      },
      {
+      "type": "other",
+      "n": 12,
+      "share": 19.7,
+      "companies": [
+       {
+        "slug": "acronis",
+        "name": "Acronis"
+       },
+       {
+        "slug": "aveva",
+        "name": "AVEVA"
+       },
+       {
+        "slug": "collibra",
+        "name": "Collibra"
+       },
+       {
+        "slug": "contentful",
+        "name": "Contentful"
+       },
+       {
+        "slug": "docusign",
+        "name": "Docusign"
+       },
+       {
+        "slug": "figma",
+        "name": "Figma"
+       },
+       {
+        "slug": "hornetsecurity",
+        "name": "Hornetsecurity"
+       },
+       {
+        "slug": "sailpoint",
+        "name": "SailPoint"
+       },
+       {
+        "slug": "sennder",
+        "name": "sennder"
+       },
+       {
+        "slug": "talkdesk",
+        "name": "Talkdesk"
+       },
+       {
+        "slug": "unbabel",
+        "name": "Unbabel"
+       },
+       {
+        "slug": "vercel",
+        "name": "Vercel"
+       }
+      ]
+     },
+     {
       "type": "integrations",
-      "n": 9,
-      "share": 16.4,
+      "n": 11,
+      "share": 18,
       "companies": [
        {
         "slug": "avalara",
@@ -1467,6 +1629,10 @@
         "name": "Pendo"
        },
        {
+        "slug": "pipedrive",
+        "name": "Pipedrive"
+       },
+       {
         "slug": "software-ag",
         "name": "Software AG"
        },
@@ -1477,72 +1643,6 @@
        {
         "slug": "veriff",
         "name": "Veriff"
-       }
-      ]
-     },
-     {
-      "type": "other",
-      "n": 8,
-      "share": 14.5,
-      "companies": [
-       {
-        "slug": "acronis",
-        "name": "Acronis"
-       },
-       {
-        "slug": "collibra",
-        "name": "Collibra"
-       },
-       {
-        "slug": "contentful",
-        "name": "Contentful"
-       },
-       {
-        "slug": "hornetsecurity",
-        "name": "Hornetsecurity"
-       },
-       {
-        "slug": "sailpoint",
-        "name": "SailPoint"
-       },
-       {
-        "slug": "sennder",
-        "name": "sennder"
-       },
-       {
-        "slug": "unbabel",
-        "name": "Unbabel"
-       },
-       {
-        "slug": "vercel",
-        "name": "Vercel"
-       }
-      ]
-     },
-     {
-      "type": "cta",
-      "n": 6,
-      "share": 10.9,
-      "companies": [
-       {
-        "slug": "asana",
-        "name": "Asana"
-       },
-       {
-        "slug": "customer-io",
-        "name": "Customer.io"
-       },
-       {
-        "slug": "okta",
-        "name": "Okta"
-       },
-       {
-        "slug": "relativity",
-        "name": "Relativity"
-       },
-       {
-        "slug": "sentry",
-        "name": "Sentry"
        },
        {
         "slug": "zapier",
@@ -1553,7 +1653,7 @@
      {
       "type": "features",
       "n": 6,
-      "share": 10.9,
+      "share": 9.8,
       "companies": [
        {
         "slug": "afas",
@@ -1582,9 +1682,36 @@
       ]
      },
      {
-      "type": "logos",
+      "type": "cta",
       "n": 5,
-      "share": 9.1,
+      "share": 8.2,
+      "companies": [
+       {
+        "slug": "asana",
+        "name": "Asana"
+       },
+       {
+        "slug": "customer-io",
+        "name": "Customer.io"
+       },
+       {
+        "slug": "okta",
+        "name": "Okta"
+       },
+       {
+        "slug": "relativity",
+        "name": "Relativity"
+       },
+       {
+        "slug": "sentry",
+        "name": "Sentry"
+       }
+      ]
+     },
+     {
+      "type": "logos",
+      "n": 4,
+      "share": 6.6,
       "companies": [
        {
         "slug": "brevo",
@@ -1599,10 +1726,6 @@
         "name": "HubSpot"
        },
        {
-        "slug": "salesforce",
-        "name": "Salesforce"
-       },
-       {
         "slug": "templafy",
         "name": "Templafy"
        }
@@ -1611,7 +1734,7 @@
      {
       "type": "pricing",
       "n": 3,
-      "share": 5.5,
+      "share": 4.9,
       "companies": [
        {
         "slug": "odoo",
@@ -1629,9 +1752,13 @@
      },
      {
       "type": "faq",
-      "n": 1,
-      "share": 1.8,
+      "n": 2,
+      "share": 3.3,
       "companies": [
+       {
+        "slug": "siteimprove",
+        "name": "Siteimprove"
+       },
        {
         "slug": "veeam",
         "name": "Veeam"
@@ -1641,7 +1768,7 @@
      {
       "type": "proof",
       "n": 1,
-      "share": 1.8,
+      "share": 1.6,
       "companies": [
        {
         "slug": "bill",
@@ -1653,12 +1780,12 @@
    },
    {
     "position": 6,
-    "n": 39,
+    "n": 42,
     "types": [
      {
       "type": "testimonial",
-      "n": 11,
-      "share": 28.2,
+      "n": 13,
+      "share": 31,
       "companies": [
        {
         "slug": "avalara",
@@ -1685,12 +1812,20 @@
         "name": "Palo Alto Networks"
        },
        {
+        "slug": "pipedrive",
+        "name": "Pipedrive"
+       },
+       {
         "slug": "ptc",
         "name": "PTC"
        },
        {
         "slug": "stripe",
         "name": "Stripe"
+       },
+       {
+        "slug": "talkdesk",
+        "name": "Talkdesk"
        },
        {
         "slug": "teamviewer",
@@ -1708,8 +1843,8 @@
      },
      {
       "type": "other",
-      "n": 9,
-      "share": 23.1,
+      "n": 10,
+      "share": 23.8,
       "companies": [
        {
         "slug": "afas",
@@ -1740,6 +1875,10 @@
         "name": "Rossum"
        },
        {
+        "slug": "salesforce",
+        "name": "Salesforce"
+       },
+       {
         "slug": "signicat",
         "name": "Signicat"
        },
@@ -1751,8 +1890,8 @@
      },
      {
       "type": "proof",
-      "n": 7,
-      "share": 17.9,
+      "n": 6,
+      "share": 14.3,
       "companies": [
        {
         "slug": "alan",
@@ -1777,17 +1916,36 @@
        {
         "slug": "sailpoint",
         "name": "SailPoint"
+       }
+      ]
+     },
+     {
+      "type": "logos",
+      "n": 4,
+      "share": 9.5,
+      "companies": [
+       {
+        "slug": "figma",
+        "name": "Figma"
        },
        {
-        "slug": "salesforce",
-        "name": "Salesforce"
+        "slug": "klaviyo",
+        "name": "Klaviyo"
+       },
+       {
+        "slug": "relativity",
+        "name": "Relativity"
+       },
+       {
+        "slug": "relex",
+        "name": "RELEX Solutions"
        }
       ]
      },
      {
       "type": "cta",
       "n": 3,
-      "share": 7.7,
+      "share": 7.1,
       "companies": [
        {
         "slug": "bill",
@@ -1806,7 +1964,7 @@
      {
       "type": "integrations",
       "n": 3,
-      "share": 7.7,
+      "share": 7.1,
       "companies": [
        {
         "slug": "onetrust",
@@ -1823,28 +1981,9 @@
       ]
      },
      {
-      "type": "logos",
-      "n": 3,
-      "share": 7.7,
-      "companies": [
-       {
-        "slug": "klaviyo",
-        "name": "Klaviyo"
-       },
-       {
-        "slug": "relativity",
-        "name": "Relativity"
-       },
-       {
-        "slug": "relex",
-        "name": "RELEX Solutions"
-       }
-      ]
-     },
-     {
       "type": "faq",
       "n": 2,
-      "share": 5.1,
+      "share": 4.8,
       "companies": [
        {
         "slug": "metabase",
@@ -1859,7 +1998,7 @@
      {
       "type": "features",
       "n": 1,
-      "share": 2.6,
+      "share": 2.4,
       "companies": [
        {
         "slug": "feedzai",
@@ -1871,12 +2010,12 @@
    },
    {
     "position": 7,
-    "n": 29,
+    "n": 32,
     "types": [
      {
       "type": "testimonial",
-      "n": 12,
-      "share": 41.4,
+      "n": 13,
+      "share": 40.6,
       "companies": [
        {
         "slug": "afas",
@@ -1923,6 +2062,10 @@
         "name": "SailPoint"
        },
        {
+        "slug": "salesforce",
+        "name": "Salesforce"
+       },
+       {
         "slug": "scaleway",
         "name": "Scaleway"
        }
@@ -1930,9 +2073,13 @@
      },
      {
       "type": "other",
-      "n": 5,
-      "share": 17.2,
+      "n": 6,
+      "share": 18.8,
       "companies": [
+       {
+        "slug": "figma",
+        "name": "Figma"
+       },
        {
         "slug": "klaviyo",
         "name": "Klaviyo"
@@ -1946,19 +2093,19 @@
         "name": "RELEX Solutions"
        },
        {
-        "slug": "salesforce",
-        "name": "Salesforce"
-       },
-       {
         "slug": "veeam",
         "name": "Veeam"
+       },
+       {
+        "slug": "zapier",
+        "name": "Zapier"
        }
       ]
      },
      {
       "type": "logos",
       "n": 4,
-      "share": 13.8,
+      "share": 12.5,
       "companies": [
        {
         "slug": "clickup",
@@ -1969,19 +2116,38 @@
         "name": "Contentful"
        },
        {
-        "slug": "veriff",
-        "name": "Veriff"
+        "slug": "talkdesk",
+        "name": "Talkdesk"
        },
        {
-        "slug": "zapier",
-        "name": "Zapier"
+        "slug": "veriff",
+        "name": "Veriff"
+       }
+      ]
+     },
+     {
+      "type": "features",
+      "n": 3,
+      "share": 9.4,
+      "companies": [
+       {
+        "slug": "hornetsecurity",
+        "name": "Hornetsecurity"
+       },
+       {
+        "slug": "pipedrive",
+        "name": "Pipedrive"
+       },
+       {
+        "slug": "rossum",
+        "name": "Rossum"
        }
       ]
      },
      {
       "type": "cta",
       "n": 2,
-      "share": 6.9,
+      "share": 6.3,
       "companies": [
        {
         "slug": "feedzai",
@@ -1994,24 +2160,9 @@
       ]
      },
      {
-      "type": "features",
-      "n": 2,
-      "share": 6.9,
-      "companies": [
-       {
-        "slug": "hornetsecurity",
-        "name": "Hornetsecurity"
-       },
-       {
-        "slug": "rossum",
-        "name": "Rossum"
-       }
-      ]
-     },
-     {
       "type": "faq",
       "n": 1,
-      "share": 3.4,
+      "share": 3.1,
       "companies": [
        {
         "slug": "brevo",
@@ -2022,7 +2173,7 @@
      {
       "type": "integrations",
       "n": 1,
-      "share": 3.4,
+      "share": 3.1,
       "companies": [
        {
         "slug": "palo-alto",
@@ -2033,7 +2184,7 @@
      {
       "type": "pricing",
       "n": 1,
-      "share": 3.4,
+      "share": 3.1,
       "companies": [
        {
         "slug": "stripe",
@@ -2044,7 +2195,7 @@
      {
       "type": "proof",
       "n": 1,
-      "share": 3.4,
+      "share": 3.1,
       "companies": [
        {
         "slug": "unbabel",
@@ -2056,58 +2207,12 @@
    },
    {
     "position": 8,
-    "n": 22,
+    "n": 24,
     "types": [
      {
-      "type": "testimonial",
-      "n": 5,
-      "share": 22.7,
-      "companies": [
-       {
-        "slug": "contentful",
-        "name": "Contentful"
-       },
-       {
-        "slug": "genesys",
-        "name": "Genesys"
-       },
-       {
-        "slug": "salesforce",
-        "name": "Salesforce"
-       },
-       {
-        "slug": "unbabel",
-        "name": "Unbabel"
-       },
-       {
-        "slug": "veeam",
-        "name": "Veeam"
-       }
-      ]
-     },
-     {
-      "type": "cta",
-      "n": 3,
-      "share": 13.6,
-      "companies": [
-       {
-        "slug": "cognite",
-        "name": "Cognite"
-       },
-       {
-        "slug": "linear",
-        "name": "Linear"
-       },
-       {
-        "slug": "sailpoint",
-        "name": "SailPoint"
-       }
-      ]
-     },
-     {
       "type": "other",
-      "n": 3,
-      "share": 13.6,
+      "n": 5,
+      "share": 20.8,
       "companies": [
        {
         "slug": "afas",
@@ -2118,15 +2223,73 @@
         "name": "Miro"
        },
        {
+        "slug": "salesforce",
+        "name": "Salesforce"
+       },
+       {
+        "slug": "talkdesk",
+        "name": "Talkdesk"
+       },
+       {
         "slug": "veriff",
         "name": "Veriff"
        }
       ]
      },
      {
+      "type": "testimonial",
+      "n": 5,
+      "share": 20.8,
+      "companies": [
+       {
+        "slug": "contentful",
+        "name": "Contentful"
+       },
+       {
+        "slug": "genesys",
+        "name": "Genesys"
+       },
+       {
+        "slug": "unbabel",
+        "name": "Unbabel"
+       },
+       {
+        "slug": "veeam",
+        "name": "Veeam"
+       },
+       {
+        "slug": "zapier",
+        "name": "Zapier"
+       }
+      ]
+     },
+     {
+      "type": "cta",
+      "n": 4,
+      "share": 16.7,
+      "companies": [
+       {
+        "slug": "cognite",
+        "name": "Cognite"
+       },
+       {
+        "slug": "linear",
+        "name": "Linear"
+       },
+       {
+        "slug": "pipedrive",
+        "name": "Pipedrive"
+       },
+       {
+        "slug": "sailpoint",
+        "name": "SailPoint"
+       }
+      ]
+     },
+     {
       "type": "proof",
       "n": 3,
-      "share": 13.6,
+      "share": 12.5,
       "companies": [
        {
         "slug": "clickup",
@@ -2145,7 +2308,7 @@
      {
       "type": "faq",
       "n": 2,
-      "share": 9.1,
+      "share": 8.3,
       "companies": [
        {
         "slug": "klaviyo",
@@ -2158,24 +2321,9 @@
       ]
      },
      {
-      "type": "features",
-      "n": 2,
-      "share": 9.1,
-      "companies": [
-       {
-        "slug": "scaleway",
-        "name": "Scaleway"
-       },
-       {
-        "slug": "zapier",
-        "name": "Zapier"
-       }
-      ]
-     },
-     {
       "type": "integrations",
       "n": 2,
-      "share": 9.1,
+      "share": 8.3,
       "companies": [
        {
         "slug": "gong",
@@ -2188,9 +2336,20 @@
       ]
      },
      {
+      "type": "features",
+      "n": 1,
+      "share": 4.2,
+      "companies": [
+       {
+        "slug": "scaleway",
+        "name": "Scaleway"
+       }
+      ]
+     },
+     {
       "type": "logos",
       "n": 1,
-      "share": 4.5,
+      "share": 4.2,
       "companies": [
        {
         "slug": "anaplan",
@@ -2201,7 +2360,7 @@
      {
       "type": "media",
       "n": 1,
-      "share": 4.5,
+      "share": 4.2,
       "companies": [
        {
         "slug": "palo-alto",
@@ -2214,8 +2373,8 @@
   ],
   "coverage": {
    "tracked": 200,
-   "readable": 64,
-   "unreadable": 136,
+   "readable": 70,
+   "unreadable": 130,
    "held": 0,
    "suspect": 0,
    "missing": [
@@ -2254,10 +2413,6 @@
     {
      "slug": "autodesk",
      "name": "Autodesk"
-    },
-    {
-     "slug": "aveva",
-     "name": "AVEVA"
     },
     {
      "slug": "backbase",
@@ -2372,10 +2527,6 @@
      "name": "Doctolib"
     },
     {
-     "slug": "docusign",
-     "name": "Docusign"
-    },
-    {
      "slug": "drata",
      "name": "Drata"
     },
@@ -2394,10 +2545,6 @@
     {
      "slug": "fenergo",
      "name": "Fenergo"
-    },
-    {
-     "slug": "figma",
-     "name": "Figma"
     },
     {
      "slug": "fivetran",
@@ -2580,10 +2727,6 @@
      "name": "Personio"
     },
     {
-     "slug": "pipedrive",
-     "name": "Pipedrive"
-    },
-    {
      "slug": "pleo",
      "name": "Pleo"
     },
@@ -2652,10 +2795,6 @@
      "name": "Sitecore"
     },
     {
-     "slug": "siteimprove",
-     "name": "Siteimprove"
-    },
-    {
      "slug": "snyk",
      "name": "Snyk"
     },
@@ -2678,10 +2817,6 @@
     {
      "slug": "suse",
      "name": "SUSE"
-    },
-    {
-     "slug": "talkdesk",
-     "name": "Talkdesk"
     },
     {
      "slug": "teamleader",
@@ -2770,9 +2905,9 @@
   "elements": [
    {
     "type": "testimonial",
-    "n": 59,
-    "of": 64,
-    "share": 92.2,
+    "n": 62,
+    "of": 70,
+    "share": 88.6,
     "companies": [
      {
       "slug": "acronis",
@@ -2915,6 +3050,10 @@
       "name": "Pendo"
      },
      {
+      "slug": "pipedrive",
+      "name": "Pipedrive"
+     },
+     {
       "slug": "ptc",
       "name": "PTC"
      },
@@ -2967,6 +3106,10 @@
       "name": "Signicat"
      },
      {
+      "slug": "siteimprove",
+      "name": "Siteimprove"
+     },
+     {
       "slug": "slack",
       "name": "Slack"
      },
@@ -2981,6 +3124,10 @@
      {
       "slug": "stripe",
       "name": "Stripe"
+     },
+     {
+      "slug": "talkdesk",
+      "name": "Talkdesk"
      },
      {
       "slug": "teamviewer",
@@ -3014,9 +3161,9 @@
    },
    {
     "type": "integrations",
-    "n": 30,
-    "of": 64,
-    "share": 46.9,
+    "n": 33,
+    "of": 70,
+    "share": 47.1,
     "companies": [
      {
       "slug": "alan",
@@ -3041,6 +3188,10 @@
      {
       "slug": "customer-io",
       "name": "Customer.io"
+     },
+     {
+      "slug": "docusign",
+      "name": "Docusign"
      },
      {
       "slug": "genesys",
@@ -3087,6 +3238,10 @@
       "name": "Pendo"
      },
      {
+      "slug": "pipedrive",
+      "name": "Pipedrive"
+     },
+     {
       "slug": "relex",
       "name": "RELEX Solutions"
      },
@@ -3105,6 +3260,10 @@
      {
       "slug": "scaleway",
       "name": "Scaleway"
+     },
+     {
+      "slug": "siteimprove",
+      "name": "Siteimprove"
      },
      {
       "slug": "snowflake",
@@ -3141,102 +3300,106 @@
     ]
    },
    {
-    "type": "proof",
-    "n": 25,
-    "of": 64,
-    "share": 39.1,
+    "type": "features",
+    "n": 27,
+    "of": 70,
+    "share": 38.6,
     "companies": [
+     {
+      "slug": "acronis",
+      "name": "Acronis"
+     },
+     {
+      "slug": "afas",
+      "name": "AFAS Software"
+     },
      {
       "slug": "alan",
       "name": "Alan"
      },
      {
-      "slug": "anaplan",
-      "name": "Anaplan"
+      "slug": "brevo",
+      "name": "Brevo"
      },
      {
-      "slug": "appian",
-      "name": "Appian"
+      "slug": "collibra",
+      "name": "Collibra"
      },
      {
-      "slug": "asana",
-      "name": "Asana"
+      "slug": "crowdstrike",
+      "name": "CrowdStrike"
      },
      {
-      "slug": "bill",
-      "name": "BILL"
+      "slug": "customer-io",
+      "name": "Customer.io"
      },
      {
-      "slug": "clickup",
-      "name": "ClickUp"
-     },
-     {
-      "slug": "cognite",
-      "name": "Cognite"
+      "slug": "deel",
+      "name": "Deel"
      },
      {
       "slug": "feedzai",
       "name": "Feedzai"
      },
      {
-      "slug": "github",
-      "name": "GitHub"
+      "slug": "figma",
+      "name": "Figma"
      },
      {
       "slug": "hornetsecurity",
       "name": "Hornetsecurity"
      },
      {
-      "slug": "klaviyo",
-      "name": "Klaviyo"
+      "slug": "metabase",
+      "name": "Metabase"
      },
      {
-      "slug": "linear",
-      "name": "Linear"
+      "slug": "nemetschek",
+      "name": "Nemetschek"
      },
      {
-      "slug": "miro",
-      "name": "Miro"
+      "slug": "notion",
+      "name": "Notion"
      },
      {
-      "slug": "okta",
-      "name": "Okta"
+      "slug": "pipedrive",
+      "name": "Pipedrive"
      },
      {
-      "slug": "palo-alto",
-      "name": "Palo Alto Networks"
+      "slug": "ptc",
+      "name": "PTC"
+     },
+     {
+      "slug": "relativity",
+      "name": "Relativity"
      },
      {
       "slug": "relex",
       "name": "RELEX Solutions"
      },
      {
-      "slug": "sailpoint",
-      "name": "SailPoint"
+      "slug": "rossum",
+      "name": "Rossum"
      },
      {
       "slug": "salesforce",
       "name": "Salesforce"
      },
      {
-      "slug": "sennder",
-      "name": "sennder"
+      "slug": "scaleway",
+      "name": "Scaleway"
      },
      {
-      "slug": "stripe",
-      "name": "Stripe"
+      "slug": "slack",
+      "name": "Slack"
      },
      {
-      "slug": "unbabel",
-      "name": "Unbabel"
+      "slug": "talkdesk",
+      "name": "Talkdesk"
      },
      {
-      "slug": "vercel",
-      "name": "Vercel"
-     },
-     {
-      "slug": "veriff",
-      "name": "Veriff"
+      "slug": "teamviewer",
+      "name": "TeamViewer"
      },
      {
       "slug": "visma",
@@ -3245,14 +3408,18 @@
      {
       "slug": "voyado",
       "name": "Voyado"
+     },
+     {
+      "slug": "zapier",
+      "name": "Zapier"
      }
     ]
    },
    {
     "type": "cta",
-    "n": 24,
-    "of": 64,
-    "share": 37.5,
+    "n": 26,
+    "of": 70,
+    "share": 37.1,
     "companies": [
      {
       "slug": "asana",
@@ -3311,6 +3478,10 @@
       "name": "Palo Alto Networks"
      },
      {
+      "slug": "pipedrive",
+      "name": "Pipedrive"
+     },
+     {
       "slug": "relativity",
       "name": "Relativity"
      },
@@ -3339,6 +3510,10 @@
       "name": "Software AG"
      },
      {
+      "slug": "talkdesk",
+      "name": "Talkdesk"
+     },
+     {
       "slug": "unbabel",
       "name": "Unbabel"
      },
@@ -3353,94 +3528,102 @@
     ]
    },
    {
-    "type": "features",
-    "n": 24,
-    "of": 64,
-    "share": 37.5,
+    "type": "proof",
+    "n": 25,
+    "of": 70,
+    "share": 35.7,
     "companies": [
-     {
-      "slug": "acronis",
-      "name": "Acronis"
-     },
-     {
-      "slug": "afas",
-      "name": "AFAS Software"
-     },
      {
       "slug": "alan",
       "name": "Alan"
      },
      {
-      "slug": "brevo",
-      "name": "Brevo"
+      "slug": "anaplan",
+      "name": "Anaplan"
      },
      {
-      "slug": "collibra",
-      "name": "Collibra"
+      "slug": "appian",
+      "name": "Appian"
      },
      {
-      "slug": "crowdstrike",
-      "name": "CrowdStrike"
+      "slug": "asana",
+      "name": "Asana"
      },
      {
-      "slug": "customer-io",
-      "name": "Customer.io"
+      "slug": "bill",
+      "name": "BILL"
      },
      {
-      "slug": "deel",
-      "name": "Deel"
+      "slug": "clickup",
+      "name": "ClickUp"
+     },
+     {
+      "slug": "cognite",
+      "name": "Cognite"
+     },
+     {
+      "slug": "docusign",
+      "name": "Docusign"
      },
      {
       "slug": "feedzai",
       "name": "Feedzai"
      },
      {
+      "slug": "github",
+      "name": "GitHub"
+     },
+     {
       "slug": "hornetsecurity",
       "name": "Hornetsecurity"
      },
      {
-      "slug": "metabase",
-      "name": "Metabase"
+      "slug": "klaviyo",
+      "name": "Klaviyo"
      },
      {
-      "slug": "nemetschek",
-      "name": "Nemetschek"
+      "slug": "linear",
+      "name": "Linear"
      },
      {
-      "slug": "notion",
-      "name": "Notion"
+      "slug": "miro",
+      "name": "Miro"
      },
      {
-      "slug": "ptc",
-      "name": "PTC"
+      "slug": "okta",
+      "name": "Okta"
      },
      {
-      "slug": "relativity",
-      "name": "Relativity"
+      "slug": "palo-alto",
+      "name": "Palo Alto Networks"
      },
      {
       "slug": "relex",
       "name": "RELEX Solutions"
      },
      {
-      "slug": "rossum",
-      "name": "Rossum"
+      "slug": "sailpoint",
+      "name": "SailPoint"
      },
      {
-      "slug": "salesforce",
-      "name": "Salesforce"
+      "slug": "sennder",
+      "name": "sennder"
      },
      {
-      "slug": "scaleway",
-      "name": "Scaleway"
+      "slug": "stripe",
+      "name": "Stripe"
      },
      {
-      "slug": "slack",
-      "name": "Slack"
+      "slug": "unbabel",
+      "name": "Unbabel"
      },
      {
-      "slug": "teamviewer",
-      "name": "TeamViewer"
+      "slug": "vercel",
+      "name": "Vercel"
+     },
+     {
+      "slug": "veriff",
+      "name": "Veriff"
      },
      {
       "slug": "visma",
@@ -3449,22 +3632,22 @@
      {
       "slug": "voyado",
       "name": "Voyado"
-     },
-     {
-      "slug": "zapier",
-      "name": "Zapier"
      }
     ]
    },
    {
     "type": "logos",
-    "n": 21,
-    "of": 64,
-    "share": 32.8,
+    "n": 23,
+    "of": 70,
+    "share": 32.9,
     "companies": [
      {
       "slug": "anaplan",
       "name": "Anaplan"
+     },
+     {
+      "slug": "aveva",
+      "name": "AVEVA"
      },
      {
       "slug": "brevo",
@@ -3489,6 +3672,10 @@
      {
       "slug": "feedzai",
       "name": "Feedzai"
+     },
+     {
+      "slug": "figma",
+      "name": "Figma"
      },
      {
       "slug": "hubspot",
@@ -3523,8 +3710,8 @@
       "name": "Rossum"
      },
      {
-      "slug": "salesforce",
-      "name": "Salesforce"
+      "slug": "talkdesk",
+      "name": "Talkdesk"
      },
      {
       "slug": "templafy",
@@ -3551,8 +3738,8 @@
    {
     "type": "faq",
     "n": 12,
-    "of": 64,
-    "share": 18.8,
+    "of": 70,
+    "share": 17.1,
     "companies": [
      {
       "slug": "brevo",
@@ -3587,6 +3774,10 @@
       "name": "Scaleway"
      },
      {
+      "slug": "siteimprove",
+      "name": "Siteimprove"
+     },
+     {
       "slug": "software-ag",
       "name": "Software AG"
      },
@@ -3597,18 +3788,14 @@
      {
       "slug": "veeam",
       "name": "Veeam"
-     },
-     {
-      "slug": "zapier",
-      "name": "Zapier"
      }
     ]
    },
    {
     "type": "pricing",
-    "n": 7,
-    "of": 64,
-    "share": 10.9,
+    "n": 8,
+    "of": 70,
+    "share": 11.4,
     "companies": [
      {
       "slug": "crowdstrike",
@@ -3621,6 +3808,10 @@
      {
       "slug": "odoo",
       "name": "Odoo"
+     },
+     {
+      "slug": "salesforce",
+      "name": "Salesforce"
      },
      {
       "slug": "scaleway",
@@ -3643,9 +3834,13 @@
    {
     "type": "media",
     "n": 5,
-    "of": 64,
-    "share": 7.8,
+    "of": 70,
+    "share": 7.1,
     "companies": [
+     {
+      "slug": "aveva",
+      "name": "AVEVA"
+     },
      {
       "slug": "github",
       "name": "GitHub"
@@ -3661,18 +3856,14 @@
      {
       "slug": "palo-alto",
       "name": "Palo Alto Networks"
-     },
-     {
-      "slug": "salesforce",
-      "name": "Salesforce"
      }
     ]
    },
    {
     "type": "comparison",
     "n": 1,
-    "of": 64,
-    "share": 1.6,
+    "of": 70,
+    "share": 1.4,
     "companies": [
      {
       "slug": "afas",
@@ -3683,8 +3874,8 @@
   ],
   "coverage": {
    "tracked": 200,
-   "readable": 64,
-   "unreadable": 136,
+   "readable": 70,
+   "unreadable": 130,
    "held": 0,
    "suspect": 0,
    "missing": [
@@ -3723,10 +3914,6 @@
     {
      "slug": "autodesk",
      "name": "Autodesk"
-    },
-    {
-     "slug": "aveva",
-     "name": "AVEVA"
     },
     {
      "slug": "backbase",
@@ -3841,10 +4028,6 @@
      "name": "Doctolib"
     },
     {
-     "slug": "docusign",
-     "name": "Docusign"
-    },
-    {
      "slug": "drata",
      "name": "Drata"
     },
@@ -3863,10 +4046,6 @@
     {
      "slug": "fenergo",
      "name": "Fenergo"
-    },
-    {
-     "slug": "figma",
-     "name": "Figma"
     },
     {
      "slug": "fivetran",
@@ -4049,10 +4228,6 @@
      "name": "Personio"
     },
     {
-     "slug": "pipedrive",
-     "name": "Pipedrive"
-    },
-    {
      "slug": "pleo",
      "name": "Pleo"
     },
@@ -4121,10 +4296,6 @@
      "name": "Sitecore"
     },
     {
-     "slug": "siteimprove",
-     "name": "Siteimprove"
-    },
-    {
      "slug": "snyk",
      "name": "Snyk"
     },
@@ -4147,10 +4318,6 @@
     {
      "slug": "suse",
      "name": "SUSE"
-    },
-    {
-     "slug": "talkdesk",
-     "name": "Talkdesk"
     },
     {
      "slug": "teamleader",
@@ -4240,7 +4407,7 @@
    {
     "signal": "anatomy_section_count",
     "label": "Sections on the page",
-    "n": 64,
+    "n": 70,
     "min": 3,
     "p25": 5,
     "median": 6,
@@ -4248,8 +4415,8 @@
     "max": 19,
     "coverage": {
      "tracked": 200,
-     "readable": 64,
-     "unreadable": 136,
+     "readable": 70,
+     "unreadable": 130,
      "held": 0,
      "suspect": 0,
      "missing": [
@@ -4288,10 +4455,6 @@
       {
        "slug": "autodesk",
        "name": "Autodesk"
-      },
-      {
-       "slug": "aveva",
-       "name": "AVEVA"
       },
       {
        "slug": "backbase",
@@ -4406,10 +4569,6 @@
        "name": "Doctolib"
       },
       {
-       "slug": "docusign",
-       "name": "Docusign"
-      },
-      {
        "slug": "drata",
        "name": "Drata"
       },
@@ -4428,10 +4587,6 @@
       {
        "slug": "fenergo",
        "name": "Fenergo"
-      },
-      {
-       "slug": "figma",
-       "name": "Figma"
       },
       {
        "slug": "fivetran",
@@ -4614,10 +4769,6 @@
        "name": "Personio"
       },
       {
-       "slug": "pipedrive",
-       "name": "Pipedrive"
-      },
-      {
        "slug": "pleo",
        "name": "Pleo"
       },
@@ -4686,10 +4837,6 @@
        "name": "Sitecore"
       },
       {
-       "slug": "siteimprove",
-       "name": "Siteimprove"
-      },
-      {
        "slug": "snyk",
        "name": "Snyk"
       },
@@ -4712,10 +4859,6 @@
       {
        "slug": "suse",
        "name": "SUSE"
-      },
-      {
-       "slug": "talkdesk",
-       "name": "Talkdesk"
       },
       {
        "slug": "teamleader",
@@ -4836,7 +4979,12 @@
       {
        "slug": "salesforce",
        "name": "Salesforce",
-       "value": 15
+       "value": 16
+      },
+      {
+       "slug": "zapier",
+       "name": "Zapier",
+       "value": 14
       },
       {
        "slug": "rossum",
@@ -4847,11 +4995,6 @@
        "slug": "unbabel",
        "name": "Unbabel",
        "value": 12
-      },
-      {
-       "slug": "afas",
-       "name": "AFAS Software",
-       "value": 11
       }
      ]
     }
@@ -4859,16 +5002,16 @@
    {
     "signal": "anatomy_cta_count",
     "label": "Calls to action",
-    "n": 64,
+    "n": 70,
     "min": 0,
-    "p25": 2,
-    "median": 5,
+    "p25": 1,
+    "median": 4,
     "p75": 9,
     "max": 44,
     "coverage": {
      "tracked": 200,
-     "readable": 64,
-     "unreadable": 136,
+     "readable": 70,
+     "unreadable": 130,
      "held": 0,
      "suspect": 0,
      "missing": [
@@ -4907,10 +5050,6 @@
       {
        "slug": "autodesk",
        "name": "Autodesk"
-      },
-      {
-       "slug": "aveva",
-       "name": "AVEVA"
       },
       {
        "slug": "backbase",
@@ -5025,10 +5164,6 @@
        "name": "Doctolib"
       },
       {
-       "slug": "docusign",
-       "name": "Docusign"
-      },
-      {
        "slug": "drata",
        "name": "Drata"
       },
@@ -5047,10 +5182,6 @@
       {
        "slug": "fenergo",
        "name": "Fenergo"
-      },
-      {
-       "slug": "figma",
-       "name": "Figma"
       },
       {
        "slug": "fivetran",
@@ -5233,10 +5364,6 @@
        "name": "Personio"
       },
       {
-       "slug": "pipedrive",
-       "name": "Pipedrive"
-      },
-      {
        "slug": "pleo",
        "name": "Pleo"
       },
@@ -5305,10 +5432,6 @@
        "name": "Sitecore"
       },
       {
-       "slug": "siteimprove",
-       "name": "Siteimprove"
-      },
-      {
        "slug": "snyk",
        "name": "Snyk"
       },
@@ -5331,10 +5454,6 @@
       {
        "slug": "suse",
        "name": "SUSE"
-      },
-      {
-       "slug": "talkdesk",
-       "name": "Talkdesk"
       },
       {
        "slug": "teamleader",
@@ -5436,13 +5555,13 @@
        "value": 0
       },
       {
-       "slug": "nemetschek",
-       "name": "Nemetschek",
+       "slug": "aveva",
+       "name": "AVEVA",
        "value": 0
       },
       {
-       "slug": "retool",
-       "name": "Retool",
+       "slug": "nemetschek",
+       "name": "Nemetschek",
        "value": 0
       }
      ],
@@ -5478,7 +5597,7 @@
    {
     "signal": "anatomy_nav_links",
     "label": "Links in the nav",
-    "n": 60,
+    "n": 65,
     "min": 0,
     "p25": 5,
     "median": 17,
@@ -5486,8 +5605,8 @@
     "max": 104,
     "coverage": {
      "tracked": 200,
-     "readable": 60,
-     "unreadable": 140,
+     "readable": 65,
+     "unreadable": 135,
      "held": 0,
      "suspect": 0,
      "missing": [
@@ -5534,10 +5653,6 @@
       {
        "slug": "avaloq",
        "name": "Avaloq"
-      },
-      {
-       "slug": "aveva",
-       "name": "AVEVA"
       },
       {
        "slug": "backbase",
@@ -5652,10 +5767,6 @@
        "name": "Doctolib"
       },
       {
-       "slug": "docusign",
-       "name": "Docusign"
-      },
-      {
        "slug": "drata",
        "name": "Drata"
       },
@@ -5674,10 +5785,6 @@
       {
        "slug": "fenergo",
        "name": "Fenergo"
-      },
-      {
-       "slug": "figma",
-       "name": "Figma"
       },
       {
        "slug": "fivetran",
@@ -5868,10 +5975,6 @@
        "name": "Personio"
       },
       {
-       "slug": "pipedrive",
-       "name": "Pipedrive"
-      },
-      {
        "slug": "pleo",
        "name": "Pleo"
       },
@@ -5938,10 +6041,6 @@
       {
        "slug": "sitecore",
        "name": "Sitecore"
-      },
-      {
-       "slug": "siteimprove",
-       "name": "Siteimprove"
       },
       {
        "slug": "snyk",
@@ -6088,6 +6187,11 @@
        "value": 104
       },
       {
+       "slug": "aveva",
+       "name": "AVEVA",
+       "value": 86
+      },
+      {
        "slug": "relativity",
        "name": "Relativity",
        "value": 86
@@ -6101,11 +6205,6 @@
        "slug": "slack",
        "name": "Slack",
        "value": 77
-      },
-      {
-       "slug": "miro",
-       "name": "Miro",
-       "value": 75
       }
      ]
     }
@@ -6113,16 +6212,16 @@
    {
     "signal": "anatomy_footer_links",
     "label": "Links in the footer",
-    "n": 60,
+    "n": 66,
     "min": 0,
-    "p25": 38,
-    "median": 50,
-    "p75": 67,
+    "p25": 33,
+    "median": 51,
+    "p75": 66,
     "max": 271,
     "coverage": {
      "tracked": 200,
-     "readable": 60,
-     "unreadable": 140,
+     "readable": 66,
+     "unreadable": 134,
      "held": 0,
      "suspect": 0,
      "missing": [
@@ -6161,10 +6260,6 @@
       {
        "slug": "autodesk",
        "name": "Autodesk"
-      },
-      {
-       "slug": "aveva",
-       "name": "AVEVA"
       },
       {
        "slug": "backbase",
@@ -6283,10 +6378,6 @@
        "name": "Doctolib"
       },
       {
-       "slug": "docusign",
-       "name": "Docusign"
-      },
-      {
        "slug": "drata",
        "name": "Drata"
       },
@@ -6305,10 +6396,6 @@
       {
        "slug": "fenergo",
        "name": "Fenergo"
-      },
-      {
-       "slug": "figma",
-       "name": "Figma"
       },
       {
        "slug": "fivetran",
@@ -6491,10 +6578,6 @@
        "name": "Personio"
       },
       {
-       "slug": "pipedrive",
-       "name": "Pipedrive"
-      },
-      {
        "slug": "pleo",
        "name": "Pleo"
       },
@@ -6571,10 +6654,6 @@
        "name": "Sitecore"
       },
       {
-       "slug": "siteimprove",
-       "name": "Siteimprove"
-      },
-      {
        "slug": "snowflake",
        "name": "Snowflake"
       },
@@ -6601,10 +6680,6 @@
       {
        "slug": "suse",
        "name": "SUSE"
-      },
-      {
-       "slug": "talkdesk",
-       "name": "Talkdesk"
       },
       {
        "slug": "teamleader",
@@ -6733,14 +6808,14 @@
        "value": 127
       },
       {
+       "slug": "talkdesk",
+       "name": "Talkdesk",
+       "value": 126
+      },
+      {
        "slug": "teamviewer",
        "name": "TeamViewer",
        "value": 111
-      },
-      {
-       "slug": "slack",
-       "name": "Slack",
-       "value": 98
       }
      ]
     }
@@ -6748,16 +6823,16 @@
    {
     "signal": "anatomy_word_count",
     "label": "Words on the page",
-    "n": 65,
+    "n": 71,
     "min": 142,
-    "p25": 647,
-    "median": 906,
-    "p75": 1274,
+    "p25": 576,
+    "median": 891,
+    "p75": 1289,
     "max": 2492,
     "coverage": {
      "tracked": 200,
-     "readable": 65,
-     "unreadable": 135,
+     "readable": 71,
+     "unreadable": 129,
      "held": 0,
      "suspect": 0,
      "missing": [
@@ -6796,10 +6871,6 @@
       {
        "slug": "autodesk",
        "name": "Autodesk"
-      },
-      {
-       "slug": "aveva",
-       "name": "AVEVA"
       },
       {
        "slug": "backbase",
@@ -6914,10 +6985,6 @@
        "name": "Doctolib"
       },
       {
-       "slug": "docusign",
-       "name": "Docusign"
-      },
-      {
        "slug": "drata",
        "name": "Drata"
       },
@@ -6936,10 +7003,6 @@
       {
        "slug": "fenergo",
        "name": "Fenergo"
-      },
-      {
-       "slug": "figma",
-       "name": "Figma"
       },
       {
        "slug": "fivetran",
@@ -7122,10 +7185,6 @@
        "name": "Personio"
       },
       {
-       "slug": "pipedrive",
-       "name": "Pipedrive"
-      },
-      {
        "slug": "pleo",
        "name": "Pleo"
       },
@@ -7194,10 +7253,6 @@
        "name": "Sitecore"
       },
       {
-       "slug": "siteimprove",
-       "name": "Siteimprove"
-      },
-      {
        "slug": "snyk",
        "name": "Snyk"
       },
@@ -7220,10 +7275,6 @@
       {
        "slug": "suse",
        "name": "SUSE"
-      },
-      {
-       "slug": "talkdesk",
-       "name": "Talkdesk"
       },
       {
        "slug": "teamleader",
@@ -7316,19 +7367,19 @@
        "value": 143
       },
       {
+       "slug": "aveva",
+       "name": "AVEVA",
+       "value": 225
+      },
+      {
        "slug": "vercel",
        "name": "Vercel",
        "value": 234
       },
       {
-       "slug": "notion",
-       "name": "Notion",
-       "value": 399
-      },
-      {
-       "slug": "avaloq",
-       "name": "Avaloq",
-       "value": 417
+       "slug": "figma",
+       "name": "Figma",
+       "value": 242
       }
      ],
      "highest": [
@@ -7348,14 +7399,14 @@
        "value": 2181
       },
       {
-       "slug": "avalara",
-       "name": "Avalara",
-       "value": 1984
+       "slug": "zapier",
+       "name": "Zapier",
+       "value": 2165
       },
       {
-       "slug": "pendo",
-       "name": "Pendo",
-       "value": 1930
+       "slug": "docusign",
+       "name": "Docusign",
+       "value": 2121
       }
      ]
     }
@@ -7363,7 +7414,7 @@
    {
     "signal": "anatomy_form_fields",
     "label": "Form fields",
-    "n": 64,
+    "n": 70,
     "min": 0,
     "p25": 0,
     "median": 1,
@@ -7371,8 +7422,8 @@
     "max": 60,
     "coverage": {
      "tracked": 200,
-     "readable": 64,
-     "unreadable": 136,
+     "readable": 70,
+     "unreadable": 130,
      "held": 0,
      "suspect": 0,
      "missing": [
@@ -7411,10 +7462,6 @@
       {
        "slug": "autodesk",
        "name": "Autodesk"
-      },
-      {
-       "slug": "aveva",
-       "name": "AVEVA"
       },
       {
        "slug": "backbase",
@@ -7529,10 +7576,6 @@
        "name": "Doctolib"
       },
       {
-       "slug": "docusign",
-       "name": "Docusign"
-      },
-      {
        "slug": "drata",
        "name": "Drata"
       },
@@ -7551,10 +7594,6 @@
       {
        "slug": "fenergo",
        "name": "Fenergo"
-      },
-      {
-       "slug": "figma",
-       "name": "Figma"
       },
       {
        "slug": "fivetran",
@@ -7737,10 +7776,6 @@
        "name": "Personio"
       },
       {
-       "slug": "pipedrive",
-       "name": "Pipedrive"
-      },
-      {
        "slug": "pleo",
        "name": "Pleo"
       },
@@ -7809,10 +7844,6 @@
        "name": "Sitecore"
       },
       {
-       "slug": "siteimprove",
-       "name": "Siteimprove"
-      },
-      {
        "slug": "snyk",
        "name": "Snyk"
       },
@@ -7835,10 +7866,6 @@
       {
        "slug": "suse",
        "name": "SUSE"
-      },
-      {
-       "slug": "talkdesk",
-       "name": "Talkdesk"
       },
       {
        "slug": "teamleader",
@@ -8334,7 +8361,7 @@
      "position": 1,
      "type": "hero",
      "heading": null,
-     "words": 245
+     "words": 270
     },
     {
      "position": 2,
@@ -8361,7 +8388,7 @@
      "words": 24
     }
    ],
-   "words": 1077,
+   "words": 1102,
    "nav_links": 28,
    "footer_links": 86,
    "cta_count": 44
@@ -8493,12 +8520,43 @@
    "slug": "aveva",
    "name": "AVEVA",
    "segment": "industrial",
-   "status": null,
-   "sections": null,
-   "words": null,
-   "nav_links": null,
-   "footer_links": null,
-   "cta_count": null
+   "status": "fresh",
+   "sections": [
+    {
+     "position": 1,
+     "type": "hero",
+     "heading": null,
+     "words": 27
+    },
+    {
+     "position": 2,
+     "type": "logos",
+     "heading": "Empowering industry through digital insights",
+     "words": 34
+    },
+    {
+     "position": 3,
+     "type": "media",
+     "heading": "Unlock your industrial intelligence",
+     "words": 49
+    },
+    {
+     "position": 4,
+     "type": "logos",
+     "heading": "See what's possible",
+     "words": 21
+    },
+    {
+     "position": 5,
+     "type": "other",
+     "heading": "Meet the engine behind industrial intelligence",
+     "words": 55
+    }
+   ],
+   "words": 225,
+   "nav_links": 86,
+   "footer_links": 24,
+   "cta_count": 0
   },
   {
    "slug": "backbase",
@@ -9382,12 +9440,43 @@
    "slug": "docusign",
    "name": "Docusign",
    "segment": "clm-esign",
-   "status": null,
-   "sections": null,
-   "words": null,
-   "nav_links": null,
-   "footer_links": null,
-   "cta_count": null
+   "status": "fresh",
+   "sections": [
+    {
+     "position": 1,
+     "type": "hero",
+     "heading": null,
+     "words": 400
+    },
+    {
+     "position": 2,
+     "type": "integrations",
+     "heading": "AI-powered agreement management",
+     "words": 916
+    },
+    {
+     "position": 3,
+     "type": "other",
+     "heading": "Do (much) more with IAM",
+     "words": 42
+    },
+    {
+     "position": 4,
+     "type": "proof",
+     "heading": "Trusted the world over",
+     "words": 80
+    },
+    {
+     "position": 5,
+     "type": "other",
+     "heading": "Companies do better with Docusign",
+     "words": 510
+    }
+   ],
+   "words": 2121,
+   "nav_links": 4,
+   "footer_links": 26,
+   "cta_count": 2
   },
   {
    "slug": "drata",
@@ -9502,12 +9591,55 @@
    "slug": "figma",
    "name": "Figma",
    "segment": "design",
-   "status": null,
-   "sections": null,
-   "words": null,
-   "nav_links": null,
-   "footer_links": null,
-   "cta_count": null
+   "status": "fresh",
+   "sections": [
+    {
+     "position": 1,
+     "type": "hero",
+     "heading": null,
+     "words": 8
+    },
+    {
+     "position": 2,
+     "type": "features",
+     "heading": "One workspace for your entire product development process.",
+     "words": 52
+    },
+    {
+     "position": 3,
+     "type": "other",
+     "heading": "Move fast in the right direction on an AI-native canvas.",
+     "words": 29
+    },
+    {
+     "position": 4,
+     "type": "logos",
+     "heading": "Powerfully expressive. Incredibly precise.",
+     "words": 17
+    },
+    {
+     "position": 5,
+     "type": "other",
+     "heading": "Start with design context. Build with consistency.",
+     "words": 25
+    },
+    {
+     "position": 6,
+     "type": "logos",
+     "heading": "The products you love are designed in Figma",
+     "words": 60
+    },
+    {
+     "position": 7,
+     "type": "other",
+     "heading": "Explore what you can do in Figma.",
+     "words": 23
+    }
+   ],
+   "words": 242,
+   "nav_links": 15,
+   "footer_links": 59,
+   "cta_count": 1
   },
   {
    "slug": "fivetran",
@@ -10980,12 +11112,61 @@
    "slug": "pipedrive",
    "name": "Pipedrive",
    "segment": "gtm",
-   "status": null,
-   "sections": null,
-   "words": null,
-   "nav_links": null,
-   "footer_links": null,
-   "cta_count": null
+   "status": "fresh",
+   "sections": [
+    {
+     "position": 1,
+     "type": "hero",
+     "heading": null,
+     "words": 123
+    },
+    {
+     "position": 2,
+     "type": "integrations",
+     "heading": "CRM software sales teams will love",
+     "words": 406
+    },
+    {
+     "position": 3,
+     "type": "other",
+     "heading": "See how Pipedrive is helping customers",
+     "words": 23
+    },
+    {
+     "position": 4,
+     "type": "testimonial",
+     "heading": "Say hello to Pipedrive AI",
+     "words": 34
+    },
+    {
+     "position": 5,
+     "type": "integrations",
+     "heading": "Optimize your sales process",
+     "words": 655
+    },
+    {
+     "position": 6,
+     "type": "testimonial",
+     "heading": "Popular blog posts",
+     "words": 110
+    },
+    {
+     "position": 7,
+     "type": "features",
+     "heading": "CRM FAQs",
+     "words": 689
+    },
+    {
+     "position": 8,
+     "type": "cta",
+     "heading": "Driving business growth",
+     "words": 12
+    }
+   ],
+   "words": 2086,
+   "nav_links": 44,
+   "footer_links": 58,
+   "cta_count": 10
   },
   {
    "slug": "pleo",
@@ -11503,94 +11684,100 @@
      "position": 1,
      "type": "hero",
      "heading": null,
-     "words": 33
+     "words": 43
     },
     {
      "position": 2,
-     "type": "testimonial",
-     "heading": "See what’s possible when your agents and team work from the same trusted source of truth",
-     "words": 20
+     "type": "integrations",
+     "heading": "Welcome to the Agentic Enterprise",
+     "words": 102
     },
     {
      "position": 3,
-     "type": "media",
-     "heading": "People and agents, working as one.",
-     "words": 10
-    },
-    {
-     "position": 4,
      "type": "other",
-     "heading": "Every source, unified in real time.",
+     "heading": "See why customers trust us to help them grow",
      "words": 9
     },
     {
+     "position": 4,
+     "type": "pricing",
+     "heading": "Built-in AI for every part of your business",
+     "words": 61
+    },
+    {
      "position": 5,
-     "type": "logos",
-     "heading": "Customers of every size, business, and industry succeed with Salesforce",
-     "words": 10
+     "type": "testimonial",
+     "heading": "4M+ conversations handled by Agentforce and counting",
+     "words": 65
     },
     {
      "position": 6,
-     "type": "proof",
-     "heading": "Every business can be an Agentic Enterprise",
-     "words": 133
+     "type": "other",
+     "heading": "Sinan Deriş",
+     "words": 12
     },
     {
      "position": 7,
-     "type": "other",
-     "heading": "A single platform for the Agentic Enterprise",
-     "words": 48
+     "type": "testimonial",
+     "heading": "Joey Graziano",
+     "words": 15
     },
     {
      "position": 8,
-     "type": "testimonial",
-     "heading": "Deploy trusted agents that act with purpose",
-     "words": 45
+     "type": "other",
+     "heading": "Madalina Lazar Vopel",
+     "words": 9
     },
     {
      "position": 9,
-     "type": "other",
-     "heading": "Turn data into decisions for every human and agent",
-     "words": 46
+     "type": "testimonial",
+     "heading": "Velia Carboni",
+     "words": 8
     },
     {
      "position": 10,
+     "type": "other",
+     "heading": "Salesforce is the platform for the Agentic Enterprise",
+     "words": 46
+    },
+    {
+     "position": 11,
      "type": "integrations",
      "heading": "Launch faster with 16+ Agentforce solutions, built for your industry",
      "words": 176
     },
     {
-     "position": 11,
+     "position": 12,
      "type": "features",
      "heading": "See why analysts agree Salesforce should be your Agentic AI partner",
      "words": 59
     },
     {
-     "position": 12,
+     "position": 13,
      "type": "testimonial",
      "heading": "We believe that business is the greatest platform for change",
      "words": 75
     },
     {
-     "position": 13,
+     "position": 14,
      "type": "features",
      "heading": "Find the insights, experts, and tools to fuel your AI success",
      "words": 44
     },
     {
-     "position": 14,
+     "position": 15,
      "type": "testimonial",
      "heading": "There’s nothing to install, no credit card required, free for 30 days",
      "words": 15
     },
     {
-     "position": 15,
+     "position": 16,
      "type": "features",
      "heading": "Frequently Asked Questions",
      "words": 440
     }
    ],
-   "words": 1374,
+   "words": 1289,
    "nav_links": 80,
    "footer_links": null,
    "cta_count": 19
@@ -11904,12 +12091,43 @@
    "slug": "siteimprove",
    "name": "Siteimprove",
    "segment": "marketing",
-   "status": null,
-   "sections": null,
-   "words": null,
-   "nav_links": null,
-   "footer_links": null,
-   "cta_count": null
+   "status": "fresh",
+   "sections": [
+    {
+     "position": 1,
+     "type": "hero",
+     "heading": null,
+     "words": 51
+    },
+    {
+     "position": 2,
+     "type": "integrations",
+     "heading": "Siteimprove ai is the unified platform for agentic content intelligence",
+     "words": 345
+    },
+    {
+     "position": 3,
+     "type": "testimonial",
+     "heading": "Leader in Digital Accessibility, Digital Analytics, Digital Governance, and SEO Tools",
+     "words": 55
+    },
+    {
+     "position": 4,
+     "type": "other",
+     "heading": "Our team sets the standards",
+     "words": 88
+    },
+    {
+     "position": 5,
+     "type": "faq",
+     "heading": "Ready to test-drive our platform and see how your site stacks up?",
+     "words": 15
+    }
+   ],
+   "words": 554,
+   "nav_links": 33,
+   "footer_links": 64,
+   "cta_count": 1
   },
   {
    "slug": "slack",
@@ -12161,12 +12379,67 @@
    "slug": "talkdesk",
    "name": "Talkdesk",
    "segment": "ccaas",
-   "status": null,
-   "sections": null,
-   "words": null,
+   "status": "fresh",
+   "sections": [
+    {
+     "position": 1,
+     "type": "hero",
+     "heading": null,
+     "words": 13
+    },
+    {
+     "position": 2,
+     "type": "other",
+     "heading": "Build your hybrid workforce.",
+     "words": 23
+    },
+    {
+     "position": 3,
+     "type": "features",
+     "heading": "",
+     "words": 58
+    },
+    {
+     "position": 4,
+     "type": "testimonial",
+     "heading": "The most reliable AI agents in CX.",
+     "words": 92
+    },
+    {
+     "position": 5,
+     "type": "other",
+     "heading": "Natural conversations, real outcomes.",
+     "words": 28
+    },
+    {
+     "position": 6,
+     "type": "testimonial",
+     "heading": "Don't take our word for it.",
+     "words": 174
+    },
+    {
+     "position": 7,
+     "type": "logos",
+     "heading": "The highest commitment to trust, security, and compliance.",
+     "words": 8
+    },
+    {
+     "position": 8,
+     "type": "other",
+     "heading": "Explore the latest from Talkdesk.",
+     "words": 31
+    },
+    {
+     "position": 9,
+     "type": "cta",
+     "heading": "The fastest path to AI.",
+     "words": 24
+    }
+   ],
+   "words": 521,
    "nav_links": null,
-   "footer_links": null,
-   "cta_count": null
+   "footer_links": 126,
+   "cta_count": 2
   },
   {
    "slug": "teamleader",
@@ -12207,7 +12480,7 @@
      "position": 4,
      "type": "testimonial",
      "heading": "Industry leaders win with TeamViewer",
-     "words": 55
+     "words": 56
     },
     {
      "position": 5,
@@ -12222,7 +12495,7 @@
      "words": 42
     }
    ],
-   "words": 906,
+   "words": 907,
    "nav_links": 32,
    "footer_links": 111,
    "cta_count": 5
@@ -12826,61 +13099,91 @@
      "position": 1,
      "type": "hero",
      "heading": null,
-     "words": 57
+     "words": 593
     },
     {
      "position": 2,
-     "type": "integrations",
-     "heading": "Your complete toolkit for AI automation",
-     "words": 58
+     "type": "logos",
+     "heading": "Trusted by the world’s best companies",
+     "words": 6
     },
     {
      "position": 3,
      "type": "testimonial",
-     "heading": "For the Fortune 500 and first-time founders",
-     "words": 157
+     "heading": "Every team has AI. Now they need a system.",
+     "words": 148
     },
     {
      "position": 4,
      "type": "other",
-     "heading": "No AI hype here. Just results.",
-     "words": 275
+     "heading": "Bring your hardest AI challenge. Leave with a clear path forward.",
+     "words": 36
     },
     {
      "position": 5,
-     "type": "cta",
-     "heading": "Real teams, real AI workflows, real results",
-     "words": 60
+     "type": "integrations",
+     "heading": "Your complete AI toolkit : MCP, SDK, CLI, and 9,000+ integrations",
+     "words": 75
     },
     {
      "position": 6,
      "type": "testimonial",
-     "heading": "AI that drives real outcomes",
-     "words": 98
+     "heading": "Built for everyone, from the Fortune 500 to first-time founders",
+     "words": 242
     },
     {
      "position": 7,
-     "type": "logos",
-     "heading": "Move fast. Stay in control.",
-     "words": 162
+     "type": "other",
+     "heading": "No AI hype here. Just results.",
+     "words": 277
     },
     {
      "position": 8,
+     "type": "testimonial",
+     "heading": "AI that drives real outcomes",
+     "words": 95
+    },
+    {
+     "position": 9,
+     "type": "other",
+     "heading": "AI governance and security that scales with you",
+     "words": 24
+    },
+    {
+     "position": 10,
+     "type": "testimonial",
+     "heading": "Define exactly what runs",
+     "words": 159
+    },
+    {
+     "position": 11,
+     "type": "other",
+     "heading": "Give teams their own space",
+     "words": 112
+    },
+    {
+     "position": 12,
+     "type": "testimonial",
+     "heading": "Gain full insight into every workflow",
+     "words": 102
+    },
+    {
+     "position": 13,
      "type": "features",
      "heading": "Security built into every workflow",
      "words": 59
     },
     {
-     "position": 9,
-     "type": "faq",
-     "heading": "Ready to transform how your enterprise uses AI?",
-     "words": 25
+     "position": 14,
+     "type": "cta",
+     "heading": "Go from AI experiments to real results",
+     "words": 27
     }
    ],
-   "words": 1105,
+   "words": 2165,
    "nav_links": 40,
    "footer_links": 162,
-   "cta_count": 6
+   "cta_count": 10
   },
   {
    "slug": "zendesk",
@@ -12919,5 +13222,5 @@
   "media",
   "other"
  ],
- "generated_at": "2026-08-08T07:19:59Z"
+ "generated_at": "2026-08-08T07:29:11Z"
 }

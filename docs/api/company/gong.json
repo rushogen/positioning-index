@@ -374,6 +374,30 @@
   {
    "kind": "home",
    "url": "https://www.gong.io/",
+   "fetched_at": "2026-08-08T07:28:19Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 1498978,
+   "duration_ms": 136,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.gong.io/pricing",
+   "fetched_at": "2026-08-08T07:27:06Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 300903,
+   "duration_ms": 297,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.gong.io/",
    "fetched_at": "2026-08-08T07:19:05Z",
    "http_status": 200,
    "status": "ok",

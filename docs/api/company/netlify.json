@@ -204,6 +204,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "home",
+   "url": "https://www.netlify.com/",
+   "fetched_at": "2026-08-08T07:28:47Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 115,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.netlify.com/pricing/",
+   "fetched_at": "2026-08-08T07:27:47Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 36,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
    "kind": "pricing",
    "url": "https://www.netlify.com/pricing/",
    "fetched_at": "2026-08-08T07:19:58Z",

@@ -230,6 +230,30 @@
   {
    "kind": "pricing",
    "url": "https://posthog.com/pricing",
+   "fetched_at": "2026-08-08T07:28:14Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 43,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://posthog.com/",
+   "fetched_at": "2026-08-08T07:26:56Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 85,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://posthog.com/pricing",
    "fetched_at": "2026-08-08T07:19:05Z",
    "http_status": 304,
    "status": "unchanged",

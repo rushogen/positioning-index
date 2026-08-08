@@ -1,20 +1,20 @@
 {
  "companies": 200,
  "targets": 309,
- "observations": 469,
- "changes": 6,
- "changes_7d": 6,
- "changes_30d": 6,
+ "observations": 534,
+ "changes": 27,
+ "changes_7d": 27,
+ "changes_30d": 27,
  "retracted_changes": 3,
  "first_observation": "2026-08-07T11:00:38Z",
- "last_observation": "2026-08-08T07:19:54Z",
- "last_successful_fetch": "2026-08-08T07:19:58Z",
- "runs": 8,
- "last_run_at": "2026-08-08T07:19:59Z",
- "fetches_24h": 758,
- "blocked_24h": 36,
- "errors_24h": 5,
- "suspect_signals": 3,
+ "last_observation": "2026-08-08T07:29:06Z",
+ "last_successful_fetch": "2026-08-08T07:29:06Z",
+ "runs": 9,
+ "last_run_at": "2026-08-08T07:29:11Z",
+ "fetches_24h": 1067,
+ "blocked_24h": 53,
+ "errors_24h": 7,
+ "suspect_signals": 1,
  "categories": [
   {
    "label": "one platform",
@@ -223,5 +223,5 @@
    "family": "pricing"
   }
  },
- "generated_at": "2026-08-08T07:19:59Z"
+ "generated_at": "2026-08-08T07:29:11Z"
 }

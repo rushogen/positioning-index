@@ -230,6 +230,30 @@
   {
    "kind": "pricing",
    "url": "https://www.clay.com/pricing",
+   "fetched_at": "2026-08-08T07:28:24Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 66,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.clay.com/",
+   "fetched_at": "2026-08-08T07:27:24Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 495881,
+   "duration_ms": 187,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.clay.com/pricing",
    "fetched_at": "2026-08-08T07:19:20Z",
    "http_status": 304,
    "status": "unchanged",

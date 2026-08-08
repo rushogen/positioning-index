@@ -372,6 +372,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "pricing",
+   "url": "https://www.okta.com/pricing/",
+   "fetched_at": "2026-08-08T07:28:15Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 561633,
+   "duration_ms": 563,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.okta.com/",
+   "fetched_at": "2026-08-08T07:26:57Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 186,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
    "kind": "home",
    "url": "https://www.okta.com/",
    "fetched_at": "2026-08-08T07:19:16Z",

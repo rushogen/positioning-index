@@ -230,6 +230,30 @@
   {
    "kind": "pricing",
    "url": "https://www.dataguard.com/pricing/",
+   "fetched_at": "2026-08-08T07:28:18Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 369069,
+   "duration_ms": 111,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.dataguard.com/",
+   "fetched_at": "2026-08-08T07:27:05Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 260788,
+   "duration_ms": 452,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.dataguard.com/pricing/",
    "fetched_at": "2026-08-08T07:19:29Z",
    "http_status": 200,
    "status": "unchanged",

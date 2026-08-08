@@ -206,6 +206,30 @@
   {
    "kind": "home",
    "url": "https://www.fivetran.com/",
+   "fetched_at": "2026-08-08T07:28:14Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 39,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.fivetran.com/pricing",
+   "fetched_at": "2026-08-08T07:26:56Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 209,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.fivetran.com/",
    "fetched_at": "2026-08-08T07:19:04Z",
    "http_status": 200,
    "status": "unchanged",

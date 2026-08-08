@@ -374,6 +374,30 @@
   {
    "kind": "home",
    "url": "https://usercentrics.com/",
+   "fetched_at": "2026-08-08T07:28:33Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 1031178,
+   "duration_ms": 590,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://usercentrics.com/pricing/",
+   "fetched_at": "2026-08-08T07:27:33Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 1385017,
+   "duration_ms": 324,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://usercentrics.com/",
    "fetched_at": "2026-08-08T07:19:14Z",
    "http_status": 200,
    "status": "ok",

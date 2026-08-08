@@ -372,6 +372,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "home",
+   "url": "https://www.veriff.com/",
+   "fetched_at": "2026-08-08T07:28:19Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 539541,
+   "duration_ms": 23,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.veriff.com/plans/self-serve",
+   "fetched_at": "2026-08-08T07:27:06Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 535647,
+   "duration_ms": 148,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
    "kind": "pricing",
    "url": "https://www.veriff.com/plans/self-serve",
    "fetched_at": "2026-08-08T07:19:08Z",

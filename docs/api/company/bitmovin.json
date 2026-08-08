@@ -13,6 +13,30 @@
   {
    "kind": "pricing",
    "url": "https://bitmovin.com/pricing/",
+   "fetched_at": "2026-08-08T07:29:10Z",
+   "http_status": null,
+   "status": "blocked",
+   "reason": "robots.txt: robots.txt returned 403: access explicitly refused",
+   "bytes": 0,
+   "duration_ms": 0,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://bitmovin.com/",
+   "fetched_at": "2026-08-08T07:28:10Z",
+   "http_status": null,
+   "status": "blocked",
+   "reason": "robots.txt: robots.txt returned 403: access explicitly refused",
+   "bytes": 0,
+   "duration_ms": 30,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://bitmovin.com/pricing/",
    "fetched_at": "2026-08-08T07:19:20Z",
    "http_status": null,
    "status": "blocked",

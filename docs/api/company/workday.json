@@ -139,6 +139,18 @@
   {
    "kind": "home",
    "url": "https://www.workday.com/",
+   "fetched_at": "2026-08-08T07:26:50Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 297875,
+   "duration_ms": 1371,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.workday.com/",
    "fetched_at": "2026-08-08T07:18:03Z",
    "http_status": 200,
    "status": "unchanged",

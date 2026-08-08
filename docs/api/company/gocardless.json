@@ -230,6 +230,30 @@
   {
    "kind": "home",
    "url": "https://gocardless.com/en-us",
+   "fetched_at": "2026-08-08T07:28:40Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 338576,
+   "duration_ms": 425,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://gocardless.com/pricing",
+   "fetched_at": "2026-08-08T07:27:40Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 283472,
+   "duration_ms": 521,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://gocardless.com/en-us",
    "fetched_at": "2026-08-08T07:19:02Z",
    "http_status": 200,
    "status": "unchanged",
