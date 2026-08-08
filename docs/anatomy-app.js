@@ -315,12 +315,26 @@
   // #/anatomy/linear only selects Linear on a cold load, and a link somebody
   // shares does nothing for a reader already on the page. That is the whole
   // point of giving a shape an address.
-  const onRoute = () => {
+  // The explorer now lives in the single-scroll essay, not behind an #/anatomy
+  // route, so a reader reaches it by scrolling. Boot when it nears the viewport
+  // (the data is ~280kB; don't make someone who never scrolls here pay for it),
+  // and boot immediately for a deep link that lands straight on it.
+  // Boot when the mount nears the viewport. whenNear (from app.js) is robust to
+  // a throttled/backgrounded tab where IntersectionObserver never fires -- it
+  // also listens on scroll and checks immediately -- so this critical content
+  // can never deadlock unbooted. A deep link boots it straight away.
+  if (location.hash.startsWith('#/anatomy') || typeof window.whenNear !== 'function') {
+    boot();
+  } else {
+    window.whenNear(mount, boot, 500);
+  }
+
+  // A shared #/anatomy/slug link still selects that company, whether the app is
+  // already up or is booting because of the link.
+  window.addEventListener('hashchange', () => {
     if (!location.hash.startsWith('#/anatomy')) return;
     if (!loaded) { boot(); return; }
     const slug = (location.hash.match(/^#\/anatomy\/([a-z0-9-]+)/) || [])[1];
     if (slug && state.byslug.has(slug) && slug !== state.slug) show(slug, { push: false });
-  };
-  window.addEventListener('hashchange', onRoute);
-  onRoute();
+  });
 })();

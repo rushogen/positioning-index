@@ -264,9 +264,20 @@
     }
   }
 
-  const onRoute = () => { if (location.hash.startsWith('#/anatomy')) boot(); };
-  window.addEventListener('hashchange', onRoute);
-  onRoute();
+  // The essay is one scroll, so this view is no longer behind an #/anatomy
+  // route -- a reader reaches it by scrolling. Boot when the mount nears the
+  // viewport (the data is ~280kB and should not load for someone who never gets
+  // here), and boot immediately for a deep link that lands straight on it.
+  // Boot when the mount nears the viewport. whenNear (from app.js) is robust to
+  // a throttled/backgrounded tab where IntersectionObserver never fires -- it
+  // also listens on scroll and checks immediately -- so this critical content
+  // can never deadlock unbooted. A deep link boots it straight away.
+  if (location.hash.startsWith('#/anatomy') || typeof window.whenNear !== 'function') {
+    boot();
+  } else {
+    window.whenNear(mount, boot, 500);
+  }
+  window.addEventListener('hashchange', () => { if (location.hash.startsWith('#/anatomy')) boot(); });
   // Re-selecting on hash change keeps the map in step with the explorer below it.
   window.addEventListener('hashchange', () => {
     const slug = (location.hash.match(/^#\/anatomy\/([a-z0-9-]+)/) || [])[1];

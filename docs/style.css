@@ -1,7 +1,11 @@
 /*
-  System fonts only. A webfont from a CDN would send every visitor's IP address
-  to a third party, which under TDDDG section 25 and the DSGVO turns a static
-  page into something that needs a consent banner. Not worth it for a typeface.
+  Fonts are self-hosted (vendor/fonts/), latin subset, served from this origin.
+  A webfont from a CDN would send every visitor's IP to a third party, which
+  under TDDDG section 25 turns a static page into one that needs a consent
+  banner -- so the files are downloaded once and committed, the same rule as the
+  vendored d3. Newsreader (serif) carries the reading and the display headings;
+  Roboto (sans) carries the interface and all the data, where a serif's varying
+  digit widths would be wrong for tabular numbers.
 */
 
 :root {
@@ -47,8 +51,21 @@
   --chart-none: #bebbb4;
 
   --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
-  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --sans: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --serif: "Newsreader", Georgia, "Times New Roman", serif;
   --wrap: 74rem;
+  --measure: 38rem;            /* readable prose column, ~68 chars */
+
+  /* Editorial type scale, fluid so the hero breathes on a wide screen without a
+     media-query staircase. Body stays a flat 16-18px for reading comfort. */
+  --t-display: clamp(2.6rem, 1.4rem + 5vw, 5rem);
+  --t-h2:      clamp(1.8rem, 1.2rem + 2.4vw, 2.9rem);
+  --t-h3:      clamp(1.25rem, 1.05rem + 0.8vw, 1.6rem);
+  --t-lede:    clamp(1.15rem, 1.05rem + 0.5vw, 1.4rem);
+
+  /* A warm highlight tint for the "who breaks it" callouts, derived from the
+     accent so it stays on-palette in both themes. */
+  --mark: #fdf2d8;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -67,6 +84,7 @@
     --info: #ab93f5;
     --add: #17301f;
     --del: #34191a;
+    --mark: #2a2718;
 
     /* Selected for the dark surface, not flipped. See the note above. */
     --chart-quiet: #767a83;
@@ -978,4 +996,167 @@ footer h2 { font-size: 1.05rem; margin-bottom: 1rem; }
 
 @media (prefers-color-scheme: dark) {
   .arch-body::before { background: color-mix(in srgb, var(--panel) 60%, transparent); }
+}
+
+/* ============================================================================
+   EDITORIAL LAYER  (the 2026-08 rework)
+   A measured field guide, read as a single scroll. Big Newsreader display type
+   over Roboto body and data. The data, viz and their contrast math are
+   unchanged underneath; this is the reading experience around them.
+   ========================================================================== */
+
+body { font-family: var(--sans); }
+h1, h2, h3, .display, .lede, .chapter-intro, .pull { font-family: var(--serif); }
+
+/* ---- the hero ------------------------------------------------------------- */
+.hero {
+  max-width: var(--wrap); margin: 0 auto; padding: clamp(3rem, 8vh, 7rem) 1.25rem 2.5rem;
+}
+.hero-kicker {
+  font-family: var(--sans); font-size: .8rem; font-weight: 500; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--accent); margin: 0 0 1.25rem;
+}
+.hero h1 {
+  font-size: var(--t-display); line-height: 1.02; font-weight: 600; letter-spacing: -0.02em;
+  margin: 0; max-width: 18ch; text-wrap: balance;
+}
+.hero h1 em { font-style: italic; color: var(--accent); }
+.hero-dek {
+  font-family: var(--serif); font-size: var(--t-lede); line-height: 1.5; color: var(--ink-2);
+  margin: 1.5rem 0 0; max-width: var(--measure);
+}
+.hero-stats {
+  display: flex; flex-wrap: wrap; gap: 2rem 3rem; margin: 2.5rem 0 0;
+  border-top: 1px solid var(--rule); padding-top: 1.75rem;
+}
+.hero-stat { display: flex; flex-direction: column; gap: .15rem; }
+.hero-stat b {
+  font-family: var(--serif); font-size: clamp(1.9rem, 1.4rem + 1.6vw, 2.6rem);
+  font-weight: 600; line-height: 1; font-variant-numeric: tabular-nums; color: var(--ink);
+}
+.hero-stat span { font-size: .85rem; color: var(--ink-2); }
+.hero-provenance { margin: 1.75rem 0 0; font-size: .85rem; color: var(--ink-3); max-width: var(--measure); }
+
+/* ---- sticky chapter nav -------------------------------------------------- */
+.chapters {
+  position: sticky; top: 0; z-index: 40;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: saturate(1.1) blur(8px);
+  border-bottom: 1px solid var(--rule);
+}
+.chapters-inner {
+  max-width: var(--wrap); margin: 0 auto; padding: .6rem 1.25rem;
+  display: flex; gap: .35rem; overflow-x: auto; scrollbar-width: none;
+}
+.chapters-inner::-webkit-scrollbar { display: none; }
+.chapters a {
+  flex: 0 0 auto; font-family: var(--sans); font-size: .85rem; color: var(--ink-2);
+  text-decoration: none; padding: .4rem .7rem; border-radius: 6px; white-space: nowrap;
+  min-height: 40px; display: inline-flex; align-items: center;
+}
+.chapters a:hover { background: var(--rule-2); color: var(--ink); }
+.chapters a[aria-current="true"] { color: var(--ink); background: var(--rule-2); font-weight: 500; }
+.chapters .sep { flex: 0 0 auto; width: 1px; background: var(--rule); margin: .35rem .35rem; }
+
+/* ---- chapter rhythm ------------------------------------------------------ */
+.chapter {
+  max-width: var(--wrap); margin: 0 auto; padding: clamp(3rem, 7vh, 5.5rem) 1.25rem 0;
+  scroll-margin-top: 4rem;
+}
+.chapter-num {
+  font-family: var(--sans); font-size: .8rem; font-weight: 500; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--ink-3); margin: 0 0 .6rem;
+}
+.chapter > h2 {
+  font-size: var(--t-h2); line-height: 1.08; font-weight: 600; letter-spacing: -0.015em;
+  margin: 0; max-width: 20ch; text-wrap: balance;
+}
+.chapter-intro {
+  font-size: var(--t-lede); line-height: 1.55; color: var(--ink-2);
+  margin: 1.1rem 0 0; max-width: var(--measure);
+}
+/* the reading column for body prose inside a chapter */
+.chapter p:not(.chapter-intro):not(.chapter-num):not(.note):not(.coverage):not(.wf-caveat) {
+  max-width: var(--measure); line-height: 1.65;
+}
+.chapter h3 { font-size: var(--t-h3); font-weight: 600; letter-spacing: -0.01em; margin: 2.25rem 0 .5rem; }
+
+/* the viz sits full-width of the wrap, the prose stays narrow -- classic
+   editorial: text you read, figures you look at */
+.figure-wide { margin-top: 1.75rem; }
+
+/* ---- "who breaks it" callout --------------------------------------------- */
+/* The whole framing decision made visible: every convention names its
+   dissenters. Serif, warm tint, an accent spine -- it reads as an aside, not a
+   warning. */
+.breaks {
+  margin: 1.75rem 0 0; max-width: var(--measure);
+  border-left: 3px solid var(--accent); background: var(--mark);
+  padding: 1rem 1.15rem; border-radius: 0 8px 8px 0;
+}
+.breaks-label {
+  font-family: var(--sans); font-size: .72rem; font-weight: 600; letter-spacing: .07em;
+  text-transform: uppercase; color: var(--accent); margin: 0 0 .35rem;
+}
+.breaks p { font-family: var(--serif); font-size: 1.05rem; line-height: 1.55; margin: 0; color: var(--ink); }
+.breaks a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+
+/* ---- pull quote / big number moment -------------------------------------- */
+.pull {
+  margin: 2.5rem auto; max-width: 30rem; text-align: center;
+  font-size: clamp(1.5rem, 1.1rem + 1.6vw, 2.1rem); line-height: 1.25; font-weight: 500;
+  color: var(--ink); text-wrap: balance;
+}
+.pull b { color: var(--accent); font-variant-numeric: tabular-nums; }
+
+/* ---- scroll reveal ------------------------------------------------------- */
+/* Enhancement only: the JS adds .reveal-ready, which starts things dimmed and
+   nudged; .is-in lifts them. With no JS, nothing is hidden. Reduced-motion
+   collapses it to a plain fade with no movement. */
+/* Scoped under .js, set by app.js the instant it runs, so with scripting OFF
+   nothing is hidden -- the findings stay readable, which is the whole rule. */
+.js .reveal-ready { opacity: 0; transform: translateY(14px); transition: opacity .5s ease-out, transform .5s ease-out; }
+.js .reveal-ready.is-in { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .js .reveal-ready { transform: none; transition: opacity .3s ease-out; }
+}
+
+/* ---- the archive strip (tools, demoted from the front door) --------------- */
+.archive-strip {
+  max-width: var(--wrap); margin: clamp(4rem, 9vh, 7rem) auto 0; padding: 2.5rem 1.25rem;
+  border-top: 1px solid var(--rule);
+}
+.archive-strip h2 { font-size: var(--t-h3); font-weight: 600; margin: 0 0 .4rem; }
+.archive-cards { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); margin-top: 1.25rem; }
+.archive-card {
+  display: block; padding: 1.1rem 1.2rem; border: 1px solid var(--rule); border-radius: 10px;
+  background: var(--panel); text-decoration: none; color: inherit; transition: border-color .2s ease-out, transform .2s ease-out;
+}
+.archive-card:hover { border-color: var(--ink-3); transform: translateY(-2px); }
+.archive-card b { font-family: var(--sans); font-weight: 600; display: block; }
+.archive-card span { color: var(--ink-2); font-size: .9rem; display: block; margin-top: .25rem; }
+
+/* On a real reading width, let the wide figures breathe past the prose column
+   without breaking the wrap. */
+@media (min-width: 60rem) {
+  .chapter { padding-left: 2rem; padding-right: 2rem; }
+}
+
+/* ---- lazy-mount skeletons
+   ------------------------------------------------------------------------
+   #wf-map and #wf-app render client-side and start empty (a <noscript> only).
+   An IntersectionObserver never fires for a zero-area target, so a collapsed
+   mount would never boot -- a deadlock. A min-height gives it area to be
+   observed, reserves the space so booting causes no layout shift, and reads as
+   a loading state until the real content lands. */
+#wf-map, #wf-app {
+  min-height: 22rem;
+  display: block;
+}
+#wf-map:empty::after, #wf-app:empty::after,
+#wf-map:has(> noscript:only-child)::after,
+#wf-app:has(> noscript:only-child)::after {
+  content: "Loading\2026";
+  display: flex; align-items: center; justify-content: center;
+  min-height: 22rem; color: var(--ink-3); font-size: .9rem;
 }

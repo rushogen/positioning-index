@@ -4,9 +4,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The B2B SaaS Positioning Index</title>
-<meta name="description" content="What 60 B2B SaaS companies say they are, right now: the words in their headlines, the noun they claim, how many are selling AI, what their pricing pages actually publish, and where the segment they sell into changes the answer.">
+<meta name="description" content="A measured field guide to how 200 well-known B2B SaaS companies build their homepages and pricing pages: the words they use, the sections they ship, the order they ship them in, and the companies that break every convention.">
 <meta name="color-scheme" content="light dark">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>&#9678;</text></svg>">
+<!-- Self-hosted fonts, latin subset, served from this origin. crossorigin is
+     required on a font preload even same-origin (fonts fetch in CORS mode). -->
+<link rel="preload" href="vendor/fonts/newsreader.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="vendor/fonts/roboto.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="vendor/fonts/fonts.css">
 <link rel="stylesheet" href="style.css">
 <!--
   No third-party requests. No fonts from a CDN, no analytics, no embeds, no
@@ -25,37 +30,44 @@
 
 <a class="skip" href="#main">Skip to content</a>
 
-<header class="masthead">
-  <div class="wrap">
-    <h1><a href="#/">The B2B SaaS Positioning Index</a></h1>
-    <p class="standfirst">
-      This reads the homepage and the pricing page of 200 well-known B2B SaaS
-      companies and records, in their own words, what each one says it is.
-      Below is the whole set as it stood on 2026-08-08: the words in their
-      headlines, the noun they claim, how many are selling AI, what they offer
-      as proof, whose logo they borrow, and what their pricing pages actually
-      publish. Every number says what it is out of, and every chart opens to
-      show the companies behind it.
-    </p>
-    <p class="standfirst">
-      Each crawl is also a public, timestamped commit, so the archive compounds:
-      the same page will show what moved and when, and the
-      <a href="#/changes">changes</a> tab is where that starts.
-    </p>
-
-    <p class="crawl-banner" id="crawl-banner" hidden></p>
+<header class="hero">
+  <p class="hero-kicker">A measured field guide &middot; 200 companies &middot; read 2026-08-08</p>
+  <h1>How B2B SaaS builds its <em>front door</em>.</h1>
+  <p class="hero-dek">
+    Every well-known company in the category, read the same way on the same day:
+    the words in their headlines, the sections they ship, the order they ship
+    them in &mdash; and the ones that break every convention.
+  </p>
+  <div class="hero-stats">
+    <div class="hero-stat"><b>200</b><span>companies, homepage &amp; pricing</span></div>
+    <div class="hero-stat"><b>1248</b><span>homepage sections read</span></div>
+    <div class="hero-stat"><b>180</b><span>pages the anatomy could read</span></div>
   </div>
+  <p class="hero-provenance">
+    Not a survey and not opinion. Each reading is a public, timestamped commit;
+    every figure below says what it is out of and opens to the companies behind
+    it. It measures what the market does, never what &ldquo;works&rdquo; &mdash; there is no
+    conversion data here, and none is implied.
+  </p>
+  <p class="crawl-banner" id="crawl-banner" hidden></p>
 </header>
 
-<nav class="tabs wrap" aria-label="Sections">
-  <a href="#/" data-tab="positioning" class="on">The state of positioning</a>
-  <a href="#/anatomy" data-tab="anatomy">Page anatomy</a>
-  <a href="#/changes" data-tab="feed">Changes</a>
-  <a href="#/companies" data-tab="companies">Companies</a>
-  <a href="#/health" data-tab="health">Crawl health</a>
+<nav class="chapters" aria-label="Chapters">
+  <div class="chapters-inner">
+    <a href="#chapter-words" data-spy="chapter-words">The words</a>
+    <a href="#anatomy-archetype" data-spy="anatomy-archetype">The archetype</a>
+    <a href="#anatomy-map-section" data-spy="anatomy-map-section">Who's alike</a>
+    <a href="#anatomy-explorer" data-spy="anatomy-explorer">Check a page</a>
+    <a href="#method" data-spy="method">How it's measured</a>
+    <span class="sep" aria-hidden="true"></span>
+    <a href="#/changes">Changes</a>
+    <a href="#/companies">Companies</a>
+    <a href="#/health">Crawl health</a>
+  </div>
 </nav>
 
-<main id="main" class="wrap">
+<main id="main">
+<div id="essay">
 
   <!-- --------------------------------------------- the state of positioning -->
   <!--
@@ -64,13 +76,18 @@
     here before any script runs. Everything else on the page needs JavaScript;
     the findings do not.
   -->
-  <section id="view-positioning" class="view">
-    <h2>What all 200 are saying right now</h2>
+  <section id="chapter-words" class="chapter reveal-ready">
+    <p class="chapter-num">Chapter 01 &middot; The words</p>
+    <h2>What every company says it is</h2>
+    <p class="chapter-intro">
+      A homepage headline is the most compressed claim a company makes. Read all
+      200 at once and the shared vocabulary shows &mdash; the nouns they
+      reach for, the proof they lean on, whether they are selling AI this year.
+    </p>
     <p class="note">
-      One reading of every company in the index, taken on 2026-08-08. The
-      counts are small and are written as counts, never as percentages without
-      the number that produced them. Nothing is filled in: where a value could
-      not be read, it is reported as unread rather than as a zero.
+      One reading of every company, taken on 2026-08-08. Counts are written as
+      counts, never a percentage without the number under it, and a value that
+      could not be read is reported as unread, never as a zero.
     </p>
 
     <noscript>
@@ -883,12 +900,14 @@
     script adds the filter controls and nothing else, which is why the filter
     bar ships hidden and is revealed by script.
   -->
-  <section id="view-anatomy" class="view" hidden>
-    <h1>Page anatomy</h1>
-    <p class="lede">
-      How 200 B2B SaaS homepages are built, rather than what they say:
-      the order the sections come in, what each page carries, and how big it is.
-      Read as of 2026-08-08.
+  <section id="chapter-anatomy" class="chapter reveal-ready">
+    <p class="chapter-num">Chapter 02 &middot; The structure</p>
+    <h2>How the page is built, not what it says</h2>
+    <p class="chapter-intro">
+      Underneath the words is a shape: a sequence of sections in an order most
+      companies broadly share. This is that shape, measured &mdash; the archetype the
+      market converged on, who sits closest to whom, and a way to hold any page
+      up against it.
     </p>
     
     <section id="anatomy-archetype">
@@ -1691,6 +1710,33 @@
     </section>
   </section>
 
+  <section id="method" class="chapter reveal-ready">
+    <p class="chapter-num">Chapter 03 &middot; The method</p>
+    <h2>How this was measured, and what it will not claim</h2>
+    <p class="chapter-intro">
+      The value of this archive is that it refuses to guess. It reads two public
+      pages per company, records what it can, and says plainly what it cannot.
+    </p>
+    <p>
+      There is no conversion data anywhere in it, so it can tell you what is
+      common and never what works. The companies are well-known, which is
+      survivorship, not a quality filter. Section types are read by a classifier
+      that is right about half the time off the hero, and every figure that rests
+      on it is marked. Where a page could not be read, it is counted as unread,
+      not as an absence.
+    </p>
+    <p>
+      Each crawl lands as a timestamped commit, so a number you cite today can be
+      traced to the bytes that produced it. Read the full
+      <a href="methodology.txt">methodology</a>, or the
+      <a href="corrections.txt">corrections log</a> &mdash; which already has entries,
+      on purpose.
+    </p>
+  </section>
+</div><!-- /essay -->
+
+<div class="wrap" id="tools">
+
   <!-- ------------------------------------------------------ changes feed -->
   <section id="view-feed" class="view" hidden>
     <div class="view-head">
@@ -1785,6 +1831,7 @@
     <div id="company-detail"></div>
   </section>
 
+</div><!-- /tools -->
 </main>
 
 <footer class="wrap">

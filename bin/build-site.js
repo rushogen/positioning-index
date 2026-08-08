@@ -126,9 +126,14 @@ await writeFile(join(outDir, '.nojekyll'), '', 'utf8');
 // Vendored third-party code, served from this origin. See public/vendor/README.md
 // for why downloading a file once is not the same act as making a visitor's
 // browser fetch it from somebody else's server.
-await mkdir(join(outDir, 'vendor'), { recursive: true });
+await mkdir(join(outDir, 'vendor', 'fonts'), { recursive: true });
 for (const name of ['d3-dispatch.js', 'd3-quadtree.js', 'd3-timer.js', 'd3-force.js']) {
   await copyFile(join(ROOT, 'public', 'vendor', name), join(outDir, 'vendor', name));
+}
+// Self-hosted fonts. The @font-face file references fonts/*.woff2 relative to
+// itself, so it and the binaries land together under docs/vendor/fonts/.
+for (const name of ['fonts.css', 'newsreader.woff2', 'newsreader-italic.woff2', 'roboto.woff2']) {
+  await copyFile(join(ROOT, 'public', 'vendor', 'fonts', name), join(outDir, 'vendor', 'fonts', name));
 }
 
 for (const name of ['style.css', 'app.js', 'anatomy-app.js', 'anatomy-map.js']) {
@@ -302,6 +307,8 @@ function renderIndexHtml(template) {
     ['<!--POSITIONING-->', renderPositioning(positioning)],
     ['<!--ANATOMY-->', renderAnatomy(anatomy, score)],
     ['<!--COMPANY-COUNT-->', String(companies.length)],
+    ['<!--STAT-SECTIONS-->', String(anatomy.quality.sections)],
+    ['<!--STAT-READABLE-->', String(anatomy.positions.coverage.readable)],
     // Date only. The page is a reading of one morning and says so; a timestamp
     // to the second would suggest a precision the crawl does not have, since a
     // full sweep is spread over an hour of politeness delays.

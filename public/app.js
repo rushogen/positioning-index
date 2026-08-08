@@ -411,38 +411,42 @@ async function renderCompany(slug) {
 
 // ------------------------------------------------------------------ router
 
-const VIEWS = ['positioning', 'anatomy', 'feed', 'companies', 'health', 'company'];
+// The essay (#essay) is the default surface. The tools -- changes, companies,
+// crawl health, one company -- are overlays that replace it. This is the 2026-08
+// rework: the front door is a single scroll, not a set of tabs.
+const TOOLS = ['feed', 'companies', 'health', 'company'];
 
-function show(view) {
-  for (const v of VIEWS) $(`#view-${v}`).hidden = v !== view;
-  for (const a of $$('.tabs a')) a.classList.toggle('on', a.dataset.tab === view);
+function showEssay() {
+  const essay = $('#essay');
+  if (essay) essay.hidden = false;
+  for (const v of TOOLS) { const el = $(`#view-${v}`); if (el) el.hidden = true; }
+}
+
+function showTool(view) {
+  const essay = $('#essay');
+  if (essay) essay.hidden = true;
+  for (const v of TOOLS) { const el = $(`#view-${v}`); if (el) el.hidden = v !== view; }
 }
 
 async function route() {
   const hash = location.hash.replace(/^#/, '') || '/';
   const parts = hash.split('/').filter(Boolean);
 
-  if (parts[0] === 'company' && parts[1]) {
-    show('company');
-    await renderCompany(parts[1]);
-    return;
-  }
-  if (parts[0] === 'companies') { show('companies'); await renderCompanies(); return; }
-  // `#/categories` was its own tab before the landing view existed. It is now a
-  // section of the front page, and the old link still lands on it.
-  if (parts[0] === 'categories') { location.replace('#/'); return; }
-  if (parts[0] === 'changes') { show('feed'); await renderFeed(); return; }
-  if (parts[0] === 'health') { show('health'); await renderHealth(); return; }
-  // The anatomy view, like the landing view, is already in the document. All
-  // that is needed is to show it and switch the filter controls on -- they ship
-  // hidden so that a reader with scripting off is not offered a dead widget.
-  // #/anatomy and #/anatomy/{slug} are the same view; the explorer reads the
-  // slug itself so a shape can be linked to.
-  if (parts[0] === 'anatomy') { show('anatomy'); return; }
+  if (parts[0] === 'company' && parts[1]) { showTool('company'); await renderCompany(parts[1]); return; }
+  if (parts[0] === 'companies') { showTool('companies'); await renderCompanies(); return; }
+  if (parts[0] === 'categories') { location.replace('#/'); return; }  // old deep link
+  if (parts[0] === 'changes') { showTool('feed'); await renderFeed(); return; }
+  if (parts[0] === 'health') { showTool('health'); await renderHealth(); return; }
 
-  // The landing view is already in the document. Showing it is all there is
-  // to do, and it is what an unrecognised route falls back to.
-  show('positioning');
+  // #/ and #/anatomy[/slug] are the same scroll. The anatomy modules read the
+  // slug off the hash themselves, so a shape stays linkable; here we just make
+  // sure the essay is what's showing and, for a deep anatomy link, bring the
+  // relevant chapter into view.
+  showEssay();
+  if (parts[0] === 'anatomy') {
+    const target = $('#anatomy-explorer') || $('#chapter-anatomy');
+    if (target) target.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start' });
+  }
 }
 
 /*
@@ -811,8 +815,104 @@ initWireframes();
 // top would defeat the link.
 window.addEventListener('hashchange', () => {
   route();
-  if (location.hash.startsWith('#/') || location.hash === '') window.scrollTo(0, 0);
+  // Reset to the top when switching to a tool view, but not for an in-essay
+  // anatomy deep link -- route() scrolls that to the right chapter itself.
+  const h = location.hash;
+  if ((h.startsWith('#/') && !h.startsWith('#/anatomy')) || h === '') window.scrollTo(0, 0);
 });
+
+/*
+ * whenNear(el, cb): run cb once when el is near the viewport.
+ *
+ * Exposed as a global because the anatomy scripts are separate <script> files
+ * (same pattern as initWireframe). It is deliberately belt-and-suspenders:
+ * IntersectionObserver is the efficient path, but a throttled scroll check and
+ * an immediate check back it up, because IO does not fire in a backgrounded or
+ * throttled tab -- and content that only appears when IO fires would then never
+ * appear. Any one of the three triggers is enough; the guard makes sure cb runs
+ * exactly once.
+ */
+window.whenNear = function whenNear(el, cb, margin = 400) {
+  if (!el) return;
+  let done = false;
+  const run = () => { if (done) return; done = true; cleanup(); cb(); };
+  const near = () => {
+    const r = el.getBoundingClientRect();
+    return r.top < window.innerHeight + margin && r.bottom > -margin;
+  };
+  let io = null;
+  let last = 0;
+  // Timestamp throttle, NOT requestAnimationFrame: rAF is paused in a
+  // backgrounded tab, so an rAF-gated scroll handler would never boot content
+  // for someone who opened the page in a background tab and then switched to
+  // it. A plain getBoundingClientRect on a throttled scroll is cheap and always
+  // runs.
+  const onScroll = () => {
+    const now = Date.now();
+    if (now - last < 120) return;
+    last = now;
+    if (near()) run();
+  };
+  function cleanup() {
+    window.removeEventListener('scroll', onScroll);
+    window.removeEventListener('resize', onScroll);
+    document.removeEventListener('visibilitychange', onVis);
+    if (io) io.disconnect();
+  }
+  const onVis = () => { if (!document.hidden && near()) run(); };
+  if ('IntersectionObserver' in window) {
+    io = new IntersectionObserver((entries) => {
+      if (entries.some((e) => e.isIntersecting)) run();
+    }, { rootMargin: `${margin}px` });
+    io.observe(el);
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll);
+  document.addEventListener('visibilitychange', onVis);
+  if (near()) run();               // already in view at load
+};
+
+/*
+ * Reading enhancements for the essay: reveal-on-scroll and a chapter scrollspy.
+ * Both are pure enhancement, and both are built so they can never hide content:
+ * the .js class arms the reveal CSS, and every revealable is also revealed by a
+ * safety timeout regardless, so an environment where nothing scrolls still ends
+ * up showing everything.
+ */
+function initEssayReading() {
+  document.documentElement.classList.add('js');
+
+  const revealables = $$('.reveal-ready');
+  for (const el of revealables) window.whenNear(el, () => el.classList.add('is-in'), 40);
+  // Safety net: whatever has not been revealed within a few seconds (no scroll,
+  // throttled tab, IO asleep) is revealed anyway. Content is never left hidden.
+  setTimeout(() => { for (const el of revealables) el.classList.add('is-in'); }, 2500);
+
+  // Scrollspy, scroll-driven so it works without IntersectionObserver. Marks the
+  // chapter-nav link whose section is nearest the top of the viewport.
+  // data-spy lives on the nav links and names the section id each points at.
+  // Watch the SECTIONS, not the links (which sit pinned in the sticky bar).
+  const links = new Map($$('.chapters a[data-spy]').map((a) => [a.dataset.spy, a]));
+  const spied = [...links.keys()].map((id) => document.getElementById(id)).filter(Boolean);
+  if (spied.length && links.size) {
+    let last = 0;
+    const update = () => {
+      let best = null;
+      let bestTop = Infinity;
+      const line = window.innerHeight * 0.3;
+      for (const sec of spied) {
+        const r = sec.getBoundingClientRect();
+        if (r.top <= line && Math.abs(r.top) < bestTop) { bestTop = Math.abs(r.top); best = sec.id; }
+      }
+      for (const a of links.values()) a.removeAttribute('aria-current');
+      if (best && links.get(best)) links.get(best).setAttribute('aria-current', 'true');
+    };
+    const onScroll = () => { const now = Date.now(); if (now - last < 120) return; last = now; update(); };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    update();
+  }
+}
+initEssayReading();
 
 $('#signal-filter').addEventListener('change', (e) => { state.signalFilter = e.target.value; renderFeed(); });
 $('#segment-filter').addEventListener('change', (e) => { state.segmentFilter = e.target.value; renderCompanies(); });
