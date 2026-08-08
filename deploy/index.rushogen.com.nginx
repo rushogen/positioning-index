@@ -4,12 +4,18 @@
 # the consulting site from this same machine, and a deploy of this project must
 # not be able to reach those files even if somebody types the wrong rsync flag.
 #
-# Install:
+# This is the PRE-CERTBOT template. certbot --nginx transforms it: it adds the
+# listen 443 / ssl_certificate lines and splits off a port-80 -> 443 redirect
+# block. Do not re-scp this over a certbot-managed file without re-running
+# certbot afterwards, or you drop the TLS directives.
+#
+# Install (fresh):
 #   sudo cp index.rushogen.com.nginx /etc/nginx/sites-available/index.rushogen.com
+#   sudo cp index-security.conf /etc/nginx/snippets/index-security.conf
 #   sudo ln -s /etc/nginx/sites-available/index.rushogen.com /etc/nginx/sites-enabled/
 #   sudo mkdir -p /var/www/index.rushogen.com && sudo chown -R $USER /var/www/index.rushogen.com
 #   sudo nginx -t && sudo systemctl reload nginx
-#   sudo certbot --nginx -d index.rushogen.com     # after the DNS A record resolves
+#   sudo certbot --nginx -d index.rushogen.com --redirect
 #
 # DNS first: an A record for index.rushogen.com -> 209.74.89.167.
 
@@ -17,38 +23,37 @@ server {
     listen 80;
     listen [::]:80;
     server_name index.rushogen.com;
-    # certbot rewrites this block to redirect to 443 once the cert is issued.
     root /var/www/index.rushogen.com;
     index index.html;
 
-    # The archive's whole argument is that a citation resolves later. Snapshot
-    # URLs are content-addressed by design and never change, so they are cached
-    # hard; everything else is revalidated so a crawl commit shows up promptly.
+    # Security headers at server level cover every location that does NOT set its
+    # own add_header. nginx drops ALL inherited add_header directives inside any
+    # location that declares one, so every location below that sets Cache-Control
+    # re-includes the same snippet. Miss that and the homepage -- which caches --
+    # silently loses its CSP, which is the one header that makes "no third-party
+    # request" a thing the browser enforces rather than a claim in a README.
+    include snippets/index-security.conf;
+
+    # Snapshot URLs are content-addressed and never change, so they cache for a
+    # year; everything else revalidates so a crawl commit shows up promptly.
     location ^~ /api/benchmark/ {
+        include snippets/index-security.conf;
         add_header Cache-Control "public, max-age=31536000, immutable";
     }
 
     location /api/ {
+        include snippets/index-security.conf;
         add_header Cache-Control "public, max-age=300, must-revalidate";
-        types { application/json json; }
         default_type application/json;
     }
 
     location = /index.html {
+        include snippets/index-security.conf;
         add_header Cache-Control "public, max-age=60, must-revalidate";
     }
 
-    # This site makes no third-party request and sets no cookie. The policy below
-    # says so in a way a browser enforces, rather than leaving it as a claim in a
-    # README: if a script ever tries to reach another origin, it fails loudly
-    # instead of quietly disclosing a visitor's IP.
-    add_header Content-Security-Policy
-        "default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; font-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'none'" always;
-    add_header Referrer-Policy "no-referrer" always;
-    add_header X-Content-Type-Options "nosniff" always;
-
     gzip on;
-    gzip_types text/html text/css application/javascript application/json text/plain;
+    gzip_types text/css application/javascript application/json text/plain;
     gzip_min_length 1024;
 
     # docs/ is a plain directory of files. Anything not found is not a route.
