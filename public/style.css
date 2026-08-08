@@ -467,3 +467,56 @@ footer h2 { font-size: 1.05rem; margin-bottom: 1rem; }
   .seg-gap { fill: Canvas; }
   .swatch { border: 1px solid CanvasText; }
 }
+
+/* ------------------------------------------------------------ page anatomy */
+/*
+  The strip is the view's whole argument: one row per company, blocks left to
+  right in the order the sections appear. Colour carries the type, and so does
+  the text inside every block -- a reader who cannot distinguish the hues still
+  reads the sequence, because the label is the content and not a tooltip.
+*/
+.strips { list-style: none; margin: 1.5rem 0 0; padding: 0; }
+.strip-row { padding: .75rem 0; border-top: 1px solid var(--rule, #e5e5e5); }
+.strip-row[hidden] { display: none; }
+.strip-head { display: flex; gap: .75rem; align-items: baseline; flex-wrap: wrap; }
+.strip-meta { color: var(--muted, #666); font-size: .85rem; }
+.strip-none { color: var(--muted, #666); font-size: .9rem; margin: .4rem 0 0; }
+
+.strip { display: flex; gap: 2px; margin-top: .45rem; overflow-x: auto; padding-bottom: .2rem; }
+.blk {
+  flex: 0 0 auto; min-width: 4.5rem; padding: .3rem .5rem; border-radius: 3px;
+  font-size: .72rem; line-height: 1.25; display: flex; flex-direction: column; gap: .1rem;
+  border: 1px solid rgba(0,0,0,.12); background: #f2f2f2; color: #222;
+}
+.blk-n { font-variant-numeric: tabular-nums; opacity: .55; font-size: .65rem; }
+.blk-t { white-space: nowrap; }
+
+/* One hue per section type. Distinguishable in greyscale by lightness order,
+   and never the only carrier of meaning -- the label is always present. */
+.blk-hero         { background: #1f2933; color: #fff; border-color: #1f2933; }
+.blk-logos        { background: #d9e2ec; }
+.blk-proof        { background: #b3d4c4; }
+.blk-testimonial  { background: #cfe0b8; }
+.blk-pricing      { background: #f3d9a4; }
+.blk-faq          { background: #e6d3ef; }
+.blk-comparison   { background: #f7c9c0; }
+.blk-integrations { background: #c9dcef; }
+.blk-features     { background: #e4e7eb; }
+.blk-cta          { background: #f9e0b0; }
+.blk-media        { background: #ddd6f3; }
+.blk-other        { background: #fff; border-style: dashed; color: #666; }
+
+.pos-grid { display: grid; gap: 1.5rem; grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr)); }
+.pos h3 { margin: 0 0 .4rem; font-size: 1rem; }
+
+.filters { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; margin: 1rem 0 0; }
+.filters label { display: flex; gap: .4rem; align-items: center; font-size: .9rem; }
+.filter-count { color: var(--muted, #666); font-size: .85rem; }
+
+.scales { width: 100%; border-collapse: collapse; margin-top: .75rem; }
+.scales th, .scales td { text-align: right; padding: .35rem .5rem; border-bottom: 1px solid var(--rule, #e5e5e5); font-variant-numeric: tabular-nums; }
+.scales th[scope="row"], .scales thead th:first-child { text-align: left; }
+
+@media (max-width: 40rem) {
+  .blk { min-width: 3.6rem; font-size: .66rem; }
+}

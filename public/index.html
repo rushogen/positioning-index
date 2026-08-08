@@ -49,6 +49,7 @@
 
 <nav class="tabs wrap" aria-label="Sections">
   <a href="#/" data-tab="positioning" class="on">The state of positioning</a>
+  <a href="#/anatomy" data-tab="anatomy">Page anatomy</a>
   <a href="#/changes" data-tab="feed">Changes</a>
   <a href="#/companies" data-tab="companies">Companies</a>
   <a href="#/health" data-tab="health">Crawl health</a>
@@ -82,6 +83,23 @@
 
 <!--POSITIONING-->
 
+  </section>
+
+  <!-- ---------------------------------------------------------- page anatomy -->
+  <!--
+    Same contract as the landing view: every number, strip and company list is
+    written in by bin/build-site.js and is on screen before app.js runs. The
+    script adds the filter controls and nothing else, which is why the filter
+    bar ships hidden and is revealed by script.
+  -->
+  <section id="view-anatomy" class="view" hidden>
+    <h1>Page anatomy</h1>
+    <p class="lede">
+      How <!--COMPANY-COUNT--> B2B SaaS homepages are built, rather than what they say:
+      the order the sections come in, what each page carries, and how big it is.
+      Read as of <!--AS-OF-->.
+    </p>
+    <!--ANATOMY-->
   </section>
 
   <!-- ------------------------------------------------------ changes feed -->

@@ -199,3 +199,22 @@ test('with no per-family yields supplied, the gate falls back to the page-wide r
   });
   assert.equal(g.status, 'changed-structure', 'older replays still get the original behaviour');
 });
+
+// ------------------------------------------- re-parsing after a version bump
+
+import { applyResult } from '../src/store/files.js';
+
+test('the ledger carries which extractor last read a page, and a 304 does not erase it', () => {
+  const q = new Map();
+  applyResult(q, { slug: 'acme', kind: 'home', at: 'T1', status: 'ok', extractor_version: '1.0.0', etag: 'W/"a"' });
+  assert.equal(q.get('acme/home').extractor_version, '1.0.0');
+
+  // A run that returned 304 parsed nothing, so it did not change which
+  // extractor last read the page. Dropping the version here would make the
+  // bypass fire forever.
+  applyResult(q, { slug: 'acme', kind: 'home', at: 'T2', status: 'unchanged' });
+  assert.equal(q.get('acme/home').extractor_version, '1.0.0', 'carried forward across a 304');
+
+  applyResult(q, { slug: 'acme', kind: 'home', at: 'T3', status: 'ok', extractor_version: '1.1.0' });
+  assert.equal(q.get('acme/home').extractor_version, '1.1.0');
+});

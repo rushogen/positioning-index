@@ -133,11 +133,28 @@ export async function crawlTarget(target, ctx, { now = Date.now(), fetchImpl = f
   const q = ctx.queue.get(key) ?? {};
   const expected = signalsFor(target.kind);
 
+  // A conditional GET asks "have the bytes changed?", and the honest answer is
+  // usually no. But when WE have changed -- a new extractor version reads
+  // signals the old one did not -- unchanged bytes still need parsing, and a
+  // 304 means they never get it.
+  //
+  // Left alone this is worse than a slow rollout. The pages that would re-parse
+  // are exactly the pages that happen to be edited often, so a new signal's
+  // coverage would correlate with how frequently a company touches its
+  // homepage, and the resulting distribution would look perfectly plausible
+  // while describing publication habits rather than the market. Observed on
+  // 2026-08-08: the 1.1.0 sweep returned 304 for 189 of 309 targets and
+  // computed anatomy for 64 of 186 home pages.
+  //
+  // So the cache is bypassed for one sweep after a version bump. The politeness
+  // cost is one full body per page, once, which is the same cost as the day the
+  // page was first crawled.
+  const staleExtractor = q.extractor_version && q.extractor_version !== EXTRACTOR_VERSION;
   const fetched = await fetchPage(target.url, {
     robotsStore,
-    etag: q.etag ?? null,
-    lastModified: q.last_modified ?? null,
-    contentHash: q.content_hash ?? null,
+    etag: staleExtractor ? null : (q.etag ?? null),
+    lastModified: staleExtractor ? null : (q.last_modified ?? null),
+    contentHash: staleExtractor ? null : (q.content_hash ?? null),
     fetchImpl,
     now,
   });
@@ -314,6 +331,7 @@ export async function crawlTarget(target, ctx, { now = Date.now(), fetchImpl = f
     etag: fetched.etag ?? null,
     last_modified: fetched.lastModified ?? null,
     content_hash: fetched.contentHash ?? null,
+    extractor_version: EXTRACTOR_VERSION,
     failures: 0,
     next_due_at: iso(nextDueAt({
       status: 'ok',

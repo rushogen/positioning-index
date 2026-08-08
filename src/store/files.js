@@ -191,6 +191,13 @@ export function applyResult(queue, r) {
     etag: r.etag ?? null,
     last_modified: r.last_modified ?? null,
     content_hash: r.content_hash ?? null,
+    // Which extractor last read this page. The runner compares it against the
+    // running version and bypasses the conditional-GET cache when they differ:
+    // unchanged bytes still need re-parsing when WE have changed, and a 304
+    // would otherwise mean a new signal only ever lands on pages that happen to
+    // be edited often. Carried forward on a 304, because a run that did not
+    // parse did not change which extractor last did.
+    extractor_version: r.extractor_version ?? prev.extractor_version ?? null,
     consecutive_failures: r.failures ?? 0,
   });
   return queue;

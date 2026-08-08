@@ -411,7 +411,7 @@ async function renderCompany(slug) {
 
 // ------------------------------------------------------------------ router
 
-const VIEWS = ['positioning', 'feed', 'companies', 'health', 'company'];
+const VIEWS = ['positioning', 'anatomy', 'feed', 'companies', 'health', 'company'];
 
 function show(view) {
   for (const v of VIEWS) $(`#view-${v}`).hidden = v !== view;
@@ -433,10 +433,55 @@ async function route() {
   if (parts[0] === 'categories') { location.replace('#/'); return; }
   if (parts[0] === 'changes') { show('feed'); await renderFeed(); return; }
   if (parts[0] === 'health') { show('health'); await renderHealth(); return; }
+  // The anatomy view, like the landing view, is already in the document. All
+  // that is needed is to show it and switch the filter controls on -- they ship
+  // hidden so that a reader with scripting off is not offered a dead widget.
+  if (parts[0] === 'anatomy') { show('anatomy'); initAnatomyFilters(); return; }
 
   // The landing view is already in the document. Showing it is all there is
   // to do, and it is what an unrecognised route falls back to.
   show('positioning');
+}
+
+/**
+ * The only interactive part of the anatomy view.
+ *
+ * Every strip is already in the document; this filters them in place. No fetch,
+ * no re-render, no template -- the rows exist, and the control sets `hidden` on
+ * the ones that do not match. Runs once, guarded, because `route()` fires on
+ * every hash change.
+ */
+let anatomyFiltersReady = false;
+function initAnatomyFilters() {
+  if (anatomyFiltersReady) return;
+  const bar = $('#anatomy-filters');
+  const type = $('#f-type');
+  const q = $('#f-q');
+  const count = $('#f-count');
+  const rows = Array.from(document.querySelectorAll('#strips .strip-row'));
+  if (!bar || !type || !q || !rows.length) return;
+  anatomyFiltersReady = true;
+  bar.hidden = false;
+
+  const apply = () => {
+    const wantType = type.value;
+    const needle = q.value.trim().toLowerCase();
+    let shown = 0;
+    for (const row of rows) {
+      const types = (row.dataset.types || '').split(' ');
+      const name = (row.querySelector('a')?.textContent || '').toLowerCase();
+      const ok = (!wantType || types.includes(wantType)) && (!needle || name.includes(needle));
+      row.hidden = !ok;
+      if (ok) shown++;
+    }
+    count.textContent = shown === rows.length
+      ? `${rows.length} companies`
+      : `${shown} of ${rows.length} companies`;
+  };
+
+  type.addEventListener('change', apply);
+  q.addEventListener('input', apply);
+  apply();
 }
 
 // A route is a hash that starts with a slash. Anything else is an in-page
