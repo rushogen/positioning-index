@@ -12,6 +12,18 @@
   {
    "kind": "home",
    "url": "https://www.doctolib.fr/",
+   "fetched_at": "2026-08-08T11:46:57Z",
+   "http_status": 403,
+   "status": "blocked",
+   "reason": "HTTP 403: the origin refuses identified automated clients",
+   "bytes": 0,
+   "duration_ms": 790,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.doctolib.fr/",
    "fetched_at": "2026-08-08T07:57:18Z",
    "http_status": 403,
    "status": "blocked",
