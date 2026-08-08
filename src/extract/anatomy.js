@@ -85,11 +85,16 @@ const INTEGRATION = /\bintegrat(?:e|es|ion|ions)\b|\bconnectors?\b|\bworks with\
  * A real pull-quote has an opening quote mark at a word boundary, or an
  * attribution. An apostrophe between two letters is neither.
  */
+const TESTIMONIAL_HEADING = /\b(?:customer (?:stor(?:y|ies)|reviews?|success)|case stud(?:y|ies)|what (?:our )?customers say|don.t just take our word|real stories|loved by|success stories|why (?:teams|companies|customers) choose|hear (?:from|what)|deliver impact|win with|do better with|innovators win|companies (?:trust|succeed))\b/i;
 const AWARD = /\b(?:magic quadrant|forrester wave|gartner|g2|leader in|recognized (?:as|by)|award|badge|named a leader|top rated)\b/i;
 const EVENT = /\b(?:webinar|conference|summit|register now|save the date|join us (?:on|at)|\d{1,2}(?:st|nd|rd|th)? [A-Z][a-z]+ 20\d\d)\b/;
-const RESOURCE = /\b(?:blog|ebook|whitepaper|white paper|documentation|tutorials?|case stud(?:y|ies)|newsletter|changelog|help articles|read the (?:guide|docs|report)|download the report)\b/i;
+// Matched against the heading as well as the body. Against the body alone a
+// resources strip is indistinguishable from any page that links to a blog.
+const RESOURCE = /\b(?:blog|ebook|whitepaper|white paper|documentation|tutorials?|case stud(?:y|ies)|newsletter|changelog|help articles|resources|latest (?:research|news|insights|from)|in the spotlight|read the (?:guide|docs|story|report)|download the report|level up|product launches|explore what you can do|getting started)\b/i;
 const SECURITY = /\b(?:SOC ?2|ISO ?27001|GDPR|HIPAA|PCI[- ]DSS|FedRAMP|compliance|encryption|security standards|trust cent(?:er|re)|penetration test)\b/i;
-const PRODUCT_OVERVIEW = /\b(?:one platform|the platform|all[- ]in[- ]one|our products|explore (?:the )?platform|everything you need|single source of truth|unified)\b/i;
+// A product overview names the thing as a whole. Matched on the heading first,
+// because in the body every page says "platform" somewhere.
+const PRODUCT_OVERVIEW = /\b(?:platform|all[- ]in[- ]one|our products|everything you need|single source of truth|unified|one (?:place|system|tool)|why (?:choose|use)|meet the|the only|complete solution)\b/i;
 
 const TESTIMONY = /(^|[\s(\[—-])["“](?=\w)|["”]\s*[—–-]\s*\w|\bsays?\b|\bCEO\b|\bCTO\b|\bCFO\b|\bVP of\b|\bHead of\b|\bDirector of\b/i;
 
@@ -187,6 +192,7 @@ function measure(fragment, isFirst) {
     media: /<(?:video|iframe)\b/i.test(fragment),
     currency: CURRENCY.test(plain),
     quantified: QUANTIFIED.test(plain),
+    questions: countUpTo(/\?/g, plain, 20),
     action: ACTION.test(plain),
     integration: INTEGRATION.test(plain),
     testimony: TESTIMONY.test(plain),
@@ -213,7 +219,8 @@ export function classify(m, heading) {
 
   // Structural tells: a <details> list or a question heading is an FAQ, a table
   // is a comparison unless it carries prices.
-  if (m.details || (heading && QUESTION.test(heading))) return 'faq';
+  if (m.details) return 'faq';
+  if (heading && QUESTION.test(heading) && (m.questions >= 2 || /\bFAQ|frequently asked\b/i.test(m.plain))) return 'faq';
   if (m.table && m.currency) return 'pricing';
   if (m.table) return 'comparison';
   if (m.currency && /\b(?:free|plan|pricing|per month|per user)\b/i.test(m.plain)) return 'pricing';
@@ -221,9 +228,10 @@ export function classify(m, heading) {
   // Named vocabulary, most specific first. These run before `features` because
   // an awards band or a resource strip is otherwise a heading with links under
   // it, which is what a feature grid looks like from a distance.
-  if (AWARD.test(m.plain)) return 'awards';
+  if (AWARD.test(heading ?? '')) return 'awards';
   if (EVENT.test(m.plain)) return 'events';
   if (SECURITY.test(m.plain)) return 'security';
+  if (TESTIMONIAL_HEADING.test(heading ?? '')) return 'testimonial';
   if (m.quote || (m.testimony && m.words < 260)) return 'testimonial';
   if (m.quantified && m.words < 160) return 'proof';
   if (m.integration) return 'integrations';
@@ -233,13 +241,13 @@ export function classify(m, heading) {
   if (m.inputs >= 2) return 'cta';
   if (m.action && m.words < 80) return 'cta';
   if (m.media && m.words < 60) return 'media';
-  if (RESOURCE.test(m.plain) && m.words < 260) return 'resources';
+  if ((RESOURCE.test(heading ?? '') || RESOURCE.test(m.plain)) && m.words < 260) return 'resources';
 
   // A feature grid is several sub-headed blocks; a product overview is one
   // claim about the whole thing.
-  if (PRODUCT_OVERVIEW.test(m.plain) && m.h3 <= 4 && m.words < 320) return 'product';
+  if (PRODUCT_OVERVIEW.test(heading ?? '') && m.words < 420) return 'product';
   if (m.h3 >= 2) return 'features';
-  if (m.words >= 60) return 'features';
+  if (m.words >= 20) return 'features';
   return 'other';
 }
 

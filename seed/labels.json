@@ -49,6 +49,49 @@
       ]
     },
     {
+      "slug": "amplitude",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        },
+        {
+          "heading": "Trusted by teams shaping the future",
+          "type": "logos"
+        },
+        {
+          "heading": "One interface. All our capabilities.",
+          "type": "features"
+        },
+        {
+          "heading": "Set up Amplitude where you build",
+          "type": "integrations"
+        },
+        {
+          "heading": "Amplitude is the highest performing analytics agent on the market",
+          "type": "proof"
+        },
+        {
+          "heading": "The platform for building self-improving products",
+          "type": "product"
+        },
+        {
+          "heading": "Teams ship with Amplitude",
+          "type": "testimonial"
+        },
+        {
+          "heading": "Featured resources",
+          "type": "resources"
+        },
+        {
+          "heading": "The industry's most generous free plans",
+          "type": "pricing"
+        }
+      ]
+    },
+    {
       "slug": "asana",
       "by": "claude",
       "from": "page text read on 2026-08-08",
@@ -84,6 +127,127 @@
       ]
     },
     {
+      "slug": "attio",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        },
+        {
+          "heading": "The intelligent system that never sleeps. Picks up leads at 2am. Catches renewals before they slip. Hands you the answer before you ask.",
+          "type": "features"
+        },
+        {
+          "heading": "Live from day one. Connect your inbox and calendar. Attio learns your business and builds itself around it, before your first agent even gets to work.",
+          "type": "features"
+        },
+        {
+          "heading": "Universal Context ™",
+          "type": "features"
+        },
+        {
+          "heading": "All of the signals, none of the noise. Ready to act on.",
+          "type": "features"
+        },
+        {
+          "heading": "SDK. API. MCP. Build anything on Attio.",
+          "type": "integrations"
+        },
+        {
+          "heading": "Run at any scale. Production-grade for your team and agents.",
+          "type": "proof"
+        },
+        {
+          "heading": "Trusted by 30,000+ customers. From first agent to enterprise scale.",
+          "type": "proof"
+        },
+        {
+          "heading": "Better as you grow. New features every week to keep pace with you.",
+          "type": "resources"
+        },
+        {
+          "heading": "Agentic revenue runs on Attio.",
+          "type": "cta"
+        }
+      ]
+    },
+    {
+      "slug": "aveva",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        },
+        {
+          "heading": "Empowering industry through digital insights",
+          "type": "product"
+        },
+        {
+          "heading": "Unlock your industrial intelligence",
+          "type": "product"
+        },
+        {
+          "heading": "See what's possible",
+          "type": "features"
+        },
+        {
+          "heading": "Meet the engine behind industrial intelligence",
+          "type": "product"
+        },
+        {
+          "heading": "Get the latest from Our Industrial Life",
+          "type": "resources"
+        },
+        {
+          "heading": "Speak with an expert",
+          "type": "cta"
+        }
+      ]
+    },
+    {
+      "slug": "brevo",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        },
+        {
+          "heading": "Join 600,000+ customers around the world who trust Brevo",
+          "type": "logos"
+        },
+        {
+          "heading": "Engage your audience your way",
+          "type": "features"
+        },
+        {
+          "heading": "AI agents that work with you, and for you",
+          "type": "features"
+        },
+        {
+          "heading": "Built for every business — from the first send to enterprise",
+          "type": "product"
+        },
+        {
+          "heading": "Awarded for excellence",
+          "type": "awards"
+        },
+        {
+          "heading": "Real stories, real success",
+          "type": "testimonial"
+        },
+        {
+          "heading": "Ready to grow with Brevo?",
+          "type": "cta"
+        }
+      ]
+    },
+    {
       "slug": "camunda",
       "by": "claude",
       "from": "page text read on 2026-08-08",
@@ -103,6 +267,60 @@
       ]
     },
     {
+      "slug": "cloudflare",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        },
+        {
+          "heading": "Region: Earth",
+          "type": "product"
+        },
+        {
+          "heading": "Cloudflare powers 42% of the Fortune 500",
+          "type": "logos"
+        },
+        {
+          "heading": "Why choose Cloudflare",
+          "type": "product"
+        },
+        {
+          "heading": "Pay only when your code runs",
+          "type": "pricing"
+        }
+      ]
+    },
+    {
+      "slug": "databricks",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        },
+        {
+          "heading": "Build and run apps, agents and AI on your data",
+          "type": "product"
+        },
+        {
+          "heading": "How innovators win with data and AI",
+          "type": "testimonial"
+        },
+        {
+          "heading": "Recognized for innovation in data and AI",
+          "type": "awards"
+        },
+        {
+          "heading": "In the spotlight",
+          "type": "resources"
+        }
+      ]
+    },
+    {
       "slug": "datadog",
       "by": "claude",
       "from": "page text read on 2026-08-08",
@@ -110,6 +328,33 @@
         {
           "heading": "Products",
           "type": "product"
+        }
+      ]
+    },
+    {
+      "slug": "deel",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        },
+        {
+          "heading": "The Global People Platform",
+          "type": "product"
+        },
+        {
+          "heading": "Accomplish more in less time",
+          "type": "features"
+        },
+        {
+          "heading": "One modern experience for today's workforce",
+          "type": "product"
+        },
+        {
+          "heading": "Our customer reviews",
+          "type": "testimonial"
         }
       ]
     },
@@ -208,6 +453,61 @@
       ]
     },
     {
+      "slug": "factorial",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        },
+        {
+          "heading": "Meet One, your trusty AI agent",
+          "type": "features"
+        },
+        {
+          "heading": "How can I help you today?",
+          "type": "features"
+        },
+        {
+          "heading": "Automate the work that gets in the way of work",
+          "type": "features"
+        },
+        {
+          "heading": "Put the human back in HR",
+          "type": "product"
+        },
+        {
+          "heading": "Why Factorial? Well, why not?",
+          "type": "features"
+        },
+        {
+          "heading": "The proof that we do it right",
+          "type": "proof"
+        },
+        {
+          "heading": "Our product launches, fresh every week",
+          "type": "resources"
+        },
+        {
+          "heading": "We believe in what we do – because 16,000 companies do, too",
+          "type": "proof"
+        },
+        {
+          "heading": "Sync with hundreds of apps. Unleash limitless possibilities.",
+          "type": "integrations"
+        },
+        {
+          "heading": "Revolutionize your team's experience and drive your business forward",
+          "type": "cta"
+        },
+        {
+          "heading": "Still have questions about our BMS?",
+          "type": "faq"
+        }
+      ]
+    },
+    {
       "slug": "figma",
       "by": "claude",
       "from": "page text read on 2026-08-08",
@@ -239,6 +539,131 @@
         {
           "heading": "Explore what you can do in Figma.",
           "type": "resources"
+        }
+      ]
+    },
+    {
+      "slug": "fivetran",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        },
+        {
+          "heading": "TRUSTED BY leading data and ai COMPANIES",
+          "type": "logos"
+        },
+        {
+          "heading": "All the context your AI needs",
+          "type": "features"
+        },
+        {
+          "heading": "Move data reliably and securely",
+          "type": "features"
+        },
+        {
+          "heading": "Manage data in open formats",
+          "type": "features"
+        },
+        {
+          "heading": "Transform data into trusted insights",
+          "type": "features"
+        },
+        {
+          "heading": "Built to meet the standards security teams demand",
+          "type": "security"
+        },
+        {
+          "heading": "Turn data into a competitive advantage",
+          "type": "product"
+        },
+        {
+          "heading": "Fivetran by the numbers",
+          "type": "proof"
+        },
+        {
+          "heading": "Security",
+          "type": "security"
+        },
+        {
+          "heading": "Governance",
+          "type": "security"
+        },
+        {
+          "heading": "Extensibility",
+          "type": "features"
+        },
+        {
+          "heading": "Hybrid deployment",
+          "type": "features"
+        },
+        {
+          "heading": "Experience the ease and scale of Fivetran in less than 2 minutes",
+          "type": "cta"
+        },
+        {
+          "heading": "Resources to build and scale your data foundation",
+          "type": "resources"
+        },
+        {
+          "heading": "Start building your data foundation for AI",
+          "type": "cta"
+        }
+      ]
+    },
+    {
+      "slug": "front",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        },
+        {
+          "heading": "Where cross-team customer operations stops crossing wires",
+          "type": "features"
+        }
+      ]
+    },
+    {
+      "slug": "gocardless",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        },
+        {
+          "heading": "Von mehr als 100.000 Unternehmen genutzt. Von Klein bis Groß. Weltweit.",
+          "type": "logos"
+        },
+        {
+          "heading": "Zahlungen. Aber ohne Aufwand.",
+          "type": "product"
+        },
+        {
+          "heading": "Alles, was Ihr Unternehmen braucht",
+          "type": "features"
+        },
+        {
+          "heading": "Großartig allein. Oder auch in Verbindung mit einer bereits verwendeten Software.",
+          "type": "integrations"
+        },
+        {
+          "heading": "Kundenstimmen",
+          "type": "testimonial"
+        },
+        {
+          "heading": "Ziehen Sie jetzt Zahlungen ein",
+          "type": "features"
+        },
+        {
+          "heading": "Sind Sie bereit für Zahlungen ohne unnötige Verzögerungen?",
+          "type": "cta"
         }
       ]
     },
@@ -352,6 +777,72 @@
       ]
     },
     {
+      "slug": "mendix",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        },
+        {
+          "heading": "All the capabilities you need to build for the hybrid workforce",
+          "type": "features"
+        },
+        {
+          "heading": "Your models, your data, your cloud.",
+          "type": "features"
+        },
+        {
+          "heading": "Don’t just take our word for it",
+          "type": "testimonial"
+        },
+        {
+          "heading": "By the numbers",
+          "type": "proof"
+        },
+        {
+          "heading": "Understand the agentic enterprise",
+          "type": "resources"
+        }
+      ]
+    },
+    {
+      "slug": "miro",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        },
+        {
+          "heading": "The only thing more important than moving fast is moving the needle",
+          "type": "proof"
+        },
+        {
+          "heading": "6,000+",
+          "type": "proof"
+        },
+        {
+          "heading": "F l o w f r o m i d e a t o o u t c o m e i n s e c o n d s",
+          "type": "features"
+        },
+        {
+          "heading": "Experience the Innovation Workspace",
+          "type": "features"
+        },
+        {
+          "heading": "The AI platform for teamwork",
+          "type": "product"
+        },
+        {
+          "heading": "Need help getting started?",
+          "type": "resources"
+        }
+      ]
+    },
+    {
       "slug": "mollie",
       "by": "claude",
       "from": "page text read on 2026-08-08",
@@ -379,6 +870,242 @@
         {
           "heading": "Simplify payments and money management",
           "type": "cta"
+        }
+      ]
+    },
+    {
+      "slug": "mongodb",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        },
+        {
+          "heading": "Level Up Your MongoDB Skills",
+          "type": "resources"
+        },
+        {
+          "heading": "MongoDB Atlas",
+          "type": "product"
+        },
+        {
+          "heading": "Loved by builders, trusted by enterprises",
+          "type": "testimonial"
+        },
+        {
+          "heading": "Works seamlessly with your tech stack",
+          "type": "integrations"
+        }
+      ]
+    },
+    {
+      "slug": "notion",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        }
+      ]
+    },
+    {
+      "slug": "odoo",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        }
+      ]
+    },
+    {
+      "slug": "okta",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        }
+      ]
+    },
+    {
+      "slug": "onetrust",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        }
+      ]
+    },
+    {
+      "slug": "outsystems",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        }
+      ]
+    },
+    {
+      "slug": "paddle",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        }
+      ]
+    },
+    {
+      "slug": "pleo",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        }
+      ]
+    },
+    {
+      "slug": "posthog",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        }
+      ]
+    },
+    {
+      "slug": "procore",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        }
+      ]
+    },
+    {
+      "slug": "sentry",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        }
+      ]
+    },
+    {
+      "slug": "slack",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        }
+      ]
+    },
+    {
+      "slug": "snyk",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        }
+      ]
+    },
+    {
+      "slug": "supabase",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        }
+      ]
+    },
+    {
+      "slug": "usercentrics",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        }
+      ]
+    },
+    {
+      "slug": "vanta",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        }
+      ]
+    },
+    {
+      "slug": "veeva",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        }
+      ]
+    },
+    {
+      "slug": "veriff",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        }
+      ]
+    },
+    {
+      "slug": "webflow",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        }
+      ]
+    },
+    {
+      "slug": "zendesk",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
         }
       ]
     }

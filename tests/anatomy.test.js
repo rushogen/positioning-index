@@ -45,7 +45,7 @@ test('nav and footer are chrome and are not sections', () => {
 
 test('classify covers its own vocabulary and returns nothing outside it', () => {
   const base = {
-    isFirst: false, plain: '', words: 50, imgs: 0, svgs: 0, links: 0, h3: 0, inputs: 0,
+    isFirst: false, plain: '', words: 50, imgs: 0, svgs: 0, links: 0, h3: 0, inputs: 0, questions: 0,
     table: false, details: false, quote: false, media: false,
     currency: false, quantified: false, action: false, integration: false, testimony: false,
   };
@@ -54,7 +54,10 @@ test('classify covers its own vocabulary and returns nothing outside it', () => 
     [{ ...base, words: 4, imgs: 8 }, null, 'logos'],
     [{ ...base, words: 40, svgs: 12, imgs: 0 }, null, 'logos'],
     [{ ...base, details: true }, null, 'faq'],
-    [{ ...base }, 'How does billing work?', 'faq'],
+    // A question heading alone is not an FAQ. "How can I help you today?" is a
+    // product demo; factorial.com and several others were misread that way.
+    // An FAQ is a list of questions, so the body has to contain more than one.
+    [{ ...base, questions: 4 }, 'How does billing work?', 'faq'],
     [{ ...base, table: true, currency: true }, null, 'pricing'],
     [{ ...base, table: true }, null, 'comparison'],
     [{ ...base, quote: true }, null, 'testimonial'],
@@ -64,7 +67,10 @@ test('classify covers its own vocabulary and returns nothing outside it', () => 
     [{ ...base, action: true, words: 20 }, null, 'cta'],
     [{ ...base, media: true, words: 10 }, null, 'media'],
     [{ ...base, h3: 4 }, null, 'features'],
-    [{ ...base }, null, 'other'],
+    [{ ...base, questions: 0 }, 'How can I help you today?', 'features'],
+    // `other` is what is left when a span is too short to be a feature band and
+    // matches nothing else. It is a real answer and is counted as one.
+    [{ ...base, words: 12 }, null, 'other'],
   ];
   for (const [m, heading, expected] of cases) {
     const got = classify(m, heading);
