@@ -9,8 +9,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-08T07:49:59Z",
-   "last_good_at": "2026-08-08T07:49:59Z",
+   "last_observed_at": "2026-08-08T07:55:58Z",
+   "last_good_at": "2026-08-08T07:55:58Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -27,8 +27,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-08T07:49:59Z",
-   "last_good_at": "2026-08-08T07:49:59Z",
+   "last_observed_at": "2026-08-08T07:55:58Z",
+   "last_good_at": "2026-08-08T07:55:58Z",
    "last_good_value": "logo_wall, proof, integrations",
    "last_good_json": "{\"present\":{\"logo_wall\":true,\"proof\":true,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":true,\"media\":false}}",
    "last_good_hash": "73f72d10",
@@ -45,8 +45,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-08T07:49:59Z",
-   "last_good_at": "2026-08-08T07:49:59Z",
+   "last_observed_at": "2026-08-08T07:55:58Z",
+   "last_good_at": "2026-08-08T07:55:58Z",
    "last_good_value": "45",
    "last_good_json": null,
    "last_good_hash": "8ce38d62",
@@ -63,8 +63,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-08T07:49:59Z",
-   "last_good_at": "2026-08-08T07:49:59Z",
+   "last_observed_at": "2026-08-08T07:55:58Z",
+   "last_good_at": "2026-08-08T07:55:58Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -81,8 +81,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-08T07:49:59Z",
-   "last_good_at": "2026-08-08T07:49:59Z",
+   "last_observed_at": "2026-08-08T07:55:58Z",
+   "last_good_at": "2026-08-08T07:55:58Z",
    "last_good_value": "62",
    "last_good_json": null,
    "last_good_hash": "17e8e561",
@@ -99,8 +99,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-08T07:49:59Z",
-   "last_good_at": "2026-08-08T07:49:59Z",
+   "last_observed_at": "2026-08-08T07:55:58Z",
+   "last_good_at": "2026-08-08T07:55:58Z",
    "last_good_value": "7",
    "last_good_json": null,
    "last_good_hash": "320ca3f6",
@@ -117,8 +117,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-08T07:49:59Z",
-   "last_good_at": "2026-08-08T07:49:59Z",
+   "last_observed_at": "2026-08-08T07:55:58Z",
+   "last_good_at": "2026-08-08T07:55:58Z",
    "last_good_value": "hero > logos > features > proof > security > awards > integrations",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":37,\"merged\":1},{\"position\":2,\"type\":\"logos\",\"heading\":\"TRUSTED BY\",\"words\":2,\"merged\":1},{\"position\":3,\"type\":\"features\",\"heading\":\"HOW WE HELP\",\"words\":215,\"merged\":1},{\"position\":4,\"type\":\"proof\",\"heading\":\"IDNOW AT A GLANCE\",\"words\":25,\"merged\":1},{\"position\":5,\"type\":\"security\",\"heading\":\"Trust Platform .\",\"words\":76,\"merged\":3},{\"position\":6,\"type\":\"awards\",\"heading\":\"CASE STUDIES\",\"words\":367,\"merged\":1},{\"position\":7,\"type\":\"integrations\",\"heading\":\"WHAT’S GOING ON\",\"words\":130,\"merged\":1}]}",
    "last_good_hash": "dd9e3359",
@@ -135,8 +135,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-08T07:49:59Z",
-   "last_good_at": "2026-08-08T07:49:59Z",
+   "last_observed_at": "2026-08-08T07:55:58Z",
+   "last_good_at": "2026-08-08T07:55:58Z",
    "last_good_value": 1127,
    "last_good_json": null,
    "last_good_hash": "0e29cc58",
@@ -153,8 +153,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-08T07:49:59Z",
-   "last_good_at": "2026-08-08T07:49:59Z",
+   "last_observed_at": "2026-08-08T07:55:58Z",
+   "last_good_at": "2026-08-08T07:55:58Z",
    "last_good_value": "idnow trust platform",
    "last_good_json": null,
    "last_good_hash": "5c78cda5",
@@ -171,8 +171,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-08T07:49:59Z",
-   "last_good_at": "2026-08-08T07:49:59Z",
+   "last_observed_at": "2026-08-08T07:55:58Z",
+   "last_good_at": "2026-08-08T07:55:58Z",
    "last_good_value": "3. Docusign, Customer Actual, Customer Aseag, Customer Audi, Customer Banxware, Customer BBBank, Customer Chaabi Bank, Customer Charlili, Customer Congstar, Customer Dekra, Customer Eusko, Customer Flatex, Customer Gojob, Customer Hahnair, Customer Hanseatic Bank, Customer Hiflow, Customer Hochbahn, Customer Holvi, Customer Intrum, Customer Intrum 1, Customer Linkfx, Customer Mahle, Customer Ondorse, Customer Payone, Customer Qonto, Customer Sixt, Customer Sofinco, Customer Solaris, Customer TFbank, Customer Younited, GOJOB COULEUR JAUNE 1, Speech, TFBank 1 300x69",
    "last_good_json": "{\"names\":[\"3. Docusign\",\"Customer Actual\",\"Customer Aseag\",\"Customer Audi\",\"Customer Banxware\",\"Customer BBBank\",\"Customer Chaabi Bank\",\"Customer Charlili\",\"Customer Congstar\",\"Customer Dekra\",\"Customer Eusko\",\"Customer Flatex\",\"Customer Gojob\",\"Customer Hahnair\",\"Customer Hanseatic Bank\",\"Customer Hiflow\",\"Customer Hochbahn\",\"Customer Holvi\",\"Customer Intrum\",\"Customer Intrum 1\",\"Customer Linkfx\",\"Customer Mahle\",\"Customer Ondorse\",\"Customer Payone\",\"Customer Qonto\",\"Customer Sixt\",\"Customer Sofinco\",\"Customer Solaris\",\"Customer TFbank\",\"Customer Younited\",\"GOJOB COULEUR JAUNE 1\",\"Speech\",\"TFBank 1 300x69\"],\"count\":33,\"lead\":\"TRUSTED BY <div class=\\\"wp-block-group logo-slider is-content-justification-cente\"}",
    "last_good_hash": "03956d2c",
@@ -189,8 +189,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-08T07:49:59Z",
-   "last_good_at": "2026-08-08T07:49:59Z",
+   "last_observed_at": "2026-08-08T07:55:58Z",
+   "last_good_at": "2026-08-08T07:55:58Z",
    "last_good_value": "IDnow Trust Platform: Go Beyond KYC to TYC.",
    "last_good_json": null,
    "last_good_hash": "14dd395c",
@@ -207,8 +207,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-08T07:49:59Z",
-   "last_good_at": "2026-08-08T07:49:59Z",
+   "last_observed_at": "2026-08-08T07:55:58Z",
+   "last_good_at": "2026-08-08T07:55:58Z",
    "last_good_value": "Move beyond KYC to TYC with IDnow’s scalable identity platform - combining adaptive compliance, real-time fraud prevention, and end-to-end trust.",
    "last_good_json": null,
    "last_good_hash": "4bcaf3e4",
@@ -225,8 +225,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-08T07:49:59Z",
-   "last_good_at": "2026-08-08T07:49:59Z",
+   "last_observed_at": "2026-08-08T07:55:58Z",
+   "last_good_at": "2026-08-08T07:55:58Z",
    "last_good_value": "IDnow: Transforming KYC to TYC",
    "last_good_json": null,
    "last_good_hash": "4ce33b48",
@@ -243,7 +243,7 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-08T07:49:59Z",
+   "last_observed_at": "2026-08-08T07:55:58Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -261,8 +261,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-08T07:49:59Z",
-   "last_good_at": "2026-08-08T07:49:59Z",
+   "last_observed_at": "2026-08-08T07:55:58Z",
+   "last_good_at": "2026-08-08T07:55:58Z",
    "last_good_value": "Move beyond Know Your Customer (KYC) to Trust Your Customer (TYC) with IDnow’s scalable identity platform, combining adaptive compliance, real-time fraud prevention and end-to-end trust.",
    "last_good_json": null,
    "last_good_hash": "5c22263a",
@@ -280,6 +280,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://idnow.io/",
+   "fetched_at": "2026-08-08T07:55:58Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.2.0 -> 1.2.1; re-baselining",
+   "bytes": 186980,
+   "duration_ms": 967,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://idnow.io/",

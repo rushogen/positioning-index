@@ -9,8 +9,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-08T07:50:00Z",
-   "last_good_at": "2026-08-08T07:50:00Z",
+   "last_observed_at": "2026-08-08T07:56:27Z",
+   "last_good_at": "2026-08-08T07:56:27Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -27,8 +27,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-08T07:50:00Z",
-   "last_good_at": "2026-08-08T07:50:00Z",
+   "last_observed_at": "2026-08-08T07:56:27Z",
+   "last_good_at": "2026-08-08T07:56:27Z",
    "last_good_value": "logo_wall, media",
    "last_good_json": "{\"present\":{\"logo_wall\":true,\"proof\":false,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":true}}",
    "last_good_hash": "342274d1",
@@ -45,8 +45,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-08T07:50:00Z",
-   "last_good_at": "2026-08-08T07:50:00Z",
+   "last_observed_at": "2026-08-08T07:56:27Z",
+   "last_good_at": "2026-08-08T07:56:27Z",
    "last_good_value": "24",
    "last_good_json": null,
    "last_good_hash": "89f29333",
@@ -63,8 +63,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-08T07:50:00Z",
-   "last_good_at": "2026-08-08T07:50:00Z",
+   "last_observed_at": "2026-08-08T07:56:27Z",
+   "last_good_at": "2026-08-08T07:56:27Z",
    "last_good_value": "3",
    "last_good_json": null,
    "last_good_hash": "360caa42",
@@ -81,8 +81,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-08T07:50:00Z",
-   "last_good_at": "2026-08-08T07:50:00Z",
+   "last_observed_at": "2026-08-08T07:56:27Z",
+   "last_good_at": "2026-08-08T07:56:27Z",
    "last_good_value": "86",
    "last_good_json": null,
    "last_good_hash": "8c01a0e3",
@@ -99,8 +99,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-08T07:50:00Z",
-   "last_good_at": "2026-08-08T07:50:00Z",
+   "last_observed_at": "2026-08-08T07:56:27Z",
+   "last_good_at": "2026-08-08T07:56:27Z",
    "last_good_value": "5",
    "last_good_json": null,
    "last_good_hash": "300ca0d0",
@@ -117,8 +117,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-08T07:50:00Z",
-   "last_good_at": "2026-08-08T07:50:00Z",
+   "last_observed_at": "2026-08-08T07:56:27Z",
+   "last_good_at": "2026-08-08T07:56:27Z",
    "last_good_value": "hero > logos > media > logos > other",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":27,\"merged\":1},{\"position\":2,\"type\":\"logos\",\"heading\":\"Empowering industry through digital insights\",\"words\":34,\"merged\":1},{\"position\":3,\"type\":\"media\",\"heading\":\"Unlock your industrial intelligence\",\"words\":49,\"merged\":1},{\"position\":4,\"type\":\"logos\",\"heading\":\"See what's possible\",\"words\":21,\"merged\":1},{\"position\":5,\"type\":\"other\",\"heading\":\"Meet the engine behind industrial intelligence\",\"words\":55,\"merged\":3}]}",
    "last_good_hash": "6f1e4753",
@@ -135,8 +135,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-08T07:50:00Z",
-   "last_good_at": "2026-08-08T07:50:00Z",
+   "last_observed_at": "2026-08-08T07:56:27Z",
+   "last_good_at": "2026-08-08T07:56:27Z",
    "last_good_value": 225,
    "last_good_json": null,
    "last_good_hash": "2aec76b0",
@@ -153,8 +153,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-08T07:50:00Z",
-   "last_good_at": "2026-08-08T07:50:00Z",
+   "last_observed_at": "2026-08-08T07:56:27Z",
+   "last_good_at": "2026-08-08T07:56:27Z",
    "last_good_value": "industrial software",
    "last_good_json": null,
    "last_good_hash": "0c357a77",
@@ -171,8 +171,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-08T07:50:00Z",
-   "last_good_at": "2026-08-08T07:50:00Z",
+   "last_observed_at": "2026-08-08T07:56:27Z",
+   "last_good_at": "2026-08-08T07:56:27Z",
    "last_good_value": "Chemicals 185x130, Consumer Products 185x130, EPC 185x130, Facebook, Instagram, linkedin, Oil Gas Energy 185x130, Power Utilities 185x130, Threads, tiktok, Twitter, Youtube",
    "last_good_json": "{\"names\":[\"Chemicals 185x130\",\"Consumer Products 185x130\",\"EPC 185x130\",\"Facebook\",\"Instagram\",\"linkedin\",\"Oil Gas Energy 185x130\",\"Power Utilities 185x130\",\"Threads\",\"tiktok\",\"Twitter\",\"Youtube\"],\"count\":12,\"lead\":\"powering industry through digital insights\"}",
    "last_good_hash": "e518ed55",
@@ -189,8 +189,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-08T07:50:00Z",
-   "last_good_at": "2026-08-08T07:50:00Z",
+   "last_observed_at": "2026-08-08T07:56:27Z",
+   "last_good_at": "2026-08-08T07:56:27Z",
    "last_good_value": "Unlock your industrial intelligence",
    "last_good_json": null,
    "last_good_hash": "df75faf2",
@@ -207,8 +207,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-08T07:50:00Z",
-   "last_good_at": "2026-08-08T07:50:00Z",
+   "last_observed_at": "2026-08-08T07:56:27Z",
+   "last_good_at": "2026-08-08T07:56:27Z",
    "last_good_value": "At AVEVA, we work with you and harness the power of our ecosystem, to deliver solutions and expertise to optimize engineering, operations and performance.",
    "last_good_json": null,
    "last_good_hash": "e66f9d43",
@@ -225,8 +225,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-08T07:50:00Z",
-   "last_good_at": "2026-08-08T07:50:00Z",
+   "last_observed_at": "2026-08-08T07:56:27Z",
+   "last_good_at": "2026-08-08T07:56:27Z",
    "last_good_value": "AVEVA - Global Leader in Industrial Software",
    "last_good_json": null,
    "last_good_hash": "683a70ee",
@@ -243,7 +243,7 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-08T07:50:00Z",
+   "last_observed_at": "2026-08-08T07:56:27Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -261,8 +261,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-08T07:50:00Z",
-   "last_good_at": "2026-08-08T07:50:00Z",
+   "last_observed_at": "2026-08-08T07:56:27Z",
+   "last_good_at": "2026-08-08T07:56:27Z",
    "last_good_value": "AVEVA announces new AI capabilities at AVEVA World 2026 Read more",
    "last_good_json": null,
    "last_good_hash": "3b81fe37",
@@ -280,6 +280,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.aveva.com/",
+   "fetched_at": "2026-08-08T07:56:27Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.2.0 -> 1.2.1; re-baselining",
+   "bytes": 279969,
+   "duration_ms": 90,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.aveva.com/",

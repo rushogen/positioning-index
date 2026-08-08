@@ -10,8 +10,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-08T07:51:24Z",
-   "last_good_at": "2026-08-08T07:51:24Z",
+   "last_observed_at": "2026-08-08T07:57:26Z",
+   "last_good_at": "2026-08-08T07:57:26Z",
    "last_good_value": "2",
    "last_good_json": null,
    "last_good_hash": "370cabd5",
@@ -28,8 +28,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-08T07:51:24Z",
-   "last_good_at": "2026-08-08T07:51:24Z",
+   "last_observed_at": "2026-08-08T07:57:26Z",
+   "last_good_at": "2026-08-08T07:57:26Z",
    "last_good_value": "integrations",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":true,\"media\":false}}",
    "last_good_hash": "75846fda",
@@ -46,8 +46,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-08T07:51:24Z",
-   "last_good_at": "2026-08-08T07:51:24Z",
+   "last_observed_at": "2026-08-08T07:57:26Z",
+   "last_good_at": "2026-08-08T07:57:26Z",
    "last_good_value": "63",
    "last_good_json": null,
    "last_good_hash": "16e8e3ce",
@@ -64,8 +64,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-08T07:51:24Z",
-   "last_good_at": "2026-08-08T07:51:24Z",
+   "last_observed_at": "2026-08-08T07:57:26Z",
+   "last_good_at": "2026-08-08T07:57:26Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -82,8 +82,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-08T07:51:24Z",
-   "last_good_at": "2026-08-08T07:51:24Z",
+   "last_observed_at": "2026-08-08T07:57:26Z",
+   "last_good_at": "2026-08-08T07:57:26Z",
    "last_good_value": "21",
    "last_good_json": null,
    "last_good_hash": "8cf297ec",
@@ -100,8 +100,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-08T07:51:24Z",
-   "last_good_at": "2026-08-08T07:51:24Z",
+   "last_observed_at": "2026-08-08T07:57:26Z",
+   "last_good_at": "2026-08-08T07:57:26Z",
    "last_good_value": "4",
    "last_good_json": null,
    "last_good_hash": "310ca263",
@@ -118,8 +118,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-08T07:51:24Z",
-   "last_good_at": "2026-08-08T07:51:24Z",
+   "last_observed_at": "2026-08-08T07:57:26Z",
+   "last_good_at": "2026-08-08T07:57:26Z",
    "last_good_value": "hero > resources > product > integrations",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":88,\"merged\":1},{\"position\":2,\"type\":\"resources\",\"heading\":\"Same CDP, new home base.\",\"words\":54,\"merged\":1},{\"position\":3,\"type\":\"product\",\"heading\":\"Collect real-time data in unified profiles—and so much more\",\"words\":172,\"merged\":1},{\"position\":4,\"type\":\"integrations\",\"heading\":\"Resources to learn, build, or troubleshoot\",\"words\":121,\"merged\":1}]}",
    "last_good_hash": "bd237298",
@@ -136,8 +136,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-08T07:51:24Z",
-   "last_good_at": "2026-08-08T07:51:24Z",
+   "last_observed_at": "2026-08-08T07:57:26Z",
+   "last_good_at": "2026-08-08T07:57:26Z",
    "last_good_value": 435,
    "last_good_json": null,
    "last_good_hash": "1d286f1f",
@@ -154,8 +154,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-08T07:51:24Z",
-   "last_good_at": "2026-08-08T07:51:24Z",
+   "last_observed_at": "2026-08-08T07:57:26Z",
+   "last_good_at": "2026-08-08T07:57:26Z",
    "last_good_value": "twilio segment customer data platform",
    "last_good_json": null,
    "last_good_hash": "30128603",
@@ -172,7 +172,7 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-08T07:51:24Z",
+   "last_observed_at": "2026-08-08T07:57:26Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -188,8 +188,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-08T07:51:24Z",
-   "last_good_at": "2026-08-08T07:51:24Z",
+   "last_observed_at": "2026-08-08T07:57:26Z",
+   "last_good_at": "2026-08-08T07:57:26Z",
    "last_good_value": "Segment ❤️ Twilio. We're finally moving in together on Twilio.com!",
    "last_good_json": null,
    "last_good_hash": "e9eade16",
@@ -206,8 +206,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-08T07:51:24Z",
-   "last_good_at": "2026-08-08T07:51:24Z",
+   "last_observed_at": "2026-08-08T07:57:26Z",
+   "last_good_at": "2026-08-08T07:57:26Z",
    "last_good_value": "Collect, unify, and enrich customer data across any app or device with the Twilio Segment CDP, now available on Twilio.com.",
    "last_good_json": null,
    "last_good_hash": "0f3c6f95",
@@ -224,8 +224,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-08T07:51:24Z",
-   "last_good_at": "2026-08-08T07:51:24Z",
+   "last_observed_at": "2026-08-08T07:57:26Z",
+   "last_good_at": "2026-08-08T07:57:26Z",
    "last_good_value": "Twilio Segment Customer Data Platform | Twilio",
    "last_good_json": null,
    "last_good_hash": "c6c6fdb5",
@@ -242,7 +242,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-08T07:49:55Z",
+   "last_observed_at": "2026-08-08T07:55:48Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -258,7 +258,7 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-08T07:49:55Z",
+   "last_observed_at": "2026-08-08T07:55:48Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -274,8 +274,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-08T07:49:55Z",
-   "last_good_at": "2026-08-08T07:49:55Z",
+   "last_observed_at": "2026-08-08T07:55:48Z",
+   "last_good_at": "2026-08-08T07:55:48Z",
    "last_good_value": "Customer Data Platform Pricing | Twilio",
    "last_good_json": null,
    "last_good_hash": "15bc0c68",
@@ -292,7 +292,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-08T07:49:55Z",
+   "last_observed_at": "2026-08-08T07:55:48Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -308,7 +308,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-08T07:49:55Z",
+   "last_observed_at": "2026-08-08T07:55:48Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -324,7 +324,7 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-08T07:51:24Z",
+   "last_observed_at": "2026-08-08T07:57:26Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -340,8 +340,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-08T07:51:24Z",
-   "last_good_at": "2026-08-08T07:51:24Z",
+   "last_observed_at": "2026-08-08T07:57:26Z",
+   "last_good_at": "2026-08-08T07:57:26Z",
    "last_good_value": "We're merging our websites to make things simpler. You can now find our leading customer data platform—plus, everything else Twilio offers, over on Twilio.com .",
    "last_good_json": null,
    "last_good_hash": "3403f13b",
@@ -359,6 +359,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.twilio.com/en-us/segment",
+   "fetched_at": "2026-08-08T07:57:26Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.2.0 -> 1.2.1; re-baselining",
+   "bytes": 609874,
+   "duration_ms": 229,
+   "signals_found": 13,
+   "signals_expected": 15
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.twilio.com/en-us/pricing/customer-data",
+   "fetched_at": "2026-08-08T07:55:48Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.2.0 -> 1.2.1; re-baselining",
+   "bytes": 814865,
+   "duration_ms": 411,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
   {
    "kind": "home",
    "url": "https://www.twilio.com/en-us/segment",

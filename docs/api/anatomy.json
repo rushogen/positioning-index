@@ -1,9 +1,9 @@
 {
  "quality": {
-  "sections": 1306,
-  "other": 198,
-  "named": 1108,
-  "other_share": 15.2,
+  "sections": 1272,
+  "other": 188,
+  "named": 1084,
+  "other_share": 14.8,
   "companies_with_other": [
    {
     "slug": "uipath",
@@ -15,7 +15,7 @@
     "slug": "ledgy",
     "name": "Ledgy",
     "other": 6,
-    "of": 17
+    "of": 16
    },
    {
     "slug": "supermetrics",
@@ -24,34 +24,34 @@
     "of": 17
    },
    {
-    "slug": "backbase",
-    "name": "Backbase",
-    "other": 5,
-    "of": 14
-   },
-   {
-    "slug": "elastic",
-    "name": "Elastic",
-    "other": 5,
-    "of": 12
-   },
-   {
-    "slug": "cognite",
-    "name": "Cognite",
-    "other": 4,
-    "of": 19
-   },
-   {
     "slug": "definitive-hc",
     "name": "Definitive Healthcare",
     "other": 4,
     "of": 11
    },
    {
+    "slug": "elastic",
+    "name": "Elastic",
+    "other": 4,
+    "of": 10
+   },
+   {
     "slug": "wise",
     "name": "Wise",
     "other": 4,
     "of": 13
+   },
+   {
+    "slug": "backbase",
+    "name": "Backbase",
+    "other": 3,
+    "of": 10
+   },
+   {
+    "slug": "cognite",
+    "name": "Cognite",
+    "other": 3,
+    "of": 17
    },
    {
     "slug": "figma",
@@ -70,12 +70,6 @@
     "name": "Ironclad",
     "other": 3,
     "of": 12
-   },
-   {
-    "slug": "pendo",
-    "name": "Pendo",
-    "other": 3,
-    "of": 9
    },
    {
     "slug": "pennylane",
@@ -122,6 +116,12 @@
    {
     "slug": "teamleader",
     "name": "Teamleader",
+    "other": 3,
+    "of": 8
+   },
+   {
+    "slug": "teamviewer",
+    "name": "TeamViewer",
     "other": 3,
     "of": 8
    }
@@ -865,12 +865,12 @@
    },
    {
     "position": 2,
-    "n": 174,
+    "n": 173,
     "types": [
      {
       "type": "other",
-      "n": 28,
-      "share": 16.1,
+      "n": 27,
+      "share": 15.6,
       "companies": [
        {
         "slug": "afas",
@@ -891,10 +891,6 @@
        {
         "slug": "calendly",
         "name": "Calendly"
-       },
-       {
-        "slug": "cognite",
-        "name": "Cognite"
        },
        {
         "slug": "dbt-labs",
@@ -988,9 +984,13 @@
      },
      {
       "type": "features",
-      "n": 24,
-      "share": 13.8,
+      "n": 25,
+      "share": 14.5,
       "companies": [
+       {
+        "slug": "airtable",
+        "name": "Airtable"
+       },
        {
         "slug": "aiven",
         "name": "Aiven"
@@ -1091,13 +1091,9 @@
      },
      {
       "type": "logos",
-      "n": 24,
-      "share": 13.8,
+      "n": 23,
+      "share": 13.3,
       "companies": [
-       {
-        "slug": "airtable",
-        "name": "Airtable"
-       },
        {
         "slug": "amplitude",
         "name": "Amplitude"
@@ -1187,15 +1183,15 @@
         "name": "Templafy"
        },
        {
-        "slug": "zapier",
-        "name": "Zapier"
+        "slug": "unity",
+        "name": "Unity"
        }
       ]
      },
      {
       "type": "product",
       "n": 18,
-      "share": 10.3,
+      "share": 10.4,
       "companies": [
        {
         "slug": "atlassian",
@@ -1274,7 +1270,7 @@
      {
       "type": "security",
       "n": 18,
-      "share": 10.3,
+      "share": 10.4,
       "companies": [
        {
         "slug": "adyen",
@@ -1351,9 +1347,76 @@
       ]
      },
      {
+      "type": "cta",
+      "n": 15,
+      "share": 8.7,
+      "companies": [
+       {
+        "slug": "brex",
+        "name": "Brex"
+       },
+       {
+        "slug": "cognigy",
+        "name": "Cognigy"
+       },
+       {
+        "slug": "cognite",
+        "name": "Cognite"
+       },
+       {
+        "slug": "docplanner",
+        "name": "Docplanner"
+       },
+       {
+        "slug": "fenergo",
+        "name": "Fenergo"
+       },
+       {
+        "slug": "icertis",
+        "name": "Icertis"
+       },
+       {
+        "slug": "mongodb",
+        "name": "MongoDB"
+       },
+       {
+        "slug": "navex",
+        "name": "NAVEX"
+       },
+       {
+        "slug": "pega",
+        "name": "Pegasystems"
+       },
+       {
+        "slug": "productboard",
+        "name": "Productboard"
+       },
+       {
+        "slug": "ptc",
+        "name": "PTC"
+       },
+       {
+        "slug": "relativity",
+        "name": "Relativity"
+       },
+       {
+        "slug": "sinch",
+        "name": "Sinch"
+       },
+       {
+        "slug": "zapier",
+        "name": "Zapier"
+       },
+       {
+        "slug": "zendesk",
+        "name": "Zendesk"
+       }
+      ]
+     },
+     {
       "type": "proof",
-      "n": 13,
-      "share": 7.5,
+      "n": 12,
+      "share": 6.9,
       "companies": [
        {
         "slug": "appian",
@@ -1396,10 +1459,6 @@
         "name": "Trustpilot"
        },
        {
-        "slug": "unity",
-        "name": "Unity"
-       },
-       {
         "slug": "visma",
         "name": "Visma"
        },
@@ -1410,64 +1469,9 @@
       ]
      },
      {
-      "type": "cta",
-      "n": 12,
-      "share": 6.9,
-      "companies": [
-       {
-        "slug": "brex",
-        "name": "Brex"
-       },
-       {
-        "slug": "cognigy",
-        "name": "Cognigy"
-       },
-       {
-        "slug": "docplanner",
-        "name": "Docplanner"
-       },
-       {
-        "slug": "fenergo",
-        "name": "Fenergo"
-       },
-       {
-        "slug": "icertis",
-        "name": "Icertis"
-       },
-       {
-        "slug": "mongodb",
-        "name": "MongoDB"
-       },
-       {
-        "slug": "navex",
-        "name": "NAVEX"
-       },
-       {
-        "slug": "productboard",
-        "name": "Productboard"
-       },
-       {
-        "slug": "ptc",
-        "name": "PTC"
-       },
-       {
-        "slug": "relativity",
-        "name": "Relativity"
-       },
-       {
-        "slug": "sinch",
-        "name": "Sinch"
-       },
-       {
-        "slug": "zendesk",
-        "name": "Zendesk"
-       }
-      ]
-     },
-     {
       "type": "awards",
-      "n": 9,
-      "share": 5.2,
+      "n": 8,
+      "share": 4.6,
       "companies": [
        {
         "slug": "acronis",
@@ -1488,10 +1492,6 @@
        {
         "slug": "outsystems",
         "name": "OutSystems"
-       },
-       {
-        "slug": "pega",
-        "name": "Pegasystems"
        },
        {
         "slug": "quantexa",
@@ -1543,40 +1543,9 @@
       ]
      },
      {
-      "type": "faq",
-      "n": 6,
-      "share": 3.4,
-      "companies": [
-       {
-        "slug": "datadog",
-        "name": "Datadog"
-       },
-       {
-        "slug": "scaleway",
-        "name": "Scaleway"
-       },
-       {
-        "slug": "scandit",
-        "name": "Scandit"
-       },
-       {
-        "slug": "software-ag",
-        "name": "Software AG"
-       },
-       {
-        "slug": "unbabel",
-        "name": "Unbabel"
-       },
-       {
-        "slug": "webflow",
-        "name": "Webflow"
-       }
-      ]
-     },
-     {
       "type": "pricing",
       "n": 6,
-      "share": 3.4,
+      "share": 3.5,
       "companies": [
        {
         "slug": "attio",
@@ -1601,6 +1570,33 @@
        {
         "slug": "tink",
         "name": "Tink"
+       }
+      ]
+     },
+     {
+      "type": "faq",
+      "n": 5,
+      "share": 2.9,
+      "companies": [
+       {
+        "slug": "scaleway",
+        "name": "Scaleway"
+       },
+       {
+        "slug": "scandit",
+        "name": "Scandit"
+       },
+       {
+        "slug": "software-ag",
+        "name": "Software AG"
+       },
+       {
+        "slug": "unbabel",
+        "name": "Unbabel"
+       },
+       {
+        "slug": "webflow",
+        "name": "Webflow"
        }
       ]
      },
@@ -1634,7 +1630,7 @@
      {
       "type": "media",
       "n": 2,
-      "share": 1.1,
+      "share": 1.2,
       "companies": [
        {
         "slug": "github",
@@ -1649,7 +1645,7 @@
      {
       "type": "resources",
       "n": 2,
-      "share": 1.1,
+      "share": 1.2,
       "companies": [
        {
         "slug": "palo-alto",
@@ -1669,8 +1665,8 @@
     "types": [
      {
       "type": "other",
-      "n": 35,
-      "share": 20.6,
+      "n": 36,
+      "share": 21.2,
       "companies": [
        {
         "slug": "adyen",
@@ -1769,6 +1765,10 @@
         "name": "Parloa"
        },
        {
+        "slug": "pendo",
+        "name": "Pendo"
+       },
+       {
         "slug": "posthog",
         "name": "PostHog"
        },
@@ -1816,13 +1816,9 @@
      },
      {
       "type": "features",
-      "n": 32,
-      "share": 18.8,
+      "n": 30,
+      "share": 17.6,
       "companies": [
-       {
-        "slug": "afas",
-        "name": "AFAS Software"
-       },
        {
         "slug": "anaplan",
         "name": "Anaplan"
@@ -1864,6 +1860,10 @@
         "name": "Fortnox"
        },
        {
+        "slug": "hightouch",
+        "name": "Hightouch"
+       },
+       {
         "slug": "idnow",
         "name": "IDnow"
        },
@@ -1882,10 +1882,6 @@
        {
         "slug": "ovhcloud",
         "name": "OVHcloud"
-       },
-       {
-        "slug": "pendo",
-        "name": "Pendo"
        },
        {
         "slug": "pennylane",
@@ -1942,10 +1938,6 @@
        {
         "slug": "xeneta",
         "name": "Xeneta"
-       },
-       {
-        "slug": "zapier",
-        "name": "Zapier"
        }
       ]
      },
@@ -1991,8 +1983,8 @@
         "name": "Mirakl"
        },
        {
-        "slug": "mollie",
-        "name": "Mollie"
+        "slug": "pega",
+        "name": "Pegasystems"
        },
        {
         "slug": "sennder",
@@ -2046,8 +2038,8 @@
      },
      {
       "type": "testimonial",
-      "n": 17,
-      "share": 10,
+      "n": 18,
+      "share": 10.6,
       "companies": [
        {
         "slug": "attio",
@@ -2116,76 +2108,25 @@
        {
         "slug": "workhuman",
         "name": "Workhuman"
-       }
-      ]
-     },
-     {
-      "type": "logos",
-      "n": 13,
-      "share": 7.6,
-      "companies": [
-       {
-        "slug": "aircall",
-        "name": "Aircall"
        },
        {
-        "slug": "brex",
-        "name": "Brex"
-       },
-       {
-        "slug": "clickup",
-        "name": "ClickUp"
-       },
-       {
-        "slug": "cloudflare",
-        "name": "Cloudflare"
-       },
-       {
-        "slug": "dataiku",
-        "name": "Dataiku"
-       },
-       {
-        "slug": "github",
-        "name": "GitHub"
-       },
-       {
-        "slug": "gitlab",
-        "name": "GitLab"
-       },
-       {
-        "slug": "hightouch",
-        "name": "Hightouch"
-       },
-       {
-        "slug": "monday",
-        "name": "monday.com"
-       },
-       {
-        "slug": "suse",
-        "name": "SUSE"
-       },
-       {
-        "slug": "trustpilot",
-        "name": "Trustpilot"
-       },
-       {
-        "slug": "usercentrics",
-        "name": "Usercentrics"
-       },
-       {
-        "slug": "zendesk",
-        "name": "Zendesk"
+        "slug": "zapier",
+        "name": "Zapier"
        }
       ]
      },
      {
       "type": "product",
-      "n": 13,
-      "share": 7.6,
+      "n": 14,
+      "share": 8.2,
       "companies": [
        {
         "slug": "acronis",
         "name": "Acronis"
+       },
+       {
+        "slug": "airtable",
+        "name": "Airtable"
        },
        {
         "slug": "avaloq",
@@ -2234,6 +2175,61 @@
        {
         "slug": "unity",
         "name": "Unity"
+       }
+      ]
+     },
+     {
+      "type": "logos",
+      "n": 12,
+      "share": 7.1,
+      "companies": [
+       {
+        "slug": "aircall",
+        "name": "Aircall"
+       },
+       {
+        "slug": "brex",
+        "name": "Brex"
+       },
+       {
+        "slug": "clickup",
+        "name": "ClickUp"
+       },
+       {
+        "slug": "cloudflare",
+        "name": "Cloudflare"
+       },
+       {
+        "slug": "dataiku",
+        "name": "Dataiku"
+       },
+       {
+        "slug": "github",
+        "name": "GitHub"
+       },
+       {
+        "slug": "gitlab",
+        "name": "GitLab"
+       },
+       {
+        "slug": "monday",
+        "name": "monday.com"
+       },
+       {
+        "slug": "suse",
+        "name": "SUSE"
+       },
+       {
+        "slug": "trustpilot",
+        "name": "Trustpilot"
+       },
+       {
+        "slug": "usercentrics",
+        "name": "Usercentrics"
+       },
+       {
+        "slug": "zendesk",
+        "name": "Zendesk"
        }
       ]
      },
@@ -2336,41 +2332,14 @@
       ]
      },
      {
-      "type": "cta",
+      "type": "awards",
       "n": 6,
       "share": 3.5,
       "companies": [
        {
-        "slug": "airtable",
-        "name": "Airtable"
-       },
-       {
         "slug": "cognite",
         "name": "Cognite"
        },
-       {
-        "slug": "loom",
-        "name": "Loom"
-       },
-       {
-        "slug": "pega",
-        "name": "Pegasystems"
-       },
-       {
-        "slug": "signicat",
-        "name": "Signicat"
-       },
-       {
-        "slug": "templafy",
-        "name": "Templafy"
-       }
-      ]
-     },
-     {
-      "type": "awards",
-      "n": 5,
-      "share": 2.9,
-      "companies": [
        {
         "slug": "crowdstrike",
         "name": "CrowdStrike"
@@ -2390,6 +2359,25 @@
        {
         "slug": "siteimprove",
         "name": "Siteimprove"
+       }
+      ]
+     },
+     {
+      "type": "cta",
+      "n": 3,
+      "share": 1.8,
+      "companies": [
+       {
+        "slug": "loom",
+        "name": "Loom"
+       },
+       {
+        "slug": "signicat",
+        "name": "Signicat"
+       },
+       {
+        "slug": "templafy",
+        "name": "Templafy"
        }
       ]
      },
@@ -2428,6 +2416,28 @@
       ]
      },
      {
+      "type": "comparison",
+      "n": 1,
+      "share": 0.6,
+      "companies": [
+       {
+        "slug": "afas",
+        "name": "AFAS Software"
+       }
+      ]
+     },
+     {
+      "type": "pricing",
+      "n": 1,
+      "share": 0.6,
+      "companies": [
+       {
+        "slug": "mollie",
+        "name": "Mollie"
+       }
+      ]
+     },
+     {
       "type": "resources",
       "n": 1,
       "share": 0.6,
@@ -2446,20 +2456,12 @@
     "types": [
      {
       "type": "other",
-      "n": 27,
-      "share": 17.4,
+      "n": 25,
+      "share": 16.1,
       "companies": [
-       {
-        "slug": "afas",
-        "name": "AFAS Software"
-       },
        {
         "slug": "aircall",
         "name": "Aircall"
-       },
-       {
-        "slug": "backbase",
-        "name": "Backbase"
        },
        {
         "slug": "brevo",
@@ -2490,8 +2492,12 @@
         "name": "Loom"
        },
        {
-        "slug": "pendo",
-        "name": "Pendo"
+        "slug": "miro",
+        "name": "Miro"
+       },
+       {
+        "slug": "mollie",
+        "name": "Mollie"
        },
        {
         "slug": "pennylane",
@@ -2520,10 +2526,6 @@
        {
         "slug": "software-ag",
         "name": "Software AG"
-       },
-       {
-        "slug": "spendesk",
-        "name": "Spendesk"
        },
        {
         "slug": "suse",
@@ -2561,12 +2563,16 @@
      },
      {
       "type": "features",
-      "n": 18,
-      "share": 11.6,
+      "n": 20,
+      "share": 12.9,
       "companies": [
        {
         "slug": "acronis",
         "name": "Acronis"
+       },
+       {
+        "slug": "afas",
+        "name": "AFAS Software"
        },
        {
         "slug": "amplitude",
@@ -2593,10 +2599,6 @@
         "name": "Gong"
        },
        {
-        "slug": "hightouch",
-        "name": "Hightouch"
-       },
-       {
         "slug": "hubspot",
         "name": "HubSpot"
        },
@@ -2617,16 +2619,20 @@
         "name": "Netlify"
        },
        {
+        "slug": "pendo",
+        "name": "Pendo"
+       },
+       {
         "slug": "relativity",
         "name": "Relativity"
        },
        {
-        "slug": "supermetrics",
-        "name": "Supermetrics"
+        "slug": "spendesk",
+        "name": "Spendesk"
        },
        {
-        "slug": "teamviewer",
-        "name": "TeamViewer"
+        "slug": "supermetrics",
+        "name": "Supermetrics"
        },
        {
         "slug": "usercentrics",
@@ -2635,13 +2641,88 @@
        {
         "slug": "vercel",
         "name": "Vercel"
+       },
+       {
+        "slug": "zapier",
+        "name": "Zapier"
+       }
+      ]
+     },
+     {
+      "type": "proof",
+      "n": 16,
+      "share": 10.3,
+      "companies": [
+       {
+        "slug": "appian",
+        "name": "Appian"
+       },
+       {
+        "slug": "backbase",
+        "name": "Backbase"
+       },
+       {
+        "slug": "bill",
+        "name": "BILL"
+       },
+       {
+        "slug": "brex",
+        "name": "Brex"
+       },
+       {
+        "slug": "dixa",
+        "name": "Dixa"
+       },
+       {
+        "slug": "idnow",
+        "name": "IDnow"
+       },
+       {
+        "slug": "lokalise",
+        "name": "Lokalise"
+       },
+       {
+        "slug": "luminance",
+        "name": "Luminance"
+       },
+       {
+        "slug": "mixpanel",
+        "name": "Mixpanel"
+       },
+       {
+        "slug": "paddle",
+        "name": "Paddle"
+       },
+       {
+        "slug": "palo-alto",
+        "name": "Palo Alto Networks"
+       },
+       {
+        "slug": "payfit",
+        "name": "PayFit"
+       },
+       {
+        "slug": "slack",
+        "name": "Slack"
+       },
+       {
+        "slug": "teamviewer",
+        "name": "TeamViewer"
+       },
+       {
+        "slug": "xeneta",
+        "name": "Xeneta"
+       },
+       {
+        "slug": "zendesk",
+        "name": "Zendesk"
        }
       ]
      },
      {
       "type": "integrations",
-      "n": 17,
-      "share": 11,
+      "n": 15,
+      "share": 9.7,
       "companies": [
        {
         "slug": "celonis",
@@ -2680,10 +2761,6 @@
         "name": "LaunchDarkly"
        },
        {
-        "slug": "relex",
-        "name": "RELEX Solutions"
-       },
-       {
         "slug": "scandit",
         "name": "Scandit"
        },
@@ -2706,81 +2783,69 @@
        {
         "slug": "webflow",
         "name": "Webflow"
-       },
-       {
-        "slug": "zapier",
-        "name": "Zapier"
        }
       ]
      },
      {
-      "type": "proof",
-      "n": 16,
-      "share": 10.3,
+      "type": "logos",
+      "n": 14,
+      "share": 9,
       "companies": [
        {
-        "slug": "appian",
-        "name": "Appian"
+        "slug": "airtable",
+        "name": "Airtable"
        },
        {
-        "slug": "bill",
-        "name": "BILL"
+        "slug": "anaplan",
+        "name": "Anaplan"
        },
        {
-        "slug": "brex",
-        "name": "Brex"
+        "slug": "aveva",
+        "name": "AVEVA"
        },
        {
-        "slug": "dixa",
-        "name": "Dixa"
+        "slug": "calendly",
+        "name": "Calendly"
        },
        {
-        "slug": "idnow",
-        "name": "IDnow"
+        "slug": "diligent",
+        "name": "Diligent"
        },
        {
-        "slug": "lokalise",
-        "name": "Lokalise"
+        "slug": "figma",
+        "name": "Figma"
        },
        {
-        "slug": "luminance",
-        "name": "Luminance"
+        "slug": "hightouch",
+        "name": "Hightouch"
        },
        {
-        "slug": "miro",
-        "name": "Miro"
+        "slug": "ovhcloud",
+        "name": "OVHcloud"
        },
        {
-        "slug": "mixpanel",
-        "name": "Mixpanel"
+        "slug": "relex",
+        "name": "RELEX Solutions"
        },
        {
-        "slug": "paddle",
-        "name": "Paddle"
+        "slug": "retool",
+        "name": "Retool"
        },
        {
-        "slug": "palo-alto",
-        "name": "Palo Alto Networks"
+        "slug": "sitecore",
+        "name": "Sitecore"
        },
        {
-        "slug": "payfit",
-        "name": "PayFit"
+        "slug": "supabase",
+        "name": "Supabase"
        },
        {
-        "slug": "pega",
-        "name": "Pegasystems"
+        "slug": "unbabel",
+        "name": "Unbabel"
        },
        {
-        "slug": "slack",
-        "name": "Slack"
-       },
-       {
-        "slug": "xeneta",
-        "name": "Xeneta"
-       },
-       {
-        "slug": "zendesk",
-        "name": "Zendesk"
+        "slug": "vanta",
+        "name": "Vanta"
        }
       ]
      },
@@ -2789,10 +2854,6 @@
       "n": 13,
       "share": 8.4,
       "companies": [
-       {
-        "slug": "cognite",
-        "name": "Cognite"
-       },
        {
         "slug": "databricks",
         "name": "Databricks"
@@ -2828,6 +2889,10 @@
        {
         "slug": "outsystems",
         "name": "OutSystems"
+       },
+       {
+        "slug": "pega",
+        "name": "Pegasystems"
        },
        {
         "slug": "snyk",
@@ -2908,10 +2973,6 @@
       "share": 7.7,
       "companies": [
        {
-        "slug": "airtable",
-        "name": "Airtable"
-       },
-       {
         "slug": "alan",
         "name": "Alan"
        },
@@ -2926,6 +2987,10 @@
        {
         "slug": "cloudflare",
         "name": "Cloudflare"
+       },
+       {
+        "slug": "cognite",
+        "name": "Cognite"
        },
        {
         "slug": "dynatrace",
@@ -2954,57 +3019,6 @@
        {
         "slug": "veriff",
         "name": "Veriff"
-       }
-      ]
-     },
-     {
-      "type": "logos",
-      "n": 11,
-      "share": 7.1,
-      "companies": [
-       {
-        "slug": "anaplan",
-        "name": "Anaplan"
-       },
-       {
-        "slug": "aveva",
-        "name": "AVEVA"
-       },
-       {
-        "slug": "calendly",
-        "name": "Calendly"
-       },
-       {
-        "slug": "diligent",
-        "name": "Diligent"
-       },
-       {
-        "slug": "figma",
-        "name": "Figma"
-       },
-       {
-        "slug": "ovhcloud",
-        "name": "OVHcloud"
-       },
-       {
-        "slug": "retool",
-        "name": "Retool"
-       },
-       {
-        "slug": "sitecore",
-        "name": "Sitecore"
-       },
-       {
-        "slug": "supabase",
-        "name": "Supabase"
-       },
-       {
-        "slug": "unbabel",
-        "name": "Unbabel"
-       },
-       {
-        "slug": "vanta",
-        "name": "Vanta"
        }
       ]
      },
@@ -3087,33 +3101,6 @@
       ]
      },
      {
-      "type": "pricing",
-      "n": 5,
-      "share": 3.2,
-      "companies": [
-       {
-        "slug": "crowdstrike",
-        "name": "CrowdStrike"
-       },
-       {
-        "slug": "intercom",
-        "name": "Intercom"
-       },
-       {
-        "slug": "mollie",
-        "name": "Mollie"
-       },
-       {
-        "slug": "mongodb",
-        "name": "MongoDB"
-       },
-       {
-        "slug": "salesforce",
-        "name": "Salesforce"
-       }
-      ]
-     },
-     {
       "type": "faq",
       "n": 4,
       "share": 2.6,
@@ -3133,6 +3120,29 @@
        {
         "slug": "siteimprove",
         "name": "Siteimprove"
+       }
+      ]
+     },
+     {
+      "type": "pricing",
+      "n": 4,
+      "share": 2.6,
+      "companies": [
+       {
+        "slug": "crowdstrike",
+        "name": "CrowdStrike"
+       },
+       {
+        "slug": "intercom",
+        "name": "Intercom"
+       },
+       {
+        "slug": "mongodb",
+        "name": "MongoDB"
+       },
+       {
+        "slug": "salesforce",
+        "name": "Salesforce"
        }
       ]
      },
@@ -3166,12 +3176,12 @@
    },
    {
     "position": 5,
-    "n": 144,
+    "n": 142,
     "types": [
      {
       "type": "other",
-      "n": 20,
-      "share": 13.9,
+      "n": 21,
+      "share": 14.8,
       "companies": [
        {
         "slug": "alan",
@@ -3184,6 +3194,10 @@
        {
         "slug": "aveva",
         "name": "AVEVA"
+       },
+       {
+        "slug": "backbase",
+        "name": "Backbase"
        },
        {
         "slug": "dassault",
@@ -3214,12 +3228,12 @@
         "name": "Ledgy"
        },
        {
-        "slug": "mollie",
-        "name": "Mollie"
-       },
-       {
         "slug": "nextcloud",
         "name": "Nextcloud"
+       },
+       {
+        "slug": "pendo",
+        "name": "Pendo"
        },
        {
         "slug": "productboard",
@@ -3246,19 +3260,90 @@
         "name": "Supermetrics"
        },
        {
+        "slug": "teamviewer",
+        "name": "TeamViewer"
+       },
+       {
         "slug": "unbabel",
         "name": "Unbabel"
+       }
+      ]
+     },
+     {
+      "type": "cta",
+      "n": 16,
+      "share": 11.3,
+      "companies": [
+       {
+        "slug": "asana",
+        "name": "Asana"
+       },
+       {
+        "slug": "bill",
+        "name": "BILL"
+       },
+       {
+        "slug": "celonis",
+        "name": "Celonis"
+       },
+       {
+        "slug": "cognigy",
+        "name": "Cognigy"
+       },
+       {
+        "slug": "diligent",
+        "name": "Diligent"
+       },
+       {
+        "slug": "intercom",
+        "name": "Intercom"
+       },
+       {
+        "slug": "linear",
+        "name": "Linear"
+       },
+       {
+        "slug": "mollie",
+        "name": "Mollie"
+       },
+       {
+        "slug": "okta",
+        "name": "Okta"
+       },
+       {
+        "slug": "sentry",
+        "name": "Sentry"
+       },
+       {
+        "slug": "signicat",
+        "name": "Signicat"
+       },
+       {
+        "slug": "unity",
+        "name": "Unity"
+       },
+       {
+        "slug": "webflow",
+        "name": "Webflow"
+       },
+       {
+        "slug": "workhuman",
+        "name": "Workhuman"
        },
        {
         "slug": "zapier",
         "name": "Zapier"
+       },
+       {
+        "slug": "zendesk",
+        "name": "Zendesk"
        }
       ]
      },
      {
       "type": "features",
-      "n": 17,
-      "share": 11.8,
+      "n": 16,
+      "share": 11.3,
       "companies": [
        {
         "slug": "bird",
@@ -3293,6 +3378,10 @@
         "name": "Feedzai"
        },
        {
+        "slug": "hightouch",
+        "name": "Hightouch"
+       },
+       {
         "slug": "launchdarkly",
         "name": "LaunchDarkly"
        },
@@ -3309,14 +3398,6 @@
         "name": "PayFit"
        },
        {
-        "slug": "pendo",
-        "name": "Pendo"
-       },
-       {
-        "slug": "relex",
-        "name": "RELEX Solutions"
-       },
-       {
         "slug": "snowflake",
         "name": "Snowflake"
        },
@@ -3331,9 +3412,72 @@
       ]
      },
      {
+      "type": "proof",
+      "n": 14,
+      "share": 9.9,
+      "companies": [
+       {
+        "slug": "amplitude",
+        "name": "Amplitude"
+       },
+       {
+        "slug": "anaplan",
+        "name": "Anaplan"
+       },
+       {
+        "slug": "cognite",
+        "name": "Cognite"
+       },
+       {
+        "slug": "dbt-labs",
+        "name": "dbt Labs"
+       },
+       {
+        "slug": "elastic",
+        "name": "Elastic"
+       },
+       {
+        "slug": "fivetran",
+        "name": "Fivetran"
+       },
+       {
+        "slug": "github",
+        "name": "GitHub"
+       },
+       {
+        "slug": "ivanti",
+        "name": "Ivanti"
+       },
+       {
+        "slug": "klaviyo",
+        "name": "Klaviyo"
+       },
+       {
+        "slug": "mendix",
+        "name": "Mendix"
+       },
+       {
+        "slug": "ovhcloud",
+        "name": "OVHcloud"
+       },
+       {
+        "slug": "qonto",
+        "name": "Qonto"
+       },
+       {
+        "slug": "sinch",
+        "name": "Sinch"
+       },
+       {
+        "slug": "typeform",
+        "name": "Typeform"
+       }
+      ]
+     },
+     {
       "type": "security",
-      "n": 15,
-      "share": 10.4,
+      "n": 14,
+      "share": 9.9,
       "companies": [
        {
         "slug": "aircall",
@@ -3380,10 +3524,6 @@
         "name": "Scandit"
        },
        {
-        "slug": "teamviewer",
-        "name": "TeamViewer"
-       },
-       {
         "slug": "uipath",
         "name": "UiPath"
        },
@@ -3398,143 +3538,13 @@
       ]
      },
      {
-      "type": "cta",
-      "n": 14,
-      "share": 9.7,
-      "companies": [
-       {
-        "slug": "asana",
-        "name": "Asana"
-       },
-       {
-        "slug": "bill",
-        "name": "BILL"
-       },
-       {
-        "slug": "celonis",
-        "name": "Celonis"
-       },
-       {
-        "slug": "cognigy",
-        "name": "Cognigy"
-       },
-       {
-        "slug": "diligent",
-        "name": "Diligent"
-       },
-       {
-        "slug": "intercom",
-        "name": "Intercom"
-       },
-       {
-        "slug": "linear",
-        "name": "Linear"
-       },
-       {
-        "slug": "okta",
-        "name": "Okta"
-       },
-       {
-        "slug": "sentry",
-        "name": "Sentry"
-       },
-       {
-        "slug": "signicat",
-        "name": "Signicat"
-       },
-       {
-        "slug": "unity",
-        "name": "Unity"
-       },
-       {
-        "slug": "webflow",
-        "name": "Webflow"
-       },
-       {
-        "slug": "workhuman",
-        "name": "Workhuman"
-       },
-       {
-        "slug": "zendesk",
-        "name": "Zendesk"
-       }
-      ]
-     },
-     {
-      "type": "proof",
-      "n": 14,
-      "share": 9.7,
-      "companies": [
-       {
-        "slug": "amplitude",
-        "name": "Amplitude"
-       },
-       {
-        "slug": "anaplan",
-        "name": "Anaplan"
-       },
-       {
-        "slug": "backbase",
-        "name": "Backbase"
-       },
-       {
-        "slug": "dbt-labs",
-        "name": "dbt Labs"
-       },
-       {
-        "slug": "elastic",
-        "name": "Elastic"
-       },
-       {
-        "slug": "fivetran",
-        "name": "Fivetran"
-       },
-       {
-        "slug": "github",
-        "name": "GitHub"
-       },
-       {
-        "slug": "ivanti",
-        "name": "Ivanti"
-       },
-       {
-        "slug": "klaviyo",
-        "name": "Klaviyo"
-       },
-       {
-        "slug": "mendix",
-        "name": "Mendix"
-       },
-       {
-        "slug": "ovhcloud",
-        "name": "OVHcloud"
-       },
-       {
-        "slug": "qonto",
-        "name": "Qonto"
-       },
-       {
-        "slug": "sinch",
-        "name": "Sinch"
-       },
-       {
-        "slug": "typeform",
-        "name": "Typeform"
-       }
-      ]
-     },
-     {
       "type": "testimonial",
-      "n": 14,
-      "share": 9.7,
+      "n": 13,
+      "share": 9.2,
       "companies": [
        {
         "slug": "aiven",
         "name": "Aiven"
-       },
-       {
-        "slug": "cognite",
-        "name": "Cognite"
        },
        {
         "slug": "crowdstrike",
@@ -3553,12 +3563,12 @@
         "name": "Metabase"
        },
        {
-        "slug": "miro",
-        "name": "Miro"
-       },
-       {
         "slug": "mixpanel",
         "name": "Mixpanel"
+       },
+       {
+        "slug": "pega",
+        "name": "Pegasystems"
        },
        {
         "slug": "pennylane",
@@ -3587,52 +3597,9 @@
       ]
      },
      {
-      "type": "awards",
-      "n": 9,
-      "share": 6.3,
-      "companies": [
-       {
-        "slug": "appian",
-        "name": "Appian"
-       },
-       {
-        "slug": "dynatrace",
-        "name": "Dynatrace"
-       },
-       {
-        "slug": "juro",
-        "name": "Juro"
-       },
-       {
-        "slug": "palo-alto",
-        "name": "Palo Alto Networks"
-       },
-       {
-        "slug": "pega",
-        "name": "Pegasystems"
-       },
-       {
-        "slug": "sailpoint",
-        "name": "SailPoint"
-       },
-       {
-        "slug": "sitecore",
-        "name": "Sitecore"
-       },
-       {
-        "slug": "suse",
-        "name": "SUSE"
-       },
-       {
-        "slug": "zscaler",
-        "name": "Zscaler"
-       }
-      ]
-     },
-     {
       "type": "integrations",
-      "n": 9,
-      "share": 6.3,
+      "n": 11,
+      "share": 7.7,
       "companies": [
        {
         "slug": "adyen",
@@ -3647,8 +3614,16 @@
         "name": "LiveChat"
        },
        {
+        "slug": "miro",
+        "name": "Miro"
+       },
+       {
         "slug": "pipedrive",
         "name": "Pipedrive"
+       },
+       {
+        "slug": "relex",
+        "name": "RELEX Solutions"
        },
        {
         "slug": "showpad",
@@ -3669,6 +3644,45 @@
        {
         "slug": "vercel",
         "name": "Vercel"
+       }
+      ]
+     },
+     {
+      "type": "awards",
+      "n": 8,
+      "share": 5.6,
+      "companies": [
+       {
+        "slug": "appian",
+        "name": "Appian"
+       },
+       {
+        "slug": "dynatrace",
+        "name": "Dynatrace"
+       },
+       {
+        "slug": "juro",
+        "name": "Juro"
+       },
+       {
+        "slug": "palo-alto",
+        "name": "Palo Alto Networks"
+       },
+       {
+        "slug": "sailpoint",
+        "name": "SailPoint"
+       },
+       {
+        "slug": "sitecore",
+        "name": "Sitecore"
+       },
+       {
+        "slug": "suse",
+        "name": "SUSE"
+       },
+       {
+        "slug": "zscaler",
+        "name": "Zscaler"
        }
       ]
      },
@@ -3708,68 +3722,6 @@
       ]
      },
      {
-      "type": "logos",
-      "n": 6,
-      "share": 4.2,
-      "companies": [
-       {
-        "slug": "brevo",
-        "name": "Brevo"
-       },
-       {
-        "slug": "hightouch",
-        "name": "Hightouch"
-       },
-       {
-        "slug": "hubspot",
-        "name": "HubSpot"
-       },
-       {
-        "slug": "mongodb",
-        "name": "MongoDB"
-       },
-       {
-        "slug": "parloa",
-        "name": "Parloa"
-       },
-       {
-        "slug": "templafy",
-        "name": "Templafy"
-       }
-      ]
-     },
-     {
-      "type": "product",
-      "n": 6,
-      "share": 4.2,
-      "companies": [
-       {
-        "slug": "acronis",
-        "name": "Acronis"
-       },
-       {
-        "slug": "atlassian",
-        "name": "Atlassian"
-       },
-       {
-        "slug": "contentful",
-        "name": "Contentful"
-       },
-       {
-        "slug": "dataiku",
-        "name": "Dataiku"
-       },
-       {
-        "slug": "procore",
-        "name": "Procore"
-       },
-       {
-        "slug": "rippling",
-        "name": "Rippling"
-       }
-      ]
-     },
-     {
       "type": "faq",
       "n": 5,
       "share": 3.5,
@@ -3793,6 +3745,60 @@
        {
         "slug": "veeam",
         "name": "Veeam"
+       }
+      ]
+     },
+     {
+      "type": "logos",
+      "n": 5,
+      "share": 3.5,
+      "companies": [
+       {
+        "slug": "brevo",
+        "name": "Brevo"
+       },
+       {
+        "slug": "hubspot",
+        "name": "HubSpot"
+       },
+       {
+        "slug": "mongodb",
+        "name": "MongoDB"
+       },
+       {
+        "slug": "parloa",
+        "name": "Parloa"
+       },
+       {
+        "slug": "templafy",
+        "name": "Templafy"
+       }
+      ]
+     },
+     {
+      "type": "product",
+      "n": 5,
+      "share": 3.5,
+      "companies": [
+       {
+        "slug": "acronis",
+        "name": "Acronis"
+       },
+       {
+        "slug": "contentful",
+        "name": "Contentful"
+       },
+       {
+        "slug": "dataiku",
+        "name": "Dataiku"
+       },
+       {
+        "slug": "procore",
+        "name": "Procore"
+       },
+       {
+        "slug": "rippling",
+        "name": "Rippling"
        }
       ]
      },
@@ -3835,17 +3841,6 @@
       ]
      },
      {
-      "type": "comparison",
-      "n": 1,
-      "share": 0.7,
-      "companies": [
-       {
-        "slug": "afas",
-        "name": "AFAS Software"
-       }
-      ]
-     },
-     {
       "type": "events",
       "n": 1,
       "share": 0.7,
@@ -3860,20 +3855,16 @@
    },
    {
     "position": 6,
-    "n": 119,
+    "n": 117,
     "types": [
      {
       "type": "other",
-      "n": 18,
-      "share": 15.1,
+      "n": 15,
+      "share": 12.8,
       "companies": [
        {
         "slug": "anaplan",
         "name": "Anaplan"
-       },
-       {
-        "slug": "backbase",
-        "name": "Backbase"
        },
        {
         "slug": "docusign",
@@ -3890,10 +3881,6 @@
        {
         "slug": "okta",
         "name": "Okta"
-       },
-       {
-        "slug": "pendo",
-        "name": "Pendo"
        },
        {
         "slug": "pennylane",
@@ -3920,10 +3907,6 @@
         "name": "Teamleader"
        },
        {
-        "slug": "teamviewer",
-        "name": "TeamViewer"
-       },
-       {
         "slug": "twilio",
         "name": "Twilio"
        },
@@ -3942,21 +3925,76 @@
       ]
      },
      {
+      "type": "proof",
+      "n": 14,
+      "share": 12,
+      "companies": [
+       {
+        "slug": "alan",
+        "name": "Alan"
+       },
+       {
+        "slug": "backbase",
+        "name": "Backbase"
+       },
+       {
+        "slug": "brevo",
+        "name": "Brevo"
+       },
+       {
+        "slug": "calendly",
+        "name": "Calendly"
+       },
+       {
+        "slug": "dataiku",
+        "name": "Dataiku"
+       },
+       {
+        "slug": "feedzai",
+        "name": "Feedzai"
+       },
+       {
+        "slug": "genesys",
+        "name": "Genesys"
+       },
+       {
+        "slug": "m-files",
+        "name": "M-Files"
+       },
+       {
+        "slug": "mixpanel",
+        "name": "Mixpanel"
+       },
+       {
+        "slug": "palo-alto",
+        "name": "Palo Alto Networks"
+       },
+       {
+        "slug": "ptc",
+        "name": "PTC"
+       },
+       {
+        "slug": "spendesk",
+        "name": "Spendesk"
+       },
+       {
+        "slug": "suse",
+        "name": "SUSE"
+       },
+       {
+        "slug": "uipath",
+        "name": "UiPath"
+       }
+      ]
+     },
+     {
       "type": "testimonial",
-      "n": 16,
-      "share": 13.4,
+      "n": 13,
+      "share": 11.1,
       "companies": [
        {
         "slug": "acronis",
         "name": "Acronis"
-       },
-       {
-        "slug": "afas",
-        "name": "AFAS Software"
-       },
-       {
-        "slug": "airtable",
-        "name": "Airtable"
        },
        {
         "slug": "amplitude",
@@ -3995,10 +4033,6 @@
         "name": "Luminance"
        },
        {
-        "slug": "pega",
-        "name": "Pegasystems"
-       },
-       {
         "slug": "signicat",
         "name": "Signicat"
        },
@@ -4013,76 +4047,115 @@
       ]
      },
      {
-      "type": "proof",
-      "n": 15,
-      "share": 12.6,
+      "type": "awards",
+      "n": 12,
+      "share": 10.3,
       "companies": [
        {
-        "slug": "alan",
-        "name": "Alan"
+        "slug": "asana",
+        "name": "Asana"
        },
        {
-        "slug": "brevo",
-        "name": "Brevo"
+        "slug": "collibra",
+        "name": "Collibra"
        },
        {
-        "slug": "calendly",
-        "name": "Calendly"
+        "slug": "crowdstrike",
+        "name": "CrowdStrike"
        },
        {
-        "slug": "cognite",
-        "name": "Cognite"
+        "slug": "gong",
+        "name": "Gong"
        },
        {
-        "slug": "dataiku",
-        "name": "Dataiku"
+        "slug": "hightouch",
+        "name": "Hightouch"
        },
        {
-        "slug": "feedzai",
-        "name": "Feedzai"
+        "slug": "hubspot",
+        "name": "HubSpot"
        },
        {
-        "slug": "genesys",
-        "name": "Genesys"
+        "slug": "idnow",
+        "name": "IDnow"
        },
        {
-        "slug": "m-files",
-        "name": "M-Files"
+        "slug": "ivanti",
+        "name": "Ivanti"
        },
        {
-        "slug": "miro",
-        "name": "Miro"
+        "slug": "mendix",
+        "name": "Mendix"
        },
        {
-        "slug": "mixpanel",
-        "name": "Mixpanel"
+        "slug": "showpad",
+        "name": "Showpad"
        },
        {
-        "slug": "palo-alto",
-        "name": "Palo Alto Networks"
+        "slug": "vanta",
+        "name": "Vanta"
        },
        {
-        "slug": "ptc",
-        "name": "PTC"
+        "slug": "veeam",
+        "name": "Veeam"
+       }
+      ]
+     },
+     {
+      "type": "features",
+      "n": 11,
+      "share": 9.4,
+      "companies": [
+       {
+        "slug": "adyen",
+        "name": "Adyen"
        },
        {
-        "slug": "spendesk",
-        "name": "Spendesk"
+        "slug": "dassault",
+        "name": "Dassault Systèmes"
        },
        {
-        "slug": "suse",
-        "name": "SUSE"
+        "slug": "pega",
+        "name": "Pegasystems"
        },
        {
-        "slug": "uipath",
-        "name": "UiPath"
+        "slug": "productboard",
+        "name": "Productboard"
+       },
+       {
+        "slug": "quantexa",
+        "name": "Quantexa"
+       },
+       {
+        "slug": "relex",
+        "name": "RELEX Solutions"
+       },
+       {
+        "slug": "scaleway",
+        "name": "Scaleway"
+       },
+       {
+        "slug": "scandit",
+        "name": "Scandit"
+       },
+       {
+        "slug": "staffbase",
+        "name": "Staffbase"
+       },
+       {
+        "slug": "zapier",
+        "name": "Zapier"
+       },
+       {
+        "slug": "zscaler",
+        "name": "Zscaler"
        }
       ]
      },
      {
       "type": "integrations",
-      "n": 12,
-      "share": 10.1,
+      "n": 11,
+      "share": 9.4,
       "companies": [
        {
         "slug": "brex",
@@ -4127,116 +4200,18 @@
        {
         "slug": "wise",
         "name": "Wise"
-       },
-       {
-        "slug": "zapier",
-        "name": "Zapier"
-       }
-      ]
-     },
-     {
-      "type": "awards",
-      "n": 11,
-      "share": 9.2,
-      "companies": [
-       {
-        "slug": "asana",
-        "name": "Asana"
-       },
-       {
-        "slug": "collibra",
-        "name": "Collibra"
-       },
-       {
-        "slug": "crowdstrike",
-        "name": "CrowdStrike"
-       },
-       {
-        "slug": "gong",
-        "name": "Gong"
-       },
-       {
-        "slug": "hubspot",
-        "name": "HubSpot"
-       },
-       {
-        "slug": "idnow",
-        "name": "IDnow"
-       },
-       {
-        "slug": "ivanti",
-        "name": "Ivanti"
-       },
-       {
-        "slug": "mendix",
-        "name": "Mendix"
-       },
-       {
-        "slug": "showpad",
-        "name": "Showpad"
-       },
-       {
-        "slug": "vanta",
-        "name": "Vanta"
-       },
-       {
-        "slug": "veeam",
-        "name": "Veeam"
-       }
-      ]
-     },
-     {
-      "type": "features",
-      "n": 10,
-      "share": 8.4,
-      "companies": [
-       {
-        "slug": "adyen",
-        "name": "Adyen"
-       },
-       {
-        "slug": "attio",
-        "name": "Attio"
-       },
-       {
-        "slug": "dassault",
-        "name": "Dassault Systèmes"
-       },
-       {
-        "slug": "hightouch",
-        "name": "Hightouch"
-       },
-       {
-        "slug": "productboard",
-        "name": "Productboard"
-       },
-       {
-        "slug": "quantexa",
-        "name": "Quantexa"
-       },
-       {
-        "slug": "scaleway",
-        "name": "Scaleway"
-       },
-       {
-        "slug": "scandit",
-        "name": "Scandit"
-       },
-       {
-        "slug": "staffbase",
-        "name": "Staffbase"
-       },
-       {
-        "slug": "zscaler",
-        "name": "Zscaler"
        }
       ]
      },
      {
       "type": "logos",
       "n": 9,
-      "share": 7.6,
+      "share": 7.7,
       "companies": [
+       {
+        "slug": "attio",
+        "name": "Attio"
+       },
        {
         "slug": "figma",
         "name": "Figma"
@@ -4248,10 +4223,6 @@
        {
         "slug": "lattice",
         "name": "Lattice"
-       },
-       {
-        "slug": "mollie",
-        "name": "Mollie"
        },
        {
         "slug": "monday",
@@ -4276,9 +4247,91 @@
       ]
      },
      {
+      "type": "security",
+      "n": 9,
+      "share": 7.7,
+      "companies": [
+       {
+        "slug": "hornetsecurity",
+        "name": "Hornetsecurity"
+       },
+       {
+        "slug": "ledgy",
+        "name": "Ledgy"
+       },
+       {
+        "slug": "lokalise",
+        "name": "Lokalise"
+       },
+       {
+        "slug": "mongodb",
+        "name": "MongoDB"
+       },
+       {
+        "slug": "pendo",
+        "name": "Pendo"
+       },
+       {
+        "slug": "pipedrive",
+        "name": "Pipedrive"
+       },
+       {
+        "slug": "proton",
+        "name": "Proton"
+       },
+       {
+        "slug": "teamviewer",
+        "name": "TeamViewer"
+       },
+       {
+        "slug": "templafy",
+        "name": "Templafy"
+       }
+      ]
+     },
+     {
+      "type": "cta",
+      "n": 8,
+      "share": 6.8,
+      "companies": [
+       {
+        "slug": "airtable",
+        "name": "Airtable"
+       },
+       {
+        "slug": "cognite",
+        "name": "Cognite"
+       },
+       {
+        "slug": "customer-io",
+        "name": "Customer.io"
+       },
+       {
+        "slug": "dynatrace",
+        "name": "Dynatrace"
+       },
+       {
+        "slug": "gitlab",
+        "name": "GitLab"
+       },
+       {
+        "slug": "parloa",
+        "name": "Parloa"
+       },
+       {
+        "slug": "relativity",
+        "name": "Relativity"
+       },
+       {
+        "slug": "slack",
+        "name": "Slack"
+       }
+      ]
+     },
+     {
       "type": "faq",
       "n": 7,
-      "share": 5.9,
+      "share": 6,
       "companies": [
        {
         "slug": "factorial",
@@ -4311,75 +4364,9 @@
       ]
      },
      {
-      "type": "security",
-      "n": 7,
-      "share": 5.9,
-      "companies": [
-       {
-        "slug": "hornetsecurity",
-        "name": "Hornetsecurity"
-       },
-       {
-        "slug": "ledgy",
-        "name": "Ledgy"
-       },
-       {
-        "slug": "lokalise",
-        "name": "Lokalise"
-       },
-       {
-        "slug": "mongodb",
-        "name": "MongoDB"
-       },
-       {
-        "slug": "pipedrive",
-        "name": "Pipedrive"
-       },
-       {
-        "slug": "proton",
-        "name": "Proton"
-       },
-       {
-        "slug": "templafy",
-        "name": "Templafy"
-       }
-      ]
-     },
-     {
-      "type": "cta",
-      "n": 6,
-      "share": 5,
-      "companies": [
-       {
-        "slug": "customer-io",
-        "name": "Customer.io"
-       },
-       {
-        "slug": "dynatrace",
-        "name": "Dynatrace"
-       },
-       {
-        "slug": "gitlab",
-        "name": "GitLab"
-       },
-       {
-        "slug": "parloa",
-        "name": "Parloa"
-       },
-       {
-        "slug": "relativity",
-        "name": "Relativity"
-       },
-       {
-        "slug": "slack",
-        "name": "Slack"
-       }
-      ]
-     },
-     {
       "type": "pricing",
       "n": 3,
-      "share": 2.5,
+      "share": 2.6,
       "companies": [
        {
         "slug": "dixa",
@@ -4426,13 +4413,13 @@
       ]
      },
      {
-      "type": "product",
+      "type": "media",
       "n": 1,
-      "share": 0.8,
+      "share": 0.9,
       "companies": [
        {
-        "slug": "relex",
-        "name": "RELEX Solutions"
+        "slug": "miro",
+        "name": "Miro"
        }
       ]
      }
@@ -4440,16 +4427,20 @@
    },
    {
     "position": 7,
-    "n": 100,
+    "n": 95,
     "types": [
      {
       "type": "other",
       "n": 18,
-      "share": 18,
+      "share": 18.9,
       "companies": [
        {
         "slug": "acronis",
         "name": "Acronis"
+       },
+       {
+        "slug": "backbase",
+        "name": "Backbase"
        },
        {
         "slug": "dataiku",
@@ -4474,10 +4465,6 @@
        {
         "slug": "m-files",
         "name": "M-Files"
-       },
-       {
-        "slug": "mollie",
-        "name": "Mollie"
        },
        {
         "slug": "procore",
@@ -4524,12 +4511,8 @@
      {
       "type": "features",
       "n": 15,
-      "share": 15,
+      "share": 15.8,
       "companies": [
-       {
-        "slug": "afas",
-        "name": "AFAS Software"
-       },
        {
         "slug": "collibra",
         "name": "Collibra"
@@ -4543,12 +4526,12 @@
         "name": "Mixpanel"
        },
        {
-        "slug": "payfit",
-        "name": "PayFit"
+        "slug": "monday",
+        "name": "monday.com"
        },
        {
-        "slug": "pega",
-        "name": "Pegasystems"
+        "slug": "payfit",
+        "name": "PayFit"
        },
        {
         "slug": "pennylane",
@@ -4571,6 +4554,10 @@
         "name": "Teamleader"
        },
        {
+        "slug": "teamviewer",
+        "name": "TeamViewer"
+       },
+       {
         "slug": "trustpilot",
         "name": "Trustpilot"
        },
@@ -4590,8 +4577,8 @@
      },
      {
       "type": "testimonial",
-      "n": 12,
-      "share": 12,
+      "n": 11,
+      "share": 11.6,
       "companies": [
        {
         "slug": "alan",
@@ -4600,6 +4587,10 @@
        {
         "slug": "brex",
         "name": "Brex"
+       },
+       {
+        "slug": "hightouch",
+        "name": "Hightouch"
        },
        {
         "slug": "hornetsecurity",
@@ -4612,14 +4603,6 @@
        {
         "slug": "linear",
         "name": "Linear"
-       },
-       {
-        "slug": "miro",
-        "name": "Miro"
-       },
-       {
-        "slug": "pendo",
-        "name": "Pendo"
        },
        {
         "slug": "qonto",
@@ -4644,96 +4627,14 @@
       ]
      },
      {
-      "type": "cta",
-      "n": 11,
-      "share": 11,
+      "type": "proof",
+      "n": 10,
+      "share": 10.5,
       "companies": [
        {
-        "slug": "airtable",
-        "name": "Airtable"
+        "slug": "adyen",
+        "name": "Adyen"
        },
-       {
-        "slug": "asana",
-        "name": "Asana"
-       },
-       {
-        "slug": "celonis",
-        "name": "Celonis"
-       },
-       {
-        "slug": "cognite",
-        "name": "Cognite"
-       },
-       {
-        "slug": "hubspot",
-        "name": "HubSpot"
-       },
-       {
-        "slug": "ironclad",
-        "name": "Ironclad"
-       },
-       {
-        "slug": "loom",
-        "name": "Loom"
-       },
-       {
-        "slug": "monday",
-        "name": "monday.com"
-       },
-       {
-        "slug": "nextcloud",
-        "name": "Nextcloud"
-       },
-       {
-        "slug": "scandit",
-        "name": "Scandit"
-       },
-       {
-        "slug": "sitecore",
-        "name": "Sitecore"
-       }
-      ]
-     },
-     {
-      "type": "awards",
-      "n": 7,
-      "share": 7,
-      "companies": [
-       {
-        "slug": "amplitude",
-        "name": "Amplitude"
-       },
-       {
-        "slug": "cognigy",
-        "name": "Cognigy"
-       },
-       {
-        "slug": "feedzai",
-        "name": "Feedzai"
-       },
-       {
-        "slug": "gocardless",
-        "name": "GoCardless"
-       },
-       {
-        "slug": "hightouch",
-        "name": "Hightouch"
-       },
-       {
-        "slug": "lattice",
-        "name": "Lattice"
-       },
-       {
-        "slug": "onetrust",
-        "name": "OneTrust"
-       }
-      ]
-     },
-     {
-      "type": "logos",
-      "n": 7,
-      "share": 7,
-      "companies": [
        {
         "slug": "anaplan",
         "name": "Anaplan"
@@ -4743,43 +4644,16 @@
         "name": "Attio"
        },
        {
-        "slug": "contentful",
-        "name": "Contentful"
-       },
-       {
-        "slug": "quantexa",
-        "name": "Quantexa"
-       },
-       {
-        "slug": "relativity",
-        "name": "Relativity"
-       },
-       {
-        "slug": "relex",
-        "name": "RELEX Solutions"
-       },
-       {
-        "slug": "xeneta",
-        "name": "Xeneta"
-       }
-      ]
-     },
-     {
-      "type": "proof",
-      "n": 7,
-      "share": 7,
-      "companies": [
-       {
-        "slug": "adyen",
-        "name": "Adyen"
-       },
-       {
         "slug": "clickup",
         "name": "ClickUp"
        },
        {
         "slug": "coachhub",
         "name": "CoachHub"
+       },
+       {
+        "slug": "cognite",
+        "name": "Cognite"
        },
        {
         "slug": "dbt-labs",
@@ -4800,9 +4674,48 @@
       ]
      },
      {
+      "type": "cta",
+      "n": 8,
+      "share": 8.4,
+      "companies": [
+       {
+        "slug": "asana",
+        "name": "Asana"
+       },
+       {
+        "slug": "celonis",
+        "name": "Celonis"
+       },
+       {
+        "slug": "hubspot",
+        "name": "HubSpot"
+       },
+       {
+        "slug": "ironclad",
+        "name": "Ironclad"
+       },
+       {
+        "slug": "loom",
+        "name": "Loom"
+       },
+       {
+        "slug": "nextcloud",
+        "name": "Nextcloud"
+       },
+       {
+        "slug": "scandit",
+        "name": "Scandit"
+       },
+       {
+        "slug": "sitecore",
+        "name": "Sitecore"
+       }
+      ]
+     },
+     {
       "type": "security",
       "n": 7,
-      "share": 7,
+      "share": 7.4,
       "companies": [
        {
         "slug": "calendly",
@@ -4821,12 +4734,12 @@
         "name": "Snowflake"
        },
        {
-        "slug": "staffbase",
-        "name": "Staffbase"
+        "slug": "spendesk",
+        "name": "Spendesk"
        },
        {
-        "slug": "teamviewer",
-        "name": "TeamViewer"
+        "slug": "staffbase",
+        "name": "Staffbase"
        },
        {
         "slug": "unbabel",
@@ -4835,14 +4748,41 @@
       ]
      },
      {
-      "type": "product",
-      "n": 5,
-      "share": 5,
+      "type": "awards",
+      "n": 6,
+      "share": 6.3,
       "companies": [
        {
-        "slug": "backbase",
-        "name": "Backbase"
+        "slug": "amplitude",
+        "name": "Amplitude"
        },
+       {
+        "slug": "cognigy",
+        "name": "Cognigy"
+       },
+       {
+        "slug": "feedzai",
+        "name": "Feedzai"
+       },
+       {
+        "slug": "gocardless",
+        "name": "GoCardless"
+       },
+       {
+        "slug": "lattice",
+        "name": "Lattice"
+       },
+       {
+        "slug": "onetrust",
+        "name": "OneTrust"
+       }
+      ]
+     },
+     {
+      "type": "product",
+      "n": 5,
+      "share": 5.3,
+      "companies": [
        {
         "slug": "bird",
         "name": "Bird"
@@ -4856,34 +4796,61 @@
         "name": "Palo Alto Networks"
        },
        {
+        "slug": "relex",
+        "name": "RELEX Solutions"
+       },
+       {
         "slug": "typeform",
         "name": "Typeform"
        }
       ]
      },
      {
-      "type": "integrations",
-      "n": 3,
-      "share": 3,
+      "type": "logos",
+      "n": 4,
+      "share": 4.2,
       "companies": [
        {
-        "slug": "genesys",
-        "name": "Genesys"
+        "slug": "contentful",
+        "name": "Contentful"
        },
        {
-        "slug": "idnow",
-        "name": "IDnow"
+        "slug": "quantexa",
+        "name": "Quantexa"
        },
        {
-        "slug": "spendesk",
-        "name": "Spendesk"
+        "slug": "relativity",
+        "name": "Relativity"
+       },
+       {
+        "slug": "xeneta",
+        "name": "Xeneta"
+       }
+      ]
+     },
+     {
+      "type": "faq",
+      "n": 3,
+      "share": 3.2,
+      "companies": [
+       {
+        "slug": "brevo",
+        "name": "Brevo"
+       },
+       {
+        "slug": "miro",
+        "name": "Miro"
+       },
+       {
+        "slug": "snyk",
+        "name": "Snyk"
        }
       ]
      },
      {
       "type": "resources",
       "n": 3,
-      "share": 3,
+      "share": 3.2,
       "companies": [
        {
         "slug": "docusign",
@@ -4900,24 +4867,24 @@
       ]
      },
      {
-      "type": "faq",
+      "type": "integrations",
       "n": 2,
-      "share": 2,
+      "share": 2.1,
       "companies": [
        {
-        "slug": "brevo",
-        "name": "Brevo"
+        "slug": "genesys",
+        "name": "Genesys"
        },
        {
-        "slug": "snyk",
-        "name": "Snyk"
+        "slug": "idnow",
+        "name": "IDnow"
        }
       ]
      },
      {
       "type": "pricing",
       "n": 2,
-      "share": 2,
+      "share": 2.1,
       "companies": [
        {
         "slug": "livechat",
@@ -4932,7 +4899,7 @@
      {
       "type": "events",
       "n": 1,
-      "share": 1,
+      "share": 1.1,
       "companies": [
        {
         "slug": "talkdesk",
@@ -4944,12 +4911,12 @@
    },
    {
     "position": 8,
-    "n": 81,
+    "n": 76,
     "types": [
      {
       "type": "other",
       "n": 15,
-      "share": 18.5,
+      "share": 19.7,
       "companies": [
        {
         "slug": "adyen",
@@ -4972,16 +4939,12 @@
         "name": "Elastic"
        },
        {
+        "slug": "hightouch",
+        "name": "Hightouch"
+       },
+       {
         "slug": "ivanti",
         "name": "Ivanti"
-       },
-       {
-        "slug": "miro",
-        "name": "Miro"
-       },
-       {
-        "slug": "pendo",
-        "name": "Pendo"
        },
        {
         "slug": "qonto",
@@ -5004,6 +4967,10 @@
         "name": "Teamleader"
        },
        {
+        "slug": "teamviewer",
+        "name": "TeamViewer"
+       },
+       {
         "slug": "typeform",
         "name": "Typeform"
        },
@@ -5015,8 +4982,8 @@
      },
      {
       "type": "cta",
-      "n": 10,
-      "share": 12.3,
+      "n": 9,
+      "share": 11.8,
       "companies": [
        {
         "slug": "calendly",
@@ -5043,10 +5010,6 @@
         "name": "LiveChat"
        },
        {
-        "slug": "mixpanel",
-        "name": "Mixpanel"
-       },
-       {
         "slug": "snyk",
         "name": "Snyk"
        },
@@ -5062,9 +5025,13 @@
      },
      {
       "type": "features",
-      "n": 10,
-      "share": 12.3,
+      "n": 8,
+      "share": 10.5,
       "companies": [
+       {
+        "slug": "attio",
+        "name": "Attio"
+       },
        {
         "slug": "dbt-labs",
         "name": "dbt Labs"
@@ -5090,63 +5057,20 @@
         "name": "Loom"
        },
        {
-        "slug": "monday",
-        "name": "monday.com"
-       },
-       {
         "slug": "onetrust",
         "name": "OneTrust"
-       },
-       {
-        "slug": "teamviewer",
-        "name": "TeamViewer"
-       },
-       {
-        "slug": "zapier",
-        "name": "Zapier"
-       }
-      ]
-     },
-     {
-      "type": "awards",
-      "n": 7,
-      "share": 8.6,
-      "companies": [
-       {
-        "slug": "clickup",
-        "name": "ClickUp"
-       },
-       {
-        "slug": "quantexa",
-        "name": "Quantexa"
-       },
-       {
-        "slug": "relex",
-        "name": "RELEX Solutions"
-       },
-       {
-        "slug": "sinch",
-        "name": "Sinch"
-       },
-       {
-        "slug": "slack",
-        "name": "Slack"
-       },
-       {
-        "slug": "zendesk",
-        "name": "Zendesk"
-       },
-       {
-        "slug": "zscaler",
-        "name": "Zscaler"
        }
       ]
      },
      {
       "type": "integrations",
       "n": 7,
-      "share": 8.6,
+      "share": 9.2,
       "companies": [
+       {
+        "slug": "backbase",
+        "name": "Backbase"
+       },
        {
         "slug": "celonis",
         "name": "Celonis"
@@ -5158,10 +5082,6 @@
        {
         "slug": "lokalise",
         "name": "Lokalise"
-       },
-       {
-        "slug": "mollie",
-        "name": "Mollie"
        },
        {
         "slug": "payfit",
@@ -5178,44 +5098,9 @@
       ]
      },
      {
-      "type": "proof",
-      "n": 7,
-      "share": 8.6,
-      "companies": [
-       {
-        "slug": "alan",
-        "name": "Alan"
-       },
-       {
-        "slug": "anaplan",
-        "name": "Anaplan"
-       },
-       {
-        "slug": "attio",
-        "name": "Attio"
-       },
-       {
-        "slug": "backbase",
-        "name": "Backbase"
-       },
-       {
-        "slug": "cognite",
-        "name": "Cognite"
-       },
-       {
-        "slug": "dataiku",
-        "name": "Dataiku"
-       },
-       {
-        "slug": "sailpoint",
-        "name": "SailPoint"
-       }
-      ]
-     },
-     {
       "type": "security",
       "n": 7,
-      "share": 8.6,
+      "share": 9.2,
       "companies": [
        {
         "slug": "bird",
@@ -5248,9 +5133,40 @@
       ]
      },
      {
+      "type": "awards",
+      "n": 6,
+      "share": 7.9,
+      "companies": [
+       {
+        "slug": "clickup",
+        "name": "ClickUp"
+       },
+       {
+        "slug": "quantexa",
+        "name": "Quantexa"
+       },
+       {
+        "slug": "sinch",
+        "name": "Sinch"
+       },
+       {
+        "slug": "slack",
+        "name": "Slack"
+       },
+       {
+        "slug": "zendesk",
+        "name": "Zendesk"
+       },
+       {
+        "slug": "zscaler",
+        "name": "Zscaler"
+       }
+      ]
+     },
+     {
       "type": "faq",
       "n": 6,
-      "share": 7.4,
+      "share": 7.9,
       "companies": [
        {
         "slug": "gocardless",
@@ -5280,16 +5196,20 @@
      },
      {
       "type": "testimonial",
-      "n": 5,
-      "share": 6.2,
+      "n": 6,
+      "share": 7.9,
       "companies": [
        {
-        "slug": "hightouch",
-        "name": "Hightouch"
+        "slug": "cognite",
+        "name": "Cognite"
        },
        {
         "slug": "ironclad",
         "name": "Ironclad"
+       },
+       {
+        "slug": "monday",
+        "name": "monday.com"
        },
        {
         "slug": "procore",
@@ -5308,7 +5228,7 @@
      {
       "type": "pricing",
       "n": 3,
-      "share": 3.7,
+      "share": 3.9,
       "companies": [
        {
         "slug": "amplitude",
@@ -5325,9 +5245,43 @@
       ]
      },
      {
+      "type": "proof",
+      "n": 3,
+      "share": 3.9,
+      "companies": [
+       {
+        "slug": "alan",
+        "name": "Alan"
+       },
+       {
+        "slug": "dataiku",
+        "name": "Dataiku"
+       },
+       {
+        "slug": "sailpoint",
+        "name": "SailPoint"
+       }
+      ]
+     },
+     {
+      "type": "logos",
+      "n": 2,
+      "share": 2.6,
+      "companies": [
+       {
+        "slug": "relex",
+        "name": "RELEX Solutions"
+       },
+       {
+        "slug": "zapier",
+        "name": "Zapier"
+       }
+      ]
+     },
+     {
       "type": "product",
       "n": 2,
-      "share": 2.5,
+      "share": 2.6,
       "companies": [
        {
         "slug": "supermetrics",
@@ -5342,7 +5296,7 @@
      {
       "type": "media",
       "n": 1,
-      "share": 1.2,
+      "share": 1.3,
       "companies": [
        {
         "slug": "palo-alto",
@@ -5353,7 +5307,7 @@
      {
       "type": "resources",
       "n": 1,
-      "share": 1.2,
+      "share": 1.3,
       "companies": [
        {
         "slug": "scaleway",
@@ -5458,9 +5412,9 @@
   "elements": [
    {
     "type": "features",
-    "n": 98,
+    "n": 100,
     "of": 180,
-    "share": 54.4,
+    "share": 55.6,
     "companies": [
      {
       "slug": "acronis",
@@ -5473,6 +5427,10 @@
      {
       "slug": "afas",
       "name": "AFAS Software"
+     },
+     {
+      "slug": "airtable",
+      "name": "Airtable"
      },
      {
       "slug": "aiven",
@@ -5771,6 +5729,10 @@
       "name": "Snowflake"
      },
      {
+      "slug": "spendesk",
+      "name": "Spendesk"
+     },
+     {
       "slug": "staffbase",
       "name": "Staffbase"
      },
@@ -5858,9 +5820,9 @@
    },
    {
     "type": "proof",
-    "n": 78,
+    "n": 77,
     "of": 180,
-    "share": 43.3,
+    "share": 42.8,
     "companies": [
      {
       "slug": "adyen",
@@ -6023,10 +5985,6 @@
       "name": "Mixpanel"
      },
      {
-      "slug": "mollie",
-      "name": "Mollie"
-     },
-     {
       "slug": "ovhcloud",
       "name": "OVHcloud"
      },
@@ -6119,6 +6077,10 @@
       "name": "SUSE"
      },
      {
+      "slug": "teamviewer",
+      "name": "TeamViewer"
+     },
+     {
       "slug": "trustpilot",
       "name": "Trustpilot"
      },
@@ -6133,10 +6095,6 @@
      {
       "slug": "uipath",
       "name": "UiPath"
-     },
-     {
-      "slug": "unity",
-      "name": "Unity"
      },
      {
       "slug": "veeam",
@@ -6177,26 +6135,322 @@
     ]
    },
    {
-    "type": "testimonial",
-    "n": 77,
+    "type": "cta",
+    "n": 74,
     "of": 180,
-    "share": 42.8,
+    "share": 41.1,
+    "companies": [
+     {
+      "slug": "airtable",
+      "name": "Airtable"
+     },
+     {
+      "slug": "asana",
+      "name": "Asana"
+     },
+     {
+      "slug": "attio",
+      "name": "Attio"
+     },
+     {
+      "slug": "backbase",
+      "name": "Backbase"
+     },
+     {
+      "slug": "bill",
+      "name": "BILL"
+     },
+     {
+      "slug": "brex",
+      "name": "Brex"
+     },
+     {
+      "slug": "calendly",
+      "name": "Calendly"
+     },
+     {
+      "slug": "celonis",
+      "name": "Celonis"
+     },
+     {
+      "slug": "clickup",
+      "name": "ClickUp"
+     },
+     {
+      "slug": "coachhub",
+      "name": "CoachHub"
+     },
+     {
+      "slug": "cognigy",
+      "name": "Cognigy"
+     },
+     {
+      "slug": "cognite",
+      "name": "Cognite"
+     },
+     {
+      "slug": "customer-io",
+      "name": "Customer.io"
+     },
+     {
+      "slug": "dataiku",
+      "name": "Dataiku"
+     },
+     {
+      "slug": "diligent",
+      "name": "Diligent"
+     },
+     {
+      "slug": "docplanner",
+      "name": "Docplanner"
+     },
+     {
+      "slug": "dynatrace",
+      "name": "Dynatrace"
+     },
+     {
+      "slug": "elastic",
+      "name": "Elastic"
+     },
+     {
+      "slug": "factorial",
+      "name": "Factorial"
+     },
+     {
+      "slug": "feedzai",
+      "name": "Feedzai"
+     },
+     {
+      "slug": "fenergo",
+      "name": "Fenergo"
+     },
+     {
+      "slug": "fivetran",
+      "name": "Fivetran"
+     },
+     {
+      "slug": "genesys",
+      "name": "Genesys"
+     },
+     {
+      "slug": "github",
+      "name": "GitHub"
+     },
+     {
+      "slug": "gitlab",
+      "name": "GitLab"
+     },
+     {
+      "slug": "gong",
+      "name": "Gong"
+     },
+     {
+      "slug": "hornetsecurity",
+      "name": "Hornetsecurity"
+     },
+     {
+      "slug": "hubspot",
+      "name": "HubSpot"
+     },
+     {
+      "slug": "icertis",
+      "name": "Icertis"
+     },
+     {
+      "slug": "intercom",
+      "name": "Intercom"
+     },
+     {
+      "slug": "ironclad",
+      "name": "Ironclad"
+     },
+     {
+      "slug": "lattice",
+      "name": "Lattice"
+     },
+     {
+      "slug": "linear",
+      "name": "Linear"
+     },
+     {
+      "slug": "livechat",
+      "name": "LiveChat"
+     },
+     {
+      "slug": "lokalise",
+      "name": "Lokalise"
+     },
+     {
+      "slug": "loom",
+      "name": "Loom"
+     },
+     {
+      "slug": "mirakl",
+      "name": "Mirakl"
+     },
+     {
+      "slug": "mollie",
+      "name": "Mollie"
+     },
+     {
+      "slug": "monday",
+      "name": "monday.com"
+     },
+     {
+      "slug": "mongodb",
+      "name": "MongoDB"
+     },
+     {
+      "slug": "navex",
+      "name": "NAVEX"
+     },
+     {
+      "slug": "nextcloud",
+      "name": "Nextcloud"
+     },
+     {
+      "slug": "okta",
+      "name": "Okta"
+     },
+     {
+      "slug": "palo-alto",
+      "name": "Palo Alto Networks"
+     },
+     {
+      "slug": "parloa",
+      "name": "Parloa"
+     },
+     {
+      "slug": "payfit",
+      "name": "PayFit"
+     },
+     {
+      "slug": "pega",
+      "name": "Pegasystems"
+     },
+     {
+      "slug": "pipedrive",
+      "name": "Pipedrive"
+     },
+     {
+      "slug": "procore",
+      "name": "Procore"
+     },
+     {
+      "slug": "productboard",
+      "name": "Productboard"
+     },
+     {
+      "slug": "ptc",
+      "name": "PTC"
+     },
+     {
+      "slug": "relativity",
+      "name": "Relativity"
+     },
+     {
+      "slug": "rossum",
+      "name": "Rossum"
+     },
+     {
+      "slug": "sailpoint",
+      "name": "SailPoint"
+     },
+     {
+      "slug": "scandit",
+      "name": "Scandit"
+     },
+     {
+      "slug": "sentry",
+      "name": "Sentry"
+     },
+     {
+      "slug": "signicat",
+      "name": "Signicat"
+     },
+     {
+      "slug": "sinch",
+      "name": "Sinch"
+     },
+     {
+      "slug": "sitecore",
+      "name": "Sitecore"
+     },
+     {
+      "slug": "slack",
+      "name": "Slack"
+     },
+     {
+      "slug": "snyk",
+      "name": "Snyk"
+     },
+     {
+      "slug": "spendesk",
+      "name": "Spendesk"
+     },
+     {
+      "slug": "supabase",
+      "name": "Supabase"
+     },
+     {
+      "slug": "talkdesk",
+      "name": "Talkdesk"
+     },
+     {
+      "slug": "templafy",
+      "name": "Templafy"
+     },
+     {
+      "slug": "typeform",
+      "name": "Typeform"
+     },
+     {
+      "slug": "unbabel",
+      "name": "Unbabel"
+     },
+     {
+      "slug": "unity",
+      "name": "Unity"
+     },
+     {
+      "slug": "veriff",
+      "name": "Veriff"
+     },
+     {
+      "slug": "webflow",
+      "name": "Webflow"
+     },
+     {
+      "slug": "workhuman",
+      "name": "Workhuman"
+     },
+     {
+      "slug": "zapier",
+      "name": "Zapier"
+     },
+     {
+      "slug": "zendesk",
+      "name": "Zendesk"
+     },
+     {
+      "slug": "zscaler",
+      "name": "Zscaler"
+     }
+    ]
+   },
+   {
+    "type": "testimonial",
+    "n": 74,
+    "of": 180,
+    "share": 41.1,
     "companies": [
      {
       "slug": "acronis",
       "name": "Acronis"
      },
      {
-      "slug": "afas",
-      "name": "AFAS Software"
-     },
-     {
       "slug": "aircall",
       "name": "Aircall"
-     },
-     {
-      "slug": "airtable",
-      "name": "Airtable"
      },
      {
       "slug": "aiven",
@@ -6375,10 +6629,6 @@
       "name": "Pegasystems"
      },
      {
-      "slug": "pendo",
-      "name": "Pendo"
-     },
-     {
       "slug": "pennylane",
       "name": "Pennylane"
      },
@@ -6493,318 +6743,10 @@
     ]
    },
    {
-    "type": "cta",
-    "n": 75,
-    "of": 180,
-    "share": 41.7,
-    "companies": [
-     {
-      "slug": "airtable",
-      "name": "Airtable"
-     },
-     {
-      "slug": "asana",
-      "name": "Asana"
-     },
-     {
-      "slug": "attio",
-      "name": "Attio"
-     },
-     {
-      "slug": "backbase",
-      "name": "Backbase"
-     },
-     {
-      "slug": "bill",
-      "name": "BILL"
-     },
-     {
-      "slug": "brex",
-      "name": "Brex"
-     },
-     {
-      "slug": "calendly",
-      "name": "Calendly"
-     },
-     {
-      "slug": "celonis",
-      "name": "Celonis"
-     },
-     {
-      "slug": "clickup",
-      "name": "ClickUp"
-     },
-     {
-      "slug": "coachhub",
-      "name": "CoachHub"
-     },
-     {
-      "slug": "cognigy",
-      "name": "Cognigy"
-     },
-     {
-      "slug": "cognite",
-      "name": "Cognite"
-     },
-     {
-      "slug": "customer-io",
-      "name": "Customer.io"
-     },
-     {
-      "slug": "dataiku",
-      "name": "Dataiku"
-     },
-     {
-      "slug": "diligent",
-      "name": "Diligent"
-     },
-     {
-      "slug": "docplanner",
-      "name": "Docplanner"
-     },
-     {
-      "slug": "dynatrace",
-      "name": "Dynatrace"
-     },
-     {
-      "slug": "elastic",
-      "name": "Elastic"
-     },
-     {
-      "slug": "factorial",
-      "name": "Factorial"
-     },
-     {
-      "slug": "feedzai",
-      "name": "Feedzai"
-     },
-     {
-      "slug": "fenergo",
-      "name": "Fenergo"
-     },
-     {
-      "slug": "fivetran",
-      "name": "Fivetran"
-     },
-     {
-      "slug": "genesys",
-      "name": "Genesys"
-     },
-     {
-      "slug": "github",
-      "name": "GitHub"
-     },
-     {
-      "slug": "gitlab",
-      "name": "GitLab"
-     },
-     {
-      "slug": "gong",
-      "name": "Gong"
-     },
-     {
-      "slug": "hornetsecurity",
-      "name": "Hornetsecurity"
-     },
-     {
-      "slug": "hubspot",
-      "name": "HubSpot"
-     },
-     {
-      "slug": "icertis",
-      "name": "Icertis"
-     },
-     {
-      "slug": "intercom",
-      "name": "Intercom"
-     },
-     {
-      "slug": "ironclad",
-      "name": "Ironclad"
-     },
-     {
-      "slug": "lattice",
-      "name": "Lattice"
-     },
-     {
-      "slug": "linear",
-      "name": "Linear"
-     },
-     {
-      "slug": "livechat",
-      "name": "LiveChat"
-     },
-     {
-      "slug": "lokalise",
-      "name": "Lokalise"
-     },
-     {
-      "slug": "loom",
-      "name": "Loom"
-     },
-     {
-      "slug": "mirakl",
-      "name": "Mirakl"
-     },
-     {
-      "slug": "mixpanel",
-      "name": "Mixpanel"
-     },
-     {
-      "slug": "mollie",
-      "name": "Mollie"
-     },
-     {
-      "slug": "monday",
-      "name": "monday.com"
-     },
-     {
-      "slug": "mongodb",
-      "name": "MongoDB"
-     },
-     {
-      "slug": "navex",
-      "name": "NAVEX"
-     },
-     {
-      "slug": "nextcloud",
-      "name": "Nextcloud"
-     },
-     {
-      "slug": "okta",
-      "name": "Okta"
-     },
-     {
-      "slug": "palo-alto",
-      "name": "Palo Alto Networks"
-     },
-     {
-      "slug": "parloa",
-      "name": "Parloa"
-     },
-     {
-      "slug": "payfit",
-      "name": "PayFit"
-     },
-     {
-      "slug": "pega",
-      "name": "Pegasystems"
-     },
-     {
-      "slug": "pipedrive",
-      "name": "Pipedrive"
-     },
-     {
-      "slug": "procore",
-      "name": "Procore"
-     },
-     {
-      "slug": "productboard",
-      "name": "Productboard"
-     },
-     {
-      "slug": "ptc",
-      "name": "PTC"
-     },
-     {
-      "slug": "relativity",
-      "name": "Relativity"
-     },
-     {
-      "slug": "rossum",
-      "name": "Rossum"
-     },
-     {
-      "slug": "sailpoint",
-      "name": "SailPoint"
-     },
-     {
-      "slug": "scandit",
-      "name": "Scandit"
-     },
-     {
-      "slug": "sentry",
-      "name": "Sentry"
-     },
-     {
-      "slug": "signicat",
-      "name": "Signicat"
-     },
-     {
-      "slug": "sinch",
-      "name": "Sinch"
-     },
-     {
-      "slug": "sitecore",
-      "name": "Sitecore"
-     },
-     {
-      "slug": "slack",
-      "name": "Slack"
-     },
-     {
-      "slug": "snyk",
-      "name": "Snyk"
-     },
-     {
-      "slug": "spendesk",
-      "name": "Spendesk"
-     },
-     {
-      "slug": "supabase",
-      "name": "Supabase"
-     },
-     {
-      "slug": "talkdesk",
-      "name": "Talkdesk"
-     },
-     {
-      "slug": "templafy",
-      "name": "Templafy"
-     },
-     {
-      "slug": "typeform",
-      "name": "Typeform"
-     },
-     {
-      "slug": "unbabel",
-      "name": "Unbabel"
-     },
-     {
-      "slug": "unity",
-      "name": "Unity"
-     },
-     {
-      "slug": "veriff",
-      "name": "Veriff"
-     },
-     {
-      "slug": "webflow",
-      "name": "Webflow"
-     },
-     {
-      "slug": "workhuman",
-      "name": "Workhuman"
-     },
-     {
-      "slug": "zapier",
-      "name": "Zapier"
-     },
-     {
-      "slug": "zendesk",
-      "name": "Zendesk"
-     },
-     {
-      "slug": "zscaler",
-      "name": "Zscaler"
-     }
-    ]
-   },
-   {
     "type": "security",
-    "n": 68,
+    "n": 69,
     "of": 180,
-    "share": 37.8,
+    "share": 38.3,
     "companies": [
      {
       "slug": "adyen",
@@ -7027,6 +6969,10 @@
       "name": "Snowflake"
      },
      {
+      "slug": "spendesk",
+      "name": "Spendesk"
+     },
+     {
       "slug": "staffbase",
       "name": "Staffbase"
      },
@@ -7223,10 +7169,6 @@
       "name": "Metabase"
      },
      {
-      "slug": "mollie",
-      "name": "Mollie"
-     },
-     {
       "slug": "monday",
       "name": "monday.com"
      },
@@ -7321,6 +7263,10 @@
      {
       "slug": "unbabel",
       "name": "Unbabel"
+     },
+     {
+      "slug": "unity",
+      "name": "Unity"
      },
      {
       "slug": "usercentrics",
@@ -7602,9 +7548,9 @@
    },
    {
     "type": "integrations",
-    "n": 60,
+    "n": 57,
     "of": 180,
-    "share": 33.3,
+    "share": 31.7,
     "companies": [
      {
       "slug": "adyen",
@@ -7719,10 +7665,6 @@
       "name": "Miro"
      },
      {
-      "slug": "mollie",
-      "name": "Mollie"
-     },
-     {
       "slug": "mongodb",
       "name": "MongoDB"
      },
@@ -7799,10 +7741,6 @@
       "name": "Software AG"
      },
      {
-      "slug": "spendesk",
-      "name": "Spendesk"
-     },
-     {
       "slug": "staffbase",
       "name": "Staffbase"
      },
@@ -7835,10 +7773,6 @@
       "name": "Wise"
      },
      {
-      "slug": "zapier",
-      "name": "Zapier"
-     },
-     {
       "slug": "zendesk",
       "name": "Zendesk"
      },
@@ -7850,9 +7784,9 @@
    },
    {
     "type": "product",
-    "n": 46,
+    "n": 47,
     "of": 180,
-    "share": 25.6,
+    "share": 26.1,
     "companies": [
      {
       "slug": "acronis",
@@ -7861,6 +7795,10 @@
      {
       "slug": "adyen",
       "name": "Adyen"
+     },
+     {
+      "slug": "airtable",
+      "name": "Airtable"
      },
      {
       "slug": "atlassian",
@@ -8067,10 +8005,6 @@
       "name": "Cognite"
      },
      {
-      "slug": "datadog",
-      "name": "Datadog"
-     },
-     {
       "slug": "factorial",
       "name": "Factorial"
      },
@@ -8195,6 +8129,10 @@
       "name": "Xeneta"
      },
      {
+      "slug": "zapier",
+      "name": "Zapier"
+     },
+     {
       "slug": "zendesk",
       "name": "Zendesk"
      }
@@ -8310,9 +8248,9 @@
    },
    {
     "type": "resources",
-    "n": 18,
+    "n": 17,
     "of": 180,
-    "share": 10,
+    "share": 9.4,
     "companies": [
      {
       "slug": "docusign",
@@ -8381,10 +8319,6 @@
      {
       "slug": "xeneta",
       "name": "Xeneta"
-     },
-     {
-      "slug": "zapier",
-      "name": "Zapier"
      }
     ]
    },
@@ -8581,11 +8515,11 @@
     "signal": "anatomy_section_count",
     "label": "Sections on the page",
     "n": 180,
-    "min": 1,
+    "min": 0,
     "p25": 5,
     "median": 7,
     "p75": 9,
-    "max": 19,
+    "max": 18,
     "coverage": {
      "tracked": 200,
      "readable": 180,
@@ -8678,45 +8612,40 @@
     "extremes": {
      "lowest": [
       {
+       "slug": "braze",
+       "name": "Braze",
+       "value": 0
+      },
+      {
+       "slug": "jetbrains",
+       "name": "JetBrains",
+       "value": 0
+      },
+      {
        "slug": "apollo",
        "name": "Apollo.io",
        "value": 1
       },
       {
-       "slug": "braze",
-       "name": "Braze",
-       "value": 1
-      },
-      {
-       "slug": "jetbrains",
-       "name": "JetBrains",
+       "slug": "datadog",
+       "name": "Datadog",
        "value": 1
       },
       {
        "slug": "matillion",
        "name": "Matillion",
        "value": 1
-      },
-      {
-       "slug": "mentimeter",
-       "name": "Mentimeter",
-       "value": 1
       }
      ],
      "highest": [
-      {
-       "slug": "cognite",
-       "name": "Cognite",
-       "value": 19
-      },
       {
        "slug": "uipath",
        "name": "UiPath",
        "value": 18
       },
       {
-       "slug": "ledgy",
-       "name": "Ledgy",
+       "slug": "cognite",
+       "name": "Cognite",
        "value": 17
       },
       {
@@ -8728,6 +8657,11 @@
        "slug": "supermetrics",
        "name": "Supermetrics",
        "value": 17
+      },
+      {
+       "slug": "ledgy",
+       "name": "Ledgy",
+       "value": 16
       }
      ]
     }
@@ -9338,9 +9272,9 @@
     "label": "Words on the page",
     "n": 183,
     "min": 8,
-    "p25": 554,
-    "median": 814,
-    "p75": 1277,
+    "p25": 569,
+    "median": 822,
+    "p75": 1274,
     "max": 23571,
     "coverage": {
      "tracked": 200,
@@ -9768,30 +9702,12 @@
     },
     {
      "position": 3,
-     "type": "features",
-     "heading": "Breng al je bedrijfsprocessen onder in één systeem",
-     "words": 50
-    },
-    {
-     "position": 4,
-     "type": "other",
-     "heading": "Succes begint met vertrouwen in je software",
-     "words": 26
-    },
-    {
-     "position": 5,
      "type": "comparison",
      "heading": "AFAS is een B Corp",
      "words": 51
     },
     {
-     "position": 6,
-     "type": "testimonial",
-     "heading": "AFAS is een B Corp",
-     "words": 61
-    },
-    {
-     "position": 7,
+     "position": 4,
      "type": "features",
      "heading": "Automatiseer jouw bedrijfsprocessen met AFAS Software",
      "words": 86
@@ -9854,49 +9770,43 @@
      "position": 1,
      "type": "hero",
      "heading": null,
-     "words": 34
+     "words": 53
     },
     {
      "position": 2,
-     "type": "logos",
-     "heading": "Trusted by 500,000 leading teams",
-     "words": 5
+     "type": "features",
+     "heading": "Trusted by 500,000+ companies",
+     "words": 507
     },
     {
      "position": 3,
-     "type": "cta",
-     "heading": "Sophisticated workflows in minutes, not months",
-     "words": 52
+     "type": "product",
+     "heading": "How to build in Airtable",
+     "words": 156
     },
     {
      "position": 4,
-     "type": "testimonial",
-     "heading": "Say hello to Omni",
-     "words": 20
+     "type": "logos",
+     "heading": "Works with the tools you already use",
+     "words": 47
     },
     {
      "position": 5,
      "type": "security",
-     "heading": "The power of AI with the industrial-grade platform your business demands",
-     "words": 99
+     "heading": "Enterprise-ready from day one",
+     "words": 182
     },
     {
      "position": 6,
-     "type": "testimonial",
-     "heading": "The path to 10x every person in your organization",
-     "words": 196
-    },
-    {
-     "position": 7,
      "type": "cta",
-     "heading": "Start building with Airtable Teams at over 500,000 forward-thinking organizations use Airtable every day. Join them.",
-     "words": 20
+     "heading": "MCP Server",
+     "words": 37
     }
    ],
-   "words": 453,
+   "words": 988,
    "nav_links": 10,
    "footer_links": 79,
-   "cta_count": 6
+   "cta_count": 7
   },
   {
    "slug": "aiven",
@@ -10122,12 +10032,6 @@
     },
     {
      "position": 7,
-     "type": "logos",
-     "heading": "Discover what’s new at Anaplan",
-     "words": 152
-    },
-    {
-     "position": 8,
      "type": "proof",
      "heading": "100% accuracy is a non-negotiable",
      "words": 24
@@ -10281,12 +10185,6 @@
      "type": "security",
      "heading": "By Industry",
      "words": 182
-    },
-    {
-     "position": 5,
-     "type": "product",
-     "heading": "Featured apps",
-     "words": 20
     }
    ],
    "words": 790,
@@ -10332,30 +10230,24 @@
     },
     {
      "position": 6,
-     "type": "features",
-     "heading": "All of the signals, none of the noise. Ready to act on.",
-     "words": 77
-    },
-    {
-     "position": 7,
      "type": "logos",
      "heading": "SDK. API. MCP. Build anything on Attio.",
      "words": 37
     },
     {
-     "position": 8,
+     "position": 7,
      "type": "proof",
      "heading": "Run at any scale. Production-grade for your team and agents.",
      "words": 25
     },
     {
-     "position": 9,
+     "position": 8,
      "type": "features",
      "heading": "Better as you grow. New features every week to keep pace with you.",
      "words": 76
     },
     {
-     "position": 10,
+     "position": 9,
      "type": "cta",
      "heading": "Agentic revenue runs on Attio.",
      "words": 18
@@ -10523,66 +10415,42 @@
     },
     {
      "position": 4,
-     "type": "other",
-     "heading": "From dozens of fragmented systems and broken operations.",
-     "words": 44
-    },
-    {
-     "position": 5,
-     "type": "proof",
-     "heading": "To a Unified Frontline that runs the bank as one.",
-     "words": 128
-    },
-    {
-     "position": 6,
-     "type": "other",
-     "heading": "From dozens of fragmented systems and broken operations.",
-     "words": 44
-    },
-    {
-     "position": 7,
-     "type": "product",
-     "heading": "To a Unified Frontline that runs the bank as one.",
-     "words": 39
-    },
-    {
-     "position": 8,
      "type": "proof",
      "heading": "Coordinate actions, data & decisions across your frontline.",
      "words": 49
     },
     {
-     "position": 9,
+     "position": 5,
      "type": "other",
      "heading": "Own the customer lifecycle",
      "words": 53
     },
     {
-     "position": 10,
+     "position": 6,
      "type": "proof",
      "heading": "Proven by the banks that got there first.",
      "words": 125
     },
     {
-     "position": 11,
+     "position": 7,
      "type": "other",
      "heading": "Your team controls the Banking OS",
      "words": 50
     },
     {
-     "position": 12,
+     "position": 8,
      "type": "integrations",
      "heading": "Connects to the systems you already run",
      "words": 112
     },
     {
-     "position": 13,
+     "position": 9,
      "type": "security",
      "heading": "Frequently Asked Questions",
      "words": 373
     },
     {
-     "position": 14,
+     "position": 10,
      "type": "cta",
      "heading": "The Unified Frontline starts here.",
      "words": 39
@@ -11314,113 +11182,101 @@
     {
      "position": 1,
      "type": "hero",
-     "heading": null,
-     "words": 0
-    },
-    {
-     "position": 2,
-     "type": "other",
      "heading": "Introducing Cognite Flows™",
      "words": 26
     },
     {
-     "position": 3,
+     "position": 2,
      "type": "cta",
      "heading": "Built for the Industrial Heroes",
      "words": 31
     },
     {
-     "position": 4,
+     "position": 3,
      "type": "awards",
      "heading": "IDC MarketScape: Cognite Recognized as a Leader in Industrial DataOps Platforms",
      "words": 37
     },
     {
-     "position": 5,
+     "position": 4,
      "type": "testimonial",
      "heading": "465% ROI and $29.4M of total benefits from Cognite",
      "words": 66
     },
     {
-     "position": 6,
+     "position": 5,
      "type": "proof",
      "heading": "Scalable Industrial AI Starts Here",
      "words": 26
     },
     {
-     "position": 7,
+     "position": 6,
      "type": "cta",
      "heading": "Cognite Sets the Standard for Industrial AI and Data",
      "words": 34
     },
     {
-     "position": 8,
+     "position": 7,
      "type": "proof",
      "heading": "Others Promise, We Deliver",
      "words": 54
     },
     {
-     "position": 9,
+     "position": 8,
      "type": "testimonial",
      "heading": "Committed to delivering $100B in customer value by 2035",
      "words": 119
     },
     {
-     "position": 10,
+     "position": 9,
      "type": "other",
      "heading": "More operational value from AI. Less effort than you thought.",
      "words": 21
     },
     {
-     "position": 11,
+     "position": 10,
      "type": "testimonial",
      "heading": "Empower users and teams across your enterprise",
      "words": 77
     },
     {
-     "position": 12,
+     "position": 11,
      "type": "other",
      "heading": "Accelerate industrial transformation",
      "words": 32
     },
     {
-     "position": 13,
+     "position": 12,
      "type": "cta",
      "heading": "A robust and trustworthy AI and data foundation",
      "words": 23
     },
     {
-     "position": 14,
+     "position": 13,
      "type": "proof",
      "heading": "An AI-native industrial experience",
      "words": 14
     },
     {
-     "position": 15,
+     "position": 14,
      "type": "logos",
      "heading": "Any cloud, any data, any LLM, any use case",
      "words": 41
     },
     {
-     "position": 16,
-     "type": "proof",
-     "heading": "465% ROI and $29.4M of total benefits from Cognite",
-     "words": 18
-    },
-    {
-     "position": 17,
+     "position": 15,
      "type": "other",
      "heading": "Watch the latest Product Tour and learn why industry leaders choose Cognite",
      "words": 16
     },
     {
-     "position": 18,
+     "position": 16,
      "type": "cta",
      "heading": "In a landscape of technology partners, pedigree, focus, and culture matter",
      "words": 17
     },
     {
-     "position": 19,
+     "position": 17,
      "type": "faq",
      "heading": "Are you ready to accelerate value from Industrial AI?",
      "words": 29
@@ -11822,12 +11678,6 @@
     {
      "position": 1,
      "type": "hero",
-     "heading": null,
-     "words": 0
-    },
-    {
-     "position": 2,
-     "type": "faq",
      "heading": "Products",
      "words": 241
     }
@@ -12331,8 +12181,8 @@
     {
      "position": 8,
      "type": "other",
-     "heading": "How Legal Teams are Accelerating Contract Negotiations with AI",
-     "words": 9
+     "heading": "Docusign IAM is the agreement platform your business needs",
+     "words": 15
     }
    ],
    "words": 1721,
@@ -12456,23 +12306,11 @@
     {
      "position": 9,
      "type": "proof",
-     "heading": "Agentic AI",
-     "words": 42
-    },
-    {
-     "position": 10,
-     "type": "other",
-     "heading": "Option #1",
-     "words": 29
-    },
-    {
-     "position": 11,
-     "type": "proof",
      "heading": "Option #2",
      "words": 41
     },
     {
-     "position": 12,
+     "position": 10,
      "type": "cta",
      "heading": "Option #3",
      "words": 79
@@ -13217,54 +13055,48 @@
     },
     {
      "position": 3,
-     "type": "logos",
-     "heading": "Go from insight to live campaign in minutes – powered by all your data, brand knowledge, and AI.",
-     "words": 51
-    },
-    {
-     "position": 4,
      "type": "features",
      "heading": "Reinvent the way your marketing team works",
      "words": 65
     },
     {
-     "position": 5,
+     "position": 4,
      "type": "logos",
      "heading": "Turn unseen opportunities into perfectly executed campaigns",
      "words": 48
     },
     {
-     "position": 6,
+     "position": 5,
      "type": "features",
      "heading": "Plan, create, and execute your marketing faster and more autonomously",
      "words": 149
     },
     {
-     "position": 7,
+     "position": 6,
      "type": "awards",
      "heading": "Hightouch named a Leader in Gartner® Magic Quadrant™ for Customer Data Platforms",
      "words": 15
     },
     {
-     "position": 8,
+     "position": 7,
      "type": "testimonial",
      "heading": "Leaders are reinventing marketing with data and AI. You can too.",
      "words": 87
     },
     {
-     "position": 9,
+     "position": 8,
      "type": "other",
      "heading": "Enterprise-grade security, by default",
      "words": 22
     },
     {
-     "position": 10,
+     "position": 9,
      "type": "awards",
      "heading": "Recognized as an industry leader",
      "words": 257
     },
     {
-     "position": 11,
+     "position": 10,
      "type": "logos",
      "heading": "Connect to 300+ tools",
      "words": 20
@@ -14001,48 +13833,42 @@
     },
     {
      "position": 10,
-     "type": "faq",
-     "heading": "How will you use Ledgy?",
-     "words": 75
-    },
-    {
-     "position": 11,
      "type": "integrations",
      "heading": "Automations at every step",
      "words": 42
     },
     {
-     "position": 12,
+     "position": 11,
      "type": "security",
      "heading": "Go global with confidence",
      "words": 38
     },
     {
-     "position": 13,
+     "position": 12,
      "type": "other",
      "heading": "Manage equity your way",
      "words": 49
     },
     {
-     "position": 14,
+     "position": 13,
      "type": "features",
      "heading": "Fast and easy migration with Ledgy experts at hand",
      "words": 161
     },
     {
-     "position": 15,
+     "position": 14,
      "type": "other",
      "heading": "Let us show you more",
      "words": 24
     },
     {
-     "position": 16,
+     "position": 15,
      "type": "security",
      "heading": "Enterprise-ready security",
      "words": 134
     },
     {
-     "position": 17,
+     "position": 16,
      "type": "awards",
      "heading": "Frequently Asked Questions",
      "words": 503
@@ -14620,7 +14446,7 @@
      "position": 1,
      "type": "hero",
      "heading": null,
-     "words": 214
+     "words": 218
     },
     {
      "position": 2,
@@ -14636,54 +14462,30 @@
     },
     {
      "position": 4,
-     "type": "proof",
-     "heading": "The only thing more important than moving fast is moving the needle",
-     "words": 37
-    },
-    {
-     "position": 5,
-     "type": "testimonial",
-     "heading": "6,000+",
-     "words": 56
-    },
-    {
-     "position": 6,
-     "type": "proof",
-     "heading": "The only thing more important than moving fast is moving the needle",
-     "words": 42
-    },
-    {
-     "position": 7,
-     "type": "testimonial",
-     "heading": "6,000+",
-     "words": 56
-    },
-    {
-     "position": 8,
      "type": "other",
      "heading": "F l o w f r o m i d e a t o o u t c o m e i n s e c o n d s",
      "words": 30
     },
     {
-     "position": 9,
+     "position": 5,
      "type": "integrations",
      "heading": "Experience the Innovation Workspace",
      "words": 100
     },
     {
-     "position": 10,
+     "position": 6,
      "type": "media",
      "heading": "The AI platform for teamwork",
      "words": 20
     },
     {
-     "position": 11,
+     "position": 7,
      "type": "faq",
      "heading": "Need help getting started?",
      "words": 40
     }
    ],
-   "words": 1090,
+   "words": 1094,
    "nav_links": 75,
    "footer_links": 67,
    "cta_count": 25
@@ -14735,12 +14537,6 @@
      "type": "features",
      "heading": "Your personal analyst, accessible anywhere",
      "words": 126
-    },
-    {
-     "position": 8,
-     "type": "cta",
-     "heading": "Mixpanel is for teams that move. Make your move.",
-     "words": 15
     }
    ],
    "words": 1201,
@@ -14768,42 +14564,18 @@
     },
     {
      "position": 3,
-     "type": "proof",
-     "heading": "One platform to get paid and simplify your finances",
-     "words": 113
-    },
-    {
-     "position": 4,
      "type": "pricing",
      "heading": "8",
      "words": 56
     },
     {
-     "position": 5,
+     "position": 4,
      "type": "other",
      "heading": "A trusted partner for businesses in Europe",
      "words": 17
     },
     {
-     "position": 6,
-     "type": "logos",
-     "heading": "A trusted partner for businesses in Europe",
-     "words": 83
-    },
-    {
-     "position": 7,
-     "type": "other",
-     "heading": "Built for any business",
-     "words": 24
-    },
-    {
-     "position": 8,
-     "type": "integrations",
-     "heading": "Built for any business",
-     "words": 165
-    },
-    {
-     "position": 9,
+     "position": 5,
      "type": "cta",
      "heading": "Simplify payments and money management",
      "words": 18
@@ -14858,24 +14630,18 @@
     },
     {
      "position": 7,
-     "type": "cta",
-     "heading": "Let work flow",
-     "words": 13
-    },
-    {
-     "position": 8,
      "type": "features",
      "heading": "Gain full control",
      "words": 218
     },
     {
-     "position": 9,
+     "position": 8,
      "type": "testimonial",
      "heading": "Our customers achieve more",
      "words": 96
     },
     {
-     "position": 10,
+     "position": 9,
      "type": "awards",
      "heading": "Enterprise-grade security",
      "words": 298
@@ -15110,12 +14876,6 @@
     },
     {
      "position": 9,
-     "type": "other",
-     "heading": "Get in touch",
-     "words": 39
-    },
-    {
-     "position": 10,
      "type": "awards",
      "heading": "See how we stack up",
      "words": 28
@@ -15758,41 +15518,35 @@
     {
      "position": 1,
      "type": "hero",
-     "heading": null,
-     "words": 0
-    },
-    {
-     "position": 2,
-     "type": "awards",
      "heading": "We'd prefer it if you saw us at our best.",
      "words": 99
     },
     {
-     "position": 3,
+     "position": 2,
      "type": "cta",
      "heading": "Billed less.",
      "words": 16
     },
     {
-     "position": 4,
+     "position": 3,
      "type": "proof",
      "heading": "Four paths to becoming a modern AI enterprise. All on one unified platform.",
      "words": 117
     },
     {
-     "position": 5,
+     "position": 4,
      "type": "awards",
      "heading": "This is where ambition meets accountability, at enterprise scale",
      "words": 210
     },
     {
-     "position": 6,
+     "position": 5,
      "type": "testimonial",
      "heading": "Hear how Pega is helping clients deliver outcomes that matter",
      "words": 84
     },
     {
-     "position": 7,
+     "position": 6,
      "type": "features",
      "heading": "Next steps for you",
      "words": 159
@@ -15823,42 +15577,24 @@
     },
     {
      "position": 3,
-     "type": "features",
-     "heading": "The best builders in the AI era choose Pendo.",
-     "words": 290
-    },
-    {
-     "position": 4,
      "type": "other",
      "heading": "Pendo is the largest product context graph in the world.",
      "words": 52
     },
     {
-     "position": 5,
+     "position": 4,
      "type": "features",
      "heading": "Give every agent the context to perform better.",
      "words": 105
     },
     {
-     "position": 6,
+     "position": 5,
      "type": "other",
      "heading": "Sharpen every stage of your software development lifecycle.",
      "words": 29
     },
     {
-     "position": 7,
-     "type": "testimonial",
-     "heading": "The best builders in the AI era choose Pendo.",
-     "words": 359
-    },
-    {
-     "position": 8,
-     "type": "other",
-     "heading": "Your product already knows what’s working and what isn’t.",
-     "words": 50
-    },
-    {
-     "position": 9,
+     "position": 6,
      "type": "security",
      "heading": "Enterprise-grade security. Zero exceptions.",
      "words": 600
@@ -16571,54 +16307,60 @@
     },
     {
      "position": 4,
+     "type": "logos",
+     "heading": "",
+     "words": 3
+    },
+    {
+     "position": 5,
      "type": "integrations",
      "heading": "Balance supply with demand across every tier, from suppliers to stores",
      "words": 110
     },
     {
-     "position": 5,
+     "position": 6,
      "type": "features",
      "heading": "Fulfill demand across every channel with maximum service levels and minimum waste",
      "words": 114
     },
     {
-     "position": 6,
+     "position": 7,
      "type": "product",
      "heading": "Scale as your manufacturing needs to evolve",
      "words": 100
     },
     {
-     "position": 7,
+     "position": 8,
      "type": "logos",
      "heading": "Trusted by industry leading retailers and manufacturers",
      "words": 10
     },
     {
-     "position": 8,
+     "position": 9,
      "type": "awards",
      "heading": "2026 Nucleus Research Enterprise Supply Chain Planning Value Matrix",
      "words": 64
     },
     {
-     "position": 9,
+     "position": 10,
      "type": "product",
      "heading": "Break down silos for a unified view of your supply chain",
      "words": 49
     },
     {
-     "position": 10,
+     "position": 11,
      "type": "features",
      "heading": "Why our customers love working with us",
      "words": 355
     },
     {
-     "position": 11,
+     "position": 12,
      "type": "proof",
      "heading": "Resources for you",
      "words": 131
     },
     {
-     "position": 12,
+     "position": 13,
      "type": "faq",
      "heading": "Ready to transform your supply chain & retail planning?",
      "words": 53
@@ -17773,7 +17515,7 @@
     },
     {
      "position": 4,
-     "type": "other",
+     "type": "features",
      "heading": "Meet the fastest way to work with your spend data",
      "words": 61
     },
@@ -17791,7 +17533,7 @@
     },
     {
      "position": 7,
-     "type": "integrations",
+     "type": "security",
      "heading": "",
      "words": 284
     },
@@ -17803,12 +17545,24 @@
     },
     {
      "position": 9,
+     "type": "features",
+     "heading": "Not just a solution. A partner.",
+     "words": 97
+    },
+    {
+     "position": 10,
+     "type": "other",
+     "heading": "Powered by 10,000+ finance leaders",
+     "words": 56
+    },
+    {
+     "position": 11,
      "type": "faq",
      "heading": "Want to know more?",
      "words": 402
     },
     {
-     "position": 10,
+     "position": 12,
      "type": "cta",
      "heading": "Spend that finally works for you.",
      "words": 12
@@ -18313,42 +18067,36 @@
     },
     {
      "position": 4,
-     "type": "features",
-     "heading": "The pinnacle of proactive IT",
-     "words": 100
+     "type": "proof",
+     "heading": "Industry leaders win with TeamViewer",
+     "words": 55
     },
     {
      "position": 5,
-     "type": "security",
-     "heading": "Industry leaders win with TeamViewer",
-     "words": 56
-    },
-    {
-     "position": 6,
      "type": "other",
      "heading": "Discover what sets TeamViewer apart \\r\\n",
      "words": 9
     },
     {
-     "position": 7,
+     "position": 6,
      "type": "security",
      "heading": "Discover what sets TeamViewer apart",
      "words": 155
     },
     {
-     "position": 8,
+     "position": 7,
      "type": "features",
      "heading": "Better together",
      "words": 251
     },
     {
-     "position": 9,
+     "position": 8,
      "type": "other",
      "heading": "Let’s find the right solution for your business",
      "words": 42
     }
    ],
-   "words": 907,
+   "words": 906,
    "nav_links": 32,
    "footer_links": 111,
    "cta_count": 5
@@ -18751,8 +18499,8 @@
     {
      "position": 8,
      "type": "security",
-     "heading": "High-impact solutions, powered by agentic automation",
-     "words": 168
+     "heading": "Agentic AI meets ROI",
+     "words": 116
     },
     {
      "position": 9,
@@ -18912,9 +18660,9 @@
     },
     {
      "position": 2,
-     "type": "proof",
+     "type": "logos",
      "heading": "Latest from Unity",
-     "words": 111
+     "words": 3
     },
     {
      "position": 3,
@@ -18966,9 +18714,9 @@
     },
     {
      "position": 11,
-     "type": "resources",
+     "type": "logos",
      "heading": "Tutorials & Courses",
-     "words": 94
+     "words": 3
     },
     {
      "position": 12,
@@ -19608,85 +19356,67 @@
      "position": 1,
      "type": "hero",
      "heading": null,
-     "words": 593
+     "words": 57
     },
     {
      "position": 2,
-     "type": "logos",
-     "heading": "Trusted by the world’s best companies",
-     "words": 6
+     "type": "cta",
+     "heading": "Your complete toolkit for AI automation",
+     "words": 58
     },
     {
      "position": 3,
-     "type": "features",
-     "heading": "Every team has AI. Now they need a system.",
-     "words": 148
+     "type": "testimonial",
+     "heading": "For the Fortune 500 and first-time founders",
+     "words": 157
     },
     {
      "position": 4,
-     "type": "integrations",
-     "heading": "Zapier MCP and SDK. One secure connection. For every AI surface.",
-     "words": 210
+     "type": "features",
+     "heading": "No AI hype here. Just results.",
+     "words": 275
     },
     {
      "position": 5,
-     "type": "other",
-     "heading": "Bring your hardest AI challenge. Leave with a clear path forward.",
-     "words": 36
+     "type": "cta",
+     "heading": "Real teams, real AI workflows, real results",
+     "words": 60
     },
     {
      "position": 6,
-     "type": "integrations",
-     "heading": "Your complete AI toolkit : MCP, SDK, CLI, and 9,000+ integrations",
-     "words": 75
+     "type": "features",
+     "heading": "AI that drives real outcomes",
+     "words": 98
     },
     {
      "position": 7,
      "type": "testimonial",
-     "heading": "Built for everyone, from the Fortune 500 to first-time founders",
-     "words": 242
+     "heading": "AI + automation, all in one place",
+     "words": 154
     },
     {
      "position": 8,
-     "type": "features",
-     "heading": "No AI hype here. Just results.",
-     "words": 277
+     "type": "logos",
+     "heading": "Move fast. Stay in control.",
+     "words": 162
     },
     {
      "position": 9,
-     "type": "other",
-     "heading": "AI governance and security that scales with you",
-     "words": 24
-    },
-    {
-     "position": 10,
-     "type": "security",
-     "heading": "Define exactly what runs",
-     "words": 159
-    },
-    {
-     "position": 11,
-     "type": "resources",
-     "heading": "Gain full insight into every workflow",
-     "words": 102
-    },
-    {
-     "position": 12,
      "type": "security",
      "heading": "Security built into every workflow",
      "words": 59
     },
     {
-     "position": 13,
-     "type": "cta",
-     "heading": "Go from AI experiments to real results",
-     "words": 27
+     "position": 10,
+     "type": "faq",
+     "heading": "Ready to transform how your enterprise uses AI?",
+     "words": 25
     }
    ],
-   "words": 2165,
+   "words": 1105,
    "nav_links": 40,
    "footer_links": 162,
-   "cta_count": 10
+   "cta_count": 6
   },
   {
    "slug": "zendesk",
@@ -19870,5 +19600,5 @@
   "media",
   "other"
  ],
- "generated_at": "2026-08-08T07:52:08Z"
+ "generated_at": "2026-08-08T07:58:20Z"
 }

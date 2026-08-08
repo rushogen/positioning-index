@@ -9,8 +9,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:55:39Z",
+   "last_good_at": "2026-08-08T07:55:39Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -27,8 +27,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:55:39Z",
+   "last_good_at": "2026-08-08T07:55:39Z",
    "last_good_value": "logo_wall",
    "last_good_json": "{\"present\":{\"logo_wall\":true,\"proof\":false,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "7068cf3b",
@@ -45,8 +45,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:55:39Z",
+   "last_good_at": "2026-08-08T07:55:39Z",
    "last_good_value": "28",
    "last_good_json": null,
    "last_good_hash": "95f2a617",
@@ -63,8 +63,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:55:39Z",
+   "last_good_at": "2026-08-08T07:55:39Z",
    "last_good_value": "29",
    "last_good_json": null,
    "last_good_hash": "94f2a484",
@@ -81,8 +81,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:55:39Z",
+   "last_good_at": "2026-08-08T07:55:39Z",
    "last_good_value": "14",
    "last_good_json": null,
    "last_good_hash": "17eb23f8",
@@ -99,8 +99,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:55:39Z",
+   "last_good_at": "2026-08-08T07:55:39Z",
    "last_good_value": "5",
    "last_good_json": null,
    "last_good_hash": "300ca0d0",
@@ -117,8 +117,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:55:39Z",
+   "last_good_at": "2026-08-08T07:55:39Z",
    "last_good_value": "hero > awards > security > logos > cta",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":44,\"merged\":1},{\"position\":2,\"type\":\"awards\",\"heading\":\"Never step into the boardroom unprepared\",\"words\":126,\"merged\":1},{\"position\":3,\"type\":\"security\",\"heading\":\"One platform for every stage of your GRC journey. All powered by AI.\",\"words\":82,\"merged\":2},{\"position\":4,\"type\":\"logos\",\"heading\":\"Don’t take it from us — take it from our 25,000+ customers\",\"words\":45,\"merged\":1},{\"position\":5,\"type\":\"cta\",\"heading\":\"Discover what smarter GRC looks like for your organization\",\"words\":12,\"merged\":1}]}",
    "last_good_hash": "7d11a0c7",
@@ -135,8 +135,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:55:39Z",
+   "last_good_at": "2026-08-08T07:55:39Z",
    "last_good_value": 429,
    "last_good_json": null,
    "last_good_hash": "a52b83ce",
@@ -153,8 +153,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:55:39Z",
+   "last_good_at": "2026-08-08T07:55:39Z",
    "last_good_value": "leading ai platform for grc",
    "last_good_json": null,
    "last_good_hash": "0318fa05",
@@ -171,8 +171,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:55:39Z",
+   "last_good_at": "2026-08-08T07:55:39Z",
    "last_good_value": "1276x1020, 1601x1601, 3171x1422",
    "last_good_json": "{\"names\":[\"1276x1020\",\"1601x1601\",\"3171x1422\"],\"count\":3,\"lead\":\"Loved by customers. <p class=\\\"MuiTypography-root Mui\"}",
    "last_good_hash": "09ac983b",
@@ -189,8 +189,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:55:39Z",
+   "last_good_at": "2026-08-08T07:55:39Z",
    "last_good_value": "The leading AI platform for GRC",
    "last_good_json": null,
    "last_good_hash": "11cf2116",
@@ -207,8 +207,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:55:39Z",
+   "last_good_at": "2026-08-08T07:55:39Z",
    "last_good_value": "Diligent's trusted GRC software helps boards and leaders clarify risk, elevate governance, and manage compliance in one secure, AI-powered platform.",
    "last_good_json": null,
    "last_good_hash": "b5ebd077",
@@ -225,8 +225,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:55:39Z",
+   "last_good_at": "2026-08-08T07:55:39Z",
    "last_good_value": "The leading AI platform for GRC | Diligent",
    "last_good_json": null,
    "last_good_hash": "21332600",
@@ -243,8 +243,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:55:39Z",
+   "last_good_at": "2026-08-08T07:55:39Z",
    "last_good_value": "25,000 customers | 25k customers | fortune 500",
    "last_good_json": "{\"items\":[{\"claim\":\"25,000 customers\",\"kind\":\"count\"},{\"claim\":\"25k customers\",\"kind\":\"count\"},{\"claim\":\"fortune 500\",\"kind\":\"rank\"}],\"count\":3}",
    "last_good_hash": "2601b7c0",
@@ -261,8 +261,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:55:39Z",
+   "last_good_at": "2026-08-08T07:55:39Z",
    "last_good_value": "Centralize governance, risk and compliance in one AI platform. Eliminate manual work and deliver insights that drive board-level decisions.",
    "last_good_json": null,
    "last_good_hash": "5a281292",
@@ -280,6 +280,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.diligent.com/",
+   "fetched_at": "2026-08-08T07:55:39Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.2.0 -> 1.2.1; re-baselining",
+   "bytes": 818316,
+   "duration_ms": 215,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.diligent.com/",

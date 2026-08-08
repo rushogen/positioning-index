@@ -9,8 +9,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-08T07:50:58Z",
-   "last_good_at": "2026-08-08T07:50:58Z",
+   "last_observed_at": "2026-08-08T07:55:43Z",
+   "last_good_at": "2026-08-08T07:55:43Z",
    "last_good_value": "16",
    "last_good_json": null,
    "last_good_hash": "19eb271e",
@@ -27,8 +27,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-08T07:50:58Z",
-   "last_good_at": "2026-08-08T07:50:58Z",
+   "last_observed_at": "2026-08-08T07:55:43Z",
+   "last_good_at": "2026-08-08T07:55:43Z",
    "last_good_value": "proof, testimonial",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":true,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "d6336940",
@@ -45,8 +45,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-08T07:50:58Z",
-   "last_good_at": "2026-08-08T07:50:58Z",
+   "last_observed_at": "2026-08-08T07:55:43Z",
+   "last_good_at": "2026-08-08T07:55:43Z",
    "last_good_value": "25",
    "last_good_json": null,
    "last_good_hash": "88f291a0",
@@ -63,8 +63,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-08T07:50:58Z",
-   "last_good_at": "2026-08-08T07:50:58Z",
+   "last_observed_at": "2026-08-08T07:55:43Z",
+   "last_good_at": "2026-08-08T07:55:43Z",
    "last_good_value": "2",
    "last_good_json": null,
    "last_good_hash": "370cabd5",
@@ -81,8 +81,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-08T07:50:58Z",
-   "last_good_at": "2026-08-08T07:50:58Z",
+   "last_observed_at": "2026-08-08T07:55:43Z",
+   "last_good_at": "2026-08-08T07:55:43Z",
    "last_good_value": "43",
    "last_good_json": null,
    "last_good_hash": "86e383f0",
@@ -99,8 +99,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-08T07:50:58Z",
-   "last_good_at": "2026-08-08T07:50:58Z",
+   "last_observed_at": "2026-08-08T07:55:43Z",
+   "last_good_at": "2026-08-08T07:55:43Z",
    "last_good_value": "3",
    "last_good_json": null,
    "last_good_hash": "360caa42",
@@ -117,8 +117,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-08T07:50:58Z",
-   "last_good_at": "2026-08-08T07:50:58Z",
+   "last_observed_at": "2026-08-08T07:55:43Z",
+   "last_good_at": "2026-08-08T07:55:43Z",
    "last_good_value": "hero > proof > testimonial",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":396,\"merged\":1},{\"position\":2,\"type\":\"proof\",\"heading\":\"Why retailers choose Voyado\",\"words\":23,\"merged\":1},{\"position\":3,\"type\":\"testimonial\",\"heading\":\"\\\"Voyado has been a reliable and stable partner for many years, helping us elevate the online shopping experience across our geographies and brands\\\"\",\"words\":253,\"merged\":1}]}",
    "last_good_hash": "c208fd78",
@@ -135,8 +135,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-08T07:50:58Z",
-   "last_good_at": "2026-08-08T07:50:58Z",
+   "last_observed_at": "2026-08-08T07:55:43Z",
+   "last_good_at": "2026-08-08T07:55:43Z",
    "last_good_value": 672,
    "last_good_json": null,
    "last_good_hash": "84a89cf8",
@@ -153,8 +153,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-08T07:50:58Z",
-   "last_good_at": "2026-08-08T07:50:58Z",
+   "last_observed_at": "2026-08-08T07:55:43Z",
+   "last_good_at": "2026-08-08T07:55:43Z",
    "last_good_value": "agentic cx suite for retail",
    "last_good_json": null,
    "last_good_hash": "f5ff260d",
@@ -171,8 +171,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-08T07:50:58Z",
-   "last_good_at": "2026-08-08T07:50:58Z",
+   "last_observed_at": "2026-08-08T07:55:43Z",
+   "last_good_at": "2026-08-08T07:55:43Z",
    "last_good_value": "Agentic Commerve, Agentic Loyalty, Agentic Marketing, Agentic Merchandising, by malene birger, Dille&Kamille horizontalWHITE, Dustin, Elevate, Engage, feature grid bg desktop, feature grid bg mobile, Hageland, HM, kicks, lovestoriesintimates, Loyalty, Nordic Nest, Nudie Jeans, Outnorth free, Power, Retail media, Stronger",
    "last_good_json": "{\"names\":[\"Agentic Commerve\",\"Agentic Loyalty\",\"Agentic Marketing\",\"Agentic Merchandising\",\"by malene birger\",\"Dille&Kamille horizontalWHITE\",\"Dustin\",\"Elevate\",\"Engage\",\"feature grid bg desktop\",\"feature grid bg mobile\",\"Hageland\",\"HM\",\"kicks\",\"lovestoriesintimates\",\"Loyalty\",\"Nordic Nest\",\"Nudie Jeans\",\"Outnorth free\",\"Power\",\"Retail media\",\"Stronger\"],\"count\":22,\"lead\":\"trusted by 500+ retail brands.\\\" /> <meta property=\\\"o\"}",
    "last_good_hash": "e9ac02e4",
@@ -189,8 +189,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-08T07:50:58Z",
-   "last_good_at": "2026-08-08T07:50:58Z",
+   "last_observed_at": "2026-08-08T07:55:43Z",
+   "last_good_at": "2026-08-08T07:55:43Z",
    "last_good_value": "The Agentic CX Suite for Retail",
    "last_good_json": null,
    "last_good_hash": "859cab02",
@@ -207,8 +207,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-08T07:50:58Z",
-   "last_good_at": "2026-08-08T07:50:58Z",
+   "last_observed_at": "2026-08-08T07:55:43Z",
+   "last_good_at": "2026-08-08T07:55:43Z",
    "last_good_value": "The agentic CX platform purpose-built for retail. AI-powered CRM, loyalty & product discovery — trusted by 500+ retail brands.",
    "last_good_json": null,
    "last_good_hash": "063c2a82",
@@ -225,8 +225,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-08T07:50:58Z",
-   "last_good_at": "2026-08-08T07:50:58Z",
+   "last_observed_at": "2026-08-08T07:55:43Z",
+   "last_good_at": "2026-08-08T07:55:43Z",
    "last_good_value": "The Agentic CX Suite for Retail - Voyado",
    "last_good_json": null,
    "last_good_hash": "7cdc8223",
@@ -243,8 +243,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-08T07:50:58Z",
-   "last_good_at": "2026-08-08T07:50:58Z",
+   "last_observed_at": "2026-08-08T07:55:43Z",
+   "last_good_at": "2026-08-08T07:55:43Z",
    "last_good_value": "109% increase in full-price | 23.9% increased their conversion rate | 23.9% their conversion rate | 25% increase | 27% increase",
    "last_good_json": "{\"items\":[{\"claim\":\"109% increase in full-price\",\"kind\":\"percent\"},{\"claim\":\"23.9% increased their conversion rate\",\"kind\":\"percent-trailing\"},{\"claim\":\"23.9% their conversion rate\",\"kind\":\"percent-trailing\"},{\"claim\":\"25% increase\",\"kind\":\"percent\"},{\"claim\":\"27% increase\",\"kind\":\"percent\"}],\"count\":5}",
    "last_good_hash": "a971ba3c",
@@ -261,8 +261,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-08T07:50:58Z",
-   "last_good_at": "2026-08-08T07:50:58Z",
+   "last_observed_at": "2026-08-08T07:55:43Z",
+   "last_good_at": "2026-08-08T07:55:43Z",
    "last_good_value": "Trusted by 500+ retail brands",
    "last_good_json": null,
    "last_good_hash": "7dc16034",
@@ -280,6 +280,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://voyado.com/",
+   "fetched_at": "2026-08-08T07:55:43Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.2.0 -> 1.2.1; re-baselining",
+   "bytes": 137722,
+   "duration_ms": 1361,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://voyado.com/",

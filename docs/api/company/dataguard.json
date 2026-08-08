@@ -10,8 +10,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-08T07:51:33Z",
-   "last_good_at": "2026-08-08T07:51:33Z",
+   "last_observed_at": "2026-08-08T07:57:36Z",
+   "last_good_at": "2026-08-08T07:57:36Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -28,8 +28,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-08T07:51:33Z",
-   "last_good_at": "2026-08-08T07:51:33Z",
+   "last_observed_at": "2026-08-08T07:57:36Z",
+   "last_good_at": "2026-08-08T07:57:36Z",
    "last_good_value": "none",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "ada7afdb",
@@ -46,7 +46,7 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-08T07:51:33Z",
+   "last_observed_at": "2026-08-08T07:57:36Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -64,8 +64,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-08T07:51:33Z",
-   "last_good_at": "2026-08-08T07:51:33Z",
+   "last_observed_at": "2026-08-08T07:57:36Z",
+   "last_good_at": "2026-08-08T07:57:36Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -82,8 +82,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-08T07:51:33Z",
-   "last_good_at": "2026-08-08T07:51:33Z",
+   "last_observed_at": "2026-08-08T07:57:36Z",
+   "last_good_at": "2026-08-08T07:57:36Z",
    "last_good_value": "2",
    "last_good_json": null,
    "last_good_hash": "370cabd5",
@@ -100,8 +100,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-08T07:51:33Z",
-   "last_good_at": "2026-08-08T07:51:33Z",
+   "last_observed_at": "2026-08-08T07:57:36Z",
+   "last_good_at": "2026-08-08T07:57:36Z",
    "last_good_value": "2",
    "last_good_json": null,
    "last_good_hash": "370cabd5",
@@ -118,8 +118,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-08T07:51:33Z",
-   "last_good_at": "2026-08-08T07:51:33Z",
+   "last_observed_at": "2026-08-08T07:57:36Z",
+   "last_good_at": "2026-08-08T07:57:36Z",
    "last_good_value": "hero > security",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":26,\"merged\":1},{\"position\":2,\"type\":\"security\",\"heading\":\"Achieve your security & compliance objectives with DataGuard\",\"words\":59,\"merged\":4}]}",
    "last_good_hash": "d2947a43",
@@ -136,8 +136,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-08T07:51:33Z",
-   "last_good_at": "2026-08-08T07:51:33Z",
+   "last_observed_at": "2026-08-08T07:57:36Z",
+   "last_good_at": "2026-08-08T07:57:36Z",
    "last_good_value": 274,
    "last_good_json": null,
    "last_good_hash": "ade078f6",
@@ -154,8 +154,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-08T07:51:33Z",
-   "last_good_at": "2026-08-08T07:51:33Z",
+   "last_observed_at": "2026-08-08T07:57:36Z",
+   "last_good_at": "2026-08-08T07:57:36Z",
    "last_good_value": "ai-powered automation",
    "last_good_json": null,
    "last_good_hash": "9b2ba87d",
@@ -172,7 +172,7 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-08T07:51:33Z",
+   "last_observed_at": "2026-08-08T07:57:36Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -190,8 +190,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-08T07:51:33Z",
-   "last_good_at": "2026-08-08T07:51:33Z",
+   "last_observed_at": "2026-08-08T07:57:36Z",
+   "last_good_at": "2026-08-08T07:57:36Z",
    "last_good_value": "Achieve ISO 27001 Certificatio",
    "last_good_json": null,
    "last_good_hash": "10631721",
@@ -208,8 +208,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-08T07:51:33Z",
-   "last_good_at": "2026-08-08T07:51:33Z",
+   "last_observed_at": "2026-08-08T07:57:36Z",
+   "last_good_at": "2026-08-08T07:57:36Z",
    "last_good_value": "Are you looking to turn your privacy posture into a competitive advantage? Stay fully compliant with latest data privacy regulations. Talk to an expert now",
    "last_good_json": null,
    "last_good_hash": "dda67c86",
@@ -226,8 +226,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-08T07:51:33Z",
-   "last_good_at": "2026-08-08T07:51:33Z",
+   "last_observed_at": "2026-08-08T07:57:36Z",
+   "last_good_at": "2026-08-08T07:57:36Z",
    "last_good_value": "Data Privacy & Information Security - DataGuard",
    "last_good_json": null,
    "last_good_hash": "bcd9954f",
@@ -244,7 +244,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-08T07:50:32Z",
+   "last_observed_at": "2026-08-08T07:56:13Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -262,8 +262,8 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-08T07:50:32Z",
-   "last_good_at": "2026-08-08T07:50:32Z",
+   "last_observed_at": "2026-08-08T07:56:13Z",
+   "last_good_at": "2026-08-08T07:56:13Z",
    "last_good_value": "no",
    "last_good_json": "{\"free\":false}",
    "last_good_hash": "62366ffa",
@@ -280,8 +280,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-08T07:50:32Z",
-   "last_good_at": "2026-08-08T07:50:32Z",
+   "last_observed_at": "2026-08-08T07:56:13Z",
+   "last_good_at": "2026-08-08T07:56:13Z",
    "last_good_value": "Choose the right level for your security and compliance needs | DataGuard",
    "last_good_json": null,
    "last_good_hash": "d90c94b5",
@@ -298,7 +298,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-08T07:50:32Z",
+   "last_observed_at": "2026-08-08T07:56:13Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -316,8 +316,8 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-08T07:50:32Z",
-   "last_good_at": "2026-08-08T07:50:32Z",
+   "last_observed_at": "2026-08-08T07:56:13Z",
+   "last_good_at": "2026-08-08T07:56:13Z",
    "last_good_value": "Pro custom | Enterprise custom",
    "last_good_json": "{\"tiers\":[{\"name\":\"Pro\",\"amount\":null,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"contact-sales\"},{\"name\":\"Enterprise\",\"amount\":null,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"contact-sales\"}],\"count\":2}",
    "last_good_hash": "d49dc235",
@@ -334,8 +334,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-08T07:51:33Z",
-   "last_good_at": "2026-08-08T07:51:33Z",
+   "last_observed_at": "2026-08-08T07:57:36Z",
+   "last_good_at": "2026-08-08T07:57:36Z",
    "last_good_value": "4,000 organizations | 75% faster",
    "last_good_json": "{\"items\":[{\"claim\":\"4,000 organizations\",\"kind\":\"count\"},{\"claim\":\"75% faster\",\"kind\":\"percent\"}],\"count\":2}",
    "last_good_hash": "c526dae5",
@@ -352,8 +352,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-08T07:51:33Z",
-   "last_good_at": "2026-08-08T07:51:33Z",
+   "last_observed_at": "2026-08-08T07:57:36Z",
+   "last_good_at": "2026-08-08T07:57:36Z",
    "last_good_value": "Identify and manage the security and compliance risks that matter most with AI-powered automation and experts in the loop.",
    "last_good_json": null,
    "last_good_hash": "fb50341d",
@@ -371,6 +371,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.dataguard.com/",
+   "fetched_at": "2026-08-08T07:57:36Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.2.0 -> 1.2.1; re-baselining",
+   "bytes": 260788,
+   "duration_ms": 98,
+   "signals_found": 13,
+   "signals_expected": 15
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.dataguard.com/pricing/",
+   "fetched_at": "2026-08-08T07:56:13Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.2.0 -> 1.2.1; re-baselining",
+   "bytes": 369069,
+   "duration_ms": 301,
+   "signals_found": 3,
+   "signals_expected": 5
+  },
   {
    "kind": "home",
    "url": "https://www.dataguard.com/",

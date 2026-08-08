@@ -108,6 +108,72 @@
     ]
    },
    {
+    "word": "agentic",
+    "n": 12,
+    "companies": [
+     {
+      "slug": "anaplan",
+      "name": "Anaplan",
+      "text": "The decision infrastructure for the Agentic Enterprise"
+     },
+     {
+      "slug": "attio",
+      "name": "Attio",
+      "text": "Welcome to agentic revenue."
+     },
+     {
+      "slug": "camunda",
+      "name": "Camunda",
+      "text": "The open platform for agentic orchestration"
+     },
+     {
+      "slug": "crowdstrike",
+      "name": "CrowdStrike",
+      "text": "The Agentic Security Platform. Unified and built to secure the AI revolution."
+     },
+     {
+      "slug": "dixa",
+      "name": "Dixa",
+      "text": "The Agentic CS Platform Behind Exceptional Ecommerce Brands"
+     },
+     {
+      "slug": "mendix",
+      "name": "Mendix",
+      "text": "Mendix activates your agentic enterprise | Mendix"
+     },
+     {
+      "slug": "mirakl",
+      "name": "Mirakl",
+      "text": "Powering your commerce growth in the agentic era"
+     },
+     {
+      "slug": "outsystems",
+      "name": "OutSystems",
+      "text": "Build your agentic future"
+     },
+     {
+      "slug": "salesforce",
+      "name": "Salesforce",
+      "text": "Get started with the #1 Agentic CRM"
+     },
+     {
+      "slug": "vercel",
+      "name": "Vercel",
+      "text": "Agentic Infrastructure"
+     },
+     {
+      "slug": "voyado",
+      "name": "Voyado",
+      "text": "The Agentic CX Suite for Retail"
+     },
+     {
+      "slug": "zapier",
+      "name": "Zapier",
+      "text": "The automation layer for agentic AI"
+     }
+    ]
+   },
+   {
     "word": "software",
     "n": 12,
     "companies": [
@@ -174,67 +240,6 @@
     ]
    },
    {
-    "word": "agentic",
-    "n": 11,
-    "companies": [
-     {
-      "slug": "anaplan",
-      "name": "Anaplan",
-      "text": "The decision infrastructure for the Agentic Enterprise"
-     },
-     {
-      "slug": "attio",
-      "name": "Attio",
-      "text": "Welcome to agentic revenue."
-     },
-     {
-      "slug": "camunda",
-      "name": "Camunda",
-      "text": "The open platform for agentic orchestration"
-     },
-     {
-      "slug": "crowdstrike",
-      "name": "CrowdStrike",
-      "text": "The Agentic Security Platform. Unified and built to secure the AI revolution."
-     },
-     {
-      "slug": "dixa",
-      "name": "Dixa",
-      "text": "The Agentic CS Platform Behind Exceptional Ecommerce Brands"
-     },
-     {
-      "slug": "mendix",
-      "name": "Mendix",
-      "text": "Mendix activates your agentic enterprise | Mendix"
-     },
-     {
-      "slug": "mirakl",
-      "name": "Mirakl",
-      "text": "Powering your commerce growth in the agentic era"
-     },
-     {
-      "slug": "outsystems",
-      "name": "OutSystems",
-      "text": "Build your agentic future"
-     },
-     {
-      "slug": "salesforce",
-      "name": "Salesforce",
-      "text": "Get started with the #1 Agentic CRM"
-     },
-     {
-      "slug": "vercel",
-      "name": "Vercel",
-      "text": "Agentic Infrastructure"
-     },
-     {
-      "slug": "voyado",
-      "name": "Voyado",
-      "text": "The Agentic CX Suite for Retail"
-     }
-    ]
-   },
-   {
     "word": "agents",
     "n": 10,
     "companies": [
@@ -287,57 +292,6 @@
       "slug": "workday",
       "name": "Workday",
       "text": "Put AI agents to work for you."
-     }
-    ]
-   },
-   {
-    "word": "teams",
-    "n": 9,
-    "companies": [
-     {
-      "slug": "airtable",
-      "name": "Airtable",
-      "text": "All your teams, all their workflows—connected in one workspace"
-     },
-     {
-      "slug": "amplitude",
-      "name": "Amplitude",
-      "text": "A new era for product teams"
-     },
-     {
-      "slug": "asana",
-      "name": "Asana",
-      "text": "The OS for human-agent teams"
-     },
-     {
-      "slug": "atlassian",
-      "name": "Atlassian",
-      "text": "Collaboration for Software, IT & Business Teams"
-     },
-     {
-      "slug": "genesys",
-      "name": "Genesys",
-      "text": "Loyal customers. Efficient teams. That’s CX done right."
-     },
-     {
-      "slug": "hubspot",
-      "name": "HubSpot",
-      "text": "Where go-to-market teams go to grow scale close retain grow"
-     },
-     {
-      "slug": "jetbrains",
-      "name": "JetBrains",
-      "text": "JetBrains: Essential tools for software developers and teams"
-     },
-     {
-      "slug": "linear",
-      "name": "Linear",
-      "text": "The product development system for teams and agents"
-     },
-     {
-      "slug": "notion",
-      "name": "Notion",
-      "text": "Where teams and agents Think together."
      }
     ]
    },
@@ -430,6 +384,52 @@
       "slug": "usercentrics",
       "name": "Usercentrics",
       "text": "Collect consent, govern your data, and put AI to work with confidence"
+     }
+    ]
+   },
+   {
+    "word": "teams",
+    "n": 8,
+    "companies": [
+     {
+      "slug": "amplitude",
+      "name": "Amplitude",
+      "text": "A new era for product teams"
+     },
+     {
+      "slug": "asana",
+      "name": "Asana",
+      "text": "The OS for human-agent teams"
+     },
+     {
+      "slug": "atlassian",
+      "name": "Atlassian",
+      "text": "Collaboration for Software, IT & Business Teams"
+     },
+     {
+      "slug": "genesys",
+      "name": "Genesys",
+      "text": "Loyal customers. Efficient teams. That’s CX done right."
+     },
+     {
+      "slug": "hubspot",
+      "name": "HubSpot",
+      "text": "Where go-to-market teams go to grow scale close retain grow"
+     },
+     {
+      "slug": "jetbrains",
+      "name": "JetBrains",
+      "text": "JetBrains: Essential tools for software developers and teams"
+     },
+     {
+      "slug": "linear",
+      "name": "Linear",
+      "text": "The product development system for teams and agents"
+     },
+     {
+      "slug": "notion",
+      "name": "Notion",
+      "text": "Where teams and agents Think together."
      }
     ]
    },
@@ -557,33 +557,28 @@
     ]
    },
    {
-    "word": "one",
+    "word": "work",
     "n": 7,
     "companies": [
      {
       "slug": "airtable",
       "name": "Airtable",
-      "text": "All your teams, all their workflows—connected in one workspace"
+      "text": "AI transformed individual work. Airtable transforms teamwork."
      },
      {
-      "slug": "loom",
-      "name": "Loom",
-      "text": "One video is worth a thousand words"
+      "slug": "m-files",
+      "name": "M-Files",
+      "text": "Put context-first document management to work."
      },
      {
-      "slug": "monday",
-      "name": "monday.com",
-      "text": "People and agents working as one team"
+      "slug": "productboard",
+      "name": "Productboard",
+      "text": "Where 100x product makers do their best work"
      },
      {
-      "slug": "mongodb",
-      "name": "MongoDB",
-      "text": "One data platform. Unlimited AI potential."
-     },
-     {
-      "slug": "odoo",
-      "name": "Odoo",
-      "text": "All your business on one platform."
+      "slug": "snowflake",
+      "name": "Snowflake",
+      "text": "Code Work"
      },
      {
       "slug": "staffbase",
@@ -591,9 +586,14 @@
       "text": "Finally, one platform to reach every employee. Wherever they work."
      },
      {
-      "slug": "teamleader",
-      "name": "Teamleader",
-      "text": "Just one platform to run your whole business."
+      "slug": "usercentrics",
+      "name": "Usercentrics",
+      "text": "Collect consent, govern your data, and put AI to work with confidence"
+     },
+     {
+      "slug": "workday",
+      "name": "Workday",
+      "text": "Put AI agents to work for you."
      }
     ]
    },
@@ -715,7 +715,7 @@
     }
    ]
   },
-  "distinct_words": 479
+  "distinct_words": 483
  },
  "category_nouns": {
   "groups": [
@@ -1847,12 +1847,14 @@
     "slug": "airtable",
     "name": "Airtable",
     "terms": [
+     "agent",
      "ai"
     ],
     "fields": [
+     "headline",
      "subhead"
     ],
-    "text": "All your teams, all their workflows—connected in one workspace"
+    "text": "AI transformed individual work. Airtable transforms teamwork."
    },
    {
     "slug": "aiven",
@@ -3291,13 +3293,14 @@
     "slug": "zapier",
     "name": "Zapier",
     "terms": [
+     "agent",
      "ai"
     ],
     "fields": [
      "headline",
      "subhead"
     ],
-    "text": "Your tools. Your rules. Any AI."
+    "text": "The automation layer for agentic AI"
    },
    {
     "slug": "zendesk",
@@ -3632,7 +3635,7 @@
   "by_field": [
    {
     "field": "headline",
-    "n": 74,
+    "n": 75,
     "companies": [
      {
       "slug": "acronis",
@@ -3643,6 +3646,11 @@
       "slug": "aircall",
       "name": "Aircall",
       "text": "Customer communications, evolved with AI that handles customer interactions, end to end."
+     },
+     {
+      "slug": "airtable",
+      "name": "Airtable",
+      "text": "AI transformed individual work. Airtable transforms teamwork."
      },
      {
       "slug": "anaplan",
@@ -3997,7 +4005,7 @@
      {
       "slug": "zapier",
       "name": "Zapier",
-      "text": "Your tools. Your rules. Any AI."
+      "text": "The automation layer for agentic AI"
      },
      {
       "slug": "zendesk",
@@ -4023,7 +4031,7 @@
      {
       "slug": "airtable",
       "name": "Airtable",
-      "text": "Build AI-powered workflows that unify data, maximize collaboration, and set your teams up for long-term success. No code required."
+      "text": "It turns individual gains into team momentum — the apps, workflows, and agents one person builds become systems the whole company runs on."
      },
      {
       "slug": "amplitude",
@@ -4453,7 +4461,7 @@
      {
       "slug": "zapier",
       "name": "Zapier",
-      "text": "Zapier gives teams one place to set guardrails, manage model access, and see everything — so everyone can build with AI confidently, on any model, without waiting for permission."
+      "text": "One MCP connection. 9,000+ apps. Set your policies and work across any model, surface, or agent harness — without connections or rules breaking."
      },
      {
       "slug": "zendesk",
@@ -4815,12 +4823,14 @@
       "slug": "airtable",
       "name": "Airtable",
       "terms": [
+       "agent",
        "ai"
       ],
       "fields": [
+       "headline",
        "subhead"
       ],
-      "text": "All your teams, all their workflows—connected in one workspace"
+      "text": "AI transformed individual work. Airtable transforms teamwork."
      },
      {
       "slug": "aiven",
@@ -6085,13 +6095,14 @@
       "slug": "zapier",
       "name": "Zapier",
       "terms": [
+       "agent",
        "ai"
       ],
       "fields": [
        "headline",
        "subhead"
       ],
-      "text": "Your tools. Your rules. Any AI."
+      "text": "The automation layer for agentic AI"
      },
      {
       "slug": "zendesk",
@@ -6124,7 +6135,7 @@
    },
    {
     "term": "agent",
-    "n": 53,
+    "n": 55,
     "companies": [
      {
       "slug": "acronis",
@@ -6139,6 +6150,19 @@
        "category_label"
       ],
       "text": "AI-native cyber platform"
+     },
+     {
+      "slug": "airtable",
+      "name": "Airtable",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead"
+      ],
+      "text": "AI transformed individual work. Airtable transforms teamwork."
      },
      {
       "slug": "anaplan",
@@ -6790,6 +6814,19 @@
       "text": "Put AI agents to work for you."
      },
      {
+      "slug": "zapier",
+      "name": "Zapier",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead"
+      ],
+      "text": "The automation layer for agentic AI"
+     },
+     {
       "slug": "zendesk",
       "name": "Zendesk",
       "terms": [
@@ -6998,7 +7035,7 @@
      {
       "slug": "airtable",
       "name": "Airtable",
-      "text": "02 agents · 10,000 hours · 100m records"
+      "text": "10,000 hours · 100 companies · 100m records · 50 projects · 500,000 companies"
      },
      {
       "slug": "aiven",
@@ -7403,7 +7440,7 @@
      {
       "slug": "teamviewer",
       "name": "TeamViewer",
-      "text": "10,000 employees · 2,300 stores"
+      "text": "10,000 employees"
      },
      {
       "slug": "typeform",
@@ -7458,7 +7495,7 @@
      {
       "slug": "zapier",
       "name": "Zapier",
-      "text": "42 hours · 450k agents · 9,000 apps · 9,000 integrations"
+      "text": "100 hours · 20 hours · 9,000 apps"
      },
      {
       "slug": "zendesk",
@@ -7477,7 +7514,7 @@
     "label": "Percentage gains",
     "note": "\"40% faster\", \"cut costs by 30%\"",
     "n": 82,
-    "claims": 239,
+    "claims": 243,
     "companies": [
      {
       "slug": "acronis",
@@ -7488,6 +7525,11 @@
       "slug": "adyen",
       "name": "Adyen",
       "text": "10% and increased conversion · 10% increased conversion"
+     },
+     {
+      "slug": "airtable",
+      "name": "Airtable",
+      "text": "60% cut creative-brief processing · 60% reduction in creative · 70% faster turnaround time · 70% faster unify global · 90% faster feedback triage"
      },
      {
       "slug": "aiven",
@@ -7880,11 +7922,6 @@
       "text": "75% chipotle reduced time-to-hire · 75% reduced time-to-hire"
      },
      {
-      "slug": "zapier",
-      "name": "Zapier",
-      "text": "87% reduction in lead"
-     },
-     {
       "slug": "zendesk",
       "name": "Zendesk",
       "text": "11 % decrease in email · 36 % increase in ai · 51.5 % automate · 6 % increase in automated"
@@ -7895,8 +7932,8 @@
     "key": "money",
     "label": "Money amounts",
     "note": "\"$2.4M saved\", \"$1B processed\"",
-    "n": 45,
-    "claims": 106,
+    "n": 44,
+    "claims": 103,
     "companies": [
      {
       "slug": "acronis",
@@ -8117,11 +8154,6 @@
       "slug": "xeneta",
       "name": "Xeneta",
       "text": "$2m versus market pricing · $37m savings across the"
-     },
-     {
-      "slug": "zapier",
-      "name": "Zapier",
-      "text": "$1 million increase in potential · $1m recovered pipeline using · $40k+ headcount savings per"
      }
     ]
    },
@@ -8129,8 +8161,8 @@
     "key": "multiplier",
     "label": "Multipliers",
     "note": "\"10x faster\"",
-    "n": 30,
-    "claims": 42,
+    "n": 29,
+    "claims": 41,
     "companies": [
      {
       "slug": "brex",
@@ -8273,11 +8305,6 @@
       "text": "3x more interactive elements"
      },
      {
-      "slug": "zapier",
-      "name": "Zapier",
-      "text": "5.5x roi with zapier"
-     },
-     {
       "slug": "zendesk",
       "name": "Zendesk",
       "text": "2 x increase in ai"
@@ -8288,9 +8315,14 @@
     "key": "rank",
     "label": "Rankings and lists",
     "note": "\"Fortune 500\", \"G2 leader\"",
-    "n": 24,
-    "claims": 26,
+    "n": 25,
+    "claims": 27,
     "companies": [
+     {
+      "slug": "airtable",
+      "name": "Airtable",
+      "text": "fortune 100"
+     },
      {
       "slug": "asana",
       "name": "Asana",
@@ -8493,7 +8525,7 @@
     ]
    }
   ],
-  "total_claims": 608,
+  "total_claims": 609,
   "coverage": {
    "tracked": 200,
    "readable": 145,
@@ -9176,7 +9208,7 @@
     ]
    }
   ],
-  "distinct_logos": 1601,
+  "distinct_logos": 1602,
   "coverage": {
    "tracked": 200,
    "readable": 146,
@@ -20301,6 +20333,10 @@
       "companies": {
        "yes": [
         {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
+        {
          "slug": "calendly",
          "name": "Calendly"
         },
@@ -20355,17 +20391,9 @@
         {
          "slug": "uipath",
          "name": "UiPath"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
         }
        ],
        "no": [
-        {
-         "slug": "airtable",
-         "name": "Airtable"
-        },
         {
          "slug": "asana",
          "name": "Asana"
@@ -20385,6 +20413,10 @@
         {
          "slug": "teamleader",
          "name": "Teamleader"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
         }
        ],
        "unreadable": [
@@ -21259,6 +21291,10 @@
       "companies": {
        "yes": [
         {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
+        {
          "slug": "calendly",
          "name": "Calendly"
         },
@@ -21313,17 +21349,9 @@
         {
          "slug": "uipath",
          "name": "UiPath"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
         }
        ],
        "no": [
-        {
-         "slug": "airtable",
-         "name": "Airtable"
-        },
         {
          "slug": "asana",
          "name": "Asana"
@@ -21343,6 +21371,10 @@
         {
          "slug": "teamleader",
          "name": "Teamleader"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
         }
        ],
        "unreadable": [
@@ -22590,10 +22622,10 @@
       "short": "Work & product",
       "n": 27,
       "readable": 21,
-      "yes": 6,
-      "no": 15,
+      "yes": 5,
+      "no": 16,
       "unreadable": 6,
-      "share": 28.6,
+      "share": 23.8,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -22616,10 +22648,6 @@
         {
          "slug": "uipath",
          "name": "UiPath"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
         }
        ],
        "no": [
@@ -22682,6 +22710,10 @@
         {
          "slug": "templafy",
          "name": "Templafy"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
         }
        ],
        "unreadable": [
@@ -23895,134 +23927,6 @@
       }
      },
      {
-      "group": "work",
-      "label": "Work & product",
-      "short": "Work & product",
-      "n": 27,
-      "readable": 21,
-      "yes": 6,
-      "no": 15,
-      "unreadable": 6,
-      "share": 28.6,
-      "suppressed": false,
-      "companies": {
-       "yes": [
-        {
-         "slug": "clickup",
-         "name": "ClickUp"
-        },
-        {
-         "slug": "monday",
-         "name": "monday.com"
-        },
-        {
-         "slug": "retool",
-         "name": "Retool"
-        },
-        {
-         "slug": "teamleader",
-         "name": "Teamleader"
-        },
-        {
-         "slug": "uipath",
-         "name": "UiPath"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
-        }
-       ],
-       "no": [
-        {
-         "slug": "airtable",
-         "name": "Airtable"
-        },
-        {
-         "slug": "asana",
-         "name": "Asana"
-        },
-        {
-         "slug": "calendly",
-         "name": "Calendly"
-        },
-        {
-         "slug": "figma",
-         "name": "Figma"
-        },
-        {
-         "slug": "github",
-         "name": "GitHub"
-        },
-        {
-         "slug": "gitlab",
-         "name": "GitLab"
-        },
-        {
-         "slug": "loom",
-         "name": "Loom"
-        },
-        {
-         "slug": "m-files",
-         "name": "M-Files"
-        },
-        {
-         "slug": "mentimeter",
-         "name": "Mentimeter"
-        },
-        {
-         "slug": "miro",
-         "name": "Miro"
-        },
-        {
-         "slug": "notion",
-         "name": "Notion"
-        },
-        {
-         "slug": "productboard",
-         "name": "Productboard"
-        },
-        {
-         "slug": "rossum",
-         "name": "Rossum"
-        },
-        {
-         "slug": "slack",
-         "name": "Slack"
-        },
-        {
-         "slug": "templafy",
-         "name": "Templafy"
-        }
-       ],
-       "unreadable": [
-        {
-         "slug": "atlassian",
-         "name": "Atlassian"
-        },
-        {
-         "slug": "jetbrains",
-         "name": "JetBrains"
-        },
-        {
-         "slug": "linear",
-         "name": "Linear"
-        },
-        {
-         "slug": "nextcloud",
-         "name": "Nextcloud"
-        },
-        {
-         "slug": "tricentis",
-         "name": "Tricentis"
-        },
-        {
-         "slug": "unity",
-         "name": "Unity"
-        }
-       ]
-      }
-     },
-     {
       "group": "dev",
       "label": "Developer & infrastructure",
       "short": "Dev & infrastructure",
@@ -24262,6 +24166,134 @@
         {
          "slug": "trustpilot",
          "name": "Trustpilot"
+        }
+       ]
+      }
+     },
+     {
+      "group": "work",
+      "label": "Work & product",
+      "short": "Work & product",
+      "n": 27,
+      "readable": 21,
+      "yes": 5,
+      "no": 16,
+      "unreadable": 6,
+      "share": 23.8,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "clickup",
+         "name": "ClickUp"
+        },
+        {
+         "slug": "monday",
+         "name": "monday.com"
+        },
+        {
+         "slug": "retool",
+         "name": "Retool"
+        },
+        {
+         "slug": "teamleader",
+         "name": "Teamleader"
+        },
+        {
+         "slug": "uipath",
+         "name": "UiPath"
+        }
+       ],
+       "no": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
+        {
+         "slug": "asana",
+         "name": "Asana"
+        },
+        {
+         "slug": "calendly",
+         "name": "Calendly"
+        },
+        {
+         "slug": "figma",
+         "name": "Figma"
+        },
+        {
+         "slug": "github",
+         "name": "GitHub"
+        },
+        {
+         "slug": "gitlab",
+         "name": "GitLab"
+        },
+        {
+         "slug": "loom",
+         "name": "Loom"
+        },
+        {
+         "slug": "m-files",
+         "name": "M-Files"
+        },
+        {
+         "slug": "mentimeter",
+         "name": "Mentimeter"
+        },
+        {
+         "slug": "miro",
+         "name": "Miro"
+        },
+        {
+         "slug": "notion",
+         "name": "Notion"
+        },
+        {
+         "slug": "productboard",
+         "name": "Productboard"
+        },
+        {
+         "slug": "rossum",
+         "name": "Rossum"
+        },
+        {
+         "slug": "slack",
+         "name": "Slack"
+        },
+        {
+         "slug": "templafy",
+         "name": "Templafy"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "atlassian",
+         "name": "Atlassian"
+        },
+        {
+         "slug": "jetbrains",
+         "name": "JetBrains"
+        },
+        {
+         "slug": "linear",
+         "name": "Linear"
+        },
+        {
+         "slug": "nextcloud",
+         "name": "Nextcloud"
+        },
+        {
+         "slug": "tricentis",
+         "name": "Tricentis"
+        },
+        {
+         "slug": "unity",
+         "name": "Unity"
         }
        ]
       }
@@ -24628,8 +24660,8 @@
     "drawn": true,
     "withheld": null,
     "overall": {
-     "yes": 45,
-     "no": 100,
+     "yes": 44,
+     "no": 101,
      "unreadable": 55,
      "readable": 145,
      "tracked": 200
@@ -24875,10 +24907,10 @@
       "short": "Work & product",
       "n": 27,
       "readable": 21,
-      "yes": 5,
-      "no": 16,
+      "yes": 4,
+      "no": 17,
       "unreadable": 6,
-      "share": 23.8,
+      "share": 19,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -24897,10 +24929,6 @@
         {
          "slug": "retool",
          "name": "Retool"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
         }
        ],
        "no": [
@@ -24967,6 +24995,10 @@
         {
          "slug": "uipath",
          "name": "UiPath"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
         }
        ],
        "unreadable": [
@@ -25955,134 +25987,6 @@
       }
      },
      {
-      "group": "work",
-      "label": "Work & product",
-      "short": "Work & product",
-      "n": 27,
-      "readable": 21,
-      "yes": 5,
-      "no": 16,
-      "unreadable": 6,
-      "share": 23.8,
-      "suppressed": false,
-      "companies": {
-       "yes": [
-        {
-         "slug": "gitlab",
-         "name": "GitLab"
-        },
-        {
-         "slug": "mentimeter",
-         "name": "Mentimeter"
-        },
-        {
-         "slug": "miro",
-         "name": "Miro"
-        },
-        {
-         "slug": "retool",
-         "name": "Retool"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
-        }
-       ],
-       "no": [
-        {
-         "slug": "airtable",
-         "name": "Airtable"
-        },
-        {
-         "slug": "asana",
-         "name": "Asana"
-        },
-        {
-         "slug": "calendly",
-         "name": "Calendly"
-        },
-        {
-         "slug": "clickup",
-         "name": "ClickUp"
-        },
-        {
-         "slug": "figma",
-         "name": "Figma"
-        },
-        {
-         "slug": "github",
-         "name": "GitHub"
-        },
-        {
-         "slug": "loom",
-         "name": "Loom"
-        },
-        {
-         "slug": "m-files",
-         "name": "M-Files"
-        },
-        {
-         "slug": "monday",
-         "name": "monday.com"
-        },
-        {
-         "slug": "notion",
-         "name": "Notion"
-        },
-        {
-         "slug": "productboard",
-         "name": "Productboard"
-        },
-        {
-         "slug": "rossum",
-         "name": "Rossum"
-        },
-        {
-         "slug": "slack",
-         "name": "Slack"
-        },
-        {
-         "slug": "teamleader",
-         "name": "Teamleader"
-        },
-        {
-         "slug": "templafy",
-         "name": "Templafy"
-        },
-        {
-         "slug": "uipath",
-         "name": "UiPath"
-        }
-       ],
-       "unreadable": [
-        {
-         "slug": "atlassian",
-         "name": "Atlassian"
-        },
-        {
-         "slug": "jetbrains",
-         "name": "JetBrains"
-        },
-        {
-         "slug": "linear",
-         "name": "Linear"
-        },
-        {
-         "slug": "nextcloud",
-         "name": "Nextcloud"
-        },
-        {
-         "slug": "tricentis",
-         "name": "Tricentis"
-        },
-        {
-         "slug": "unity",
-         "name": "Unity"
-        }
-       ]
-      }
-     },
-     {
       "group": "data",
       "label": "Data & analytics",
       "short": "Data & analytics",
@@ -26378,6 +26282,134 @@
         {
          "slug": "workhuman",
          "name": "Workhuman"
+        }
+       ]
+      }
+     },
+     {
+      "group": "work",
+      "label": "Work & product",
+      "short": "Work & product",
+      "n": 27,
+      "readable": 21,
+      "yes": 4,
+      "no": 17,
+      "unreadable": 6,
+      "share": 19,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "gitlab",
+         "name": "GitLab"
+        },
+        {
+         "slug": "mentimeter",
+         "name": "Mentimeter"
+        },
+        {
+         "slug": "miro",
+         "name": "Miro"
+        },
+        {
+         "slug": "retool",
+         "name": "Retool"
+        }
+       ],
+       "no": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
+        {
+         "slug": "asana",
+         "name": "Asana"
+        },
+        {
+         "slug": "calendly",
+         "name": "Calendly"
+        },
+        {
+         "slug": "clickup",
+         "name": "ClickUp"
+        },
+        {
+         "slug": "figma",
+         "name": "Figma"
+        },
+        {
+         "slug": "github",
+         "name": "GitHub"
+        },
+        {
+         "slug": "loom",
+         "name": "Loom"
+        },
+        {
+         "slug": "m-files",
+         "name": "M-Files"
+        },
+        {
+         "slug": "monday",
+         "name": "monday.com"
+        },
+        {
+         "slug": "notion",
+         "name": "Notion"
+        },
+        {
+         "slug": "productboard",
+         "name": "Productboard"
+        },
+        {
+         "slug": "rossum",
+         "name": "Rossum"
+        },
+        {
+         "slug": "slack",
+         "name": "Slack"
+        },
+        {
+         "slug": "teamleader",
+         "name": "Teamleader"
+        },
+        {
+         "slug": "templafy",
+         "name": "Templafy"
+        },
+        {
+         "slug": "uipath",
+         "name": "UiPath"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "atlassian",
+         "name": "Atlassian"
+        },
+        {
+         "slug": "jetbrains",
+         "name": "JetBrains"
+        },
+        {
+         "slug": "linear",
+         "name": "Linear"
+        },
+        {
+         "slug": "nextcloud",
+         "name": "Nextcloud"
+        },
+        {
+         "slug": "tricentis",
+         "name": "Tricentis"
+        },
+        {
+         "slug": "unity",
+         "name": "Unity"
         }
        ]
       }
@@ -26906,8 +26938,8 @@
     "drawn": true,
     "withheld": null,
     "overall": {
-     "yes": 30,
-     "no": 115,
+     "yes": 29,
+     "no": 116,
      "unreadable": 55,
      "readable": 145,
      "tracked": 200
@@ -27153,13 +27185,17 @@
       "short": "Work & product",
       "n": 27,
       "readable": 21,
-      "yes": 8,
-      "no": 13,
+      "yes": 9,
+      "no": 12,
       "unreadable": 6,
-      "share": 38.1,
+      "share": 42.9,
       "suppressed": false,
       "companies": {
        "yes": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
         {
          "slug": "asana",
          "name": "Asana"
@@ -27194,10 +27230,6 @@
         }
        ],
        "no": [
-        {
-         "slug": "airtable",
-         "name": "Airtable"
-        },
         {
          "slug": "github",
          "name": "GitHub"
@@ -28031,13 +28063,17 @@
       "short": "Work & product",
       "n": 27,
       "readable": 21,
-      "yes": 8,
-      "no": 13,
+      "yes": 9,
+      "no": 12,
       "unreadable": 6,
-      "share": 38.1,
+      "share": 42.9,
       "suppressed": false,
       "companies": {
        "yes": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
         {
          "slug": "asana",
          "name": "Asana"
@@ -28072,10 +28108,6 @@
         }
        ],
        "no": [
-        {
-         "slug": "airtable",
-         "name": "Airtable"
-        },
         {
          "slug": "github",
          "name": "GitHub"
@@ -29028,13 +29060,17 @@
      "short": "Work & product",
      "n": 27,
      "readable": 21,
-     "yes": 8,
-     "no": 13,
+     "yes": 9,
+     "no": 12,
      "unreadable": 6,
-     "share": 38.1,
+     "share": 42.9,
      "suppressed": false,
      "companies": {
       "yes": [
+       {
+        "slug": "airtable",
+        "name": "Airtable"
+       },
        {
         "slug": "asana",
         "name": "Asana"
@@ -29069,10 +29105,6 @@
        }
       ],
       "no": [
-       {
-        "slug": "airtable",
-        "name": "Airtable"
-       },
        {
         "slug": "github",
         "name": "GitHub"
@@ -29266,12 +29298,12 @@
      }
     },
     "spread": 10,
-    "lead_over_runner_up": 2,
+    "lead_over_runner_up": 1,
     "drawn": true,
     "withheld": null,
     "overall": {
-     "yes": 24,
-     "no": 121,
+     "yes": 25,
+     "no": 120,
      "unreadable": 55,
      "readable": 145,
      "tracked": 200
@@ -33443,5 +33475,5 @@
    "missing": []
   }
  },
- "generated_at": "2026-08-08T07:52:08Z"
+ "generated_at": "2026-08-08T07:58:20Z"
 }

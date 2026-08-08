@@ -9,8 +9,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:56:29Z",
+   "last_good_at": "2026-08-08T07:56:29Z",
    "last_good_value": "15",
    "last_good_json": null,
    "last_good_hash": "18eb258b",
@@ -27,8 +27,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:56:29Z",
+   "last_good_at": "2026-08-08T07:56:29Z",
    "last_good_value": "faq",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":false,\"faq\":true,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "bbf8185b",
@@ -45,8 +45,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:56:29Z",
+   "last_good_at": "2026-08-08T07:56:29Z",
    "last_good_value": "39",
    "last_good_json": null,
    "last_good_hash": "90f05fa1",
@@ -63,8 +63,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:56:29Z",
+   "last_good_at": "2026-08-08T07:56:29Z",
    "last_good_value": "2",
    "last_good_json": null,
    "last_good_hash": "370cabd5",
@@ -81,8 +81,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:56:29Z",
+   "last_good_at": "2026-08-08T07:56:29Z",
    "last_good_value": "15",
    "last_good_json": null,
    "last_good_hash": "18eb258b",
@@ -99,8 +99,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:56:29Z",
+   "last_good_at": "2026-08-08T07:56:29Z",
    "last_good_value": "7",
    "last_good_json": null,
    "last_good_hash": "320ca3f6",
@@ -117,8 +117,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:56:29Z",
+   "last_good_at": "2026-08-08T07:56:29Z",
    "last_good_value": "hero > cta > awards > faq > security > faq > security",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":187,\"merged\":1},{\"position\":2,\"type\":\"cta\",\"heading\":\"Meet Nira: Your AI Assistant for NAVEX One\",\"words\":70,\"merged\":1},{\"position\":3,\"type\":\"awards\",\"heading\":\"We take care of compliance so you can take care of business\",\"words\":171,\"merged\":2},{\"position\":4,\"type\":\"faq\",\"heading\":\"What can NAVEX risk and compliance solutions do for you?\",\"words\":246,\"merged\":1},{\"position\":5,\"type\":\"security\",\"heading\":\"Our customers tell our story\",\"words\":47,\"merged\":1},{\"position\":6,\"type\":\"faq\",\"heading\":\"Why the NAVEX One GRC platform?\",\"words\":260,\"merged\":1},{\"position\":7,\"type\":\"security\",\"heading\":\"Customer reviews of NAVEX\",\"words\":199,\"merged\":4}]}",
    "last_good_hash": "7e721e5f",
@@ -135,8 +135,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:56:29Z",
+   "last_good_at": "2026-08-08T07:56:29Z",
    "last_good_value": 2073,
    "last_good_json": null,
    "last_good_hash": "cb1d4c71",
@@ -153,7 +153,7 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:56:29Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -171,8 +171,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:56:29Z",
+   "last_good_at": "2026-08-08T07:56:29Z",
    "last_good_value": "ABM, Apleona, Castolin Eutectic, City of Dallas, Coca Cola Europacific Partners, DIAGEO, Fresenius Medical Center, G2 Users Love Us, Kerry Group, Medal, Navistar, Nira AI by NAVEX, Seal, Séch, Serco, Sharp, Spring Users Love Us, Stellantis, University of Notre Dame",
    "last_good_json": "{\"names\":[\"ABM\",\"Apleona\",\"Castolin Eutectic\",\"City of Dallas\",\"Coca Cola Europacific Partners\",\"DIAGEO\",\"Fresenius Medical Center\",\"G2 Users Love Us\",\"Kerry Group\",\"Medal\",\"Navistar\",\"Nira AI by NAVEX\",\"Seal\",\"Séch\",\"Serco\",\"Sharp\",\"Spring Users Love Us\",\"Stellantis\",\"University of Notre Dame\"],\"count\":19,\"lead\":\"Trusted by 13,000+ customers worldwide <img src=h\"}",
    "last_good_hash": "a5b8af6b",
@@ -189,8 +189,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:56:29Z",
+   "last_good_at": "2026-08-08T07:56:29Z",
    "last_good_value": "Risk and compliance solutions driven by connected intelligence",
    "last_good_json": null,
    "last_good_hash": "6181a041",
@@ -207,8 +207,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:56:29Z",
+   "last_good_at": "2026-08-08T07:56:29Z",
    "last_good_value": "NAVEX is a risk and compliance solutions provider helping 13,000+ organizations worldwide simplify compliance and confidently manage risk. Want to chat?",
    "last_good_json": null,
    "last_good_hash": "15905901",
@@ -225,8 +225,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:56:29Z",
+   "last_good_at": "2026-08-08T07:56:29Z",
    "last_good_value": "Risk, Compliance & Whistleblowing Solutions | NAVEX",
    "last_good_json": null,
    "last_good_hash": "b96bd3bf",
@@ -243,8 +243,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:56:29Z",
+   "last_good_at": "2026-08-08T07:56:29Z",
    "last_good_value": "13,000 companies | 13,000 customers | 13,000 organizations | 4,000 organizations | 88m people | fortune 100",
    "last_good_json": "{\"items\":[{\"claim\":\"13,000 companies\",\"kind\":\"count\"},{\"claim\":\"13,000 customers\",\"kind\":\"count\"},{\"claim\":\"13,000 organizations\",\"kind\":\"count\"},{\"claim\":\"4,000 organizations\",\"kind\":\"count\"},{\"claim\":\"88m people\",\"kind\":\"count\"},{\"claim\":\"fortune 100\",\"kind\":\"rank\"}],\"count\":6}",
    "last_good_hash": "60982ef7",
@@ -261,8 +261,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-08T07:51:01Z",
-   "last_good_at": "2026-08-08T07:51:01Z",
+   "last_observed_at": "2026-08-08T07:56:29Z",
+   "last_good_at": "2026-08-08T07:56:29Z",
    "last_good_value": "NAVEX helps 13,000 organizations worldwide confidently manage risk and compliance by connecting our software solutions with your data. How can we help you?",
    "last_good_json": null,
    "last_good_hash": "33e3ea8f",
@@ -280,6 +280,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.navex.com/en-us/",
+   "fetched_at": "2026-08-08T07:56:29Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.2.0 -> 1.2.1; re-baselining",
+   "bytes": 853720,
+   "duration_ms": 92,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.navex.com/en-us/",

@@ -10,8 +10,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-08T07:51:41Z",
-   "last_good_at": "2026-08-08T07:51:41Z",
+   "last_observed_at": "2026-08-08T07:55:47Z",
+   "last_good_at": "2026-08-08T07:55:47Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -28,8 +28,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-08T07:51:41Z",
-   "last_good_at": "2026-08-08T07:51:41Z",
+   "last_observed_at": "2026-08-08T07:55:47Z",
+   "last_good_at": "2026-08-08T07:55:47Z",
    "last_good_value": "none",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "ada7afdb",
@@ -46,8 +46,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-08T07:51:41Z",
-   "last_good_at": "2026-08-08T07:51:41Z",
+   "last_observed_at": "2026-08-08T07:55:47Z",
+   "last_good_at": "2026-08-08T07:55:47Z",
    "last_good_value": "67",
    "last_good_json": null,
    "last_good_hash": "1ae8ea1a",
@@ -64,8 +64,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-08T07:51:41Z",
-   "last_good_at": "2026-08-08T07:51:41Z",
+   "last_observed_at": "2026-08-08T07:55:47Z",
+   "last_good_at": "2026-08-08T07:55:47Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -82,8 +82,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-08T07:51:41Z",
-   "last_good_at": "2026-08-08T07:51:41Z",
+   "last_observed_at": "2026-08-08T07:55:47Z",
+   "last_good_at": "2026-08-08T07:55:47Z",
    "last_good_value": "54",
    "last_good_json": null,
    "last_good_hash": "87e146ec",
@@ -100,11 +100,11 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-08T07:51:41Z",
-   "last_good_at": "2026-08-08T07:51:41Z",
-   "last_good_value": "1",
+   "last_observed_at": "2026-08-08T07:55:47Z",
+   "last_good_at": "2026-08-08T07:55:47Z",
+   "last_good_value": "0",
    "last_good_json": null,
-   "last_good_hash": "340ca71c",
+   "last_good_hash": "350ca8af",
    "last_good_method": "h2-anchored",
    "last_good_confidence": 0.6,
    "consecutive_nulls": 0,
@@ -118,7 +118,7 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-08T07:51:41Z",
+   "last_observed_at": "2026-08-08T07:55:47Z",
    "last_good_at": "2026-08-08T07:51:41Z",
    "last_good_value": "hero",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":0,\"merged\":1}]}",
@@ -136,7 +136,7 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-08T07:51:41Z",
+   "last_observed_at": "2026-08-08T07:55:47Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -154,8 +154,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-08T07:51:41Z",
-   "last_good_at": "2026-08-08T07:51:41Z",
+   "last_observed_at": "2026-08-08T07:55:47Z",
+   "last_good_at": "2026-08-08T07:55:47Z",
    "last_good_value": "braze customer engagement platform",
    "last_good_json": null,
    "last_good_hash": "945fee75",
@@ -172,8 +172,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-08T07:51:41Z",
-   "last_good_at": "2026-08-08T07:51:41Z",
+   "last_observed_at": "2026-08-08T07:55:47Z",
+   "last_good_at": "2026-08-08T07:55:47Z",
    "last_good_value": "1091x173, 1550x1189, 188x30, 505x77, 512x164, 70x40, 962x1038, Bloom & Wild, Canva, Chime, Elf, Going, Max, MetLife, Rakuten Viber, Simplii Financial, Styli, The Guardian, TurboTax, Virgin, Wyndham Hotels",
    "last_good_json": "{\"names\":[\"1091x173\",\"1550x1189\",\"188x30\",\"505x77\",\"512x164\",\"70x40\",\"962x1038\",\"Bloom & Wild\",\"Canva\",\"Chime\",\"Elf\",\"Going\",\"Max\",\"MetLife\",\"Rakuten Viber\",\"Simplii Financial\",\"Styli\",\"The Guardian\",\"TurboTax\",\"Virgin\",\"Wyndham Hotels\"],\"count\":21,\"lead\":\"COMPANIES OF ALL SIZES <div class=\\\"w-full overflow-clip\\\" style=\\\"mask-image:linea\"}",
    "last_good_hash": "9cd20027",
@@ -190,8 +190,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-08T07:51:41Z",
-   "last_good_at": "2026-08-08T07:51:41Z",
+   "last_observed_at": "2026-08-08T07:55:47Z",
+   "last_good_at": "2026-08-08T07:55:47Z",
    "last_good_value": "Rewrite the rules of customer engagement with AI",
    "last_good_json": null,
    "last_good_hash": "78f84f25",
@@ -208,8 +208,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-08T07:51:41Z",
-   "last_good_at": "2026-08-08T07:51:41Z",
+   "last_observed_at": "2026-08-08T07:55:47Z",
+   "last_good_at": "2026-08-08T07:55:47Z",
    "last_good_value": "Power customer-centric interactions between consumers and brands in real-time.",
    "last_good_json": null,
    "last_good_hash": "9c1a4ecf",
@@ -226,8 +226,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-08T07:51:41Z",
-   "last_good_at": "2026-08-08T07:51:41Z",
+   "last_observed_at": "2026-08-08T07:55:47Z",
+   "last_good_at": "2026-08-08T07:55:47Z",
    "last_good_value": "Braze Customer Engagement Platform",
    "last_good_json": null,
    "last_good_hash": "06642ef5",
@@ -244,7 +244,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-08T07:50:41Z",
+   "last_observed_at": "2026-08-08T07:57:26Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -260,7 +260,7 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-08T07:50:41Z",
+   "last_observed_at": "2026-08-08T07:57:26Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -276,8 +276,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-08T07:50:41Z",
-   "last_good_at": "2026-08-08T07:50:41Z",
+   "last_observed_at": "2026-08-08T07:57:26Z",
+   "last_good_at": "2026-08-08T07:57:26Z",
    "last_good_value": "Explore pricing and packaging options at Braze",
    "last_good_json": null,
    "last_good_hash": "fa7f7149",
@@ -294,7 +294,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-08T07:50:41Z",
+   "last_observed_at": "2026-08-08T07:57:26Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -310,7 +310,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-08T07:50:41Z",
+   "last_observed_at": "2026-08-08T07:57:26Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -326,8 +326,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-08T07:51:41Z",
-   "last_good_at": "2026-08-08T07:51:41Z",
+   "last_observed_at": "2026-08-08T07:55:47Z",
+   "last_good_at": "2026-08-08T07:55:47Z",
    "last_good_value": "15% decrease in order | 21% increase in revenue | 30% increase in transactions | 300% increase in rate | 457% roi and payback | 750 brands",
    "last_good_json": "{\"items\":[{\"claim\":\"15% decrease in order\",\"kind\":\"percent\"},{\"claim\":\"21% increase in revenue\",\"kind\":\"percent\"},{\"claim\":\"30% increase in transactions\",\"kind\":\"percent\"},{\"claim\":\"300% increase in rate\",\"kind\":\"percent\"},{\"claim\":\"457% roi and payback\",\"kind\":\"percent\"},{\"claim\":\"750 brands\",\"kind\":\"count\"}],\"count\":6}",
    "last_good_hash": "50f930ee",
@@ -344,8 +344,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-08T07:51:41Z",
-   "last_good_at": "2026-08-08T07:51:41Z",
+   "last_observed_at": "2026-08-08T07:55:47Z",
+   "last_good_at": "2026-08-08T07:55:47Z",
    "last_good_value": "From cross-channel messaging and journey orchestration to Al-powered decisioning and optimization, Braze is a customer engagement platform that empowers brands to Be Absolutely Engaging.™",
    "last_good_json": null,
    "last_good_hash": "07690638",
@@ -363,6 +363,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://www.braze.com/pricing",
+   "fetched_at": "2026-08-08T07:57:26Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.2.0 -> 1.2.1; re-baselining",
+   "bytes": 434139,
+   "duration_ms": 111,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://www.braze.com/",
+   "fetched_at": "2026-08-08T07:55:47Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.2.0 -> 1.2.1; re-baselining",
+   "bytes": 722283,
+   "duration_ms": 149,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.braze.com/",

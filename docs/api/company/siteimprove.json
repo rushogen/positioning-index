@@ -9,8 +9,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-08T07:49:46Z",
-   "last_good_at": "2026-08-08T07:49:46Z",
+   "last_observed_at": "2026-08-08T07:56:46Z",
+   "last_good_at": "2026-08-08T07:56:46Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -27,8 +27,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-08T07:49:46Z",
-   "last_good_at": "2026-08-08T07:49:46Z",
+   "last_observed_at": "2026-08-08T07:56:46Z",
+   "last_good_at": "2026-08-08T07:56:46Z",
    "last_good_value": "faq",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":false,\"faq\":true,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "bbf8185b",
@@ -45,8 +45,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-08T07:49:46Z",
-   "last_good_at": "2026-08-08T07:49:46Z",
+   "last_observed_at": "2026-08-08T07:56:46Z",
+   "last_good_at": "2026-08-08T07:56:46Z",
    "last_good_value": "64",
    "last_good_json": null,
    "last_good_hash": "19e8e887",
@@ -63,8 +63,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-08T07:49:46Z",
-   "last_good_at": "2026-08-08T07:49:46Z",
+   "last_observed_at": "2026-08-08T07:56:46Z",
+   "last_good_at": "2026-08-08T07:56:46Z",
    "last_good_value": "2",
    "last_good_json": null,
    "last_good_hash": "370cabd5",
@@ -81,8 +81,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-08T07:49:46Z",
-   "last_good_at": "2026-08-08T07:49:46Z",
+   "last_observed_at": "2026-08-08T07:56:46Z",
+   "last_good_at": "2026-08-08T07:56:46Z",
    "last_good_value": "33",
    "last_good_json": null,
    "last_good_hash": "86f04fe3",
@@ -99,8 +99,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-08T07:49:46Z",
-   "last_good_at": "2026-08-08T07:49:46Z",
+   "last_observed_at": "2026-08-08T07:56:46Z",
+   "last_good_at": "2026-08-08T07:56:46Z",
    "last_good_value": "4",
    "last_good_json": null,
    "last_good_hash": "310ca263",
@@ -117,8 +117,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-08T07:49:46Z",
-   "last_good_at": "2026-08-08T07:49:46Z",
+   "last_observed_at": "2026-08-08T07:56:46Z",
+   "last_good_at": "2026-08-08T07:56:46Z",
    "last_good_value": "hero > security > awards > faq",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":51,\"merged\":1},{\"position\":2,\"type\":\"security\",\"heading\":\"Siteimprove ai is the unified platform for agentic content intelligence\",\"words\":345,\"merged\":1},{\"position\":3,\"type\":\"awards\",\"heading\":\"Leader in Digital Accessibility, Digital Analytics, Digital Governance, and SEO Tools\",\"words\":55,\"merged\":2},{\"position\":4,\"type\":\"faq\",\"heading\":\"Ready to test-drive our platform and see how your site stacks up?\",\"words\":15,\"merged\":1}]}",
    "last_good_hash": "7ccd3467",
@@ -135,8 +135,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-08T07:49:46Z",
-   "last_good_at": "2026-08-08T07:49:46Z",
+   "last_observed_at": "2026-08-08T07:56:46Z",
+   "last_good_at": "2026-08-08T07:56:46Z",
    "last_good_value": 554,
    "last_good_json": null,
    "last_good_hash": "c5a4ce11",
@@ -153,7 +153,7 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-08T07:49:46Z",
+   "last_observed_at": "2026-08-08T07:56:46Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -171,8 +171,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-08T07:49:46Z",
-   "last_good_at": "2026-08-08T07:49:46Z",
+   "last_observed_at": "2026-08-08T07:56:46Z",
+   "last_good_at": "2026-08-08T07:56:46Z",
    "last_good_value": "BT, Costco wholesale, Cuisinart, Kimberly Clark, Northwestern University, Siteimprove.ai, Vodafone",
    "last_good_json": "{\"names\":[\"BT\",\"Costco wholesale\",\"Cuisinart\",\"Kimberly Clark\",\"Northwestern University\",\"Siteimprove.ai\",\"Vodafone\"],\"count\":7,\"lead\":null}",
    "last_good_hash": "d44f393e",
@@ -189,8 +189,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-08T07:49:46Z",
-   "last_good_at": "2026-08-08T07:49:46Z",
+   "last_observed_at": "2026-08-08T07:56:46Z",
+   "last_good_at": "2026-08-08T07:56:46Z",
    "last_good_value": "Where accessibility meets performance",
    "last_good_json": null,
    "last_good_hash": "501aa33a",
@@ -207,8 +207,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-08T07:49:46Z",
-   "last_good_at": "2026-08-08T07:49:46Z",
+   "last_observed_at": "2026-08-08T07:56:46Z",
+   "last_good_at": "2026-08-08T07:56:46Z",
    "last_good_value": "Siteimprove’s Agentic Content Intelligence unites accessibility, analytics, SEO, and content strategy to proactively optimize and govern your digital experience.",
    "last_good_json": null,
    "last_good_hash": "88c79550",
@@ -225,8 +225,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-08T07:49:46Z",
-   "last_good_at": "2026-08-08T07:49:46Z",
+   "last_observed_at": "2026-08-08T07:56:46Z",
+   "last_good_at": "2026-08-08T07:56:46Z",
    "last_good_value": "Agentic Content Intelligence - Siteimprove",
    "last_good_json": null,
    "last_good_hash": "1d5baae8",
@@ -243,7 +243,7 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-08T07:49:46Z",
+   "last_observed_at": "2026-08-08T07:56:46Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -261,8 +261,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-08T07:49:46Z",
-   "last_good_at": "2026-08-08T07:49:46Z",
+   "last_observed_at": "2026-08-08T07:56:46Z",
+   "last_good_at": "2026-08-08T07:56:46Z",
    "last_good_value": "In the era of AI, Siteimprove.ai helps you create high-performing, accessible content that’s easy to discover by both humans and AI. Together, we transform access to the digital world.",
    "last_good_json": null,
    "last_good_hash": "342c76f1",
@@ -280,6 +280,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.siteimprove.com/",
+   "fetched_at": "2026-08-08T07:56:46Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.2.0 -> 1.2.1; re-baselining",
+   "bytes": 761814,
+   "duration_ms": 795,
+   "signals_found": 13,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.siteimprove.com/",

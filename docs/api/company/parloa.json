@@ -283,6 +283,18 @@
   {
    "kind": "home",
    "url": "https://www.parloa.com/",
+   "fetched_at": "2026-08-08T07:56:24Z",
+   "http_status": null,
+   "status": "blocked",
+   "reason": "robots.txt: robots.txt fetch failed (fetch failed), failing closed",
+   "bytes": 0,
+   "duration_ms": 540,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.parloa.com/",
    "fetched_at": "2026-08-08T07:50:41Z",
    "http_status": null,
    "status": "blocked",
