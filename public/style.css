@@ -1160,3 +1160,96 @@ h1, h2, h3, .display, .lede, .chapter-intro, .pull { font-family: var(--serif); 
   display: flex; align-items: center; justify-content: center;
   min-height: 22rem; color: var(--ink-3); font-size: .9rem;
 }
+
+/* ============================================================================
+   ARCHETYPE MOCK  — the archetypal landing page, drawn as a page
+   A wireframe, deliberately grayscale: the shapes say "this kind of block", the
+   label and the panel carry the meaning. Colour never carries a finding here.
+   ========================================================================== */
+
+.mk { margin-top: 1.75rem; }
+.mk-stage { display: grid; gap: 1.5rem; align-items: start; }
+@media (min-width: 60rem) {
+  .mk-stage { grid-template-columns: minmax(0, 1fr) minmax(0, 21rem); gap: 2rem; }
+  .mk-panel { position: sticky; top: 4.5rem; }
+}
+
+/* the "page" frame */
+.mk-page {
+  background: var(--panel); border: 1px solid var(--rule); border-radius: 12px;
+  overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,.04), 0 12px 30px -18px rgba(0,0,0,.25);
+}
+.mk-chrome { display: flex; gap: 6px; padding: 10px 12px; border-bottom: 1px solid var(--rule-2); background: var(--bg); }
+.mk-chrome span { width: 9px; height: 9px; border-radius: 50%; background: var(--rule); }
+
+/* each section block is an anchor (jumps to its insight with no JS) */
+.mk-sec {
+  display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 1rem;
+  padding: clamp(1rem, 2.5vw, 1.9rem) clamp(1rem, 3vw, 2rem);
+  border-bottom: 1px solid var(--rule-2); text-decoration: none; color: inherit;
+  position: relative; transition: background .18s ease-out;
+}
+.mk-sec:last-child { border-bottom: 0; }
+.mk-sec:hover { background: var(--rule-2); }
+.mk-sec:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.mk-sec[aria-current="true"] { background: var(--mark); box-shadow: inset 3px 0 0 var(--accent); }
+
+.mk-tag { display: flex; flex-direction: column; align-items: flex-end; gap: .1rem; text-align: right; white-space: nowrap; }
+.mk-name { font-family: var(--sans); font-size: .8rem; font-weight: 600; color: var(--ink-2); }
+.mk-sec[aria-current="true"] .mk-name { color: var(--ink); }
+.mk-share { font-family: var(--sans); font-size: 1.1rem; font-weight: 600; font-variant-numeric: tabular-nums; color: var(--ink); }
+
+/* ---- the skins: inert grayscale shapes ---------------------------------- */
+.mk-skin { display: flex; flex-direction: column; gap: .5rem; min-width: 0; pointer-events: none; }
+.mk-bar { display: block; height: 12px; border-radius: 4px; background: var(--rule); }
+.mk-hero .mk-bar:first-child { height: 20px; background: var(--ink-3); }
+.mk-btn { display: inline-block; width: 96px; height: 22px; border-radius: 6px; background: var(--accent); opacity: .85; margin-top: .2rem; }
+.mk-row { flex-direction: row; flex-wrap: wrap; gap: .55rem; align-items: center; }
+.mk-chip { width: 58px; height: 22px; border-radius: 6px; background: var(--rule); }
+.mk-chip-sq { width: 30px; height: 30px; border-radius: 8px; }
+.mk-badge { width: 46px; height: 24px; border-radius: 12px; background: var(--rule); border: 1px solid var(--rule); }
+.mk-grid { flex-direction: row; gap: .7rem; }
+.mk-card { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: .35rem; padding: .6rem; border: 1px solid var(--rule-2); border-radius: 8px; }
+.mk-card-ic { width: 22px; height: 22px; border-radius: 6px; background: var(--accent); opacity: .55; }
+.mk-split { flex-direction: row; gap: 1rem; align-items: center; }
+.mk-panel-shape { width: 40%; height: 64px; border-radius: 8px; background: var(--rule); }
+.mk-lines { flex: 1; display: flex; flex-direction: column; gap: .5rem; }
+.mk-stats { flex-direction: row; gap: 1.5rem; }
+.mk-stat { font-family: var(--serif); font-size: 1.6rem; font-weight: 600; color: var(--ink); }
+.mk-quote { gap: .35rem; }
+.mk-qmark { font-family: var(--serif); font-size: 2rem; line-height: .6; color: var(--ink-3); }
+.mk-attr { width: 120px; height: 10px; border-radius: 3px; background: var(--rule); margin-top: .3rem; }
+.mk-cols { flex-direction: row; gap: .7rem; }
+.mk-col { flex: 1; height: 74px; border-radius: 8px; border: 1px solid var(--rule); }
+.mk-col-hi { border-color: var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+.mk-faq { gap: .5rem; }
+.mk-qline { height: 14px; border-radius: 4px; background: var(--rule-2); border: 1px solid var(--rule); }
+.mk-cta { flex-direction: row; align-items: center; justify-content: space-between; }
+
+/* ---- the panel (JS) and the fallback list (always present) --------------- */
+.mk-panel { background: var(--panel); border: 1px solid var(--rule); border-radius: 10px; padding: 1.15rem 1.2rem; }
+.mk-panel h3 { font-size: var(--t-h3); font-weight: 600; margin: 0 0 .5rem; }
+.mk-panel .mk-hint { color: var(--ink-3); font-size: .9rem; margin: 0; }
+
+.mk-insight { border-top: 1px solid var(--rule); padding: 1.1rem 0; scroll-margin-top: 5rem; }
+.mk-insight:first-of-type { border-top: 0; }
+.mk-insight h3 { font-size: 1.05rem; font-weight: 600; margin: 0 0 .35rem; }
+.mk-headline { margin: 0 0 .3rem; font-size: .95rem; color: var(--ink-2); }
+.mk-headline b { color: var(--ink); font-variant-numeric: tabular-nums; }
+.mk-line { margin: 0 0 .5rem; color: var(--ink-2); }
+.mk-breaks { margin: 0; font-size: .92rem; line-height: 1.55; }
+.mk-breaks-label { display: block; font-family: var(--sans); font-size: .72rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--accent); margin-bottom: .15rem; }
+.mk-more { color: var(--ink-3); }
+
+/* When JS is on, the fallback list is redundant with the panel; keep it in the
+   accessibility tree but out of the visual flow. With JS off, .js is absent and
+   it shows normally. */
+.js .mk-insights { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.js .mk-insights:focus-within { position: static; width: auto; height: auto; clip: auto; white-space: normal; }
+
+@media (prefers-reduced-motion: reduce) { .mk-sec { transition: none; } }
+@media (forced-colors: active) {
+  .mk-bar, .mk-chip, .mk-badge, .mk-col, .mk-qline, .mk-panel-shape, .mk-attr { background: CanvasText; }
+  .mk-btn, .mk-card-ic { background: Highlight; }
+  .mk-sec[aria-current="true"] { box-shadow: inset 3px 0 0 Highlight; }
+}

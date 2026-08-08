@@ -136,7 +136,7 @@ for (const name of ['fonts.css', 'newsreader.woff2', 'newsreader-italic.woff2', 
   await copyFile(join(ROOT, 'public', 'vendor', 'fonts', name), join(outDir, 'vendor', 'fonts', name));
 }
 
-for (const name of ['style.css', 'app.js', 'anatomy-app.js', 'anatomy-map.js']) {
+for (const name of ['style.css', 'app.js', 'anatomy-app.js', 'anatomy-map.js', 'archetype-mock.js']) {
   await copyFile(join(ROOT, 'public', name), join(outDir, name));
 }
 

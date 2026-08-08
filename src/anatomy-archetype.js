@@ -72,11 +72,20 @@ export function archetype({ companies }, { floor = 0.15 } = {}) {
     }
   }
 
+  const carrierSlugs = new Map();
+  for (const [type, hits] of byType) carrierSlugs.set(type, new Set(hits.map((h) => h.slug)));
+
   const rows = [];
   const belowFloor = [];
   for (const [type, hits] of byType) {
     if (type === 'other') continue;
     const share = hits.length / of;
+    // Who omits a section everyone else ships -- the "who breaks it" for a
+    // convention. Sampled and sorted by name, with the count that is not shown,
+    // so a short list is never mistaken for the whole set.
+    const absentAll = readable
+      .filter((c) => !carrierSlugs.get(type).has(c.slug))
+      .sort((a, b) => a.name.localeCompare(b.name, 'en'));
     const row = {
       type,
       carriers: hits.length,
@@ -91,6 +100,12 @@ export function archetype({ companies }, { floor = 0.15 } = {}) {
         .slice(0, 12)
         .map((h) => ({ slug: h.slug, name: h.name, heading: h.heading })),
       examples_of: hits.filter((h) => h.heading).length,
+      carrier_examples: hits.slice()
+        .sort((a, b) => a.name.localeCompare(b.name, 'en'))
+        .slice(0, 10)
+        .map((h) => ({ slug: h.slug, name: h.name })),
+      absent_examples: absentAll.slice(0, 10).map((c) => ({ slug: c.slug, name: c.name })),
+      absent_omitted: Math.max(0, absentAll.length - 10),
     };
     if (type !== 'hero' && share < floor) belowFloor.push(row);
     else rows.push(row);

@@ -23,6 +23,7 @@ import { barChart, companyLink, coverageNote, detailsTable, escapeHtml, shareBar
 import { renderWireframe, sectionLabel } from './anatomy-svg.js';
 import { pageInsight, sectionInsight } from './anatomy-compare.js';
 import { archetype } from './anatomy-archetype.js';
+import { renderArchetypeMock } from './archetype-mock.js';
 
 // One label map for the whole view, imported rather than repeated: anatomy-svg.js
 // owns it and asserts at import that every SECTION_TYPES member has one, so a new
@@ -76,43 +77,6 @@ function renderArchetype(a) {
   const arch = archetype(a);
   const pct = (x) => Math.round(x * 100);
 
-  const bands = arch.bands.map((b) => {
-    const share = pct(b.share);
-    // The hero is defined as everything before the first heading, so it has no
-    // heading of its own; the few that show one are segmentation quirks, not the
-    // page "naming" its hero. Showing them would misrepresent the band.
-    const examples = (b.type !== 'hero' && b.examples.length)
-      ? detailsTable({
-          summary: `${b.examples_of} of the ${b.carriers} name it — the headings they use`,
-          columns: [
-            { label: 'Company', get: (e) => companyLink(e) },
-            { label: 'Heading', get: (e) => escapeHtml(e.heading) },
-          ],
-          rows: b.examples,
-        })
-      : '';
-    return `
-      <li class="arch-band" style="--share:${share}">
-        <div class="arch-bar" aria-hidden="true"><span class="arch-fill" style="width:${share}%"></span></div>
-        <div class="arch-body">
-          <div class="arch-head">
-            <span class="arch-name">${escapeHtml(label(b.type))}</span>
-            <span class="arch-share"><b>${share}%</b> of ${b.of} carry it</span>
-          </div>
-          <p class="arch-meta">
-            ${b.absent} do not · typically position ${b.median_position} · around ${b.median_words} words
-          </p>
-          ${examples}
-        </div>
-      </li>`;
-  }).join('');
-
-  const below = arch.below_floor.length
-    ? `<p class="note">Too rare to draw as a band, and listed rather than dropped: ${
-        arch.below_floor.map((b) => `${escapeHtml(label(b.type))} (${pct(b.share)}% of ${b.of})`).join(', ')
-      }.</p>`
-    : '';
-
   return `
     <section id="anatomy-archetype">
       <h2>The archetype homepage</h2>
@@ -123,9 +87,7 @@ function renderArchetype(a) {
         band out is on the band, because the page that skips a common section is usually the
         one worth looking at.
       </p>
-      <ol class="arch">${bands}</ol>
-      ${below}
-      <p class="wf-caveat">${escapeHtml(arch.caveat)}</p>
+      ${renderArchetypeMock(a)}
     </section>`;
 }
 
