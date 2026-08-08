@@ -19477,5 +19477,17 @@
   "media",
   "other"
  ],
+ "accuracy": {
+  "nonHero": 0.49,
+  "nonHeroCorrect": 61,
+  "nonHeroOf": 124,
+  "overall": 0.61,
+  "correct": 102,
+  "of": 166,
+  "labelledPages": 43,
+  "measuredAt": null,
+  "command": "node scripts/score-anatomy.js",
+  "source": "scripts/score-anatomy.js against seed/labels.json"
+ },
  "generated_at": "2026-08-08T11:47:59Z"
 }

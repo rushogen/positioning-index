@@ -44,6 +44,8 @@ import {
 } from '../src/report.js';
 import { stateOfPositioning } from '../src/insights.js';
 import { pageAnatomy } from '../src/anatomy-insights.js';
+import { accuracyBlock } from '../src/anatomy-compare.js';
+import { scoreClassifier } from '../src/anatomy-score.js';
 import { renderPositioning } from '../src/landing.js';
 import { renderAnatomy } from '../src/anatomy-view.js';
 
@@ -62,6 +64,7 @@ const [queue, series, events, runs] = await Promise.all([
   store.queue(), store.series(), store.readEvents(), store.readRuns(),
 ]);
 const seed = JSON.parse(await readFile(join(ROOT, 'seed', 'companies.json'), 'utf8'));
+const labels = JSON.parse(await readFile(join(ROOT, 'seed', 'labels.json'), 'utf8'));
 const companies = seed.companies.slice().sort((a, b) => a.name.localeCompare(b.name, 'en'));
 
 // "As of" the last run, never "as of now". This is what makes the build
@@ -88,6 +91,13 @@ const { retracted } = partitionEvents(events);
 // with scripting switched off. See src/charts.js for why the SVG has no viewBox.
 const positioning = stateOfPositioning({ companies, series });
 const anatomy = pageAnatomy({ companies, series });
+
+// The classifier's accuracy is MEASURED at build time against seed/labels.json,
+// never typed into a file. A hardcoded accuracy is a claim that goes stale the
+// moment the classifier changes, and this project already has a corrections
+// entry about exactly that class of mistake. If there are no labels, the caveat
+// says the classifier is unmeasured rather than quietly reporting a stale one.
+const accuracy = accuracyBlock(scoreClassifier({ seed, series, labels }));
 
 // --------------------------------------------------------------------- write
 
@@ -134,7 +144,7 @@ await writeJson('api/stats.json', {
 // The same numbers the landing view prints, in the form a script can read, so
 // every bar on the page can be checked against the file that produced it.
 await writeJson('api/positioning.json', { ...positioning, generated_at: asOf });
-await writeJson('api/anatomy.json', { ...anatomy, generated_at: asOf });
+await writeJson('api/anatomy.json', { ...anatomy, accuracy, generated_at: asOf });
 
 await writeJson('api/companies.json', { companies });
 await writeJson('api/health.json', { companies: health });
@@ -204,7 +214,7 @@ console.log(
 function renderIndexHtml(template) {
   const substitutions = [
     ['<!--POSITIONING-->', renderPositioning(positioning)],
-    ['<!--ANATOMY-->', renderAnatomy(anatomy)],
+    ['<!--ANATOMY-->', renderAnatomy(anatomy, accuracy)],
     ['<!--COMPANY-COUNT-->', String(companies.length)],
     // Date only. The page is a reading of one morning and says so; a timestamp
     // to the second would suggest a precision the crawl does not have, since a

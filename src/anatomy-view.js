@@ -20,68 +20,113 @@
  */
 
 import { barChart, companyLink, coverageNote, detailsTable, escapeHtml, shareBars } from './charts.js';
+import { renderWireframe, sectionLabel } from './anatomy-svg.js';
+import { pageInsight, sectionInsight } from './anatomy-compare.js';
 
-/** Human labels for the section vocabulary. The keys are the published values. */
-const LABEL = {
-  hero: 'Hero',
-  logos: 'Logo wall',
-  proof: 'Proof / numbers',
-  testimonial: 'Testimonial',
-  pricing: 'Pricing block',
-  faq: 'FAQ',
-  comparison: 'Comparison table',
-  integrations: 'Integrations',
-  features: 'Feature grid',
-  cta: 'Call to action',
-  media: 'Video / media',
-  other: 'Unclassified',
-};
+// One label map for the whole view, imported rather than repeated: anatomy-svg.js
+// owns it and asserts at import that every SECTION_TYPES member has one, so a new
+// classifier type breaks the build instead of printing its raw key into docs/.
+// This file previously carried its own copy covering only 12 of the 17 types.
+const label = sectionLabel;
 
-const label = (t) => LABEL[t] ?? t;
-
-/** One company's sequence as a row of labelled blocks. */
-function strip(company) {
-  if (!company.sections) {
-    return `<p class="strip-none">No readable section sequence. `
-      + `The page's bands are not <code>&lt;h2&gt;</code>-headed, so this is an extraction gap `
-      + `rather than a page without structure.</p>`;
-  }
-  const blocks = company.sections
-    .map((s) => {
-      const title = s.heading ? `${label(s.type)} — ${s.heading}` : label(s.type);
-      return `<span class="blk blk-${escapeHtml(s.type)}" title="${escapeHtml(title)} (${s.words} words)">`
-        + `<span class="blk-n">${s.position}</span>`
-        + `<span class="blk-t">${escapeHtml(label(s.type))}</span>`
-        + `</span>`;
-    })
-    .join('');
-  return `<div class="strip" role="list" aria-label="Section sequence">${blocks}</div>`;
+/**
+ * A JSON island, safe to embed in HTML.
+ *
+ * The only sequence that can end a script element early is `</script`, so that
+ * is the only thing that has to be broken up. Escaping the whole payload with
+ * escapeHtml would corrupt it, because the browser does not entity-decode the
+ * contents of a script element -- JSON.parse would then see `&quot;` and throw,
+ * and by design that leaves the figure permanently inert.
+ */
+function jsonIsland(data, className) {
+  const text = JSON.stringify(data).replace(/<\/(script)/gi, '<\\/$1');
+  return `<script type="application/json" class="${className}">${text}</script>`;
 }
 
 /**
- * The strip list, one row per company.
+ * One company as an interactive wireframe: the page's shape, with an insight
+ * panel beside it.
  *
- * Rendered in full. The script adds filtering on top; it does not fetch this,
- * because a view that says nothing until a JSON file arrives is a view that
- * says nothing to anyone reading with scripting off.
+ * This replaces the flat strip that used to live here. It is the same
+ * information -- the ordered sequence of sections -- but a block whose height
+ * carries how much of the page it occupies says something the strip could not,
+ * and a panel that can hold the corpus comparison is what makes a section
+ * clickable rather than merely coloured.
+ *
+ * Everything is written here at build time. app.js attaches behaviour to what
+ * is already on screen and renders nothing that is not already readable with
+ * scripting switched off, which is the same contract the landing view keeps.
+ *
+ * `maxWords` is the PAGE's own longest section, deliberately not the corpus
+ * maximum. Scaled against the corpus, one 23,000-word outlier would flatten
+ * every other page in the set to the minimum block height and all 180
+ * wireframes would come out as identical uniform stacks.
  */
-function strips(companies) {
-  const rows = companies.map((c) => `
-    <li class="strip-row" data-slug="${escapeHtml(c.slug)}" data-segment="${escapeHtml(c.segment ?? '')}"
-        data-types="${escapeHtml((c.sections ?? []).map((s) => s.type).join(' '))}">
-      <div class="strip-head">
-        ${companyLink(c)}
-        <span class="strip-meta">${
-          c.sections
-            ? `${c.sections.length} sections${c.words != null ? ` · ${c.words} words` : ''}`
-              + `${c.nav_links != null ? ` · nav ${c.nav_links}` : ''}`
-              + `${c.footer_links != null ? ` · footer ${c.footer_links}` : ''}`
-            : 'not readable'
-        }</span>
+function wireframe(company, anatomy, accuracy) {
+  const secs = company.sections ?? [];
+  const maxWords = secs.reduce((m, x) => Math.max(m, x.words ?? 0), 0) || 1;
+
+  // The island carries what the panel renders and nothing else.
+  //
+  // The full insight object is 13kB per section, and 8kB of that is the ranking
+  // of every type at that position with its company list -- corpus-wide data,
+  // identical for every company at the same position, repeated 1,248 times. It
+  // built a 15MB index.html that gzipped to 1.2MB, against 92kB for the page
+  // this replaces. So the corpus payload is dropped and the sentence derived
+  // from it is kept.
+  //
+  // The caveat and accuracy block ARE repeated per section, deliberately: they
+  // are byte-identical everywhere, so compression reduces them to nothing, and
+  // the alternative is a panel that can render a judged claim with no caveat
+  // attached if a lookup ever misses.
+  const island = {};
+  for (const sec of secs) {
+    const full = sectionInsight({ section: sec, company, anatomy, accuracy });
+    island[String(sec.position)] = {
+      position: full.position,
+      type: full.type,
+      typeLabel: full.typeLabel,
+      heading: full.heading,
+      words: full.words,
+      measured: (full.measured ?? []).map((m) => ({
+        label: m.label, value: m.value, unit: m.unit, comparison: m.comparison,
+      })),
+      judged: (full.judged ?? []).map((j) => ({
+        label: j.label, value: j.value, n: j.n, of: j.of, share: j.share,
+      })),
+      // Peers keep their names: the panel links to them, and a slug is not a
+      // label a reader can use. Capped by anatomy-compare's PEER_LIMIT, which
+      // reports how many it omitted rather than presenting a short list as whole.
+      peers: full.peers,
+      caveat: full.caveat,
+      // `accuracy` is a nested object repeated on every section. The caveat
+      // sentence already states the figure, api/anatomy.json publishes the
+      // block once, and dropping it here is ~600kB of parse the browser does
+      // not have to do.
+      notes: full.notes?.length ? full.notes : undefined,
+    };
+  }
+
+  const page = pageInsight({ company, anatomy, accuracy });
+  const pageLine = page.measured
+    .map((m) => m.comparison)
+    .filter(Boolean)
+    .map((t) => `<li>${escapeHtml(t)}</li>`)
+    .join('');
+
+  return `
+    <figure class="wf-figure" data-slug="${escapeHtml(company.slug)}">
+      <figcaption class="wf-cap">
+        ${companyLink(company)}
+        <span class="wf-cap-meta">${secs.length ? `${secs.length} sections` : 'no readable sequence'}</span>
+      </figcaption>
+      ${renderWireframe({ slug: company.slug, name: company.name, sections: secs, maxWords })}
+      <div class="wf-panel" role="region" aria-live="polite" tabindex="-1">
+        <p class="wf-empty">Hover, tap or focus a block to see how that section compares.</p>
       </div>
-      ${strip(c)}
-    </li>`).join('');
-  return `<ol class="strips" id="strips">${rows}</ol>`;
+      ${pageLine ? `<ul class="wf-page">${pageLine}</ul>` : ''}
+      ${jsonIsland(island, 'wf-data')}
+    </figure>`;
 }
 
 /** A position column: what sits at slot N across the corpus. */
@@ -115,7 +160,7 @@ function scaleRow(s) {
     </tr>`;
 }
 
-export function renderAnatomy(a) {
+export function renderAnatomy(a, accuracy = undefined) {
   const q = a.quality;
   const readable = a.positions.coverage;
 
@@ -230,7 +275,7 @@ export function renderAnatomy(a) {
         <label>Search <input type="search" id="f-q" placeholder="company name"></label>
         <span class="filter-count" id="f-count"></span>
       </div>
-      ${strips(a.companies)}
+      <div class="wf-gallery" id="strips">${a.companies.map((c) => wireframe(c, a, accuracy)).join('')}</div>
     </section>`;
 
   return [quality, definition, positions, elements, scales, filters].join('\n');

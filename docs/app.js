@@ -444,12 +444,14 @@ async function route() {
 }
 
 /**
- * The only interactive part of the anatomy view.
+ * Filtering the wireframe gallery.
  *
- * Every strip is already in the document; this filters them in place. No fetch,
- * no re-render, no template -- the rows exist, and the control sets `hidden` on
- * the ones that do not match. Runs once, guarded, because `route()` fires on
- * every hash change.
+ * Every figure is already in the document; this hides the ones that do not
+ * match. No fetch, no re-render, no template. Runs once, guarded, because
+ * `route()` fires on every hash change.
+ *
+ * The type list is read from the blocks themselves rather than from a data
+ * attribute on the figure, so it cannot fall out of step with what is drawn.
  */
 let anatomyFiltersReady = false;
 function initAnatomyFilters() {
@@ -458,31 +460,384 @@ function initAnatomyFilters() {
   const type = $('#f-type');
   const q = $('#f-q');
   const count = $('#f-count');
-  const rows = Array.from(document.querySelectorAll('#strips .strip-row'));
-  if (!bar || !type || !q || !rows.length) return;
+  const figures = Array.from(document.querySelectorAll('#strips .wf-figure'));
+  if (!bar || !type || !q || !figures.length) return;
   anatomyFiltersReady = true;
   bar.hidden = false;
+
+  const meta = figures.map((fig) => ({
+    fig,
+    types: new Set(Array.from(fig.querySelectorAll('.wf-sec'), (g) => g.dataset.type)),
+    name: (fig.querySelector('.wf-cap a')?.textContent || '').toLowerCase(),
+  }));
 
   const apply = () => {
     const wantType = type.value;
     const needle = q.value.trim().toLowerCase();
     let shown = 0;
-    for (const row of rows) {
-      const types = (row.dataset.types || '').split(' ');
-      const name = (row.querySelector('a')?.textContent || '').toLowerCase();
-      const ok = (!wantType || types.includes(wantType)) && (!needle || name.includes(needle));
-      row.hidden = !ok;
+    for (const m of meta) {
+      const ok = (!wantType || m.types.has(wantType)) && (!needle || m.name.includes(needle));
+      m.fig.hidden = !ok;
       if (ok) shown++;
     }
-    count.textContent = shown === rows.length
-      ? `${rows.length} companies`
-      : `${shown} of ${rows.length} companies`;
+    count.textContent = shown === figures.length
+      ? `${figures.length} companies`
+      : `${shown} of ${figures.length} companies`;
   };
 
   type.addEventListener('change', apply);
   q.addEventListener('input', apply);
   apply();
 }
+
+// -------------------------------------------------------------- wireframes
+
+/*
+  The page-anatomy wireframe.
+
+  Same contract as everything else here: the SVG, its blocks, their labels and
+  the JSON island beside them are written into index.html by bin/build-site.js
+  and are on screen before this file runs. With scripting off the wireframe is
+  still a labelled diagram of how a page is put together. What follows adds one
+  thing -- the ability to ask a block what is known about that position -- and
+  removes nothing.
+
+  Three things shape the code more than anything else.
+
+  1. The island is data, not instructions. It is parsed inside a try/catch and
+     every field is treated as optional, because a build that emits a slightly
+     different shape should cost a reader one empty panel, not the rest of the
+     page. Everything it produces goes through h() and text nodes; a company
+     name containing markup is displayed, never executed.
+  2. Measured and judged are kept apart in the markup, not just in the styling.
+     A word count is a fact off the page; a section type is this project's
+     opinion about a span of markup, and the two must not be readable as the
+     same kind of claim. Anything judged drags the caveat along with it.
+  3. Hover is an enhancement. Every action has a keyboard route and a click
+     route, and the click route never assumes a hover happened first -- on a
+     touch screen it did not.
+*/
+
+const wfMotion = typeof window.matchMedia === 'function'
+  ? window.matchMedia('(prefers-reduced-motion: reduce)')
+  : null;
+const wfReduced = () => !!(wfMotion && wfMotion.matches);
+
+// Shown when a section carries judged items but the build did not supply its
+// own caveat. Silence would be the one wrong answer: an unlabelled judgement
+// reads as a measurement.
+const WF_CAVEAT =
+  'Section types are this project’s classification of a span of markup, not a value read '
+  + 'off the page. They can be wrong, and a wrong type puts a company in the wrong list.';
+
+/** `nonHero` -> `non-hero`, so accuracy keys can be printed without a lookup table. */
+const wfHumanise = (key) => String(key)
+  .replace(/([a-z0-9])([A-Z])/g, '$1-$2')
+  .replace(/[_\s]+/g, ' ')
+  .toLowerCase();
+
+/**
+ * The accuracy block, printed beside the caveat rather than as a footnote.
+ *
+ * Keys are not enumerated here on purpose: whatever the build measures, the
+ * panel prints, so adding a second accuracy figure does not need a change here.
+ * Values at or below 1 are read as a share, above 1 as a percentage already.
+ */
+function wfAccuracy(accuracy) {
+  if (!accuracy || typeof accuracy !== 'object') return '';
+  const parts = [];
+  for (const [key, value] of Object.entries(accuracy)) {
+    // A null accuracy is "not measured", and Number(null) is 0 -- which would
+    // print as a measured 0%, the worst possible way to be wrong here.
+    if (typeof value !== 'number' && typeof value !== 'string') continue;
+    const n = Number(value);
+    if (value === '' || !Number.isFinite(n)) continue;
+    parts.push(`${wfHumanise(key)} ${Math.round(n <= 1 ? n * 100 : n)}%`);
+  }
+  return parts.length ? ` Classifier accuracy where it has been measured: ${parts.join(', ')}.` : '';
+}
+
+/** A company entry we can actually link to. Anything else is not rendered. */
+const wfLinkable = (c) => !!(c && c.slug && c.name);
+
+/** Company names as links into the detail view, matching charts.js companyLink. */
+function wfCompanies(list, omitted) {
+  const items = (Array.isArray(list) ? list : []).filter(wfLinkable);
+  const nodes = [];
+  items.forEach((c, i) => {
+    if (i) nodes.push(', ');
+    nodes.push(h('a', { href: `#/company/${c.slug}` }, c.name));
+  });
+  const more = Number(omitted);
+  if (Number.isFinite(more) && more > 0) {
+    nodes.push(items.length ? ` and ${more} more` : `${more} more, not listed`);
+  }
+  return nodes;
+}
+
+/** One insight as panel content. Every field is optional; absent means absent. */
+function wfInsight(insight) {
+  const out = [];
+  const type = insight.typeLabel || insight.type;
+  const title = [insight.position != null ? `Position ${insight.position}` : null, type || null]
+    .filter(Boolean).join(' · ');
+  out.push(h('p', { class: 'wf-panel-title' }, title || 'This section'));
+
+  // The value carries the emphasis rather than the label: the label is the same
+  // on every panel, and the number is the thing that changed.
+  const item = (x, extra) => {
+    const label = x.label == null ? '' : String(x.label);
+    return h('li', {},
+      label ? h('span', { class: 'wf-item-label' }, label) : null,
+      label ? ' ' : null,
+      h('b', { class: 'wf-item-value' }, x.value == null ? '—' : String(x.value)),
+      // The separators are text nodes rather than CSS margins so the list still
+      // reads as sentences with the stylesheet missing.
+      extra ? ' ' : null,
+      extra,
+    );
+  };
+
+  // The two lists are named in text, not only in the rule and marker beside
+  // them. A convention a reader has to infer from a dashed border is a
+  // convention that is not there at all for anyone listening to the panel.
+  const measured = (Array.isArray(insight.measured) ? insight.measured : []).filter(Boolean);
+  if (measured.length) {
+    out.push(h('p', { class: 'wf-group' }, 'Measured on the page'));
+    out.push(h('ul', { class: 'wf-measured' }, measured.map((m) => item(
+      m,
+      m.comparison ? h('span', { class: 'wf-item-note' }, String(m.comparison)) : null,
+    ))));
+  }
+
+  const judged = (Array.isArray(insight.judged) ? insight.judged : []).filter(Boolean);
+  if (judged.length) {
+    out.push(h('p', { class: 'wf-group' }, 'Judged by the classifier'));
+    out.push(h('ul', { class: 'wf-judged' }, judged.map((j) => {
+      const cos = (Array.isArray(j.companies) ? j.companies : []).filter(wfLinkable);
+      return item(j, cos.length ? h('span', { class: 'wf-item-companies' }, wfCompanies(cos)) : null);
+    })));
+  }
+
+  // Filtered before the paragraph is decided on, so a peer list of entries we
+  // cannot link to produces no paragraph rather than an empty label.
+  const peers = (Array.isArray(insight.peers) ? insight.peers : []).filter(wfLinkable);
+  const omitted = Number(insight.peersOmitted);
+  if (peers.length || (Number.isFinite(omitted) && omitted > 0)) {
+    out.push(h('p', { class: 'wf-peers' },
+      h('span', { class: 'wf-item-label' }, 'Peers'), ' ',
+      wfCompanies(peers, insight.peersOmitted)));
+  }
+
+  // The caveat follows peers as well as judged items. A peer list is the same
+  // classification restated as company names, so it inherits the same warning:
+  // whoever is in it is in it because the classifier said so.
+  if (judged.length || peers.length) {
+    out.push(h('p', { class: 'wf-caveat' }, (insight.caveat || WF_CAVEAT) + wfAccuracy(insight.accuracy)));
+  }
+  return out;
+}
+
+/**
+ * Wire one figure. Returns without touching anything if the island is missing
+ * or will not parse: a wireframe with no insights behind it is still a correct
+ * diagram, and half-attached listeners on top of it would be worse than none.
+ */
+function initWireframe(figure) {
+  if (figure.dataset.wfReady) return;
+  const panel = $('.wf-panel', figure);
+  const island = $('script.wf-data', figure);
+  const blocks = $$('.wf-sec', figure);
+  if (!panel || !island || !blocks.length) return;
+
+  let data;
+  try {
+    const parsed = JSON.parse(island.textContent || 'null');
+    if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) return;
+    data = parsed;
+  } catch {
+    return;
+  }
+  figure.dataset.wfReady = '1';
+
+  // A region needs a name to be worth announcing as one. Only filled in if the
+  // markup did not already supply it -- the build owns its own copy.
+  if (!panel.hasAttribute('aria-label') && !panel.hasAttribute('aria-labelledby')) {
+    panel.setAttribute('aria-label', 'Section detail');
+  }
+  // aria-pressed is set on every block, not only the pinned one, so a screen
+  // reader announces "not pressed" rather than plain "button" for the rest.
+  for (const b of blocks) b.setAttribute('aria-pressed', 'false');
+  figure.dataset.motion = wfReduced() ? 'reduced' : 'full';
+  if (wfMotion && typeof wfMotion.addEventListener === 'function') {
+    wfMotion.addEventListener('change', () => { figure.dataset.motion = wfReduced() ? 'reduced' : 'full'; });
+  }
+
+  let pinned = null;
+  let hovered = null;
+  let focused = null;
+
+  const insightFor = (sec) => {
+    const found = sec.dataset.section == null ? null : data[sec.dataset.section];
+    return found && typeof found === 'object' && !Array.isArray(found) ? found : null;
+  };
+
+  const render = () => {
+    // Never rebuild the panel while the reader is standing in it. The company
+    // links live here, and destroying the one under the cursor mid-reach is the
+    // single most annoying thing a live panel can do.
+    if (panel.contains(document.activeElement) && document.activeElement !== panel) return;
+
+    const target = pinned || hovered || focused;
+    if (!target) {
+      panel.dataset.state = 'empty';
+      panel.replaceChildren(h('p', { class: 'wf-empty' },
+        'Choose a section to see what is known about that position. Point at a block, or tab to '
+        + 'one and use the arrow keys; Enter keeps it open.'));
+      return;
+    }
+
+    const insight = insightFor(target);
+    const nodes = insight ? wfInsight(insight) : [
+      h('p', { class: 'wf-panel-title' },
+        `Position ${target.dataset.section || '?'}${target.dataset.type ? ` · ${target.dataset.type}` : ''}`),
+      h('p', { class: 'wf-empty' }, 'Nothing recorded for this section.'),
+    ];
+    nodes.push(h('p', { class: 'wf-hint' }, pinned
+      ? 'Pinned. Activate another block to pin that one instead, or press Escape to unpin.'
+      : 'Click, or press Enter, to keep this open.'));
+    panel.dataset.state = pinned ? 'pinned' : 'preview';
+    panel.replaceChildren(...nodes);
+  };
+
+  const setPinned = (sec) => {
+    pinned = sec || null;
+    for (const b of blocks) b.setAttribute('aria-pressed', b === pinned ? 'true' : 'false');
+    render();
+  };
+
+  const focusBlock = (i) => {
+    const next = blocks[Math.max(0, Math.min(blocks.length - 1, i))];
+    if (!next) return;
+    // The scroll is done here rather than left to the browser so that
+    // prefers-reduced-motion decides how it happens. It is the only movement
+    // this file can cause.
+    next.focus({ preventScroll: true });
+    if (typeof next.scrollIntoView === 'function') {
+      next.scrollIntoView({ block: 'nearest', inline: 'nearest', behavior: wfReduced() ? 'auto' : 'smooth' });
+    }
+  };
+
+  const blockAt = (node) => {
+    const sec = node && typeof node.closest === 'function' ? node.closest('.wf-sec') : null;
+    return sec && figure.contains(sec) ? sec : null;
+  };
+
+  // Hovering is tracked on the figure rather than on each block so that moving
+  // the pointer off a block and onto the panel -- to read it, or to follow a
+  // company link -- does not wipe the thing being read. Only leaving the figure
+  // altogether clears it.
+  figure.addEventListener('pointerover', (e) => {
+    const sec = blockAt(e.target);
+    if (sec && sec !== hovered) { hovered = sec; render(); }
+  });
+  figure.addEventListener('pointerleave', () => {
+    if (hovered) { hovered = null; render(); }
+  });
+
+  figure.addEventListener('focusin', (e) => {
+    const sec = blockAt(e.target);
+    if (sec && sec !== focused) { focused = sec; render(); }
+  });
+  figure.addEventListener('focusout', (e) => {
+    if (!figure.contains(e.relatedTarget)) { focused = null; render(); }
+  });
+
+  figure.addEventListener('click', (e) => {
+    const sec = blockAt(e.target);
+    if (!sec) return;
+    // A tap produces no hover state worth the name, so the click sets one. This
+    // is also what makes Escape able to hand focus back to something sensible:
+    // a clicked <g> is not focused by every browser on its own.
+    hovered = sec;
+    sec.focus({ preventScroll: true });
+    setPinned(pinned === sec ? null : sec);
+  });
+
+  figure.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      if (!pinned) return;
+      const was = pinned;
+      e.preventDefault();
+      // Escape is a keyboard action, so the block being handed focus back is
+      // what the panel should fall to. A pointer resting somewhere else, left
+      // over from before, does not get to out-vote it -- and the fall-back is
+      // set here rather than waiting for the focus event, so that unpinning
+      // leaves the panel on this section whether or not the focus call lands.
+      hovered = null;
+      focused = was;
+      setPinned(null);
+      was.focus({ preventScroll: true });
+      return;
+    }
+    const sec = blockAt(e.target);
+    if (!sec) return;
+    const i = blocks.indexOf(sec);
+    switch (e.key) {
+      case 'Enter':
+      case ' ':
+      case 'Spacebar':
+        // role="button" on a <g> buys the announcement and none of the
+        // behaviour, so activation is spelled out. Space would scroll the page.
+        e.preventDefault();
+        setPinned(pinned === sec ? null : sec);
+        break;
+      case 'ArrowDown':
+      case 'ArrowRight':
+        e.preventDefault();
+        focusBlock(i + 1);
+        break;
+      case 'ArrowUp':
+      case 'ArrowLeft':
+        e.preventDefault();
+        focusBlock(i - 1);
+        break;
+      case 'Home':
+        e.preventDefault();
+        focusBlock(0);
+        break;
+      case 'End':
+        e.preventDefault();
+        focusBlock(blocks.length - 1);
+        break;
+      default:
+    }
+  });
+
+  // The panel is a live region, and the first thing a screen reader does with a
+  // live region that changes just after load is read it out. If the build has
+  // already written the instruction into it, those bytes are left alone.
+  if (!panel.textContent.trim()) render();
+}
+
+/**
+ * Every wireframe in the document, each isolated from the others.
+ *
+ * The markup is in the page at load, so there is nothing to wait for and no
+ * route to hook: a figure inside a hidden view wires up exactly the same as one
+ * on screen. A figure that throws takes itself out and leaves the page standing.
+ */
+function initWireframes() {
+  for (const figure of $$('.wf-figure')) {
+    try {
+      initWireframe(figure);
+    } catch {
+      /* One malformed wireframe is not a reason for the rest of the page to stop. */
+    }
+  }
+}
+
+initWireframes();
 
 // A route is a hash that starts with a slash. Anything else is an in-page
 // anchor into a section of the landing view, and scrolling those back to the

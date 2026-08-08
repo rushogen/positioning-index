@@ -520,3 +520,304 @@ footer h2 { font-size: 1.05rem; margin-bottom: 1rem; }
 @media (max-width: 40rem) {
   .blk { min-width: 3.6rem; font-size: .66rem; }
 }
+
+/* -------------------------------------------------------- section wireframe */
+/*
+  The wireframe is a map of one page: a column of blocks in the order the
+  sections appear, each one clickable, with the reading beside it in the panel.
+
+  On colour. There are seventeen section types and no seventeen-hue palette is
+  honest -- past about eight, categorical colour stops naming things and starts
+  decorating them, and a reader has to consult a key to use it, which is a key
+  they will not consult. So the palette here is gentle by construction: every
+  fill is a pale tint of one of six families in light mode and a dim tint of the
+  same six in dark, all within a narrow lightness band, and the type name is
+  printed inside the block. The hue is a hint that two blocks are the same kind
+  of thing when you scan a column; the word is what tells you which kind. Nobody
+  has to learn that green means proof, because it says "Proof".
+
+  The narrow band is also what makes the contrast tractable. One label ink per
+  mode sits on all seventeen fills, and every pair is checked rather than
+  assumed -- the computed ratio is beside each fill below. The worst pair is
+  13.49:1 in light and 10.36:1 in dark, both far past the 4.5:1 the text needs,
+  which is the payment for keeping the tints this quiet.
+
+  State is carried by the block's edge and the weight of its label, never by
+  hue: hover thickens the edge, focus dashes it, pinned makes it heavy and the
+  label bold. That way the four states are told apart in greyscale, in forced
+  colours, and by a reader who is not looking at the colour at all.
+
+  Theming follows the file: tokens on :root, overridden under
+  prefers-color-scheme: dark. No second mechanism.
+*/
+
+:root {
+  /* Ratios are label-on-fill, computed against --wf-label (#16181d here). */
+  --wf-label: var(--ink);
+  --wf-edge: var(--ink-3);        /* 3.82:1 on --bg, 3.02:1 worst on a fill */
+  --wf-edge-hover: var(--ink-2);  /* 7.78:1 on --bg, 6.16:1 worst on a fill */
+  --wf-edge-strong: var(--ink);   /* 17.02:1 on --bg, 13.49:1 worst on fill */
+
+  --wf-hero:         #dbe1e8;  /* 13.49:1 */
+  --wf-logos:        #e3e7ec;  /* 14.30:1 */
+  --wf-proof:        #d8e6dd;  /* 13.77:1 */
+  --wf-testimonial:  #e0ead6;  /* 14.30:1 */
+  --wf-pricing:      #f0e6cf;  /* 14.31:1 */
+  --wf-faq:          #e7e0ef;  /* 13.79:1 */
+  --wf-comparison:   #f3ddd6;  /* 13.64:1 */
+  --wf-integrations: #dae5f1;  /* 13.92:1 */
+  --wf-features:     #e6e6e3;  /* 14.20:1 */
+  --wf-product:      #dbe8ea;  /* 14.16:1 */
+  --wf-resources:    #eae5da;  /* 14.14:1 */
+  --wf-awards:       #f0e4c9;  /* 14.08:1 */
+  --wf-events:       #e4e0f0;  /* 13.72:1 */
+  --wf-security:     #dae7e2;  /* 13.96:1 */
+  --wf-cta:          #f4e0c2;  /* 13.77:1 */
+  --wf-media:        #e5dff0;  /* 13.65:1 */
+  --wf-other:        #f1f0ee;  /* 15.59:1 */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Chosen for the dark surface, not flipped: a flipped pale tint goes muddy
+       and the lightness band drifts. Ratios are against --wf-label (#e9e9ec). */
+    --wf-hero:         #2e343c;  /* 10.36:1 */
+    --wf-logos:        #272c33;  /* 11.60:1 */
+    --wf-proof:        #22312a;  /* 11.25:1 */
+    --wf-testimonial:  #293227;  /* 10.97:1 */
+    --wf-pricing:      #362f21;  /* 10.93:1 */
+    --wf-faq:          #2f2a39;  /* 11.47:1 */
+    --wf-comparison:   #3a2a26;  /* 11.26:1 */
+    --wf-integrations: #232e3b;  /* 11.36:1 */
+    --wf-features:     #2b2c2e;  /* 11.54:1 */
+    --wf-product:      #243033;  /* 11.21:1 */
+    --wf-resources:    #312c24;  /* 11.43:1 */
+    --wf-awards:       #36301e;  /* 10.84:1 */
+    --wf-events:       #2c2938;  /* 11.70:1 */
+    --wf-security:     #22302c;  /* 11.35:1 */
+    --wf-cta:          #3b3121;  /* 10.52:1 */
+    --wf-media:        #2e2739;  /* 11.83:1 */
+    --wf-other:        #212327;  /* 12.99:1 */
+
+    /* --wf-edge resolves to --ink-3 #7f838c here: 4.80:1 on --bg, 3.30:1 worst
+       on a fill. --wf-edge-hover 8.68:1 / 5.98:1, --wf-edge-strong 15.05:1 /
+       10.36:1. Every edge stays at or above 3:1 wherever it is drawn. */
+  }
+}
+
+/*
+  Layout. Wireframe left, panel right once there is room for the diagram at its
+  natural 320 units and a panel wide enough to read; stacked below that. figure
+  carries a 40px default margin in every browser, which on a 375px screen is the
+  one thing that would push the page sideways -- so it goes first.
+*/
+.wf-figure {
+  margin: 1.5rem 0 2rem;
+  display: grid;
+  gap: 1.1rem;
+  align-items: start;
+}
+
+@media (min-width: 52rem) {
+  .wf-figure { grid-template-columns: minmax(0, 320px) minmax(0, 1fr); gap: 1.75rem; }
+}
+
+/*
+  The SVG has a viewBox, so it scales. It is capped at its natural width so the
+  11px labels render at 11px on any screen wide enough to hold it; narrower than
+  that they shrink with the diagram, which is why they are a locator and not the
+  text -- the panel below carries the reading, in HTML, at the reader's size.
+*/
+.wf {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  height: auto;
+}
+
+.wf-sec { cursor: pointer; }
+
+.wf-sec rect {
+  fill: var(--wf-other);
+  stroke: var(--wf-edge);
+  stroke-width: 1;
+  transition: stroke 180ms ease-out, stroke-width 180ms ease-out, fill 180ms ease-out;
+}
+
+.wf-sec text {
+  fill: var(--wf-label);
+  font-family: var(--sans);
+  font-size: 11px;
+  font-weight: 500;
+  user-select: none;
+  transition: font-weight 180ms ease-out;
+}
+
+.wf-t-hero         rect { fill: var(--wf-hero); }
+.wf-t-logos        rect { fill: var(--wf-logos); }
+.wf-t-proof        rect { fill: var(--wf-proof); }
+.wf-t-testimonial  rect { fill: var(--wf-testimonial); }
+.wf-t-pricing      rect { fill: var(--wf-pricing); }
+.wf-t-faq          rect { fill: var(--wf-faq); }
+.wf-t-comparison   rect { fill: var(--wf-comparison); }
+.wf-t-integrations rect { fill: var(--wf-integrations); }
+.wf-t-features     rect { fill: var(--wf-features); }
+.wf-t-product      rect { fill: var(--wf-product); }
+.wf-t-resources    rect { fill: var(--wf-resources); }
+.wf-t-awards       rect { fill: var(--wf-awards); }
+.wf-t-events       rect { fill: var(--wf-events); }
+.wf-t-security     rect { fill: var(--wf-security); }
+.wf-t-cta          rect { fill: var(--wf-cta); }
+.wf-t-media        rect { fill: var(--wf-media); }
+
+/* "Other" is the classifier shrugging. A dashed edge says so without a colour
+   and without a label the block does not have room for. */
+.wf-t-other rect { fill: var(--wf-other); stroke-dasharray: 3 2; }
+
+/* Hover: the edge thickens and darkens. Nothing moves, because a block that
+   grows under the pointer moves the block below it and the reader loses the
+   row they were aiming at. */
+.wf-sec:hover rect { stroke: var(--wf-edge-hover); stroke-width: 1.75; }
+.wf-sec:hover text { font-weight: 600; }
+
+/*
+  Pinned: heavy solid edge and a bold label. Distinguishable from hover by
+  weight rather than hue, and readable at a glance down a column of blocks
+  because it is the only one whose label is bold when the pointer is elsewhere.
+*/
+.wf-sec[aria-pressed="true"] rect {
+  stroke: var(--wf-edge-strong);
+  stroke-width: 2.5;
+  stroke-dasharray: none;
+}
+.wf-sec[aria-pressed="true"] text { font-weight: 700; }
+
+/*
+  Focus. outline on an SVG <g> is drawn by some browsers and quietly dropped by
+  others, so the ring that has to be there is a stroke on the rect -- dashed, so
+  it reads as focus and not as pinned, and in --wf-edge-strong, which is 13.49:1
+  at worst against the seventeen fills in light and 10.36:1 in dark. The outline
+  is kept as well, offset outside the block, where it is drawn: two rings where
+  the browser cooperates, one guaranteed ring where it does not. Never removed.
+*/
+.wf-sec:focus-visible {
+  outline: 2px solid var(--wf-edge-strong);
+  outline-offset: 2px;
+}
+.wf-sec:focus-visible rect {
+  stroke: var(--wf-edge-strong);
+  stroke-width: 2.5;
+  stroke-dasharray: 4 2.5;
+}
+
+/* A pinned block that also has focus keeps its bold label, so both states are
+   still legible at once. */
+
+/* ---------------------------------------------------------------- the panel */
+
+.wf-panel {
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: .9rem 1rem;
+  min-width: 0;
+  min-height: 9rem;
+}
+.wf-panel:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+
+/* Scoped to the panel on purpose: src/anatomy-svg.js also emits class="wf-empty"
+   on the SVG <text> of the no-sections drawing, and an unscoped font-size leaks
+   into it. Two authors, one class name, found during integration. */
+.wf-panel .wf-empty { margin: 0; color: var(--ink-2); font-size: .92rem; font-style: italic; }
+
+/*
+  Measured against judged. These are two different kinds of statement and the
+  panel is the only place a reader can tell them apart, so the difference is
+  structural rather than decorative: measured items are counted off a solid
+  rule with a filled marker and set in the body ink; judged items come off a
+  dashed rule with a hollow marker, one step back in the ink scale. The dashed
+  rule is the same device the file already uses for an absence -- the classifier
+  behind the judged list is right about half the time, and half a fact is closer
+  to a missing one than to a counted one.
+*/
+.wf-measured,
+.wf-judged {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 1.15rem;
+  max-width: 52em;
+}
+.wf-measured { margin-top: .2rem; border-left: 2px solid var(--rule); }
+.wf-judged   { margin-top: 1.1rem; border-left: 2px dashed var(--rule); }
+
+.wf-measured li,
+.wf-judged li {
+  position: relative;
+  margin-bottom: .45rem;
+  padding-left: 1rem;
+  font-size: .88rem;
+  overflow-wrap: anywhere;
+}
+.wf-measured li {
+  color: var(--ink);
+  font-variant-numeric: tabular-nums;
+}
+.wf-judged li {
+  color: var(--ink-2);
+}
+
+.wf-measured li::before,
+.wf-judged li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .48em;
+  width: .45rem;
+  height: .45rem;
+}
+.wf-measured li::before { background: var(--ink-2); border-radius: 1px; }
+.wf-judged li::before   { border: 1px dashed var(--ink-3); border-radius: 50%; }
+
+.wf-measured b { font-weight: 620; }
+.wf-judged b { font-weight: 600; color: var(--ink); }
+
+/* The warning about what the judged list is worth. Set like the coverage note
+   -- a rule and the warn ink, 5.14:1 on --panel in light and 7.60:1 in dark --
+   rather than a filled banner, because it is true of every panel on the page
+   and a banner that is always there is a banner nobody reads. */
+.wf-caveat {
+  margin: 1.1rem 0 0;
+  padding-left: .7rem;
+  border-left: 2px solid var(--warn);
+  color: var(--warn);
+  font-size: .82rem;
+  max-width: 52em;
+}
+
+@media (max-width: 34rem) {
+  .wf-panel { padding: .8rem .85rem; }
+  .wf-measured li, .wf-judged li { font-size: .86rem; }
+}
+
+/* Reduced motion: every transition added above, off. The state changes still
+   happen, they just happen at once. */
+@media (prefers-reduced-motion: reduce) {
+  .wf-sec rect,
+  .wf-sec text { transition: none; }
+}
+
+/*
+  Forced colours replaces the seventeen fills with one, which is fine, because
+  the type was never in the fill -- it is the word inside the block. What has to
+  survive is the edge, so the four states are redrawn in system colours: the
+  dash patterns and stroke widths already carry them.
+*/
+@media (forced-colors: active) {
+  .wf-sec rect { fill: Canvas; stroke: CanvasText; }
+  .wf-sec text { fill: CanvasText; }
+  .wf-sec:hover rect { stroke: Highlight; }
+  .wf-sec[aria-pressed="true"] rect { stroke: Highlight; stroke-width: 3; }
+  .wf-sec:focus-visible rect { stroke: Highlight; }
+  .wf-measured li::before { background: CanvasText; }
+  .wf-judged li::before { border-color: GrayText; }
+}
