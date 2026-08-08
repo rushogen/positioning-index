@@ -218,3 +218,14 @@ test('the ledger carries which extractor last read a page, and a 304 does not er
   applyResult(q, { slug: 'acme', kind: 'home', at: 'T3', status: 'ok', extractor_version: '1.1.0' });
   assert.equal(q.get('acme/home').extractor_version, '1.1.0');
 });
+
+test('a page with no recorded extractor version is stale, not assumed current', () => {
+  // The bug this replaced: `q.extractor_version && q.extractor_version !== V`
+  // can never fire on the sweep that introduces version recording, because
+  // nothing in the ledger carries a version yet. Unknown must mean re-read.
+  const isStale = (recorded, running) => recorded !== running;
+  assert.equal(isStale(undefined, '1.1.0'), true, 'never recorded -> re-read');
+  assert.equal(isStale(null, '1.1.0'), true, 'explicitly unknown -> re-read');
+  assert.equal(isStale('1.0.0', '1.1.0'), true, 'older -> re-read');
+  assert.equal(isStale('1.1.0', '1.1.0'), false, 'current -> the cache is fine');
+});

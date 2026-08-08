@@ -149,7 +149,15 @@ export async function crawlTarget(target, ctx, { now = Date.now(), fetchImpl = f
   // So the cache is bypassed for one sweep after a version bump. The politeness
   // cost is one full body per page, once, which is the same cost as the day the
   // page was first crawled.
-  const staleExtractor = q.extractor_version && q.extractor_version !== EXTRACTOR_VERSION;
+  //
+  // A page with NO recorded version is stale too, and that is not a detail: the
+  // first version of this check read `q.extractor_version && ...`, which meant
+  // it could never fire, because no ledger entry carried a version until the
+  // commit that introduced the check. The sweep after it re-parsed 65 of 309
+  // targets and looked like it had worked. Unknown is not "current" here for the
+  // same reason an unknown crawl origin is not "no shift": a gap in what we
+  // recorded is a reason to look again, never a reason to assume.
+  const staleExtractor = q.extractor_version !== EXTRACTOR_VERSION;
   const fetched = await fetchPage(target.url, {
     robotsStore,
     etag: staleExtractor ? null : (q.etag ?? null),
