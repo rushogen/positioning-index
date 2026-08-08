@@ -290,18 +290,79 @@ h3 { font-size: 1rem; font-weight: 600; margin: 0 0 .4rem; }
   background: var(--rule); border: 1px solid var(--rule);
   border-radius: 6px; overflow: hidden;
 }
-.kpis div { background: var(--panel); padding: .85rem 1rem; }
-.kpis dt { font-size: .74rem; text-transform: uppercase; letter-spacing: .07em; color: var(--ink-3); }
-.kpis dd { margin: .1rem 0 0; font-size: 2rem; font-weight: 600; font-variant-numeric: proportional-nums; line-height: 1.1; }
-.kpis p { margin: .15rem 0 0; font-size: .78rem; color: var(--ink-3); }
+.kpis div { background: var(--panel); padding: 1.1rem 1.15rem; }
+.kpis dt { font-size: .72rem; text-transform: uppercase; letter-spacing: .07em; color: var(--ink-3); }
+.kpis dd {
+  margin: .2rem 0 0; font-family: var(--serif); font-size: clamp(2.2rem, 1.6rem + 2.4vw, 3.1rem);
+  font-weight: 600; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; line-height: 1;
+  color: var(--accent);
+}
+.kpis p { margin: .3rem 0 0; font-size: .78rem; color: var(--ink-3); line-height: 1.35; }
 
-.finding { margin: 0 0 3rem; max-width: 58rem; }
-.finding h3 { font-size: 1.15rem; margin-bottom: .5rem; }
+/* Lets the motion layer draw a bar in by scaleX without the mark detaching from
+   its baseline. Harmless when no animation runs. */
+.bar-fill, .seg { transform-box: fill-box; transform-origin: left center; }
+
+/* --------------------------------------------------------------- findings v2
+
+   A finding leads with its number. The head is a two-column grid on a wide
+   screen -- a large figure on the left, the heading + one-line caption + caveat
+   chips on the right -- and stacks on a phone. The chart sits below the head at
+   full width. The multi-sentence takeaway and coverage prose this replaced now
+   live as one caption and a row of chips; the full method and the company tables
+   are unchanged, still collapsed under the finding. */
+.finding { margin: 0 0 4.5rem; max-width: 62rem; }
+.finding h3 { font-family: var(--serif); font-size: var(--t-h3); font-weight: 600; letter-spacing: -0.01em; margin: 0 0 .35rem; line-height: 1.15; }
 .finding h4 { font-size: .78rem; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-3); margin: 0 0 .5rem; font-weight: 600; }
-.sub-chart-head { margin-top: 1.6rem !important; text-transform: none !important; letter-spacing: 0 !important; font-size: .86rem !important; color: var(--ink-2) !important; }
+.sub-chart-head { margin-top: 1.8rem !important; text-transform: none !important; letter-spacing: 0 !important; font-size: .9rem !important; color: var(--ink-2) !important; }
 
-/* The sentence the section exists for. Set above the chart because a reader
-   who stops after one line should still leave with the finding. */
+.finding-head { display: grid; gap: .4rem 1.6rem; align-items: start; margin: 0 0 1.4rem; }
+@media (min-width: 46rem) {
+  .finding-head { grid-template-columns: minmax(8.5rem, 12rem) 1fr; gap: 0 2rem; }
+  /* A finding with no lead figure (e.g. the shape map) must not reserve the empty
+     stat column and squeeze its caption into a narrow strip. */
+  .finding-head:not(:has(.stat)) { grid-template-columns: 1fr; }
+}
+
+/* The lead number. Big, tabular, and reading against the accent so the eye lands
+   on it first. The unit under it is the denominator that keeps it honest. */
+.stat { margin: 0; display: flex; flex-direction: column; line-height: 1; }
+.stat-fig {
+  font-family: var(--serif); font-weight: 600; letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums; color: var(--accent);
+  font-size: clamp(3rem, 2rem + 5vw, 5.2rem); line-height: .92;
+}
+.stat-unit { margin-top: .5rem; font-size: .8rem; color: var(--ink-3); line-height: 1.35; max-width: 12rem; }
+
+.finding-title { min-width: 0; }
+/* The finding, in one sentence. If a reader stops here they still leave with it. */
+.finding-cap { margin: 0 0 .8rem; font-size: var(--t-lede); line-height: 1.45; color: var(--ink); max-width: 40em; font-family: var(--serif); }
+.finding-cap b { font-weight: 600; }
+
+/* Caveats as chips, not a paragraph. Colour-coded by what kind of claim the
+   figure is, with the full account still one <details> away. */
+.chips { list-style: none; display: flex; flex-wrap: wrap; gap: .4rem; margin: 0; padding: 0; }
+.chip {
+  font-size: .72rem; font-weight: 500; letter-spacing: .01em;
+  padding: .2rem .55rem; border-radius: 999px; white-space: nowrap;
+  border: 1px solid var(--rule); color: var(--ink-2); background: var(--panel);
+  font-variant-numeric: tabular-nums;
+}
+.chip::before { content: ""; display: inline-block; width: .45rem; height: .45rem; border-radius: 999px; margin-right: .4rem; vertical-align: baseline; background: currentColor; opacity: .8; }
+.chip-measured { color: var(--ok); border-color: color-mix(in srgb, var(--ok) 35%, var(--rule)); }
+.chip-judged   { color: var(--warn); border-color: color-mix(in srgb, var(--warn) 35%, var(--rule)); }
+.chip-coverage { color: var(--ink-2); }
+.chip-coverage::before { background: var(--ink-3); }
+.chip-note { color: var(--ink-3); }
+.chip-note::before { display: none; }
+
+.finding-viz { margin: 0; }
+
+/* The one-time legend that teaches the chip colours, under Chapter 02's intro. */
+.read-key { display: flex; flex-wrap: wrap; align-items: baseline; gap: .35rem .5rem; margin: 0 0 2rem; font-size: .85rem; color: var(--ink-2); max-width: 48em; line-height: 1.5; }
+.read-key .chip { margin-right: .1rem; }
+
+/* Kept for any section still emitting the old class; new findings use .finding-cap. */
 .takeaway { margin: 0 0 1.1rem; font-size: 1.05rem; line-height: 1.5; max-width: 46em; }
 .takeaway b { font-weight: 620; }
 
@@ -916,6 +977,53 @@ footer h2 { font-size: 1.05rem; margin-bottom: 1rem; }
   background: var(--panel); border: 1px solid var(--rule); border-radius: 8px;
 }
 
+/* ----------------------------------------------------------- WebGL point cloud
+
+   The 3D arrangement of the similarity graph. It is a progressive enhancement
+   layered over the flat SVG map: anatomy-globe.js only mounts here when WebGL is
+   available, and everything a reader needs -- the finding, the neighbour panel,
+   the keyboard-navigable flat map -- is present without it. The canvas is
+   aria-hidden; the same selection it drives is mirrored in the live panel beside
+   it, which is what a screen reader and the keyboard use. */
+.wf-globe-stage { display: grid; gap: 1.25rem; align-items: start; margin-top: 1.25rem; }
+@media (min-width: 58rem) {
+  .wf-globe-stage { grid-template-columns: minmax(0, 1fr) minmax(0, 20rem); gap: 1.75rem; }
+}
+.wf-globe {
+  position: relative;
+  display: block; width: 100%; aspect-ratio: 16 / 11; min-height: 20rem;
+  background:
+    radial-gradient(120% 120% at 50% 0%, color-mix(in srgb, var(--accent) 8%, var(--panel)) 0%, var(--panel) 60%);
+  border: 1px solid var(--rule); border-radius: 10px; overflow: hidden;
+  touch-action: none; cursor: grab;
+}
+.wf-globe:active { cursor: grabbing; }
+.wf-globe canvas { display: block; width: 100%; height: 100%; }
+.wf-globe:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+/* A hint that recedes once the reader has grabbed the cloud. */
+.wf-globe-hint {
+  position: absolute; left: .75rem; bottom: .7rem; margin: 0;
+  font-size: .72rem; color: var(--ink-3); background: color-mix(in srgb, var(--panel) 80%, transparent);
+  padding: .2rem .5rem; border-radius: 6px; pointer-events: none;
+  transition: opacity .4s ease-out;
+}
+.wf-globe.is-touched .wf-globe-hint { opacity: 0; }
+/* A small toggle to switch between the 3D cloud and the flat, keyboard-first map. */
+.wf-globe-toggle {
+  display: inline-flex; gap: .35rem; align-items: center; margin: .75rem 0 0;
+  font-size: .78rem; color: var(--ink-2);
+}
+.wf-globe-toggle button {
+  font: inherit; color: var(--accent); background: none; border: 1px solid var(--rule);
+  border-radius: 999px; padding: .15rem .7rem; cursor: pointer;
+}
+.wf-globe-toggle button[aria-pressed="true"] { background: var(--accent); color: var(--panel); border-color: var(--accent); }
+@media (prefers-reduced-motion: reduce) {
+  /* No auto-spin under reduced motion; the reader still drags if they want. */
+  .wf-globe { cursor: grab; }
+}
+@media (forced-colors: active) { .wf-globe { border-color: CanvasText; } }
+
 .wf-map-link { stroke: var(--ink-3); stroke-opacity: .22; stroke-width: 1; }
 
 .wf-map-node {
@@ -1035,7 +1143,7 @@ h1, h2, h3, .display, .lede, .chapter-intro, .pull { font-family: var(--serif); 
   font-weight: 600; line-height: 1; font-variant-numeric: tabular-nums; color: var(--ink);
 }
 .hero-stat span { font-size: .85rem; color: var(--ink-2); }
-.hero-provenance { margin: 1.75rem 0 0; font-size: .85rem; color: var(--ink-3); max-width: var(--measure); }
+.hero-provenance, .hero-note { margin: 1.75rem 0 0; font-size: .85rem; color: var(--ink-3); max-width: var(--measure); line-height: 1.5; }
 
 /* ---- sticky chapter nav -------------------------------------------------- */
 .chapters {

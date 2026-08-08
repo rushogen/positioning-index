@@ -43,13 +43,10 @@
     <div class="hero-stat"><b><!--STAT-SECTIONS--></b><span>homepage sections read</span></div>
     <div class="hero-stat"><b><!--STAT-READABLE--></b><span>pages the anatomy could read</span></div>
   </div>
-  <p class="hero-provenance">
-    Not a survey and not opinion. Each reading is a public, timestamped commit;
-    every figure below says what it is out of and opens to the companies behind
-    it. It measures what the market does, never what &ldquo;works&rdquo; &mdash; there is no
-    conversion data here, and none is implied.
+  <p class="hero-note">
+    Measures what the market does, never what &ldquo;works&rdquo; &mdash; no conversion data
+    here. Every figure says what it is out of and opens to the companies behind it.
   </p>
-  <p class="crawl-banner" id="crawl-banner" hidden></p>
 </header>
 
 <nav class="chapters" aria-label="Chapters">
@@ -57,7 +54,6 @@
     <a href="#chapter-words" data-spy="chapter-words">The words</a>
     <a href="#anatomy-archetype" data-spy="anatomy-archetype">The archetype</a>
     <a href="#anatomy-map-section" data-spy="anatomy-map-section">Who's alike</a>
-    <a href="#anatomy-explorer" data-spy="anatomy-explorer">Check a page</a>
     <a href="#method" data-spy="method">How it's measured</a>
     <span class="sep" aria-hidden="true"></span>
     <a href="#/changes">Changes</a>
@@ -80,14 +76,8 @@
     <p class="chapter-num">Chapter 01 &middot; The words</p>
     <h2>What every company says it is</h2>
     <p class="chapter-intro">
-      A homepage headline is the most compressed claim a company makes. Read all
-      <!--COMPANY-COUNT--> at once and the shared vocabulary shows &mdash; the nouns they
-      reach for, the proof they lean on, whether they are selling AI this year.
-    </p>
-    <p class="note">
-      One reading of every company, taken on <!--AS-OF-->. Counts are written as
-      counts, never a percentage without the number under it, and a value that
-      could not be read is reported as unread, never as a zero.
+      All <!--COMPANY-COUNT--> homepages, read the same morning: the nouns they reach
+      for, the proof they lean on, whether they are selling AI.
     </p>
 
     <noscript>
@@ -113,10 +103,13 @@
     <p class="chapter-num">Chapter 02 &middot; The structure</p>
     <h2>How the page is built, not what it says</h2>
     <p class="chapter-intro">
-      Underneath the words is a shape: a sequence of sections in an order most
-      companies broadly share. This is that shape, measured &mdash; the archetype the
-      market converged on, who sits closest to whom, and a way to hold any page
-      up against it.
+      Under the words is a shape. The archetype the market converged on, who sits
+      closest to whom, and a way to hold any page up against it.
+    </p>
+    <p class="read-key">
+      <span class="chip chip-measured">measured</span> read straight off the page.
+      <span class="chip chip-judged">judged</span> rests on a section classifier that is
+      right about half the time off the hero &mdash; every figure below it says so.
     </p>
     <!--ANATOMY-->
   </section>
@@ -125,23 +118,17 @@
     <p class="chapter-num">Chapter 03 &middot; The method</p>
     <h2>How this was measured, and what it will not claim</h2>
     <p class="chapter-intro">
-      The value of this archive is that it refuses to guess. It reads two public
-      pages per company, records what it can, and says plainly what it cannot.
+      It refuses to guess. Two public pages per company, what it can read
+      recorded, what it cannot said plainly.
     </p>
     <p>
-      There is no conversion data anywhere in it, so it can tell you what is
-      common and never what works. The companies are well-known, which is
-      survivorship, not a quality filter. Section types are read by a classifier
-      that is right about half the time off the hero, and every figure that rests
-      on it is marked. Where a page could not be read, it is counted as unread,
-      not as an absence.
-    </p>
-    <p>
-      Each crawl lands as a timestamped commit, so a number you cite today can be
-      traced to the bytes that produced it. Read the full
-      <a href="methodology.txt">methodology</a>, or the
-      <a href="corrections.txt">corrections log</a> &mdash; which already has entries,
-      on purpose.
+      No conversion data, so it reports what is common and never what works.
+      Well-known companies, which is survivorship, not quality. Section types come
+      from a classifier right about half the time off the hero; every figure that
+      rests on it is marked. Unread is counted as unread, never as absence. Each
+      crawl is a timestamped commit, so a number you cite traces to the bytes
+      behind it &mdash; the full <a href="methodology.txt">methodology</a> and the
+      <a href="corrections.txt">corrections log</a> are public.
     </p>
   </section>
 </div><!-- /essay -->
@@ -303,5 +290,16 @@
 <script src="vendor/d3-force.js"></script>
 <script src="anatomy-map.js"></script>
 <script src="archetype-mock.js"></script>
+<!--
+  The motion layer and the WebGL point cloud, both vendored and served from this
+  origin. GSAP is a classic global; the point cloud is an ES module that imports
+  Three.js by relative path (no import map, no CDN). Both are enhancement only:
+  every finding, chart and table above is already in the file, and neither script
+  is required to read any of it. See vendor/README.md.
+-->
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="motion.js"></script>
+<script type="module" src="anatomy-globe.js"></script>
 </body>
 </html>

@@ -263,6 +263,74 @@ export function detailsTable({ summary, columns, rows, open = false }) {
     `<table class="grid"><thead><tr>${head}</tr></thead>\n<tbody>\n${body}\n</tbody></table>\n</details>`;
 }
 
+/**
+ * A finding, rendered stat-first.
+ *
+ * THE SHAPE, AND WHY
+ * ------------------
+ * This is the page's unit of argument, and it is built so the number is read
+ * before the sentence and the sentence before the chart. A big figure and its
+ * denominator lead; one caption states the finding in a single line; the caveats
+ * that used to be a paragraph of coverage prose are compressed into chips a
+ * reader can size at a glance. The chart follows. The full method and the table
+ * of companies behind every mark stay exactly where they were -- collapsed in
+ * <details> -- because compressing the *display* of the honesty must not delete
+ * the honesty. Everything here still renders with no JavaScript.
+ *
+ * @param {object} a
+ * @param {string} a.id  section id / scroll anchor
+ * @param {{figure:string|number, unit?:string}} [a.stat]  the lead number and its denominator
+ * @param {string} a.heading
+ * @param {string} [a.caption]  ONE sentence; trusted HTML (built from the numbers, may carry <b>)
+ * @param {{label:string, tone?:'measured'|'judged'|'coverage'|'note'}[]} [a.chips]
+ * @param {string} [a.chart]  the visualisation, HTML
+ * @param {string} [a.extra]  anything between the chart and the method (secondary charts, etc.)
+ * @param {string} [a.method] the "how this is measured" prose, collapsed
+ * @param {string} [a.inspect] the detailsTable(s) of companies behind the marks
+ */
+export function finding({ id, stat, heading, caption, chips = [], chart = '', extra = '', method = '', inspect = '' }) {
+  return `<section class="finding" id="${escapeHtml(id)}">
+<div class="finding-head">
+${stat ? statBlock(stat) : ''}
+<div class="finding-title">
+<h3>${escapeHtml(heading)}</h3>
+${caption ? `<p class="finding-cap">${caption}</p>` : ''}
+${chips.length ? chipRow(chips) : ''}
+</div>
+</div>
+${chart ? `<div class="finding-viz">\n${chart}\n</div>` : ''}
+${extra}
+${method ? `<details class="method"><summary>How this is measured</summary><p>${method}</p></details>` : ''}
+${inspect}
+</section>`;
+}
+
+/**
+ * The lead number of a finding: a large figure and the denominator that keeps it
+ * honest. `unit` is where "of 59 headlines" goes -- the figure never appears
+ * without what it is out of, the same rule the coverage line enforced in prose.
+ */
+export function statBlock({ figure, unit = '' }) {
+  return `<p class="stat"><b class="stat-fig">${escapeHtml(String(figure))}</b>` +
+    (unit ? `<span class="stat-unit">${escapeHtml(unit)}</span>` : '') + '</p>';
+}
+
+/**
+ * Caveats as chips instead of a paragraph.
+ *
+ * `measured` is a value read straight off the page; `judged` rests on the
+ * classifier and so carries its ~49% accuracy with it; `coverage` is the
+ * denominator; `note` is anything else. The tone is a label a reader can size at
+ * a glance, and the full account is still one <details> away.
+ */
+export function chipRow(chips) {
+  const items = chips
+    .filter(Boolean)
+    .map((c) => `<li class="chip chip-${escapeHtml(c.tone || 'note')}">${escapeHtml(c.label)}</li>`)
+    .join('');
+  return `<ul class="chips">${items}</ul>`;
+}
+
 /** A link to a company's page on this site. */
 export function companyLink(entry) {
   return `<a href="#/company/${escapeHtml(entry.slug)}">${escapeHtml(entry.name)}</a>`;

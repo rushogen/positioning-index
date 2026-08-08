@@ -47,6 +47,7 @@ import { pageAnatomy } from '../src/anatomy-insights.js';
 import { accuracyBlock, sectionInsight, pageInsight } from '../src/anatomy-compare.js';
 import { scoreClassifier } from '../src/anatomy-score.js';
 import { neighbourGraph } from '../src/anatomy-similarity.js';
+import { layout3d } from '../src/anatomy-layout3d.js';
 import { renderPositioning } from '../src/landing.js';
 import { renderAnatomy } from '../src/anatomy-view.js';
 import { MAX_BLOCK_HEIGHT, MIN_BLOCK_HEIGHT, SECTION_LABEL, WIREFRAME_WIDTH } from '../src/anatomy-svg.js';
@@ -110,6 +111,9 @@ const score = scoreClassifier({ seed, series, labels });
 // Which pages are shaped alike, computed here and published, so the claim is
 // part of the record rather than something the browser invented on load.
 const similarity = neighbourGraph(anatomy.companies, { k: 6 });
+// A deterministic 3D arrangement of the same graph, published so the WebGL point
+// cloud renders a fixed, checkable layout rather than inventing one on load.
+similarity.layout3d = layout3d(anatomy.companies, similarity);
 const accuracy = accuracyBlock(score);
 
 // --------------------------------------------------------------------- write
@@ -127,7 +131,11 @@ await writeFile(join(outDir, '.nojekyll'), '', 'utf8');
 // for why downloading a file once is not the same act as making a visitor's
 // browser fetch it from somebody else's server.
 await mkdir(join(outDir, 'vendor', 'fonts'), { recursive: true });
-for (const name of ['d3-dispatch.js', 'd3-quadtree.js', 'd3-timer.js', 'd3-force.js']) {
+for (const name of [
+  'd3-dispatch.js', 'd3-quadtree.js', 'd3-timer.js', 'd3-force.js',
+  // WebGL point cloud + the motion layer, both vendored and served from here.
+  'three.module.min.js', 'gsap.min.js', 'ScrollTrigger.min.js',
+]) {
   await copyFile(join(ROOT, 'public', 'vendor', name), join(outDir, 'vendor', name));
 }
 // Self-hosted fonts. The @font-face file references fonts/*.woff2 relative to
@@ -136,7 +144,10 @@ for (const name of ['fonts.css', 'newsreader.woff2', 'newsreader-italic.woff2', 
   await copyFile(join(ROOT, 'public', 'vendor', 'fonts', name), join(outDir, 'vendor', 'fonts', name));
 }
 
-for (const name of ['style.css', 'app.js', 'anatomy-app.js', 'anatomy-map.js', 'archetype-mock.js']) {
+for (const name of [
+  'style.css', 'app.js', 'anatomy-app.js', 'anatomy-map.js', 'archetype-mock.js',
+  'anatomy-globe.js', 'motion.js',
+]) {
   await copyFile(join(ROOT, 'public', name), join(outDir, name));
 }
 

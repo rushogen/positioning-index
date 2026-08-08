@@ -21,7 +21,7 @@
  * counts here are far too small to carry a word like "dominant".
  */
 
-import { barChart, companyLink, coverageNote, detailsTable, escapeHtml, shareBars, stackChart } from './charts.js';
+import { barChart, companyLink, detailsTable, escapeHtml, finding, shareBars, stackChart } from './charts.js';
 
 /** The whole landing view, as HTML. */
 export function renderPositioning(insights) {
@@ -77,22 +77,30 @@ function headlineSection(words) {
   const [first, second] = words.words;
   const platform = words.words.find((w) => w.word === 'platform');
 
-  const takeaway = first
-    ? `The word most B2B SaaS homepages reach for right now is <b>&ldquo;${escapeHtml(first.word)}&rdquo;</b>, ` +
+  // One sentence: the top word, its runner-up, and where the old default sits.
+  const caption = first
+    ? `The word most B2B SaaS homepages reach for is <b>&ldquo;${escapeHtml(first.word)}&rdquo;</b>, ` +
       `in ${first.n} of ${words.coverage.readable} hero headlines` +
       (second ? `, just ahead of &ldquo;${escapeHtml(second.word)}&rdquo; at ${second.n}` : '') +
       (platform && platform !== first ? `, with the old default &ldquo;platform&rdquo; on ${platform.n}` : '') +
-      '. Two companies separate the top three, so this is a photograph of one morning, not a trend.'
+      '.'
     : 'No hero headline is currently readable.';
 
-  return section({
+  return finding({
     id: 'p-headlines',
+    // The lead number: how many headlines open with the single commonest word.
+    stat: first
+      ? { figure: first.n, unit: `of ${words.coverage.readable} headlines lead with "${first.word}"` }
+      : undefined,
     heading: 'What the headlines say',
-    takeaway,
+    caption,
+    chips: [
+      { label: `${words.coverage.readable} of ${words.coverage.tracked} read`, tone: 'coverage' },
+      { label: 'counted once per company', tone: 'measured' },
+    ],
     chart: barChart({
       rows: words.words.map((w) => ({ label: w.word, n: w.n, note: `${w.n} of ${words.coverage.readable} headlines` })),
     }),
-    coverage: coverageNote(words.coverage, { unit: 'companies', reason: 'no hero headline extracted' }),
     method:
       'Counted once per company, not once per occurrence, so a headline that repeats a word still votes once. ' +
       'Words are lowercased and split on punctuation, nothing is stemmed &mdash; &ldquo;agent&rdquo; and &ldquo;agents&rdquo; are ' +
@@ -120,14 +128,15 @@ function headlineSection(words) {
 function categorySection(nouns) {
   const [first, second] = nouns.groups;
 
-  const takeaway = first
+  // One sentence: the commonest self-description and how far it leads the next.
+  const caption = first
     ? `Asked what they <i>are</i>, <b>${first.n} of ${nouns.coverage.readable}</b> companies still say ` +
       `<b>${escapeHtml(first.noun)}</b>` +
       (second
         ? `, nearly ${Math.floor(first.n / second.n)} times the next answer, &ldquo;${escapeHtml(second.noun)}&rdquo;, at ${second.n}` +
           (second.n < 10 ? ', and nothing else reaches double figures' : '')
         : '') +
-      '. Whatever the headlines are doing, the noun has not moved with them.'
+      '.'
     : 'No category label is currently readable.';
 
   const rows = nouns.groups.map((g) => ({
@@ -145,12 +154,20 @@ function categorySection(nouns) {
     });
   }
 
-  return section({
+  return finding({
     id: 'p-categories',
+    // The lead number: how many still reach for the commonest noun.
+    stat: first
+      ? { figure: first.n, unit: `of ${nouns.coverage.readable} category labels` }
+      : undefined,
     heading: 'What they call themselves',
-    takeaway,
+    caption,
+    chips: [
+      { label: `${nouns.coverage.readable} of ${nouns.coverage.tracked} read`, tone: 'coverage' },
+      // This signal is a scored guess over a fixed vocabulary; the method says so at length.
+      { label: 'lowest-confidence signal', tone: 'judged' },
+    ],
     chart: barChart({ rows }),
-    coverage: coverageNote(nouns.coverage, { unit: 'companies', reason: 'no category label extracted' }),
     method:
       'The category label is the noun phrase a company uses for itself &mdash; &ldquo;the AI workspace&rdquo;, ' +
       '&ldquo;CRM for agentic revenue&rdquo;. Each label is grouped by the first noun in it that appears in a ' +
@@ -192,9 +209,10 @@ function aiSection(ai) {
   const quiet = ai.quiet.length;
   const quietNames = ai.quiet.slice(0, 3).map((c) => c.name);
 
-  const takeaway =
+  // One sentence: the count, then the more valuable list -- who is not selling AI.
+  const caption =
     `<b>${mentions} of ${ai.coverage.readable}</b> companies put AI, agent, copilot or autonomous language ` +
-    `into the first three things a visitor reads. The ${quiet} that do not are the interesting list` +
+    `into the first three things a visitor reads &mdash; the ${quiet} that do not are the interesting list` +
     (quietNames.length ? `, and it includes ${escapeHtml(quietNames.join(', '))}` : '') +
     '.';
 
@@ -227,20 +245,23 @@ function aiSection(ai) {
     })),
   });
 
-  return section({
+  return finding({
     id: 'p-ai',
+    // The lead number: how many readable homepages sell AI up front.
+    stat: { figure: mentions, unit: `of ${ai.coverage.readable} readable homepages sell AI` },
     heading: 'How many are selling AI',
-    takeaway,
-    chart:
-      `${stack}\n` +
+    caption,
+    chips: [
+      { label: `${ai.coverage.readable} of ${ai.coverage.tracked} read`, tone: 'coverage' },
+      { label: 'four term families, whole-word match', tone: 'measured' },
+    ],
+    // The split is the primary chart; the two breakdowns follow it.
+    chart: stack,
+    extra:
       `<div class="chart-pair">\n` +
       `<div><h4>Which word</h4>${byTerm}</div>\n` +
       `<div><h4>Where it appears</h4>${byField}</div>\n` +
       `</div>`,
-    coverage: coverageNote(ai.coverage, {
-      unit: 'companies',
-      reason: 'none of the headline, subhead or category label could be read',
-    }),
     method:
       'A company counts if any of its hero headline, hero subhead or category label contains one of four ' +
       'term families, matched as whole words: <b>ai</b> (so &ldquo;AI-powered&rdquo; counts and &ldquo;said&rdquo; does not), ' +
@@ -268,18 +289,27 @@ function proofSection(proof) {
   const [first, second] = proof.kinds;
   const time = proof.kinds.find((k) => k.key === 'time');
 
-  const takeaway = first
-    ? `When these companies prove something, they count things. ${first.n} of ${proof.coverage.readable} ` +
+  // One sentence: the commonest kind of proof, the runner-up, and the scarce one.
+  const caption = first
+    ? `When these companies prove something, they count things: ${first.n} of ${proof.coverage.readable} ` +
       `use a <b>${escapeHtml(first.label.toLowerCase())}</b> claim` +
       (second ? ` and ${second.n} use a ${escapeHtml(second.label.toLowerCase())} claim` : '') +
-      (time ? `. Only ${time.n} promise a time to result, which is the claim buyers actually ask about` : '') +
+      (time ? `, and only ${time.n} promise a time to result, the claim buyers actually ask about` : '') +
       '.'
     : 'No proof points are currently readable.';
 
-  return section({
+  return finding({
     id: 'p-proof',
+    // The lead number: how many lean on the commonest kind of proof.
+    stat: first
+      ? { figure: first.n, unit: `of ${proof.coverage.readable} use a ${first.label.toLowerCase()} claim` }
+      : undefined,
     heading: 'What they use as proof',
-    takeaway,
+    caption,
+    chips: [
+      { label: `${proof.coverage.readable} of ${proof.coverage.tracked} read`, tone: 'coverage' },
+      { label: 'counts companies, not claims', tone: 'measured' },
+    ],
     chart: barChart({
       rows: proof.kinds.map((k) => ({
         label: k.label,
@@ -287,7 +317,6 @@ function proofSection(proof) {
         note: `${k.n} companies, ${k.claims} claims`,
       })),
     }),
-    coverage: coverageNote(proof.coverage, { unit: 'companies', reason: 'no quantified claim extracted' }),
     method:
       `Bars count <b>companies</b>, not claims: a homepage with eleven percentage claims has one opinion ` +
       `about how to prove things, and counting claims would let one verbose page outvote ten others. ` +
@@ -316,18 +345,28 @@ function proofSection(proof) {
 function logoSection(logos) {
   const [first, second] = logos.logos;
 
-  const takeaway = first
+  // One sentence: the most-named customer, and the finding that none dominates.
+  const caption = first
     ? `The customer named on the most homepages is <b>${escapeHtml(first.logo)}</b>, on ${first.n} of ` +
       `${logos.coverage.readable} readable logo walls` +
       (second ? `, then ${escapeHtml(second.logo)} on ${second.n}` : '') +
-      `. With ${logos.distinct_logos} distinct names across ${logos.coverage.readable} walls and none above ` +
+      `; with ${logos.distinct_logos} distinct names across ${logos.coverage.readable} walls and none above ` +
       `${first.n}, there is no logo the whole category leans on.`
     : 'No customer logos are currently readable.';
 
-  return section({
+  return finding({
     id: 'p-logos',
+    // The lead number: the most any single logo appears -- the point is how low it is.
+    stat: first
+      ? { figure: first.n, unit: `the most any one logo appears, across ${logos.coverage.readable} walls` }
+      : undefined,
     heading: 'Whose logo is everyone using',
-    takeaway,
+    caption,
+    chips: [
+      { label: `${logos.coverage.readable} of ${logos.coverage.tracked} read`, tone: 'coverage' },
+      // The shallowest measurement on the page: these counts are a floor.
+      { label: 'a floor, not a count', tone: 'note' },
+    ],
     chart: barChart({
       rows: logos.logos.map((l) => ({
         label: l.logo,
@@ -335,7 +374,6 @@ function logoSection(logos) {
         note: `cited by ${l.n} of ${logos.coverage.readable} companies`,
       })),
     }),
-    coverage: coverageNote(logos.coverage, { unit: 'companies', reason: 'no logo wall this extractor could read' }),
     method:
       'This is the shallowest measurement on the page and the numbers below are a floor, not a count. ' +
       'Logo names are read from image <code>alt</code> text, image filenames and inline SVG titles, so a wall ' +
@@ -361,11 +399,10 @@ function pricingSection(pricing) {
   const entry = pricing.entry_price;
   const readable = free.coverage.readable;
 
-  const takeaway =
+  // One sentence: of the pages we can read, how many publish a free tier.
+  const caption =
     `Of the ${readable} pricing pages this crawler can read, <b>${free.yes.length} publish a free tier</b> and ` +
-    `${free.no.length} do not. That says almost nothing about the other ${free.coverage.unreadable} companies: ` +
-    'their pricing is behind a "contact sales" button or rendered by JavaScript we do not run, and a page we ' +
-    'cannot read is not a company without a free plan.';
+    `${free.no.length} do not.`;
 
   const freeStack = stackChart({
     segments: [
@@ -390,18 +427,22 @@ function pricingSection(pricing) {
     })),
   });
 
-  return section({
+  return finding({
     id: 'p-pricing',
+    // The lead number: how many readable pricing pages publish a free tier.
+    stat: { figure: free.yes.length, unit: `of ${readable} readable pricing pages publish a free tier` },
     heading: 'What the pricing pages show',
-    takeaway,
-    chart:
-      `${freeStack}\n` +
+    caption,
+    chips: [
+      { label: `${free.coverage.readable} of ${free.coverage.tracked} read`, tone: 'coverage' },
+      // A page we cannot read is not a company without a free plan.
+      { label: 'unreadable is not "no free tier"', tone: 'note' },
+    ],
+    // The free-tier split leads; the entry-price buckets follow it.
+    chart: freeStack,
+    extra:
       `<h4 class="sub-chart-head">Cheapest published paid price, where we could read one ` +
       `(${entry.coverage.readable} companies)</h4>\n${buckets}`,
-    coverage: coverageNote(free.coverage, {
-      unit: 'companies',
-      reason: 'pricing page blocked, behind "contact sales", or rendered client-side',
-    }),
     method:
       `Two different denominators, kept apart because they are two different measurements: ${readable} pricing ` +
       `pages yield a readable tier list, and only ${entry.coverage.readable} of those also yield a number. ` +
@@ -459,32 +500,41 @@ function segmentSection(seg) {
   const lead = drawn.find((c) => c.key === 'ai') ?? drawn[0] ?? null;
   const rest = drawn.filter((c) => c !== lead);
 
-  const takeaway = lead
+  // One sentence: the grouping, and the widest surviving gap (or that none survives).
+  const caption = lead
     ? `Folded into <b>${seg.groups.length} groups</b> of ${sizes[0]} to ${sizes[sizes.length - 1]} companies, ` +
       `the segments do part company on ${lead.subject}: ` +
       `<b>${lead.top.yes} of ${lead.top.readable}</b> readable companies in ${escapeHtml(lead.top.label)}, ` +
-      `against <b>${lead.bottom.yes} of ${lead.bottom.readable}</b> in ${escapeHtml(lead.bottom.label)}. ` +
-      `That is a gap ${wide(lead.spread)}. ` +
-      `${drawn.length} of the ${seg.cuts.length} cuts computed here survive the two rules below; the ` +
-      `${withheld.length} that do not are listed with the reason rather than drawn faintly.`
+      `against <b>${lead.bottom.yes} of ${lead.bottom.readable}</b> in ${escapeHtml(lead.bottom.label)}, a gap ${wide(lead.spread)}.`
     : `None of the ${seg.cuts.length} cuts computed here survives the minimum cell size and the fragility ` +
-      'rule, so this section has no chart in it. The reasons are below.';
+      'rule, so this section has no chart in it.';
 
-  const chart = [
-    lead ? cutBlock(lead) : '',
+  // The lead cut is the primary chart; the rest, the withheld list, and this
+  // section's own coverage line (which has no counterpart in the shared method)
+  // follow it. The chips carry the summary; this keeps the full denominators and
+  // the ungrouped-company note on the page rather than dropping them.
+  const extra = [
     rest.length
       ? '<h4 class="sub-chart-head">The other cuts that survived the rules</h4>\n' +
         `<div class="cut-grid">\n${rest.map((c) => cutBlock(c)).join('\n')}\n</div>`
       : '',
     withheldBlock(withheld, seg),
+    segmentCoverage(seg),
   ].filter(Boolean).join('\n');
 
-  return section({
+  return finding({
     id: 'p-segments',
+    // The lead number: how many computed cuts survive the two rules. Holds at 0 too.
+    stat: { figure: drawn.length, unit: `of ${seg.cuts.length} cuts survive the two rules` },
     heading: 'Whether the segment changes the story',
-    takeaway,
-    chart,
-    coverage: segmentCoverage(seg),
+    caption,
+    chips: [
+      { label: `${seg.coverage.readable} of ${seg.coverage.tracked} grouped`, tone: 'coverage' },
+      // Cells of six to sixteen, held to a minimum size and a fragility margin.
+      { label: 'small cells, fragility-tested', tone: 'note' },
+    ],
+    chart: lead ? cutBlock(lead) : '',
+    extra,
     method:
       `seed/companies.json labels every company with one of fourteen segments, and seven of those hold ` +
       `three companies or fewer &mdash; one holds a single company. A bar over one company invites a ` +
@@ -682,15 +732,3 @@ function wideCount(n) {
   return `<b>${n} ${n === 1 ? 'company' : 'companies'}</b>`;
 }
 
-// ------------------------------------------------------------------ helpers
-
-function section({ id, heading, takeaway, chart, coverage, method, inspect }) {
-  return `<section class="finding" id="${escapeHtml(id)}">
-<h3>${escapeHtml(heading)}</h3>
-<p class="takeaway">${takeaway}</p>
-${chart}
-${coverage}
-<details class="method"><summary>How this is measured</summary><p>${method}</p></details>
-${inspect}
-</section>`;
-}

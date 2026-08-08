@@ -14,14 +14,23 @@
  * --------------------------------------
  * Every other view in this project reports values read off a page. This one
  * reports a classification of a span of markup, which is an opinion. The
- * classifier's `other` rate leads the view rather than sitting in a footnote,
- * because a reader who does not know how much of this is guesswork cannot
- * calibrate anything below it.
+ * classifier is right about half the time off the hero, so nearly every finding
+ * here carries a `judged` chip stating that rate, and the `other` rate leads the
+ * quality block rather than sitting in a footnote -- a reader who does not know
+ * how much of this is guesswork cannot calibrate anything below it.
+ *
+ * STAT-LED
+ * --------
+ * Each block is a finding(): the number is read before the sentence and the
+ * sentence before the chart. The multi-paragraph prose that used to introduce
+ * each chart is compressed to one caption plus chips; the method and the tables
+ * of companies behind every mark are unchanged, collapsed in <details>, because
+ * compressing the DISPLAY of the honesty must not delete the honesty.
  */
 
-import { barChart, companyLink, coverageNote, detailsTable, escapeHtml, shareBars } from './charts.js';
-import { renderWireframe, sectionLabel } from './anatomy-svg.js';
-import { pageInsight, sectionInsight } from './anatomy-compare.js';
+import { companyLink, detailsTable, escapeHtml, finding } from './charts.js';
+import { sectionLabel } from './anatomy-svg.js';
+import { accuracyBlock } from './anatomy-compare.js';
 import { archetype } from './anatomy-archetype.js';
 import { renderArchetypeMock } from './archetype-mock.js';
 
@@ -31,185 +40,104 @@ import { renderArchetypeMock } from './archetype-mock.js';
 // This file previously carried its own copy covering only 12 of the 17 types.
 const label = sectionLabel;
 
-
-
-/** A position column: what sits at slot N across the corpus. */
-function positionBlock(p) {
-  return `
-    <section class="pos">
-      <h3>Position ${p.position}</h3>
-      ${barChart({
-        rows: p.types.map((t) => ({ label: label(t.type), n: t.n, note: `${t.share}% of ${p.n}` })),
-        unit: 'companies',
-      })}
-      <p class="note">Counted over ${p.n} companies whose sequence reaches this position.</p>
-      ${detailsTable({
-        summary: 'Which companies',
-        columns: [
-          { label: 'Section', get: (t) => escapeHtml(label(t.type)) },
-          { label: 'Companies', get: (t) => t.companies.map(companyLink).join(', ') },
-        ],
-        rows: p.types,
-      })}
-    </section>`;
-}
-
-function scaleRow(s) {
-  if (!s.n) return '';
-  return `
-    <tr>
-      <th scope="row">${escapeHtml(s.label)}</th>
-      <td>${s.min}</td><td>${s.p25}</td><td><b>${s.median}</b></td><td>${s.p75}</td><td>${s.max}</td>
-      <td>${s.coverage.readable} of ${s.coverage.tracked}</td>
-    </tr>`;
+/**
+ * The chip that rides every stat resting on the section classifier.
+ *
+ * The chapter's honesty anchor. Almost everything here is a classification of a
+ * span of markup, not a value read off the page, and the classifier agrees with
+ * the human label only about half the time off the hero. The rate is derived
+ * from the measured accuracy passed into the view -- never typed -- so the chip
+ * cannot claim 49% on a morning the classifier scores 34%. With no score to hand
+ * it falls back to the approximate wording the rest of the copy uses.
+ */
+function judgedChip(accuracy) {
+  const nonHero = accuracy ? accuracyBlock(accuracy).nonHero : null;
+  const text = nonHero
+    ? `classifier ${Math.round(nonHero * 100)}% off-hero`
+    : 'classifier ~49% off-hero';
+  return { label: text, tone: 'judged' };
 }
 
 /**
  * The archetype: the market's homepage as one composite diagram.
  *
  * A finding, so it is written here at build time and readable with no script.
- * Each band is a section type at its typical position; its fill is how many
- * pages carry it, and the count that do NOT is stated next to the count that
- * do, because the absence is the more interesting half. The real headings sit
- * behind a <details>, which is the whole of the interaction and needs no JS.
+ * The lead number is the count of pages composited into it; the caption says in
+ * one line that it is a composite and that each band's absence is stated beside
+ * its presence. The mock IS the chart. Each band is a section type at its typical
+ * position, its fill how many pages carry it, and the real headings sit behind a
+ * <details> inside the mock, which is the whole of the interaction and needs no
+ * JS.
  */
-function renderArchetype(a) {
+function renderArchetype(a, accuracy) {
   const arch = archetype(a);
-  const pct = (x) => Math.round(x * 100);
 
-  return `
-    <section id="anatomy-archetype">
-      <h2>The archetype homepage</h2>
-      <p>
-        Every section type in the corpus, placed at the position it typically appears and
-        sized by how many of the ${arch.readable_pages} readable pages carry it. It reads like
-        one page and is not one: no company publishes this, and the share that leaves each
-        band out is on the band, because the page that skips a common section is usually the
-        one worth looking at.
-      </p>
-      ${renderArchetypeMock(a)}
-    </section>`;
+  return finding({
+    id: 'anatomy-archetype',
+    stat: { figure: arch.readable_pages, unit: 'readable homepages, composited into one' },
+    heading: 'The archetype homepage',
+    caption:
+      'A composite no company publishes: every section type placed where it typically appears and '
+      + 'sized by how many of these pages carry it, with the share that leaves each band out stated '
+      + 'beside the share that keeps it.',
+    chips: [judgedChip(accuracy)],
+    chart: renderArchetypeMock(a),
+  });
 }
 
 export function renderAnatomy(a, accuracy = undefined) {
   const q = a.quality;
   const readable = a.positions.coverage;
+  const chip = judgedChip(accuracy);
 
-  const quality = `
-    <section class="callout" id="anatomy-quality">
-      <h3>How much of this is a judgement</h3>
-      <p>
-        Across ${readable.readable} readable pages the classifier named
-        <b>${q.named} of ${q.sections}</b> sections and left
-        <b>${q.other}</b> as <i>unclassified</i>${q.other_share === null ? '' : ` — ${q.other_share}%`}.
-      </p>
-      <p class="note">${escapeHtml(q.note)}</p>
-      ${q.companies_with_other.length ? detailsTable({
-        summary: `The ${q.companies_with_other.length} pages with the most unclassified sections`,
-        columns: [
-          { label: 'Company', get: (r) => companyLink(r) },
-          { label: 'Unclassified', get: (r) => String(r.other) },
-          { label: 'Sections', get: (r) => String(r.of) },
-        ],
-        rows: q.companies_with_other,
-      }) : ''}
-    </section>`;
+  // The honesty section. It leads with the share of sections the classifier could
+  // not name -- the one figure that says how far to trust everything below it --
+  // and keeps the note as method and the worst-offender pages as the inspect
+  // table. Guarded because `other_share` is null when nothing was readable.
+  const quality = finding({
+    id: 'anatomy-quality',
+    stat: q.other_share === null ? undefined : { figure: `${q.other_share}%`, unit: 'of sections the classifier could not name' },
+    heading: 'How much of this is a judgement',
+    caption:
+      `Across <b>${readable.readable}</b> readable pages the classifier named `
+      + `<b>${q.named} of ${q.sections}</b> sections and left <b>${q.other}</b> unclassified.`,
+    chips: [chip],
+    method: escapeHtml(q.note),
+    inspect: q.companies_with_other.length ? detailsTable({
+      summary: `The ${q.companies_with_other.length} pages with the most unclassified sections`,
+      columns: [
+        { label: 'Company', get: (r) => companyLink(r) },
+        { label: 'Unclassified', get: (r) => String(r.other) },
+        { label: 'Sections', get: (r) => String(r.of) },
+      ],
+      rows: q.companies_with_other,
+    }) : '',
+  });
 
-  const definition = `
-    <section class="callout">
-      <h3>What counts as a section</h3>
-      <p>
-        The span of markup from one <code>&lt;h2&gt;</code> to the next. The hero is everything
-        before the first one. That is the whole definition, and it is the definition because it
-        needs only the document: a rule about visually distinct bands would need a browser, and a
-        rule about class names would break every time somebody refactors their CSS.
-      </p>
-      <p class="note">
-        It is wrong in two known ways. A page whose bands are headed by <code>&lt;h3&gt;</code> or by
-        styled <code>&lt;div&gt;</code>s has no readable sequence at all, and is reported as
-        unreadable rather than as a single enormous hero — ${readable.unreadable} of
-        ${readable.tracked} pages are in that state. A page that heads every feature with its own
-        <code>&lt;h2&gt;</code> over-counts, so a run of identical adjacent types is collapsed to one.
-      </p>
-    </section>`;
-
-  const elements = `
-    <section>
-      <h2>What a page carries</h2>
-      <p>Whether each kind of section appears at all, in any position.</p>
-      ${shareBars({
-        rows: a.elements.elements.map((e) => ({
-          label: label(e.type),
-          part: e.n,
-          whole: e.of,
-          of: e.of,
-        })),
-        unit: 'companies',
-      })}
-      ${detailsTable({
-        summary: 'Which companies carry each',
-        columns: [
-          { label: 'Section', get: (e) => escapeHtml(label(e.type)) },
-          { label: 'Companies', get: (e) => e.companies.map(companyLink).join(', ') },
-        ],
-        rows: a.elements.elements,
-      })}
-      ${coverageNote(a.elements.coverage, { unit: 'companies', reason: 'pages with no readable section sequence' })}
-    </section>`;
-
-  const positions = `
-    <section>
-      <h2>What sits where</h2>
-      <p>
-        The order a page puts things in. Position one is the hero on essentially every page;
-        the interesting question is what a market does with position two.
-      </p>
-      <div class="pos-grid">${a.positions.positions.map(positionBlock).join('')}</div>
-    </section>`;
-
-  const scales = `
-    <section>
-      <h2>How big a page is</h2>
-      <table class="scales">
-        <thead><tr>
-          <th scope="col">Measure</th><th scope="col">min</th><th scope="col">p25</th>
-          <th scope="col">median</th><th scope="col">p75</th><th scope="col">max</th>
-          <th scope="col">readable</th>
-        </tr></thead>
-        <tbody>${a.scales.scales.map(scaleRow).join('')}</tbody>
-      </table>
-      ${detailsTable({
-        summary: 'The extremes, in both directions',
-        columns: [
-          { label: 'Measure', get: (x) => escapeHtml(x.label) },
-          { label: 'Fewest', get: (x) => x.extremes.lowest.map((e) => `${companyLink(e)} ${e.value}`).join(', ') },
-          { label: 'Most', get: (x) => x.extremes.highest.map((e) => `${companyLink(e)} ${e.value}`).join(', ') },
-        ],
-        rows: a.scales.scales.filter((x) => x.n),
-      })}
-    </section>`;
-
-  // The explorer is a client-side app, and the split is deliberate.
-  //
-  // Everything above this point is a FINDING -- a distribution computed from the
-  // corpus -- and findings are written into the document at build time, because
-  // a page that says nothing until a JSON file arrives is a page that says
-  // nothing. Below it is a TOOL for looking at one company at a time, which is
-  // a different kind of thing: it needs to re-render on every selection, and
-  // inlining all 200 of them cost 3.5MB of markup to show one at a time.
-  //
-  // The no-script fallback is not an apology. It names the API file, which is
-  // the same data the app reads, so a reader without JavaScript is one fetch
-  // away from everything the tool would have shown them.
-  const map = `
-    <section id="anatomy-map-section">
-      <h2>Which pages are shaped alike</h2>
-      <p>
-        Every readable page as a dot, pulled towards the six pages whose section
-        sequence is closest to its own. Similarity is normalised edit distance over
-        the ordered list of section types, computed when the site is built and
-        published in the API, so the arrangement can be checked rather than taken.
-      </p>
+  // "Which pages are shaped alike" is now shown twice from one set of distances:
+  // a WebGL point cloud (mounted at #wf-globe, driven by anatomy-globe.js) above,
+  // and the existing flat, keyboard-navigable map (#wf-map, owned by
+  // anatomy-map.js) below. The globe script hides .wf-globe-stage when WebGL is
+  // unavailable, so the flat map is the fallback and must stay exactly as it was.
+  // No single distance number is available in this function, so there is no stat;
+  // the finding leads with heading, caption and the judged chip.
+  const map = finding({
+    id: 'anatomy-map-section',
+    heading: 'Which pages are shaped alike',
+    caption:
+      'Every readable page as a point, pulled towards the six pages whose section sequence is closest '
+      + 'to its own — shown here in 3D and, below, as a flat keyboard-navigable map, both drawn from the '
+      + 'same distances published in the API.',
+    chips: [chip],
+    chart: `
+      <div class="wf-globe-stage">
+        <div id="wf-globe" class="wf-globe" data-src="api/anatomy.json" tabindex="0" role="img"
+             aria-label="A three-dimensional point cloud of the readable pages, arranged so structurally similar pages sit near each other. Drag to rotate; hover or focus a company for its closest shapes. The same graph is in the flat, keyboard-navigable map below.">
+          <p class="wf-globe-hint" aria-hidden="true">Drag to rotate &middot; hover a company</p>
+        </div>
+        <div id="wf-globe-panel" class="wf-panel" role="region" aria-live="polite"></div>
+      </div>
+      <h4 class="sub-chart-head">The same graph, flat and keyboard-first</h4>
       <div class="wf-map-wrap">
         <div id="wf-map" data-src="api/anatomy.json">
           <noscript>
@@ -222,32 +150,21 @@ export function renderAnatomy(a, accuracy = undefined) {
           </noscript>
         </div>
         <div id="wf-map-panel" class="wf-panel" role="region" aria-live="polite"></div>
-      </div>
+      </div>`,
+    extra: `
       <p class="note">
         Position is a readable arrangement of a graph, not a projection with axes.
         Read the clusters, not the pixels; the distances are in the panel, and most
         of them are high.
-      </p>
-    </section>`;
+      </p>`,
+    method:
+      'Similarity is normalised edit distance over the ordered list of section types, computed when the '
+      + 'site is built and published in the API, so the arrangement can be checked rather than taken.',
+  });
 
-  const explorer = `
-    <section id="anatomy-explorer">
-      <h2>Look at one page</h2>
-      <p>
-        Each block is a section, its height showing how much of the page it takes up.
-        Pick a company, then hover, tap or focus a block to see what that section is
-        and how it compares to the other ${readable.readable} readable pages.
-      </p>
-      <div id="wf-app" data-src="api/anatomy.json">
-        <noscript>
-          <p class="wf-noscript">
-            The explorer needs JavaScript. The findings above do not, and neither does
-            the data behind it: every company's section sequence is in
-            <a href="api/anatomy.json"><code>api/anatomy.json</code></a>.
-          </p>
-        </noscript>
-      </div>
-    </section>`;
-
-  return [renderArchetype(a), quality, definition, map, explorer, positions, elements, scales].join('\n');
+  // Stripped to the spine: the archetype, the honesty block, and the shape map
+  // (3D + flat). The secondary structure findings (what counts as a section, what
+  // a page carries, what sits where, how big a page is) and the per-page explorer
+  // were cut in the declutter; they remain in git history and api/anatomy.json.
+  return [renderArchetype(a, accuracy), quality, map].join('\n');
 }

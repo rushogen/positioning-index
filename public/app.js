@@ -131,6 +131,8 @@ async function loadStats() {
 
   // The banner is the honesty valve: if the crawl is unhealthy, the page says
   // so at the top rather than presenting a quiet, plausible, stale index.
+  // The banner was removed from the hero in the declutter; crawl health now
+  // lives only in the Crawl health view. Guard so its absence is not an error.
   const banner = $('#crawl-banner');
   const problems = [];
   const staleHours = s.last_successful_fetch
@@ -149,7 +151,7 @@ async function loadStats() {
   if (s.errors_24h > 0 || s.blocked_24h > 0) {
     problems.push(`In the last 24 hours: ${s.errors_24h} fetch error${s.errors_24h === 1 ? '' : 's'}, ${s.blocked_24h} blocked.`);
   }
-  if (problems.length) {
+  if (banner && problems.length) {
     banner.textContent = problems.join(' ');
     banner.hidden = false;
   }
@@ -919,6 +921,8 @@ $('#segment-filter').addEventListener('change', (e) => { state.segmentFilter = e
 
 loadStats().catch((err) => {
   const banner = $('#crawl-banner');
-  banner.textContent = `The index API is not responding (${err.message}). Nothing below can be trusted.`;
-  banner.hidden = false;
+  if (banner) {
+    banner.textContent = `The index API is not responding (${err.message}). Nothing below can be trusted.`;
+    banner.hidden = false;
+  }
 }).finally(route);
