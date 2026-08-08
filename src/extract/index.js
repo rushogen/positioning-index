@@ -27,7 +27,7 @@ import { extractAnatomy } from './anatomy.js';
  *
  * See METHODOLOGY.md for what each version means.
  */
-export const EXTRACTOR_VERSION = '1.1.0';
+export const EXTRACTOR_VERSION = '1.2.0';
 
 /**
  * How much of the document gets flattened to plain text for the regex-based
@@ -193,7 +193,10 @@ export function extract(kind, body, url, opts = {}) {
     signals.category_label = category;
     signals.customer_logos = extractLogos(withSvg, { brand: opts.brand });
     signals.proof_points = extractProofPoints(plain);
-    Object.assign(signals, extractAnatomy(doc, raw));
+    // withSvg, not doc: logo walls and icon grids are inline SVG far more often
+    // than <img>, and stripSvg would make them invisible. This is the same
+    // document extractLogos gets, and for the same reason.
+    Object.assign(signals, extractAnatomy(withSvg, raw));
   } else {
     const priced = extractPricingSignals(doc, raw, plain);
     signals.pricing_tiers = priced.pricing_tiers;

@@ -1,0 +1,422 @@
+{
+  "version": 1,
+  "note": "Hand-labelled ground truth for the anatomy section classifier. Each entry is one company's home page, with the correct type for each section as judged by a human reading the page. This file is the only thing that makes a published accuracy number checkable, which is why it lives in the repository rather than in a database: anyone can clone it, disagree with a label, and re-run scripts/score-anatomy.js to see what their disagreement costs.",
+  "keying": "Sections are keyed by their heading text, not by position, because position changes whenever the classifier changes and a heading is the page's own words. The hero has no heading of its own and is keyed as the reserved string __hero__.",
+  "provenance": "`by` records who made the judgement. `claude` labels were made by reading the extracted section text, never by looking at what the classifier said; they are still weaker evidence than a human label and are marked so that a reader can score against either set. `ruslan` labels are authoritative.",
+  "vocabulary_note": "A label may use a type the classifier cannot currently produce. That is the point: a type that keeps appearing in the labels and never in the output is the vocabulary telling us what it is missing.",
+  "labels": [
+    {
+      "slug": "adyen",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        },
+        {
+          "heading": "Run your business with confidence. Adyen delivers the control, reliability, and expertise global enterprises depend on.",
+          "type": "proof"
+        },
+        {
+          "heading": "Control every aspect of your money. Offer financial products to your customers. All from the same, centralized stack.",
+          "type": "product"
+        },
+        {
+          "heading": "Move money across your entire business",
+          "type": "features"
+        },
+        {
+          "heading": "Launch payments and financial products under your brand",
+          "type": "features"
+        },
+        {
+          "heading": "Different industries. One standard. Businesses across sectors trust Adyen to keep money moving.",
+          "type": "product"
+        },
+        {
+          "heading": "Global scale. Local expertise. Powered by trillions of euros in transaction data.",
+          "type": "proof"
+        },
+        {
+          "heading": "When certainty matters, Adyen’s the platform of choice",
+          "type": "testimonial"
+        },
+        {
+          "heading": "If you’re building for scale, there’s no alternative",
+          "type": "cta"
+        }
+      ]
+    },
+    {
+      "slug": "asana",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        },
+        {
+          "heading": "AI that works the way your team works",
+          "type": "features"
+        },
+        {
+          "heading": "Your team just got bigger",
+          "type": "features"
+        },
+        {
+          "heading": "Deliver real productivity for every team",
+          "type": "product"
+        },
+        {
+          "heading": "Get started easily",
+          "type": "resources"
+        },
+        {
+          "heading": "Recognized as a leader",
+          "type": "awards"
+        },
+        {
+          "heading": "The only platform that can support your company at any scale",
+          "type": "cta"
+        }
+      ]
+    },
+    {
+      "slug": "camunda",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        },
+        {
+          "heading": "Real results. End-to-end.",
+          "type": "testimonial"
+        },
+        {
+          "heading": "Ready to orchestrate?",
+          "type": "cta"
+        }
+      ]
+    },
+    {
+      "slug": "datadog",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": "Products",
+          "type": "product"
+        }
+      ]
+    },
+    {
+      "slug": "docusign",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": "AI-powered agreement management",
+          "type": "hero"
+        },
+        {
+          "heading": "Build custom agreement workflows",
+          "type": "integrations"
+        },
+        {
+          "heading": "Trusted the world over",
+          "type": "security"
+        },
+        {
+          "heading": "Companies do better with Docusign",
+          "type": "testimonial"
+        },
+        {
+          "heading": "Momentum is back in New York City on May 5 & 6, 2027!",
+          "type": "events"
+        },
+        {
+          "heading": "The smartest way to navigate agreements",
+          "type": "resources"
+        },
+        {
+          "heading": "How AI in Legal Industry Workflows is Being Used: Benefits, Risks, and Guidance",
+          "type": "resources"
+        },
+        {
+          "heading": "How to Ace Your Vendor Consolidation Audit with Docusign IAM",
+          "type": "resources"
+        },
+        {
+          "heading": "How Legal Teams are Accelerating Contract Negotiations with AI",
+          "type": "resources"
+        },
+        {
+          "heading": "How AI in Legal Industry Workflows is Being Used: Benefits, Risks, and Guidance",
+          "type": "resources"
+        },
+        {
+          "heading": "How to Ace Your Vendor Consolidation Audit with Docusign IAM",
+          "type": "resources"
+        },
+        {
+          "heading": "How Legal Teams are Accelerating Contract Negotiations with AI",
+          "type": "resources"
+        },
+        {
+          "heading": "Docusign IAM is the agreement platform your business needs",
+          "type": "cta"
+        }
+      ]
+    },
+    {
+      "slug": "dynatrace",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        },
+        {
+          "heading": "Analyze, automate, and innovate with the power of AI",
+          "type": "features"
+        },
+        {
+          "heading": "The unified platform for all data, all teams, and all possibilities",
+          "type": "product"
+        },
+        {
+          "heading": "Leverage deterministic insights to take action in real-time",
+          "type": "features"
+        },
+        {
+          "heading": "Understand all your data in context",
+          "type": "features"
+        },
+        {
+          "heading": "Drive productivity and resilience with agentic operations",
+          "type": "features"
+        },
+        {
+          "heading": "Reduce costs with clear, simple pricing",
+          "type": "pricing"
+        },
+        {
+          "heading": "The world’s top organizations deliver impact where it counts",
+          "type": "testimonial"
+        },
+        {
+          "heading": "Our latest research and insights",
+          "type": "resources"
+        },
+        {
+          "heading": "Get started with Dynatrace",
+          "type": "cta"
+        }
+      ]
+    },
+    {
+      "slug": "figma",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        },
+        {
+          "heading": "One workspace for your entire product development process.",
+          "type": "features"
+        },
+        {
+          "heading": "Move fast in the right direction on an AI-native canvas.",
+          "type": "features"
+        },
+        {
+          "heading": "Powerfully expressive. Incredibly precise.",
+          "type": "features"
+        },
+        {
+          "heading": "Start with design context. Build with consistency.",
+          "type": "features"
+        },
+        {
+          "heading": "The products you love are designed in Figma",
+          "type": "logos"
+        },
+        {
+          "heading": "Explore what you can do in Figma.",
+          "type": "resources"
+        }
+      ]
+    },
+    {
+      "slug": "hubspot",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        },
+        {
+          "heading": "299,000+ customers in over 135 countries grow their businesses with HubSpot.",
+          "type": "proof"
+        },
+        {
+          "heading": "HubSpot's Agentic Customer Platform",
+          "type": "product"
+        },
+        {
+          "heading": "Growing a business is hard. HubSpot makes it easier.",
+          "type": "features"
+        },
+        {
+          "heading": "Built-in AI agents that work for you 24/7.",
+          "type": "features"
+        },
+        {
+          "heading": "Remarkable results for every size business.",
+          "type": "testimonial"
+        },
+        {
+          "heading": "Make impossible growth feel impossibly easy, with HubSpot",
+          "type": "cta"
+        }
+      ]
+    },
+    {
+      "slug": "intercom",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        },
+        {
+          "heading": "A complete solution for AI and human agents",
+          "type": "product"
+        },
+        {
+          "heading": "A fully-featured AI-powered helpdesk",
+          "type": "features"
+        },
+        {
+          "heading": "A true partner with deep domain expertise",
+          "type": "security"
+        },
+        {
+          "heading": "Transparent pricing",
+          "type": "pricing"
+        },
+        {
+          "heading": "Perfect customer experiences, powered by Intercom",
+          "type": "cta"
+        }
+      ]
+    },
+    {
+      "slug": "linear",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        },
+        {
+          "heading": "A new species of product tool. Purpose-built for modern teams with AI workflows at its core, Linear sets a new standard for planning and building products.",
+          "type": "product"
+        },
+        {
+          "heading": "Make product operations self-driving",
+          "type": "features"
+        },
+        {
+          "heading": "Define the product direction",
+          "type": "features"
+        },
+        {
+          "heading": "Move work forward across teams and agents",
+          "type": "features"
+        },
+        {
+          "heading": "Review PRs and agent output",
+          "type": "features"
+        },
+        {
+          "heading": "Understand progress at scale",
+          "type": "features"
+        },
+        {
+          "heading": "Changelog",
+          "type": "resources"
+        },
+        {
+          "heading": "Built for the future. Available today.",
+          "type": "cta"
+        }
+      ]
+    },
+    {
+      "slug": "mollie",
+      "by": "claude",
+      "from": "page text read on 2026-08-08",
+      "sections": [
+        {
+          "heading": null,
+          "type": "hero"
+        },
+        {
+          "heading": "One platform to get paid and simplify your finances",
+          "type": "product"
+        },
+        {
+          "heading": "One platform to get paid and simplify your finances",
+          "type": "product"
+        },
+        {
+          "heading": "8",
+          "type": "features"
+        },
+        {
+          "heading": "A trusted partner for businesses in Europe",
+          "type": "logos"
+        },
+        {
+          "heading": "A trusted partner for businesses in Europe",
+          "type": "logos"
+        },
+        {
+          "heading": "Built for any business",
+          "type": "integrations"
+        },
+        {
+          "heading": "Built for any business",
+          "type": "integrations"
+        },
+        {
+          "heading": "Simplify payments and money management",
+          "type": "cta"
+        },
+        {
+          "heading": "Simplify payments and money management",
+          "type": "cta"
+        },
+        {
+          "heading": "Simplify payments and money management",
+          "type": "cta"
+        },
+        {
+          "heading": "Simplify payments and money management",
+          "type": "cta"
+        }
+      ]
+    }
+  ]
+}

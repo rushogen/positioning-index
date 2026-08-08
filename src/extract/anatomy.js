@@ -55,7 +55,8 @@ import { attr, collapse, elements, text } from './html.js';
  */
 export const SECTION_TYPES = [
   'hero', 'logos', 'proof', 'testimonial', 'pricing', 'faq',
-  'comparison', 'integrations', 'features', 'cta', 'media', 'other',
+  'comparison', 'integrations', 'features', 'product', 'resources',
+  'awards', 'events', 'security', 'cta', 'media', 'other',
 ];
 
 /** Hard cap on sections examined. A page past this is pathological, not deep. */
@@ -68,8 +69,29 @@ const CURRENCY = /[$€£¥]|\b(?:USD|EUR|GBP|per\s+(?:month|user|seat)|\/mo\b)/
 const QUANTIFIED = /\b\d[\d.,]*\s*(?:x\b|%|k\b|m\b|bn\b|billion|million|hours?|days?|weeks?|customers?|teams?|companies|users?)/i;
 const QUESTION = /\?\s*$/;
 const ACTION = /\b(?:get started|start (?:free|now|building)|try (?:it|for)|book a|request a|talk to|contact sales|sign up|see (?:a )?demo|watch (?:a )?demo|learn more|read (?:the )?docs)\b/i;
-const INTEGRATION = /\bintegrat|\bconnect(?:s|ors?)?\b|\bworks with\b|\bapps?\b/i;
-const TESTIMONY = /["“’']\s*\w|\bsays?\b|\bCEO\b|\bCTO\b|\bVP\b|\bHead of\b|\bDirector\b/i;
+// `\bapps?\b` used to be in here and matched any page that says "apps",
+// which is most of them. An integrations band names the act of connecting.
+const INTEGRATION = /\bintegrat(?:e|es|ion|ions)\b|\bconnectors?\b|\bworks with\b|\bapp (?:centre|center|directory|marketplace|store)\b|\bplug-?ins?\b/i;
+/**
+ * A quotation, not an apostrophe.
+ *
+ * The first version of this was /["“’']\s*\w|.../ , which matches the
+ * apostrophe in every contraction -- "we don't", "you'll", "it's" -- and
+ * therefore matched almost every section on almost every page. It made
+ * `testimonial` the largest class in the corpus at 281 sections and put the
+ * published "81.7% of pages carry a testimonial" entirely on the back of
+ * English punctuation.
+ *
+ * A real pull-quote has an opening quote mark at a word boundary, or an
+ * attribution. An apostrophe between two letters is neither.
+ */
+const AWARD = /\b(?:magic quadrant|forrester wave|gartner|g2|leader in|recognized (?:as|by)|award|badge|named a leader|top rated)\b/i;
+const EVENT = /\b(?:webinar|conference|summit|register now|save the date|join us (?:on|at)|\d{1,2}(?:st|nd|rd|th)? [A-Z][a-z]+ 20\d\d)\b/;
+const RESOURCE = /\b(?:blog|ebook|whitepaper|white paper|documentation|tutorials?|case stud(?:y|ies)|newsletter|changelog|help articles|read the (?:guide|docs|report)|download the report)\b/i;
+const SECURITY = /\b(?:SOC ?2|ISO ?27001|GDPR|HIPAA|PCI[- ]DSS|FedRAMP|compliance|encryption|security standards|trust cent(?:er|re)|penetration test)\b/i;
+const PRODUCT_OVERVIEW = /\b(?:one platform|the platform|all[- ]in[- ]one|our products|explore (?:the )?platform|everything you need|single source of truth|unified)\b/i;
+
+const TESTIMONY = /(^|[\s(\[—-])["“](?=\w)|["”]\s*[—–-]\s*\w|\bsays?\b|\bCEO\b|\bCTO\b|\bCFO\b|\bVP of\b|\bHead of\b|\bDirector of\b/i;
 
 /**
  * Count matches without building an array, and stop early.
@@ -108,8 +130,18 @@ export function sectionSpans(doc) {
     base = main.index + main[0].length;
     body = doc.slice(base, end ? main.index + end.index : undefined);
   } else {
+    // No <main>. Everything before the footer, minus the nav -- otherwise the
+    // language switcher and the whole menu land inside the hero. Asana's hero
+    // read "Bahasa Indonesia Deutsch English Espanol Francais..." for exactly
+    // this reason, 381 words of chrome counted as hero content.
     const f = /<footer\b[^>]*>/i.exec(doc);
     if (f) body = doc.slice(0, f.index);
+    const nav = /<nav\b[^>]*>/i.exec(body);
+    if (nav) {
+      const after = body.slice(nav.index);
+      const close = /<\/nav\s*>/i.exec(after);
+      if (close) body = body.slice(0, nav.index) + after.slice(close.index + close[0].length);
+    }
   }
 
   const anchors = [];
@@ -131,13 +163,21 @@ export function sectionSpans(doc) {
 /** Everything the classifier needs from one span, counted once. */
 function measure(fragment, isFirst) {
   const plain = collapse(text(fragment));
+  // <img> and inline SVG are counted separately, and the difference matters.
+  // Counting only <img> made SVG logo walls invisible ("Trusted by 500,000+
+  // companies" read as integrations). Counting SVG as imagery 1:1 was worse:
+  // most inline SVG is chevrons and arrows, not pictures -- Asana's hero is
+  // svg=83 and none of them is a logo -- so icon-heavy feature grids started
+  // reading as logo walls and precision on `logos` fell from 60% to 43%.
   const imgs = countUpTo(/<img\b/gi, fragment, 200);
+  const svgs = countUpTo(/<svg\b/gi, fragment, 200);
   const links = countUpTo(/<a\b/gi, fragment, 300);
   return {
     isFirst,
     plain,
     words: words(plain),
     imgs,
+    svgs,
     links,
     h3: countUpTo(/<h3\b/gi, fragment, 60),
     inputs: countUpTo(/<(?:input|select|textarea)\b/gi, fragment, 40),
@@ -162,22 +202,47 @@ function measure(fragment, isFirst) {
  */
 export function classify(m, heading) {
   if (m.isFirst) return 'hero';
-  if (m.words < MIN_SECTION_WORDS && m.imgs >= 4) return 'logos';
-  // A wall of images with almost no prose is a logo strip whatever it is headed.
+
+  // Imagery-dominated bands, before anything that reads their few words.
+  // A logo wall is many pictures and almost no prose. <img> walls are allowed
+  // the looser ratio; an SVG wall has to be both large and nearly wordless,
+  // because icons are SVG too and a feature grid is full of them.
+  if (m.words < MIN_SECTION_WORDS && (m.imgs + m.svgs) >= 4) return 'logos';
   if (m.imgs >= 6 && m.words / Math.max(m.imgs, 1) < 4) return 'logos';
+  if (m.svgs >= 8 && m.imgs === 0 && m.words < 70) return 'logos';
+
+  // Structural tells: a <details> list or a question heading is an FAQ, a table
+  // is a comparison unless it carries prices.
   if (m.details || (heading && QUESTION.test(heading))) return 'faq';
   if (m.table && m.currency) return 'pricing';
   if (m.table) return 'comparison';
   if (m.currency && /\b(?:free|plan|pricing|per month|per user)\b/i.test(m.plain)) return 'pricing';
-  if (m.quote || (m.testimony && m.words < 220)) return 'testimonial';
+
+  // Named vocabulary, most specific first. These run before `features` because
+  // an awards band or a resource strip is otherwise a heading with links under
+  // it, which is what a feature grid looks like from a distance.
+  if (AWARD.test(m.plain)) return 'awards';
+  if (EVENT.test(m.plain)) return 'events';
+  if (SECURITY.test(m.plain)) return 'security';
+  if (m.quote || (m.testimony && m.words < 260)) return 'testimonial';
   if (m.quantified && m.words < 160) return 'proof';
-  if (m.integration && m.imgs >= 4) return 'integrations';
+  if (m.integration) return 'integrations';
+
+  // Conversion furniture, before resources: a button reading "read the docs" is
+  // a button, and RESOURCE would otherwise claim it.
   if (m.inputs >= 2) return 'cta';
   if (m.action && m.words < 80) return 'cta';
   if (m.media && m.words < 60) return 'media';
+  if (RESOURCE.test(m.plain) && m.words < 260) return 'resources';
+
+  // A feature grid is several sub-headed blocks; a product overview is one
+  // claim about the whole thing.
+  if (PRODUCT_OVERVIEW.test(m.plain) && m.h3 <= 4 && m.words < 320) return 'product';
   if (m.h3 >= 2) return 'features';
+  if (m.words >= 60) return 'features';
   return 'other';
 }
+
 
 /**
  * Collapse a run of identical adjacent types into one.

@@ -45,13 +45,14 @@ test('nav and footer are chrome and are not sections', () => {
 
 test('classify covers its own vocabulary and returns nothing outside it', () => {
   const base = {
-    isFirst: false, plain: '', words: 50, imgs: 0, links: 0, h3: 0, inputs: 0,
+    isFirst: false, plain: '', words: 50, imgs: 0, svgs: 0, links: 0, h3: 0, inputs: 0,
     table: false, details: false, quote: false, media: false,
     currency: false, quantified: false, action: false, integration: false, testimony: false,
   };
   const cases = [
     [{ ...base, isFirst: true }, null, 'hero'],
     [{ ...base, words: 4, imgs: 8 }, null, 'logos'],
+    [{ ...base, words: 40, svgs: 12, imgs: 0 }, null, 'logos'],
     [{ ...base, details: true }, null, 'faq'],
     [{ ...base }, 'How does billing work?', 'faq'],
     [{ ...base, table: true, currency: true }, null, 'pricing'],

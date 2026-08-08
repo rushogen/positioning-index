@@ -1,0 +1,161 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Label page anatomy</title>
+<!--
+  A labelling tool, not part of the published site.
+
+  Open it directly from disk. It reads docs/api/anatomy.json, shows you one
+  company at a time, and lets you say what each section actually is. It emits a
+  JSON block to paste into seed/labels.json.
+
+  WHAT IT DELIBERATELY DOES NOT DO
+  --------------------------------
+  It does not show you the classifier's answer until after you have chosen. A
+  labelling tool that pre-fills its own guess produces labels that agree with the
+  guess, and an accuracy number computed against those is a measurement of
+  nothing. The classifier's answer appears greyed beside yours once you pick, so
+  you can see where you disagree -- never before.
+
+  No framework, no CDN, no build step, same as the rest of the project.
+-->
+<style>
+  body { font: 15px/1.5 system-ui, sans-serif; margin: 0 auto; max-width: 60rem; padding: 2rem 1rem 6rem; }
+  h1 { font-size: 1.3rem; }
+  .bar { position: sticky; top: 0; background: #fff; padding: .75rem 0; border-bottom: 1px solid #ddd; display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; z-index: 2; }
+  .sec { border: 1px solid #e2e2e2; border-radius: 6px; padding: .75rem 1rem; margin: .75rem 0; }
+  .sec h3 { margin: 0 0 .25rem; font-size: 1rem; }
+  .meta { color: #666; font-size: .85rem; }
+  .types { display: flex; flex-wrap: wrap; gap: .3rem; margin-top: .6rem; }
+  .types button { font: inherit; font-size: .8rem; padding: .2rem .5rem; border: 1px solid #ccc; background: #fafafa; border-radius: 4px; cursor: pointer; }
+  .types button[aria-pressed="true"] { background: #1f2933; color: #fff; border-color: #1f2933; }
+  .guess { color: #999; font-size: .8rem; margin-left: .5rem; }
+  .guess.wrong { color: #b23; font-weight: 600; }
+  textarea { width: 100%; height: 12rem; font: 12px/1.4 ui-monospace, monospace; }
+  .done { color: #2a6; }
+</style>
+
+<h1>Label page anatomy</h1>
+<p>
+  Reads <code>docs/api/anatomy.json</code>. Pick what each section <em>actually</em> is.
+  The classifier's answer stays hidden until you choose, so your label is not anchored to it.
+  When you are done with a page, copy the JSON at the bottom into <code>seed/labels.json</code>.
+</p>
+
+<div class="bar">
+  <label>Labeller <input id="by" value="ruslan" size="10"></label>
+  <label>Company <select id="pick"></select></label>
+  <button id="prev">&larr;</button><button id="next">&rarr;</button>
+  <span id="progress"></span>
+</div>
+
+<div id="page"></div>
+
+<h2>Paste into seed/labels.json</h2>
+<p class="meta">Accumulates every page you have labelled in this session.</p>
+<textarea id="out" readonly></textarea>
+
+<script type="module">
+const TYPES = ['hero','logos','proof','testimonial','pricing','faq','comparison',
+               'integrations','features','cta','media','awards','resources',
+               'product','security','other'];
+
+const res = await fetch('../docs/api/anatomy.json');
+const data = await res.json();
+const companies = data.companies.filter((c) => c.sections && c.sections.length);
+
+const store = new Map();          // slug -> { heading -> type }
+let i = 0;
+
+const $ = (s) => document.querySelector(s);
+const pick = $('#pick');
+for (const c of companies) {
+  const o = document.createElement('option');
+  o.value = c.slug; o.textContent = c.name;
+  pick.append(o);
+}
+
+function render() {
+  const c = companies[i];
+  pick.value = c.slug;
+  $('#progress').textContent = `${i + 1} of ${companies.length} · ${store.size} labelled`;
+
+  const chosen = store.get(c.slug) ?? new Map();
+  const page = $('#page');
+  page.textContent = '';
+
+  const h = document.createElement('h2');
+  h.textContent = c.name;
+  const a = document.createElement('a');
+  a.href = `https://rushogen.github.io/positioning-index/#/company/${c.slug}`;
+  a.textContent = ' (index page)';
+  a.target = '_blank';
+  h.append(a);
+  page.append(h);
+
+  c.sections.forEach((s) => {
+    const key = s.heading ?? '__hero__';
+    const box = document.createElement('div');
+    box.className = 'sec';
+
+    const title = document.createElement('h3');
+    title.textContent = s.heading ?? '(hero — no heading)';
+    box.append(title);
+
+    const meta = document.createElement('p');
+    meta.className = 'meta';
+    meta.textContent = `position ${s.position} · ${s.words} words`;
+    box.append(meta);
+
+    const types = document.createElement('div');
+    types.className = 'types';
+    const guessLabel = document.createElement('span');
+    guessLabel.className = 'guess';
+
+    for (const t of TYPES) {
+      const b = document.createElement('button');
+      b.textContent = t;
+      b.setAttribute('aria-pressed', String(chosen.get(key) === t));
+      b.addEventListener('click', () => {
+        const m = store.get(c.slug) ?? new Map();
+        m.set(key, t);
+        store.set(c.slug, m);
+        // Reveal the classifier's answer only now.
+        guessLabel.textContent = `classifier said: ${s.type}`;
+        guessLabel.className = 'guess' + (s.type === t ? '' : ' wrong');
+        for (const sib of types.querySelectorAll('button')) {
+          sib.setAttribute('aria-pressed', String(sib.textContent === t));
+        }
+        emit();
+      });
+      types.append(b);
+    }
+    if (chosen.has(key)) {
+      guessLabel.textContent = `classifier said: ${s.type}`;
+      guessLabel.className = 'guess' + (s.type === chosen.get(key) ? '' : ' wrong');
+    }
+    types.append(guessLabel);
+    box.append(types);
+    page.append(box);
+  });
+}
+
+function emit() {
+  const out = [];
+  for (const [slug, m] of [...store.entries()].sort()) {
+    out.push({
+      slug,
+      by: $('#by').value.trim() || 'unknown',
+      sections: [...m.entries()].map(([heading, type]) => ({
+        heading: heading === '__hero__' ? null : heading,
+        type,
+      })),
+    });
+  }
+  $('#out').value = JSON.stringify(out, null, 2);
+}
+
+$('#pick').addEventListener('change', () => { i = companies.findIndex((c) => c.slug === pick.value); render(); });
+$('#next').addEventListener('click', () => { i = Math.min(companies.length - 1, i + 1); render(); });
+$('#prev').addEventListener('click', () => { i = Math.max(0, i - 1); render(); });
+render();
+</script>
