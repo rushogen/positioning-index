@@ -22,6 +22,7 @@
 import { barChart, companyLink, coverageNote, detailsTable, escapeHtml, shareBars } from './charts.js';
 import { renderWireframe, sectionLabel } from './anatomy-svg.js';
 import { pageInsight, sectionInsight } from './anatomy-compare.js';
+import { archetype } from './anatomy-archetype.js';
 
 // One label map for the whole view, imported rather than repeated: anatomy-svg.js
 // owns it and asserts at import that every SECTION_TYPES member has one, so a new
@@ -60,6 +61,72 @@ function scaleRow(s) {
       <td>${s.min}</td><td>${s.p25}</td><td><b>${s.median}</b></td><td>${s.p75}</td><td>${s.max}</td>
       <td>${s.coverage.readable} of ${s.coverage.tracked}</td>
     </tr>`;
+}
+
+/**
+ * The archetype: the market's homepage as one composite diagram.
+ *
+ * A finding, so it is written here at build time and readable with no script.
+ * Each band is a section type at its typical position; its fill is how many
+ * pages carry it, and the count that do NOT is stated next to the count that
+ * do, because the absence is the more interesting half. The real headings sit
+ * behind a <details>, which is the whole of the interaction and needs no JS.
+ */
+function renderArchetype(a) {
+  const arch = archetype(a);
+  const pct = (x) => Math.round(x * 100);
+
+  const bands = arch.bands.map((b) => {
+    const share = pct(b.share);
+    // The hero is defined as everything before the first heading, so it has no
+    // heading of its own; the few that show one are segmentation quirks, not the
+    // page "naming" its hero. Showing them would misrepresent the band.
+    const examples = (b.type !== 'hero' && b.examples.length)
+      ? detailsTable({
+          summary: `${b.examples_of} of the ${b.carriers} name it — the headings they use`,
+          columns: [
+            { label: 'Company', get: (e) => companyLink(e) },
+            { label: 'Heading', get: (e) => escapeHtml(e.heading) },
+          ],
+          rows: b.examples,
+        })
+      : '';
+    return `
+      <li class="arch-band" style="--share:${share}">
+        <div class="arch-bar" aria-hidden="true"><span class="arch-fill" style="width:${share}%"></span></div>
+        <div class="arch-body">
+          <div class="arch-head">
+            <span class="arch-name">${escapeHtml(label(b.type))}</span>
+            <span class="arch-share"><b>${share}%</b> of ${b.of} carry it</span>
+          </div>
+          <p class="arch-meta">
+            ${b.absent} do not · typically position ${b.median_position} · around ${b.median_words} words
+          </p>
+          ${examples}
+        </div>
+      </li>`;
+  }).join('');
+
+  const below = arch.below_floor.length
+    ? `<p class="note">Too rare to draw as a band, and listed rather than dropped: ${
+        arch.below_floor.map((b) => `${escapeHtml(label(b.type))} (${pct(b.share)}% of ${b.of})`).join(', ')
+      }.</p>`
+    : '';
+
+  return `
+    <section id="anatomy-archetype">
+      <h2>The archetype homepage</h2>
+      <p>
+        Every section type in the corpus, placed at the position it typically appears and
+        sized by how many of the ${arch.readable_pages} readable pages carry it. It reads like
+        one page and is not one: no company publishes this, and the share that leaves each
+        band out is on the band, because the page that skips a common section is usually the
+        one worth looking at.
+      </p>
+      <ol class="arch">${bands}</ol>
+      ${below}
+      <p class="wf-caveat">${escapeHtml(arch.caveat)}</p>
+    </section>`;
 }
 
 export function renderAnatomy(a, accuracy = undefined) {
@@ -220,5 +287,5 @@ export function renderAnatomy(a, accuracy = undefined) {
       </div>
     </section>`;
 
-  return [quality, definition, map, explorer, positions, elements, scales].join('\n');
+  return [renderArchetype(a), quality, definition, map, explorer, positions, elements, scales].join('\n');
 }

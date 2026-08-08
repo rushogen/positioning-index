@@ -941,3 +941,41 @@ footer h2 { font-size: 1.05rem; margin-bottom: 1rem; }
   overflow-wrap: anywhere;
 }
 #wf-map-panel .wf-judged li { display: flex; gap: .5rem; align-items: baseline; flex-wrap: wrap; }
+
+/* ---- the archetype homepage
+   ------------------------------------------------------------------------
+   A composite page as a stack of bands. The fill length is prevalence, and it
+   is doubled by the printed percentage so the meaning never rests on the bar
+   alone. Bands are not coloured by type: this is one page, not a legend, and
+   17 hues would invite reading colour as a finding. */
+
+.arch { list-style: none; margin: 1.5rem 0 0; padding: 0; border: 1px solid var(--rule); border-radius: 10px; overflow: hidden; }
+.arch-band { display: grid; grid-template-columns: 8px 1fr; border-top: 1px solid var(--rule); }
+.arch-band:first-child { border-top: 0; }
+
+/* The prevalence rail down the left edge: a spine for the page diagram. */
+.arch-bar { background: var(--bg); position: relative; }
+.arch-fill { position: absolute; left: 0; top: 0; bottom: 0; width: 0; background: var(--ink-3); }
+
+.arch-body { padding: .85rem 1rem; min-width: 0; }
+.arch-head { display: flex; gap: .75rem; align-items: baseline; flex-wrap: wrap; }
+.arch-name { font-weight: 600; font-size: 1.05rem; }
+.arch-share { color: var(--ink-2); font-size: .9rem; }
+.arch-share b { color: var(--ink); font-variant-numeric: tabular-nums; }
+.arch-meta { margin: .25rem 0 0; color: var(--ink-2); font-size: .85rem; }
+
+/* A fuller band reads as a wider horizontal wash behind the label, so the eye
+   gets prevalence from the row itself, not only the number. Kept subtle: the
+   percentage is the source of truth. */
+.arch-band { position: relative; }
+.arch-body::before {
+  content: ""; position: absolute; inset: 0 auto 0 8px; width: calc(var(--share) * 1%);
+  background: var(--panel); z-index: 0; pointer-events: none;
+}
+.arch-body > * { position: relative; z-index: 1; }
+
+.arch .inspect { margin-top: .5rem; }
+
+@media (prefers-color-scheme: dark) {
+  .arch-body::before { background: color-mix(in srgb, var(--panel) 60%, transparent); }
+}
