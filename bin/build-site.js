@@ -44,10 +44,11 @@ import {
 } from '../src/report.js';
 import { stateOfPositioning } from '../src/insights.js';
 import { pageAnatomy } from '../src/anatomy-insights.js';
-import { accuracyBlock } from '../src/anatomy-compare.js';
+import { accuracyBlock, sectionInsight, pageInsight } from '../src/anatomy-compare.js';
 import { scoreClassifier } from '../src/anatomy-score.js';
 import { renderPositioning } from '../src/landing.js';
 import { renderAnatomy } from '../src/anatomy-view.js';
+import { MAX_BLOCK_HEIGHT, MIN_BLOCK_HEIGHT, SECTION_LABEL, WIREFRAME_WIDTH } from '../src/anatomy-svg.js';
 
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const argv = process.argv.slice(2);
@@ -97,7 +98,14 @@ const anatomy = pageAnatomy({ companies, series });
 // moment the classifier changes, and this project already has a corrections
 // entry about exactly that class of mistake. If there are no labels, the caveat
 // says the classifier is unmeasured rather than quietly reporting a stale one.
-const accuracy = accuracyBlock(scoreClassifier({ seed, series, labels }));
+// scoreClassifier returns the RAW counts, which is what sectionInsight,
+// pageInsight and classifierCaveat all take -- they derive their own ratios so
+// the sentence cannot disagree with the number beside it. accuracyBlock() turns
+// the same counts into the published ratios. Passing the derived block into the
+// insight functions is what produced "agreed on null of null non-hero sections"
+// on the panel: they went looking for counts and found ratios.
+const score = scoreClassifier({ seed, series, labels });
+const accuracy = accuracyBlock(score);
 
 // --------------------------------------------------------------------- write
 
@@ -110,7 +118,7 @@ const writeJson = (rel, body) => writeFile(join(outDir, rel), `${JSON.stringify(
 // path beginning with an underscore.
 await writeFile(join(outDir, '.nojekyll'), '', 'utf8');
 
-for (const name of ['style.css', 'app.js']) {
+for (const name of ['style.css', 'app.js', 'anatomy-app.js']) {
   await copyFile(join(ROOT, 'public', name), join(outDir, name));
 }
 
@@ -144,7 +152,24 @@ await writeJson('api/stats.json', {
 // The same numbers the landing view prints, in the form a script can read, so
 // every bar on the page can be checked against the file that produced it.
 await writeJson('api/positioning.json', { ...positioning, generated_at: asOf });
-await writeJson('api/anatomy.json', { ...anatomy, accuracy, generated_at: asOf });
+// The explorer is a client-side app, so everything it needs to draw and to
+// name things is published here rather than duplicated in the browser code.
+// One source of truth for the label map and the geometry: add a section type to
+// the classifier and the app picks up its label without being touched.
+await writeJson('api/anatomy.json', {
+  ...anatomy,
+  accuracy,
+  labels: SECTION_LABEL,
+  geometry: { width: WIREFRAME_WIDTH, minBlock: MIN_BLOCK_HEIGHT, maxBlock: MAX_BLOCK_HEIGHT },
+  insights: Object.fromEntries(anatomy.companies.map((c) => [c.slug, {
+    page: slimPage(pageInsight({ company: c, anatomy, accuracy: score })),
+    sections: Object.fromEntries((c.sections ?? []).map((sec) => [
+      String(sec.position),
+      slimSection(sectionInsight({ section: sec, company: c, anatomy, accuracy: score })),
+    ])),
+  }])),
+  generated_at: asOf,
+});
 
 await writeJson('api/companies.json', { companies });
 await writeJson('api/health.json', { companies: health });
@@ -201,6 +226,53 @@ console.log(
   `  as of ${asOf}${lastRun ? '' : '  (no crawl has been run yet)'}`
 );
 
+/**
+ * Publish what the panel renders, not the whole derivation.
+ *
+ * A full section insight is 13kB, and 8kB of that is the ranking of every type
+ * at that position with its company list -- corpus-wide data, identical for
+ * every company at the same position, and already published once under
+ * `positions`. Written out per section it produced a 28MB api/anatomy.json.
+ *
+ * The caveat and accuracy ARE kept on every section, deliberately. They are
+ * byte-identical everywhere so they compress to nothing, and the alternative is
+ * a panel that can render a judged claim with no caveat attached if a lookup
+ * misses.
+ */
+function slimSection(i) {
+  return {
+    position: i.position, type: i.type, typeLabel: i.typeLabel,
+    heading: i.heading, words: i.words, readable: i.readable, present: i.present,
+    measured: (i.measured ?? []).map((m) => ({
+      label: m.label, value: m.value, unit: m.unit, comparison: m.comparison,
+    })),
+    // `judged[].companies` is dropped: it repeats, per section, the same peer
+    // list `peers` already carries once, and the sentence in `value` states the
+    // n and the denominator. Keeping both cost 5MB across the corpus.
+    judged: (i.judged ?? []).map((j) => ({
+      label: j.label, value: j.value, n: j.n, of: j.of, share: j.share,
+    })),
+    peers: i.peers,
+    caveat: i.caveat,
+    notes: i.notes?.length ? i.notes : undefined,
+  };
+}
+
+function slimPage(p) {
+  return {
+    readable: p.readable, sequenceReadable: p.sequenceReadable, sections: p.sections,
+    measured: (p.measured ?? []).map((m) => ({
+      key: m.key, label: m.label, value: m.value, unit: m.unit,
+      comparison: m.comparison, placement: m.placement?.band ?? null,
+      rank: m.rank?.text ?? null,
+    })),
+    judged: (p.judged ?? []).map((j) => ({
+      key: j.key, label: j.label, value: j.value, text: j.text, n: j.n, of: j.of,
+    })),
+    caveat: p.caveat,
+  };
+}
+
 // ---------------------------------------------------------------------------
 
 /**
@@ -214,7 +286,7 @@ console.log(
 function renderIndexHtml(template) {
   const substitutions = [
     ['<!--POSITIONING-->', renderPositioning(positioning)],
-    ['<!--ANATOMY-->', renderAnatomy(anatomy, accuracy)],
+    ['<!--ANATOMY-->', renderAnatomy(anatomy, score)],
     ['<!--COMPANY-COUNT-->', String(companies.length)],
     // Date only. The page is a reading of one morning and says so; a timestamp
     // to the second would suggest a precision the crawl does not have, since a

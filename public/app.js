@@ -436,59 +436,21 @@ async function route() {
   // The anatomy view, like the landing view, is already in the document. All
   // that is needed is to show it and switch the filter controls on -- they ship
   // hidden so that a reader with scripting off is not offered a dead widget.
-  if (parts[0] === 'anatomy') { show('anatomy'); initAnatomyFilters(); return; }
+  // #/anatomy and #/anatomy/{slug} are the same view; the explorer reads the
+  // slug itself so a shape can be linked to.
+  if (parts[0] === 'anatomy') { show('anatomy'); return; }
 
   // The landing view is already in the document. Showing it is all there is
   // to do, and it is what an unrecognised route falls back to.
   show('positioning');
 }
 
-/**
- * Filtering the wireframe gallery.
- *
- * Every figure is already in the document; this hides the ones that do not
- * match. No fetch, no re-render, no template. Runs once, guarded, because
- * `route()` fires on every hash change.
- *
- * The type list is read from the blocks themselves rather than from a data
- * attribute on the figure, so it cannot fall out of step with what is drawn.
+/*
+ * The gallery filter that used to live here is gone with the markup it bound
+ * to. All 200 wireframes were written into index.html so that one could be
+ * shown at a time; they are now drawn on demand by anatomy-app.js, which owns
+ * its own search. initWireframe below is unchanged and is what that file calls.
  */
-let anatomyFiltersReady = false;
-function initAnatomyFilters() {
-  if (anatomyFiltersReady) return;
-  const bar = $('#anatomy-filters');
-  const type = $('#f-type');
-  const q = $('#f-q');
-  const count = $('#f-count');
-  const figures = Array.from(document.querySelectorAll('#strips .wf-figure'));
-  if (!bar || !type || !q || !figures.length) return;
-  anatomyFiltersReady = true;
-  bar.hidden = false;
-
-  const meta = figures.map((fig) => ({
-    fig,
-    types: new Set(Array.from(fig.querySelectorAll('.wf-sec'), (g) => g.dataset.type)),
-    name: (fig.querySelector('.wf-cap a')?.textContent || '').toLowerCase(),
-  }));
-
-  const apply = () => {
-    const wantType = type.value;
-    const needle = q.value.trim().toLowerCase();
-    let shown = 0;
-    for (const m of meta) {
-      const ok = (!wantType || m.types.has(wantType)) && (!needle || m.name.includes(needle));
-      m.fig.hidden = !ok;
-      if (ok) shown++;
-    }
-    count.textContent = shown === figures.length
-      ? `${figures.length} companies`
-      : `${shown} of ${figures.length} companies`;
-  };
-
-  type.addEventListener('change', apply);
-  q.addEventListener('input', apply);
-  apply();
-}
 
 // -------------------------------------------------------------- wireframes
 
@@ -619,14 +581,19 @@ function wfInsight(insight) {
     })));
   }
 
-  // Filtered before the paragraph is decided on, so a peer list of entries we
-  // cannot link to produces no paragraph rather than an empty label.
-  const peers = (Array.isArray(insight.peers) ? insight.peers : []).filter(wfLinkable);
-  const omitted = Number(insight.peersOmitted);
+  // `peers` is a block, not an array: { n, of, shown, omitted, companies, note }.
+  // The bare array this originally read is the shape that gets rendered as if it
+  // were the whole list, which is why the model refuses to hand one over. The
+  // array form is still accepted so an older island does not silently show
+  // nothing.
+  const peerBlock = insight.peers && !Array.isArray(insight.peers) ? insight.peers : null;
+  const peerList = peerBlock ? peerBlock.companies : insight.peers;
+  const peers = (Array.isArray(peerList) ? peerList : []).filter(wfLinkable);
+  const omitted = Number(peerBlock ? peerBlock.omitted : insight.peersOmitted);
   if (peers.length || (Number.isFinite(omitted) && omitted > 0)) {
     out.push(h('p', { class: 'wf-peers' },
       h('span', { class: 'wf-item-label' }, 'Peers'), ' ',
-      wfCompanies(peers, insight.peersOmitted)));
+      wfCompanies(peers, Number.isFinite(omitted) ? omitted : undefined)));
   }
 
   // The caveat follows peers as well as judged items. A peer list is the same

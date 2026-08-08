@@ -96,8 +96,10 @@ export function classifierQuality({ companies, series }) {
     note:
       'A section type is this project’s opinion about a span of markup, not a value read '
       + 'off the page. `other` is what the classifier could not name, and it is counted rather '
-      + 'than absorbed into a neighbouring type. There is no hand-labelled validation set yet, '
-      + 'so this share is the only published measure of how well the classifier is doing.',
+      + 'than absorbed into a neighbouring type. It is not the same measure as accuracy: a '
+      + 'section the classifier names confidently and wrongly is not counted here. The '
+      + 'accuracy figure, scored against the hand-labelled pages in seed/labels.json, is '
+      + 'published beside every claim that rests on a type.',
   };
 }
 

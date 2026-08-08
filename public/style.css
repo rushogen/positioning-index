@@ -821,3 +821,61 @@ footer h2 { font-size: 1.05rem; margin-bottom: 1rem; }
   .wf-measured li::before { background: CanvasText; }
   .wf-judged li::before { border-color: GrayText; }
 }
+
+/* ---- section wireframe: the explorer's own chrome
+   ------------------------------------------------------------------------
+   The rules above style a figure containing exactly an <svg> and a .wf-panel,
+   which is what the build used to emit. The explorer adds a caption and a
+   page-level fact list to the same grid, so without placement they land in
+   whichever cell auto-flow reaches next and the layout scrambles. These rules
+   place the extra children and style the controls; nothing above is changed. */
+
+#anatomy-explorer { margin-top: 2.5rem; }
+
+.wf-controls {
+  display: flex; flex-wrap: wrap; gap: .75rem 1rem; align-items: center;
+  margin: 1.25rem 0 0; padding: .75rem .9rem;
+  background: var(--panel); border: 1px solid var(--rule); border-radius: 8px;
+}
+.wf-controls label { display: flex; align-items: center; gap: .4rem; font-size: .9rem; color: var(--ink-2); }
+.wf-controls input[type="search"], .wf-controls select {
+  font: inherit; font-size: .9rem; padding: .35rem .5rem;
+  border: 1px solid var(--rule); border-radius: 5px; background: var(--bg); color: var(--ink);
+  min-height: 2.25rem;                 /* comfortable target without being a button */
+}
+.wf-controls input[type="search"] { min-width: 12rem; }
+.wf-controls select { max-width: 18rem; }
+.wf-controls button {
+  font: inherit; min-width: 2.5rem; min-height: 2.25rem;   /* >=44px with the label box */
+  border: 1px solid var(--rule); border-radius: 5px;
+  background: var(--bg); color: var(--ink); cursor: pointer;
+}
+.wf-controls button:hover { border-color: var(--ink-3); }
+.wf-count { margin-left: auto; font-size: .85rem; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+
+/* Visually hidden but available to a screen reader. */
+.wf-sr {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+/* The caption names the company and spans the whole figure; the page-level
+   facts sit under the panel, not beside the diagram. */
+.wf-figure > .wf-cap { grid-column: 1 / -1; display: flex; gap: .6rem; align-items: baseline; flex-wrap: wrap; }
+.wf-cap a { font-weight: 600; font-size: 1.05rem; }
+.wf-cap-meta { color: var(--ink-2); font-size: .85rem; }
+
+.wf-page {
+  margin: 0; padding-left: 1.1rem; list-style: none;
+  font-size: .9rem; color: var(--ink-2); line-height: 1.6;
+}
+.wf-page li { position: relative; }
+.wf-page li::before {
+  content: ""; position: absolute; left: -1.1rem; top: .55em;
+  width: .4rem; height: .4rem; background: var(--ink-3);   /* measured: solid, like .wf-measured */
+}
+@media (min-width: 52rem) {
+  .wf-figure > .wf-page { grid-column: 2; }
+}
+
+.wf-noscript { color: var(--ink-2); font-size: .92rem; }
