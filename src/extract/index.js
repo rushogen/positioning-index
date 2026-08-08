@@ -18,6 +18,7 @@ import {
 } from './hero.js';
 import { extractLogos, extractProofPoints } from './proof.js';
 import { extractPricingSignals } from './pricing.js';
+import { extractAnatomy } from './anatomy.js';
 
 /**
  * Bumped whenever a change to this directory could alter the value produced for
@@ -26,7 +27,7 @@ import { extractPricingSignals } from './pricing.js';
  *
  * See METHODOLOGY.md for what each version means.
  */
-export const EXTRACTOR_VERSION = '1.0.0';
+export const EXTRACTOR_VERSION = '1.1.0';
 
 /**
  * How much of the document gets flattened to plain text for the regex-based
@@ -34,6 +35,21 @@ export const EXTRACTOR_VERSION = '1.0.0';
  * far past that on every page in the seed, and the cap bounds worst-case CPU.
  */
 export const PLAIN_WINDOW = 300_000;
+
+/**
+ * How much of the document the anatomy signals see.
+ *
+ * They need the whole thing. A section sequence that stops two thirds down the
+ * page is not a section sequence, and a footer link count taken from a window
+ * that ends before the footer is a number about the window. Measured across the
+ * 140-company verification sweep on 2026-08-08: p50 636kB, p90 1,323kB, and 86%
+ * of pages exceed PLAIN_WINDOW.
+ *
+ * The 300kB window above is kept for the text signals, where it is a
+ * correctness property rather than a speed one -- a headline is above the fold
+ * by definition, and widening the search for it would find worse candidates.
+ */
+export const ANATOMY_WINDOW = MAX_HTML;
 
 /**
  * The signal registry. `kind` drives diff behaviour:
@@ -54,18 +70,26 @@ export const PLAIN_WINDOW = 300_000;
  * having to be listed here.
  */
 export const SIGNALS = {
-  headline:            { page: 'home',    kind: 'text', label: 'Hero headline' },
-  subhead:             { page: 'home',    kind: 'text', label: 'Hero subhead' },
-  category_label:      { page: 'home',    kind: 'text', label: 'Category label' },
-  meta_title:          { page: 'home',    kind: 'text', label: 'Meta title' },
-  meta_description:    { page: 'home',    kind: 'text', label: 'Meta description' },
-  customer_logos:      { page: 'home',    kind: 'list', label: 'Customer logos' },
-  proof_points:        { page: 'home',    kind: 'list', label: 'Proof points' },
-  pricing_tiers:       { page: 'pricing', kind: 'list', label: 'Pricing tiers', localeSensitive: true },
-  pricing_entry_price: { page: 'pricing', kind: 'text', label: 'Entry price', localeSensitive: true },
-  pricing_free_tier:   { page: 'pricing', kind: 'enum', label: 'Free tier', localeSensitive: true },
-  pricing_seat_minimum:{ page: 'pricing', kind: 'text', label: 'Seat minimum', localeSensitive: true },
-  pricing_meta_title:  { page: 'pricing', kind: 'text', label: 'Pricing page title' },
+  anatomy_sections:      { page: 'home', kind: 'text', label: 'Section sequence',   family: 'anatomy' },
+  anatomy_section_count: { page: 'home', kind: 'text', label: 'Section count',      family: 'anatomy' },
+  anatomy_cta_count:     { page: 'home', kind: 'text', label: 'Calls to action',    family: 'anatomy' },
+  anatomy_nav_links:     { page: 'home', kind: 'text', label: 'Nav links',          family: 'anatomy' },
+  anatomy_footer_links:  { page: 'home', kind: 'text', label: 'Footer links',       family: 'anatomy' },
+  anatomy_word_count:    { page: 'home', kind: 'text', label: 'Word count',         family: 'anatomy' },
+  anatomy_form_fields:   { page: 'home', kind: 'text', label: 'Form fields',        family: 'anatomy' },
+  anatomy_elements:      { page: 'home', kind: 'list', label: 'Elements present',   family: 'anatomy' },
+  headline:            { page: 'home',    kind: 'text', label: 'Hero headline' , family: 'hero' },
+  subhead:             { page: 'home',    kind: 'text', label: 'Hero subhead' , family: 'hero' },
+  category_label:      { page: 'home',    kind: 'text', label: 'Category label' , family: 'hero' },
+  meta_title:          { page: 'home',    kind: 'text', label: 'Meta title' , family: 'hero' },
+  meta_description:    { page: 'home',    kind: 'text', label: 'Meta description' , family: 'hero' },
+  customer_logos:      { page: 'home',    kind: 'list', label: 'Customer logos' , family: 'proof' },
+  proof_points:        { page: 'home',    kind: 'list', label: 'Proof points' , family: 'proof' },
+  pricing_tiers:       { page: 'pricing', kind: 'list', label: 'Pricing tiers', localeSensitive: true , family: 'pricing' },
+  pricing_entry_price: { page: 'pricing', kind: 'text', label: 'Entry price', localeSensitive: true , family: 'pricing' },
+  pricing_free_tier:   { page: 'pricing', kind: 'enum', label: 'Free tier', localeSensitive: true , family: 'pricing' },
+  pricing_seat_minimum:{ page: 'pricing', kind: 'text', label: 'Seat minimum', localeSensitive: true , family: 'pricing' },
+  pricing_meta_title:  { page: 'pricing', kind: 'text', label: 'Pricing page title' , family: 'pricing' },
 };
 
 export const SIGNAL_NAMES = Object.keys(SIGNALS);
@@ -169,6 +193,7 @@ export function extract(kind, body, url, opts = {}) {
     signals.category_label = category;
     signals.customer_logos = extractLogos(withSvg, { brand: opts.brand });
     signals.proof_points = extractProofPoints(plain);
+    Object.assign(signals, extractAnatomy(doc, raw));
   } else {
     const priced = extractPricingSignals(doc, raw, plain);
     signals.pricing_tiers = priced.pricing_tiers;
@@ -192,3 +217,34 @@ export function yieldOf(result) {
 }
 
 export { HERO_WINDOW, MAX_HTML };
+
+/**
+ * Signals grouped by the extractor module that produces them.
+ *
+ * Families exist because a page-wide extraction-yield threshold only works
+ * while every signal on the page fails together, and that stopped being true
+ * when anatomy signals landed alongside hero signals. A CSS refactor that
+ * renames every class breaks the hero selectors and leaves the `<h2>` sequence
+ * untouched; a page that moves its bands into styled divs does the reverse.
+ * One number cannot describe both, and averaging them hides whichever failed.
+ *
+ * See src/diff.js P4 for the gate that consumes this.
+ */
+export function familiesOf(kind) {
+  const out = new Map();
+  for (const name of signalsFor(kind)) {
+    const f = SIGNALS[name].family;
+    if (!out.has(f)) out.set(f, []);
+    out.get(f).push(name);
+  }
+  return out;
+}
+
+/** Non-null count per family, for a set of extracted signals. */
+export function yieldByFamily(kind, isPresent) {
+  const out = {};
+  for (const [family, names] of familiesOf(kind)) {
+    out[family] = names.filter((n) => isPresent(n)).length;
+  }
+  return out;
+}

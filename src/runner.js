@@ -34,7 +34,7 @@
  * usually already satisfied by the time we come back round.
  */
 
-import { extract, signalsFor, EXTRACTOR_VERSION } from './extract/index.js';
+import { extract, signalsFor, familiesOf, EXTRACTOR_VERSION } from './extract/index.js';
 import { canonical, corroborateAcquisitions, diffPage, gatePage } from './diff.js';
 import { fetchPage, nextDueAt } from './crawl/fetch.js';
 import { MIN_HOST_INTERVAL_MS } from './crawl/agent.js';
@@ -208,6 +208,17 @@ export async function crawlTarget(target, ctx, { now = Date.now(), fetchImpl = f
   const states = carryState(previousRecord, q.last_ok_at ?? null);
   const previousYield = Object.values(states).filter((s) => s.last_good_value != null).length;
 
+  // Per-family yields, then and now. The page-wide pair above is kept because
+  // the ledger reports it and because gatePage falls back to it when a caller
+  // cannot supply this; the gate itself prefers these. See src/diff.js P4.
+  const familyYields = {};
+  for (const [family, names] of familiesOf(target.kind)) {
+    familyYields[family] = {
+      previous: names.filter((n) => states[n]?.last_good_value != null).length,
+      current: names.filter((n) => extraction.signals[n]).length,
+    };
+  }
+
   // Where the previous observation of this page was crawled from. Observations
   // written before 2026-08-07 carry no origin at all; that reads as `unknown`,
   // which the origin rule treats as "cannot rule out a shift" rather than as
@@ -220,6 +231,7 @@ export async function crawlTarget(target, ctx, { now = Date.now(), fetchImpl = f
     previous: previousRecord?.doc ?? {},
     currentYield,
     previousYield,
+    familyYields,
     origin,
     previousOrigin,
   });

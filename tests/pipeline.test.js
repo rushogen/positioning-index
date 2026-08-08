@@ -26,6 +26,7 @@ import { FileStore, memoryRobotsStore } from '../src/store/files.js';
 import { runCrawl, commitMessage, interleaveHosts, selectTargets, targetsFromSeed } from '../src/runner.js';
 import { companyHealth, indexStats, recentChanges, companyDetail, withConfirmation } from '../src/report.js';
 import { MIN_HOST_INTERVAL_MS } from '../src/crawl/agent.js';
+import { EXTRACTOR_VERSION, signalsFor } from '../src/extract/index.js';
 
 const HOST = 'https://acme.test';
 const ROBOTS = `${HOST}/robots.txt`;
@@ -106,9 +107,16 @@ test('a full five-day life cycle', async (t) => {
   assert.equal(r1.run.observations, 1);
 
   const obs1 = (await seriesOf(store, 'acme'))[0];
-  assert.equal(Object.keys(obs1.signals).length, 7, 'every declared home signal is stored, including the null ones');
+  // Derived from the registry rather than hardcoded: adding a signal is a
+  // routine change and should not break an unrelated pipeline test, but
+  // silently storing fewer than were declared must still fail loudly.
+  assert.deepEqual(
+    Object.keys(obs1.signals).sort(),
+    signalsFor('home').slice().sort(),
+    'every declared home signal is stored, including the null ones'
+  );
   assert.equal(obs1.signals.headline.value, 'The issue tracker teams actually enjoy');
-  assert.equal(obs1.doc.extractorVersion, '1.0.0', 'the line records which extractor produced it');
+  assert.equal(obs1.doc.extractorVersion, EXTRACTOR_VERSION, 'the line records which extractor produced it');
 
   // robots.txt cost exactly one request.
   assert.equal(fetchImpl.callsTo('acme.test').filter((c) => c.url.endsWith('/robots.txt')).length, 1);

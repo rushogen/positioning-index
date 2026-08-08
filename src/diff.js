@@ -380,6 +380,7 @@ export function gatePage({
   previous = {},
   currentYield,
   previousYield,
+  familyYields = null,
   origin = null,
   previousOrigin = null,
 }) {
@@ -439,7 +440,35 @@ export function gatePage({
 
   // P4 -- the page still parses as HTML but we suddenly understand far less of
   // it. That is a redesign. Record the observations, publish nothing.
-  if (previousYield >= 3 && currentYield < previousYield * STRUCTURE_YIELD_RATIO) {
+  //
+  // Checked PER FAMILY, not per page. The page-wide version of this test was
+  // correct while every signal came from the same kind of markup and therefore
+  // failed together. It stopped being correct the moment anatomy signals landed
+  // beside hero signals: a class-name refactor breaks the hero selectors and
+  // leaves the `<h2>` sequence intact, so five of five hero signals can go null
+  // while the page-wide yield only drops from 15 to 10 -- 67%, comfortably above
+  // the ratio, and the gate stays silent through a total hero collapse.
+  // tests/pipeline.test.js "a full five-day life cycle" is that exact case.
+  //
+  // A family that collapses suppresses its own signals and nothing else, so a
+  // broken hero no longer censors a real pricing change.
+  const collapsed = [];
+  for (const [family, { previous: was, current: now }] of Object.entries(familyYields ?? {})) {
+    if (was >= 3 && now < was * STRUCTURE_YIELD_RATIO) collapsed.push({ family, was, now });
+  }
+  if (collapsed.length) {
+    const worst = collapsed.map((c) => `${c.family} ${c.was} -> ${c.now}`).join(', ');
+    return {
+      diffable: false,
+      status: 'changed-structure',
+      reason: `signal yield fell (${worst}); page restructured, extractor needs review`,
+      rebaseline: false,
+      collapsedFamilies: collapsed.map((c) => c.family),
+    };
+  }
+  // Fallback for callers that do not supply per-family yields (older stored
+  // observations replayed through the engine). Page-wide, as it was.
+  if (!familyYields && previousYield >= 3 && currentYield < previousYield * STRUCTURE_YIELD_RATIO) {
     return {
       diffable: false,
       status: 'changed-structure',
