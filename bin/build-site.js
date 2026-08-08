@@ -46,6 +46,7 @@ import { stateOfPositioning } from '../src/insights.js';
 import { pageAnatomy } from '../src/anatomy-insights.js';
 import { accuracyBlock, sectionInsight, pageInsight } from '../src/anatomy-compare.js';
 import { scoreClassifier } from '../src/anatomy-score.js';
+import { neighbourGraph } from '../src/anatomy-similarity.js';
 import { renderPositioning } from '../src/landing.js';
 import { renderAnatomy } from '../src/anatomy-view.js';
 import { MAX_BLOCK_HEIGHT, MIN_BLOCK_HEIGHT, SECTION_LABEL, WIREFRAME_WIDTH } from '../src/anatomy-svg.js';
@@ -105,6 +106,10 @@ const anatomy = pageAnatomy({ companies, series });
 // insight functions is what produced "agreed on null of null non-hero sections"
 // on the panel: they went looking for counts and found ratios.
 const score = scoreClassifier({ seed, series, labels });
+
+// Which pages are shaped alike, computed here and published, so the claim is
+// part of the record rather than something the browser invented on load.
+const similarity = neighbourGraph(anatomy.companies, { k: 6 });
 const accuracy = accuracyBlock(score);
 
 // --------------------------------------------------------------------- write
@@ -118,7 +123,15 @@ const writeJson = (rel, body) => writeFile(join(outDir, rel), `${JSON.stringify(
 // path beginning with an underscore.
 await writeFile(join(outDir, '.nojekyll'), '', 'utf8');
 
-for (const name of ['style.css', 'app.js', 'anatomy-app.js']) {
+// Vendored third-party code, served from this origin. See public/vendor/README.md
+// for why downloading a file once is not the same act as making a visitor's
+// browser fetch it from somebody else's server.
+await mkdir(join(outDir, 'vendor'), { recursive: true });
+for (const name of ['d3-dispatch.js', 'd3-quadtree.js', 'd3-timer.js', 'd3-force.js']) {
+  await copyFile(join(ROOT, 'public', 'vendor', name), join(outDir, 'vendor', name));
+}
+
+for (const name of ['style.css', 'app.js', 'anatomy-app.js', 'anatomy-map.js']) {
   await copyFile(join(ROOT, 'public', name), join(outDir, name));
 }
 
@@ -160,6 +173,7 @@ await writeJson('api/anatomy.json', {
   ...anatomy,
   accuracy,
   labels: SECTION_LABEL,
+  similarity,
   geometry: { width: WIREFRAME_WIDTH, minBlock: MIN_BLOCK_HEIGHT, maxBlock: MAX_BLOCK_HEIGHT },
   insights: Object.fromEntries(anatomy.companies.map((c) => [c.slug, {
     page: slimPage(pageInsight({ company: c, anatomy, accuracy: score })),

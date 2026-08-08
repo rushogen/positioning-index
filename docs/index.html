@@ -944,6 +944,34 @@
       </p>
     </section>
 
+    <section id="anatomy-map-section">
+      <h2>Which pages are shaped alike</h2>
+      <p>
+        Every readable page as a dot, pulled towards the six pages whose section
+        sequence is closest to its own. Similarity is normalised edit distance over
+        the ordered list of section types, computed when the site is built and
+        published in the API, so the arrangement can be checked rather than taken.
+      </p>
+      <div class="wf-map-wrap">
+        <div id="wf-map" data-src="api/anatomy.json">
+          <noscript>
+            <p class="wf-noscript">
+              The map needs JavaScript. The distances behind it do not: every page's
+              closest neighbours are in
+              <a href="api/anatomy.json"><code>api/anatomy.json</code></a> under
+              <code>similarity</code>.
+            </p>
+          </noscript>
+        </div>
+        <div id="wf-map-panel" class="wf-panel" role="region" aria-live="polite"></div>
+      </div>
+      <p class="note">
+        Position is a readable arrangement of a graph, not a projection with axes.
+        Read the clusters, not the pixels; the distances are in the panel, and most
+        of them are high.
+      </p>
+    </section>
+
     <section id="anatomy-explorer">
       <h2>Look at one page</h2>
       <p>
@@ -1509,5 +1537,15 @@
 
 <script src="app.js"></script>
 <script src="anatomy-app.js"></script>
+<!--
+  Vendored, served from this origin, in dependency order: d3-force reads the
+  other three off the shared `d3` global. See vendor/README.md for why a file
+  downloaded once and committed is not a third-party request.
+-->
+<script src="vendor/d3-dispatch.js"></script>
+<script src="vendor/d3-quadtree.js"></script>
+<script src="vendor/d3-timer.js"></script>
+<script src="vendor/d3-force.js"></script>
+<script src="anatomy-map.js"></script>
 </body>
 </html>

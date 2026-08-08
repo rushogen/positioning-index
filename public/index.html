@@ -245,5 +245,15 @@
 
 <script src="app.js"></script>
 <script src="anatomy-app.js"></script>
+<!--
+  Vendored, served from this origin, in dependency order: d3-force reads the
+  other three off the shared `d3` global. See vendor/README.md for why a file
+  downloaded once and committed is not a third-party request.
+-->
+<script src="vendor/d3-dispatch.js"></script>
+<script src="vendor/d3-quadtree.js"></script>
+<script src="vendor/d3-timer.js"></script>
+<script src="vendor/d3-force.js"></script>
+<script src="anatomy-map.js"></script>
 </body>
 </html>

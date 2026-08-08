@@ -879,3 +879,65 @@ footer h2 { font-size: 1.05rem; margin-bottom: 1rem; }
 }
 
 .wf-noscript { color: var(--ink-2); font-size: .92rem; }
+
+/* ---- similarity map
+   ------------------------------------------------------------------------
+   A force layout of every readable page. The palette is deliberately almost
+   monochrome: a dot's POSITION already carries the only claim being made, and
+   colouring 180 dots by segment would invite reading cluster colour as a
+   finding when the clusters are shapes, not markets. Selection is carried by
+   size and ring, not hue, so it survives greyscale and forced-colors. */
+
+.wf-map-wrap { display: grid; gap: 1.25rem; align-items: start; margin-top: 1.25rem; }
+@media (min-width: 58rem) {
+  .wf-map-wrap { grid-template-columns: minmax(0, 1fr) minmax(0, 20rem); gap: 1.75rem; }
+}
+
+.wf-map {
+  display: block; width: 100%; height: auto;
+  background: var(--panel); border: 1px solid var(--rule); border-radius: 8px;
+}
+
+.wf-map-link { stroke: var(--ink-3); stroke-opacity: .22; stroke-width: 1; }
+
+.wf-map-node {
+  fill: var(--ink-2);
+  stroke: var(--panel);
+  stroke-width: 1.5;
+  cursor: pointer;
+  transition: r 150ms ease-out, fill 150ms ease-out;
+}
+.wf-map-node:hover { fill: var(--ink); r: 7; }
+
+/* Focus has to survive on top of a dot that may sit over a link line, so it is
+   a ring drawn in the ink colour rather than a browser outline on an SVG node,
+   which renders inconsistently. */
+.wf-map-node:focus-visible {
+  outline: none;
+  fill: var(--ink);
+  stroke: var(--accent);
+  stroke-width: 3;
+  r: 7.5;
+}
+/* Selected: bigger and ringed. Size and ring, never colour alone. */
+.wf-map-node.on {
+  fill: var(--ink);
+  stroke: var(--ink);
+  stroke-width: 3;
+  r: 8;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wf-map-node { transition: none; }
+}
+@media (forced-colors: active) {
+  .wf-map-node { fill: CanvasText; stroke: Canvas; }
+  .wf-map-node.on, .wf-map-node:focus-visible { stroke: Highlight; }
+  .wf-map-link { stroke: CanvasText; }
+}
+
+.wf-map-shape {
+  margin: .2rem 0 .8rem; font-size: .85rem; color: var(--ink-2);
+  overflow-wrap: anywhere;
+}
+#wf-map-panel .wf-judged li { display: flex; gap: .5rem; align-items: baseline; flex-wrap: wrap; }

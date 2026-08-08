@@ -172,6 +172,35 @@ export function renderAnatomy(a, accuracy = undefined) {
   // The no-script fallback is not an apology. It names the API file, which is
   // the same data the app reads, so a reader without JavaScript is one fetch
   // away from everything the tool would have shown them.
+  const map = `
+    <section id="anatomy-map-section">
+      <h2>Which pages are shaped alike</h2>
+      <p>
+        Every readable page as a dot, pulled towards the six pages whose section
+        sequence is closest to its own. Similarity is normalised edit distance over
+        the ordered list of section types, computed when the site is built and
+        published in the API, so the arrangement can be checked rather than taken.
+      </p>
+      <div class="wf-map-wrap">
+        <div id="wf-map" data-src="api/anatomy.json">
+          <noscript>
+            <p class="wf-noscript">
+              The map needs JavaScript. The distances behind it do not: every page's
+              closest neighbours are in
+              <a href="api/anatomy.json"><code>api/anatomy.json</code></a> under
+              <code>similarity</code>.
+            </p>
+          </noscript>
+        </div>
+        <div id="wf-map-panel" class="wf-panel" role="region" aria-live="polite"></div>
+      </div>
+      <p class="note">
+        Position is a readable arrangement of a graph, not a projection with axes.
+        Read the clusters, not the pixels; the distances are in the panel, and most
+        of them are high.
+      </p>
+    </section>`;
+
   const explorer = `
     <section id="anatomy-explorer">
       <h2>Look at one page</h2>
@@ -191,5 +220,5 @@ export function renderAnatomy(a, accuracy = undefined) {
       </div>
     </section>`;
 
-  return [quality, definition, explorer, positions, elements, scales].join('\n');
+  return [quality, definition, map, explorer, positions, elements, scales].join('\n');
 }
