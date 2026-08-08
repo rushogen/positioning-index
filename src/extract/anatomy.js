@@ -274,11 +274,30 @@ export function extractAnatomy(doc, raw) {
   const { body, spans } = sectionSpans(doc);
 
   const classified = [];
+  const seenHeadings = new Set();
   for (const s of spans.slice(0, MAX_SECTIONS)) {
     const fragment = body.slice(s.from, s.to);
     const m = measure(fragment, classified.length === 0);
+
+    // An empty first span is not a hero, it is the absence of one. It happens
+    // whenever <main> opens directly on an <h2> -- datadog, docusign, pega and
+    // five others in the current corpus. Emitting it invented a section that is
+    // not on the page and shifted every position after it by one, which is
+    // worse than a wrong type: it corrupts the position profile, which is the
+    // one chart a reader assumes is simply counted.
+    if (m.isFirst && m.words === 0 && (m.imgs + m.svgs) === 0) continue;
+
     // A heading with nothing under it is a label, not a section.
-    if (!m.isFirst && m.words < MIN_SECTION_WORDS && m.imgs < 4) continue;
+    if (!m.isFirst && m.words < MIN_SECTION_WORDS && (m.imgs + m.svgs) < 4) continue;
+
+    // The same heading twice is one band rendered twice -- responsive markup
+    // shipping a mobile and a desktop variant, both present in the document.
+    // mollie.com carries "Simplify payments and money management" four times.
+    // Keeping them inflates section_count and double-counts the band.
+    const hk = s.heading ?? '__hero__';
+    if (seenHeadings.has(hk)) continue;
+    seenHeadings.add(hk);
+
     classified.push({ type: classify(m, s.heading), heading: s.heading, words: m.words });
   }
 
