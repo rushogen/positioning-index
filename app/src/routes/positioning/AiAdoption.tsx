@@ -24,7 +24,7 @@ export function AiAdoption({ data }: { data: Positioning['ai_mentions'] }) {
   const termMax = Math.max(...data.by_term.map((t) => t.n), 1);
 
   return (
-    <Finding n="02" kicker="The AI claim" title={<>Two in three sell AI on the way in</>}>
+    <Finding n="01" kicker="The AI claim" title={<>Two in three sell AI on the way in</>}>
       <div className="lead">
         <Stat figure={said} unit={<>of {of} put AI, an agent, or “autonomous” in the first three things you read</>} />
         <div className="lead-copy">

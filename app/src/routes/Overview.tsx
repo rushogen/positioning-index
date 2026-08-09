@@ -12,7 +12,8 @@ export function Overview() {
   const sectionsRead = anatomy?.quality.sections ?? null;
   const readable = anatomy?.positions.coverage.readable ?? null;
   const families = anatomy?.similarity.clusters.clusters.length ?? null;
-  const topWord = pos?.headline_words.words[0];
+  const topNoun = pos?.category_nouns.groups[0];
+  const nounOf = pos?.category_nouns.coverage.readable ?? null;
   const aiN = pos?.ai_mentions.mentions.length ?? null;
   const aiOf = pos?.ai_mentions.coverage.readable ?? null;
 
@@ -47,10 +48,10 @@ export function Overview() {
             <h2>Positioning</h2>
             <p className="ov-card-lede">What every company says it is — the words, the category noun, the AI
               claims, the proof, the price.</p>
-            {topWord && (
+            {topNoun && (
               <p className="ov-card-stat">
-                <b className="num">{topWord.n}</b> of {pos!.headline_words.coverage.readable} headlines lead with
-                &ldquo;{topWord.word}&rdquo;{aiN != null && <> · <b className="num">{aiN}</b> of {aiOf} sell AI</>}
+                <b className="num">{topNoun.n}</b> of {nounOf} call themselves a
+                &ldquo;{topNoun.noun}&rdquo;{aiN != null && <> · <b className="num">{aiN}</b> of {aiOf} sell AI</>}
               </p>
             )}
             <Link to="/positioning" className="ov-go">Open Positioning →</Link>

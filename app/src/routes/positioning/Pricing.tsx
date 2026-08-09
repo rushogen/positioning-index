@@ -29,7 +29,7 @@ export function Pricing({ data }: { data: Positioning['pricing'] }) {
   ];
 
   return (
-    <Finding n="05" kicker="The price" title={<>Most pricing pages don’t show a price</>}>
+    <Finding n="04" kicker="The price" title={<>Most pricing pages don’t show a price</>}>
       <div className="lead">
         <Stat tone="hot" figure={unreadable} unit={<>of {tracked} pricing pages could not be read as a public number — gated, contact-sales, or script-rendered</>} />
         <div className="lead-copy">

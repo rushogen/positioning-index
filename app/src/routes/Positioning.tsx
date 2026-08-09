@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { usePositioning } from '../lib/data';
 import { Caveat, ErrorNote, Loading } from '../components/ui';
-import { HeadlineWords } from './positioning/HeadlineWords';
 import { AiAdoption } from './positioning/AiAdoption';
 import { CategoryNouns } from './positioning/CategoryNouns';
 import { Proof } from './positioning/Proof';
@@ -24,8 +23,8 @@ export default function Positioning() {
         </motion.h1>
         <motion.p className="pos-dek"
           initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.12 }}>
-          Five readings of the same corpus: the word each company leads with, whether it sells AI,
-          what it calls itself, the proof it shows, and the price. Every figure says what it is out of.
+          Four readings of the same corpus: whether it sells AI, what it calls itself, the proof it
+          shows, and the price it asks. Every figure says what it is out of.
         </motion.p>
       </section>
 
@@ -33,7 +32,6 @@ export default function Positioning() {
         : !data ? <Loading />
         : (
           <>
-            <HeadlineWords data={data.headline_words} />
             <AiAdoption data={data.ai_mentions} />
             <CategoryNouns data={data.category_nouns} />
             <Proof data={data.proof_claims} />

@@ -25,7 +25,7 @@ export function CategoryNouns({ data }: { data: Positioning['category_nouns'] })
   const selected = kept.find((g) => g.noun === sel) ?? top;
 
   return (
-    <Finding n="03" kicker="What they call themselves" title={<>Almost everyone is a “platform”</>}>
+    <Finding n="02" kicker="What they call themselves" title={<>Almost everyone is a “platform”</>}>
       <div className="lead">
         <Stat tone="ink" figure={top?.n ?? '—'} unit={<>of {of} call themselves a “{top?.noun}” — {pct(top?.n ?? 0, of)} of the readable pages</>} />
         <div className="lead-copy">

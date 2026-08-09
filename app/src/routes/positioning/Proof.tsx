@@ -64,7 +64,7 @@ export function Proof({ data }: { data: Positioning['proof_claims'] }) {
   }, [data]);
 
   return (
-    <Finding n="04" kicker="The proof they show" title={<>Percentages, more than anything</>}>
+    <Finding n="03" kicker="The proof they show" title={<>Percentages, more than anything</>}>
       <div className="lead">
         <Stat tone="green" figure={data.total_claims} unit={<>quantified claims counted across {of} readable pages</>} />
         <div className="lead-copy">
