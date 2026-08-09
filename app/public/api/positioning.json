@@ -481,7 +481,7 @@
    },
    {
     "word": "agentic",
-    "n": 18,
+    "n": 19,
     "companies": [
      {
       "slug": "anaplan",
@@ -572,6 +572,11 @@
       "slug": "voyado",
       "name": "Voyado",
       "text": "The Agentic CX Suite for Retail"
+     },
+     {
+      "slug": "zapier",
+      "name": "Zapier",
+      "text": "The automation layer for agentic AI"
      }
     ]
    },
@@ -647,7 +652,7 @@
      {
       "slug": "sigma",
       "name": "Sigma",
-      "text": "Vibe-code enterprise business applications"
+      "text": "AI runtime for business"
      },
      {
       "slug": "synthesia",
@@ -5446,10 +5451,11 @@
      "ai"
     ],
     "fields": [
+     "headline",
      "subhead",
      "category_label"
     ],
-    "text": "Vibe-code enterprise business applications"
+    "text": "AI runtime for business"
    },
    {
     "slug": "signicat",
@@ -6026,13 +6032,14 @@
     "slug": "zapier",
     "name": "Zapier",
     "terms": [
+     "agent",
      "ai"
     ],
     "fields": [
      "headline",
      "subhead"
     ],
-    "text": "Your tools. Your rules. Any AI."
+    "text": "The automation layer for agentic AI"
    },
    {
     "slug": "zendesk",
@@ -6629,7 +6636,7 @@
   "by_field": [
    {
     "field": "headline",
-    "n": 146,
+    "n": 147,
     "companies": [
      {
       "slug": "15five",
@@ -7212,6 +7219,11 @@
       "text": "Fast Project Management for Software Teams and their Agents"
      },
      {
+      "slug": "sigma",
+      "name": "Sigma",
+      "text": "AI runtime for business"
+     },
+     {
       "slug": "signicat",
       "name": "Signicat",
       "text": "Fight fraud with digital identity powered by AI"
@@ -7354,7 +7366,7 @@
      {
       "slug": "zapier",
       "name": "Zapier",
-      "text": "Your tools. Your rules. Any AI."
+      "text": "The automation layer for agentic AI"
      },
      {
       "slug": "zendesk",
@@ -8210,7 +8222,7 @@
      {
       "slug": "zapier",
       "name": "Zapier",
-      "text": "Zapier gives teams one place to set guardrails, manage model access, and see everything — so everyone can build with AI confidently, on any model, without waiting for permission."
+      "text": "One MCP connection. 9,000+ apps. Set your policies and work across any model, surface, or agent harness — without connections or rules breaking."
      },
      {
       "slug": "zendesk",
@@ -10836,10 +10848,11 @@
        "ai"
       ],
       "fields": [
+       "headline",
        "subhead",
        "category_label"
       ],
-      "text": "Vibe-code enterprise business applications"
+      "text": "AI runtime for business"
      },
      {
       "slug": "signicat",
@@ -11358,13 +11371,14 @@
       "slug": "zapier",
       "name": "Zapier",
       "terms": [
+       "agent",
        "ai"
       ],
       "fields": [
        "headline",
        "subhead"
       ],
-      "text": "Your tools. Your rules. Any AI."
+      "text": "The automation layer for agentic AI"
      },
      {
       "slug": "zendesk",
@@ -11409,7 +11423,7 @@
    },
    {
     "term": "agent",
-    "n": 104,
+    "n": 105,
     "companies": [
      {
       "slug": "1password",
@@ -12413,10 +12427,11 @@
        "ai"
       ],
       "fields": [
+       "headline",
        "subhead",
        "category_label"
       ],
-      "text": "Vibe-code enterprise business applications"
+      "text": "AI runtime for business"
      },
      {
       "slug": "singlestore",
@@ -12748,6 +12763,19 @@
       "text": "WRITER is the enterprise AI agent platform trusted by Fortune 500 companies, built to help teams execute and scale on-brand, compliant work."
      },
      {
+      "slug": "zapier",
+      "name": "Zapier",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead"
+      ],
+      "text": "The automation layer for agentic AI"
+     },
+     {
       "slug": "zendesk",
       "name": "Zendesk",
       "terms": [
@@ -13068,7 +13096,7 @@
     "label": "Scale counts",
     "note": "customers, users, records, teams",
     "n": 170,
-    "claims": 317,
+    "claims": 316,
     "companies": [
      {
       "slug": "15five",
@@ -13908,7 +13936,7 @@
      {
       "slug": "zapier",
       "name": "Zapier",
-      "text": "42 hours · 450k agents · 9,000 apps · 9,000 integrations"
+      "text": "100 hours · 20 hours · 9,000 apps"
      },
      {
       "slug": "zendesk",
@@ -13926,8 +13954,8 @@
     "key": "percent",
     "label": "Percentage gains",
     "note": "\"40% faster\", \"cut costs by 30%\"",
-    "n": 156,
-    "claims": 451,
+    "n": 155,
+    "claims": 450,
     "companies": [
      {
       "slug": "acronis",
@@ -14695,11 +14723,6 @@
       "text": "75% chipotle reduced time-to-hire · 75% reduced time-to-hire"
      },
      {
-      "slug": "zapier",
-      "name": "Zapier",
-      "text": "87% reduction in lead"
-     },
-     {
       "slug": "zendesk",
       "name": "Zendesk",
       "text": "11 % decrease in email · 36 % increase in ai · 51.5 % automate · 6 % increase in automated"
@@ -14715,8 +14738,8 @@
     "key": "money",
     "label": "Money amounts",
     "note": "\"$2.4M saved\", \"$1B processed\"",
-    "n": 96,
-    "claims": 224,
+    "n": 95,
+    "claims": 221,
     "companies": [
      {
       "slug": "15five",
@@ -15192,11 +15215,6 @@
       "slug": "xeneta",
       "name": "Xeneta",
       "text": "$2m versus market pricing · $37m savings across the"
-     },
-     {
-      "slug": "zapier",
-      "name": "Zapier",
-      "text": "$1 million increase in potential · $1m recovered pipeline using · $40k+ headcount savings per"
      }
     ]
    },
@@ -15204,8 +15222,8 @@
     "key": "multiplier",
     "label": "Multipliers",
     "note": "\"10x faster\"",
-    "n": 68,
-    "claims": 99,
+    "n": 67,
+    "claims": 98,
     "companies": [
      {
       "slug": "activecampaign",
@@ -15536,11 +15554,6 @@
       "slug": "wrike",
       "name": "Wrike",
       "text": "10x more"
-     },
-     {
-      "slug": "zapier",
-      "name": "Zapier",
-      "text": "5.5x roi with zapier"
      },
      {
       "slug": "zendesk",
@@ -15958,7 +15971,7 @@
     ]
    }
   ],
-  "total_claims": 1175,
+  "total_claims": 1169,
   "coverage": {
    "tracked": 361,
    "readable": 270,
@@ -17220,7 +17233,7 @@
     ]
    }
   ],
-  "distinct_logos": 2903,
+  "distinct_logos": 2904,
   "coverage": {
    "tracked": 361,
    "readable": 279,
@@ -17567,6 +17580,10 @@
      "name": "Airbyte"
     },
     {
+     "slug": "airtable",
+     "name": "Airtable"
+    },
+    {
      "slug": "aiven",
      "name": "Aiven"
     },
@@ -17575,8 +17592,16 @@
      "name": "Amplitude"
     },
     {
+     "slug": "apollo",
+     "name": "Apollo.io"
+    },
+    {
      "slug": "asana",
      "name": "Asana"
+    },
+    {
+     "slug": "assemblyai",
+     "name": "AssemblyAI"
     },
     {
      "slug": "atlassian",
@@ -17591,8 +17616,24 @@
      "name": "BambooHR"
     },
     {
+     "slug": "basecamp",
+     "name": "Basecamp"
+    },
+    {
+     "slug": "bigcommerce",
+     "name": "BigCommerce"
+    },
+    {
+     "slug": "bill",
+     "name": "BILL"
+    },
+    {
      "slug": "bird",
      "name": "Bird"
+    },
+    {
+     "slug": "braze",
+     "name": "Braze"
     },
     {
      "slug": "brevo",
@@ -17627,8 +17668,16 @@
      "name": "Cloudflare"
     },
     {
+     "slug": "cockroach-labs",
+     "name": "Cockroach Labs"
+    },
+    {
      "slug": "confluent",
      "name": "Confluent"
+    },
+    {
+     "slug": "contentful",
+     "name": "Contentful"
     },
     {
      "slug": "cursor",
@@ -17639,12 +17688,36 @@
      "name": "Dagster Labs"
     },
     {
+     "slug": "datadog",
+     "name": "Datadog"
+    },
+    {
      "slug": "dbt-labs",
      "name": "dbt Labs"
     },
     {
      "slug": "descript",
      "name": "Descript"
+    },
+    {
+     "slug": "docker",
+     "name": "Docker"
+    },
+    {
+     "slug": "dynatrace",
+     "name": "Dynatrace"
+    },
+    {
+     "slug": "figma",
+     "name": "Figma"
+    },
+    {
+     "slug": "firebolt",
+     "name": "Firebolt"
+    },
+    {
+     "slug": "fireflies",
+     "name": "Fireflies.ai"
     },
     {
      "slug": "fivetran",
@@ -17655,12 +17728,24 @@
      "name": "Framer"
     },
     {
+     "slug": "fullstory",
+     "name": "FullStory"
+    },
+    {
      "slug": "gitguardian",
      "name": "GitGuardian"
     },
     {
+     "slug": "github",
+     "name": "GitHub"
+    },
+    {
      "slug": "gitlab",
      "name": "GitLab"
+    },
+    {
+     "slug": "grafana",
+     "name": "Grafana Labs"
     },
     {
      "slug": "grammarly",
@@ -17677,6 +17762,10 @@
     {
      "slug": "hex",
      "name": "Hex"
+    },
+    {
+     "slug": "hightouch",
+     "name": "Hightouch"
     },
     {
      "slug": "honeycomb",
@@ -17707,12 +17796,24 @@
      "name": "Loom"
     },
     {
+     "slug": "mailchimp",
+     "name": "Mailchimp"
+    },
+    {
      "slug": "make",
      "name": "Make"
     },
     {
+     "slug": "materialize",
+     "name": "Materialize"
+    },
+    {
      "slug": "mendix",
      "name": "Mendix"
+    },
+    {
+     "slug": "mentimeter",
+     "name": "Mentimeter"
     },
     {
      "slug": "metabase",
@@ -17723,8 +17824,16 @@
      "name": "Miro"
     },
     {
+     "slug": "mixpanel",
+     "name": "Mixpanel"
+    },
+    {
      "slug": "modal",
      "name": "Modal"
+    },
+    {
+     "slug": "mollie",
+     "name": "Mollie"
     },
     {
      "slug": "monday",
@@ -17747,16 +17856,32 @@
      "name": "Neo4j"
     },
     {
+     "slug": "neon",
+     "name": "Neon"
+    },
+    {
      "slug": "netlify",
      "name": "Netlify"
+    },
+    {
+     "slug": "new-relic",
+     "name": "New Relic"
     },
     {
      "slug": "notion",
      "name": "Notion"
     },
     {
+     "slug": "odoo",
+     "name": "Odoo"
+    },
+    {
      "slug": "okta",
      "name": "Okta"
+    },
+    {
+     "slug": "otter",
+     "name": "Otter.ai"
     },
     {
      "slug": "pagerduty",
@@ -17771,12 +17896,20 @@
      "name": "Pinecone"
     },
     {
+     "slug": "posthog",
+     "name": "PostHog"
+    },
+    {
      "slug": "postman",
      "name": "Postman"
     },
     {
      "slug": "productboard",
      "name": "Productboard"
+    },
+    {
+     "slug": "proton",
+     "name": "Proton"
     },
     {
      "slug": "pulumi",
@@ -17799,12 +17932,24 @@
      "name": "Redis"
     },
     {
+     "slug": "render",
+     "name": "Render"
+    },
+    {
+     "slug": "replit",
+     "name": "Replit"
+    },
+    {
      "slug": "resend",
      "name": "Resend"
     },
     {
      "slug": "retool",
      "name": "Retool"
+    },
+    {
+     "slug": "rudderstack",
+     "name": "RudderStack"
     },
     {
      "slug": "salesforce",
@@ -17817,6 +17962,10 @@
     {
      "slug": "sentry",
      "name": "Sentry"
+    },
+    {
+     "slug": "shopify",
+     "name": "Shopify"
     },
     {
      "slug": "shortcut",
@@ -17839,16 +17988,44 @@
      "name": "Statsig"
     },
     {
+     "slug": "stytch",
+     "name": "Stytch"
+    },
+    {
      "slug": "supabase",
      "name": "Supabase"
+    },
+    {
+     "slug": "synthesia",
+     "name": "Synthesia"
+    },
+    {
+     "slug": "teamwork",
+     "name": "Teamwork"
     },
     {
      "slug": "thoughtspot",
      "name": "ThoughtSpot"
     },
     {
+     "slug": "tipalti",
+     "name": "Tipalti"
+    },
+    {
      "slug": "trustpilot",
      "name": "Trustpilot"
+    },
+    {
+     "slug": "typeform",
+     "name": "Typeform"
+    },
+    {
+     "slug": "usercentrics",
+     "name": "Usercentrics"
+    },
+    {
+     "slug": "vercel",
+     "name": "Vercel"
     },
     {
      "slug": "weaviate",
@@ -17859,8 +18036,20 @@
      "name": "Weights & Biases"
     },
     {
+     "slug": "wise",
+     "name": "Wise"
+    },
+    {
      "slug": "wistia",
      "name": "Wistia"
+    },
+    {
+     "slug": "workos",
+     "name": "WorkOS"
+    },
+    {
+     "slug": "wrike",
+     "name": "Wrike"
     },
     {
      "slug": "zapier",
@@ -17947,8 +18136,8 @@
    ],
    "coverage": {
     "tracked": 361,
-    "readable": 95,
-    "unreadable": 266,
+    "readable": 139,
+    "unreadable": 222,
     "held": 0,
     "suspect": 0,
     "missing": [
@@ -17981,10 +18170,6 @@
       "name": "Aircall"
      },
      {
-      "slug": "airtable",
-      "name": "Airtable"
-     },
-     {
       "slug": "alan",
       "name": "Alan"
      },
@@ -18001,10 +18186,6 @@
       "name": "Anyscale"
      },
      {
-      "slug": "apollo",
-      "name": "Apollo.io"
-     },
-     {
       "slug": "appian",
       "name": "Appian"
      },
@@ -18015,10 +18196,6 @@
      {
       "slug": "ashby",
       "name": "Ashby"
-     },
-     {
-      "slug": "assemblyai",
-      "name": "AssemblyAI"
      },
      {
       "slug": "astronomer",
@@ -18053,18 +18230,6 @@
       "name": "Backbase"
      },
      {
-      "slug": "basecamp",
-      "name": "Basecamp"
-     },
-     {
-      "slug": "bigcommerce",
-      "name": "BigCommerce"
-     },
-     {
-      "slug": "bill",
-      "name": "BILL"
-     },
-     {
       "slug": "bitmovin",
       "name": "Bitmovin"
      },
@@ -18079,10 +18244,6 @@
      {
       "slug": "box",
       "name": "Box"
-     },
-     {
-      "slug": "braze",
-      "name": "Braze"
      },
      {
       "slug": "camunda",
@@ -18111,10 +18272,6 @@
      {
       "slug": "coachhub",
       "name": "CoachHub"
-     },
-     {
-      "slug": "cockroach-labs",
-      "name": "Cockroach Labs"
      },
      {
       "slug": "coda",
@@ -18149,10 +18306,6 @@
       "name": "ComplyAdvantage"
      },
      {
-      "slug": "contentful",
-      "name": "Contentful"
-     },
-     {
       "slug": "contentsquare",
       "name": "Contentsquare"
      },
@@ -18183,10 +18336,6 @@
      {
       "slug": "databricks",
       "name": "Databricks"
-     },
-     {
-      "slug": "datadog",
-      "name": "Datadog"
      },
      {
       "slug": "dataiku",
@@ -18225,10 +18374,6 @@
       "name": "Dixa"
      },
      {
-      "slug": "docker",
-      "name": "Docker"
-     },
-     {
       "slug": "docplanner",
       "name": "Docplanner"
      },
@@ -18249,10 +18394,6 @@
       "name": "Drift"
      },
      {
-      "slug": "dynatrace",
-      "name": "Dynatrace"
-     },
-     {
       "slug": "elastic",
       "name": "Elastic"
      },
@@ -18271,18 +18412,6 @@
      {
       "slug": "fenergo",
       "name": "Fenergo"
-     },
-     {
-      "slug": "figma",
-      "name": "Figma"
-     },
-     {
-      "slug": "firebolt",
-      "name": "Firebolt"
-     },
-     {
-      "slug": "fireflies",
-      "name": "Fireflies.ai"
      },
      {
       "slug": "five9",
@@ -18309,20 +18438,12 @@
       "name": "Front"
      },
      {
-      "slug": "fullstory",
-      "name": "FullStory"
-     },
-     {
       "slug": "gainsight",
       "name": "Gainsight"
      },
      {
       "slug": "genesys",
       "name": "Genesys"
-     },
-     {
-      "slug": "github",
-      "name": "GitHub"
      },
      {
       "slug": "gitpod",
@@ -18335,10 +18456,6 @@
      {
       "slug": "gong",
       "name": "Gong"
-     },
-     {
-      "slug": "grafana",
-      "name": "Grafana Labs"
      },
      {
       "slug": "guru",
@@ -18355,10 +18472,6 @@
      {
       "slug": "highspot",
       "name": "Highspot"
-     },
-     {
-      "slug": "hightouch",
-      "name": "Hightouch"
      },
      {
       "slug": "hornetsecurity",
@@ -18461,10 +18574,6 @@
       "name": "M-Files"
      },
      {
-      "slug": "mailchimp",
-      "name": "Mailchimp"
-     },
-     {
       "slug": "mambu",
       "name": "Mambu"
      },
@@ -18473,24 +18582,12 @@
       "name": "Marqeta"
      },
      {
-      "slug": "materialize",
-      "name": "Materialize"
-     },
-     {
       "slug": "matillion",
       "name": "Matillion"
      },
      {
-      "slug": "mentimeter",
-      "name": "Mentimeter"
-     },
-     {
       "slug": "mirakl",
       "name": "Mirakl"
-     },
-     {
-      "slug": "mixpanel",
-      "name": "Mixpanel"
      },
      {
       "slug": "mode",
@@ -18499,10 +18596,6 @@
      {
       "slug": "modern-treasury",
       "name": "Modern Treasury"
-     },
-     {
-      "slug": "mollie",
-      "name": "Mollie"
      },
      {
       "slug": "monte-carlo",
@@ -18521,16 +18614,8 @@
       "name": "Nemetschek"
      },
      {
-      "slug": "neon",
-      "name": "Neon"
-     },
-     {
       "slug": "netskope",
       "name": "Netskope"
-     },
-     {
-      "slug": "new-relic",
-      "name": "New Relic"
      },
      {
       "slug": "nexthink",
@@ -18543,10 +18628,6 @@
      {
       "slug": "nord-security",
       "name": "Nord Security"
-     },
-     {
-      "slug": "odoo",
-      "name": "Odoo"
      },
      {
       "slug": "onetrust",
@@ -18563,10 +18644,6 @@
      {
       "slug": "orca-security",
       "name": "Orca Security"
-     },
-     {
-      "slug": "otter",
-      "name": "Otter.ai"
      },
      {
       "slug": "outreach",
@@ -18629,20 +18706,12 @@
       "name": "Plaid"
      },
      {
-      "slug": "posthog",
-      "name": "PostHog"
-     },
-     {
       "slug": "prefect",
       "name": "Prefect"
      },
      {
       "slug": "procore",
       "name": "Procore"
-     },
-     {
-      "slug": "proton",
-      "name": "Proton"
      },
      {
       "slug": "ptc",
@@ -18681,16 +18750,8 @@
       "name": "Remote"
      },
      {
-      "slug": "render",
-      "name": "Render"
-     },
-     {
       "slug": "replicate",
       "name": "Replicate"
-     },
-     {
-      "slug": "replit",
-      "name": "Replit"
      },
      {
       "slug": "ringcentral",
@@ -18699,10 +18760,6 @@
      {
       "slug": "rippling",
       "name": "Rippling"
-     },
-     {
-      "slug": "rudderstack",
-      "name": "RudderStack"
      },
      {
       "slug": "sage",
@@ -18759,10 +18816,6 @@
      {
       "slug": "servicetitan",
       "name": "ServiceTitan"
-     },
-     {
-      "slug": "shopify",
-      "name": "Shopify"
      },
      {
       "slug": "showpad",
@@ -18837,20 +18890,12 @@
       "name": "Stripe"
      },
      {
-      "slug": "stytch",
-      "name": "Stytch"
-     },
-     {
       "slug": "sumologic",
       "name": "Sumo Logic"
      },
      {
       "slug": "suse",
       "name": "SUSE"
-     },
-     {
-      "slug": "synthesia",
-      "name": "Synthesia"
      },
      {
       "slug": "sysdig",
@@ -18871,10 +18916,6 @@
      {
       "slug": "teamviewer",
       "name": "TeamViewer"
-     },
-     {
-      "slug": "teamwork",
-      "name": "Teamwork"
      },
      {
       "slug": "temenos",
@@ -18901,10 +18942,6 @@
       "name": "Tink"
      },
      {
-      "slug": "tipalti",
-      "name": "Tipalti"
-     },
-     {
       "slug": "tray",
       "name": "Tray.ai"
      },
@@ -18917,20 +18954,12 @@
       "name": "Twilio"
      },
      {
-      "slug": "typeform",
-      "name": "Typeform"
-     },
-     {
       "slug": "unbabel",
       "name": "Unbabel"
      },
      {
       "slug": "unity",
       "name": "Unity"
-     },
-     {
-      "slug": "usercentrics",
-      "name": "Usercentrics"
      },
      {
       "slug": "vanta",
@@ -18943,10 +18972,6 @@
      {
       "slug": "veeva",
       "name": "Veeva Systems"
-     },
-     {
-      "slug": "vercel",
-      "name": "Vercel"
      },
      {
       "slug": "verkada",
@@ -18963,10 +18988,6 @@
      {
       "slug": "webflow",
       "name": "Webflow"
-     },
-     {
-      "slug": "wise",
-      "name": "Wise"
      },
      {
       "slug": "wiz",
@@ -18991,14 +19012,6 @@
      {
       "slug": "workiva",
       "name": "Workiva"
-     },
-     {
-      "slug": "workos",
-      "name": "WorkOS"
-     },
-     {
-      "slug": "wrike",
-      "name": "Wrike"
      },
      {
       "slug": "writer",
@@ -35904,10 +35917,10 @@
       "short": "Work & product",
       "n": 48,
       "readable": 38,
-      "yes": 22,
-      "no": 16,
+      "yes": 21,
+      "no": 17,
       "unreadable": 10,
-      "share": 57.9,
+      "share": 55.3,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -35994,10 +36007,6 @@
         {
          "slug": "uipath",
          "name": "UiPath"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
         }
        ],
        "no": [
@@ -36064,6 +36073,10 @@
         {
          "slug": "wrike",
          "name": "Wrike"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
         }
        ],
        "unreadable": [
@@ -37786,10 +37799,10 @@
       "short": "Work & product",
       "n": 48,
       "readable": 38,
-      "yes": 22,
-      "no": 16,
+      "yes": 21,
+      "no": 17,
       "unreadable": 10,
-      "share": 57.9,
+      "share": 55.3,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -37876,10 +37889,6 @@
         {
          "slug": "uipath",
          "name": "UiPath"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
         }
        ],
        "no": [
@@ -37946,6 +37955,10 @@
         {
          "slug": "wrike",
          "name": "Wrike"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
         }
        ],
        "unreadable": [
@@ -39062,8 +39075,8 @@
     "drawn": true,
     "withheld": null,
     "overall": {
-     "yes": 156,
-     "no": 114,
+     "yes": 155,
+     "no": 115,
      "unreadable": 91,
      "readable": 270,
      "tracked": 361
@@ -39625,10 +39638,10 @@
       "short": "Work & product",
       "n": 48,
       "readable": 38,
-      "yes": 11,
-      "no": 27,
+      "yes": 10,
+      "no": 28,
       "unreadable": 10,
-      "share": 28.9,
+      "share": 26.3,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -39671,10 +39684,6 @@
         {
          "slug": "uipath",
          "name": "UiPath"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
         }
        ],
        "no": [
@@ -39785,6 +39794,10 @@
         {
          "slug": "wrike",
          "name": "Wrike"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
         }
        ],
        "unreadable": [
@@ -41698,218 +41711,6 @@
       }
      },
      {
-      "group": "work",
-      "label": "Work & product",
-      "short": "Work & product",
-      "n": 48,
-      "readable": 38,
-      "yes": 11,
-      "no": 27,
-      "unreadable": 10,
-      "share": 28.9,
-      "suppressed": false,
-      "companies": {
-       "yes": [
-        {
-         "slug": "clickup",
-         "name": "ClickUp"
-        },
-        {
-         "slug": "coda",
-         "name": "Coda"
-        },
-        {
-         "slug": "monday",
-         "name": "monday.com"
-        },
-        {
-         "slug": "n8n",
-         "name": "n8n"
-        },
-        {
-         "slug": "otter",
-         "name": "Otter.ai"
-        },
-        {
-         "slug": "replit",
-         "name": "Replit"
-        },
-        {
-         "slug": "retool",
-         "name": "Retool"
-        },
-        {
-         "slug": "teamleader",
-         "name": "Teamleader"
-        },
-        {
-         "slug": "tray",
-         "name": "Tray.ai"
-        },
-        {
-         "slug": "uipath",
-         "name": "UiPath"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
-        }
-       ],
-       "no": [
-        {
-         "slug": "airtable",
-         "name": "Airtable"
-        },
-        {
-         "slug": "asana",
-         "name": "Asana"
-        },
-        {
-         "slug": "basecamp",
-         "name": "Basecamp"
-        },
-        {
-         "slug": "calendly",
-         "name": "Calendly"
-        },
-        {
-         "slug": "cursor",
-         "name": "Cursor"
-        },
-        {
-         "slug": "figma",
-         "name": "Figma"
-        },
-        {
-         "slug": "fireflies",
-         "name": "Fireflies.ai"
-        },
-        {
-         "slug": "framer",
-         "name": "Framer"
-        },
-        {
-         "slug": "github",
-         "name": "GitHub"
-        },
-        {
-         "slug": "gitlab",
-         "name": "GitLab"
-        },
-        {
-         "slug": "gitpod",
-         "name": "Gitpod"
-        },
-        {
-         "slug": "guru",
-         "name": "Guru"
-        },
-        {
-         "slug": "loom",
-         "name": "Loom"
-        },
-        {
-         "slug": "m-files",
-         "name": "M-Files"
-        },
-        {
-         "slug": "make",
-         "name": "Make"
-        },
-        {
-         "slug": "mentimeter",
-         "name": "Mentimeter"
-        },
-        {
-         "slug": "miro",
-         "name": "Miro"
-        },
-        {
-         "slug": "motion",
-         "name": "Motion"
-        },
-        {
-         "slug": "notion",
-         "name": "Notion"
-        },
-        {
-         "slug": "productboard",
-         "name": "Productboard"
-        },
-        {
-         "slug": "rossum",
-         "name": "Rossum"
-        },
-        {
-         "slug": "slack",
-         "name": "Slack"
-        },
-        {
-         "slug": "smartsheet",
-         "name": "Smartsheet"
-        },
-        {
-         "slug": "sourcegraph",
-         "name": "Sourcegraph"
-        },
-        {
-         "slug": "teamwork",
-         "name": "Teamwork"
-        },
-        {
-         "slug": "templafy",
-         "name": "Templafy"
-        },
-        {
-         "slug": "wrike",
-         "name": "Wrike"
-        }
-       ],
-       "unreadable": [
-        {
-         "slug": "atlassian",
-         "name": "Atlassian"
-        },
-        {
-         "slug": "box",
-         "name": "Box"
-        },
-        {
-         "slug": "jetbrains",
-         "name": "JetBrains"
-        },
-        {
-         "slug": "linear",
-         "name": "Linear"
-        },
-        {
-         "slug": "nextcloud",
-         "name": "Nextcloud"
-        },
-        {
-         "slug": "shortcut",
-         "name": "Shortcut"
-        },
-        {
-         "slug": "sonarsource",
-         "name": "SonarSource"
-        },
-        {
-         "slug": "tricentis",
-         "name": "Tricentis"
-        },
-        {
-         "slug": "unity",
-         "name": "Unity"
-        },
-        {
-         "slug": "workato",
-         "name": "Workato"
-        }
-       ]
-      }
-     },
-     {
       "group": "dev",
       "label": "Developer & infrastructure",
       "short": "Dev & infrastructure",
@@ -42265,6 +42066,218 @@
         {
          "slug": "nice",
          "name": "NICE"
+        }
+       ]
+      }
+     },
+     {
+      "group": "work",
+      "label": "Work & product",
+      "short": "Work & product",
+      "n": 48,
+      "readable": 38,
+      "yes": 10,
+      "no": 28,
+      "unreadable": 10,
+      "share": 26.3,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "clickup",
+         "name": "ClickUp"
+        },
+        {
+         "slug": "coda",
+         "name": "Coda"
+        },
+        {
+         "slug": "monday",
+         "name": "monday.com"
+        },
+        {
+         "slug": "n8n",
+         "name": "n8n"
+        },
+        {
+         "slug": "otter",
+         "name": "Otter.ai"
+        },
+        {
+         "slug": "replit",
+         "name": "Replit"
+        },
+        {
+         "slug": "retool",
+         "name": "Retool"
+        },
+        {
+         "slug": "teamleader",
+         "name": "Teamleader"
+        },
+        {
+         "slug": "tray",
+         "name": "Tray.ai"
+        },
+        {
+         "slug": "uipath",
+         "name": "UiPath"
+        }
+       ],
+       "no": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
+        {
+         "slug": "asana",
+         "name": "Asana"
+        },
+        {
+         "slug": "basecamp",
+         "name": "Basecamp"
+        },
+        {
+         "slug": "calendly",
+         "name": "Calendly"
+        },
+        {
+         "slug": "cursor",
+         "name": "Cursor"
+        },
+        {
+         "slug": "figma",
+         "name": "Figma"
+        },
+        {
+         "slug": "fireflies",
+         "name": "Fireflies.ai"
+        },
+        {
+         "slug": "framer",
+         "name": "Framer"
+        },
+        {
+         "slug": "github",
+         "name": "GitHub"
+        },
+        {
+         "slug": "gitlab",
+         "name": "GitLab"
+        },
+        {
+         "slug": "gitpod",
+         "name": "Gitpod"
+        },
+        {
+         "slug": "guru",
+         "name": "Guru"
+        },
+        {
+         "slug": "loom",
+         "name": "Loom"
+        },
+        {
+         "slug": "m-files",
+         "name": "M-Files"
+        },
+        {
+         "slug": "make",
+         "name": "Make"
+        },
+        {
+         "slug": "mentimeter",
+         "name": "Mentimeter"
+        },
+        {
+         "slug": "miro",
+         "name": "Miro"
+        },
+        {
+         "slug": "motion",
+         "name": "Motion"
+        },
+        {
+         "slug": "notion",
+         "name": "Notion"
+        },
+        {
+         "slug": "productboard",
+         "name": "Productboard"
+        },
+        {
+         "slug": "rossum",
+         "name": "Rossum"
+        },
+        {
+         "slug": "slack",
+         "name": "Slack"
+        },
+        {
+         "slug": "smartsheet",
+         "name": "Smartsheet"
+        },
+        {
+         "slug": "sourcegraph",
+         "name": "Sourcegraph"
+        },
+        {
+         "slug": "teamwork",
+         "name": "Teamwork"
+        },
+        {
+         "slug": "templafy",
+         "name": "Templafy"
+        },
+        {
+         "slug": "wrike",
+         "name": "Wrike"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "atlassian",
+         "name": "Atlassian"
+        },
+        {
+         "slug": "box",
+         "name": "Box"
+        },
+        {
+         "slug": "jetbrains",
+         "name": "JetBrains"
+        },
+        {
+         "slug": "linear",
+         "name": "Linear"
+        },
+        {
+         "slug": "nextcloud",
+         "name": "Nextcloud"
+        },
+        {
+         "slug": "shortcut",
+         "name": "Shortcut"
+        },
+        {
+         "slug": "sonarsource",
+         "name": "SonarSource"
+        },
+        {
+         "slug": "tricentis",
+         "name": "Tricentis"
+        },
+        {
+         "slug": "unity",
+         "name": "Unity"
+        },
+        {
+         "slug": "workato",
+         "name": "Workato"
         }
        ]
       }
@@ -42719,8 +42732,8 @@
     "drawn": true,
     "withheld": null,
     "overall": {
-     "yes": 96,
-     "no": 174,
+     "yes": 95,
+     "no": 175,
      "unreadable": 91,
      "readable": 270,
      "tracked": 361
@@ -43282,10 +43295,10 @@
       "short": "Work & product",
       "n": 48,
       "readable": 38,
-      "yes": 9,
-      "no": 29,
+      "yes": 8,
+      "no": 30,
       "unreadable": 10,
-      "share": 23.7,
+      "share": 21.1,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -43320,10 +43333,6 @@
         {
          "slug": "wrike",
          "name": "Wrike"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
         }
        ],
        "no": [
@@ -43442,6 +43451,10 @@
         {
          "slug": "uipath",
          "name": "UiPath"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
         }
        ],
        "unreadable": [
@@ -45147,10 +45160,10 @@
       "short": "Work & product",
       "n": 48,
       "readable": 38,
-      "yes": 9,
-      "no": 29,
+      "yes": 8,
+      "no": 30,
       "unreadable": 10,
-      "share": 23.7,
+      "share": 21.1,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -45185,10 +45198,6 @@
         {
          "slug": "wrike",
          "name": "Wrike"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
         }
        ],
        "no": [
@@ -45307,6 +45316,10 @@
         {
          "slug": "uipath",
          "name": "UiPath"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
         }
        ],
        "unreadable": [
@@ -46609,8 +46622,8 @@
     "drawn": true,
     "withheld": null,
     "overall": {
-     "yes": 68,
-     "no": 202,
+     "yes": 67,
+     "no": 203,
      "unreadable": 91,
      "readable": 270,
      "tracked": 361
@@ -54010,10 +54023,10 @@
       "label": "Developer & infrastructure",
       "short": "Dev & infrastructure",
       "n": 61,
-      "readable": 18,
-      "yes": 18,
+      "readable": 26,
+      "yes": 26,
       "no": 0,
-      "unreadable": 43,
+      "unreadable": 35,
       "share": 100,
       "suppressed": false,
       "companies": {
@@ -54031,8 +54044,24 @@
          "name": "Cloudflare"
         },
         {
+         "slug": "datadog",
+         "name": "Datadog"
+        },
+        {
+         "slug": "docker",
+         "name": "Docker"
+        },
+        {
+         "slug": "dynatrace",
+         "name": "Dynatrace"
+        },
+        {
          "slug": "gitguardian",
          "name": "GitGuardian"
+        },
+        {
+         "slug": "grafana",
+         "name": "Grafana Labs"
         },
         {
          "slug": "honeycomb",
@@ -54051,6 +54080,10 @@
          "name": "Netlify"
         },
         {
+         "slug": "new-relic",
+         "name": "New Relic"
+        },
+        {
          "slug": "pagerduty",
          "name": "PagerDuty"
         },
@@ -54059,12 +54092,20 @@
          "name": "Postman"
         },
         {
+         "slug": "proton",
+         "name": "Proton"
+        },
+        {
          "slug": "pulumi",
          "name": "Pulumi"
         },
         {
          "slug": "railway",
          "name": "Railway"
+        },
+        {
+         "slug": "render",
+         "name": "Render"
         },
         {
          "slug": "resend",
@@ -54089,6 +54130,10 @@
         {
          "slug": "supabase",
          "name": "Supabase"
+        },
+        {
+         "slug": "vercel",
+         "name": "Vercel"
         }
        ],
        "no": [],
@@ -54122,28 +54167,12 @@
          "name": "Darktrace"
         },
         {
-         "slug": "datadog",
-         "name": "Datadog"
-        },
-        {
-         "slug": "docker",
-         "name": "Docker"
-        },
-        {
-         "slug": "dynatrace",
-         "name": "Dynatrace"
-        },
-        {
          "slug": "elastic",
          "name": "Elastic"
         },
         {
          "slug": "fly-io",
          "name": "Fly.io"
-        },
-        {
-         "slug": "grafana",
-         "name": "Grafana Labs"
         },
         {
          "slug": "harness",
@@ -54166,10 +54195,6 @@
          "name": "Netskope"
         },
         {
-         "slug": "new-relic",
-         "name": "New Relic"
-        },
-        {
          "slug": "nexthink",
          "name": "Nexthink"
         },
@@ -54190,20 +54215,12 @@
          "name": "Palo Alto Networks"
         },
         {
-         "slug": "proton",
-         "name": "Proton"
-        },
-        {
          "slug": "qualys",
          "name": "Qualys"
         },
         {
          "slug": "rapid7",
          "name": "Rapid7"
-        },
-        {
-         "slug": "render",
-         "name": "Render"
         },
         {
          "slug": "scaleway",
@@ -54250,10 +54267,6 @@
          "name": "Veeam"
         },
         {
-         "slug": "vercel",
-         "name": "Vercel"
-        },
-        {
          "slug": "verkada",
          "name": "Verkada"
         },
@@ -54273,11 +54286,11 @@
       "label": "Data & analytics",
       "short": "Data & analytics",
       "n": 65,
-      "readable": 23,
-      "yes": 20,
+      "readable": 33,
+      "yes": 30,
       "no": 3,
-      "unreadable": 42,
-      "share": 87,
+      "unreadable": 32,
+      "share": 90.9,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -54290,8 +54303,16 @@
          "name": "Amplitude"
         },
         {
+         "slug": "assemblyai",
+         "name": "AssemblyAI"
+        },
+        {
          "slug": "census",
          "name": "Census"
+        },
+        {
+         "slug": "cockroach-labs",
+         "name": "Cockroach Labs"
         },
         {
          "slug": "confluent",
@@ -54306,8 +54327,16 @@
          "name": "dbt Labs"
         },
         {
+         "slug": "firebolt",
+         "name": "Firebolt"
+        },
+        {
          "slug": "fivetran",
          "name": "Fivetran"
+        },
+        {
+         "slug": "fullstory",
+         "name": "FullStory"
         },
         {
          "slug": "heap",
@@ -54318,12 +54347,24 @@
          "name": "Hex"
         },
         {
+         "slug": "hightouch",
+         "name": "Hightouch"
+        },
+        {
          "slug": "influxdata",
          "name": "InfluxData"
         },
         {
+         "slug": "materialize",
+         "name": "Materialize"
+        },
+        {
          "slug": "metabase",
          "name": "Metabase"
+        },
+        {
+         "slug": "mixpanel",
+         "name": "Mixpanel"
         },
         {
          "slug": "mongodb",
@@ -54334,6 +54375,10 @@
          "name": "Neo4j"
         },
         {
+         "slug": "neon",
+         "name": "Neon"
+        },
+        {
          "slug": "pendo",
          "name": "Pendo"
         },
@@ -54342,8 +54387,16 @@
          "name": "Pinecone"
         },
         {
+         "slug": "posthog",
+         "name": "PostHog"
+        },
+        {
          "slug": "redis",
          "name": "Redis"
+        },
+        {
+         "slug": "rudderstack",
+         "name": "RudderStack"
         },
         {
          "slug": "statsig",
@@ -54386,10 +54439,6 @@
          "name": "Anyscale"
         },
         {
-         "slug": "assemblyai",
-         "name": "AssemblyAI"
-        },
-        {
          "slug": "astronomer",
          "name": "Astronomer"
         },
@@ -54400,10 +54449,6 @@
         {
          "slug": "clickhouse",
          "name": "ClickHouse"
-        },
-        {
-         "slug": "cockroach-labs",
-         "name": "Cockroach Labs"
         },
         {
          "slug": "cohere",
@@ -54434,18 +54479,6 @@
          "name": "Dremio"
         },
         {
-         "slug": "firebolt",
-         "name": "Firebolt"
-        },
-        {
-         "slug": "fullstory",
-         "name": "FullStory"
-        },
-        {
-         "slug": "hightouch",
-         "name": "Hightouch"
-        },
-        {
          "slug": "hotjar",
          "name": "Hotjar"
         },
@@ -54462,16 +54495,8 @@
          "name": "Jedox"
         },
         {
-         "slug": "materialize",
-         "name": "Materialize"
-        },
-        {
          "slug": "matillion",
          "name": "Matillion"
-        },
-        {
-         "slug": "mixpanel",
-         "name": "Mixpanel"
         },
         {
          "slug": "mode",
@@ -54482,16 +54507,8 @@
          "name": "Monte Carlo"
         },
         {
-         "slug": "neon",
-         "name": "Neon"
-        },
-        {
          "slug": "palantir",
          "name": "Palantir"
-        },
-        {
-         "slug": "posthog",
-         "name": "PostHog"
         },
         {
          "slug": "prefect",
@@ -54508,10 +54525,6 @@
         {
          "slug": "replicate",
          "name": "Replicate"
-        },
-        {
-         "slug": "rudderstack",
-         "name": "RudderStack"
         },
         {
          "slug": "scale-ai",
@@ -54553,14 +54566,18 @@
       "label": "Work & product",
       "short": "Work & product",
       "n": 48,
-      "readable": 23,
-      "yes": 19,
+      "readable": 33,
+      "yes": 29,
       "no": 4,
-      "unreadable": 25,
-      "share": 82.6,
+      "unreadable": 15,
+      "share": 87.9,
       "suppressed": false,
       "companies": {
        "yes": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
         {
          "slug": "asana",
          "name": "Asana"
@@ -54568,6 +54585,10 @@
         {
          "slug": "atlassian",
          "name": "Atlassian"
+        },
+        {
+         "slug": "basecamp",
+         "name": "Basecamp"
         },
         {
          "slug": "calendly",
@@ -54582,8 +54603,20 @@
          "name": "Cursor"
         },
         {
+         "slug": "figma",
+         "name": "Figma"
+        },
+        {
+         "slug": "fireflies",
+         "name": "Fireflies.ai"
+        },
+        {
          "slug": "framer",
          "name": "Framer"
+        },
+        {
+         "slug": "github",
+         "name": "GitHub"
         },
         {
          "slug": "gitlab",
@@ -54602,6 +54635,10 @@
          "name": "Make"
         },
         {
+         "slug": "mentimeter",
+         "name": "Mentimeter"
+        },
+        {
          "slug": "miro",
          "name": "Miro"
         },
@@ -54618,8 +54655,16 @@
          "name": "Notion"
         },
         {
+         "slug": "otter",
+         "name": "Otter.ai"
+        },
+        {
          "slug": "productboard",
          "name": "Productboard"
+        },
+        {
+         "slug": "replit",
+         "name": "Replit"
         },
         {
          "slug": "retool",
@@ -54632,6 +54677,14 @@
         {
          "slug": "slack",
          "name": "Slack"
+        },
+        {
+         "slug": "teamwork",
+         "name": "Teamwork"
+        },
+        {
+         "slug": "wrike",
+         "name": "Wrike"
         },
         {
          "slug": "zapier",
@@ -54658,32 +54711,12 @@
        ],
        "unreadable": [
         {
-         "slug": "airtable",
-         "name": "Airtable"
-        },
-        {
-         "slug": "basecamp",
-         "name": "Basecamp"
-        },
-        {
          "slug": "box",
          "name": "Box"
         },
         {
          "slug": "coda",
          "name": "Coda"
-        },
-        {
-         "slug": "figma",
-         "name": "Figma"
-        },
-        {
-         "slug": "fireflies",
-         "name": "Fireflies.ai"
-        },
-        {
-         "slug": "github",
-         "name": "GitHub"
         },
         {
          "slug": "gitpod",
@@ -54702,20 +54735,8 @@
          "name": "M-Files"
         },
         {
-         "slug": "mentimeter",
-         "name": "Mentimeter"
-        },
-        {
          "slug": "motion",
          "name": "Motion"
-        },
-        {
-         "slug": "otter",
-         "name": "Otter.ai"
-        },
-        {
-         "slug": "replit",
-         "name": "Replit"
         },
         {
          "slug": "sonarsource",
@@ -54728,10 +54749,6 @@
         {
          "slug": "teamleader",
          "name": "Teamleader"
-        },
-        {
-         "slug": "teamwork",
-         "name": "Teamwork"
         },
         {
          "slug": "templafy",
@@ -54752,10 +54769,6 @@
         {
          "slug": "workato",
          "name": "Workato"
-        },
-        {
-         "slug": "wrike",
-         "name": "Wrike"
         }
        ]
       }
@@ -54765,21 +54778,33 @@
       "label": "Go-to-market",
       "short": "Go-to-market",
       "n": 50,
-      "readable": 12,
-      "yes": 10,
+      "readable": 20,
+      "yes": 18,
       "no": 2,
-      "unreadable": 38,
-      "share": 83.3,
+      "unreadable": 30,
+      "share": 90,
       "suppressed": false,
       "companies": {
        "yes": [
+        {
+         "slug": "apollo",
+         "name": "Apollo.io"
+        },
         {
          "slug": "attio",
          "name": "Attio"
         },
         {
+         "slug": "bigcommerce",
+         "name": "BigCommerce"
+        },
+        {
          "slug": "bird",
          "name": "Bird"
+        },
+        {
+         "slug": "braze",
+         "name": "Braze"
         },
         {
          "slug": "brevo",
@@ -54788,6 +54813,10 @@
         {
          "slug": "clay",
          "name": "Clay"
+        },
+        {
+         "slug": "contentful",
+         "name": "Contentful"
         },
         {
          "slug": "descript",
@@ -54802,12 +54831,28 @@
          "name": "Klaviyo"
         },
         {
+         "slug": "mailchimp",
+         "name": "Mailchimp"
+        },
+        {
          "slug": "salesforce",
          "name": "Salesforce"
         },
         {
+         "slug": "shopify",
+         "name": "Shopify"
+        },
+        {
+         "slug": "synthesia",
+         "name": "Synthesia"
+        },
+        {
          "slug": "trustpilot",
          "name": "Trustpilot"
+        },
+        {
+         "slug": "typeform",
+         "name": "Typeform"
         },
         {
          "slug": "wistia",
@@ -54830,24 +54875,12 @@
          "name": "ActiveCampaign"
         },
         {
-         "slug": "apollo",
-         "name": "Apollo.io"
-        },
-        {
          "slug": "attentive",
          "name": "Attentive"
         },
         {
-         "slug": "bigcommerce",
-         "name": "BigCommerce"
-        },
-        {
          "slug": "bloomreach",
          "name": "Bloomreach"
-        },
-        {
-         "slug": "braze",
-         "name": "Braze"
         },
         {
          "slug": "clari",
@@ -54860,10 +54893,6 @@
         {
          "slug": "commercetools",
          "name": "commercetools"
-        },
-        {
-         "slug": "contentful",
-         "name": "Contentful"
         },
         {
          "slug": "copy-ai",
@@ -54906,10 +54935,6 @@
          "name": "Jasper"
         },
         {
-         "slug": "mailchimp",
-         "name": "Mailchimp"
-        },
-        {
          "slug": "optimizely",
          "name": "Optimizely"
         },
@@ -54930,10 +54955,6 @@
          "name": "Seismic"
         },
         {
-         "slug": "shopify",
-         "name": "Shopify"
-        },
-        {
          "slug": "showpad",
          "name": "Showpad"
         },
@@ -54952,14 +54973,6 @@
         {
          "slug": "staffbase",
          "name": "Staffbase"
-        },
-        {
-         "slug": "synthesia",
-         "name": "Synthesia"
-        },
-        {
-         "slug": "typeform",
-         "name": "Typeform"
         },
         {
          "slug": "unbabel",
@@ -55080,11 +55093,12 @@
       "label": "Risk, compliance & identity",
       "short": "Risk & compliance",
       "n": 26,
-      "readable": 5,
-      "yes": 2,
+      "readable": 8,
+      "yes": 5,
       "no": 3,
-      "unreadable": 21,
-      "suppressed": true,
+      "unreadable": 18,
+      "share": 62.5,
+      "suppressed": false,
       "companies": {
        "yes": [
         {
@@ -55094,6 +55108,18 @@
         {
          "slug": "okta",
          "name": "Okta"
+        },
+        {
+         "slug": "stytch",
+         "name": "Stytch"
+        },
+        {
+         "slug": "usercentrics",
+         "name": "Usercentrics"
+        },
+        {
+         "slug": "workos",
+         "name": "WorkOS"
         }
        ],
        "no": [
@@ -55180,20 +55206,8 @@
          "name": "Signicat"
         },
         {
-         "slug": "stytch",
-         "name": "Stytch"
-        },
-        {
-         "slug": "usercentrics",
-         "name": "Usercentrics"
-        },
-        {
          "slug": "workiva",
          "name": "Workiva"
-        },
-        {
-         "slug": "workos",
-         "name": "WorkOS"
         }
        ]
       }
@@ -55203,16 +55217,20 @@
       "label": "Enterprise applications",
       "short": "Enterprise apps",
       "n": 19,
-      "readable": 1,
-      "yes": 1,
+      "readable": 2,
+      "yes": 2,
       "no": 0,
-      "unreadable": 18,
+      "unreadable": 17,
       "suppressed": true,
       "companies": {
        "yes": [
         {
          "slug": "mendix",
          "name": "Mendix"
+        },
+        {
+         "slug": "odoo",
+         "name": "Odoo"
         }
        ],
        "no": [],
@@ -55254,10 +55272,6 @@
          "name": "JAGGAER"
         },
         {
-         "slug": "odoo",
-         "name": "Odoo"
-        },
-        {
          "slug": "oracle",
          "name": "Oracle"
         },
@@ -55297,17 +55311,21 @@
       "label": "Finance & people ops",
       "short": "Finance & people",
       "n": 37,
-      "readable": 8,
-      "yes": 4,
+      "readable": 10,
+      "yes": 6,
       "no": 4,
-      "unreadable": 29,
-      "share": 50,
+      "unreadable": 27,
+      "share": 60,
       "suppressed": false,
       "companies": {
        "yes": [
         {
          "slug": "bamboohr",
          "name": "BambooHR"
+        },
+        {
+         "slug": "bill",
+         "name": "BILL"
         },
         {
          "slug": "navan",
@@ -55320,6 +55338,10 @@
         {
          "slug": "ramp",
          "name": "Ramp"
+        },
+        {
+         "slug": "tipalti",
+         "name": "Tipalti"
         }
        ],
        "no": [
@@ -55356,10 +55378,6 @@
         {
          "slug": "avalara",
          "name": "Avalara"
-        },
-        {
-         "slug": "bill",
-         "name": "BILL"
         },
         {
          "slug": "blackline",
@@ -55442,10 +55460,6 @@
          "name": "Stripe"
         },
         {
-         "slug": "tipalti",
-         "name": "Tipalti"
-        },
-        {
          "slug": "workable",
          "name": "Workable"
         },
@@ -55465,13 +55479,22 @@
       "label": "Financial infrastructure",
       "short": "Financial infra",
       "n": 16,
-      "readable": 1,
-      "yes": 0,
+      "readable": 3,
+      "yes": 2,
       "no": 1,
-      "unreadable": 15,
+      "unreadable": 13,
       "suppressed": true,
       "companies": {
-       "yes": [],
+       "yes": [
+        {
+         "slug": "mollie",
+         "name": "Mollie"
+        },
+        {
+         "slug": "wise",
+         "name": "Wise"
+        }
+       ],
        "no": [
         {
          "slug": "airwallex",
@@ -55512,10 +55535,6 @@
          "name": "Modern Treasury"
         },
         {
-         "slug": "mollie",
-         "name": "Mollie"
-        },
-        {
          "slug": "paddle",
          "name": "Paddle"
         },
@@ -55534,10 +55553,6 @@
         {
          "slug": "tink",
          "name": "Tink"
-        },
-        {
-         "slug": "wise",
-         "name": "Wise"
         }
        ]
       }
@@ -55646,10 +55661,10 @@
       "label": "Developer & infrastructure",
       "short": "Dev & infrastructure",
       "n": 61,
-      "readable": 18,
-      "yes": 18,
+      "readable": 26,
+      "yes": 26,
       "no": 0,
-      "unreadable": 43,
+      "unreadable": 35,
       "share": 100,
       "suppressed": false,
       "companies": {
@@ -55667,8 +55682,24 @@
          "name": "Cloudflare"
         },
         {
+         "slug": "datadog",
+         "name": "Datadog"
+        },
+        {
+         "slug": "docker",
+         "name": "Docker"
+        },
+        {
+         "slug": "dynatrace",
+         "name": "Dynatrace"
+        },
+        {
          "slug": "gitguardian",
          "name": "GitGuardian"
+        },
+        {
+         "slug": "grafana",
+         "name": "Grafana Labs"
         },
         {
          "slug": "honeycomb",
@@ -55687,6 +55718,10 @@
          "name": "Netlify"
         },
         {
+         "slug": "new-relic",
+         "name": "New Relic"
+        },
+        {
          "slug": "pagerduty",
          "name": "PagerDuty"
         },
@@ -55695,12 +55730,20 @@
          "name": "Postman"
         },
         {
+         "slug": "proton",
+         "name": "Proton"
+        },
+        {
          "slug": "pulumi",
          "name": "Pulumi"
         },
         {
          "slug": "railway",
          "name": "Railway"
+        },
+        {
+         "slug": "render",
+         "name": "Render"
         },
         {
          "slug": "resend",
@@ -55725,6 +55768,10 @@
         {
          "slug": "supabase",
          "name": "Supabase"
+        },
+        {
+         "slug": "vercel",
+         "name": "Vercel"
         }
        ],
        "no": [],
@@ -55758,28 +55805,12 @@
          "name": "Darktrace"
         },
         {
-         "slug": "datadog",
-         "name": "Datadog"
-        },
-        {
-         "slug": "docker",
-         "name": "Docker"
-        },
-        {
-         "slug": "dynatrace",
-         "name": "Dynatrace"
-        },
-        {
          "slug": "elastic",
          "name": "Elastic"
         },
         {
          "slug": "fly-io",
          "name": "Fly.io"
-        },
-        {
-         "slug": "grafana",
-         "name": "Grafana Labs"
         },
         {
          "slug": "harness",
@@ -55802,10 +55833,6 @@
          "name": "Netskope"
         },
         {
-         "slug": "new-relic",
-         "name": "New Relic"
-        },
-        {
          "slug": "nexthink",
          "name": "Nexthink"
         },
@@ -55826,20 +55853,12 @@
          "name": "Palo Alto Networks"
         },
         {
-         "slug": "proton",
-         "name": "Proton"
-        },
-        {
          "slug": "qualys",
          "name": "Qualys"
         },
         {
          "slug": "rapid7",
          "name": "Rapid7"
-        },
-        {
-         "slug": "render",
-         "name": "Render"
         },
         {
          "slug": "scaleway",
@@ -55886,10 +55905,6 @@
          "name": "Veeam"
         },
         {
-         "slug": "vercel",
-         "name": "Vercel"
-        },
-        {
          "slug": "verkada",
          "name": "Verkada"
         },
@@ -55909,11 +55924,11 @@
       "label": "Data & analytics",
       "short": "Data & analytics",
       "n": 65,
-      "readable": 23,
-      "yes": 20,
+      "readable": 33,
+      "yes": 30,
       "no": 3,
-      "unreadable": 42,
-      "share": 87,
+      "unreadable": 32,
+      "share": 90.9,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -55926,8 +55941,16 @@
          "name": "Amplitude"
         },
         {
+         "slug": "assemblyai",
+         "name": "AssemblyAI"
+        },
+        {
          "slug": "census",
          "name": "Census"
+        },
+        {
+         "slug": "cockroach-labs",
+         "name": "Cockroach Labs"
         },
         {
          "slug": "confluent",
@@ -55942,8 +55965,16 @@
          "name": "dbt Labs"
         },
         {
+         "slug": "firebolt",
+         "name": "Firebolt"
+        },
+        {
          "slug": "fivetran",
          "name": "Fivetran"
+        },
+        {
+         "slug": "fullstory",
+         "name": "FullStory"
         },
         {
          "slug": "heap",
@@ -55954,12 +55985,24 @@
          "name": "Hex"
         },
         {
+         "slug": "hightouch",
+         "name": "Hightouch"
+        },
+        {
          "slug": "influxdata",
          "name": "InfluxData"
         },
         {
+         "slug": "materialize",
+         "name": "Materialize"
+        },
+        {
          "slug": "metabase",
          "name": "Metabase"
+        },
+        {
+         "slug": "mixpanel",
+         "name": "Mixpanel"
         },
         {
          "slug": "mongodb",
@@ -55970,6 +56013,10 @@
          "name": "Neo4j"
         },
         {
+         "slug": "neon",
+         "name": "Neon"
+        },
+        {
          "slug": "pendo",
          "name": "Pendo"
         },
@@ -55978,8 +56025,16 @@
          "name": "Pinecone"
         },
         {
+         "slug": "posthog",
+         "name": "PostHog"
+        },
+        {
          "slug": "redis",
          "name": "Redis"
+        },
+        {
+         "slug": "rudderstack",
+         "name": "RudderStack"
         },
         {
          "slug": "statsig",
@@ -56022,10 +56077,6 @@
          "name": "Anyscale"
         },
         {
-         "slug": "assemblyai",
-         "name": "AssemblyAI"
-        },
-        {
          "slug": "astronomer",
          "name": "Astronomer"
         },
@@ -56036,10 +56087,6 @@
         {
          "slug": "clickhouse",
          "name": "ClickHouse"
-        },
-        {
-         "slug": "cockroach-labs",
-         "name": "Cockroach Labs"
         },
         {
          "slug": "cohere",
@@ -56070,18 +56117,6 @@
          "name": "Dremio"
         },
         {
-         "slug": "firebolt",
-         "name": "Firebolt"
-        },
-        {
-         "slug": "fullstory",
-         "name": "FullStory"
-        },
-        {
-         "slug": "hightouch",
-         "name": "Hightouch"
-        },
-        {
          "slug": "hotjar",
          "name": "Hotjar"
         },
@@ -56098,16 +56133,8 @@
          "name": "Jedox"
         },
         {
-         "slug": "materialize",
-         "name": "Materialize"
-        },
-        {
          "slug": "matillion",
          "name": "Matillion"
-        },
-        {
-         "slug": "mixpanel",
-         "name": "Mixpanel"
         },
         {
          "slug": "mode",
@@ -56118,16 +56145,8 @@
          "name": "Monte Carlo"
         },
         {
-         "slug": "neon",
-         "name": "Neon"
-        },
-        {
          "slug": "palantir",
          "name": "Palantir"
-        },
-        {
-         "slug": "posthog",
-         "name": "PostHog"
         },
         {
          "slug": "prefect",
@@ -56144,10 +56163,6 @@
         {
          "slug": "replicate",
          "name": "Replicate"
-        },
-        {
-         "slug": "rudderstack",
-         "name": "RudderStack"
         },
         {
          "slug": "scale-ai",
@@ -56189,21 +56204,33 @@
       "label": "Go-to-market",
       "short": "Go-to-market",
       "n": 50,
-      "readable": 12,
-      "yes": 10,
+      "readable": 20,
+      "yes": 18,
       "no": 2,
-      "unreadable": 38,
-      "share": 83.3,
+      "unreadable": 30,
+      "share": 90,
       "suppressed": false,
       "companies": {
        "yes": [
+        {
+         "slug": "apollo",
+         "name": "Apollo.io"
+        },
         {
          "slug": "attio",
          "name": "Attio"
         },
         {
+         "slug": "bigcommerce",
+         "name": "BigCommerce"
+        },
+        {
          "slug": "bird",
          "name": "Bird"
+        },
+        {
+         "slug": "braze",
+         "name": "Braze"
         },
         {
          "slug": "brevo",
@@ -56212,6 +56239,10 @@
         {
          "slug": "clay",
          "name": "Clay"
+        },
+        {
+         "slug": "contentful",
+         "name": "Contentful"
         },
         {
          "slug": "descript",
@@ -56226,12 +56257,28 @@
          "name": "Klaviyo"
         },
         {
+         "slug": "mailchimp",
+         "name": "Mailchimp"
+        },
+        {
          "slug": "salesforce",
          "name": "Salesforce"
         },
         {
+         "slug": "shopify",
+         "name": "Shopify"
+        },
+        {
+         "slug": "synthesia",
+         "name": "Synthesia"
+        },
+        {
          "slug": "trustpilot",
          "name": "Trustpilot"
+        },
+        {
+         "slug": "typeform",
+         "name": "Typeform"
         },
         {
          "slug": "wistia",
@@ -56254,24 +56301,12 @@
          "name": "ActiveCampaign"
         },
         {
-         "slug": "apollo",
-         "name": "Apollo.io"
-        },
-        {
          "slug": "attentive",
          "name": "Attentive"
         },
         {
-         "slug": "bigcommerce",
-         "name": "BigCommerce"
-        },
-        {
          "slug": "bloomreach",
          "name": "Bloomreach"
-        },
-        {
-         "slug": "braze",
-         "name": "Braze"
         },
         {
          "slug": "clari",
@@ -56284,10 +56319,6 @@
         {
          "slug": "commercetools",
          "name": "commercetools"
-        },
-        {
-         "slug": "contentful",
-         "name": "Contentful"
         },
         {
          "slug": "copy-ai",
@@ -56330,10 +56361,6 @@
          "name": "Jasper"
         },
         {
-         "slug": "mailchimp",
-         "name": "Mailchimp"
-        },
-        {
          "slug": "optimizely",
          "name": "Optimizely"
         },
@@ -56354,10 +56381,6 @@
          "name": "Seismic"
         },
         {
-         "slug": "shopify",
-         "name": "Shopify"
-        },
-        {
          "slug": "showpad",
          "name": "Showpad"
         },
@@ -56376,14 +56399,6 @@
         {
          "slug": "staffbase",
          "name": "Staffbase"
-        },
-        {
-         "slug": "synthesia",
-         "name": "Synthesia"
-        },
-        {
-         "slug": "typeform",
-         "name": "Typeform"
         },
         {
          "slug": "unbabel",
@@ -56409,14 +56424,18 @@
       "label": "Work & product",
       "short": "Work & product",
       "n": 48,
-      "readable": 23,
-      "yes": 19,
+      "readable": 33,
+      "yes": 29,
       "no": 4,
-      "unreadable": 25,
-      "share": 82.6,
+      "unreadable": 15,
+      "share": 87.9,
       "suppressed": false,
       "companies": {
        "yes": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
         {
          "slug": "asana",
          "name": "Asana"
@@ -56424,6 +56443,10 @@
         {
          "slug": "atlassian",
          "name": "Atlassian"
+        },
+        {
+         "slug": "basecamp",
+         "name": "Basecamp"
         },
         {
          "slug": "calendly",
@@ -56438,8 +56461,20 @@
          "name": "Cursor"
         },
         {
+         "slug": "figma",
+         "name": "Figma"
+        },
+        {
+         "slug": "fireflies",
+         "name": "Fireflies.ai"
+        },
+        {
          "slug": "framer",
          "name": "Framer"
+        },
+        {
+         "slug": "github",
+         "name": "GitHub"
         },
         {
          "slug": "gitlab",
@@ -56458,6 +56493,10 @@
          "name": "Make"
         },
         {
+         "slug": "mentimeter",
+         "name": "Mentimeter"
+        },
+        {
          "slug": "miro",
          "name": "Miro"
         },
@@ -56474,8 +56513,16 @@
          "name": "Notion"
         },
         {
+         "slug": "otter",
+         "name": "Otter.ai"
+        },
+        {
          "slug": "productboard",
          "name": "Productboard"
+        },
+        {
+         "slug": "replit",
+         "name": "Replit"
         },
         {
          "slug": "retool",
@@ -56488,6 +56535,14 @@
         {
          "slug": "slack",
          "name": "Slack"
+        },
+        {
+         "slug": "teamwork",
+         "name": "Teamwork"
+        },
+        {
+         "slug": "wrike",
+         "name": "Wrike"
         },
         {
          "slug": "zapier",
@@ -56514,32 +56569,12 @@
        ],
        "unreadable": [
         {
-         "slug": "airtable",
-         "name": "Airtable"
-        },
-        {
-         "slug": "basecamp",
-         "name": "Basecamp"
-        },
-        {
          "slug": "box",
          "name": "Box"
         },
         {
          "slug": "coda",
          "name": "Coda"
-        },
-        {
-         "slug": "figma",
-         "name": "Figma"
-        },
-        {
-         "slug": "fireflies",
-         "name": "Fireflies.ai"
-        },
-        {
-         "slug": "github",
-         "name": "GitHub"
         },
         {
          "slug": "gitpod",
@@ -56558,20 +56593,8 @@
          "name": "M-Files"
         },
         {
-         "slug": "mentimeter",
-         "name": "Mentimeter"
-        },
-        {
          "slug": "motion",
          "name": "Motion"
-        },
-        {
-         "slug": "otter",
-         "name": "Otter.ai"
-        },
-        {
-         "slug": "replit",
-         "name": "Replit"
         },
         {
          "slug": "sonarsource",
@@ -56584,10 +56607,6 @@
         {
          "slug": "teamleader",
          "name": "Teamleader"
-        },
-        {
-         "slug": "teamwork",
-         "name": "Teamwork"
         },
         {
          "slug": "templafy",
@@ -56608,10 +56627,130 @@
         {
          "slug": "workato",
          "name": "Workato"
+        }
+       ]
+      }
+     },
+     {
+      "group": "risk",
+      "label": "Risk, compliance & identity",
+      "short": "Risk & compliance",
+      "n": 26,
+      "readable": 8,
+      "yes": 5,
+      "no": 3,
+      "unreadable": 18,
+      "share": 62.5,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "clerk",
+         "name": "Clerk"
         },
         {
-         "slug": "wrike",
-         "name": "Wrike"
+         "slug": "okta",
+         "name": "Okta"
+        },
+        {
+         "slug": "stytch",
+         "name": "Stytch"
+        },
+        {
+         "slug": "usercentrics",
+         "name": "Usercentrics"
+        },
+        {
+         "slug": "workos",
+         "name": "WorkOS"
+        }
+       ],
+       "no": [
+        {
+         "slug": "dataguard",
+         "name": "DataGuard"
+        },
+        {
+         "slug": "docusign",
+         "name": "Docusign"
+        },
+        {
+         "slug": "veriff",
+         "name": "Veriff"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "complyadvantage",
+         "name": "ComplyAdvantage"
+        },
+        {
+         "slug": "diligent",
+         "name": "Diligent"
+        },
+        {
+         "slug": "drata",
+         "name": "Drata"
+        },
+        {
+         "slug": "feedzai",
+         "name": "Feedzai"
+        },
+        {
+         "slug": "fenergo",
+         "name": "Fenergo"
+        },
+        {
+         "slug": "icertis",
+         "name": "Icertis"
+        },
+        {
+         "slug": "idnow",
+         "name": "IDnow"
+        },
+        {
+         "slug": "ironclad",
+         "name": "Ironclad"
+        },
+        {
+         "slug": "jumpcloud",
+         "name": "JumpCloud"
+        },
+        {
+         "slug": "juro",
+         "name": "Juro"
+        },
+        {
+         "slug": "luminance",
+         "name": "Luminance"
+        },
+        {
+         "slug": "navex",
+         "name": "NAVEX"
+        },
+        {
+         "slug": "onetrust",
+         "name": "OneTrust"
+        },
+        {
+         "slug": "red-points",
+         "name": "Red Points"
+        },
+        {
+         "slug": "relativity",
+         "name": "Relativity"
+        },
+        {
+         "slug": "sailpoint",
+         "name": "SailPoint"
+        },
+        {
+         "slug": "signicat",
+         "name": "Signicat"
+        },
+        {
+         "slug": "workiva",
+         "name": "Workiva"
         }
        ]
       }
@@ -56621,17 +56760,21 @@
       "label": "Finance & people ops",
       "short": "Finance & people",
       "n": 37,
-      "readable": 8,
-      "yes": 4,
+      "readable": 10,
+      "yes": 6,
       "no": 4,
-      "unreadable": 29,
-      "share": 50,
+      "unreadable": 27,
+      "share": 60,
       "suppressed": false,
       "companies": {
        "yes": [
         {
          "slug": "bamboohr",
          "name": "BambooHR"
+        },
+        {
+         "slug": "bill",
+         "name": "BILL"
         },
         {
          "slug": "navan",
@@ -56644,6 +56787,10 @@
         {
          "slug": "ramp",
          "name": "Ramp"
+        },
+        {
+         "slug": "tipalti",
+         "name": "Tipalti"
         }
        ],
        "no": [
@@ -56680,10 +56827,6 @@
         {
          "slug": "avalara",
          "name": "Avalara"
-        },
-        {
-         "slug": "bill",
-         "name": "BILL"
         },
         {
          "slug": "blackline",
@@ -56766,10 +56909,6 @@
          "name": "Stripe"
         },
         {
-         "slug": "tipalti",
-         "name": "Tipalti"
-        },
-        {
          "slug": "workable",
          "name": "Workable"
         },
@@ -56790,10 +56929,10 @@
      "label": "Developer & infrastructure",
      "short": "Dev & infrastructure",
      "n": 61,
-     "readable": 18,
-     "yes": 18,
+     "readable": 26,
+     "yes": 26,
      "no": 0,
-     "unreadable": 43,
+     "unreadable": 35,
      "share": 100,
      "suppressed": false,
      "companies": {
@@ -56811,8 +56950,24 @@
         "name": "Cloudflare"
        },
        {
+        "slug": "datadog",
+        "name": "Datadog"
+       },
+       {
+        "slug": "docker",
+        "name": "Docker"
+       },
+       {
+        "slug": "dynatrace",
+        "name": "Dynatrace"
+       },
+       {
         "slug": "gitguardian",
         "name": "GitGuardian"
+       },
+       {
+        "slug": "grafana",
+        "name": "Grafana Labs"
        },
        {
         "slug": "honeycomb",
@@ -56831,6 +56986,10 @@
         "name": "Netlify"
        },
        {
+        "slug": "new-relic",
+        "name": "New Relic"
+       },
+       {
         "slug": "pagerduty",
         "name": "PagerDuty"
        },
@@ -56839,12 +56998,20 @@
         "name": "Postman"
        },
        {
+        "slug": "proton",
+        "name": "Proton"
+       },
+       {
         "slug": "pulumi",
         "name": "Pulumi"
        },
        {
         "slug": "railway",
         "name": "Railway"
+       },
+       {
+        "slug": "render",
+        "name": "Render"
        },
        {
         "slug": "resend",
@@ -56869,6 +57036,10 @@
        {
         "slug": "supabase",
         "name": "Supabase"
+       },
+       {
+        "slug": "vercel",
+        "name": "Vercel"
        }
       ],
       "no": [],
@@ -56902,28 +57073,12 @@
         "name": "Darktrace"
        },
        {
-        "slug": "datadog",
-        "name": "Datadog"
-       },
-       {
-        "slug": "docker",
-        "name": "Docker"
-       },
-       {
-        "slug": "dynatrace",
-        "name": "Dynatrace"
-       },
-       {
         "slug": "elastic",
         "name": "Elastic"
        },
        {
         "slug": "fly-io",
         "name": "Fly.io"
-       },
-       {
-        "slug": "grafana",
-        "name": "Grafana Labs"
        },
        {
         "slug": "harness",
@@ -56946,10 +57101,6 @@
         "name": "Netskope"
        },
        {
-        "slug": "new-relic",
-        "name": "New Relic"
-       },
-       {
         "slug": "nexthink",
         "name": "Nexthink"
        },
@@ -56970,20 +57121,12 @@
         "name": "Palo Alto Networks"
        },
        {
-        "slug": "proton",
-        "name": "Proton"
-       },
-       {
         "slug": "qualys",
         "name": "Qualys"
        },
        {
         "slug": "rapid7",
         "name": "Rapid7"
-       },
-       {
-        "slug": "render",
-        "name": "Render"
        },
        {
         "slug": "scaleway",
@@ -57030,10 +57173,6 @@
         "name": "Veeam"
        },
        {
-        "slug": "vercel",
-        "name": "Vercel"
-       },
-       {
         "slug": "verkada",
         "name": "Verkada"
        },
@@ -57053,11 +57192,11 @@
      "label": "Data & analytics",
      "short": "Data & analytics",
      "n": 65,
-     "readable": 23,
-     "yes": 20,
+     "readable": 33,
+     "yes": 30,
      "no": 3,
-     "unreadable": 42,
-     "share": 87,
+     "unreadable": 32,
+     "share": 90.9,
      "suppressed": false,
      "companies": {
       "yes": [
@@ -57070,8 +57209,16 @@
         "name": "Amplitude"
        },
        {
+        "slug": "assemblyai",
+        "name": "AssemblyAI"
+       },
+       {
         "slug": "census",
         "name": "Census"
+       },
+       {
+        "slug": "cockroach-labs",
+        "name": "Cockroach Labs"
        },
        {
         "slug": "confluent",
@@ -57086,8 +57233,16 @@
         "name": "dbt Labs"
        },
        {
+        "slug": "firebolt",
+        "name": "Firebolt"
+       },
+       {
         "slug": "fivetran",
         "name": "Fivetran"
+       },
+       {
+        "slug": "fullstory",
+        "name": "FullStory"
        },
        {
         "slug": "heap",
@@ -57098,12 +57253,24 @@
         "name": "Hex"
        },
        {
+        "slug": "hightouch",
+        "name": "Hightouch"
+       },
+       {
         "slug": "influxdata",
         "name": "InfluxData"
        },
        {
+        "slug": "materialize",
+        "name": "Materialize"
+       },
+       {
         "slug": "metabase",
         "name": "Metabase"
+       },
+       {
+        "slug": "mixpanel",
+        "name": "Mixpanel"
        },
        {
         "slug": "mongodb",
@@ -57114,6 +57281,10 @@
         "name": "Neo4j"
        },
        {
+        "slug": "neon",
+        "name": "Neon"
+       },
+       {
         "slug": "pendo",
         "name": "Pendo"
        },
@@ -57122,8 +57293,16 @@
         "name": "Pinecone"
        },
        {
+        "slug": "posthog",
+        "name": "PostHog"
+       },
+       {
         "slug": "redis",
         "name": "Redis"
+       },
+       {
+        "slug": "rudderstack",
+        "name": "RudderStack"
        },
        {
         "slug": "statsig",
@@ -57166,10 +57345,6 @@
         "name": "Anyscale"
        },
        {
-        "slug": "assemblyai",
-        "name": "AssemblyAI"
-       },
-       {
         "slug": "astronomer",
         "name": "Astronomer"
        },
@@ -57180,10 +57355,6 @@
        {
         "slug": "clickhouse",
         "name": "ClickHouse"
-       },
-       {
-        "slug": "cockroach-labs",
-        "name": "Cockroach Labs"
        },
        {
         "slug": "cohere",
@@ -57214,18 +57385,6 @@
         "name": "Dremio"
        },
        {
-        "slug": "firebolt",
-        "name": "Firebolt"
-       },
-       {
-        "slug": "fullstory",
-        "name": "FullStory"
-       },
-       {
-        "slug": "hightouch",
-        "name": "Hightouch"
-       },
-       {
         "slug": "hotjar",
         "name": "Hotjar"
        },
@@ -57242,16 +57401,8 @@
         "name": "Jedox"
        },
        {
-        "slug": "materialize",
-        "name": "Materialize"
-       },
-       {
         "slug": "matillion",
         "name": "Matillion"
-       },
-       {
-        "slug": "mixpanel",
-        "name": "Mixpanel"
        },
        {
         "slug": "mode",
@@ -57262,16 +57413,8 @@
         "name": "Monte Carlo"
        },
        {
-        "slug": "neon",
-        "name": "Neon"
-       },
-       {
         "slug": "palantir",
         "name": "Palantir"
-       },
-       {
-        "slug": "posthog",
-        "name": "PostHog"
        },
        {
         "slug": "prefect",
@@ -57288,10 +57431,6 @@
        {
         "slug": "replicate",
         "name": "Replicate"
-       },
-       {
-        "slug": "rudderstack",
-        "name": "RudderStack"
        },
        {
         "slug": "scale-ai",
@@ -57333,17 +57472,21 @@
      "label": "Finance & people ops",
      "short": "Finance & people",
      "n": 37,
-     "readable": 8,
-     "yes": 4,
+     "readable": 10,
+     "yes": 6,
      "no": 4,
-     "unreadable": 29,
-     "share": 50,
+     "unreadable": 27,
+     "share": 60,
      "suppressed": false,
      "companies": {
       "yes": [
        {
         "slug": "bamboohr",
         "name": "BambooHR"
+       },
+       {
+        "slug": "bill",
+        "name": "BILL"
        },
        {
         "slug": "navan",
@@ -57356,6 +57499,10 @@
        {
         "slug": "ramp",
         "name": "Ramp"
+       },
+       {
+        "slug": "tipalti",
+        "name": "Tipalti"
        }
       ],
       "no": [
@@ -57392,10 +57539,6 @@
        {
         "slug": "avalara",
         "name": "Avalara"
-       },
-       {
-        "slug": "bill",
-        "name": "BILL"
        },
        {
         "slug": "blackline",
@@ -57478,10 +57621,6 @@
         "name": "Stripe"
        },
        {
-        "slug": "tipalti",
-        "name": "Tipalti"
-       },
-       {
         "slug": "workable",
         "name": "Workable"
        },
@@ -57501,14 +57640,14 @@
     "drawn": false,
     "withheld": {
      "rule": "coverage",
-     "drawable": 5,
+     "drawable": 6,
      "groups": 10
     },
     "overall": {
-     "yes": 77,
+     "yes": 121,
      "no": 18,
-     "unreadable": 266,
-     "readable": 95,
+     "unreadable": 222,
+     "readable": 139,
      "tracked": 361
     }
    }
@@ -57539,5 +57678,5 @@
    "missing": []
   }
  },
- "generated_at": "2026-08-09T15:14:42Z"
+ "generated_at": "2026-08-09T15:37:59Z"
 }

@@ -107,7 +107,7 @@
    "category": "No-code database",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "airwallex",
@@ -203,7 +203,7 @@
    "category": "Sales intelligence",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "appian",
@@ -263,7 +263,7 @@
    "category": "Speech AI API",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "astronomer",
@@ -407,7 +407,7 @@
    "category": "Project management",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "bigcommerce",
@@ -419,7 +419,7 @@
    "category": "E-commerce platform",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "bill",
@@ -431,7 +431,7 @@
    "category": "AP/AR automation",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "bird",
@@ -503,7 +503,7 @@
    "category": "Customer engagement",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "brevo",
@@ -707,7 +707,7 @@
    "category": "Distributed database",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "coda",
@@ -827,7 +827,7 @@
    "category": "Headless CMS",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "contentsquare",
@@ -971,7 +971,7 @@
    "category": "Observability",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "dataguard",
@@ -1127,7 +1127,7 @@
    "category": "Containers",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "docplanner",
@@ -1211,7 +1211,7 @@
    "category": "Observability",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "elastic",
@@ -1283,7 +1283,7 @@
    "category": "Design tool",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "firebolt",
@@ -1295,7 +1295,7 @@
    "category": "Cloud data warehouse",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "fireflies",
@@ -1307,7 +1307,7 @@
    "category": "Meeting AI notetaker",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "five9",
@@ -1415,7 +1415,7 @@
    "category": "Experience analytics",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "gainsight",
@@ -1463,7 +1463,7 @@
    "category": "Code hosting",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "gitlab",
@@ -1535,7 +1535,7 @@
    "category": "Observability",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "grammarly",
@@ -1655,7 +1655,7 @@
    "category": "Reverse ETL",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "honeycomb",
@@ -2075,7 +2075,7 @@
    "category": "Email marketing",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "make",
@@ -2123,7 +2123,7 @@
    "category": "Streaming database",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "matillion",
@@ -2171,7 +2171,7 @@
    "category": "Interactive presentations",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "metabase",
@@ -2219,7 +2219,7 @@
    "category": "Product analytics",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "modal",
@@ -2267,7 +2267,7 @@
    "category": "Payments",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "monday",
@@ -2387,7 +2387,7 @@
    "category": "Serverless Postgres",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "netlify",
@@ -2423,7 +2423,7 @@
    "category": "Observability",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "nextcloud",
@@ -2495,7 +2495,7 @@
    "category": "ERP (open-source)",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "okta",
@@ -2567,7 +2567,7 @@
    "category": "Meeting transcription",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "outreach",
@@ -2819,7 +2819,7 @@
    "category": "Product analytics",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "postman",
@@ -2879,7 +2879,7 @@
    "category": "Privacy / encrypted email",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "ptc",
@@ -3059,7 +3059,7 @@
    "category": "Cloud hosting (PaaS)",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "replicate",
@@ -3083,7 +3083,7 @@
    "category": "Cloud IDE / AI coding",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "resend",
@@ -3155,7 +3155,7 @@
    "category": "Customer data platform",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "sage",
@@ -3371,7 +3371,7 @@
    "category": "E-commerce platform",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "shortcut",
@@ -3671,7 +3671,7 @@
    "category": "Auth for developers",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "sumologic",
@@ -3731,7 +3731,7 @@
    "category": "AI video generation",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "sysdig",
@@ -3803,7 +3803,7 @@
    "category": "Work management",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "temenos",
@@ -3899,7 +3899,7 @@
    "category": "AP automation",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "tray",
@@ -3959,7 +3959,7 @@
    "category": "Forms & surveys",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "uipath",
@@ -4007,7 +4007,7 @@
    "category": "Consent management",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "vanta",
@@ -4055,7 +4055,7 @@
    "category": "Frontend cloud",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "veriff",
@@ -4151,7 +4151,7 @@
    "category": "Cross-border payments",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "wistia",
@@ -4247,7 +4247,7 @@
    "category": "Enterprise auth (dev)",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "wrike",
@@ -4259,7 +4259,7 @@
    "category": "Work management",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "writer",
@@ -4334,5 +4334,5 @@
    "free_tier": null
   }
  ],
- "generated_at": "2026-08-09T15:14:42Z"
+ "generated_at": "2026-08-09T15:37:59Z"
 }
