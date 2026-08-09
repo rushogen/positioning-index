@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T15:37:02Z",
-   "last_good_at": "2026-08-09T15:37:02Z",
+   "last_observed_at": "2026-08-09T16:09:07Z",
+   "last_good_at": "2026-08-09T16:09:07Z",
    "last_good_value": "4",
    "last_good_json": null,
    "last_good_hash": "310ca263",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T15:37:02Z",
-   "last_good_at": "2026-08-09T15:37:02Z",
+   "last_observed_at": "2026-08-09T16:09:07Z",
+   "last_good_at": "2026-08-09T16:09:07Z",
    "last_good_value": "logo_wall, proof, integrations",
    "last_good_json": "{\"present\":{\"logo_wall\":true,\"proof\":true,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":true,\"media\":false}}",
    "last_good_hash": "73f72d10",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T15:37:02Z",
-   "last_good_at": "2026-08-09T15:37:02Z",
+   "last_observed_at": "2026-08-09T16:09:07Z",
+   "last_good_at": "2026-08-09T16:09:07Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T15:37:02Z",
-   "last_good_at": "2026-08-09T15:37:02Z",
+   "last_observed_at": "2026-08-09T16:09:07Z",
+   "last_good_at": "2026-08-09T16:09:07Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T15:37:02Z",
-   "last_good_at": "2026-08-09T15:37:02Z",
+   "last_observed_at": "2026-08-09T16:09:07Z",
+   "last_good_at": "2026-08-09T16:09:07Z",
    "last_good_value": "4",
    "last_good_json": null,
    "last_good_hash": "310ca263",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T15:37:02Z",
-   "last_good_at": "2026-08-09T15:37:02Z",
+   "last_observed_at": "2026-08-09T16:09:07Z",
+   "last_good_at": "2026-08-09T16:09:07Z",
    "last_good_value": "8",
    "last_good_json": null,
    "last_good_hash": "3d0cb547",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T15:37:02Z",
-   "last_good_at": "2026-08-09T15:37:02Z",
+   "last_observed_at": "2026-08-09T16:09:07Z",
+   "last_good_at": "2026-08-09T16:09:07Z",
    "last_good_value": "hero > proof > other > logos > other > integrations > features > cta",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":32,\"merged\":1},{\"position\":2,\"type\":\"proof\",\"heading\":\"Postgres Database\",\"words\":25,\"merged\":1},{\"position\":3,\"type\":\"other\",\"heading\":\"Authentication\",\"words\":15,\"merged\":2},{\"position\":4,\"type\":\"logos\",\"heading\":\"Storage\",\"words\":11,\"merged\":1},{\"position\":5,\"type\":\"other\",\"heading\":\"Realtime\",\"words\":8,\"merged\":1},{\"position\":6,\"type\":\"integrations\",\"heading\":\"Vector\",\"words\":21,\"merged\":1},{\"position\":7,\"type\":\"features\",\"heading\":\"Data APIs\",\"words\":1054,\"merged\":2},{\"position\":8,\"type\":\"cta\",\"heading\":\"Build in a weekend, scale to millions\",\"words\":13,\"merged\":1}]}",
    "last_good_hash": "e77b23d9",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T15:37:02Z",
-   "last_good_at": "2026-08-09T15:37:02Z",
+   "last_observed_at": "2026-08-09T16:09:07Z",
+   "last_good_at": "2026-08-09T16:09:07Z",
    "last_good_value": 1234,
    "last_good_json": null,
    "last_good_hash": "fdc422fd",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T15:37:02Z",
-   "last_good_at": "2026-08-09T15:37:02Z",
+   "last_observed_at": "2026-08-09T16:09:07Z",
+   "last_good_at": "2026-08-09T16:09:07Z",
    "last_good_value": "postgres development platform",
    "last_good_json": null,
    "last_good_hash": "fea4b4d6",
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T15:37:02Z",
-   "last_good_at": "2026-08-09T15:37:02Z",
+   "last_observed_at": "2026-08-09T16:09:07Z",
+   "last_good_at": "2026-08-09T16:09:07Z",
    "last_good_value": "adeelibr twitter image, BowTiedQilin twitter image, E2B, Elliot Fleck Hyper, Figma, Jian Mobbin, Lovable, Mobbin, Mozilla, nerdburn twitter image, patrickc twitter image, Pwc, SteinlageScott twitter image, TyronBache twitter image, Vasek Mlejnsky, CEO, E2B",
    "last_good_json": "{\"names\":[\"adeelibr twitter image\",\"BowTiedQilin twitter image\",\"E2B\",\"Elliot Fleck Hyper\",\"Figma\",\"Jian Mobbin\",\"Lovable\",\"Mobbin\",\"Mozilla\",\"nerdburn twitter image\",\"patrickc twitter image\",\"Pwc\",\"SteinlageScott twitter image\",\"TyronBache twitter image\",\"Vasek Mlejnsky, CEO, E2B\"],\"count\":15,\"lead\":\"Trusted by fast-growing companies worldwide <ul aria-label=\\\"T\"}",
    "last_good_hash": "3d566156",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T15:37:02Z",
-   "last_good_at": "2026-08-09T15:37:02Z",
+   "last_observed_at": "2026-08-09T16:09:07Z",
+   "last_good_at": "2026-08-09T16:09:07Z",
    "last_good_value": "Build in a weekend Scale to millions",
    "last_good_json": null,
    "last_good_hash": "e5de96d4",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T15:37:02Z",
-   "last_good_at": "2026-08-09T15:37:02Z",
+   "last_observed_at": "2026-08-09T16:09:07Z",
+   "last_good_at": "2026-08-09T16:09:07Z",
    "last_good_value": "Build production-grade applications with a Postgres database, Authentication, instant APIs, Realtime, Functions, Storage and Vector embeddings. Start for free.",
    "last_good_json": null,
    "last_good_hash": "880f9922",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T15:37:02Z",
-   "last_good_at": "2026-08-09T15:37:02Z",
+   "last_observed_at": "2026-08-09T16:09:07Z",
+   "last_good_at": "2026-08-09T16:09:07Z",
    "last_good_value": "Supabase | The Postgres Development Platform",
    "last_good_json": null,
    "last_good_hash": "687c73fd",
@@ -248,8 +248,8 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T15:34:24Z",
-   "last_good_at": "2026-08-09T15:34:24Z",
+   "last_observed_at": "2026-08-09T16:04:32Z",
+   "last_good_at": "2026-08-09T16:04:32Z",
    "last_good_value": "USD 0.12",
    "last_good_json": "{\"amount\":0.12,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"tier\":\"Advanced disk configurations\"}",
    "last_good_hash": "dda83f1c",
@@ -266,8 +266,8 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T15:34:24Z",
-   "last_good_at": "2026-08-09T15:34:24Z",
+   "last_observed_at": "2026-08-09T16:04:32Z",
+   "last_good_at": "2026-08-09T16:04:32Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true}",
    "last_good_hash": "4e9f3590",
@@ -284,8 +284,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T15:34:24Z",
-   "last_good_at": "2026-08-09T15:34:24Z",
+   "last_observed_at": "2026-08-09T16:04:32Z",
+   "last_good_at": "2026-08-09T16:04:32Z",
    "last_good_value": "Pricing & Fees | Supabase",
    "last_good_json": null,
    "last_good_hash": "35085f02",
@@ -302,7 +302,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T15:34:24Z",
+   "last_observed_at": "2026-08-09T16:04:32Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -320,8 +320,8 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T15:34:24Z",
-   "last_good_at": "2026-08-09T15:34:24Z",
+   "last_observed_at": "2026-08-09T16:04:32Z",
+   "last_good_at": "2026-08-09T16:04:32Z",
    "last_good_value": "Free free | Pro USD 25/month | Team USD 599/month | Enterprise custom | Advanced disk configurations USD 0.12 | Custom Domain USD 100/month",
    "last_good_json": "{\"tiers\":[{\"name\":\"Free\",\"amount\":0,\"currency\":\"USD\",\"period\":\"month\",\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Pro\",\"amount\":25,\"currency\":\"USD\",\"period\":\"month\",\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Team\",\"amount\":599,\"currency\":\"USD\",\"period\":\"month\",\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Enterprise\",\"amount\":null,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"contact-sales\"},{\"name\":\"Advanced disk configurations\",\"amount\":0.12,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Custom Domain\",\"amount\":100,\"currency\":\"USD\",\"period\":\"month\",\"unit\":null,\"source\":\"heuristic\"}],\"count\":6}",
    "last_good_hash": "25be87db",
@@ -338,8 +338,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T15:37:02Z",
-   "last_good_at": "2026-08-09T15:37:02Z",
+   "last_observed_at": "2026-08-09T16:09:07Z",
+   "last_good_at": "2026-08-09T16:09:07Z",
    "last_good_value": "200,000 users",
    "last_good_json": "{\"items\":[{\"claim\":\"200,000 users\",\"kind\":\"count\"}],\"count\":1}",
    "last_good_hash": "5921a5c9",
@@ -356,8 +356,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T15:37:02Z",
-   "last_good_at": "2026-08-09T15:37:02Z",
+   "last_observed_at": "2026-08-09T16:09:07Z",
+   "last_good_at": "2026-08-09T16:09:07Z",
    "last_good_value": "Start your project with a Postgres database. Add Authentication, Data APIs, Edge Functions, Realtime Data, Storage, and Vector embeddings.",
    "last_good_json": null,
    "last_good_hash": "be7d98d6",
@@ -375,6 +375,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://supabase.com/",
+   "fetched_at": "2026-08-09T16:09:07Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 1322641,
+   "duration_ms": 237,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
+  {
+   "kind": "pricing",
+   "url": "https://supabase.com/pricing",
+   "fetched_at": "2026-08-09T16:04:32Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 367396,
+   "duration_ms": 294,
+   "signals_found": 4,
+   "signals_expected": 5
+  },
   {
    "kind": "home",
    "url": "https://supabase.com/",
@@ -590,30 +614,6 @@
    "duration_ms": 89,
    "signals_found": 0,
    "signals_expected": 0
-  },
-  {
-   "kind": "pricing",
-   "url": "https://supabase.com/pricing",
-   "fetched_at": "2026-08-07T23:19:53Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": null,
-   "bytes": 367396,
-   "duration_ms": 75,
-   "signals_found": 4,
-   "signals_expected": 5
-  },
-  {
-   "kind": "home",
-   "url": "https://supabase.com/",
-   "fetched_at": "2026-08-07T23:18:52Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": null,
-   "bytes": 1322641,
-   "duration_ms": 153,
-   "signals_found": 7,
-   "signals_expected": 7
   }
  ]
 }

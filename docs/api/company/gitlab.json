@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T15:35:04Z",
-   "last_good_at": "2026-08-09T15:35:04Z",
+   "last_observed_at": "2026-08-09T16:03:33Z",
+   "last_good_at": "2026-08-09T16:03:33Z",
    "last_good_value": "5",
    "last_good_json": null,
    "last_good_hash": "300ca0d0",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T15:35:04Z",
-   "last_good_at": "2026-08-09T15:35:04Z",
+   "last_observed_at": "2026-08-09T16:03:33Z",
+   "last_good_at": "2026-08-09T16:03:33Z",
    "last_good_value": "logo_wall, pricing_block",
    "last_good_json": "{\"present\":{\"logo_wall\":true,\"proof\":false,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":true,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "30a5128d",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T15:35:04Z",
-   "last_good_at": "2026-08-09T15:35:04Z",
+   "last_observed_at": "2026-08-09T16:03:33Z",
+   "last_good_at": "2026-08-09T16:03:33Z",
    "last_good_value": "63",
    "last_good_json": null,
    "last_good_hash": "16e8e3ce",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T15:35:04Z",
-   "last_good_at": "2026-08-09T15:35:04Z",
+   "last_observed_at": "2026-08-09T16:03:33Z",
+   "last_good_at": "2026-08-09T16:03:33Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T15:35:04Z",
-   "last_good_at": "2026-08-09T15:35:04Z",
+   "last_observed_at": "2026-08-09T16:03:33Z",
+   "last_good_at": "2026-08-09T16:03:33Z",
    "last_good_value": "54",
    "last_good_json": null,
    "last_good_hash": "87e146ec",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T15:35:04Z",
-   "last_good_at": "2026-08-09T15:35:04Z",
+   "last_observed_at": "2026-08-09T16:03:33Z",
+   "last_good_at": "2026-08-09T16:03:33Z",
    "last_good_value": "6",
    "last_good_json": null,
    "last_good_hash": "330ca589",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T15:35:04Z",
-   "last_good_at": "2026-08-09T15:35:04Z",
+   "last_observed_at": "2026-08-09T16:03:33Z",
+   "last_good_at": "2026-08-09T16:03:33Z",
    "last_good_value": "hero > other > logos > security > pricing > cta",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":16,\"merged\":1},{\"position\":2,\"type\":\"other\",\"heading\":\"What's new in GitLab\",\"words\":12,\"merged\":2},{\"position\":3,\"type\":\"logos\",\"heading\":\"Security built in\",\"words\":10,\"merged\":1},{\"position\":4,\"type\":\"security\",\"heading\":\"Built for how you work\",\"words\":220,\"merged\":2},{\"position\":5,\"type\":\"pricing\",\"heading\":\"One platform for teams of every size\",\"words\":122,\"merged\":1},{\"position\":6,\"type\":\"cta\",\"heading\":\"Start building faster today\",\"words\":23,\"merged\":1}]}",
    "last_good_hash": "da178989",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T15:35:04Z",
-   "last_good_at": "2026-08-09T15:35:04Z",
+   "last_observed_at": "2026-08-09T16:03:33Z",
+   "last_good_at": "2026-08-09T16:03:33Z",
    "last_good_value": 612,
    "last_good_json": null,
    "last_good_hash": "8499926e",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T15:35:04Z",
-   "last_good_at": "2026-08-09T15:35:04Z",
+   "last_observed_at": "2026-08-09T16:03:33Z",
+   "last_good_at": "2026-08-09T16:03:33Z",
    "last_good_value": "intelligent orchestration platform for devsecops",
    "last_good_json": null,
    "last_good_hash": "742f5db1",
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T15:35:04Z",
-   "last_good_at": "2026-08-09T15:35:04Z",
+   "last_observed_at": "2026-08-09T16:03:33Z",
+   "last_good_at": "2026-08-09T16:03:33Z",
    "last_good_value": "agoda, Agoda company, Ally Financial company, barclays, CACI company, CARFAX company, Cube company, deutsche telekom, Deutsche Telekom company, ericsson, HackerOne company, Intuitive Machines company, lockheed martin, Lockheed Martin company, nvidia, Radio France company, Sigma Defense company, thales",
    "last_good_json": "{\"names\":[\"agoda\",\"Agoda company\",\"Ally Financial company\",\"barclays\",\"CACI company\",\"CARFAX company\",\"Cube company\",\"deutsche telekom\",\"Deutsche Telekom company\",\"ericsson\",\"HackerOne company\",\"Intuitive Machines company\",\"lockheed martin\",\"Lockheed Martin company\",\"nvidia\",\"Radio France company\",\"Sigma Defense company\",\"thales\"],\"count\":18,\"lead\":null}",
    "last_good_hash": "b5b8028a",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T15:35:04Z",
-   "last_good_at": "2026-08-09T15:35:04Z",
+   "last_observed_at": "2026-08-09T16:03:33Z",
+   "last_good_at": "2026-08-09T16:03:33Z",
    "last_good_value": "Ship faster. With trust.",
    "last_good_json": null,
    "last_good_hash": "5b755b22",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T15:35:04Z",
-   "last_good_at": "2026-08-09T15:35:04Z",
+   "last_observed_at": "2026-08-09T16:03:33Z",
+   "last_good_at": "2026-08-09T16:03:33Z",
    "last_good_value": "Your intelligent orchestration platform for DevSecOps",
    "last_good_json": null,
    "last_good_hash": "215d1ff6",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T15:35:04Z",
-   "last_good_at": "2026-08-09T15:35:04Z",
+   "last_observed_at": "2026-08-09T16:03:33Z",
+   "last_good_at": "2026-08-09T16:03:33Z",
    "last_good_value": "Finally, AI for the entire software lifecycle.",
    "last_good_json": null,
    "last_good_hash": "80e692ea",
@@ -248,8 +248,8 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T15:37:22Z",
-   "last_good_at": "2026-08-09T15:37:22Z",
+   "last_observed_at": "2026-08-09T16:07:57Z",
+   "last_good_at": "2026-08-09T16:07:57Z",
    "last_good_value": "USD 29",
    "last_good_json": "{\"amount\":29,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"tier\":\"Premium\"}",
    "last_good_hash": "31455844",
@@ -266,8 +266,8 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T15:37:22Z",
-   "last_good_at": "2026-08-09T15:37:22Z",
+   "last_observed_at": "2026-08-09T16:07:57Z",
+   "last_good_at": "2026-08-09T16:07:57Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true}",
    "last_good_hash": "4e9f3590",
@@ -284,8 +284,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T15:37:22Z",
-   "last_good_at": "2026-08-09T15:37:22Z",
+   "last_observed_at": "2026-08-09T16:07:57Z",
+   "last_good_at": "2026-08-09T16:07:57Z",
    "last_good_value": "Pricing",
    "last_good_json": null,
    "last_good_hash": "b4d17ded",
@@ -302,7 +302,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T15:37:22Z",
+   "last_observed_at": "2026-08-09T16:07:57Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -320,8 +320,8 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T15:37:22Z",
-   "last_good_at": "2026-08-09T15:37:22Z",
+   "last_observed_at": "2026-08-09T16:07:57Z",
+   "last_good_at": "2026-08-09T16:07:57Z",
    "last_good_value": "Free free | Premium USD 29",
    "last_good_json": "{\"tiers\":[{\"name\":\"Free\",\"amount\":0,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"json-ld\"},{\"name\":\"Premium\",\"amount\":29,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"json-ld\"}],\"count\":2}",
    "last_good_hash": "1fa7739b",
@@ -338,8 +338,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T15:35:04Z",
-   "last_good_at": "2026-08-09T15:35:04Z",
+   "last_observed_at": "2026-08-09T16:03:33Z",
+   "last_good_at": "2026-08-09T16:03:33Z",
    "last_good_value": "13x faster security scanning | 17% boost in developer | 20x decrease in pipeline | 400% roi | 50% faster vulnerability detection | 6x faster time to | 80x faster ci pipeline | 82% decrease in cycle | 97% reduction in time",
    "last_good_json": "{\"items\":[{\"claim\":\"13x faster security scanning\",\"kind\":\"multiplier\"},{\"claim\":\"17% boost in developer\",\"kind\":\"percent\"},{\"claim\":\"20x decrease in pipeline\",\"kind\":\"multiplier\"},{\"claim\":\"400% roi\",\"kind\":\"percent\"},{\"claim\":\"50% faster vulnerability detection\",\"kind\":\"percent\"},{\"claim\":\"6x faster time to\",\"kind\":\"multiplier\"},{\"claim\":\"80x faster ci pipeline\",\"kind\":\"multiplier\"},{\"claim\":\"82% decrease in cycle\",\"kind\":\"percent\"},{\"claim\":\"97% reduction in time\",\"kind\":\"percent\"}],\"count\":9}",
    "last_good_hash": "4190d09e",
@@ -356,8 +356,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T15:35:04Z",
-   "last_good_at": "2026-08-09T15:35:04Z",
+   "last_observed_at": "2026-08-09T16:03:33Z",
+   "last_good_at": "2026-08-09T16:03:33Z",
    "last_good_value": "Your intelligent orchestration platform for DevSecOps",
    "last_good_json": null,
    "last_good_hash": "215d1ff6",
@@ -375,6 +375,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://about.gitlab.com/pricing/",
+   "fetched_at": "2026-08-09T16:07:57Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 586349,
+   "duration_ms": 159,
+   "signals_found": 4,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://about.gitlab.com/",
+   "fetched_at": "2026-08-09T16:03:33Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 225518,
+   "duration_ms": 258,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
   {
    "kind": "pricing",
    "url": "https://about.gitlab.com/pricing/",
@@ -590,30 +614,6 @@
    "duration_ms": 163,
    "signals_found": 0,
    "signals_expected": 0
-  },
-  {
-   "kind": "pricing",
-   "url": "https://about.gitlab.com/pricing/",
-   "fetched_at": "2026-08-07T23:19:35Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": null,
-   "bytes": 586349,
-   "duration_ms": 76,
-   "signals_found": 4,
-   "signals_expected": 5
-  },
-  {
-   "kind": "home",
-   "url": "https://about.gitlab.com/",
-   "fetched_at": "2026-08-07T23:18:35Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": null,
-   "bytes": 225518,
-   "duration_ms": 145,
-   "signals_found": 7,
-   "signals_expected": 7
   }
  ]
 }

@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T15:37:59Z",
-   "last_good_at": "2026-08-09T15:37:59Z",
+   "last_observed_at": "2026-08-09T16:07:16Z",
+   "last_good_at": "2026-08-09T16:07:16Z",
    "last_good_value": "19",
    "last_good_json": null,
    "last_good_hash": "14eb1f3f",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T15:37:59Z",
-   "last_good_at": "2026-08-09T15:37:59Z",
+   "last_observed_at": "2026-08-09T16:07:16Z",
+   "last_good_at": "2026-08-09T16:07:16Z",
    "last_good_value": "testimonial",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "e6a3d068",
@@ -50,7 +50,7 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T15:37:59Z",
+   "last_observed_at": "2026-08-09T16:07:16Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T15:37:59Z",
-   "last_good_at": "2026-08-09T15:37:59Z",
+   "last_observed_at": "2026-08-09T16:07:16Z",
+   "last_good_at": "2026-08-09T16:07:16Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -86,7 +86,7 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T15:37:59Z",
+   "last_observed_at": "2026-08-09T16:07:16Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T15:37:59Z",
-   "last_good_at": "2026-08-09T15:37:59Z",
+   "last_observed_at": "2026-08-09T16:07:16Z",
+   "last_good_at": "2026-08-09T16:07:16Z",
    "last_good_value": "6",
    "last_good_json": null,
    "last_good_hash": "330ca589",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T15:37:59Z",
-   "last_good_at": "2026-08-09T15:37:59Z",
+   "last_observed_at": "2026-08-09T16:07:16Z",
+   "last_good_at": "2026-08-09T16:07:16Z",
    "last_good_value": "hero > features > product > features > testimonial > cta",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":56,\"merged\":1},{\"position\":2,\"type\":\"features\",\"heading\":\"Analyze, automate, and innovate with the power of AI\",\"words\":151,\"merged\":1},{\"position\":3,\"type\":\"product\",\"heading\":\"The unified platform for all data, all teams, and all possibilities\",\"words\":21,\"merged\":1},{\"position\":4,\"type\":\"features\",\"heading\":\"Leverage deterministic insights to take action in real-time\",\"words\":26,\"merged\":3},{\"position\":5,\"type\":\"testimonial\",\"heading\":\"Reduce costs with clear, simple pricing\",\"words\":108,\"merged\":2},{\"position\":6,\"type\":\"cta\",\"heading\":\"Our latest research and insights\",\"words\":72,\"merged\":2}]}",
    "last_good_hash": "a8ef8fc1",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T15:37:59Z",
-   "last_good_at": "2026-08-09T15:37:59Z",
+   "last_observed_at": "2026-08-09T16:07:16Z",
+   "last_good_at": "2026-08-09T16:07:16Z",
    "last_good_value": 658,
    "last_good_json": null,
    "last_good_hash": "02a35324",
@@ -158,7 +158,7 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T15:37:59Z",
+   "last_observed_at": "2026-08-09T16:07:16Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T15:37:59Z",
-   "last_good_at": "2026-08-09T15:37:59Z",
+   "last_observed_at": "2026-08-09T16:07:16Z",
+   "last_good_at": "2026-08-09T16:07:16Z",
    "last_good_value": "Air Canada, TD Bank, TELUS, Virgin Money",
    "last_good_json": "{\"names\":[\"Air Canada\",\"TD Bank\",\"TELUS\",\"Virgin Money\"],\"count\":4,\"lead\":\"Trusted by global leaders to drive growth and innovation <a data-dt-name=\\\"See cu\"}",
    "last_good_hash": "870313d1",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T15:37:59Z",
-   "last_good_at": "2026-08-09T15:37:59Z",
+   "last_observed_at": "2026-08-09T16:07:16Z",
+   "last_good_at": "2026-08-09T16:07:16Z",
    "last_good_value": "Observability built for the age of AI",
    "last_good_json": null,
    "last_good_hash": "eee18500",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T15:37:59Z",
-   "last_good_at": "2026-08-09T15:37:59Z",
+   "last_observed_at": "2026-08-09T16:07:16Z",
+   "last_good_at": "2026-08-09T16:07:16Z",
    "last_good_value": "Innovate faster, operate more efficiently, and drive better business outcomes with observability, AI, automation, and application security in one platform.",
    "last_good_json": null,
    "last_good_hash": "99343b7e",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T15:37:59Z",
-   "last_good_at": "2026-08-09T15:37:59Z",
+   "last_observed_at": "2026-08-09T16:07:16Z",
+   "last_good_at": "2026-08-09T16:07:16Z",
    "last_good_value": "Dynatrace | Observability built for the age of AI",
    "last_good_json": null,
    "last_good_hash": "a354335f",
@@ -248,7 +248,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T15:36:48Z",
+   "last_observed_at": "2026-08-09T16:02:29Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -266,8 +266,8 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T15:36:48Z",
-   "last_good_at": "2026-08-09T15:36:48Z",
+   "last_observed_at": "2026-08-09T16:02:29Z",
+   "last_good_at": "2026-08-09T16:02:29Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true,\"loose\":true}",
    "last_good_hash": "4e9f3590",
@@ -284,8 +284,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T15:36:48Z",
-   "last_good_at": "2026-08-09T15:36:48Z",
+   "last_observed_at": "2026-08-09T16:02:29Z",
+   "last_good_at": "2026-08-09T16:02:29Z",
    "last_good_value": "Dynatrace pricing",
    "last_good_json": null,
    "last_good_hash": "b5a7c8fe",
@@ -302,7 +302,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T15:36:48Z",
+   "last_observed_at": "2026-08-09T16:02:29Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -320,7 +320,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T15:36:48Z",
+   "last_observed_at": "2026-08-09T16:02:29Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -338,7 +338,7 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T15:37:59Z",
+   "last_observed_at": "2026-08-09T16:07:16Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -356,8 +356,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T15:37:59Z",
-   "last_good_at": "2026-08-09T15:37:59Z",
+   "last_observed_at": "2026-08-09T16:07:16Z",
+   "last_good_at": "2026-08-09T16:07:16Z",
    "last_good_value": "Turn data into decisions and autonomous actions that drive your business forward with the AI-powered observability leader.",
    "last_good_json": null,
    "last_good_hash": "0d2853ae",
@@ -375,6 +375,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.dynatrace.com/",
+   "fetched_at": "2026-08-09T16:07:16Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 149062,
+   "duration_ms": 195,
+   "signals_found": 11,
+   "signals_expected": 15
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.dynatrace.com/pricing/",
+   "fetched_at": "2026-08-09T16:02:29Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 129911,
+   "duration_ms": 199,
+   "signals_found": 2,
+   "signals_expected": 5
+  },
   {
    "kind": "home",
    "url": "https://www.dynatrace.com/",
@@ -590,30 +614,6 @@
    "duration_ms": 48,
    "signals_found": 0,
    "signals_expected": 0
-  },
-  {
-   "kind": "pricing",
-   "url": "https://www.dynatrace.com/pricing/",
-   "fetched_at": "2026-08-07T23:18:59Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": null,
-   "bytes": 129911,
-   "duration_ms": 86,
-   "signals_found": 1,
-   "signals_expected": 5
-  },
-  {
-   "kind": "home",
-   "url": "https://www.dynatrace.com/",
-   "fetched_at": "2026-08-07T23:17:21Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": null,
-   "bytes": 149062,
-   "duration_ms": 66,
-   "signals_found": 5,
-   "signals_expected": 7
   }
  ]
 }

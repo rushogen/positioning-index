@@ -15,8 +15,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:06:32Z",
+   "last_good_at": "2026-08-09T16:06:32Z",
    "last_good_value": "6",
    "last_good_json": null,
    "last_good_hash": "330ca589",
@@ -33,8 +33,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:06:32Z",
+   "last_good_at": "2026-08-09T16:06:32Z",
    "last_good_value": "proof, testimonial, integrations",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":true,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":true,\"media\":false}}",
    "last_good_hash": "cb7cae87",
@@ -51,8 +51,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:06:32Z",
+   "last_good_at": "2026-08-09T16:06:32Z",
    "last_good_value": "67",
    "last_good_json": null,
    "last_good_hash": "1ae8ea1a",
@@ -69,8 +69,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:06:32Z",
+   "last_good_at": "2026-08-09T16:06:32Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -87,8 +87,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:06:32Z",
+   "last_good_at": "2026-08-09T16:06:32Z",
    "last_good_value": "21",
    "last_good_json": null,
    "last_good_hash": "8cf297ec",
@@ -105,8 +105,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:06:32Z",
+   "last_good_at": "2026-08-09T16:06:32Z",
    "last_good_value": "9",
    "last_good_json": null,
    "last_good_hash": "3c0cb3b4",
@@ -123,8 +123,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:06:32Z",
+   "last_good_at": "2026-08-09T16:06:32Z",
    "last_good_value": "hero > integrations > features > other > features > security > proof > features > testimonial",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":406,\"merged\":1},{\"position\":2,\"type\":\"integrations\",\"heading\":\"Endless solutions for every kind of brand.\",\"words\":45,\"merged\":1},{\"position\":3,\"type\":\"features\",\"heading\":\"Why settle? Create a shopping experience that’s iconic.\",\"words\":66,\"merged\":2},{\"position\":4,\"type\":\"other\",\"heading\":\"Built for businesses rewriting the rules.\",\"words\":9,\"merged\":1},{\"position\":5,\"type\":\"features\",\"heading\":\"AI is the new shopper. Be its first pick.\",\"words\":82,\"merged\":2},{\"position\":6,\"type\":\"security\",\"heading\":\"Sell your way. Get paid your way.\",\"words\":68,\"merged\":1},{\"position\":7,\"type\":\"proof\",\"heading\":\"No credit card. No pressure.\",\"words\":78,\"merged\":2},{\"position\":8,\"type\":\"features\",\"heading\":\"Our experts, at your service.\",\"words\":32,\"merged\":2},{\"position\":9,\"type\":\"testimonial\",\"heading\":\"Stay on the cutting edge of commerce.\",\"words\":103,\"merged\":1}]}",
    "last_good_hash": "09238cf4",
@@ -141,8 +141,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:06:32Z",
+   "last_good_at": "2026-08-09T16:06:32Z",
    "last_good_value": 1215,
    "last_good_json": null,
    "last_good_hash": "68c9489c",
@@ -159,7 +159,7 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:06:32Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -177,8 +177,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:06:32Z",
+   "last_good_at": "2026-08-09T16:06:32Z",
    "last_good_value": "algolia, bigcommerce triangle, feedonomics, klaviyo, mailchimp, makeswift, paypal, stripe",
    "last_good_json": "{\"names\":[\"algolia\",\"bigcommerce triangle\",\"feedonomics\",\"klaviyo\",\"mailchimp\",\"makeswift\",\"paypal\",\"stripe\"],\"count\":8,\"lead\":\"trusted by brands across B2C and B2B. <div tabind\"}",
    "last_good_hash": "a1d50263",
@@ -195,8 +195,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:06:32Z",
+   "last_good_at": "2026-08-09T16:06:32Z",
    "last_good_value": "From one-size-fits-all to anything you can imagine.",
    "last_good_json": null,
    "last_good_hash": "d301dba4",
@@ -213,8 +213,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:06:32Z",
+   "last_good_at": "2026-08-09T16:06:32Z",
    "last_good_value": "Power modern buying experiences across brands, regions, and channels — all from a single, scalable foundation. Learn more.",
    "last_good_json": null,
    "last_good_hash": "7f019b23",
@@ -231,8 +231,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:06:32Z",
+   "last_good_at": "2026-08-09T16:06:32Z",
    "last_good_value": "Commerce built for momentum. | BigCommerce",
    "last_good_json": null,
    "last_good_hash": "c93f314c",
@@ -249,7 +249,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T15:37:25Z",
+   "last_observed_at": "2026-08-09T16:10:13Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -267,8 +267,8 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T15:37:25Z",
-   "last_good_at": "2026-08-09T15:37:25Z",
+   "last_observed_at": "2026-08-09T16:10:13Z",
+   "last_good_at": "2026-08-09T16:10:13Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true,\"loose\":true}",
    "last_good_hash": "4e9f3590",
@@ -285,8 +285,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T15:37:25Z",
-   "last_good_at": "2026-08-09T15:37:25Z",
+   "last_observed_at": "2026-08-09T16:10:13Z",
+   "last_good_at": "2026-08-09T16:10:13Z",
    "last_good_value": "BigCommerce Pricing and Plan Information | BigCommerce",
    "last_good_json": null,
    "last_good_hash": "31bac19b",
@@ -303,7 +303,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T15:37:25Z",
+   "last_observed_at": "2026-08-09T16:10:13Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -321,7 +321,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T15:37:25Z",
+   "last_observed_at": "2026-08-09T16:10:13Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -339,8 +339,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:06:32Z",
+   "last_good_at": "2026-08-09T16:06:32Z",
    "last_good_value": "$700k+ saved by retiring | 1,200 apps | 211% roi within | 30 days | 600 integrations",
    "last_good_json": "{\"items\":[{\"claim\":\"$700k+ saved by retiring\",\"kind\":\"money\"},{\"claim\":\"1,200 apps\",\"kind\":\"count\"},{\"claim\":\"211% roi within\",\"kind\":\"percent\"},{\"claim\":\"30 days\",\"kind\":\"time\"},{\"claim\":\"600 integrations\",\"kind\":\"count\"}],\"count\":5}",
    "last_good_hash": "cde38920",
@@ -357,8 +357,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:06:32Z",
+   "last_good_at": "2026-08-09T16:06:32Z",
    "last_good_value": "Any business model, any product type, any customer you choose. Grow without compromise and make your next move.",
    "last_good_json": null,
    "last_good_hash": "3bf9f970",
@@ -376,6 +376,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://www.bigcommerce.com/pricing/",
+   "fetched_at": "2026-08-09T16:10:13Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 1436464,
+   "duration_ms": 561,
+   "signals_found": 2,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://www.bigcommerce.com/",
+   "fetched_at": "2026-08-09T16:06:32Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 1305405,
+   "duration_ms": 591,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
   {
    "kind": "pricing",
    "url": "https://www.bigcommerce.com/pricing/",

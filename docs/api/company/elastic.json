@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T15:37:24Z",
-   "last_good_at": "2026-08-09T15:37:24Z",
+   "last_observed_at": "2026-08-09T16:04:48Z",
+   "last_good_at": "2026-08-09T16:04:48Z",
    "last_good_value": "7",
    "last_good_json": null,
    "last_good_hash": "320ca3f6",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T15:37:24Z",
-   "last_good_at": "2026-08-09T15:37:24Z",
+   "last_observed_at": "2026-08-09T16:04:48Z",
+   "last_good_at": "2026-08-09T16:04:48Z",
    "last_good_value": "proof",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":true,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "8cdc0989",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T15:37:24Z",
-   "last_good_at": "2026-08-09T15:37:24Z",
+   "last_observed_at": "2026-08-09T16:04:48Z",
+   "last_good_at": "2026-08-09T16:04:48Z",
    "last_good_value": "61",
    "last_good_json": null,
    "last_good_hash": "14e8e0a8",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T15:37:24Z",
-   "last_good_at": "2026-08-09T15:37:24Z",
+   "last_observed_at": "2026-08-09T16:04:48Z",
+   "last_good_at": "2026-08-09T16:04:48Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T15:37:24Z",
-   "last_good_at": "2026-08-09T15:37:24Z",
+   "last_observed_at": "2026-08-09T16:04:48Z",
+   "last_good_at": "2026-08-09T16:04:48Z",
    "last_good_value": "71",
    "last_good_json": null,
    "last_good_hash": "90e5d245",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T15:37:24Z",
-   "last_good_at": "2026-08-09T15:37:24Z",
+   "last_observed_at": "2026-08-09T16:04:48Z",
+   "last_good_at": "2026-08-09T16:04:48Z",
    "last_good_value": "13",
    "last_good_json": null,
    "last_good_hash": "1eeb2efd",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T15:37:24Z",
-   "last_good_at": "2026-08-09T15:37:24Z",
+   "last_observed_at": "2026-08-09T16:04:48Z",
+   "last_good_at": "2026-08-09T16:04:48Z",
    "last_good_value": "hero > other > features > proof > features > other > features > proof > product > other > features > proof > cta",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":14,\"merged\":1},{\"position\":2,\"type\":\"other\",\"heading\":\"Elastic 9.5 is here!\",\"words\":19,\"merged\":1},{\"position\":3,\"type\":\"features\",\"heading\":\"Jina AI models now run on‑prem for air‑gapped environments\",\"words\":32,\"merged\":1},{\"position\":4,\"type\":\"proof\",\"heading\":\"Best-in-class for logs, now the best-in-class for metrics\",\"words\":20,\"merged\":1},{\"position\":5,\"type\":\"features\",\"heading\":\"K8s observability delivered to your AI tools via MCP\",\"words\":26,\"merged\":1},{\"position\":6,\"type\":\"other\",\"heading\":\"Cross-project search: Query isolated projects in-place\",\"words\":17,\"merged\":1},{\"position\":7,\"type\":\"features\",\"heading\":\"Elastic Workflows: Native automation, no SOAR required\",\"words\":23,\"merged\":1},{\"position\":8,\"type\":\"proof\",\"heading\":\"Trusted by 50% of the Fortune 500 to drive innovation\",\"words\":14,\"merged\":1},{\"position\":9,\"type\":\"product\",\"heading\":\"The Elasticsearch Platform\",\"words\":30,\"merged\":1},{\"position\":10,\"type\":\"other\",\"heading\":\"Search\",\"words\":17,\"merged\":3},{\"position\":11,\"type\":\"features\",\"heading\":\"Agentic AI\",\"words\":21,\"merged\":2},{\"position\":12,\"type\":\"proof\",\"heading\":\"Option #2\",\"words\":41,\"merged\":1},{\"position\":13,\"type\":\"cta\",\"heading\":\"Option #3\",\"words\":79,\"merged\":1}]}",
    "last_good_hash": "347c1592",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T15:37:24Z",
-   "last_good_at": "2026-08-09T15:37:24Z",
+   "last_observed_at": "2026-08-09T16:04:48Z",
+   "last_good_at": "2026-08-09T16:04:48Z",
    "last_good_value": 471,
    "last_good_json": null,
    "last_good_hash": "b1325277",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T15:37:24Z",
-   "last_good_at": "2026-08-09T15:37:24Z",
+   "last_observed_at": "2026-08-09T16:04:48Z",
+   "last_good_at": "2026-08-09T16:04:48Z",
    "last_good_value": "elasticsearch platform",
    "last_good_json": null,
    "last_good_hash": "3b2f78df",
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T15:37:24Z",
-   "last_good_at": "2026-08-09T15:37:24Z",
+   "last_observed_at": "2026-08-09T16:04:48Z",
+   "last_good_at": "2026-08-09T16:04:48Z",
    "last_good_value": "AJhQbsPAsQh6VnS4X2PVAS, Comcast, Docusign, IBM, Land Rover, M8D7dHwo55A7mjD5E5E3To, Pepsi, QcGv8o83bUf4xQWAFNVaTy, YfwWKuSNLrAQJ7RaQps4tc",
    "last_good_json": "{\"names\":[\"AJhQbsPAsQh6VnS4X2PVAS\",\"Comcast\",\"Docusign\",\"IBM\",\"Land Rover\",\"M8D7dHwo55A7mjD5E5E3To\",\"Pepsi\",\"QcGv8o83bUf4xQWAFNVaTy\",\"YfwWKuSNLrAQJ7RaQps4tc\"],\"count\":9,\"lead\":\"Trusted by 50% of the Fortune 500 to drive innovation <a href=\\\"/customers/pepsic\"}",
    "last_good_hash": "8c8a0169",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T15:37:24Z",
-   "last_good_at": "2026-08-09T15:37:24Z",
+   "last_observed_at": "2026-08-09T16:04:48Z",
+   "last_good_at": "2026-08-09T16:04:48Z",
    "last_good_value": "Better retrieval. Better answers.",
    "last_good_json": null,
    "last_good_hash": "c32f0526",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T15:37:24Z",
-   "last_good_at": "2026-08-09T15:37:24Z",
+   "last_observed_at": "2026-08-09T16:04:48Z",
+   "last_good_at": "2026-08-09T16:04:48Z",
    "last_good_value": "Power insights and outcomes with The Elasticsearch Platform. See into your data and find answers that matter with enterprise solutions designed to help you accelerate time to insight. Try Elastic toda...",
    "last_good_json": null,
    "last_good_hash": "3979bcbb",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T15:37:24Z",
-   "last_good_at": "2026-08-09T15:37:24Z",
+   "last_observed_at": "2026-08-09T16:04:48Z",
+   "last_good_at": "2026-08-09T16:04:48Z",
    "last_good_value": "Elastic — The Search AI Company | Elastic",
    "last_good_json": null,
    "last_good_hash": "7d46691e",
@@ -248,7 +248,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:09:20Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -264,7 +264,7 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:09:20Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -280,8 +280,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:09:20Z",
+   "last_good_at": "2026-08-09T16:09:20Z",
    "last_good_value": "Official Elastic Cloud pricing — compare serverless and hosted offerings | Elastic",
    "last_good_json": null,
    "last_good_hash": "90247baa",
@@ -298,7 +298,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:09:20Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -314,7 +314,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:09:20Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -330,8 +330,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T15:37:24Z",
-   "last_good_at": "2026-08-09T15:37:24Z",
+   "last_observed_at": "2026-08-09T16:04:48Z",
+   "last_good_at": "2026-08-09T16:04:48Z",
    "last_good_value": "10 x faster at half | 30% and reduces mttr | 30% efficiency and reduces mttr | 30x faster than prom | 50% trusted | 62 % reduction in overall | 80% incident resolution time | 80% slashes incident resolution time | fortune 500",
    "last_good_json": "{\"items\":[{\"claim\":\"10 x faster at half\",\"kind\":\"multiplier\"},{\"claim\":\"30% and reduces mttr\",\"kind\":\"percent-trailing\"},{\"claim\":\"30% efficiency and reduces mttr\",\"kind\":\"percent-trailing\"},{\"claim\":\"30x faster than prom\",\"kind\":\"multiplier\"},{\"claim\":\"50% trusted\",\"kind\":\"percent-trailing\"},{\"claim\":\"62 % reduction in overall\",\"kind\":\"percent\"},{\"claim\":\"80% incident resolution time\",\"kind\":\"percent-trailing\"},{\"claim\":\"80% slashes incident resolution time\",\"kind\":\"percent-trailing\"},{\"claim\":\"fortune 500\",\"kind\":\"rank\"}],\"count\":9}",
    "last_good_hash": "fa7b6169",
@@ -348,8 +348,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T15:37:24Z",
-   "last_good_at": "2026-08-09T15:37:24Z",
+   "last_observed_at": "2026-08-09T16:04:48Z",
+   "last_good_at": "2026-08-09T16:04:48Z",
    "last_good_value": "Elasticsearch brings context to AI.",
    "last_good_json": null,
    "last_good_hash": "c2070adf",
@@ -367,6 +367,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://www.elastic.co/pricing",
+   "fetched_at": "2026-08-09T16:09:20Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 572517,
+   "duration_ms": 626,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://www.elastic.co/",
+   "fetched_at": "2026-08-09T16:04:48Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 601233,
+   "duration_ms": 604,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.elastic.co/",
@@ -580,30 +604,6 @@
    "reason": "body identical to the previous fetch",
    "bytes": 601233,
    "duration_ms": 388,
-   "signals_found": 0,
-   "signals_expected": 0
-  },
-  {
-   "kind": "pricing",
-   "url": "https://www.elastic.co/pricing",
-   "fetched_at": "2026-08-07T23:19:38Z",
-   "http_status": 200,
-   "status": "unchanged",
-   "reason": "body identical to the previous fetch",
-   "bytes": 572517,
-   "duration_ms": 498,
-   "signals_found": 0,
-   "signals_expected": 0
-  },
-  {
-   "kind": "home",
-   "url": "https://www.elastic.co/",
-   "fetched_at": "2026-08-07T23:18:38Z",
-   "http_status": 200,
-   "status": "unchanged",
-   "reason": "body identical to the previous fetch",
-   "bytes": 601233,
-   "duration_ms": 364,
    "signals_found": 0,
    "signals_expected": 0
   }

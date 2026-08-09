@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:09:43Z",
+   "last_good_at": "2026-08-09T16:09:43Z",
    "last_good_value": "23",
    "last_good_json": null,
    "last_good_hash": "8ef29b12",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:09:43Z",
+   "last_good_at": "2026-08-09T16:09:43Z",
    "last_good_value": "testimonial, pricing_block",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":true,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "03b68bf8",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:09:43Z",
+   "last_good_at": "2026-08-09T16:09:43Z",
    "last_good_value": "45",
    "last_good_json": null,
    "last_good_hash": "8ce38d62",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:09:43Z",
+   "last_good_at": "2026-08-09T16:09:43Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:09:43Z",
+   "last_good_at": "2026-08-09T16:09:43Z",
    "last_good_value": "8",
    "last_good_json": null,
    "last_good_hash": "3d0cb547",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:09:43Z",
+   "last_good_at": "2026-08-09T16:09:43Z",
    "last_good_value": "5",
    "last_good_json": null,
    "last_good_hash": "300ca0d0",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:09:43Z",
+   "last_good_at": "2026-08-09T16:09:43Z",
    "last_good_value": "hero > testimonial > security > pricing > cta",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":63,\"merged\":1},{\"position\":2,\"type\":\"testimonial\",\"heading\":\"A complete solution for AI and human agents\",\"words\":286,\"merged\":2},{\"position\":3,\"type\":\"security\",\"heading\":\"A true partner with deep domain expertise\",\"words\":141,\"merged\":1},{\"position\":4,\"type\":\"pricing\",\"heading\":\"Transparent pricing\",\"words\":26,\"merged\":1},{\"position\":5,\"type\":\"cta\",\"heading\":\"Perfect customer experiences, powered by Intercom\",\"words\":11,\"merged\":1}]}",
    "last_good_hash": "99ecbf60",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:09:43Z",
+   "last_good_at": "2026-08-09T16:09:43Z",
    "last_good_value": 1232,
    "last_good_json": null,
    "last_good_hash": "f7c4198b",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:09:43Z",
+   "last_good_at": "2026-08-09T16:09:43Z",
    "last_good_value": "only helpdesk",
    "last_good_json": null,
    "last_good_hash": "245dced3",
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:09:43Z",
+   "last_good_at": "2026-08-09T16:09:43Z",
    "last_good_value": "Headshot of Isabel Larrow, Ims Image",
    "last_good_json": "{\"names\":[\"Headshot of Isabel Larrow\",\"Ims Image\"],\"count\":2,\"lead\":\"Trusted by 30,000 + leading brands <div class=\\\"mx-auto my-6 hidden w-full px-6 @\"}",
    "last_good_hash": "d99a08af",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:09:43Z",
+   "last_good_at": "2026-08-09T16:09:43Z",
    "last_good_value": "The only helpdesk designed for the AI Agent era",
    "last_good_json": null,
    "last_good_hash": "30c538e8",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:09:43Z",
+   "last_good_at": "2026-08-09T16:09:43Z",
    "last_good_value": "The only helpdesk with a natively integrated AI Agent. Deliver perfect customer experiences with the highest-performing platform. Start your free trial today.",
    "last_good_json": null,
    "last_good_hash": "e8173898",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:09:43Z",
+   "last_good_at": "2026-08-09T16:09:43Z",
    "last_good_value": "Intercom | The only helpdesk designed for the AI Agent era",
    "last_good_json": null,
    "last_good_hash": "c185f34d",
@@ -248,8 +248,8 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T15:37:25Z",
-   "last_good_at": "2026-08-09T15:37:25Z",
+   "last_observed_at": "2026-08-09T16:05:41Z",
+   "last_good_at": "2026-08-09T16:05:41Z",
    "last_good_value": "USD 0.99",
    "last_good_json": "{\"amount\":0.99,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"tier\":\"Fin AI Agent\"}",
    "last_good_hash": "e8bbd825",
@@ -266,8 +266,8 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T15:37:25Z",
-   "last_good_at": "2026-08-09T15:37:25Z",
+   "last_observed_at": "2026-08-09T16:05:41Z",
+   "last_good_at": "2026-08-09T16:05:41Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true}",
    "last_good_hash": "4e9f3590",
@@ -284,8 +284,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T15:37:25Z",
-   "last_good_at": "2026-08-09T15:37:25Z",
+   "last_observed_at": "2026-08-09T16:05:41Z",
+   "last_good_at": "2026-08-09T16:05:41Z",
    "last_good_value": "Intercom Pricing | Plans for every team size",
    "last_good_json": null,
    "last_good_hash": "6c194c0a",
@@ -302,7 +302,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T15:37:25Z",
+   "last_observed_at": "2026-08-09T16:05:41Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -320,8 +320,8 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T15:37:25Z",
-   "last_good_at": "2026-08-09T15:37:25Z",
+   "last_observed_at": "2026-08-09T16:05:41Z",
+   "last_good_at": "2026-08-09T16:05:41Z",
    "last_good_value": "Essential USD 39 | Advanced USD 99 | Expert USD 139 | Fin AI Agent USD 0.99",
    "last_good_json": "{\"tiers\":[{\"name\":\"Essential\",\"amount\":39,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"json-ld\"},{\"name\":\"Advanced\",\"amount\":99,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"json-ld\"},{\"name\":\"Expert\",\"amount\":139,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"json-ld\"},{\"name\":\"Fin AI Agent\",\"amount\":0.99,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"json-ld\"}],\"count\":4}",
    "last_good_hash": "10b40e64",
@@ -338,8 +338,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:09:43Z",
+   "last_good_at": "2026-08-09T16:09:43Z",
    "last_good_value": "$0.99 per outcome learn | $29 per seat | 100% coverage across your | 31% more customer conversations | 350 integrations",
    "last_good_json": "{\"items\":[{\"claim\":\"$0.99 per outcome learn\",\"kind\":\"money\"},{\"claim\":\"$29 per seat\",\"kind\":\"money\"},{\"claim\":\"100% coverage across your\",\"kind\":\"percent\"},{\"claim\":\"31% more customer conversations\",\"kind\":\"percent\"},{\"claim\":\"350 integrations\",\"kind\":\"count\"}],\"count\":5}",
    "last_good_hash": "3edf4058",
@@ -356,8 +356,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T15:35:07Z",
-   "last_good_at": "2026-08-09T15:35:07Z",
+   "last_observed_at": "2026-08-09T16:09:43Z",
+   "last_good_at": "2026-08-09T16:09:43Z",
    "last_good_value": "Intercom is the only helpdesk with a natively integrated AI Agent , Fin , meaning every customer conversation improves the next one, enabling perfect experiences that were never possible before.",
    "last_good_json": null,
    "last_good_hash": "d045e4eb",
@@ -375,6 +375,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.intercom.com/",
+   "fetched_at": "2026-08-09T16:09:43Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 1499922,
+   "duration_ms": 380,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.intercom.com/pricing",
+   "fetched_at": "2026-08-09T16:05:41Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 1236062,
+   "duration_ms": 538,
+   "signals_found": 4,
+   "signals_expected": 5
+  },
   {
    "kind": "pricing",
    "url": "https://www.intercom.com/pricing",
@@ -590,30 +614,6 @@
    "duration_ms": 459,
    "signals_found": 15,
    "signals_expected": 15
-  },
-  {
-   "kind": "pricing",
-   "url": "https://www.intercom.com/pricing",
-   "fetched_at": "2026-08-07T23:19:35Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": null,
-   "bytes": 1236062,
-   "duration_ms": 405,
-   "signals_found": 4,
-   "signals_expected": 5
-  },
-  {
-   "kind": "home",
-   "url": "https://www.intercom.com/",
-   "fetched_at": "2026-08-07T23:18:35Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": null,
-   "bytes": 1499922,
-   "duration_ms": 533,
-   "signals_found": 7,
-   "signals_expected": 7
   }
  ]
 }

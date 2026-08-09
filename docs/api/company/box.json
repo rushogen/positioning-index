@@ -15,7 +15,7 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T15:35:30Z",
+   "last_observed_at": "2026-08-09T16:04:05Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -33,7 +33,7 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T15:35:30Z",
+   "last_observed_at": "2026-08-09T16:04:05Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -51,7 +51,7 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T15:35:30Z",
+   "last_observed_at": "2026-08-09T16:04:05Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -69,7 +69,7 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T15:35:30Z",
+   "last_observed_at": "2026-08-09T16:04:05Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -87,7 +87,7 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T15:35:30Z",
+   "last_observed_at": "2026-08-09T16:04:05Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -105,7 +105,7 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T15:35:30Z",
+   "last_observed_at": "2026-08-09T16:04:05Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -123,7 +123,7 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T15:35:30Z",
+   "last_observed_at": "2026-08-09T16:04:05Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -141,8 +141,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T15:35:30Z",
-   "last_good_at": "2026-08-09T15:35:30Z",
+   "last_observed_at": "2026-08-09T16:04:05Z",
+   "last_good_at": "2026-08-09T16:04:05Z",
    "last_good_value": 665,
    "last_good_json": null,
    "last_good_hash": "87aae048",
@@ -159,8 +159,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T15:35:30Z",
-   "last_good_at": "2026-08-09T15:35:30Z",
+   "last_observed_at": "2026-08-09T16:04:05Z",
+   "last_good_at": "2026-08-09T16:04:05Z",
    "last_good_value": "one platform",
    "last_good_json": null,
    "last_good_hash": "f780271a",
@@ -177,8 +177,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T15:35:30Z",
-   "last_good_at": "2026-08-09T15:35:30Z",
+   "last_observed_at": "2026-08-09T16:04:05Z",
+   "last_good_at": "2026-08-09T16:04:05Z",
    "last_good_value": "Airbnb, Cisco, Morgan Stanley, NASA, Play 20x20, Robinhood, Samsung Semiconductor, Spotify, Uber",
    "last_good_json": "{\"names\":[\"Airbnb\",\"Cisco\",\"Morgan Stanley\",\"NASA\",\"Play 20x20\",\"Robinhood\",\"Samsung Semiconductor\",\"Spotify\",\"Uber\"],\"count\":9,\"lead\":\"Trusted by the world’s leading organizations. See customers <div class=\\\"logo-str\"}",
    "last_good_hash": "3bf44aa0",
@@ -195,8 +195,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T15:35:30Z",
-   "last_good_at": "2026-08-09T15:35:30Z",
+   "last_observed_at": "2026-08-09T16:04:05Z",
+   "last_good_at": "2026-08-09T16:04:05Z",
    "last_good_value": "Content + AI",
    "last_good_json": null,
    "last_good_hash": "e19b84cf",
@@ -213,8 +213,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T15:35:30Z",
-   "last_good_at": "2026-08-09T15:35:30Z",
+   "last_observed_at": "2026-08-09T16:04:05Z",
+   "last_good_at": "2026-08-09T16:04:05Z",
    "last_good_value": "Intelligent Content Management makes it easy to automate workflows, collaborate internally and externally, and protect your sensitive data, all on one platform.",
    "last_good_json": null,
    "last_good_hash": "471d2084",
@@ -231,8 +231,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T15:35:30Z",
-   "last_good_at": "2026-08-09T15:35:30Z",
+   "last_observed_at": "2026-08-09T16:04:05Z",
+   "last_good_at": "2026-08-09T16:04:05Z",
    "last_good_value": "Box | AI-Powered Content Management, Workflow & Collaboration",
    "last_good_json": null,
    "last_good_hash": "5d140b7d",
@@ -249,7 +249,7 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T15:35:30Z",
+   "last_observed_at": "2026-08-09T16:04:05Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -267,8 +267,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T15:35:30Z",
-   "last_good_at": "2026-08-09T15:35:30Z",
+   "last_observed_at": "2026-08-09T16:04:05Z",
+   "last_good_at": "2026-08-09T16:04:05Z",
    "last_good_value": "Trusted by the world’s leading organizations. See customers",
    "last_good_json": null,
    "last_good_hash": "c0092252",
@@ -286,6 +286,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://www.box.com/pricing",
+   "fetched_at": "2026-08-09T16:08:49Z",
+   "http_status": 403,
+   "status": "blocked",
+   "reason": "HTTP 403: the origin refuses identified automated clients",
+   "bytes": 0,
+   "duration_ms": 65,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.box.com/",
+   "fetched_at": "2026-08-09T16:04:05Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 506442,
+   "duration_ms": 245,
+   "signals_found": 7,
+   "signals_expected": 15
+  },
   {
    "kind": "pricing",
    "url": "https://www.box.com/pricing",

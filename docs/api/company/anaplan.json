@@ -13,8 +13,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T15:35:32Z",
-   "last_good_at": "2026-08-09T15:35:32Z",
+   "last_observed_at": "2026-08-09T16:06:10Z",
+   "last_good_at": "2026-08-09T16:06:10Z",
    "last_good_value": "13",
    "last_good_json": null,
    "last_good_hash": "1eeb2efd",
@@ -31,8 +31,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T15:35:32Z",
-   "last_good_at": "2026-08-09T15:35:32Z",
+   "last_observed_at": "2026-08-09T16:06:10Z",
+   "last_good_at": "2026-08-09T16:06:10Z",
    "last_good_value": "logo_wall, proof",
    "last_good_json": "{\"present\":{\"logo_wall\":true,\"proof\":true,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "44fc8857",
@@ -49,8 +49,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T15:35:32Z",
-   "last_good_at": "2026-08-09T15:35:32Z",
+   "last_observed_at": "2026-08-09T16:06:10Z",
+   "last_good_at": "2026-08-09T16:06:10Z",
    "last_good_value": "52",
    "last_good_json": null,
    "last_good_hash": "85e143c6",
@@ -67,8 +67,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T15:35:32Z",
-   "last_good_at": "2026-08-09T15:35:32Z",
+   "last_observed_at": "2026-08-09T16:06:10Z",
+   "last_good_at": "2026-08-09T16:06:10Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -85,8 +85,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T15:35:32Z",
-   "last_good_at": "2026-08-09T15:35:32Z",
+   "last_observed_at": "2026-08-09T16:06:10Z",
+   "last_good_at": "2026-08-09T16:06:10Z",
    "last_good_value": "57",
    "last_good_json": null,
    "last_good_hash": "8ae14ba5",
@@ -103,8 +103,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T15:35:32Z",
-   "last_good_at": "2026-08-09T15:35:32Z",
+   "last_observed_at": "2026-08-09T16:06:10Z",
+   "last_good_at": "2026-08-09T16:06:10Z",
    "last_good_value": "7",
    "last_good_json": null,
    "last_good_hash": "320ca3f6",
@@ -121,8 +121,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T15:35:32Z",
-   "last_good_at": "2026-08-09T15:35:32Z",
+   "last_observed_at": "2026-08-09T16:06:10Z",
+   "last_good_at": "2026-08-09T16:06:10Z",
    "last_good_value": "hero > logos > product > logos > proof > other > proof",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":43,\"merged\":1},{\"position\":2,\"type\":\"logos\",\"heading\":\"The world’s leaders in AI trust Anaplan\",\"words\":7,\"merged\":1},{\"position\":3,\"type\":\"product\",\"heading\":\"One unified platform with AI at the core\",\"words\":418,\"merged\":1},{\"position\":4,\"type\":\"logos\",\"heading\":\"Over 2,600 of the world’s biggest brands trust Anaplan. Shouldn’t you?\",\"words\":14,\"merged\":1},{\"position\":5,\"type\":\"proof\",\"heading\":\"Collaboration at speed sharpens The Coca-Cola Company’s competitive edge\",\"words\":26,\"merged\":5},{\"position\":6,\"type\":\"other\",\"heading\":\"Discover what’s new at Anaplan\",\"words\":14,\"merged\":1},{\"position\":7,\"type\":\"proof\",\"heading\":\"100% accuracy is a non-negotiable\",\"words\":24,\"merged\":1}]}",
    "last_good_hash": "ed1e84c4",
@@ -139,8 +139,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T15:35:32Z",
-   "last_good_at": "2026-08-09T15:35:32Z",
+   "last_observed_at": "2026-08-09T16:06:10Z",
+   "last_good_at": "2026-08-09T16:06:10Z",
    "last_good_value": 791,
    "last_good_json": null,
    "last_good_hash": "9ddded84",
@@ -157,8 +157,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T15:35:32Z",
-   "last_good_at": "2026-08-09T15:35:32Z",
+   "last_observed_at": "2026-08-09T16:06:10Z",
+   "last_good_at": "2026-08-09T16:06:10Z",
    "last_good_value": "decision infrastructure for the agentic enterprise",
    "last_good_json": null,
    "last_good_hash": "ef56442a",
@@ -175,8 +175,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T15:35:32Z",
-   "last_good_at": "2026-08-09T15:35:32Z",
+   "last_observed_at": "2026-08-09T16:06:10Z",
+   "last_good_at": "2026-08-09T16:06:10Z",
    "last_good_value": "Anaplan Connect, AWS, Coca Cola, Databricks, Forbes Newsroom Tile, Fortune Newsroom Tile, Gartner 1, Generalia, Generic A Tile, Google, JLR, LinkedIn, NVIDIA, OpenAI, Servicenow, Unilever International Group",
    "last_good_json": "{\"names\":[\"Anaplan Connect\",\"AWS\",\"Coca Cola\",\"Databricks\",\"Forbes Newsroom Tile\",\"Fortune Newsroom Tile\",\"Gartner 1\",\"Generalia\",\"Generic A Tile\",\"Google\",\"JLR\",\"LinkedIn\",\"NVIDIA\",\"OpenAI\",\"Servicenow\",\"Unilever International Group\"],\"count\":16,\"lead\":\"Powering the next era of productivity with Anaplan Intelligence\\\">\"}",
    "last_good_hash": "d126380c",
@@ -193,8 +193,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T15:35:32Z",
-   "last_good_at": "2026-08-09T15:35:32Z",
+   "last_observed_at": "2026-08-09T16:06:10Z",
+   "last_good_at": "2026-08-09T16:06:10Z",
    "last_good_value": "The decision infrastructure for the Agentic Enterprise",
    "last_good_json": null,
    "last_good_hash": "eff0a1ef",
@@ -211,8 +211,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T15:35:32Z",
-   "last_good_at": "2026-08-09T15:35:32Z",
+   "last_observed_at": "2026-08-09T16:06:10Z",
+   "last_good_at": "2026-08-09T16:06:10Z",
    "last_good_value": "The scenario planning and analysis platform where AI, data, and planning converge to make the right decisions, right now.",
    "last_good_json": null,
    "last_good_hash": "b1d604b2",
@@ -229,8 +229,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T15:35:32Z",
-   "last_good_at": "2026-08-09T15:35:32Z",
+   "last_observed_at": "2026-08-09T16:06:10Z",
+   "last_good_at": "2026-08-09T16:06:10Z",
    "last_good_value": "Decision Infrastructure for Agentic Enterprises | Anaplan",
    "last_good_json": null,
    "last_good_hash": "f57173c5",
@@ -247,8 +247,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T15:35:32Z",
-   "last_good_at": "2026-08-09T15:35:32Z",
+   "last_observed_at": "2026-08-09T16:06:10Z",
+   "last_good_at": "2026-08-09T16:06:10Z",
    "last_good_value": "50% faster strategic financial | 95% less cost for",
    "last_good_json": "{\"items\":[{\"claim\":\"50% faster strategic financial\",\"kind\":\"percent\"},{\"claim\":\"95% less cost for\",\"kind\":\"percent\"}],\"count\":2}",
    "last_good_hash": "4abf2709",
@@ -265,8 +265,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T15:35:32Z",
-   "last_good_at": "2026-08-09T15:35:32Z",
+   "last_observed_at": "2026-08-09T16:06:10Z",
+   "last_good_at": "2026-08-09T16:06:10Z",
    "last_good_value": "The scenario planning and analysis platform where AI, data, and planning converge to make the right decisions, right now.",
    "last_good_json": null,
    "last_good_hash": "b1d604b2",
@@ -284,6 +284,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.anaplan.com/",
+   "fetched_at": "2026-08-09T16:06:10Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 358815,
+   "duration_ms": 221,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.anaplan.com/",

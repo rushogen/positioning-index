@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T15:35:13Z",
-   "last_good_at": "2026-08-09T15:35:13Z",
+   "last_observed_at": "2026-08-09T16:06:21Z",
+   "last_good_at": "2026-08-09T16:06:21Z",
    "last_good_value": "2",
    "last_good_json": null,
    "last_good_hash": "370cabd5",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T15:35:13Z",
-   "last_good_at": "2026-08-09T15:35:13Z",
+   "last_observed_at": "2026-08-09T16:06:21Z",
+   "last_good_at": "2026-08-09T16:06:21Z",
    "last_good_value": "logo_wall, testimonial",
    "last_good_json": "{\"present\":{\"logo_wall\":true,\"proof\":false,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "97603fa2",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T15:35:13Z",
-   "last_good_at": "2026-08-09T15:35:13Z",
+   "last_observed_at": "2026-08-09T16:06:21Z",
+   "last_good_at": "2026-08-09T16:06:21Z",
    "last_good_value": "120",
    "last_good_json": null,
    "last_good_hash": "733864ae",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T15:35:13Z",
-   "last_good_at": "2026-08-09T15:35:13Z",
+   "last_observed_at": "2026-08-09T16:06:21Z",
+   "last_good_at": "2026-08-09T16:06:21Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T15:35:13Z",
-   "last_good_at": "2026-08-09T15:35:13Z",
+   "last_observed_at": "2026-08-09T16:06:21Z",
+   "last_good_at": "2026-08-09T16:06:21Z",
    "last_good_value": "26",
    "last_good_json": null,
    "last_good_hash": "8bf29659",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T15:35:13Z",
-   "last_good_at": "2026-08-09T15:35:13Z",
+   "last_observed_at": "2026-08-09T16:06:21Z",
+   "last_good_at": "2026-08-09T16:06:21Z",
    "last_good_value": "7",
    "last_good_json": null,
    "last_good_hash": "320ca3f6",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T15:35:13Z",
-   "last_good_at": "2026-08-09T15:35:13Z",
+   "last_observed_at": "2026-08-09T16:06:21Z",
+   "last_good_at": "2026-08-09T16:06:21Z",
    "last_good_value": "hero > testimonial > features > testimonial > logos > other > cta",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":305,\"merged\":1},{\"position\":2,\"type\":\"testimonial\",\"heading\":\"Our technology platform drives hard cost savings for the world’s most important companies.\",\"words\":57,\"merged\":1},{\"position\":3,\"type\":\"features\",\"heading\":\"Digitize freight forwarding for visibility and control\",\"words\":90,\"merged\":3},{\"position\":4,\"type\":\"testimonial\",\"heading\":\"Fuel your growth with fast, reliable fulfillment\",\"words\":87,\"merged\":1},{\"position\":5,\"type\":\"logos\",\"heading\":\"Take full control of your supply chain\",\"words\":32,\"merged\":1},{\"position\":6,\"type\":\"other\",\"heading\":\"Global reach, local on-the-ground expertise\",\"words\":9,\"merged\":1},{\"position\":7,\"type\":\"cta\",\"heading\":\"Put us to work as your global logistics platform\",\"words\":24,\"merged\":1}]}",
    "last_good_hash": "b7e485e6",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T15:35:13Z",
-   "last_good_at": "2026-08-09T15:35:13Z",
+   "last_observed_at": "2026-08-09T16:06:21Z",
+   "last_good_at": "2026-08-09T16:06:21Z",
    "last_good_value": 732,
    "last_good_json": null,
    "last_good_hash": "20c523d7",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T15:35:13Z",
-   "last_good_at": "2026-08-09T15:35:13Z",
+   "last_observed_at": "2026-08-09T16:06:21Z",
+   "last_good_at": "2026-08-09T16:06:21Z",
    "last_good_value": "supply chain platform",
    "last_good_json": null,
    "last_good_hash": "c9b23792",
@@ -176,7 +176,7 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T15:35:13Z",
+   "last_observed_at": "2026-08-09T16:06:21Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T15:35:13Z",
-   "last_good_at": "2026-08-09T15:35:13Z",
+   "last_observed_at": "2026-08-09T16:06:21Z",
+   "last_good_at": "2026-08-09T16:06:21Z",
    "last_good_value": "AI-powered logistics for the real world",
    "last_good_json": null,
    "last_good_hash": "59d8d797",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T15:35:13Z",
-   "last_good_at": "2026-08-09T15:35:13Z",
+   "last_observed_at": "2026-08-09T16:06:21Z",
+   "last_good_at": "2026-08-09T16:06:21Z",
    "last_good_value": "Ship smarter with Flexport's AI-powered freight forwarding platform. Ocean, air, and trucking logistics with end-to-end supply chain visibility.",
    "last_good_json": null,
    "last_good_hash": "79d8da5d",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T15:35:13Z",
-   "last_good_at": "2026-08-09T15:35:13Z",
+   "last_observed_at": "2026-08-09T16:06:21Z",
+   "last_good_at": "2026-08-09T16:06:21Z",
    "last_good_value": "Freight Forwarding & Supply Chain Platform | Flexport",
    "last_good_json": null,
    "last_good_hash": "35b4ac88",
@@ -248,8 +248,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T15:35:13Z",
-   "last_good_at": "2026-08-09T15:35:13Z",
+   "last_observed_at": "2026-08-09T16:06:21Z",
+   "last_good_at": "2026-08-09T16:06:21Z",
    "last_good_value": "$900m tariffs in the | 5 minutes",
    "last_good_json": "{\"items\":[{\"claim\":\"$900m tariffs in the\",\"kind\":\"money\"},{\"claim\":\"5 minutes\",\"kind\":\"time\"}],\"count\":2}",
    "last_good_hash": "99499ce4",
@@ -266,8 +266,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T15:35:13Z",
-   "last_good_at": "2026-08-09T15:35:13Z",
+   "last_observed_at": "2026-08-09T16:06:21Z",
+   "last_good_at": "2026-08-09T16:06:21Z",
    "last_good_value": "Automate your logistics from factory floor to customer door with the world's most advanced technology platform for global trade. Flexport drives hard cost savings in your international freight forwarding while partnering with you to build a leaner, faster supply chain.",
    "last_good_json": null,
    "last_good_hash": "94d610df",
@@ -285,6 +285,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.flexport.com/",
+   "fetched_at": "2026-08-09T16:06:21Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 784392,
+   "duration_ms": 358,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.flexport.com/",

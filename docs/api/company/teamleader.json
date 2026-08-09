@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T15:35:43Z",
-   "last_good_at": "2026-08-09T15:35:43Z",
+   "last_observed_at": "2026-08-09T16:03:17Z",
+   "last_good_at": "2026-08-09T16:03:17Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T15:35:43Z",
-   "last_good_at": "2026-08-09T15:35:43Z",
+   "last_observed_at": "2026-08-09T16:03:17Z",
+   "last_good_at": "2026-08-09T16:03:17Z",
    "last_good_value": "pricing_block",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":true,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "be5c5033",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T15:35:43Z",
-   "last_good_at": "2026-08-09T15:35:43Z",
+   "last_observed_at": "2026-08-09T16:03:17Z",
+   "last_good_at": "2026-08-09T16:03:17Z",
    "last_good_value": "51",
    "last_good_json": null,
    "last_good_hash": "84e14233",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T15:35:43Z",
-   "last_good_at": "2026-08-09T15:35:43Z",
+   "last_observed_at": "2026-08-09T16:03:17Z",
+   "last_good_at": "2026-08-09T16:03:17Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T15:35:43Z",
-   "last_good_at": "2026-08-09T15:35:43Z",
+   "last_observed_at": "2026-08-09T16:03:17Z",
+   "last_good_at": "2026-08-09T16:03:17Z",
    "last_good_value": "2",
    "last_good_json": null,
    "last_good_hash": "370cabd5",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T15:35:43Z",
-   "last_good_at": "2026-08-09T15:35:43Z",
+   "last_observed_at": "2026-08-09T16:03:17Z",
+   "last_good_at": "2026-08-09T16:03:17Z",
    "last_good_value": "6",
    "last_good_json": null,
    "last_good_hash": "330ca589",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T15:35:43Z",
-   "last_good_at": "2026-08-09T15:35:43Z",
+   "last_observed_at": "2026-08-09T16:03:17Z",
+   "last_good_at": "2026-08-09T16:03:17Z",
    "last_good_value": "hero > product > features > pricing > other > features",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":110,\"merged\":1},{\"position\":2,\"type\":\"product\",\"heading\":\"Customer data & communication in one place\",\"words\":62,\"merged\":1},{\"position\":3,\"type\":\"features\",\"heading\":\"Create accurate invoices & get paid faster\",\"words\":64,\"merged\":5},{\"position\":4,\"type\":\"pricing\",\"heading\":\"Teamleader Focus − works for you too!\",\"words\":102,\"merged\":1},{\"position\":5,\"type\":\"other\",\"heading\":\"34,000 clients already work with ‘the real deal’.\",\"words\":18,\"merged\":1},{\"position\":6,\"type\":\"features\",\"heading\":\"Running an agency is a job in itself.\",\"words\":230,\"merged\":2}]}",
    "last_good_hash": "dffc963e",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T15:35:43Z",
-   "last_good_at": "2026-08-09T15:35:43Z",
+   "last_observed_at": "2026-08-09T16:03:17Z",
+   "last_good_at": "2026-08-09T16:03:17Z",
    "last_good_value": 886,
    "last_good_json": null,
    "last_good_hash": "4bb2dac1",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T15:35:43Z",
-   "last_good_at": "2026-08-09T15:35:43Z",
+   "last_observed_at": "2026-08-09T16:03:17Z",
+   "last_good_at": "2026-08-09T16:03:17Z",
    "last_good_value": "just one platform",
    "last_good_json": null,
    "last_good_hash": "8dbe61d2",
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T15:35:43Z",
-   "last_good_at": "2026-08-09T15:35:43Z",
+   "last_observed_at": "2026-08-09T16:03:17Z",
+   "last_good_at": "2026-08-09T16:03:17Z",
    "last_good_value": "Clarq Agency, Cta Left, Cta Right, Ecofinity Goed, Fold Zwart, HS SITE FILES, Rebel N Kind 2, SAM Witte, Tifre",
    "last_good_json": "{\"names\":[\"Clarq Agency\",\"Cta Left\",\"Cta Right\",\"Ecofinity Goed\",\"Fold Zwart\",\"HS SITE FILES\",\"Rebel N Kind 2\",\"SAM Witte\",\"Tifre\"],\"count\":9,\"lead\":\"backed by real data. No more guesswork. Access ready-to-use reports and clear, s\"}",
    "last_good_hash": "3b8037a5",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T15:35:43Z",
-   "last_good_at": "2026-08-09T15:35:43Z",
+   "last_observed_at": "2026-08-09T16:03:17Z",
+   "last_good_at": "2026-08-09T16:03:17Z",
    "last_good_value": "Just one platform to run your whole business.",
    "last_good_json": null,
    "last_good_hash": "b6e1af5e",
@@ -212,26 +212,26 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T15:35:43Z",
-   "last_good_at": null,
-   "last_good_value": null,
+   "last_observed_at": "2026-08-09T16:03:17Z",
+   "last_good_at": "2026-08-09T16:03:17Z",
+   "last_good_value": "Manage your business easily in one place. Over 34,000 entrepreneurs and their teams hand over their paperwork to Teamleader's business software.",
    "last_good_json": null,
-   "last_good_hash": null,
-   "last_good_method": null,
-   "last_good_confidence": null,
+   "last_good_hash": "d858c448",
+   "last_good_method": "meta:description",
+   "last_good_confidence": 1,
    "consecutive_nulls": 0,
    "suspect": 0,
    "total_changes": 0,
    "recent_hashes": null,
    "currency_shift_runs": 0,
    "currency_shift_key": null,
-   "acquisition_runs": 2,
-   "acquisition_hash": "d858c448"
+   "acquisition_runs": 0,
+   "acquisition_hash": null
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T15:35:43Z",
-   "last_good_at": "2026-08-09T15:35:43Z",
+   "last_observed_at": "2026-08-09T16:03:17Z",
+   "last_good_at": "2026-08-09T16:03:17Z",
    "last_good_value": "CRM, invoices, quotations and projects in one tool | Teamleader",
    "last_good_json": null,
    "last_good_hash": "9a5486c6",
@@ -248,7 +248,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T15:37:43Z",
+   "last_observed_at": "2026-08-09T16:07:46Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -266,7 +266,7 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T15:37:43Z",
+   "last_observed_at": "2026-08-09T16:07:46Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -284,8 +284,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T15:37:43Z",
-   "last_good_at": "2026-08-09T15:37:43Z",
+   "last_observed_at": "2026-08-09T16:07:46Z",
+   "last_good_at": "2026-08-09T16:07:46Z",
    "last_good_value": "Choose the package that suits you | Flexible & clear | From €37.5 EUR | Teamleader",
    "last_good_json": null,
    "last_good_hash": "1b6cc75e",
@@ -302,7 +302,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T15:37:43Z",
+   "last_observed_at": "2026-08-09T16:07:46Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -320,7 +320,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T15:37:43Z",
+   "last_observed_at": "2026-08-09T16:07:46Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -338,8 +338,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T15:35:43Z",
-   "last_good_at": "2026-08-09T15:35:43Z",
+   "last_observed_at": "2026-08-09T16:03:17Z",
+   "last_good_at": "2026-08-09T16:03:17Z",
    "last_good_value": "€ 37 per month | 20 employees",
    "last_good_json": "{\"items\":[{\"claim\":\"€ 37 per month\",\"kind\":\"money\"},{\"claim\":\"20 employees\",\"kind\":\"count\"}],\"count\":2}",
    "last_good_hash": "03ed2b05",
@@ -356,8 +356,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T15:35:43Z",
-   "last_good_at": "2026-08-09T15:35:43Z",
+   "last_observed_at": "2026-08-09T16:03:17Z",
+   "last_good_at": "2026-08-09T16:03:17Z",
    "last_good_value": "Hello! Here's what's on today's agenda",
    "last_good_json": null,
    "last_good_hash": "b5867188",
@@ -375,6 +375,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://www.teamleader.eu/pricing",
+   "fetched_at": "2026-08-09T16:07:46Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 264949,
+   "duration_ms": 336,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://www.teamleader.eu/",
+   "fetched_at": "2026-08-09T16:03:17Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 127063,
+   "duration_ms": 417,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
   {
    "kind": "pricing",
    "url": "https://www.teamleader.eu/pricing",
@@ -590,30 +614,6 @@
    "duration_ms": 169,
    "signals_found": 0,
    "signals_expected": 0
-  },
-  {
-   "kind": "pricing",
-   "url": "https://www.teamleader.eu/pricing",
-   "fetched_at": "2026-08-07T23:19:10Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": null,
-   "bytes": 245140,
-   "duration_ms": 134,
-   "signals_found": 1,
-   "signals_expected": 5
-  },
-  {
-   "kind": "home",
-   "url": "https://www.teamleader.eu/",
-   "fetched_at": "2026-08-07T23:17:56Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": null,
-   "bytes": 115548,
-   "duration_ms": 256,
-   "signals_found": 6,
-   "signals_expected": 7
   }
  ]
 }

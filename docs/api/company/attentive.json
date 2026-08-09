@@ -15,8 +15,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T15:37:19Z",
-   "last_good_at": "2026-08-09T15:37:19Z",
+   "last_observed_at": "2026-08-09T16:03:13Z",
+   "last_good_at": "2026-08-09T16:03:13Z",
    "last_good_value": "2",
    "last_good_json": null,
    "last_good_hash": "370cabd5",
@@ -33,8 +33,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T15:37:19Z",
-   "last_good_at": "2026-08-09T15:37:19Z",
+   "last_observed_at": "2026-08-09T16:03:13Z",
+   "last_good_at": "2026-08-09T16:03:13Z",
    "last_good_value": "proof, testimonial, integrations",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":true,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":true,\"media\":false}}",
    "last_good_hash": "cb7cae87",
@@ -51,8 +51,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T15:37:19Z",
-   "last_good_at": "2026-08-09T15:37:19Z",
+   "last_observed_at": "2026-08-09T16:03:13Z",
+   "last_good_at": "2026-08-09T16:03:13Z",
    "last_good_value": "61",
    "last_good_json": null,
    "last_good_hash": "14e8e0a8",
@@ -69,8 +69,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T15:37:19Z",
-   "last_good_at": "2026-08-09T15:37:19Z",
+   "last_observed_at": "2026-08-09T16:03:13Z",
+   "last_good_at": "2026-08-09T16:03:13Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -87,8 +87,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T15:37:19Z",
-   "last_good_at": "2026-08-09T15:37:19Z",
+   "last_observed_at": "2026-08-09T16:03:13Z",
+   "last_good_at": "2026-08-09T16:03:13Z",
    "last_good_value": "6",
    "last_good_json": null,
    "last_good_hash": "330ca589",
@@ -105,8 +105,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T15:37:19Z",
-   "last_good_at": "2026-08-09T15:37:19Z",
+   "last_observed_at": "2026-08-09T16:03:13Z",
+   "last_good_at": "2026-08-09T16:03:13Z",
    "last_good_value": "8",
    "last_good_json": null,
    "last_good_hash": "3d0cb547",
@@ -123,8 +123,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T15:37:19Z",
-   "last_good_at": "2026-08-09T15:37:19Z",
+   "last_observed_at": "2026-08-09T16:03:13Z",
+   "last_good_at": "2026-08-09T16:03:13Z",
    "last_good_value": "hero > features > proof > security > integrations > testimonial > features > other",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":54,\"merged\":1},{\"position\":2,\"type\":\"features\",\"heading\":\"Why Attentive?\",\"words\":60,\"merged\":2},{\"position\":3,\"type\":\"proof\",\"heading\":\"Turn customer signals into more relevant marketing\",\"words\":48,\"merged\":1},{\"position\":4,\"type\":\"security\",\"heading\":\"Create top-performing campaigns in less time\",\"words\":203,\"merged\":1},{\"position\":5,\"type\":\"integrations\",\"heading\":\"Bring your data and tools together\",\"words\":30,\"merged\":1},{\"position\":6,\"type\":\"testimonial\",\"heading\":\"Real results from leading brands\",\"words\":208,\"merged\":1},{\"position\":7,\"type\":\"features\",\"heading\":\"BFCM Ideas & Insights\",\"words\":80,\"merged\":1},{\"position\":8,\"type\":\"other\",\"heading\":\"Ready to make every message more personal?\",\"words\":13,\"merged\":1}]}",
    "last_good_hash": "83ce01c7",
@@ -141,8 +141,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T15:37:19Z",
-   "last_good_at": "2026-08-09T15:37:19Z",
+   "last_observed_at": "2026-08-09T16:03:13Z",
+   "last_good_at": "2026-08-09T16:03:13Z",
    "last_good_value": 747,
    "last_good_json": null,
    "last_good_hash": "8bbd7d83",
@@ -159,8 +159,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T15:37:19Z",
-   "last_good_at": "2026-08-09T15:37:19Z",
+   "last_observed_at": "2026-08-09T16:03:13Z",
+   "last_good_at": "2026-08-09T16:03:13Z",
    "last_good_value": "email marketing platform",
    "last_good_json": null,
    "last_good_hash": "4958617a",
@@ -177,8 +177,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T15:37:19Z",
-   "last_good_at": "2026-08-09T15:37:19Z",
+   "last_observed_at": "2026-08-09T16:03:13Z",
+   "last_good_at": "2026-08-09T16:03:13Z",
    "last_good_value": "Amika, Clove, Cratebarrel, Crocs, Dyson, frye, Frye (1), Hm, marleylilly brand, Nespresso, Olly, Reebok, Reformation, Samsung, Ugg, Urbanoutfitters, Wayfair",
    "last_good_json": "{\"names\":[\"Amika\",\"Clove\",\"Cratebarrel\",\"Crocs\",\"Dyson\",\"frye\",\"Frye (1)\",\"Hm\",\"marleylilly brand\",\"Nespresso\",\"Olly\",\"Reebok\",\"Reformation\",\"Samsung\",\"Ugg\",\"Urbanoutfitters\",\"Wayfair\"],\"count\":17,\"lead\":\"our customers shop, learn, and engage.” Carah Campbell CRM + Data Intelligence D\"}",
    "last_good_hash": "214917cc",
@@ -195,8 +195,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T15:37:19Z",
-   "last_good_at": "2026-08-09T15:37:19Z",
+   "last_observed_at": "2026-08-09T16:03:13Z",
+   "last_good_at": "2026-08-09T16:03:13Z",
    "last_good_value": "Marketing made personal",
    "last_good_json": null,
    "last_good_hash": "289b0760",
@@ -213,8 +213,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T15:37:19Z",
-   "last_good_at": "2026-08-09T15:37:19Z",
+   "last_observed_at": "2026-08-09T16:03:13Z",
+   "last_good_at": "2026-08-09T16:03:13Z",
    "last_good_value": "Learn more about Attentive—the SMS and email platform that brings your customer interactions to life with advanced AI.",
    "last_good_json": null,
    "last_good_hash": "83e76805",
@@ -231,8 +231,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T15:37:19Z",
-   "last_good_at": "2026-08-09T15:37:19Z",
+   "last_observed_at": "2026-08-09T16:03:13Z",
+   "last_good_at": "2026-08-09T16:03:13Z",
    "last_good_value": "Attentive | AI-Powered SMS and Email Marketing Platform",
    "last_good_json": null,
    "last_good_hash": "61a260fb",
@@ -249,7 +249,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T15:34:57Z",
+   "last_observed_at": "2026-08-09T16:07:41Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -267,7 +267,7 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T15:34:57Z",
+   "last_observed_at": "2026-08-09T16:07:41Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -285,8 +285,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T15:34:57Z",
-   "last_good_at": "2026-08-09T15:34:57Z",
+   "last_observed_at": "2026-08-09T16:07:41Z",
+   "last_good_at": "2026-08-09T16:07:41Z",
    "last_good_value": "Attentive Pricing",
    "last_good_json": null,
    "last_good_hash": "05a64ee3",
@@ -303,7 +303,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T15:34:57Z",
+   "last_observed_at": "2026-08-09T16:07:41Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -321,7 +321,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T15:34:57Z",
+   "last_observed_at": "2026-08-09T16:07:41Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -339,8 +339,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T15:37:19Z",
-   "last_good_at": "2026-08-09T15:37:19Z",
+   "last_observed_at": "2026-08-09T16:03:13Z",
+   "last_good_at": "2026-08-09T16:03:13Z",
    "last_good_value": "100 integrations | 117% more purchases drive | 124% increase in email | 192% boost in email | 20% higher cvr create | 2x higher list growth | 2x higher roi | 30 days | 48% increase in welcome | 48x roi on gifting | 97x roi from sms",
    "last_good_json": "{\"items\":[{\"claim\":\"100 integrations\",\"kind\":\"count\"},{\"claim\":\"117% more purchases drive\",\"kind\":\"percent\"},{\"claim\":\"124% increase in email\",\"kind\":\"percent\"},{\"claim\":\"192% boost in email\",\"kind\":\"percent\"},{\"claim\":\"20% higher cvr create\",\"kind\":\"percent\"},{\"claim\":\"2x higher list growth\",\"kind\":\"multiplier\"},{\"claim\":\"2x higher roi\",\"kind\":\"multiplier\"},{\"claim\":\"30 days\",\"kind\":\"time\"},{\"claim\":\"48% increase in welcome\",\"kind\":\"percent\"},{\"claim\":\"48x roi on gifting\",\"kind\":\"multiplier\"},{\"claim\":\"97x roi from sms\",\"kind\":\"multiplier\"}],\"count\":11}",
    "last_good_hash": "eafa660c",
@@ -357,8 +357,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T15:37:19Z",
-   "last_good_at": "2026-08-09T15:37:19Z",
+   "last_observed_at": "2026-08-09T16:03:13Z",
+   "last_good_at": "2026-08-09T16:03:13Z",
    "last_good_value": "Understand every customer, personalize every message, and drive revenue and loyalty across SMS, email, RCS, and push",
    "last_good_json": null,
    "last_good_hash": "02bec117",
@@ -376,6 +376,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://www.attentive.com/pricing",
+   "fetched_at": "2026-08-09T16:07:41Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 189277,
+   "duration_ms": 134,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://www.attentive.com/",
+   "fetched_at": "2026-08-09T16:03:13Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 269277,
+   "duration_ms": 227,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.attentive.com/",

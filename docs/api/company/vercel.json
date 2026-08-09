@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T15:34:18Z",
-   "last_good_at": "2026-08-09T15:34:18Z",
+   "last_observed_at": "2026-08-09T16:04:54Z",
+   "last_good_at": "2026-08-09T16:04:54Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T15:34:18Z",
-   "last_good_at": "2026-08-09T15:34:18Z",
+   "last_observed_at": "2026-08-09T16:04:54Z",
+   "last_good_at": "2026-08-09T16:04:54Z",
    "last_good_value": "proof, integrations",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":true,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":true,\"media\":false}}",
    "last_good_hash": "39638952",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T15:34:18Z",
-   "last_good_at": "2026-08-09T15:34:18Z",
+   "last_observed_at": "2026-08-09T16:04:54Z",
+   "last_good_at": "2026-08-09T16:04:54Z",
    "last_good_value": "80",
    "last_good_json": null,
    "last_good_hash": "9201aa55",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T15:34:18Z",
-   "last_good_at": "2026-08-09T15:34:18Z",
+   "last_observed_at": "2026-08-09T16:04:54Z",
+   "last_good_at": "2026-08-09T16:04:54Z",
    "last_good_value": "3",
    "last_good_json": null,
    "last_good_hash": "360caa42",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T15:34:18Z",
-   "last_good_at": "2026-08-09T15:34:18Z",
+   "last_observed_at": "2026-08-09T16:04:54Z",
+   "last_good_at": "2026-08-09T16:04:54Z",
    "last_good_value": "34",
    "last_good_json": null,
    "last_good_hash": "8bf057c2",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T15:34:18Z",
-   "last_good_at": "2026-08-09T15:34:18Z",
+   "last_observed_at": "2026-08-09T16:04:54Z",
+   "last_good_at": "2026-08-09T16:04:54Z",
    "last_good_value": "5",
    "last_good_json": null,
    "last_good_hash": "300ca0d0",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T15:34:18Z",
-   "last_good_at": "2026-08-09T15:34:18Z",
+   "last_observed_at": "2026-08-09T16:04:54Z",
+   "last_good_at": "2026-08-09T16:04:54Z",
    "last_good_value": "hero > features > proof > features > integrations",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":74,\"merged\":1},{\"position\":2,\"type\":\"features\",\"heading\":\"Build agents on infrastructure that thinks like them\",\"words\":27,\"merged\":1},{\"position\":3,\"type\":\"proof\",\"heading\":\"Ship apps that scale from zero to millions instantly\",\"words\":29,\"merged\":2},{\"position\":4,\"type\":\"features\",\"heading\":\"Recently shipped\",\"words\":60,\"merged\":1},{\"position\":5,\"type\":\"integrations\",\"heading\":\"Built by you, or your agents\",\"words\":19,\"merged\":1}]}",
    "last_good_hash": "24423f3c",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T15:34:18Z",
-   "last_good_at": "2026-08-09T15:34:18Z",
+   "last_observed_at": "2026-08-09T16:04:54Z",
+   "last_good_at": "2026-08-09T16:04:54Z",
    "last_good_value": 234,
    "last_good_json": null,
    "last_good_hash": "2dea3cd2",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T15:34:18Z",
-   "last_good_at": "2026-08-09T15:34:18Z",
+   "last_observed_at": "2026-08-09T16:04:54Z",
+   "last_good_at": "2026-08-09T16:04:54Z",
    "last_good_value": "agentic infrastructure",
    "last_good_json": null,
    "last_good_hash": "8630d741",
@@ -176,7 +176,7 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T15:34:18Z",
+   "last_observed_at": "2026-08-09T16:04:54Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T15:34:18Z",
-   "last_good_at": "2026-08-09T15:34:18Z",
+   "last_observed_at": "2026-08-09T16:04:54Z",
+   "last_good_at": "2026-08-09T16:04:54Z",
    "last_good_value": "Agentic Infrastructure",
    "last_good_json": null,
    "last_good_hash": "6f591841",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T15:34:18Z",
-   "last_good_at": "2026-08-09T15:34:18Z",
+   "last_observed_at": "2026-08-09T16:04:54Z",
+   "last_good_at": "2026-08-09T16:04:54Z",
    "last_good_value": "The autonomous stack for every app and agent.",
    "last_good_json": null,
    "last_good_hash": "e68d7687",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T15:34:18Z",
-   "last_good_at": "2026-08-09T15:34:18Z",
+   "last_observed_at": "2026-08-09T16:04:54Z",
+   "last_good_at": "2026-08-09T16:04:54Z",
    "last_good_value": "Agentic Infrastructure - Vercel",
    "last_good_json": null,
    "last_good_hash": "9f08a4bd",
@@ -248,7 +248,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T15:36:59Z",
+   "last_observed_at": "2026-08-09T16:09:27Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -266,8 +266,8 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T15:36:59Z",
-   "last_good_at": "2026-08-09T15:36:59Z",
+   "last_observed_at": "2026-08-09T16:09:27Z",
+   "last_good_at": "2026-08-09T16:09:27Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true,\"loose\":true}",
    "last_good_hash": "4e9f3590",
@@ -284,8 +284,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T15:36:59Z",
-   "last_good_at": "2026-08-09T15:36:59Z",
+   "last_observed_at": "2026-08-09T16:09:27Z",
+   "last_good_at": "2026-08-09T16:09:27Z",
    "last_good_value": "Vercel Pricing: Hobby, Pro, and Enterprise plans",
    "last_good_json": null,
    "last_good_hash": "649a77f5",
@@ -302,7 +302,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T15:36:59Z",
+   "last_observed_at": "2026-08-09T16:09:27Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -320,7 +320,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T15:36:59Z",
+   "last_observed_at": "2026-08-09T16:09:27Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -338,8 +338,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T15:34:18Z",
-   "last_good_at": "2026-08-09T15:34:18Z",
+   "last_observed_at": "2026-08-09T16:04:54Z",
+   "last_good_at": "2026-08-09T16:04:54Z",
    "last_good_value": "20,000 companies",
    "last_good_json": "{\"items\":[{\"claim\":\"20,000 companies\",\"kind\":\"count\"}],\"count\":1}",
    "last_good_hash": "a6bee5e4",
@@ -356,8 +356,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T15:34:18Z",
-   "last_good_at": "2026-08-09T15:34:18Z",
+   "last_observed_at": "2026-08-09T16:04:54Z",
+   "last_good_at": "2026-08-09T16:04:54Z",
    "last_good_value": "For coding agents to ship apps and agents automated by agents.",
    "last_good_json": null,
    "last_good_hash": "fee811cb",
@@ -375,6 +375,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://vercel.com/pricing",
+   "fetched_at": "2026-08-09T16:09:27Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 1267529,
+   "duration_ms": 190,
+   "signals_found": 2,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://vercel.com/",
+   "fetched_at": "2026-08-09T16:04:54Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 619033,
+   "duration_ms": 323,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
   {
    "kind": "pricing",
    "url": "https://vercel.com/pricing",
@@ -590,30 +614,6 @@
    "duration_ms": 107,
    "signals_found": 14,
    "signals_expected": 15
-  },
-  {
-   "kind": "home",
-   "url": "https://vercel.com/",
-   "fetched_at": "2026-08-07T23:19:39Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": null,
-   "bytes": 618990,
-   "duration_ms": 66,
-   "signals_found": 6,
-   "signals_expected": 7
-  },
-  {
-   "kind": "pricing",
-   "url": "https://vercel.com/pricing",
-   "fetched_at": "2026-08-07T23:18:39Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": null,
-   "bytes": 1267306,
-   "duration_ms": 123,
-   "signals_found": 1,
-   "signals_expected": 5
   }
  ]
 }

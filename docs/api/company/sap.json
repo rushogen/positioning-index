@@ -16,6 +16,18 @@
   {
    "kind": "home",
    "url": "https://www.sap.com/",
+   "fetched_at": "2026-08-09T16:06:39Z",
+   "http_status": null,
+   "status": "blocked",
+   "reason": "robots.txt: Disallow: /",
+   "bytes": 0,
+   "duration_ms": 708,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.sap.com/",
    "fetched_at": "2026-08-09T15:36:56Z",
    "http_status": null,
    "status": "blocked",

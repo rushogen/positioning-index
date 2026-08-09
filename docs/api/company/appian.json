@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T15:37:00Z",
-   "last_good_at": "2026-08-09T15:37:00Z",
+   "last_observed_at": "2026-08-09T16:08:07Z",
+   "last_good_at": "2026-08-09T16:08:07Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T15:37:00Z",
-   "last_good_at": "2026-08-09T15:37:00Z",
+   "last_observed_at": "2026-08-09T16:08:07Z",
+   "last_good_at": "2026-08-09T16:08:07Z",
    "last_good_value": "proof",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":true,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "8cdc0989",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T15:37:00Z",
-   "last_good_at": "2026-08-09T15:37:00Z",
+   "last_observed_at": "2026-08-09T16:08:07Z",
+   "last_good_at": "2026-08-09T16:08:07Z",
    "last_good_value": "60",
    "last_good_json": null,
    "last_good_hash": "15e8e23b",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T15:37:00Z",
-   "last_good_at": "2026-08-09T15:37:00Z",
+   "last_observed_at": "2026-08-09T16:08:07Z",
+   "last_good_at": "2026-08-09T16:08:07Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T15:37:00Z",
-   "last_good_at": "2026-08-09T15:37:00Z",
+   "last_observed_at": "2026-08-09T16:08:07Z",
+   "last_good_at": "2026-08-09T16:08:07Z",
    "last_good_value": "29",
    "last_good_json": null,
    "last_good_hash": "94f2a484",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T15:37:00Z",
-   "last_good_at": "2026-08-09T15:37:00Z",
+   "last_observed_at": "2026-08-09T16:08:07Z",
+   "last_good_at": "2026-08-09T16:08:07Z",
    "last_good_value": "5",
    "last_good_json": null,
    "last_good_hash": "300ca0d0",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T15:37:00Z",
-   "last_good_at": "2026-08-09T15:37:00Z",
+   "last_observed_at": "2026-08-09T16:08:07Z",
+   "last_good_at": "2026-08-09T16:08:07Z",
    "last_good_value": "hero > proof > features > proof > security",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":149,\"merged\":1},{\"position\":2,\"type\":\"proof\",\"heading\":\"Modernize IT without disruption\",\"words\":41,\"merged\":3},{\"position\":3,\"type\":\"features\",\"heading\":\"Smarter sourcing, lower risk\",\"words\":39,\"merged\":1},{\"position\":4,\"type\":\"proof\",\"heading\":\"Streamline your people ops\",\"words\":42,\"merged\":2},{\"position\":5,\"type\":\"security\",\"heading\":\"Drive operational efficiency\",\"words\":877,\"merged\":1}]}",
    "last_good_hash": "3637e0b2",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T15:37:00Z",
-   "last_good_at": "2026-08-09T15:37:00Z",
+   "last_observed_at": "2026-08-09T16:08:07Z",
+   "last_good_at": "2026-08-09T16:08:07Z",
    "last_good_value": 1274,
    "last_good_json": null,
    "last_good_hash": "6dcdcda9",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T15:37:00Z",
-   "last_good_at": "2026-08-09T15:37:00Z",
+   "last_observed_at": "2026-08-09T16:08:07Z",
+   "last_good_at": "2026-08-09T16:08:07Z",
    "last_good_value": "ai automation for critical processes",
    "last_good_json": null,
    "last_good_hash": "fbff2577",
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T15:37:00Z",
-   "last_good_at": "2026-08-09T15:37:00Z",
+   "last_observed_at": "2026-08-09T16:08:07Z",
+   "last_good_at": "2026-08-09T16:08:07Z",
    "last_good_value": "Acclaim Autism, Allan, Amadori, AON, Appian Rebrand, Aviva, City of Milan, Flowserve, Gaz Réseau Distribution France, John Lewis, NatWest, OCC, PWC, PwC UK, Recordati, Ryder, Telus, Texas DPOS, Towerbank, University of South Australia, US Air Force, US Marine Corps",
    "last_good_json": "{\"names\":[\"Acclaim Autism\",\"Allan\",\"Amadori\",\"AON\",\"Appian Rebrand\",\"Aviva\",\"City of Milan\",\"Flowserve\",\"Gaz Réseau Distribution France\",\"John Lewis\",\"NatWest\",\"OCC\",\"PWC\",\"PwC UK\",\"Recordati\",\"Ryder\",\"Telus\",\"Texas DPOS\",\"Towerbank\",\"University of South Australia\",\"US Air Force\",\"US Marine Corps\"],\"count\":22,\"lead\":\"Our Customers Browse customer stories from top organizations.<\"}",
    "last_good_hash": "a81a6ec7",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T15:37:00Z",
-   "last_good_at": "2026-08-09T15:37:00Z",
+   "last_observed_at": "2026-08-09T16:08:07Z",
+   "last_good_at": "2026-08-09T16:08:07Z",
    "last_good_value": "AI automation for critical processes",
    "last_good_json": null,
    "last_good_hash": "9b24c537",
@@ -212,7 +212,7 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T15:37:00Z",
+   "last_observed_at": "2026-08-09T16:08:07Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T15:37:00Z",
-   "last_good_at": "2026-08-09T15:37:00Z",
+   "last_observed_at": "2026-08-09T16:08:07Z",
+   "last_good_at": "2026-08-09T16:08:07Z",
    "last_good_value": "AI-Powered Process Orchestration Across the Enterprise | Appian",
    "last_good_json": null,
    "last_good_hash": "813aa698",
@@ -248,7 +248,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T15:34:19Z",
+   "last_observed_at": "2026-08-09T16:03:37Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -266,7 +266,7 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T15:34:19Z",
+   "last_observed_at": "2026-08-09T16:03:37Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -284,8 +284,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T15:34:19Z",
-   "last_good_at": "2026-08-09T15:34:19Z",
+   "last_observed_at": "2026-08-09T16:03:37Z",
+   "last_good_at": "2026-08-09T16:03:37Z",
    "last_good_value": "Pricing",
    "last_good_json": null,
    "last_good_hash": "b4d17ded",
@@ -302,7 +302,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T15:34:19Z",
+   "last_observed_at": "2026-08-09T16:03:37Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -320,7 +320,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T15:34:19Z",
+   "last_observed_at": "2026-08-09T16:03:37Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -338,8 +338,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T15:37:00Z",
-   "last_good_at": "2026-08-09T15:37:00Z",
+   "last_observed_at": "2026-08-09T16:08:07Z",
+   "last_good_at": "2026-08-09T16:08:07Z",
    "last_good_value": "8 weeks",
    "last_good_json": "{\"items\":[{\"claim\":\"8 weeks\",\"kind\":\"time\"}],\"count\":1}",
    "last_good_hash": "1650f34a",
@@ -356,8 +356,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T15:37:00Z",
-   "last_good_at": "2026-08-09T15:37:00Z",
+   "last_observed_at": "2026-08-09T16:08:07Z",
+   "last_good_at": "2026-08-09T16:08:07Z",
    "last_good_value": "Orchestrate AI agents, systems and people from a unified platform.",
    "last_good_json": null,
    "last_good_hash": "f19eec75",
@@ -375,6 +375,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://appian.com/",
+   "fetched_at": "2026-08-09T16:08:07Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 584901,
+   "duration_ms": 151,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
+  {
+   "kind": "pricing",
+   "url": "https://appian.com/products/pricing",
+   "fetched_at": "2026-08-09T16:03:37Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 531599,
+   "duration_ms": 333,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
   {
    "kind": "home",
    "url": "https://appian.com/",
@@ -590,30 +614,6 @@
    "duration_ms": 47,
    "signals_found": 14,
    "signals_expected": 15
-  },
-  {
-   "kind": "pricing",
-   "url": "https://appian.com/products/pricing",
-   "fetched_at": "2026-08-07T23:19:26Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": null,
-   "bytes": 531599,
-   "duration_ms": 766,
-   "signals_found": 1,
-   "signals_expected": 5
-  },
-  {
-   "kind": "home",
-   "url": "https://appian.com/",
-   "fetched_at": "2026-08-07T23:18:25Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": null,
-   "bytes": 583302,
-   "duration_ms": 470,
-   "signals_found": 6,
-   "signals_expected": 7
   }
  ]
 }

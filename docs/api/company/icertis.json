@@ -13,8 +13,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T15:35:52Z",
-   "last_good_at": "2026-08-09T15:35:52Z",
+   "last_observed_at": "2026-08-09T16:03:10Z",
+   "last_good_at": "2026-08-09T16:03:10Z",
    "last_good_value": "5",
    "last_good_json": null,
    "last_good_hash": "300ca0d0",
@@ -31,8 +31,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T15:35:52Z",
-   "last_good_at": "2026-08-09T15:35:52Z",
+   "last_observed_at": "2026-08-09T16:03:10Z",
+   "last_good_at": "2026-08-09T16:03:10Z",
    "last_good_value": "testimonial",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "e6a3d068",
@@ -49,8 +49,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T15:35:52Z",
-   "last_good_at": "2026-08-09T15:35:52Z",
+   "last_observed_at": "2026-08-09T16:03:10Z",
+   "last_good_at": "2026-08-09T16:03:10Z",
    "last_good_value": "41",
    "last_good_json": null,
    "last_good_hash": "88e38716",
@@ -67,8 +67,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T15:35:52Z",
-   "last_good_at": "2026-08-09T15:35:52Z",
+   "last_observed_at": "2026-08-09T16:03:10Z",
+   "last_good_at": "2026-08-09T16:03:10Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -85,8 +85,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T15:35:52Z",
-   "last_good_at": "2026-08-09T15:35:52Z",
+   "last_observed_at": "2026-08-09T16:03:10Z",
+   "last_good_at": "2026-08-09T16:03:10Z",
    "last_good_value": "72",
    "last_good_json": null,
    "last_good_hash": "8de5cd8c",
@@ -103,8 +103,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T15:35:52Z",
-   "last_good_at": "2026-08-09T15:35:52Z",
+   "last_observed_at": "2026-08-09T16:03:10Z",
+   "last_good_at": "2026-08-09T16:03:10Z",
    "last_good_value": "4",
    "last_good_json": null,
    "last_good_hash": "310ca263",
@@ -121,8 +121,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T15:35:52Z",
-   "last_good_at": "2026-08-09T15:35:52Z",
+   "last_observed_at": "2026-08-09T16:03:10Z",
+   "last_good_at": "2026-08-09T16:03:10Z",
    "last_good_value": "hero > cta > testimonial > cta",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":27,\"merged\":1},{\"position\":2,\"type\":\"cta\",\"heading\":\"All the contract AI you need. All in one place.\",\"words\":41,\"merged\":1},{\"position\":3,\"type\":\"testimonial\",\"heading\":\"Meet Vera\",\"words\":249,\"merged\":2},{\"position\":4,\"type\":\"cta\",\"heading\":\"Ready to see AI-native contracting in action?\",\"words\":14,\"merged\":1}]}",
    "last_good_hash": "3f0c62d0",
@@ -139,8 +139,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T15:35:52Z",
-   "last_good_at": "2026-08-09T15:35:52Z",
+   "last_observed_at": "2026-08-09T16:03:10Z",
+   "last_good_at": "2026-08-09T16:03:10Z",
    "last_good_value": 371,
    "last_good_json": null,
    "last_good_hash": "d657913a",
@@ -157,8 +157,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T15:35:52Z",
-   "last_good_at": "2026-08-09T15:35:52Z",
+   "last_observed_at": "2026-08-09T16:03:10Z",
+   "last_good_at": "2026-08-09T16:03:10Z",
    "last_good_value": "ai-native contract management software",
    "last_good_json": null,
    "last_good_hash": "d6bc6581",
@@ -175,8 +175,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T15:35:52Z",
-   "last_good_at": "2026-08-09T15:35:52Z",
+   "last_observed_at": "2026-08-09T16:03:10Z",
+   "last_good_at": "2026-08-09T16:03:10Z",
    "last_good_value": "Lmt Big 1, Shermco 1, The State of Contracting",
    "last_good_json": "{\"names\":[\"Lmt Big 1\",\"Shermco 1\",\"The State of Contracting\"],\"count\":3,\"lead\":\"our Customers\"}",
    "last_good_hash": "3df7c9be",
@@ -193,8 +193,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T15:35:52Z",
-   "last_good_at": "2026-08-09T15:35:52Z",
+   "last_observed_at": "2026-08-09T16:03:10Z",
+   "last_good_at": "2026-08-09T16:03:10Z",
    "last_good_value": "Context aware. Outcomes driven. AI-native contract intelligence.",
    "last_good_json": null,
    "last_good_hash": "f1c3be34",
@@ -211,8 +211,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T15:35:52Z",
-   "last_good_at": "2026-08-09T15:35:52Z",
+   "last_observed_at": "2026-08-09T16:03:10Z",
+   "last_good_at": "2026-08-09T16:03:10Z",
    "last_good_value": "The Icertis platform delivers an enterprise–wide contract intelligence layer that understands business and industry context – connecting agreements, data, and systems to drive the future of autonomous contracting.",
    "last_good_json": null,
    "last_good_hash": "2ebb9675",
@@ -229,8 +229,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T15:35:52Z",
-   "last_good_at": "2026-08-09T15:35:52Z",
+   "last_observed_at": "2026-08-09T16:03:10Z",
+   "last_good_at": "2026-08-09T16:03:10Z",
    "last_good_value": "Icertis: AI-Native Contract Management Software | Icertis",
    "last_good_json": null,
    "last_good_hash": "b0386479",
@@ -247,8 +247,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T15:35:52Z",
-   "last_good_at": "2026-08-09T15:35:52Z",
+   "last_observed_at": "2026-08-09T16:03:10Z",
+   "last_good_at": "2026-08-09T16:03:10Z",
    "last_good_value": "$30 billion annual revenue | fortune 500",
    "last_good_json": "{\"items\":[{\"claim\":\"$30 billion annual revenue\",\"kind\":\"money\"},{\"claim\":\"fortune 500\",\"kind\":\"rank\"}],\"count\":2}",
    "last_good_hash": "be0b5d12",
@@ -265,8 +265,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T15:35:52Z",
-   "last_good_at": "2026-08-09T15:35:52Z",
+   "last_observed_at": "2026-08-09T16:03:10Z",
+   "last_good_at": "2026-08-09T16:03:10Z",
    "last_good_value": "Turn your contracts into measurable business impact with a complete platform.",
    "last_good_json": null,
    "last_good_hash": "3109f5cc",
@@ -284,6 +284,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.icertis.com/",
+   "fetched_at": "2026-08-09T16:03:10Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 108464,
+   "duration_ms": 527,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.icertis.com/",

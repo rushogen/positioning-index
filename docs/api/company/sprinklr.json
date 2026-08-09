@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T15:36:39Z",
-   "last_good_at": "2026-08-09T15:36:39Z",
+   "last_observed_at": "2026-08-09T16:04:22Z",
+   "last_good_at": "2026-08-09T16:04:22Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T15:36:39Z",
-   "last_good_at": "2026-08-09T15:36:39Z",
+   "last_observed_at": "2026-08-09T16:04:22Z",
+   "last_good_at": "2026-08-09T16:04:22Z",
    "last_good_value": "integrations",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":true,\"media\":false}}",
    "last_good_hash": "75846fda",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T15:36:39Z",
-   "last_good_at": "2026-08-09T15:36:39Z",
+   "last_observed_at": "2026-08-09T16:04:22Z",
+   "last_good_at": "2026-08-09T16:04:22Z",
    "last_good_value": "65",
    "last_good_json": null,
    "last_good_hash": "18e8e6f4",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T15:36:39Z",
-   "last_good_at": "2026-08-09T15:36:39Z",
+   "last_observed_at": "2026-08-09T16:04:22Z",
+   "last_good_at": "2026-08-09T16:04:22Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -86,7 +86,7 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T15:36:39Z",
+   "last_observed_at": "2026-08-09T16:04:22Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T15:36:39Z",
-   "last_good_at": "2026-08-09T15:36:39Z",
+   "last_observed_at": "2026-08-09T16:04:22Z",
+   "last_good_at": "2026-08-09T16:04:22Z",
    "last_good_value": "3",
    "last_good_json": null,
    "last_good_hash": "360caa42",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T15:36:39Z",
-   "last_good_at": "2026-08-09T15:36:39Z",
+   "last_observed_at": "2026-08-09T16:04:22Z",
+   "last_good_at": "2026-08-09T16:04:22Z",
    "last_good_value": "hero > product > integrations",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":47,\"merged\":1},{\"position\":2,\"type\":\"product\",\"heading\":\"Four AI-native product suites. One Unified-CXM platform.\",\"words\":241,\"merged\":1},{\"position\":3,\"type\":\"integrations\",\"heading\":\"Enable every team to create measurable CX impact\",\"words\":1155,\"merged\":1}]}",
    "last_good_hash": "48982915",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T15:36:39Z",
-   "last_good_at": "2026-08-09T15:36:39Z",
+   "last_observed_at": "2026-08-09T16:04:22Z",
+   "last_good_at": "2026-08-09T16:04:22Z",
    "last_good_value": 1443,
    "last_good_json": null,
    "last_good_hash": "6118d235",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T15:36:39Z",
-   "last_good_at": "2026-08-09T15:36:39Z",
+   "last_observed_at": "2026-08-09T16:04:22Z",
+   "last_good_at": "2026-08-09T16:04:22Z",
    "last_good_value": "platform for extraordinary customer experiences",
    "last_good_json": null,
    "last_good_hash": "8edf56a6",
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T15:36:39Z",
-   "last_good_at": "2026-08-09T15:36:39Z",
+   "last_observed_at": "2026-08-09T16:04:22Z",
+   "last_good_at": "2026-08-09T16:04:22Z",
    "last_good_value": "3M, Acer opti, Cdiscount 1, DOW, Elevate, Enterprise Grade, Ford opti, Infosys opti, Latam Airlines opti, LG Electronics opti, Microsoft, Prada opti, Puma opti, Superdry opti, Transform, Umniah 1, Unify, Untitled Design, Untitled Design 6, WebMD Opti",
    "last_good_json": "{\"names\":[\"3M\",\"Acer opti\",\"Cdiscount 1\",\"DOW\",\"Elevate\",\"Enterprise Grade\",\"Ford opti\",\"Infosys opti\",\"Latam Airlines opti\",\"LG Electronics opti\",\"Microsoft\",\"Prada opti\",\"Puma opti\",\"Superdry opti\",\"Transform\",\"Umniah 1\",\"Unify\",\"Untitled Design\",\"Untitled Design 6\",\"WebMD Opti\"],\"count\":20,\"lead\":\"TRUSTED BY THE WORLD’S MOST ICONIC BRANDS <div style=\\\"--animation-duration:0ms;-\"}",
    "last_good_hash": "f0f392b1",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T15:36:39Z",
-   "last_good_at": "2026-08-09T15:36:39Z",
+   "last_observed_at": "2026-08-09T16:04:22Z",
+   "last_good_at": "2026-08-09T16:04:22Z",
    "last_good_value": "The definitive AI‑native platform for extraordinary customer experiences",
    "last_good_json": null,
    "last_good_hash": "f5b2f5b2",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T15:36:39Z",
-   "last_good_at": "2026-08-09T15:36:39Z",
+   "last_observed_at": "2026-08-09T16:04:22Z",
+   "last_good_at": "2026-08-09T16:04:22Z",
    "last_good_value": "Unify customer journeys with Sprinklr’s AI-native platform. Connect every touchpoint, empower teams, and elevate conversations to earn lasting loyalty.",
    "last_good_json": null,
    "last_good_hash": "16169f9e",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T15:36:39Z",
-   "last_good_at": "2026-08-09T15:36:39Z",
+   "last_observed_at": "2026-08-09T16:04:22Z",
+   "last_good_at": "2026-08-09T16:04:22Z",
    "last_good_value": "Sprinklr: The Definitive AI-Native Customer Experience Platform",
    "last_good_json": null,
    "last_good_hash": "38843ad1",
@@ -248,8 +248,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T15:36:39Z",
-   "last_good_at": "2026-08-09T15:36:39Z",
+   "last_observed_at": "2026-08-09T16:04:22Z",
+   "last_good_at": "2026-08-09T16:04:22Z",
    "last_good_value": "15% cdiscount increased csat | 15% increased csat | 90% case response time | 90% reduced case response time | 91% average handling time | 91% reduced average handling time",
    "last_good_json": "{\"items\":[{\"claim\":\"15% cdiscount increased csat\",\"kind\":\"percent-trailing\"},{\"claim\":\"15% increased csat\",\"kind\":\"percent-trailing\"},{\"claim\":\"90% case response time\",\"kind\":\"percent-trailing\"},{\"claim\":\"90% reduced case response time\",\"kind\":\"percent-trailing\"},{\"claim\":\"91% average handling time\",\"kind\":\"percent-trailing\"},{\"claim\":\"91% reduced average handling time\",\"kind\":\"percent-trailing\"}],\"count\":6}",
    "last_good_hash": "c1fe2b65",
@@ -266,8 +266,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T15:36:39Z",
-   "last_good_at": "2026-08-09T15:36:39Z",
+   "last_observed_at": "2026-08-09T16:04:22Z",
+   "last_good_at": "2026-08-09T16:04:22Z",
    "last_good_value": "TRUSTED BY THE WORLD’S MOST ICONIC BRANDS",
    "last_good_json": null,
    "last_good_hash": "8de7d182",
@@ -285,6 +285,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.sprinklr.com/",
+   "fetched_at": "2026-08-09T16:04:22Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 717882,
+   "duration_ms": 316,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.sprinklr.com/",

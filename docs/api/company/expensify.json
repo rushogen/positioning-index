@@ -15,8 +15,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T15:36:59Z",
-   "last_good_at": "2026-08-09T15:36:59Z",
+   "last_observed_at": "2026-08-09T16:03:03Z",
+   "last_good_at": "2026-08-09T16:03:03Z",
    "last_good_value": "29",
    "last_good_json": null,
    "last_good_hash": "94f2a484",
@@ -33,8 +33,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T15:36:59Z",
-   "last_good_at": "2026-08-09T15:36:59Z",
+   "last_observed_at": "2026-08-09T16:03:03Z",
+   "last_good_at": "2026-08-09T16:03:03Z",
    "last_good_value": "testimonial, pricing_block",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":true,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "03b68bf8",
@@ -51,7 +51,7 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T15:36:59Z",
+   "last_observed_at": "2026-08-09T16:03:03Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -69,8 +69,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T15:36:59Z",
-   "last_good_at": "2026-08-09T15:36:59Z",
+   "last_observed_at": "2026-08-09T16:03:03Z",
+   "last_good_at": "2026-08-09T16:03:03Z",
    "last_good_value": "3",
    "last_good_json": null,
    "last_good_hash": "360caa42",
@@ -87,7 +87,7 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T15:36:59Z",
+   "last_observed_at": "2026-08-09T16:03:03Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -105,8 +105,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T15:36:59Z",
-   "last_good_at": "2026-08-09T15:36:59Z",
+   "last_observed_at": "2026-08-09T16:03:03Z",
+   "last_good_at": "2026-08-09T16:03:03Z",
    "last_good_value": "7",
    "last_good_json": null,
    "last_good_hash": "320ca3f6",
@@ -123,8 +123,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T15:36:59Z",
-   "last_good_at": "2026-08-09T15:36:59Z",
+   "last_observed_at": "2026-08-09T16:03:03Z",
+   "last_good_at": "2026-08-09T16:03:03Z",
    "last_good_value": "hero > pricing > features > testimonial > security > testimonial > pricing",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":127,\"merged\":1},{\"position\":2,\"type\":\"pricing\",\"heading\":\"Features\",\"words\":431,\"merged\":1},{\"position\":3,\"type\":\"features\",\"heading\":\"Try Expensify free for 30 days\",\"words\":163,\"merged\":1},{\"position\":4,\"type\":\"testimonial\",\"heading\":\"“Makes expense submission easy!”\",\"words\":70,\"merged\":2},{\"position\":5,\"type\":\"security\",\"heading\":\"“Expensify helps our company to ensure compliance and accountability”\",\"words\":96,\"merged\":1},{\"position\":6,\"type\":\"testimonial\",\"heading\":\"“Amazing Platform!”\",\"words\":70,\"merged\":6},{\"position\":7,\"type\":\"pricing\",\"heading\":\"FAQ\",\"words\":619,\"merged\":1}]}",
    "last_good_hash": "d0c94ec8",
@@ -141,8 +141,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T15:36:59Z",
-   "last_good_at": "2026-08-09T15:36:59Z",
+   "last_observed_at": "2026-08-09T16:03:03Z",
+   "last_good_at": "2026-08-09T16:03:03Z",
    "last_good_value": 1970,
    "last_good_json": null,
    "last_good_hash": "1f49a378",
@@ -159,8 +159,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T15:36:59Z",
-   "last_good_at": "2026-08-09T15:36:59Z",
+   "last_observed_at": "2026-08-09T16:03:03Z",
+   "last_good_at": "2026-08-09T16:03:03Z",
    "last_good_value": "spend management software for receipts",
    "last_good_json": null,
    "last_good_hash": "b4630bcd",
@@ -177,8 +177,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T15:36:59Z",
-   "last_good_at": "2026-08-09T15:36:59Z",
+   "last_observed_at": "2026-08-09T16:03:03Z",
+   "last_good_at": "2026-08-09T16:03:03Z",
    "last_good_value": "Brooklynnets, Github, Pinterest, Swatch, Tribeca, Uk, Warby, Xero",
    "last_good_json": "{\"names\":[\"Brooklynnets\",\"Github\",\"Pinterest\",\"Swatch\",\"Tribeca\",\"Uk\",\"Warby\",\"Xero\"],\"count\":8,\"lead\":\"Join 15 million+ members who trust Expensify <div class=\\\"homepage-hero__logos__i\"}",
    "last_good_hash": "f7f0badd",
@@ -195,8 +195,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T15:36:59Z",
-   "last_good_at": "2026-08-09T15:36:59Z",
+   "last_observed_at": "2026-08-09T16:03:03Z",
+   "last_good_at": "2026-08-09T16:03:03Z",
    "last_good_value": "Logging you in...",
    "last_good_json": null,
    "last_good_hash": "c300a8ea",
@@ -213,8 +213,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T15:36:59Z",
-   "last_good_at": "2026-08-09T15:36:59Z",
+   "last_observed_at": "2026-08-09T16:03:03Z",
+   "last_good_at": "2026-08-09T16:03:03Z",
    "last_good_value": "Expensify's spend management software simplifies receipt and expense tracking. Automate reports, control spending, and save time with our easy-to-use platform.",
    "last_good_json": null,
    "last_good_hash": "87502e6d",
@@ -231,8 +231,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T15:36:59Z",
-   "last_good_at": "2026-08-09T15:36:59Z",
+   "last_observed_at": "2026-08-09T16:03:03Z",
+   "last_good_at": "2026-08-09T16:03:03Z",
    "last_good_value": "Spend Management Software for Receipts & Expenses | Expensify",
    "last_good_json": null,
    "last_good_hash": "31c328b5",
@@ -249,7 +249,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T15:34:18Z",
+   "last_observed_at": "2026-08-09T16:07:29Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -267,7 +267,7 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T15:34:18Z",
+   "last_observed_at": "2026-08-09T16:07:29Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -285,8 +285,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T15:34:18Z",
-   "last_good_at": "2026-08-09T15:34:18Z",
+   "last_observed_at": "2026-08-09T16:07:29Z",
+   "last_good_at": "2026-08-09T16:07:29Z",
    "last_good_value": "Expensify - Pricing",
    "last_good_json": null,
    "last_good_hash": "be31aa2f",
@@ -303,7 +303,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T15:34:18Z",
+   "last_observed_at": "2026-08-09T16:07:29Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -321,7 +321,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T15:34:18Z",
+   "last_observed_at": "2026-08-09T16:07:29Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -339,8 +339,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T15:36:59Z",
-   "last_good_at": "2026-08-09T15:36:59Z",
+   "last_observed_at": "2026-08-09T16:03:03Z",
+   "last_good_at": "2026-08-09T16:03:03Z",
    "last_good_value": "$5 per member | 10 employees | 230 employees | 30% cut travel spend | 30% more cut travel spend | 45 integrations | 48 hours | 50% faster client reimbursements | 90% card reconciliation time",
    "last_good_json": "{\"items\":[{\"claim\":\"$5 per member\",\"kind\":\"money\"},{\"claim\":\"10 employees\",\"kind\":\"count\"},{\"claim\":\"230 employees\",\"kind\":\"count\"},{\"claim\":\"30% cut travel spend\",\"kind\":\"percent-trailing\"},{\"claim\":\"30% more cut travel spend\",\"kind\":\"percent-trailing\"},{\"claim\":\"45 integrations\",\"kind\":\"count\"},{\"claim\":\"48 hours\",\"kind\":\"count\"},{\"claim\":\"50% faster client reimbursements\",\"kind\":\"percent\"},{\"claim\":\"90% card reconciliation time\",\"kind\":\"percent-trailing\"}],\"count\":9}",
    "last_good_hash": "d2d44c04",
@@ -357,8 +357,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T15:36:59Z",
-   "last_good_at": "2026-08-09T15:36:59Z",
+   "last_observed_at": "2026-08-09T16:03:03Z",
+   "last_good_at": "2026-08-09T16:03:03Z",
    "last_good_value": "One moment while we connect you to Expensify",
    "last_good_json": null,
    "last_good_hash": "ccbad117",
@@ -376,6 +376,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://www.expensify.com/pricing",
+   "fetched_at": "2026-08-09T16:07:29Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 686569,
+   "duration_ms": 384,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://www.expensify.com/",
+   "fetched_at": "2026-08-09T16:03:03Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 120105,
+   "duration_ms": 420,
+   "signals_found": 13,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.expensify.com/",

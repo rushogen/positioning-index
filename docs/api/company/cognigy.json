@@ -13,8 +13,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T15:34:38Z",
-   "last_good_at": "2026-08-09T15:34:38Z",
+   "last_observed_at": "2026-08-09T16:04:18Z",
+   "last_good_at": "2026-08-09T16:04:18Z",
    "last_good_value": "17",
    "last_good_json": null,
    "last_good_hash": "1aeb28b1",
@@ -31,8 +31,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T15:34:38Z",
-   "last_good_at": "2026-08-09T15:34:38Z",
+   "last_observed_at": "2026-08-09T16:04:18Z",
+   "last_good_at": "2026-08-09T16:04:18Z",
    "last_good_value": "proof, integrations",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":true,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":true,\"media\":false}}",
    "last_good_hash": "39638952",
@@ -49,7 +49,7 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T15:34:38Z",
+   "last_observed_at": "2026-08-09T16:04:18Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -67,8 +67,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T15:34:38Z",
-   "last_good_at": "2026-08-09T15:34:38Z",
+   "last_observed_at": "2026-08-09T16:04:18Z",
+   "last_good_at": "2026-08-09T16:04:18Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -85,7 +85,7 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T15:34:38Z",
+   "last_observed_at": "2026-08-09T16:04:18Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -103,8 +103,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T15:34:38Z",
-   "last_good_at": "2026-08-09T15:34:38Z",
+   "last_observed_at": "2026-08-09T16:04:18Z",
+   "last_good_at": "2026-08-09T16:04:18Z",
    "last_good_value": "9",
    "last_good_json": null,
    "last_good_hash": "3c0cb3b4",
@@ -121,8 +121,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T15:34:38Z",
-   "last_good_at": "2026-08-09T15:34:38Z",
+   "last_observed_at": "2026-08-09T16:04:18Z",
+   "last_good_at": "2026-08-09T16:04:18Z",
    "last_good_value": "hero > cta > proof > integrations > cta > integrations > awards > cta > security",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":611,\"merged\":1},{\"position\":2,\"type\":\"cta\",\"heading\":\"Building and managing the Agentic AI Workforce of the future. Today.\",\"words\":14,\"merged\":1},{\"position\":3,\"type\":\"proof\",\"heading\":\"Real product, Real customers Real results\",\"words\":114,\"merged\":2},{\"position\":4,\"type\":\"integrations\",\"heading\":\"Deploy AI Agents that understand, decide & resolve\",\"words\":70,\"merged\":1},{\"position\":5,\"type\":\"cta\",\"heading\":\"Give your agents superpowers with AI Copilot\",\"words\":66,\"merged\":1},{\"position\":6,\"type\":\"integrations\",\"heading\":\"Scale up your enterprise contact center with an omni-channel AI workforce\",\"words\":83,\"merged\":1},{\"position\":7,\"type\":\"awards\",\"heading\":\"Named a Leader in the Forrester Wave™ 2026\",\"words\":28,\"merged\":1},{\"position\":8,\"type\":\"cta\",\"heading\":\"NiCE Cognigy News\",\"words\":77,\"merged\":1},{\"position\":9,\"type\":\"security\",\"heading\":\"Start shaping the future of customer service today\",\"words\":95,\"merged\":1}]}",
    "last_good_hash": "9bab96a7",
@@ -139,8 +139,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T15:34:38Z",
-   "last_good_at": "2026-08-09T15:34:38Z",
+   "last_observed_at": "2026-08-09T16:04:18Z",
+   "last_good_at": "2026-08-09T16:04:18Z",
    "last_good_value": 1177,
    "last_good_json": null,
    "last_good_hash": "7e1db0b5",
@@ -157,8 +157,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T15:34:38Z",
-   "last_good_at": "2026-08-09T15:34:38Z",
+   "last_observed_at": "2026-08-09T16:04:18Z",
+   "last_good_at": "2026-08-09T16:04:18Z",
    "last_good_value": "poor customer service",
    "last_good_json": null,
    "last_good_hash": "9cf79c88",
@@ -175,8 +175,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T15:34:38Z",
-   "last_good_at": "2026-08-09T15:34:38Z",
+   "last_observed_at": "2026-08-09T16:04:18Z",
+   "last_good_at": "2026-08-09T16:04:18Z",
    "last_good_value": "AOK PLUS, Bosch, Flix, Forrester Wave Rounded Corner, Forrester white2, Greyhound, Lufthansa, Nestle, Toyota, tripadvisor",
    "last_good_json": "{\"names\":[\"AOK PLUS\",\"Bosch\",\"Flix\",\"Forrester Wave Rounded Corner\",\"Forrester white2\",\"Greyhound\",\"Lufthansa\",\"Nestle\",\"Toyota\",\"tripadvisor\"],\"count\":10,\"lead\":\"our customers’ stories and see how enterprises are creating customer service lov\"}",
    "last_good_hash": "017e0e4d",
@@ -193,8 +193,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T15:34:38Z",
-   "last_good_at": "2026-08-09T15:34:38Z",
+   "last_observed_at": "2026-08-09T16:04:18Z",
+   "last_good_at": "2026-08-09T16:04:18Z",
    "last_good_value": "Say Goodbye to Poor Customer Service",
    "last_good_json": null,
    "last_good_hash": "877a6c17",
@@ -211,8 +211,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T15:34:38Z",
-   "last_good_at": "2026-08-09T15:34:38Z",
+   "last_observed_at": "2026-08-09T16:04:18Z",
+   "last_good_at": "2026-08-09T16:04:18Z",
    "last_good_value": "Generative and conversational AI powered customer service agents for your business. Get a demo or try free now!",
    "last_good_json": null,
    "last_good_hash": "1d62171e",
@@ -229,8 +229,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T15:34:38Z",
-   "last_good_at": "2026-08-09T15:34:38Z",
+   "last_observed_at": "2026-08-09T16:04:18Z",
+   "last_good_at": "2026-08-09T16:04:18Z",
    "last_good_value": "Generative & conversational AI powered customer service agents for your business | NiCE Cognigy",
    "last_good_json": null,
    "last_good_hash": "99667b71",
@@ -247,7 +247,7 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T15:34:38Z",
+   "last_observed_at": "2026-08-09T16:04:18Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -265,8 +265,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T15:34:38Z",
-   "last_good_at": "2026-08-09T15:34:38Z",
+   "last_observed_at": "2026-08-09T16:04:18Z",
+   "last_good_at": "2026-08-09T16:04:18Z",
    "last_good_value": "Generative and conversational AI powered customer service agents for your business. Get a demo or try free now!",
    "last_good_json": null,
    "last_good_hash": "1d62171e",
@@ -284,6 +284,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.cognigy.com/",
+   "fetched_at": "2026-08-09T16:04:18Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.0 -> 1.4.1; re-baselining",
+   "bytes": 608399,
+   "duration_ms": 302,
+   "signals_found": 12,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.cognigy.com/",
