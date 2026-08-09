@@ -1,27 +1,39 @@
 {
- "companies": 225,
- "targets": 345,
- "observations": 1669,
+ "companies": 361,
+ "targets": 481,
+ "observations": 1809,
  "changes": 36,
  "changes_7d": 36,
  "changes_30d": 36,
  "retracted_changes": 3,
  "first_observation": "2026-08-07T11:00:38Z",
- "last_observation": "2026-08-09T14:42:59Z",
- "last_successful_fetch": "2026-08-09T14:43:02Z",
- "runs": 19,
- "last_run_at": "2026-08-09T14:44:19Z",
- "fetches_24h": 59,
- "blocked_24h": 10,
- "errors_24h": 1,
+ "last_observation": "2026-08-09T14:57:35Z",
+ "last_successful_fetch": "2026-08-09T14:57:35Z",
+ "runs": 30,
+ "last_run_at": "2026-08-09T14:57:39Z",
+ "fetches_24h": 222,
+ "blocked_24h": 24,
+ "errors_24h": 2,
  "suspect_signals": 1,
  "categories": [
   {
    "label": "one platform",
-   "n": 6
+   "n": 8
+  },
+  {
+   "label": "cloud",
+   "n": 7
   },
   {
    "label": "ai agents",
+   "n": 3
+  },
+  {
+   "label": "ai agent",
+   "n": 2
+  },
+  {
+   "label": "autonomous agents",
    "n": 2
   },
   {
@@ -33,7 +45,27 @@
    "n": 2
   },
   {
+   "label": "infrastructure",
+   "n": 2
+  },
+  {
+   "label": "platform",
+   "n": 2
+  },
+  {
    "label": "abm platform for b2b sales",
+   "n": 1
+  },
+  {
+   "label": "accelerate agent",
+   "n": 1
+  },
+  {
+   "label": "adopted ai compute engine",
+   "n": 1
+  },
+  {
+   "label": "affordable customer service",
    "n": 1
   },
   {
@@ -49,6 +81,10 @@
    "n": 1
   },
   {
+   "label": "agentic customer data platform",
+   "n": 1
+  },
+  {
    "label": "agentic cx suite for retail",
    "n": 1
   },
@@ -58,42 +94,6 @@
   },
   {
    "label": "agentic financial operations platform",
-   "n": 1
-  },
-  {
-   "label": "agentic infrastructure",
-   "n": 1
-  },
-  {
-   "label": "agentic product management system",
-   "n": 1
-  },
-  {
-   "label": "agentic security platform",
-   "n": 1
-  },
-  {
-   "label": "agentic web platform for modern businesses",
-   "n": 1
-  },
-  {
-   "label": "ai agent",
-   "n": 1
-  },
-  {
-   "label": "ai automation for critical processes",
-   "n": 1
-  },
-  {
-   "label": "ai banking software",
-   "n": 1
-  },
-  {
-   "label": "ai brand protection platform",
-   "n": 1
-  },
-  {
-   "label": "ai customer experience automation",
    "n": 1
   }
  ],
@@ -223,5 +223,5 @@
    "family": "pricing"
   }
  },
- "generated_at": "2026-08-09T14:44:19Z"
+ "generated_at": "2026-08-09T14:57:39Z"
 }

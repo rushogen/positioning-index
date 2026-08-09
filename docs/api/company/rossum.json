@@ -378,6 +378,18 @@
   {
    "kind": "pricing",
    "url": "https://rossum.ai/pricing/",
+   "fetched_at": "2026-08-09T14:56:54Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 112494,
+   "duration_ms": 391,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://rossum.ai/pricing/",
    "fetched_at": "2026-08-08T11:47:11Z",
    "http_status": 200,
    "status": "ok",

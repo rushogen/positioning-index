@@ -2,6 +2,30 @@
  "note": "audience, target_size and category are research-judged (not page-measured). ai and free_tier are read off the page; null means it could not be read, which is not the same as \"no\".",
  "companies": [
   {
+   "slug": "15five",
+   "name": "15Five",
+   "segment": "hr-ops",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Performance management",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "1password",
+   "name": "1Password",
+   "segment": "security",
+   "hq_country": "CA",
+   "audience": "b2b2c",
+   "target_size": "broad",
+   "category": "Password management",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
    "slug": "acronis",
    "name": "Acronis",
    "segment": "security",
@@ -9,6 +33,18 @@
    "audience": "b2b",
    "target_size": "mid-market",
    "category": "Cyber protection / backup",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "activecampaign",
+   "name": "ActiveCampaign",
+   "segment": "marketing",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Marketing automation",
    "meta_confidence": "high",
    "ai": true,
    "free_tier": null
@@ -38,6 +74,18 @@
    "free_tier": null
   },
   {
+   "slug": "airbyte",
+   "name": "Airbyte",
+   "segment": "data",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Data integration (ELT)",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
    "slug": "aircall",
    "name": "Aircall",
    "segment": "ccaas",
@@ -59,6 +107,18 @@
    "category": "No-code database",
    "meta_confidence": "high",
    "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "airwallex",
+   "name": "Airwallex",
+   "segment": "payments",
+   "hq_country": "AU",
+   "audience": "b2b2c",
+   "target_size": "mid-market",
+   "category": "Global payments",
+   "meta_confidence": "high",
+   "ai": false,
    "free_tier": null
   },
   {
@@ -122,6 +182,18 @@
    "free_tier": null
   },
   {
+   "slug": "anyscale",
+   "name": "Anyscale",
+   "segment": "data",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "AI compute (Ray)",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
    "slug": "apollo",
    "name": "Apollo.io",
    "segment": "gtm",
@@ -146,6 +218,18 @@
    "free_tier": null
   },
   {
+   "slug": "aqua-security",
+   "name": "Aqua Security",
+   "segment": "security",
+   "hq_country": "IL",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Container security",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
    "slug": "asana",
    "name": "Asana",
    "segment": "work-mgmt",
@@ -156,6 +240,42 @@
    "meta_confidence": "high",
    "ai": true,
    "free_tier": "yes"
+  },
+  {
+   "slug": "ashby",
+   "name": "Ashby",
+   "segment": "hr-ops",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Recruiting (ATS)",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "assemblyai",
+   "name": "AssemblyAI",
+   "segment": "data",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Speech AI API",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "astronomer",
+   "name": "Astronomer",
+   "segment": "data",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Data orchestration",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
   },
   {
    "slug": "atlan",
@@ -180,6 +300,18 @@
    "meta_confidence": "high",
    "ai": true,
    "free_tier": "yes"
+  },
+  {
+   "slug": "attentive",
+   "name": "Attentive",
+   "segment": "marketing",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "SMS marketing",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
   },
   {
    "slug": "attio",
@@ -254,6 +386,42 @@
    "free_tier": null
   },
   {
+   "slug": "bamboohr",
+   "name": "BambooHR",
+   "segment": "hr-ops",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "HR (HRIS)",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "basecamp",
+   "name": "Basecamp",
+   "segment": "work-mgmt",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Project management",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
+   "slug": "bigcommerce",
+   "name": "BigCommerce",
+   "segment": "marketing",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "E-commerce platform",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
    "slug": "bill",
    "name": "BILL",
    "segment": "fintech-ops",
@@ -297,6 +465,18 @@
    "audience": "b2b",
    "target_size": "enterprise",
    "category": "Financial close",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "bloomreach",
+   "name": "Bloomreach",
+   "segment": "marketing",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Commerce marketing",
    "meta_confidence": "high",
    "ai": true,
    "free_tier": null
@@ -386,6 +566,66 @@
    "free_tier": null
   },
   {
+   "slug": "census",
+   "name": "Census",
+   "segment": "data",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Reverse ETL",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "checkout-com",
+   "name": "Checkout.com",
+   "segment": "payments",
+   "hq_country": "GB",
+   "audience": "b2b2c",
+   "target_size": "enterprise",
+   "category": "Payments",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
+   "slug": "chronosphere",
+   "name": "Chronosphere",
+   "segment": "observability",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Observability",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
+   "slug": "circleci",
+   "name": "CircleCI",
+   "segment": "dev-infra",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "CI/CD",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
+   "slug": "clari",
+   "name": "Clari",
+   "segment": "gtm",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Revenue operations",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
    "slug": "clay",
    "name": "Clay",
    "segment": "gtm",
@@ -396,6 +636,18 @@
    "meta_confidence": "high",
    "ai": true,
    "free_tier": "yes"
+  },
+  {
+   "slug": "clerk",
+   "name": "Clerk",
+   "segment": "identity",
+   "hq_country": "US",
+   "audience": "b2b2c",
+   "target_size": "smb",
+   "category": "Auth for developers",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
   },
   {
    "slug": "clickhouse",
@@ -458,6 +710,18 @@
    "free_tier": null
   },
   {
+   "slug": "coda",
+   "name": "Coda",
+   "segment": "work-mgmt",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Docs / apps",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
    "slug": "cognigy",
    "name": "Cognigy",
    "segment": "ccaas",
@@ -467,6 +731,18 @@
    "category": "Conversational AI",
    "meta_confidence": "high",
    "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "cognism",
+   "name": "Cognism",
+   "segment": "gtm",
+   "hq_country": "GB",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Sales intelligence",
+   "meta_confidence": "high",
+   "ai": false,
    "free_tier": null
   },
   {
@@ -482,6 +758,18 @@
    "free_tier": null
   },
   {
+   "slug": "cohere",
+   "name": "Cohere",
+   "segment": "data",
+   "hq_country": "CA",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "LLMs (enterprise)",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
    "slug": "collibra",
    "name": "Collibra",
    "segment": "data",
@@ -489,6 +777,18 @@
    "audience": "b2b",
    "target_size": "enterprise",
    "category": "Data governance",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "commercetools",
+   "name": "commercetools",
+   "segment": "marketing",
+   "hq_country": "DE",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Headless commerce",
    "meta_confidence": "high",
    "ai": true,
    "free_tier": null
@@ -542,6 +842,18 @@
    "free_tier": null
   },
   {
+   "slug": "copy-ai",
+   "name": "Copy.ai",
+   "segment": "marketing",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "AI go-to-market",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
    "slug": "coupa",
    "name": "Coupa",
    "segment": "procurement",
@@ -566,6 +878,30 @@
    "free_tier": null
   },
   {
+   "slug": "culture-amp",
+   "name": "Culture Amp",
+   "segment": "hr-ops",
+   "hq_country": "AU",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Employee experience",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
+   "slug": "cursor",
+   "name": "Cursor",
+   "segment": "product-dev",
+   "hq_country": "US",
+   "audience": "b2b2c",
+   "target_size": "broad",
+   "category": "AI code editor",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
    "slug": "customer-io",
    "name": "Customer.io",
    "segment": "marketing",
@@ -576,6 +912,18 @@
    "meta_confidence": "high",
    "ai": true,
    "free_tier": "no"
+  },
+  {
+   "slug": "dagster",
+   "name": "Dagster Labs",
+   "segment": "data",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Data orchestration",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
   },
   {
    "slug": "darktrace",
@@ -650,6 +998,18 @@
    "free_tier": null
   },
   {
+   "slug": "datastax",
+   "name": "DataStax",
+   "segment": "data",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "NoSQL / AI database",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
    "slug": "dbt-labs",
    "name": "dbt Labs",
    "segment": "data",
@@ -710,6 +1070,30 @@
    "free_tier": null
   },
   {
+   "slug": "descript",
+   "name": "Descript",
+   "segment": "marketing",
+   "hq_country": "US",
+   "audience": "b2b2c",
+   "target_size": "smb",
+   "category": "Audio/video editing",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "dialpad",
+   "name": "Dialpad",
+   "segment": "ccaas",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Business comms (AI)",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
    "slug": "diligent",
    "name": "Diligent",
    "segment": "grc",
@@ -730,6 +1114,18 @@
    "target_size": "smb",
    "category": "Customer support",
    "meta_confidence": "medium",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "docker",
+   "name": "Docker",
+   "segment": "dev-infra",
+   "hq_country": "US",
+   "audience": "b2b2c",
+   "target_size": "broad",
+   "category": "Containers",
+   "meta_confidence": "high",
    "ai": true,
    "free_tier": null
   },
@@ -782,6 +1178,30 @@
    "free_tier": null
   },
   {
+   "slug": "dremio",
+   "name": "Dremio",
+   "segment": "data",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Data lakehouse",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "drift",
+   "name": "Drift",
+   "segment": "marketing",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Conversational marketing",
+   "meta_confidence": "high",
+   "ai": null,
+   "free_tier": null
+  },
+  {
    "slug": "dynatrace",
    "name": "Dynatrace",
    "segment": "observability",
@@ -803,6 +1223,18 @@
    "category": "Search & observability",
    "meta_confidence": "high",
    "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "expensify",
+   "name": "Expensify",
+   "segment": "fintech-ops",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Expense management",
+   "meta_confidence": "high",
+   "ai": false,
    "free_tier": null
   },
   {
@@ -854,6 +1286,42 @@
    "free_tier": null
   },
   {
+   "slug": "firebolt",
+   "name": "Firebolt",
+   "segment": "data",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Cloud data warehouse",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "fireflies",
+   "name": "Fireflies.ai",
+   "segment": "work-mgmt",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Meeting AI notetaker",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "five9",
+   "name": "Five9",
+   "segment": "ccaas",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Contact center (CCaaS)",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
    "slug": "fivetran",
    "name": "Fivetran",
    "segment": "data",
@@ -866,6 +1334,30 @@
    "free_tier": "yes"
   },
   {
+   "slug": "flexport",
+   "name": "Flexport",
+   "segment": "industrial",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Freight forwarding",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
+   "slug": "fly-io",
+   "name": "Fly.io",
+   "segment": "dev-infra",
+   "hq_country": "US",
+   "audience": "b2b2c",
+   "target_size": "smb",
+   "category": "App hosting",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
    "slug": "fortnox",
    "name": "Fortnox",
    "segment": "erp",
@@ -875,6 +1367,18 @@
    "category": "Accounting / ERP",
    "meta_confidence": "medium",
    "ai": false,
+   "free_tier": null
+  },
+  {
+   "slug": "framer",
+   "name": "Framer",
+   "segment": "design",
+   "hq_country": "NL",
+   "audience": "b2b2c",
+   "target_size": "smb",
+   "category": "Website builder",
+   "meta_confidence": "high",
+   "ai": true,
    "free_tier": null
   },
   {
@@ -897,6 +1401,18 @@
    "audience": "b2b",
    "target_size": "smb",
    "category": "Shared inbox",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "fullstory",
+   "name": "FullStory",
+   "segment": "analytics",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Experience analytics",
    "meta_confidence": "high",
    "ai": true,
    "free_tier": null
@@ -926,6 +1442,18 @@
    "free_tier": null
   },
   {
+   "slug": "gitguardian",
+   "name": "GitGuardian",
+   "segment": "security",
+   "hq_country": "FR",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Secrets detection",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
    "slug": "github",
    "name": "GitHub",
    "segment": "product-dev",
@@ -950,6 +1478,18 @@
    "free_tier": "yes"
   },
   {
+   "slug": "gitpod",
+   "name": "Gitpod",
+   "segment": "product-dev",
+   "hq_country": "DE",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Cloud dev environments",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
    "slug": "gocardless",
    "name": "GoCardless",
    "segment": "payments",
@@ -971,6 +1511,126 @@
    "category": "Revenue intelligence",
    "meta_confidence": "high",
    "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "gorgias",
+   "name": "Gorgias",
+   "segment": "support",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "E-commerce support",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "grafana",
+   "name": "Grafana Labs",
+   "segment": "observability",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "broad",
+   "category": "Observability",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "grammarly",
+   "name": "Grammarly",
+   "segment": "marketing",
+   "hq_country": "US",
+   "audience": "b2b2c",
+   "target_size": "broad",
+   "category": "Writing assistant",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "greenhouse",
+   "name": "Greenhouse",
+   "segment": "hr-ops",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Recruiting (ATS)",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "guru",
+   "name": "Guru",
+   "segment": "work-mgmt",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Knowledge management",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "harness",
+   "name": "Harness",
+   "segment": "dev-infra",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Software delivery",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "heap",
+   "name": "Heap",
+   "segment": "analytics",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Product analytics",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
+   "slug": "helpscout",
+   "name": "Help Scout",
+   "segment": "support",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Customer support",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "hex",
+   "name": "Hex",
+   "segment": "analytics",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Data notebooks",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "hibob",
+   "name": "HiBob",
+   "segment": "hr-ops",
+   "hq_country": "GB",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "HR (HRIS)",
+   "meta_confidence": "high",
+   "ai": false,
    "free_tier": null
   },
   {
@@ -998,6 +1658,18 @@
    "free_tier": null
   },
   {
+   "slug": "honeycomb",
+   "name": "Honeycomb",
+   "segment": "observability",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Observability",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
    "slug": "hornetsecurity",
    "name": "Hornetsecurity",
    "segment": "security",
@@ -1010,6 +1682,18 @@
    "free_tier": null
   },
   {
+   "slug": "hotjar",
+   "name": "Hotjar",
+   "segment": "analytics",
+   "hq_country": "MT",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Website analytics",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
    "slug": "hubspot",
    "name": "HubSpot",
    "segment": "gtm",
@@ -1017,6 +1701,18 @@
    "audience": "b2b",
    "target_size": "smb",
    "category": "CRM & marketing",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "huggingface",
+   "name": "Hugging Face",
+   "segment": "data",
+   "hq_country": "US",
+   "audience": "b2b2c",
+   "target_size": "broad",
+   "category": "ML models / hub",
    "meta_confidence": "high",
    "ai": true,
    "free_tier": null
@@ -1058,6 +1754,18 @@
    "free_tier": null
   },
   {
+   "slug": "influxdata",
+   "name": "InfluxData",
+   "segment": "data",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Time-series database",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
    "slug": "informatica",
    "name": "Informatica",
    "segment": "data",
@@ -1065,6 +1773,18 @@
    "audience": "b2b",
    "target_size": "enterprise",
    "category": "Data integration",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "insider",
+   "name": "Insider",
+   "segment": "marketing",
+   "hq_country": "TR",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Marketing personalization",
    "meta_confidence": "high",
    "ai": true,
    "free_tier": null
@@ -1094,6 +1814,18 @@
    "free_tier": null
   },
   {
+   "slug": "iterable",
+   "name": "Iterable",
+   "segment": "marketing",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Marketing automation",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
    "slug": "ivanti",
    "name": "Ivanti",
    "segment": "itsm",
@@ -1115,6 +1847,18 @@
    "category": "Procurement (S2P)",
    "meta_confidence": "medium",
    "ai": null,
+   "free_tier": null
+  },
+  {
+   "slug": "jasper",
+   "name": "Jasper",
+   "segment": "marketing",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "AI content marketing",
+   "meta_confidence": "high",
+   "ai": true,
    "free_tier": null
   },
   {
@@ -1142,6 +1886,30 @@
    "free_tier": null
   },
   {
+   "slug": "jfrog",
+   "name": "JFrog",
+   "segment": "dev-infra",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "DevOps / artifacts",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "jumpcloud",
+   "name": "JumpCloud",
+   "segment": "identity",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Directory / IAM",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
    "slug": "juro",
    "name": "Juro",
    "segment": "clm-esign",
@@ -1164,6 +1932,18 @@
    "meta_confidence": "high",
    "ai": true,
    "free_tier": "yes"
+  },
+  {
+   "slug": "lacework",
+   "name": "Lacework",
+   "segment": "security",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Cloud security",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
   },
   {
    "slug": "lattice",
@@ -1198,6 +1978,18 @@
    "target_size": "mid-market",
    "category": "Cap table management",
    "meta_confidence": "medium",
+   "ai": false,
+   "free_tier": null
+  },
+  {
+   "slug": "lever",
+   "name": "Lever",
+   "segment": "hr-ops",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Recruiting (ATS)",
+   "meta_confidence": "high",
    "ai": false,
    "free_tier": null
   },
@@ -1274,6 +2066,30 @@
    "free_tier": null
   },
   {
+   "slug": "mailchimp",
+   "name": "Mailchimp",
+   "segment": "marketing",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Email marketing",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
+   "slug": "make",
+   "name": "Make",
+   "segment": "automation",
+   "hq_country": "CZ",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Automation / iPaaS",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
    "slug": "mambu",
    "name": "Mambu",
    "segment": "banking-tech",
@@ -1286,6 +2102,30 @@
    "free_tier": null
   },
   {
+   "slug": "marqeta",
+   "name": "Marqeta",
+   "segment": "payments",
+   "hq_country": "US",
+   "audience": "b2b2c",
+   "target_size": "enterprise",
+   "category": "Card issuing",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
+   "slug": "materialize",
+   "name": "Materialize",
+   "segment": "data",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Streaming database",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
    "slug": "matillion",
    "name": "Matillion",
    "segment": "data",
@@ -1293,6 +2133,18 @@
    "audience": "b2b",
    "target_size": "mid-market",
    "category": "Data integration / ETL",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "melio",
+   "name": "Melio",
+   "segment": "fintech-ops",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "SMB payments",
    "meta_confidence": "high",
    "ai": true,
    "free_tier": null
@@ -1370,6 +2222,42 @@
    "free_tier": null
   },
   {
+   "slug": "modal",
+   "name": "Modal",
+   "segment": "dev-infra",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Serverless compute (AI)",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "mode",
+   "name": "Mode",
+   "segment": "analytics",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "BI & analytics",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
+   "slug": "modern-treasury",
+   "name": "Modern Treasury",
+   "segment": "payments",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Payment operations",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
    "slug": "mollie",
    "name": "Mollie",
    "segment": "payments",
@@ -1418,6 +2306,42 @@
    "free_tier": null
   },
   {
+   "slug": "motion",
+   "name": "Motion",
+   "segment": "work-mgmt",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "AI calendar / tasks",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "n8n",
+   "name": "n8n",
+   "segment": "automation",
+   "hq_country": "DE",
+   "audience": "b2b2c",
+   "target_size": "smb",
+   "category": "Workflow automation",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "navan",
+   "name": "Navan",
+   "segment": "fintech-ops",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Travel & expense",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
    "slug": "navex",
    "name": "NAVEX",
    "segment": "grc",
@@ -1454,6 +2378,18 @@
    "free_tier": "yes"
   },
   {
+   "slug": "neon",
+   "name": "Neon",
+   "segment": "data",
+   "hq_country": "US",
+   "audience": "b2b2c",
+   "target_size": "mid-market",
+   "category": "Serverless Postgres",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
    "slug": "netlify",
    "name": "Netlify",
    "segment": "dev-infra",
@@ -1464,6 +2400,18 @@
    "meta_confidence": "high",
    "ai": true,
    "free_tier": "yes"
+  },
+  {
+   "slug": "netskope",
+   "name": "Netskope",
+   "segment": "security",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Cloud security (SASE)",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
   },
   {
    "slug": "new-relic",
@@ -1574,6 +2522,18 @@
    "free_tier": null
   },
   {
+   "slug": "optimizely",
+   "name": "Optimizely",
+   "segment": "marketing",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Experimentation / DXP",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
    "slug": "oracle",
    "name": "Oracle",
    "segment": "erp",
@@ -1583,6 +2543,30 @@
    "category": "ERP / database / cloud",
    "meta_confidence": "high",
    "ai": null,
+   "free_tier": null
+  },
+  {
+   "slug": "orca-security",
+   "name": "Orca Security",
+   "segment": "security",
+   "hq_country": "IL",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Cloud security",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "otter",
+   "name": "Otter.ai",
+   "segment": "work-mgmt",
+   "hq_country": "US",
+   "audience": "b2b2c",
+   "target_size": "smb",
+   "category": "Meeting transcription",
+   "meta_confidence": "high",
+   "ai": true,
    "free_tier": null
   },
   {
@@ -1617,6 +2601,18 @@
    "audience": "b2b2c",
    "target_size": "broad",
    "category": "Cloud infrastructure",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
+   "slug": "oyster",
+   "name": "Oyster",
+   "segment": "hr-ops",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Global HR / EOR",
    "meta_confidence": "high",
    "ai": false,
    "free_tier": null
@@ -1694,6 +2690,18 @@
    "free_tier": null
   },
   {
+   "slug": "paylocity",
+   "name": "Paylocity",
+   "segment": "hr-ops",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Payroll & HR",
+   "meta_confidence": "high",
+   "ai": null,
+   "free_tier": null
+  },
+  {
    "slug": "pega",
    "name": "Pegasystems",
    "segment": "bpm",
@@ -1742,6 +2750,18 @@
    "free_tier": null
   },
   {
+   "slug": "pinecone",
+   "name": "Pinecone",
+   "segment": "data",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Vector database",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
    "slug": "pipedrive",
    "name": "Pipedrive",
    "segment": "gtm",
@@ -1751,6 +2771,30 @@
    "category": "CRM",
    "meta_confidence": "high",
    "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "plaid",
+   "name": "Plaid",
+   "segment": "banking-tech",
+   "hq_country": "US",
+   "audience": "b2b2c",
+   "target_size": "mid-market",
+   "category": "Financial data API",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
+   "slug": "planetscale",
+   "name": "PlanetScale",
+   "segment": "data",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Serverless database",
+   "meta_confidence": "high",
+   "ai": false,
    "free_tier": null
   },
   {
@@ -1775,6 +2819,30 @@
    "category": "Product analytics",
    "meta_confidence": "high",
    "ai": false,
+   "free_tier": null
+  },
+  {
+   "slug": "postman",
+   "name": "Postman",
+   "segment": "dev-infra",
+   "hq_country": "US",
+   "audience": "b2b2c",
+   "target_size": "broad",
+   "category": "API platform",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "prefect",
+   "name": "Prefect",
+   "segment": "data",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Data orchestration",
+   "meta_confidence": "high",
+   "ai": true,
    "free_tier": null
   },
   {
@@ -1826,6 +2894,18 @@
    "free_tier": null
   },
   {
+   "slug": "pulumi",
+   "name": "Pulumi",
+   "segment": "dev-infra",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Infrastructure as code",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
    "slug": "qonto",
    "name": "Qonto",
    "segment": "fintech-ops",
@@ -1850,6 +2930,18 @@
    "free_tier": null
   },
   {
+   "slug": "qualys",
+   "name": "Qualys",
+   "segment": "security",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Vulnerability management",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
    "slug": "quantexa",
    "name": "Quantexa",
    "segment": "data",
@@ -1859,6 +2951,18 @@
    "category": "Decision intelligence",
    "meta_confidence": "medium",
    "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "railway",
+   "name": "Railway",
+   "segment": "dev-infra",
+   "hq_country": "US",
+   "audience": "b2b2c",
+   "target_size": "smb",
+   "category": "Cloud hosting (PaaS)",
+   "meta_confidence": "high",
+   "ai": false,
    "free_tier": null
   },
   {
@@ -1872,6 +2976,18 @@
    "meta_confidence": "high",
    "ai": null,
    "free_tier": "yes"
+  },
+  {
+   "slug": "rapid7",
+   "name": "Rapid7",
+   "segment": "security",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Security operations",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
   },
   {
    "slug": "red-points",
@@ -1922,6 +3038,66 @@
    "free_tier": null
   },
   {
+   "slug": "remote",
+   "name": "Remote",
+   "segment": "hr-ops",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "broad",
+   "category": "Global HR / EOR",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
+   "slug": "render",
+   "name": "Render",
+   "segment": "dev-infra",
+   "hq_country": "US",
+   "audience": "b2b2c",
+   "target_size": "smb",
+   "category": "Cloud hosting (PaaS)",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "replicate",
+   "name": "Replicate",
+   "segment": "data",
+   "hq_country": "US",
+   "audience": "b2b2c",
+   "target_size": "smb",
+   "category": "ML model hosting",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
+   "slug": "replit",
+   "name": "Replit",
+   "segment": "product-dev",
+   "hq_country": "US",
+   "audience": "b2b2c",
+   "target_size": "broad",
+   "category": "Cloud IDE / AI coding",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "resend",
+   "name": "Resend",
+   "segment": "dev-infra",
+   "hq_country": "US",
+   "audience": "b2b2c",
+   "target_size": "smb",
+   "category": "Email API",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
    "slug": "retool",
    "name": "Retool",
    "segment": "automation",
@@ -1932,6 +3108,18 @@
    "meta_confidence": "high",
    "ai": true,
    "free_tier": "yes"
+  },
+  {
+   "slug": "ringcentral",
+   "name": "RingCentral",
+   "segment": "ccaas",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Business comms",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
   },
   {
    "slug": "rippling",
@@ -1956,6 +3144,18 @@
    "meta_confidence": "medium",
    "ai": true,
    "free_tier": "no"
+  },
+  {
+   "slug": "rudderstack",
+   "name": "RudderStack",
+   "segment": "data",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Customer data platform",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
   },
   {
    "slug": "sage",
@@ -1994,6 +3194,30 @@
    "free_tier": "yes"
   },
   {
+   "slug": "salesloft",
+   "name": "Salesloft",
+   "segment": "gtm",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Sales engagement",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
+   "slug": "samsara",
+   "name": "Samsara",
+   "segment": "industrial",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "IoT / fleet",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
    "slug": "sap",
    "name": "SAP",
    "segment": "erp",
@@ -2003,6 +3227,18 @@
    "category": "ERP",
    "meta_confidence": "high",
    "ai": null,
+   "free_tier": null
+  },
+  {
+   "slug": "scale-ai",
+   "name": "Scale AI",
+   "segment": "data",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "AI data labeling",
+   "meta_confidence": "high",
+   "ai": true,
    "free_tier": null
   },
   {
@@ -2054,6 +3290,18 @@
    "free_tier": null
   },
   {
+   "slug": "semgrep",
+   "name": "Semgrep",
+   "segment": "security",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Code security (SAST)",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
    "slug": "sennder",
    "name": "sennder",
    "segment": "industrial",
@@ -2063,6 +3311,18 @@
    "category": "Digital freight",
    "meta_confidence": "medium",
    "ai": false,
+   "free_tier": null
+  },
+  {
+   "slug": "sentinelone",
+   "name": "SentinelOne",
+   "segment": "security",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Endpoint security",
+   "meta_confidence": "high",
+   "ai": true,
    "free_tier": null
   },
   {
@@ -2090,6 +3350,42 @@
    "free_tier": null
   },
   {
+   "slug": "servicetitan",
+   "name": "ServiceTitan",
+   "segment": "industrial",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Field service software",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "shopify",
+   "name": "Shopify",
+   "segment": "marketing",
+   "hq_country": "CA",
+   "audience": "b2b2c",
+   "target_size": "broad",
+   "category": "E-commerce platform",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "shortcut",
+   "name": "Shortcut",
+   "segment": "product-dev",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Project management (dev)",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
    "slug": "showpad",
    "name": "Showpad",
    "segment": "gtm",
@@ -2097,6 +3393,18 @@
    "audience": "b2b",
    "target_size": "mid-market",
    "category": "Sales enablement",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "sigma",
+   "name": "Sigma",
+   "segment": "analytics",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "BI & analytics",
    "meta_confidence": "high",
    "ai": true,
    "free_tier": null
@@ -2133,6 +3441,18 @@
    "audience": "b2b2c",
    "target_size": "enterprise",
    "category": "Communications API",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "singlestore",
+   "name": "SingleStore",
+   "segment": "data",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Real-time database",
    "meta_confidence": "high",
    "ai": true,
    "free_tier": null
@@ -2222,6 +3542,30 @@
    "free_tier": null
   },
   {
+   "slug": "sonarsource",
+   "name": "SonarSource",
+   "segment": "product-dev",
+   "hq_country": "CH",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Code quality",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "sourcegraph",
+   "name": "Sourcegraph",
+   "segment": "product-dev",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Code search / AI",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
    "slug": "spendesk",
    "name": "Spendesk",
    "segment": "fintech-ops",
@@ -2229,6 +3573,18 @@
    "audience": "b2b",
    "target_size": "mid-market",
    "category": "Spend management",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
+   "slug": "split",
+   "name": "Split",
+   "segment": "dev-infra",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Feature flags",
    "meta_confidence": "high",
    "ai": false,
    "free_tier": null
@@ -2270,6 +3626,30 @@
    "free_tier": null
   },
   {
+   "slug": "starburst",
+   "name": "Starburst",
+   "segment": "data",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Data lake analytics",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
+   "slug": "statsig",
+   "name": "Statsig",
+   "segment": "analytics",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Experimentation",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
    "slug": "stripe",
    "name": "Stripe",
    "segment": "fintech-ops",
@@ -2279,6 +3659,30 @@
    "category": "Payments",
    "meta_confidence": "high",
    "ai": false,
+   "free_tier": null
+  },
+  {
+   "slug": "stytch",
+   "name": "Stytch",
+   "segment": "identity",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Auth for developers",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
+   "slug": "sumologic",
+   "name": "Sumo Logic",
+   "segment": "observability",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Log analytics",
+   "meta_confidence": "high",
+   "ai": true,
    "free_tier": null
   },
   {
@@ -2318,6 +3722,30 @@
    "free_tier": null
   },
   {
+   "slug": "synthesia",
+   "name": "Synthesia",
+   "segment": "marketing",
+   "hq_country": "GB",
+   "audience": "b2b2c",
+   "target_size": "mid-market",
+   "category": "AI video generation",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "sysdig",
+   "name": "Sysdig",
+   "segment": "security",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Container security",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
    "slug": "talkdesk",
    "name": "Talkdesk",
    "segment": "ccaas",
@@ -2325,6 +3753,18 @@
    "audience": "b2b",
    "target_size": "enterprise",
    "category": "Contact center (CCaaS)",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "tanium",
+   "name": "Tanium",
+   "segment": "security",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Endpoint management",
    "meta_confidence": "high",
    "ai": true,
    "free_tier": null
@@ -2354,6 +3794,18 @@
    "free_tier": null
   },
   {
+   "slug": "teamwork",
+   "name": "Teamwork",
+   "segment": "work-mgmt",
+   "hq_country": "IE",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Work management",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
    "slug": "temenos",
    "name": "Temenos",
    "segment": "banking-tech",
@@ -2374,6 +3826,18 @@
    "target_size": "enterprise",
    "category": "Document generation",
    "meta_confidence": "medium",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "tenable",
+   "name": "Tenable",
+   "segment": "security",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Vulnerability management",
+   "meta_confidence": "high",
    "ai": true,
    "free_tier": null
   },
@@ -2402,6 +3866,18 @@
    "free_tier": "yes"
   },
   {
+   "slug": "timescale",
+   "name": "Timescale",
+   "segment": "data",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Time-series database",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
    "slug": "tink",
    "name": "Tink",
    "segment": "banking-tech",
@@ -2411,6 +3887,30 @@
    "category": "Open banking API",
    "meta_confidence": "high",
    "ai": false,
+   "free_tier": null
+  },
+  {
+   "slug": "tipalti",
+   "name": "Tipalti",
+   "segment": "fintech-ops",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "AP automation",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "tray",
+   "name": "Tray.ai",
+   "segment": "automation",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Integration (iPaaS)",
+   "meta_confidence": "high",
+   "ai": true,
    "free_tier": null
   },
   {
@@ -2570,6 +4070,18 @@
    "free_tier": "no"
   },
   {
+   "slug": "verkada",
+   "name": "Verkada",
+   "segment": "security",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Physical security (IoT)",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
    "slug": "visma",
    "name": "Visma",
    "segment": "erp",
@@ -2590,6 +4102,30 @@
    "target_size": "mid-market",
    "category": "Retail CRM & loyalty",
    "meta_confidence": "medium",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "wandb",
+   "name": "Weights & Biases",
+   "segment": "data",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "ML experiment tracking",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "weaviate",
+   "name": "Weaviate",
+   "segment": "data",
+   "hq_country": "NL",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Vector database",
+   "meta_confidence": "high",
    "ai": true,
    "free_tier": null
   },
@@ -2615,6 +4151,54 @@
    "category": "Cross-border payments",
    "meta_confidence": "high",
    "ai": false,
+   "free_tier": null
+  },
+  {
+   "slug": "wistia",
+   "name": "Wistia",
+   "segment": "marketing",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Video marketing",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
+   "slug": "wiz",
+   "name": "Wiz",
+   "segment": "security",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Cloud security (CNAPP)",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "workable",
+   "name": "Workable",
+   "segment": "hr-ops",
+   "hq_country": "GB",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Recruiting (ATS)",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "workato",
+   "name": "Workato",
+   "segment": "automation",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Integration (iPaaS)",
+   "meta_confidence": "high",
+   "ai": true,
    "free_tier": null
   },
   {
@@ -2654,6 +4238,42 @@
    "free_tier": null
   },
   {
+   "slug": "workos",
+   "name": "WorkOS",
+   "segment": "identity",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Enterprise auth (dev)",
+   "meta_confidence": "high",
+   "ai": false,
+   "free_tier": null
+  },
+  {
+   "slug": "wrike",
+   "name": "Wrike",
+   "segment": "work-mgmt",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Work management",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
+   "slug": "writer",
+   "name": "Writer",
+   "segment": "marketing",
+   "hq_country": "US",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Enterprise AI writing",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
    "slug": "xeneta",
    "name": "Xeneta",
    "segment": "industrial",
@@ -2690,6 +4310,18 @@
    "free_tier": "yes"
   },
   {
+   "slug": "zoom",
+   "name": "Zoom",
+   "segment": "ccaas",
+   "hq_country": "US",
+   "audience": "b2b2c",
+   "target_size": "broad",
+   "category": "Video conferencing",
+   "meta_confidence": "high",
+   "ai": true,
+   "free_tier": null
+  },
+  {
    "slug": "zscaler",
    "name": "Zscaler",
    "segment": "security",
@@ -2702,5 +4334,5 @@
    "free_tier": null
   }
  ],
- "generated_at": "2026-08-09T14:44:19Z"
+ "generated_at": "2026-08-09T14:57:39Z"
 }
