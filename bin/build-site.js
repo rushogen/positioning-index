@@ -417,9 +417,10 @@ Rendering
   re-opened in a headless browser so its published plans can be read as a visitor
   would see them. This happens only for the pricing page, only after the normal
   fetch already succeeded and found nothing, and only after robots.txt allowed it.
-  In that render, images, fonts, media, stylesheets and all cross-origin requests
-  are blocked: only the first-party document and the scripts needed to show the
-  plans are loaded. No third-party beacons, analytics or ads are requested.
+  In that render, images, fonts, media and stylesheets are blocked, so only the
+  document and the scripts that render the plans are loaded -- some of which are
+  served from the site's own CDN. Nothing is clicked, submitted, or stored; the
+  page is read once, as shown, and closed.
 
 What it honours
   robots.txt per RFC 9309, including per-agent groups, longest-match rule

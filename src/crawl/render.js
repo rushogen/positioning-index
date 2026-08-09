@@ -58,15 +58,13 @@ export async function renderHtml(url, { userAgent, timeout = 30000, settleMs = 2
   try {
     context = await browser.newContext({ userAgent, javaScriptEnabled: true });
     const page = await context.newPage();
-    // Minimal footprint: document + first-party scripts only.
+    // Minimal footprint: block the heavy, non-textual resources (images, fonts,
+    // media, stylesheets). Scripts and XHR/fetch are allowed -- including from the
+    // site's own CDN -- because those are exactly what paint the plans; blocking
+    // them (an earlier mistake) left the page empty and the fallback useless.
     await page.route('**/*', (route) => {
-      const req = route.request();
-      const type = req.resourceType();
+      const type = route.request().resourceType();
       if (type === 'image' || type === 'font' || type === 'media' || type === 'stylesheet') return route.abort();
-      try {
-        const sameSite = new URL(req.url()).hostname.endsWith(new URL(url).hostname.split('.').slice(-2).join('.'));
-        if (!sameSite && type !== 'document') return route.abort(); // no third-party beacons
-      } catch { /* fall through */ }
       return route.continue();
     });
     await page.goto(url, { waitUntil: 'domcontentloaded', timeout });
