@@ -9,11 +9,13 @@ import './app.css';
 // you open Structure / Positioning, not on first paint.
 const Positioning = lazy(() => import('./routes/Positioning'));
 const Structure = lazy(() => import('./routes/Structure'));
+const Segments = lazy(() => import('./routes/Segments'));
 
 const TABS = [
   { to: '/', label: 'Overview', end: true },
   { to: '/positioning', label: 'Positioning', end: false },
   { to: '/structure', label: 'Structure', end: false },
+  { to: '/segments', label: 'Segments', end: false },
   { to: '/method', label: 'Method', end: false },
 ];
 
@@ -45,6 +47,7 @@ export default function App() {
             <Route path="/" element={<Overview />} />
             <Route path="/positioning" element={<Positioning />} />
             <Route path="/structure" element={<Structure />} />
+            <Route path="/segments" element={<Segments />} />
             <Route path="/method" element={<Method />} />
             <Route path="*" element={<Overview />} />
           </Routes>

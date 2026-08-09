@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import type { Anatomy, Positioning } from './types';
+import type { Anatomy, Facts, Positioning } from './types';
 
 /**
  * Fetch a published JSON file once, cache it in memory, and expose it as a hook.
@@ -27,3 +27,4 @@ export function useJson<T>(path: string): { data: T | null; error: string | null
 
 export const usePositioning = () => useJson<Positioning>('/api/positioning.json');
 export const useAnatomy = () => useJson<Anatomy>('/api/anatomy.json');
+export const useFacts = () => useJson<Facts>('/api/facts.json');

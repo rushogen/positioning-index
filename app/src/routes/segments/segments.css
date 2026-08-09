@@ -1,0 +1,61 @@
+/* Segments tab (Lens 03). Token-driven; no hardcoded colour. */
+
+/* --- hero --------------------------------------------------------------- */
+.seg-hero { padding: clamp(0.5rem, 3vw, 2rem) 0 clamp(1rem, 3vw, 2rem); }
+.seg-hero .section-title { margin-bottom: 0; }
+.seg-hero h2 { font-size: var(--t-h1); }
+
+/* --- cross-cut section -------------------------------------------------- */
+.cc { margin: clamp(2.5rem, 7vw, 5rem) 0 0; border-top: 1px solid var(--rule); padding-top: 1.6rem; scroll-margin-top: 5rem; }
+.cc-head { margin-bottom: 1.4rem; }
+.cc-title { font-size: var(--t-h2); margin-top: 0.3rem; }
+.cc-dek { margin: 0.7rem 0 0; font-family: var(--serif); font-size: var(--t-lede); color: var(--ink-2); max-width: 42em; line-height: 1.45; }
+.cc-dek b { color: var(--ink); font-family: var(--sans); font-weight: 600; }
+
+/* --- controls ----------------------------------------------------------- */
+.cc-controls { display: flex; flex-wrap: wrap; gap: clamp(1rem, 3vw, 2rem); margin: 1.4rem 0 1rem; }
+.cc-control { display: flex; flex-direction: column; gap: 0.5rem; }
+.cc-control-label { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); }
+.cc-seg { display: inline-flex; flex-wrap: wrap; gap: 0.25rem; padding: 0.25rem; border: 1px solid var(--rule); border-radius: 999px;
+  background: color-mix(in srgb, var(--panel) 60%, transparent); }
+.cc-pill {
+  border: 0; background: none; cursor: pointer; color: var(--ink-2);
+  font-size: 0.85rem; font-weight: 500; padding: 0.4rem 0.9rem; border-radius: 999px;
+  transition: background 0.2s var(--ease), color 0.2s var(--ease);
+}
+.cc-pill:hover { color: var(--ink); background: color-mix(in srgb, var(--ink-3) 12%, transparent); }
+.cc-pill-on, .cc-pill-on:hover { color: var(--bg); background: var(--accent); }
+
+/* --- lead --------------------------------------------------------------- */
+.cc-lead { display: flex; flex-wrap: wrap; align-items: flex-start; gap: clamp(1.4rem, 4vw, 3rem); margin: 1.6rem 0 0.4rem; }
+.cc-lead > .stat { flex: 0 0 auto; max-width: 100%; }
+.cc-lead-copy { flex: 1 1 22rem; min-width: min(100%, 20rem); }
+.cc-lead-copy p { margin: 0; color: var(--ink-2); line-height: 1.55; max-width: 42em; }
+.cc-lead-copy b { color: var(--ink); }
+
+/* --- rate bars ---------------------------------------------------------- */
+.cc-bars { margin-top: clamp(1.4rem, 4vw, 2rem); display: flex; flex-direction: column; gap: 0.15rem; }
+.cc-row { display: grid; grid-template-columns: clamp(6rem, 22vw, 9rem) 1fr auto; align-items: center; gap: 0.8rem; padding: 0.5rem 0; }
+.cc-row-label { font-size: 0.9rem; font-weight: 500; color: var(--ink); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.cc-track { height: 1rem; background: color-mix(in srgb, var(--ink-3) 14%, transparent); border-radius: 999px; overflow: hidden; }
+.cc-fill { display: block; height: 100%; transform-origin: left center; border-radius: 999px; }
+.cc-fill-ai { background: linear-gradient(90deg, color-mix(in srgb, var(--accent) 55%, transparent), var(--accent)); box-shadow: 0 0 12px var(--glow); }
+.cc-fill-ft { background: linear-gradient(90deg, color-mix(in srgb, var(--accent-2) 55%, transparent), var(--accent-2)); }
+.cc-val { display: flex; flex-direction: column; align-items: flex-end; line-height: 1.15; min-width: 4.5rem; }
+.cc-val b { font-family: var(--serif); font-weight: 600; font-size: 1.05rem; letter-spacing: -0.01em; }
+.cc-val-of { font-size: 0.74rem; color: var(--ink-3); }
+
+/* suppressed cell: count, no bar */
+.cc-row-supp { grid-template-columns: clamp(6rem, 22vw, 9rem) 1fr; opacity: 0.9; }
+.cc-toofew { font-size: 0.82rem; color: var(--ink-3); font-style: italic; }
+
+.cc-divider { margin: 1rem 0 0.3rem; padding-top: 0.8rem; border-top: 1px dashed var(--rule); font-size: 0.78rem; color: var(--ink-3); }
+
+/* --- yes-set disclosure names ------------------------------------------ */
+.cc-names { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 11rem), 1fr)); gap: 0.15rem 1rem; }
+.cc-names li { color: var(--ink-2); font-size: 0.86rem; padding: 0.15rem 0; }
+
+@media (max-width: 34rem) {
+  .cc-row { grid-template-columns: 5.5rem 1fr auto; gap: 0.55rem; }
+  .cc-names { grid-template-columns: 1fr; }
+}

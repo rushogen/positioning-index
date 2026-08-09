@@ -176,6 +176,27 @@ export interface Anatomy {
   generated_at: string;
 }
 
+// ---- facts.json (per-company metadata + clean signals, for cross-cuts) ----
+
+export interface CompanyFact {
+  slug: string;
+  name: string;
+  segment: string | null;
+  hq_country: string | null;
+  audience: 'b2b' | 'b2b2c' | 'b2c' | null;   // research-judged
+  target_size: 'smb' | 'mid-market' | 'enterprise' | 'broad' | null; // research-judged
+  category: string | null;                     // research-judged
+  meta_confidence: 'high' | 'medium' | 'low' | null;
+  ai: boolean | null;          // measured: uses AI language up top; null = unreadable
+  free_tier: 'yes' | 'no' | null; // measured; null = pricing unreadable (NOT "no")
+}
+
+export interface Facts {
+  note: string;
+  companies: CompanyFact[];
+  generated_at: string;
+}
+
 /** The human label for a section type, falling back to the raw key. */
 export function sectionLabel(labels: Record<string, string>, type: string): string {
   return labels[type] ?? type;

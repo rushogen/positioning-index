@@ -212,6 +212,38 @@ await writeJson('api/anatomy.json', {
 });
 
 await writeJson('api/companies.json', { companies });
+
+// Per-company FACTS: the research-judged business metadata from the seed
+// (audience, target_size, category) joined with the two signals that have a
+// clean per-company classification -- AI language (mentions / quiet /
+// unreadable) and free tier (yes / no / unreadable). Published so the app can
+// cut positioning by who a company is and who it sells to, with honest cell
+// sizes. Only these two signals are included because their per-company state is
+// unambiguous; proof/pricing-amount have no clean per-company "no" set.
+{
+  const aiYes = new Set(positioning.ai_mentions.mentions.map((c) => c.slug));
+  const aiNo = new Set(positioning.ai_mentions.quiet.map((c) => c.slug));
+  const ftYes = new Set(positioning.pricing.free_tier.yes.map((c) => c.slug));
+  const ftNo = new Set(positioning.pricing.free_tier.no.map((c) => c.slug));
+  const facts = seed.companies.map((c) => ({
+    slug: c.slug,
+    name: c.name,
+    segment: c.segment ?? null,
+    hq_country: c.hq_country ?? null,
+    audience: c.audience ?? null,
+    target_size: c.target_size ?? null,
+    category: c.category ?? null,
+    meta_confidence: c.meta_confidence ?? null,
+    ai: aiYes.has(c.slug) ? true : aiNo.has(c.slug) ? false : null,
+    free_tier: ftYes.has(c.slug) ? 'yes' : ftNo.has(c.slug) ? 'no' : null,
+  }));
+  await writeJson('api/facts.json', {
+    note: 'audience, target_size and category are research-judged (not page-measured). ai and free_tier are read off the page; null means it could not be read, which is not the same as "no".',
+    companies: facts,
+    generated_at: asOf,
+  });
+}
+
 await writeJson('api/health.json', { companies: health });
 await writeJson('api/changes.json', { changes });
 await writeJson('api/retractions.json', {
