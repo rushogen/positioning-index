@@ -378,6 +378,30 @@
   {
    "kind": "pricing",
    "url": "https://www.figma.com/pricing/",
+   "fetched_at": "2026-08-09T15:14:17Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 304,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.figma.com/",
+   "fetched_at": "2026-08-09T15:12:39Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 423,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.figma.com/pricing/",
    "fetched_at": "2026-08-09T15:03:49Z",
    "http_status": 304,
    "status": "unchanged",
@@ -590,30 +614,6 @@
    "duration_ms": 544,
    "signals_found": 0,
    "signals_expected": 0
-  },
-  {
-   "kind": "pricing",
-   "url": "https://www.figma.com/pricing/",
-   "fetched_at": "2026-08-07T11:11:12Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": null,
-   "bytes": 1499772,
-   "duration_ms": 365,
-   "signals_found": 1,
-   "signals_expected": 5
-  },
-  {
-   "kind": "home",
-   "url": "https://www.figma.com/",
-   "fetched_at": "2026-08-07T11:10:11Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": null,
-   "bytes": 1499966,
-   "duration_ms": 949,
-   "signals_found": 7,
-   "signals_expected": 7
   }
  ]
 }

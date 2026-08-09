@@ -83,7 +83,7 @@
    "category": "Data integration (ELT)",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "aircall",
@@ -119,7 +119,7 @@
    "category": "Global payments",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "no"
   },
   {
    "slug": "aiven",
@@ -395,7 +395,7 @@
    "category": "HR (HRIS)",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "basecamp",
@@ -575,7 +575,7 @@
    "category": "Reverse ETL",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "checkout-com",
@@ -611,7 +611,7 @@
    "category": "CI/CD",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "clari",
@@ -647,7 +647,7 @@
    "category": "Auth for developers",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "clickhouse",
@@ -899,7 +899,7 @@
    "category": "AI code editor",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "customer-io",
@@ -923,7 +923,7 @@
    "category": "Data orchestration",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "darktrace",
@@ -1079,7 +1079,7 @@
    "category": "Audio/video editing",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "dialpad",
@@ -1162,7 +1162,7 @@
    "target_size": "broad",
    "category": "E-signature",
    "meta_confidence": "high",
-   "ai": true,
+   "ai": false,
    "free_tier": "no"
   },
   {
@@ -1379,7 +1379,7 @@
    "category": "Website builder",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "freshworks",
@@ -1451,7 +1451,7 @@
    "category": "Secrets detection",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "github",
@@ -1523,7 +1523,7 @@
    "category": "E-commerce support",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "no"
   },
   {
    "slug": "grafana",
@@ -1547,7 +1547,7 @@
    "category": "Writing assistant",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "greenhouse",
@@ -1559,7 +1559,7 @@
    "category": "Recruiting (ATS)",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "no"
   },
   {
    "slug": "guru",
@@ -1595,7 +1595,7 @@
    "category": "Product analytics",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "helpscout",
@@ -1607,7 +1607,7 @@
    "category": "Customer support",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "hex",
@@ -1619,7 +1619,7 @@
    "category": "Data notebooks",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "hibob",
@@ -1667,7 +1667,7 @@
    "category": "Observability",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "hornetsecurity",
@@ -1715,7 +1715,7 @@
    "category": "ML models / hub",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "no"
   },
   {
    "slug": "ibm",
@@ -1763,7 +1763,7 @@
    "category": "Time-series database",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "informatica",
@@ -2087,7 +2087,7 @@
    "category": "Automation / iPaaS",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "mambu",
@@ -2147,7 +2147,7 @@
    "category": "SMB payments",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "no"
   },
   {
    "slug": "mendix",
@@ -2231,7 +2231,7 @@
    "category": "Serverless compute (AI)",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "mode",
@@ -2327,7 +2327,7 @@
    "category": "Workflow automation",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "navan",
@@ -2339,7 +2339,7 @@
    "category": "Travel & expense",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "navex",
@@ -2759,7 +2759,7 @@
    "category": "Vector database",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "pipedrive",
@@ -2795,7 +2795,7 @@
    "category": "Serverless database",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "no"
   },
   {
    "slug": "pleo",
@@ -2831,7 +2831,7 @@
    "category": "API platform",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "prefect",
@@ -2903,7 +2903,7 @@
    "category": "Infrastructure as code",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "qonto",
@@ -2963,7 +2963,7 @@
    "category": "Cloud hosting (PaaS)",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "ramp",
@@ -3095,7 +3095,7 @@
    "category": "Email API",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "retool",
@@ -3299,7 +3299,7 @@
    "category": "Code security (SAST)",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "sennder",
@@ -3383,7 +3383,7 @@
    "category": "Project management (dev)",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "showpad",
@@ -3587,7 +3587,7 @@
    "category": "Feature flags",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "splunk",
@@ -3647,7 +3647,7 @@
    "category": "Experimentation",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "stripe",
@@ -4115,7 +4115,7 @@
    "category": "ML experiment tracking",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "weaviate",
@@ -4127,7 +4127,7 @@
    "category": "Vector database",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "webflow",
@@ -4163,7 +4163,7 @@
    "category": "Video marketing",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "wiz",
@@ -4334,5 +4334,5 @@
    "free_tier": null
   }
  ],
- "generated_at": "2026-08-09T15:04:36Z"
+ "generated_at": "2026-08-09T15:14:42Z"
 }

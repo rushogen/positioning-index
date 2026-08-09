@@ -372,6 +372,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "pricing",
+   "url": "https://www.pendo.io/pricing/",
+   "fetched_at": "2026-08-09T15:14:14Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 93,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.pendo.io/",
+   "fetched_at": "2026-08-09T15:12:24Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 566,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
    "kind": "home",
    "url": "https://www.pendo.io/",
    "fetched_at": "2026-08-09T15:04:13Z",

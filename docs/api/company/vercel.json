@@ -376,6 +376,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "pricing",
+   "url": "https://vercel.com/pricing",
+   "fetched_at": "2026-08-09T15:14:18Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 1267306,
+   "duration_ms": 124,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://vercel.com/",
+   "fetched_at": "2026-08-09T15:12:40Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 619033,
+   "duration_ms": 124,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
+  {
    "kind": "home",
    "url": "https://vercel.com/",
    "fetched_at": "2026-08-09T15:04:00Z",

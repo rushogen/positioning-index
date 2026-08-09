@@ -391,10 +391,34 @@
    "magnitude": 0.26,
    "oscillating": 1,
    "summary": "Hero headline changed from \"Stay compliant with digital identity powered by AI\" to \"Fight fraud with digital identity powered by AI\" (a value this page has held recently -- likely an A/B test rather than a repositioning)",
-   "confirmed": 0
+   "confirmed": 1
   }
  ],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://www.signicat.com/pricing",
+   "fetched_at": "2026-08-09T15:14:21Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 136331,
+   "duration_ms": 414,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://www.signicat.com/",
+   "fetched_at": "2026-08-09T15:12:54Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 226265,
+   "duration_ms": 1234,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
   {
    "kind": "pricing",
    "url": "https://www.signicat.com/pricing",

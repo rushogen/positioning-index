@@ -9,7 +9,8 @@
   "target_size": "mid-market",
   "category": "Code quality",
   "meta_confidence": "high",
-  "added": "2026-08-09"
+  "added": "2026-08-09",
+  "pricing_url": "https://www.sonarsource.com/pricing"
  },
  "signals": [
   {
@@ -285,6 +286,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.sonarsource.com/",
+   "fetched_at": "2026-08-09T15:13:58Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 1112108,
+   "duration_ms": 88,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.sonarsource.com/pricing/",
+   "fetched_at": "2026-08-09T15:11:41Z",
+   "http_status": 404,
+   "status": "error",
+   "reason": "HTTP 404",
+   "bytes": 0,
+   "duration_ms": 1854,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
   {
    "kind": "home",
    "url": "https://www.sonarsource.com/",

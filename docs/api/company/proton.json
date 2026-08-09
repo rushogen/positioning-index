@@ -376,6 +376,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "home",
+   "url": "https://proton.me/",
+   "fetched_at": "2026-08-09T15:14:03Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 552,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://proton.me/pricing",
+   "fetched_at": "2026-08-09T15:11:56Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 651,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
    "kind": "pricing",
    "url": "https://proton.me/pricing",
    "fetched_at": "2026-08-09T15:03:42Z",

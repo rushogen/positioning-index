@@ -287,6 +287,18 @@
   {
    "kind": "home",
    "url": "https://www.acronis.com/en/",
+   "fetched_at": "2026-08-09T15:12:12Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 557196,
+   "duration_ms": 178,
+   "signals_found": 13,
+   "signals_expected": 15
+  },
+  {
+   "kind": "home",
+   "url": "https://www.acronis.com/en/",
    "fetched_at": "2026-08-09T15:02:02Z",
    "http_status": 200,
    "status": "ok",

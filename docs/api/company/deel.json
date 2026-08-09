@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T14:56:56Z",
-   "last_good_at": "2026-08-09T14:56:56Z",
+   "last_observed_at": "2026-08-09T15:12:14Z",
+   "last_good_at": "2026-08-09T15:12:14Z",
    "last_good_value": "15",
    "last_good_json": null,
    "last_good_hash": "18eb258b",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T14:56:56Z",
-   "last_good_at": "2026-08-09T14:56:56Z",
+   "last_observed_at": "2026-08-09T15:12:14Z",
+   "last_good_at": "2026-08-09T15:12:14Z",
    "last_good_value": "none",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "ada7afdb",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T14:56:56Z",
-   "last_good_at": "2026-08-09T14:56:56Z",
+   "last_observed_at": "2026-08-09T15:12:14Z",
+   "last_good_at": "2026-08-09T15:12:14Z",
    "last_good_value": "59",
    "last_good_json": null,
    "last_good_hash": "8ce14ecb",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T14:56:56Z",
-   "last_good_at": "2026-08-09T14:56:56Z",
+   "last_observed_at": "2026-08-09T15:12:14Z",
+   "last_good_at": "2026-08-09T15:12:14Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T14:56:56Z",
-   "last_good_at": "2026-08-09T14:56:56Z",
+   "last_observed_at": "2026-08-09T15:12:14Z",
+   "last_good_at": "2026-08-09T15:12:14Z",
    "last_good_value": "3",
    "last_good_json": null,
    "last_good_hash": "360caa42",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T14:56:56Z",
-   "last_good_at": "2026-08-09T14:56:56Z",
+   "last_observed_at": "2026-08-09T15:12:14Z",
+   "last_good_at": "2026-08-09T15:12:14Z",
    "last_good_value": "4",
    "last_good_json": null,
    "last_good_hash": "310ca263",
@@ -122,10 +122,10 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T14:56:56Z",
-   "last_good_at": "2026-08-09T14:56:56Z",
+   "last_observed_at": "2026-08-09T15:12:14Z",
+   "last_good_at": "2026-08-09T15:12:14Z",
    "last_good_value": "hero > product > features > security",
-   "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":71,\"merged\":1},{\"position\":2,\"type\":\"product\",\"heading\":\"The Global People Platform\",\"words\":56,\"merged\":1},{\"position\":3,\"type\":\"features\",\"heading\":\"Accomplish more in less time\",\"words\":55,\"merged\":1},{\"position\":4,\"type\":\"security\",\"heading\":\"One modern experience for today's workforce\",\"words\":98,\"merged\":2}]}",
+   "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":71,\"merged\":1},{\"position\":2,\"type\":\"product\",\"heading\":\"The global people platform\",\"words\":56,\"merged\":1},{\"position\":3,\"type\":\"features\",\"heading\":\"Accomplish more in less time\",\"words\":55,\"merged\":1},{\"position\":4,\"type\":\"security\",\"heading\":\"One modern experience for today's workforce\",\"words\":98,\"merged\":2}]}",
    "last_good_hash": "0b671047",
    "last_good_method": "h2-anchored",
    "last_good_confidence": 0.6,
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T14:56:56Z",
-   "last_good_at": "2026-08-09T14:56:56Z",
+   "last_observed_at": "2026-08-09T15:12:14Z",
+   "last_good_at": "2026-08-09T15:12:14Z",
    "last_good_value": 734,
    "last_good_json": null,
    "last_good_hash": "1ec520b1",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T14:56:56Z",
-   "last_good_at": "2026-08-09T14:56:56Z",
+   "last_observed_at": "2026-08-09T15:12:14Z",
+   "last_good_at": "2026-08-09T15:12:14Z",
    "last_good_value": "one powerful platform",
    "last_good_json": null,
    "last_good_hash": "4ea615fc",
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T14:56:56Z",
-   "last_good_at": "2026-08-09T14:56:56Z",
+   "last_observed_at": "2026-08-09T15:12:14Z",
+   "last_good_at": "2026-08-09T15:12:14Z",
    "last_good_value": "Company 1, Company 2, Company 3, Company 4",
    "last_good_json": "{\"names\":[\"Company 1\",\"Company 2\",\"Company 3\",\"Company 4\"],\"count\":4,\"lead\":\"Trusted by 40,000+ companies from startups to enterprise <div class=\\\"absolute in\"}",
    "last_good_hash": "23ef2211",
@@ -194,11 +194,11 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T14:56:56Z",
-   "last_good_at": "2026-08-09T14:56:56Z",
-   "last_good_value": "Hire, manage, pay, & equip anyone, anywhere",
+   "last_observed_at": "2026-08-09T15:12:14Z",
+   "last_good_at": "2026-08-09T15:12:14Z",
+   "last_good_value": "Hire, manage, pay, & equip anyone, anywhere.",
    "last_good_json": null,
-   "last_good_hash": "06d6b133",
+   "last_good_hash": "e0f8d0a7",
    "last_good_method": "h1",
    "last_good_confidence": 1,
    "consecutive_nulls": 0,
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T14:56:56Z",
-   "last_good_at": "2026-08-09T14:56:56Z",
+   "last_observed_at": "2026-08-09T15:12:14Z",
+   "last_good_at": "2026-08-09T15:12:14Z",
    "last_good_value": "Hire, pay, and manage teams in 150+ countries with Deel. Run global payroll, ensure compliance, and streamline HR operations—all on one powerful platform.",
    "last_good_json": null,
    "last_good_hash": "ad2a46ca",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T14:56:56Z",
-   "last_good_at": "2026-08-09T14:56:56Z",
+   "last_observed_at": "2026-08-09T15:12:14Z",
+   "last_good_at": "2026-08-09T15:12:14Z",
    "last_good_value": "Deel | Global Payroll, Compliance, HR Solutions | HRIS",
    "last_good_json": null,
    "last_good_hash": "33e0d5ac",
@@ -338,8 +338,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T14:56:56Z",
-   "last_good_at": "2026-08-09T14:56:56Z",
+   "last_observed_at": "2026-08-09T15:12:14Z",
+   "last_good_at": "2026-08-09T15:12:14Z",
    "last_good_value": "$20b+ compliantly processed global | 10 people | 40,000 companies | 40,000 customers",
    "last_good_json": "{\"items\":[{\"claim\":\"$20b+ compliantly processed global\",\"kind\":\"money\"},{\"claim\":\"10 people\",\"kind\":\"count\"},{\"claim\":\"40,000 companies\",\"kind\":\"count\"},{\"claim\":\"40,000 customers\",\"kind\":\"count\"}],\"count\":4}",
    "last_good_hash": "e9e1a213",
@@ -356,8 +356,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T14:56:56Z",
-   "last_good_at": "2026-08-09T14:56:56Z",
+   "last_observed_at": "2026-08-09T15:12:14Z",
+   "last_good_at": "2026-08-09T15:12:14Z",
    "last_good_value": "What would you like to do with Deel?",
    "last_good_json": null,
    "last_good_hash": "1c1265f9",
@@ -375,6 +375,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://www.deel.com/pricing/",
+   "fetched_at": "2026-08-09T15:14:11Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 663027,
+   "duration_ms": 175,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.deel.com/",
+   "fetched_at": "2026-08-09T15:12:14Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "canonical URL moved https://www.deel.com/home-variant/ -> https://www.deel.com/",
+   "bytes": 956233,
+   "duration_ms": 201,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.deel.com/",
@@ -590,18 +614,6 @@
    "duration_ms": 322,
    "signals_found": 1,
    "signals_expected": 5
-  },
-  {
-   "kind": "home",
-   "url": "https://www.deel.com/",
-   "fetched_at": "2026-08-07T15:52:30Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": null,
-   "bytes": 960795,
-   "duration_ms": 289,
-   "signals_found": 7,
-   "signals_expected": 7
   }
  ]
 }

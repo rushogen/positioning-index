@@ -398,6 +398,30 @@
   {
    "kind": "home",
    "url": "https://amplitude.com/",
+   "fetched_at": "2026-08-09T15:14:09Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 512235,
+   "duration_ms": 621,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://amplitude.com/pricing",
+   "fetched_at": "2026-08-09T15:12:10Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 612503,
+   "duration_ms": 741,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://amplitude.com/",
    "fetched_at": "2026-08-09T15:04:06Z",
    "http_status": 200,
    "status": "ok",

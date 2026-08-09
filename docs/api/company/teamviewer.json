@@ -391,7 +391,7 @@
    "magnitude": 1,
    "oscillating": 1,
    "summary": "Elements present: added testimonial; removed none",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-09T15:02:05Z",
@@ -410,7 +410,7 @@
    "magnitude": 0.134,
    "oscillating": 0,
    "summary": "Section sequence changed from \"hero > features > other > security > other > security > features\" to \"hero > features > other > testimonial > other > security > features\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-09T15:02:05Z",
@@ -429,7 +429,7 @@
    "magnitude": 0.333,
    "oscillating": 0,
    "summary": "Word count changed from \"907\" to \"909\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-09T15:02:05Z",
@@ -448,7 +448,7 @@
    "magnitude": 0.5,
    "oscillating": 0,
    "summary": "Proof points: removed 2,300 stores",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-08T07:27:27Z",
@@ -490,6 +490,30 @@
   }
  ],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.teamviewer.com/en/",
+   "fetched_at": "2026-08-09T15:14:21Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 378067,
+   "duration_ms": 117,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.teamviewer.com/en-us/pricing/overview/",
+   "fetched_at": "2026-08-09T15:12:54Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 562126,
+   "duration_ms": 305,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
   {
    "kind": "pricing",
    "url": "https://www.teamviewer.com/en-us/pricing/overview/",

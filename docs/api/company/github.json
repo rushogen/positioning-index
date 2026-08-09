@@ -376,6 +376,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "home",
+   "url": "https://github.com/",
+   "fetched_at": "2026-08-09T15:14:05Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 572698,
+   "duration_ms": 52,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
+  {
+   "kind": "pricing",
+   "url": "https://github.com/pricing",
+   "fetched_at": "2026-08-09T15:12:02Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 701672,
+   "duration_ms": 383,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
+  {
    "kind": "pricing",
    "url": "https://github.com/pricing",
    "fetched_at": "2026-08-09T15:03:59Z",

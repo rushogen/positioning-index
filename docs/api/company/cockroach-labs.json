@@ -379,6 +379,30 @@
   {
    "kind": "pricing",
    "url": "https://www.cockroachlabs.com/pricing/",
+   "fetched_at": "2026-08-09T15:14:15Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 230142,
+   "duration_ms": 824,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.cockroachlabs.com/",
+   "fetched_at": "2026-08-09T15:12:29Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 206978,
+   "duration_ms": 571,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.cockroachlabs.com/pricing/",
    "fetched_at": "2026-08-09T15:04:13Z",
    "http_status": 200,
    "status": "unchanged",

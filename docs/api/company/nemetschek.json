@@ -287,6 +287,18 @@
   {
    "kind": "home",
    "url": "https://www.nemetschek.com/en",
+   "fetched_at": "2026-08-09T15:13:36Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 149746,
+   "duration_ms": 516,
+   "signals_found": 11,
+   "signals_expected": 15
+  },
+  {
+   "kind": "home",
+   "url": "https://www.nemetschek.com/en",
    "fetched_at": "2026-08-09T15:00:27Z",
    "http_status": 200,
    "status": "ok",

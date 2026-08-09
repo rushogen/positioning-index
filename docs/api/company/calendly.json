@@ -372,6 +372,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "home",
+   "url": "https://calendly.com/",
+   "fetched_at": "2026-08-09T15:14:31Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 45,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://calendly.com/pricing",
+   "fetched_at": "2026-08-09T15:13:31Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 204,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
    "kind": "pricing",
    "url": "https://calendly.com/pricing",
    "fetched_at": "2026-08-09T15:04:13Z",
@@ -586,18 +610,6 @@
    "duration_ms": 173,
    "signals_found": 3,
    "signals_expected": 5
-  },
-  {
-   "kind": "home",
-   "url": "https://calendly.com/",
-   "fetched_at": "2026-08-07T15:52:32Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": null,
-   "bytes": 1235920,
-   "duration_ms": 411,
-   "signals_found": 7,
-   "signals_expected": 7
   }
  ]
 }

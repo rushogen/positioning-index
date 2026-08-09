@@ -287,6 +287,18 @@
   {
    "kind": "home",
    "url": "https://www.3ds.com/",
+   "fetched_at": "2026-08-09T15:12:47Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 392,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.3ds.com/",
    "fetched_at": "2026-08-09T15:01:47Z",
    "http_status": 304,
    "status": "unchanged",

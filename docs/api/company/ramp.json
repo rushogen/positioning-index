@@ -362,6 +362,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "home",
+   "url": "https://ramp.com/",
+   "fetched_at": "2026-08-09T15:14:04Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 14032,
+   "duration_ms": 143,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://ramp.com/pricing",
+   "fetched_at": "2026-08-09T15:11:58Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 1499894,
+   "duration_ms": 396,
+   "signals_found": 3,
+   "signals_expected": 5
+  },
+  {
    "kind": "pricing",
    "url": "https://ramp.com/pricing",
    "fetched_at": "2026-08-09T15:03:58Z",

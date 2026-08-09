@@ -376,6 +376,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "home",
+   "url": "https://www.brevo.com/",
+   "fetched_at": "2026-08-09T15:14:12Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 544716,
+   "duration_ms": 66,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.brevo.com/pricing/",
+   "fetched_at": "2026-08-09T15:12:16Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 630206,
+   "duration_ms": 124,
+   "signals_found": 4,
+   "signals_expected": 5
+  },
+  {
    "kind": "pricing",
    "url": "https://www.brevo.com/pricing/",
    "fetched_at": "2026-08-09T15:03:47Z",

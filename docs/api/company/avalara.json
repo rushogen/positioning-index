@@ -287,6 +287,18 @@
   {
    "kind": "home",
    "url": "https://www.avalara.com/us/en/index.html",
+   "fetched_at": "2026-08-09T15:12:53Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 549619,
+   "duration_ms": 173,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
+  {
+   "kind": "home",
+   "url": "https://www.avalara.com/us/en/index.html",
    "fetched_at": "2026-08-09T15:02:06Z",
    "http_status": 200,
    "status": "ok",

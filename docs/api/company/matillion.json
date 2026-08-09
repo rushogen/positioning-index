@@ -378,6 +378,30 @@
   {
    "kind": "home",
    "url": "https://www.matillion.com/",
+   "fetched_at": "2026-08-09T15:14:16Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 54367,
+   "duration_ms": 121,
+   "signals_found": 13,
+   "signals_expected": 15
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.matillion.com/pricing",
+   "fetched_at": "2026-08-09T15:12:30Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": null,
+   "bytes": 262465,
+   "duration_ms": 243,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://www.matillion.com/",
    "fetched_at": "2026-08-09T15:03:52Z",
    "http_status": 200,
    "status": "ok",

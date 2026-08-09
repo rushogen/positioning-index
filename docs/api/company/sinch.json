@@ -287,6 +287,18 @@
   {
    "kind": "home",
    "url": "https://sinch.com/",
+   "fetched_at": "2026-08-09T15:13:05Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 102,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://sinch.com/",
    "fetched_at": "2026-08-09T15:00:29Z",
    "http_status": 304,
    "status": "unchanged",

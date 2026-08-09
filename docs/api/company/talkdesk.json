@@ -378,6 +378,30 @@
   {
    "kind": "pricing",
    "url": "https://www.talkdesk.com/pricing/",
+   "fetched_at": "2026-08-09T15:14:02Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 477317,
+   "duration_ms": 171,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.talkdesk.com/",
+   "fetched_at": "2026-08-09T15:11:53Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 552461,
+   "duration_ms": 174,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.talkdesk.com/pricing/",
    "fetched_at": "2026-08-09T15:04:02Z",
    "http_status": 200,
    "status": "unchanged",

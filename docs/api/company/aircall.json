@@ -376,6 +376,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "pricing",
+   "url": "https://aircall.io/pricing/",
+   "fetched_at": "2026-08-09T15:14:12Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 583,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://aircall.io/",
+   "fetched_at": "2026-08-09T15:12:18Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 247,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
    "kind": "home",
    "url": "https://aircall.io/",
    "fetched_at": "2026-08-09T15:03:46Z",

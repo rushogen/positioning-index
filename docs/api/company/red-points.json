@@ -287,6 +287,18 @@
   {
    "kind": "home",
    "url": "https://www.redpoints.com/",
+   "fetched_at": "2026-08-09T15:12:31Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 429895,
+   "duration_ms": 376,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.redpoints.com/",
    "fetched_at": "2026-08-09T15:02:50Z",
    "http_status": 200,
    "status": "unchanged",

@@ -10,7 +10,8 @@
    "target_size": "mid-market",
    "category": "Performance management",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.15five.com/pricing"
   },
   {
    "slug": "1password",
@@ -22,7 +23,8 @@
    "target_size": "broad",
    "category": "Password management",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://1password.com/pricing"
   },
   {
    "slug": "acronis",
@@ -45,7 +47,8 @@
    "target_size": "smb",
    "category": "Marketing automation",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.activecampaign.com/pricing"
   },
   {
    "slug": "adyen",
@@ -80,7 +83,8 @@
    "target_size": "mid-market",
    "category": "Data integration (ELT)",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://airbyte.com/pricing"
   },
   {
    "slug": "aircall",
@@ -116,7 +120,8 @@
    "target_size": "mid-market",
    "category": "Global payments",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.airwallex.com/pricing"
   },
   {
    "slug": "aiven",
@@ -246,7 +251,8 @@
    "target_size": "mid-market",
    "category": "Recruiting (ATS)",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.ashbyhq.com/pricing"
   },
   {
    "slug": "assemblyai",
@@ -258,7 +264,8 @@
    "target_size": "mid-market",
    "category": "Speech AI API",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.assemblyai.com/pricing"
   },
   {
    "slug": "astronomer",
@@ -306,7 +313,8 @@
    "target_size": "mid-market",
    "category": "SMS marketing",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.attentive.com/pricing"
   },
   {
    "slug": "attio",
@@ -385,7 +393,8 @@
    "target_size": "smb",
    "category": "HR (HRIS)",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.bamboohr.com/pricing"
   },
   {
    "slug": "basecamp",
@@ -397,7 +406,8 @@
    "target_size": "smb",
    "category": "Project management",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://basecamp.com/pricing"
   },
   {
    "slug": "bigcommerce",
@@ -409,7 +419,8 @@
    "target_size": "mid-market",
    "category": "E-commerce platform",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.bigcommerce.com/pricing"
   },
   {
    "slug": "bill",
@@ -564,7 +575,8 @@
    "target_size": "mid-market",
    "category": "Reverse ETL",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.getcensus.com/pricing"
   },
   {
    "slug": "checkout-com",
@@ -600,7 +612,8 @@
    "target_size": "mid-market",
    "category": "CI/CD",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://circleci.com/pricing"
   },
   {
    "slug": "clari",
@@ -636,7 +649,8 @@
    "target_size": "smb",
    "category": "Auth for developers",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://clerk.com/pricing"
   },
   {
    "slug": "clickhouse",
@@ -709,7 +723,8 @@
    "target_size": "mid-market",
    "category": "Docs / apps",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://coda.io/pricing"
   },
   {
    "slug": "cognigy",
@@ -732,7 +747,8 @@
    "target_size": "mid-market",
    "category": "Sales intelligence",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.cognism.com/pricing"
   },
   {
    "slug": "cognite",
@@ -837,7 +853,8 @@
    "target_size": "smb",
    "category": "AI go-to-market",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.copy.ai/pricing"
   },
   {
    "slug": "coupa",
@@ -872,7 +889,8 @@
    "target_size": "mid-market",
    "category": "Employee experience",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.cultureamp.com/pricing"
   },
   {
    "slug": "cursor",
@@ -884,7 +902,8 @@
    "target_size": "broad",
    "category": "AI code editor",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://cursor.com/pricing"
   },
   {
    "slug": "customer-io",
@@ -908,7 +927,8 @@
    "target_size": "mid-market",
    "category": "Data orchestration",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://dagster.io/pricing"
   },
   {
    "slug": "darktrace",
@@ -1060,7 +1080,8 @@
    "target_size": "smb",
    "category": "Audio/video editing",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.descript.com/pricing"
   },
   {
    "slug": "dialpad",
@@ -1072,7 +1093,8 @@
    "target_size": "mid-market",
    "category": "Business comms (AI)",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.dialpad.com/pricing"
   },
   {
    "slug": "diligent",
@@ -1107,7 +1129,8 @@
    "target_size": "broad",
    "category": "Containers",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.docker.com/pricing"
   },
   {
    "slug": "docplanner",
@@ -1177,7 +1200,8 @@
    "target_size": "mid-market",
    "category": "Conversational marketing",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.drift.com/pricing"
   },
   {
    "slug": "dynatrace",
@@ -1213,7 +1237,8 @@
    "target_size": "smb",
    "category": "Expense management",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.expensify.com/pricing"
   },
   {
    "slug": "factorial",
@@ -1271,7 +1296,8 @@
    "target_size": "mid-market",
    "category": "Cloud data warehouse",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.firebolt.io/pricing"
   },
   {
    "slug": "fireflies",
@@ -1283,7 +1309,8 @@
    "target_size": "smb",
    "category": "Meeting AI notetaker",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://fireflies.ai/pricing"
   },
   {
    "slug": "five9",
@@ -1331,7 +1358,8 @@
    "target_size": "smb",
    "category": "App hosting",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://fly.io/pricing"
   },
   {
    "slug": "fortnox",
@@ -1354,7 +1382,8 @@
    "target_size": "smb",
    "category": "Website builder",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.framer.com/pricing"
   },
   {
    "slug": "freshworks",
@@ -1391,7 +1420,8 @@
    "target_size": "mid-market",
    "category": "Experience analytics",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.fullstory.com/pricing"
   },
   {
    "slug": "gainsight",
@@ -1427,7 +1457,8 @@
    "target_size": "mid-market",
    "category": "Secrets detection",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.gitguardian.com/pricing"
   },
   {
    "slug": "github",
@@ -1463,7 +1494,8 @@
    "target_size": "mid-market",
    "category": "Cloud dev environments",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.gitpod.io/pricing"
   },
   {
    "slug": "gocardless",
@@ -1499,7 +1531,8 @@
    "target_size": "smb",
    "category": "E-commerce support",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.gorgias.com/pricing"
   },
   {
    "slug": "grafana",
@@ -1511,7 +1544,8 @@
    "target_size": "broad",
    "category": "Observability",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://grafana.com/pricing"
   },
   {
    "slug": "grammarly",
@@ -1523,7 +1557,8 @@
    "target_size": "broad",
    "category": "Writing assistant",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.grammarly.com/pricing"
   },
   {
    "slug": "greenhouse",
@@ -1535,7 +1570,8 @@
    "target_size": "mid-market",
    "category": "Recruiting (ATS)",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.greenhouse.com/pricing"
   },
   {
    "slug": "guru",
@@ -1547,7 +1583,8 @@
    "target_size": "mid-market",
    "category": "Knowledge management",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.getguru.com/pricing"
   },
   {
    "slug": "harness",
@@ -1571,7 +1608,8 @@
    "target_size": "mid-market",
    "category": "Product analytics",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.heap.io/pricing"
   },
   {
    "slug": "helpscout",
@@ -1583,7 +1621,8 @@
    "target_size": "smb",
    "category": "Customer support",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.helpscout.com/pricing"
   },
   {
    "slug": "hex",
@@ -1595,7 +1634,8 @@
    "target_size": "mid-market",
    "category": "Data notebooks",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://hex.tech/pricing"
   },
   {
    "slug": "hibob",
@@ -1607,7 +1647,8 @@
    "target_size": "mid-market",
    "category": "HR (HRIS)",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.hibob.com/pricing"
   },
   {
    "slug": "highspot",
@@ -1643,7 +1684,8 @@
    "target_size": "mid-market",
    "category": "Observability",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.honeycomb.io/pricing"
   },
   {
    "slug": "hornetsecurity",
@@ -1666,7 +1708,8 @@
    "target_size": "smb",
    "category": "Website analytics",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.hotjar.com/pricing"
   },
   {
    "slug": "hubspot",
@@ -1690,7 +1733,8 @@
    "target_size": "broad",
    "category": "ML models / hub",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://huggingface.co/pricing"
   },
   {
    "slug": "ibm",
@@ -1736,7 +1780,8 @@
    "target_size": "mid-market",
    "category": "Time-series database",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.influxdata.com/pricing"
   },
   {
    "slug": "informatica",
@@ -1829,7 +1874,8 @@
    "target_size": "smb",
    "category": "AI content marketing",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.jasper.ai/pricing"
   },
   {
    "slug": "jedox",
@@ -1876,7 +1922,8 @@
    "target_size": "mid-market",
    "category": "Directory / IAM",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://jumpcloud.com/pricing"
   },
   {
    "slug": "juro",
@@ -1958,7 +2005,8 @@
    "target_size": "mid-market",
    "category": "Recruiting (ATS)",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.lever.co/pricing"
   },
   {
    "slug": "linear",
@@ -2040,7 +2088,8 @@
    "target_size": "smb",
    "category": "Email marketing",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://mailchimp.com/pricing"
   },
   {
    "slug": "make",
@@ -2052,7 +2101,8 @@
    "target_size": "smb",
    "category": "Automation / iPaaS",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.make.com/pricing"
   },
   {
    "slug": "mambu",
@@ -2087,7 +2137,8 @@
    "target_size": "mid-market",
    "category": "Streaming database",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://materialize.com/pricing"
   },
   {
    "slug": "matillion",
@@ -2111,7 +2162,8 @@
    "target_size": "smb",
    "category": "SMB payments",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://meliopayments.com/pricing"
   },
   {
    "slug": "mendix",
@@ -2194,7 +2246,8 @@
    "target_size": "mid-market",
    "category": "Serverless compute (AI)",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://modal.com/pricing"
   },
   {
    "slug": "mode",
@@ -2206,7 +2259,8 @@
    "target_size": "mid-market",
    "category": "BI & analytics",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://mode.com/pricing"
   },
   {
    "slug": "modern-treasury",
@@ -2278,7 +2332,8 @@
    "target_size": "smb",
    "category": "AI calendar / tasks",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.usemotion.com/pricing"
   },
   {
    "slug": "n8n",
@@ -2290,7 +2345,8 @@
    "target_size": "smb",
    "category": "Workflow automation",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://n8n.io/pricing"
   },
   {
    "slug": "navan",
@@ -2302,7 +2358,8 @@
    "target_size": "mid-market",
    "category": "Travel & expense",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://navan.com/pricing"
   },
   {
    "slug": "navex",
@@ -2349,7 +2406,8 @@
    "target_size": "mid-market",
    "category": "Serverless Postgres",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://neon.tech/pricing"
   },
   {
    "slug": "netlify",
@@ -2525,7 +2583,8 @@
    "target_size": "smb",
    "category": "Meeting transcription",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://otter.ai/pricing"
   },
   {
    "slug": "outreach",
@@ -2571,7 +2630,8 @@
    "target_size": "mid-market",
    "category": "Global HR / EOR",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.oysterhr.com/pricing"
   },
   {
    "slug": "paddle",
@@ -2653,7 +2713,8 @@
    "target_size": "mid-market",
    "category": "Payroll & HR",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.paylocity.com/pricing"
   },
   {
    "slug": "pega",
@@ -2711,7 +2772,8 @@
    "target_size": "mid-market",
    "category": "Vector database",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.pinecone.io/pricing"
   },
   {
    "slug": "pipedrive",
@@ -2735,7 +2797,8 @@
    "target_size": "mid-market",
    "category": "Financial data API",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://plaid.com/pricing"
   },
   {
    "slug": "planetscale",
@@ -2747,7 +2810,8 @@
    "target_size": "mid-market",
    "category": "Serverless database",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://planetscale.com/pricing"
   },
   {
    "slug": "pleo",
@@ -2783,7 +2847,8 @@
    "target_size": "broad",
    "category": "API platform",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.postman.com/pricing"
   },
   {
    "slug": "prefect",
@@ -2795,7 +2860,8 @@
    "target_size": "mid-market",
    "category": "Data orchestration",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.prefect.io/pricing"
   },
   {
    "slug": "procore",
@@ -2853,7 +2919,8 @@
    "target_size": "mid-market",
    "category": "Infrastructure as code",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.pulumi.com/pricing"
   },
   {
    "slug": "qonto",
@@ -2912,7 +2979,8 @@
    "target_size": "smb",
    "category": "Cloud hosting (PaaS)",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://railway.app/pricing"
   },
   {
    "slug": "ramp",
@@ -2994,7 +3062,8 @@
    "target_size": "broad",
    "category": "Global HR / EOR",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://remote.com/pricing"
   },
   {
    "slug": "render",
@@ -3006,7 +3075,8 @@
    "target_size": "smb",
    "category": "Cloud hosting (PaaS)",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://render.com/pricing"
   },
   {
    "slug": "replicate",
@@ -3018,7 +3088,8 @@
    "target_size": "smb",
    "category": "ML model hosting",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://replicate.com/pricing"
   },
   {
    "slug": "replit",
@@ -3030,7 +3101,8 @@
    "target_size": "broad",
    "category": "Cloud IDE / AI coding",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://replit.com/pricing"
   },
   {
    "slug": "resend",
@@ -3042,7 +3114,8 @@
    "target_size": "smb",
    "category": "Email API",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://resend.com/pricing"
   },
   {
    "slug": "retool",
@@ -3066,7 +3139,8 @@
    "target_size": "mid-market",
    "category": "Business comms",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.ringcentral.com/pricing"
   },
   {
    "slug": "rippling",
@@ -3102,7 +3176,8 @@
    "target_size": "mid-market",
    "category": "Customer data platform",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.rudderstack.com/pricing"
   },
   {
    "slug": "sage",
@@ -3242,7 +3317,8 @@
    "target_size": "mid-market",
    "category": "Code security (SAST)",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://semgrep.dev/pricing"
   },
   {
    "slug": "sennder",
@@ -3300,7 +3376,8 @@
    "target_size": "mid-market",
    "category": "Field service software",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.servicetitan.com/pricing"
   },
   {
    "slug": "shopify",
@@ -3312,7 +3389,8 @@
    "target_size": "broad",
    "category": "E-commerce platform",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.shopify.com/pricing"
   },
   {
    "slug": "shortcut",
@@ -3324,7 +3402,8 @@
    "target_size": "smb",
    "category": "Project management (dev)",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.shortcut.com/pricing"
   },
   {
    "slug": "showpad",
@@ -3347,7 +3426,8 @@
    "target_size": "mid-market",
    "category": "BI & analytics",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.sigmacomputing.com/pricing"
   },
   {
    "slug": "signicat",
@@ -3487,7 +3567,8 @@
    "target_size": "mid-market",
    "category": "Code quality",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.sonarsource.com/pricing"
   },
   {
    "slug": "sourcegraph",
@@ -3523,7 +3604,8 @@
    "target_size": "mid-market",
    "category": "Feature flags",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.split.io/pricing"
   },
   {
    "slug": "splunk",
@@ -3582,7 +3664,8 @@
    "target_size": "mid-market",
    "category": "Experimentation",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://statsig.com/pricing"
   },
   {
    "slug": "stripe",
@@ -3606,7 +3689,8 @@
    "target_size": "mid-market",
    "category": "Auth for developers",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://stytch.com/pricing"
   },
   {
    "slug": "sumologic",
@@ -3665,7 +3749,8 @@
    "target_size": "mid-market",
    "category": "AI video generation",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.synthesia.io/pricing"
   },
   {
    "slug": "sysdig",
@@ -3737,7 +3822,8 @@
    "target_size": "smb",
    "category": "Work management",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.teamwork.com/pricing"
   },
   {
    "slug": "temenos",
@@ -3807,7 +3893,8 @@
    "target_size": "mid-market",
    "category": "Time-series database",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.timescale.com/pricing"
   },
   {
    "slug": "tink",
@@ -3830,7 +3917,8 @@
    "target_size": "mid-market",
    "category": "AP automation",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://tipalti.com/pricing"
   },
   {
    "slug": "tray",
@@ -3842,7 +3930,8 @@
    "target_size": "mid-market",
    "category": "Integration (iPaaS)",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://tray.io/pricing"
   },
   {
    "slug": "tricentis",
@@ -4005,7 +4094,8 @@
    "target_size": "mid-market",
    "category": "Physical security (IoT)",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.verkada.com/pricing"
   },
   {
    "slug": "visma",
@@ -4039,7 +4129,8 @@
    "target_size": "mid-market",
    "category": "Vector database",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://weaviate.io/pricing"
   },
   {
    "slug": "webflow",
@@ -4063,7 +4154,8 @@
    "target_size": "mid-market",
    "category": "ML experiment tracking",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://wandb.ai/pricing"
   },
   {
    "slug": "wise",
@@ -4087,7 +4179,8 @@
    "target_size": "smb",
    "category": "Video marketing",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://wistia.com/pricing"
   },
   {
    "slug": "wiz",
@@ -4111,7 +4204,8 @@
    "target_size": "smb",
    "category": "Recruiting (ATS)",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.workable.com/pricing"
   },
   {
    "slug": "workato",
@@ -4168,7 +4262,8 @@
    "target_size": "mid-market",
    "category": "Enterprise auth (dev)",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://workos.com/pricing"
   },
   {
    "slug": "wrike",
@@ -4180,7 +4275,8 @@
    "target_size": "mid-market",
    "category": "Work management",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.wrike.com/pricing"
   },
   {
    "slug": "writer",
@@ -4239,7 +4335,8 @@
    "target_size": "broad",
    "category": "Video conferencing",
    "meta_confidence": "high",
-   "added": "2026-08-09"
+   "added": "2026-08-09",
+   "pricing_url": "https://www.zoom.com/pricing"
   },
   {
    "slug": "zscaler",

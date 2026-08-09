@@ -643,6 +643,30 @@
  ],
  "fetches": [
   {
+   "kind": "home",
+   "url": "https://www.salesforce.com/?bc=HL",
+   "fetched_at": "2026-08-09T15:14:16Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 580725,
+   "duration_ms": 244,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.salesforce.com/sales/pricing/?bc=HL",
+   "fetched_at": "2026-08-09T15:12:30Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 1066190,
+   "duration_ms": 583,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
    "kind": "pricing",
    "url": "https://www.salesforce.com/sales/pricing/?bc=HL",
    "fetched_at": "2026-08-09T15:03:57Z",

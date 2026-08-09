@@ -17,6 +17,30 @@
   {
    "kind": "pricing",
    "url": "https://drata.com/pricing",
+   "fetched_at": "2026-08-09T15:14:42Z",
+   "http_status": null,
+   "status": "blocked",
+   "reason": "robots.txt: robots.txt returned 403: access explicitly refused",
+   "bytes": 0,
+   "duration_ms": 0,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://drata.com/",
+   "fetched_at": "2026-08-09T15:13:42Z",
+   "http_status": null,
+   "status": "blocked",
+   "reason": "robots.txt: robots.txt returned 403: access explicitly refused",
+   "bytes": 0,
+   "duration_ms": 260,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://drata.com/pricing",
    "fetched_at": "2026-08-09T15:04:36Z",
    "http_status": null,
    "status": "blocked",

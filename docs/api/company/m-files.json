@@ -287,6 +287,18 @@
   {
    "kind": "home",
    "url": "https://www.m-files.com/",
+   "fetched_at": "2026-08-09T15:12:42Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 269,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.m-files.com/",
    "fetched_at": "2026-08-09T15:00:35Z",
    "http_status": 304,
    "status": "unchanged",

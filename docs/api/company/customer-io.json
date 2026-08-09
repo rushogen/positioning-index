@@ -376,6 +376,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "pricing",
+   "url": "https://customer.io/pricing",
+   "fetched_at": "2026-08-09T15:14:04Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 99,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://customer.io/",
+   "fetched_at": "2026-08-09T15:11:58Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 179,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
    "kind": "home",
    "url": "https://customer.io/",
    "fetched_at": "2026-08-09T15:03:40Z",
