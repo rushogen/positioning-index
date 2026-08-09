@@ -378,6 +378,30 @@
   {
    "kind": "pricing",
    "url": "https://hightouch.com/pricing",
+   "fetched_at": "2026-08-09T15:03:49Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 363,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://hightouch.com/",
+   "fetched_at": "2026-08-09T15:00:36Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 224,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://hightouch.com/pricing",
    "fetched_at": "2026-08-08T11:47:34Z",
    "http_status": 200,
    "status": "ok",

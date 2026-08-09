@@ -374,6 +374,30 @@
   {
    "kind": "pricing",
    "url": "https://calendly.com/pricing",
+   "fetched_at": "2026-08-09T15:04:13Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 188,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://calendly.com/",
+   "fetched_at": "2026-08-09T15:02:07Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 277,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://calendly.com/pricing",
    "fetched_at": "2026-08-09T14:56:56Z",
    "http_status": 304,
    "status": "unchanged",

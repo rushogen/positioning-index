@@ -118,7 +118,7 @@
    "target_size": "mid-market",
    "category": "Global payments",
    "meta_confidence": "high",
-   "ai": false,
+   "ai": true,
    "free_tier": null
   },
   {
@@ -1162,7 +1162,7 @@
    "target_size": "broad",
    "category": "E-signature",
    "meta_confidence": "high",
-   "ai": false,
+   "ai": true,
    "free_tier": "no"
   },
   {
@@ -1318,7 +1318,7 @@
    "target_size": "enterprise",
    "category": "Contact center (CCaaS)",
    "meta_confidence": "high",
-   "ai": false,
+   "ai": true,
    "free_tier": null
   },
   {
@@ -1342,7 +1342,7 @@
    "target_size": "enterprise",
    "category": "Freight forwarding",
    "meta_confidence": "high",
-   "ai": false,
+   "ai": true,
    "free_tier": null
   },
   {
@@ -2074,7 +2074,7 @@
    "target_size": "smb",
    "category": "Email marketing",
    "meta_confidence": "high",
-   "ai": false,
+   "ai": true,
    "free_tier": null
   },
   {
@@ -4334,5 +4334,5 @@
    "free_tier": null
   }
  ],
- "generated_at": "2026-08-09T14:57:39Z"
+ "generated_at": "2026-08-09T15:04:36Z"
 }

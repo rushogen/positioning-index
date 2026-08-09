@@ -288,6 +288,18 @@
   {
    "kind": "home",
    "url": "https://www.bloomreach.com/en",
+   "fetched_at": "2026-08-09T15:02:16Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 589922,
+   "duration_ms": 835,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.bloomreach.com/en",
    "fetched_at": "2026-08-09T14:55:26Z",
    "http_status": 200,
    "status": "ok",

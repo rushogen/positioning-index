@@ -287,6 +287,18 @@
   {
    "kind": "home",
    "url": "https://www.cognite.com/en",
+   "fetched_at": "2026-08-09T15:00:43Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 632740,
+   "duration_ms": 911,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.cognite.com/en",
    "fetched_at": "2026-08-08T11:46:53Z",
    "http_status": 200,
    "status": "ok",

@@ -288,6 +288,18 @@
   {
    "kind": "home",
    "url": "https://www.wiz.io/",
+   "fetched_at": "2026-08-09T15:02:27Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 507,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.wiz.io/",
    "fetched_at": "2026-08-09T14:56:49Z",
    "http_status": 200,
    "status": "ok",

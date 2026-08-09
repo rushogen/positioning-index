@@ -378,6 +378,30 @@
   {
    "kind": "home",
    "url": "https://attio.com/",
+   "fetched_at": "2026-08-09T15:03:59Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 1100211,
+   "duration_ms": 215,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://attio.com/pricing",
+   "fetched_at": "2026-08-09T15:01:26Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 1248986,
+   "duration_ms": 469,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://attio.com/",
    "fetched_at": "2026-08-08T11:47:05Z",
    "http_status": 200,
    "status": "ok",

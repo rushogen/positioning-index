@@ -376,6 +376,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "home",
+   "url": "https://www.paddle.com/",
+   "fetched_at": "2026-08-09T15:04:15Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 119,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.paddle.com/pricing",
+   "fetched_at": "2026-08-09T15:02:32Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 458,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
    "kind": "pricing",
    "url": "https://www.paddle.com/pricing",
    "fetched_at": "2026-08-09T14:43:02Z",

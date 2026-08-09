@@ -368,6 +368,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "pricing",
+   "url": "https://www.braze.com/pricing",
+   "fetched_at": "2026-08-09T15:03:40Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 434139,
+   "duration_ms": 224,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.braze.com/",
+   "fetched_at": "2026-08-09T15:00:17Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 722283,
+   "duration_ms": 474,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
    "kind": "home",
    "url": "https://www.braze.com/",
    "fetched_at": "2026-08-08T11:47:09Z",

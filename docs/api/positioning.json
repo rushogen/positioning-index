@@ -16,6 +16,11 @@
       "text": "AI-native cyber platform"
      },
      {
+      "slug": "airwallex",
+      "name": "Airwallex",
+      "text": "The intelligent financial platform for global businesses"
+     },
+     {
       "slug": "alteryx",
       "name": "Alteryx",
       "text": "Drive Faster Decisions with a Unified Data Analytics Platform"
@@ -69,11 +74,6 @@
       "slug": "dixa",
       "name": "Dixa",
       "text": "The Agentic CS Platform Behind Exceptional Ecommerce Brands"
-     },
-     {
-      "slug": "flexport",
-      "name": "Flexport",
-      "text": "Your end-to-end supply chain, all in one platform"
      },
      {
       "slug": "gitpod",
@@ -481,7 +481,7 @@
    },
    {
     "word": "agentic",
-    "n": 18,
+    "n": 19,
     "companies": [
      {
       "slug": "anaplan",
@@ -572,6 +572,11 @@
       "slug": "voyado",
       "name": "Voyado",
       "text": "The Agentic CX Suite for Retail"
+     },
+     {
+      "slug": "zapier",
+      "name": "Zapier",
+      "text": "The automation layer for agentic AI"
      }
     ]
    },
@@ -764,7 +769,7 @@
    },
    {
     "word": "one",
-    "n": 16,
+    "n": 15,
     "companies": [
      {
       "slug": "airtable",
@@ -785,11 +790,6 @@
       "slug": "coda",
       "name": "Coda",
       "text": "Your all-in-one collaborative workspace."
-     },
-     {
-      "slug": "flexport",
-      "name": "Flexport",
-      "text": "Your end-to-end supply chain, all in one platform"
      },
      {
       "slug": "grafana",
@@ -1128,68 +1128,68 @@
     ]
    },
    {
-    "word": "teams",
+    "word": "powered",
     "n": 12,
     "companies": [
      {
-      "slug": "airtable",
-      "name": "Airtable",
-      "text": "All your teams, all their workflows—connected in one workspace"
+      "slug": "15five",
+      "name": "15Five",
+      "text": "The AI-powered performance management platform built for business impact"
      },
      {
-      "slug": "amplitude",
-      "name": "Amplitude",
-      "text": "A new era for product teams"
+      "slug": "bill",
+      "name": "BILL",
+      "text": "Meet BILL. Your AI-powered financial operations platform."
      },
      {
-      "slug": "asana",
-      "name": "Asana",
-      "text": "The OS for human-agent teams"
+      "slug": "datadog",
+      "name": "Datadog",
+      "text": "AI-Powered Observability and Security"
      },
      {
-      "slug": "atlassian",
-      "name": "Atlassian",
-      "text": "Collaboration for Software, IT & Business Teams"
+      "slug": "dialpad",
+      "name": "Dialpad",
+      "text": "Agentic AI-powered Contact Center & Communications | Dialpad"
      },
      {
-      "slug": "genesys",
-      "name": "Genesys",
-      "text": "Loyal customers. Efficient teams. That’s CX done right."
+      "slug": "flexport",
+      "name": "Flexport",
+      "text": "AI-powered logistics for the real world"
      },
      {
-      "slug": "hubspot",
-      "name": "HubSpot",
-      "text": "Where go-to-market teams go to grow scale close retain grow"
+      "slug": "fullstory",
+      "name": "FullStory",
+      "text": "Intelligent digital experiences. Powered by human context."
      },
      {
-      "slug": "jetbrains",
-      "name": "JetBrains",
-      "text": "JetBrains: Essential tools for software developers and teams"
+      "slug": "relativity",
+      "name": "Relativity",
+      "text": "AI-Powered Legal Data Software | Relativity"
      },
      {
-      "slug": "linear",
-      "name": "Linear",
-      "text": "The product development system for teams and agents"
+      "slug": "signicat",
+      "name": "Signicat",
+      "text": "Fight fraud with digital identity powered by AI"
      },
      {
-      "slug": "notion",
-      "name": "Notion",
-      "text": "Where teams and agents Think together."
+      "slug": "teamwork",
+      "name": "Teamwork",
+      "text": "AI-POWERED PROFESSIONAL SERVICES AUTOMATION"
      },
      {
-      "slug": "outreach",
-      "name": "Outreach",
-      "text": "Agentic AI Platform for Revenue Teams"
+      "slug": "thoughtspot",
+      "name": "ThoughtSpot",
+      "text": "Data to Decisions, Powered by Agents Analytics and BI"
      },
      {
-      "slug": "shortcut",
-      "name": "Shortcut",
-      "text": "Fast Project Management for Software Teams and their Agents"
+      "slug": "typeform",
+      "name": "Typeform",
+      "text": "Forms & Automated Workflows, Powered by AI | Typeform"
      },
      {
-      "slug": "tray",
-      "name": "Tray.ai",
-      "text": "Your teams build with AI. Helix runs and governs it all."
+      "slug": "zendesk",
+      "name": "Zendesk",
+      "text": "AI-powered service platform"
      }
     ]
    }
@@ -1303,13 +1303,13 @@
     }
    ]
   },
-  "distinct_words": 724
+  "distinct_words": 711
  },
  "category_nouns": {
   "groups": [
    {
     "noun": "platform",
-    "n": 126,
+    "n": 128,
     "companies": [
      {
       "slug": "15five",
@@ -1330,6 +1330,11 @@
       "slug": "aircall",
       "name": "Aircall",
       "text": "ai-powered customer communications platform for smbs"
+     },
+     {
+      "slug": "airwallex",
+      "name": "Airwallex",
+      "text": "intelligent financial platform for global businesses"
      },
      {
       "slug": "aiven",
@@ -1514,7 +1519,7 @@
      {
       "slug": "flexport",
       "name": "Flexport",
-      "text": "one platform"
+      "text": "supply chain platform"
      },
      {
       "slug": "fullstory",
@@ -1615,6 +1620,11 @@
       "slug": "lokalise",
       "name": "Lokalise",
       "text": "world-class ai localization platform"
+     },
+     {
+      "slug": "mailchimp",
+      "name": "Mailchimp",
+      "text": "sms marketing platform"
      },
      {
       "slug": "make",
@@ -2176,7 +2186,7 @@
      {
       "slug": "five9",
       "name": "Five9",
-      "text": "cloud"
+      "text": "most reliable cloud"
      },
      {
       "slug": "genesys",
@@ -2551,47 +2561,6 @@
     ]
    },
    {
-    "noun": "tool",
-    "n": 7,
-    "companies": [
-     {
-      "slug": "docplanner",
-      "name": "Docplanner",
-      "text": "while integrating smart tools"
-     },
-     {
-      "slug": "hotjar",
-      "name": "Hotjar",
-      "text": "behavior analytics tools"
-     },
-     {
-      "slug": "jetbrains",
-      "name": "JetBrains",
-      "text": "essential tools for software developers and teams"
-     },
-     {
-      "slug": "loom",
-      "name": "Loom",
-      "text": "online screen recording tool"
-     },
-     {
-      "slug": "mailchimp",
-      "name": "Mailchimp",
-      "text": "den zeitsparenden marketing- tools"
-     },
-     {
-      "slug": "mentimeter",
-      "name": "Mentimeter",
-      "text": "audience engagement tool"
-     },
-     {
-      "slug": "supermetrics",
-      "name": "Supermetrics",
-      "text": "favorite reporting tool"
-     }
-    ]
-   },
-   {
     "noun": "service",
     "n": 6,
     "companies": [
@@ -2624,6 +2593,42 @@
       "slug": "zendesk",
       "name": "Zendesk",
       "text": "ai-powered service"
+     }
+    ]
+   },
+   {
+    "noun": "tool",
+    "n": 6,
+    "companies": [
+     {
+      "slug": "docplanner",
+      "name": "Docplanner",
+      "text": "while integrating smart tools"
+     },
+     {
+      "slug": "hotjar",
+      "name": "Hotjar",
+      "text": "behavior analytics tools"
+     },
+     {
+      "slug": "jetbrains",
+      "name": "JetBrains",
+      "text": "essential tools for software developers and teams"
+     },
+     {
+      "slug": "loom",
+      "name": "Loom",
+      "text": "online screen recording tool"
+     },
+     {
+      "slug": "mentimeter",
+      "name": "Mentimeter",
+      "text": "audience engagement tool"
+     },
+     {
+      "slug": "supermetrics",
+      "name": "Supermetrics",
+      "text": "favorite reporting tool"
      }
     ]
    },
@@ -2989,15 +2994,11 @@
   ],
   "coverage": {
    "tracked": 361,
-   "readable": 303,
-   "unreadable": 58,
+   "readable": 304,
+   "unreadable": 57,
    "held": 0,
    "suspect": 0,
    "missing": [
-    {
-     "slug": "airwallex",
-     "name": "Airwallex"
-    },
     {
      "slug": "alan",
      "name": "Alan"
@@ -3322,6 +3323,17 @@
      "subhead"
     ],
     "text": "All your teams, all their workflows—connected in one workspace"
+   },
+   {
+    "slug": "airwallex",
+    "name": "Airwallex",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "subhead"
+    ],
+    "text": "The intelligent financial platform for global businesses"
    },
    {
     "slug": "aiven",
@@ -3995,6 +4007,17 @@
     "text": "Accelerate agent adoption, safely."
    },
    {
+    "slug": "docusign",
+    "name": "Docusign",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "subhead"
+    ],
+    "text": "Do (much) more with IAM"
+   },
+   {
     "slug": "dremio",
     "name": "Dremio",
     "terms": [
@@ -4068,6 +4091,17 @@
     "text": "The #1 AI Assistant For Your Meetings"
    },
    {
+    "slug": "five9",
+    "name": "Five9",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "subhead"
+    ],
+    "text": "Containment rate looks good, but CSAT tells a different story?"
+   },
+   {
     "slug": "fivetran",
     "name": "Fivetran",
     "terms": [
@@ -4081,6 +4115,17 @@
      "category_label"
     ],
     "text": "Automated data for autonomous agents"
+   },
+   {
+    "slug": "flexport",
+    "name": "Flexport",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "headline"
+    ],
+    "text": "AI-powered logistics for the real world"
    },
    {
     "slug": "fly-io",
@@ -4610,6 +4655,17 @@
      "category_label"
     ],
     "text": "Put context-first document management to work."
+   },
+   {
+    "slug": "mailchimp",
+    "name": "Mailchimp",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "subhead"
+    ],
+    "text": "Email & SMS marketing minus the learning curve"
    },
    {
     "slug": "make",
@@ -5426,7 +5482,7 @@
      "subhead",
      "category_label"
     ],
-    "text": "Stay compliant with digital identity powered by AI"
+    "text": "Fight fraud with digital identity powered by AI"
    },
    {
     "slug": "sinch",
@@ -5990,13 +6046,14 @@
     "slug": "zapier",
     "name": "Zapier",
     "terms": [
+     "agent",
      "ai"
     ],
     "fields": [
      "headline",
      "subhead"
     ],
-    "text": "Your tools. Your rules. Any AI."
+    "text": "The automation layer for agentic AI"
    },
    {
     "slug": "zendesk",
@@ -6048,11 +6105,6 @@
     "slug": "afas",
     "name": "AFAS Software",
     "text": "Succes begint met AFAS"
-   },
-   {
-    "slug": "airwallex",
-    "name": "Airwallex",
-    "text": "Die intelligente Plattform für internationale Unternehmen"
    },
    {
     "slug": "alan",
@@ -6190,11 +6242,6 @@
     "text": "Helping people live longer, healthier lives"
    },
    {
-    "slug": "docusign",
-    "name": "Docusign",
-    "text": "Everything you need to agree"
-   },
-   {
     "slug": "expensify",
     "name": "Expensify",
     "text": "Logging you in..."
@@ -6213,16 +6260,6 @@
     "slug": "figma",
     "name": "Figma",
     "text": "The intelligent canvas for infinite creativity"
-   },
-   {
-    "slug": "five9",
-    "name": "Five9",
-    "text": "Die Kundenbindungsrate sieht gut aus, doch die Kundenzufriedenheit (CSAT) zeichnet ein anderes Bild?"
-   },
-   {
-    "slug": "flexport",
-    "name": "Flexport",
-    "text": "Your end-to-end supply chain, all in one platform"
    },
    {
     "slug": "fortnox",
@@ -6293,11 +6330,6 @@
     "slug": "lever",
     "name": "Lever",
     "text": "Hiring That Doesn't Hijack Your Week"
-   },
-   {
-    "slug": "mailchimp",
-    "name": "Mailchimp",
-    "text": "E-Mail- und SMS-Marketing ohne mühsame Einarbeitung"
    },
    {
     "slug": "mambu",
@@ -6482,7 +6514,7 @@
    {
     "slug": "sennder",
     "name": "sennder",
-    "text": "sennder Technologies GmbH | Digitale Spedition"
+    "text": "Digital Freight Forwarder | sennder Technologies GmbH"
    },
    {
     "slug": "sentry",
@@ -6613,7 +6645,7 @@
   "by_field": [
    {
     "field": "headline",
-    "n": 145,
+    "n": 146,
     "companies": [
      {
       "slug": "15five",
@@ -6839,6 +6871,11 @@
       "slug": "fivetran",
       "name": "Fivetran",
       "text": "Automated data for autonomous agents"
+     },
+     {
+      "slug": "flexport",
+      "name": "Flexport",
+      "text": "AI-powered logistics for the real world"
      },
      {
       "slug": "fly-io",
@@ -7193,7 +7230,7 @@
      {
       "slug": "signicat",
       "name": "Signicat",
-      "text": "Stay compliant with digital identity powered by AI"
+      "text": "Fight fraud with digital identity powered by AI"
      },
      {
       "slug": "sinch",
@@ -7333,7 +7370,7 @@
      {
       "slug": "zapier",
       "name": "Zapier",
-      "text": "Your tools. Your rules. Any AI."
+      "text": "The automation layer for agentic AI"
      },
      {
       "slug": "zendesk",
@@ -7344,7 +7381,7 @@
    },
    {
     "field": "subhead",
-    "n": 169,
+    "n": 173,
     "companies": [
      {
       "slug": "15five",
@@ -7380,6 +7417,11 @@
       "slug": "airtable",
       "name": "Airtable",
       "text": "Build AI-powered workflows that unify data, maximize collaboration, and set your teams up for long-term success. No code required."
+     },
+     {
+      "slug": "airwallex",
+      "name": "Airwallex",
+      "text": "Manage payments, treasury, and spend with AI-native financial infrastructure and software."
      },
      {
       "slug": "alteryx",
@@ -7557,6 +7599,11 @@
       "text": "MicroVM isolation for every agent session. Network and filesystem locked down at the runtime."
      },
      {
+      "slug": "docusign",
+      "name": "Docusign",
+      "text": "Save time and unlock value from your agreements. With our pre-configured IAM applications, you can automate workflows, manage and analyze documents with AI, and seamlessly connect agreement data across systems."
+     },
+     {
       "slug": "dremio",
       "name": "Dremio",
       "text": "The only lakehouse built for agents, managed by agents"
@@ -7580,6 +7627,11 @@
       "slug": "firebolt",
       "name": "Firebolt",
       "text": "Built for AI Agents, real-time analytics and efficient ELT with the best price-performance in the market"
+     },
+     {
+      "slug": "five9",
+      "name": "Five9",
+      "text": "Containment measures how many customers stopped. CSAT measures whether they wanted to. The gap between them is your AI problem."
      },
      {
       "slug": "fivetran",
@@ -7740,6 +7792,11 @@
       "slug": "m-files",
       "name": "M-Files",
       "text": "M-Files is a metadata-driven document management system that helps business and IT leaders work faster and smarter. Documents are easy to find and trust, and ready to support AI."
+     },
+     {
+      "slug": "mailchimp",
+      "name": "Mailchimp",
+      "text": "Drive revenue with intuitive marketing analytics, automations, and AI tools."
      },
      {
       "slug": "make",
@@ -8174,7 +8231,7 @@
      {
       "slug": "zapier",
       "name": "Zapier",
-      "text": "Zapier gives teams one place to set guardrails, manage model access, and see everything — so everyone can build with AI confidently, on any model, without waiting for permission."
+      "text": "One MCP connection. 9,000+ apps. Set your policies and work across any model, surface, or agent harness — without connections or rules breaking."
      },
      {
       "slug": "zendesk",
@@ -8798,7 +8855,7 @@
   "by_term": [
    {
     "term": "ai",
-    "n": 204,
+    "n": 209,
     "companies": [
      {
       "slug": "15five",
@@ -8891,6 +8948,17 @@
        "subhead"
       ],
       "text": "All your teams, all their workflows—connected in one workspace"
+     },
+     {
+      "slug": "airwallex",
+      "name": "Airwallex",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "subhead"
+      ],
+      "text": "The intelligent financial platform for global businesses"
      },
      {
       "slug": "aiven",
@@ -9482,6 +9550,17 @@
       "text": "The Agentic CS Platform Behind Exceptional Ecommerce Brands"
      },
      {
+      "slug": "docusign",
+      "name": "Docusign",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "subhead"
+      ],
+      "text": "Do (much) more with IAM"
+     },
+     {
       "slug": "dremio",
       "name": "Dremio",
       "terms": [
@@ -9555,6 +9634,17 @@
       "text": "The #1 AI Assistant For Your Meetings"
      },
      {
+      "slug": "five9",
+      "name": "Five9",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "subhead"
+      ],
+      "text": "Containment rate looks good, but CSAT tells a different story?"
+     },
+     {
       "slug": "fivetran",
       "name": "Fivetran",
       "terms": [
@@ -9568,6 +9658,17 @@
        "category_label"
       ],
       "text": "Automated data for autonomous agents"
+     },
+     {
+      "slug": "flexport",
+      "name": "Flexport",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "headline"
+      ],
+      "text": "AI-powered logistics for the real world"
      },
      {
       "slug": "front",
@@ -10050,6 +10151,17 @@
        "category_label"
       ],
       "text": "Put context-first document management to work."
+     },
+     {
+      "slug": "mailchimp",
+      "name": "Mailchimp",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "subhead"
+      ],
+      "text": "Email & SMS marketing minus the learning curve"
      },
      {
       "slug": "make",
@@ -10771,7 +10883,7 @@
        "subhead",
        "category_label"
       ],
-      "text": "Stay compliant with digital identity powered by AI"
+      "text": "Fight fraud with digital identity powered by AI"
      },
      {
       "slug": "sinch",
@@ -11277,13 +11389,14 @@
       "slug": "zapier",
       "name": "Zapier",
       "terms": [
+       "agent",
        "ai"
       ],
       "fields": [
        "headline",
        "subhead"
       ],
-      "text": "Your tools. Your rules. Any AI."
+      "text": "The automation layer for agentic AI"
      },
      {
       "slug": "zendesk",
@@ -11328,7 +11441,7 @@
    },
    {
     "term": "agent",
-    "n": 103,
+    "n": 104,
     "companies": [
      {
       "slug": "1password",
@@ -12655,6 +12768,19 @@
       "text": "WRITER is the enterprise AI agent platform trusted by Fortune 500 companies, built to help teams execute and scale on-brand, compliant work."
      },
      {
+      "slug": "zapier",
+      "name": "Zapier",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead"
+      ],
+      "text": "The automation layer for agentic AI"
+     },
+     {
       "slug": "zendesk",
       "name": "Zendesk",
       "terms": [
@@ -12974,8 +13100,8 @@
     "key": "count",
     "label": "Scale counts",
     "note": "customers, users, records, teams",
-    "n": 168,
-    "claims": 313,
+    "n": 170,
+    "claims": 314,
     "companies": [
      {
       "slug": "15five",
@@ -13001,6 +13127,11 @@
       "slug": "airtable",
       "name": "Airtable",
       "text": "02 agents · 10,000 hours · 100m records"
+     },
+     {
+      "slug": "airwallex",
+      "name": "Airwallex",
+      "text": "200,000 businesses"
      },
      {
       "slug": "aiven",
@@ -13403,6 +13534,11 @@
       "text": "6,000 organizations"
      },
      {
+      "slug": "mailchimp",
+      "name": "Mailchimp",
+      "text": "300 apps · 300 integrations"
+     },
+     {
       "slug": "make",
       "name": "Make",
       "text": "3,000 apps · 3,000 integrations · 400,000 organizations"
@@ -13705,7 +13841,7 @@
      {
       "slug": "teamviewer",
       "name": "TeamViewer",
-      "text": "10,000 employees · 2,300 stores"
+      "text": "10,000 employees"
      },
      {
       "slug": "teamwork",
@@ -13805,7 +13941,7 @@
      {
       "slug": "zapier",
       "name": "Zapier",
-      "text": "42 hours · 450k agents · 9,000 apps · 9,000 integrations"
+      "text": "100 hours · 20 hours · 9,000 apps"
      },
      {
       "slug": "zendesk",
@@ -13824,7 +13960,7 @@
     "label": "Percentage gains",
     "note": "\"40% faster\", \"cut costs by 30%\"",
     "n": 154,
-    "claims": 442,
+    "claims": 445,
     "companies": [
      {
       "slug": "acronis",
@@ -14075,6 +14211,11 @@
       "slug": "fenergo",
       "name": "Fenergo",
       "text": "0 % faster client onboarding · 0 % faster time-to-go-live · 0 % increase · 0 % reduction in client"
+     },
+     {
+      "slug": "five9",
+      "name": "Five9",
+      "text": "60% cuts patient time · 60% reduced test scheduling time · 60% test scheduling time · 99.999% uptime"
      },
      {
       "slug": "fivetran",
@@ -14582,11 +14723,6 @@
       "text": "75% chipotle reduced time-to-hire · 75% reduced time-to-hire"
      },
      {
-      "slug": "zapier",
-      "name": "Zapier",
-      "text": "87% reduction in lead"
-     },
-     {
       "slug": "zendesk",
       "name": "Zendesk",
       "text": "11 % decrease in email · 36 % increase in ai · 51.5 % automate · 6 % increase in automated"
@@ -14602,8 +14738,8 @@
     "key": "money",
     "label": "Money amounts",
     "note": "\"$2.4M saved\", \"$1B processed\"",
-    "n": 93,
-    "claims": 218,
+    "n": 95,
+    "claims": 221,
     "companies": [
      {
       "slug": "15five",
@@ -14624,6 +14760,11 @@
       "slug": "adyen",
       "name": "Adyen",
       "text": "€1,400,000,000,009 uptime"
+     },
+     {
+      "slug": "airwallex",
+      "name": "Airwallex",
+      "text": "$287b+ processed in global · $320m raised to build · $40,000 annually in collections"
      },
      {
       "slug": "alteryx",
@@ -14776,9 +14917,19 @@
       "text": "$200 free credits · $7.36 xl"
      },
      {
+      "slug": "five9",
+      "name": "Five9",
+      "text": "$4m revenue · $4m revenue automated follow-up"
+     },
+     {
       "slug": "fivetran",
       "name": "Fivetran",
       "text": "$1.15m annually by reducing"
+     },
+     {
+      "slug": "flexport",
+      "name": "Flexport",
+      "text": "$900m tariffs in the"
      },
      {
       "slug": "grammarly",
@@ -15064,11 +15215,6 @@
       "slug": "xeneta",
       "name": "Xeneta",
       "text": "$2m versus market pricing · $37m savings across the"
-     },
-     {
-      "slug": "zapier",
-      "name": "Zapier",
-      "text": "$1 million increase in potential · $1m recovered pipeline using · $40k+ headcount savings per"
      }
     ]
    },
@@ -15270,6 +15416,11 @@
       "text": "10x faster · 10x faster releases ship"
      },
      {
+      "slug": "mailchimp",
+      "name": "Mailchimp",
+      "text": "24x roi"
+     },
+     {
       "slug": "materialize",
       "name": "Materialize",
       "text": "54x increase in loan"
@@ -15403,11 +15554,6 @@
       "slug": "wrike",
       "name": "Wrike",
       "text": "10x more"
-     },
-     {
-      "slug": "zapier",
-      "name": "Zapier",
-      "text": "5.5x roi with zapier"
      },
      {
       "slug": "zendesk",
@@ -15820,13 +15966,13 @@
     ]
    }
   ],
-  "total_claims": 1154,
+  "total_claims": 1161,
   "coverage": {
    "tracked": 361,
-   "readable": 267,
-   "unreadable": 94,
+   "readable": 270,
+   "unreadable": 91,
    "held": 0,
-   "suspect": 1,
+   "suspect": 2,
    "missing": [
     {
      "slug": "1password",
@@ -15839,10 +15985,6 @@
     {
      "slug": "airbyte",
      "name": "Airbyte"
-    },
-    {
-     "slug": "airwallex",
-     "name": "Airwallex"
     },
     {
      "slug": "alan",
@@ -15941,10 +16083,6 @@
      "name": "Dynatrace"
     },
     {
-     "slug": "five9",
-     "name": "Five9"
-    },
-    {
      "slug": "fortnox",
      "name": "Fortnox"
     },
@@ -15983,10 +16121,6 @@
     {
      "slug": "linear",
      "name": "Linear"
-    },
-    {
-     "slug": "mailchimp",
-     "name": "Mailchimp"
     },
     {
      "slug": "marqeta",
@@ -17094,7 +17228,7 @@
     ]
    }
   ],
-  "distinct_logos": 2886,
+  "distinct_logos": 2904,
   "coverage": {
    "tracked": 361,
    "readable": 279,
@@ -24198,10 +24332,10 @@
       "short": "Go-to-market",
       "n": 50,
       "readable": 49,
-      "yes": 39,
-      "no": 10,
+      "yes": 40,
+      "no": 9,
       "unreadable": 1,
-      "share": 79.6,
+      "share": 81.6,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -24292,6 +24426,10 @@
         {
          "slug": "lokalise",
          "name": "Lokalise"
+        },
+        {
+         "slug": "mailchimp",
+         "name": "Mailchimp"
         },
         {
          "slug": "optimizely",
@@ -24388,10 +24526,6 @@
          "name": "Demandbase"
         },
         {
-         "slug": "mailchimp",
-         "name": "Mailchimp"
-        },
-        {
          "slug": "salesloft",
          "name": "Salesloft"
         },
@@ -24418,10 +24552,10 @@
       "short": "Service",
       "n": 19,
       "readable": 19,
-      "yes": 18,
-      "no": 1,
+      "yes": 19,
+      "no": 0,
       "unreadable": 0,
-      "share": 94.7,
+      "share": 100,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -24440,6 +24574,10 @@
         {
          "slug": "dixa",
          "name": "Dixa"
+        },
+        {
+         "slug": "five9",
+         "name": "Five9"
         },
         {
          "slug": "front",
@@ -24498,12 +24636,7 @@
          "name": "Zoom"
         }
        ],
-       "no": [
-        {
-         "slug": "five9",
-         "name": "Five9"
-        }
-       ],
+       "no": [],
        "unreadable": []
       }
      },
@@ -24513,10 +24646,10 @@
       "short": "Risk & compliance",
       "n": 26,
       "readable": 24,
-      "yes": 14,
-      "no": 10,
+      "yes": 15,
+      "no": 9,
       "unreadable": 2,
-      "share": 58.3,
+      "share": 62.5,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -24531,6 +24664,10 @@
         {
          "slug": "diligent",
          "name": "Diligent"
+        },
+        {
+         "slug": "docusign",
+         "name": "Docusign"
         },
         {
          "slug": "icertis",
@@ -24581,10 +24718,6 @@
         {
          "slug": "clerk",
          "name": "Clerk"
-        },
-        {
-         "slug": "docusign",
-         "name": "Docusign"
         },
         {
          "slug": "feedzai",
@@ -24901,13 +25034,17 @@
       "short": "Financial infra",
       "n": 16,
       "readable": 16,
-      "yes": 2,
-      "no": 14,
+      "yes": 3,
+      "no": 13,
       "unreadable": 0,
-      "share": 12.5,
+      "share": 18.8,
       "suppressed": false,
       "companies": {
        "yes": [
+        {
+         "slug": "airwallex",
+         "name": "Airwallex"
+        },
         {
          "slug": "backbase",
          "name": "Backbase"
@@ -24921,10 +25058,6 @@
         {
          "slug": "adyen",
          "name": "Adyen"
-        },
-        {
-         "slug": "airwallex",
-         "name": "Airwallex"
         },
         {
          "slug": "avaloq",
@@ -24984,10 +25117,10 @@
       "short": "Vertical software",
       "n": 20,
       "readable": 17,
-      "yes": 8,
-      "no": 9,
+      "yes": 9,
+      "no": 8,
       "unreadable": 3,
-      "share": 47.1,
+      "share": 52.9,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -24998,6 +25131,10 @@
         {
          "slug": "cognite",
          "name": "Cognite"
+        },
+        {
+         "slug": "flexport",
+         "name": "Flexport"
         },
         {
          "slug": "mirakl",
@@ -25042,10 +25179,6 @@
          "name": "Docplanner"
         },
         {
-         "slug": "flexport",
-         "name": "Flexport"
-        },
-        {
          "slug": "procore",
          "name": "Procore"
         },
@@ -25086,10 +25219,10 @@
       "short": "Service",
       "n": 19,
       "readable": 19,
-      "yes": 18,
-      "no": 1,
+      "yes": 19,
+      "no": 0,
       "unreadable": 0,
-      "share": 94.7,
+      "share": 100,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -25108,6 +25241,10 @@
         {
          "slug": "dixa",
          "name": "Dixa"
+        },
+        {
+         "slug": "five9",
+         "name": "Five9"
         },
         {
          "slug": "front",
@@ -25166,12 +25303,7 @@
          "name": "Zoom"
         }
        ],
-       "no": [
-        {
-         "slug": "five9",
-         "name": "Five9"
-        }
-       ],
+       "no": [],
        "unreadable": []
       }
      },
@@ -25181,10 +25313,10 @@
       "short": "Go-to-market",
       "n": 50,
       "readable": 49,
-      "yes": 39,
-      "no": 10,
+      "yes": 40,
+      "no": 9,
       "unreadable": 1,
-      "share": 79.6,
+      "share": 81.6,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -25275,6 +25407,10 @@
         {
          "slug": "lokalise",
          "name": "Lokalise"
+        },
+        {
+         "slug": "mailchimp",
+         "name": "Mailchimp"
         },
         {
          "slug": "optimizely",
@@ -25369,10 +25505,6 @@
         {
          "slug": "demandbase",
          "name": "Demandbase"
-        },
-        {
-         "slug": "mailchimp",
-         "name": "Mailchimp"
         },
         {
          "slug": "salesloft",
@@ -26252,10 +26384,10 @@
       "short": "Risk & compliance",
       "n": 26,
       "readable": 24,
-      "yes": 14,
-      "no": 10,
+      "yes": 15,
+      "no": 9,
       "unreadable": 2,
-      "share": 58.3,
+      "share": 62.5,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -26270,6 +26402,10 @@
         {
          "slug": "diligent",
          "name": "Diligent"
+        },
+        {
+         "slug": "docusign",
+         "name": "Docusign"
         },
         {
          "slug": "icertis",
@@ -26322,10 +26458,6 @@
          "name": "Clerk"
         },
         {
-         "slug": "docusign",
-         "name": "Docusign"
-        },
-        {
          "slug": "feedzai",
          "name": "Feedzai"
         },
@@ -26376,10 +26508,10 @@
       "short": "Vertical software",
       "n": 20,
       "readable": 17,
-      "yes": 8,
-      "no": 9,
+      "yes": 9,
+      "no": 8,
       "unreadable": 3,
-      "share": 47.1,
+      "share": 52.9,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -26390,6 +26522,10 @@
         {
          "slug": "cognite",
          "name": "Cognite"
+        },
+        {
+         "slug": "flexport",
+         "name": "Flexport"
         },
         {
          "slug": "mirakl",
@@ -26432,10 +26568,6 @@
         {
          "slug": "docplanner",
          "name": "Docplanner"
-        },
-        {
-         "slug": "flexport",
-         "name": "Flexport"
         },
         {
          "slug": "procore",
@@ -26644,13 +26776,17 @@
       "short": "Financial infra",
       "n": 16,
       "readable": 16,
-      "yes": 2,
-      "no": 14,
+      "yes": 3,
+      "no": 13,
       "unreadable": 0,
-      "share": 12.5,
+      "share": 18.8,
       "suppressed": false,
       "companies": {
        "yes": [
+        {
+         "slug": "airwallex",
+         "name": "Airwallex"
+        },
         {
          "slug": "backbase",
          "name": "Backbase"
@@ -26664,10 +26800,6 @@
         {
          "slug": "adyen",
          "name": "Adyen"
-        },
-        {
-         "slug": "airwallex",
-         "name": "Airwallex"
         },
         {
          "slug": "avaloq",
@@ -26728,10 +26860,10 @@
      "short": "Service",
      "n": 19,
      "readable": 19,
-     "yes": 18,
-     "no": 1,
+     "yes": 19,
+     "no": 0,
      "unreadable": 0,
-     "share": 94.7,
+     "share": 100,
      "suppressed": false,
      "companies": {
       "yes": [
@@ -26750,6 +26882,10 @@
        {
         "slug": "dixa",
         "name": "Dixa"
+       },
+       {
+        "slug": "five9",
+        "name": "Five9"
        },
        {
         "slug": "front",
@@ -26808,12 +26944,7 @@
         "name": "Zoom"
        }
       ],
-      "no": [
-       {
-        "slug": "five9",
-        "name": "Five9"
-       }
-      ],
+      "no": [],
       "unreadable": []
      }
     },
@@ -26823,10 +26954,10 @@
      "short": "Go-to-market",
      "n": 50,
      "readable": 49,
-     "yes": 39,
-     "no": 10,
+     "yes": 40,
+     "no": 9,
      "unreadable": 1,
-     "share": 79.6,
+     "share": 81.6,
      "suppressed": false,
      "companies": {
       "yes": [
@@ -26917,6 +27048,10 @@
        {
         "slug": "lokalise",
         "name": "Lokalise"
+       },
+       {
+        "slug": "mailchimp",
+        "name": "Mailchimp"
        },
        {
         "slug": "optimizely",
@@ -27013,10 +27148,6 @@
         "name": "Demandbase"
        },
        {
-        "slug": "mailchimp",
-        "name": "Mailchimp"
-       },
-       {
         "slug": "salesloft",
         "name": "Salesloft"
        },
@@ -27043,13 +27174,17 @@
      "short": "Financial infra",
      "n": 16,
      "readable": 16,
-     "yes": 2,
-     "no": 14,
+     "yes": 3,
+     "no": 13,
      "unreadable": 0,
-     "share": 12.5,
+     "share": 18.8,
      "suppressed": false,
      "companies": {
       "yes": [
+       {
+        "slug": "airwallex",
+        "name": "Airwallex"
+       },
        {
         "slug": "backbase",
         "name": "Backbase"
@@ -27063,10 +27198,6 @@
        {
         "slug": "adyen",
         "name": "Adyen"
-       },
-       {
-        "slug": "airwallex",
-        "name": "Airwallex"
        },
        {
         "slug": "avaloq",
@@ -27120,13 +27251,13 @@
       "unreadable": []
      }
     },
-    "spread": 14,
-    "lead_over_runner_up": 8,
+    "spread": 13,
+    "lead_over_runner_up": 9,
     "drawn": true,
     "withheld": null,
     "overall": {
-     "yes": 228,
-     "no": 114,
+     "yes": 233,
+     "no": 109,
      "unreadable": 19,
      "readable": 342,
      "tracked": 361
@@ -27900,10 +28031,10 @@
       "short": "Go-to-market",
       "n": 50,
       "readable": 44,
-      "yes": 27,
-      "no": 17,
+      "yes": 28,
+      "no": 16,
       "unreadable": 6,
-      "share": 61.4,
+      "share": 63.6,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -27962,6 +28093,10 @@
         {
          "slug": "lokalise",
          "name": "Lokalise"
+        },
+        {
+         "slug": "mailchimp",
+         "name": "Mailchimp"
         },
         {
          "slug": "optimizely",
@@ -28060,10 +28195,6 @@
         {
          "slug": "klaviyo",
          "name": "Klaviyo"
-        },
-        {
-         "slug": "mailchimp",
-         "name": "Mailchimp"
         },
         {
          "slug": "pipedrive",
@@ -28602,17 +28733,21 @@
       "label": "Financial infrastructure",
       "short": "Financial infra",
       "n": 16,
-      "readable": 11,
-      "yes": 2,
+      "readable": 12,
+      "yes": 3,
       "no": 9,
-      "unreadable": 5,
-      "share": 18.2,
+      "unreadable": 4,
+      "share": 25,
       "suppressed": false,
       "companies": {
        "yes": [
         {
          "slug": "adyen",
          "name": "Adyen"
+        },
+        {
+         "slug": "airwallex",
+         "name": "Airwallex"
         },
         {
          "slug": "marqeta",
@@ -28658,10 +28793,6 @@
         }
        ],
        "unreadable": [
-        {
-         "slug": "airwallex",
-         "name": "Airwallex"
-        },
         {
          "slug": "checkout-com",
          "name": "Checkout.com"
@@ -28885,10 +29016,10 @@
       "short": "Go-to-market",
       "n": 50,
       "readable": 44,
-      "yes": 27,
-      "no": 17,
+      "yes": 28,
+      "no": 16,
       "unreadable": 6,
-      "share": 61.4,
+      "share": 63.6,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -28947,6 +29078,10 @@
         {
          "slug": "lokalise",
          "name": "Lokalise"
+        },
+        {
+         "slug": "mailchimp",
+         "name": "Mailchimp"
         },
         {
          "slug": "optimizely",
@@ -29045,10 +29180,6 @@
         {
          "slug": "klaviyo",
          "name": "Klaviyo"
-        },
-        {
-         "slug": "mailchimp",
-         "name": "Mailchimp"
         },
         {
          "slug": "pipedrive",
@@ -30347,17 +30478,21 @@
       "label": "Financial infrastructure",
       "short": "Financial infra",
       "n": 16,
-      "readable": 11,
-      "yes": 2,
+      "readable": 12,
+      "yes": 3,
       "no": 9,
-      "unreadable": 5,
-      "share": 18.2,
+      "unreadable": 4,
+      "share": 25,
       "suppressed": false,
       "companies": {
        "yes": [
         {
          "slug": "adyen",
          "name": "Adyen"
+        },
+        {
+         "slug": "airwallex",
+         "name": "Airwallex"
         },
         {
          "slug": "marqeta",
@@ -30403,10 +30538,6 @@
         }
        ],
        "unreadable": [
-        {
-         "slug": "airwallex",
-         "name": "Airwallex"
-        },
         {
          "slug": "checkout-com",
          "name": "Checkout.com"
@@ -30529,10 +30660,10 @@
      "short": "Go-to-market",
      "n": 50,
      "readable": 44,
-     "yes": 27,
-     "no": 17,
+     "yes": 28,
+     "no": 16,
      "unreadable": 6,
-     "share": 61.4,
+     "share": 63.6,
      "suppressed": false,
      "companies": {
       "yes": [
@@ -30591,6 +30722,10 @@
        {
         "slug": "lokalise",
         "name": "Lokalise"
+       },
+       {
+        "slug": "mailchimp",
+        "name": "Mailchimp"
        },
        {
         "slug": "optimizely",
@@ -30691,10 +30826,6 @@
         "name": "Klaviyo"
        },
        {
-        "slug": "mailchimp",
-        "name": "Mailchimp"
-       },
-       {
         "slug": "pipedrive",
         "name": "Pipedrive"
        },
@@ -30748,17 +30879,21 @@
      "label": "Financial infrastructure",
      "short": "Financial infra",
      "n": 16,
-     "readable": 11,
-     "yes": 2,
+     "readable": 12,
+     "yes": 3,
      "no": 9,
-     "unreadable": 5,
-     "share": 18.2,
+     "unreadable": 4,
+     "share": 25,
      "suppressed": false,
      "companies": {
       "yes": [
        {
         "slug": "adyen",
         "name": "Adyen"
+       },
+       {
+        "slug": "airwallex",
+        "name": "Airwallex"
        },
        {
         "slug": "marqeta",
@@ -30805,10 +30940,6 @@
       ],
       "unreadable": [
        {
-        "slug": "airwallex",
-        "name": "Airwallex"
-       },
-       {
         "slug": "checkout-com",
         "name": "Checkout.com"
        },
@@ -30828,14 +30959,14 @@
      }
     },
     "spread": 5,
-    "lead_over_runner_up": 1,
+    "lead_over_runner_up": 0,
     "drawn": true,
     "withheld": null,
     "overall": {
-     "yes": 126,
-     "no": 177,
-     "unreadable": 58,
-     "readable": 303,
+     "yes": 128,
+     "no": 176,
+     "unreadable": 57,
+     "readable": 304,
      "tracked": 361
     }
    },
@@ -31606,11 +31737,11 @@
       "label": "Go-to-market",
       "short": "Go-to-market",
       "n": 50,
-      "readable": 44,
-      "yes": 28,
+      "readable": 45,
+      "yes": 29,
       "no": 16,
-      "unreadable": 6,
-      "share": 63.6,
+      "unreadable": 5,
+      "share": 64.4,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -31689,6 +31820,10 @@
         {
          "slug": "lokalise",
          "name": "Lokalise"
+        },
+        {
+         "slug": "mailchimp",
+         "name": "Mailchimp"
         },
         {
          "slug": "optimizely",
@@ -31799,10 +31934,6 @@
          "name": "Drift"
         },
         {
-         "slug": "mailchimp",
-         "name": "Mailchimp"
-        },
-        {
          "slug": "sitecore",
          "name": "Sitecore"
         },
@@ -31826,11 +31957,11 @@
       "label": "Customer service",
       "short": "Service",
       "n": 19,
-      "readable": 14,
+      "readable": 15,
       "yes": 8,
-      "no": 6,
-      "unreadable": 5,
-      "share": 57.1,
+      "no": 7,
+      "unreadable": 4,
+      "share": 53.3,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -31873,6 +32004,10 @@
          "name": "Dixa"
         },
         {
+         "slug": "five9",
+         "name": "Five9"
+        },
+        {
          "slug": "genesys",
          "name": "Genesys"
         },
@@ -31901,10 +32036,6 @@
         {
          "slug": "dialpad",
          "name": "Dialpad"
-        },
-        {
-         "slug": "five9",
-         "name": "Five9"
         },
         {
          "slug": "gorgias",
@@ -32310,14 +32441,18 @@
       "label": "Financial infrastructure",
       "short": "Financial infra",
       "n": 16,
-      "readable": 11,
-      "yes": 5,
+      "readable": 12,
+      "yes": 6,
       "no": 6,
-      "unreadable": 5,
-      "share": 45.5,
+      "unreadable": 4,
+      "share": 50,
       "suppressed": false,
       "companies": {
        "yes": [
+        {
+         "slug": "airwallex",
+         "name": "Airwallex"
+        },
         {
          "slug": "backbase",
          "name": "Backbase"
@@ -32366,10 +32501,6 @@
         }
        ],
        "unreadable": [
-        {
-         "slug": "airwallex",
-         "name": "Airwallex"
-        },
         {
          "slug": "avaloq",
          "name": "Avaloq"
@@ -33156,11 +33287,11 @@
       "label": "Go-to-market",
       "short": "Go-to-market",
       "n": 50,
-      "readable": 44,
-      "yes": 28,
+      "readable": 45,
+      "yes": 29,
       "no": 16,
-      "unreadable": 6,
-      "share": 63.6,
+      "unreadable": 5,
+      "share": 64.4,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -33239,6 +33370,10 @@
         {
          "slug": "lokalise",
          "name": "Lokalise"
+        },
+        {
+         "slug": "mailchimp",
+         "name": "Mailchimp"
         },
         {
          "slug": "optimizely",
@@ -33347,10 +33482,6 @@
         {
          "slug": "drift",
          "name": "Drift"
-        },
-        {
-         "slug": "mailchimp",
-         "name": "Mailchimp"
         },
         {
          "slug": "sitecore",
@@ -33587,102 +33718,6 @@
         {
          "slug": "workos",
          "name": "WorkOS"
-        }
-       ]
-      }
-     },
-     {
-      "group": "service",
-      "label": "Customer service",
-      "short": "Service",
-      "n": 19,
-      "readable": 14,
-      "yes": 8,
-      "no": 6,
-      "unreadable": 5,
-      "share": 57.1,
-      "suppressed": false,
-      "companies": {
-       "yes": [
-        {
-         "slug": "aircall",
-         "name": "Aircall"
-        },
-        {
-         "slug": "front",
-         "name": "Front"
-        },
-        {
-         "slug": "gainsight",
-         "name": "Gainsight"
-        },
-        {
-         "slug": "intercom",
-         "name": "Intercom"
-        },
-        {
-         "slug": "livechat",
-         "name": "LiveChat"
-        },
-        {
-         "slug": "ringcentral",
-         "name": "RingCentral"
-        },
-        {
-         "slug": "sinch",
-         "name": "Sinch"
-        },
-        {
-         "slug": "zendesk",
-         "name": "Zendesk"
-        }
-       ],
-       "no": [
-        {
-         "slug": "dixa",
-         "name": "Dixa"
-        },
-        {
-         "slug": "genesys",
-         "name": "Genesys"
-        },
-        {
-         "slug": "helpscout",
-         "name": "Help Scout"
-        },
-        {
-         "slug": "parloa",
-         "name": "Parloa"
-        },
-        {
-         "slug": "talkdesk",
-         "name": "Talkdesk"
-        },
-        {
-         "slug": "zoom",
-         "name": "Zoom"
-        }
-       ],
-       "unreadable": [
-        {
-         "slug": "cognigy",
-         "name": "Cognigy"
-        },
-        {
-         "slug": "dialpad",
-         "name": "Dialpad"
-        },
-        {
-         "slug": "five9",
-         "name": "Five9"
-        },
-        {
-         "slug": "gorgias",
-         "name": "Gorgias"
-        },
-        {
-         "slug": "nice",
-         "name": "NICE"
         }
        ]
       }
@@ -33952,18 +33987,118 @@
       }
      },
      {
+      "group": "service",
+      "label": "Customer service",
+      "short": "Service",
+      "n": 19,
+      "readable": 15,
+      "yes": 8,
+      "no": 7,
+      "unreadable": 4,
+      "share": 53.3,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "aircall",
+         "name": "Aircall"
+        },
+        {
+         "slug": "front",
+         "name": "Front"
+        },
+        {
+         "slug": "gainsight",
+         "name": "Gainsight"
+        },
+        {
+         "slug": "intercom",
+         "name": "Intercom"
+        },
+        {
+         "slug": "livechat",
+         "name": "LiveChat"
+        },
+        {
+         "slug": "ringcentral",
+         "name": "RingCentral"
+        },
+        {
+         "slug": "sinch",
+         "name": "Sinch"
+        },
+        {
+         "slug": "zendesk",
+         "name": "Zendesk"
+        }
+       ],
+       "no": [
+        {
+         "slug": "dixa",
+         "name": "Dixa"
+        },
+        {
+         "slug": "five9",
+         "name": "Five9"
+        },
+        {
+         "slug": "genesys",
+         "name": "Genesys"
+        },
+        {
+         "slug": "helpscout",
+         "name": "Help Scout"
+        },
+        {
+         "slug": "parloa",
+         "name": "Parloa"
+        },
+        {
+         "slug": "talkdesk",
+         "name": "Talkdesk"
+        },
+        {
+         "slug": "zoom",
+         "name": "Zoom"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "cognigy",
+         "name": "Cognigy"
+        },
+        {
+         "slug": "dialpad",
+         "name": "Dialpad"
+        },
+        {
+         "slug": "gorgias",
+         "name": "Gorgias"
+        },
+        {
+         "slug": "nice",
+         "name": "NICE"
+        }
+       ]
+      }
+     },
+     {
       "group": "fin-infra",
       "label": "Financial infrastructure",
       "short": "Financial infra",
       "n": 16,
-      "readable": 11,
-      "yes": 5,
+      "readable": 12,
+      "yes": 6,
       "no": 6,
-      "unreadable": 5,
-      "share": 45.5,
+      "unreadable": 4,
+      "share": 50,
       "suppressed": false,
       "companies": {
        "yes": [
+        {
+         "slug": "airwallex",
+         "name": "Airwallex"
+        },
         {
          "slug": "backbase",
          "name": "Backbase"
@@ -34012,10 +34147,6 @@
         }
        ],
        "unreadable": [
-        {
-         "slug": "airwallex",
-         "name": "Airwallex"
-        },
         {
          "slug": "avaloq",
          "name": "Avaloq"
@@ -34621,10 +34752,10 @@
     "drawn": true,
     "withheld": null,
     "overall": {
-     "yes": 168,
-     "no": 99,
-     "unreadable": 94,
-     "readable": 267,
+     "yes": 170,
+     "no": 100,
+     "unreadable": 91,
+     "readable": 270,
      "tracked": 361
     }
    },
@@ -35184,10 +35315,10 @@
       "short": "Work & product",
       "n": 48,
       "readable": 38,
-      "yes": 21,
-      "no": 17,
+      "yes": 20,
+      "no": 18,
       "unreadable": 10,
-      "share": 55.3,
+      "share": 52.6,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -35270,10 +35401,6 @@
         {
          "slug": "uipath",
          "name": "UiPath"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
         }
        ],
        "no": [
@@ -35344,6 +35471,10 @@
         {
          "slug": "wrike",
          "name": "Wrike"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
         }
        ],
        "unreadable": [
@@ -35395,11 +35526,11 @@
       "label": "Go-to-market",
       "short": "Go-to-market",
       "n": 50,
-      "readable": 44,
+      "readable": 45,
       "yes": 33,
-      "no": 11,
-      "unreadable": 6,
-      "share": 75,
+      "no": 12,
+      "unreadable": 5,
+      "share": 73.3,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -35558,6 +35689,10 @@
          "name": "Copy.ai"
         },
         {
+         "slug": "mailchimp",
+         "name": "Mailchimp"
+        },
+        {
          "slug": "optimizely",
          "name": "Optimizely"
         },
@@ -35588,10 +35723,6 @@
          "name": "Drift"
         },
         {
-         "slug": "mailchimp",
-         "name": "Mailchimp"
-        },
-        {
          "slug": "sitecore",
          "name": "Sitecore"
         },
@@ -35615,17 +35746,21 @@
       "label": "Customer service",
       "short": "Service",
       "n": 19,
-      "readable": 14,
-      "yes": 11,
+      "readable": 15,
+      "yes": 12,
       "no": 3,
-      "unreadable": 5,
-      "share": 78.6,
+      "unreadable": 4,
+      "share": 80,
       "suppressed": false,
       "companies": {
        "yes": [
         {
          "slug": "dixa",
          "name": "Dixa"
+        },
+        {
+         "slug": "five9",
+         "name": "Five9"
         },
         {
          "slug": "front",
@@ -35690,10 +35825,6 @@
         {
          "slug": "dialpad",
          "name": "Dialpad"
-        },
-        {
-         "slug": "five9",
-         "name": "Five9"
         },
         {
          "slug": "gorgias",
@@ -36099,11 +36230,11 @@
       "label": "Financial infrastructure",
       "short": "Financial infra",
       "n": 16,
-      "readable": 11,
+      "readable": 12,
       "yes": 8,
-      "no": 3,
-      "unreadable": 5,
-      "share": 72.7,
+      "no": 4,
+      "unreadable": 4,
+      "share": 66.7,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -36142,6 +36273,10 @@
        ],
        "no": [
         {
+         "slug": "airwallex",
+         "name": "Airwallex"
+        },
+        {
          "slug": "backbase",
          "name": "Backbase"
         },
@@ -36155,10 +36290,6 @@
         }
        ],
        "unreadable": [
-        {
-         "slug": "airwallex",
-         "name": "Airwallex"
-        },
         {
          "slug": "avaloq",
          "name": "Avaloq"
@@ -36285,17 +36416,21 @@
       "label": "Customer service",
       "short": "Service",
       "n": 19,
-      "readable": 14,
-      "yes": 11,
+      "readable": 15,
+      "yes": 12,
       "no": 3,
-      "unreadable": 5,
-      "share": 78.6,
+      "unreadable": 4,
+      "share": 80,
       "suppressed": false,
       "companies": {
        "yes": [
         {
          "slug": "dixa",
          "name": "Dixa"
+        },
+        {
+         "slug": "five9",
+         "name": "Five9"
         },
         {
          "slug": "front",
@@ -36362,10 +36497,6 @@
          "name": "Dialpad"
         },
         {
-         "slug": "five9",
-         "name": "Five9"
-        },
-        {
          "slug": "gorgias",
          "name": "Gorgias"
         },
@@ -36381,11 +36512,11 @@
       "label": "Go-to-market",
       "short": "Go-to-market",
       "n": 50,
-      "readable": 44,
+      "readable": 45,
       "yes": 33,
-      "no": 11,
-      "unreadable": 6,
-      "share": 75,
+      "no": 12,
+      "unreadable": 5,
+      "share": 73.3,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -36544,6 +36675,10 @@
          "name": "Copy.ai"
         },
         {
+         "slug": "mailchimp",
+         "name": "Mailchimp"
+        },
+        {
          "slug": "optimizely",
          "name": "Optimizely"
         },
@@ -36574,10 +36709,6 @@
          "name": "Drift"
         },
         {
-         "slug": "mailchimp",
-         "name": "Mailchimp"
-        },
-        {
          "slug": "sitecore",
          "name": "Sitecore"
         },
@@ -36601,11 +36732,11 @@
       "label": "Financial infrastructure",
       "short": "Financial infra",
       "n": 16,
-      "readable": 11,
+      "readable": 12,
       "yes": 8,
-      "no": 3,
-      "unreadable": 5,
-      "share": 72.7,
+      "no": 4,
+      "unreadable": 4,
+      "share": 66.7,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -36644,6 +36775,10 @@
        ],
        "no": [
         {
+         "slug": "airwallex",
+         "name": "Airwallex"
+        },
+        {
          "slug": "backbase",
          "name": "Backbase"
         },
@@ -36657,10 +36792,6 @@
         }
        ],
        "unreadable": [
-        {
-         "slug": "airwallex",
-         "name": "Airwallex"
-        },
         {
          "slug": "avaloq",
          "name": "Avaloq"
@@ -37066,10 +37197,10 @@
       "short": "Work & product",
       "n": 48,
       "readable": 38,
-      "yes": 21,
-      "no": 17,
+      "yes": 20,
+      "no": 18,
       "unreadable": 10,
-      "share": 55.3,
+      "share": 52.6,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -37152,10 +37283,6 @@
         {
          "slug": "uipath",
          "name": "UiPath"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
         }
        ],
        "no": [
@@ -37226,6 +37353,10 @@
         {
          "slug": "wrike",
          "name": "Wrike"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
         }
        ],
        "unreadable": [
@@ -37930,17 +38061,21 @@
      "label": "Customer service",
      "short": "Service",
      "n": 19,
-     "readable": 14,
-     "yes": 11,
+     "readable": 15,
+     "yes": 12,
      "no": 3,
-     "unreadable": 5,
-     "share": 78.6,
+     "unreadable": 4,
+     "share": 80,
      "suppressed": false,
      "companies": {
       "yes": [
        {
         "slug": "dixa",
         "name": "Dixa"
+       },
+       {
+        "slug": "five9",
+        "name": "Five9"
        },
        {
         "slug": "front",
@@ -38007,10 +38142,6 @@
         "name": "Dialpad"
        },
        {
-        "slug": "five9",
-        "name": "Five9"
-       },
-       {
         "slug": "gorgias",
         "name": "Gorgias"
        },
@@ -38026,11 +38157,11 @@
      "label": "Go-to-market",
      "short": "Go-to-market",
      "n": 50,
-     "readable": 44,
+     "readable": 45,
      "yes": 33,
-     "no": 11,
-     "unreadable": 6,
-     "share": 75,
+     "no": 12,
+     "unreadable": 5,
+     "share": 73.3,
      "suppressed": false,
      "companies": {
       "yes": [
@@ -38189,6 +38320,10 @@
         "name": "Copy.ai"
        },
        {
+        "slug": "mailchimp",
+        "name": "Mailchimp"
+       },
+       {
         "slug": "optimizely",
         "name": "Optimizely"
        },
@@ -38217,10 +38352,6 @@
        {
         "slug": "drift",
         "name": "Drift"
-       },
-       {
-        "slug": "mailchimp",
-        "name": "Mailchimp"
        },
        {
         "slug": "sitecore",
@@ -38338,14 +38469,14 @@
      }
     },
     "spread": 5,
-    "lead_over_runner_up": 2,
+    "lead_over_runner_up": 3,
     "drawn": true,
     "withheld": null,
     "overall": {
      "yes": 154,
-     "no": 113,
-     "unreadable": 94,
-     "readable": 267,
+     "no": 116,
+     "unreadable": 91,
+     "readable": 270,
      "tracked": 361
     }
    },
@@ -38905,10 +39036,10 @@
       "short": "Work & product",
       "n": 48,
       "readable": 38,
-      "yes": 11,
-      "no": 27,
+      "yes": 10,
+      "no": 28,
       "unreadable": 10,
-      "share": 28.9,
+      "share": 26.3,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -38951,10 +39082,6 @@
         {
          "slug": "uipath",
          "name": "UiPath"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
         }
        ],
        "no": [
@@ -39065,6 +39192,10 @@
         {
          "slug": "wrike",
          "name": "Wrike"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
         }
        ],
        "unreadable": [
@@ -39116,11 +39247,11 @@
       "label": "Go-to-market",
       "short": "Go-to-market",
       "n": 50,
-      "readable": 44,
+      "readable": 45,
       "yes": 16,
-      "no": 28,
-      "unreadable": 6,
-      "share": 36.4,
+      "no": 29,
+      "unreadable": 5,
+      "share": 35.6,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -39267,6 +39398,10 @@
          "name": "Lokalise"
         },
         {
+         "slug": "mailchimp",
+         "name": "Mailchimp"
+        },
+        {
          "slug": "optimizely",
          "name": "Optimizely"
         },
@@ -39309,10 +39444,6 @@
          "name": "Drift"
         },
         {
-         "slug": "mailchimp",
-         "name": "Mailchimp"
-        },
-        {
          "slug": "sitecore",
          "name": "Sitecore"
         },
@@ -39336,17 +39467,21 @@
       "label": "Customer service",
       "short": "Service",
       "n": 19,
-      "readable": 14,
-      "yes": 3,
+      "readable": 15,
+      "yes": 4,
       "no": 11,
-      "unreadable": 5,
-      "share": 21.4,
+      "unreadable": 4,
+      "share": 26.7,
       "suppressed": false,
       "companies": {
        "yes": [
         {
          "slug": "dixa",
          "name": "Dixa"
+        },
+        {
+         "slug": "five9",
+         "name": "Five9"
         },
         {
          "slug": "intercom",
@@ -39411,10 +39546,6 @@
         {
          "slug": "dialpad",
          "name": "Dialpad"
-        },
-        {
-         "slug": "five9",
-         "name": "Five9"
         },
         {
          "slug": "gorgias",
@@ -39820,17 +39951,21 @@
       "label": "Financial infrastructure",
       "short": "Financial infra",
       "n": 16,
-      "readable": 11,
-      "yes": 7,
+      "readable": 12,
+      "yes": 8,
       "no": 4,
-      "unreadable": 5,
-      "share": 63.6,
+      "unreadable": 4,
+      "share": 66.7,
       "suppressed": false,
       "companies": {
        "yes": [
         {
          "slug": "adyen",
          "name": "Adyen"
+        },
+        {
+         "slug": "airwallex",
+         "name": "Airwallex"
         },
         {
          "slug": "checkout-com",
@@ -39877,10 +40012,6 @@
        ],
        "unreadable": [
         {
-         "slug": "airwallex",
-         "name": "Airwallex"
-        },
-        {
          "slug": "avaloq",
          "name": "Avaloq"
         },
@@ -39905,16 +40036,20 @@
       "short": "Vertical software",
       "n": 20,
       "readable": 12,
-      "yes": 5,
-      "no": 7,
+      "yes": 6,
+      "no": 6,
       "unreadable": 8,
-      "share": 41.7,
+      "share": 50,
       "suppressed": false,
       "companies": {
        "yes": [
         {
          "slug": "cognite",
          "name": "Cognite"
+        },
+        {
+         "slug": "flexport",
+         "name": "Flexport"
         },
         {
          "slug": "mirakl",
@@ -39937,10 +40072,6 @@
         {
          "slug": "dassault",
          "name": "Dassault Systèmes"
-        },
-        {
-         "slug": "flexport",
-         "name": "Flexport"
         },
         {
          "slug": "procore",
@@ -40006,17 +40137,21 @@
       "label": "Financial infrastructure",
       "short": "Financial infra",
       "n": 16,
-      "readable": 11,
-      "yes": 7,
+      "readable": 12,
+      "yes": 8,
       "no": 4,
-      "unreadable": 5,
-      "share": 63.6,
+      "unreadable": 4,
+      "share": 66.7,
       "suppressed": false,
       "companies": {
        "yes": [
         {
          "slug": "adyen",
          "name": "Adyen"
+        },
+        {
+         "slug": "airwallex",
+         "name": "Airwallex"
         },
         {
          "slug": "checkout-com",
@@ -40062,10 +40197,6 @@
         }
        ],
        "unreadable": [
-        {
-         "slug": "airwallex",
-         "name": "Airwallex"
-        },
         {
          "slug": "avaloq",
          "name": "Avaloq"
@@ -40259,16 +40390,20 @@
       "short": "Vertical software",
       "n": 20,
       "readable": 12,
-      "yes": 5,
-      "no": 7,
+      "yes": 6,
+      "no": 6,
       "unreadable": 8,
-      "share": 41.7,
+      "share": 50,
       "suppressed": false,
       "companies": {
        "yes": [
         {
          "slug": "cognite",
          "name": "Cognite"
+        },
+        {
+         "slug": "flexport",
+         "name": "Flexport"
         },
         {
          "slug": "mirakl",
@@ -40291,10 +40426,6 @@
         {
          "slug": "dassault",
          "name": "Dassault Systèmes"
-        },
-        {
-         "slug": "flexport",
-         "name": "Flexport"
         },
         {
          "slug": "procore",
@@ -40349,226 +40480,6 @@
         {
          "slug": "relex",
          "name": "RELEX Solutions"
-        }
-       ]
-      }
-     },
-     {
-      "group": "gtm",
-      "label": "Go-to-market",
-      "short": "Go-to-market",
-      "n": 50,
-      "readable": 44,
-      "yes": 16,
-      "no": 28,
-      "unreadable": 6,
-      "share": 36.4,
-      "suppressed": false,
-      "companies": {
-       "yes": [
-        {
-         "slug": "activecampaign",
-         "name": "ActiveCampaign"
-        },
-        {
-         "slug": "attio",
-         "name": "Attio"
-        },
-        {
-         "slug": "bigcommerce",
-         "name": "BigCommerce"
-        },
-        {
-         "slug": "clay",
-         "name": "Clay"
-        },
-        {
-         "slug": "commercetools",
-         "name": "commercetools"
-        },
-        {
-         "slug": "copy-ai",
-         "name": "Copy.ai"
-        },
-        {
-         "slug": "descript",
-         "name": "Descript"
-        },
-        {
-         "slug": "grammarly",
-         "name": "Grammarly"
-        },
-        {
-         "slug": "insider",
-         "name": "Insider"
-        },
-        {
-         "slug": "outreach",
-         "name": "Outreach"
-        },
-        {
-         "slug": "salesloft",
-         "name": "Salesloft"
-        },
-        {
-         "slug": "seismic",
-         "name": "Seismic"
-        },
-        {
-         "slug": "shopify",
-         "name": "Shopify"
-        },
-        {
-         "slug": "synthesia",
-         "name": "Synthesia"
-        },
-        {
-         "slug": "typeform",
-         "name": "Typeform"
-        },
-        {
-         "slug": "webflow",
-         "name": "Webflow"
-        }
-       ],
-       "no": [
-        {
-         "slug": "apollo",
-         "name": "Apollo.io"
-        },
-        {
-         "slug": "attentive",
-         "name": "Attentive"
-        },
-        {
-         "slug": "bird",
-         "name": "Bird"
-        },
-        {
-         "slug": "bloomreach",
-         "name": "Bloomreach"
-        },
-        {
-         "slug": "braze",
-         "name": "Braze"
-        },
-        {
-         "slug": "brevo",
-         "name": "Brevo"
-        },
-        {
-         "slug": "clari",
-         "name": "Clari"
-        },
-        {
-         "slug": "cognism",
-         "name": "Cognism"
-        },
-        {
-         "slug": "contentful",
-         "name": "Contentful"
-        },
-        {
-         "slug": "customer-io",
-         "name": "Customer.io"
-        },
-        {
-         "slug": "deepl",
-         "name": "DeepL"
-        },
-        {
-         "slug": "demandbase",
-         "name": "Demandbase"
-        },
-        {
-         "slug": "gong",
-         "name": "Gong"
-        },
-        {
-         "slug": "highspot",
-         "name": "Highspot"
-        },
-        {
-         "slug": "hubspot",
-         "name": "HubSpot"
-        },
-        {
-         "slug": "iterable",
-         "name": "Iterable"
-        },
-        {
-         "slug": "jasper",
-         "name": "Jasper"
-        },
-        {
-         "slug": "klaviyo",
-         "name": "Klaviyo"
-        },
-        {
-         "slug": "lokalise",
-         "name": "Lokalise"
-        },
-        {
-         "slug": "optimizely",
-         "name": "Optimizely"
-        },
-        {
-         "slug": "pipedrive",
-         "name": "Pipedrive"
-        },
-        {
-         "slug": "salesforce",
-         "name": "Salesforce"
-        },
-        {
-         "slug": "showpad",
-         "name": "Showpad"
-        },
-        {
-         "slug": "sprinklr",
-         "name": "Sprinklr"
-        },
-        {
-         "slug": "staffbase",
-         "name": "Staffbase"
-        },
-        {
-         "slug": "unbabel",
-         "name": "Unbabel"
-        },
-        {
-         "slug": "voyado",
-         "name": "Voyado"
-        },
-        {
-         "slug": "wistia",
-         "name": "Wistia"
-        }
-       ],
-       "unreadable": [
-        {
-         "slug": "drift",
-         "name": "Drift"
-        },
-        {
-         "slug": "mailchimp",
-         "name": "Mailchimp"
-        },
-        {
-         "slug": "sitecore",
-         "name": "Sitecore"
-        },
-        {
-         "slug": "siteimprove",
-         "name": "Siteimprove"
-        },
-        {
-         "slug": "trustpilot",
-         "name": "Trustpilot"
-        },
-        {
-         "slug": "writer",
-         "name": "Writer"
         }
        ]
       }
@@ -40854,6 +40765,226 @@
       }
      },
      {
+      "group": "gtm",
+      "label": "Go-to-market",
+      "short": "Go-to-market",
+      "n": 50,
+      "readable": 45,
+      "yes": 16,
+      "no": 29,
+      "unreadable": 5,
+      "share": 35.6,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "activecampaign",
+         "name": "ActiveCampaign"
+        },
+        {
+         "slug": "attio",
+         "name": "Attio"
+        },
+        {
+         "slug": "bigcommerce",
+         "name": "BigCommerce"
+        },
+        {
+         "slug": "clay",
+         "name": "Clay"
+        },
+        {
+         "slug": "commercetools",
+         "name": "commercetools"
+        },
+        {
+         "slug": "copy-ai",
+         "name": "Copy.ai"
+        },
+        {
+         "slug": "descript",
+         "name": "Descript"
+        },
+        {
+         "slug": "grammarly",
+         "name": "Grammarly"
+        },
+        {
+         "slug": "insider",
+         "name": "Insider"
+        },
+        {
+         "slug": "outreach",
+         "name": "Outreach"
+        },
+        {
+         "slug": "salesloft",
+         "name": "Salesloft"
+        },
+        {
+         "slug": "seismic",
+         "name": "Seismic"
+        },
+        {
+         "slug": "shopify",
+         "name": "Shopify"
+        },
+        {
+         "slug": "synthesia",
+         "name": "Synthesia"
+        },
+        {
+         "slug": "typeform",
+         "name": "Typeform"
+        },
+        {
+         "slug": "webflow",
+         "name": "Webflow"
+        }
+       ],
+       "no": [
+        {
+         "slug": "apollo",
+         "name": "Apollo.io"
+        },
+        {
+         "slug": "attentive",
+         "name": "Attentive"
+        },
+        {
+         "slug": "bird",
+         "name": "Bird"
+        },
+        {
+         "slug": "bloomreach",
+         "name": "Bloomreach"
+        },
+        {
+         "slug": "braze",
+         "name": "Braze"
+        },
+        {
+         "slug": "brevo",
+         "name": "Brevo"
+        },
+        {
+         "slug": "clari",
+         "name": "Clari"
+        },
+        {
+         "slug": "cognism",
+         "name": "Cognism"
+        },
+        {
+         "slug": "contentful",
+         "name": "Contentful"
+        },
+        {
+         "slug": "customer-io",
+         "name": "Customer.io"
+        },
+        {
+         "slug": "deepl",
+         "name": "DeepL"
+        },
+        {
+         "slug": "demandbase",
+         "name": "Demandbase"
+        },
+        {
+         "slug": "gong",
+         "name": "Gong"
+        },
+        {
+         "slug": "highspot",
+         "name": "Highspot"
+        },
+        {
+         "slug": "hubspot",
+         "name": "HubSpot"
+        },
+        {
+         "slug": "iterable",
+         "name": "Iterable"
+        },
+        {
+         "slug": "jasper",
+         "name": "Jasper"
+        },
+        {
+         "slug": "klaviyo",
+         "name": "Klaviyo"
+        },
+        {
+         "slug": "lokalise",
+         "name": "Lokalise"
+        },
+        {
+         "slug": "mailchimp",
+         "name": "Mailchimp"
+        },
+        {
+         "slug": "optimizely",
+         "name": "Optimizely"
+        },
+        {
+         "slug": "pipedrive",
+         "name": "Pipedrive"
+        },
+        {
+         "slug": "salesforce",
+         "name": "Salesforce"
+        },
+        {
+         "slug": "showpad",
+         "name": "Showpad"
+        },
+        {
+         "slug": "sprinklr",
+         "name": "Sprinklr"
+        },
+        {
+         "slug": "staffbase",
+         "name": "Staffbase"
+        },
+        {
+         "slug": "unbabel",
+         "name": "Unbabel"
+        },
+        {
+         "slug": "voyado",
+         "name": "Voyado"
+        },
+        {
+         "slug": "wistia",
+         "name": "Wistia"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "drift",
+         "name": "Drift"
+        },
+        {
+         "slug": "sitecore",
+         "name": "Sitecore"
+        },
+        {
+         "slug": "siteimprove",
+         "name": "Siteimprove"
+        },
+        {
+         "slug": "trustpilot",
+         "name": "Trustpilot"
+        },
+        {
+         "slug": "writer",
+         "name": "Writer"
+        }
+       ]
+      }
+     },
+     {
       "group": "risk",
       "label": "Risk, compliance & identity",
       "short": "Risk & compliance",
@@ -40973,218 +41104,6 @@
         {
          "slug": "workos",
          "name": "WorkOS"
-        }
-       ]
-      }
-     },
-     {
-      "group": "work",
-      "label": "Work & product",
-      "short": "Work & product",
-      "n": 48,
-      "readable": 38,
-      "yes": 11,
-      "no": 27,
-      "unreadable": 10,
-      "share": 28.9,
-      "suppressed": false,
-      "companies": {
-       "yes": [
-        {
-         "slug": "clickup",
-         "name": "ClickUp"
-        },
-        {
-         "slug": "coda",
-         "name": "Coda"
-        },
-        {
-         "slug": "monday",
-         "name": "monday.com"
-        },
-        {
-         "slug": "n8n",
-         "name": "n8n"
-        },
-        {
-         "slug": "otter",
-         "name": "Otter.ai"
-        },
-        {
-         "slug": "replit",
-         "name": "Replit"
-        },
-        {
-         "slug": "retool",
-         "name": "Retool"
-        },
-        {
-         "slug": "teamleader",
-         "name": "Teamleader"
-        },
-        {
-         "slug": "tray",
-         "name": "Tray.ai"
-        },
-        {
-         "slug": "uipath",
-         "name": "UiPath"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
-        }
-       ],
-       "no": [
-        {
-         "slug": "airtable",
-         "name": "Airtable"
-        },
-        {
-         "slug": "asana",
-         "name": "Asana"
-        },
-        {
-         "slug": "basecamp",
-         "name": "Basecamp"
-        },
-        {
-         "slug": "calendly",
-         "name": "Calendly"
-        },
-        {
-         "slug": "cursor",
-         "name": "Cursor"
-        },
-        {
-         "slug": "figma",
-         "name": "Figma"
-        },
-        {
-         "slug": "fireflies",
-         "name": "Fireflies.ai"
-        },
-        {
-         "slug": "framer",
-         "name": "Framer"
-        },
-        {
-         "slug": "github",
-         "name": "GitHub"
-        },
-        {
-         "slug": "gitlab",
-         "name": "GitLab"
-        },
-        {
-         "slug": "gitpod",
-         "name": "Gitpod"
-        },
-        {
-         "slug": "guru",
-         "name": "Guru"
-        },
-        {
-         "slug": "loom",
-         "name": "Loom"
-        },
-        {
-         "slug": "m-files",
-         "name": "M-Files"
-        },
-        {
-         "slug": "make",
-         "name": "Make"
-        },
-        {
-         "slug": "mentimeter",
-         "name": "Mentimeter"
-        },
-        {
-         "slug": "miro",
-         "name": "Miro"
-        },
-        {
-         "slug": "motion",
-         "name": "Motion"
-        },
-        {
-         "slug": "notion",
-         "name": "Notion"
-        },
-        {
-         "slug": "productboard",
-         "name": "Productboard"
-        },
-        {
-         "slug": "rossum",
-         "name": "Rossum"
-        },
-        {
-         "slug": "slack",
-         "name": "Slack"
-        },
-        {
-         "slug": "smartsheet",
-         "name": "Smartsheet"
-        },
-        {
-         "slug": "sourcegraph",
-         "name": "Sourcegraph"
-        },
-        {
-         "slug": "teamwork",
-         "name": "Teamwork"
-        },
-        {
-         "slug": "templafy",
-         "name": "Templafy"
-        },
-        {
-         "slug": "wrike",
-         "name": "Wrike"
-        }
-       ],
-       "unreadable": [
-        {
-         "slug": "atlassian",
-         "name": "Atlassian"
-        },
-        {
-         "slug": "box",
-         "name": "Box"
-        },
-        {
-         "slug": "jetbrains",
-         "name": "JetBrains"
-        },
-        {
-         "slug": "linear",
-         "name": "Linear"
-        },
-        {
-         "slug": "nextcloud",
-         "name": "Nextcloud"
-        },
-        {
-         "slug": "shortcut",
-         "name": "Shortcut"
-        },
-        {
-         "slug": "sonarsource",
-         "name": "SonarSource"
-        },
-        {
-         "slug": "tricentis",
-         "name": "Tricentis"
-        },
-        {
-         "slug": "unity",
-         "name": "Unity"
-        },
-        {
-         "slug": "workato",
-         "name": "Workato"
         }
        ]
       }
@@ -41458,17 +41377,21 @@
       "label": "Customer service",
       "short": "Service",
       "n": 19,
-      "readable": 14,
-      "yes": 3,
+      "readable": 15,
+      "yes": 4,
       "no": 11,
-      "unreadable": 5,
-      "share": 21.4,
+      "unreadable": 4,
+      "share": 26.7,
       "suppressed": false,
       "companies": {
        "yes": [
         {
          "slug": "dixa",
          "name": "Dixa"
+        },
+        {
+         "slug": "five9",
+         "name": "Five9"
         },
         {
          "slug": "intercom",
@@ -41535,16 +41458,224 @@
          "name": "Dialpad"
         },
         {
-         "slug": "five9",
-         "name": "Five9"
-        },
-        {
          "slug": "gorgias",
          "name": "Gorgias"
         },
         {
          "slug": "nice",
          "name": "NICE"
+        }
+       ]
+      }
+     },
+     {
+      "group": "work",
+      "label": "Work & product",
+      "short": "Work & product",
+      "n": 48,
+      "readable": 38,
+      "yes": 10,
+      "no": 28,
+      "unreadable": 10,
+      "share": 26.3,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "clickup",
+         "name": "ClickUp"
+        },
+        {
+         "slug": "coda",
+         "name": "Coda"
+        },
+        {
+         "slug": "monday",
+         "name": "monday.com"
+        },
+        {
+         "slug": "n8n",
+         "name": "n8n"
+        },
+        {
+         "slug": "otter",
+         "name": "Otter.ai"
+        },
+        {
+         "slug": "replit",
+         "name": "Replit"
+        },
+        {
+         "slug": "retool",
+         "name": "Retool"
+        },
+        {
+         "slug": "teamleader",
+         "name": "Teamleader"
+        },
+        {
+         "slug": "tray",
+         "name": "Tray.ai"
+        },
+        {
+         "slug": "uipath",
+         "name": "UiPath"
+        }
+       ],
+       "no": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
+        {
+         "slug": "asana",
+         "name": "Asana"
+        },
+        {
+         "slug": "basecamp",
+         "name": "Basecamp"
+        },
+        {
+         "slug": "calendly",
+         "name": "Calendly"
+        },
+        {
+         "slug": "cursor",
+         "name": "Cursor"
+        },
+        {
+         "slug": "figma",
+         "name": "Figma"
+        },
+        {
+         "slug": "fireflies",
+         "name": "Fireflies.ai"
+        },
+        {
+         "slug": "framer",
+         "name": "Framer"
+        },
+        {
+         "slug": "github",
+         "name": "GitHub"
+        },
+        {
+         "slug": "gitlab",
+         "name": "GitLab"
+        },
+        {
+         "slug": "gitpod",
+         "name": "Gitpod"
+        },
+        {
+         "slug": "guru",
+         "name": "Guru"
+        },
+        {
+         "slug": "loom",
+         "name": "Loom"
+        },
+        {
+         "slug": "m-files",
+         "name": "M-Files"
+        },
+        {
+         "slug": "make",
+         "name": "Make"
+        },
+        {
+         "slug": "mentimeter",
+         "name": "Mentimeter"
+        },
+        {
+         "slug": "miro",
+         "name": "Miro"
+        },
+        {
+         "slug": "motion",
+         "name": "Motion"
+        },
+        {
+         "slug": "notion",
+         "name": "Notion"
+        },
+        {
+         "slug": "productboard",
+         "name": "Productboard"
+        },
+        {
+         "slug": "rossum",
+         "name": "Rossum"
+        },
+        {
+         "slug": "slack",
+         "name": "Slack"
+        },
+        {
+         "slug": "smartsheet",
+         "name": "Smartsheet"
+        },
+        {
+         "slug": "sourcegraph",
+         "name": "Sourcegraph"
+        },
+        {
+         "slug": "teamwork",
+         "name": "Teamwork"
+        },
+        {
+         "slug": "templafy",
+         "name": "Templafy"
+        },
+        {
+         "slug": "wrike",
+         "name": "Wrike"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "atlassian",
+         "name": "Atlassian"
+        },
+        {
+         "slug": "box",
+         "name": "Box"
+        },
+        {
+         "slug": "jetbrains",
+         "name": "JetBrains"
+        },
+        {
+         "slug": "linear",
+         "name": "Linear"
+        },
+        {
+         "slug": "nextcloud",
+         "name": "Nextcloud"
+        },
+        {
+         "slug": "shortcut",
+         "name": "Shortcut"
+        },
+        {
+         "slug": "sonarsource",
+         "name": "SonarSource"
+        },
+        {
+         "slug": "tricentis",
+         "name": "Tricentis"
+        },
+        {
+         "slug": "unity",
+         "name": "Unity"
+        },
+        {
+         "slug": "workato",
+         "name": "Workato"
         }
        ]
       }
@@ -41651,17 +41782,21 @@
      "label": "Financial infrastructure",
      "short": "Financial infra",
      "n": 16,
-     "readable": 11,
-     "yes": 7,
+     "readable": 12,
+     "yes": 8,
      "no": 4,
-     "unreadable": 5,
-     "share": 63.6,
+     "unreadable": 4,
+     "share": 66.7,
      "suppressed": false,
      "companies": {
       "yes": [
        {
         "slug": "adyen",
         "name": "Adyen"
+       },
+       {
+        "slug": "airwallex",
+        "name": "Airwallex"
        },
        {
         "slug": "checkout-com",
@@ -41707,10 +41842,6 @@
        }
       ],
       "unreadable": [
-       {
-        "slug": "airwallex",
-        "name": "Airwallex"
-       },
        {
         "slug": "avaloq",
         "name": "Avaloq"
@@ -41995,14 +42126,14 @@
      }
     },
     "spread": 6,
-    "lead_over_runner_up": 3,
+    "lead_over_runner_up": 4,
     "drawn": true,
     "withheld": null,
     "overall": {
-     "yes": 93,
-     "no": 174,
-     "unreadable": 94,
-     "readable": 267,
+     "yes": 95,
+     "no": 175,
+     "unreadable": 91,
+     "readable": 270,
      "tracked": 361
     }
    },
@@ -42562,10 +42693,10 @@
       "short": "Work & product",
       "n": 48,
       "readable": 38,
-      "yes": 9,
-      "no": 29,
+      "yes": 8,
+      "no": 30,
       "unreadable": 10,
-      "share": 23.7,
+      "share": 21.1,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -42600,10 +42731,6 @@
         {
          "slug": "wrike",
          "name": "Wrike"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
         }
        ],
        "no": [
@@ -42722,6 +42849,10 @@
         {
          "slug": "uipath",
          "name": "UiPath"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
         }
        ],
        "unreadable": [
@@ -42773,11 +42904,11 @@
       "label": "Go-to-market",
       "short": "Go-to-market",
       "n": 50,
-      "readable": 44,
-      "yes": 17,
+      "readable": 45,
+      "yes": 18,
       "no": 27,
-      "unreadable": 6,
-      "share": 38.6,
+      "unreadable": 5,
+      "share": 40,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -42828,6 +42959,10 @@
         {
          "slug": "lokalise",
          "name": "Lokalise"
+        },
+        {
+         "slug": "mailchimp",
+         "name": "Mailchimp"
         },
         {
          "slug": "salesforce",
@@ -42966,10 +43101,6 @@
          "name": "Drift"
         },
         {
-         "slug": "mailchimp",
-         "name": "Mailchimp"
-        },
-        {
          "slug": "sitecore",
          "name": "Sitecore"
         },
@@ -42993,11 +43124,11 @@
       "label": "Customer service",
       "short": "Service",
       "n": 19,
-      "readable": 14,
+      "readable": 15,
       "yes": 3,
-      "no": 11,
-      "unreadable": 5,
-      "share": 21.4,
+      "no": 12,
+      "unreadable": 4,
+      "share": 20,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -43018,6 +43149,10 @@
         {
          "slug": "aircall",
          "name": "Aircall"
+        },
+        {
+         "slug": "five9",
+         "name": "Five9"
         },
         {
          "slug": "front",
@@ -43068,10 +43203,6 @@
         {
          "slug": "dialpad",
          "name": "Dialpad"
-        },
-        {
-         "slug": "five9",
-         "name": "Five9"
         },
         {
          "slug": "gorgias",
@@ -43477,10 +43608,10 @@
       "label": "Financial infrastructure",
       "short": "Financial infra",
       "n": 16,
-      "readable": 11,
+      "readable": 12,
       "yes": 0,
-      "no": 11,
-      "unreadable": 5,
+      "no": 12,
+      "unreadable": 4,
       "share": 0,
       "suppressed": false,
       "companies": {
@@ -43489,6 +43620,10 @@
         {
          "slug": "adyen",
          "name": "Adyen"
+        },
+        {
+         "slug": "airwallex",
+         "name": "Airwallex"
         },
         {
          "slug": "backbase",
@@ -43532,10 +43667,6 @@
         }
        ],
        "unreadable": [
-        {
-         "slug": "airwallex",
-         "name": "Airwallex"
-        },
         {
          "slug": "avaloq",
          "name": "Avaloq"
@@ -43662,11 +43793,11 @@
       "label": "Go-to-market",
       "short": "Go-to-market",
       "n": 50,
-      "readable": 44,
-      "yes": 17,
+      "readable": 45,
+      "yes": 18,
       "no": 27,
-      "unreadable": 6,
-      "share": 38.6,
+      "unreadable": 5,
+      "share": 40,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -43717,6 +43848,10 @@
         {
          "slug": "lokalise",
          "name": "Lokalise"
+        },
+        {
+         "slug": "mailchimp",
+         "name": "Mailchimp"
         },
         {
          "slug": "salesforce",
@@ -43853,10 +43988,6 @@
         {
          "slug": "drift",
          "name": "Drift"
-        },
-        {
-         "slug": "mailchimp",
-         "name": "Mailchimp"
         },
         {
          "slug": "sitecore",
@@ -44427,10 +44558,10 @@
       "short": "Work & product",
       "n": 48,
       "readable": 38,
-      "yes": 9,
-      "no": 29,
+      "yes": 8,
+      "no": 30,
       "unreadable": 10,
-      "share": 23.7,
+      "share": 21.1,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -44465,10 +44596,6 @@
         {
          "slug": "wrike",
          "name": "Wrike"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
         }
        ],
        "no": [
@@ -44587,6 +44714,10 @@
         {
          "slug": "uipath",
          "name": "UiPath"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
         }
        ],
        "unreadable": [
@@ -44638,11 +44769,11 @@
       "label": "Customer service",
       "short": "Service",
       "n": 19,
-      "readable": 14,
+      "readable": 15,
       "yes": 3,
-      "no": 11,
-      "unreadable": 5,
-      "share": 21.4,
+      "no": 12,
+      "unreadable": 4,
+      "share": 20,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -44663,6 +44794,10 @@
         {
          "slug": "aircall",
          "name": "Aircall"
+        },
+        {
+         "slug": "five9",
+         "name": "Five9"
         },
         {
          "slug": "front",
@@ -44713,10 +44848,6 @@
         {
          "slug": "dialpad",
          "name": "Dialpad"
-        },
-        {
-         "slug": "five9",
-         "name": "Five9"
         },
         {
          "slug": "gorgias",
@@ -45222,10 +45353,10 @@
       "label": "Financial infrastructure",
       "short": "Financial infra",
       "n": 16,
-      "readable": 11,
+      "readable": 12,
       "yes": 0,
-      "no": 11,
-      "unreadable": 5,
+      "no": 12,
+      "unreadable": 4,
       "share": 0,
       "suppressed": false,
       "companies": {
@@ -45234,6 +45365,10 @@
         {
          "slug": "adyen",
          "name": "Adyen"
+        },
+        {
+         "slug": "airwallex",
+         "name": "Airwallex"
         },
         {
          "slug": "backbase",
@@ -45278,10 +45413,6 @@
        ],
        "unreadable": [
         {
-         "slug": "airwallex",
-         "name": "Airwallex"
-        },
-        {
          "slug": "avaloq",
          "name": "Avaloq"
         },
@@ -45306,11 +45437,11 @@
      "label": "Go-to-market",
      "short": "Go-to-market",
      "n": 50,
-     "readable": 44,
-     "yes": 17,
+     "readable": 45,
+     "yes": 18,
      "no": 27,
-     "unreadable": 6,
-     "share": 38.6,
+     "unreadable": 5,
+     "share": 40,
      "suppressed": false,
      "companies": {
       "yes": [
@@ -45361,6 +45492,10 @@
        {
         "slug": "lokalise",
         "name": "Lokalise"
+       },
+       {
+        "slug": "mailchimp",
+        "name": "Mailchimp"
        },
        {
         "slug": "salesforce",
@@ -45497,10 +45632,6 @@
        {
         "slug": "drift",
         "name": "Drift"
-       },
-       {
-        "slug": "mailchimp",
-        "name": "Mailchimp"
        },
        {
         "slug": "sitecore",
@@ -45806,10 +45937,10 @@
      "label": "Financial infrastructure",
      "short": "Financial infra",
      "n": 16,
-     "readable": 11,
+     "readable": 12,
      "yes": 0,
-     "no": 11,
-     "unreadable": 5,
+     "no": 12,
+     "unreadable": 4,
      "share": 0,
      "suppressed": false,
      "companies": {
@@ -45818,6 +45949,10 @@
        {
         "slug": "adyen",
         "name": "Adyen"
+       },
+       {
+        "slug": "airwallex",
+        "name": "Airwallex"
        },
        {
         "slug": "backbase",
@@ -45862,10 +45997,6 @@
       ],
       "unreadable": [
        {
-        "slug": "airwallex",
-        "name": "Airwallex"
-       },
-       {
         "slug": "avaloq",
         "name": "Avaloq"
        },
@@ -45890,9 +46021,9 @@
     "withheld": null,
     "overall": {
      "yes": 67,
-     "no": 200,
-     "unreadable": 94,
-     "readable": 267,
+     "no": 203,
+     "unreadable": 91,
+     "readable": 270,
      "tracked": 361
     }
    },
@@ -46663,11 +46794,11 @@
       "label": "Go-to-market",
       "short": "Go-to-market",
       "n": 50,
-      "readable": 44,
+      "readable": 45,
       "yes": 2,
-      "no": 42,
-      "unreadable": 6,
-      "share": 4.5,
+      "no": 43,
+      "unreadable": 5,
+      "share": 4.4,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -46790,6 +46921,10 @@
          "name": "Lokalise"
         },
         {
+         "slug": "mailchimp",
+         "name": "Mailchimp"
+        },
+        {
          "slug": "optimizely",
          "name": "Optimizely"
         },
@@ -46856,10 +46991,6 @@
          "name": "Drift"
         },
         {
-         "slug": "mailchimp",
-         "name": "Mailchimp"
-        },
-        {
          "slug": "sitecore",
          "name": "Sitecore"
         },
@@ -46883,10 +47014,10 @@
       "label": "Customer service",
       "short": "Service",
       "n": 19,
-      "readable": 14,
+      "readable": 15,
       "yes": 0,
-      "no": 14,
-      "unreadable": 5,
+      "no": 15,
+      "unreadable": 4,
       "share": 0,
       "suppressed": false,
       "companies": {
@@ -46899,6 +47030,10 @@
         {
          "slug": "dixa",
          "name": "Dixa"
+        },
+        {
+         "slug": "five9",
+         "name": "Five9"
         },
         {
          "slug": "front",
@@ -46957,10 +47092,6 @@
         {
          "slug": "dialpad",
          "name": "Dialpad"
-        },
-        {
-         "slug": "five9",
-         "name": "Five9"
         },
         {
          "slug": "gorgias",
@@ -47365,10 +47496,10 @@
       "label": "Financial infrastructure",
       "short": "Financial infra",
       "n": 16,
-      "readable": 11,
+      "readable": 12,
       "yes": 0,
-      "no": 11,
-      "unreadable": 5,
+      "no": 12,
+      "unreadable": 4,
       "share": 0,
       "suppressed": false,
       "companies": {
@@ -47377,6 +47508,10 @@
         {
          "slug": "adyen",
          "name": "Adyen"
+        },
+        {
+         "slug": "airwallex",
+         "name": "Airwallex"
         },
         {
          "slug": "backbase",
@@ -47420,10 +47555,6 @@
         }
        ],
        "unreadable": [
-        {
-         "slug": "airwallex",
-         "name": "Airwallex"
-        },
         {
          "slug": "avaloq",
          "name": "Avaloq"
@@ -48530,11 +48661,11 @@
       "label": "Go-to-market",
       "short": "Go-to-market",
       "n": 50,
-      "readable": 44,
+      "readable": 45,
       "yes": 2,
-      "no": 42,
-      "unreadable": 6,
-      "share": 4.5,
+      "no": 43,
+      "unreadable": 5,
+      "share": 4.4,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -48657,6 +48788,10 @@
          "name": "Lokalise"
         },
         {
+         "slug": "mailchimp",
+         "name": "Mailchimp"
+        },
+        {
          "slug": "optimizely",
          "name": "Optimizely"
         },
@@ -48721,10 +48856,6 @@
         {
          "slug": "drift",
          "name": "Drift"
-        },
-        {
-         "slug": "mailchimp",
-         "name": "Mailchimp"
         },
         {
          "slug": "sitecore",
@@ -48918,10 +49049,10 @@
       "label": "Customer service",
       "short": "Service",
       "n": 19,
-      "readable": 14,
+      "readable": 15,
       "yes": 0,
-      "no": 14,
-      "unreadable": 5,
+      "no": 15,
+      "unreadable": 4,
       "share": 0,
       "suppressed": false,
       "companies": {
@@ -48934,6 +49065,10 @@
         {
          "slug": "dixa",
          "name": "Dixa"
+        },
+        {
+         "slug": "five9",
+         "name": "Five9"
         },
         {
          "slug": "front",
@@ -48992,10 +49127,6 @@
         {
          "slug": "dialpad",
          "name": "Dialpad"
-        },
-        {
-         "slug": "five9",
-         "name": "Five9"
         },
         {
          "slug": "gorgias",
@@ -49108,10 +49239,10 @@
       "label": "Financial infrastructure",
       "short": "Financial infra",
       "n": 16,
-      "readable": 11,
+      "readable": 12,
       "yes": 0,
-      "no": 11,
-      "unreadable": 5,
+      "no": 12,
+      "unreadable": 4,
       "share": 0,
       "suppressed": false,
       "companies": {
@@ -49120,6 +49251,10 @@
         {
          "slug": "adyen",
          "name": "Adyen"
+        },
+        {
+         "slug": "airwallex",
+         "name": "Airwallex"
         },
         {
          "slug": "backbase",
@@ -49163,10 +49298,6 @@
         }
        ],
        "unreadable": [
-        {
-         "slug": "airwallex",
-         "name": "Airwallex"
-        },
         {
          "slug": "avaloq",
          "name": "Avaloq"
@@ -49528,10 +49659,10 @@
      "label": "Financial infrastructure",
      "short": "Financial infra",
      "n": 16,
-     "readable": 11,
+     "readable": 12,
      "yes": 0,
-     "no": 11,
-     "unreadable": 5,
+     "no": 12,
+     "unreadable": 4,
      "share": 0,
      "suppressed": false,
      "companies": {
@@ -49540,6 +49671,10 @@
        {
         "slug": "adyen",
         "name": "Adyen"
+       },
+       {
+        "slug": "airwallex",
+        "name": "Airwallex"
        },
        {
         "slug": "backbase",
@@ -49584,10 +49719,6 @@
       ],
       "unreadable": [
        {
-        "slug": "airwallex",
-        "name": "Airwallex"
-       },
-       {
         "slug": "avaloq",
         "name": "Avaloq"
        },
@@ -49612,9 +49743,9 @@
     "withheld": null,
     "overall": {
      "yes": 44,
-     "no": 223,
-     "unreadable": 94,
-     "readable": 267,
+     "no": 226,
+     "unreadable": 91,
+     "readable": 270,
      "tracked": 361
     }
    },
@@ -50385,11 +50516,11 @@
       "label": "Go-to-market",
       "short": "Go-to-market",
       "n": 50,
-      "readable": 44,
+      "readable": 45,
       "yes": 7,
-      "no": 37,
-      "unreadable": 6,
-      "share": 15.9,
+      "no": 38,
+      "unreadable": 5,
+      "share": 15.6,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -50516,6 +50647,10 @@
          "name": "Lokalise"
         },
         {
+         "slug": "mailchimp",
+         "name": "Mailchimp"
+        },
+        {
          "slug": "optimizely",
          "name": "Optimizely"
         },
@@ -50578,10 +50713,6 @@
          "name": "Drift"
         },
         {
-         "slug": "mailchimp",
-         "name": "Mailchimp"
-        },
-        {
          "slug": "sitecore",
          "name": "Sitecore"
         },
@@ -50605,11 +50736,11 @@
       "label": "Customer service",
       "short": "Service",
       "n": 19,
-      "readable": 14,
+      "readable": 15,
       "yes": 1,
-      "no": 13,
-      "unreadable": 5,
-      "share": 7.1,
+      "no": 14,
+      "unreadable": 4,
+      "share": 6.7,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -50626,6 +50757,10 @@
         {
          "slug": "dixa",
          "name": "Dixa"
+        },
+        {
+         "slug": "five9",
+         "name": "Five9"
         },
         {
          "slug": "front",
@@ -50680,10 +50815,6 @@
         {
          "slug": "dialpad",
          "name": "Dialpad"
-        },
-        {
-         "slug": "five9",
-         "name": "Five9"
         },
         {
          "slug": "gorgias",
@@ -51089,11 +51220,11 @@
       "label": "Financial infrastructure",
       "short": "Financial infra",
       "n": 16,
-      "readable": 11,
+      "readable": 12,
       "yes": 2,
-      "no": 9,
-      "unreadable": 5,
-      "share": 18.2,
+      "no": 10,
+      "unreadable": 4,
+      "share": 16.7,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -51110,6 +51241,10 @@
         {
          "slug": "adyen",
          "name": "Adyen"
+        },
+        {
+         "slug": "airwallex",
+         "name": "Airwallex"
         },
         {
          "slug": "backbase",
@@ -51145,10 +51280,6 @@
         }
        ],
        "unreadable": [
-        {
-         "slug": "airwallex",
-         "name": "Airwallex"
-        },
         {
          "slug": "avaloq",
          "name": "Avaloq"
@@ -51275,11 +51406,11 @@
       "label": "Financial infrastructure",
       "short": "Financial infra",
       "n": 16,
-      "readable": 11,
+      "readable": 12,
       "yes": 2,
-      "no": 9,
-      "unreadable": 5,
-      "share": 18.2,
+      "no": 10,
+      "unreadable": 4,
+      "share": 16.7,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -51296,6 +51427,10 @@
         {
          "slug": "adyen",
          "name": "Adyen"
+        },
+        {
+         "slug": "airwallex",
+         "name": "Airwallex"
         },
         {
          "slug": "backbase",
@@ -51331,10 +51466,6 @@
         }
        ],
        "unreadable": [
-        {
-         "slug": "airwallex",
-         "name": "Airwallex"
-        },
         {
          "slug": "avaloq",
          "name": "Avaloq"
@@ -51459,11 +51590,11 @@
       "label": "Go-to-market",
       "short": "Go-to-market",
       "n": 50,
-      "readable": 44,
+      "readable": 45,
       "yes": 7,
-      "no": 37,
-      "unreadable": 6,
-      "share": 15.9,
+      "no": 38,
+      "unreadable": 5,
+      "share": 15.6,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -51590,6 +51721,10 @@
          "name": "Lokalise"
         },
         {
+         "slug": "mailchimp",
+         "name": "Mailchimp"
+        },
+        {
          "slug": "optimizely",
          "name": "Optimizely"
         },
@@ -51650,10 +51785,6 @@
         {
          "slug": "drift",
          "name": "Drift"
-        },
-        {
-         "slug": "mailchimp",
-         "name": "Mailchimp"
         },
         {
          "slug": "sitecore",
@@ -52531,11 +52662,11 @@
       "label": "Customer service",
       "short": "Service",
       "n": 19,
-      "readable": 14,
+      "readable": 15,
       "yes": 1,
-      "no": 13,
-      "unreadable": 5,
-      "share": 7.1,
+      "no": 14,
+      "unreadable": 4,
+      "share": 6.7,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -52552,6 +52683,10 @@
         {
          "slug": "dixa",
          "name": "Dixa"
+        },
+        {
+         "slug": "five9",
+         "name": "Five9"
         },
         {
          "slug": "front",
@@ -52606,10 +52741,6 @@
         {
          "slug": "dialpad",
          "name": "Dialpad"
-        },
-        {
-         "slug": "five9",
-         "name": "Five9"
         },
         {
          "slug": "gorgias",
@@ -52920,11 +53051,11 @@
      "label": "Financial infrastructure",
      "short": "Financial infra",
      "n": 16,
-     "readable": 11,
+     "readable": 12,
      "yes": 2,
-     "no": 9,
-     "unreadable": 5,
-     "share": 18.2,
+     "no": 10,
+     "unreadable": 4,
+     "share": 16.7,
      "suppressed": false,
      "companies": {
       "yes": [
@@ -52941,6 +53072,10 @@
        {
         "slug": "adyen",
         "name": "Adyen"
+       },
+       {
+        "slug": "airwallex",
+        "name": "Airwallex"
        },
        {
         "slug": "backbase",
@@ -52976,10 +53111,6 @@
        }
       ],
       "unreadable": [
-       {
-        "slug": "airwallex",
-        "name": "Airwallex"
-       },
        {
         "slug": "avaloq",
         "name": "Avaloq"
@@ -53268,14 +53399,14 @@
      }
     },
     "spread": 4,
-    "lead_over_runner_up": 1,
+    "lead_over_runner_up": 0,
     "drawn": true,
     "withheld": null,
     "overall": {
      "yes": 33,
-     "no": 234,
-     "unreadable": 94,
-     "readable": 267,
+     "no": 237,
+     "unreadable": 91,
+     "readable": 270,
      "tracked": 361
     }
    },
@@ -56692,5 +56823,5 @@
    "missing": []
   }
  },
- "generated_at": "2026-08-09T14:57:39Z"
+ "generated_at": "2026-08-09T15:04:36Z"
 }

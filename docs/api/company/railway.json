@@ -288,6 +288,18 @@
   {
    "kind": "home",
    "url": "https://railway.com/",
+   "fetched_at": "2026-08-09T15:02:57Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 386374,
+   "duration_ms": 398,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://railway.com/",
    "fetched_at": "2026-08-09T14:56:15Z",
    "http_status": 200,
    "status": "ok",

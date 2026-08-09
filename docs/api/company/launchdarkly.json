@@ -376,6 +376,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "pricing",
+   "url": "https://launchdarkly.com/pricing/",
+   "fetched_at": "2026-08-09T15:03:52Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 620874,
+   "duration_ms": 227,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://launchdarkly.com/",
+   "fetched_at": "2026-08-09T15:00:46Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 698798,
+   "duration_ms": 265,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
    "kind": "home",
    "url": "https://launchdarkly.com/",
    "fetched_at": "2026-08-08T11:47:42Z",

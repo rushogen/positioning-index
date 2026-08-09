@@ -13,8 +13,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T14:42:00Z",
-   "last_good_at": "2026-08-09T14:42:00Z",
+   "last_observed_at": "2026-08-09T15:03:09Z",
+   "last_good_at": "2026-08-09T15:03:09Z",
    "last_good_value": "6",
    "last_good_json": null,
    "last_good_hash": "330ca589",
@@ -31,8 +31,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T14:42:00Z",
-   "last_good_at": "2026-08-09T14:42:00Z",
+   "last_observed_at": "2026-08-09T15:03:09Z",
+   "last_good_at": "2026-08-09T15:03:09Z",
    "last_good_value": "proof, testimonial",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":true,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "d6336940",
@@ -49,8 +49,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T14:42:00Z",
-   "last_good_at": "2026-08-09T14:42:00Z",
+   "last_observed_at": "2026-08-09T15:03:09Z",
+   "last_good_at": "2026-08-09T15:03:09Z",
    "last_good_value": "13",
    "last_good_json": null,
    "last_good_hash": "1eeb2efd",
@@ -67,8 +67,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T14:42:00Z",
-   "last_good_at": "2026-08-09T14:42:00Z",
+   "last_observed_at": "2026-08-09T15:03:09Z",
+   "last_good_at": "2026-08-09T15:03:09Z",
    "last_good_value": "3",
    "last_good_json": null,
    "last_good_hash": "360caa42",
@@ -85,8 +85,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T14:42:00Z",
-   "last_good_at": "2026-08-09T14:42:00Z",
+   "last_observed_at": "2026-08-09T15:03:09Z",
+   "last_good_at": "2026-08-09T15:03:09Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -103,8 +103,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T14:42:00Z",
-   "last_good_at": "2026-08-09T14:42:00Z",
+   "last_observed_at": "2026-08-09T15:03:09Z",
+   "last_good_at": "2026-08-09T15:03:09Z",
    "last_good_value": "7",
    "last_good_json": null,
    "last_good_hash": "320ca3f6",
@@ -121,8 +121,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T14:42:00Z",
-   "last_good_at": "2026-08-09T14:42:00Z",
+   "last_observed_at": "2026-08-09T15:03:09Z",
+   "last_good_at": "2026-08-09T15:03:09Z",
    "last_good_value": "hero > testimonial > features > security > features > proof > features",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":46,\"merged\":1},{\"position\":2,\"type\":\"testimonial\",\"heading\":\"Enterprise AI without Collibra\",\"words\":51,\"merged\":1},{\"position\":3,\"type\":\"features\",\"heading\":\"Enterprise AI with Collibra\",\"words\":56,\"merged\":1},{\"position\":4,\"type\":\"security\",\"heading\":\"Context and control, across every layer\",\"words\":169,\"merged\":1},{\"position\":5,\"type\":\"features\",\"heading\":\"Your path to AI and data success starts here\",\"words\":89,\"merged\":2},{\"position\":6,\"type\":\"proof\",\"heading\":\"Recognition that speaks for itself\",\"words\":62,\"merged\":1},{\"position\":7,\"type\":\"features\",\"heading\":\"Driving the next wave of innovation\",\"words\":62,\"merged\":2}]}",
    "last_good_hash": "4a688a01",
@@ -139,8 +139,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T14:42:00Z",
-   "last_good_at": "2026-08-09T14:42:00Z",
+   "last_observed_at": "2026-08-09T15:03:09Z",
+   "last_good_at": "2026-08-09T15:03:09Z",
    "last_good_value": 1118,
    "last_good_json": null,
    "last_good_hash": "832cc31e",
@@ -157,8 +157,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T14:42:00Z",
-   "last_good_at": "2026-08-09T14:42:00Z",
+   "last_observed_at": "2026-08-09T15:03:09Z",
+   "last_good_at": "2026-08-09T15:03:09Z",
    "last_good_value": "enterprise ai control plane",
    "last_good_json": null,
    "last_good_hash": "a8e64fdb",
@@ -175,8 +175,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T14:42:00Z",
-   "last_good_at": "2026-08-09T14:42:00Z",
+   "last_observed_at": "2026-08-09T15:03:09Z",
+   "last_good_at": "2026-08-09T15:03:09Z",
    "last_good_value": "ADEO, Admiral, Adobe, Amica, Anglo American, Arvest Bank, AXA XL, Bank of Cyprus, BNP Paribas Fortis, BNY Mellon, Cambia Health Solutions, Careers, Cirium, Citizens Bank Financial Group, Colruyt Group, Cox Automotive, Crédit Agricole Assurances, Daiichi Sankyo Europe GmbH, DNB, Enbridge, Engie",
    "last_good_json": "{\"names\":[\"ADEO\",\"Admiral\",\"Adobe\",\"Amica\",\"Anglo American\",\"Arvest Bank\",\"AXA XL\",\"Bank of Cyprus\",\"BNP Paribas Fortis\",\"BNY Mellon\",\"Cambia Health Solutions\",\"Careers\",\"Cirium\",\"Citizens Bank Financial Group\",\"Colruyt Group\",\"Cox Automotive\",\"Crédit Agricole Assurances\",\"Daiichi Sankyo Europe GmbH\",\"DNB\",\"Enbridge\",\"Engie\"],\"count\":21,\"lead\":\"our customers do more with trusted data. <div class=\\\"image-card__wra\"}",
    "last_good_hash": "1c958f01",
@@ -193,8 +193,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T14:42:00Z",
-   "last_good_at": "2026-08-09T14:42:00Z",
+   "last_observed_at": "2026-08-09T15:03:09Z",
+   "last_good_at": "2026-08-09T15:03:09Z",
    "last_good_value": "The enterprise standard for AI context and control",
    "last_good_json": null,
    "last_good_hash": "bf7bd5b4",
@@ -211,8 +211,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T14:42:00Z",
-   "last_good_at": "2026-08-09T14:42:00Z",
+   "last_observed_at": "2026-08-09T15:03:09Z",
+   "last_good_at": "2026-08-09T15:03:09Z",
    "last_good_value": "Collibra is the Enterprise AI Control Plane. Built over eighteen years of ontology engineering, it governs context and control across any data, any model, any agent — for AI leaders who need certainty at the speed of AI.",
    "last_good_json": null,
    "last_good_hash": "37017004",
@@ -229,8 +229,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T14:42:00Z",
-   "last_good_at": "2026-08-09T14:42:00Z",
+   "last_observed_at": "2026-08-09T15:03:09Z",
+   "last_good_at": "2026-08-09T15:03:09Z",
    "last_good_value": "The Enterprise AI Control Plane | Collibra",
    "last_good_json": null,
    "last_good_hash": "4c7f2fac",
@@ -247,8 +247,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T14:42:00Z",
-   "last_good_at": "2026-08-09T14:42:00Z",
+   "last_observed_at": "2026-08-09T15:03:09Z",
+   "last_good_at": "2026-08-09T15:03:09Z",
    "last_good_value": "3042 accounts | 500 companies | fortune 500",
    "last_good_json": "{\"items\":[{\"claim\":\"3042 accounts\",\"kind\":\"count\"},{\"claim\":\"500 companies\",\"kind\":\"count\"},{\"claim\":\"fortune 500\",\"kind\":\"rank\"}],\"count\":3}",
    "last_good_hash": "32b39dc2",
@@ -265,8 +265,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T14:42:00Z",
-   "last_good_at": "2026-08-09T14:42:00Z",
+   "last_observed_at": "2026-08-09T15:03:09Z",
+   "last_good_at": "2026-08-09T15:03:09Z",
    "last_good_value": "Collibra is the enterprise AI control plane governing context and ensuring control across every source, model and agent. Lead with certainty at the speed of AI.",
    "last_good_json": null,
    "last_good_hash": "582c9192",
@@ -284,6 +284,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.collibra.com/",
+   "fetched_at": "2026-08-09T15:03:09Z",
+   "http_status": 200,
+   "status": "origin-shift",
+   "reason": "crawl origin local (DE/TXL) -> github-actions (US/DFW); locale-sensitive signals are not comparable across it",
+   "bytes": 442376,
+   "duration_ms": 342,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.collibra.com/",

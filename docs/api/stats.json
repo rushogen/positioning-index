@@ -1,28 +1,28 @@
 {
  "companies": 361,
  "targets": 481,
- "observations": 1809,
- "changes": 36,
- "changes_7d": 36,
- "changes_30d": 36,
+ "observations": 1936,
+ "changes": 53,
+ "changes_7d": 53,
+ "changes_30d": 53,
  "retracted_changes": 3,
  "first_observation": "2026-08-07T11:00:38Z",
- "last_observation": "2026-08-09T14:57:35Z",
- "last_successful_fetch": "2026-08-09T14:57:35Z",
- "runs": 30,
- "last_run_at": "2026-08-09T14:57:39Z",
- "fetches_24h": 222,
- "blocked_24h": 24,
- "errors_24h": 2,
- "suspect_signals": 1,
+ "last_observation": "2026-08-09T15:04:15Z",
+ "last_successful_fetch": "2026-08-09T15:04:17Z",
+ "runs": 31,
+ "last_run_at": "2026-08-09T15:04:36Z",
+ "fetches_24h": 703,
+ "blocked_24h": 44,
+ "errors_24h": 4,
+ "suspect_signals": 2,
  "categories": [
   {
    "label": "one platform",
-   "n": 8
+   "n": 7
   },
   {
    "label": "cloud",
-   "n": 7
+   "n": 6
   },
   {
    "label": "ai agents",
@@ -223,5 +223,5 @@
    "family": "pricing"
   }
  },
- "generated_at": "2026-08-09T14:57:39Z"
+ "generated_at": "2026-08-09T15:04:36Z"
 }

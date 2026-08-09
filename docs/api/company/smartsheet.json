@@ -379,6 +379,30 @@
   {
    "kind": "pricing",
    "url": "https://www.smartsheet.com/pricing",
+   "fetched_at": "2026-08-09T15:04:17Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 142,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.smartsheet.com/",
+   "fetched_at": "2026-08-09T15:02:45Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 480,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.smartsheet.com/pricing",
    "fetched_at": "2026-08-09T14:42:56Z",
    "http_status": 200,
    "status": "ok",

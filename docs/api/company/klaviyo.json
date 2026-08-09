@@ -378,6 +378,30 @@
   {
    "kind": "pricing",
    "url": "https://www.klaviyo.com/pricing",
+   "fetched_at": "2026-08-09T15:03:37Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 577913,
+   "duration_ms": 355,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.klaviyo.com/",
+   "fetched_at": "2026-08-09T15:00:08Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 518333,
+   "duration_ms": 471,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.klaviyo.com/pricing",
    "fetched_at": "2026-08-08T11:47:15Z",
    "http_status": 200,
    "status": "ok",

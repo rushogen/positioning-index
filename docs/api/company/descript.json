@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T14:55:33Z",
-   "last_good_at": "2026-08-09T14:55:33Z",
+   "last_observed_at": "2026-08-09T15:02:56Z",
+   "last_good_at": "2026-08-09T15:02:56Z",
    "last_good_value": "11",
    "last_good_json": null,
    "last_good_hash": "1ceb2bd7",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T14:55:33Z",
-   "last_good_at": "2026-08-09T14:55:33Z",
+   "last_observed_at": "2026-08-09T15:02:56Z",
+   "last_good_at": "2026-08-09T15:02:56Z",
    "last_good_value": "testimonial, pricing_block",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":true,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "03b68bf8",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T14:55:33Z",
-   "last_good_at": "2026-08-09T14:55:33Z",
+   "last_observed_at": "2026-08-09T15:02:56Z",
+   "last_good_at": "2026-08-09T15:02:56Z",
    "last_good_value": "51",
    "last_good_json": null,
    "last_good_hash": "84e14233",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T14:55:33Z",
-   "last_good_at": "2026-08-09T14:55:33Z",
+   "last_observed_at": "2026-08-09T15:02:56Z",
+   "last_good_at": "2026-08-09T15:02:56Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T14:55:33Z",
-   "last_good_at": "2026-08-09T14:55:33Z",
+   "last_observed_at": "2026-08-09T15:02:56Z",
+   "last_good_at": "2026-08-09T15:02:56Z",
    "last_good_value": "59",
    "last_good_json": null,
    "last_good_hash": "8ce14ecb",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T14:55:33Z",
-   "last_good_at": "2026-08-09T14:55:33Z",
+   "last_observed_at": "2026-08-09T15:02:56Z",
+   "last_good_at": "2026-08-09T15:02:56Z",
    "last_good_value": "3",
    "last_good_json": null,
    "last_good_hash": "360caa42",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T14:55:33Z",
-   "last_good_at": "2026-08-09T14:55:33Z",
+   "last_observed_at": "2026-08-09T15:02:56Z",
+   "last_good_at": "2026-08-09T15:02:56Z",
    "last_good_value": "hero > testimonial > pricing",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":368,\"merged\":1},{\"position\":2,\"type\":\"testimonial\",\"heading\":\"\",\"words\":211,\"merged\":1},{\"position\":3,\"type\":\"pricing\",\"heading\":\"PRICING\",\"words\":302,\"merged\":1}]}",
    "last_good_hash": "a8ffaf28",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T14:55:33Z",
-   "last_good_at": "2026-08-09T14:55:33Z",
+   "last_observed_at": "2026-08-09T15:02:56Z",
+   "last_good_at": "2026-08-09T15:02:56Z",
    "last_good_value": 991,
    "last_good_json": null,
    "last_good_hash": "d2e089b2",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T14:55:33Z",
-   "last_good_at": "2026-08-09T14:55:33Z",
+   "last_observed_at": "2026-08-09T15:02:56Z",
+   "last_good_at": "2026-08-09T15:02:56Z",
    "last_good_value": "podcast editor",
    "last_good_json": null,
    "last_good_hash": "3304b6cc",
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T14:55:33Z",
-   "last_good_at": "2026-08-09T14:55:33Z",
+   "last_observed_at": "2026-08-09T15:02:56Z",
+   "last_good_at": "2026-08-09T15:02:56Z",
    "last_good_value": "amazon, apple, canva, cbs, coke, feature, figma, github, kpmg, LinkedIn, microsoft, nyt, okta, reuters, SaaStr, salesforce, spotify, vox",
    "last_good_json": "{\"names\":[\"amazon\",\"apple\",\"canva\",\"cbs\",\"coke\",\"feature\",\"figma\",\"github\",\"kpmg\",\"LinkedIn\",\"microsoft\",\"nyt\",\"okta\",\"reuters\",\"SaaStr\",\"salesforce\",\"spotify\",\"vox\"],\"count\":18,\"lead\":\"our customers before they get mad enough to cancel. <div class=\\\"relative rounded\"}",
    "last_good_hash": "ceec7c0e",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T14:55:33Z",
-   "last_good_at": "2026-08-09T14:55:33Z",
+   "last_observed_at": "2026-08-09T15:02:56Z",
+   "last_good_at": "2026-08-09T15:02:56Z",
    "last_good_value": "Descript – AI Video & Podcast Editor | Free, Online",
    "last_good_json": null,
    "last_good_hash": "05f82d8b",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T14:55:33Z",
-   "last_good_at": "2026-08-09T14:55:33Z",
+   "last_observed_at": "2026-08-09T15:02:56Z",
+   "last_good_at": "2026-08-09T15:02:56Z",
    "last_good_value": "Descript makes editing video and audio as easy as editing text. Record, transcribe, edit, and publish in one tool. Try for free, with powerful upgrades for creators & teams.",
    "last_good_json": null,
    "last_good_hash": "366625a1",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T14:55:33Z",
-   "last_good_at": "2026-08-09T14:55:33Z",
+   "last_observed_at": "2026-08-09T15:02:56Z",
+   "last_good_at": "2026-08-09T15:02:56Z",
    "last_good_value": "Descript – AI Video & Podcast Editor | Free, Online",
    "last_good_json": null,
    "last_good_hash": "05f82d8b",
@@ -248,8 +248,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T14:55:33Z",
-   "last_good_at": "2026-08-09T14:55:33Z",
+   "last_observed_at": "2026-08-09T15:02:56Z",
+   "last_good_at": "2026-08-09T15:02:56Z",
    "last_good_value": "$0 per person | $16 per person | $24 per person | 100% increased content production",
    "last_good_json": "{\"items\":[{\"claim\":\"$0 per person\",\"kind\":\"money\"},{\"claim\":\"$16 per person\",\"kind\":\"money\"},{\"claim\":\"$24 per person\",\"kind\":\"money\"},{\"claim\":\"100% increased content production\",\"kind\":\"percent-trailing\"}],\"count\":4}",
    "last_good_hash": "9192a874",
@@ -266,8 +266,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T14:55:33Z",
-   "last_good_at": "2026-08-09T14:55:33Z",
+   "last_observed_at": "2026-08-09T15:02:56Z",
+   "last_good_at": "2026-08-09T15:02:56Z",
    "last_good_value": "Descript makes editing video and audio as easy as editing text. Record, transcribe, edit, and publish in one tool. Try for free, with powerful upgrades for creators & teams.",
    "last_good_json": null,
    "last_good_hash": "366625a1",
@@ -285,6 +285,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.descript.com/",
+   "fetched_at": "2026-08-09T15:02:56Z",
+   "http_status": 200,
+   "status": "origin-shift",
+   "reason": "crawl origin local (DE/TXL) -> github-actions (US/DFW); locale-sensitive signals are not comparable across it",
+   "bytes": 906573,
+   "duration_ms": 806,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.descript.com/",

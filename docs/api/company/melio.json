@@ -288,6 +288,18 @@
   {
    "kind": "home",
    "url": "https://melio.com/",
+   "fetched_at": "2026-08-09T15:03:10Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 657854,
+   "duration_ms": 892,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://melio.com/",
    "fetched_at": "2026-08-09T14:56:02Z",
    "http_status": 200,
    "status": "ok",

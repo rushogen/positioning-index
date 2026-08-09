@@ -364,6 +364,30 @@
  "events": [],
  "fetches": [
   {
+   "kind": "pricing",
+   "url": "https://www.datadoghq.com/pricing/",
+   "fetched_at": "2026-08-09T15:03:44Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 164,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.datadoghq.com/",
+   "fetched_at": "2026-08-09T15:00:26Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 194,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
    "kind": "home",
    "url": "https://www.datadoghq.com/",
    "fetched_at": "2026-08-08T11:47:18Z",

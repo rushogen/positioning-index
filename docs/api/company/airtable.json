@@ -456,6 +456,30 @@
   {
    "kind": "pricing",
    "url": "https://airtable.com/pricing",
+   "fetched_at": "2026-08-09T15:03:45Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 328524,
+   "duration_ms": 399,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.airtable.com/",
+   "fetched_at": "2026-08-09T15:00:28Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 441892,
+   "duration_ms": 419,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "pricing",
+   "url": "https://airtable.com/pricing",
    "fetched_at": "2026-08-08T11:47:08Z",
    "http_status": 200,
    "status": "ok",
