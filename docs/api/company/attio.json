@@ -5,7 +5,11 @@
   "segment": "gtm",
   "hq_country": "GB",
   "homepage_url": "https://attio.com/",
-  "pricing_url": "https://attio.com/pricing"
+  "pricing_url": "https://attio.com/pricing",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "CRM",
+  "meta_confidence": "high"
  },
  "signals": [
   {

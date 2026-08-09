@@ -5,7 +5,11 @@
   "segment": "fintech-ops",
   "hq_country": "US",
   "homepage_url": "https://www.brex.com/",
-  "pricing_url": "https://www.brex.com/pricing"
+  "pricing_url": "https://www.brex.com/pricing",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Corporate cards",
+  "meta_confidence": "high"
  },
  "signals": [
   {

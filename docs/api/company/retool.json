@@ -5,7 +5,11 @@
   "segment": "automation",
   "hq_country": "US",
   "homepage_url": "https://retool.com/",
-  "pricing_url": "https://retool.com/pricing"
+  "pricing_url": "https://retool.com/pricing",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Internal tools",
+  "meta_confidence": "high"
  },
  "signals": [
   {

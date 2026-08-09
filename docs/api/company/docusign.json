@@ -5,7 +5,11 @@
   "segment": "clm-esign",
   "hq_country": "US",
   "homepage_url": "https://www.docusign.com/",
-  "pricing_url": "https://www.docusign.com/products-and-pricing"
+  "pricing_url": "https://www.docusign.com/products-and-pricing",
+  "audience": "b2b",
+  "target_size": "broad",
+  "category": "E-signature",
+  "meta_confidence": "high"
  },
  "signals": [
   {

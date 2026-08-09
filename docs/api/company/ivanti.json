@@ -4,7 +4,11 @@
   "name": "Ivanti",
   "segment": "itsm",
   "hq_country": "US",
-  "homepage_url": "https://www.ivanti.com/"
+  "homepage_url": "https://www.ivanti.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "IT & endpoint management",
+  "meta_confidence": "high"
  },
  "signals": [
   {

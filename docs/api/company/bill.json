@@ -5,7 +5,11 @@
   "segment": "fintech-ops",
   "hq_country": "US",
   "homepage_url": "https://www.bill.com/",
-  "pricing_url": "https://www.bill.com/product/pricing"
+  "pricing_url": "https://www.bill.com/product/pricing",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "AP/AR automation",
+  "meta_confidence": "high"
  },
  "signals": [
   {

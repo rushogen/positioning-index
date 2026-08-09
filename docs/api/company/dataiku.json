@@ -4,7 +4,11 @@
   "name": "Dataiku",
   "segment": "data",
   "hq_country": "FR",
-  "homepage_url": "https://www.dataiku.com/"
+  "homepage_url": "https://www.dataiku.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Data science & AI",
+  "meta_confidence": "high"
  },
  "signals": [
   {

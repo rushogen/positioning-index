@@ -4,7 +4,11 @@
   "name": "Workhuman",
   "segment": "hr-ops",
   "hq_country": "IE",
-  "homepage_url": "https://www.workhuman.com/"
+  "homepage_url": "https://www.workhuman.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Employee recognition",
+  "meta_confidence": "high"
  },
  "signals": [
   {

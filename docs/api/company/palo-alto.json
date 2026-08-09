@@ -4,7 +4,11 @@
   "name": "Palo Alto Networks",
   "segment": "security",
   "hq_country": "US",
-  "homepage_url": "https://www.paloaltonetworks.com/"
+  "homepage_url": "https://www.paloaltonetworks.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Network security",
+  "meta_confidence": "high"
  },
  "signals": [
   {

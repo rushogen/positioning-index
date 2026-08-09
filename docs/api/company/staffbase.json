@@ -4,7 +4,11 @@
   "name": "Staffbase",
   "segment": "marketing",
   "hq_country": "DE",
-  "homepage_url": "https://staffbase.com/en/"
+  "homepage_url": "https://staffbase.com/en/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Employee comms",
+  "meta_confidence": "high"
  },
  "signals": [
   {

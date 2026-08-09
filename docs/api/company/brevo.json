@@ -5,7 +5,11 @@
   "segment": "marketing",
   "hq_country": "FR",
   "homepage_url": "https://www.brevo.com/",
-  "pricing_url": "https://www.brevo.com/pricing/"
+  "pricing_url": "https://www.brevo.com/pricing/",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "Marketing & email",
+  "meta_confidence": "high"
  },
  "signals": [
   {

@@ -5,7 +5,11 @@
   "segment": "fintech-ops",
   "hq_country": "FR",
   "homepage_url": "https://www.spendesk.com/",
-  "pricing_url": "https://www.spendesk.com/pricing/"
+  "pricing_url": "https://www.spendesk.com/pricing/",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Spend management",
+  "meta_confidence": "high"
  },
  "signals": [
   {

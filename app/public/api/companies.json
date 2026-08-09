@@ -5,7 +5,11 @@
    "name": "Acronis",
    "segment": "security",
    "hq_country": "CH",
-   "homepage_url": "https://www.acronis.com/en-us/"
+   "homepage_url": "https://www.acronis.com/en-us/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Cyber protection / backup",
+   "meta_confidence": "high"
   },
   {
    "slug": "adyen",
@@ -13,14 +17,22 @@
    "segment": "payments",
    "hq_country": "NL",
    "homepage_url": "https://www.adyen.com/",
-   "pricing_url": "https://www.adyen.com/pricing"
+   "pricing_url": "https://www.adyen.com/pricing",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Payments",
+   "meta_confidence": "high"
   },
   {
    "slug": "afas",
    "name": "AFAS Software",
    "segment": "erp",
    "hq_country": "NL",
-   "homepage_url": "https://www.afas.nl/"
+   "homepage_url": "https://www.afas.nl/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "ERP",
+   "meta_confidence": "medium"
   },
   {
    "slug": "aircall",
@@ -28,7 +40,11 @@
    "segment": "ccaas",
    "hq_country": "FR",
    "homepage_url": "https://aircall.io/",
-   "pricing_url": "https://aircall.io/pricing/"
+   "pricing_url": "https://aircall.io/pricing/",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Cloud phone / VoIP",
+   "meta_confidence": "high"
   },
   {
    "slug": "airtable",
@@ -36,7 +52,11 @@
    "segment": "product-dev",
    "hq_country": "US",
    "homepage_url": "https://www.airtable.com/",
-   "pricing_url": "https://www.airtable.com/pricing"
+   "pricing_url": "https://www.airtable.com/pricing",
+   "audience": "b2b",
+   "target_size": "broad",
+   "category": "No-code database",
+   "meta_confidence": "high"
   },
   {
    "slug": "aiven",
@@ -44,14 +64,34 @@
    "segment": "dev-infra",
    "hq_country": "FI",
    "homepage_url": "https://aiven.io/",
-   "pricing_url": "https://aiven.io/pricing"
+   "pricing_url": "https://aiven.io/pricing",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Managed data (DBaaS)",
+   "meta_confidence": "high"
   },
   {
    "slug": "alan",
    "name": "Alan",
    "segment": "healthcare-it",
    "hq_country": "FR",
-   "homepage_url": "https://alan.com/"
+   "homepage_url": "https://alan.com/",
+   "audience": "b2b2c",
+   "target_size": "mid-market",
+   "category": "Health insurance",
+   "meta_confidence": "high"
+  },
+  {
+   "slug": "alteryx",
+   "name": "Alteryx",
+   "segment": "analytics",
+   "hq_country": "US",
+   "homepage_url": "https://www.alteryx.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Analytics automation",
+   "meta_confidence": "high",
+   "added": "2026-08-09"
   },
   {
    "slug": "amplitude",
@@ -59,14 +99,22 @@
    "segment": "analytics",
    "hq_country": "US",
    "homepage_url": "https://amplitude.com/",
-   "pricing_url": "https://amplitude.com/pricing"
+   "pricing_url": "https://amplitude.com/pricing",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Product analytics",
+   "meta_confidence": "high"
   },
   {
    "slug": "anaplan",
    "name": "Anaplan",
    "segment": "fintech-ops",
    "hq_country": "US",
-   "homepage_url": "https://www.anaplan.com/"
+   "homepage_url": "https://www.anaplan.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Planning & FP&A",
+   "meta_confidence": "high"
   },
   {
    "slug": "apollo",
@@ -74,7 +122,11 @@
    "segment": "gtm",
    "hq_country": "US",
    "homepage_url": "https://www.apollo.io/",
-   "pricing_url": "https://www.apollo.io/pricing"
+   "pricing_url": "https://www.apollo.io/pricing",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Sales intelligence",
+   "meta_confidence": "high"
   },
   {
    "slug": "appian",
@@ -82,7 +134,11 @@
    "segment": "bpm",
    "hq_country": "US",
    "homepage_url": "https://appian.com/",
-   "pricing_url": "https://appian.com/products/pricing.html"
+   "pricing_url": "https://appian.com/products/pricing.html",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Low-code / BPM",
+   "meta_confidence": "high"
   },
   {
    "slug": "asana",
@@ -90,7 +146,23 @@
    "segment": "work-mgmt",
    "hq_country": "US",
    "homepage_url": "https://asana.com/",
-   "pricing_url": "https://asana.com/pricing"
+   "pricing_url": "https://asana.com/pricing",
+   "audience": "b2b",
+   "target_size": "broad",
+   "category": "Project management",
+   "meta_confidence": "high"
+  },
+  {
+   "slug": "atlan",
+   "name": "Atlan",
+   "segment": "data",
+   "hq_country": "US",
+   "homepage_url": "https://atlan.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Data catalog / governance",
+   "meta_confidence": "high",
+   "added": "2026-08-09"
   },
   {
    "slug": "atlassian",
@@ -98,7 +170,11 @@
    "segment": "product-dev",
    "hq_country": "AU",
    "homepage_url": "https://www.atlassian.com/",
-   "pricing_url": "https://www.atlassian.com/software/jira/pricing"
+   "pricing_url": "https://www.atlassian.com/software/jira/pricing",
+   "audience": "b2b",
+   "target_size": "broad",
+   "category": "Dev collaboration",
+   "meta_confidence": "high"
   },
   {
    "slug": "attio",
@@ -106,42 +182,66 @@
    "segment": "gtm",
    "hq_country": "GB",
    "homepage_url": "https://attio.com/",
-   "pricing_url": "https://attio.com/pricing"
+   "pricing_url": "https://attio.com/pricing",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "CRM",
+   "meta_confidence": "high"
   },
   {
    "slug": "autodesk",
    "name": "Autodesk",
    "segment": "industrial",
    "hq_country": "US",
-   "homepage_url": "https://www.autodesk.com/"
+   "homepage_url": "https://www.autodesk.com/",
+   "audience": "b2b",
+   "target_size": "broad",
+   "category": "CAD / design software",
+   "meta_confidence": "high"
   },
   {
    "slug": "avalara",
    "name": "Avalara",
    "segment": "fintech-ops",
    "hq_country": "US",
-   "homepage_url": "https://www.avalara.com/"
+   "homepage_url": "https://www.avalara.com/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Tax compliance",
+   "meta_confidence": "high"
   },
   {
    "slug": "avaloq",
    "name": "Avaloq",
    "segment": "banking-tech",
    "hq_country": "CH",
-   "homepage_url": "https://www.avaloq.com/"
+   "homepage_url": "https://www.avaloq.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Wealth management",
+   "meta_confidence": "high"
   },
   {
    "slug": "aveva",
    "name": "AVEVA",
    "segment": "industrial",
    "hq_country": "GB",
-   "homepage_url": "https://www.aveva.com/"
+   "homepage_url": "https://www.aveva.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Industrial software",
+   "meta_confidence": "high"
   },
   {
    "slug": "backbase",
    "name": "Backbase",
    "segment": "banking-tech",
    "hq_country": "NL",
-   "homepage_url": "https://www.backbase.com/"
+   "homepage_url": "https://www.backbase.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Digital banking",
+   "meta_confidence": "high"
   },
   {
    "slug": "bill",
@@ -149,7 +249,11 @@
    "segment": "fintech-ops",
    "hq_country": "US",
    "homepage_url": "https://www.bill.com/",
-   "pricing_url": "https://www.bill.com/product/pricing"
+   "pricing_url": "https://www.bill.com/product/pricing",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "AP/AR automation",
+   "meta_confidence": "high"
   },
   {
    "slug": "bird",
@@ -157,7 +261,11 @@
    "segment": "marketing",
    "hq_country": "NL",
    "homepage_url": "https://bird.com/",
-   "pricing_url": "https://bird.com/pricing"
+   "pricing_url": "https://bird.com/pricing",
+   "audience": "b2b2c",
+   "target_size": "mid-market",
+   "category": "Communications / CRM",
+   "meta_confidence": "medium"
   },
   {
    "slug": "bitmovin",
@@ -165,14 +273,35 @@
    "segment": "dev-infra",
    "hq_country": "AT",
    "homepage_url": "https://bitmovin.com/",
-   "pricing_url": "https://bitmovin.com/pricing/"
+   "pricing_url": "https://bitmovin.com/pricing/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Video infrastructure",
+   "meta_confidence": "medium"
   },
   {
    "slug": "blackline",
    "name": "BlackLine",
    "segment": "fintech-ops",
    "hq_country": "US",
-   "homepage_url": "https://www.blackline.com/"
+   "homepage_url": "https://www.blackline.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Financial close",
+   "meta_confidence": "high"
+  },
+  {
+   "slug": "box",
+   "name": "Box",
+   "segment": "work-mgmt",
+   "hq_country": "US",
+   "homepage_url": "https://www.box.com/",
+   "pricing_url": "https://www.box.com/pricing",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Content management",
+   "meta_confidence": "high",
+   "added": "2026-08-09"
   },
   {
    "slug": "braze",
@@ -180,7 +309,11 @@
    "segment": "marketing",
    "hq_country": "US",
    "homepage_url": "https://www.braze.com/",
-   "pricing_url": "https://www.braze.com/pricing"
+   "pricing_url": "https://www.braze.com/pricing",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Customer engagement",
+   "meta_confidence": "high"
   },
   {
    "slug": "brevo",
@@ -188,7 +321,11 @@
    "segment": "marketing",
    "hq_country": "FR",
    "homepage_url": "https://www.brevo.com/",
-   "pricing_url": "https://www.brevo.com/pricing/"
+   "pricing_url": "https://www.brevo.com/pricing/",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Marketing & email",
+   "meta_confidence": "high"
   },
   {
    "slug": "brex",
@@ -196,7 +333,11 @@
    "segment": "fintech-ops",
    "hq_country": "US",
    "homepage_url": "https://www.brex.com/",
-   "pricing_url": "https://www.brex.com/pricing"
+   "pricing_url": "https://www.brex.com/pricing",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Corporate cards",
+   "meta_confidence": "high"
   },
   {
    "slug": "calendly",
@@ -204,7 +345,11 @@
    "segment": "work-mgmt",
    "hq_country": "US",
    "homepage_url": "https://calendly.com/",
-   "pricing_url": "https://calendly.com/pricing"
+   "pricing_url": "https://calendly.com/pricing",
+   "audience": "b2b",
+   "target_size": "broad",
+   "category": "Scheduling",
+   "meta_confidence": "high"
   },
   {
    "slug": "camunda",
@@ -212,14 +357,22 @@
    "segment": "bpm",
    "hq_country": "DE",
    "homepage_url": "https://camunda.com/",
-   "pricing_url": "https://camunda.com/pricing/"
+   "pricing_url": "https://camunda.com/pricing/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Process orchestration",
+   "meta_confidence": "high"
   },
   {
    "slug": "celonis",
    "name": "Celonis",
    "segment": "process-mining",
    "hq_country": "DE",
-   "homepage_url": "https://www.celonis.com/"
+   "homepage_url": "https://www.celonis.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Process mining",
+   "meta_confidence": "high"
   },
   {
    "slug": "clay",
@@ -227,7 +380,24 @@
    "segment": "gtm",
    "hq_country": "US",
    "homepage_url": "https://www.clay.com/",
-   "pricing_url": "https://www.clay.com/pricing"
+   "pricing_url": "https://www.clay.com/pricing",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Sales prospecting",
+   "meta_confidence": "high"
+  },
+  {
+   "slug": "clickhouse",
+   "name": "ClickHouse",
+   "segment": "data",
+   "hq_country": "US",
+   "homepage_url": "https://clickhouse.com/",
+   "pricing_url": "https://clickhouse.com/pricing",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Analytics database",
+   "meta_confidence": "high",
+   "added": "2026-08-09"
   },
   {
    "slug": "clickup",
@@ -235,7 +405,11 @@
    "segment": "work-mgmt",
    "hq_country": "US",
    "homepage_url": "https://clickup.com/",
-   "pricing_url": "https://clickup.com/pricing"
+   "pricing_url": "https://clickup.com/pricing",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Work management",
+   "meta_confidence": "high"
   },
   {
    "slug": "cloudflare",
@@ -243,42 +417,92 @@
    "segment": "dev-infra",
    "hq_country": "US",
    "homepage_url": "https://www.cloudflare.com/",
-   "pricing_url": "https://www.cloudflare.com/plans/"
+   "pricing_url": "https://www.cloudflare.com/plans/",
+   "audience": "b2b2c",
+   "target_size": "broad",
+   "category": "Edge network / CDN",
+   "meta_confidence": "high"
   },
   {
    "slug": "coachhub",
    "name": "CoachHub",
    "segment": "hr-ops",
    "hq_country": "DE",
-   "homepage_url": "https://www.coachhub.com/"
+   "homepage_url": "https://www.coachhub.com/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Coaching (HR)",
+   "meta_confidence": "medium"
+  },
+  {
+   "slug": "cockroach-labs",
+   "name": "Cockroach Labs",
+   "segment": "data",
+   "hq_country": "US",
+   "homepage_url": "https://www.cockroachlabs.com/",
+   "pricing_url": "https://www.cockroachlabs.com/pricing/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Distributed database",
+   "meta_confidence": "high",
+   "added": "2026-08-09"
   },
   {
    "slug": "cognigy",
    "name": "Cognigy",
    "segment": "ccaas",
    "hq_country": "DE",
-   "homepage_url": "https://www.cognigy.com/"
+   "homepage_url": "https://www.cognigy.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Conversational AI",
+   "meta_confidence": "high"
   },
   {
    "slug": "cognite",
    "name": "Cognite",
    "segment": "industrial",
    "hq_country": "NO",
-   "homepage_url": "https://www.cognite.com/"
+   "homepage_url": "https://www.cognite.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Industrial DataOps",
+   "meta_confidence": "medium"
   },
   {
    "slug": "collibra",
    "name": "Collibra",
    "segment": "data",
    "hq_country": "BE",
-   "homepage_url": "https://www.collibra.com/"
+   "homepage_url": "https://www.collibra.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Data governance",
+   "meta_confidence": "high"
   },
   {
    "slug": "complyadvantage",
    "name": "ComplyAdvantage",
    "segment": "grc",
    "hq_country": "GB",
-   "homepage_url": "https://complyadvantage.com/"
+   "homepage_url": "https://complyadvantage.com/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "AML / financial crime",
+   "meta_confidence": "high"
+  },
+  {
+   "slug": "confluent",
+   "name": "Confluent",
+   "segment": "data",
+   "hq_country": "US",
+   "homepage_url": "https://www.confluent.io/",
+   "pricing_url": "https://www.confluent.io/confluent-cloud/pricing/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Data streaming",
+   "meta_confidence": "high",
+   "added": "2026-08-09"
   },
   {
    "slug": "contentful",
@@ -286,21 +510,33 @@
    "segment": "marketing",
    "hq_country": "DE",
    "homepage_url": "https://www.contentful.com/",
-   "pricing_url": "https://www.contentful.com/pricing/"
+   "pricing_url": "https://www.contentful.com/pricing/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Headless CMS",
+   "meta_confidence": "high"
   },
   {
    "slug": "contentsquare",
    "name": "Contentsquare",
    "segment": "analytics",
    "hq_country": "FR",
-   "homepage_url": "https://contentsquare.com/"
+   "homepage_url": "https://contentsquare.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Experience analytics",
+   "meta_confidence": "high"
   },
   {
    "slug": "coupa",
    "name": "Coupa",
    "segment": "procurement",
    "hq_country": "US",
-   "homepage_url": "https://www.coupa.com/"
+   "homepage_url": "https://www.coupa.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Spend & procurement",
+   "meta_confidence": "high"
   },
   {
    "slug": "crowdstrike",
@@ -308,7 +544,11 @@
    "segment": "security",
    "hq_country": "US",
    "homepage_url": "https://www.crowdstrike.com/",
-   "pricing_url": "https://www.crowdstrike.com/products/bundles/falcon-go/"
+   "pricing_url": "https://www.crowdstrike.com/products/bundles/falcon-go/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Endpoint security",
+   "meta_confidence": "high"
   },
   {
    "slug": "customer-io",
@@ -316,21 +556,33 @@
    "segment": "marketing",
    "hq_country": "US",
    "homepage_url": "https://customer.io/",
-   "pricing_url": "https://customer.io/pricing"
+   "pricing_url": "https://customer.io/pricing",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Marketing automation",
+   "meta_confidence": "high"
   },
   {
    "slug": "darktrace",
    "name": "Darktrace",
    "segment": "security",
    "hq_country": "GB",
-   "homepage_url": "https://www.darktrace.com/"
+   "homepage_url": "https://www.darktrace.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Cybersecurity (AI)",
+   "meta_confidence": "high"
   },
   {
    "slug": "dassault",
    "name": "Dassault Systèmes",
    "segment": "industrial",
    "hq_country": "FR",
-   "homepage_url": "https://www.3ds.com/"
+   "homepage_url": "https://www.3ds.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "3D / PLM (CAD)",
+   "meta_confidence": "high"
   },
   {
    "slug": "databricks",
@@ -338,7 +590,11 @@
    "segment": "data",
    "hq_country": "US",
    "homepage_url": "https://www.databricks.com/",
-   "pricing_url": "https://www.databricks.com/product/pricing"
+   "pricing_url": "https://www.databricks.com/product/pricing",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Data & AI platform",
+   "meta_confidence": "high"
   },
   {
    "slug": "datadog",
@@ -346,7 +602,11 @@
    "segment": "observability",
    "hq_country": "US",
    "homepage_url": "https://www.datadoghq.com/",
-   "pricing_url": "https://www.datadoghq.com/pricing/"
+   "pricing_url": "https://www.datadoghq.com/pricing/",
+   "audience": "b2b",
+   "target_size": "broad",
+   "category": "Observability",
+   "meta_confidence": "high"
   },
   {
    "slug": "dataguard",
@@ -354,14 +614,22 @@
    "segment": "grc",
    "hq_country": "DE",
    "homepage_url": "https://www.dataguard.com/",
-   "pricing_url": "https://www.dataguard.com/pricing/"
+   "pricing_url": "https://www.dataguard.com/pricing/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Privacy & compliance",
+   "meta_confidence": "medium"
   },
   {
    "slug": "dataiku",
    "name": "Dataiku",
    "segment": "data",
    "hq_country": "FR",
-   "homepage_url": "https://www.dataiku.com/"
+   "homepage_url": "https://www.dataiku.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Data science & AI",
+   "meta_confidence": "high"
   },
   {
    "slug": "dbt-labs",
@@ -369,7 +637,11 @@
    "segment": "data",
    "hq_country": "US",
    "homepage_url": "https://www.getdbt.com/",
-   "pricing_url": "https://www.getdbt.com/pricing"
+   "pricing_url": "https://www.getdbt.com/pricing",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Data transformation",
+   "meta_confidence": "high"
   },
   {
    "slug": "deel",
@@ -377,7 +649,11 @@
    "segment": "hr-ops",
    "hq_country": "US",
    "homepage_url": "https://www.deel.com/",
-   "pricing_url": "https://www.deel.com/pricing/"
+   "pricing_url": "https://www.deel.com/pricing/",
+   "audience": "b2b",
+   "target_size": "broad",
+   "category": "Global HR & payroll",
+   "meta_confidence": "high"
   },
   {
    "slug": "deepl",
@@ -385,21 +661,45 @@
    "segment": "localization",
    "hq_country": "DE",
    "homepage_url": "https://www.deepl.com/en/translator",
-   "pricing_url": "https://www.deepl.com/en/pro"
+   "pricing_url": "https://www.deepl.com/en/pro",
+   "audience": "b2b2c",
+   "target_size": "broad",
+   "category": "Translation",
+   "meta_confidence": "high"
   },
   {
    "slug": "definitive-hc",
    "name": "Definitive Healthcare",
    "segment": "healthcare-it",
    "hq_country": "US",
-   "homepage_url": "https://www.definitivehc.com/"
+   "homepage_url": "https://www.definitivehc.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Healthcare intelligence",
+   "meta_confidence": "medium"
+  },
+  {
+   "slug": "demandbase",
+   "name": "Demandbase",
+   "segment": "gtm",
+   "hq_country": "US",
+   "homepage_url": "https://www.demandbase.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "ABM platform",
+   "meta_confidence": "high",
+   "added": "2026-08-09"
   },
   {
    "slug": "diligent",
    "name": "Diligent",
    "segment": "grc",
    "hq_country": "US",
-   "homepage_url": "https://www.diligent.com/"
+   "homepage_url": "https://www.diligent.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Governance (GRC)",
+   "meta_confidence": "high"
   },
   {
    "slug": "dixa",
@@ -407,21 +707,33 @@
    "segment": "support",
    "hq_country": "DK",
    "homepage_url": "https://www.dixa.com/",
-   "pricing_url": "https://www.dixa.com/pricing/"
+   "pricing_url": "https://www.dixa.com/pricing/",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Customer support",
+   "meta_confidence": "medium"
   },
   {
    "slug": "docplanner",
    "name": "Docplanner",
    "segment": "healthcare-it",
    "hq_country": "PL",
-   "homepage_url": "https://www.docplanner.com/"
+   "homepage_url": "https://www.docplanner.com/",
+   "audience": "b2b2c",
+   "target_size": "mid-market",
+   "category": "Healthcare booking",
+   "meta_confidence": "high"
   },
   {
    "slug": "doctolib",
    "name": "Doctolib",
    "segment": "healthcare-it",
    "hq_country": "FR",
-   "homepage_url": "https://www.doctolib.fr/"
+   "homepage_url": "https://www.doctolib.fr/",
+   "audience": "b2b2c",
+   "target_size": "mid-market",
+   "category": "Healthcare booking",
+   "meta_confidence": "high"
   },
   {
    "slug": "docusign",
@@ -429,7 +741,11 @@
    "segment": "clm-esign",
    "hq_country": "US",
    "homepage_url": "https://www.docusign.com/",
-   "pricing_url": "https://www.docusign.com/products-and-pricing"
+   "pricing_url": "https://www.docusign.com/products-and-pricing",
+   "audience": "b2b",
+   "target_size": "broad",
+   "category": "E-signature",
+   "meta_confidence": "high"
   },
   {
    "slug": "drata",
@@ -437,7 +753,11 @@
    "segment": "grc",
    "hq_country": "US",
    "homepage_url": "https://drata.com/",
-   "pricing_url": "https://drata.com/pricing"
+   "pricing_url": "https://drata.com/pricing",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Security compliance",
+   "meta_confidence": "high"
   },
   {
    "slug": "dynatrace",
@@ -445,7 +765,11 @@
    "segment": "observability",
    "hq_country": "AT",
    "homepage_url": "https://www.dynatrace.com/",
-   "pricing_url": "https://www.dynatrace.com/pricing/"
+   "pricing_url": "https://www.dynatrace.com/pricing/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Observability",
+   "meta_confidence": "high"
   },
   {
    "slug": "elastic",
@@ -453,7 +777,11 @@
    "segment": "dev-infra",
    "hq_country": "NL",
    "homepage_url": "https://www.elastic.co/",
-   "pricing_url": "https://www.elastic.co/pricing"
+   "pricing_url": "https://www.elastic.co/pricing",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Search & observability",
+   "meta_confidence": "high"
   },
   {
    "slug": "factorial",
@@ -461,21 +789,33 @@
    "segment": "hr-ops",
    "hq_country": "ES",
    "homepage_url": "https://factorialhr.com/",
-   "pricing_url": "https://factorialhr.com/pricing"
+   "pricing_url": "https://factorialhr.com/pricing",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "HR (HRIS)",
+   "meta_confidence": "high"
   },
   {
    "slug": "feedzai",
    "name": "Feedzai",
    "segment": "grc",
    "hq_country": "PT",
-   "homepage_url": "https://www.feedzai.com/"
+   "homepage_url": "https://www.feedzai.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Fraud prevention",
+   "meta_confidence": "high"
   },
   {
    "slug": "fenergo",
    "name": "Fenergo",
    "segment": "grc",
    "hq_country": "IE",
-   "homepage_url": "https://www.fenergo.com/"
+   "homepage_url": "https://www.fenergo.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Client lifecycle / KYC",
+   "meta_confidence": "medium"
   },
   {
    "slug": "figma",
@@ -483,7 +823,11 @@
    "segment": "design",
    "hq_country": "US",
    "homepage_url": "https://www.figma.com/",
-   "pricing_url": "https://www.figma.com/pricing/"
+   "pricing_url": "https://www.figma.com/pricing/",
+   "audience": "b2b",
+   "target_size": "broad",
+   "category": "Design tool",
+   "meta_confidence": "high"
   },
   {
    "slug": "fivetran",
@@ -491,14 +835,35 @@
    "segment": "data",
    "hq_country": "US",
    "homepage_url": "https://www.fivetran.com/",
-   "pricing_url": "https://www.fivetran.com/pricing"
+   "pricing_url": "https://www.fivetran.com/pricing",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Data integration / ELT",
+   "meta_confidence": "high"
   },
   {
    "slug": "fortnox",
    "name": "Fortnox",
    "segment": "erp",
    "hq_country": "SE",
-   "homepage_url": "https://www.fortnox.se/"
+   "homepage_url": "https://www.fortnox.se/",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Accounting / ERP",
+   "meta_confidence": "medium"
+  },
+  {
+   "slug": "freshworks",
+   "name": "Freshworks",
+   "segment": "itsm",
+   "hq_country": "US",
+   "homepage_url": "https://www.freshworks.com/",
+   "pricing_url": "https://www.freshworks.com/pricing/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "CRM / ITSM / support",
+   "meta_confidence": "high",
+   "added": "2026-08-09"
   },
   {
    "slug": "front",
@@ -506,7 +871,23 @@
    "segment": "support",
    "hq_country": "US",
    "homepage_url": "https://front.com/",
-   "pricing_url": "https://front.com/pricing"
+   "pricing_url": "https://front.com/pricing",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Shared inbox",
+   "meta_confidence": "high"
+  },
+  {
+   "slug": "gainsight",
+   "name": "Gainsight",
+   "segment": "support",
+   "hq_country": "US",
+   "homepage_url": "https://www.gainsight.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Customer success",
+   "meta_confidence": "high",
+   "added": "2026-08-09"
   },
   {
    "slug": "genesys",
@@ -514,7 +895,11 @@
    "segment": "ccaas",
    "hq_country": "US",
    "homepage_url": "https://www.genesys.com/",
-   "pricing_url": "https://www.genesys.com/pricing"
+   "pricing_url": "https://www.genesys.com/pricing",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Contact center (CCaaS)",
+   "meta_confidence": "high"
   },
   {
    "slug": "github",
@@ -522,7 +907,11 @@
    "segment": "product-dev",
    "hq_country": "US",
    "homepage_url": "https://github.com/",
-   "pricing_url": "https://github.com/pricing"
+   "pricing_url": "https://github.com/pricing",
+   "audience": "b2b2c",
+   "target_size": "broad",
+   "category": "Code hosting",
+   "meta_confidence": "high"
   },
   {
    "slug": "gitlab",
@@ -530,7 +919,11 @@
    "segment": "product-dev",
    "hq_country": "US",
    "homepage_url": "https://about.gitlab.com/",
-   "pricing_url": "https://about.gitlab.com/pricing/"
+   "pricing_url": "https://about.gitlab.com/pricing/",
+   "audience": "b2b",
+   "target_size": "broad",
+   "category": "DevOps platform",
+   "meta_confidence": "high"
   },
   {
    "slug": "gocardless",
@@ -538,7 +931,11 @@
    "segment": "payments",
    "hq_country": "GB",
    "homepage_url": "https://gocardless.com/",
-   "pricing_url": "https://gocardless.com/pricing/"
+   "pricing_url": "https://gocardless.com/pricing/",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Bank payments",
+   "meta_confidence": "high"
   },
   {
    "slug": "gong",
@@ -546,7 +943,23 @@
    "segment": "gtm",
    "hq_country": "US",
    "homepage_url": "https://www.gong.io/",
-   "pricing_url": "https://www.gong.io/pricing/"
+   "pricing_url": "https://www.gong.io/pricing/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Revenue intelligence",
+   "meta_confidence": "high"
+  },
+  {
+   "slug": "highspot",
+   "name": "Highspot",
+   "segment": "gtm",
+   "hq_country": "US",
+   "homepage_url": "https://www.highspot.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Sales enablement",
+   "meta_confidence": "high",
+   "added": "2026-08-09"
   },
   {
    "slug": "hightouch",
@@ -554,14 +967,22 @@
    "segment": "data",
    "hq_country": "US",
    "homepage_url": "https://hightouch.com/",
-   "pricing_url": "https://hightouch.com/pricing"
+   "pricing_url": "https://hightouch.com/pricing",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Reverse ETL",
+   "meta_confidence": "high"
   },
   {
    "slug": "hornetsecurity",
    "name": "Hornetsecurity",
    "segment": "security",
    "hq_country": "DE",
-   "homepage_url": "https://www.hornetsecurity.com/en/"
+   "homepage_url": "https://www.hornetsecurity.com/en/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Email security",
+   "meta_confidence": "medium"
   },
   {
    "slug": "hubspot",
@@ -569,21 +990,57 @@
    "segment": "gtm",
    "hq_country": "US",
    "homepage_url": "https://www.hubspot.com/",
-   "pricing_url": "https://www.hubspot.com/pricing/marketing"
+   "pricing_url": "https://www.hubspot.com/pricing/marketing",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "CRM & marketing",
+   "meta_confidence": "high"
+  },
+  {
+   "slug": "ibm",
+   "name": "IBM",
+   "segment": "data",
+   "hq_country": "US",
+   "homepage_url": "https://www.ibm.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Enterprise IT & cloud",
+   "meta_confidence": "high",
+   "added": "2026-08-09"
   },
   {
    "slug": "icertis",
    "name": "Icertis",
    "segment": "clm-esign",
    "hq_country": "US",
-   "homepage_url": "https://www.icertis.com/"
+   "homepage_url": "https://www.icertis.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Contract management",
+   "meta_confidence": "high"
   },
   {
    "slug": "idnow",
    "name": "IDnow",
    "segment": "identity",
    "hq_country": "DE",
-   "homepage_url": "https://idnow.io/"
+   "homepage_url": "https://idnow.io/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Identity verification",
+   "meta_confidence": "high"
+  },
+  {
+   "slug": "informatica",
+   "name": "Informatica",
+   "segment": "data",
+   "hq_country": "US",
+   "homepage_url": "https://www.informatica.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Data integration",
+   "meta_confidence": "high",
+   "added": "2026-08-09"
   },
   {
    "slug": "intercom",
@@ -591,35 +1048,55 @@
    "segment": "support",
    "hq_country": "US",
    "homepage_url": "https://www.intercom.com/",
-   "pricing_url": "https://www.intercom.com/pricing"
+   "pricing_url": "https://www.intercom.com/pricing",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Customer support",
+   "meta_confidence": "high"
   },
   {
    "slug": "ironclad",
    "name": "Ironclad",
    "segment": "clm-esign",
    "hq_country": "US",
-   "homepage_url": "https://ironcladapp.com/"
+   "homepage_url": "https://ironcladapp.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Contract management",
+   "meta_confidence": "high"
   },
   {
    "slug": "ivanti",
    "name": "Ivanti",
    "segment": "itsm",
    "hq_country": "US",
-   "homepage_url": "https://www.ivanti.com/"
+   "homepage_url": "https://www.ivanti.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "IT & endpoint management",
+   "meta_confidence": "high"
   },
   {
    "slug": "jaggaer",
    "name": "JAGGAER",
    "segment": "procurement",
    "hq_country": "US",
-   "homepage_url": "https://www.jaggaer.com/"
+   "homepage_url": "https://www.jaggaer.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Procurement (S2P)",
+   "meta_confidence": "medium"
   },
   {
    "slug": "jedox",
    "name": "Jedox",
    "segment": "analytics",
    "hq_country": "DE",
-   "homepage_url": "https://www.jedox.com/en/"
+   "homepage_url": "https://www.jedox.com/en/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Planning & FP&A",
+   "meta_confidence": "medium"
   },
   {
    "slug": "jetbrains",
@@ -627,14 +1104,22 @@
    "segment": "product-dev",
    "hq_country": "CZ",
    "homepage_url": "https://www.jetbrains.com/",
-   "pricing_url": "https://www.jetbrains.com/store/"
+   "pricing_url": "https://www.jetbrains.com/store/",
+   "audience": "b2b2c",
+   "target_size": "broad",
+   "category": "Developer IDEs",
+   "meta_confidence": "high"
   },
   {
    "slug": "juro",
    "name": "Juro",
    "segment": "clm-esign",
    "hq_country": "GB",
-   "homepage_url": "https://juro.com/"
+   "homepage_url": "https://juro.com/",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Contract management",
+   "meta_confidence": "high"
   },
   {
    "slug": "klaviyo",
@@ -642,7 +1127,11 @@
    "segment": "marketing",
    "hq_country": "US",
    "homepage_url": "https://www.klaviyo.com/",
-   "pricing_url": "https://www.klaviyo.com/pricing"
+   "pricing_url": "https://www.klaviyo.com/pricing",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Marketing automation",
+   "meta_confidence": "high"
   },
   {
    "slug": "lattice",
@@ -650,7 +1139,11 @@
    "segment": "hr-ops",
    "hq_country": "US",
    "homepage_url": "https://lattice.com/",
-   "pricing_url": "https://lattice.com/pricing"
+   "pricing_url": "https://lattice.com/pricing",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Performance management",
+   "meta_confidence": "high"
   },
   {
    "slug": "launchdarkly",
@@ -658,14 +1151,22 @@
    "segment": "dev-infra",
    "hq_country": "US",
    "homepage_url": "https://launchdarkly.com/",
-   "pricing_url": "https://launchdarkly.com/pricing/"
+   "pricing_url": "https://launchdarkly.com/pricing/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Feature flags",
+   "meta_confidence": "high"
   },
   {
    "slug": "ledgy",
    "name": "Ledgy",
    "segment": "fintech-ops",
    "hq_country": "CH",
-   "homepage_url": "https://ledgy.com/"
+   "homepage_url": "https://ledgy.com/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Cap table management",
+   "meta_confidence": "medium"
   },
   {
    "slug": "linear",
@@ -673,7 +1174,11 @@
    "segment": "product-dev",
    "hq_country": "US",
    "homepage_url": "https://linear.app/",
-   "pricing_url": "https://linear.app/pricing"
+   "pricing_url": "https://linear.app/pricing",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Issue tracking",
+   "meta_confidence": "high"
   },
   {
    "slug": "livechat",
@@ -681,7 +1186,11 @@
    "segment": "support",
    "hq_country": "PL",
    "homepage_url": "https://www.livechat.com/",
-   "pricing_url": "https://www.livechat.com/pricing/"
+   "pricing_url": "https://www.livechat.com/pricing/",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Live chat / support",
+   "meta_confidence": "high"
   },
   {
    "slug": "lokalise",
@@ -689,7 +1198,11 @@
    "segment": "localization",
    "hq_country": "LV",
    "homepage_url": "https://lokalise.com/",
-   "pricing_url": "https://lokalise.com/pricing"
+   "pricing_url": "https://lokalise.com/pricing",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Localization management",
+   "meta_confidence": "high"
   },
   {
    "slug": "loom",
@@ -697,28 +1210,44 @@
    "segment": "work-mgmt",
    "hq_country": "US",
    "homepage_url": "https://www.loom.com/",
-   "pricing_url": "https://www.loom.com/pricing"
+   "pricing_url": "https://www.loom.com/pricing",
+   "audience": "b2b",
+   "target_size": "broad",
+   "category": "Video messaging",
+   "meta_confidence": "high"
   },
   {
    "slug": "luminance",
    "name": "Luminance",
    "segment": "legal-tech",
    "hq_country": "GB",
-   "homepage_url": "https://www.luminance.com/"
+   "homepage_url": "https://www.luminance.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Legal AI",
+   "meta_confidence": "medium"
   },
   {
    "slug": "m-files",
    "name": "M-Files",
    "segment": "work-mgmt",
    "hq_country": "FI",
-   "homepage_url": "https://www.m-files.com/"
+   "homepage_url": "https://www.m-files.com/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Document management",
+   "meta_confidence": "medium"
   },
   {
    "slug": "mambu",
    "name": "Mambu",
    "segment": "banking-tech",
    "hq_country": "DE",
-   "homepage_url": "https://mambu.com/"
+   "homepage_url": "https://mambu.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Core banking",
+   "meta_confidence": "high"
   },
   {
    "slug": "matillion",
@@ -726,7 +1255,11 @@
    "segment": "data",
    "hq_country": "GB",
    "homepage_url": "https://www.matillion.com/",
-   "pricing_url": "https://www.matillion.com/pricing"
+   "pricing_url": "https://www.matillion.com/pricing",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Data integration / ETL",
+   "meta_confidence": "high"
   },
   {
    "slug": "mendix",
@@ -734,7 +1267,11 @@
    "segment": "bpm",
    "hq_country": "NL",
    "homepage_url": "https://www.mendix.com/",
-   "pricing_url": "https://www.mendix.com/pricing/"
+   "pricing_url": "https://www.mendix.com/pricing/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Low-code platform",
+   "meta_confidence": "high"
   },
   {
    "slug": "mentimeter",
@@ -742,7 +1279,11 @@
    "segment": "work-mgmt",
    "hq_country": "SE",
    "homepage_url": "https://www.mentimeter.com/",
-   "pricing_url": "https://www.mentimeter.com/plans"
+   "pricing_url": "https://www.mentimeter.com/plans",
+   "audience": "b2b",
+   "target_size": "broad",
+   "category": "Interactive presentations",
+   "meta_confidence": "high"
   },
   {
    "slug": "metabase",
@@ -750,14 +1291,22 @@
    "segment": "analytics",
    "hq_country": "US",
    "homepage_url": "https://www.metabase.com/",
-   "pricing_url": "https://www.metabase.com/pricing/"
+   "pricing_url": "https://www.metabase.com/pricing/",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "BI & analytics",
+   "meta_confidence": "high"
   },
   {
    "slug": "mirakl",
    "name": "Mirakl",
    "segment": "industrial",
    "hq_country": "FR",
-   "homepage_url": "https://www.mirakl.com/"
+   "homepage_url": "https://www.mirakl.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Marketplace platform",
+   "meta_confidence": "high"
   },
   {
    "slug": "miro",
@@ -765,7 +1314,11 @@
    "segment": "design",
    "hq_country": "NL",
    "homepage_url": "https://miro.com/",
-   "pricing_url": "https://miro.com/pricing/"
+   "pricing_url": "https://miro.com/pricing/",
+   "audience": "b2b",
+   "target_size": "broad",
+   "category": "Whiteboard",
+   "meta_confidence": "high"
   },
   {
    "slug": "mixpanel",
@@ -773,7 +1326,11 @@
    "segment": "analytics",
    "hq_country": "US",
    "homepage_url": "https://mixpanel.com/",
-   "pricing_url": "https://mixpanel.com/pricing/"
+   "pricing_url": "https://mixpanel.com/pricing/",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Product analytics",
+   "meta_confidence": "high"
   },
   {
    "slug": "mollie",
@@ -781,7 +1338,11 @@
    "segment": "payments",
    "hq_country": "NL",
    "homepage_url": "https://www.mollie.com/",
-   "pricing_url": "https://www.mollie.com/pricing"
+   "pricing_url": "https://www.mollie.com/pricing",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Payments",
+   "meta_confidence": "high"
   },
   {
    "slug": "monday",
@@ -789,7 +1350,11 @@
    "segment": "work-mgmt",
    "hq_country": "IL",
    "homepage_url": "https://monday.com/",
-   "pricing_url": "https://monday.com/pricing"
+   "pricing_url": "https://monday.com/pricing",
+   "audience": "b2b",
+   "target_size": "broad",
+   "category": "Work management",
+   "meta_confidence": "high"
   },
   {
    "slug": "mongodb",
@@ -797,21 +1362,58 @@
    "segment": "data",
    "hq_country": "US",
    "homepage_url": "https://www.mongodb.com/",
-   "pricing_url": "https://www.mongodb.com/pricing"
+   "pricing_url": "https://www.mongodb.com/pricing",
+   "audience": "b2b2c",
+   "target_size": "broad",
+   "category": "Database",
+   "meta_confidence": "high"
+  },
+  {
+   "slug": "monte-carlo",
+   "name": "Monte Carlo",
+   "segment": "data",
+   "hq_country": "US",
+   "homepage_url": "https://www.montecarlodata.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Data observability",
+   "meta_confidence": "high",
+   "added": "2026-08-09"
   },
   {
    "slug": "navex",
    "name": "NAVEX",
    "segment": "grc",
    "hq_country": "US",
-   "homepage_url": "https://www.navex.com/en-us/"
+   "homepage_url": "https://www.navex.com/en-us/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "GRC / compliance",
+   "meta_confidence": "medium"
   },
   {
    "slug": "nemetschek",
    "name": "Nemetschek",
    "segment": "industrial",
    "hq_country": "DE",
-   "homepage_url": "https://www.nemetschek.com/en"
+   "homepage_url": "https://www.nemetschek.com/en",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "AEC / design software",
+   "meta_confidence": "medium"
+  },
+  {
+   "slug": "neo4j",
+   "name": "Neo4j",
+   "segment": "data",
+   "hq_country": "US",
+   "homepage_url": "https://neo4j.com/",
+   "pricing_url": "https://neo4j.com/pricing/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Graph database",
+   "meta_confidence": "high",
+   "added": "2026-08-09"
   },
   {
    "slug": "netlify",
@@ -819,7 +1421,24 @@
    "segment": "dev-infra",
    "hq_country": "US",
    "homepage_url": "https://www.netlify.com/",
-   "pricing_url": "https://www.netlify.com/pricing/"
+   "pricing_url": "https://www.netlify.com/pricing/",
+   "audience": "b2b2c",
+   "target_size": "smb",
+   "category": "Web hosting",
+   "meta_confidence": "high"
+  },
+  {
+   "slug": "new-relic",
+   "name": "New Relic",
+   "segment": "observability",
+   "hq_country": "US",
+   "homepage_url": "https://newrelic.com/",
+   "pricing_url": "https://newrelic.com/pricing",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Observability",
+   "meta_confidence": "high",
+   "added": "2026-08-09"
   },
   {
    "slug": "nextcloud",
@@ -827,28 +1446,44 @@
    "segment": "work-mgmt",
    "hq_country": "DE",
    "homepage_url": "https://nextcloud.com/",
-   "pricing_url": "https://nextcloud.com/pricing/"
+   "pricing_url": "https://nextcloud.com/pricing/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Content collaboration",
+   "meta_confidence": "high"
   },
   {
    "slug": "nexthink",
    "name": "Nexthink",
    "segment": "observability",
    "hq_country": "CH",
-   "homepage_url": "https://www.nexthink.com/"
+   "homepage_url": "https://www.nexthink.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Digital employee experience",
+   "meta_confidence": "high"
   },
   {
    "slug": "nice",
    "name": "NICE",
    "segment": "ccaas",
    "hq_country": "IL",
-   "homepage_url": "https://www.nice.com/"
+   "homepage_url": "https://www.nice.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Contact center / CX",
+   "meta_confidence": "high"
   },
   {
    "slug": "nord-security",
    "name": "Nord Security",
    "segment": "security",
    "hq_country": "LT",
-   "homepage_url": "https://nordsecurity.com/"
+   "homepage_url": "https://nordsecurity.com/",
+   "audience": "b2b2c",
+   "target_size": "broad",
+   "category": "Cybersecurity / VPN",
+   "meta_confidence": "high"
   },
   {
    "slug": "notion",
@@ -856,7 +1491,11 @@
    "segment": "product-dev",
    "hq_country": "US",
    "homepage_url": "https://www.notion.com/",
-   "pricing_url": "https://www.notion.com/pricing"
+   "pricing_url": "https://www.notion.com/pricing",
+   "audience": "b2b2c",
+   "target_size": "broad",
+   "category": "Docs & wiki",
+   "meta_confidence": "high"
   },
   {
    "slug": "odoo",
@@ -864,7 +1503,11 @@
    "segment": "erp",
    "hq_country": "BE",
    "homepage_url": "https://www.odoo.com/",
-   "pricing_url": "https://www.odoo.com/pricing"
+   "pricing_url": "https://www.odoo.com/pricing",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "ERP (open-source)",
+   "meta_confidence": "high"
   },
   {
    "slug": "okta",
@@ -872,35 +1515,67 @@
    "segment": "identity",
    "hq_country": "US",
    "homepage_url": "https://www.okta.com/",
-   "pricing_url": "https://www.okta.com/pricing/"
+   "pricing_url": "https://www.okta.com/pricing/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Identity & access",
+   "meta_confidence": "high"
   },
   {
    "slug": "onetrust",
    "name": "OneTrust",
    "segment": "grc",
    "hq_country": "US",
-   "homepage_url": "https://www.onetrust.com/"
+   "homepage_url": "https://www.onetrust.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Privacy & GRC",
+   "meta_confidence": "high"
   },
   {
    "slug": "oracle",
    "name": "Oracle",
    "segment": "erp",
    "hq_country": "US",
-   "homepage_url": "https://www.oracle.com/"
+   "homepage_url": "https://www.oracle.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "ERP / database / cloud",
+   "meta_confidence": "high"
+  },
+  {
+   "slug": "outreach",
+   "name": "Outreach",
+   "segment": "gtm",
+   "hq_country": "US",
+   "homepage_url": "https://www.outreach.io/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Sales engagement",
+   "meta_confidence": "high",
+   "added": "2026-08-09"
   },
   {
    "slug": "outsystems",
    "name": "OutSystems",
    "segment": "bpm",
    "hq_country": "PT",
-   "homepage_url": "https://www.outsystems.com/"
+   "homepage_url": "https://www.outsystems.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Low-code platform",
+   "meta_confidence": "high"
   },
   {
    "slug": "ovhcloud",
    "name": "OVHcloud",
    "segment": "dev-infra",
    "hq_country": "FR",
-   "homepage_url": "https://www.ovhcloud.com/en/"
+   "homepage_url": "https://www.ovhcloud.com/en/",
+   "audience": "b2b2c",
+   "target_size": "broad",
+   "category": "Cloud infrastructure",
+   "meta_confidence": "high"
   },
   {
    "slug": "paddle",
@@ -908,35 +1583,80 @@
    "segment": "payments",
    "hq_country": "GB",
    "homepage_url": "https://www.paddle.com/",
-   "pricing_url": "https://www.paddle.com/pricing"
+   "pricing_url": "https://www.paddle.com/pricing",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Merchant of record",
+   "meta_confidence": "high"
+  },
+  {
+   "slug": "pagerduty",
+   "name": "PagerDuty",
+   "segment": "observability",
+   "hq_country": "US",
+   "homepage_url": "https://www.pagerduty.com/",
+   "pricing_url": "https://www.pagerduty.com/pricing/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Incident management",
+   "meta_confidence": "high",
+   "added": "2026-08-09"
+  },
+  {
+   "slug": "palantir",
+   "name": "Palantir",
+   "segment": "data",
+   "hq_country": "US",
+   "homepage_url": "https://www.palantir.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Data analytics platform",
+   "meta_confidence": "high",
+   "added": "2026-08-09"
   },
   {
    "slug": "palo-alto",
    "name": "Palo Alto Networks",
    "segment": "security",
    "hq_country": "US",
-   "homepage_url": "https://www.paloaltonetworks.com/"
+   "homepage_url": "https://www.paloaltonetworks.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Network security",
+   "meta_confidence": "high"
   },
   {
    "slug": "parloa",
    "name": "Parloa",
    "segment": "ccaas",
    "hq_country": "DE",
-   "homepage_url": "https://www.parloa.com/"
+   "homepage_url": "https://www.parloa.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Conversational AI",
+   "meta_confidence": "medium"
   },
   {
    "slug": "payfit",
    "name": "PayFit",
    "segment": "hr-ops",
    "hq_country": "FR",
-   "homepage_url": "https://payfit.com/"
+   "homepage_url": "https://payfit.com/",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Payroll",
+   "meta_confidence": "high"
   },
   {
    "slug": "pega",
    "name": "Pegasystems",
    "segment": "bpm",
    "hq_country": "US",
-   "homepage_url": "https://www.pega.com/"
+   "homepage_url": "https://www.pega.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "BPM / low-code",
+   "meta_confidence": "high"
   },
   {
    "slug": "pendo",
@@ -944,14 +1664,22 @@
    "segment": "analytics",
    "hq_country": "US",
    "homepage_url": "https://www.pendo.io/",
-   "pricing_url": "https://www.pendo.io/pricing/"
+   "pricing_url": "https://www.pendo.io/pricing/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Product experience",
+   "meta_confidence": "high"
   },
   {
    "slug": "pennylane",
    "name": "Pennylane",
    "segment": "fintech-ops",
    "hq_country": "FR",
-   "homepage_url": "https://www.pennylane.com/"
+   "homepage_url": "https://www.pennylane.com/",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Accounting & finance",
+   "meta_confidence": "medium"
   },
   {
    "slug": "personio",
@@ -959,7 +1687,11 @@
    "segment": "hr-ops",
    "hq_country": "DE",
    "homepage_url": "https://www.personio.com/",
-   "pricing_url": "https://www.personio.com/pricing/"
+   "pricing_url": "https://www.personio.com/pricing/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "HR (HRIS)",
+   "meta_confidence": "high"
   },
   {
    "slug": "pipedrive",
@@ -967,7 +1699,11 @@
    "segment": "gtm",
    "hq_country": "EE",
    "homepage_url": "https://www.pipedrive.com/",
-   "pricing_url": "https://www.pipedrive.com/en/pricing"
+   "pricing_url": "https://www.pipedrive.com/en/pricing",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "CRM",
+   "meta_confidence": "high"
   },
   {
    "slug": "pleo",
@@ -975,7 +1711,11 @@
    "segment": "fintech-ops",
    "hq_country": "DK",
    "homepage_url": "https://www.pleo.io/",
-   "pricing_url": "https://www.pleo.io/en/pricing"
+   "pricing_url": "https://www.pleo.io/en/pricing",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Spend management",
+   "meta_confidence": "high"
   },
   {
    "slug": "posthog",
@@ -983,14 +1723,22 @@
    "segment": "analytics",
    "hq_country": "US",
    "homepage_url": "https://posthog.com/",
-   "pricing_url": "https://posthog.com/pricing"
+   "pricing_url": "https://posthog.com/pricing",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Product analytics",
+   "meta_confidence": "high"
   },
   {
    "slug": "procore",
    "name": "Procore",
    "segment": "industrial",
    "hq_country": "US",
-   "homepage_url": "https://www.procore.com/"
+   "homepage_url": "https://www.procore.com/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Construction management",
+   "meta_confidence": "high"
   },
   {
    "slug": "productboard",
@@ -998,7 +1746,11 @@
    "segment": "product-dev",
    "hq_country": "CZ",
    "homepage_url": "https://www.productboard.com/",
-   "pricing_url": "https://www.productboard.com/pricing/"
+   "pricing_url": "https://www.productboard.com/pricing/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Product management",
+   "meta_confidence": "high"
   },
   {
    "slug": "proton",
@@ -1006,14 +1758,22 @@
    "segment": "security",
    "hq_country": "CH",
    "homepage_url": "https://proton.me/",
-   "pricing_url": "https://proton.me/pricing"
+   "pricing_url": "https://proton.me/pricing",
+   "audience": "b2b2c",
+   "target_size": "broad",
+   "category": "Privacy / encrypted email",
+   "meta_confidence": "high"
   },
   {
    "slug": "ptc",
    "name": "PTC",
    "segment": "industrial",
    "hq_country": "US",
-   "homepage_url": "https://www.ptc.com/"
+   "homepage_url": "https://www.ptc.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "PLM / CAD / IoT",
+   "meta_confidence": "high"
   },
   {
    "slug": "qonto",
@@ -1021,14 +1781,34 @@
    "segment": "fintech-ops",
    "hq_country": "FR",
    "homepage_url": "https://qonto.com/en",
-   "pricing_url": "https://qonto.com/en/pricing"
+   "pricing_url": "https://qonto.com/en/pricing",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Business banking",
+   "meta_confidence": "high"
+  },
+  {
+   "slug": "qualtrics",
+   "name": "Qualtrics",
+   "segment": "analytics",
+   "hq_country": "US",
+   "homepage_url": "https://www.qualtrics.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Experience management",
+   "meta_confidence": "high",
+   "added": "2026-08-09"
   },
   {
    "slug": "quantexa",
    "name": "Quantexa",
    "segment": "data",
    "hq_country": "GB",
-   "homepage_url": "https://www.quantexa.com/"
+   "homepage_url": "https://www.quantexa.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Decision intelligence",
+   "meta_confidence": "medium"
   },
   {
    "slug": "ramp",
@@ -1036,28 +1816,57 @@
    "segment": "fintech-ops",
    "hq_country": "US",
    "homepage_url": "https://ramp.com/",
-   "pricing_url": "https://ramp.com/pricing"
+   "pricing_url": "https://ramp.com/pricing",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Spend management",
+   "meta_confidence": "high"
   },
   {
    "slug": "red-points",
    "name": "Red Points",
    "segment": "grc",
    "hq_country": "ES",
-   "homepage_url": "https://www.redpoints.com/"
+   "homepage_url": "https://www.redpoints.com/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Brand protection",
+   "meta_confidence": "medium"
+  },
+  {
+   "slug": "redis",
+   "name": "Redis",
+   "segment": "data",
+   "hq_country": "US",
+   "homepage_url": "https://redis.io/",
+   "pricing_url": "https://redis.io/pricing/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "In-memory database",
+   "meta_confidence": "high",
+   "added": "2026-08-09"
   },
   {
    "slug": "relativity",
    "name": "Relativity",
    "segment": "legal-tech",
    "hq_country": "US",
-   "homepage_url": "https://www.relativity.com/"
+   "homepage_url": "https://www.relativity.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "E-discovery",
+   "meta_confidence": "high"
   },
   {
    "slug": "relex",
    "name": "RELEX Solutions",
    "segment": "industrial",
    "hq_country": "FI",
-   "homepage_url": "https://www.relexsolutions.com/"
+   "homepage_url": "https://www.relexsolutions.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Supply chain planning",
+   "meta_confidence": "medium"
   },
   {
    "slug": "retool",
@@ -1065,7 +1874,11 @@
    "segment": "automation",
    "hq_country": "US",
    "homepage_url": "https://retool.com/",
-   "pricing_url": "https://retool.com/pricing"
+   "pricing_url": "https://retool.com/pricing",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Internal tools",
+   "meta_confidence": "high"
   },
   {
    "slug": "rippling",
@@ -1073,7 +1886,11 @@
    "segment": "hr-ops",
    "hq_country": "US",
    "homepage_url": "https://www.rippling.com/",
-   "pricing_url": "https://www.rippling.com/pricing"
+   "pricing_url": "https://www.rippling.com/pricing",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "HR / IT / payroll",
+   "meta_confidence": "high"
   },
   {
    "slug": "rossum",
@@ -1081,21 +1898,33 @@
    "segment": "automation",
    "hq_country": "CZ",
    "homepage_url": "https://rossum.ai/",
-   "pricing_url": "https://rossum.ai/pricing/"
+   "pricing_url": "https://rossum.ai/pricing/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Document AI (IDP)",
+   "meta_confidence": "medium"
   },
   {
    "slug": "sage",
    "name": "Sage",
    "segment": "erp",
    "hq_country": "GB",
-   "homepage_url": "https://www.sage.com/en-gb/"
+   "homepage_url": "https://www.sage.com/en-gb/",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Accounting / ERP",
+   "meta_confidence": "high"
   },
   {
    "slug": "sailpoint",
    "name": "SailPoint",
    "segment": "identity",
    "hq_country": "US",
-   "homepage_url": "https://www.sailpoint.com/"
+   "homepage_url": "https://www.sailpoint.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Identity governance",
+   "meta_confidence": "high"
   },
   {
    "slug": "salesforce",
@@ -1103,14 +1932,22 @@
    "segment": "gtm",
    "hq_country": "US",
    "homepage_url": "https://www.salesforce.com/",
-   "pricing_url": "https://www.salesforce.com/sales/pricing/"
+   "pricing_url": "https://www.salesforce.com/sales/pricing/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "CRM",
+   "meta_confidence": "high"
   },
   {
    "slug": "sap",
    "name": "SAP",
    "segment": "erp",
    "hq_country": "DE",
-   "homepage_url": "https://www.sap.com/"
+   "homepage_url": "https://www.sap.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "ERP",
+   "meta_confidence": "high"
   },
   {
    "slug": "scaleway",
@@ -1118,14 +1955,22 @@
    "segment": "dev-infra",
    "hq_country": "FR",
    "homepage_url": "https://www.scaleway.com/en/",
-   "pricing_url": "https://www.scaleway.com/en/pricing/"
+   "pricing_url": "https://www.scaleway.com/en/pricing/",
+   "audience": "b2b2c",
+   "target_size": "mid-market",
+   "category": "Cloud infrastructure",
+   "meta_confidence": "high"
   },
   {
    "slug": "scandit",
    "name": "Scandit",
    "segment": "industrial",
    "hq_country": "CH",
-   "homepage_url": "https://www.scandit.com/"
+   "homepage_url": "https://www.scandit.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Computer vision / scanning",
+   "meta_confidence": "medium"
   },
   {
    "slug": "segment",
@@ -1133,14 +1978,34 @@
    "segment": "data",
    "hq_country": "US",
    "homepage_url": "https://segment.com/",
-   "pricing_url": "https://segment.com/pricing/"
+   "pricing_url": "https://segment.com/pricing/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Customer data platform",
+   "meta_confidence": "high"
+  },
+  {
+   "slug": "seismic",
+   "name": "Seismic",
+   "segment": "gtm",
+   "hq_country": "US",
+   "homepage_url": "https://seismic.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Sales enablement",
+   "meta_confidence": "high",
+   "added": "2026-08-09"
   },
   {
    "slug": "sennder",
    "name": "sennder",
    "segment": "industrial",
    "hq_country": "DE",
-   "homepage_url": "https://www.sennder.com/"
+   "homepage_url": "https://www.sennder.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Digital freight",
+   "meta_confidence": "medium"
   },
   {
    "slug": "sentry",
@@ -1148,21 +2013,33 @@
    "segment": "observability",
    "hq_country": "US",
    "homepage_url": "https://sentry.io/welcome/",
-   "pricing_url": "https://sentry.io/pricing/"
+   "pricing_url": "https://sentry.io/pricing/",
+   "audience": "b2b",
+   "target_size": "broad",
+   "category": "Error monitoring",
+   "meta_confidence": "high"
   },
   {
    "slug": "servicenow",
    "name": "ServiceNow",
    "segment": "itsm",
    "hq_country": "US",
-   "homepage_url": "https://www.servicenow.com/"
+   "homepage_url": "https://www.servicenow.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "ITSM / workflow",
+   "meta_confidence": "high"
   },
   {
    "slug": "showpad",
    "name": "Showpad",
    "segment": "gtm",
    "hq_country": "BE",
-   "homepage_url": "https://www.showpad.com/"
+   "homepage_url": "https://www.showpad.com/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Sales enablement",
+   "meta_confidence": "high"
   },
   {
    "slug": "signicat",
@@ -1170,35 +2047,55 @@
    "segment": "identity",
    "hq_country": "NO",
    "homepage_url": "https://www.signicat.com/",
-   "pricing_url": "https://www.signicat.com/pricing"
+   "pricing_url": "https://www.signicat.com/pricing",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Digital identity",
+   "meta_confidence": "medium"
   },
   {
    "slug": "silverfin",
    "name": "Silverfin",
    "segment": "fintech-ops",
    "hq_country": "BE",
-   "homepage_url": "https://www.silverfin.com/"
+   "homepage_url": "https://www.silverfin.com/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Accounting (close)",
+   "meta_confidence": "medium"
   },
   {
    "slug": "sinch",
    "name": "Sinch",
    "segment": "ccaas",
    "hq_country": "SE",
-   "homepage_url": "https://sinch.com/"
+   "homepage_url": "https://sinch.com/",
+   "audience": "b2b2c",
+   "target_size": "enterprise",
+   "category": "Communications API",
+   "meta_confidence": "high"
   },
   {
    "slug": "sitecore",
    "name": "Sitecore",
    "segment": "marketing",
    "hq_country": "DK",
-   "homepage_url": "https://www.sitecore.com/"
+   "homepage_url": "https://www.sitecore.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Digital experience (CMS)",
+   "meta_confidence": "high"
   },
   {
    "slug": "siteimprove",
    "name": "Siteimprove",
    "segment": "marketing",
    "hq_country": "DK",
-   "homepage_url": "https://www.siteimprove.com/"
+   "homepage_url": "https://www.siteimprove.com/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Website QA & accessibility",
+   "meta_confidence": "high"
   },
   {
    "slug": "slack",
@@ -1206,7 +2103,24 @@
    "segment": "work-mgmt",
    "hq_country": "US",
    "homepage_url": "https://slack.com/",
-   "pricing_url": "https://slack.com/pricing"
+   "pricing_url": "https://slack.com/pricing",
+   "audience": "b2b",
+   "target_size": "broad",
+   "category": "Team messaging",
+   "meta_confidence": "high"
+  },
+  {
+   "slug": "smartsheet",
+   "name": "Smartsheet",
+   "segment": "work-mgmt",
+   "hq_country": "US",
+   "homepage_url": "https://www.smartsheet.com/",
+   "pricing_url": "https://www.smartsheet.com/pricing",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Work management",
+   "meta_confidence": "high",
+   "added": "2026-08-09"
   },
   {
    "slug": "snowflake",
@@ -1214,7 +2128,11 @@
    "segment": "data",
    "hq_country": "US",
    "homepage_url": "https://www.snowflake.com/en/",
-   "pricing_url": "https://www.snowflake.com/en/pricing-options/"
+   "pricing_url": "https://www.snowflake.com/en/pricing-options/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Data warehouse",
+   "meta_confidence": "high"
   },
   {
    "slug": "snyk",
@@ -1222,14 +2140,22 @@
    "segment": "security",
    "hq_country": "GB",
    "homepage_url": "https://snyk.io/",
-   "pricing_url": "https://snyk.io/plans/"
+   "pricing_url": "https://snyk.io/plans/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Developer security",
+   "meta_confidence": "high"
   },
   {
    "slug": "software-ag",
    "name": "Software AG",
    "segment": "data",
    "hq_country": "DE",
-   "homepage_url": "https://www.softwareag.com/"
+   "homepage_url": "https://www.softwareag.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Integration / iPaaS",
+   "meta_confidence": "high"
   },
   {
    "slug": "spendesk",
@@ -1237,14 +2163,46 @@
    "segment": "fintech-ops",
    "hq_country": "FR",
    "homepage_url": "https://www.spendesk.com/",
-   "pricing_url": "https://www.spendesk.com/pricing/"
+   "pricing_url": "https://www.spendesk.com/pricing/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Spend management",
+   "meta_confidence": "high"
+  },
+  {
+   "slug": "splunk",
+   "name": "Splunk",
+   "segment": "observability",
+   "hq_country": "US",
+   "homepage_url": "https://www.splunk.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Observability / SIEM",
+   "meta_confidence": "high",
+   "added": "2026-08-09"
+  },
+  {
+   "slug": "sprinklr",
+   "name": "Sprinklr",
+   "segment": "marketing",
+   "hq_country": "US",
+   "homepage_url": "https://www.sprinklr.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Customer experience / social",
+   "meta_confidence": "high",
+   "added": "2026-08-09"
   },
   {
    "slug": "staffbase",
    "name": "Staffbase",
    "segment": "marketing",
    "hq_country": "DE",
-   "homepage_url": "https://staffbase.com/en/"
+   "homepage_url": "https://staffbase.com/en/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Employee comms",
+   "meta_confidence": "high"
   },
   {
    "slug": "stripe",
@@ -1252,7 +2210,11 @@
    "segment": "fintech-ops",
    "hq_country": "US",
    "homepage_url": "https://stripe.com/",
-   "pricing_url": "https://stripe.com/pricing"
+   "pricing_url": "https://stripe.com/pricing",
+   "audience": "b2b2c",
+   "target_size": "broad",
+   "category": "Payments",
+   "meta_confidence": "high"
   },
   {
    "slug": "supabase",
@@ -1260,7 +2222,11 @@
    "segment": "dev-infra",
    "hq_country": "US",
    "homepage_url": "https://supabase.com/",
-   "pricing_url": "https://supabase.com/pricing"
+   "pricing_url": "https://supabase.com/pricing",
+   "audience": "b2b2c",
+   "target_size": "smb",
+   "category": "Backend-as-a-service",
+   "meta_confidence": "high"
   },
   {
    "slug": "supermetrics",
@@ -1268,14 +2234,22 @@
    "segment": "analytics",
    "hq_country": "FI",
    "homepage_url": "https://supermetrics.com/",
-   "pricing_url": "https://supermetrics.com/pricing"
+   "pricing_url": "https://supermetrics.com/pricing",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Marketing data & reporting",
+   "meta_confidence": "high"
   },
   {
    "slug": "suse",
    "name": "SUSE",
    "segment": "dev-infra",
    "hq_country": "DE",
-   "homepage_url": "https://www.suse.com/"
+   "homepage_url": "https://www.suse.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Enterprise Linux",
+   "meta_confidence": "high"
   },
   {
    "slug": "talkdesk",
@@ -1283,7 +2257,11 @@
    "segment": "ccaas",
    "hq_country": "PT",
    "homepage_url": "https://www.talkdesk.com/",
-   "pricing_url": "https://www.talkdesk.com/pricing/"
+   "pricing_url": "https://www.talkdesk.com/pricing/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Contact center (CCaaS)",
+   "meta_confidence": "high"
   },
   {
    "slug": "teamleader",
@@ -1291,7 +2269,11 @@
    "segment": "work-mgmt",
    "hq_country": "BE",
    "homepage_url": "https://www.teamleader.eu/",
-   "pricing_url": "https://www.teamleader.eu/pricing"
+   "pricing_url": "https://www.teamleader.eu/pricing",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "CRM & work mgmt",
+   "meta_confidence": "medium"
   },
   {
    "slug": "teamviewer",
@@ -1299,42 +2281,79 @@
    "segment": "itsm",
    "hq_country": "DE",
    "homepage_url": "https://www.teamviewer.com/en/",
-   "pricing_url": "https://www.teamviewer.com/en/pricing/"
+   "pricing_url": "https://www.teamviewer.com/en/pricing/",
+   "audience": "b2b",
+   "target_size": "broad",
+   "category": "Remote access",
+   "meta_confidence": "high"
   },
   {
    "slug": "temenos",
    "name": "Temenos",
    "segment": "banking-tech",
    "hq_country": "CH",
-   "homepage_url": "https://www.temenos.com/"
+   "homepage_url": "https://www.temenos.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Core banking",
+   "meta_confidence": "high"
   },
   {
    "slug": "templafy",
    "name": "Templafy",
    "segment": "work-mgmt",
    "hq_country": "DK",
-   "homepage_url": "https://www.templafy.com/"
+   "homepage_url": "https://www.templafy.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Document generation",
+   "meta_confidence": "medium"
   },
   {
    "slug": "thought-machine",
    "name": "Thought Machine",
    "segment": "banking-tech",
    "hq_country": "GB",
-   "homepage_url": "https://thoughtmachine.net/"
+   "homepage_url": "https://thoughtmachine.net/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Core banking",
+   "meta_confidence": "high"
+  },
+  {
+   "slug": "thoughtspot",
+   "name": "ThoughtSpot",
+   "segment": "analytics",
+   "hq_country": "US",
+   "homepage_url": "https://www.thoughtspot.com/",
+   "pricing_url": "https://www.thoughtspot.com/pricing",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "BI & analytics",
+   "meta_confidence": "high",
+   "added": "2026-08-09"
   },
   {
    "slug": "tink",
    "name": "Tink",
    "segment": "banking-tech",
    "hq_country": "SE",
-   "homepage_url": "https://tink.com/"
+   "homepage_url": "https://tink.com/",
+   "audience": "b2b2c",
+   "target_size": "enterprise",
+   "category": "Open banking API",
+   "meta_confidence": "high"
   },
   {
    "slug": "tricentis",
    "name": "Tricentis",
    "segment": "product-dev",
    "hq_country": "AT",
-   "homepage_url": "https://www.tricentis.com/"
+   "homepage_url": "https://www.tricentis.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Test automation",
+   "meta_confidence": "high"
   },
   {
    "slug": "trustpilot",
@@ -1342,7 +2361,11 @@
    "segment": "marketing",
    "hq_country": "DK",
    "homepage_url": "https://business.trustpilot.com/",
-   "pricing_url": "https://business.trustpilot.com/plans"
+   "pricing_url": "https://business.trustpilot.com/plans",
+   "audience": "b2b2c",
+   "target_size": "broad",
+   "category": "Reviews platform",
+   "meta_confidence": "high"
   },
   {
    "slug": "twilio",
@@ -1350,7 +2373,11 @@
    "segment": "dev-infra",
    "hq_country": "US",
    "homepage_url": "https://www.twilio.com/en-us",
-   "pricing_url": "https://www.twilio.com/en-us/pricing"
+   "pricing_url": "https://www.twilio.com/en-us/pricing",
+   "audience": "b2b2c",
+   "target_size": "broad",
+   "category": "Communications API",
+   "meta_confidence": "high"
   },
   {
    "slug": "typeform",
@@ -1358,7 +2385,11 @@
    "segment": "marketing",
    "hq_country": "ES",
    "homepage_url": "https://www.typeform.com/",
-   "pricing_url": "https://www.typeform.com/pricing/"
+   "pricing_url": "https://www.typeform.com/pricing/",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Forms & surveys",
+   "meta_confidence": "high"
   },
   {
    "slug": "uipath",
@@ -1366,21 +2397,33 @@
    "segment": "automation",
    "hq_country": "US",
    "homepage_url": "https://www.uipath.com/",
-   "pricing_url": "https://www.uipath.com/pricing"
+   "pricing_url": "https://www.uipath.com/pricing",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "RPA / automation",
+   "meta_confidence": "high"
   },
   {
    "slug": "unbabel",
    "name": "Unbabel",
    "segment": "localization",
    "hq_country": "PT",
-   "homepage_url": "https://unbabel.com/"
+   "homepage_url": "https://unbabel.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Translation (AI+human)",
+   "meta_confidence": "medium"
   },
   {
    "slug": "unity",
    "name": "Unity",
    "segment": "product-dev",
    "hq_country": "DK",
-   "homepage_url": "https://unity.com/"
+   "homepage_url": "https://unity.com/",
+   "audience": "b2b2c",
+   "target_size": "broad",
+   "category": "Game engine / 3D",
+   "meta_confidence": "high"
   },
   {
    "slug": "usercentrics",
@@ -1388,7 +2431,11 @@
    "segment": "grc",
    "hq_country": "DE",
    "homepage_url": "https://usercentrics.com/",
-   "pricing_url": "https://usercentrics.com/pricing/"
+   "pricing_url": "https://usercentrics.com/pricing/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Consent management",
+   "meta_confidence": "high"
   },
   {
    "slug": "vanta",
@@ -1396,21 +2443,33 @@
    "segment": "security",
    "hq_country": "US",
    "homepage_url": "https://www.vanta.com/",
-   "pricing_url": "https://www.vanta.com/pricing"
+   "pricing_url": "https://www.vanta.com/pricing",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Security compliance",
+   "meta_confidence": "high"
   },
   {
    "slug": "veeam",
    "name": "Veeam",
    "segment": "dev-infra",
    "hq_country": "CH",
-   "homepage_url": "https://www.veeam.com/"
+   "homepage_url": "https://www.veeam.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Backup & recovery",
+   "meta_confidence": "high"
   },
   {
    "slug": "veeva",
    "name": "Veeva Systems",
    "segment": "healthcare-it",
    "hq_country": "US",
-   "homepage_url": "https://www.veeva.com/"
+   "homepage_url": "https://www.veeva.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Life sciences cloud",
+   "meta_confidence": "high"
   },
   {
    "slug": "vercel",
@@ -1418,7 +2477,11 @@
    "segment": "dev-infra",
    "hq_country": "US",
    "homepage_url": "https://vercel.com/",
-   "pricing_url": "https://vercel.com/pricing"
+   "pricing_url": "https://vercel.com/pricing",
+   "audience": "b2b2c",
+   "target_size": "broad",
+   "category": "Frontend cloud",
+   "meta_confidence": "high"
   },
   {
    "slug": "veriff",
@@ -1426,21 +2489,33 @@
    "segment": "identity",
    "hq_country": "EE",
    "homepage_url": "https://www.veriff.com/",
-   "pricing_url": "https://www.veriff.com/pricing"
+   "pricing_url": "https://www.veriff.com/pricing",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Identity verification",
+   "meta_confidence": "high"
   },
   {
    "slug": "visma",
    "name": "Visma",
    "segment": "erp",
    "hq_country": "NO",
-   "homepage_url": "https://www.visma.com/"
+   "homepage_url": "https://www.visma.com/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "ERP / accounting",
+   "meta_confidence": "high"
   },
   {
    "slug": "voyado",
    "name": "Voyado",
    "segment": "marketing",
    "hq_country": "SE",
-   "homepage_url": "https://voyado.com/"
+   "homepage_url": "https://voyado.com/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Retail CRM & loyalty",
+   "meta_confidence": "medium"
   },
   {
    "slug": "webflow",
@@ -1448,7 +2523,11 @@
    "segment": "marketing",
    "hq_country": "US",
    "homepage_url": "https://webflow.com/",
-   "pricing_url": "https://webflow.com/pricing"
+   "pricing_url": "https://webflow.com/pricing",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Website builder / CMS",
+   "meta_confidence": "high"
   },
   {
    "slug": "wise",
@@ -1456,35 +2535,55 @@
    "segment": "payments",
    "hq_country": "GB",
    "homepage_url": "https://wise.com/business/",
-   "pricing_url": "https://wise.com/gb/pricing/"
+   "pricing_url": "https://wise.com/gb/pricing/",
+   "audience": "b2b2c",
+   "target_size": "broad",
+   "category": "Cross-border payments",
+   "meta_confidence": "high"
   },
   {
    "slug": "workday",
    "name": "Workday",
    "segment": "hr-ops",
    "hq_country": "US",
-   "homepage_url": "https://www.workday.com/"
+   "homepage_url": "https://www.workday.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "HR & finance (HCM)",
+   "meta_confidence": "high"
   },
   {
    "slug": "workhuman",
    "name": "Workhuman",
    "segment": "hr-ops",
    "hq_country": "IE",
-   "homepage_url": "https://www.workhuman.com/"
+   "homepage_url": "https://www.workhuman.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Employee recognition",
+   "meta_confidence": "high"
   },
   {
    "slug": "workiva",
    "name": "Workiva",
    "segment": "grc",
    "hq_country": "US",
-   "homepage_url": "https://www.workiva.com/"
+   "homepage_url": "https://www.workiva.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Financial reporting / GRC",
+   "meta_confidence": "high"
   },
   {
    "slug": "xeneta",
    "name": "Xeneta",
    "segment": "industrial",
    "hq_country": "NO",
-   "homepage_url": "https://www.xeneta.com/"
+   "homepage_url": "https://www.xeneta.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Freight benchmarking",
+   "meta_confidence": "medium"
   },
   {
    "slug": "zapier",
@@ -1492,7 +2591,11 @@
    "segment": "automation",
    "hq_country": "US",
    "homepage_url": "https://zapier.com/",
-   "pricing_url": "https://zapier.com/pricing"
+   "pricing_url": "https://zapier.com/pricing",
+   "audience": "b2b",
+   "target_size": "smb",
+   "category": "Automation / iPaaS",
+   "meta_confidence": "high"
   },
   {
    "slug": "zendesk",
@@ -1500,14 +2603,22 @@
    "segment": "support",
    "hq_country": "US",
    "homepage_url": "https://www.zendesk.com/",
-   "pricing_url": "https://www.zendesk.com/pricing/"
+   "pricing_url": "https://www.zendesk.com/pricing/",
+   "audience": "b2b",
+   "target_size": "mid-market",
+   "category": "Customer support",
+   "meta_confidence": "high"
   },
   {
    "slug": "zscaler",
    "name": "Zscaler",
    "segment": "security",
    "hq_country": "US",
-   "homepage_url": "https://www.zscaler.com/"
+   "homepage_url": "https://www.zscaler.com/",
+   "audience": "b2b",
+   "target_size": "enterprise",
+   "category": "Cloud security (SSE)",
+   "meta_confidence": "high"
   }
  ]
 }

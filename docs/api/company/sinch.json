@@ -4,7 +4,11 @@
   "name": "Sinch",
   "segment": "ccaas",
   "hq_country": "SE",
-  "homepage_url": "https://sinch.com/"
+  "homepage_url": "https://sinch.com/",
+  "audience": "b2b2c",
+  "target_size": "enterprise",
+  "category": "Communications API",
+  "meta_confidence": "high"
  },
  "signals": [
   {

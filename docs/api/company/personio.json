@@ -5,7 +5,11 @@
   "segment": "hr-ops",
   "hq_country": "DE",
   "homepage_url": "https://www.personio.com/",
-  "pricing_url": "https://www.personio.com/pricing/"
+  "pricing_url": "https://www.personio.com/pricing/",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "HR (HRIS)",
+  "meta_confidence": "high"
  },
  "signals": [],
  "events": [],

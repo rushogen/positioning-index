@@ -4,7 +4,11 @@
   "name": "AFAS Software",
   "segment": "erp",
   "hq_country": "NL",
-  "homepage_url": "https://www.afas.nl/"
+  "homepage_url": "https://www.afas.nl/",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "ERP",
+  "meta_confidence": "medium"
  },
  "signals": [
   {

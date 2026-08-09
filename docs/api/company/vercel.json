@@ -5,7 +5,11 @@
   "segment": "dev-infra",
   "hq_country": "US",
   "homepage_url": "https://vercel.com/",
-  "pricing_url": "https://vercel.com/pricing"
+  "pricing_url": "https://vercel.com/pricing",
+  "audience": "b2b2c",
+  "target_size": "broad",
+  "category": "Frontend cloud",
+  "meta_confidence": "high"
  },
  "signals": [
   {

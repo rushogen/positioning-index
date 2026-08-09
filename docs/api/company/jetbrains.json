@@ -5,7 +5,11 @@
   "segment": "product-dev",
   "hq_country": "CZ",
   "homepage_url": "https://www.jetbrains.com/",
-  "pricing_url": "https://www.jetbrains.com/store/"
+  "pricing_url": "https://www.jetbrains.com/store/",
+  "audience": "b2b2c",
+  "target_size": "broad",
+  "category": "Developer IDEs",
+  "meta_confidence": "high"
  },
  "signals": [
   {

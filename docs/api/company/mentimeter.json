@@ -5,7 +5,11 @@
   "segment": "work-mgmt",
   "hq_country": "SE",
   "homepage_url": "https://www.mentimeter.com/",
-  "pricing_url": "https://www.mentimeter.com/plans"
+  "pricing_url": "https://www.mentimeter.com/plans",
+  "audience": "b2b",
+  "target_size": "broad",
+  "category": "Interactive presentations",
+  "meta_confidence": "high"
  },
  "signals": [
   {

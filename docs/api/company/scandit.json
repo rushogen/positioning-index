@@ -4,7 +4,11 @@
   "name": "Scandit",
   "segment": "industrial",
   "hq_country": "CH",
-  "homepage_url": "https://www.scandit.com/"
+  "homepage_url": "https://www.scandit.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Computer vision / scanning",
+  "meta_confidence": "medium"
  },
  "signals": [
   {

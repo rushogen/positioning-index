@@ -5,7 +5,11 @@
   "segment": "marketing",
   "hq_country": "DK",
   "homepage_url": "https://business.trustpilot.com/",
-  "pricing_url": "https://business.trustpilot.com/plans"
+  "pricing_url": "https://business.trustpilot.com/plans",
+  "audience": "b2b2c",
+  "target_size": "broad",
+  "category": "Reviews platform",
+  "meta_confidence": "high"
  },
  "signals": [
   {
@@ -371,6 +375,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://business.trustpilot.com/",
+   "fetched_at": "2026-08-09T14:42:01Z",
+   "http_status": 200,
+   "status": "unchanged",
+   "reason": "body identical to the previous fetch",
+   "bytes": 329063,
+   "duration_ms": 241,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
   {
    "kind": "pricing",
    "url": "https://business.trustpilot.com/pricing",

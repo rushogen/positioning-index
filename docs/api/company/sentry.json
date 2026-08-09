@@ -5,7 +5,11 @@
   "segment": "observability",
   "hq_country": "US",
   "homepage_url": "https://sentry.io/welcome/",
-  "pricing_url": "https://sentry.io/pricing/"
+  "pricing_url": "https://sentry.io/pricing/",
+  "audience": "b2b",
+  "target_size": "broad",
+  "category": "Error monitoring",
+  "meta_confidence": "high"
  },
  "signals": [
   {

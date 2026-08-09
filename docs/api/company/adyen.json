@@ -5,7 +5,11 @@
   "segment": "payments",
   "hq_country": "NL",
   "homepage_url": "https://www.adyen.com/",
-  "pricing_url": "https://www.adyen.com/pricing"
+  "pricing_url": "https://www.adyen.com/pricing",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Payments",
+  "meta_confidence": "high"
  },
  "signals": [
   {

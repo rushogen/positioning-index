@@ -5,7 +5,11 @@
   "segment": "gtm",
   "hq_country": "US",
   "homepage_url": "https://www.hubspot.com/",
-  "pricing_url": "https://www.hubspot.com/pricing/marketing"
+  "pricing_url": "https://www.hubspot.com/pricing/marketing",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "CRM & marketing",
+  "meta_confidence": "high"
  },
  "signals": [
   {

@@ -4,7 +4,11 @@
   "name": "Cognite",
   "segment": "industrial",
   "hq_country": "NO",
-  "homepage_url": "https://www.cognite.com/"
+  "homepage_url": "https://www.cognite.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Industrial DataOps",
+  "meta_confidence": "medium"
  },
  "signals": [
   {

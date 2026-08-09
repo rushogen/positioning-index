@@ -5,7 +5,11 @@
   "segment": "marketing",
   "hq_country": "NL",
   "homepage_url": "https://bird.com/",
-  "pricing_url": "https://bird.com/pricing"
+  "pricing_url": "https://bird.com/pricing",
+  "audience": "b2b2c",
+  "target_size": "mid-market",
+  "category": "Communications / CRM",
+  "meta_confidence": "medium"
  },
  "signals": [
   {

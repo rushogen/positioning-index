@@ -5,7 +5,11 @@
   "segment": "automation",
   "hq_country": "CZ",
   "homepage_url": "https://rossum.ai/",
-  "pricing_url": "https://rossum.ai/pricing/"
+  "pricing_url": "https://rossum.ai/pricing/",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Document AI (IDP)",
+  "meta_confidence": "medium"
  },
  "signals": [
   {

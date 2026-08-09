@@ -5,7 +5,11 @@
   "segment": "dev-infra",
   "hq_country": "US",
   "homepage_url": "https://www.cloudflare.com/",
-  "pricing_url": "https://www.cloudflare.com/plans/"
+  "pricing_url": "https://www.cloudflare.com/plans/",
+  "audience": "b2b2c",
+  "target_size": "broad",
+  "category": "Edge network / CDN",
+  "meta_confidence": "high"
  },
  "signals": [
   {

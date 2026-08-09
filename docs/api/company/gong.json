@@ -5,7 +5,11 @@
   "segment": "gtm",
   "hq_country": "US",
   "homepage_url": "https://www.gong.io/",
-  "pricing_url": "https://www.gong.io/pricing/"
+  "pricing_url": "https://www.gong.io/pricing/",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Revenue intelligence",
+  "meta_confidence": "high"
  },
  "signals": [
   {

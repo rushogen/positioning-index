@@ -4,7 +4,11 @@
   "name": "Zscaler",
   "segment": "security",
   "hq_country": "US",
-  "homepage_url": "https://www.zscaler.com/"
+  "homepage_url": "https://www.zscaler.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Cloud security (SSE)",
+  "meta_confidence": "high"
  },
  "signals": [
   {

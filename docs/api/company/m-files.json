@@ -4,7 +4,11 @@
   "name": "M-Files",
   "segment": "work-mgmt",
   "hq_country": "FI",
-  "homepage_url": "https://www.m-files.com/"
+  "homepage_url": "https://www.m-files.com/",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Document management",
+  "meta_confidence": "medium"
  },
  "signals": [
   {

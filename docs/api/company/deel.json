@@ -5,7 +5,11 @@
   "segment": "hr-ops",
   "hq_country": "US",
   "homepage_url": "https://www.deel.com/",
-  "pricing_url": "https://www.deel.com/pricing/"
+  "pricing_url": "https://www.deel.com/pricing/",
+  "audience": "b2b",
+  "target_size": "broad",
+  "category": "Global HR & payroll",
+  "meta_confidence": "high"
  },
  "signals": [
   {

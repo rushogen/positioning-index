@@ -5,7 +5,11 @@
   "segment": "observability",
   "hq_country": "US",
   "homepage_url": "https://www.datadoghq.com/",
-  "pricing_url": "https://www.datadoghq.com/pricing/"
+  "pricing_url": "https://www.datadoghq.com/pricing/",
+  "audience": "b2b",
+  "target_size": "broad",
+  "category": "Observability",
+  "meta_confidence": "high"
  },
  "signals": [
   {

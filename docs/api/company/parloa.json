@@ -4,7 +4,11 @@
   "name": "Parloa",
   "segment": "ccaas",
   "hq_country": "DE",
-  "homepage_url": "https://www.parloa.com/"
+  "homepage_url": "https://www.parloa.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Conversational AI",
+  "meta_confidence": "medium"
  },
  "signals": [
   {

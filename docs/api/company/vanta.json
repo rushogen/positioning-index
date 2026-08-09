@@ -5,7 +5,11 @@
   "segment": "security",
   "hq_country": "US",
   "homepage_url": "https://www.vanta.com/",
-  "pricing_url": "https://www.vanta.com/pricing"
+  "pricing_url": "https://www.vanta.com/pricing",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Security compliance",
+  "meta_confidence": "high"
  },
  "signals": [
   {

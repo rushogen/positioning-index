@@ -5,7 +5,11 @@
   "segment": "ccaas",
   "hq_country": "PT",
   "homepage_url": "https://www.talkdesk.com/",
-  "pricing_url": "https://www.talkdesk.com/pricing/"
+  "pricing_url": "https://www.talkdesk.com/pricing/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Contact center (CCaaS)",
+  "meta_confidence": "high"
  },
  "signals": [
   {

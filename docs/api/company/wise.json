@@ -5,7 +5,11 @@
   "segment": "payments",
   "hq_country": "GB",
   "homepage_url": "https://wise.com/business/",
-  "pricing_url": "https://wise.com/gb/pricing/"
+  "pricing_url": "https://wise.com/gb/pricing/",
+  "audience": "b2b2c",
+  "target_size": "broad",
+  "category": "Cross-border payments",
+  "meta_confidence": "high"
  },
  "signals": [
   {

@@ -5,7 +5,11 @@
   "segment": "data",
   "hq_country": "US",
   "homepage_url": "https://segment.com/",
-  "pricing_url": "https://segment.com/pricing/"
+  "pricing_url": "https://segment.com/pricing/",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Customer data platform",
+  "meta_confidence": "high"
  },
  "signals": [
   {

@@ -5,7 +5,11 @@
   "segment": "dev-infra",
   "hq_country": "NL",
   "homepage_url": "https://www.elastic.co/",
-  "pricing_url": "https://www.elastic.co/pricing"
+  "pricing_url": "https://www.elastic.co/pricing",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Search & observability",
+  "meta_confidence": "high"
  },
  "signals": [
   {

@@ -5,7 +5,11 @@
   "segment": "work-mgmt",
   "hq_country": "US",
   "homepage_url": "https://clickup.com/",
-  "pricing_url": "https://clickup.com/pricing"
+  "pricing_url": "https://clickup.com/pricing",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "Work management",
+  "meta_confidence": "high"
  },
  "signals": [
   {

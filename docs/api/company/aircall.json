@@ -5,7 +5,11 @@
   "segment": "ccaas",
   "hq_country": "FR",
   "homepage_url": "https://aircall.io/",
-  "pricing_url": "https://aircall.io/pricing/"
+  "pricing_url": "https://aircall.io/pricing/",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "Cloud phone / VoIP",
+  "meta_confidence": "high"
  },
  "signals": [
   {

@@ -4,11 +4,27 @@
   "name": "Tricentis",
   "segment": "product-dev",
   "hq_country": "AT",
-  "homepage_url": "https://www.tricentis.com/"
+  "homepage_url": "https://www.tricentis.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Test automation",
+  "meta_confidence": "high"
  },
  "signals": [],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.tricentis.com/",
+   "fetched_at": "2026-08-09T14:41:58Z",
+   "http_status": null,
+   "status": "error",
+   "reason": "network error: fetch failed",
+   "bytes": 0,
+   "duration_ms": 214,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
   {
    "kind": "home",
    "url": "https://www.tricentis.com/",

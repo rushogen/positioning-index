@@ -5,13 +5,17 @@
   "segment": "product-dev",
   "hq_country": "US",
   "homepage_url": "https://www.notion.com/",
-  "pricing_url": "https://www.notion.com/pricing"
+  "pricing_url": "https://www.notion.com/pricing",
+  "audience": "b2b2c",
+  "target_size": "broad",
+  "category": "Docs & wiki",
+  "meta_confidence": "high"
  },
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-08T11:45:57Z",
-   "last_good_at": "2026-08-08T11:45:57Z",
+   "last_observed_at": "2026-08-09T14:42:00Z",
+   "last_good_at": "2026-08-09T14:42:00Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -28,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-08T11:45:57Z",
-   "last_good_at": "2026-08-08T11:45:57Z",
+   "last_observed_at": "2026-08-09T14:42:00Z",
+   "last_good_at": "2026-08-09T14:42:00Z",
    "last_good_value": "testimonial",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "e6a3d068",
@@ -46,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-08T11:45:57Z",
-   "last_good_at": "2026-08-08T11:45:57Z",
+   "last_observed_at": "2026-08-09T14:42:00Z",
+   "last_good_at": "2026-08-09T14:42:00Z",
    "last_good_value": "50",
    "last_good_json": null,
    "last_good_hash": "83e140a0",
@@ -64,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-08T11:45:57Z",
-   "last_good_at": "2026-08-08T11:45:57Z",
+   "last_observed_at": "2026-08-09T14:42:00Z",
+   "last_good_at": "2026-08-09T14:42:00Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -82,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-08T11:45:57Z",
-   "last_good_at": "2026-08-08T11:45:57Z",
+   "last_observed_at": "2026-08-09T14:42:00Z",
+   "last_good_at": "2026-08-09T14:42:00Z",
    "last_good_value": "29",
    "last_good_json": null,
    "last_good_hash": "94f2a484",
@@ -100,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-08T11:45:57Z",
-   "last_good_at": "2026-08-08T11:45:57Z",
+   "last_observed_at": "2026-08-09T14:42:00Z",
+   "last_good_at": "2026-08-09T14:42:00Z",
    "last_good_value": "4",
    "last_good_json": null,
    "last_good_hash": "310ca263",
@@ -118,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-08T11:45:57Z",
-   "last_good_at": "2026-08-08T11:45:57Z",
+   "last_observed_at": "2026-08-09T14:42:00Z",
+   "last_good_at": "2026-08-09T14:42:00Z",
    "last_good_value": "hero > features > other > testimonial",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":34,\"merged\":1},{\"position\":2,\"type\":\"features\",\"heading\":\"Automate repetitive work for your team.\",\"words\":91,\"merged\":1},{\"position\":3,\"type\":\"other\",\"heading\":\"You assign the tasks. Notion Agent does the work.\",\"words\":12,\"merged\":3},{\"position\":4,\"type\":\"testimonial\",\"heading\":\"Trusted by teams that ship.\",\"words\":210,\"merged\":1}]}",
    "last_good_hash": "147e2727",
@@ -136,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-08T11:45:57Z",
-   "last_good_at": "2026-08-08T11:45:57Z",
+   "last_observed_at": "2026-08-09T14:42:00Z",
+   "last_good_at": "2026-08-09T14:42:00Z",
    "last_good_value": 399,
    "last_good_json": null,
    "last_good_hash": "c2667c48",
@@ -154,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-08T11:45:57Z",
-   "last_good_at": "2026-08-08T11:45:57Z",
+   "last_observed_at": "2026-08-09T14:42:00Z",
+   "last_good_at": "2026-08-09T14:42:00Z",
    "last_good_value": "ai workspace",
    "last_good_json": null,
    "last_good_hash": "080559ee",
@@ -172,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-08T11:45:57Z",
-   "last_good_at": "2026-08-08T11:45:57Z",
+   "last_observed_at": "2026-08-09T14:42:00Z",
+   "last_good_at": "2026-08-09T14:42:00Z",
    "last_good_value": "1Password, Affirm, Cursor, Discord, Figma, Loreal, Nvidia, OpenAI, Ramp, RiotGames, Toyota, Vercel",
    "last_good_json": "{\"names\":[\"1Password\",\"Affirm\",\"Cursor\",\"Discord\",\"Figma\",\"Loreal\",\"Nvidia\",\"OpenAI\",\"Ramp\",\"RiotGames\",\"Toyota\",\"Vercel\"],\"count\":12,\"lead\":\"Trusted by teams at\\\"}\\\"/> <link\"}",
    "last_good_hash": "1646d728",
@@ -190,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-08T11:45:57Z",
-   "last_good_at": "2026-08-08T11:45:57Z",
+   "last_observed_at": "2026-08-09T14:42:00Z",
+   "last_good_at": "2026-08-09T14:42:00Z",
    "last_good_value": "Where teams and agents Think together.",
    "last_good_json": null,
    "last_good_hash": "02332963",
@@ -208,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-08T11:45:57Z",
-   "last_good_at": "2026-08-08T11:45:57Z",
+   "last_observed_at": "2026-08-09T14:42:00Z",
+   "last_good_at": "2026-08-09T14:42:00Z",
    "last_good_value": "Build Custom Agents, search across all your apps, and automate busywork. The AI workspace where teams get more done, faster.",
    "last_good_json": null,
    "last_good_hash": "d202b249",
@@ -226,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-08T11:45:57Z",
-   "last_good_at": "2026-08-08T11:45:57Z",
+   "last_observed_at": "2026-08-09T14:42:00Z",
+   "last_good_at": "2026-08-09T14:42:00Z",
    "last_good_value": "The AI workspace that works for you. | Notion",
    "last_good_json": null,
    "last_good_hash": "0ccc0c71",
@@ -334,8 +338,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-08T11:45:57Z",
-   "last_good_at": "2026-08-08T11:45:57Z",
+   "last_observed_at": "2026-08-09T14:42:00Z",
+   "last_good_at": "2026-08-09T14:42:00Z",
    "last_good_value": "100m users | 98% demo play trusted | fortune 100",
    "last_good_json": "{\"items\":[{\"claim\":\"100m users\",\"kind\":\"count\"},{\"claim\":\"98% demo play trusted\",\"kind\":\"percent-trailing\"},{\"claim\":\"fortune 100\",\"kind\":\"rank\"}],\"count\":3}",
    "last_good_hash": "ee84c5e5",
@@ -352,8 +356,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-08T11:45:57Z",
-   "last_good_at": "2026-08-08T11:45:57Z",
+   "last_observed_at": "2026-08-09T14:42:00Z",
+   "last_good_at": "2026-08-09T14:42:00Z",
    "last_good_value": "Capture context, find answers, and automate tasks with AI built for your team.",
    "last_good_json": null,
    "last_good_hash": "b5320c6a",
@@ -371,6 +375,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.notion.com/",
+   "fetched_at": "2026-08-09T14:42:00Z",
+   "http_status": 200,
+   "status": "origin-shift",
+   "reason": "crawl origin github-actions (US/DFW) -> local (DE/TXL); locale-sensitive signals are not comparable across it",
+   "bytes": 249574,
+   "duration_ms": 988,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
   {
    "kind": "pricing",
    "url": "https://www.notion.com/pricing",
@@ -598,18 +614,6 @@
    "duration_ms": 178,
    "signals_found": 4,
    "signals_expected": 5
-  },
-  {
-   "kind": "home",
-   "url": "https://www.notion.com/",
-   "fetched_at": "2026-08-07T11:17:25Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": null,
-   "bytes": 249574,
-   "duration_ms": 717,
-   "signals_found": 7,
-   "signals_expected": 7
   }
  ]
 }

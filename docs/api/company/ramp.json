@@ -5,7 +5,11 @@
   "segment": "fintech-ops",
   "hq_country": "US",
   "homepage_url": "https://ramp.com/",
-  "pricing_url": "https://ramp.com/pricing"
+  "pricing_url": "https://ramp.com/pricing",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Spend management",
+  "meta_confidence": "high"
  },
  "signals": [
   {

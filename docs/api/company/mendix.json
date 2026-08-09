@@ -5,7 +5,11 @@
   "segment": "bpm",
   "hq_country": "NL",
   "homepage_url": "https://www.mendix.com/",
-  "pricing_url": "https://www.mendix.com/pricing/"
+  "pricing_url": "https://www.mendix.com/pricing/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Low-code platform",
+  "meta_confidence": "high"
  },
  "signals": [
   {

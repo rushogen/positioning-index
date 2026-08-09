@@ -5,7 +5,11 @@
   "segment": "analytics",
   "hq_country": "US",
   "homepage_url": "https://mixpanel.com/",
-  "pricing_url": "https://mixpanel.com/pricing/"
+  "pricing_url": "https://mixpanel.com/pricing/",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "Product analytics",
+  "meta_confidence": "high"
  },
  "signals": [
   {

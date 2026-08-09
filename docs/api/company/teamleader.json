@@ -5,7 +5,11 @@
   "segment": "work-mgmt",
   "hq_country": "BE",
   "homepage_url": "https://www.teamleader.eu/",
-  "pricing_url": "https://www.teamleader.eu/pricing"
+  "pricing_url": "https://www.teamleader.eu/pricing",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "CRM & work mgmt",
+  "meta_confidence": "medium"
  },
  "signals": [
   {

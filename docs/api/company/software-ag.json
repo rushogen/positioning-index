@@ -4,7 +4,11 @@
   "name": "Software AG",
   "segment": "data",
   "hq_country": "DE",
-  "homepage_url": "https://www.softwareag.com/"
+  "homepage_url": "https://www.softwareag.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Integration / iPaaS",
+  "meta_confidence": "high"
  },
  "signals": [
   {

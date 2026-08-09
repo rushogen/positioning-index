@@ -4,7 +4,11 @@
   "name": "Nemetschek",
   "segment": "industrial",
   "hq_country": "DE",
-  "homepage_url": "https://www.nemetschek.com/en"
+  "homepage_url": "https://www.nemetschek.com/en",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "AEC / design software",
+  "meta_confidence": "medium"
  },
  "signals": [
   {

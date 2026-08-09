@@ -5,7 +5,11 @@
   "segment": "product-dev",
   "hq_country": "AU",
   "homepage_url": "https://www.atlassian.com/",
-  "pricing_url": "https://www.atlassian.com/software/jira/pricing"
+  "pricing_url": "https://www.atlassian.com/software/jira/pricing",
+  "audience": "b2b",
+  "target_size": "broad",
+  "category": "Dev collaboration",
+  "meta_confidence": "high"
  },
  "signals": [
   {

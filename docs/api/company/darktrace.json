@@ -4,7 +4,11 @@
   "name": "Darktrace",
   "segment": "security",
   "hq_country": "GB",
-  "homepage_url": "https://www.darktrace.com/"
+  "homepage_url": "https://www.darktrace.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Cybersecurity (AI)",
+  "meta_confidence": "high"
  },
  "signals": [
   {

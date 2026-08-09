@@ -5,7 +5,11 @@
   "segment": "gtm",
   "hq_country": "US",
   "homepage_url": "https://www.apollo.io/",
-  "pricing_url": "https://www.apollo.io/pricing"
+  "pricing_url": "https://www.apollo.io/pricing",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "Sales intelligence",
+  "meta_confidence": "high"
  },
  "signals": [
   {

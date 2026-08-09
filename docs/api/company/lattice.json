@@ -5,7 +5,11 @@
   "segment": "hr-ops",
   "hq_country": "US",
   "homepage_url": "https://lattice.com/",
-  "pricing_url": "https://lattice.com/pricing"
+  "pricing_url": "https://lattice.com/pricing",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Performance management",
+  "meta_confidence": "high"
  },
  "signals": [
   {

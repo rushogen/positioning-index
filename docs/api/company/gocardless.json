@@ -5,7 +5,11 @@
   "segment": "payments",
   "hq_country": "GB",
   "homepage_url": "https://gocardless.com/",
-  "pricing_url": "https://gocardless.com/pricing/"
+  "pricing_url": "https://gocardless.com/pricing/",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "Bank payments",
+  "meta_confidence": "high"
  },
  "signals": [
   {

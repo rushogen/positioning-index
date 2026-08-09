@@ -5,7 +5,11 @@
   "segment": "dev-infra",
   "hq_country": "US",
   "homepage_url": "https://www.netlify.com/",
-  "pricing_url": "https://www.netlify.com/pricing/"
+  "pricing_url": "https://www.netlify.com/pricing/",
+  "audience": "b2b2c",
+  "target_size": "smb",
+  "category": "Web hosting",
+  "meta_confidence": "high"
  },
  "signals": [
   {

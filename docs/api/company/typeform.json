@@ -5,7 +5,11 @@
   "segment": "marketing",
   "hq_country": "ES",
   "homepage_url": "https://www.typeform.com/",
-  "pricing_url": "https://www.typeform.com/pricing/"
+  "pricing_url": "https://www.typeform.com/pricing/",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "Forms & surveys",
+  "meta_confidence": "high"
  },
  "signals": [
   {

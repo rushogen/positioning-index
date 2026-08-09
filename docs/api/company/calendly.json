@@ -5,7 +5,11 @@
   "segment": "work-mgmt",
   "hq_country": "US",
   "homepage_url": "https://calendly.com/",
-  "pricing_url": "https://calendly.com/pricing"
+  "pricing_url": "https://calendly.com/pricing",
+  "audience": "b2b",
+  "target_size": "broad",
+  "category": "Scheduling",
+  "meta_confidence": "high"
  },
  "signals": [
   {

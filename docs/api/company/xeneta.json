@@ -4,7 +4,11 @@
   "name": "Xeneta",
   "segment": "industrial",
   "hq_country": "NO",
-  "homepage_url": "https://www.xeneta.com/"
+  "homepage_url": "https://www.xeneta.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Freight benchmarking",
+  "meta_confidence": "medium"
  },
  "signals": [
   {

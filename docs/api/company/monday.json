@@ -5,7 +5,11 @@
   "segment": "work-mgmt",
   "hq_country": "IL",
   "homepage_url": "https://monday.com/",
-  "pricing_url": "https://monday.com/pricing"
+  "pricing_url": "https://monday.com/pricing",
+  "audience": "b2b",
+  "target_size": "broad",
+  "category": "Work management",
+  "meta_confidence": "high"
  },
  "signals": [
   {

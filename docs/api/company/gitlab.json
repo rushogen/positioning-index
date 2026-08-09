@@ -5,7 +5,11 @@
   "segment": "product-dev",
   "hq_country": "US",
   "homepage_url": "https://about.gitlab.com/",
-  "pricing_url": "https://about.gitlab.com/pricing/"
+  "pricing_url": "https://about.gitlab.com/pricing/",
+  "audience": "b2b",
+  "target_size": "broad",
+  "category": "DevOps platform",
+  "meta_confidence": "high"
  },
  "signals": [
   {

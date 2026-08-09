@@ -5,7 +5,11 @@
   "segment": "analytics",
   "hq_country": "FI",
   "homepage_url": "https://supermetrics.com/",
-  "pricing_url": "https://supermetrics.com/pricing"
+  "pricing_url": "https://supermetrics.com/pricing",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "Marketing data & reporting",
+  "meta_confidence": "high"
  },
  "signals": [
   {

@@ -5,7 +5,11 @@
   "segment": "fintech-ops",
   "hq_country": "US",
   "homepage_url": "https://stripe.com/",
-  "pricing_url": "https://stripe.com/pricing"
+  "pricing_url": "https://stripe.com/pricing",
+  "audience": "b2b2c",
+  "target_size": "broad",
+  "category": "Payments",
+  "meta_confidence": "high"
  },
  "signals": [
   {

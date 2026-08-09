@@ -4,7 +4,11 @@
   "name": "Jedox",
   "segment": "analytics",
   "hq_country": "DE",
-  "homepage_url": "https://www.jedox.com/en/"
+  "homepage_url": "https://www.jedox.com/en/",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Planning & FP&A",
+  "meta_confidence": "medium"
  },
  "signals": [
   {

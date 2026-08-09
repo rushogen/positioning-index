@@ -4,7 +4,11 @@
   "name": "Veeam",
   "segment": "dev-infra",
   "hq_country": "CH",
-  "homepage_url": "https://www.veeam.com/"
+  "homepage_url": "https://www.veeam.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Backup & recovery",
+  "meta_confidence": "high"
  },
  "signals": [
   {

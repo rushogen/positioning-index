@@ -4,7 +4,11 @@
   "name": "Sage",
   "segment": "erp",
   "hq_country": "GB",
-  "homepage_url": "https://www.sage.com/en-gb/"
+  "homepage_url": "https://www.sage.com/en-gb/",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "Accounting / ERP",
+  "meta_confidence": "high"
  },
  "signals": [],
  "events": [],

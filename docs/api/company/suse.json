@@ -4,7 +4,11 @@
   "name": "SUSE",
   "segment": "dev-infra",
   "hq_country": "DE",
-  "homepage_url": "https://www.suse.com/"
+  "homepage_url": "https://www.suse.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Enterprise Linux",
+  "meta_confidence": "high"
  },
  "signals": [
   {

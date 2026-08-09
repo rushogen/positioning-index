@@ -4,7 +4,11 @@
   "name": "Unity",
   "segment": "product-dev",
   "hq_country": "DK",
-  "homepage_url": "https://unity.com/"
+  "homepage_url": "https://unity.com/",
+  "audience": "b2b2c",
+  "target_size": "broad",
+  "category": "Game engine / 3D",
+  "meta_confidence": "high"
  },
  "signals": [
   {

@@ -4,7 +4,11 @@
   "name": "Pennylane",
   "segment": "fintech-ops",
   "hq_country": "FR",
-  "homepage_url": "https://www.pennylane.com/"
+  "homepage_url": "https://www.pennylane.com/",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "Accounting & finance",
+  "meta_confidence": "medium"
  },
  "signals": [
   {

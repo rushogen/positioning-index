@@ -4,7 +4,11 @@
   "name": "IDnow",
   "segment": "identity",
   "hq_country": "DE",
-  "homepage_url": "https://idnow.io/"
+  "homepage_url": "https://idnow.io/",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Identity verification",
+  "meta_confidence": "high"
  },
  "signals": [
   {

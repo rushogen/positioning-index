@@ -4,7 +4,11 @@
   "name": "Tink",
   "segment": "banking-tech",
   "hq_country": "SE",
-  "homepage_url": "https://tink.com/"
+  "homepage_url": "https://tink.com/",
+  "audience": "b2b2c",
+  "target_size": "enterprise",
+  "category": "Open banking API",
+  "meta_confidence": "high"
  },
  "signals": [
   {

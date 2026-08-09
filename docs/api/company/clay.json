@@ -5,7 +5,11 @@
   "segment": "gtm",
   "hq_country": "US",
   "homepage_url": "https://www.clay.com/",
-  "pricing_url": "https://www.clay.com/pricing"
+  "pricing_url": "https://www.clay.com/pricing",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "Sales prospecting",
+  "meta_confidence": "high"
  },
  "signals": [
   {

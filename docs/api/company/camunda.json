@@ -5,7 +5,11 @@
   "segment": "bpm",
   "hq_country": "DE",
   "homepage_url": "https://camunda.com/",
-  "pricing_url": "https://camunda.com/pricing/"
+  "pricing_url": "https://camunda.com/pricing/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Process orchestration",
+  "meta_confidence": "high"
  },
  "signals": [
   {

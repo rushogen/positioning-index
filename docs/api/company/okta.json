@@ -5,7 +5,11 @@
   "segment": "identity",
   "hq_country": "US",
   "homepage_url": "https://www.okta.com/",
-  "pricing_url": "https://www.okta.com/pricing/"
+  "pricing_url": "https://www.okta.com/pricing/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Identity & access",
+  "meta_confidence": "high"
  },
  "signals": [
   {

@@ -5,7 +5,11 @@
   "segment": "support",
   "hq_country": "US",
   "homepage_url": "https://www.intercom.com/",
-  "pricing_url": "https://www.intercom.com/pricing"
+  "pricing_url": "https://www.intercom.com/pricing",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Customer support",
+  "meta_confidence": "high"
  },
  "signals": [
   {

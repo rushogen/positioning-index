@@ -4,7 +4,11 @@
   "name": "OneTrust",
   "segment": "grc",
   "hq_country": "US",
-  "homepage_url": "https://www.onetrust.com/"
+  "homepage_url": "https://www.onetrust.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Privacy & GRC",
+  "meta_confidence": "high"
  },
  "signals": [
   {

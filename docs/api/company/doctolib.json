@@ -4,7 +4,11 @@
   "name": "Doctolib",
   "segment": "healthcare-it",
   "hq_country": "FR",
-  "homepage_url": "https://www.doctolib.fr/"
+  "homepage_url": "https://www.doctolib.fr/",
+  "audience": "b2b2c",
+  "target_size": "mid-market",
+  "category": "Healthcare booking",
+  "meta_confidence": "high"
  },
  "signals": [],
  "events": [],

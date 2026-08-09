@@ -4,7 +4,11 @@
   "name": "Voyado",
   "segment": "marketing",
   "hq_country": "SE",
-  "homepage_url": "https://voyado.com/"
+  "homepage_url": "https://voyado.com/",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Retail CRM & loyalty",
+  "meta_confidence": "medium"
  },
  "signals": [
   {

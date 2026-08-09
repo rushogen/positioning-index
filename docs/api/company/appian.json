@@ -5,7 +5,11 @@
   "segment": "bpm",
   "hq_country": "US",
   "homepage_url": "https://appian.com/",
-  "pricing_url": "https://appian.com/products/pricing.html"
+  "pricing_url": "https://appian.com/products/pricing.html",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Low-code / BPM",
+  "meta_confidence": "high"
  },
  "signals": [
   {

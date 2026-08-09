@@ -4,7 +4,11 @@
   "name": "Docplanner",
   "segment": "healthcare-it",
   "hq_country": "PL",
-  "homepage_url": "https://www.docplanner.com/"
+  "homepage_url": "https://www.docplanner.com/",
+  "audience": "b2b2c",
+  "target_size": "mid-market",
+  "category": "Healthcare booking",
+  "meta_confidence": "high"
  },
  "signals": [
   {

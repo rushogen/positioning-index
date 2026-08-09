@@ -5,7 +5,11 @@
   "segment": "fintech-ops",
   "hq_country": "DK",
   "homepage_url": "https://www.pleo.io/",
-  "pricing_url": "https://www.pleo.io/en/pricing"
+  "pricing_url": "https://www.pleo.io/en/pricing",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "Spend management",
+  "meta_confidence": "high"
  },
  "signals": [
   {

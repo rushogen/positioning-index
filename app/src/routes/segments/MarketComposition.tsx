@@ -194,9 +194,9 @@ export function MarketComposition() {
     <Reveal className="mc">
       <header className="mc-head">
         <p className="kicker">Who&rsquo;s in the index</p>
-        <h2 className="mc-title">Two hundred companies, cut three ways</h2>
+        <h2 className="mc-title">The whole index, cut three ways</h2>
         <p className="mc-dek">
-          The same 200 companies, re-composed by who they are. Each rectangle is a group; its
+          All {total} companies, re-composed by who they are. Each rectangle is a group; its
           area is how many companies fall in it. Switch the lens, then click any block to see who&rsquo;s inside.
         </p>
       </header>

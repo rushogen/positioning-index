@@ -4,7 +4,11 @@
   "name": "ServiceNow",
   "segment": "itsm",
   "hq_country": "US",
-  "homepage_url": "https://www.servicenow.com/"
+  "homepage_url": "https://www.servicenow.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "ITSM / workflow",
+  "meta_confidence": "high"
  },
  "signals": [],
  "events": [],

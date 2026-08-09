@@ -4,7 +4,11 @@
   "name": "Mambu",
   "segment": "banking-tech",
   "hq_country": "DE",
-  "homepage_url": "https://mambu.com/"
+  "homepage_url": "https://mambu.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Core banking",
+  "meta_confidence": "high"
  },
  "signals": [
   {

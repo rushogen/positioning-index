@@ -4,7 +4,11 @@
   "name": "Nexthink",
   "segment": "observability",
   "hq_country": "CH",
-  "homepage_url": "https://www.nexthink.com/"
+  "homepage_url": "https://www.nexthink.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Digital employee experience",
+  "meta_confidence": "high"
  },
  "signals": [
   {

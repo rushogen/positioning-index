@@ -5,7 +5,11 @@
   "segment": "gtm",
   "hq_country": "US",
   "homepage_url": "https://www.salesforce.com/",
-  "pricing_url": "https://www.salesforce.com/sales/pricing/"
+  "pricing_url": "https://www.salesforce.com/sales/pricing/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "CRM",
+  "meta_confidence": "high"
  },
  "signals": [
   {

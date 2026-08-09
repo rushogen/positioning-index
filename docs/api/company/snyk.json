@@ -5,7 +5,11 @@
   "segment": "security",
   "hq_country": "GB",
   "homepage_url": "https://snyk.io/",
-  "pricing_url": "https://snyk.io/plans/"
+  "pricing_url": "https://snyk.io/plans/",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Developer security",
+  "meta_confidence": "high"
  },
  "signals": [
   {

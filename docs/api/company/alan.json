@@ -4,7 +4,11 @@
   "name": "Alan",
   "segment": "healthcare-it",
   "hq_country": "FR",
-  "homepage_url": "https://alan.com/"
+  "homepage_url": "https://alan.com/",
+  "audience": "b2b2c",
+  "target_size": "mid-market",
+  "category": "Health insurance",
+  "meta_confidence": "high"
  },
  "signals": [
   {

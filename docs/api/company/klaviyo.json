@@ -5,7 +5,11 @@
   "segment": "marketing",
   "hq_country": "US",
   "homepage_url": "https://www.klaviyo.com/",
-  "pricing_url": "https://www.klaviyo.com/pricing"
+  "pricing_url": "https://www.klaviyo.com/pricing",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "Marketing automation",
+  "meta_confidence": "high"
  },
  "signals": [
   {

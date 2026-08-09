@@ -5,7 +5,11 @@
   "segment": "dev-infra",
   "hq_country": "FR",
   "homepage_url": "https://www.scaleway.com/en/",
-  "pricing_url": "https://www.scaleway.com/en/pricing/"
+  "pricing_url": "https://www.scaleway.com/en/pricing/",
+  "audience": "b2b2c",
+  "target_size": "mid-market",
+  "category": "Cloud infrastructure",
+  "meta_confidence": "high"
  },
  "signals": [
   {

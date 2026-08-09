@@ -5,7 +5,11 @@
   "segment": "localization",
   "hq_country": "LV",
   "homepage_url": "https://lokalise.com/",
-  "pricing_url": "https://lokalise.com/pricing"
+  "pricing_url": "https://lokalise.com/pricing",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Localization management",
+  "meta_confidence": "high"
  },
  "signals": [
   {

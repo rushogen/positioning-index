@@ -5,7 +5,11 @@
   "segment": "marketing",
   "hq_country": "US",
   "homepage_url": "https://customer.io/",
-  "pricing_url": "https://customer.io/pricing"
+  "pricing_url": "https://customer.io/pricing",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Marketing automation",
+  "meta_confidence": "high"
  },
  "signals": [
   {

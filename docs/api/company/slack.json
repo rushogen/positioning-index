@@ -5,7 +5,11 @@
   "segment": "work-mgmt",
   "hq_country": "US",
   "homepage_url": "https://slack.com/",
-  "pricing_url": "https://slack.com/pricing"
+  "pricing_url": "https://slack.com/pricing",
+  "audience": "b2b",
+  "target_size": "broad",
+  "category": "Team messaging",
+  "meta_confidence": "high"
  },
  "signals": [
   {

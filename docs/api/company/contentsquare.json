@@ -4,7 +4,11 @@
   "name": "Contentsquare",
   "segment": "analytics",
   "hq_country": "FR",
-  "homepage_url": "https://contentsquare.com/"
+  "homepage_url": "https://contentsquare.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Experience analytics",
+  "meta_confidence": "high"
  },
  "signals": [
   {

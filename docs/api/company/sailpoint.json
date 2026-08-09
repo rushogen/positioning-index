@@ -4,7 +4,11 @@
   "name": "SailPoint",
   "segment": "identity",
   "hq_country": "US",
-  "homepage_url": "https://www.sailpoint.com/"
+  "homepage_url": "https://www.sailpoint.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Identity governance",
+  "meta_confidence": "high"
  },
  "signals": [
   {

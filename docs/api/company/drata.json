@@ -5,7 +5,11 @@
   "segment": "grc",
   "hq_country": "US",
   "homepage_url": "https://drata.com/",
-  "pricing_url": "https://drata.com/pricing"
+  "pricing_url": "https://drata.com/pricing",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Security compliance",
+  "meta_confidence": "high"
  },
  "signals": [],
  "events": [],

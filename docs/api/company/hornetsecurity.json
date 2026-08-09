@@ -4,7 +4,11 @@
   "name": "Hornetsecurity",
   "segment": "security",
   "hq_country": "DE",
-  "homepage_url": "https://www.hornetsecurity.com/en/"
+  "homepage_url": "https://www.hornetsecurity.com/en/",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Email security",
+  "meta_confidence": "medium"
  },
  "signals": [
   {

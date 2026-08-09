@@ -5,7 +5,11 @@
   "segment": "dev-infra",
   "hq_country": "US",
   "homepage_url": "https://launchdarkly.com/",
-  "pricing_url": "https://launchdarkly.com/pricing/"
+  "pricing_url": "https://launchdarkly.com/pricing/",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Feature flags",
+  "meta_confidence": "high"
  },
  "signals": [
   {

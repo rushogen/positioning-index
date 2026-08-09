@@ -5,7 +5,11 @@
   "segment": "erp",
   "hq_country": "BE",
   "homepage_url": "https://www.odoo.com/",
-  "pricing_url": "https://www.odoo.com/pricing"
+  "pricing_url": "https://www.odoo.com/pricing",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "ERP (open-source)",
+  "meta_confidence": "high"
  },
  "signals": [
   {

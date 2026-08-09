@@ -4,7 +4,11 @@
   "name": "Sitecore",
   "segment": "marketing",
   "hq_country": "DK",
-  "homepage_url": "https://www.sitecore.com/"
+  "homepage_url": "https://www.sitecore.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Digital experience (CMS)",
+  "meta_confidence": "high"
  },
  "signals": [
   {

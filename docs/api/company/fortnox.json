@@ -4,7 +4,11 @@
   "name": "Fortnox",
   "segment": "erp",
   "hq_country": "SE",
-  "homepage_url": "https://www.fortnox.se/"
+  "homepage_url": "https://www.fortnox.se/",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "Accounting / ERP",
+  "meta_confidence": "medium"
  },
  "signals": [
   {

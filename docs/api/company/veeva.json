@@ -4,7 +4,11 @@
   "name": "Veeva Systems",
   "segment": "healthcare-it",
   "hq_country": "US",
-  "homepage_url": "https://www.veeva.com/"
+  "homepage_url": "https://www.veeva.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Life sciences cloud",
+  "meta_confidence": "high"
  },
  "signals": [
   {

@@ -5,7 +5,11 @@
   "segment": "payments",
   "hq_country": "NL",
   "homepage_url": "https://www.mollie.com/",
-  "pricing_url": "https://www.mollie.com/pricing"
+  "pricing_url": "https://www.mollie.com/pricing",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "Payments",
+  "meta_confidence": "high"
  },
  "signals": [
   {

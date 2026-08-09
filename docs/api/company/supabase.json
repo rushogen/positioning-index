@@ -5,7 +5,11 @@
   "segment": "dev-infra",
   "hq_country": "US",
   "homepage_url": "https://supabase.com/",
-  "pricing_url": "https://supabase.com/pricing"
+  "pricing_url": "https://supabase.com/pricing",
+  "audience": "b2b2c",
+  "target_size": "smb",
+  "category": "Backend-as-a-service",
+  "meta_confidence": "high"
  },
  "signals": [
   {

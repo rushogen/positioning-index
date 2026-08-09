@@ -4,7 +4,11 @@
   "name": "PTC",
   "segment": "industrial",
   "hq_country": "US",
-  "homepage_url": "https://www.ptc.com/"
+  "homepage_url": "https://www.ptc.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "PLM / CAD / IoT",
+  "meta_confidence": "high"
  },
  "signals": [
   {

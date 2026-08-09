@@ -4,7 +4,11 @@
   "name": "Cognigy",
   "segment": "ccaas",
   "hq_country": "DE",
-  "homepage_url": "https://www.cognigy.com/"
+  "homepage_url": "https://www.cognigy.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Conversational AI",
+  "meta_confidence": "high"
  },
  "signals": [
   {

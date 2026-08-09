@@ -4,7 +4,11 @@
   "name": "Nord Security",
   "segment": "security",
   "hq_country": "LT",
-  "homepage_url": "https://nordsecurity.com/"
+  "homepage_url": "https://nordsecurity.com/",
+  "audience": "b2b2c",
+  "target_size": "broad",
+  "category": "Cybersecurity / VPN",
+  "meta_confidence": "high"
  },
  "signals": [
   {

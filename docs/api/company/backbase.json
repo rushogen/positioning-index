@@ -4,7 +4,11 @@
   "name": "Backbase",
   "segment": "banking-tech",
   "hq_country": "NL",
-  "homepage_url": "https://www.backbase.com/"
+  "homepage_url": "https://www.backbase.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Digital banking",
+  "meta_confidence": "high"
  },
  "signals": [
   {

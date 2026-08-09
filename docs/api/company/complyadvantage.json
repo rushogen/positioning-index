@@ -4,7 +4,11 @@
   "name": "ComplyAdvantage",
   "segment": "grc",
   "hq_country": "GB",
-  "homepage_url": "https://complyadvantage.com/"
+  "homepage_url": "https://complyadvantage.com/",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "AML / financial crime",
+  "meta_confidence": "high"
  },
  "signals": [
   {

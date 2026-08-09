@@ -5,7 +5,11 @@
   "segment": "dev-infra",
   "hq_country": "US",
   "homepage_url": "https://www.twilio.com/en-us",
-  "pricing_url": "https://www.twilio.com/en-us/pricing"
+  "pricing_url": "https://www.twilio.com/en-us/pricing",
+  "audience": "b2b2c",
+  "target_size": "broad",
+  "category": "Communications API",
+  "meta_confidence": "high"
  },
  "signals": [
   {

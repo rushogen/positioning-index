@@ -5,7 +5,11 @@
   "segment": "automation",
   "hq_country": "US",
   "homepage_url": "https://zapier.com/",
-  "pricing_url": "https://zapier.com/pricing"
+  "pricing_url": "https://zapier.com/pricing",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "Automation / iPaaS",
+  "meta_confidence": "high"
  },
  "signals": [
   {

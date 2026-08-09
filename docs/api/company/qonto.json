@@ -5,7 +5,11 @@
   "segment": "fintech-ops",
   "hq_country": "FR",
   "homepage_url": "https://qonto.com/en",
-  "pricing_url": "https://qonto.com/en/pricing"
+  "pricing_url": "https://qonto.com/en/pricing",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "Business banking",
+  "meta_confidence": "high"
  },
  "signals": [
   {

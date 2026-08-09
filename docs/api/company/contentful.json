@@ -5,7 +5,11 @@
   "segment": "marketing",
   "hq_country": "DE",
   "homepage_url": "https://www.contentful.com/",
-  "pricing_url": "https://www.contentful.com/pricing/"
+  "pricing_url": "https://www.contentful.com/pricing/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Headless CMS",
+  "meta_confidence": "high"
  },
  "signals": [
   {

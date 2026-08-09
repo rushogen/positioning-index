@@ -5,7 +5,11 @@
   "segment": "dev-infra",
   "hq_country": "AT",
   "homepage_url": "https://bitmovin.com/",
-  "pricing_url": "https://bitmovin.com/pricing/"
+  "pricing_url": "https://bitmovin.com/pricing/",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Video infrastructure",
+  "meta_confidence": "medium"
  },
  "signals": [],
  "events": [],

@@ -4,7 +4,11 @@
   "name": "RELEX Solutions",
   "segment": "industrial",
   "hq_country": "FI",
-  "homepage_url": "https://www.relexsolutions.com/"
+  "homepage_url": "https://www.relexsolutions.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Supply chain planning",
+  "meta_confidence": "medium"
  },
  "signals": [
   {

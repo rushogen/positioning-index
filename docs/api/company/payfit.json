@@ -4,7 +4,11 @@
   "name": "PayFit",
   "segment": "hr-ops",
   "hq_country": "FR",
-  "homepage_url": "https://payfit.com/"
+  "homepage_url": "https://payfit.com/",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "Payroll",
+  "meta_confidence": "high"
  },
  "signals": [
   {

@@ -5,7 +5,11 @@
   "segment": "localization",
   "hq_country": "DE",
   "homepage_url": "https://www.deepl.com/en/translator",
-  "pricing_url": "https://www.deepl.com/en/pro"
+  "pricing_url": "https://www.deepl.com/en/pro",
+  "audience": "b2b2c",
+  "target_size": "broad",
+  "category": "Translation",
+  "meta_confidence": "high"
  },
  "signals": [
   {

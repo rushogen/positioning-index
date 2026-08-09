@@ -4,7 +4,11 @@
   "name": "SAP",
   "segment": "erp",
   "hq_country": "DE",
-  "homepage_url": "https://www.sap.com/"
+  "homepage_url": "https://www.sap.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "ERP",
+  "meta_confidence": "high"
  },
  "signals": [],
  "events": [],

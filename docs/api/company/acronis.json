@@ -4,7 +4,11 @@
   "name": "Acronis",
   "segment": "security",
   "hq_country": "CH",
-  "homepage_url": "https://www.acronis.com/en-us/"
+  "homepage_url": "https://www.acronis.com/en-us/",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Cyber protection / backup",
+  "meta_confidence": "high"
  },
  "signals": [
   {

@@ -5,7 +5,11 @@
   "segment": "ccaas",
   "hq_country": "US",
   "homepage_url": "https://www.genesys.com/",
-  "pricing_url": "https://www.genesys.com/pricing"
+  "pricing_url": "https://www.genesys.com/pricing",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Contact center (CCaaS)",
+  "meta_confidence": "high"
  },
  "signals": [
   {

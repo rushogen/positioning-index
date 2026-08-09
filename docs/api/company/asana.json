@@ -5,7 +5,11 @@
   "segment": "work-mgmt",
   "hq_country": "US",
   "homepage_url": "https://asana.com/",
-  "pricing_url": "https://asana.com/pricing"
+  "pricing_url": "https://asana.com/pricing",
+  "audience": "b2b",
+  "target_size": "broad",
+  "category": "Project management",
+  "meta_confidence": "high"
  },
  "signals": [
   {

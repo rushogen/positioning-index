@@ -4,7 +4,11 @@
   "name": "Workiva",
   "segment": "grc",
   "hq_country": "US",
-  "homepage_url": "https://www.workiva.com/"
+  "homepage_url": "https://www.workiva.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Financial reporting / GRC",
+  "meta_confidence": "high"
  },
  "signals": [],
  "events": [],

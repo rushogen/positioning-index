@@ -4,7 +4,11 @@
   "name": "Red Points",
   "segment": "grc",
   "hq_country": "ES",
-  "homepage_url": "https://www.redpoints.com/"
+  "homepage_url": "https://www.redpoints.com/",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Brand protection",
+  "meta_confidence": "medium"
  },
  "signals": [
   {

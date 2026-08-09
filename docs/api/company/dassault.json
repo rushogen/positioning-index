@@ -4,7 +4,11 @@
   "name": "Dassault Systèmes",
   "segment": "industrial",
   "hq_country": "FR",
-  "homepage_url": "https://www.3ds.com/"
+  "homepage_url": "https://www.3ds.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "3D / PLM (CAD)",
+  "meta_confidence": "high"
  },
  "signals": [
   {

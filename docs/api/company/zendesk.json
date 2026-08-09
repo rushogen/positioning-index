@@ -5,7 +5,11 @@
   "segment": "support",
   "hq_country": "US",
   "homepage_url": "https://www.zendesk.com/",
-  "pricing_url": "https://www.zendesk.com/pricing/"
+  "pricing_url": "https://www.zendesk.com/pricing/",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Customer support",
+  "meta_confidence": "high"
  },
  "signals": [
   {

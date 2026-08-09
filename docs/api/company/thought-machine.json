@@ -4,7 +4,11 @@
   "name": "Thought Machine",
   "segment": "banking-tech",
   "hq_country": "GB",
-  "homepage_url": "https://thoughtmachine.net/"
+  "homepage_url": "https://thoughtmachine.net/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Core banking",
+  "meta_confidence": "high"
  },
  "signals": [
   {

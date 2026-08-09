@@ -5,7 +5,11 @@
   "segment": "security",
   "hq_country": "CH",
   "homepage_url": "https://proton.me/",
-  "pricing_url": "https://proton.me/pricing"
+  "pricing_url": "https://proton.me/pricing",
+  "audience": "b2b2c",
+  "target_size": "broad",
+  "category": "Privacy / encrypted email",
+  "meta_confidence": "high"
  },
  "signals": [
   {

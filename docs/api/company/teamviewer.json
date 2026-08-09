@@ -5,7 +5,11 @@
   "segment": "itsm",
   "hq_country": "DE",
   "homepage_url": "https://www.teamviewer.com/en/",
-  "pricing_url": "https://www.teamviewer.com/en/pricing/"
+  "pricing_url": "https://www.teamviewer.com/en/pricing/",
+  "audience": "b2b",
+  "target_size": "broad",
+  "category": "Remote access",
+  "meta_confidence": "high"
  },
  "signals": [
   {
@@ -244,7 +248,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-08T11:47:11Z",
+   "last_observed_at": "2026-08-09T14:42:01Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -262,7 +266,7 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-08T11:47:11Z",
+   "last_observed_at": "2026-08-09T14:42:01Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -280,11 +284,11 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-08T11:47:11Z",
-   "last_good_at": "2026-08-08T11:47:11Z",
-   "last_good_value": "Prices and license overview | TeamViewer",
+   "last_observed_at": "2026-08-09T14:42:01Z",
+   "last_good_at": "2026-08-09T14:42:01Z",
+   "last_good_value": "Preise und Lizenzübersicht | TeamViewer",
    "last_good_json": null,
-   "last_good_hash": "2e43bd7b",
+   "last_good_hash": "202c30e7",
    "last_good_method": "title",
    "last_good_confidence": 1,
    "consecutive_nulls": 0,
@@ -298,7 +302,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-08T11:47:11Z",
+   "last_observed_at": "2026-08-09T14:42:01Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -316,7 +320,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-08T11:47:11Z",
+   "last_observed_at": "2026-08-09T14:42:01Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -410,6 +414,18 @@
   }
  ],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://www.teamviewer.com/de/pricing/overview/",
+   "fetched_at": "2026-08-09T14:42:01Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "page language en -> de; locale shift, not drift",
+   "bytes": 550358,
+   "duration_ms": 403,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
   {
    "kind": "pricing",
    "url": "https://www.teamviewer.com/en-us/pricing/overview/",

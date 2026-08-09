@@ -5,7 +5,11 @@
   "segment": "design",
   "hq_country": "US",
   "homepage_url": "https://www.figma.com/",
-  "pricing_url": "https://www.figma.com/pricing/"
+  "pricing_url": "https://www.figma.com/pricing/",
+  "audience": "b2b",
+  "target_size": "broad",
+  "category": "Design tool",
+  "meta_confidence": "high"
  },
  "signals": [
   {

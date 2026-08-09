@@ -5,7 +5,11 @@
   "segment": "observability",
   "hq_country": "AT",
   "homepage_url": "https://www.dynatrace.com/",
-  "pricing_url": "https://www.dynatrace.com/pricing/"
+  "pricing_url": "https://www.dynatrace.com/pricing/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Observability",
+  "meta_confidence": "high"
  },
  "signals": [
   {

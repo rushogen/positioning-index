@@ -4,7 +4,11 @@
   "name": "Diligent",
   "segment": "grc",
   "hq_country": "US",
-  "homepage_url": "https://www.diligent.com/"
+  "homepage_url": "https://www.diligent.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Governance (GRC)",
+  "meta_confidence": "high"
  },
  "signals": [
   {

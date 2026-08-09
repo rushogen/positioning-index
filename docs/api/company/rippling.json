@@ -5,7 +5,11 @@
   "segment": "hr-ops",
   "hq_country": "US",
   "homepage_url": "https://www.rippling.com/",
-  "pricing_url": "https://www.rippling.com/pricing"
+  "pricing_url": "https://www.rippling.com/pricing",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "HR / IT / payroll",
+  "meta_confidence": "high"
  },
  "signals": [
   {

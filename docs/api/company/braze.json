@@ -5,7 +5,11 @@
   "segment": "marketing",
   "hq_country": "US",
   "homepage_url": "https://www.braze.com/",
-  "pricing_url": "https://www.braze.com/pricing"
+  "pricing_url": "https://www.braze.com/pricing",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Customer engagement",
+  "meta_confidence": "high"
  },
  "signals": [
   {

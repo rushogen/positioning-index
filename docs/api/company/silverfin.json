@@ -4,7 +4,11 @@
   "name": "Silverfin",
   "segment": "fintech-ops",
   "hq_country": "BE",
-  "homepage_url": "https://www.silverfin.com/"
+  "homepage_url": "https://www.silverfin.com/",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Accounting (close)",
+  "meta_confidence": "medium"
  },
  "signals": [],
  "events": [],

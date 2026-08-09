@@ -5,7 +5,11 @@
   "segment": "identity",
   "hq_country": "NO",
   "homepage_url": "https://www.signicat.com/",
-  "pricing_url": "https://www.signicat.com/pricing"
+  "pricing_url": "https://www.signicat.com/pricing",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Digital identity",
+  "meta_confidence": "medium"
  },
  "signals": [
   {

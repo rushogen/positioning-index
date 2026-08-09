@@ -57,7 +57,7 @@ export default function App() {
       <footer className="app-footer">
         <div className="wrap">
           <p>
-            200 companies read the same way on the same day. Measures what the market does, never what
+            225 companies read the same way on the same day. Measures what the market does, never what
             &ldquo;works&rdquo; — no conversion data here. Built by Ruslan Shogenov · self-hosted, no third-party requests.
           </p>
         </div>

@@ -4,7 +4,11 @@
   "name": "AVEVA",
   "segment": "industrial",
   "hq_country": "GB",
-  "homepage_url": "https://www.aveva.com/"
+  "homepage_url": "https://www.aveva.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Industrial software",
+  "meta_confidence": "high"
  },
  "signals": [
   {

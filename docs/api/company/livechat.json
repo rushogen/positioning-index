@@ -5,7 +5,11 @@
   "segment": "support",
   "hq_country": "PL",
   "homepage_url": "https://www.livechat.com/",
-  "pricing_url": "https://www.livechat.com/pricing/"
+  "pricing_url": "https://www.livechat.com/pricing/",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "Live chat / support",
+  "meta_confidence": "high"
  },
  "signals": [
   {

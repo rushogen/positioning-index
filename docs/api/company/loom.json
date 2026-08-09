@@ -5,7 +5,11 @@
   "segment": "work-mgmt",
   "hq_country": "US",
   "homepage_url": "https://www.loom.com/",
-  "pricing_url": "https://www.loom.com/pricing"
+  "pricing_url": "https://www.loom.com/pricing",
+  "audience": "b2b",
+  "target_size": "broad",
+  "category": "Video messaging",
+  "meta_confidence": "high"
  },
  "signals": [
   {

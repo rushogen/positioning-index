@@ -5,7 +5,11 @@
   "segment": "payments",
   "hq_country": "GB",
   "homepage_url": "https://www.paddle.com/",
-  "pricing_url": "https://www.paddle.com/pricing"
+  "pricing_url": "https://www.paddle.com/pricing",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "Merchant of record",
+  "meta_confidence": "high"
  },
  "signals": [
   {
@@ -371,6 +375,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://www.paddle.com/pricing",
+   "fetched_at": "2026-08-09T14:43:02Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 138,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.paddle.com/",
+   "fetched_at": "2026-08-09T14:42:02Z",
+   "http_status": 304,
+   "status": "unchanged",
+   "reason": "origin returned 304 Not Modified",
+   "bytes": 0,
+   "duration_ms": 210,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
   {
    "kind": "home",
    "url": "https://www.paddle.com/",

@@ -5,7 +5,11 @@
   "segment": "data",
   "hq_country": "US",
   "homepage_url": "https://www.databricks.com/",
-  "pricing_url": "https://www.databricks.com/product/pricing"
+  "pricing_url": "https://www.databricks.com/product/pricing",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Data & AI platform",
+  "meta_confidence": "high"
  },
  "signals": [
   {

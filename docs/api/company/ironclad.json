@@ -4,7 +4,11 @@
   "name": "Ironclad",
   "segment": "clm-esign",
   "hq_country": "US",
-  "homepage_url": "https://ironcladapp.com/"
+  "homepage_url": "https://ironcladapp.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Contract management",
+  "meta_confidence": "high"
  },
  "signals": [
   {

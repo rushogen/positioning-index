@@ -4,7 +4,11 @@
   "name": "Anaplan",
   "segment": "fintech-ops",
   "hq_country": "US",
-  "homepage_url": "https://www.anaplan.com/"
+  "homepage_url": "https://www.anaplan.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Planning & FP&A",
+  "meta_confidence": "high"
  },
  "signals": [
   {

@@ -5,7 +5,11 @@
   "segment": "support",
   "hq_country": "DK",
   "homepage_url": "https://www.dixa.com/",
-  "pricing_url": "https://www.dixa.com/pricing/"
+  "pricing_url": "https://www.dixa.com/pricing/",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "Customer support",
+  "meta_confidence": "medium"
  },
  "signals": [
   {

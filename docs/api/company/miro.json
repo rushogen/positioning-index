@@ -5,7 +5,11 @@
   "segment": "design",
   "hq_country": "NL",
   "homepage_url": "https://miro.com/",
-  "pricing_url": "https://miro.com/pricing/"
+  "pricing_url": "https://miro.com/pricing/",
+  "audience": "b2b",
+  "target_size": "broad",
+  "category": "Whiteboard",
+  "meta_confidence": "high"
  },
  "signals": [
   {

@@ -4,7 +4,11 @@
   "name": "JAGGAER",
   "segment": "procurement",
   "hq_country": "US",
-  "homepage_url": "https://www.jaggaer.com/"
+  "homepage_url": "https://www.jaggaer.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Procurement (S2P)",
+  "meta_confidence": "medium"
  },
  "signals": [],
  "events": [],

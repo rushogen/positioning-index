@@ -4,7 +4,11 @@
   "name": "Quantexa",
   "segment": "data",
   "hq_country": "GB",
-  "homepage_url": "https://www.quantexa.com/"
+  "homepage_url": "https://www.quantexa.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Decision intelligence",
+  "meta_confidence": "medium"
  },
  "signals": [
   {

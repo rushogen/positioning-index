@@ -5,7 +5,11 @@
   "segment": "automation",
   "hq_country": "US",
   "homepage_url": "https://www.uipath.com/",
-  "pricing_url": "https://www.uipath.com/pricing"
+  "pricing_url": "https://www.uipath.com/pricing",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "RPA / automation",
+  "meta_confidence": "high"
  },
  "signals": [
   {

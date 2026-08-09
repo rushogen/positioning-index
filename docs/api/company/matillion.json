@@ -5,7 +5,11 @@
   "segment": "data",
   "hq_country": "GB",
   "homepage_url": "https://www.matillion.com/",
-  "pricing_url": "https://www.matillion.com/pricing"
+  "pricing_url": "https://www.matillion.com/pricing",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Data integration / ETL",
+  "meta_confidence": "high"
  },
  "signals": [
   {

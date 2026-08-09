@@ -5,7 +5,11 @@
   "segment": "security",
   "hq_country": "US",
   "homepage_url": "https://www.crowdstrike.com/",
-  "pricing_url": "https://www.crowdstrike.com/products/bundles/falcon-go/"
+  "pricing_url": "https://www.crowdstrike.com/products/bundles/falcon-go/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Endpoint security",
+  "meta_confidence": "high"
  },
  "signals": [
   {

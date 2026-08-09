@@ -4,7 +4,11 @@
   "name": "Celonis",
   "segment": "process-mining",
   "hq_country": "DE",
-  "homepage_url": "https://www.celonis.com/"
+  "homepage_url": "https://www.celonis.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Process mining",
+  "meta_confidence": "high"
  },
  "signals": [
   {

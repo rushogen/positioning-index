@@ -5,7 +5,11 @@
   "segment": "product-dev",
   "hq_country": "CZ",
   "homepage_url": "https://www.productboard.com/",
-  "pricing_url": "https://www.productboard.com/pricing/"
+  "pricing_url": "https://www.productboard.com/pricing/",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Product management",
+  "meta_confidence": "high"
  },
  "signals": [
   {

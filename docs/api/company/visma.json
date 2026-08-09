@@ -4,7 +4,11 @@
   "name": "Visma",
   "segment": "erp",
   "hq_country": "NO",
-  "homepage_url": "https://www.visma.com/"
+  "homepage_url": "https://www.visma.com/",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "ERP / accounting",
+  "meta_confidence": "high"
  },
  "signals": [
   {

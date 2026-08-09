@@ -4,7 +4,11 @@
   "name": "NAVEX",
   "segment": "grc",
   "hq_country": "US",
-  "homepage_url": "https://www.navex.com/en-us/"
+  "homepage_url": "https://www.navex.com/en-us/",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "GRC / compliance",
+  "meta_confidence": "medium"
  },
  "signals": [
   {

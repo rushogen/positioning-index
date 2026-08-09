@@ -8,7 +8,7 @@ export function Overview() {
   const { data: anatomy } = useAnatomy();
   const { data: pos } = usePositioning();
 
-  const companies = 200;
+  const companies = pos?.headline_words.coverage.tracked ?? anatomy?.similarity.clusters.of ?? 225;
   const sectionsRead = anatomy?.quality.sections ?? null;
   const readable = anatomy?.positions.coverage.readable ?? null;
   const families = anatomy?.similarity.clusters.clusters.length ?? null;

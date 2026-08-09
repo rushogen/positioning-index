@@ -5,7 +5,11 @@
   "segment": "marketing",
   "hq_country": "US",
   "homepage_url": "https://webflow.com/",
-  "pricing_url": "https://webflow.com/pricing"
+  "pricing_url": "https://webflow.com/pricing",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "Website builder / CMS",
+  "meta_confidence": "high"
  },
  "signals": [
   {

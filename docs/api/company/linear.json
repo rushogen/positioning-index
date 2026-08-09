@@ -5,7 +5,11 @@
   "segment": "product-dev",
   "hq_country": "US",
   "homepage_url": "https://linear.app/",
-  "pricing_url": "https://linear.app/pricing"
+  "pricing_url": "https://linear.app/pricing",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "Issue tracking",
+  "meta_confidence": "high"
  },
  "signals": [
   {

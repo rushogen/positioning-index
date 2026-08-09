@@ -5,7 +5,11 @@
   "segment": "dev-infra",
   "hq_country": "FI",
   "homepage_url": "https://aiven.io/",
-  "pricing_url": "https://aiven.io/pricing"
+  "pricing_url": "https://aiven.io/pricing",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Managed data (DBaaS)",
+  "meta_confidence": "high"
  },
  "signals": [
   {

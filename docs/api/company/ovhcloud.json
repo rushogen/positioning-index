@@ -4,7 +4,11 @@
   "name": "OVHcloud",
   "segment": "dev-infra",
   "hq_country": "FR",
-  "homepage_url": "https://www.ovhcloud.com/en/"
+  "homepage_url": "https://www.ovhcloud.com/en/",
+  "audience": "b2b2c",
+  "target_size": "broad",
+  "category": "Cloud infrastructure",
+  "meta_confidence": "high"
  },
  "signals": [
   {

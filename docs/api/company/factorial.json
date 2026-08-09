@@ -5,7 +5,11 @@
   "segment": "hr-ops",
   "hq_country": "ES",
   "homepage_url": "https://factorialhr.com/",
-  "pricing_url": "https://factorialhr.com/pricing"
+  "pricing_url": "https://factorialhr.com/pricing",
+  "audience": "b2b",
+  "target_size": "smb",
+  "category": "HR (HRIS)",
+  "meta_confidence": "high"
  },
  "signals": [
   {

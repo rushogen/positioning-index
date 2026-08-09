@@ -5,7 +5,11 @@
   "segment": "grc",
   "hq_country": "DE",
   "homepage_url": "https://usercentrics.com/",
-  "pricing_url": "https://usercentrics.com/pricing/"
+  "pricing_url": "https://usercentrics.com/pricing/",
+  "audience": "b2b",
+  "target_size": "mid-market",
+  "category": "Consent management",
+  "meta_confidence": "high"
  },
  "signals": [
   {

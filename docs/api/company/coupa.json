@@ -4,7 +4,11 @@
   "name": "Coupa",
   "segment": "procurement",
   "hq_country": "US",
-  "homepage_url": "https://www.coupa.com/"
+  "homepage_url": "https://www.coupa.com/",
+  "audience": "b2b",
+  "target_size": "enterprise",
+  "category": "Spend & procurement",
+  "meta_confidence": "high"
  },
  "signals": [],
  "events": [],
