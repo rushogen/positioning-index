@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:06:11Z",
-   "last_good_at": "2026-08-09T16:06:11Z",
+   "last_observed_at": "2026-08-09T16:30:12Z",
+   "last_good_at": "2026-08-09T16:30:12Z",
    "last_good_value": "3",
    "last_good_json": null,
    "last_good_hash": "360caa42",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:06:11Z",
-   "last_good_at": "2026-08-09T16:06:11Z",
+   "last_observed_at": "2026-08-09T16:30:12Z",
+   "last_good_at": "2026-08-09T16:30:12Z",
    "last_good_value": "logo_wall, testimonial",
    "last_good_json": "{\"present\":{\"logo_wall\":true,\"proof\":false,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "97603fa2",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:06:11Z",
-   "last_good_at": "2026-08-09T16:06:11Z",
+   "last_observed_at": "2026-08-09T16:30:12Z",
+   "last_good_at": "2026-08-09T16:30:12Z",
    "last_good_value": "65",
    "last_good_json": null,
    "last_good_hash": "18e8e6f4",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:06:11Z",
-   "last_good_at": "2026-08-09T16:06:11Z",
+   "last_observed_at": "2026-08-09T16:30:12Z",
+   "last_good_at": "2026-08-09T16:30:12Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:06:11Z",
-   "last_good_at": "2026-08-09T16:06:11Z",
+   "last_observed_at": "2026-08-09T16:30:12Z",
+   "last_good_at": "2026-08-09T16:30:12Z",
    "last_good_value": "20",
    "last_good_json": null,
    "last_good_hash": "8df2997f",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:06:11Z",
-   "last_good_at": "2026-08-09T16:06:11Z",
+   "last_observed_at": "2026-08-09T16:30:12Z",
+   "last_good_at": "2026-08-09T16:30:12Z",
    "last_good_value": "7",
    "last_good_json": null,
    "last_good_hash": "320ca3f6",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:06:11Z",
-   "last_good_at": "2026-08-09T16:06:11Z",
+   "last_observed_at": "2026-08-09T16:30:12Z",
+   "last_good_at": "2026-08-09T16:30:12Z",
    "last_good_value": "hero > features > cta > testimonial > logos > resources > cta",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":36,\"merged\":1},{\"position\":2,\"type\":\"features\",\"heading\":\"High-performing teams are built here\",\"words\":109,\"merged\":2},{\"position\":3,\"type\":\"cta\",\"heading\":\"Build high performance through everyday habits\",\"words\":79,\"merged\":1},{\"position\":4,\"type\":\"testimonial\",\"heading\":\"Trusted by top performers\",\"words\":413,\"merged\":1},{\"position\":5,\"type\":\"logos\",\"heading\":\"Integrate everything. Align everyone.\",\"words\":22,\"merged\":1},{\"position\":6,\"type\":\"resources\",\"heading\":\"Power your high-performing organization\",\"words\":69,\"merged\":1},{\"position\":7,\"type\":\"cta\",\"heading\":\"Your people are your business\",\"words\":18,\"merged\":1}]}",
    "last_good_hash": "1bb219f6",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:06:11Z",
-   "last_good_at": "2026-08-09T16:06:11Z",
+   "last_observed_at": "2026-08-09T16:30:12Z",
+   "last_good_at": "2026-08-09T16:30:12Z",
    "last_good_value": 785,
    "last_good_json": null,
    "last_good_hash": "9ddbaeed",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:06:11Z",
-   "last_good_at": "2026-08-09T16:06:11Z",
+   "last_observed_at": "2026-08-09T16:30:12Z",
+   "last_good_at": "2026-08-09T16:30:12Z",
    "last_good_value": "hr platform",
    "last_good_json": null,
    "last_good_hash": "b4c72baa",
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:06:11Z",
-   "last_good_at": "2026-08-09T16:06:11Z",
+   "last_observed_at": "2026-08-09T16:30:12Z",
+   "last_good_at": "2026-08-09T16:30:12Z",
    "last_good_value": "Alan Cairns, Brooklinen, Christina Donnelly, Discord, Duolingo, Gocardless, Gusto, Huge, JD Slaughter, Jennifer Robertson, Lattice UI of Engagement, Lattice UI of Goals, Lattice UI of Performance, Loom, Main, Mike “Brute” Brutinel, Name, Npr, Robinhood, Weave",
    "last_good_json": "{\"names\":[\"Alan Cairns\",\"Brooklinen\",\"Christina Donnelly\",\"Discord\",\"Duolingo\",\"Gocardless\",\"Gusto\",\"Huge\",\"JD Slaughter\",\"Jennifer Robertson\",\"Lattice UI of Engagement\",\"Lattice UI of Goals\",\"Lattice UI of Performance\",\"Loom\",\"Main\",\"Mike “Brute” Brutinel\",\"Name\",\"Npr\",\"Robinhood\",\"Weave\"],\"count\":20,\"lead\":\"Join 5,000+ forward-thinking teams using Lattice’s HR and AI tools to manage peo\"}",
    "last_good_hash": "407f67a3",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:06:11Z",
-   "last_good_at": "2026-08-09T16:06:11Z",
+   "last_observed_at": "2026-08-09T16:30:12Z",
+   "last_good_at": "2026-08-09T16:30:12Z",
    "last_good_value": "People + AI: Succeeding Together",
    "last_good_json": null,
    "last_good_hash": "f1a13a91",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:06:11Z",
-   "last_good_at": "2026-08-09T16:06:11Z",
+   "last_observed_at": "2026-08-09T16:30:12Z",
+   "last_good_at": "2026-08-09T16:30:12Z",
    "last_good_value": "Join 5,000+ forward-thinking teams using Lattice’s HR and AI tools to manage people and performance — all on one trusted platform.",
    "last_good_json": null,
    "last_good_hash": "46b691ce",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:06:11Z",
-   "last_good_at": "2026-08-09T16:06:11Z",
+   "last_observed_at": "2026-08-09T16:30:12Z",
+   "last_good_at": "2026-08-09T16:30:12Z",
    "last_good_value": "Lattice | The HR platform that people love",
    "last_good_json": null,
    "last_good_hash": "e606cbe1",
@@ -248,7 +248,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T16:10:01Z",
+   "last_observed_at": "2026-08-09T16:34:49Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -264,7 +264,7 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T16:10:01Z",
+   "last_observed_at": "2026-08-09T16:34:49Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -280,8 +280,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T16:10:01Z",
-   "last_good_at": "2026-08-09T16:10:01Z",
+   "last_observed_at": "2026-08-09T16:34:49Z",
+   "last_good_at": "2026-08-09T16:34:49Z",
    "last_good_value": "Pricing | Lattice",
    "last_good_json": null,
    "last_good_hash": "2228ac33",
@@ -298,7 +298,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T16:10:01Z",
+   "last_observed_at": "2026-08-09T16:34:49Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -314,7 +314,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T16:10:01Z",
+   "last_observed_at": "2026-08-09T16:34:49Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -330,8 +330,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:06:11Z",
-   "last_good_at": "2026-08-09T16:06:11Z",
+   "last_observed_at": "2026-08-09T16:30:12Z",
+   "last_good_at": "2026-08-09T16:30:12Z",
    "last_good_value": "2,000 hours | 20% increased sales | 20% usairtours increased sales | 27% reduced attrition | 27% vantagewest reduced attrition | 3.5x higher check-in cycle | 30 hours",
    "last_good_json": "{\"items\":[{\"claim\":\"2,000 hours\",\"kind\":\"count\"},{\"claim\":\"20% increased sales\",\"kind\":\"percent-trailing\"},{\"claim\":\"20% usairtours increased sales\",\"kind\":\"percent-trailing\"},{\"claim\":\"27% reduced attrition\",\"kind\":\"percent-trailing\"},{\"claim\":\"27% vantagewest reduced attrition\",\"kind\":\"percent-trailing\"},{\"claim\":\"3.5x higher check-in cycle\",\"kind\":\"multiplier\"},{\"claim\":\"30 hours\",\"kind\":\"count\"}],\"count\":7}",
    "last_good_hash": "2884f901",
@@ -348,8 +348,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:06:11Z",
-   "last_good_at": "2026-08-09T16:06:11Z",
+   "last_observed_at": "2026-08-09T16:30:12Z",
+   "last_good_at": "2026-08-09T16:30:12Z",
    "last_good_value": "Join 5,000+ forward-thinking teams using Lattice’s HR and AI tools to manage people and performance — all on one trusted platform.",
    "last_good_json": null,
    "last_good_hash": "46b691ce",
@@ -367,6 +367,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://lattice.com/pricing",
+   "fetched_at": "2026-08-09T16:34:49Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 296358,
+   "duration_ms": 128,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://lattice.com/",
+   "fetched_at": "2026-08-09T16:30:12Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 338178,
+   "duration_ms": 208,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
   {
    "kind": "pricing",
    "url": "https://lattice.com/pricing",
@@ -580,30 +604,6 @@
    "reason": "origin returned 304 Not Modified",
    "bytes": 0,
    "duration_ms": 89,
-   "signals_found": 0,
-   "signals_expected": 0
-  },
-  {
-   "kind": "home",
-   "url": "https://lattice.com/",
-   "fetched_at": "2026-08-08T07:19:23Z",
-   "http_status": 304,
-   "status": "unchanged",
-   "reason": "origin returned 304 Not Modified",
-   "bytes": 0,
-   "duration_ms": 127,
-   "signals_found": 0,
-   "signals_expected": 0
-  },
-  {
-   "kind": "pricing",
-   "url": "https://lattice.com/pricing",
-   "fetched_at": "2026-08-08T07:18:12Z",
-   "http_status": 304,
-   "status": "unchanged",
-   "reason": "origin returned 304 Not Modified",
-   "bytes": 0,
-   "duration_ms": 100,
    "signals_found": 0,
    "signals_expected": 0
   }

@@ -13,7 +13,7 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:05:11Z",
+   "last_observed_at": "2026-08-09T16:33:37Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -31,7 +31,7 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:05:11Z",
+   "last_observed_at": "2026-08-09T16:33:37Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -49,7 +49,7 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:05:11Z",
+   "last_observed_at": "2026-08-09T16:33:37Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -67,7 +67,7 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:05:11Z",
+   "last_observed_at": "2026-08-09T16:33:37Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -85,7 +85,7 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:05:11Z",
+   "last_observed_at": "2026-08-09T16:33:37Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -103,7 +103,7 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:05:11Z",
+   "last_observed_at": "2026-08-09T16:33:37Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -121,7 +121,7 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:05:11Z",
+   "last_observed_at": "2026-08-09T16:33:37Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -139,8 +139,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:05:11Z",
-   "last_good_at": "2026-08-09T16:05:11Z",
+   "last_observed_at": "2026-08-09T16:33:37Z",
+   "last_good_at": "2026-08-09T16:33:37Z",
    "last_good_value": 1075,
    "last_good_json": null,
    "last_good_hash": "1f958774",
@@ -157,8 +157,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:05:11Z",
-   "last_good_at": "2026-08-09T16:05:11Z",
+   "last_observed_at": "2026-08-09T16:33:37Z",
+   "last_good_at": "2026-08-09T16:33:37Z",
    "last_good_value": "saas cloud",
    "last_good_json": null,
    "last_good_hash": "4adafa08",
@@ -175,8 +175,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:05:11Z",
-   "last_good_at": "2026-08-09T16:05:11Z",
+   "last_observed_at": "2026-08-09T16:33:37Z",
+   "last_good_at": "2026-08-09T16:33:37Z",
    "last_good_value": "1280x1035, 130x50, 16x16, 177x50, 2880x922, 663x456, 80x80, AI ready financial services",
    "last_good_json": "{\"names\":[\"1280x1035\",\"130x50\",\"16x16\",\"177x50\",\"2880x922\",\"663x456\",\"80x80\",\"AI ready financial services\"],\"count\":8,\"lead\":\"powering financial innovators everywhere.\\\" data-next-head=\\\"\\\"/> <link rel=\\\"altern\"}",
    "last_good_hash": "42d09745",
@@ -193,8 +193,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:05:11Z",
-   "last_good_at": "2026-08-09T16:05:11Z",
+   "last_observed_at": "2026-08-09T16:33:37Z",
+   "last_good_at": "2026-08-09T16:33:37Z",
    "last_good_value": "Mambu - SaaS cloud banking platform",
    "last_good_json": null,
    "last_good_hash": "5d1abdda",
@@ -211,8 +211,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:05:11Z",
-   "last_good_at": "2026-08-09T16:05:11Z",
+   "last_observed_at": "2026-08-09T16:33:37Z",
+   "last_good_at": "2026-08-09T16:33:37Z",
    "last_good_value": "Meet Mambu, the SaaS cloud banking platform powering financial innovators everywhere.",
    "last_good_json": null,
    "last_good_hash": "1e428008",
@@ -229,8 +229,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:05:11Z",
-   "last_good_at": "2026-08-09T16:05:11Z",
+   "last_observed_at": "2026-08-09T16:33:37Z",
+   "last_good_at": "2026-08-09T16:33:37Z",
    "last_good_value": "Mambu - SaaS cloud banking platform | Mambu",
    "last_good_json": null,
    "last_good_hash": "443ffe6a",
@@ -247,8 +247,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:05:11Z",
-   "last_good_at": "2026-08-09T16:05:11Z",
+   "last_observed_at": "2026-08-09T16:33:37Z",
+   "last_good_at": "2026-08-09T16:33:37Z",
    "last_good_value": "80% faster | 90% reduction in mainframe",
    "last_good_json": "{\"items\":[{\"claim\":\"80% faster\",\"kind\":\"percent\"},{\"claim\":\"90% reduction in mainframe\",\"kind\":\"percent\"}],\"count\":2}",
    "last_good_hash": "834be969",
@@ -265,8 +265,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:05:11Z",
-   "last_good_at": "2026-08-09T16:05:11Z",
+   "last_observed_at": "2026-08-09T16:33:37Z",
+   "last_good_at": "2026-08-09T16:33:37Z",
    "last_good_value": "Meet Mambu, the SaaS cloud banking platform powering financial innovators everywhere.",
    "last_good_json": null,
    "last_good_hash": "1e428008",
@@ -284,6 +284,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://mambu.com/en",
+   "fetched_at": "2026-08-09T16:33:37Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 387735,
+   "duration_ms": 868,
+   "signals_found": 8,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://mambu.com/en",

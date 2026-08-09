@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:09:44Z",
-   "last_good_at": "2026-08-09T16:09:44Z",
+   "last_observed_at": "2026-08-09T16:36:28Z",
+   "last_good_at": "2026-08-09T16:36:28Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:09:44Z",
-   "last_good_at": "2026-08-09T16:09:44Z",
+   "last_observed_at": "2026-08-09T16:36:28Z",
+   "last_good_at": "2026-08-09T16:36:28Z",
    "last_good_value": "none",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "ada7afdb",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:09:44Z",
-   "last_good_at": "2026-08-09T16:09:44Z",
+   "last_observed_at": "2026-08-09T16:36:28Z",
+   "last_good_at": "2026-08-09T16:36:28Z",
    "last_good_value": "78",
    "last_good_json": null,
    "last_good_hash": "97e5dd4a",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:09:44Z",
-   "last_good_at": "2026-08-09T16:09:44Z",
+   "last_observed_at": "2026-08-09T16:36:28Z",
+   "last_good_at": "2026-08-09T16:36:28Z",
    "last_good_value": "4",
    "last_good_json": null,
    "last_good_hash": "310ca263",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:09:44Z",
-   "last_good_at": "2026-08-09T16:09:44Z",
+   "last_observed_at": "2026-08-09T16:36:28Z",
+   "last_good_at": "2026-08-09T16:36:28Z",
    "last_good_value": "3",
    "last_good_json": null,
    "last_good_hash": "360caa42",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:09:44Z",
-   "last_good_at": "2026-08-09T16:09:44Z",
+   "last_observed_at": "2026-08-09T16:36:28Z",
+   "last_good_at": "2026-08-09T16:36:28Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:09:44Z",
-   "last_good_at": "2026-08-09T16:09:44Z",
+   "last_observed_at": "2026-08-09T16:36:28Z",
+   "last_good_at": "2026-08-09T16:36:28Z",
    "last_good_value": "hero",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":8,\"merged\":1}]}",
    "last_good_hash": "1b3b5c59",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:09:44Z",
-   "last_good_at": "2026-08-09T16:09:44Z",
+   "last_observed_at": "2026-08-09T16:36:28Z",
+   "last_good_at": "2026-08-09T16:36:28Z",
    "last_good_value": 8,
    "last_good_json": null,
    "last_good_hash": "3d0cb547",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:09:44Z",
-   "last_good_at": "2026-08-09T16:09:44Z",
+   "last_observed_at": "2026-08-09T16:36:28Z",
+   "last_good_at": "2026-08-09T16:36:28Z",
    "last_good_value": "audience engagement tool",
    "last_good_json": null,
    "last_good_hash": "566dd158",
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:09:44Z",
-   "last_good_at": "2026-08-09T16:09:44Z",
+   "last_observed_at": "2026-08-09T16:36:28Z",
+   "last_good_at": "2026-08-09T16:36:28Z",
    "last_good_value": "Bosch, Deakin University, NHS, siemens, The University of Manchester",
    "last_good_json": "{\"names\":[\"Bosch\",\"Deakin University\",\"NHS\",\"siemens\",\"The University of Manchester\"],\"count\":5,\"lead\":\"Trusted by 500+ million users worldwide <ul role=\\\"list\\\" aria-label=\\\"Trusted by 5\"}",
    "last_good_hash": "ae6d70ef",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:09:44Z",
-   "last_good_at": "2026-08-09T16:09:44Z",
+   "last_observed_at": "2026-08-09T16:36:28Z",
+   "last_good_at": "2026-08-09T16:36:28Z",
    "last_good_value": "Listen, learn, and think. Together.",
    "last_good_json": null,
    "last_good_hash": "18117ca5",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:09:44Z",
-   "last_good_at": "2026-08-09T16:09:44Z",
+   "last_observed_at": "2026-08-09T16:36:28Z",
+   "last_good_at": "2026-08-09T16:36:28Z",
    "last_good_value": "Engage your audience with live polls, quizzes, and Q&A. Create interactive presentations in minutes. Perfect for meetings, classes, and events.",
    "last_good_json": null,
    "last_good_hash": "c844ef56",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:09:44Z",
-   "last_good_at": "2026-08-09T16:09:44Z",
+   "last_observed_at": "2026-08-09T16:36:28Z",
+   "last_good_at": "2026-08-09T16:36:28Z",
    "last_good_value": "Interactive presentation & audience engagement tool - Mentimeter",
    "last_good_json": null,
    "last_good_hash": "e23ba0e1",
@@ -248,7 +248,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T16:05:44Z",
+   "last_observed_at": "2026-08-09T16:32:34Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -266,8 +266,8 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T16:05:44Z",
-   "last_good_at": "2026-08-09T16:05:44Z",
+   "last_observed_at": "2026-08-09T16:32:34Z",
+   "last_good_at": "2026-08-09T16:32:34Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true,\"loose\":true}",
    "last_good_hash": "4e9f3590",
@@ -284,8 +284,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T16:05:44Z",
-   "last_good_at": "2026-08-09T16:05:44Z",
+   "last_observed_at": "2026-08-09T16:32:34Z",
+   "last_good_at": "2026-08-09T16:32:34Z",
    "last_good_value": "Pricing – Free, Pro & Enterprise Plans - Mentimeter",
    "last_good_json": null,
    "last_good_hash": "753a2d1d",
@@ -302,7 +302,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T16:05:44Z",
+   "last_observed_at": "2026-08-09T16:32:34Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -320,7 +320,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T16:05:44Z",
+   "last_observed_at": "2026-08-09T16:32:34Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -338,8 +338,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:09:44Z",
-   "last_good_at": "2026-08-09T16:09:44Z",
+   "last_observed_at": "2026-08-09T16:36:28Z",
+   "last_good_at": "2026-08-09T16:36:28Z",
    "last_good_value": "100% increase in feedback | 20x higher global community | 6% increase in participant",
    "last_good_json": "{\"items\":[{\"claim\":\"100% increase in feedback\",\"kind\":\"percent\"},{\"claim\":\"20x higher global community\",\"kind\":\"multiplier\"},{\"claim\":\"6% increase in participant\",\"kind\":\"percent\"}],\"count\":3}",
    "last_good_hash": "797dc3b5",
@@ -356,8 +356,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:09:44Z",
-   "last_good_at": "2026-08-09T16:09:44Z",
+   "last_observed_at": "2026-08-09T16:36:28Z",
+   "last_good_at": "2026-08-09T16:36:28Z",
    "last_good_value": "Engage your audience with live polls, quizzes, and Q&A. Create interactive presentations in minutes. Perfect for meetings, classes, and events.",
    "last_good_json": null,
    "last_good_hash": "c844ef56",
@@ -375,6 +375,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.mentimeter.com/",
+   "fetched_at": "2026-08-09T16:36:28Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 585317,
+   "duration_ms": 869,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.mentimeter.com/plans",
+   "fetched_at": "2026-08-09T16:32:34Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 552617,
+   "duration_ms": 1019,
+   "signals_found": 2,
+   "signals_expected": 5
+  },
   {
    "kind": "home",
    "url": "https://www.mentimeter.com/",
@@ -588,30 +612,6 @@
    "reason": "body identical to the previous fetch",
    "bytes": 552617,
    "duration_ms": 480,
-   "signals_found": 0,
-   "signals_expected": 0
-  },
-  {
-   "kind": "pricing",
-   "url": "https://www.mentimeter.com/plans",
-   "fetched_at": "2026-08-08T07:19:57Z",
-   "http_status": 200,
-   "status": "unchanged",
-   "reason": "body identical to the previous fetch",
-   "bytes": 552617,
-   "duration_ms": 251,
-   "signals_found": 0,
-   "signals_expected": 0
-  },
-  {
-   "kind": "home",
-   "url": "https://www.mentimeter.com/",
-   "fetched_at": "2026-08-08T07:18:57Z",
-   "http_status": 200,
-   "status": "unchanged",
-   "reason": "body identical to the previous fetch",
-   "bytes": 585317,
-   "duration_ms": 675,
    "signals_found": 0,
    "signals_expected": 0
   }

@@ -13,8 +13,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:06:12Z",
-   "last_good_at": "2026-08-09T16:06:12Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
+   "last_good_at": "2026-08-09T16:34:33Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -31,8 +31,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:06:12Z",
-   "last_good_at": "2026-08-09T16:06:12Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
+   "last_good_at": "2026-08-09T16:34:33Z",
    "last_good_value": "integrations",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":true,\"media\":false}}",
    "last_good_hash": "75846fda",
@@ -49,8 +49,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:06:12Z",
-   "last_good_at": "2026-08-09T16:06:12Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
+   "last_good_at": "2026-08-09T16:34:33Z",
    "last_good_value": "3",
    "last_good_json": null,
    "last_good_hash": "360caa42",
@@ -67,8 +67,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:06:12Z",
-   "last_good_at": "2026-08-09T16:06:12Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
+   "last_good_at": "2026-08-09T16:34:33Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -85,8 +85,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:06:12Z",
-   "last_good_at": "2026-08-09T16:06:12Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
+   "last_good_at": "2026-08-09T16:34:33Z",
    "last_good_value": "4",
    "last_good_json": null,
    "last_good_hash": "310ca263",
@@ -103,8 +103,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:06:12Z",
-   "last_good_at": "2026-08-09T16:06:12Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
+   "last_good_at": "2026-08-09T16:34:33Z",
    "last_good_value": "4",
    "last_good_json": null,
    "last_good_hash": "310ca263",
@@ -121,8 +121,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:06:12Z",
-   "last_good_at": "2026-08-09T16:06:12Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
+   "last_good_at": "2026-08-09T16:34:33Z",
    "last_good_value": "hero > features > integrations > features",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":167,\"merged\":1},{\"position\":2,\"type\":\"features\",\"heading\":\"Samla alla betalningar i samma plattform\",\"words\":26,\"merged\":2},{\"position\":3,\"type\":\"integrations\",\"heading\":\"Se till att du inte stannar i växten\",\"words\":147,\"merged\":1},{\"position\":4,\"type\":\"features\",\"heading\":\"De första byggstenarna\",\"words\":29,\"merged\":1}]}",
    "last_good_hash": "3c780cf8",
@@ -139,8 +139,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:06:12Z",
-   "last_good_at": "2026-08-09T16:06:12Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
+   "last_good_at": "2026-08-09T16:34:33Z",
    "last_good_value": 532,
    "last_good_json": null,
    "last_good_hash": "bfa04771",
@@ -157,7 +157,7 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:06:12Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -175,7 +175,7 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:06:12Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -193,8 +193,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:06:12Z",
-   "last_good_at": "2026-08-09T16:06:12Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
+   "last_good_at": "2026-08-09T16:34:33Z",
    "last_good_value": "Allt för att starta, driva och växa",
    "last_good_json": null,
    "last_good_hash": "4d8ddf4f",
@@ -211,8 +211,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:06:12Z",
-   "last_good_at": "2026-08-09T16:06:12Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
+   "last_good_at": "2026-08-09T16:34:33Z",
    "last_good_value": "Fortnox företagsplattform effektiviserar dina administrativa sysslor, hjälper dig hitta nya kunder, få enklare betalt eller snabb hjälp med finansiering.",
    "last_good_json": null,
    "last_good_hash": "98420937",
@@ -229,8 +229,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:06:12Z",
-   "last_good_at": "2026-08-09T16:06:12Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
+   "last_good_at": "2026-08-09T16:34:33Z",
    "last_good_value": "Sverigeledande på webbaserad bokföring och fakturering | Fortnox",
    "last_good_json": null,
    "last_good_hash": "4ffc7ce4",
@@ -247,7 +247,7 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:06:12Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -265,8 +265,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:06:12Z",
-   "last_good_at": "2026-08-09T16:06:12Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
+   "last_good_at": "2026-08-09T16:34:33Z",
    "last_good_value": "Med Fortnox blir företagslivet smidigare. Smarta funktioner hjälper dig med allt från bokföring och fakturering till att fatta rätt beslut. Även pengarna är nära om du vill investera eller stärka kassan. Det är så vi formar framgångsrika företag – tillsammans.",
    "last_good_json": null,
    "last_good_hash": "25688784",
@@ -284,6 +284,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.fortnox.se/",
+   "fetched_at": "2026-08-09T16:34:33Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 1101326,
+   "duration_ms": 1302,
+   "signals_found": 12,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.fortnox.se/",

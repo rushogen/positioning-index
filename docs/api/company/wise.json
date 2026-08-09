@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:06:04Z",
-   "last_good_at": "2026-08-09T16:06:04Z",
+   "last_observed_at": "2026-08-09T16:34:20Z",
+   "last_good_at": "2026-08-09T16:34:20Z",
    "last_good_value": "3",
    "last_good_json": null,
    "last_good_hash": "360caa42",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:06:04Z",
-   "last_good_at": "2026-08-09T16:06:04Z",
+   "last_observed_at": "2026-08-09T16:34:20Z",
+   "last_good_at": "2026-08-09T16:34:20Z",
    "last_good_value": "proof, testimonial, pricing_block, integrations, media",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":true,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":true,\"integrations\":true,\"media\":true}}",
    "last_good_hash": "593b4155",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:06:04Z",
-   "last_good_at": "2026-08-09T16:06:04Z",
+   "last_observed_at": "2026-08-09T16:34:20Z",
+   "last_good_at": "2026-08-09T16:34:20Z",
    "last_good_value": "51",
    "last_good_json": null,
    "last_good_hash": "84e14233",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:06:04Z",
-   "last_good_at": "2026-08-09T16:06:04Z",
+   "last_observed_at": "2026-08-09T16:34:20Z",
+   "last_good_at": "2026-08-09T16:34:20Z",
    "last_good_value": "2",
    "last_good_json": null,
    "last_good_hash": "370cabd5",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:06:04Z",
-   "last_good_at": "2026-08-09T16:06:04Z",
+   "last_observed_at": "2026-08-09T16:34:20Z",
+   "last_good_at": "2026-08-09T16:34:20Z",
    "last_good_value": "41",
    "last_good_json": null,
    "last_good_hash": "88e38716",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:06:04Z",
-   "last_good_at": "2026-08-09T16:06:04Z",
+   "last_observed_at": "2026-08-09T16:34:20Z",
+   "last_good_at": "2026-08-09T16:34:20Z",
    "last_good_value": "14",
    "last_good_json": null,
    "last_good_hash": "17eb23f8",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:06:04Z",
-   "last_good_at": "2026-08-09T16:06:04Z",
+   "last_observed_at": "2026-08-09T16:34:20Z",
+   "last_good_at": "2026-08-09T16:34:20Z",
    "last_good_value": "hero > features > proof > features > media > integrations > features > other > proof > testimonial > features > pricing > features > other",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":80,\"merged\":1},{\"position\":2,\"type\":\"features\",\"heading\":\"Get paid in the currencies you need\",\"words\":46,\"merged\":1},{\"position\":3,\"type\":\"proof\",\"heading\":\"Send your money worldwide\",\"words\":132,\"merged\":1},{\"position\":4,\"type\":\"features\",\"heading\":\"Earn returns every working day\",\"words\":38,\"merged\":1},{\"position\":5,\"type\":\"media\",\"heading\":\"Spend with multi-currency debit cards\",\"words\":28,\"merged\":1},{\"position\":6,\"type\":\"integrations\",\"heading\":\"Sync to your accounting software\",\"words\":23,\"merged\":1},{\"position\":7,\"type\":\"features\",\"heading\":\"Account controls for team spend\",\"words\":21,\"merged\":1},{\"position\":8,\"type\":\"other\",\"heading\":\"Ready to take the next step with Wise?\",\"words\":14,\"merged\":1},{\"position\":9,\"type\":\"proof\",\"heading\":\"Assured financial protection\",\"words\":84,\"merged\":1},{\"position\":10,\"type\":\"testimonial\",\"heading\":\"Hear from businesses scaling with Wise\",\"words\":196,\"merged\":1},{\"position\":11,\"type\":\"features\",\"heading\":\"Solutions for every kind of business\",\"words\":95,\"merged\":1},{\"position\":12,\"type\":\"pricing\",\"heading\":\"A simple one-off set up fee\",\"words\":39,\"merged\":1},{\"position\":13,\"type\":\"features\",\"heading\":\"FAQs\",\"words\":30,\"merged\":1},{\"position\":14,\"type\":\"other\",\"heading\":\"Take Wise everywhere you go\",\"words\":11,\"merged\":1}]}",
    "last_good_hash": "edc15480",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:06:04Z",
-   "last_good_at": "2026-08-09T16:06:04Z",
+   "last_observed_at": "2026-08-09T16:34:20Z",
+   "last_good_at": "2026-08-09T16:34:20Z",
    "last_good_value": 837,
    "last_good_json": null,
    "last_good_hash": "ca97cc31",
@@ -158,7 +158,7 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:06:04Z",
+   "last_observed_at": "2026-08-09T16:34:20Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:06:04Z",
-   "last_good_at": "2026-08-09T16:06:04Z",
+   "last_observed_at": "2026-08-09T16:34:20Z",
+   "last_good_at": "2026-08-09T16:34:20Z",
    "last_good_value": "Andy Irvine. CEO, GYROstream, Aud, Businesses, Gbp, Sgd, Startups, Testimonials Chris, Testimonials Simon, Testimonials Suzanne, Testimonials Xenios, Usd",
    "last_good_json": "{\"names\":[\"Andy Irvine. CEO, GYROstream\",\"Aud\",\"Businesses\",\"Gbp\",\"Sgd\",\"Startups\",\"Testimonials Chris\",\"Testimonials Simon\",\"Testimonials Suzanne\",\"Testimonials Xenios\",\"Usd\"],\"count\":11,\"lead\":\"our customers, without the need for exchange fees.\\\" Stela & Momchil Fou\"}",
    "last_good_hash": "1d021d54",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:06:04Z",
-   "last_good_at": "2026-08-09T16:06:04Z",
+   "last_observed_at": "2026-08-09T16:34:20Z",
+   "last_good_at": "2026-08-09T16:34:20Z",
    "last_good_value": "The business account for going global",
    "last_good_json": null,
    "last_good_hash": "cccb2ba3",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:06:04Z",
-   "last_good_at": "2026-08-09T16:06:04Z",
+   "last_observed_at": "2026-08-09T16:34:20Z",
+   "last_good_at": "2026-08-09T16:34:20Z",
    "last_good_value": "The international business account from Wise is everything you need for doing business in other currencies. Pay invoices, get paid and manage expenses.",
    "last_good_json": null,
    "last_good_hash": "063dc708",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:06:04Z",
-   "last_good_at": "2026-08-09T16:06:04Z",
+   "last_observed_at": "2026-08-09T16:34:20Z",
+   "last_good_at": "2026-08-09T16:34:20Z",
    "last_good_value": "Wise Business: Grow with the international business account",
    "last_good_json": null,
    "last_good_hash": "abe6b270",
@@ -248,7 +248,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T16:10:00Z",
+   "last_observed_at": "2026-08-09T16:38:08Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -266,8 +266,8 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T16:10:00Z",
-   "last_good_at": "2026-08-09T16:10:00Z",
+   "last_observed_at": "2026-08-09T16:38:08Z",
+   "last_good_at": "2026-08-09T16:38:08Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true,\"loose\":true}",
    "last_good_hash": "4e9f3590",
@@ -284,8 +284,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T16:10:00Z",
-   "last_good_at": "2026-08-09T16:10:00Z",
+   "last_observed_at": "2026-08-09T16:38:08Z",
+   "last_good_at": "2026-08-09T16:38:08Z",
    "last_good_value": "Wise Fees & Pricing: Only Pay for What You Use",
    "last_good_json": null,
    "last_good_hash": "eb92c14b",
@@ -302,7 +302,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T16:10:00Z",
+   "last_observed_at": "2026-08-09T16:38:08Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -320,7 +320,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T16:10:00Z",
+   "last_observed_at": "2026-08-09T16:38:08Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -338,8 +338,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:06:04Z",
-   "last_good_at": "2026-08-09T16:06:04Z",
+   "last_observed_at": "2026-08-09T16:34:20Z",
+   "last_good_at": "2026-08-09T16:34:20Z",
    "last_good_value": "$1,000 usd | $1,000 usd using different | $100,000 cdic insurance | $100,000 when cdic trust | $25+ fee typically charged | $250,000 through our program | $250k fdic coverage | $250k on interest-earning funds | £12 billion around the world | £12 billion monthly rated excellent | £120,000 protection under the | £29.56 wise interest since | 14 days | 20 seconds | 24 hours | 70% cheaper claim based",
    "last_good_json": "{\"items\":[{\"claim\":\"$1,000 usd\",\"kind\":\"money\"},{\"claim\":\"$1,000 usd using different\",\"kind\":\"money\"},{\"claim\":\"$100,000 cdic insurance\",\"kind\":\"money\"},{\"claim\":\"$100,000 when cdic trust\",\"kind\":\"money\"},{\"claim\":\"$25+ fee typically charged\",\"kind\":\"money\"},{\"claim\":\"$250,000 through our program\",\"kind\":\"money\"},{\"claim\":\"$250k fdic coverage\",\"kind\":\"money\"},{\"claim\":\"$250k on interest-earning funds\",\"kind\":\"money\"},{\"claim\":\"£12 billion around the world\",\"kind\":\"money\"},{\"claim\":\"£12 billion monthly rated excellent\",\"kind\":\"money\"},{\"claim\":\"£120,000 protection under the\",\"kind\":\"money\"},{\"claim\":\"£29.56 wise interest since\",\"kind\":\"money\"},{\"claim\":\"14 days\",\"kind\":\"time\"},{\"claim\":\"20 seconds\",\"kind\":\"time\"},{\"claim\":\"24 hours\",\"kind\":\"count\"},{\"claim\":\"70% cheaper claim based\",\"kind\":\"percent\"}],\"count\":16}",
    "last_good_hash": "88822562",
@@ -356,8 +356,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:06:04Z",
-   "last_good_at": "2026-08-09T16:06:04Z",
+   "last_observed_at": "2026-08-09T16:34:20Z",
+   "last_good_at": "2026-08-09T16:34:20Z",
    "last_good_value": "Over 700,000 global businesses move and spend £12 billion monthly",
    "last_good_json": null,
    "last_good_hash": "903af139",
@@ -375,6 +375,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://wise.com/gb/pricing/",
+   "fetched_at": "2026-08-09T16:38:08Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 572809,
+   "duration_ms": 466,
+   "signals_found": 2,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://wise.com/business/",
+   "fetched_at": "2026-08-09T16:34:20Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 1223519,
+   "duration_ms": 1264,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
   {
    "kind": "pricing",
    "url": "https://wise.com/gb/pricing/",
@@ -588,30 +612,6 @@
    "reason": "body identical to the previous fetch",
    "bytes": 1223539,
    "duration_ms": 800,
-   "signals_found": 0,
-   "signals_expected": 0
-  },
-  {
-   "kind": "pricing",
-   "url": "https://wise.com/gb/pricing/",
-   "fetched_at": "2026-08-08T07:19:25Z",
-   "http_status": 200,
-   "status": "unchanged",
-   "reason": "body identical to the previous fetch",
-   "bytes": 572809,
-   "duration_ms": 457,
-   "signals_found": 0,
-   "signals_expected": 0
-  },
-  {
-   "kind": "home",
-   "url": "https://wise.com/business/",
-   "fetched_at": "2026-08-08T07:18:22Z",
-   "http_status": 200,
-   "status": "unchanged",
-   "reason": "body identical to the previous fetch",
-   "bytes": 1223539,
-   "duration_ms": 1035,
    "signals_found": 0,
    "signals_expected": 0
   }

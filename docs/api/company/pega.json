@@ -13,8 +13,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:06:02Z",
-   "last_good_at": "2026-08-09T16:06:02Z",
+   "last_observed_at": "2026-08-09T16:32:24Z",
+   "last_good_at": "2026-08-09T16:32:24Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -31,8 +31,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:06:02Z",
-   "last_good_at": "2026-08-09T16:06:02Z",
+   "last_observed_at": "2026-08-09T16:32:24Z",
+   "last_good_at": "2026-08-09T16:32:24Z",
    "last_good_value": "proof, testimonial",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":true,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "d6336940",
@@ -49,8 +49,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:06:02Z",
-   "last_good_at": "2026-08-09T16:06:02Z",
+   "last_observed_at": "2026-08-09T16:32:24Z",
+   "last_good_at": "2026-08-09T16:32:24Z",
    "last_good_value": "34",
    "last_good_json": null,
    "last_good_hash": "8bf057c2",
@@ -67,8 +67,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:06:02Z",
-   "last_good_at": "2026-08-09T16:06:02Z",
+   "last_observed_at": "2026-08-09T16:32:24Z",
+   "last_good_at": "2026-08-09T16:32:24Z",
    "last_good_value": "6",
    "last_good_json": null,
    "last_good_hash": "330ca589",
@@ -85,8 +85,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:06:02Z",
-   "last_good_at": "2026-08-09T16:06:02Z",
+   "last_observed_at": "2026-08-09T16:32:24Z",
+   "last_good_at": "2026-08-09T16:32:24Z",
    "last_good_value": "40",
    "last_good_json": null,
    "last_good_hash": "89e388a9",
@@ -103,8 +103,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:06:02Z",
-   "last_good_at": "2026-08-09T16:06:02Z",
+   "last_observed_at": "2026-08-09T16:32:24Z",
+   "last_good_at": "2026-08-09T16:32:24Z",
    "last_good_value": "7",
    "last_good_json": null,
    "last_good_hash": "320ca3f6",
@@ -121,8 +121,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:06:02Z",
-   "last_good_at": "2026-08-09T16:06:02Z",
+   "last_observed_at": "2026-08-09T16:32:24Z",
+   "last_good_at": "2026-08-09T16:32:24Z",
    "last_good_value": "hero > cta > proof > security > awards > testimonial > features",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":\"We'd prefer it if you saw us at our best.\",\"words\":99,\"merged\":1},{\"position\":2,\"type\":\"cta\",\"heading\":\"Billed less.\",\"words\":16,\"merged\":1},{\"position\":3,\"type\":\"proof\",\"heading\":\"Four paths to becoming a modern AI enterprise. All on one unified platform.\",\"words\":117,\"merged\":1},{\"position\":4,\"type\":\"security\",\"heading\":\"This is where ambition meets accountability, at enterprise scale\",\"words\":210,\"merged\":1},{\"position\":5,\"type\":\"awards\",\"heading\":\"Recognized by the world's top industry experts\",\"words\":41,\"merged\":1},{\"position\":6,\"type\":\"testimonial\",\"heading\":\"Hear how Pega is helping clients deliver outcomes that matter\",\"words\":84,\"merged\":1},{\"position\":7,\"type\":\"features\",\"heading\":\"Next steps for you\",\"words\":159,\"merged\":1}]}",
    "last_good_hash": "ba972bd5",
@@ -139,8 +139,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:06:02Z",
-   "last_good_at": "2026-08-09T16:06:02Z",
+   "last_observed_at": "2026-08-09T16:32:24Z",
+   "last_good_at": "2026-08-09T16:32:24Z",
    "last_good_value": 733,
    "last_good_json": null,
    "last_good_hash": "1fc52244",
@@ -157,8 +157,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:06:02Z",
-   "last_good_at": "2026-08-09T16:06:02Z",
+   "last_observed_at": "2026-08-09T16:32:24Z",
+   "last_good_at": "2026-08-09T16:32:24Z",
    "last_good_value": "leading ai-powered platform for enterprise transformation",
    "last_good_json": null,
    "last_good_hash": "f19e63c4",
@@ -175,8 +175,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:06:02Z",
-   "last_good_at": "2026-08-09T16:06:02Z",
+   "last_observed_at": "2026-08-09T16:32:24Z",
+   "last_good_at": "2026-08-09T16:32:24Z",
    "last_good_value": "HP P3 3, Hpnew Chevrons, Hpnew Headphones, Hpnew Refresh, Lightblue Rounded Top Bg",
    "last_good_json": "{\"names\":[\"HP P3 3\",\"Hpnew Chevrons\",\"Hpnew Headphones\",\"Hpnew Refresh\",\"Lightblue Rounded Top Bg\"],\"count\":5,\"lead\":\"Trusted by leading organizations worldwide <pega-logo data-src=\\\"/sites/default/f\"}",
    "last_good_hash": "278f5578",
@@ -193,8 +193,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:06:02Z",
-   "last_good_at": "2026-08-09T16:06:02Z",
+   "last_observed_at": "2026-08-09T16:32:24Z",
+   "last_good_at": "2026-08-09T16:32:24Z",
    "last_good_value": "Forrester names Pega a Leader in AI Platforms",
    "last_good_json": null,
    "last_good_hash": "65d7fa5b",
@@ -211,8 +211,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:06:02Z",
-   "last_good_at": "2026-08-09T16:06:02Z",
+   "last_observed_at": "2026-08-09T16:32:24Z",
+   "last_good_at": "2026-08-09T16:32:24Z",
    "last_good_value": "The world’s most influential organizations trust Pega to reimagine work - automating workflows, personalizing customer experiences, and modernizing legacy systems.",
    "last_good_json": null,
    "last_good_hash": "a57613a6",
@@ -229,8 +229,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:06:02Z",
-   "last_good_at": "2026-08-09T16:06:02Z",
+   "last_observed_at": "2026-08-09T16:32:24Z",
+   "last_good_at": "2026-08-09T16:32:24Z",
    "last_good_value": "The leading AI-powered platform for enterprise transformation | Pega",
    "last_good_json": null,
    "last_good_hash": "a00a74fe",
@@ -247,8 +247,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:06:02Z",
-   "last_good_at": "2026-08-09T16:06:02Z",
+   "last_observed_at": "2026-08-09T16:32:24Z",
+   "last_good_at": "2026-08-09T16:32:24Z",
    "last_good_value": "40% increase in channel | 50% reduction in process | 76% decrease in onboarding",
    "last_good_json": "{\"items\":[{\"claim\":\"40% increase in channel\",\"kind\":\"percent\"},{\"claim\":\"50% reduction in process\",\"kind\":\"percent\"},{\"claim\":\"76% decrease in onboarding\",\"kind\":\"percent\"}],\"count\":3}",
    "last_good_hash": "dc981227",
@@ -265,8 +265,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:06:02Z",
-   "last_good_at": "2026-08-09T16:06:02Z",
+   "last_observed_at": "2026-08-09T16:32:24Z",
+   "last_good_at": "2026-08-09T16:32:24Z",
    "last_good_value": "The world’s most influential organizations trust Pega to reimagine work - automating workflows, personalizing customer experiences, and modernizing legacy systems.",
    "last_good_json": null,
    "last_good_hash": "a57613a6",
@@ -284,6 +284,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.pega.com/",
+   "fetched_at": "2026-08-09T16:32:24Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 433604,
+   "duration_ms": 221,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.pega.com/",

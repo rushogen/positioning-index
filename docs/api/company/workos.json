@@ -15,8 +15,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:04:45Z",
-   "last_good_at": "2026-08-09T16:04:45Z",
+   "last_observed_at": "2026-08-09T16:35:11Z",
+   "last_good_at": "2026-08-09T16:35:11Z",
    "last_good_value": "4",
    "last_good_json": null,
    "last_good_hash": "310ca263",
@@ -33,8 +33,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:04:45Z",
-   "last_good_at": "2026-08-09T16:04:45Z",
+   "last_observed_at": "2026-08-09T16:35:11Z",
+   "last_good_at": "2026-08-09T16:35:11Z",
    "last_good_value": "testimonial, faq, integrations",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":true,\"faq\":true,\"comparison\":false,\"pricing_block\":false,\"integrations\":true,\"media\":false}}",
    "last_good_hash": "b18c1843",
@@ -51,8 +51,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:04:45Z",
-   "last_good_at": "2026-08-09T16:04:45Z",
+   "last_observed_at": "2026-08-09T16:35:11Z",
+   "last_good_at": "2026-08-09T16:35:11Z",
    "last_good_value": "33",
    "last_good_json": null,
    "last_good_hash": "86f04fe3",
@@ -69,8 +69,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:04:45Z",
-   "last_good_at": "2026-08-09T16:04:45Z",
+   "last_observed_at": "2026-08-09T16:35:11Z",
+   "last_good_at": "2026-08-09T16:35:11Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -87,8 +87,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:04:45Z",
-   "last_good_at": "2026-08-09T16:04:45Z",
+   "last_observed_at": "2026-08-09T16:35:11Z",
+   "last_good_at": "2026-08-09T16:35:11Z",
    "last_good_value": "13",
    "last_good_json": null,
    "last_good_hash": "1eeb2efd",
@@ -105,8 +105,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:04:45Z",
-   "last_good_at": "2026-08-09T16:04:45Z",
+   "last_observed_at": "2026-08-09T16:35:11Z",
+   "last_good_at": "2026-08-09T16:35:11Z",
    "last_good_value": "4",
    "last_good_json": null,
    "last_good_hash": "310ca263",
@@ -123,8 +123,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:04:45Z",
-   "last_good_at": "2026-08-09T16:04:45Z",
+   "last_observed_at": "2026-08-09T16:35:11Z",
+   "last_good_at": "2026-08-09T16:35:11Z",
    "last_good_value": "hero > integrations > faq > testimonial",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":89,\"merged\":1},{\"position\":2,\"type\":\"integrations\",\"heading\":\"The all-in-one solution\",\"words\":117,\"merged\":4},{\"position\":3,\"type\":\"faq\",\"heading\":\"Why WorkOS?\",\"words\":60,\"merged\":1},{\"position\":4,\"type\":\"testimonial\",\"heading\":\"Powered by WorkOS\",\"words\":606,\"merged\":1}]}",
    "last_good_hash": "4f88cb4d",
@@ -141,8 +141,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:04:45Z",
-   "last_good_at": "2026-08-09T16:04:45Z",
+   "last_observed_at": "2026-08-09T16:35:11Z",
+   "last_good_at": "2026-08-09T16:35:11Z",
    "last_good_value": 1328,
    "last_good_json": null,
    "last_good_hash": "e262e57f",
@@ -159,8 +159,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:04:45Z",
-   "last_good_at": "2026-08-09T16:04:45Z",
+   "last_observed_at": "2026-08-09T16:35:11Z",
+   "last_good_at": "2026-08-09T16:35:11Z",
    "last_good_value": "directory",
    "last_good_json": null,
    "last_good_hash": "11913588",
@@ -177,8 +177,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:04:45Z",
-   "last_good_at": "2026-08-09T16:04:45Z",
+   "last_observed_at": "2026-08-09T16:35:11Z",
+   "last_good_at": "2026-08-09T16:35:11Z",
    "last_good_value": "Chromatic Seeklogo.Com 2, Cropped Official, Cursor, Drata, Hannah Han, Incident Seeklogo.Com, Indeed, Kerning Fix, Magical, Netlify Fullcolor Lightmode, Openai, Patch, Perplexity, Planetscale, Prefect, T014GFVPEJZ U01NJGT34N4, TUPM5R54Y U04SLN60VK5, Warp, Webflow",
    "last_good_json": "{\"names\":[\"Chromatic Seeklogo.Com 2\",\"Cropped Official\",\"Cursor\",\"Drata\",\"Hannah Han\",\"Incident Seeklogo.Com\",\"Indeed\",\"Kerning Fix\",\"Magical\",\"Netlify Fullcolor Lightmode\",\"Openai\",\"Patch\",\"Perplexity\",\"Planetscale\",\"Prefect\",\"T014GFVPEJZ U01NJGT34N4\",\"TUPM5R54Y U04SLN60VK5\",\"Warp\",\"Webflow\"],\"count\":19,\"lead\":\"Trusted by <path d=\\\"\"}",
    "last_good_hash": "bb0a7ca5",
@@ -195,8 +195,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:04:45Z",
-   "last_good_at": "2026-08-09T16:04:45Z",
+   "last_observed_at": "2026-08-09T16:35:11Z",
+   "last_good_at": "2026-08-09T16:35:11Z",
    "last_good_value": "Your app, Enterprise Ready.",
    "last_good_json": null,
    "last_good_hash": "433559a5",
@@ -213,8 +213,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:04:45Z",
-   "last_good_at": "2026-08-09T16:04:45Z",
+   "last_observed_at": "2026-08-09T16:35:11Z",
+   "last_good_at": "2026-08-09T16:35:11Z",
    "last_good_value": "Developer APIs/SDKs for Enterprise Ready features like Single Sign-On, Directory Sync, Audit Logging, and more. Get started for free.",
    "last_good_json": null,
    "last_good_hash": "c7554ae4",
@@ -231,8 +231,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:04:45Z",
-   "last_good_at": "2026-08-09T16:04:45Z",
+   "last_observed_at": "2026-08-09T16:35:11Z",
+   "last_good_at": "2026-08-09T16:35:11Z",
    "last_good_value": "WorkOS — Your app, Enterprise Ready.",
    "last_good_json": null,
    "last_good_hash": "68e9fdf7",
@@ -249,7 +249,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T16:09:13Z",
+   "last_observed_at": "2026-08-09T16:30:28Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -267,8 +267,8 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T16:09:13Z",
-   "last_good_at": "2026-08-09T16:09:13Z",
+   "last_observed_at": "2026-08-09T16:30:28Z",
+   "last_good_at": "2026-08-09T16:30:28Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true,\"loose\":true}",
    "last_good_hash": "4e9f3590",
@@ -285,8 +285,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T16:09:13Z",
-   "last_good_at": "2026-08-09T16:09:13Z",
+   "last_observed_at": "2026-08-09T16:30:28Z",
+   "last_good_at": "2026-08-09T16:30:28Z",
    "last_good_value": "Pricing — WorkOS",
    "last_good_json": null,
    "last_good_hash": "c389f709",
@@ -303,7 +303,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T16:09:13Z",
+   "last_observed_at": "2026-08-09T16:30:28Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -321,7 +321,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T16:09:13Z",
+   "last_observed_at": "2026-08-09T16:30:28Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -339,7 +339,7 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:04:45Z",
+   "last_observed_at": "2026-08-09T16:35:11Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -357,8 +357,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:04:45Z",
-   "last_good_at": "2026-08-09T16:04:45Z",
+   "last_observed_at": "2026-08-09T16:35:11Z",
+   "last_good_at": "2026-08-09T16:35:11Z",
    "last_good_value": "Start selling to enterprise customers with just a few lines of code. Implement features like single sign-on in minutes instead of months.",
    "last_good_json": null,
    "last_good_hash": "aa5365bc",
@@ -376,6 +376,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://workos.com/",
+   "fetched_at": "2026-08-09T16:35:11Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 263203,
+   "duration_ms": 178,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
+  {
+   "kind": "pricing",
+   "url": "https://workos.com/pricing",
+   "fetched_at": "2026-08-09T16:30:28Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 222314,
+   "duration_ms": 216,
+   "signals_found": 2,
+   "signals_expected": 5
+  },
   {
    "kind": "pricing",
    "url": "https://workos.com/pricing",

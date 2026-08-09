@@ -16,6 +16,18 @@
   {
    "kind": "home",
    "url": "https://www.servicenow.com/",
+   "fetched_at": "2026-08-09T16:34:43Z",
+   "http_status": null,
+   "status": "blocked",
+   "reason": "robots.txt: robots.txt returned 403: access explicitly refused",
+   "bytes": 0,
+   "duration_ms": 176,
+   "signals_found": 0,
+   "signals_expected": 0
+  },
+  {
+   "kind": "home",
+   "url": "https://www.servicenow.com/",
    "fetched_at": "2026-08-09T16:06:40Z",
    "http_status": null,
    "status": "blocked",

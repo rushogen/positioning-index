@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:03:32Z",
-   "last_good_at": "2026-08-09T16:03:32Z",
+   "last_observed_at": "2026-08-09T16:33:01Z",
+   "last_good_at": "2026-08-09T16:33:01Z",
    "last_good_value": "12",
    "last_good_json": null,
    "last_good_hash": "1deb2d6a",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:03:32Z",
-   "last_good_at": "2026-08-09T16:03:32Z",
+   "last_observed_at": "2026-08-09T16:33:01Z",
+   "last_good_at": "2026-08-09T16:33:01Z",
    "last_good_value": "proof, testimonial",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":true,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "d6336940",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:03:32Z",
-   "last_good_at": "2026-08-09T16:03:32Z",
+   "last_observed_at": "2026-08-09T16:33:01Z",
+   "last_good_at": "2026-08-09T16:33:01Z",
    "last_good_value": "63",
    "last_good_json": null,
    "last_good_hash": "16e8e3ce",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:03:32Z",
-   "last_good_at": "2026-08-09T16:03:32Z",
+   "last_observed_at": "2026-08-09T16:33:01Z",
+   "last_good_at": "2026-08-09T16:33:01Z",
    "last_good_value": "4",
    "last_good_json": null,
    "last_good_hash": "310ca263",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:03:32Z",
-   "last_good_at": "2026-08-09T16:03:32Z",
+   "last_observed_at": "2026-08-09T16:33:01Z",
+   "last_good_at": "2026-08-09T16:33:01Z",
    "last_good_value": "8",
    "last_good_json": null,
    "last_good_hash": "3d0cb547",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:03:32Z",
-   "last_good_at": "2026-08-09T16:03:32Z",
+   "last_observed_at": "2026-08-09T16:33:01Z",
+   "last_good_at": "2026-08-09T16:33:01Z",
    "last_good_value": "6",
    "last_good_json": null,
    "last_good_hash": "330ca589",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:03:32Z",
-   "last_good_at": "2026-08-09T16:03:32Z",
+   "last_observed_at": "2026-08-09T16:33:01Z",
+   "last_good_at": "2026-08-09T16:33:01Z",
    "last_good_value": "hero > features > proof > testimonial > proof > features",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":45,\"merged\":1},{\"position\":2,\"type\":\"features\",\"heading\":\"Mixpanel is for teams that move. Make your move.\",\"words\":85,\"merged\":2},{\"position\":3,\"type\":\"proof\",\"heading\":\"Align on what’s next with real-time, self-serve insights\",\"words\":76,\"merged\":1},{\"position\":4,\"type\":\"testimonial\",\"heading\":\"Uncover what data can’t\",\"words\":83,\"merged\":1},{\"position\":5,\"type\":\"proof\",\"heading\":\"Validate and ship with confidence\",\"words\":90,\"merged\":2},{\"position\":6,\"type\":\"features\",\"heading\":\"Your personal analyst, accessible anywhere\",\"words\":126,\"merged\":2}]}",
    "last_good_hash": "a7e4297c",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:03:32Z",
-   "last_good_at": "2026-08-09T16:03:32Z",
+   "last_observed_at": "2026-08-09T16:33:01Z",
+   "last_good_at": "2026-08-09T16:33:01Z",
    "last_good_value": 1201,
    "last_good_json": null,
    "last_good_hash": "00c6664d",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:03:32Z",
-   "last_good_at": "2026-08-09T16:03:32Z",
+   "last_observed_at": "2026-08-09T16:33:01Z",
+   "last_good_at": "2026-08-09T16:33:01Z",
    "last_good_value": "product intelligence platform for the ai era",
    "last_good_json": null,
    "last_good_hash": "e6c064a2",
@@ -176,7 +176,7 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:03:32Z",
+   "last_observed_at": "2026-08-09T16:33:01Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:03:32Z",
-   "last_good_at": "2026-08-09T16:03:32Z",
+   "last_observed_at": "2026-08-09T16:33:01Z",
+   "last_good_at": "2026-08-09T16:33:01Z",
    "last_good_value": "Build faster, with direction",
    "last_good_json": null,
    "last_good_hash": "e11f07cd",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:03:32Z",
-   "last_good_at": "2026-08-09T16:03:32Z",
+   "last_observed_at": "2026-08-09T16:33:01Z",
+   "last_good_at": "2026-08-09T16:33:01Z",
    "last_good_value": "Mixpanel is the product intelligence platform for the AI era, combining analytics, session replay, experiments, feature flags, and AI-powered insights.",
    "last_good_json": null,
    "last_good_hash": "44937b28",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:03:32Z",
-   "last_good_at": "2026-08-09T16:03:32Z",
+   "last_observed_at": "2026-08-09T16:33:01Z",
+   "last_good_at": "2026-08-09T16:33:01Z",
    "last_good_value": "Product Intelligence Platform for the AI Era | Mixpanel",
    "last_good_json": null,
    "last_good_hash": "fea564a2",
@@ -248,7 +248,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T16:07:57Z",
+   "last_observed_at": "2026-08-09T16:37:00Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -266,8 +266,8 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T16:07:57Z",
-   "last_good_at": "2026-08-09T16:07:57Z",
+   "last_observed_at": "2026-08-09T16:37:00Z",
+   "last_good_at": "2026-08-09T16:37:00Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true,\"loose\":true}",
    "last_good_hash": "4e9f3590",
@@ -284,8 +284,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T16:07:57Z",
-   "last_good_at": "2026-08-09T16:07:57Z",
+   "last_observed_at": "2026-08-09T16:37:00Z",
+   "last_good_at": "2026-08-09T16:37:00Z",
    "last_good_value": "Mixpanel Pricing: Find Your Plan & Get Started | Mixpanel",
    "last_good_json": null,
    "last_good_hash": "654b12d9",
@@ -302,7 +302,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T16:07:57Z",
+   "last_observed_at": "2026-08-09T16:37:00Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -320,7 +320,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T16:07:57Z",
+   "last_observed_at": "2026-08-09T16:37:00Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -338,8 +338,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:03:32Z",
-   "last_good_at": "2026-08-09T16:03:32Z",
+   "last_observed_at": "2026-08-09T16:33:01Z",
+   "last_good_at": "2026-08-09T16:33:01Z",
    "last_good_value": "$1.2m mom | 29 k customers | 354 % roi",
    "last_good_json": "{\"items\":[{\"claim\":\"$1.2m mom\",\"kind\":\"money\"},{\"claim\":\"29 k customers\",\"kind\":\"count\"},{\"claim\":\"354 % roi\",\"kind\":\"percent\"}],\"count\":3}",
    "last_good_hash": "b2e3bf66",
@@ -356,8 +356,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:03:32Z",
-   "last_good_at": "2026-08-09T16:03:32Z",
+   "last_observed_at": "2026-08-09T16:33:01Z",
+   "last_good_at": "2026-08-09T16:33:01Z",
    "last_good_value": "Product intelligence for the AI era: ground every decision in customer truth, wherever you build",
    "last_good_json": null,
    "last_good_hash": "1101e740",
@@ -375,6 +375,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://mixpanel.com/pricing/",
+   "fetched_at": "2026-08-09T16:37:00Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 1250033,
+   "duration_ms": 361,
+   "signals_found": 2,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://mixpanel.com/home/",
+   "fetched_at": "2026-08-09T16:33:01Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 1265734,
+   "duration_ms": 915,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
   {
    "kind": "pricing",
    "url": "https://mixpanel.com/pricing/",
@@ -588,30 +612,6 @@
    "reason": "origin returned 304 Not Modified",
    "bytes": 0,
    "duration_ms": 313,
-   "signals_found": 0,
-   "signals_expected": 0
-  },
-  {
-   "kind": "home",
-   "url": "https://mixpanel.com/home/",
-   "fetched_at": "2026-08-08T07:19:15Z",
-   "http_status": 304,
-   "status": "unchanged",
-   "reason": "origin returned 304 Not Modified",
-   "bytes": 0,
-   "duration_ms": 542,
-   "signals_found": 0,
-   "signals_expected": 0
-  },
-  {
-   "kind": "pricing",
-   "url": "https://mixpanel.com/pricing/",
-   "fetched_at": "2026-08-08T07:17:44Z",
-   "http_status": 304,
-   "status": "unchanged",
-   "reason": "origin returned 304 Not Modified",
-   "bytes": 0,
-   "duration_ms": 372,
    "signals_found": 0,
    "signals_expected": 0
   }

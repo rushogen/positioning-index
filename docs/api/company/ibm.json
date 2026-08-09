@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:06:01Z",
-   "last_good_at": "2026-08-09T16:06:01Z",
+   "last_observed_at": "2026-08-09T16:31:29Z",
+   "last_good_at": "2026-08-09T16:31:29Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:06:01Z",
-   "last_good_at": "2026-08-09T16:06:01Z",
+   "last_observed_at": "2026-08-09T16:31:29Z",
+   "last_good_at": "2026-08-09T16:31:29Z",
    "last_good_value": "proof",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":true,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "8cdc0989",
@@ -50,7 +50,7 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:06:01Z",
+   "last_observed_at": "2026-08-09T16:31:29Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:06:01Z",
-   "last_good_at": "2026-08-09T16:06:01Z",
+   "last_observed_at": "2026-08-09T16:31:29Z",
+   "last_good_at": "2026-08-09T16:31:29Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -86,7 +86,7 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:06:01Z",
+   "last_observed_at": "2026-08-09T16:31:29Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:06:01Z",
-   "last_good_at": "2026-08-09T16:06:01Z",
+   "last_observed_at": "2026-08-09T16:31:29Z",
+   "last_good_at": "2026-08-09T16:31:29Z",
    "last_good_value": "3",
    "last_good_json": null,
    "last_good_hash": "360caa42",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:06:01Z",
-   "last_good_at": "2026-08-09T16:06:01Z",
+   "last_observed_at": "2026-08-09T16:31:29Z",
+   "last_good_at": "2026-08-09T16:31:29Z",
    "last_good_value": "hero > events > proof",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":102,\"merged\":1},{\"position\":2,\"type\":\"events\",\"heading\":\"Top enterprise technology\",\"words\":234,\"merged\":1},{\"position\":3,\"type\":\"proof\",\"heading\":\"Smarter impact powered by IBM\",\"words\":146,\"merged\":2}]}",
    "last_good_hash": "e8bd09b4",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:06:01Z",
-   "last_good_at": "2026-08-09T16:06:01Z",
+   "last_observed_at": "2026-08-09T16:31:29Z",
+   "last_good_at": "2026-08-09T16:31:29Z",
    "last_good_value": 601,
    "last_good_json": null,
    "last_good_hash": "879bd5be",
@@ -158,7 +158,7 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:06:01Z",
+   "last_observed_at": "2026-08-09T16:31:29Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:06:01Z",
-   "last_good_at": "2026-08-09T16:06:01Z",
+   "last_observed_at": "2026-08-09T16:31:29Z",
+   "last_good_at": "2026-08-09T16:31:29Z",
    "last_good_value": "Apis IT, citadelle, riverty",
    "last_good_json": "{\"names\":[\"Apis IT\",\"citadelle\",\"riverty\"],\"count\":3,\"lead\":null}",
    "last_good_hash": "973a3695",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:06:01Z",
-   "last_good_at": "2026-08-09T16:06:01Z",
+   "last_observed_at": "2026-08-09T16:31:29Z",
+   "last_good_at": "2026-08-09T16:31:29Z",
    "last_good_value": "Navigate the AI tipping point",
    "last_good_json": null,
    "last_good_hash": "bff57aae",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:06:01Z",
-   "last_good_at": "2026-08-09T16:06:01Z",
+   "last_observed_at": "2026-08-09T16:31:29Z",
+   "last_good_at": "2026-08-09T16:31:29Z",
    "last_good_value": "For more than a century, IBM has been a global technology innovator, leading advances in AI, automation and hybrid cloud solutions that help businesses grow.",
    "last_good_json": null,
    "last_good_hash": "74533ca5",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:06:01Z",
-   "last_good_at": "2026-08-09T16:06:01Z",
+   "last_observed_at": "2026-08-09T16:31:29Z",
+   "last_good_at": "2026-08-09T16:31:29Z",
    "last_good_value": "IBM",
    "last_good_json": null,
    "last_good_hash": "e1b9164d",
@@ -248,8 +248,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:06:01Z",
-   "last_good_at": "2026-08-09T16:06:01Z",
+   "last_observed_at": "2026-08-09T16:31:29Z",
+   "last_good_at": "2026-08-09T16:31:29Z",
    "last_good_value": "$6 million on average ibm | 10x faster documentation and | 17% extend asset lifespan | 40% costs | 40% cut hr costs | 40% lower costs with | 47% reduce unplanned downtime | 75% faster ticket resolution | 80% fewer manual backup | 85% increased hr productivity | 85% productivity",
    "last_good_json": "{\"items\":[{\"claim\":\"$6 million on average ibm\",\"kind\":\"money\"},{\"claim\":\"10x faster documentation and\",\"kind\":\"multiplier\"},{\"claim\":\"17% extend asset lifespan\",\"kind\":\"percent-trailing\"},{\"claim\":\"40% costs\",\"kind\":\"percent-trailing\"},{\"claim\":\"40% cut hr costs\",\"kind\":\"percent-trailing\"},{\"claim\":\"40% lower costs with\",\"kind\":\"percent\"},{\"claim\":\"47% reduce unplanned downtime\",\"kind\":\"percent-trailing\"},{\"claim\":\"75% faster ticket resolution\",\"kind\":\"percent\"},{\"claim\":\"80% fewer manual backup\",\"kind\":\"percent\"},{\"claim\":\"85% increased hr productivity\",\"kind\":\"percent-trailing\"},{\"claim\":\"85% productivity\",\"kind\":\"percent-trailing\"}],\"count\":11}",
    "last_good_hash": "26be0353",
@@ -266,8 +266,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:06:01Z",
-   "last_good_at": "2026-08-09T16:06:01Z",
+   "last_observed_at": "2026-08-09T16:31:29Z",
+   "last_good_at": "2026-08-09T16:31:29Z",
    "last_good_value": "As AI-driven attacks grow faster and more costly, the Cost of a Data Breach Report 2026 shows how AI and automation are helping organizations reduce breach costs and improve resilience",
    "last_good_json": null,
    "last_good_hash": "bcbd6f58",
@@ -285,6 +285,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.ibm.com/us-en",
+   "fetched_at": "2026-08-09T16:31:29Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 205367,
+   "duration_ms": 309,
+   "signals_found": 12,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.ibm.com/us-en",

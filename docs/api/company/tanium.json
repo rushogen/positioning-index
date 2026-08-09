@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:04:26Z",
-   "last_good_at": "2026-08-09T16:04:26Z",
+   "last_observed_at": "2026-08-09T16:31:00Z",
+   "last_good_at": "2026-08-09T16:31:00Z",
    "last_good_value": "13",
    "last_good_json": null,
    "last_good_hash": "1eeb2efd",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:04:26Z",
-   "last_good_at": "2026-08-09T16:04:26Z",
+   "last_observed_at": "2026-08-09T16:31:00Z",
+   "last_good_at": "2026-08-09T16:31:00Z",
    "last_good_value": "proof",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":true,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "8cdc0989",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:04:26Z",
-   "last_good_at": "2026-08-09T16:04:26Z",
+   "last_observed_at": "2026-08-09T16:31:00Z",
+   "last_good_at": "2026-08-09T16:31:00Z",
    "last_good_value": "99",
    "last_good_json": null,
    "last_good_hash": "14fea6f7",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:04:26Z",
-   "last_good_at": "2026-08-09T16:04:26Z",
+   "last_observed_at": "2026-08-09T16:31:00Z",
+   "last_good_at": "2026-08-09T16:31:00Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:04:26Z",
-   "last_good_at": "2026-08-09T16:04:26Z",
+   "last_observed_at": "2026-08-09T16:31:00Z",
+   "last_good_at": "2026-08-09T16:31:00Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:04:26Z",
-   "last_good_at": "2026-08-09T16:04:26Z",
+   "last_observed_at": "2026-08-09T16:31:00Z",
+   "last_good_at": "2026-08-09T16:31:00Z",
    "last_good_value": "6",
    "last_good_json": null,
    "last_good_hash": "330ca589",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:04:26Z",
-   "last_good_at": "2026-08-09T16:04:26Z",
+   "last_observed_at": "2026-08-09T16:31:00Z",
+   "last_good_at": "2026-08-09T16:31:00Z",
    "last_good_value": "hero > security > proof > security > awards > cta",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":33,\"merged\":1},{\"position\":2,\"type\":\"security\",\"heading\":\"Your security stack is lying to you.\",\"words\":85,\"merged\":1},{\"position\":3,\"type\":\"proof\",\"heading\":\"What 15 seconds looks like\",\"words\":135,\"merged\":2},{\"position\":4,\"type\":\"security\",\"heading\":\"One platform. Everything your endpoints need.\",\"words\":151,\"merged\":1},{\"position\":5,\"type\":\"awards\",\"heading\":\"Tanium named a Leader in 2026 Gartner® Magic Quadrant ™\",\"words\":33,\"merged\":1},{\"position\":6,\"type\":\"cta\",\"heading\":\"The next zero day is already being written\",\"words\":20,\"merged\":1}]}",
    "last_good_hash": "328a2c23",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:04:26Z",
-   "last_good_at": "2026-08-09T16:04:26Z",
+   "last_observed_at": "2026-08-09T16:31:00Z",
+   "last_good_at": "2026-08-09T16:31:00Z",
    "last_good_value": 513,
    "last_good_json": null,
    "last_good_hash": "2e9ae600",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:04:26Z",
-   "last_good_at": "2026-08-09T16:04:26Z",
+   "last_observed_at": "2026-08-09T16:31:00Z",
+   "last_good_at": "2026-08-09T16:31:00Z",
    "last_good_value": "real-time platform for ai that delivers autonomous solutions",
    "last_good_json": null,
    "last_good_hash": "2441da86",
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:04:26Z",
-   "last_good_at": "2026-08-09T16:04:26Z",
+   "last_observed_at": "2026-08-09T16:31:00Z",
+   "last_good_at": "2026-08-09T16:31:00Z",
    "last_good_value": "614x165, Astrazeneca, Barclays, Best Buy, Cognizant, Colgate Palmolive, Con Edison, Forrester, SAP, Zurich",
    "last_good_json": "{\"names\":[\"614x165\",\"Astrazeneca\",\"Barclays\",\"Best Buy\",\"Cognizant\",\"Colgate Palmolive\",\"Con Edison\",\"Forrester\",\"SAP\",\"Zurich\"],\"count\":10,\"lead\":\"TRUSTED BY THE WORLD'S MOST SECURITY-CONSCIOUS ORGANIZATIONS <ul class=\\\"marquee-\"}",
    "last_good_hash": "27b702e0",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:04:26Z",
-   "last_good_at": "2026-08-09T16:04:26Z",
+   "last_observed_at": "2026-08-09T16:31:00Z",
+   "last_good_at": "2026-08-09T16:31:00Z",
    "last_good_value": "Meet Tanium Atlas",
    "last_good_json": null,
    "last_good_hash": "9503462d",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:04:26Z",
-   "last_good_at": "2026-08-09T16:04:26Z",
+   "last_observed_at": "2026-08-09T16:31:00Z",
+   "last_good_at": "2026-08-09T16:31:00Z",
    "last_good_value": "We protect security-conscious organizations as the real-time platform for AI that delivers autonomous solutions, empowers the AI ecosystem, and enables organizations to mitigate risk and maintain the highest levels of operational confidence.",
    "last_good_json": null,
    "last_good_hash": "5726ec7a",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:04:26Z",
-   "last_good_at": "2026-08-09T16:04:26Z",
+   "last_observed_at": "2026-08-09T16:31:00Z",
+   "last_good_at": "2026-08-09T16:31:00Z",
    "last_good_value": "Autonomous IT, endpoint intelligence and control | Tanium",
    "last_good_json": null,
    "last_good_hash": "2ec110ae",
@@ -248,8 +248,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:04:26Z",
-   "last_good_at": "2026-08-09T16:04:26Z",
+   "last_observed_at": "2026-08-09T16:31:00Z",
+   "last_good_at": "2026-08-09T16:31:00Z",
    "last_good_value": "20% more endpoints than | 340% increase yoy high | 80 % reduction in time | 97 % reduction in vulnerabilities | 98 % reduction in time",
    "last_good_json": "{\"items\":[{\"claim\":\"20% more endpoints than\",\"kind\":\"percent\"},{\"claim\":\"340% increase yoy high\",\"kind\":\"percent\"},{\"claim\":\"80 % reduction in time\",\"kind\":\"percent\"},{\"claim\":\"97 % reduction in vulnerabilities\",\"kind\":\"percent\"},{\"claim\":\"98 % reduction in time\",\"kind\":\"percent\"}],\"count\":5}",
    "last_good_hash": "60c23a59",
@@ -266,8 +266,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:04:26Z",
-   "last_good_at": "2026-08-09T16:04:26Z",
+   "last_observed_at": "2026-08-09T16:31:00Z",
+   "last_good_at": "2026-08-09T16:31:00Z",
    "last_good_value": "A new, autonomous operating system bringing together real-time intelligence, guidance, and action in one experience.",
    "last_good_json": null,
    "last_good_hash": "ba0c79b3",
@@ -285,6 +285,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.tanium.com/",
+   "fetched_at": "2026-08-09T16:31:00Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 321709,
+   "duration_ms": 329,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.tanium.com/",

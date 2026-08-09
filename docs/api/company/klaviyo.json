@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:07:06Z",
-   "last_good_at": "2026-08-09T16:07:06Z",
+   "last_observed_at": "2026-08-09T16:38:14Z",
+   "last_good_at": "2026-08-09T16:38:14Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:07:06Z",
-   "last_good_at": "2026-08-09T16:07:06Z",
+   "last_observed_at": "2026-08-09T16:38:14Z",
+   "last_good_at": "2026-08-09T16:38:14Z",
    "last_good_value": "logo_wall, proof, faq",
    "last_good_json": "{\"present\":{\"logo_wall\":true,\"proof\":true,\"testimonial\":false,\"faq\":true,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "da888e61",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:07:06Z",
-   "last_good_at": "2026-08-09T16:07:06Z",
+   "last_observed_at": "2026-08-09T16:38:14Z",
+   "last_good_at": "2026-08-09T16:38:14Z",
    "last_good_value": "127",
    "last_good_json": null,
    "last_good_hash": "76386967",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:07:06Z",
-   "last_good_at": "2026-08-09T16:07:06Z",
+   "last_observed_at": "2026-08-09T16:38:14Z",
+   "last_good_at": "2026-08-09T16:38:14Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:07:06Z",
-   "last_good_at": "2026-08-09T16:07:06Z",
+   "last_observed_at": "2026-08-09T16:38:14Z",
+   "last_good_at": "2026-08-09T16:38:14Z",
    "last_good_value": "74",
    "last_good_json": null,
    "last_good_hash": "8be5ca66",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:07:06Z",
-   "last_good_at": "2026-08-09T16:07:06Z",
+   "last_observed_at": "2026-08-09T16:38:14Z",
+   "last_good_at": "2026-08-09T16:38:14Z",
    "last_good_value": "8",
    "last_good_json": null,
    "last_good_hash": "3d0cb547",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:07:06Z",
-   "last_good_at": "2026-08-09T16:07:06Z",
+   "last_observed_at": "2026-08-09T16:38:14Z",
+   "last_good_at": "2026-08-09T16:38:14Z",
    "last_good_value": "hero > logos > proof > features > proof > logos > other > faq",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":4,\"merged\":1},{\"position\":2,\"type\":\"logos\",\"heading\":\"The AI marketing & service platform for ambitious consumer brands\",\"words\":33,\"merged\":1},{\"position\":3,\"type\":\"proof\",\"heading\":\"Agents built for unstoppable growth\",\"words\":102,\"merged\":1},{\"position\":4,\"type\":\"features\",\"heading\":\"Your data, intelligence, and AI agents working as one\",\"words\":302,\"merged\":1},{\"position\":5,\"type\":\"proof\",\"heading\":\"Fueling growth for brands that don’t settle\",\"words\":145,\"merged\":1},{\"position\":6,\"type\":\"logos\",\"heading\":\"350+ pre-built integrations\",\"words\":20,\"merged\":1},{\"position\":7,\"type\":\"other\",\"heading\":\"Join the 205,000+ customers growing with Klaviyo\",\"words\":9,\"merged\":1},{\"position\":8,\"type\":\"faq\",\"heading\":\"Frequently asked questions\",\"words\":480,\"merged\":1}]}",
    "last_good_hash": "5fbef868",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:07:06Z",
-   "last_good_at": "2026-08-09T16:07:06Z",
+   "last_observed_at": "2026-08-09T16:38:14Z",
+   "last_good_at": "2026-08-09T16:38:14Z",
    "last_good_value": 1095,
    "last_good_json": null,
    "last_good_hash": "93ae42f6",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:07:06Z",
-   "last_good_at": "2026-08-09T16:07:06Z",
+   "last_observed_at": "2026-08-09T16:38:14Z",
+   "last_good_at": "2026-08-09T16:38:14Z",
    "last_good_value": "autonomous b2c crm",
    "last_good_json": null,
    "last_good_hash": "3a9b182c",
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:07:06Z",
-   "last_good_at": "2026-08-09T16:07:06Z",
+   "last_observed_at": "2026-08-09T16:38:14Z",
+   "last_good_at": "2026-08-09T16:38:14Z",
    "last_good_value": "109x25, 132x25, 137x25, 158x25, 174x25, 1872x1872, 1875x1875, 37x35, 38x35, 47x27, 49ers, 59x25, 62x25, 74x25, 75x25, 76x25, 80x25, 93x25, Aerosoles, Claire, Corepower Yoga, Daily Harvest, Dollar Shave Club, Funko, Glossier, Mattel, Merit Beauty, Skullcandy, The Body Shop, True Food Kitchen, Unilever, Vans, Vuori",
    "last_good_json": "{\"names\":[\"109x25\",\"132x25\",\"137x25\",\"158x25\",\"174x25\",\"1872x1872\",\"1875x1875\",\"37x35\",\"38x35\",\"47x27\",\"49ers\",\"59x25\",\"62x25\",\"74x25\",\"75x25\",\"76x25\",\"80x25\",\"93x25\",\"Aerosoles\",\"Claire\",\"Corepower Yoga\",\"Daily Harvest\",\"Dollar Shave Club\",\"Funko\",\"Glossier\",\"Mattel\",\"Merit Beauty\",\"Skullcandy\",\"The Body Shop\",\"True Food Kitchen\",\"Unilever\",\"Vans\",\"Vuori\"],\"count\":33,\"lead\":\"backed by SLAs.\\\\\\\"\\\\n }\\\\n }\\\\n ]\\\\n }\\\\n ]\\\\n}\\\"],\\\"includeInHreflangTags\\\":[0,true],\\\"ind\"}",
    "last_good_hash": "e0f37649",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:07:06Z",
-   "last_good_at": "2026-08-09T16:07:06Z",
+   "last_observed_at": "2026-08-09T16:38:14Z",
+   "last_good_at": "2026-08-09T16:38:14Z",
    "last_good_value": "the AUTONOMOUS B2C CRM",
    "last_good_json": null,
    "last_good_hash": "f961b9b1",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:07:06Z",
-   "last_good_at": "2026-08-09T16:07:06Z",
+   "last_observed_at": "2026-08-09T16:38:14Z",
+   "last_good_at": "2026-08-09T16:38:14Z",
    "last_good_value": "Klaviyo unifies AI-powered email marketing and SMS to drive growth, retention, and measurable results. Build personalized, omnichannel experiences across WhatsApp, ecommerce, and more with K:AI Agents.",
    "last_good_json": null,
    "last_good_hash": "a5230921",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:07:06Z",
-   "last_good_at": "2026-08-09T16:07:06Z",
+   "last_observed_at": "2026-08-09T16:38:14Z",
+   "last_good_at": "2026-08-09T16:38:14Z",
    "last_good_value": "Klaviyo: AI Email Marketing & SMS | B2C CRM",
    "last_good_json": null,
    "last_good_hash": "53a71852",
@@ -248,8 +248,8 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T16:02:27Z",
-   "last_good_at": "2026-08-09T16:02:27Z",
+   "last_observed_at": "2026-08-09T16:34:38Z",
+   "last_good_at": "2026-08-09T16:34:38Z",
    "last_good_value": "USD 20",
    "last_good_json": "{\"amount\":20,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"tier\":\"Email Plan (entry)\"}",
    "last_good_hash": "2a454d3f",
@@ -266,8 +266,8 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T16:02:27Z",
-   "last_good_at": "2026-08-09T16:02:27Z",
+   "last_observed_at": "2026-08-09T16:34:38Z",
+   "last_good_at": "2026-08-09T16:34:38Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true}",
    "last_good_hash": "4e9f3590",
@@ -284,8 +284,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T16:02:27Z",
-   "last_good_at": "2026-08-09T16:02:27Z",
+   "last_observed_at": "2026-08-09T16:34:38Z",
+   "last_good_at": "2026-08-09T16:34:38Z",
    "last_good_value": "Klaviyo Pricing | Start Free with Email & SMS",
    "last_good_json": null,
    "last_good_hash": "253f352f",
@@ -302,7 +302,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T16:02:27Z",
+   "last_observed_at": "2026-08-09T16:34:38Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -320,8 +320,8 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T16:02:27Z",
-   "last_good_at": "2026-08-09T16:02:27Z",
+   "last_observed_at": "2026-08-09T16:34:38Z",
+   "last_good_at": "2026-08-09T16:34:38Z",
    "last_good_value": "Free Plan free | Email Plan (entry) USD 20 | Email + SMS Plan (entry) USD 35",
    "last_good_json": "{\"tiers\":[{\"name\":\"Free Plan\",\"amount\":0,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"json-ld\"},{\"name\":\"Email Plan (entry)\",\"amount\":20,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"json-ld\"},{\"name\":\"Email + SMS Plan (entry)\",\"amount\":35,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"json-ld\"}],\"count\":3}",
    "last_good_hash": "fd2ad4a2",
@@ -338,8 +338,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:07:06Z",
-   "last_good_at": "2026-08-09T16:07:06Z",
+   "last_observed_at": "2026-08-09T16:38:14Z",
+   "last_good_at": "2026-08-09T16:38:14Z",
    "last_good_value": "18% savings in tech | 20% less time to | 205,000 customers | 30% lower total cost | 350 apps",
    "last_good_json": "{\"items\":[{\"claim\":\"18% savings in tech\",\"kind\":\"percent\"},{\"claim\":\"20% less time to\",\"kind\":\"percent\"},{\"claim\":\"205,000 customers\",\"kind\":\"count\"},{\"claim\":\"30% lower total cost\",\"kind\":\"percent\"},{\"claim\":\"350 apps\",\"kind\":\"count\"}],\"count\":5}",
    "last_good_hash": "35883679",
@@ -356,8 +356,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:07:06Z",
-   "last_good_at": "2026-08-09T16:07:06Z",
+   "last_observed_at": "2026-08-09T16:38:14Z",
+   "last_good_at": "2026-08-09T16:38:14Z",
    "last_good_value": "Build and optimize your omnichannel campaigns and deliver personalized, 24/7 support—all from a prompt.",
    "last_good_json": null,
    "last_good_hash": "cd1470b9",
@@ -375,6 +375,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.klaviyo.com/",
+   "fetched_at": "2026-08-09T16:38:14Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 518333,
+   "duration_ms": 261,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.klaviyo.com/pricing",
+   "fetched_at": "2026-08-09T16:34:38Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 577913,
+   "duration_ms": 428,
+   "signals_found": 4,
+   "signals_expected": 5
+  },
   {
    "kind": "home",
    "url": "https://www.klaviyo.com/",
@@ -590,30 +614,6 @@
    "duration_ms": 175,
    "signals_found": 0,
    "signals_expected": 0
-  },
-  {
-   "kind": "pricing",
-   "url": "https://www.klaviyo.com/pricing",
-   "fetched_at": "2026-08-08T07:19:03Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": "extractor 1.0.0 -> 1.1.0; re-baselining",
-   "bytes": 577913,
-   "duration_ms": 235,
-   "signals_found": 4,
-   "signals_expected": 5
-  },
-  {
-   "kind": "home",
-   "url": "https://www.klaviyo.com/",
-   "fetched_at": "2026-08-08T07:17:28Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": "extractor 1.0.0 -> 1.1.0; re-baselining",
-   "bytes": 518333,
-   "duration_ms": 227,
-   "signals_found": 15,
-   "signals_expected": 15
   }
  ]
 }

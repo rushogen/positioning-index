@@ -15,8 +15,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:06:59Z",
-   "last_good_at": "2026-08-09T16:06:59Z",
+   "last_observed_at": "2026-08-09T16:33:29Z",
+   "last_good_at": "2026-08-09T16:33:29Z",
    "last_good_value": "14",
    "last_good_json": null,
    "last_good_hash": "17eb23f8",
@@ -33,8 +33,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:06:59Z",
-   "last_good_at": "2026-08-09T16:06:59Z",
+   "last_observed_at": "2026-08-09T16:33:29Z",
+   "last_good_at": "2026-08-09T16:33:29Z",
    "last_good_value": "logo_wall, testimonial, integrations",
    "last_good_json": "{\"present\":{\"logo_wall\":true,\"proof\":false,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":true,\"media\":false}}",
    "last_good_hash": "8f184749",
@@ -51,7 +51,7 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:06:59Z",
+   "last_observed_at": "2026-08-09T16:33:29Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -69,8 +69,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:06:59Z",
-   "last_good_at": "2026-08-09T16:06:59Z",
+   "last_observed_at": "2026-08-09T16:33:29Z",
+   "last_good_at": "2026-08-09T16:33:29Z",
    "last_good_value": "4",
    "last_good_json": null,
    "last_good_hash": "310ca263",
@@ -87,8 +87,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:06:59Z",
-   "last_good_at": "2026-08-09T16:06:59Z",
+   "last_observed_at": "2026-08-09T16:33:29Z",
+   "last_good_at": "2026-08-09T16:33:29Z",
    "last_good_value": "34",
    "last_good_json": null,
    "last_good_hash": "8bf057c2",
@@ -105,8 +105,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:06:59Z",
-   "last_good_at": "2026-08-09T16:06:59Z",
+   "last_observed_at": "2026-08-09T16:33:29Z",
+   "last_good_at": "2026-08-09T16:33:29Z",
    "last_good_value": "5",
    "last_good_json": null,
    "last_good_hash": "300ca0d0",
@@ -123,8 +123,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:06:59Z",
-   "last_good_at": "2026-08-09T16:06:59Z",
+   "last_observed_at": "2026-08-09T16:33:29Z",
+   "last_good_at": "2026-08-09T16:33:29Z",
    "last_good_value": "hero > integrations > testimonial > logos > cta",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":41,\"merged\":1},{\"position\":2,\"type\":\"integrations\",\"heading\":\"Where people, data, and action connect\",\"words\":301,\"merged\":1},{\"position\":3,\"type\":\"testimonial\",\"heading\":\"Modern companies move faster with Bob\",\"words\":312,\"merged\":1},{\"position\":4,\"type\":\"logos\",\"heading\":\"AI that turns data chaos into decisions\",\"words\":449,\"merged\":1},{\"position\":5,\"type\":\"cta\",\"heading\":\"AI insights for transformation\",\"words\":530,\"merged\":1}]}",
    "last_good_hash": "657549b5",
@@ -141,8 +141,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:06:59Z",
-   "last_good_at": "2026-08-09T16:06:59Z",
+   "last_observed_at": "2026-08-09T16:33:29Z",
+   "last_good_at": "2026-08-09T16:33:29Z",
    "last_good_value": 1633,
    "last_good_json": null,
    "last_good_hash": "bb7897ec",
@@ -159,8 +159,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:06:59Z",
-   "last_good_at": "2026-08-09T16:06:59Z",
+   "last_observed_at": "2026-08-09T16:33:29Z",
+   "last_good_at": "2026-08-09T16:33:29Z",
    "last_good_value": "all-in-one hr software for people",
    "last_good_json": null,
    "last_good_hash": "c1368568",
@@ -177,8 +177,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:06:59Z",
-   "last_good_at": "2026-08-09T16:06:59Z",
+   "last_observed_at": "2026-08-09T16:33:29Z",
+   "last_good_at": "2026-08-09T16:33:29Z",
    "last_good_value": "360Learning, ADP, CATO Networks, ChatGPT, Claude, Copilot, Cursor, DATEV, Fiverr, Gemini, Google Workspace, Greenhouse, IDH, Jira, Josh Bersin, Microsoft Entra ID, Microsoft Teams, NetSuite, Okta, Oneflow, PapayaGlobal, PayEm, Pleo, Rydoo, Slack, Smartcat Platform Inc, Teamtailor, Uala, VaynerMedia, Workato, Zendesk",
    "last_good_json": "{\"names\":[\"360Learning\",\"ADP\",\"CATO Networks\",\"ChatGPT\",\"Claude\",\"Copilot\",\"Cursor\",\"DATEV\",\"Fiverr\",\"Gemini\",\"Google Workspace\",\"Greenhouse\",\"IDH\",\"Jira\",\"Josh Bersin\",\"Microsoft Entra ID\",\"Microsoft Teams\",\"NetSuite\",\"Okta\",\"Oneflow\",\"PapayaGlobal\",\"PayEm\",\"Pleo\",\"Rydoo\",\"Slack\",\"Smartcat Platform Inc\",\"Teamtailor\",\"Uala\",\"VaynerMedia\",\"Workato\",\"Zendesk\"],\"count\":31,\"lead\":\"Trusted by users. Recognized by experts. <div class=\\\"wp-block-group is-vertical \"}",
    "last_good_hash": "8db05e82",
@@ -195,8 +195,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:06:59Z",
-   "last_good_at": "2026-08-09T16:06:59Z",
+   "last_observed_at": "2026-08-09T16:33:29Z",
+   "last_good_at": "2026-08-09T16:33:29Z",
    "last_good_value": "Connect HR, Payroll, and Finance in one people platform.",
    "last_good_json": null,
    "last_good_hash": "667920a0",
@@ -213,8 +213,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:06:59Z",
-   "last_good_at": "2026-08-09T16:06:59Z",
+   "last_observed_at": "2026-08-09T16:33:29Z",
+   "last_good_at": "2026-08-09T16:33:29Z",
    "last_good_value": "Streamline HR, Payroll & Finance with HiBob. Automate processes with Bob to cut the noise. Just Enough Thinking, just the right results.",
    "last_good_json": null,
    "last_good_hash": "cf68ad5b",
@@ -231,8 +231,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:06:59Z",
-   "last_good_at": "2026-08-09T16:06:59Z",
+   "last_observed_at": "2026-08-09T16:33:29Z",
+   "last_good_at": "2026-08-09T16:33:29Z",
    "last_good_value": "All-in-one HR software for people, payroll & finance | HiBob",
    "last_good_json": null,
    "last_good_hash": "b9ebb6d7",
@@ -249,7 +249,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T16:02:11Z",
+   "last_observed_at": "2026-08-09T16:37:37Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -267,7 +267,7 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T16:02:11Z",
+   "last_observed_at": "2026-08-09T16:37:37Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -285,8 +285,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T16:02:11Z",
-   "last_good_at": "2026-08-09T16:02:11Z",
+   "last_observed_at": "2026-08-09T16:37:37Z",
+   "last_good_at": "2026-08-09T16:37:37Z",
    "last_good_value": "flow test | HiBob",
    "last_good_json": null,
    "last_good_hash": "c03a7d05",
@@ -303,7 +303,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T16:02:11Z",
+   "last_observed_at": "2026-08-09T16:37:37Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -321,7 +321,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T16:02:11Z",
+   "last_observed_at": "2026-08-09T16:37:37Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -339,8 +339,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:06:59Z",
-   "last_good_at": "2026-08-09T16:06:59Z",
+   "last_observed_at": "2026-08-09T16:33:29Z",
+   "last_good_at": "2026-08-09T16:33:29Z",
    "last_good_value": "$1 spent | $2.55 for every | $30k on onboarding alone | $720k overhead | 1,230,200 people | 5,000 companies",
    "last_good_json": "{\"items\":[{\"claim\":\"$1 spent\",\"kind\":\"money\"},{\"claim\":\"$2.55 for every\",\"kind\":\"money\"},{\"claim\":\"$30k on onboarding alone\",\"kind\":\"money\"},{\"claim\":\"$720k overhead\",\"kind\":\"money\"},{\"claim\":\"1,230,200 people\",\"kind\":\"count\"},{\"claim\":\"5,000 companies\",\"kind\":\"count\"}],\"count\":6}",
    "last_good_hash": "59f34ade",
@@ -357,8 +357,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:06:59Z",
-   "last_good_at": "2026-08-09T16:06:59Z",
+   "last_observed_at": "2026-08-09T16:33:29Z",
+   "last_good_at": "2026-08-09T16:33:29Z",
    "last_good_value": "Join 5,000+ companies and 1,230,200 people using HiBob right now.",
    "last_good_json": null,
    "last_good_hash": "9379c64a",
@@ -376,6 +376,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://www.hibob.com/hi/pricing-flow-test/",
+   "fetched_at": "2026-08-09T16:37:37Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 846892,
+   "duration_ms": 1828,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://www.hibob.com/",
+   "fetched_at": "2026-08-09T16:33:29Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 1328964,
+   "duration_ms": 1198,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.hibob.com/",

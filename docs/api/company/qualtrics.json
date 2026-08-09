@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:06:06Z",
-   "last_good_at": "2026-08-09T16:06:06Z",
+   "last_observed_at": "2026-08-09T16:33:19Z",
+   "last_good_at": "2026-08-09T16:33:19Z",
    "last_good_value": "14",
    "last_good_json": null,
    "last_good_hash": "17eb23f8",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:06:06Z",
-   "last_good_at": "2026-08-09T16:06:06Z",
+   "last_observed_at": "2026-08-09T16:33:19Z",
+   "last_good_at": "2026-08-09T16:33:19Z",
    "last_good_value": "testimonial",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "e6a3d068",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:06:06Z",
-   "last_good_at": "2026-08-09T16:06:06Z",
+   "last_observed_at": "2026-08-09T16:33:19Z",
+   "last_good_at": "2026-08-09T16:33:19Z",
    "last_good_value": "3",
    "last_good_json": null,
    "last_good_hash": "360caa42",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:06:06Z",
-   "last_good_at": "2026-08-09T16:06:06Z",
+   "last_observed_at": "2026-08-09T16:33:19Z",
+   "last_good_at": "2026-08-09T16:33:19Z",
    "last_good_value": "60",
    "last_good_json": null,
    "last_good_hash": "15e8e23b",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:06:06Z",
-   "last_good_at": "2026-08-09T16:06:06Z",
+   "last_observed_at": "2026-08-09T16:33:19Z",
+   "last_good_at": "2026-08-09T16:33:19Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:06:06Z",
-   "last_good_at": "2026-08-09T16:06:06Z",
+   "last_observed_at": "2026-08-09T16:33:19Z",
+   "last_good_at": "2026-08-09T16:33:19Z",
    "last_good_value": "8",
    "last_good_json": null,
    "last_good_hash": "3d0cb547",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:06:06Z",
-   "last_good_at": "2026-08-09T16:06:06Z",
+   "last_observed_at": "2026-08-09T16:33:19Z",
+   "last_good_at": "2026-08-09T16:33:19Z",
    "last_good_value": "hero > features > resources > testimonial > cta > features > events > cta",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":52,\"merged\":1},{\"position\":2,\"type\":\"features\",\"heading\":\"Make experience your biggest advantage\",\"words\":22,\"merged\":3},{\"position\":3,\"type\":\"resources\",\"heading\":\"Drive action everywhere it matters\",\"words\":91,\"merged\":1},{\"position\":4,\"type\":\"testimonial\",\"heading\":\"See how we’ve helped leading organizations\",\"words\":200,\"merged\":1},{\"position\":5,\"type\":\"cta\",\"heading\":\"Trust is not a feature. It’s our track record.\",\"words\":38,\"merged\":1},{\"position\":6,\"type\":\"features\",\"heading\":\"The power of connected intelligence\",\"words\":24,\"merged\":4},{\"position\":7,\"type\":\"events\",\"heading\":\"What your patient experience data Is telling you\",\"words\":46,\"merged\":1},{\"position\":8,\"type\":\"cta\",\"heading\":\"Ready to build unbreakable loyalty?\",\"words\":471,\"merged\":1}]}",
    "last_good_hash": "1ae968a0",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:06:06Z",
-   "last_good_at": "2026-08-09T16:06:06Z",
+   "last_observed_at": "2026-08-09T16:33:19Z",
+   "last_good_at": "2026-08-09T16:33:19Z",
    "last_good_value": 1448,
    "last_good_json": null,
    "last_good_hash": "6618da14",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:06:06Z",
-   "last_good_at": "2026-08-09T16:06:06Z",
+   "last_observed_at": "2026-08-09T16:33:19Z",
+   "last_good_at": "2026-08-09T16:33:19Z",
    "last_good_value": "leading experience management software",
    "last_good_json": null,
    "last_good_hash": "e82e50a7",
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:06:06Z",
-   "last_good_at": "2026-08-09T16:06:06Z",
+   "last_observed_at": "2026-08-09T16:33:19Z",
+   "last_good_at": "2026-08-09T16:33:19Z",
    "last_good_value": "Indiana University Online, Pause Video, Security",
    "last_good_json": "{\"names\":[\"Indiana University Online\",\"Pause Video\",\"Security\"],\"count\":3,\"lead\":\"Trusted by leading brands <div class=\\\"logo-controls flex px-3 pr-5 lg:px-6 lg:pr\"}",
    "last_good_hash": "8193715d",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:06:06Z",
-   "last_good_at": "2026-08-09T16:06:06Z",
+   "last_observed_at": "2026-08-09T16:33:19Z",
+   "last_good_at": "2026-08-09T16:33:19Z",
    "last_good_value": "The leader in experience management",
    "last_good_json": null,
    "last_good_hash": "9a63f72b",
@@ -212,7 +212,7 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:06:06Z",
+   "last_observed_at": "2026-08-09T16:33:19Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:06:06Z",
-   "last_good_at": "2026-08-09T16:06:06Z",
+   "last_observed_at": "2026-08-09T16:33:19Z",
+   "last_good_at": "2026-08-09T16:33:19Z",
    "last_good_value": "Qualtrics XM: The Leading Experience Management Software - Qualtrics",
    "last_good_json": null,
    "last_good_hash": "df4230e4",
@@ -248,8 +248,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:06:06Z",
-   "last_good_at": "2026-08-09T16:06:06Z",
+   "last_observed_at": "2026-08-09T16:33:19Z",
+   "last_good_at": "2026-08-09T16:33:19Z",
    "last_good_value": "17% increase in shack | 30% fewer support tickets | 30% increase in likelihood | 50% lower costs vs | 98% faster time to",
    "last_good_json": "{\"items\":[{\"claim\":\"17% increase in shack\",\"kind\":\"percent\"},{\"claim\":\"30% fewer support tickets\",\"kind\":\"percent\"},{\"claim\":\"30% increase in likelihood\",\"kind\":\"percent\"},{\"claim\":\"50% lower costs vs\",\"kind\":\"percent\"},{\"claim\":\"98% faster time to\",\"kind\":\"percent\"}],\"count\":5}",
    "last_good_hash": "1f7a778a",
@@ -266,8 +266,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:06:06Z",
-   "last_good_at": "2026-08-09T16:06:06Z",
+   "last_observed_at": "2026-08-09T16:33:19Z",
+   "last_good_at": "2026-08-09T16:33:19Z",
    "last_good_value": "Qualtrics makes sense of every signal across your experiences, so you can act when it counts. Stay ahead of your market, earn loyalty in the moments that matter most, and help your people do their best work.",
    "last_good_json": null,
    "last_good_hash": "a3cd9e77",
@@ -285,6 +285,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.qualtrics.com/",
+   "fetched_at": "2026-08-09T16:33:19Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 553504,
+   "duration_ms": 307,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.qualtrics.com/",

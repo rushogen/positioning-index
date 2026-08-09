@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:03:59Z",
-   "last_good_at": "2026-08-09T16:03:59Z",
+   "last_observed_at": "2026-08-09T16:32:41Z",
+   "last_good_at": "2026-08-09T16:32:41Z",
    "last_good_value": "2",
    "last_good_json": null,
    "last_good_hash": "370cabd5",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:03:59Z",
-   "last_good_at": "2026-08-09T16:03:59Z",
+   "last_observed_at": "2026-08-09T16:32:41Z",
+   "last_good_at": "2026-08-09T16:32:41Z",
    "last_good_value": "pricing_block, integrations, media",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":true,\"integrations\":true,\"media\":true}}",
    "last_good_hash": "32e10974",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:03:59Z",
-   "last_good_at": "2026-08-09T16:03:59Z",
+   "last_observed_at": "2026-08-09T16:32:41Z",
+   "last_good_at": "2026-08-09T16:32:41Z",
    "last_good_value": "48",
    "last_good_json": null,
    "last_good_hash": "91e39541",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:03:59Z",
-   "last_good_at": "2026-08-09T16:03:59Z",
+   "last_observed_at": "2026-08-09T16:32:41Z",
+   "last_good_at": "2026-08-09T16:32:41Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:03:59Z",
-   "last_good_at": "2026-08-09T16:03:59Z",
+   "last_observed_at": "2026-08-09T16:32:41Z",
+   "last_good_at": "2026-08-09T16:32:41Z",
    "last_good_value": "62",
    "last_good_json": null,
    "last_good_hash": "17e8e561",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:03:59Z",
-   "last_good_at": "2026-08-09T16:03:59Z",
+   "last_observed_at": "2026-08-09T16:32:41Z",
+   "last_good_at": "2026-08-09T16:32:41Z",
    "last_good_value": "8",
    "last_good_json": null,
    "last_good_hash": "3d0cb547",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:03:59Z",
-   "last_good_at": "2026-08-09T16:03:59Z",
+   "last_observed_at": "2026-08-09T16:32:41Z",
+   "last_good_at": "2026-08-09T16:32:41Z",
    "last_good_value": "hero > product > integrations > features > media > resources > pricing > features",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":104,\"merged\":1},{\"position\":2,\"type\":\"product\",\"heading\":\"Unified Data & Semantics\",\"words\":35,\"merged\":2},{\"position\":3,\"type\":\"integrations\",\"heading\":\"Designed for Agents\",\"words\":41,\"merged\":1},{\"position\":4,\"type\":\"features\",\"heading\":\"Autonomous Management\",\"words\":36,\"merged\":2},{\"position\":5,\"type\":\"media\",\"heading\":\"The Agentic Lakehouse\",\"words\":28,\"merged\":1},{\"position\":6,\"type\":\"resources\",\"heading\":\"Fueling AI Innovation Across Industries\",\"words\":238,\"merged\":1},{\"position\":7,\"type\":\"pricing\",\"heading\":\"Try Dremio Cloud for Free\",\"words\":14,\"merged\":1},{\"position\":8,\"type\":\"features\",\"heading\":\"Frequently Asked Questions\",\"words\":385,\"merged\":1}]}",
    "last_good_hash": "0a1b30dc",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:03:59Z",
-   "last_good_at": "2026-08-09T16:03:59Z",
+   "last_observed_at": "2026-08-09T16:32:41Z",
+   "last_good_at": "2026-08-09T16:32:41Z",
    "last_good_value": 953,
    "last_good_json": null,
    "last_good_hash": "48c32e60",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:03:59Z",
-   "last_good_at": "2026-08-09T16:03:59Z",
+   "last_observed_at": "2026-08-09T16:32:41Z",
+   "last_good_at": "2026-08-09T16:32:41Z",
    "last_good_value": "agentic lakehouse for ai and analytics",
    "last_good_json": null,
    "last_good_hash": "f6adae83",
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:03:59Z",
-   "last_good_at": "2026-08-09T16:03:59Z",
+   "last_observed_at": "2026-08-09T16:32:41Z",
+   "last_good_at": "2026-08-09T16:32:41Z",
    "last_good_value": "capital group, enel, eon, farmers, garmin, maersk, moodys, RWE analytics case study",
    "last_good_json": "{\"names\":[\"capital group\",\"enel\",\"eon\",\"farmers\",\"garmin\",\"maersk\",\"moodys\",\"RWE analytics case study\"],\"count\":8,\"lead\":\"Trusted by thousands of companies around the world. <div clas\"}",
    "last_good_hash": "a7ceee9d",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:03:59Z",
-   "last_good_at": "2026-08-09T16:03:59Z",
+   "last_observed_at": "2026-08-09T16:32:41Z",
+   "last_good_at": "2026-08-09T16:32:41Z",
    "last_good_value": "The Agentic Lakehouse",
    "last_good_json": null,
    "last_good_hash": "e9a211b0",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:03:59Z",
-   "last_good_at": "2026-08-09T16:03:59Z",
+   "last_observed_at": "2026-08-09T16:32:41Z",
+   "last_good_at": "2026-08-09T16:32:41Z",
    "last_good_value": "Open, high-performance data lakehouse platform built to accelerate AI and analytical workloads across all enterprise data.",
    "last_good_json": null,
    "last_good_hash": "8f86905e",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:03:59Z",
-   "last_good_at": "2026-08-09T16:03:59Z",
+   "last_observed_at": "2026-08-09T16:32:41Z",
+   "last_good_at": "2026-08-09T16:32:41Z",
    "last_good_value": "Dremio: The Agentic Lakehouse for AI and Analytics | Dremio",
    "last_good_json": null,
    "last_good_hash": "0d1efdac",
@@ -248,8 +248,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:03:59Z",
-   "last_good_at": "2026-08-09T16:03:59Z",
+   "last_observed_at": "2026-08-09T16:32:41Z",
+   "last_good_at": "2026-08-09T16:32:41Z",
    "last_good_value": "$400 credits | 1,000 users | 1,300 users | 1.6m queries | 10x faster query performance | 400,000 queries | 60 hours | 84 teams | 8b records | 95% reduction in time-to-insight | 99.97% uptime supporting mission-critical",
    "last_good_json": "{\"items\":[{\"claim\":\"$400 credits\",\"kind\":\"money\"},{\"claim\":\"1,000 users\",\"kind\":\"count\"},{\"claim\":\"1,300 users\",\"kind\":\"count\"},{\"claim\":\"1.6m queries\",\"kind\":\"count\"},{\"claim\":\"10x faster query performance\",\"kind\":\"multiplier\"},{\"claim\":\"400,000 queries\",\"kind\":\"count\"},{\"claim\":\"60 hours\",\"kind\":\"count\"},{\"claim\":\"84 teams\",\"kind\":\"count\"},{\"claim\":\"8b records\",\"kind\":\"count\"},{\"claim\":\"95% reduction in time-to-insight\",\"kind\":\"percent\"},{\"claim\":\"99.97% uptime supporting mission-critical\",\"kind\":\"percent\"}],\"count\":11}",
    "last_good_hash": "1a4e8e66",
@@ -266,8 +266,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:03:59Z",
-   "last_good_at": "2026-08-09T16:03:59Z",
+   "last_observed_at": "2026-08-09T16:32:41Z",
+   "last_good_at": "2026-08-09T16:32:41Z",
    "last_good_value": "The only lakehouse built for agents, managed by agents",
    "last_good_json": null,
    "last_good_hash": "f0bd6e26",
@@ -285,6 +285,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.dremio.com/",
+   "fetched_at": "2026-08-09T16:32:41Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 718454,
+   "duration_ms": 351,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.dremio.com/",

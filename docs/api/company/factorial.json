@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:05:33Z",
-   "last_good_at": "2026-08-09T16:05:33Z",
+   "last_observed_at": "2026-08-09T16:30:50Z",
+   "last_good_at": "2026-08-09T16:30:50Z",
    "last_good_value": "5",
    "last_good_json": null,
    "last_good_hash": "300ca0d0",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:05:33Z",
-   "last_good_at": "2026-08-09T16:05:33Z",
+   "last_observed_at": "2026-08-09T16:30:50Z",
+   "last_good_at": "2026-08-09T16:30:50Z",
    "last_good_value": "proof, testimonial, faq, integrations",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":true,\"testimonial\":true,\"faq\":true,\"comparison\":false,\"pricing_block\":false,\"integrations\":true,\"media\":false}}",
    "last_good_hash": "17ec14bb",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:05:33Z",
-   "last_good_at": "2026-08-09T16:05:33Z",
+   "last_observed_at": "2026-08-09T16:30:50Z",
+   "last_good_at": "2026-08-09T16:30:50Z",
    "last_good_value": "39",
    "last_good_json": null,
    "last_good_hash": "90f05fa1",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:05:33Z",
-   "last_good_at": "2026-08-09T16:05:33Z",
+   "last_observed_at": "2026-08-09T16:30:50Z",
+   "last_good_at": "2026-08-09T16:30:50Z",
    "last_good_value": "4",
    "last_good_json": null,
    "last_good_hash": "310ca263",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:05:33Z",
-   "last_good_at": "2026-08-09T16:05:33Z",
+   "last_observed_at": "2026-08-09T16:30:50Z",
+   "last_good_at": "2026-08-09T16:30:50Z",
    "last_good_value": "22",
    "last_good_json": null,
    "last_good_hash": "8ff29ca5",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:05:33Z",
-   "last_good_at": "2026-08-09T16:05:33Z",
+   "last_observed_at": "2026-08-09T16:30:50Z",
+   "last_good_at": "2026-08-09T16:30:50Z",
    "last_good_value": "10",
    "last_good_json": null,
    "last_good_hash": "1beb2a44",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:05:33Z",
-   "last_good_at": "2026-08-09T16:05:33Z",
+   "last_observed_at": "2026-08-09T16:30:50Z",
+   "last_good_at": "2026-08-09T16:30:50Z",
    "last_good_value": "hero > other > features > faq > proof > resources > testimonial > integrations > cta > faq",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":85,\"merged\":1},{\"position\":2,\"type\":\"other\",\"heading\":\"Meet One, your trusty AI agent\",\"words\":18,\"merged\":1},{\"position\":3,\"type\":\"features\",\"heading\":\"How can I help you today?\",\"words\":38,\"merged\":3},{\"position\":4,\"type\":\"faq\",\"heading\":\"Why Factorial? Well, why not?\",\"words\":98,\"merged\":1},{\"position\":5,\"type\":\"proof\",\"heading\":\"The proof that we do it right\",\"words\":55,\"merged\":1},{\"position\":6,\"type\":\"resources\",\"heading\":\"Our product launches, fresh every week\",\"words\":121,\"merged\":1},{\"position\":7,\"type\":\"testimonial\",\"heading\":\"We believe in what we do – because 16,000 companies do, too\",\"words\":150,\"merged\":1},{\"position\":8,\"type\":\"integrations\",\"heading\":\"Sync with hundreds of apps. Unleash limitless possibilities.\",\"words\":37,\"merged\":1},{\"position\":9,\"type\":\"cta\",\"heading\":\"Revolutionize your team's experience and drive your business forward\",\"words\":40,\"merged\":1},{\"position\":10,\"type\":\"faq\",\"heading\":\"Still have questions about our BMS?\",\"words\":86,\"merged\":1}]}",
    "last_good_hash": "63a52a5d",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:05:33Z",
-   "last_good_at": "2026-08-09T16:05:33Z",
+   "last_observed_at": "2026-08-09T16:30:50Z",
+   "last_good_at": "2026-08-09T16:30:50Z",
    "last_good_value": 872,
    "last_good_json": null,
    "last_good_hash": "358de746",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:05:33Z",
-   "last_good_at": "2026-08-09T16:05:33Z",
+   "last_observed_at": "2026-08-09T16:30:50Z",
+   "last_good_at": "2026-08-09T16:30:50Z",
    "last_good_value": "business software",
    "last_good_json": null,
    "last_good_hash": "5f1c1414",
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:05:33Z",
-   "last_good_at": "2026-08-09T16:05:33Z",
+   "last_observed_at": "2026-08-09T16:30:50Z",
+   "last_good_at": "2026-08-09T16:30:50Z",
    "last_good_value": "Factorial One, Managers, Mestiça, MiiN",
    "last_good_json": "{\"names\":[\"Factorial One\",\"Managers\",\"Mestiça\",\"MiiN\"],\"count\":4,\"lead\":\"companies that offer an HR solution to their customers and want to grow their bu\"}",
    "last_good_hash": "e359e765",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:05:33Z",
-   "last_good_at": "2026-08-09T16:05:33Z",
+   "last_observed_at": "2026-08-09T16:30:50Z",
+   "last_good_at": "2026-08-09T16:30:50Z",
    "last_good_value": "The business software to manage your whole team",
    "last_good_json": null,
    "last_good_hash": "cdf37ef6",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:05:33Z",
-   "last_good_at": "2026-08-09T16:05:33Z",
+   "last_observed_at": "2026-08-09T16:30:50Z",
+   "last_good_at": "2026-08-09T16:30:50Z",
    "last_good_value": "Factorial is the all-in-one business software that connects everything you need to manage your team and grow your business.",
    "last_good_json": null,
    "last_good_hash": "25fa0e6f",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:05:33Z",
-   "last_good_at": "2026-08-09T16:05:33Z",
+   "last_observed_at": "2026-08-09T16:30:50Z",
+   "last_good_at": "2026-08-09T16:30:50Z",
    "last_good_value": "Factorial | All In One Business Management Software",
    "last_good_json": null,
    "last_good_hash": "036f98c8",
@@ -248,7 +248,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T16:09:38Z",
+   "last_observed_at": "2026-08-09T16:35:17Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -266,7 +266,7 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T16:09:38Z",
+   "last_observed_at": "2026-08-09T16:35:17Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -284,8 +284,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T16:09:38Z",
-   "last_good_at": "2026-08-09T16:09:38Z",
+   "last_observed_at": "2026-08-09T16:35:17Z",
+   "last_good_at": "2026-08-09T16:35:17Z",
    "last_good_value": "Factorial starts at $8 per month, per user",
    "last_good_json": null,
    "last_good_hash": "3d32ec0d",
@@ -302,7 +302,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T16:09:38Z",
+   "last_observed_at": "2026-08-09T16:35:17Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -320,7 +320,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T16:09:38Z",
+   "last_observed_at": "2026-08-09T16:35:17Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -338,8 +338,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:05:33Z",
-   "last_good_at": "2026-08-09T16:05:33Z",
+   "last_observed_at": "2026-08-09T16:30:50Z",
+   "last_good_at": "2026-08-09T16:30:50Z",
    "last_good_value": "16,000 companies | 30,000 users | 50 employees | 500 employees",
    "last_good_json": "{\"items\":[{\"claim\":\"16,000 companies\",\"kind\":\"count\"},{\"claim\":\"30,000 users\",\"kind\":\"count\"},{\"claim\":\"50 employees\",\"kind\":\"count\"},{\"claim\":\"500 employees\",\"kind\":\"count\"}],\"count\":4}",
    "last_good_hash": "0373d36a",
@@ -356,8 +356,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:05:33Z",
-   "last_good_at": "2026-08-09T16:05:33Z",
+   "last_observed_at": "2026-08-09T16:30:50Z",
+   "last_good_at": "2026-08-09T16:30:50Z",
    "last_good_value": "Time, talent, finance, and payroll processes unified and automated. AI handles the paperwork, you handle the people.",
    "last_good_json": null,
    "last_good_hash": "806d375c",
@@ -375,6 +375,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://factorialhr.com/pricing-plans",
+   "fetched_at": "2026-08-09T16:35:17Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 507555,
+   "duration_ms": 347,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://factorialhr.com/",
+   "fetched_at": "2026-08-09T16:30:50Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 577268,
+   "duration_ms": 175,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
   {
    "kind": "pricing",
    "url": "https://factorialhr.com/pricing-plans",
@@ -588,30 +612,6 @@
    "reason": "origin returned 304 Not Modified",
    "bytes": 0,
    "duration_ms": 239,
-   "signals_found": 0,
-   "signals_expected": 0
-  },
-  {
-   "kind": "pricing",
-   "url": "https://factorialhr.com/pricing-plans",
-   "fetched_at": "2026-08-08T07:19:02Z",
-   "http_status": 304,
-   "status": "unchanged",
-   "reason": "origin returned 304 Not Modified",
-   "bytes": 0,
-   "duration_ms": 217,
-   "signals_found": 0,
-   "signals_expected": 0
-  },
-  {
-   "kind": "home",
-   "url": "https://factorialhr.com/",
-   "fetched_at": "2026-08-08T07:17:26Z",
-   "http_status": 304,
-   "status": "unchanged",
-   "reason": "origin returned 304 Not Modified",
-   "bytes": 0,
-   "duration_ms": 56,
    "signals_found": 0,
    "signals_expected": 0
   }

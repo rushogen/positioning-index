@@ -719,7 +719,7 @@
    "category": "Docs / apps",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "cognigy",
@@ -1235,7 +1235,7 @@
    "category": "Expense management",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "factorial",
@@ -1703,7 +1703,7 @@
    "category": "CRM & marketing",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "huggingface",
@@ -4334,5 +4334,5 @@
    "free_tier": null
   }
  ],
- "generated_at": "2026-08-09T16:10:17Z"
+ "generated_at": "2026-08-09T16:38:19Z"
 }

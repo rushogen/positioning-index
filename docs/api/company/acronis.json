@@ -13,8 +13,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:06:13Z",
-   "last_good_at": "2026-08-09T16:06:13Z",
+   "last_observed_at": "2026-08-09T16:30:48Z",
+   "last_good_at": "2026-08-09T16:30:48Z",
    "last_good_value": "3",
    "last_good_json": null,
    "last_good_hash": "360caa42",
@@ -31,8 +31,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:06:13Z",
-   "last_good_at": "2026-08-09T16:06:13Z",
+   "last_observed_at": "2026-08-09T16:30:48Z",
+   "last_good_at": "2026-08-09T16:30:48Z",
    "last_good_value": "testimonial",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "e6a3d068",
@@ -49,8 +49,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:06:13Z",
-   "last_good_at": "2026-08-09T16:06:13Z",
+   "last_observed_at": "2026-08-09T16:30:48Z",
+   "last_good_at": "2026-08-09T16:30:48Z",
    "last_good_value": "91",
    "last_good_json": null,
    "last_good_hash": "0cfe9a5f",
@@ -67,8 +67,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:06:13Z",
-   "last_good_at": "2026-08-09T16:06:13Z",
+   "last_observed_at": "2026-08-09T16:30:48Z",
+   "last_good_at": "2026-08-09T16:30:48Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -85,7 +85,7 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:06:13Z",
+   "last_observed_at": "2026-08-09T16:30:48Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -103,8 +103,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:06:13Z",
-   "last_good_at": "2026-08-09T16:06:13Z",
+   "last_observed_at": "2026-08-09T16:30:48Z",
+   "last_good_at": "2026-08-09T16:30:48Z",
    "last_good_value": "7",
    "last_good_json": null,
    "last_good_hash": "320ca3f6",
@@ -121,8 +121,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:06:13Z",
-   "last_good_at": "2026-08-09T16:06:13Z",
+   "last_observed_at": "2026-08-09T16:30:48Z",
+   "last_good_at": "2026-08-09T16:30:48Z",
    "last_good_value": "hero > awards > product > features > product > testimonial > other",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":808,\"merged\":1},{\"position\":2,\"type\":\"awards\",\"heading\":\"Recognized by\",\"words\":43,\"merged\":1},{\"position\":3,\"type\":\"product\",\"heading\":\"Protect, manage and automate IT on AI-native cyber platform\",\"words\":70,\"merged\":1},{\"position\":4,\"type\":\"features\",\"heading\":\"The journey to Autonomous IT\",\"words\":218,\"merged\":1},{\"position\":5,\"type\":\"product\",\"heading\":\"AI-Native Platform\",\"words\":77,\"merged\":2},{\"position\":6,\"type\":\"testimonial\",\"heading\":\"Success on the journey with Acronis\",\"words\":178,\"merged\":1},{\"position\":7,\"type\":\"other\",\"heading\":\"Start your journey to the autonomous IT today\",\"words\":19,\"merged\":1}]}",
    "last_good_hash": "38efaf4f",
@@ -139,8 +139,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:06:13Z",
-   "last_good_at": "2026-08-09T16:06:13Z",
+   "last_observed_at": "2026-08-09T16:30:48Z",
+   "last_good_at": "2026-08-09T16:30:48Z",
    "last_good_value": 1443,
    "last_good_json": null,
    "last_good_hash": "6118d235",
@@ -157,8 +157,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:06:13Z",
-   "last_good_at": "2026-08-09T16:06:13Z",
+   "last_observed_at": "2026-08-09T16:30:48Z",
+   "last_good_at": "2026-08-09T16:30:48Z",
    "last_good_value": "ai-native cyber platform",
    "last_good_json": null,
    "last_good_hash": "682a3ae3",
@@ -175,7 +175,7 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:06:13Z",
+   "last_observed_at": "2026-08-09T16:30:48Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -193,8 +193,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:06:13Z",
-   "last_good_at": "2026-08-09T16:06:13Z",
+   "last_observed_at": "2026-08-09T16:30:48Z",
+   "last_good_at": "2026-08-09T16:30:48Z",
    "last_good_value": "AI-native cyber platform",
    "last_good_json": null,
    "last_good_hash": "50a52023",
@@ -211,8 +211,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:06:13Z",
-   "last_good_at": "2026-08-09T16:06:13Z",
+   "last_observed_at": "2026-08-09T16:30:48Z",
+   "last_good_at": "2026-08-09T16:30:48Z",
    "last_good_value": "We deliver deeply integrated AI-powered features across our backup, cybersecurity, endpoint management and automation solutions to protect and manage workloads for MSPs and businesses. Protect your business and simplify IT operations today.",
    "last_good_json": null,
    "last_good_hash": "9d645539",
@@ -229,8 +229,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:06:13Z",
-   "last_good_at": "2026-08-09T16:06:13Z",
+   "last_observed_at": "2026-08-09T16:30:48Z",
+   "last_good_at": "2026-08-09T16:30:48Z",
    "last_good_value": "AI-Powered Cybersecurity, Data Protection & IT Automation | Acronis",
    "last_good_json": null,
    "last_good_hash": "9230ab3d",
@@ -247,8 +247,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:06:13Z",
-   "last_good_at": "2026-08-09T16:06:13Z",
+   "last_observed_at": "2026-08-09T16:30:48Z",
+   "last_good_at": "2026-08-09T16:30:48Z",
    "last_good_value": "$999 annual value per | 70% reduced service delivery time | 70% service delivery time | 750,000 companies",
    "last_good_json": "{\"items\":[{\"claim\":\"$999 annual value per\",\"kind\":\"money\"},{\"claim\":\"70% reduced service delivery time\",\"kind\":\"percent-trailing\"},{\"claim\":\"70% service delivery time\",\"kind\":\"percent-trailing\"},{\"claim\":\"750,000 companies\",\"kind\":\"count\"}],\"count\":4}",
    "last_good_hash": "e27ef85c",
@@ -265,8 +265,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:06:13Z",
-   "last_good_at": "2026-08-09T16:06:13Z",
+   "last_observed_at": "2026-08-09T16:30:48Z",
+   "last_good_at": "2026-08-09T16:30:48Z",
    "last_good_value": "One platform to protect, manage and automate IT with AI agents and human-in-the-loop",
    "last_good_json": null,
    "last_good_hash": "0916f724",
@@ -284,6 +284,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.acronis.com/en/",
+   "fetched_at": "2026-08-09T16:30:48Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 557196,
+   "duration_ms": 403,
+   "signals_found": 13,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.acronis.com/en/",

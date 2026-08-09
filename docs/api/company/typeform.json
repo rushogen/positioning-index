@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:06:48Z",
-   "last_good_at": "2026-08-09T16:06:48Z",
+   "last_observed_at": "2026-08-09T16:37:20Z",
+   "last_good_at": "2026-08-09T16:37:20Z",
    "last_good_value": "2",
    "last_good_json": null,
    "last_good_hash": "370cabd5",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:06:48Z",
-   "last_good_at": "2026-08-09T16:06:48Z",
+   "last_observed_at": "2026-08-09T16:37:20Z",
+   "last_good_at": "2026-08-09T16:37:20Z",
    "last_good_value": "logo_wall, proof",
    "last_good_json": "{\"present\":{\"logo_wall\":true,\"proof\":true,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "44fc8857",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:06:48Z",
-   "last_good_at": "2026-08-09T16:06:48Z",
+   "last_observed_at": "2026-08-09T16:37:20Z",
+   "last_good_at": "2026-08-09T16:37:20Z",
    "last_good_value": "74",
    "last_good_json": null,
    "last_good_hash": "8be5ca66",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:06:48Z",
-   "last_good_at": "2026-08-09T16:06:48Z",
+   "last_observed_at": "2026-08-09T16:37:20Z",
+   "last_good_at": "2026-08-09T16:37:20Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:06:48Z",
-   "last_good_at": "2026-08-09T16:06:48Z",
+   "last_observed_at": "2026-08-09T16:37:20Z",
+   "last_good_at": "2026-08-09T16:37:20Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:06:48Z",
-   "last_good_at": "2026-08-09T16:06:48Z",
+   "last_observed_at": "2026-08-09T16:37:20Z",
+   "last_good_at": "2026-08-09T16:37:20Z",
    "last_good_value": "10",
    "last_good_json": null,
    "last_good_hash": "1beb2a44",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:06:48Z",
-   "last_good_at": "2026-08-09T16:06:48Z",
+   "last_observed_at": "2026-08-09T16:37:20Z",
+   "last_good_at": "2026-08-09T16:37:20Z",
    "last_good_value": "hero > features > proof > features > other > features > proof > features > logos > cta",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":4,\"merged\":1},{\"position\":2,\"type\":\"features\",\"heading\":\"Your favorite forms. Now with AI automation.\",\"words\":117,\"merged\":1},{\"position\":3,\"type\":\"proof\",\"heading\":\"Build forms at the drop of a prompt\",\"words\":32,\"merged\":1},{\"position\":4,\"type\":\"features\",\"heading\":\"High Response Rate\",\"words\":27,\"merged\":3},{\"position\":5,\"type\":\"other\",\"heading\":\"When the form ends, the flow begins...\",\"words\":10,\"merged\":1},{\"position\":6,\"type\":\"features\",\"heading\":\"Be proactive with customer data\",\"words\":34,\"merged\":2},{\"position\":7,\"type\":\"proof\",\"heading\":\"Data Enrichment\",\"words\":24,\"merged\":1},{\"position\":8,\"type\":\"features\",\"heading\":\"Customer Engagement\",\"words\":25,\"merged\":5},{\"position\":9,\"type\":\"logos\",\"heading\":\"Join 150,000+ businesses driving revenue with Typeform\",\"words\":98,\"merged\":2},{\"position\":10,\"type\":\"cta\",\"heading\":\"AI forms and automation. All in Typeform.\",\"words\":10,\"merged\":1}]}",
    "last_good_hash": "c028741b",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:06:48Z",
-   "last_good_at": "2026-08-09T16:06:48Z",
+   "last_observed_at": "2026-08-09T16:37:20Z",
+   "last_good_at": "2026-08-09T16:37:20Z",
    "last_good_value": 570,
    "last_good_json": null,
    "last_good_hash": "35a9fb8f",
@@ -158,7 +158,7 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:06:48Z",
+   "last_observed_at": "2026-08-09T16:37:20Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:06:48Z",
-   "last_good_at": "2026-08-09T16:06:48Z",
+   "last_observed_at": "2026-08-09T16:37:20Z",
+   "last_good_at": "2026-08-09T16:37:20Z",
    "last_good_value": "Barrys, Bg Shine, Calendly, Citizen M 1, DD Marketing 2, Hermes, Hubspot, Loccitane, Slack, SmartBug. in bold text, Webflow, Wetransfer, Zapier",
    "last_good_json": "{\"names\":[\"Barrys\",\"Bg Shine\",\"Calendly\",\"Citizen M 1\",\"DD Marketing 2\",\"Hermes\",\"Hubspot\",\"Loccitane\",\"Slack\",\"SmartBug. in bold text\",\"Webflow\",\"Wetransfer\",\"Zapier\"],\"count\":13,\"lead\":\"Join 150,000+ businesses driving revenue with Typeform <di\"}",
    "last_good_hash": "9a92d069",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:06:48Z",
-   "last_good_at": "2026-08-09T16:06:48Z",
+   "last_observed_at": "2026-08-09T16:37:20Z",
+   "last_good_at": "2026-08-09T16:37:20Z",
    "last_good_value": "Forms & Automated Workflows, Powered by AI | Typeform",
    "last_good_json": null,
    "last_good_hash": "d069112b",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:06:48Z",
-   "last_good_at": "2026-08-09T16:06:48Z",
+   "last_observed_at": "2026-08-09T16:37:20Z",
+   "last_good_at": "2026-08-09T16:37:20Z",
    "last_good_value": "Build AI-powered forms that get 3.5x more data — then trigger automated workflows to enrich leads, follow up, and grow revenue. No code. Start free.",
    "last_good_json": null,
    "last_good_hash": "a6e4c0aa",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:06:48Z",
-   "last_good_at": "2026-08-09T16:06:48Z",
+   "last_observed_at": "2026-08-09T16:37:20Z",
+   "last_good_at": "2026-08-09T16:37:20Z",
    "last_good_value": "Forms & Automated Workflows, Powered by AI | Typeform",
    "last_good_json": null,
    "last_good_hash": "d069112b",
@@ -248,7 +248,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T16:01:55Z",
+   "last_observed_at": "2026-08-09T16:33:20Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -266,8 +266,8 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T16:01:55Z",
-   "last_good_at": "2026-08-09T16:01:55Z",
+   "last_observed_at": "2026-08-09T16:33:20Z",
+   "last_good_at": "2026-08-09T16:33:20Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true,\"loose\":true}",
    "last_good_hash": "4e9f3590",
@@ -284,8 +284,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T16:01:55Z",
-   "last_good_at": "2026-08-09T16:01:55Z",
+   "last_observed_at": "2026-08-09T16:33:20Z",
+   "last_good_at": "2026-08-09T16:33:20Z",
    "last_good_value": "Plans & Pricing | Typeform",
    "last_good_json": null,
    "last_good_hash": "7aeed92f",
@@ -302,7 +302,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T16:01:55Z",
+   "last_observed_at": "2026-08-09T16:33:20Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -320,7 +320,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T16:01:55Z",
+   "last_observed_at": "2026-08-09T16:33:20Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -338,8 +338,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:06:48Z",
-   "last_good_at": "2026-08-09T16:06:48Z",
+   "last_observed_at": "2026-08-09T16:37:20Z",
+   "last_good_at": "2026-08-09T16:37:20Z",
    "last_good_value": "$3.67 million sales viva scaled | 150,000 businesses | 3.5x more data | 40% increased sales leads | 75% cut time to hire | 75% hire",
    "last_good_json": "{\"items\":[{\"claim\":\"$3.67 million sales viva scaled\",\"kind\":\"money\"},{\"claim\":\"150,000 businesses\",\"kind\":\"count\"},{\"claim\":\"3.5x more data\",\"kind\":\"multiplier\"},{\"claim\":\"40% increased sales leads\",\"kind\":\"percent-trailing\"},{\"claim\":\"75% cut time to hire\",\"kind\":\"percent-trailing\"},{\"claim\":\"75% hire\",\"kind\":\"percent-trailing\"}],\"count\":6}",
    "last_good_hash": "d7023a40",
@@ -356,8 +356,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:06:48Z",
-   "last_good_at": "2026-08-09T16:06:48Z",
+   "last_observed_at": "2026-08-09T16:37:20Z",
+   "last_good_at": "2026-08-09T16:37:20Z",
    "last_good_value": "Build AI-powered forms that get 3.5x more data — then trigger automated workflows to enrich leads, follow up, and grow revenue. No code. Start free.",
    "last_good_json": null,
    "last_good_hash": "a6e4c0aa",
@@ -375,6 +375,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.typeform.com/",
+   "fetched_at": "2026-08-09T16:37:20Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 308038,
+   "duration_ms": 360,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.typeform.com/pricing",
+   "fetched_at": "2026-08-09T16:33:20Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 738015,
+   "duration_ms": 488,
+   "signals_found": 2,
+   "signals_expected": 5
+  },
   {
    "kind": "home",
    "url": "https://www.typeform.com/",
@@ -588,30 +612,6 @@
    "reason": "origin returned 304 Not Modified",
    "bytes": 0,
    "duration_ms": 223,
-   "signals_found": 0,
-   "signals_expected": 0
-  },
-  {
-   "kind": "pricing",
-   "url": "https://www.typeform.com/pricing",
-   "fetched_at": "2026-08-08T07:19:24Z",
-   "http_status": 200,
-   "status": "unchanged",
-   "reason": "body identical to the previous fetch",
-   "bytes": 738015,
-   "duration_ms": 109,
-   "signals_found": 0,
-   "signals_expected": 0
-  },
-  {
-   "kind": "home",
-   "url": "https://www.typeform.com/",
-   "fetched_at": "2026-08-08T07:18:19Z",
-   "http_status": 304,
-   "status": "unchanged",
-   "reason": "origin returned 304 Not Modified",
-   "bytes": 0,
-   "duration_ms": 134,
    "signals_found": 0,
    "signals_expected": 0
   }

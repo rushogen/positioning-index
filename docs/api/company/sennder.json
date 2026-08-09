@@ -13,8 +13,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:03:13Z",
-   "last_good_at": "2026-08-09T16:03:13Z",
+   "last_observed_at": "2026-08-09T16:33:56Z",
+   "last_good_at": "2026-08-09T16:33:56Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -31,8 +31,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:03:13Z",
-   "last_good_at": "2026-08-09T16:03:13Z",
+   "last_observed_at": "2026-08-09T16:33:56Z",
+   "last_good_at": "2026-08-09T16:33:56Z",
    "last_good_value": "proof, testimonial, pricing_block",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":true,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":true,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "da579000",
@@ -49,8 +49,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:03:13Z",
-   "last_good_at": "2026-08-09T16:03:13Z",
+   "last_observed_at": "2026-08-09T16:33:56Z",
+   "last_good_at": "2026-08-09T16:33:56Z",
    "last_good_value": "30",
    "last_good_json": null,
    "last_good_hash": "87f05176",
@@ -67,8 +67,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:03:13Z",
-   "last_good_at": "2026-08-09T16:03:13Z",
+   "last_observed_at": "2026-08-09T16:33:56Z",
+   "last_good_at": "2026-08-09T16:33:56Z",
    "last_good_value": "3",
    "last_good_json": null,
    "last_good_hash": "360caa42",
@@ -85,8 +85,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:03:13Z",
-   "last_good_at": "2026-08-09T16:03:13Z",
+   "last_observed_at": "2026-08-09T16:33:56Z",
+   "last_good_at": "2026-08-09T16:33:56Z",
    "last_good_value": "20",
    "last_good_json": null,
    "last_good_hash": "8df2997f",
@@ -103,8 +103,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:03:13Z",
-   "last_good_at": "2026-08-09T16:03:13Z",
+   "last_observed_at": "2026-08-09T16:33:56Z",
+   "last_good_at": "2026-08-09T16:33:56Z",
    "last_good_value": "8",
    "last_good_json": null,
    "last_good_hash": "3d0cb547",
@@ -121,8 +121,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:03:13Z",
-   "last_good_at": "2026-08-09T16:03:13Z",
+   "last_observed_at": "2026-08-09T16:33:56Z",
+   "last_good_at": "2026-08-09T16:33:56Z",
    "last_good_value": "hero > pricing > proof > testimonial > other > features > other > features",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":31,\"merged\":1},{\"position\":2,\"type\":\"pricing\",\"heading\":\"We save money for our shippers, increase earnings for our carriers while reducing carbon emissions.\",\"words\":284,\"merged\":1},{\"position\":3,\"type\":\"proof\",\"heading\":\"10 – 0 1 2 3 4 5 6 7 8 9 0 , 9 0 1 2 3 4 5 6 7 8 9 0 , 0 %\",\"words\":35,\"merged\":1},{\"position\":4,\"type\":\"testimonial\",\"heading\":\"up to 0 1 2 3 4 5 6 7 8 9 0 , 1 0 1 2 3 4 5 6 7 8 9 0 , 0 0 1 2 3 4 5 6 7 8 9 0 , 0 %\",\"words\":503,\"merged\":1},{\"position\":5,\"type\":\"other\",\"heading\":\"sennder Deutschland GmbH\",\"words\":16,\"merged\":2},{\"position\":6,\"type\":\"features\",\"heading\":\"sennder Iberia, Barcelona Tech Hub\",\"words\":21,\"merged\":1},{\"position\":7,\"type\":\"other\",\"heading\":\"sennder Polska Sp. z o.o.\",\"words\":19,\"merged\":4},{\"position\":8,\"type\":\"features\",\"heading\":\"sennder Bucharest S.R.L.\",\"words\":24,\"merged\":2}]}",
    "last_good_hash": "8212519e",
@@ -139,8 +139,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:03:13Z",
-   "last_good_at": "2026-08-09T16:03:13Z",
+   "last_observed_at": "2026-08-09T16:33:56Z",
+   "last_good_at": "2026-08-09T16:33:56Z",
    "last_good_value": 1216,
    "last_good_json": null,
    "last_good_hash": "6bc94d55",
@@ -157,7 +157,7 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:03:13Z",
+   "last_observed_at": "2026-08-09T16:33:56Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -175,8 +175,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:03:13Z",
-   "last_good_at": "2026-08-09T16:03:13Z",
+   "last_observed_at": "2026-08-09T16:33:56Z",
+   "last_good_at": "2026-08-09T16:33:56Z",
    "last_good_value": "Filters:Quality(), nigel tadyanehondo, spot rate blog",
    "last_good_json": "{\"names\":[\"Filters:Quality()\",\"nigel tadyanehondo\",\"spot rate blog\"],\"count\":3,\"lead\":\"Powering success <svg xmlns=\\\"http://www.w3.org/2000/svg\\\" width=\\\"24\\\" height=\\\"24\\\" \"}",
    "last_good_hash": "9eebdead",
@@ -193,8 +193,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:03:13Z",
-   "last_good_at": "2026-08-09T16:03:13Z",
+   "last_observed_at": "2026-08-09T16:33:56Z",
+   "last_good_at": "2026-08-09T16:33:56Z",
    "last_good_value": "Digital Freight Forwarder | sennder Technologies GmbH",
    "last_good_json": null,
    "last_good_hash": "97982429",
@@ -211,8 +211,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:03:13Z",
-   "last_good_at": "2026-08-09T16:03:13Z",
+   "last_observed_at": "2026-08-09T16:33:56Z",
+   "last_good_at": "2026-08-09T16:33:56Z",
    "last_good_value": "We are your digital road freight logistics partner when it comes to Full Truck Loads (FTL). As Europe's leading forwarder, we offer our shippers access to our connected fleet of thousands of trucks.",
    "last_good_json": null,
    "last_good_hash": "118401c4",
@@ -229,8 +229,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:03:13Z",
-   "last_good_at": "2026-08-09T16:03:13Z",
+   "last_observed_at": "2026-08-09T16:33:56Z",
+   "last_good_at": "2026-08-09T16:33:56Z",
    "last_good_value": "Digital Freight Forwarder | sennder Technologies GmbH",
    "last_good_json": null,
    "last_good_hash": "97982429",
@@ -247,8 +247,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:03:13Z",
-   "last_good_at": "2026-08-09T16:03:13Z",
+   "last_observed_at": "2026-08-09T16:33:56Z",
+   "last_good_at": "2026-08-09T16:33:56Z",
    "last_good_value": "0 % lower co",
    "last_good_json": "{\"items\":[{\"claim\":\"0 % lower co\",\"kind\":\"percent\"}],\"count\":1}",
    "last_good_hash": "45767ac9",
@@ -265,8 +265,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:03:13Z",
-   "last_good_at": "2026-08-09T16:03:13Z",
+   "last_observed_at": "2026-08-09T16:33:56Z",
+   "last_good_at": "2026-08-09T16:33:56Z",
    "last_good_value": "We are your digital road freight logistics partner when it comes to Full Truck Loads (FTL). As Europe's leading forwarder, we offer our shippers access to our connected fleet of thousands of trucks.",
    "last_good_json": null,
    "last_good_hash": "118401c4",
@@ -284,6 +284,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.sennder.com/",
+   "fetched_at": "2026-08-09T16:33:56Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 207399,
+   "duration_ms": 619,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.sennder.com/",

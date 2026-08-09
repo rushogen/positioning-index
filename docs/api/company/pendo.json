@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:03:31Z",
-   "last_good_at": "2026-08-09T16:03:31Z",
+   "last_observed_at": "2026-08-09T16:32:33Z",
+   "last_good_at": "2026-08-09T16:32:33Z",
    "last_good_value": "5",
    "last_good_json": null,
    "last_good_hash": "300ca0d0",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:03:31Z",
-   "last_good_at": "2026-08-09T16:03:31Z",
+   "last_observed_at": "2026-08-09T16:32:33Z",
+   "last_good_at": "2026-08-09T16:32:33Z",
    "last_good_value": "proof",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":true,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "8cdc0989",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:03:31Z",
-   "last_good_at": "2026-08-09T16:03:31Z",
+   "last_observed_at": "2026-08-09T16:32:33Z",
+   "last_good_at": "2026-08-09T16:32:33Z",
    "last_good_value": "97",
    "last_good_json": null,
    "last_good_hash": "0afe9739",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:03:31Z",
-   "last_good_at": "2026-08-09T16:03:31Z",
+   "last_observed_at": "2026-08-09T16:32:33Z",
+   "last_good_at": "2026-08-09T16:32:33Z",
    "last_good_value": "5",
    "last_good_json": null,
    "last_good_hash": "300ca0d0",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:03:31Z",
-   "last_good_at": "2026-08-09T16:03:31Z",
+   "last_observed_at": "2026-08-09T16:32:33Z",
+   "last_good_at": "2026-08-09T16:32:33Z",
    "last_good_value": "6",
    "last_good_json": null,
    "last_good_hash": "330ca589",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:03:31Z",
-   "last_good_at": "2026-08-09T16:03:31Z",
+   "last_observed_at": "2026-08-09T16:32:33Z",
+   "last_good_at": "2026-08-09T16:32:33Z",
    "last_good_value": "4",
    "last_good_json": null,
    "last_good_hash": "310ca263",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:03:31Z",
-   "last_good_at": "2026-08-09T16:03:31Z",
+   "last_observed_at": "2026-08-09T16:32:33Z",
+   "last_good_at": "2026-08-09T16:32:33Z",
    "last_good_value": "hero > proof > features > security",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":81,\"merged\":1},{\"position\":2,\"type\":\"proof\",\"heading\":\"The best builders in the AI era choose Pendo.\",\"words\":78,\"merged\":1},{\"position\":3,\"type\":\"features\",\"heading\":\"Pendo is the largest product context graph in the world.\",\"words\":52,\"merged\":5},{\"position\":4,\"type\":\"security\",\"heading\":\"Enterprise-grade security. Zero exceptions.\",\"words\":600,\"merged\":1}]}",
    "last_good_hash": "0dfca3e6",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:03:31Z",
-   "last_good_at": "2026-08-09T16:03:31Z",
+   "last_observed_at": "2026-08-09T16:32:33Z",
+   "last_good_at": "2026-08-09T16:32:33Z",
    "last_good_value": 1917,
    "last_good_json": null,
    "last_good_hash": "2658b907",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:03:31Z",
-   "last_good_at": "2026-08-09T16:03:31Z",
+   "last_observed_at": "2026-08-09T16:32:33Z",
+   "last_good_at": "2026-08-09T16:32:33Z",
    "last_good_value": "ai era ship software",
    "last_good_json": null,
    "last_good_hash": "bf352e06",
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:03:31Z",
-   "last_good_at": "2026-08-09T16:03:31Z",
+   "last_observed_at": "2026-08-09T16:32:33Z",
+   "last_good_at": "2026-08-09T16:32:33Z",
    "last_good_value": "American Cancer Society, Okta, Salesforce, United Airlines",
    "last_good_json": "{\"names\":[\"American Cancer Society\",\"Okta\",\"Salesforce\",\"United Airlines\"],\"count\":4,\"lead\":\"Join 14,000+ teams innovating with Pendo The best buil\"}",
    "last_good_hash": "0ec13351",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:03:31Z",
-   "last_good_at": "2026-08-09T16:03:31Z",
+   "last_observed_at": "2026-08-09T16:32:33Z",
+   "last_good_at": "2026-08-09T16:32:33Z",
    "last_good_value": "The antidote to AI slop.",
    "last_good_json": null,
    "last_good_hash": "63ea963d",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:03:31Z",
-   "last_good_at": "2026-08-09T16:03:31Z",
+   "last_observed_at": "2026-08-09T16:32:33Z",
+   "last_good_at": "2026-08-09T16:32:33Z",
    "last_good_value": "Pendo feeds product context to the apps and AI agents you build or buy, so you can understand your users, act where it counts, and drive adoption and revenue.",
    "last_good_json": null,
    "last_good_hash": "3f72b337",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:03:31Z",
-   "last_good_at": "2026-08-09T16:03:31Z",
+   "last_observed_at": "2026-08-09T16:32:33Z",
+   "last_good_at": "2026-08-09T16:32:33Z",
    "last_good_value": "Pendo | Product Context for Your Apps and AI Agents",
    "last_good_json": null,
    "last_good_hash": "7e146c86",
@@ -248,7 +248,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T16:07:56Z",
+   "last_observed_at": "2026-08-09T16:36:28Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -264,8 +264,8 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T16:07:56Z",
-   "last_good_at": "2026-08-09T16:07:56Z",
+   "last_observed_at": "2026-08-09T16:36:28Z",
+   "last_good_at": "2026-08-09T16:36:28Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true}",
    "last_good_hash": "4e9f3590",
@@ -282,8 +282,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T16:07:56Z",
-   "last_good_at": "2026-08-09T16:07:56Z",
+   "last_observed_at": "2026-08-09T16:36:28Z",
+   "last_good_at": "2026-08-09T16:36:28Z",
    "last_good_value": "Plans and pricing for Pendo software experience management solutions | Pendo.io",
    "last_good_json": null,
    "last_good_hash": "3fdd52f7",
@@ -300,7 +300,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T16:07:56Z",
+   "last_observed_at": "2026-08-09T16:36:28Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -316,8 +316,8 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T16:07:56Z",
-   "last_good_at": "2026-08-09T16:07:56Z",
+   "last_observed_at": "2026-08-09T16:36:28Z",
+   "last_good_at": "2026-08-09T16:36:28Z",
    "last_good_value": "Free free | Core custom | Ultimate custom",
    "last_good_json": "{\"tiers\":[{\"name\":\"Free\",\"amount\":0,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"free-phrase\"},{\"name\":\"Core\",\"amount\":null,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"contact-sales\"},{\"name\":\"Ultimate\",\"amount\":null,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"contact-sales\"}],\"count\":3}",
    "last_good_hash": "0c5912f7",
@@ -334,8 +334,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:03:31Z",
-   "last_good_at": "2026-08-09T16:03:31Z",
+   "last_observed_at": "2026-08-09T16:32:33Z",
+   "last_good_at": "2026-08-09T16:32:33Z",
    "last_good_value": "14,000 teams | 18k agents | 20x increase in feature | 350% increase in weekly | 3x faster outreach to | 40 minutes | 400% increase in nps | 60% accelerate | 60% decrease in support | 70% increase in deals | 71% faster roadmap decisions",
    "last_good_json": "{\"items\":[{\"claim\":\"14,000 teams\",\"kind\":\"count\"},{\"claim\":\"18k agents\",\"kind\":\"count\"},{\"claim\":\"20x increase in feature\",\"kind\":\"multiplier\"},{\"claim\":\"350% increase in weekly\",\"kind\":\"percent\"},{\"claim\":\"3x faster outreach to\",\"kind\":\"multiplier\"},{\"claim\":\"40 minutes\",\"kind\":\"time\"},{\"claim\":\"400% increase in nps\",\"kind\":\"percent\"},{\"claim\":\"60% accelerate\",\"kind\":\"percent\"},{\"claim\":\"60% decrease in support\",\"kind\":\"percent\"},{\"claim\":\"70% increase in deals\",\"kind\":\"percent\"},{\"claim\":\"71% faster roadmap decisions\",\"kind\":\"percent\"}],\"count\":11}",
    "last_good_hash": "8850562e",
@@ -352,8 +352,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:03:31Z",
-   "last_good_at": "2026-08-09T16:03:31Z",
+   "last_observed_at": "2026-08-09T16:32:33Z",
+   "last_good_at": "2026-08-09T16:32:33Z",
    "last_good_value": "The companies winning the AI era ship software people genuinely love to use. Pendo surfaces where users and agents struggle and then helps you act on it, turning experience gaps into business results.",
    "last_good_json": null,
    "last_good_hash": "e5df8802",
@@ -371,6 +371,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://www.pendo.io/pricing/",
+   "fetched_at": "2026-08-09T16:36:28Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 899594,
+   "duration_ms": 200,
+   "signals_found": 3,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://www.pendo.io/",
+   "fetched_at": "2026-08-09T16:32:33Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 735974,
+   "duration_ms": 327,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
   {
    "kind": "pricing",
    "url": "https://www.pendo.io/pricing/",
@@ -584,30 +608,6 @@
    "reason": "origin returned 304 Not Modified",
    "bytes": 0,
    "duration_ms": 278,
-   "signals_found": 0,
-   "signals_expected": 0
-  },
-  {
-   "kind": "home",
-   "url": "https://www.pendo.io/",
-   "fetched_at": "2026-08-08T07:18:59Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": "extractor 1.0.0 -> 1.1.0; re-baselining",
-   "bytes": 735977,
-   "duration_ms": 84,
-   "signals_found": 15,
-   "signals_expected": 15
-  },
-  {
-   "kind": "pricing",
-   "url": "https://www.pendo.io/pricing/",
-   "fetched_at": "2026-08-08T07:17:17Z",
-   "http_status": 304,
-   "status": "unchanged",
-   "reason": "origin returned 304 Not Modified",
-   "bytes": 0,
-   "duration_ms": 215,
    "signals_found": 0,
    "signals_expected": 0
   }

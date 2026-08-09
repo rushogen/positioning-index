@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:09:34Z",
-   "last_good_at": "2026-08-09T16:09:34Z",
+   "last_observed_at": "2026-08-09T16:35:29Z",
+   "last_good_at": "2026-08-09T16:35:29Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:09:34Z",
-   "last_good_at": "2026-08-09T16:09:34Z",
+   "last_observed_at": "2026-08-09T16:35:29Z",
+   "last_good_at": "2026-08-09T16:35:29Z",
    "last_good_value": "none",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "ada7afdb",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:09:34Z",
-   "last_good_at": "2026-08-09T16:09:34Z",
+   "last_observed_at": "2026-08-09T16:35:29Z",
+   "last_good_at": "2026-08-09T16:35:29Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:09:34Z",
-   "last_good_at": "2026-08-09T16:09:34Z",
+   "last_observed_at": "2026-08-09T16:35:29Z",
+   "last_good_at": "2026-08-09T16:35:29Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -86,7 +86,7 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:09:34Z",
+   "last_observed_at": "2026-08-09T16:35:29Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:09:34Z",
-   "last_good_at": "2026-08-09T16:09:34Z",
+   "last_observed_at": "2026-08-09T16:35:29Z",
+   "last_good_at": "2026-08-09T16:35:29Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:09:34Z",
-   "last_good_at": "2026-08-09T15:37:30Z",
+   "last_observed_at": "2026-08-09T16:35:29Z",
+   "last_good_at": "2026-08-09T16:09:34Z",
    "last_good_value": "hero",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":0,\"merged\":1}]}",
    "last_good_hash": "1b3b5c59",
@@ -140,7 +140,7 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:09:34Z",
+   "last_observed_at": "2026-08-09T16:35:29Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:09:34Z",
-   "last_good_at": "2026-08-09T16:09:34Z",
+   "last_observed_at": "2026-08-09T16:35:29Z",
+   "last_good_at": "2026-08-09T16:35:29Z",
    "last_good_value": "essential tools for software developers and teams",
    "last_good_json": null,
    "last_good_hash": "96cfeecc",
@@ -176,7 +176,7 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:09:34Z",
+   "last_observed_at": "2026-08-09T16:35:29Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:09:34Z",
-   "last_good_at": "2026-08-09T16:09:34Z",
+   "last_observed_at": "2026-08-09T16:35:29Z",
+   "last_good_at": "2026-08-09T16:35:29Z",
    "last_good_value": "JetBrains: Essential tools for software developers and teams",
    "last_good_json": null,
    "last_good_hash": "ce3c4bce",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:09:34Z",
-   "last_good_at": "2026-08-09T16:09:34Z",
+   "last_observed_at": "2026-08-09T16:35:29Z",
+   "last_good_at": "2026-08-09T16:35:29Z",
    "last_good_value": "JetBrains is a cutting-edge software vendor specializing in the creation of intelligent development tools, including IntelliJ IDEA – the leading Java IDE, and the Kotlin programming language.",
    "last_good_json": null,
    "last_good_hash": "5ad497d1",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:09:34Z",
-   "last_good_at": "2026-08-09T16:09:34Z",
+   "last_observed_at": "2026-08-09T16:35:29Z",
+   "last_good_at": "2026-08-09T16:35:29Z",
    "last_good_value": "JetBrains: Essential tools for software developers and teams",
    "last_good_json": null,
    "last_good_hash": "ce3c4bce",
@@ -248,8 +248,8 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T16:05:05Z",
-   "last_good_at": "2026-08-09T16:05:05Z",
+   "last_observed_at": "2026-08-09T16:31:05Z",
+   "last_good_at": "2026-08-09T16:31:05Z",
    "last_good_value": "USD 200",
    "last_good_json": "{\"amount\":200,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"tier\":\"AI Pro\"}",
    "last_good_hash": "9a184e9d",
@@ -266,8 +266,8 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T16:05:05Z",
-   "last_good_at": "2026-08-09T16:05:05Z",
+   "last_observed_at": "2026-08-09T16:31:05Z",
+   "last_good_at": "2026-08-09T16:31:05Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true}",
    "last_good_hash": "4e9f3590",
@@ -284,8 +284,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T16:05:05Z",
-   "last_good_at": "2026-08-09T16:05:05Z",
+   "last_observed_at": "2026-08-09T16:31:05Z",
+   "last_good_at": "2026-08-09T16:31:05Z",
    "last_good_value": "Monthly and yearly plans with JetBrains Toolbox",
    "last_good_json": null,
    "last_good_hash": "629d67a4",
@@ -302,7 +302,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T16:05:05Z",
+   "last_observed_at": "2026-08-09T16:31:05Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -320,8 +320,8 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T16:05:05Z",
-   "last_good_at": "2026-08-09T16:05:05Z",
+   "last_observed_at": "2026-08-09T16:31:05Z",
+   "last_good_at": "2026-08-09T16:31:05Z",
    "last_good_value": "FREE LICENSES free | IntelliJ IDEA Ultimate USD 719 | AI Pro USD 200 | PyCharm Pro USD 299",
    "last_good_json": "{\"tiers\":[{\"name\":\"FREE LICENSES\",\"amount\":0,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"free-phrase\"},{\"name\":\"IntelliJ IDEA Ultimate\",\"amount\":719,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"AI Pro\",\"amount\":200,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"PyCharm Pro\",\"amount\":299,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"}],\"count\":4}",
    "last_good_hash": "8081e489",
@@ -338,7 +338,7 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:09:34Z",
+   "last_observed_at": "2026-08-09T16:35:29Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -356,8 +356,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:09:34Z",
-   "last_good_at": "2026-08-09T16:09:34Z",
+   "last_observed_at": "2026-08-09T16:35:29Z",
+   "last_good_at": "2026-08-09T16:35:29Z",
    "last_good_value": "JetBrains is a cutting-edge software vendor specializing in the creation of intelligent development tools, including IntelliJ IDEA – the leading Java IDE, and the Kotlin programming language.",
    "last_good_json": null,
    "last_good_hash": "5ad497d1",
@@ -375,6 +375,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.jetbrains.com/",
+   "fetched_at": "2026-08-09T16:35:29Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 44398,
+   "duration_ms": 81,
+   "signals_found": 12,
+   "signals_expected": 15
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.jetbrains.com/store/",
+   "fetched_at": "2026-08-09T16:31:05Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 60343,
+   "duration_ms": 160,
+   "signals_found": 4,
+   "signals_expected": 5
+  },
   {
    "kind": "home",
    "url": "https://www.jetbrains.com/",
@@ -588,30 +612,6 @@
    "reason": "body identical to the previous fetch",
    "bytes": 44398,
    "duration_ms": 227,
-   "signals_found": 0,
-   "signals_expected": 0
-  },
-  {
-   "kind": "pricing",
-   "url": "https://www.jetbrains.com/store/",
-   "fetched_at": "2026-08-08T07:19:14Z",
-   "http_status": 200,
-   "status": "unchanged",
-   "reason": "body identical to the previous fetch",
-   "bytes": 60343,
-   "duration_ms": 99,
-   "signals_found": 0,
-   "signals_expected": 0
-  },
-  {
-   "kind": "home",
-   "url": "https://www.jetbrains.com/",
-   "fetched_at": "2026-08-08T07:17:40Z",
-   "http_status": 200,
-   "status": "unchanged",
-   "reason": "body identical to the previous fetch",
-   "bytes": 44398,
-   "duration_ms": 57,
    "signals_found": 0,
    "signals_expected": 0
   }

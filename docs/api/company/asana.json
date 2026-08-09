@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:06:25Z",
-   "last_good_at": "2026-08-09T16:06:25Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
+   "last_good_at": "2026-08-09T16:34:33Z",
    "last_good_value": "41",
    "last_good_json": null,
    "last_good_hash": "88e38716",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:06:25Z",
-   "last_good_at": "2026-08-09T16:06:25Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
+   "last_good_at": "2026-08-09T16:34:33Z",
    "last_good_value": "testimonial",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "e6a3d068",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:06:25Z",
-   "last_good_at": "2026-08-09T16:06:25Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
+   "last_good_at": "2026-08-09T16:34:33Z",
    "last_good_value": "86",
    "last_good_json": null,
    "last_good_hash": "8c01a0e3",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:06:25Z",
-   "last_good_at": "2026-08-09T16:06:25Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
+   "last_good_at": "2026-08-09T16:34:33Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:06:25Z",
-   "last_good_at": "2026-08-09T16:06:25Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
+   "last_good_at": "2026-08-09T16:34:33Z",
    "last_good_value": "28",
    "last_good_json": null,
    "last_good_hash": "95f2a617",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:06:25Z",
-   "last_good_at": "2026-08-09T16:06:25Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
+   "last_good_at": "2026-08-09T16:34:33Z",
    "last_good_value": "7",
    "last_good_json": null,
    "last_good_hash": "320ca3f6",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:06:25Z",
-   "last_good_at": "2026-08-09T16:06:25Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
+   "last_good_at": "2026-08-09T16:34:33Z",
    "last_good_value": "hero > features > security > testimonial > cta > awards > cta",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":318,\"merged\":1},{\"position\":2,\"type\":\"features\",\"heading\":\"AI that works the way your team works\",\"words\":165,\"merged\":1},{\"position\":3,\"type\":\"security\",\"heading\":\"Your team just got bigger\",\"words\":195,\"merged\":1},{\"position\":4,\"type\":\"testimonial\",\"heading\":\"Deliver real productivity for every team\",\"words\":384,\"merged\":1},{\"position\":5,\"type\":\"cta\",\"heading\":\"Get started easily\",\"words\":51,\"merged\":1},{\"position\":6,\"type\":\"awards\",\"heading\":\"Recognized as a leader\",\"words\":39,\"merged\":1},{\"position\":7,\"type\":\"cta\",\"heading\":\"The only platform that can support your company at any scale\",\"words\":24,\"merged\":1}]}",
    "last_good_hash": "d8f0a66d",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:06:25Z",
-   "last_good_at": "2026-08-09T16:06:25Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
+   "last_good_at": "2026-08-09T16:34:33Z",
    "last_good_value": 1176,
    "last_good_json": null,
    "last_good_hash": "7d1daf22",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:06:25Z",
-   "last_good_at": "2026-08-09T16:06:25Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
+   "last_good_at": "2026-08-09T16:34:33Z",
    "last_good_value": "os for human-agent teams",
    "last_good_json": null,
    "last_good_hash": "0788a697",
@@ -176,7 +176,7 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:06:25Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:06:25Z",
-   "last_good_at": "2026-08-09T16:06:25Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
+   "last_good_at": "2026-08-09T16:34:33Z",
    "last_good_value": "The OS for human-agent teams",
    "last_good_json": null,
    "last_good_hash": "d0459d0a",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:06:25Z",
-   "last_good_at": "2026-08-09T16:06:25Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
+   "last_good_at": "2026-08-09T16:34:33Z",
    "last_good_value": "Work management software for teams and AI agents. Plan, automate, and execute critical workflows together.",
    "last_good_json": null,
    "last_good_hash": "5331f9f2",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:06:25Z",
-   "last_good_at": "2026-08-09T16:06:25Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
+   "last_good_at": "2026-08-09T16:34:33Z",
    "last_good_value": "Work & Project Management for Human-Agent Teams • Asana",
    "last_good_json": null,
    "last_good_hash": "23fcc79e",
@@ -248,8 +248,8 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T16:10:08Z",
-   "last_good_at": "2026-08-09T16:10:08Z",
+   "last_observed_at": "2026-08-09T16:38:13Z",
+   "last_good_at": "2026-08-09T16:38:13Z",
    "last_good_value": "USD 10.99",
    "last_good_json": "{\"amount\":10.99,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"tier\":\"Starter\"}",
    "last_good_hash": "4f49b3d4",
@@ -266,8 +266,8 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T16:10:08Z",
-   "last_good_at": "2026-08-09T16:10:08Z",
+   "last_observed_at": "2026-08-09T16:38:13Z",
+   "last_good_at": "2026-08-09T16:38:13Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true}",
    "last_good_hash": "4e9f3590",
@@ -284,8 +284,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T16:10:08Z",
-   "last_good_at": "2026-08-09T16:10:08Z",
+   "last_observed_at": "2026-08-09T16:38:13Z",
+   "last_good_at": "2026-08-09T16:38:13Z",
    "last_good_value": "Asana Pricing | Personal, Starter, Advanced, & Enterprise plans • Asana",
    "last_good_json": null,
    "last_good_hash": "2aa0fb6b",
@@ -302,7 +302,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T16:10:08Z",
+   "last_observed_at": "2026-08-09T16:38:13Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -320,8 +320,8 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T16:10:08Z",
-   "last_good_at": "2026-08-09T16:10:08Z",
+   "last_observed_at": "2026-08-09T16:38:13Z",
+   "last_good_at": "2026-08-09T16:38:13Z",
    "last_good_value": "Starter USD 10.99 | Advanced USD 24.99",
    "last_good_json": "{\"tiers\":[{\"name\":\"Starter\",\"amount\":10.99,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"json-ld\"},{\"name\":\"Advanced\",\"amount\":24.99,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"json-ld\"}],\"count\":2}",
    "last_good_hash": "44b0b8c5",
@@ -338,8 +338,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:06:25Z",
-   "last_good_at": "2026-08-09T16:06:25Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
+   "last_good_at": "2026-08-09T16:34:33Z",
    "last_good_value": "100 companies | fortune 100",
    "last_good_json": "{\"items\":[{\"claim\":\"100 companies\",\"kind\":\"count\"},{\"claim\":\"fortune 100\",\"kind\":\"rank\"}],\"count\":2}",
    "last_good_hash": "91dd3a89",
@@ -356,8 +356,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:06:25Z",
-   "last_good_at": "2026-08-09T16:06:25Z",
+   "last_observed_at": "2026-08-09T16:34:33Z",
+   "last_good_at": "2026-08-09T16:34:33Z",
    "last_good_value": "Supercharge your teams to get things done",
    "last_good_json": null,
    "last_good_hash": "00dc9e0d",
@@ -490,6 +490,30 @@
   }
  ],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://asana.com/pricing",
+   "fetched_at": "2026-08-09T16:38:13Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 1095358,
+   "duration_ms": 348,
+   "signals_found": 4,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://asana.com/",
+   "fetched_at": "2026-08-09T16:34:33Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 805079,
+   "duration_ms": 405,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
   {
    "kind": "pricing",
    "url": "https://asana.com/pricing",
@@ -703,30 +727,6 @@
    "reason": "body identical to the previous fetch",
    "bytes": 1092452,
    "duration_ms": 242,
-   "signals_found": 0,
-   "signals_expected": 0
-  },
-  {
-   "kind": "home",
-   "url": "https://asana.com/",
-   "fetched_at": "2026-08-08T07:27:30Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": null,
-   "bytes": 817523,
-   "duration_ms": 153,
-   "signals_found": 14,
-   "signals_expected": 15
-  },
-  {
-   "kind": "pricing",
-   "url": "https://asana.com/pricing",
-   "fetched_at": "2026-08-08T07:19:20Z",
-   "http_status": 200,
-   "status": "unchanged",
-   "reason": "body identical to the previous fetch",
-   "bytes": 1092427,
-   "duration_ms": 263,
    "signals_found": 0,
    "signals_expected": 0
   }

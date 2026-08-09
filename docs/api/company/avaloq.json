@@ -13,8 +13,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:02:58Z",
-   "last_good_at": "2026-08-09T16:02:58Z",
+   "last_observed_at": "2026-08-09T16:32:35Z",
+   "last_good_at": "2026-08-09T16:32:35Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -31,8 +31,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:02:58Z",
-   "last_good_at": "2026-08-09T16:02:58Z",
+   "last_observed_at": "2026-08-09T16:32:35Z",
+   "last_good_at": "2026-08-09T16:32:35Z",
    "last_good_value": "none",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "ada7afdb",
@@ -49,8 +49,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:02:58Z",
-   "last_good_at": "2026-08-09T16:02:58Z",
+   "last_observed_at": "2026-08-09T16:32:35Z",
+   "last_good_at": "2026-08-09T16:32:35Z",
    "last_good_value": "41",
    "last_good_json": null,
    "last_good_hash": "88e38716",
@@ -67,8 +67,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:02:58Z",
-   "last_good_at": "2026-08-09T16:02:58Z",
+   "last_observed_at": "2026-08-09T16:32:35Z",
+   "last_good_at": "2026-08-09T16:32:35Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -85,7 +85,7 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:02:58Z",
+   "last_observed_at": "2026-08-09T16:32:35Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -103,8 +103,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:02:58Z",
-   "last_good_at": "2026-08-09T16:02:58Z",
+   "last_observed_at": "2026-08-09T16:32:35Z",
+   "last_good_at": "2026-08-09T16:32:35Z",
    "last_good_value": "6",
    "last_good_json": null,
    "last_good_hash": "330ca589",
@@ -121,8 +121,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:02:58Z",
-   "last_good_at": "2026-08-09T16:02:58Z",
+   "last_observed_at": "2026-08-09T16:32:35Z",
+   "last_good_at": "2026-08-09T16:32:35Z",
    "last_good_value": "hero > features > product > features > security > events",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":37,\"merged\":1},{\"position\":2,\"type\":\"features\",\"heading\":\"Expert services\",\"words\":28,\"merged\":1},{\"position\":3,\"type\":\"product\",\"heading\":\"Comprehensive platform\",\"words\":25,\"merged\":1},{\"position\":4,\"type\":\"features\",\"heading\":\"Trusted partners\",\"words\":160,\"merged\":1},{\"position\":5,\"type\":\"security\",\"heading\":\"AI-driven innovation for banking, delivered where it matters\",\"words\":67,\"merged\":1},{\"position\":6,\"type\":\"events\",\"heading\":\"Private equity: the real scaling challenge for banks\",\"words\":14,\"merged\":6}]}",
    "last_good_hash": "4acd84f7",
@@ -139,8 +139,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:02:58Z",
-   "last_good_at": "2026-08-09T16:02:58Z",
+   "last_observed_at": "2026-08-09T16:32:35Z",
+   "last_good_at": "2026-08-09T16:32:35Z",
    "last_good_value": 417,
    "last_good_json": null,
    "last_good_hash": "9f2db8f3",
@@ -157,8 +157,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:02:58Z",
-   "last_good_at": "2026-08-09T16:02:58Z",
+   "last_observed_at": "2026-08-09T16:32:35Z",
+   "last_good_at": "2026-08-09T16:32:35Z",
    "last_good_value": "cloud",
    "last_good_json": null,
    "last_good_hash": "1ac6a97e",
@@ -175,7 +175,7 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:02:58Z",
+   "last_observed_at": "2026-08-09T16:32:35Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -193,8 +193,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:02:58Z",
-   "last_good_at": "2026-08-09T16:02:58Z",
+   "last_observed_at": "2026-08-09T16:32:35Z",
+   "last_good_at": "2026-08-09T16:32:35Z",
    "last_good_value": "Powering the world’s leading banks and wealth managers",
    "last_good_json": null,
    "last_good_hash": "27d6abd0",
@@ -211,8 +211,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:02:58Z",
-   "last_good_at": "2026-08-09T16:02:58Z",
+   "last_observed_at": "2026-08-09T16:32:35Z",
+   "last_good_at": "2026-08-09T16:32:35Z",
    "last_good_value": "Premium wealth management and cloud banking software and service provider. Partner with Avaloq to increase efficiency and improve client experience",
    "last_good_json": null,
    "last_good_hash": "fe54899e",
@@ -229,8 +229,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:02:58Z",
-   "last_good_at": "2026-08-09T16:02:58Z",
+   "last_observed_at": "2026-08-09T16:32:35Z",
+   "last_good_at": "2026-08-09T16:32:35Z",
    "last_good_value": "Powering the world's leading banks and wealth managers - Avaloq",
    "last_good_json": null,
    "last_good_hash": "3304ee0f",
@@ -247,7 +247,7 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:02:58Z",
+   "last_observed_at": "2026-08-09T16:32:35Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -265,8 +265,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:02:58Z",
-   "last_good_at": "2026-08-09T16:02:58Z",
+   "last_observed_at": "2026-08-09T16:32:35Z",
+   "last_good_at": "2026-08-09T16:32:35Z",
    "last_good_value": "Over 170 clients rely on our solutions",
    "last_good_json": null,
    "last_good_hash": "11c6455a",
@@ -284,6 +284,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.avaloq.com/",
+   "fetched_at": "2026-08-09T16:32:35Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 169693,
+   "duration_ms": 1758,
+   "signals_found": 12,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.avaloq.com/",

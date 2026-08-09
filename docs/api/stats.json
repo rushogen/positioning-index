@@ -1,19 +1,19 @@
 {
  "companies": 361,
  "targets": 578,
- "observations": 3190,
+ "observations": 3745,
  "changes": 75,
  "changes_7d": 75,
  "changes_30d": 75,
  "retracted_changes": 3,
  "first_observation": "2026-08-07T11:00:38Z",
- "last_observation": "2026-08-09T16:10:16Z",
- "last_successful_fetch": "2026-08-09T16:10:16Z",
- "runs": 34,
- "last_run_at": "2026-08-09T16:10:17Z",
- "fetches_24h": 2437,
- "blocked_24h": 105,
- "errors_24h": 13,
+ "last_observation": "2026-08-09T16:38:14Z",
+ "last_successful_fetch": "2026-08-09T16:38:14Z",
+ "runs": 35,
+ "last_run_at": "2026-08-09T16:38:19Z",
+ "fetches_24h": 3015,
+ "blocked_24h": 126,
+ "errors_24h": 16,
  "suspect_signals": 0,
  "categories": [
   {
@@ -223,5 +223,5 @@
    "family": "pricing"
   }
  },
- "generated_at": "2026-08-09T16:10:17Z"
+ "generated_at": "2026-08-09T16:38:19Z"
 }

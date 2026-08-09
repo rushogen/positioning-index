@@ -15,8 +15,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:04:05Z",
-   "last_good_at": "2026-08-09T16:04:05Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "5",
    "last_good_json": null,
    "last_good_hash": "300ca0d0",
@@ -33,8 +33,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:04:05Z",
-   "last_good_at": "2026-08-09T16:04:05Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "logo_wall, proof, testimonial, integrations",
    "last_good_json": "{\"present\":{\"logo_wall\":true,\"proof\":true,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":true,\"media\":false}}",
    "last_good_hash": "5f7165cd",
@@ -51,8 +51,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:04:05Z",
-   "last_good_at": "2026-08-09T16:04:05Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "57",
    "last_good_json": null,
    "last_good_hash": "8ae14ba5",
@@ -69,8 +69,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:04:05Z",
-   "last_good_at": "2026-08-09T16:04:05Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -87,8 +87,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:04:05Z",
-   "last_good_at": "2026-08-09T16:04:05Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "42",
    "last_good_json": null,
    "last_good_hash": "87e38583",
@@ -105,8 +105,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:04:05Z",
-   "last_good_at": "2026-08-09T16:04:05Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "9",
    "last_good_json": null,
    "last_good_hash": "3c0cb3b4",
@@ -123,8 +123,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:04:05Z",
-   "last_good_at": "2026-08-09T16:04:05Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "hero > features > testimonial > integrations > proof > cta > logos > testimonial > cta",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":58,\"merged\":1},{\"position\":2,\"type\":\"features\",\"heading\":\"Built for every modern data challenge\",\"words\":103,\"merged\":1},{\"position\":3,\"type\":\"testimonial\",\"heading\":\"Build real-time data products that scale\",\"words\":129,\"merged\":1},{\"position\":4,\"type\":\"integrations\",\"heading\":\"Why ClickHouse?\",\"words\":94,\"merged\":2},{\"position\":5,\"type\":\"proof\",\"heading\":\"Why is ClickHouse so fast?\",\"words\":93,\"merged\":1},{\"position\":6,\"type\":\"cta\",\"heading\":\"Deploy your way\",\"words\":74,\"merged\":1},{\"position\":7,\"type\":\"logos\",\"heading\":\"Join the 100k+ developers using ClickHouse today\",\"words\":19,\"merged\":1},{\"position\":8,\"type\":\"testimonial\",\"heading\":\"FAQs\",\"words\":242,\"merged\":1},{\"position\":9,\"type\":\"cta\",\"heading\":\"Start using ClickHouse in seconds\",\"words\":49,\"merged\":1}]}",
    "last_good_hash": "6be31c1b",
@@ -141,8 +141,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:04:05Z",
-   "last_good_at": "2026-08-09T16:04:05Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": 881,
    "last_good_json": null,
    "last_good_hash": "4cb2dc54",
@@ -159,8 +159,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:04:05Z",
-   "last_good_at": "2026-08-09T16:04:05Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "leading database for ai",
    "last_good_json": null,
    "last_good_hash": "a747bb15",
@@ -177,8 +177,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:04:05Z",
-   "last_good_at": "2026-08-09T16:04:05Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "amp, astonomer, azur games, block min, cognitiv, commonroom, corsearch, cursor, didi, electrum, fastly carousel, harvey, instacart 1, klaviyo, langchain 1, Langfuse.3g9v6oyhqffcz, longbridge, meta, mskcc, poizon, prefect, ramp, rbc, shopee 1, sierra, solarwinds, spoton, teckion 1, trip com 1, trusted by adevinta, trusted by cisco, trusted by cloudflare, trusted by contentsquare, trusted by deutsche bank, trusted by ebay, trusted by fisker, trusted by gitlab, trusted by hubspot, trusted by ibm, trusted by lyft",
    "last_good_json": "{\"names\":[\"amp\",\"astonomer\",\"azur games\",\"block min\",\"cognitiv\",\"commonroom\",\"corsearch\",\"cursor\",\"didi\",\"electrum\",\"fastly carousel\",\"harvey\",\"instacart 1\",\"klaviyo\",\"langchain 1\",\"Langfuse.3g9v6oyhqffcz\",\"longbridge\",\"meta\",\"mskcc\",\"poizon\",\"prefect\",\"ramp\",\"rbc\",\"shopee 1\",\"sierra\",\"solarwinds\",\"spoton\",\"teckion 1\",\"trip com 1\",\"trusted by adevinta\",\"trusted by cisco\",\"trusted by cloudflare\",\"trusted by contentsquare\",\"trusted by deutsche bank\",\"trusted by ebay\",\"trusted by fisker\",\"trusted by gitlab\",\"trusted by hubspot\",\"trusted by ibm\",\"trusted by lyft\"],\"count\":40,\"lead\":\"Powering agentic systems with millisecond queries at petabyte scale. <div class=\"}",
    "last_good_hash": "9c6ad228",
@@ -195,8 +195,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:04:05Z",
-   "last_good_at": "2026-08-09T16:04:05Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "The leading database for AI",
    "last_good_json": null,
    "last_good_hash": "b6c25ace",
@@ -213,8 +213,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:04:05Z",
-   "last_good_at": "2026-08-09T16:04:05Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "ClickHouse is a fast open-source column-oriented database management system that allows generating analytical data reports in real-time using SQL queries",
    "last_good_json": null,
    "last_good_hash": "326b4cad",
@@ -231,8 +231,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:04:05Z",
-   "last_good_at": "2026-08-09T16:04:05Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "Fast Open-Source OLAP DBMS | ClickHouse",
    "last_good_json": null,
    "last_good_hash": "f86bac1f",
@@ -249,7 +249,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T16:08:46Z",
+   "last_observed_at": "2026-08-09T16:30:39Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -267,7 +267,7 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T16:08:46Z",
+   "last_observed_at": "2026-08-09T16:30:39Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -285,8 +285,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T16:08:46Z",
-   "last_good_at": "2026-08-09T16:08:46Z",
+   "last_observed_at": "2026-08-09T16:30:39Z",
+   "last_good_at": "2026-08-09T16:30:39Z",
    "last_good_value": "Pricing | ClickHouse",
    "last_good_json": null,
    "last_good_hash": "1f4e134b",
@@ -303,7 +303,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T16:08:46Z",
+   "last_observed_at": "2026-08-09T16:30:39Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -321,7 +321,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T16:08:46Z",
+   "last_observed_at": "2026-08-09T16:30:39Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -339,8 +339,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:04:05Z",
-   "last_good_at": "2026-08-09T16:04:05Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "100 integrations | 100k developers | 100x faster in processing",
    "last_good_json": "{\"items\":[{\"claim\":\"100 integrations\",\"kind\":\"count\"},{\"claim\":\"100k developers\",\"kind\":\"count\"},{\"claim\":\"100x faster in processing\",\"kind\":\"multiplier\"}],\"count\":3}",
    "last_good_hash": "d622d040",
@@ -357,8 +357,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:04:05Z",
-   "last_good_at": "2026-08-09T16:04:05Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "Powering agentic systems with millisecond queries at petabyte scale.",
    "last_good_json": null,
    "last_good_hash": "dec45121",
@@ -376,6 +376,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://clickhouse.com/",
+   "fetched_at": "2026-08-09T16:35:13Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 333492,
+   "duration_ms": 276,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
+  {
+   "kind": "pricing",
+   "url": "https://clickhouse.com/pricing",
+   "fetched_at": "2026-08-09T16:30:39Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 181651,
+   "duration_ms": 553,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
   {
    "kind": "pricing",
    "url": "https://clickhouse.com/pricing",

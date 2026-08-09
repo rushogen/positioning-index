@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:02:24Z",
-   "last_good_at": "2026-08-09T16:02:24Z",
+   "last_observed_at": "2026-08-09T16:32:19Z",
+   "last_good_at": "2026-08-09T16:32:19Z",
    "last_good_value": "8",
    "last_good_json": null,
    "last_good_hash": "3d0cb547",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:02:24Z",
-   "last_good_at": "2026-08-09T16:02:24Z",
+   "last_observed_at": "2026-08-09T16:32:19Z",
+   "last_good_at": "2026-08-09T16:32:19Z",
    "last_good_value": "logo_wall, faq, integrations",
    "last_good_json": "{\"present\":{\"logo_wall\":true,\"proof\":false,\"testimonial\":false,\"faq\":true,\"comparison\":false,\"pricing_block\":false,\"integrations\":true,\"media\":false}}",
    "last_good_hash": "967cbed6",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:02:24Z",
-   "last_good_at": "2026-08-09T16:02:24Z",
+   "last_observed_at": "2026-08-09T16:32:19Z",
+   "last_good_at": "2026-08-09T16:32:19Z",
    "last_good_value": "38",
    "last_good_json": null,
    "last_good_hash": "8ff05e0e",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:02:24Z",
-   "last_good_at": "2026-08-09T16:02:24Z",
+   "last_observed_at": "2026-08-09T16:32:19Z",
+   "last_good_at": "2026-08-09T16:32:19Z",
    "last_good_value": "14",
    "last_good_json": null,
    "last_good_hash": "17eb23f8",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:02:24Z",
-   "last_good_at": "2026-08-09T16:02:24Z",
+   "last_observed_at": "2026-08-09T16:32:19Z",
+   "last_good_at": "2026-08-09T16:32:19Z",
    "last_good_value": "71",
    "last_good_json": null,
    "last_good_hash": "90e5d245",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:02:24Z",
-   "last_good_at": "2026-08-09T16:02:24Z",
+   "last_observed_at": "2026-08-09T16:32:19Z",
+   "last_good_at": "2026-08-09T16:32:19Z",
    "last_good_value": "9",
    "last_good_json": null,
    "last_good_hash": "3c0cb3b4",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:02:24Z",
-   "last_good_at": "2026-08-09T16:02:24Z",
+   "last_observed_at": "2026-08-09T16:32:19Z",
+   "last_good_at": "2026-08-09T16:32:19Z",
    "last_good_value": "hero > logos > integrations > security > features > faq > cta > security > features",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":34,\"merged\":1},{\"position\":2,\"type\":\"logos\",\"heading\":\"The better Microsoft 365 for private clouds.\",\"words\":75,\"merged\":1},{\"position\":3,\"type\":\"integrations\",\"heading\":\"Nextcloud Hub\",\"words\":390,\"merged\":1},{\"position\":4,\"type\":\"security\",\"heading\":\"Nextcloud use cases\",\"words\":146,\"merged\":1},{\"position\":5,\"type\":\"features\",\"heading\":\"Get in touch\",\"words\":46,\"merged\":1},{\"position\":6,\"type\":\"faq\",\"heading\":\"Why Nextcloud?\",\"words\":153,\"merged\":1},{\"position\":7,\"type\":\"cta\",\"heading\":\"See it in action\",\"words\":44,\"merged\":1},{\"position\":8,\"type\":\"security\",\"heading\":\"Nextcloud events\",\"words\":39,\"merged\":2},{\"position\":9,\"type\":\"features\",\"heading\":\"See how we stack up\",\"words\":28,\"merged\":1}]}",
    "last_good_hash": "806bbf36",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:02:24Z",
-   "last_good_at": "2026-08-09T16:02:24Z",
+   "last_observed_at": "2026-08-09T16:32:19Z",
+   "last_good_at": "2026-08-09T16:32:19Z",
    "last_good_value": 1019,
    "last_good_json": null,
    "last_good_hash": "1f9a04a2",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:02:24Z",
-   "last_good_at": "2026-08-09T16:02:24Z",
+   "last_observed_at": "2026-08-09T16:32:19Z",
+   "last_good_at": "2026-08-09T16:32:19Z",
    "last_good_value": "open source content collaboration platform",
    "last_good_json": null,
    "last_good_hash": "b14b926d",
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:02:24Z",
-   "last_good_at": "2026-08-09T16:02:24Z",
+   "last_observed_at": "2026-08-09T16:32:19Z",
+   "last_good_at": "2026-08-09T16:32:19Z",
    "last_good_value": "Deutsche Telekom, HTW Berlin, Raitec Raiffeisen Informatik, Regio IT, Syddansk Universitet, Technische Universität Berlin",
    "last_good_json": "{\"names\":[\"Deutsche Telekom\",\"HTW Berlin\",\"Raitec Raiffeisen Informatik\",\"Regio IT\",\"Syddansk Universitet\",\"Technische Universität Berlin\"],\"count\":6,\"lead\":\"Trusted by thousands of organizations The most popular open so\"}",
    "last_good_hash": "a96128ed",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:02:24Z",
-   "last_good_at": "2026-08-09T16:02:24Z",
+   "last_observed_at": "2026-08-09T16:32:19Z",
+   "last_good_at": "2026-08-09T16:32:19Z",
    "last_good_value": "Regain control over your data",
    "last_good_json": null,
    "last_good_hash": "dba9d53d",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:02:24Z",
-   "last_good_at": "2026-08-09T16:02:24Z",
+   "last_observed_at": "2026-08-09T16:32:19Z",
+   "last_good_at": "2026-08-09T16:32:19Z",
    "last_good_value": "The most popular open source content collaboration platform for tens of millions of users at thousands of organizations across the globe",
    "last_good_json": null,
    "last_good_hash": "c77d8ad8",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:02:24Z",
-   "last_good_at": "2026-08-09T16:02:24Z",
+   "last_observed_at": "2026-08-09T16:32:19Z",
+   "last_good_at": "2026-08-09T16:32:19Z",
    "last_good_value": "Nextcloud - Open source content collaboration platform",
    "last_good_json": null,
    "last_good_hash": "81c28bae",
@@ -248,8 +248,8 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T16:07:05Z",
-   "last_good_at": "2026-08-09T16:07:05Z",
+   "last_observed_at": "2026-08-09T16:36:17Z",
+   "last_good_at": "2026-08-09T16:36:17Z",
    "last_good_value": "EUR 71.29/year",
    "last_good_json": "{\"amount\":71.29,\"currency\":\"EUR\",\"period\":\"year\",\"unit\":null,\"tier\":\"Standard\"}",
    "last_good_hash": "1d13acc4",
@@ -266,8 +266,8 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T16:07:05Z",
-   "last_good_at": "2026-08-09T16:07:05Z",
+   "last_observed_at": "2026-08-09T16:36:17Z",
+   "last_good_at": "2026-08-09T16:36:17Z",
    "last_good_value": "no",
    "last_good_json": "{\"free\":false}",
    "last_good_hash": "62366ffa",
@@ -284,8 +284,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T16:07:05Z",
-   "last_good_at": "2026-08-09T16:07:05Z",
+   "last_observed_at": "2026-08-09T16:36:17Z",
+   "last_good_at": "2026-08-09T16:36:17Z",
    "last_good_value": "Nextcloud Enterprise pricing",
    "last_good_json": null,
    "last_good_hash": "c45930be",
@@ -302,8 +302,8 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T16:07:05Z",
-   "last_good_at": "2026-08-09T16:07:05Z",
+   "last_observed_at": "2026-08-09T16:36:17Z",
+   "last_good_at": "2026-08-09T16:36:17Z",
    "last_good_value": "100 users",
    "last_good_json": "{\"seats\":100,\"unit\":\"user\"}",
    "last_good_hash": "6f5ab96c",
@@ -320,8 +320,8 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T16:07:05Z",
-   "last_good_at": "2026-08-09T16:07:05Z",
+   "last_observed_at": "2026-08-09T16:36:17Z",
+   "last_good_at": "2026-08-09T16:36:17Z",
    "last_good_value": "Standard EUR 71.29/year | Premium EUR 104.99/year | Ultimate EUR 204.75/year",
    "last_good_json": "{\"tiers\":[{\"name\":\"Standard\",\"amount\":71.29,\"currency\":\"EUR\",\"period\":\"year\",\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Premium\",\"amount\":104.99,\"currency\":\"EUR\",\"period\":\"year\",\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Ultimate\",\"amount\":204.75,\"currency\":\"EUR\",\"period\":\"year\",\"unit\":null,\"source\":\"heuristic\"}],\"count\":3}",
    "last_good_hash": "29a7c0fa",
@@ -338,7 +338,7 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:02:24Z",
+   "last_observed_at": "2026-08-09T16:32:19Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -356,8 +356,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:02:24Z",
-   "last_good_at": "2026-08-09T16:02:24Z",
+   "last_observed_at": "2026-08-09T16:32:19Z",
+   "last_good_at": "2026-08-09T16:32:19Z",
    "last_good_value": "The most popular open source content collaboration platform for tens of millions of users at thousands of organizations across the globe",
    "last_good_json": null,
    "last_good_hash": "c77d8ad8",
@@ -375,6 +375,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://nextcloud.com/pricing/",
+   "fetched_at": "2026-08-09T16:36:17Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 242840,
+   "duration_ms": 706,
+   "signals_found": 5,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://nextcloud.com/",
+   "fetched_at": "2026-08-09T16:32:19Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 239188,
+   "duration_ms": 1349,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
   {
    "kind": "pricing",
    "url": "https://nextcloud.com/pricing/",
@@ -590,30 +614,6 @@
    "duration_ms": 796,
    "signals_found": 0,
    "signals_expected": 0
-  },
-  {
-   "kind": "home",
-   "url": "https://nextcloud.com/",
-   "fetched_at": "2026-08-08T07:19:18Z",
-   "http_status": 304,
-   "status": "unchanged",
-   "reason": "origin returned 304 Not Modified",
-   "bytes": 0,
-   "duration_ms": 538,
-   "signals_found": 0,
-   "signals_expected": 0
-  },
-  {
-   "kind": "pricing",
-   "url": "https://nextcloud.com/pricing/",
-   "fetched_at": "2026-08-08T07:17:52Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": "extractor 1.0.0 -> 1.1.0; re-baselining",
-   "bytes": 242843,
-   "duration_ms": 1477,
-   "signals_found": 5,
-   "signals_expected": 5
   }
  ]
 }

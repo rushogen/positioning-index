@@ -15,8 +15,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:03:36Z",
-   "last_good_at": "2026-08-09T16:03:36Z",
+   "last_observed_at": "2026-08-09T16:35:12Z",
+   "last_good_at": "2026-08-09T16:35:12Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -33,8 +33,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:03:36Z",
-   "last_good_at": "2026-08-09T16:03:36Z",
+   "last_observed_at": "2026-08-09T16:35:12Z",
+   "last_good_at": "2026-08-09T16:35:12Z",
    "last_good_value": "logo_wall, testimonial",
    "last_good_json": "{\"present\":{\"logo_wall\":true,\"proof\":false,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "97603fa2",
@@ -51,8 +51,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:03:36Z",
-   "last_good_at": "2026-08-09T16:03:36Z",
+   "last_observed_at": "2026-08-09T16:35:12Z",
+   "last_good_at": "2026-08-09T16:35:12Z",
    "last_good_value": "86",
    "last_good_json": null,
    "last_good_hash": "8c01a0e3",
@@ -69,8 +69,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:03:36Z",
-   "last_good_at": "2026-08-09T16:03:36Z",
+   "last_observed_at": "2026-08-09T16:35:12Z",
+   "last_good_at": "2026-08-09T16:35:12Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -87,8 +87,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:03:36Z",
-   "last_good_at": "2026-08-09T16:03:36Z",
+   "last_observed_at": "2026-08-09T16:35:12Z",
+   "last_good_at": "2026-08-09T16:35:12Z",
    "last_good_value": "85",
    "last_good_json": null,
    "last_good_hash": "8d01a276",
@@ -105,8 +105,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:03:36Z",
-   "last_good_at": "2026-08-09T16:03:36Z",
+   "last_observed_at": "2026-08-09T16:35:12Z",
+   "last_good_at": "2026-08-09T16:35:12Z",
    "last_good_value": "5",
    "last_good_json": null,
    "last_good_hash": "300ca0d0",
@@ -123,8 +123,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:03:36Z",
-   "last_good_at": "2026-08-09T16:03:36Z",
+   "last_observed_at": "2026-08-09T16:35:12Z",
+   "last_good_at": "2026-08-09T16:35:12Z",
    "last_good_value": "hero > cta > logos > testimonial > features",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":9,\"merged\":1},{\"position\":2,\"type\":\"cta\",\"heading\":\"\",\"words\":57,\"merged\":1},{\"position\":3,\"type\":\"logos\",\"heading\":\"TRUSTED BY ORGANIZATIONS WORLDWIDE\",\"words\":4,\"merged\":1},{\"position\":4,\"type\":\"testimonial\",\"heading\":\"Everything in One Platform\",\"words\":181,\"merged\":1},{\"position\":5,\"type\":\"features\",\"heading\":\"Build an Intelligent, Secure IT Foundation with JumpCloud\",\"words\":32,\"merged\":1}]}",
    "last_good_hash": "eeeaf4d7",
@@ -141,8 +141,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:03:36Z",
-   "last_good_at": "2026-08-09T16:03:36Z",
+   "last_observed_at": "2026-08-09T16:35:12Z",
+   "last_good_at": "2026-08-09T16:35:12Z",
    "last_good_value": 283,
    "last_good_json": null,
    "last_good_hash": "30fb8aac",
@@ -159,8 +159,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:03:36Z",
-   "last_good_at": "2026-08-09T16:03:36Z",
+   "last_observed_at": "2026-08-09T16:35:12Z",
+   "last_good_at": "2026-08-09T16:35:12Z",
    "last_good_value": "unified platform for identity",
    "last_good_json": null,
    "last_good_hash": "5aa75d9b",
@@ -177,8 +177,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:03:36Z",
-   "last_good_at": "2026-08-09T16:03:36Z",
+   "last_observed_at": "2026-08-09T16:35:12Z",
+   "last_good_at": "2026-08-09T16:35:12Z",
    "last_good_value": "canva, Coreweave, Gartner, JumpCloud, Cloud Directory",
    "last_good_json": "{\"names\":[\"canva\",\"Coreweave\",\"Gartner\",\"JumpCloud, Cloud Directory\"],\"count\":4,\"lead\":\"TRUSTED BY ORGANIZATIONS WORLDWIDE <div class=\\\"customer-graysca\"}",
    "last_good_hash": "5691daa3",
@@ -195,8 +195,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:03:36Z",
-   "last_good_at": "2026-08-09T16:03:36Z",
+   "last_observed_at": "2026-08-09T16:35:12Z",
+   "last_good_at": "2026-08-09T16:35:12Z",
    "last_good_value": "Intelligent, Secure IT.",
    "last_good_json": null,
    "last_good_hash": "4905ff26",
@@ -213,8 +213,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:03:36Z",
-   "last_good_at": "2026-08-09T16:03:36Z",
+   "last_observed_at": "2026-08-09T16:35:12Z",
+   "last_good_at": "2026-08-09T16:35:12Z",
    "last_good_value": "JumpCloud makes it simple to manage Windows, Apple, Linux, and Android devices and to deliver secure access with SSO, MFA, Zero Trust, RADIUS, and more.",
    "last_good_json": null,
    "last_good_hash": "30470ca5",
@@ -231,8 +231,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:03:36Z",
-   "last_good_at": "2026-08-09T16:03:36Z",
+   "last_observed_at": "2026-08-09T16:35:12Z",
+   "last_good_at": "2026-08-09T16:35:12Z",
    "last_good_value": "JumpCloud: Unified Platform for Identity, Access, & Devices",
    "last_good_json": null,
    "last_good_hash": "21920867",
@@ -249,7 +249,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T16:08:03Z",
+   "last_observed_at": "2026-08-09T16:30:34Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -267,7 +267,7 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T16:08:03Z",
+   "last_observed_at": "2026-08-09T16:30:34Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -285,8 +285,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T16:08:03Z",
-   "last_good_at": "2026-08-09T16:08:03Z",
+   "last_observed_at": "2026-08-09T16:30:34Z",
+   "last_good_at": "2026-08-09T16:30:34Z",
    "last_good_value": "Pricing - JumpCloud",
    "last_good_json": null,
    "last_good_hash": "085c7557",
@@ -303,7 +303,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T16:08:03Z",
+   "last_observed_at": "2026-08-09T16:30:34Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -321,7 +321,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T16:08:03Z",
+   "last_observed_at": "2026-08-09T16:30:34Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -339,7 +339,7 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:03:36Z",
+   "last_observed_at": "2026-08-09T16:35:12Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -357,8 +357,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:03:36Z",
-   "last_good_at": "2026-08-09T16:03:36Z",
+   "last_observed_at": "2026-08-09T16:35:12Z",
+   "last_good_at": "2026-08-09T16:35:12Z",
    "last_good_value": "Secure every identity. Human or not.",
    "last_good_json": null,
    "last_good_hash": "5f5fa424",
@@ -376,6 +376,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://jumpcloud.com/",
+   "fetched_at": "2026-08-09T16:35:12Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 345370,
+   "duration_ms": 227,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
+  {
+   "kind": "pricing",
+   "url": "https://jumpcloud.com/pricing",
+   "fetched_at": "2026-08-09T16:30:34Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 294515,
+   "duration_ms": 264,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
   {
    "kind": "pricing",
    "url": "https://jumpcloud.com/pricing",

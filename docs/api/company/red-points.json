@@ -13,8 +13,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:03:51Z",
-   "last_good_at": "2026-08-09T16:03:51Z",
+   "last_observed_at": "2026-08-09T16:33:12Z",
+   "last_good_at": "2026-08-09T16:33:12Z",
    "last_good_value": "5",
    "last_good_json": null,
    "last_good_hash": "300ca0d0",
@@ -31,8 +31,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:03:51Z",
-   "last_good_at": "2026-08-09T16:03:51Z",
+   "last_observed_at": "2026-08-09T16:33:12Z",
+   "last_good_at": "2026-08-09T16:33:12Z",
    "last_good_value": "none",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "ada7afdb",
@@ -49,8 +49,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:03:51Z",
-   "last_good_at": "2026-08-09T16:03:51Z",
+   "last_observed_at": "2026-08-09T16:33:12Z",
+   "last_good_at": "2026-08-09T16:33:12Z",
    "last_good_value": "51",
    "last_good_json": null,
    "last_good_hash": "84e14233",
@@ -67,8 +67,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:03:51Z",
-   "last_good_at": "2026-08-09T16:03:51Z",
+   "last_observed_at": "2026-08-09T16:33:12Z",
+   "last_good_at": "2026-08-09T16:33:12Z",
    "last_good_value": "4",
    "last_good_json": null,
    "last_good_hash": "310ca263",
@@ -85,7 +85,7 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:03:51Z",
+   "last_observed_at": "2026-08-09T16:33:12Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -103,8 +103,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:03:51Z",
-   "last_good_at": "2026-08-09T16:03:51Z",
+   "last_observed_at": "2026-08-09T16:33:12Z",
+   "last_good_at": "2026-08-09T16:33:12Z",
    "last_good_value": "3",
    "last_good_json": null,
    "last_good_hash": "360caa42",
@@ -121,8 +121,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:03:51Z",
-   "last_good_at": "2026-08-09T16:03:51Z",
+   "last_observed_at": "2026-08-09T16:33:12Z",
+   "last_good_at": "2026-08-09T16:33:12Z",
    "last_good_value": "hero > features > security",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":581,\"merged\":1},{\"position\":2,\"type\":\"features\",\"heading\":\"Stop any kind of brand abuse. Find your solution.\",\"words\":151,\"merged\":4},{\"position\":3,\"type\":\"security\",\"heading\":\"1,300+ brands trust Red Points\",\"words\":406,\"merged\":1}]}",
    "last_good_hash": "e71c1cfe",
@@ -139,8 +139,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:03:51Z",
-   "last_good_at": "2026-08-09T16:03:51Z",
+   "last_observed_at": "2026-08-09T16:33:12Z",
+   "last_good_at": "2026-08-09T16:33:12Z",
    "last_good_value": 1622,
    "last_good_json": null,
    "last_good_hash": "ba7657c2",
@@ -157,8 +157,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:03:51Z",
-   "last_good_at": "2026-08-09T16:03:51Z",
+   "last_observed_at": "2026-08-09T16:33:12Z",
+   "last_good_at": "2026-08-09T16:33:12Z",
    "last_good_value": "ai brand protection platform",
    "last_good_json": null,
    "last_good_hash": "91ddedc4",
@@ -175,8 +175,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:03:51Z",
-   "last_good_at": "2026-08-09T16:03:51Z",
+   "last_observed_at": "2026-08-09T16:33:12Z",
+   "last_good_at": "2026-08-09T16:33:12Z",
    "last_good_value": "Essity, Foreo, Herbalife, Kaspersky, Points, Points Case Study Fila, Points Client Graff, Points Clients, Points Clients Burton, points clients keen",
    "last_good_json": "{\"names\":[\"Essity\",\"Foreo\",\"Herbalife\",\"Kaspersky\",\"Points\",\"Points Case Study Fila\",\"Points Client Graff\",\"Points Clients\",\"Points Clients Burton\",\"points clients keen\"],\"count\":10,\"lead\":\"our customers' trust.\\\" /> <meta property\"}",
    "last_good_hash": "4240dfd9",
@@ -193,8 +193,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:03:51Z",
-   "last_good_at": "2026-08-09T16:03:51Z",
+   "last_observed_at": "2026-08-09T16:33:12Z",
+   "last_good_at": "2026-08-09T16:33:12Z",
    "last_good_value": "Eliminate fakes and protect your customers brand revenue",
    "last_good_json": null,
    "last_good_hash": "a720a106",
@@ -211,8 +211,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:03:51Z",
-   "last_good_at": "2026-08-09T16:03:51Z",
+   "last_observed_at": "2026-08-09T16:33:12Z",
+   "last_good_at": "2026-08-09T16:33:12Z",
    "last_good_value": "Our AI platform takes down counterfeits, fake websites, social media fraud accounts, and piracy. Safeguard your brand, protect your revenue, and secure your customers' trust.",
    "last_good_json": null,
    "last_good_hash": "c2f662db",
@@ -229,8 +229,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:03:51Z",
-   "last_good_at": "2026-08-09T16:03:51Z",
+   "last_observed_at": "2026-08-09T16:33:12Z",
+   "last_good_at": "2026-08-09T16:33:12Z",
    "last_good_value": "Red Points’ AI Brand Protection Platform",
    "last_good_json": null,
    "last_good_hash": "6acc9be1",
@@ -247,8 +247,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:03:51Z",
-   "last_good_at": "2026-08-09T16:03:51Z",
+   "last_observed_at": "2026-08-09T16:33:12Z",
+   "last_good_at": "2026-08-09T16:33:12Z",
    "last_good_value": "$1.6m infringements enforced david | $10k and they get | $22m infringements removed satoru | 1,300 brands",
    "last_good_json": "{\"items\":[{\"claim\":\"$1.6m infringements enforced david\",\"kind\":\"money\"},{\"claim\":\"$10k and they get\",\"kind\":\"money\"},{\"claim\":\"$22m infringements removed satoru\",\"kind\":\"money\"},{\"claim\":\"1,300 brands\",\"kind\":\"count\"}],\"count\":4}",
    "last_good_hash": "4bc41baf",
@@ -265,8 +265,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:03:51Z",
-   "last_good_at": "2026-08-09T16:03:51Z",
+   "last_observed_at": "2026-08-09T16:33:12Z",
+   "last_good_at": "2026-08-09T16:33:12Z",
    "last_good_value": "Our fully managed AI platform takes down counterfeits, fake websites, social media fraud accounts, and piracy.",
    "last_good_json": null,
    "last_good_hash": "a26dcf15",
@@ -284,6 +284,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.redpoints.com/",
+   "fetched_at": "2026-08-09T16:33:12Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 429895,
+   "duration_ms": 690,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.redpoints.com/",

@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:08:02Z",
-   "last_good_at": "2026-08-09T16:08:02Z",
+   "last_observed_at": "2026-08-09T16:31:09Z",
+   "last_good_at": "2026-08-09T16:31:09Z",
    "last_good_value": "6",
    "last_good_json": null,
    "last_good_hash": "330ca589",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:08:02Z",
-   "last_good_at": "2026-08-09T16:08:02Z",
+   "last_observed_at": "2026-08-09T16:31:09Z",
+   "last_good_at": "2026-08-09T16:31:09Z",
    "last_good_value": "logo_wall, proof, testimonial, pricing_block",
    "last_good_json": "{\"present\":{\"logo_wall\":true,\"proof\":true,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":true,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "d76022ee",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:08:02Z",
-   "last_good_at": "2026-08-09T16:08:02Z",
+   "last_observed_at": "2026-08-09T16:31:09Z",
+   "last_good_at": "2026-08-09T16:31:09Z",
    "last_good_value": "43",
    "last_good_json": null,
    "last_good_hash": "86e383f0",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:08:02Z",
-   "last_good_at": "2026-08-09T16:08:02Z",
+   "last_observed_at": "2026-08-09T16:31:09Z",
+   "last_good_at": "2026-08-09T16:31:09Z",
    "last_good_value": "4",
    "last_good_json": null,
    "last_good_hash": "310ca263",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:08:02Z",
-   "last_good_at": "2026-08-09T16:08:02Z",
+   "last_observed_at": "2026-08-09T16:31:09Z",
+   "last_good_at": "2026-08-09T16:31:09Z",
    "last_good_value": "16",
    "last_good_json": null,
    "last_good_hash": "19eb271e",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:08:02Z",
-   "last_good_at": "2026-08-09T16:08:02Z",
+   "last_observed_at": "2026-08-09T16:31:09Z",
+   "last_good_at": "2026-08-09T16:31:09Z",
    "last_good_value": "8",
    "last_good_json": null,
    "last_good_hash": "3d0cb547",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:08:02Z",
-   "last_good_at": "2026-08-09T16:08:02Z",
+   "last_observed_at": "2026-08-09T16:31:09Z",
+   "last_good_at": "2026-08-09T16:31:09Z",
    "last_good_value": "hero > pricing > testimonial > features > logos > proof > features > cta",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":298,\"merged\":1},{\"position\":2,\"type\":\"pricing\",\"heading\":\"The intelligent system that never sleeps. Picks up leads at 2am. Catches renewals before they slip. Hands you the answer before you ask.\",\"words\":945,\"merged\":1},{\"position\":3,\"type\":\"testimonial\",\"heading\":\"Live from day one. Connect your inbox and calendar. Attio learns your business and builds itself around it, before your first agent even gets to work.\",\"words\":137,\"merged\":1},{\"position\":4,\"type\":\"features\",\"heading\":\"Universal Context ™\",\"words\":60,\"merged\":2},{\"position\":5,\"type\":\"logos\",\"heading\":\"SDK. API. MCP. Build anything on Attio.\",\"words\":37,\"merged\":1},{\"position\":6,\"type\":\"proof\",\"heading\":\"Run at any scale. Production-grade for your team and agents.\",\"words\":25,\"merged\":2},{\"position\":7,\"type\":\"features\",\"heading\":\"Better as you grow. New features every week to keep pace with you.\",\"words\":76,\"merged\":1},{\"position\":8,\"type\":\"cta\",\"heading\":\"Agentic revenue runs on Attio.\",\"words\":18,\"merged\":1}]}",
    "last_good_hash": "c257b508",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:08:02Z",
-   "last_good_at": "2026-08-09T16:08:02Z",
+   "last_observed_at": "2026-08-09T16:31:09Z",
+   "last_good_at": "2026-08-09T16:31:09Z",
    "last_good_value": 1749,
    "last_good_json": null,
    "last_good_hash": "31cd0b92",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:08:02Z",
-   "last_good_at": "2026-08-09T16:08:02Z",
+   "last_observed_at": "2026-08-09T16:31:09Z",
+   "last_good_at": "2026-08-09T16:31:09Z",
    "last_good_value": "crm for agentic revenue",
    "last_good_json": null,
    "last_good_hash": "bd44d491",
@@ -176,7 +176,7 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:08:02Z",
+   "last_observed_at": "2026-08-09T16:31:09Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:08:02Z",
-   "last_good_at": "2026-08-09T16:08:02Z",
+   "last_observed_at": "2026-08-09T16:31:09Z",
+   "last_good_at": "2026-08-09T16:31:09Z",
    "last_good_value": "Welcome to agentic revenue.",
    "last_good_json": null,
    "last_good_hash": "2b58a555",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:08:02Z",
-   "last_good_at": "2026-08-09T16:08:02Z",
+   "last_observed_at": "2026-08-09T16:31:09Z",
+   "last_good_at": "2026-08-09T16:31:09Z",
    "last_good_value": "The system for revenue teams to build pipeline, accelerate deals, and grow accounts around the clock.",
    "last_good_json": null,
    "last_good_hash": "5a83cdeb",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:08:02Z",
-   "last_good_at": "2026-08-09T16:08:02Z",
+   "last_observed_at": "2026-08-09T16:31:09Z",
+   "last_good_at": "2026-08-09T16:31:09Z",
    "last_good_value": "Attio: The CRM for agentic revenue",
    "last_good_json": null,
    "last_good_hash": "cdb6dccf",
@@ -248,7 +248,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T16:03:35Z",
+   "last_observed_at": "2026-08-09T16:35:33Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -266,8 +266,8 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T16:03:35Z",
-   "last_good_at": "2026-08-09T16:03:35Z",
+   "last_observed_at": "2026-08-09T16:35:33Z",
+   "last_good_at": "2026-08-09T16:35:33Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true}",
    "last_good_hash": "4e9f3590",
@@ -284,8 +284,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T16:03:35Z",
-   "last_good_at": "2026-08-09T16:03:35Z",
+   "last_observed_at": "2026-08-09T16:35:33Z",
+   "last_good_at": "2026-08-09T16:35:33Z",
    "last_good_value": "Plans & Pricing | Attio",
    "last_good_json": null,
    "last_good_hash": "14555f98",
@@ -302,7 +302,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T16:03:35Z",
+   "last_observed_at": "2026-08-09T16:35:33Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -320,8 +320,8 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T16:03:35Z",
-   "last_good_at": "2026-08-09T16:03:35Z",
+   "last_observed_at": "2026-08-09T16:35:33Z",
+   "last_good_at": "2026-08-09T16:35:33Z",
    "last_good_value": "Free free | Enterprise custom",
    "last_good_json": "{\"tiers\":[{\"name\":\"Free\",\"amount\":0,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"free-phrase\"},{\"name\":\"Enterprise\",\"amount\":null,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"contact-sales\"}],\"count\":2}",
    "last_good_hash": "9a08ddc1",
@@ -338,8 +338,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:08:02Z",
-   "last_good_at": "2026-08-09T16:08:02Z",
+   "last_observed_at": "2026-08-09T16:31:09Z",
+   "last_good_at": "2026-08-09T16:31:09Z",
    "last_good_value": "$107,000 arr high brightloop | $125m series | $86,000 arr high vela | 10 accounts | 30,000 customers | 83% faster lead triage",
    "last_good_json": "{\"items\":[{\"claim\":\"$107,000 arr high brightloop\",\"kind\":\"money\"},{\"claim\":\"$125m series\",\"kind\":\"money\"},{\"claim\":\"$86,000 arr high vela\",\"kind\":\"money\"},{\"claim\":\"10 accounts\",\"kind\":\"count\"},{\"claim\":\"30,000 customers\",\"kind\":\"count\"},{\"claim\":\"83% faster lead triage\",\"kind\":\"percent\"}],\"count\":6}",
    "last_good_hash": "4f0111ed",
@@ -356,8 +356,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:08:02Z",
-   "last_good_at": "2026-08-09T16:08:02Z",
+   "last_observed_at": "2026-08-09T16:31:09Z",
+   "last_good_at": "2026-08-09T16:31:09Z",
    "last_good_value": "Attio is the CRM that builds pipeline, advances deals, and grows accounts around the clock.",
    "last_good_json": null,
    "last_good_hash": "4ac1535c",
@@ -375,6 +375,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://attio.com/pricing",
+   "fetched_at": "2026-08-09T16:35:33Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 1248986,
+   "duration_ms": 156,
+   "signals_found": 3,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://attio.com/",
+   "fetched_at": "2026-08-09T16:31:09Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 1100211,
+   "duration_ms": 352,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://attio.com/",
@@ -588,30 +612,6 @@
    "reason": "body identical to the previous fetch",
    "bytes": 1100211,
    "duration_ms": 279,
-   "signals_found": 0,
-   "signals_expected": 0
-  },
-  {
-   "kind": "pricing",
-   "url": "https://attio.com/pricing",
-   "fetched_at": "2026-08-08T07:19:03Z",
-   "http_status": 200,
-   "status": "unchanged",
-   "reason": "body identical to the previous fetch",
-   "bytes": 1248986,
-   "duration_ms": 118,
-   "signals_found": 0,
-   "signals_expected": 0
-  },
-  {
-   "kind": "home",
-   "url": "https://attio.com/",
-   "fetched_at": "2026-08-08T07:17:27Z",
-   "http_status": 200,
-   "status": "unchanged",
-   "reason": "body identical to the previous fetch",
-   "bytes": 1100211,
-   "duration_ms": 265,
    "signals_found": 0,
    "signals_expected": 0
   }

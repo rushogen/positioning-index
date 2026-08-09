@@ -13,8 +13,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:03:58Z",
-   "last_good_at": "2026-08-09T16:03:58Z",
+   "last_observed_at": "2026-08-09T16:32:13Z",
+   "last_good_at": "2026-08-09T16:32:13Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -31,8 +31,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:03:58Z",
-   "last_good_at": "2026-08-09T16:03:58Z",
+   "last_observed_at": "2026-08-09T16:32:13Z",
+   "last_good_at": "2026-08-09T16:32:13Z",
    "last_good_value": "logo_wall, testimonial, faq",
    "last_good_json": "{\"present\":{\"logo_wall\":true,\"proof\":false,\"testimonial\":true,\"faq\":true,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "804a92ae",
@@ -49,7 +49,7 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:03:58Z",
+   "last_observed_at": "2026-08-09T16:32:13Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -67,8 +67,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:03:58Z",
-   "last_good_at": "2026-08-09T16:03:58Z",
+   "last_observed_at": "2026-08-09T16:32:13Z",
+   "last_good_at": "2026-08-09T16:32:13Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -85,8 +85,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:03:58Z",
-   "last_good_at": "2026-08-09T16:03:58Z",
+   "last_observed_at": "2026-08-09T16:32:13Z",
+   "last_good_at": "2026-08-09T16:32:13Z",
    "last_good_value": "15",
    "last_good_json": null,
    "last_good_hash": "18eb258b",
@@ -103,8 +103,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:03:58Z",
-   "last_good_at": "2026-08-09T16:03:58Z",
+   "last_observed_at": "2026-08-09T16:32:13Z",
+   "last_good_at": "2026-08-09T16:32:13Z",
    "last_good_value": "7",
    "last_good_json": null,
    "last_good_hash": "320ca3f6",
@@ -121,8 +121,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:03:58Z",
-   "last_good_at": "2026-08-09T16:03:58Z",
+   "last_observed_at": "2026-08-09T16:32:13Z",
+   "last_good_at": "2026-08-09T16:32:13Z",
    "last_good_value": "hero > logos > features > testimonial > security > testimonial > faq",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":231,\"merged\":1},{\"position\":2,\"type\":\"logos\",\"heading\":\"Ask your contracts anything .\",\"words\":118,\"merged\":1},{\"position\":3,\"type\":\"features\",\"heading\":\"Embed contracts where your team needs them\",\"words\":45,\"merged\":2},{\"position\":4,\"type\":\"testimonial\",\"heading\":\"Ask your contracts anything.\",\"words\":243,\"merged\":1},{\"position\":5,\"type\":\"security\",\"heading\":\"Trust nothing less than a Leader with your contracts\",\"words\":49,\"merged\":1},{\"position\":6,\"type\":\"testimonial\",\"heading\":\"Contracting that works for legal\",\"words\":66,\"merged\":1},{\"position\":7,\"type\":\"faq\",\"heading\":\"Ready to start agreeing and managing contracts faster?\",\"words\":232,\"merged\":1}]}",
    "last_good_hash": "032ffbec",
@@ -139,8 +139,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:03:58Z",
-   "last_good_at": "2026-08-09T16:03:58Z",
+   "last_observed_at": "2026-08-09T16:32:13Z",
+   "last_good_at": "2026-08-09T16:32:13Z",
    "last_good_value": 1030,
    "last_good_json": null,
    "last_good_hash": "949f39ff",
@@ -157,8 +157,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:03:58Z",
-   "last_good_at": "2026-08-09T16:03:58Z",
+   "last_observed_at": "2026-08-09T16:32:13Z",
+   "last_good_at": "2026-08-09T16:32:13Z",
    "last_good_value": "flexible ai automation",
    "last_good_json": null,
    "last_good_hash": "dd0a5727",
@@ -175,8 +175,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:03:58Z",
-   "last_good_at": "2026-08-09T16:03:58Z",
+   "last_observed_at": "2026-08-09T16:32:13Z",
+   "last_good_at": "2026-08-09T16:32:13Z",
    "last_good_value": "Airalo, Aj Bell, Cbbv Linear, Deliveroo, Dr. Martens, Ecovadis, FourKites Positive RGB, G2, Genius Sports, Goldin, Granola, Justworks, On Running, Paddle, Pebl, Pfizer, PGA, Poly Ai, Quantum Scape, Remote, Takealot 1, Trustpilot, Velocity Global",
    "last_good_json": "{\"names\":[\"Airalo\",\"Aj Bell\",\"Cbbv Linear\",\"Deliveroo\",\"Dr. Martens\",\"Ecovadis\",\"FourKites Positive RGB\",\"G2\",\"Genius Sports\",\"Goldin\",\"Granola\",\"Justworks\",\"On Running\",\"Paddle\",\"Pebl\",\"Pfizer\",\"PGA\",\"Poly Ai\",\"Quantum Scape\",\"Remote\",\"Takealot 1\",\"Trustpilot\",\"Velocity Global\"],\"count\":23,\"lead\":\"Join 1,500+ scaleup lawyers in a private community <svg width=\\\"32\\\" height=\\\"32\\\" v\"}",
    "last_good_hash": "d55cddbc",
@@ -193,8 +193,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:03:58Z",
-   "last_good_at": "2026-08-09T16:03:58Z",
+   "last_observed_at": "2026-08-09T16:32:13Z",
+   "last_good_at": "2026-08-09T16:32:13Z",
    "last_good_value": "Intelligent contracting is here .",
    "last_good_json": null,
    "last_good_hash": "a26e3d10",
@@ -211,8 +211,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:03:58Z",
-   "last_good_at": "2026-08-09T16:03:58Z",
+   "last_observed_at": "2026-08-09T16:32:13Z",
+   "last_good_at": "2026-08-09T16:32:13Z",
    "last_good_value": "Intelligent contracting is here. Juro empowers your team to agree and manage contracts end-to-end with flexible AI automation that lives where you live.",
    "last_good_json": null,
    "last_good_hash": "139618c1",
@@ -229,8 +229,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:03:58Z",
-   "last_good_at": "2026-08-09T16:03:58Z",
+   "last_observed_at": "2026-08-09T16:32:13Z",
+   "last_good_at": "2026-08-09T16:32:13Z",
    "last_good_value": "Juro | Intelligent contracting",
    "last_good_json": null,
    "last_good_hash": "b2b477ac",
@@ -247,8 +247,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:03:58Z",
-   "last_good_at": "2026-08-09T16:03:58Z",
+   "last_observed_at": "2026-08-09T16:32:13Z",
+   "last_good_at": "2026-08-09T16:32:13Z",
    "last_good_value": "5x faster contracting with | 86% reduction in time-to-sign | 88% reduction in manual",
    "last_good_json": "{\"items\":[{\"claim\":\"5x faster contracting with\",\"kind\":\"multiplier\"},{\"claim\":\"86% reduction in time-to-sign\",\"kind\":\"percent\"},{\"claim\":\"88% reduction in manual\",\"kind\":\"percent\"}],\"count\":3}",
    "last_good_hash": "8ef2ebc4",
@@ -265,8 +265,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:03:58Z",
-   "last_good_at": "2026-08-09T16:03:58Z",
+   "last_observed_at": "2026-08-09T16:32:13Z",
+   "last_good_at": "2026-08-09T16:32:13Z",
    "last_good_value": "Ask your contracts anything .",
    "last_good_json": null,
    "last_good_hash": "0790cafe",
@@ -284,6 +284,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://juro.com/",
+   "fetched_at": "2026-08-09T16:32:13Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 134312,
+   "duration_ms": 235,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://juro.com/",

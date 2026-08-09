@@ -15,8 +15,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T16:10:00Z",
-   "last_good_at": "2026-08-09T16:10:00Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "3",
    "last_good_json": null,
    "last_good_hash": "360caa42",
@@ -33,8 +33,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T16:10:00Z",
-   "last_good_at": "2026-08-09T16:10:00Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "logo_wall, testimonial, integrations",
    "last_good_json": "{\"present\":{\"logo_wall\":true,\"proof\":false,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":true,\"media\":false}}",
    "last_good_hash": "8f184749",
@@ -51,8 +51,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T16:10:00Z",
-   "last_good_at": "2026-08-09T16:10:00Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "30",
    "last_good_json": null,
    "last_good_hash": "87f05176",
@@ -69,8 +69,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T16:10:00Z",
-   "last_good_at": "2026-08-09T16:10:00Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -87,8 +87,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T16:10:00Z",
-   "last_good_at": "2026-08-09T16:10:00Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "4",
    "last_good_json": null,
    "last_good_hash": "310ca263",
@@ -105,8 +105,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T16:10:00Z",
-   "last_good_at": "2026-08-09T16:10:00Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "8",
    "last_good_json": null,
    "last_good_hash": "3d0cb547",
@@ -123,8 +123,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T16:10:00Z",
-   "last_good_at": "2026-08-09T16:10:00Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "hero > other > features > logos > testimonial > resources > integrations > features",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":55,\"merged\":1},{\"position\":2,\"type\":\"other\",\"heading\":\"An ATS That Works Overtime (So You Don't Have To)\",\"words\":12,\"merged\":1},{\"position\":3,\"type\":\"features\",\"heading\":\"Your Hiring Problems, Solved by Our Intelligent Solutions\",\"words\":438,\"merged\":2},{\"position\":4,\"type\":\"logos\",\"heading\":\"Trusted by the Best in the Biz\",\"words\":7,\"merged\":1},{\"position\":5,\"type\":\"testimonial\",\"heading\":\"Powered by the Hiring Heroes Who Matter Most\",\"words\":177,\"merged\":1},{\"position\":6,\"type\":\"resources\",\"heading\":\"Trending Reads of Winning Teams\",\"words\":107,\"merged\":1},{\"position\":7,\"type\":\"integrations\",\"heading\":\"Lever FAQs: Your Questions, Answered\",\"words\":419,\"merged\":1},{\"position\":8,\"type\":\"features\",\"heading\":\"Less Chaos. Better Decisions. Home for Dinner.\",\"words\":36,\"merged\":1}]}",
    "last_good_hash": "5dff4e14",
@@ -141,8 +141,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T16:10:00Z",
-   "last_good_at": "2026-08-09T16:10:00Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": 1282,
    "last_good_json": null,
    "last_good_hash": "edb2c0ac",
@@ -159,8 +159,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T16:10:00Z",
-   "last_good_at": "2026-08-09T16:10:00Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "modern recruiting software",
    "last_good_json": null,
    "last_good_hash": "1c4d2291",
@@ -177,8 +177,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T16:10:00Z",
-   "last_good_at": "2026-08-09T16:10:00Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "G2 Best Software Top, G2 CRM Leader Enterprise, Hackett Group Best Analytics, Hackett Group Best Automation, Lever by Employ",
    "last_good_json": "{\"names\":[\"G2 Best Software Top\",\"G2 CRM Leader Enterprise\",\"Hackett Group Best Analytics\",\"Hackett Group Best Automation\",\"Lever by Employ\"],\"count\":5,\"lead\":\"Trusted by the Best in the Biz <div class=\\\"flex-shrink-0 transition-transform ho\"}",
    "last_good_hash": "b1370949",
@@ -195,8 +195,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T16:10:00Z",
-   "last_good_at": "2026-08-09T16:10:00Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "Hiring That Doesn't Hijack Your Week",
    "last_good_json": null,
    "last_good_hash": "55b92858",
@@ -213,8 +213,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T16:10:00Z",
-   "last_good_at": "2026-08-09T16:10:00Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "Lever is modern recruiting software that combines ATS and CRM capabilities to help scaling teams nurture talent relationships and hire efficiently.",
    "last_good_json": null,
    "last_good_hash": "f8aea193",
@@ -231,8 +231,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T16:10:00Z",
-   "last_good_at": "2026-08-09T16:10:00Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "Lever | Modern Recruiting Software & ATS",
    "last_good_json": null,
    "last_good_hash": "d7c167f1",
@@ -249,7 +249,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T16:06:06Z",
+   "last_observed_at": "2026-08-09T16:30:43Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -267,7 +267,7 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T16:06:06Z",
+   "last_observed_at": "2026-08-09T16:30:43Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -285,8 +285,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T16:06:06Z",
-   "last_good_at": "2026-08-09T16:06:06Z",
+   "last_observed_at": "2026-08-09T16:30:43Z",
+   "last_good_at": "2026-08-09T16:30:43Z",
    "last_good_value": "Pricing Plans & Custom Quotes | Lever",
    "last_good_json": null,
    "last_good_hash": "26cc2c3f",
@@ -303,7 +303,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T16:06:06Z",
+   "last_observed_at": "2026-08-09T16:30:43Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -321,7 +321,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T16:06:06Z",
+   "last_observed_at": "2026-08-09T16:30:43Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -339,8 +339,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T16:10:00Z",
-   "last_good_at": "2026-08-09T16:10:00Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "0 % faster interview scheduling | 0 % faster time to | 0 x more qualified applicants",
    "last_good_json": "{\"items\":[{\"claim\":\"0 % faster interview scheduling\",\"kind\":\"percent\"},{\"claim\":\"0 % faster time to\",\"kind\":\"percent\"},{\"claim\":\"0 x more qualified applicants\",\"kind\":\"multiplier\"}],\"count\":3}",
    "last_good_hash": "cd321948",
@@ -357,8 +357,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T16:10:00Z",
-   "last_good_at": "2026-08-09T16:10:00Z",
+   "last_observed_at": "2026-08-09T16:35:13Z",
+   "last_good_at": "2026-08-09T16:35:13Z",
    "last_good_value": "Every stage of hiring has its own hurdles. Lever clears them, so you can stop living in your inbox and start living your life.",
    "last_good_json": null,
    "last_good_hash": "b7e25f6c",
@@ -376,6 +376,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.lever.co/",
+   "fetched_at": "2026-08-09T16:35:13Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 133312,
+   "duration_ms": 365,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.lever.co/pricing",
+   "fetched_at": "2026-08-09T16:30:43Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.4.1 -> 1.4.2; re-baselining",
+   "bytes": 75680,
+   "duration_ms": 316,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
   {
    "kind": "home",
    "url": "https://www.lever.co/",
