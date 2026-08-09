@@ -134,7 +134,16 @@ jobs:
             -m "$MESSAGE" \
             -m "Ran on ${{ github.run_id }} via ${{ github.event_name }}." \
             -m "[skip ci]"
-          git push
+          # Someone may have pushed (a code change, another crawl) while this run
+          # was fetching the web for eight minutes. Rebase our data commit on top
+          # of whatever landed and retry, rather than losing the whole crawl to a
+          # non-fast-forward rejection. The changes never overlap in practice --
+          # a crawl writes data/ and docs/, a code push writes src/ and app/.
+          for attempt in 1 2 3; do
+            if git push; then break; fi
+            echo "push rejected (attempt $attempt); rebasing on origin/main"
+            git pull --rebase --autostash origin main
+          done
 
       - name: Summary
         if: always()
