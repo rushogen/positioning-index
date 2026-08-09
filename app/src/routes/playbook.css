@@ -1,0 +1,44 @@
+.pb-hero { padding: clamp(1.5rem, 5vw, 4rem) 0 clamp(1.5rem, 4vw, 3rem); }
+.pb-title { font-size: var(--t-display); }
+.pb-title em { color: var(--accent); font-style: italic; }
+.pb-dek { margin: 1.3rem 0 0; font-family: var(--serif); font-size: var(--t-lede); color: var(--ink-2); max-width: 40em; line-height: 1.45; }
+
+.pb-warning {
+  margin: 1.8rem 0 0; max-width: 46em; padding: 1rem 1.15rem;
+  border: 1px solid color-mix(in srgb, var(--warn) 45%, var(--rule));
+  border-left-width: 3px; border-radius: var(--r-sm);
+  background: color-mix(in srgb, var(--warn) 8%, var(--panel));
+  color: var(--ink-2); font-size: 0.9rem; line-height: 1.55;
+}
+.pb-warning strong { color: var(--warn); }
+.pb-warning b { color: var(--ink); font-weight: 600; }
+
+.pb-section { margin: clamp(2.5rem, 6vw, 5rem) 0; }
+.pb-lead { font-family: var(--serif); font-size: 1.2rem; line-height: 1.5; color: var(--ink); max-width: 42em; margin: 0 0 1rem; }
+.pb-note { margin: 0.8rem 0 0; color: var(--ink-2); font-size: 0.9rem; line-height: 1.5; }
+
+.pb-split { display: grid; gap: clamp(1.2rem, 3vw, 2.2rem); align-items: start; }
+@media (min-width: 52rem) { .pb-split { grid-template-columns: 1fr minmax(20rem, 26rem); } }
+
+.pb-spine { display: flex; flex-direction: column; gap: 0.55rem; }
+.pb-spine-row { display: grid; grid-template-columns: 9rem 1fr 2.6rem; align-items: center; gap: 0.6rem; margin: 0; font-size: 0.85rem; }
+.pb-spine-name { color: var(--ink-2); }
+.pb-spine-bar { height: 8px; border-radius: 999px; background: var(--rule-2); overflow: hidden; }
+.pb-spine-bar i { display: block; height: 100%; border-radius: 999px; background: linear-gradient(90deg, color-mix(in srgb, var(--accent) 60%, transparent), var(--accent)); }
+.pb-spine-row b { text-align: right; font-variant-numeric: tabular-nums; color: var(--ink); }
+
+.pb-moves { list-style: none; counter-reset: mv; margin: 0; padding: 0; display: grid; gap: 0.9rem; max-width: 52em; }
+.pb-moves li { counter-increment: mv; position: relative; padding: 1rem 1.1rem 1rem 3rem; border: 1px solid var(--rule); border-radius: var(--r); background: var(--panel); line-height: 1.5; color: var(--ink-2); }
+.pb-moves li::before { content: counter(mv); position: absolute; left: 1rem; top: 1rem; width: 1.4rem; height: 1.4rem; border-radius: 999px; background: var(--accent); color: var(--bg); font-size: 0.8rem; font-weight: 700; display: grid; place-items: center; }
+.pb-moves b { color: var(--ink); font-weight: 600; }
+
+.pb-cut-title { font-size: 0.95rem; margin: 0 0 0.8rem; }
+.pb-cut { list-style: none; margin: 0 0 0.4rem; padding: 0; display: flex; flex-direction: column; gap: 0.45rem; }
+.pb-cut li { display: grid; grid-template-columns: 5rem 1fr 2.4rem 2.6rem; align-items: center; gap: 0.5rem; font-size: 0.82rem; }
+.pb-cut-name { color: var(--ink-2); }
+.pb-cut-bar { height: 7px; border-radius: 999px; background: var(--rule-2); overflow: hidden; }
+.pb-cut-bar i { display: block; height: 100%; border-radius: 999px; background: var(--accent-2); }
+.pb-cut b { text-align: right; font-variant-numeric: tabular-nums; }
+.pb-cut-n { text-align: right; color: var(--ink-3); font-variant-numeric: tabular-nums; font-size: 0.75rem; }
+
+.pb-bottom .pb-lead { font-size: 1.35rem; }

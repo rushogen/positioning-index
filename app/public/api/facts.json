@@ -95,7 +95,7 @@
    "category": "Cloud phone / VoIP",
    "meta_confidence": "high",
    "ai": true,
-   "free_tier": null
+   "free_tier": "no"
   },
   {
    "slug": "airtable",
@@ -1043,7 +1043,7 @@
    "category": "Translation",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "definitive-hc",
@@ -1162,7 +1162,7 @@
    "target_size": "broad",
    "category": "E-signature",
    "meta_confidence": "high",
-   "ai": false,
+   "ai": true,
    "free_tier": "no"
   },
   {
@@ -1883,7 +1883,7 @@
    "category": "Developer IDEs",
    "meta_confidence": "high",
    "ai": false,
-   "free_tier": null
+   "free_tier": "yes"
   },
   {
    "slug": "jfrog",
@@ -4334,5 +4334,5 @@
    "free_tier": null
   }
  ],
- "generated_at": "2026-08-09T15:37:59Z"
+ "generated_at": "2026-08-09T16:10:17Z"
 }

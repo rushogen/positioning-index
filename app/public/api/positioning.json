@@ -304,7 +304,7 @@
      {
       "slug": "monday",
       "name": "monday.com",
-      "text": "You lead. Agents act."
+      "text": "People and agents working as one team"
      },
      {
       "slug": "monte-carlo",
@@ -481,7 +481,7 @@
    },
    {
     "word": "agentic",
-    "n": 19,
+    "n": 18,
     "companies": [
      {
       "slug": "anaplan",
@@ -572,11 +572,6 @@
       "slug": "voyado",
       "name": "Voyado",
       "text": "The Agentic CX Suite for Retail"
-     },
-     {
-      "slug": "zapier",
-      "name": "Zapier",
-      "text": "The automation layer for agentic AI"
      }
     ]
    },
@@ -768,6 +763,87 @@
     ]
    },
    {
+    "word": "one",
+    "n": 15,
+    "companies": [
+     {
+      "slug": "bigcommerce",
+      "name": "BigCommerce",
+      "text": "From one-size-fits-all to anything you can imagine."
+     },
+     {
+      "slug": "bloomreach",
+      "name": "Bloomreach",
+      "text": "One Prompt for a Full Campaign"
+     },
+     {
+      "slug": "coda",
+      "name": "Coda",
+      "text": "Your all-in-one collaborative workspace."
+     },
+     {
+      "slug": "grafana",
+      "name": "Grafana Labs",
+      "text": "AI for observability. Observability for AI. One platform for both."
+     },
+     {
+      "slug": "hibob",
+      "name": "HiBob",
+      "text": "Connect HR, Payroll, and Finance in one people platform."
+     },
+     {
+      "slug": "loom",
+      "name": "Loom",
+      "text": "One video is worth a thousand words"
+     },
+     {
+      "slug": "monday",
+      "name": "monday.com",
+      "text": "People and agents working as one team"
+     },
+     {
+      "slug": "mongodb",
+      "name": "MongoDB",
+      "text": "One data platform. Unlimited AI potential."
+     },
+     {
+      "slug": "odoo",
+      "name": "Odoo",
+      "text": "All your business on one platform."
+     },
+     {
+      "slug": "prefect",
+      "name": "Prefect",
+      "text": "Start with one flow. Scale to millions."
+     },
+     {
+      "slug": "replicate",
+      "name": "Replicate",
+      "text": "Run and fine-tune models. Deploy custom models. All with one line of code."
+     },
+     {
+      "slug": "staffbase",
+      "name": "Staffbase",
+      "text": "Finally, one platform to reach every employee. Wherever they work."
+     },
+     {
+      "slug": "synthesia",
+      "name": "Synthesia",
+      "text": "All-in-one AI Video platform for business"
+     },
+     {
+      "slug": "teamleader",
+      "name": "Teamleader",
+      "text": "Just one platform to run your whole business."
+     },
+     {
+      "slug": "tipalti",
+      "name": "Tipalti",
+      "text": "One Solution for All Your Finance Operations"
+     }
+    ]
+   },
+   {
     "word": "built",
     "n": 14,
     "companies": [
@@ -840,82 +916,6 @@
       "slug": "sentinelone",
       "name": "SentinelOne",
       "text": "The Autonomous Security Platform Built for Advantage"
-     }
-    ]
-   },
-   {
-    "word": "one",
-    "n": 14,
-    "companies": [
-     {
-      "slug": "bigcommerce",
-      "name": "BigCommerce",
-      "text": "From one-size-fits-all to anything you can imagine."
-     },
-     {
-      "slug": "bloomreach",
-      "name": "Bloomreach",
-      "text": "One Prompt for a Full Campaign"
-     },
-     {
-      "slug": "coda",
-      "name": "Coda",
-      "text": "Your all-in-one collaborative workspace."
-     },
-     {
-      "slug": "grafana",
-      "name": "Grafana Labs",
-      "text": "AI for observability. Observability for AI. One platform for both."
-     },
-     {
-      "slug": "hibob",
-      "name": "HiBob",
-      "text": "Connect HR, Payroll, and Finance in one people platform."
-     },
-     {
-      "slug": "loom",
-      "name": "Loom",
-      "text": "One video is worth a thousand words"
-     },
-     {
-      "slug": "mongodb",
-      "name": "MongoDB",
-      "text": "One data platform. Unlimited AI potential."
-     },
-     {
-      "slug": "odoo",
-      "name": "Odoo",
-      "text": "All your business on one platform."
-     },
-     {
-      "slug": "prefect",
-      "name": "Prefect",
-      "text": "Start with one flow. Scale to millions."
-     },
-     {
-      "slug": "replicate",
-      "name": "Replicate",
-      "text": "Run and fine-tune models. Deploy custom models. All with one line of code."
-     },
-     {
-      "slug": "staffbase",
-      "name": "Staffbase",
-      "text": "Finally, one platform to reach every employee. Wherever they work."
-     },
-     {
-      "slug": "synthesia",
-      "name": "Synthesia",
-      "text": "All-in-one AI Video platform for business"
-     },
-     {
-      "slug": "teamleader",
-      "name": "Teamleader",
-      "text": "Just one platform to run your whole business."
-     },
-     {
-      "slug": "tipalti",
-      "name": "Tipalti",
-      "text": "One Solution for All Your Finance Operations"
      }
     ]
    },
@@ -1164,7 +1164,7 @@
      {
       "slug": "signicat",
       "name": "Signicat",
-      "text": "Fight fraud with digital identity powered by AI"
+      "text": "Boost efficiency with digital identity powered by AI"
      },
      {
       "slug": "teamwork",
@@ -1298,7 +1298,7 @@
     }
    ]
   },
-  "distinct_words": 716
+  "distinct_words": 714
  },
  "category_nouns": {
   "groups": [
@@ -4004,6 +4004,17 @@
     "text": "Accelerate agent adoption, safely."
    },
    {
+    "slug": "docusign",
+    "name": "Docusign",
+    "terms": [
+     "ai"
+    ],
+    "fields": [
+     "subhead"
+    ],
+    "text": "Do (much) more with IAM"
+   },
+   {
     "slug": "dremio",
     "name": "Dremio",
     "terms": [
@@ -4791,7 +4802,7 @@
      "subhead",
      "category_label"
     ],
-    "text": "You lead. Agents act."
+    "text": "People and agents working as one team"
    },
    {
     "slug": "mongodb",
@@ -5468,7 +5479,7 @@
      "subhead",
      "category_label"
     ],
-    "text": "Fight fraud with digital identity powered by AI"
+    "text": "Boost efficiency with digital identity powered by AI"
    },
    {
     "slug": "sinch",
@@ -6032,14 +6043,13 @@
     "slug": "zapier",
     "name": "Zapier",
     "terms": [
-     "agent",
      "ai"
     ],
     "fields": [
      "headline",
      "subhead"
     ],
-    "text": "The automation layer for agentic AI"
+    "text": "Your tools. Your rules. Any AI."
    },
    {
     "slug": "zendesk",
@@ -6226,11 +6236,6 @@
     "slug": "docplanner",
     "name": "Docplanner",
     "text": "Helping people live longer, healthier lives"
-   },
-   {
-    "slug": "docusign",
-    "name": "Docusign",
-    "text": "Everything you need to agree"
    },
    {
     "slug": "expensify",
@@ -7041,7 +7046,7 @@
      {
       "slug": "monday",
       "name": "monday.com",
-      "text": "You lead. Agents act."
+      "text": "People and agents working as one team"
      },
      {
       "slug": "mongodb",
@@ -7226,7 +7231,7 @@
      {
       "slug": "signicat",
       "name": "Signicat",
-      "text": "Fight fraud with digital identity powered by AI"
+      "text": "Boost efficiency with digital identity powered by AI"
      },
      {
       "slug": "sinch",
@@ -7366,7 +7371,7 @@
      {
       "slug": "zapier",
       "name": "Zapier",
-      "text": "The automation layer for agentic AI"
+      "text": "Your tools. Your rules. Any AI."
      },
      {
       "slug": "zendesk",
@@ -7377,7 +7382,7 @@
    },
    {
     "field": "subhead",
-    "n": 172,
+    "n": 173,
     "companies": [
      {
       "slug": "15five",
@@ -7593,6 +7598,11 @@
       "slug": "docker",
       "name": "Docker",
       "text": "MicroVM isolation for every agent session. Network and filesystem locked down at the runtime."
+     },
+     {
+      "slug": "docusign",
+      "name": "Docusign",
+      "text": "Save time and unlock value from your agreements. With our pre-configured IAM applications, you can automate workflows, manage and analyze documents with AI, and seamlessly connect agreement data across systems."
      },
      {
       "slug": "dremio",
@@ -7832,7 +7842,7 @@
      {
       "slug": "monday",
       "name": "monday.com",
-      "text": "Where people and agents drive results together on one secure work platform"
+      "text": "The AI workspace where people and agents drive business results together"
      },
      {
       "slug": "monte-carlo",
@@ -8222,7 +8232,7 @@
      {
       "slug": "zapier",
       "name": "Zapier",
-      "text": "One MCP connection. 9,000+ apps. Set your policies and work across any model, surface, or agent harness — without connections or rules breaking."
+      "text": "Zapier gives teams one place to set guardrails, manage model access, and see everything — so everyone can build with AI confidently, on any model, without waiting for permission."
      },
      {
       "slug": "zendesk",
@@ -8846,7 +8856,7 @@
   "by_term": [
    {
     "term": "ai",
-    "n": 208,
+    "n": 209,
     "companies": [
      {
       "slug": "15five",
@@ -9541,6 +9551,17 @@
        "category_label"
       ],
       "text": "The Agentic CS Platform Behind Exceptional Ecommerce Brands"
+     },
+     {
+      "slug": "docusign",
+      "name": "Docusign",
+      "terms": [
+       "ai"
+      ],
+      "fields": [
+       "subhead"
+      ],
+      "text": "Do (much) more with IAM"
      },
      {
       "slug": "dremio",
@@ -10260,7 +10281,7 @@
        "subhead",
        "category_label"
       ],
-      "text": "You lead. Agents act."
+      "text": "People and agents working as one team"
      },
      {
       "slug": "mongodb",
@@ -10865,7 +10886,7 @@
        "subhead",
        "category_label"
       ],
-      "text": "Fight fraud with digital identity powered by AI"
+      "text": "Boost efficiency with digital identity powered by AI"
      },
      {
       "slug": "sinch",
@@ -11371,14 +11392,13 @@
       "slug": "zapier",
       "name": "Zapier",
       "terms": [
-       "agent",
        "ai"
       ],
       "fields": [
        "headline",
        "subhead"
       ],
-      "text": "The automation layer for agentic AI"
+      "text": "Your tools. Your rules. Any AI."
      },
      {
       "slug": "zendesk",
@@ -11423,7 +11443,7 @@
    },
    {
     "term": "agent",
-    "n": 105,
+    "n": 104,
     "companies": [
      {
       "slug": "1password",
@@ -12142,7 +12162,7 @@
        "subhead",
        "category_label"
       ],
-      "text": "You lead. Agents act."
+      "text": "People and agents working as one team"
      },
      {
       "slug": "monte-carlo",
@@ -12763,19 +12783,6 @@
       "text": "WRITER is the enterprise AI agent platform trusted by Fortune 500 companies, built to help teams execute and scale on-brand, compliant work."
      },
      {
-      "slug": "zapier",
-      "name": "Zapier",
-      "terms": [
-       "agent",
-       "ai"
-      ],
-      "fields": [
-       "headline",
-       "subhead"
-      ],
-      "text": "The automation layer for agentic AI"
-     },
-     {
       "slug": "zendesk",
       "name": "Zendesk",
       "terms": [
@@ -13096,7 +13103,7 @@
     "label": "Scale counts",
     "note": "customers, users, records, teams",
     "n": 170,
-    "claims": 316,
+    "claims": 317,
     "companies": [
      {
       "slug": "15five",
@@ -13461,7 +13468,7 @@
      {
       "slug": "huggingface",
       "name": "Hugging Face",
-      "text": "11 models · 13k models · 19 hours · 254 models · 2m models · 34 models · 35k models · 36 models · 45,000 models · 50,000 organizations · 534 models · 968 models"
+      "text": "11 models · 13k models · 20 hours · 254 models · 2m models · 34 models · 35k models · 36 models · 45,000 models · 50,000 organizations · 534 models · 968 models"
      },
      {
       "slug": "influxdata",
@@ -13936,7 +13943,7 @@
      {
       "slug": "zapier",
       "name": "Zapier",
-      "text": "100 hours · 20 hours · 9,000 apps"
+      "text": "42 hours · 450k agents · 9,000 apps · 9,000 integrations"
      },
      {
       "slug": "zendesk",
@@ -13954,8 +13961,8 @@
     "key": "percent",
     "label": "Percentage gains",
     "note": "\"40% faster\", \"cut costs by 30%\"",
-    "n": 155,
-    "claims": 450,
+    "n": 156,
+    "claims": 451,
     "companies": [
      {
       "slug": "acronis",
@@ -14723,6 +14730,11 @@
       "text": "75% chipotle reduced time-to-hire · 75% reduced time-to-hire"
      },
      {
+      "slug": "zapier",
+      "name": "Zapier",
+      "text": "87% reduction in lead"
+     },
+     {
       "slug": "zendesk",
       "name": "Zendesk",
       "text": "11 % decrease in email · 36 % increase in ai · 51.5 % automate · 6 % increase in automated"
@@ -14738,8 +14750,8 @@
     "key": "money",
     "label": "Money amounts",
     "note": "\"$2.4M saved\", \"$1B processed\"",
-    "n": 95,
-    "claims": 221,
+    "n": 96,
+    "claims": 224,
     "companies": [
      {
       "slug": "15five",
@@ -15215,6 +15227,11 @@
       "slug": "xeneta",
       "name": "Xeneta",
       "text": "$2m versus market pricing · $37m savings across the"
+     },
+     {
+      "slug": "zapier",
+      "name": "Zapier",
+      "text": "$1 million increase in potential · $1m recovered pipeline using · $40k+ headcount savings per"
      }
     ]
    },
@@ -15222,8 +15239,8 @@
     "key": "multiplier",
     "label": "Multipliers",
     "note": "\"10x faster\"",
-    "n": 67,
-    "claims": 98,
+    "n": 68,
+    "claims": 99,
     "companies": [
      {
       "slug": "activecampaign",
@@ -15554,6 +15571,11 @@
       "slug": "wrike",
       "name": "Wrike",
       "text": "10x more"
+     },
+     {
+      "slug": "zapier",
+      "name": "Zapier",
+      "text": "5.5x roi with zapier"
      },
      {
       "slug": "zendesk",
@@ -15971,7 +15993,7 @@
     ]
    }
   ],
-  "total_claims": 1169,
+  "total_claims": 1175,
   "coverage": {
    "tracked": 361,
    "readable": 270,
@@ -17233,7 +17255,7 @@
     ]
    }
   ],
-  "distinct_logos": 2904,
+  "distinct_logos": 2903,
   "coverage": {
    "tracked": 361,
    "readable": 279,
@@ -17696,6 +17718,10 @@
      "name": "dbt Labs"
     },
     {
+     "slug": "deepl",
+     "name": "DeepL"
+    },
+    {
      "slug": "descript",
      "name": "Descript"
     },
@@ -17778,6 +17804,10 @@
     {
      "slug": "intercom",
      "name": "Intercom"
+    },
+    {
+     "slug": "jetbrains",
+     "name": "JetBrains"
     },
     {
      "slug": "klaviyo",
@@ -18062,6 +18092,10 @@
    ],
    "no": [
     {
+     "slug": "aircall",
+     "name": "Aircall"
+    },
+    {
      "slug": "airwallex",
      "name": "Airwallex"
     },
@@ -18136,8 +18170,8 @@
    ],
    "coverage": {
     "tracked": 361,
-    "readable": 139,
-    "unreadable": 222,
+    "readable": 142,
+    "unreadable": 219,
     "held": 0,
     "suspect": 0,
     "missing": [
@@ -18164,10 +18198,6 @@
      {
       "slug": "afas",
       "name": "AFAS Software"
-     },
-     {
-      "slug": "aircall",
-      "name": "Aircall"
      },
      {
       "slug": "alan",
@@ -18350,10 +18380,6 @@
       "name": "Deel"
      },
      {
-      "slug": "deepl",
-      "name": "DeepL"
-     },
-     {
       "slug": "definitive-hc",
       "name": "Definitive Healthcare"
      },
@@ -18528,10 +18554,6 @@
      {
       "slug": "jedox",
       "name": "Jedox"
-     },
-     {
-      "slug": "jetbrains",
-      "name": "JetBrains"
      },
      {
       "slug": "jfrog",
@@ -19040,6 +19062,11 @@
      "text": "Airbyte Agents Free free | Airbyte Agents Individual USD 29 | Airbyte Agents Team USD 299 | Airbyte Core free | Airbyte Standard USD 10"
     },
     {
+     "slug": "aircall",
+     "name": "Aircall",
+     "text": "Essentials USD 30 | Professional USD 50 | Custom custom | AI Assist Pro USD 49/month"
+    },
+    {
      "slug": "airwallex",
      "name": "Airwallex",
      "text": "Grow USD 12/user/month | Enterprise Capabilities USD 1000"
@@ -19155,6 +19182,11 @@
      "text": "Starter USD 100/user/month | Enterprise custom | Enterprise+ custom"
     },
     {
+     "slug": "deepl",
+     "name": "DeepL",
+     "text": "Write Pro add-on USD 7.49/user/month | Company custom"
+    },
+    {
      "slug": "descript",
      "name": "Descript",
      "text": "Business USD 50/month | Free free"
@@ -19233,6 +19265,11 @@
      "slug": "intercom",
      "name": "Intercom",
      "text": "Essential USD 39 | Advanced USD 99 | Expert USD 139 | Fin AI Agent USD 0.99"
+    },
+    {
+     "slug": "jetbrains",
+     "name": "JetBrains",
+     "text": "FREE LICENSES free | IntelliJ IDEA Ultimate USD 719 | AI Pro USD 200 | PyCharm Pro USD 299"
     },
     {
      "slug": "klaviyo",
@@ -19512,6 +19549,11 @@
    ],
    "contact_sales": [
     {
+     "slug": "aircall",
+     "name": "Aircall",
+     "text": "Custom"
+    },
+    {
      "slug": "attio",
      "name": "Attio",
      "text": "Enterprise"
@@ -19555,6 +19597,11 @@
      "slug": "dbt-labs",
      "name": "dbt Labs",
      "text": "Enterprise, Enterprise+"
+    },
+    {
+     "slug": "deepl",
+     "name": "DeepL",
+     "text": "Company"
     },
     {
      "slug": "gitguardian",
@@ -19744,8 +19791,8 @@
    ],
    "coverage": {
     "tracked": 361,
-    "readable": 95,
-    "unreadable": 266,
+    "readable": 98,
+    "unreadable": 263,
     "held": 0,
     "suspect": 0,
     "missing": null
@@ -19835,7 +19882,7 @@
     {
      "key": "1-9",
      "label": "1.00 to 9.99",
-     "n": 12,
+     "n": 13,
      "companies": [
       {
        "slug": "aiven",
@@ -19868,6 +19915,14 @@
        "currency": "USD",
        "tier": "unlimited",
        "text": "USD 7/user/month"
+      },
+      {
+       "slug": "deepl",
+       "name": "DeepL",
+       "amount": 7.49,
+       "currency": "USD",
+       "tier": "Write Pro add-on",
+       "text": "USD 7.49/user/month"
       },
       {
        "slug": "atlassian",
@@ -20073,7 +20128,7 @@
     {
      "key": "20-49",
      "label": "20.00 to 49.99",
-     "n": 17,
+     "n": 18,
      "companies": [
       {
        "slug": "clerk",
@@ -20170,6 +20225,14 @@
        "currency": "USD",
        "tier": "Premium",
        "text": "USD 29"
+      },
+      {
+       "slug": "aircall",
+       "name": "Aircall",
+       "amount": 30,
+       "currency": "USD",
+       "tier": "Essentials",
+       "text": "USD 30"
       },
       {
        "slug": "modal",
@@ -20287,7 +20350,7 @@
     {
      "key": "100-plus",
      "label": "100.00 and up",
-     "n": 10,
+     "n": 11,
      "companies": [
       {
        "slug": "customer-io",
@@ -20336,6 +20399,14 @@
        "currency": "USD",
        "tier": "Launch",
        "text": "USD 167/month"
+      },
+      {
+       "slug": "jetbrains",
+       "name": "JetBrains",
+       "amount": 200,
+       "currency": "USD",
+       "tier": "AI Pro",
+       "text": "USD 200"
       },
       {
        "slug": "salesforce",
@@ -20476,6 +20547,14 @@
      "currency": "USD",
      "tier": "unlimited",
      "text": "USD 7/user/month"
+    },
+    {
+     "slug": "deepl",
+     "name": "DeepL",
+     "amount": 7.49,
+     "currency": "USD",
+     "tier": "Write Pro add-on",
+     "text": "USD 7.49/user/month"
     },
     {
      "slug": "atlassian",
@@ -20766,6 +20845,14 @@
      "text": "USD 29"
     },
     {
+     "slug": "aircall",
+     "name": "Aircall",
+     "amount": 30,
+     "currency": "USD",
+     "tier": "Essentials",
+     "text": "USD 30"
+    },
+    {
      "slug": "modal",
      "name": "Modal",
      "amount": 30,
@@ -20918,6 +21005,14 @@
      "text": "USD 167/month"
     },
     {
+     "slug": "jetbrains",
+     "name": "JetBrains",
+     "amount": 200,
+     "currency": "USD",
+     "tier": "AI Pro",
+     "text": "USD 200"
+    },
+    {
      "slug": "salesforce",
      "name": "Salesforce",
      "amount": 200,
@@ -20953,7 +21048,7 @@
    "currencies": [
     {
      "currency": "USD",
-     "n": 68
+     "n": 71
     },
     {
      "currency": "EUR",
@@ -20964,11 +21059,11 @@
      "n": 1
     }
    ],
-   "median": 19,
+   "median": 19.99,
    "coverage": {
     "tracked": 361,
-    "readable": 72,
-    "unreadable": 289,
+    "readable": 75,
+    "unreadable": 286,
     "held": 0,
     "suspect": 0,
     "missing": [
@@ -20995,10 +21090,6 @@
      {
       "slug": "afas",
       "name": "AFAS Software"
-     },
-     {
-      "slug": "aircall",
-      "name": "Aircall"
      },
      {
       "slug": "airtable",
@@ -21253,10 +21344,6 @@
       "name": "Deel"
      },
      {
-      "slug": "deepl",
-      "name": "DeepL"
-     },
-     {
       "slug": "definitive-hc",
       "name": "Definitive Healthcare"
      },
@@ -21483,10 +21570,6 @@
      {
       "slug": "jedox",
       "name": "Jedox"
-     },
-     {
-      "slug": "jetbrains",
-      "name": "JetBrains"
      },
      {
       "slug": "jfrog",
@@ -25248,10 +25331,10 @@
       "short": "Risk & compliance",
       "n": 26,
       "readable": 24,
-      "yes": 14,
-      "no": 10,
+      "yes": 15,
+      "no": 9,
       "unreadable": 2,
-      "share": 58.3,
+      "share": 62.5,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -25266,6 +25349,10 @@
         {
          "slug": "diligent",
          "name": "Diligent"
+        },
+        {
+         "slug": "docusign",
+         "name": "Docusign"
         },
         {
          "slug": "icertis",
@@ -25316,10 +25403,6 @@
         {
          "slug": "clerk",
          "name": "Clerk"
-        },
-        {
-         "slug": "docusign",
-         "name": "Docusign"
         },
         {
          "slug": "feedzai",
@@ -26986,10 +27069,10 @@
       "short": "Risk & compliance",
       "n": 26,
       "readable": 24,
-      "yes": 14,
-      "no": 10,
+      "yes": 15,
+      "no": 9,
       "unreadable": 2,
-      "share": 58.3,
+      "share": 62.5,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -27004,6 +27087,10 @@
         {
          "slug": "diligent",
          "name": "Diligent"
+        },
+        {
+         "slug": "docusign",
+         "name": "Docusign"
         },
         {
          "slug": "icertis",
@@ -27054,10 +27141,6 @@
         {
          "slug": "clerk",
          "name": "Clerk"
-        },
-        {
-         "slug": "docusign",
-         "name": "Docusign"
         },
         {
          "slug": "feedzai",
@@ -27858,8 +27941,8 @@
     "drawn": true,
     "withheld": null,
     "overall": {
-     "yes": 232,
-     "no": 110,
+     "yes": 233,
+     "no": 109,
      "unreadable": 19,
      "readable": 342,
      "tracked": 361
@@ -35917,10 +36000,10 @@
       "short": "Work & product",
       "n": 48,
       "readable": 38,
-      "yes": 21,
-      "no": 17,
+      "yes": 22,
+      "no": 16,
       "unreadable": 10,
-      "share": 55.3,
+      "share": 57.9,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -36007,6 +36090,10 @@
         {
          "slug": "uipath",
          "name": "UiPath"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
         }
        ],
        "no": [
@@ -36073,10 +36160,6 @@
         {
          "slug": "wrike",
          "name": "Wrike"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
         }
        ],
        "unreadable": [
@@ -37799,10 +37882,10 @@
       "short": "Work & product",
       "n": 48,
       "readable": 38,
-      "yes": 21,
-      "no": 17,
+      "yes": 22,
+      "no": 16,
       "unreadable": 10,
-      "share": 55.3,
+      "share": 57.9,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -37889,6 +37972,10 @@
         {
          "slug": "uipath",
          "name": "UiPath"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
         }
        ],
        "no": [
@@ -37955,10 +38042,6 @@
         {
          "slug": "wrike",
          "name": "Wrike"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
         }
        ],
        "unreadable": [
@@ -39075,8 +39158,8 @@
     "drawn": true,
     "withheld": null,
     "overall": {
-     "yes": 155,
-     "no": 115,
+     "yes": 156,
+     "no": 114,
      "unreadable": 91,
      "readable": 270,
      "tracked": 361
@@ -39638,10 +39721,10 @@
       "short": "Work & product",
       "n": 48,
       "readable": 38,
-      "yes": 10,
-      "no": 28,
+      "yes": 11,
+      "no": 27,
       "unreadable": 10,
-      "share": 26.3,
+      "share": 28.9,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -39684,6 +39767,10 @@
         {
          "slug": "uipath",
          "name": "UiPath"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
         }
        ],
        "no": [
@@ -39794,10 +39881,6 @@
         {
          "slug": "wrike",
          "name": "Wrike"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
         }
        ],
        "unreadable": [
@@ -41711,6 +41794,218 @@
       }
      },
      {
+      "group": "work",
+      "label": "Work & product",
+      "short": "Work & product",
+      "n": 48,
+      "readable": 38,
+      "yes": 11,
+      "no": 27,
+      "unreadable": 10,
+      "share": 28.9,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "clickup",
+         "name": "ClickUp"
+        },
+        {
+         "slug": "coda",
+         "name": "Coda"
+        },
+        {
+         "slug": "monday",
+         "name": "monday.com"
+        },
+        {
+         "slug": "n8n",
+         "name": "n8n"
+        },
+        {
+         "slug": "otter",
+         "name": "Otter.ai"
+        },
+        {
+         "slug": "replit",
+         "name": "Replit"
+        },
+        {
+         "slug": "retool",
+         "name": "Retool"
+        },
+        {
+         "slug": "teamleader",
+         "name": "Teamleader"
+        },
+        {
+         "slug": "tray",
+         "name": "Tray.ai"
+        },
+        {
+         "slug": "uipath",
+         "name": "UiPath"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
+        }
+       ],
+       "no": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
+        {
+         "slug": "asana",
+         "name": "Asana"
+        },
+        {
+         "slug": "basecamp",
+         "name": "Basecamp"
+        },
+        {
+         "slug": "calendly",
+         "name": "Calendly"
+        },
+        {
+         "slug": "cursor",
+         "name": "Cursor"
+        },
+        {
+         "slug": "figma",
+         "name": "Figma"
+        },
+        {
+         "slug": "fireflies",
+         "name": "Fireflies.ai"
+        },
+        {
+         "slug": "framer",
+         "name": "Framer"
+        },
+        {
+         "slug": "github",
+         "name": "GitHub"
+        },
+        {
+         "slug": "gitlab",
+         "name": "GitLab"
+        },
+        {
+         "slug": "gitpod",
+         "name": "Gitpod"
+        },
+        {
+         "slug": "guru",
+         "name": "Guru"
+        },
+        {
+         "slug": "loom",
+         "name": "Loom"
+        },
+        {
+         "slug": "m-files",
+         "name": "M-Files"
+        },
+        {
+         "slug": "make",
+         "name": "Make"
+        },
+        {
+         "slug": "mentimeter",
+         "name": "Mentimeter"
+        },
+        {
+         "slug": "miro",
+         "name": "Miro"
+        },
+        {
+         "slug": "motion",
+         "name": "Motion"
+        },
+        {
+         "slug": "notion",
+         "name": "Notion"
+        },
+        {
+         "slug": "productboard",
+         "name": "Productboard"
+        },
+        {
+         "slug": "rossum",
+         "name": "Rossum"
+        },
+        {
+         "slug": "slack",
+         "name": "Slack"
+        },
+        {
+         "slug": "smartsheet",
+         "name": "Smartsheet"
+        },
+        {
+         "slug": "sourcegraph",
+         "name": "Sourcegraph"
+        },
+        {
+         "slug": "teamwork",
+         "name": "Teamwork"
+        },
+        {
+         "slug": "templafy",
+         "name": "Templafy"
+        },
+        {
+         "slug": "wrike",
+         "name": "Wrike"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "atlassian",
+         "name": "Atlassian"
+        },
+        {
+         "slug": "box",
+         "name": "Box"
+        },
+        {
+         "slug": "jetbrains",
+         "name": "JetBrains"
+        },
+        {
+         "slug": "linear",
+         "name": "Linear"
+        },
+        {
+         "slug": "nextcloud",
+         "name": "Nextcloud"
+        },
+        {
+         "slug": "shortcut",
+         "name": "Shortcut"
+        },
+        {
+         "slug": "sonarsource",
+         "name": "SonarSource"
+        },
+        {
+         "slug": "tricentis",
+         "name": "Tricentis"
+        },
+        {
+         "slug": "unity",
+         "name": "Unity"
+        },
+        {
+         "slug": "workato",
+         "name": "Workato"
+        }
+       ]
+      }
+     },
+     {
       "group": "dev",
       "label": "Developer & infrastructure",
       "short": "Dev & infrastructure",
@@ -42066,218 +42361,6 @@
         {
          "slug": "nice",
          "name": "NICE"
-        }
-       ]
-      }
-     },
-     {
-      "group": "work",
-      "label": "Work & product",
-      "short": "Work & product",
-      "n": 48,
-      "readable": 38,
-      "yes": 10,
-      "no": 28,
-      "unreadable": 10,
-      "share": 26.3,
-      "suppressed": false,
-      "companies": {
-       "yes": [
-        {
-         "slug": "clickup",
-         "name": "ClickUp"
-        },
-        {
-         "slug": "coda",
-         "name": "Coda"
-        },
-        {
-         "slug": "monday",
-         "name": "monday.com"
-        },
-        {
-         "slug": "n8n",
-         "name": "n8n"
-        },
-        {
-         "slug": "otter",
-         "name": "Otter.ai"
-        },
-        {
-         "slug": "replit",
-         "name": "Replit"
-        },
-        {
-         "slug": "retool",
-         "name": "Retool"
-        },
-        {
-         "slug": "teamleader",
-         "name": "Teamleader"
-        },
-        {
-         "slug": "tray",
-         "name": "Tray.ai"
-        },
-        {
-         "slug": "uipath",
-         "name": "UiPath"
-        }
-       ],
-       "no": [
-        {
-         "slug": "airtable",
-         "name": "Airtable"
-        },
-        {
-         "slug": "asana",
-         "name": "Asana"
-        },
-        {
-         "slug": "basecamp",
-         "name": "Basecamp"
-        },
-        {
-         "slug": "calendly",
-         "name": "Calendly"
-        },
-        {
-         "slug": "cursor",
-         "name": "Cursor"
-        },
-        {
-         "slug": "figma",
-         "name": "Figma"
-        },
-        {
-         "slug": "fireflies",
-         "name": "Fireflies.ai"
-        },
-        {
-         "slug": "framer",
-         "name": "Framer"
-        },
-        {
-         "slug": "github",
-         "name": "GitHub"
-        },
-        {
-         "slug": "gitlab",
-         "name": "GitLab"
-        },
-        {
-         "slug": "gitpod",
-         "name": "Gitpod"
-        },
-        {
-         "slug": "guru",
-         "name": "Guru"
-        },
-        {
-         "slug": "loom",
-         "name": "Loom"
-        },
-        {
-         "slug": "m-files",
-         "name": "M-Files"
-        },
-        {
-         "slug": "make",
-         "name": "Make"
-        },
-        {
-         "slug": "mentimeter",
-         "name": "Mentimeter"
-        },
-        {
-         "slug": "miro",
-         "name": "Miro"
-        },
-        {
-         "slug": "motion",
-         "name": "Motion"
-        },
-        {
-         "slug": "notion",
-         "name": "Notion"
-        },
-        {
-         "slug": "productboard",
-         "name": "Productboard"
-        },
-        {
-         "slug": "rossum",
-         "name": "Rossum"
-        },
-        {
-         "slug": "slack",
-         "name": "Slack"
-        },
-        {
-         "slug": "smartsheet",
-         "name": "Smartsheet"
-        },
-        {
-         "slug": "sourcegraph",
-         "name": "Sourcegraph"
-        },
-        {
-         "slug": "teamwork",
-         "name": "Teamwork"
-        },
-        {
-         "slug": "templafy",
-         "name": "Templafy"
-        },
-        {
-         "slug": "wrike",
-         "name": "Wrike"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
-        }
-       ],
-       "unreadable": [
-        {
-         "slug": "atlassian",
-         "name": "Atlassian"
-        },
-        {
-         "slug": "box",
-         "name": "Box"
-        },
-        {
-         "slug": "jetbrains",
-         "name": "JetBrains"
-        },
-        {
-         "slug": "linear",
-         "name": "Linear"
-        },
-        {
-         "slug": "nextcloud",
-         "name": "Nextcloud"
-        },
-        {
-         "slug": "shortcut",
-         "name": "Shortcut"
-        },
-        {
-         "slug": "sonarsource",
-         "name": "SonarSource"
-        },
-        {
-         "slug": "tricentis",
-         "name": "Tricentis"
-        },
-        {
-         "slug": "unity",
-         "name": "Unity"
-        },
-        {
-         "slug": "workato",
-         "name": "Workato"
         }
        ]
       }
@@ -42732,8 +42815,8 @@
     "drawn": true,
     "withheld": null,
     "overall": {
-     "yes": 95,
-     "no": 175,
+     "yes": 96,
+     "no": 174,
      "unreadable": 91,
      "readable": 270,
      "tracked": 361
@@ -43295,10 +43378,10 @@
       "short": "Work & product",
       "n": 48,
       "readable": 38,
-      "yes": 8,
-      "no": 30,
+      "yes": 9,
+      "no": 29,
       "unreadable": 10,
-      "share": 21.1,
+      "share": 23.7,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -43333,6 +43416,10 @@
         {
          "slug": "wrike",
          "name": "Wrike"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
         }
        ],
        "no": [
@@ -43451,10 +43538,6 @@
         {
          "slug": "uipath",
          "name": "UiPath"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
         }
        ],
        "unreadable": [
@@ -45160,10 +45243,10 @@
       "short": "Work & product",
       "n": 48,
       "readable": 38,
-      "yes": 8,
-      "no": 30,
+      "yes": 9,
+      "no": 29,
       "unreadable": 10,
-      "share": 21.1,
+      "share": 23.7,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -45198,6 +45281,10 @@
         {
          "slug": "wrike",
          "name": "Wrike"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
         }
        ],
        "no": [
@@ -45316,10 +45403,6 @@
         {
          "slug": "uipath",
          "name": "UiPath"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
         }
        ],
        "unreadable": [
@@ -46622,8 +46705,8 @@
     "drawn": true,
     "withheld": null,
     "overall": {
-     "yes": 67,
-     "no": 203,
+     "yes": 68,
+     "no": 202,
      "unreadable": 91,
      "readable": 270,
      "tracked": 361
@@ -54566,11 +54649,11 @@
       "label": "Work & product",
       "short": "Work & product",
       "n": 48,
-      "readable": 33,
-      "yes": 29,
+      "readable": 34,
+      "yes": 30,
       "no": 4,
-      "unreadable": 15,
-      "share": 87.9,
+      "unreadable": 14,
+      "share": 88.2,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -54621,6 +54704,10 @@
         {
          "slug": "gitlab",
          "name": "GitLab"
+        },
+        {
+         "slug": "jetbrains",
+         "name": "JetBrains"
         },
         {
          "slug": "linear",
@@ -54727,10 +54814,6 @@
          "name": "Guru"
         },
         {
-         "slug": "jetbrains",
-         "name": "JetBrains"
-        },
-        {
          "slug": "m-files",
          "name": "M-Files"
         },
@@ -54778,11 +54861,11 @@
       "label": "Go-to-market",
       "short": "Go-to-market",
       "n": 50,
-      "readable": 20,
-      "yes": 18,
+      "readable": 21,
+      "yes": 19,
       "no": 2,
-      "unreadable": 30,
-      "share": 90,
+      "unreadable": 29,
+      "share": 90.5,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -54817,6 +54900,10 @@
         {
          "slug": "contentful",
          "name": "Contentful"
+        },
+        {
+         "slug": "deepl",
+         "name": "DeepL"
         },
         {
          "slug": "descript",
@@ -54897,10 +54984,6 @@
         {
          "slug": "copy-ai",
          "name": "Copy.ai"
-        },
-        {
-         "slug": "deepl",
-         "name": "DeepL"
         },
         {
          "slug": "demandbase",
@@ -54998,10 +55081,10 @@
       "label": "Customer service",
       "short": "Service",
       "n": 19,
-      "readable": 4,
+      "readable": 5,
       "yes": 3,
-      "no": 1,
-      "unreadable": 15,
+      "no": 2,
+      "unreadable": 14,
       "suppressed": true,
       "companies": {
        "yes": [
@@ -55020,15 +55103,15 @@
        ],
        "no": [
         {
+         "slug": "aircall",
+         "name": "Aircall"
+        },
+        {
          "slug": "gorgias",
          "name": "Gorgias"
         }
        ],
        "unreadable": [
-        {
-         "slug": "aircall",
-         "name": "Aircall"
-        },
         {
          "slug": "cognigy",
          "name": "Cognigy"
@@ -56204,11 +56287,11 @@
       "label": "Go-to-market",
       "short": "Go-to-market",
       "n": 50,
-      "readable": 20,
-      "yes": 18,
+      "readable": 21,
+      "yes": 19,
       "no": 2,
-      "unreadable": 30,
-      "share": 90,
+      "unreadable": 29,
+      "share": 90.5,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -56243,6 +56326,10 @@
         {
          "slug": "contentful",
          "name": "Contentful"
+        },
+        {
+         "slug": "deepl",
+         "name": "DeepL"
         },
         {
          "slug": "descript",
@@ -56323,10 +56410,6 @@
         {
          "slug": "copy-ai",
          "name": "Copy.ai"
-        },
-        {
-         "slug": "deepl",
-         "name": "DeepL"
         },
         {
          "slug": "demandbase",
@@ -56424,11 +56507,11 @@
       "label": "Work & product",
       "short": "Work & product",
       "n": 48,
-      "readable": 33,
-      "yes": 29,
+      "readable": 34,
+      "yes": 30,
       "no": 4,
-      "unreadable": 15,
-      "share": 87.9,
+      "unreadable": 14,
+      "share": 88.2,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -56479,6 +56562,10 @@
         {
          "slug": "gitlab",
          "name": "GitLab"
+        },
+        {
+         "slug": "jetbrains",
+         "name": "JetBrains"
         },
         {
          "slug": "linear",
@@ -56583,10 +56670,6 @@
         {
          "slug": "guru",
          "name": "Guru"
-        },
-        {
-         "slug": "jetbrains",
-         "name": "JetBrains"
         },
         {
          "slug": "m-files",
@@ -57644,10 +57727,10 @@
      "groups": 10
     },
     "overall": {
-     "yes": 121,
-     "no": 18,
-     "unreadable": 222,
-     "readable": 139,
+     "yes": 123,
+     "no": 19,
+     "unreadable": 219,
+     "readable": 142,
      "tracked": 361
     }
    }
@@ -57678,5 +57761,5 @@
    "missing": []
   }
  },
- "generated_at": "2026-08-09T15:37:59Z"
+ "generated_at": "2026-08-09T16:10:17Z"
 }
