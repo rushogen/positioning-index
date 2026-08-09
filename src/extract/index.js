@@ -27,7 +27,7 @@ import { extractAnatomy } from './anatomy.js';
  *
  * See METHODOLOGY.md for what each version means.
  */
-export const EXTRACTOR_VERSION = '1.3.0';
+export const EXTRACTOR_VERSION = '1.4.0';
 
 /**
  * How much of the document gets flattened to plain text for the regex-based

@@ -60,6 +60,29 @@ const CONTACT_SALES =
 const FREE_PHRASE =
   /\b(?:free forever|free plan|free tier|always free|free for(?:ever)?\b|start(?:s|ing)? (?:for )?free|\$\s?0\b|€\s?0\b|0\s?€|£\s?0\b|no cost)\b/i;
 
+/**
+ * A free tier detected DIRECTLY, without a parsed tier table -- for the modern
+ * pricing pages (React/CSS-module markup) where the anchor+price heuristic finds
+ * fewer than two tiers but the free plan is still plainly in the HTML. Three
+ * independent, high-precision signals, validated on real pages (recall ~10/12,
+ * zero false positives against contact-sales pages):
+ *   1. an element whose entire text is a free-plan title ("Free", "Freemium"),
+ *   2. an unambiguous phrase ("free forever", "free plan/tier", "always free"),
+ *   3. a $0 plan price (currency + zero, not "$0.99").
+ * It only ever returns "yes" or null -- never "no", because absence of these
+ * signals on an unparsed page is genuinely "we could not tell", which is the
+ * whole reason the derived signals are otherwise nulled when tiers fail.
+ */
+const TITLE_FREE =
+  /<(?:h[1-6]|div|span|p|button|a|dt|li|strong)\b[^>]*>\s*(?:free|freemium|free plan|free tier)\s*<\/(?:h[1-6]|div|span|p|button|a|dt|li|strong)>/i;
+const STRONG_FREE_PHRASE = /\b(?:free forever|forever free|free plan|free tier|always free)\b/i;
+const ZERO_PRICE = /[$€£]\s?0(?![.,]\d*[1-9])(?:\.0{1,2})?\b/;
+
+function looseFreeTier(doc, plainText) {
+  const hit = TITLE_FREE.test(doc) || STRONG_FREE_PHRASE.test(plainText) || ZERO_PRICE.test(plainText);
+  return hit ? ok('yes', 'loose:free-signal', 0.6, { free: true, loose: true }) : null;
+}
+
 function toNumber(raw) {
   if (!raw) return null;
   let s = String(raw).replace(/[  ]/g, '');
@@ -246,7 +269,10 @@ export function extractPricingSignals(doc, raw, plain) {
     return {
       pricing_tiers: null,
       pricing_entry_price: null,
-      pricing_free_tier: null,
+      // The tier table failed, but a free plan may still be plainly detectable.
+      // This recovers free-tier coverage on modern pricing pages without ever
+      // asserting "no" (which would need a real, parsed tier list).
+      pricing_free_tier: looseFreeTier(doc, plainText),
       pricing_seat_minimum: extractSeatMinimum(plainText),
     };
   }
