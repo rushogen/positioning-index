@@ -1,0 +1,227 @@
+{
+ "companies": 200,
+ "targets": 309,
+ "observations": 1629,
+ "changes": 36,
+ "changes_7d": 36,
+ "changes_30d": 36,
+ "retracted_changes": 3,
+ "first_observation": "2026-08-07T11:00:38Z",
+ "last_observation": "2026-08-08T11:47:51Z",
+ "last_successful_fetch": "2026-08-08T11:47:51Z",
+ "runs": 13,
+ "last_run_at": "2026-08-08T11:47:59Z",
+ "fetches_24h": 2283,
+ "blocked_24h": 129,
+ "errors_24h": 15,
+ "suspect_signals": 1,
+ "categories": [
+  {
+   "label": "one platform",
+   "n": 5
+  },
+  {
+   "label": "ai agents",
+   "n": 2
+  },
+  {
+   "label": "business software",
+   "n": 2
+  },
+  {
+   "label": "communications infrastructure",
+   "n": 2
+  },
+  {
+   "label": "agentic crm",
+   "n": 1
+  },
+  {
+   "label": "agentic cs platform",
+   "n": 1
+  },
+  {
+   "label": "agentic cx suite for retail",
+   "n": 1
+  },
+  {
+   "label": "agentic document generation platform",
+   "n": 1
+  },
+  {
+   "label": "agentic financial operations platform",
+   "n": 1
+  },
+  {
+   "label": "agentic infrastructure",
+   "n": 1
+  },
+  {
+   "label": "agentic product management system",
+   "n": 1
+  },
+  {
+   "label": "agentic security platform",
+   "n": 1
+  },
+  {
+   "label": "agentic web platform for modern businesses",
+   "n": 1
+  },
+  {
+   "label": "ai agent",
+   "n": 1
+  },
+  {
+   "label": "ai automation for critical processes",
+   "n": 1
+  },
+  {
+   "label": "ai banking software",
+   "n": 1
+  },
+  {
+   "label": "ai brand protection platform",
+   "n": 1
+  },
+  {
+   "label": "ai customer experience automation",
+   "n": 1
+  },
+  {
+   "label": "ai development platform",
+   "n": 1
+  },
+  {
+   "label": "ai era ship software",
+   "n": 1
+  }
+ ],
+ "signals": {
+  "anatomy_sections": {
+   "page": "home",
+   "kind": "text",
+   "label": "Section sequence",
+   "family": "anatomy"
+  },
+  "anatomy_section_count": {
+   "page": "home",
+   "kind": "text",
+   "label": "Section count",
+   "family": "anatomy"
+  },
+  "anatomy_cta_count": {
+   "page": "home",
+   "kind": "text",
+   "label": "Calls to action",
+   "family": "anatomy"
+  },
+  "anatomy_nav_links": {
+   "page": "home",
+   "kind": "text",
+   "label": "Nav links",
+   "family": "anatomy"
+  },
+  "anatomy_footer_links": {
+   "page": "home",
+   "kind": "text",
+   "label": "Footer links",
+   "family": "anatomy"
+  },
+  "anatomy_word_count": {
+   "page": "home",
+   "kind": "text",
+   "label": "Word count",
+   "family": "anatomy"
+  },
+  "anatomy_form_fields": {
+   "page": "home",
+   "kind": "text",
+   "label": "Form fields",
+   "family": "anatomy"
+  },
+  "anatomy_elements": {
+   "page": "home",
+   "kind": "list",
+   "label": "Elements present",
+   "family": "anatomy"
+  },
+  "headline": {
+   "page": "home",
+   "kind": "text",
+   "label": "Hero headline",
+   "family": "hero"
+  },
+  "subhead": {
+   "page": "home",
+   "kind": "text",
+   "label": "Hero subhead",
+   "family": "hero"
+  },
+  "category_label": {
+   "page": "home",
+   "kind": "text",
+   "label": "Category label",
+   "family": "hero"
+  },
+  "meta_title": {
+   "page": "home",
+   "kind": "text",
+   "label": "Meta title",
+   "family": "hero"
+  },
+  "meta_description": {
+   "page": "home",
+   "kind": "text",
+   "label": "Meta description",
+   "family": "hero"
+  },
+  "customer_logos": {
+   "page": "home",
+   "kind": "list",
+   "label": "Customer logos",
+   "family": "proof"
+  },
+  "proof_points": {
+   "page": "home",
+   "kind": "list",
+   "label": "Proof points",
+   "family": "proof"
+  },
+  "pricing_tiers": {
+   "page": "pricing",
+   "kind": "list",
+   "label": "Pricing tiers",
+   "localeSensitive": true,
+   "family": "pricing"
+  },
+  "pricing_entry_price": {
+   "page": "pricing",
+   "kind": "text",
+   "label": "Entry price",
+   "localeSensitive": true,
+   "family": "pricing"
+  },
+  "pricing_free_tier": {
+   "page": "pricing",
+   "kind": "enum",
+   "label": "Free tier",
+   "localeSensitive": true,
+   "family": "pricing"
+  },
+  "pricing_seat_minimum": {
+   "page": "pricing",
+   "kind": "text",
+   "label": "Seat minimum",
+   "localeSensitive": true,
+   "family": "pricing"
+  },
+  "pricing_meta_title": {
+   "page": "pricing",
+   "kind": "text",
+   "label": "Pricing page title",
+   "family": "pricing"
+  }
+ },
+ "generated_at": "2026-08-08T11:47:59Z"
+}

@@ -1,0 +1,75 @@
+/* Structure tab — view-specific pieces. Chrome uses the shared tokens; the only
+   literal colours live in the section-type ramp (derive.ts), applied inline. */
+
+.st-hero { padding: clamp(1rem, 3vw, 2rem) 0 clamp(1.5rem, 4vw, 2.5rem); }
+
+/* A finding: lead stat beside its caption + caveat chips, then the viz. */
+.st-lead { display: grid; grid-template-columns: minmax(0, auto) 1fr; gap: clamp(1rem, 4vw, 3rem); align-items: end; }
+.st-lead-copy { min-width: 0; }
+.st-lead-copy .lede { margin-top: 0; }
+@media (max-width: 44rem) { .st-lead { grid-template-columns: 1fr; gap: 1rem; align-items: start; } }
+
+/* ---- Archetype: the composite page silhouette ------------------------- */
+.arch-frame { padding: 0; overflow: hidden; }
+.arch-bar {
+  display: flex; align-items: center; gap: 0.5rem;
+  height: 34px; padding: 0 clamp(0.7rem, 2vw, 1.1rem);
+  border-bottom: 1px solid var(--rule);
+  background: color-mix(in srgb, var(--panel-2) 70%, transparent);
+}
+.arch-dot { width: 10px; height: 10px; border-radius: 999px; background: var(--rule); }
+.arch-bar-title { margin-left: 0.4rem; font-size: 0.76rem; color: var(--ink-3); font-family: var(--mono); letter-spacing: 0.01em; }
+.arch-stack { padding: clamp(0.5rem, 1.5vw, 0.9rem); display: flex; flex-direction: column; gap: 6px; }
+
+.arch-row { display: grid; grid-template-columns: 8.5rem 1fr 3.4rem; align-items: center; gap: clamp(0.5rem, 1.5vw, 1rem); }
+.arch-label { font-size: 0.82rem; color: var(--ink); text-align: right; line-height: 1.15; }
+.arch-omit { display: block; font-size: 0.68rem; color: var(--ink-3); margin-top: 1px; }
+.arch-track {
+  position: relative; height: clamp(30px, 5vw, 44px); border-radius: var(--r-sm);
+  background: color-mix(in srgb, var(--panel-2) 60%, transparent);
+  border: 1px solid var(--rule-2); overflow: hidden;
+  display: flex; justify-content: center; align-items: center;
+}
+.arch-fill { position: absolute; inset: 0 auto 0 50%; transform: translateX(-50%); border-radius: var(--r-sm); }
+.arch-fill-sheen { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(255,255,255,0.16), transparent 55%); }
+.arch-pct { font-family: var(--serif); font-variant-numeric: tabular-nums; font-size: 1.05rem; font-weight: 600; text-align: right; color: var(--ink); }
+.arch-pct span { font-size: 0.66rem; color: var(--ink-3); }
+@media (max-width: 34rem) {
+  .arch-row { grid-template-columns: 6.2rem 1fr 2.7rem; }
+  .arch-label { font-size: 0.74rem; }
+}
+
+/* ---- Families -------------------------------------------------------- */
+.fam-split { display: flex; height: 30px; width: 100%; border-radius: 999px; overflow: hidden; border: 1px solid var(--rule); }
+.fam-split-seg { height: 100%; }
+.fam-split-rest { height: 100%; flex: 1; background: repeating-linear-gradient(-45deg, color-mix(in srgb, var(--ink-3) 22%, transparent) 0 6px, transparent 6px 12px); background-color: color-mix(in srgb, var(--panel-2) 80%, transparent); }
+.fam-split-key { display: flex; flex-wrap: wrap; gap: 0.4rem 1.1rem; margin-top: 0.7rem; font-size: 0.8rem; color: var(--ink-2); }
+.fam-split-key span { display: inline-flex; align-items: center; gap: 0.4rem; }
+.fam-swatch { width: 0.7rem; height: 0.7rem; border-radius: 3px; display: inline-block; }
+
+.fam-grid { display: grid; gap: clamp(0.8rem, 2vw, 1.2rem); grid-template-columns: repeat(auto-fill, minmax(min(100%, 15.5rem), 1fr)); }
+.fam-card { display: flex; flex-direction: column; gap: 0.7rem; position: relative; overflow: hidden; }
+.fam-card::before { content: ''; position: absolute; inset: 0 auto 0 0; width: 3px; background: var(--_c, var(--accent)); }
+.fam-card-head { display: flex; align-items: baseline; justify-content: space-between; gap: 0.6rem; }
+.fam-size { font-family: var(--serif); font-size: 2rem; font-weight: 600; line-height: 1; color: var(--ink); font-variant-numeric: tabular-nums; }
+.fam-size span { font-size: 0.7rem; color: var(--ink-3); font-family: var(--sans); }
+.fam-name { font-family: var(--serif); font-size: 1.02rem; line-height: 1.2; color: var(--ink); }
+.fam-sig { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+.fam-sig-chip { font-size: 0.7rem; padding: 0.15rem 0.5rem; border-radius: 999px; border: 1px solid; display: inline-flex; align-items: center; gap: 0.35rem; color: var(--ink-2); }
+.fam-sig-chip i { width: 0.45rem; height: 0.45rem; border-radius: 999px; }
+.fam-sig-empty { font-size: 0.75rem; color: var(--ink-3); font-style: italic; }
+.fam-members { font-size: 0.83rem; color: var(--ink-2); line-height: 1.5; margin: 0; }
+
+/* ---- Slots (what sits where) ----------------------------------------- */
+.slot-scroll { overflow-x: auto; padding-bottom: 0.4rem; }
+.slot-svg { display: block; width: 100%; min-width: 520px; height: auto; }
+.slot-legend { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; margin-top: 0.9rem; font-size: 0.8rem; color: var(--ink-2); }
+.slot-legend span { display: inline-flex; align-items: center; gap: 0.4rem; }
+
+/* ---- Globe wrap ------------------------------------------------------- */
+.globe-wrap { padding: 0; overflow: hidden; }
+
+/* Company lists inside disclosures read as compact prose. */
+.st-disc-group { margin: 0 0 0.7rem; }
+.st-disc-group b { color: var(--ink); font-weight: 600; }
+.st-disc-group .st-disc-names { color: var(--ink-2); }

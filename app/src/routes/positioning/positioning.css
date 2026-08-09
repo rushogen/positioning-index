@@ -1,0 +1,116 @@
+/* Positioning tab (Lens 01). Bespoke, token-driven visuals; no hardcoded colour. */
+
+/* --- hero --------------------------------------------------------------- */
+.pos-hero { padding: clamp(0.5rem, 3vw, 2rem) 0 clamp(1.5rem, 4vw, 3rem); }
+.pos-title { font-size: var(--t-h1); }
+.pos-title em { color: var(--accent); font-style: italic; }
+.pos-dek { margin: 1.1rem 0 0; font-family: var(--serif); font-size: var(--t-lede); color: var(--ink-2); max-width: 40em; line-height: 1.45; }
+
+/* --- finding shell ------------------------------------------------------ */
+.finding { margin: clamp(3rem, 8vw, 6rem) 0; scroll-margin-top: 5rem; }
+.finding-head { display: flex; align-items: baseline; gap: clamp(0.8rem, 2vw, 1.4rem); border-top: 1px solid var(--rule); padding-top: 1.4rem; }
+.finding-num { font-family: var(--serif); font-size: clamp(1.6rem, 1.2rem + 1.5vw, 2.4rem); color: var(--ink-3); letter-spacing: -0.02em; line-height: 1; }
+.finding-title { font-size: var(--t-h2); }
+
+/* lead: big stat beside a short caption + chips */
+.lead { display: flex; flex-wrap: wrap; align-items: flex-start; gap: clamp(1.4rem, 4vw, 3rem); margin: 1.6rem 0 0; }
+.lead > .stat { flex: 0 0 auto; max-width: 100%; }
+.lead-copy { flex: 1 1 22rem; min-width: min(100%, 20rem); }
+.lead-copy p { margin: 0 0 0.9rem; color: var(--ink-2); line-height: 1.55; max-width: 42em; }
+
+.viz { margin-top: clamp(1.6rem, 4vw, 2.4rem); }
+.drop-note { margin: 0.8rem 0 0; font-size: 0.8rem; color: var(--ink-3); line-height: 1.5; }
+
+/* picked / selected panel */
+.picked { margin-top: 1.4rem; padding-top: 1.1rem; border-top: 1px dashed var(--rule); }
+.picked-head { margin: 0 0 0.8rem; font-size: 0.92rem; color: var(--ink-2); }
+.picked-head b { color: var(--accent); font-family: var(--serif); }
+
+/* --- ranked horizontal bars (headline words) --------------------------- */
+.hbars { display: flex; flex-direction: column; gap: 0.4rem; }
+.hbar {
+  display: grid; grid-template-columns: clamp(4.5rem, 18vw, 7rem) 1fr auto; align-items: center; gap: 0.7rem;
+  background: none; border: 0; padding: 0.35rem 0.4rem; border-radius: var(--r-sm); cursor: pointer;
+  text-align: left; color: var(--ink-2); transition: background 0.2s var(--ease), color 0.2s var(--ease);
+}
+.hbar:hover { background: color-mix(in srgb, var(--panel) 70%, transparent); }
+.hbar-on { color: var(--ink); background: color-mix(in srgb, var(--accent) 10%, transparent); }
+.hbar-label { font-size: 0.9rem; font-weight: 500; overflow: hidden; text-overflow: ellipsis; }
+.hbar-track { height: 0.85rem; background: color-mix(in srgb, var(--ink-3) 14%, transparent); border-radius: 999px; overflow: hidden; }
+.hbar-fill { display: block; height: 100%; transform-origin: left center; border-radius: 999px;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--accent) 65%, transparent), var(--accent)); }
+.hbar-on .hbar-fill { background: linear-gradient(90deg, color-mix(in srgb, var(--accent) 75%, transparent), var(--accent)); box-shadow: 0 0 12px var(--glow); }
+.hbar-n { font-size: 0.9rem; color: var(--ink-2); min-width: 1.8rem; text-align: right; }
+
+/* --- waffle (AI adoption) ---------------------------------------------- */
+.waffle { display: grid; grid-template-columns: repeat(auto-fill, minmax(11px, 1fr)); gap: 4px; margin: 0 auto; }
+@media (min-width: 30rem) { .waffle { grid-template-columns: repeat(23, 1fr); } }
+.wf-cell { aspect-ratio: 1 / 1; border-radius: 3px; }
+.wf-ai { background: var(--accent); }
+.wf-quiet { background: color-mix(in srgb, var(--ink-3) 26%, transparent); }
+.wf-legend, .split-legend { display: flex; flex-wrap: wrap; gap: 1.2rem; margin-top: 1rem; font-size: 0.82rem; color: var(--ink-2); }
+.wf-key { display: inline-flex; align-items: center; gap: 0.45rem; }
+.wf-swatch { width: 0.75rem; height: 0.75rem; border-radius: 3px; display: inline-block; }
+
+/* --- term mini-bars ----------------------------------------------------- */
+.term-bars { margin-top: 1.6rem; }
+.term-head, .sub-head { margin: 0 0 0.7rem; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-3); }
+.term-row { display: grid; grid-template-columns: 6rem 1fr auto; align-items: center; gap: 0.7rem; margin-bottom: 0.4rem; }
+.term-label { font-size: 0.9rem; color: var(--ink-2); }
+.term-track { height: 0.6rem; background: color-mix(in srgb, var(--ink-3) 14%, transparent); border-radius: 999px; overflow: hidden; }
+.term-fill { display: block; height: 100%; transform-origin: left center; border-radius: 999px; background: var(--accent-2); }
+.term-n { font-size: 0.85rem; color: var(--ink-2); min-width: 2rem; text-align: right; }
+
+/* --- name cloud (quiet companies) -------------------------------------- */
+.name-cloud { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+.name-tag { font-size: 0.8rem; color: var(--ink-2); padding: 0.24rem 0.6rem; border-radius: var(--r-sm);
+  border: 1px solid var(--rule); background: color-mix(in srgb, var(--panel) 55%, transparent); white-space: nowrap; }
+
+/* --- concentration stacked bar (category nouns) ------------------------ */
+.conc-bar { display: flex; height: clamp(2.4rem, 7vw, 3.2rem); border-radius: var(--r-sm); overflow: hidden; border: 1px solid var(--rule); }
+.conc-seg { position: relative; background: var(--accent); border: 0; border-right: 1px solid color-mix(in srgb, var(--bg) 55%, transparent);
+  cursor: pointer; min-width: 2px; padding: 0; display: flex; align-items: center; transition: filter 0.2s var(--ease); }
+.conc-seg:last-child { border-right: 0; }
+.conc-seg:nth-child(even) { background: color-mix(in srgb, var(--accent) 62%, var(--panel)); }
+.conc-seg:hover { filter: brightness(1.12); }
+.conc-on { outline: 2px solid var(--ink); outline-offset: -2px; }
+.conc-seg-label { font-size: 0.74rem; font-weight: 600; color: var(--bg); padding: 0 0.5rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.conc-tail { background: color-mix(in srgb, var(--ink-3) 22%, transparent); cursor: default; }
+.conc-scale { display: flex; justify-content: space-between; margin-top: 0.5rem; font-size: 0.75rem; color: var(--ink-3); }
+
+/* --- ECharts container -------------------------------------------------- */
+.chart-wrap { overflow-x: auto; }
+.echart { width: 100%; min-width: 340px; }
+
+/* --- pricing ------------------------------------------------------------ */
+.sub-card { background: linear-gradient(180deg, var(--panel), var(--panel-2)); border: 1px solid var(--rule); border-radius: var(--r); padding: clamp(1rem, 2vw, 1.4rem); }
+.stat-inline { margin-bottom: 1rem; }
+.split-bar { display: flex; height: clamp(2.4rem, 7vw, 3rem); border-radius: var(--r-sm); overflow: hidden; border: 1px solid var(--rule); }
+.split-seg { display: flex; align-items: center; justify-content: center; min-width: 2px; }
+.split-n { font-size: 0.8rem; font-weight: 600; color: var(--bg); }
+.seg-yes { background: var(--accent-2); }
+.seg-no { background: var(--hot); }
+.seg-un { background: color-mix(in srgb, var(--ink-3) 30%, transparent); }
+.seg-un .split-n { color: var(--ink-2); }
+
+.hist { display: flex; flex-direction: column; gap: 0.35rem; }
+.hist-row { display: grid; grid-template-columns: 6.5rem 1fr auto; align-items: center; gap: 0.6rem; }
+.hist-label { font-size: 0.8rem; color: var(--ink-2); }
+.hist-track { height: 0.7rem; background: color-mix(in srgb, var(--ink-3) 14%, transparent); border-radius: 999px; overflow: hidden; }
+.hist-fill { display: block; height: 100%; transform-origin: left center; border-radius: 999px;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--accent) 60%, transparent), var(--accent)); }
+.hist-n { font-size: 0.82rem; color: var(--ink-2); min-width: 1.6rem; text-align: right; }
+
+/* --- disclosure company lists ------------------------------------------ */
+.co-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 12rem), 1fr)); gap: 0.2rem 1rem; }
+.co-list .co-row { display: flex; flex-direction: column; grid-column: 1 / -1; padding: 0.3rem 0; border-bottom: 1px solid var(--rule-2); }
+.co-name { color: var(--ink); font-size: 0.88rem; }
+.co-text { color: var(--ink-3); font-size: 0.8rem; font-style: italic; margin-top: 0.1rem; }
+.disc-group { margin-bottom: 1rem; }
+.disc-group-head { margin: 0 0 0.4rem; font-size: 0.85rem; color: var(--ink-2); }
+.disc-group-head b { color: var(--ink); }
+
+@media (max-width: 34rem) {
+  .co-list { grid-template-columns: 1fr; }
+  .hbar { grid-template-columns: 4.5rem 1fr auto; gap: 0.5rem; }
+}

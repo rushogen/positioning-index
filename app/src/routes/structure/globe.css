@@ -1,0 +1,130 @@
+/* Similarity globe — 3D shape-family cloud. Owns only this view. */
+
+.globe {
+  display: grid;
+  gap: clamp(0.9rem, 2vw, 1.4rem);
+  grid-template-columns: 1fr;
+}
+@media (min-width: 900px) {
+  .globe { grid-template-columns: minmax(0, 1fr) 340px; align-items: stretch; }
+}
+
+/* --- canvas stage --- */
+.globe-stage {
+  position: relative;
+  border: 1px solid var(--rule);
+  border-radius: var(--r);
+  overflow: hidden;
+  background:
+    radial-gradient(120% 100% at 50% 0%, color-mix(in srgb, var(--accent) 9%, transparent), transparent 60%),
+    linear-gradient(180deg, var(--panel), var(--panel-2));
+  box-shadow: var(--shadow);
+  height: min(70vh, 640px);
+  min-height: 380px;
+}
+.globe-stage canvas { display: block; outline: none; }
+.globe-stage.is-hover canvas { cursor: pointer; }
+
+.globe-hint {
+  position: absolute;
+  left: 0.9rem; bottom: 0.8rem;
+  font-size: 0.72rem; color: var(--ink-3);
+  letter-spacing: 0.02em;
+  pointer-events: none;
+  background: color-mix(in srgb, var(--panel) 70%, transparent);
+  border: 1px solid var(--rule-2);
+  border-radius: 999px;
+  padding: 0.28rem 0.7rem;
+  backdrop-filter: blur(6px);
+}
+
+/* --- floating family labels (drei <Html>) --- */
+.globe-fam {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  font-family: var(--sans);
+  font-size: 0.72rem; font-weight: 500;
+  color: var(--ink);
+  background: color-mix(in srgb, var(--panel) 80%, transparent);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 0.2rem 0.55rem 0.2rem 0.45rem;
+  box-shadow: 0 4px 16px -8px rgba(0,0,0,0.6);
+  backdrop-filter: blur(8px);
+  pointer-events: none;
+  user-select: none;
+}
+.globe-fam .dot { width: 0.55rem; height: 0.55rem; border-radius: 999px; flex: none; }
+.globe-fam .n { color: var(--ink-3); font-variant-numeric: tabular-nums; }
+
+/* --- side panel --- */
+.globe-panel {
+  border: 1px solid var(--rule);
+  border-radius: var(--r);
+  background: linear-gradient(180deg, var(--panel), var(--panel-2));
+  box-shadow: var(--shadow);
+  padding: clamp(1rem, 1.6vw, 1.4rem);
+  display: flex; flex-direction: column;
+  min-width: 0;
+  overflow-y: auto;
+  max-height: min(70vh, 640px);
+}
+
+.globe-panel .eyebrow {
+  font-size: 0.7rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--ink-3); margin: 0 0 0.35rem;
+}
+.globe-panel h3 {
+  font-family: var(--serif); font-weight: 600; font-size: 1.35rem;
+  line-height: 1.15; margin: 0 0 0.2rem; color: var(--ink);
+}
+
+.globe-fam-line { display: inline-flex; align-items: center; gap: 0.45rem; font-size: 0.9rem; color: var(--ink-2); }
+.globe-fam-line .dot { width: 0.7rem; height: 0.7rem; border-radius: 999px; flex: none; }
+.globe-fam-line .of { color: var(--ink-3); font-variant-numeric: tabular-nums; }
+
+.globe-block { margin-top: 1.05rem; }
+.globe-block .lbl {
+  font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--ink-3); margin: 0 0 0.4rem;
+}
+.globe-shape { font-size: 0.86rem; color: var(--ink); line-height: 1.5; word-break: break-word; }
+.globe-shape .sep { color: var(--ink-3); padding: 0 0.15rem; }
+
+.globe-neigh { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.3rem; }
+.globe-neigh li {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 0.6rem;
+  font-size: 0.86rem; color: var(--ink-2);
+  border-bottom: 1px solid var(--rule-2); padding-bottom: 0.3rem;
+}
+.globe-neigh li:last-child { border-bottom: none; }
+.globe-neigh .nm { color: var(--ink); min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.globe-neigh .d { font-family: var(--mono); font-size: 0.76rem; color: var(--ink-3); font-variant-numeric: tabular-nums; flex: none; }
+.globe-neigh .d.alike { color: var(--accent-2); }
+
+/* legend */
+.globe-legend { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+.globe-legend li { display: flex; align-items: center; gap: 0.55rem; font-size: 0.85rem; color: var(--ink-2); }
+.globe-legend .dot { width: 0.7rem; height: 0.7rem; border-radius: 999px; flex: none; box-shadow: 0 0 8px -1px currentColor; }
+.globe-legend .swatch-unique { width: 0.7rem; height: 0.7rem; border-radius: 999px; flex: none; background: var(--ink-3); opacity: 0.6; }
+.globe-legend .txt { min-width: 0; }
+.globe-legend .nm { color: var(--ink); }
+.globe-legend .n { color: var(--ink-3); font-variant-numeric: tabular-nums; margin-left: 0.3rem; }
+
+.globe-caveat {
+  margin: 1.1rem 0 0; font-size: 0.76rem; color: var(--ink-3);
+  border-left: 2px solid color-mix(in srgb, var(--warn) 50%, var(--rule));
+  padding-left: 0.65rem; line-height: 1.5;
+}
+
+.globe-pinned {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  font-size: 0.68rem; color: var(--accent); margin-top: 0.6rem; cursor: pointer;
+  background: none; border: none; padding: 0; align-self: flex-start;
+}
+.globe-pinned:hover { text-decoration: underline; }
+
+/* fallback (no WebGL) */
+.globe-fallback { display: flex; flex-direction: column; gap: 0.4rem; }
+.globe-fallback .note { font-size: 0.85rem; color: var(--ink-2); margin: 0 0 0.6rem; max-width: var(--measure); }

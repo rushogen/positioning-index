@@ -1,0 +1,1513 @@
+{
+ "companies": [
+  {
+   "slug": "acronis",
+   "name": "Acronis",
+   "segment": "security",
+   "hq_country": "CH",
+   "homepage_url": "https://www.acronis.com/en-us/"
+  },
+  {
+   "slug": "adyen",
+   "name": "Adyen",
+   "segment": "payments",
+   "hq_country": "NL",
+   "homepage_url": "https://www.adyen.com/",
+   "pricing_url": "https://www.adyen.com/pricing"
+  },
+  {
+   "slug": "afas",
+   "name": "AFAS Software",
+   "segment": "erp",
+   "hq_country": "NL",
+   "homepage_url": "https://www.afas.nl/"
+  },
+  {
+   "slug": "aircall",
+   "name": "Aircall",
+   "segment": "ccaas",
+   "hq_country": "FR",
+   "homepage_url": "https://aircall.io/",
+   "pricing_url": "https://aircall.io/pricing/"
+  },
+  {
+   "slug": "airtable",
+   "name": "Airtable",
+   "segment": "product-dev",
+   "hq_country": "US",
+   "homepage_url": "https://www.airtable.com/",
+   "pricing_url": "https://www.airtable.com/pricing"
+  },
+  {
+   "slug": "aiven",
+   "name": "Aiven",
+   "segment": "dev-infra",
+   "hq_country": "FI",
+   "homepage_url": "https://aiven.io/",
+   "pricing_url": "https://aiven.io/pricing"
+  },
+  {
+   "slug": "alan",
+   "name": "Alan",
+   "segment": "healthcare-it",
+   "hq_country": "FR",
+   "homepage_url": "https://alan.com/"
+  },
+  {
+   "slug": "amplitude",
+   "name": "Amplitude",
+   "segment": "analytics",
+   "hq_country": "US",
+   "homepage_url": "https://amplitude.com/",
+   "pricing_url": "https://amplitude.com/pricing"
+  },
+  {
+   "slug": "anaplan",
+   "name": "Anaplan",
+   "segment": "fintech-ops",
+   "hq_country": "US",
+   "homepage_url": "https://www.anaplan.com/"
+  },
+  {
+   "slug": "apollo",
+   "name": "Apollo.io",
+   "segment": "gtm",
+   "hq_country": "US",
+   "homepage_url": "https://www.apollo.io/",
+   "pricing_url": "https://www.apollo.io/pricing"
+  },
+  {
+   "slug": "appian",
+   "name": "Appian",
+   "segment": "bpm",
+   "hq_country": "US",
+   "homepage_url": "https://appian.com/",
+   "pricing_url": "https://appian.com/products/pricing.html"
+  },
+  {
+   "slug": "asana",
+   "name": "Asana",
+   "segment": "work-mgmt",
+   "hq_country": "US",
+   "homepage_url": "https://asana.com/",
+   "pricing_url": "https://asana.com/pricing"
+  },
+  {
+   "slug": "atlassian",
+   "name": "Atlassian",
+   "segment": "product-dev",
+   "hq_country": "AU",
+   "homepage_url": "https://www.atlassian.com/",
+   "pricing_url": "https://www.atlassian.com/software/jira/pricing"
+  },
+  {
+   "slug": "attio",
+   "name": "Attio",
+   "segment": "gtm",
+   "hq_country": "GB",
+   "homepage_url": "https://attio.com/",
+   "pricing_url": "https://attio.com/pricing"
+  },
+  {
+   "slug": "autodesk",
+   "name": "Autodesk",
+   "segment": "industrial",
+   "hq_country": "US",
+   "homepage_url": "https://www.autodesk.com/"
+  },
+  {
+   "slug": "avalara",
+   "name": "Avalara",
+   "segment": "fintech-ops",
+   "hq_country": "US",
+   "homepage_url": "https://www.avalara.com/"
+  },
+  {
+   "slug": "avaloq",
+   "name": "Avaloq",
+   "segment": "banking-tech",
+   "hq_country": "CH",
+   "homepage_url": "https://www.avaloq.com/"
+  },
+  {
+   "slug": "aveva",
+   "name": "AVEVA",
+   "segment": "industrial",
+   "hq_country": "GB",
+   "homepage_url": "https://www.aveva.com/"
+  },
+  {
+   "slug": "backbase",
+   "name": "Backbase",
+   "segment": "banking-tech",
+   "hq_country": "NL",
+   "homepage_url": "https://www.backbase.com/"
+  },
+  {
+   "slug": "bill",
+   "name": "BILL",
+   "segment": "fintech-ops",
+   "hq_country": "US",
+   "homepage_url": "https://www.bill.com/",
+   "pricing_url": "https://www.bill.com/product/pricing"
+  },
+  {
+   "slug": "bird",
+   "name": "Bird",
+   "segment": "marketing",
+   "hq_country": "NL",
+   "homepage_url": "https://bird.com/",
+   "pricing_url": "https://bird.com/pricing"
+  },
+  {
+   "slug": "bitmovin",
+   "name": "Bitmovin",
+   "segment": "dev-infra",
+   "hq_country": "AT",
+   "homepage_url": "https://bitmovin.com/",
+   "pricing_url": "https://bitmovin.com/pricing/"
+  },
+  {
+   "slug": "blackline",
+   "name": "BlackLine",
+   "segment": "fintech-ops",
+   "hq_country": "US",
+   "homepage_url": "https://www.blackline.com/"
+  },
+  {
+   "slug": "braze",
+   "name": "Braze",
+   "segment": "marketing",
+   "hq_country": "US",
+   "homepage_url": "https://www.braze.com/",
+   "pricing_url": "https://www.braze.com/pricing"
+  },
+  {
+   "slug": "brevo",
+   "name": "Brevo",
+   "segment": "marketing",
+   "hq_country": "FR",
+   "homepage_url": "https://www.brevo.com/",
+   "pricing_url": "https://www.brevo.com/pricing/"
+  },
+  {
+   "slug": "brex",
+   "name": "Brex",
+   "segment": "fintech-ops",
+   "hq_country": "US",
+   "homepage_url": "https://www.brex.com/",
+   "pricing_url": "https://www.brex.com/pricing"
+  },
+  {
+   "slug": "calendly",
+   "name": "Calendly",
+   "segment": "work-mgmt",
+   "hq_country": "US",
+   "homepage_url": "https://calendly.com/",
+   "pricing_url": "https://calendly.com/pricing"
+  },
+  {
+   "slug": "camunda",
+   "name": "Camunda",
+   "segment": "bpm",
+   "hq_country": "DE",
+   "homepage_url": "https://camunda.com/",
+   "pricing_url": "https://camunda.com/pricing/"
+  },
+  {
+   "slug": "celonis",
+   "name": "Celonis",
+   "segment": "process-mining",
+   "hq_country": "DE",
+   "homepage_url": "https://www.celonis.com/"
+  },
+  {
+   "slug": "clay",
+   "name": "Clay",
+   "segment": "gtm",
+   "hq_country": "US",
+   "homepage_url": "https://www.clay.com/",
+   "pricing_url": "https://www.clay.com/pricing"
+  },
+  {
+   "slug": "clickup",
+   "name": "ClickUp",
+   "segment": "work-mgmt",
+   "hq_country": "US",
+   "homepage_url": "https://clickup.com/",
+   "pricing_url": "https://clickup.com/pricing"
+  },
+  {
+   "slug": "cloudflare",
+   "name": "Cloudflare",
+   "segment": "dev-infra",
+   "hq_country": "US",
+   "homepage_url": "https://www.cloudflare.com/",
+   "pricing_url": "https://www.cloudflare.com/plans/"
+  },
+  {
+   "slug": "coachhub",
+   "name": "CoachHub",
+   "segment": "hr-ops",
+   "hq_country": "DE",
+   "homepage_url": "https://www.coachhub.com/"
+  },
+  {
+   "slug": "cognigy",
+   "name": "Cognigy",
+   "segment": "ccaas",
+   "hq_country": "DE",
+   "homepage_url": "https://www.cognigy.com/"
+  },
+  {
+   "slug": "cognite",
+   "name": "Cognite",
+   "segment": "industrial",
+   "hq_country": "NO",
+   "homepage_url": "https://www.cognite.com/"
+  },
+  {
+   "slug": "collibra",
+   "name": "Collibra",
+   "segment": "data",
+   "hq_country": "BE",
+   "homepage_url": "https://www.collibra.com/"
+  },
+  {
+   "slug": "complyadvantage",
+   "name": "ComplyAdvantage",
+   "segment": "grc",
+   "hq_country": "GB",
+   "homepage_url": "https://complyadvantage.com/"
+  },
+  {
+   "slug": "contentful",
+   "name": "Contentful",
+   "segment": "marketing",
+   "hq_country": "DE",
+   "homepage_url": "https://www.contentful.com/",
+   "pricing_url": "https://www.contentful.com/pricing/"
+  },
+  {
+   "slug": "contentsquare",
+   "name": "Contentsquare",
+   "segment": "analytics",
+   "hq_country": "FR",
+   "homepage_url": "https://contentsquare.com/"
+  },
+  {
+   "slug": "coupa",
+   "name": "Coupa",
+   "segment": "procurement",
+   "hq_country": "US",
+   "homepage_url": "https://www.coupa.com/"
+  },
+  {
+   "slug": "crowdstrike",
+   "name": "CrowdStrike",
+   "segment": "security",
+   "hq_country": "US",
+   "homepage_url": "https://www.crowdstrike.com/",
+   "pricing_url": "https://www.crowdstrike.com/products/bundles/falcon-go/"
+  },
+  {
+   "slug": "customer-io",
+   "name": "Customer.io",
+   "segment": "marketing",
+   "hq_country": "US",
+   "homepage_url": "https://customer.io/",
+   "pricing_url": "https://customer.io/pricing"
+  },
+  {
+   "slug": "darktrace",
+   "name": "Darktrace",
+   "segment": "security",
+   "hq_country": "GB",
+   "homepage_url": "https://www.darktrace.com/"
+  },
+  {
+   "slug": "dassault",
+   "name": "Dassault Systèmes",
+   "segment": "industrial",
+   "hq_country": "FR",
+   "homepage_url": "https://www.3ds.com/"
+  },
+  {
+   "slug": "databricks",
+   "name": "Databricks",
+   "segment": "data",
+   "hq_country": "US",
+   "homepage_url": "https://www.databricks.com/",
+   "pricing_url": "https://www.databricks.com/product/pricing"
+  },
+  {
+   "slug": "datadog",
+   "name": "Datadog",
+   "segment": "observability",
+   "hq_country": "US",
+   "homepage_url": "https://www.datadoghq.com/",
+   "pricing_url": "https://www.datadoghq.com/pricing/"
+  },
+  {
+   "slug": "dataguard",
+   "name": "DataGuard",
+   "segment": "grc",
+   "hq_country": "DE",
+   "homepage_url": "https://www.dataguard.com/",
+   "pricing_url": "https://www.dataguard.com/pricing/"
+  },
+  {
+   "slug": "dataiku",
+   "name": "Dataiku",
+   "segment": "data",
+   "hq_country": "FR",
+   "homepage_url": "https://www.dataiku.com/"
+  },
+  {
+   "slug": "dbt-labs",
+   "name": "dbt Labs",
+   "segment": "data",
+   "hq_country": "US",
+   "homepage_url": "https://www.getdbt.com/",
+   "pricing_url": "https://www.getdbt.com/pricing"
+  },
+  {
+   "slug": "deel",
+   "name": "Deel",
+   "segment": "hr-ops",
+   "hq_country": "US",
+   "homepage_url": "https://www.deel.com/",
+   "pricing_url": "https://www.deel.com/pricing/"
+  },
+  {
+   "slug": "deepl",
+   "name": "DeepL",
+   "segment": "localization",
+   "hq_country": "DE",
+   "homepage_url": "https://www.deepl.com/en/translator",
+   "pricing_url": "https://www.deepl.com/en/pro"
+  },
+  {
+   "slug": "definitive-hc",
+   "name": "Definitive Healthcare",
+   "segment": "healthcare-it",
+   "hq_country": "US",
+   "homepage_url": "https://www.definitivehc.com/"
+  },
+  {
+   "slug": "diligent",
+   "name": "Diligent",
+   "segment": "grc",
+   "hq_country": "US",
+   "homepage_url": "https://www.diligent.com/"
+  },
+  {
+   "slug": "dixa",
+   "name": "Dixa",
+   "segment": "support",
+   "hq_country": "DK",
+   "homepage_url": "https://www.dixa.com/",
+   "pricing_url": "https://www.dixa.com/pricing/"
+  },
+  {
+   "slug": "docplanner",
+   "name": "Docplanner",
+   "segment": "healthcare-it",
+   "hq_country": "PL",
+   "homepage_url": "https://www.docplanner.com/"
+  },
+  {
+   "slug": "doctolib",
+   "name": "Doctolib",
+   "segment": "healthcare-it",
+   "hq_country": "FR",
+   "homepage_url": "https://www.doctolib.fr/"
+  },
+  {
+   "slug": "docusign",
+   "name": "Docusign",
+   "segment": "clm-esign",
+   "hq_country": "US",
+   "homepage_url": "https://www.docusign.com/",
+   "pricing_url": "https://www.docusign.com/products-and-pricing"
+  },
+  {
+   "slug": "drata",
+   "name": "Drata",
+   "segment": "grc",
+   "hq_country": "US",
+   "homepage_url": "https://drata.com/",
+   "pricing_url": "https://drata.com/pricing"
+  },
+  {
+   "slug": "dynatrace",
+   "name": "Dynatrace",
+   "segment": "observability",
+   "hq_country": "AT",
+   "homepage_url": "https://www.dynatrace.com/",
+   "pricing_url": "https://www.dynatrace.com/pricing/"
+  },
+  {
+   "slug": "elastic",
+   "name": "Elastic",
+   "segment": "dev-infra",
+   "hq_country": "NL",
+   "homepage_url": "https://www.elastic.co/",
+   "pricing_url": "https://www.elastic.co/pricing"
+  },
+  {
+   "slug": "factorial",
+   "name": "Factorial",
+   "segment": "hr-ops",
+   "hq_country": "ES",
+   "homepage_url": "https://factorialhr.com/",
+   "pricing_url": "https://factorialhr.com/pricing"
+  },
+  {
+   "slug": "feedzai",
+   "name": "Feedzai",
+   "segment": "grc",
+   "hq_country": "PT",
+   "homepage_url": "https://www.feedzai.com/"
+  },
+  {
+   "slug": "fenergo",
+   "name": "Fenergo",
+   "segment": "grc",
+   "hq_country": "IE",
+   "homepage_url": "https://www.fenergo.com/"
+  },
+  {
+   "slug": "figma",
+   "name": "Figma",
+   "segment": "design",
+   "hq_country": "US",
+   "homepage_url": "https://www.figma.com/",
+   "pricing_url": "https://www.figma.com/pricing/"
+  },
+  {
+   "slug": "fivetran",
+   "name": "Fivetran",
+   "segment": "data",
+   "hq_country": "US",
+   "homepage_url": "https://www.fivetran.com/",
+   "pricing_url": "https://www.fivetran.com/pricing"
+  },
+  {
+   "slug": "fortnox",
+   "name": "Fortnox",
+   "segment": "erp",
+   "hq_country": "SE",
+   "homepage_url": "https://www.fortnox.se/"
+  },
+  {
+   "slug": "front",
+   "name": "Front",
+   "segment": "support",
+   "hq_country": "US",
+   "homepage_url": "https://front.com/",
+   "pricing_url": "https://front.com/pricing"
+  },
+  {
+   "slug": "genesys",
+   "name": "Genesys",
+   "segment": "ccaas",
+   "hq_country": "US",
+   "homepage_url": "https://www.genesys.com/",
+   "pricing_url": "https://www.genesys.com/pricing"
+  },
+  {
+   "slug": "github",
+   "name": "GitHub",
+   "segment": "product-dev",
+   "hq_country": "US",
+   "homepage_url": "https://github.com/",
+   "pricing_url": "https://github.com/pricing"
+  },
+  {
+   "slug": "gitlab",
+   "name": "GitLab",
+   "segment": "product-dev",
+   "hq_country": "US",
+   "homepage_url": "https://about.gitlab.com/",
+   "pricing_url": "https://about.gitlab.com/pricing/"
+  },
+  {
+   "slug": "gocardless",
+   "name": "GoCardless",
+   "segment": "payments",
+   "hq_country": "GB",
+   "homepage_url": "https://gocardless.com/",
+   "pricing_url": "https://gocardless.com/pricing/"
+  },
+  {
+   "slug": "gong",
+   "name": "Gong",
+   "segment": "gtm",
+   "hq_country": "US",
+   "homepage_url": "https://www.gong.io/",
+   "pricing_url": "https://www.gong.io/pricing/"
+  },
+  {
+   "slug": "hightouch",
+   "name": "Hightouch",
+   "segment": "data",
+   "hq_country": "US",
+   "homepage_url": "https://hightouch.com/",
+   "pricing_url": "https://hightouch.com/pricing"
+  },
+  {
+   "slug": "hornetsecurity",
+   "name": "Hornetsecurity",
+   "segment": "security",
+   "hq_country": "DE",
+   "homepage_url": "https://www.hornetsecurity.com/en/"
+  },
+  {
+   "slug": "hubspot",
+   "name": "HubSpot",
+   "segment": "gtm",
+   "hq_country": "US",
+   "homepage_url": "https://www.hubspot.com/",
+   "pricing_url": "https://www.hubspot.com/pricing/marketing"
+  },
+  {
+   "slug": "icertis",
+   "name": "Icertis",
+   "segment": "clm-esign",
+   "hq_country": "US",
+   "homepage_url": "https://www.icertis.com/"
+  },
+  {
+   "slug": "idnow",
+   "name": "IDnow",
+   "segment": "identity",
+   "hq_country": "DE",
+   "homepage_url": "https://idnow.io/"
+  },
+  {
+   "slug": "intercom",
+   "name": "Intercom",
+   "segment": "support",
+   "hq_country": "US",
+   "homepage_url": "https://www.intercom.com/",
+   "pricing_url": "https://www.intercom.com/pricing"
+  },
+  {
+   "slug": "ironclad",
+   "name": "Ironclad",
+   "segment": "clm-esign",
+   "hq_country": "US",
+   "homepage_url": "https://ironcladapp.com/"
+  },
+  {
+   "slug": "ivanti",
+   "name": "Ivanti",
+   "segment": "itsm",
+   "hq_country": "US",
+   "homepage_url": "https://www.ivanti.com/"
+  },
+  {
+   "slug": "jaggaer",
+   "name": "JAGGAER",
+   "segment": "procurement",
+   "hq_country": "US",
+   "homepage_url": "https://www.jaggaer.com/"
+  },
+  {
+   "slug": "jedox",
+   "name": "Jedox",
+   "segment": "analytics",
+   "hq_country": "DE",
+   "homepage_url": "https://www.jedox.com/en/"
+  },
+  {
+   "slug": "jetbrains",
+   "name": "JetBrains",
+   "segment": "product-dev",
+   "hq_country": "CZ",
+   "homepage_url": "https://www.jetbrains.com/",
+   "pricing_url": "https://www.jetbrains.com/store/"
+  },
+  {
+   "slug": "juro",
+   "name": "Juro",
+   "segment": "clm-esign",
+   "hq_country": "GB",
+   "homepage_url": "https://juro.com/"
+  },
+  {
+   "slug": "klaviyo",
+   "name": "Klaviyo",
+   "segment": "marketing",
+   "hq_country": "US",
+   "homepage_url": "https://www.klaviyo.com/",
+   "pricing_url": "https://www.klaviyo.com/pricing"
+  },
+  {
+   "slug": "lattice",
+   "name": "Lattice",
+   "segment": "hr-ops",
+   "hq_country": "US",
+   "homepage_url": "https://lattice.com/",
+   "pricing_url": "https://lattice.com/pricing"
+  },
+  {
+   "slug": "launchdarkly",
+   "name": "LaunchDarkly",
+   "segment": "dev-infra",
+   "hq_country": "US",
+   "homepage_url": "https://launchdarkly.com/",
+   "pricing_url": "https://launchdarkly.com/pricing/"
+  },
+  {
+   "slug": "ledgy",
+   "name": "Ledgy",
+   "segment": "fintech-ops",
+   "hq_country": "CH",
+   "homepage_url": "https://ledgy.com/"
+  },
+  {
+   "slug": "linear",
+   "name": "Linear",
+   "segment": "product-dev",
+   "hq_country": "US",
+   "homepage_url": "https://linear.app/",
+   "pricing_url": "https://linear.app/pricing"
+  },
+  {
+   "slug": "livechat",
+   "name": "LiveChat",
+   "segment": "support",
+   "hq_country": "PL",
+   "homepage_url": "https://www.livechat.com/",
+   "pricing_url": "https://www.livechat.com/pricing/"
+  },
+  {
+   "slug": "lokalise",
+   "name": "Lokalise",
+   "segment": "localization",
+   "hq_country": "LV",
+   "homepage_url": "https://lokalise.com/",
+   "pricing_url": "https://lokalise.com/pricing"
+  },
+  {
+   "slug": "loom",
+   "name": "Loom",
+   "segment": "work-mgmt",
+   "hq_country": "US",
+   "homepage_url": "https://www.loom.com/",
+   "pricing_url": "https://www.loom.com/pricing"
+  },
+  {
+   "slug": "luminance",
+   "name": "Luminance",
+   "segment": "legal-tech",
+   "hq_country": "GB",
+   "homepage_url": "https://www.luminance.com/"
+  },
+  {
+   "slug": "m-files",
+   "name": "M-Files",
+   "segment": "work-mgmt",
+   "hq_country": "FI",
+   "homepage_url": "https://www.m-files.com/"
+  },
+  {
+   "slug": "mambu",
+   "name": "Mambu",
+   "segment": "banking-tech",
+   "hq_country": "DE",
+   "homepage_url": "https://mambu.com/"
+  },
+  {
+   "slug": "matillion",
+   "name": "Matillion",
+   "segment": "data",
+   "hq_country": "GB",
+   "homepage_url": "https://www.matillion.com/",
+   "pricing_url": "https://www.matillion.com/pricing"
+  },
+  {
+   "slug": "mendix",
+   "name": "Mendix",
+   "segment": "bpm",
+   "hq_country": "NL",
+   "homepage_url": "https://www.mendix.com/",
+   "pricing_url": "https://www.mendix.com/pricing/"
+  },
+  {
+   "slug": "mentimeter",
+   "name": "Mentimeter",
+   "segment": "work-mgmt",
+   "hq_country": "SE",
+   "homepage_url": "https://www.mentimeter.com/",
+   "pricing_url": "https://www.mentimeter.com/plans"
+  },
+  {
+   "slug": "metabase",
+   "name": "Metabase",
+   "segment": "analytics",
+   "hq_country": "US",
+   "homepage_url": "https://www.metabase.com/",
+   "pricing_url": "https://www.metabase.com/pricing/"
+  },
+  {
+   "slug": "mirakl",
+   "name": "Mirakl",
+   "segment": "industrial",
+   "hq_country": "FR",
+   "homepage_url": "https://www.mirakl.com/"
+  },
+  {
+   "slug": "miro",
+   "name": "Miro",
+   "segment": "design",
+   "hq_country": "NL",
+   "homepage_url": "https://miro.com/",
+   "pricing_url": "https://miro.com/pricing/"
+  },
+  {
+   "slug": "mixpanel",
+   "name": "Mixpanel",
+   "segment": "analytics",
+   "hq_country": "US",
+   "homepage_url": "https://mixpanel.com/",
+   "pricing_url": "https://mixpanel.com/pricing/"
+  },
+  {
+   "slug": "mollie",
+   "name": "Mollie",
+   "segment": "payments",
+   "hq_country": "NL",
+   "homepage_url": "https://www.mollie.com/",
+   "pricing_url": "https://www.mollie.com/pricing"
+  },
+  {
+   "slug": "monday",
+   "name": "monday.com",
+   "segment": "work-mgmt",
+   "hq_country": "IL",
+   "homepage_url": "https://monday.com/",
+   "pricing_url": "https://monday.com/pricing"
+  },
+  {
+   "slug": "mongodb",
+   "name": "MongoDB",
+   "segment": "data",
+   "hq_country": "US",
+   "homepage_url": "https://www.mongodb.com/",
+   "pricing_url": "https://www.mongodb.com/pricing"
+  },
+  {
+   "slug": "navex",
+   "name": "NAVEX",
+   "segment": "grc",
+   "hq_country": "US",
+   "homepage_url": "https://www.navex.com/en-us/"
+  },
+  {
+   "slug": "nemetschek",
+   "name": "Nemetschek",
+   "segment": "industrial",
+   "hq_country": "DE",
+   "homepage_url": "https://www.nemetschek.com/en"
+  },
+  {
+   "slug": "netlify",
+   "name": "Netlify",
+   "segment": "dev-infra",
+   "hq_country": "US",
+   "homepage_url": "https://www.netlify.com/",
+   "pricing_url": "https://www.netlify.com/pricing/"
+  },
+  {
+   "slug": "nextcloud",
+   "name": "Nextcloud",
+   "segment": "work-mgmt",
+   "hq_country": "DE",
+   "homepage_url": "https://nextcloud.com/",
+   "pricing_url": "https://nextcloud.com/pricing/"
+  },
+  {
+   "slug": "nexthink",
+   "name": "Nexthink",
+   "segment": "observability",
+   "hq_country": "CH",
+   "homepage_url": "https://www.nexthink.com/"
+  },
+  {
+   "slug": "nice",
+   "name": "NICE",
+   "segment": "ccaas",
+   "hq_country": "IL",
+   "homepage_url": "https://www.nice.com/"
+  },
+  {
+   "slug": "nord-security",
+   "name": "Nord Security",
+   "segment": "security",
+   "hq_country": "LT",
+   "homepage_url": "https://nordsecurity.com/"
+  },
+  {
+   "slug": "notion",
+   "name": "Notion",
+   "segment": "product-dev",
+   "hq_country": "US",
+   "homepage_url": "https://www.notion.com/",
+   "pricing_url": "https://www.notion.com/pricing"
+  },
+  {
+   "slug": "odoo",
+   "name": "Odoo",
+   "segment": "erp",
+   "hq_country": "BE",
+   "homepage_url": "https://www.odoo.com/",
+   "pricing_url": "https://www.odoo.com/pricing"
+  },
+  {
+   "slug": "okta",
+   "name": "Okta",
+   "segment": "identity",
+   "hq_country": "US",
+   "homepage_url": "https://www.okta.com/",
+   "pricing_url": "https://www.okta.com/pricing/"
+  },
+  {
+   "slug": "onetrust",
+   "name": "OneTrust",
+   "segment": "grc",
+   "hq_country": "US",
+   "homepage_url": "https://www.onetrust.com/"
+  },
+  {
+   "slug": "oracle",
+   "name": "Oracle",
+   "segment": "erp",
+   "hq_country": "US",
+   "homepage_url": "https://www.oracle.com/"
+  },
+  {
+   "slug": "outsystems",
+   "name": "OutSystems",
+   "segment": "bpm",
+   "hq_country": "PT",
+   "homepage_url": "https://www.outsystems.com/"
+  },
+  {
+   "slug": "ovhcloud",
+   "name": "OVHcloud",
+   "segment": "dev-infra",
+   "hq_country": "FR",
+   "homepage_url": "https://www.ovhcloud.com/en/"
+  },
+  {
+   "slug": "paddle",
+   "name": "Paddle",
+   "segment": "payments",
+   "hq_country": "GB",
+   "homepage_url": "https://www.paddle.com/",
+   "pricing_url": "https://www.paddle.com/pricing"
+  },
+  {
+   "slug": "palo-alto",
+   "name": "Palo Alto Networks",
+   "segment": "security",
+   "hq_country": "US",
+   "homepage_url": "https://www.paloaltonetworks.com/"
+  },
+  {
+   "slug": "parloa",
+   "name": "Parloa",
+   "segment": "ccaas",
+   "hq_country": "DE",
+   "homepage_url": "https://www.parloa.com/"
+  },
+  {
+   "slug": "payfit",
+   "name": "PayFit",
+   "segment": "hr-ops",
+   "hq_country": "FR",
+   "homepage_url": "https://payfit.com/"
+  },
+  {
+   "slug": "pega",
+   "name": "Pegasystems",
+   "segment": "bpm",
+   "hq_country": "US",
+   "homepage_url": "https://www.pega.com/"
+  },
+  {
+   "slug": "pendo",
+   "name": "Pendo",
+   "segment": "analytics",
+   "hq_country": "US",
+   "homepage_url": "https://www.pendo.io/",
+   "pricing_url": "https://www.pendo.io/pricing/"
+  },
+  {
+   "slug": "pennylane",
+   "name": "Pennylane",
+   "segment": "fintech-ops",
+   "hq_country": "FR",
+   "homepage_url": "https://www.pennylane.com/"
+  },
+  {
+   "slug": "personio",
+   "name": "Personio",
+   "segment": "hr-ops",
+   "hq_country": "DE",
+   "homepage_url": "https://www.personio.com/",
+   "pricing_url": "https://www.personio.com/pricing/"
+  },
+  {
+   "slug": "pipedrive",
+   "name": "Pipedrive",
+   "segment": "gtm",
+   "hq_country": "EE",
+   "homepage_url": "https://www.pipedrive.com/",
+   "pricing_url": "https://www.pipedrive.com/en/pricing"
+  },
+  {
+   "slug": "pleo",
+   "name": "Pleo",
+   "segment": "fintech-ops",
+   "hq_country": "DK",
+   "homepage_url": "https://www.pleo.io/",
+   "pricing_url": "https://www.pleo.io/en/pricing"
+  },
+  {
+   "slug": "posthog",
+   "name": "PostHog",
+   "segment": "analytics",
+   "hq_country": "US",
+   "homepage_url": "https://posthog.com/",
+   "pricing_url": "https://posthog.com/pricing"
+  },
+  {
+   "slug": "procore",
+   "name": "Procore",
+   "segment": "industrial",
+   "hq_country": "US",
+   "homepage_url": "https://www.procore.com/"
+  },
+  {
+   "slug": "productboard",
+   "name": "Productboard",
+   "segment": "product-dev",
+   "hq_country": "CZ",
+   "homepage_url": "https://www.productboard.com/",
+   "pricing_url": "https://www.productboard.com/pricing/"
+  },
+  {
+   "slug": "proton",
+   "name": "Proton",
+   "segment": "security",
+   "hq_country": "CH",
+   "homepage_url": "https://proton.me/",
+   "pricing_url": "https://proton.me/pricing"
+  },
+  {
+   "slug": "ptc",
+   "name": "PTC",
+   "segment": "industrial",
+   "hq_country": "US",
+   "homepage_url": "https://www.ptc.com/"
+  },
+  {
+   "slug": "qonto",
+   "name": "Qonto",
+   "segment": "fintech-ops",
+   "hq_country": "FR",
+   "homepage_url": "https://qonto.com/en",
+   "pricing_url": "https://qonto.com/en/pricing"
+  },
+  {
+   "slug": "quantexa",
+   "name": "Quantexa",
+   "segment": "data",
+   "hq_country": "GB",
+   "homepage_url": "https://www.quantexa.com/"
+  },
+  {
+   "slug": "ramp",
+   "name": "Ramp",
+   "segment": "fintech-ops",
+   "hq_country": "US",
+   "homepage_url": "https://ramp.com/",
+   "pricing_url": "https://ramp.com/pricing"
+  },
+  {
+   "slug": "red-points",
+   "name": "Red Points",
+   "segment": "grc",
+   "hq_country": "ES",
+   "homepage_url": "https://www.redpoints.com/"
+  },
+  {
+   "slug": "relativity",
+   "name": "Relativity",
+   "segment": "legal-tech",
+   "hq_country": "US",
+   "homepage_url": "https://www.relativity.com/"
+  },
+  {
+   "slug": "relex",
+   "name": "RELEX Solutions",
+   "segment": "industrial",
+   "hq_country": "FI",
+   "homepage_url": "https://www.relexsolutions.com/"
+  },
+  {
+   "slug": "retool",
+   "name": "Retool",
+   "segment": "automation",
+   "hq_country": "US",
+   "homepage_url": "https://retool.com/",
+   "pricing_url": "https://retool.com/pricing"
+  },
+  {
+   "slug": "rippling",
+   "name": "Rippling",
+   "segment": "hr-ops",
+   "hq_country": "US",
+   "homepage_url": "https://www.rippling.com/",
+   "pricing_url": "https://www.rippling.com/pricing"
+  },
+  {
+   "slug": "rossum",
+   "name": "Rossum",
+   "segment": "automation",
+   "hq_country": "CZ",
+   "homepage_url": "https://rossum.ai/",
+   "pricing_url": "https://rossum.ai/pricing/"
+  },
+  {
+   "slug": "sage",
+   "name": "Sage",
+   "segment": "erp",
+   "hq_country": "GB",
+   "homepage_url": "https://www.sage.com/en-gb/"
+  },
+  {
+   "slug": "sailpoint",
+   "name": "SailPoint",
+   "segment": "identity",
+   "hq_country": "US",
+   "homepage_url": "https://www.sailpoint.com/"
+  },
+  {
+   "slug": "salesforce",
+   "name": "Salesforce",
+   "segment": "gtm",
+   "hq_country": "US",
+   "homepage_url": "https://www.salesforce.com/",
+   "pricing_url": "https://www.salesforce.com/sales/pricing/"
+  },
+  {
+   "slug": "sap",
+   "name": "SAP",
+   "segment": "erp",
+   "hq_country": "DE",
+   "homepage_url": "https://www.sap.com/"
+  },
+  {
+   "slug": "scaleway",
+   "name": "Scaleway",
+   "segment": "dev-infra",
+   "hq_country": "FR",
+   "homepage_url": "https://www.scaleway.com/en/",
+   "pricing_url": "https://www.scaleway.com/en/pricing/"
+  },
+  {
+   "slug": "scandit",
+   "name": "Scandit",
+   "segment": "industrial",
+   "hq_country": "CH",
+   "homepage_url": "https://www.scandit.com/"
+  },
+  {
+   "slug": "segment",
+   "name": "Segment",
+   "segment": "data",
+   "hq_country": "US",
+   "homepage_url": "https://segment.com/",
+   "pricing_url": "https://segment.com/pricing/"
+  },
+  {
+   "slug": "sennder",
+   "name": "sennder",
+   "segment": "industrial",
+   "hq_country": "DE",
+   "homepage_url": "https://www.sennder.com/"
+  },
+  {
+   "slug": "sentry",
+   "name": "Sentry",
+   "segment": "observability",
+   "hq_country": "US",
+   "homepage_url": "https://sentry.io/welcome/",
+   "pricing_url": "https://sentry.io/pricing/"
+  },
+  {
+   "slug": "servicenow",
+   "name": "ServiceNow",
+   "segment": "itsm",
+   "hq_country": "US",
+   "homepage_url": "https://www.servicenow.com/"
+  },
+  {
+   "slug": "showpad",
+   "name": "Showpad",
+   "segment": "gtm",
+   "hq_country": "BE",
+   "homepage_url": "https://www.showpad.com/"
+  },
+  {
+   "slug": "signicat",
+   "name": "Signicat",
+   "segment": "identity",
+   "hq_country": "NO",
+   "homepage_url": "https://www.signicat.com/",
+   "pricing_url": "https://www.signicat.com/pricing"
+  },
+  {
+   "slug": "silverfin",
+   "name": "Silverfin",
+   "segment": "fintech-ops",
+   "hq_country": "BE",
+   "homepage_url": "https://www.silverfin.com/"
+  },
+  {
+   "slug": "sinch",
+   "name": "Sinch",
+   "segment": "ccaas",
+   "hq_country": "SE",
+   "homepage_url": "https://sinch.com/"
+  },
+  {
+   "slug": "sitecore",
+   "name": "Sitecore",
+   "segment": "marketing",
+   "hq_country": "DK",
+   "homepage_url": "https://www.sitecore.com/"
+  },
+  {
+   "slug": "siteimprove",
+   "name": "Siteimprove",
+   "segment": "marketing",
+   "hq_country": "DK",
+   "homepage_url": "https://www.siteimprove.com/"
+  },
+  {
+   "slug": "slack",
+   "name": "Slack",
+   "segment": "work-mgmt",
+   "hq_country": "US",
+   "homepage_url": "https://slack.com/",
+   "pricing_url": "https://slack.com/pricing"
+  },
+  {
+   "slug": "snowflake",
+   "name": "Snowflake",
+   "segment": "data",
+   "hq_country": "US",
+   "homepage_url": "https://www.snowflake.com/en/",
+   "pricing_url": "https://www.snowflake.com/en/pricing-options/"
+  },
+  {
+   "slug": "snyk",
+   "name": "Snyk",
+   "segment": "security",
+   "hq_country": "GB",
+   "homepage_url": "https://snyk.io/",
+   "pricing_url": "https://snyk.io/plans/"
+  },
+  {
+   "slug": "software-ag",
+   "name": "Software AG",
+   "segment": "data",
+   "hq_country": "DE",
+   "homepage_url": "https://www.softwareag.com/"
+  },
+  {
+   "slug": "spendesk",
+   "name": "Spendesk",
+   "segment": "fintech-ops",
+   "hq_country": "FR",
+   "homepage_url": "https://www.spendesk.com/",
+   "pricing_url": "https://www.spendesk.com/pricing/"
+  },
+  {
+   "slug": "staffbase",
+   "name": "Staffbase",
+   "segment": "marketing",
+   "hq_country": "DE",
+   "homepage_url": "https://staffbase.com/en/"
+  },
+  {
+   "slug": "stripe",
+   "name": "Stripe",
+   "segment": "fintech-ops",
+   "hq_country": "US",
+   "homepage_url": "https://stripe.com/",
+   "pricing_url": "https://stripe.com/pricing"
+  },
+  {
+   "slug": "supabase",
+   "name": "Supabase",
+   "segment": "dev-infra",
+   "hq_country": "US",
+   "homepage_url": "https://supabase.com/",
+   "pricing_url": "https://supabase.com/pricing"
+  },
+  {
+   "slug": "supermetrics",
+   "name": "Supermetrics",
+   "segment": "analytics",
+   "hq_country": "FI",
+   "homepage_url": "https://supermetrics.com/",
+   "pricing_url": "https://supermetrics.com/pricing"
+  },
+  {
+   "slug": "suse",
+   "name": "SUSE",
+   "segment": "dev-infra",
+   "hq_country": "DE",
+   "homepage_url": "https://www.suse.com/"
+  },
+  {
+   "slug": "talkdesk",
+   "name": "Talkdesk",
+   "segment": "ccaas",
+   "hq_country": "PT",
+   "homepage_url": "https://www.talkdesk.com/",
+   "pricing_url": "https://www.talkdesk.com/pricing/"
+  },
+  {
+   "slug": "teamleader",
+   "name": "Teamleader",
+   "segment": "work-mgmt",
+   "hq_country": "BE",
+   "homepage_url": "https://www.teamleader.eu/",
+   "pricing_url": "https://www.teamleader.eu/pricing"
+  },
+  {
+   "slug": "teamviewer",
+   "name": "TeamViewer",
+   "segment": "itsm",
+   "hq_country": "DE",
+   "homepage_url": "https://www.teamviewer.com/en/",
+   "pricing_url": "https://www.teamviewer.com/en/pricing/"
+  },
+  {
+   "slug": "temenos",
+   "name": "Temenos",
+   "segment": "banking-tech",
+   "hq_country": "CH",
+   "homepage_url": "https://www.temenos.com/"
+  },
+  {
+   "slug": "templafy",
+   "name": "Templafy",
+   "segment": "work-mgmt",
+   "hq_country": "DK",
+   "homepage_url": "https://www.templafy.com/"
+  },
+  {
+   "slug": "thought-machine",
+   "name": "Thought Machine",
+   "segment": "banking-tech",
+   "hq_country": "GB",
+   "homepage_url": "https://thoughtmachine.net/"
+  },
+  {
+   "slug": "tink",
+   "name": "Tink",
+   "segment": "banking-tech",
+   "hq_country": "SE",
+   "homepage_url": "https://tink.com/"
+  },
+  {
+   "slug": "tricentis",
+   "name": "Tricentis",
+   "segment": "product-dev",
+   "hq_country": "AT",
+   "homepage_url": "https://www.tricentis.com/"
+  },
+  {
+   "slug": "trustpilot",
+   "name": "Trustpilot",
+   "segment": "marketing",
+   "hq_country": "DK",
+   "homepage_url": "https://business.trustpilot.com/",
+   "pricing_url": "https://business.trustpilot.com/plans"
+  },
+  {
+   "slug": "twilio",
+   "name": "Twilio",
+   "segment": "dev-infra",
+   "hq_country": "US",
+   "homepage_url": "https://www.twilio.com/en-us",
+   "pricing_url": "https://www.twilio.com/en-us/pricing"
+  },
+  {
+   "slug": "typeform",
+   "name": "Typeform",
+   "segment": "marketing",
+   "hq_country": "ES",
+   "homepage_url": "https://www.typeform.com/",
+   "pricing_url": "https://www.typeform.com/pricing/"
+  },
+  {
+   "slug": "uipath",
+   "name": "UiPath",
+   "segment": "automation",
+   "hq_country": "US",
+   "homepage_url": "https://www.uipath.com/",
+   "pricing_url": "https://www.uipath.com/pricing"
+  },
+  {
+   "slug": "unbabel",
+   "name": "Unbabel",
+   "segment": "localization",
+   "hq_country": "PT",
+   "homepage_url": "https://unbabel.com/"
+  },
+  {
+   "slug": "unity",
+   "name": "Unity",
+   "segment": "product-dev",
+   "hq_country": "DK",
+   "homepage_url": "https://unity.com/"
+  },
+  {
+   "slug": "usercentrics",
+   "name": "Usercentrics",
+   "segment": "grc",
+   "hq_country": "DE",
+   "homepage_url": "https://usercentrics.com/",
+   "pricing_url": "https://usercentrics.com/pricing/"
+  },
+  {
+   "slug": "vanta",
+   "name": "Vanta",
+   "segment": "security",
+   "hq_country": "US",
+   "homepage_url": "https://www.vanta.com/",
+   "pricing_url": "https://www.vanta.com/pricing"
+  },
+  {
+   "slug": "veeam",
+   "name": "Veeam",
+   "segment": "dev-infra",
+   "hq_country": "CH",
+   "homepage_url": "https://www.veeam.com/"
+  },
+  {
+   "slug": "veeva",
+   "name": "Veeva Systems",
+   "segment": "healthcare-it",
+   "hq_country": "US",
+   "homepage_url": "https://www.veeva.com/"
+  },
+  {
+   "slug": "vercel",
+   "name": "Vercel",
+   "segment": "dev-infra",
+   "hq_country": "US",
+   "homepage_url": "https://vercel.com/",
+   "pricing_url": "https://vercel.com/pricing"
+  },
+  {
+   "slug": "veriff",
+   "name": "Veriff",
+   "segment": "identity",
+   "hq_country": "EE",
+   "homepage_url": "https://www.veriff.com/",
+   "pricing_url": "https://www.veriff.com/pricing"
+  },
+  {
+   "slug": "visma",
+   "name": "Visma",
+   "segment": "erp",
+   "hq_country": "NO",
+   "homepage_url": "https://www.visma.com/"
+  },
+  {
+   "slug": "voyado",
+   "name": "Voyado",
+   "segment": "marketing",
+   "hq_country": "SE",
+   "homepage_url": "https://voyado.com/"
+  },
+  {
+   "slug": "webflow",
+   "name": "Webflow",
+   "segment": "marketing",
+   "hq_country": "US",
+   "homepage_url": "https://webflow.com/",
+   "pricing_url": "https://webflow.com/pricing"
+  },
+  {
+   "slug": "wise",
+   "name": "Wise",
+   "segment": "payments",
+   "hq_country": "GB",
+   "homepage_url": "https://wise.com/business/",
+   "pricing_url": "https://wise.com/gb/pricing/"
+  },
+  {
+   "slug": "workday",
+   "name": "Workday",
+   "segment": "hr-ops",
+   "hq_country": "US",
+   "homepage_url": "https://www.workday.com/"
+  },
+  {
+   "slug": "workhuman",
+   "name": "Workhuman",
+   "segment": "hr-ops",
+   "hq_country": "IE",
+   "homepage_url": "https://www.workhuman.com/"
+  },
+  {
+   "slug": "workiva",
+   "name": "Workiva",
+   "segment": "grc",
+   "hq_country": "US",
+   "homepage_url": "https://www.workiva.com/"
+  },
+  {
+   "slug": "xeneta",
+   "name": "Xeneta",
+   "segment": "industrial",
+   "hq_country": "NO",
+   "homepage_url": "https://www.xeneta.com/"
+  },
+  {
+   "slug": "zapier",
+   "name": "Zapier",
+   "segment": "automation",
+   "hq_country": "US",
+   "homepage_url": "https://zapier.com/",
+   "pricing_url": "https://zapier.com/pricing"
+  },
+  {
+   "slug": "zendesk",
+   "name": "Zendesk",
+   "segment": "support",
+   "hq_country": "US",
+   "homepage_url": "https://www.zendesk.com/",
+   "pricing_url": "https://www.zendesk.com/pricing/"
+  },
+  {
+   "slug": "zscaler",
+   "name": "Zscaler",
+   "segment": "security",
+   "hq_country": "US",
+   "homepage_url": "https://www.zscaler.com/"
+  }
+ ]
+}

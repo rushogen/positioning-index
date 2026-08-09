@@ -1,0 +1,41 @@
+.app { display: flex; flex-direction: column; min-height: 100dvh; }
+
+.topbar {
+  position: sticky; top: 0; z-index: 50;
+  background: color-mix(in srgb, var(--bg) 80%, transparent);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--rule);
+}
+.topbar-inner { display: flex; align-items: center; justify-content: space-between; gap: 1rem; height: 62px; }
+.brand { display: flex; align-items: center; gap: 0.6rem; color: var(--ink); font-family: var(--serif); font-size: 1.05rem; font-weight: 600; letter-spacing: -0.01em; }
+.brand:hover { text-decoration: none; }
+.brand em { color: var(--accent); font-style: italic; }
+.brand-mark { width: 14px; height: 14px; border-radius: 999px; background: radial-gradient(circle at 30% 30%, var(--accent), color-mix(in srgb, var(--accent) 30%, var(--bg))); box-shadow: 0 0 14px var(--glow); }
+
+.tabs { display: flex; gap: 0.25rem; }
+.tab {
+  color: var(--ink-2); padding: 0.4rem 0.85rem; border-radius: 999px; font-size: 0.9rem; font-weight: 500;
+  transition: color 0.2s var(--ease), background 0.2s var(--ease);
+}
+.tab:hover { color: var(--ink); text-decoration: none; background: color-mix(in srgb, var(--panel) 60%, transparent); }
+.tab-on { color: var(--bg); background: var(--accent); }
+.tab-on:hover { color: var(--bg); background: var(--accent); }
+
+.app-main { flex: 1; padding: clamp(1.5rem, 4vw, 3.5rem) 0 4rem; }
+
+.app-footer { border-top: 1px solid var(--rule); padding: 1.6rem 0; color: var(--ink-3); font-size: 0.82rem; }
+.app-footer p { margin: 0; max-width: 60em; line-height: 1.6; }
+
+@media (max-width: 40rem) {
+  .brand span:last-child { display: none; }
+  .tabs { gap: 0; }
+  .tab { padding: 0.4rem 0.6rem; font-size: 0.82rem; }
+}
+
+/* Shared page scaffolding the tabs use. */
+.page { }
+.page-hero { padding: clamp(1rem, 3vw, 2rem) 0 clamp(2rem, 5vw, 3.5rem); }
+.grid { display: grid; gap: clamp(1rem, 2vw, 1.6rem); }
+.grid-2 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); }
+.grid-3 { grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr)); }
+.finding { margin: clamp(2.5rem, 6vw, 5rem) 0; }

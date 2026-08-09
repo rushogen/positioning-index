@@ -1,0 +1,17 @@
+.ov-hero { padding: clamp(1.5rem, 5vw, 5rem) 0 clamp(2rem, 5vw, 4rem); }
+.ov-kicker { margin: 0 0 1rem; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
+.ov-title { font-size: var(--t-display); }
+.ov-title em { color: var(--accent); font-style: italic; }
+.ov-dek { margin: 1.4rem 0 0; font-family: var(--serif); font-size: var(--t-lede); color: var(--ink-2); max-width: 34em; line-height: 1.45; }
+
+.ov-stats { display: flex; flex-wrap: wrap; gap: clamp(1.5rem, 5vw, 4rem); margin-top: clamp(2rem, 5vw, 3.5rem); padding-top: clamp(1.5rem, 3vw, 2.5rem); border-top: 1px solid var(--rule); }
+
+.ov-card { display: flex; flex-direction: column; min-height: 15rem; }
+.ov-card-tag { margin: 0 0 0.6rem; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); }
+.ov-card h2 { font-size: clamp(1.8rem, 1.2rem + 2vw, 2.6rem); }
+.ov-card-lede { margin: 0.6rem 0 0; color: var(--ink-2); line-height: 1.5; max-width: 30em; }
+.ov-card-stat { margin: 1rem 0 0; color: var(--ink); font-size: 0.95rem; }
+.ov-card-stat b { color: var(--accent); }
+.ov-go { margin-top: auto; padding-top: 1.2rem; font-weight: 600; }
+
+.ov-note { margin: clamp(2rem, 5vw, 3.5rem) 0 0; color: var(--ink-3); font-size: 0.9rem; max-width: 46em; line-height: 1.6; }
