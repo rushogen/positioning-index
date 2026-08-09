@@ -71,8 +71,16 @@ jobs:
         with:
           node-version: '22'
 
-      # No dependencies to install: the project has none. This is the whole
-      # build step.
+      # The crawler core is still dependency-free, but the pricing render
+      # fallback (src/crawl/render.js) needs Playwright + headless Chromium to
+      # read client-rendered pricing pages. It is imported dynamically and the
+      # crawl degrades gracefully without it, but on the canonical run we install
+      # it so those pages are read rather than left unread.
+      - name: Install dependencies and headless browser
+        run: |
+          npm install --no-audit --no-fund
+          npx playwright install --with-deps chromium
+
       - name: Test
         run: npm test
 

@@ -410,6 +410,17 @@ Rate
   The crawler is not always-on. It runs when a person or a manually triggered
   workflow asks it to, and then the process exits.
 
+Rendering
+  Pages are read as plain HTML and no JavaScript is run -- with one narrow
+  exception. When a PRICING page returns no readable plans in its raw HTML (an
+  increasingly common result for client-rendered pricing apps), that one page is
+  re-opened in a headless browser so its published plans can be read as a visitor
+  would see them. This happens only for the pricing page, only after the normal
+  fetch already succeeded and found nothing, and only after robots.txt allowed it.
+  In that render, images, fonts, media, stylesheets and all cross-origin requests
+  are blocked: only the first-party document and the scripts needed to show the
+  plans are loaded. No third-party beacons, analytics or ads are requested.
+
 What it honours
   robots.txt per RFC 9309, including per-agent groups, longest-match rule
   precedence, and Crawl-delay.

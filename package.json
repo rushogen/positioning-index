@@ -17,5 +17,8 @@
     "retract": "node bin/retract.js",
     "probe": "node scripts/probe.js",
     "check-seed": "node scripts/check-seed.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.62.1"
   }
 }

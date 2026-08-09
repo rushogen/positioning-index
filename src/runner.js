@@ -37,7 +37,8 @@
 import { extract, signalsFor, familiesOf, EXTRACTOR_VERSION } from './extract/index.js';
 import { canonical, corroborateAcquisitions, diffPage, gatePage } from './diff.js';
 import { fetchPage, nextDueAt } from './crawl/fetch.js';
-import { MIN_HOST_INTERVAL_MS } from './crawl/agent.js';
+import { renderHtml, closeRenderer } from './crawl/render.js';
+import { MIN_HOST_INTERVAL_MS, USER_AGENT } from './crawl/agent.js';
 import { UNKNOWN_ORIGIN, describeOrigin, resolveOrigin } from './crawl/origin.js';
 import { fnv1a } from './hash.js';
 import { applyResult, iso } from './store/files.js';
@@ -226,6 +227,27 @@ export async function crawlTarget(target, ctx, { now = Date.now(), fetchImpl = f
     brand: target.name,
     contentType: fetched.contentType,
   });
+
+  // ---- Pricing render fallback. If this is a pricing page and the raw HTML
+  // yielded no pricing signal, the plans are almost certainly client-rendered.
+  // Render the page in headless Chromium (crawl/render.js) and re-extract from
+  // what a visitor would actually see. Only pricing, only on a miss, and only
+  // if a browser is available -- otherwise the raw result stands unchanged.
+  const PRICING_SIGNALS = ['pricing_tiers', 'pricing_entry_price', 'pricing_free_tier', 'pricing_seat_minimum'];
+  const hasPricing = (s) => Boolean(s.pricing_free_tier || s.pricing_tiers || s.pricing_entry_price);
+  if (target.kind === 'pricing' && !hasPricing(extraction.signals)) {
+    const rendered = await renderHtml(fetched.finalUrl, { userAgent: USER_AGENT });
+    if (rendered) {
+      const re = extract('pricing', rendered, fetched.finalUrl, { brand: target.name, contentType: 'text/html' });
+      if (hasPricing(re.signals)) {
+        for (const name of PRICING_SIGNALS) {
+          if (re.signals[name]) extraction.signals[name] = { ...re.signals[name], rendered: true };
+        }
+        extraction.rendered = true;
+      }
+    }
+  }
+
   const currentYield = Object.values(extraction.signals).filter(Boolean).length;
 
   // ---- What did we believe before? The last line of the company's file.
@@ -491,6 +513,10 @@ export async function runCrawl({
     allEvents.push(...outcome.events);
     onResult(outcome.result, outcome);
   }
+
+  // Release the headless browser if the pricing fallback ever launched one, so
+  // the Node process can exit cleanly instead of hanging on a live subprocess.
+  await closeRenderer();
 
   const count = (...statuses) => results.filter((r) => statuses.includes(r.status)).length;
   const run = {
