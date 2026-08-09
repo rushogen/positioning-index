@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T15:01:16Z",
-   "last_good_at": "2026-08-09T15:01:16Z",
+   "last_observed_at": "2026-08-09T15:35:42Z",
+   "last_good_at": "2026-08-09T15:35:42Z",
    "last_good_value": "49",
    "last_good_json": null,
    "last_good_hash": "90e393ae",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T15:01:16Z",
-   "last_good_at": "2026-08-09T15:01:16Z",
+   "last_observed_at": "2026-08-09T15:35:42Z",
+   "last_good_at": "2026-08-09T15:35:42Z",
    "last_good_value": "logo_wall, testimonial",
    "last_good_json": "{\"present\":{\"logo_wall\":true,\"proof\":false,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "97603fa2",
@@ -50,7 +50,7 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T15:01:16Z",
+   "last_observed_at": "2026-08-09T15:35:42Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T15:01:16Z",
-   "last_good_at": "2026-08-09T15:01:16Z",
+   "last_observed_at": "2026-08-09T15:35:42Z",
+   "last_good_at": "2026-08-09T15:35:42Z",
    "last_good_value": "8",
    "last_good_json": null,
    "last_good_hash": "3d0cb547",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T15:01:16Z",
-   "last_good_at": "2026-08-09T15:01:16Z",
+   "last_observed_at": "2026-08-09T15:35:42Z",
+   "last_good_at": "2026-08-09T15:35:42Z",
    "last_good_value": "14",
    "last_good_json": null,
    "last_good_hash": "17eb23f8",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T15:01:16Z",
-   "last_good_at": "2026-08-09T15:01:16Z",
+   "last_observed_at": "2026-08-09T15:35:42Z",
+   "last_good_at": "2026-08-09T15:35:42Z",
    "last_good_value": "8",
    "last_good_json": null,
    "last_good_hash": "3d0cb547",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T15:01:16Z",
-   "last_good_at": "2026-08-09T15:01:16Z",
+   "last_observed_at": "2026-08-09T15:35:42Z",
+   "last_good_at": "2026-08-09T15:35:42Z",
    "last_good_value": "hero > cta > features > cta > features > logos > testimonial > security",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":317,\"merged\":1},{\"position\":2,\"type\":\"cta\",\"heading\":\"People and agents working as one team\",\"words\":197,\"merged\":1},{\"position\":3,\"type\":\"features\",\"heading\":\"Get more done with agents\",\"words\":182,\"merged\":3},{\"position\":4,\"type\":\"cta\",\"heading\":\"Work in context\",\"words\":50,\"merged\":1},{\"position\":5,\"type\":\"features\",\"heading\":\"Full control\",\"words\":109,\"merged\":2},{\"position\":6,\"type\":\"logos\",\"heading\":\"Consider yourself limitless\",\"words\":25,\"merged\":2},{\"position\":7,\"type\":\"testimonial\",\"heading\":\"Our customers achieve more\",\"words\":96,\"merged\":1},{\"position\":8,\"type\":\"security\",\"heading\":\"Enterprise-grade security\",\"words\":298,\"merged\":1}]}",
    "last_good_hash": "04003b0c",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T15:01:16Z",
-   "last_good_at": "2026-08-09T15:01:16Z",
+   "last_observed_at": "2026-08-09T15:35:42Z",
+   "last_good_at": "2026-08-09T15:35:42Z",
    "last_good_value": 2380,
    "last_good_json": null,
    "last_good_hash": "c1c7c16a",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T15:01:16Z",
-   "last_good_at": "2026-08-09T15:01:16Z",
+   "last_observed_at": "2026-08-09T15:35:42Z",
+   "last_good_at": "2026-08-09T15:35:42Z",
    "last_good_value": "ai work platform for people",
    "last_good_json": null,
    "last_good_hash": "1ed7e127",
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T15:01:16Z",
-   "last_good_at": "2026-08-09T15:01:16Z",
+   "last_observed_at": "2026-08-09T15:35:42Z",
+   "last_good_at": "2026-08-09T15:35:42Z",
    "last_good_value": "aicpa soc2, Arcaise, Arcaise Image Card, Arcise Image Mb, canva, Canva Image Card, carrefour, Cat Excavator Image Card, Cc, Chatgpt, Check Ticket Image, Claude, Closure Avatars Image 1, Closure Avatars Image 2png, coca cola, Copilot, Created Ticket Image, Escalation Caller Agent, forrester, Gartner, gdpr, Gemini, Gmail, Height Vml, hipaa, Holt, holt cat, Hp Agents Card 1, Hp Agents Card 2, Iso, lionsgate, Mcdonald S Image Card, Monday, No, Notify Escalation Team, Notify On Call Team, Perplexity, Plus Circle, Slack, Team Meeting Image Card",
    "last_good_json": "{\"names\":[\"aicpa soc2\",\"Arcaise\",\"Arcaise Image Card\",\"Arcise Image Mb\",\"canva\",\"Canva Image Card\",\"carrefour\",\"Cat Excavator Image Card\",\"Cc\",\"Chatgpt\",\"Check Ticket Image\",\"Claude\",\"Closure Avatars Image 1\",\"Closure Avatars Image 2png\",\"coca cola\",\"Copilot\",\"Created Ticket Image\",\"Escalation Caller Agent\",\"forrester\",\"Gartner\",\"gdpr\",\"Gemini\",\"Gmail\",\"Height Vml\",\"hipaa\",\"Holt\",\"holt cat\",\"Hp Agents Card 1\",\"Hp Agents Card 2\",\"Iso\",\"lionsgate\",\"Mcdonald S Image Card\",\"Monday\",\"No\",\"Notify Escalation Team\",\"Notify On Call Team\",\"Perplexity\",\"Plus Circle\",\"Slack\",\"Team Meeting Image Card\"],\"count\":40,\"lead\":\"Trusted by over 60% of the Fortune 500 <div class=\\\"marquee-logos_wrap\"}",
    "last_good_hash": "75bf4c4b",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T15:01:16Z",
-   "last_good_at": "2026-08-09T15:01:16Z",
+   "last_observed_at": "2026-08-09T15:35:42Z",
+   "last_good_at": "2026-08-09T15:35:42Z",
    "last_good_value": "You lead. Agents act.",
    "last_good_json": null,
    "last_good_hash": "3f801be4",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T15:01:16Z",
-   "last_good_at": "2026-08-09T15:01:16Z",
+   "last_observed_at": "2026-08-09T15:35:42Z",
+   "last_good_at": "2026-08-09T15:35:42Z",
    "last_good_value": "Get more work done with AI agents that work side by side with your people. Execute, manage, and operate together on one AI work platform to drive business results.",
    "last_good_json": null,
    "last_good_hash": "19c3b051",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T15:01:16Z",
-   "last_good_at": "2026-08-09T15:01:16Z",
+   "last_observed_at": "2026-08-09T15:35:42Z",
+   "last_good_at": "2026-08-09T15:35:42Z",
    "last_good_value": "The AI Work Platform for People & Agents | monday.com",
    "last_good_json": null,
    "last_good_hash": "24133f6f",
@@ -248,8 +248,8 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T15:03:56Z",
-   "last_good_at": "2026-08-09T15:03:56Z",
+   "last_observed_at": "2026-08-09T15:37:43Z",
+   "last_good_at": "2026-08-09T15:37:43Z",
    "last_good_value": "USD 10/month",
    "last_good_json": "{\"amount\":10,\"currency\":\"USD\",\"period\":\"month\",\"unit\":null,\"tier\":\"Free\"}",
    "last_good_hash": "026d2419",
@@ -266,8 +266,8 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T15:03:56Z",
-   "last_good_at": "2026-08-09T15:03:56Z",
+   "last_observed_at": "2026-08-09T15:37:43Z",
+   "last_good_at": "2026-08-09T15:37:43Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true}",
    "last_good_hash": "4e9f3590",
@@ -284,8 +284,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T15:03:56Z",
-   "last_good_at": "2026-08-09T15:03:56Z",
+   "last_observed_at": "2026-08-09T15:37:43Z",
+   "last_good_at": "2026-08-09T15:37:43Z",
    "last_good_value": "monday.com pricing and plans",
    "last_good_json": null,
    "last_good_hash": "232c96b1",
@@ -302,7 +302,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T15:03:56Z",
+   "last_observed_at": "2026-08-09T15:37:43Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -320,8 +320,8 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T15:03:56Z",
-   "last_good_at": "2026-08-09T15:03:56Z",
+   "last_observed_at": "2026-08-09T15:37:43Z",
+   "last_good_at": "2026-08-09T15:37:43Z",
    "last_good_value": "Free USD 10/month | Basic USD 90 | Standard USD 120 | Pro USD 190 | Enterprise custom | Ultimate custom",
    "last_good_json": "{\"tiers\":[{\"name\":\"Free\",\"amount\":10,\"currency\":\"USD\",\"period\":\"month\",\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Basic\",\"amount\":90,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Standard\",\"amount\":120,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Pro\",\"amount\":190,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Enterprise\",\"amount\":null,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"contact-sales\"},{\"name\":\"Ultimate\",\"amount\":null,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"contact-sales\"}],\"count\":6}",
    "last_good_hash": "7e991781",
@@ -338,8 +338,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T15:01:16Z",
-   "last_good_at": "2026-08-09T15:01:16Z",
+   "last_observed_at": "2026-08-09T15:35:42Z",
+   "last_good_at": "2026-08-09T15:35:42Z",
    "last_good_value": "$250k saved yearly to | 105k hours | 25% reduction in project | 346% roi according to | 40% faster production time | 5 minutes | 517% growth in annual | fortune 500",
    "last_good_json": "{\"items\":[{\"claim\":\"$250k saved yearly to\",\"kind\":\"money\"},{\"claim\":\"105k hours\",\"kind\":\"count\"},{\"claim\":\"25% reduction in project\",\"kind\":\"percent\"},{\"claim\":\"346% roi according to\",\"kind\":\"percent\"},{\"claim\":\"40% faster production time\",\"kind\":\"percent\"},{\"claim\":\"5 minutes\",\"kind\":\"time\"},{\"claim\":\"517% growth in annual\",\"kind\":\"percent\"},{\"claim\":\"fortune 500\",\"kind\":\"rank\"}],\"count\":8}",
    "last_good_hash": "ba735b5c",
@@ -356,8 +356,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T15:01:16Z",
-   "last_good_at": "2026-08-09T15:01:16Z",
+   "last_observed_at": "2026-08-09T15:35:42Z",
+   "last_good_at": "2026-08-09T15:35:42Z",
    "last_good_value": "Where people and agents drive results together on one secure work platform",
    "last_good_json": null,
    "last_good_hash": "7b7a55ae",
@@ -375,6 +375,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://monday.com/pricing",
+   "fetched_at": "2026-08-09T15:37:43Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.3.0 -> 1.4.0; re-baselining",
+   "bytes": 1425981,
+   "duration_ms": 456,
+   "signals_found": 4,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://monday.com/",
+   "fetched_at": "2026-08-09T15:35:42Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.3.0 -> 1.4.0; re-baselining",
+   "bytes": 593629,
+   "duration_ms": 443,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
   {
    "kind": "pricing",
    "url": "https://monday.com/pricing",
@@ -588,30 +612,6 @@
    "reason": "body identical to the previous fetch",
    "bytes": 556937,
    "duration_ms": 437,
-   "signals_found": 0,
-   "signals_expected": 0
-  },
-  {
-   "kind": "pricing",
-   "url": "https://monday.com/pricing",
-   "fetched_at": "2026-08-07T15:53:35Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": null,
-   "bytes": 1425730,
-   "duration_ms": 646,
-   "signals_found": 4,
-   "signals_expected": 5
-  },
-  {
-   "kind": "home",
-   "url": "https://monday.com/",
-   "fetched_at": "2026-08-07T15:52:35Z",
-   "http_status": 304,
-   "status": "unchanged",
-   "reason": "origin returned 304 Not Modified",
-   "bytes": 0,
-   "duration_ms": 490,
    "signals_found": 0,
    "signals_expected": 0
   }

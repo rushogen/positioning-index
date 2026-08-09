@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-08T11:47:01Z",
-   "last_good_at": "2026-08-08T11:47:01Z",
+   "last_observed_at": "2026-08-09T15:37:21Z",
+   "last_good_at": "2026-08-09T15:37:21Z",
    "last_good_value": "3",
    "last_good_json": null,
    "last_good_hash": "360caa42",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-08T11:47:01Z",
-   "last_good_at": "2026-08-08T11:47:01Z",
+   "last_observed_at": "2026-08-09T15:37:21Z",
+   "last_good_at": "2026-08-09T15:37:21Z",
    "last_good_value": "logo_wall, testimonial, integrations, media",
    "last_good_json": "{\"present\":{\"logo_wall\":true,\"proof\":false,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":true,\"media\":true}}",
    "last_good_hash": "792a92bb",
@@ -50,7 +50,7 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-08T11:47:01Z",
+   "last_observed_at": "2026-08-09T15:37:21Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-08T11:47:01Z",
-   "last_good_at": "2026-08-08T11:47:01Z",
+   "last_observed_at": "2026-08-09T15:37:21Z",
+   "last_good_at": "2026-08-09T15:37:21Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-08T11:47:01Z",
-   "last_good_at": "2026-08-08T11:47:01Z",
+   "last_observed_at": "2026-08-09T15:37:21Z",
+   "last_good_at": "2026-08-09T15:37:21Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-08T11:47:01Z",
-   "last_good_at": "2026-08-08T11:47:01Z",
+   "last_observed_at": "2026-08-09T15:37:21Z",
+   "last_good_at": "2026-08-09T15:37:21Z",
    "last_good_value": "10",
    "last_good_json": null,
    "last_good_hash": "1beb2a44",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-08T11:47:01Z",
-   "last_good_at": "2026-08-08T11:47:01Z",
+   "last_observed_at": "2026-08-09T15:37:21Z",
+   "last_good_at": "2026-08-09T15:37:21Z",
    "last_good_value": "hero > logos > cta > other > media > integrations > cta > features > logos > testimonial",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":22,\"merged\":1},{\"position\":2,\"type\":\"logos\",\"heading\":\"Millions of people across 400,000 companies choose Loom\",\"words\":15,\"merged\":1},{\"position\":3,\"type\":\"cta\",\"heading\":\"Ship faster with AI bug reports\",\"words\":56,\"merged\":1},{\"position\":4,\"type\":\"other\",\"heading\":\"The easiest screen recorder you’ll ever use\",\"words\":16,\"merged\":1},{\"position\":5,\"type\":\"media\",\"heading\":\"Lightning fast screen recording\",\"words\":46,\"merged\":1},{\"position\":6,\"type\":\"integrations\",\"heading\":\"So much more than a screen recorder\",\"words\":156,\"merged\":1},{\"position\":7,\"type\":\"cta\",\"heading\":\"Keep your content safe\",\"words\":33,\"merged\":1},{\"position\":8,\"type\":\"features\",\"heading\":\"Video messaging for all use cases\",\"words\":52,\"merged\":1},{\"position\":9,\"type\":\"logos\",\"heading\":\"Powerful features for easy, custom recordings\",\"words\":41,\"merged\":1},{\"position\":10,\"type\":\"testimonial\",\"heading\":\"How to use async video messaging to improve communication\",\"words\":95,\"merged\":2}]}",
    "last_good_hash": "b61eb24c",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-08T11:47:01Z",
-   "last_good_at": "2026-08-08T11:47:01Z",
+   "last_observed_at": "2026-08-09T15:37:21Z",
+   "last_good_at": "2026-08-09T15:37:21Z",
    "last_good_value": 814,
    "last_good_json": null,
    "last_good_hash": "3b9cfb42",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-08T11:47:01Z",
-   "last_good_at": "2026-08-08T11:47:01Z",
+   "last_observed_at": "2026-08-09T15:37:21Z",
+   "last_good_at": "2026-08-09T15:37:21Z",
    "last_good_value": "online screen recording tool",
    "last_good_json": null,
    "last_good_hash": "918a0b79",
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-08T11:47:01Z",
-   "last_good_at": "2026-08-08T11:47:01Z",
+   "last_observed_at": "2026-08-09T15:37:21Z",
+   "last_good_at": "2026-08-09T15:37:21Z",
    "last_good_value": "Atlassian Loom, HubSpot, Lacoste, LaunchDarkly, Postclick",
    "last_good_json": "{\"names\":[\"Atlassian Loom\",\"HubSpot\",\"Lacoste\",\"LaunchDarkly\",\"Postclick\"],\"count\":5,\"lead\":\"trusted by over 22 million people and easy sharing from Loom.com.\\\" name=\\\"descrip\"}",
    "last_good_hash": "e93d973e",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-08T11:47:01Z",
-   "last_good_at": "2026-08-08T11:47:01Z",
+   "last_observed_at": "2026-08-09T15:37:21Z",
+   "last_good_at": "2026-08-09T15:37:21Z",
    "last_good_value": "One video is worth a thousand words",
    "last_good_json": null,
    "last_good_hash": "ad60b636",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-08T11:47:01Z",
-   "last_good_at": "2026-08-08T11:47:01Z",
+   "last_observed_at": "2026-08-09T15:37:21Z",
+   "last_good_at": "2026-08-09T15:37:21Z",
    "last_good_value": "Best free online screen recording tool with advanced video editing and video storage trusted by over 22 million people and easy sharing from Loom.com.",
    "last_good_json": null,
    "last_good_hash": "1eed0c3d",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-08T11:47:01Z",
-   "last_good_at": "2026-08-08T11:47:01Z",
+   "last_observed_at": "2026-08-09T15:37:21Z",
+   "last_good_at": "2026-08-09T15:37:21Z",
    "last_good_value": "Free screen recorder for Mac and PC | Loom",
    "last_good_json": null,
    "last_good_hash": "02535806",
@@ -248,8 +248,8 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-08T11:45:01Z",
-   "last_good_at": "2026-08-08T11:45:01Z",
+   "last_observed_at": "2026-08-09T15:35:01Z",
+   "last_good_at": "2026-08-09T15:35:01Z",
    "last_good_value": "USD 18/user/month",
    "last_good_json": "{\"amount\":18,\"currency\":\"USD\",\"period\":\"month\",\"unit\":\"user\",\"tier\":\"Business\"}",
    "last_good_hash": "f0656a7f",
@@ -266,8 +266,8 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-08T11:45:01Z",
-   "last_good_at": "2026-08-08T11:45:01Z",
+   "last_observed_at": "2026-08-09T15:35:01Z",
+   "last_good_at": "2026-08-09T15:35:01Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true}",
    "last_good_hash": "4e9f3590",
@@ -284,8 +284,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-08T11:45:01Z",
-   "last_good_at": "2026-08-08T11:45:01Z",
+   "last_observed_at": "2026-08-09T15:35:01Z",
+   "last_good_at": "2026-08-09T15:35:01Z",
    "last_good_value": "Loom Pricing | Start Recording For Free | Loom",
    "last_good_json": null,
    "last_good_hash": "f0055aad",
@@ -302,7 +302,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-08T11:45:01Z",
+   "last_observed_at": "2026-08-09T15:35:01Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -318,8 +318,8 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-08T11:45:01Z",
-   "last_good_at": "2026-08-08T11:45:01Z",
+   "last_observed_at": "2026-08-09T15:35:01Z",
+   "last_good_at": "2026-08-09T15:35:01Z",
    "last_good_value": "Starter free | Business USD 18/user/month | Business + AI USD 24/user/month | Enterprise custom",
    "last_good_json": "{\"tiers\":[{\"name\":\"Starter\",\"amount\":0,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Business\",\"amount\":18,\"currency\":\"USD\",\"period\":\"month\",\"unit\":\"user\",\"source\":\"heuristic\"},{\"name\":\"Business + AI\",\"amount\":24,\"currency\":\"USD\",\"period\":\"month\",\"unit\":\"user\",\"source\":\"heuristic\"},{\"name\":\"Enterprise\",\"amount\":null,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"contact-sales\"}],\"count\":4}",
    "last_good_hash": "f9a9bc80",
@@ -336,8 +336,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-08T11:47:01Z",
-   "last_good_at": "2026-08-08T11:47:01Z",
+   "last_observed_at": "2026-08-09T15:37:21Z",
+   "last_good_at": "2026-08-09T15:37:21Z",
    "last_good_value": "400,000 companies",
    "last_good_json": "{\"items\":[{\"claim\":\"400,000 companies\",\"kind\":\"count\"}],\"count\":1}",
    "last_good_hash": "2981b458",
@@ -354,8 +354,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-08T11:47:01Z",
-   "last_good_at": "2026-08-08T11:47:01Z",
+   "last_observed_at": "2026-08-09T15:37:21Z",
+   "last_good_at": "2026-08-09T15:37:21Z",
    "last_good_value": "Easily record and share AI-powered video messages with your teammates and customers to supercharge productivity",
    "last_good_json": null,
    "last_good_hash": "c997906b",
@@ -373,6 +373,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.loom.com/",
+   "fetched_at": "2026-08-09T15:37:21Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.3.0 -> 1.4.0; re-baselining",
+   "bytes": 206860,
+   "duration_ms": 140,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.loom.com/pricing",
+   "fetched_at": "2026-08-09T15:35:01Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.3.0 -> 1.4.0; re-baselining",
+   "bytes": 851550,
+   "duration_ms": 230,
+   "signals_found": 4,
+   "signals_expected": 5
+  },
   {
    "kind": "home",
    "url": "https://www.loom.com/",
@@ -588,30 +612,6 @@
    "duration_ms": 62,
    "signals_found": 0,
    "signals_expected": 0
-  },
-  {
-   "kind": "pricing",
-   "url": "https://www.loom.com/pricing",
-   "fetched_at": "2026-08-07T23:18:53Z",
-   "http_status": 304,
-   "status": "unchanged",
-   "reason": "origin returned 304 Not Modified",
-   "bytes": 0,
-   "duration_ms": 96,
-   "signals_found": 0,
-   "signals_expected": 0
-  },
-  {
-   "kind": "pricing",
-   "url": "https://www.loom.com/pricing",
-   "fetched_at": "2026-08-07T15:53:13Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": null,
-   "bytes": 851550,
-   "duration_ms": 137,
-   "signals_found": 4,
-   "signals_expected": 5
   }
  ]
 }

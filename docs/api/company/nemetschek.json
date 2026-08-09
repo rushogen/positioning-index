@@ -13,8 +13,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T15:00:27Z",
-   "last_good_at": "2026-08-09T15:00:27Z",
+   "last_observed_at": "2026-08-09T15:36:35Z",
+   "last_good_at": "2026-08-09T15:36:35Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -31,8 +31,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T15:00:27Z",
-   "last_good_at": "2026-08-09T15:00:27Z",
+   "last_observed_at": "2026-08-09T15:36:35Z",
+   "last_good_at": "2026-08-09T15:36:35Z",
    "last_good_value": "none",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "ada7afdb",
@@ -49,8 +49,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T15:00:27Z",
-   "last_good_at": "2026-08-09T15:00:27Z",
+   "last_observed_at": "2026-08-09T15:36:35Z",
+   "last_good_at": "2026-08-09T15:36:35Z",
    "last_good_value": "33",
    "last_good_json": null,
    "last_good_hash": "86f04fe3",
@@ -67,8 +67,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T15:00:27Z",
-   "last_good_at": "2026-08-09T15:00:27Z",
+   "last_observed_at": "2026-08-09T15:36:35Z",
+   "last_good_at": "2026-08-09T15:36:35Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -85,8 +85,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T15:00:27Z",
-   "last_good_at": "2026-08-09T15:00:27Z",
+   "last_observed_at": "2026-08-09T15:36:35Z",
+   "last_good_at": "2026-08-09T15:36:35Z",
    "last_good_value": "36",
    "last_good_json": null,
    "last_good_hash": "89f0549c",
@@ -103,8 +103,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T15:00:27Z",
-   "last_good_at": "2026-08-09T15:00:27Z",
+   "last_observed_at": "2026-08-09T15:36:35Z",
+   "last_good_at": "2026-08-09T15:36:35Z",
    "last_good_value": "3",
    "last_good_json": null,
    "last_good_hash": "360caa42",
@@ -121,8 +121,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T15:00:27Z",
-   "last_good_at": "2026-08-09T15:00:27Z",
+   "last_observed_at": "2026-08-09T15:36:35Z",
+   "last_good_at": "2026-08-09T15:36:35Z",
    "last_good_value": "hero > other > features",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":8,\"merged\":1},{\"position\":2,\"type\":\"other\",\"heading\":\"Intelligent Software Solutions for the Entire AEC/O Lifecycle\",\"words\":11,\"merged\":3},{\"position\":3,\"type\":\"features\",\"heading\":\"The most powerful toolsets for creatives to realize their visions\",\"words\":24,\"merged\":5}]}",
    "last_good_hash": "2595744e",
@@ -139,8 +139,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T15:00:27Z",
-   "last_good_at": "2026-08-09T15:00:27Z",
+   "last_observed_at": "2026-08-09T15:36:35Z",
+   "last_good_at": "2026-08-09T15:36:35Z",
    "last_good_value": 728,
    "last_good_json": null,
    "last_good_hash": "14c2d25c",
@@ -157,7 +157,7 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T15:00:27Z",
+   "last_observed_at": "2026-08-09T15:36:35Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -175,8 +175,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T15:00:27Z",
-   "last_good_at": "2026-08-09T15:00:27Z",
+   "last_observed_at": "2026-08-09T15:36:35Z",
+   "last_good_at": "2026-08-09T15:36:35Z",
    "last_good_value": "BenjaminSpringer01, Cultural Crop, Hospital Teaser1, Offices Crop, Sports Crop, Us Holbrook Rendering2 Crop, VanRoey Hoofdkantoor (5) Crop",
    "last_good_json": "{\"names\":[\"BenjaminSpringer01\",\"Cultural Crop\",\"Hospital Teaser1\",\"Offices Crop\",\"Sports Crop\",\"Us Holbrook Rendering2 Crop\",\"VanRoey Hoofdkantoor (5) Crop\"],\"count\":7,\"lead\":\"powering customers around the globe to shape the world Read more\"}",
    "last_good_hash": "d4bc2f9f",
@@ -193,7 +193,7 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T15:00:27Z",
+   "last_observed_at": "2026-08-09T15:36:35Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -211,8 +211,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T15:00:27Z",
-   "last_good_at": "2026-08-09T15:00:27Z",
+   "last_observed_at": "2026-08-09T15:36:35Z",
+   "last_good_at": "2026-08-09T15:36:35Z",
    "last_good_value": "The Nemetschek Group has been successfully driving the digitalization of the AEC/O and media industry for over half a century.",
    "last_good_json": null,
    "last_good_hash": "8beb61d2",
@@ -229,8 +229,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T15:00:27Z",
-   "last_good_at": "2026-08-09T15:00:27Z",
+   "last_observed_at": "2026-08-09T15:36:35Z",
+   "last_good_at": "2026-08-09T15:36:35Z",
    "last_good_value": "NEMETSCHEK | Software solutions for architects and creative minds",
    "last_good_json": null,
    "last_good_hash": "a9771685",
@@ -247,7 +247,7 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T15:00:27Z",
+   "last_observed_at": "2026-08-09T15:36:35Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -265,7 +265,7 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T15:00:27Z",
+   "last_observed_at": "2026-08-09T15:36:35Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -284,6 +284,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.nemetschek.com/en",
+   "fetched_at": "2026-08-09T15:36:35Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.3.0 -> 1.4.0; re-baselining",
+   "bytes": 149746,
+   "duration_ms": 708,
+   "signals_found": 11,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.nemetschek.com/en",

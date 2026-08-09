@@ -15,8 +15,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T14:56:16Z",
-   "last_good_at": "2026-08-09T14:56:16Z",
+   "last_observed_at": "2026-08-09T15:37:53Z",
+   "last_good_at": "2026-08-09T15:37:53Z",
    "last_good_value": "3",
    "last_good_json": null,
    "last_good_hash": "360caa42",
@@ -33,8 +33,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T14:56:16Z",
-   "last_good_at": "2026-08-09T14:56:16Z",
+   "last_observed_at": "2026-08-09T15:37:53Z",
+   "last_good_at": "2026-08-09T15:37:53Z",
    "last_good_value": "integrations",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":true,\"media\":false}}",
    "last_good_hash": "75846fda",
@@ -51,8 +51,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T14:56:16Z",
-   "last_good_at": "2026-08-09T14:56:16Z",
+   "last_observed_at": "2026-08-09T15:37:53Z",
+   "last_good_at": "2026-08-09T15:37:53Z",
    "last_good_value": "70",
    "last_good_json": null,
    "last_good_hash": "8fe5d0b2",
@@ -69,8 +69,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T14:56:16Z",
-   "last_good_at": "2026-08-09T14:56:16Z",
+   "last_observed_at": "2026-08-09T15:37:53Z",
+   "last_good_at": "2026-08-09T15:37:53Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -87,8 +87,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T14:56:16Z",
-   "last_good_at": "2026-08-09T14:56:16Z",
+   "last_observed_at": "2026-08-09T15:37:53Z",
+   "last_good_at": "2026-08-09T15:37:53Z",
    "last_good_value": "26",
    "last_good_json": null,
    "last_good_hash": "8bf29659",
@@ -105,8 +105,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T14:56:16Z",
-   "last_good_at": "2026-08-09T14:56:16Z",
+   "last_observed_at": "2026-08-09T15:37:53Z",
+   "last_good_at": "2026-08-09T15:37:53Z",
    "last_good_value": "6",
    "last_good_json": null,
    "last_good_hash": "330ca589",
@@ -123,8 +123,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T14:56:16Z",
-   "last_good_at": "2026-08-09T14:56:16Z",
+   "last_observed_at": "2026-08-09T15:37:53Z",
+   "last_good_at": "2026-08-09T15:37:53Z",
    "last_good_value": "hero > security > integrations > security > features > security",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":33,\"merged\":1},{\"position\":2,\"type\":\"security\",\"heading\":\"One system of record. Every employment need.\",\"words\":105,\"merged\":2},{\"position\":3,\"type\":\"integrations\",\"heading\":\"Hiring internationally, converting contractors, or consolidating payroll? Talk to our team.\",\"words\":17,\"merged\":1},{\"position\":4,\"type\":\"security\",\"heading\":\"Your workflows, your way, on our infrastructure\",\"words\":121,\"merged\":1},{\"position\":5,\"type\":\"features\",\"heading\":\"The world’s best teams run on Remote\",\"words\":29,\"merged\":1},{\"position\":6,\"type\":\"security\",\"heading\":\"A word from our customers\",\"words\":623,\"merged\":2}]}",
    "last_good_hash": "df88a40f",
@@ -141,8 +141,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T14:56:16Z",
-   "last_good_at": "2026-08-09T14:56:16Z",
+   "last_observed_at": "2026-08-09T15:37:53Z",
+   "last_good_at": "2026-08-09T15:37:53Z",
    "last_good_value": 1035,
    "last_good_json": null,
    "last_good_hash": "8f9f3220",
@@ -159,8 +159,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T14:56:16Z",
-   "last_good_at": "2026-08-09T14:56:16Z",
+   "last_observed_at": "2026-08-09T15:37:53Z",
+   "last_good_at": "2026-08-09T15:37:53Z",
    "last_good_value": "global employment infrastructure",
    "last_good_json": null,
    "last_good_hash": "5ceebaa3",
@@ -177,8 +177,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T14:56:16Z",
-   "last_good_at": "2026-08-09T14:56:16Z",
+   "last_observed_at": "2026-08-09T15:37:53Z",
+   "last_good_at": "2026-08-09T15:37:53Z",
    "last_good_value": "Capterra Reviews Book Demo, Erik Sveen, Fountain, G2 Reviews Book Demo, HomeProject, Luke McKinlay, Maria Shkaruppa, Marisol Jiménez, Reverse Tech, Semrush, Trustpilot Reviews Book Demo",
    "last_good_json": "{\"names\":[\"Capterra Reviews Book Demo\",\"Erik Sveen\",\"Fountain\",\"G2 Reviews Book Demo\",\"HomeProject\",\"Luke McKinlay\",\"Maria Shkaruppa\",\"Marisol Jiménez\",\"Reverse Tech\",\"Semrush\",\"Trustpilot Reviews Book Demo\"],\"count\":11,\"lead\":\"our customers <div class=\\\"typography-module-scss-module___KGphG__paragraph-norma\"}",
    "last_good_hash": "200efd25",
@@ -195,8 +195,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T14:56:16Z",
-   "last_good_at": "2026-08-09T14:56:16Z",
+   "last_observed_at": "2026-08-09T15:37:53Z",
+   "last_good_at": "2026-08-09T15:37:53Z",
    "last_good_value": "Global employment runs on Remote",
    "last_good_json": null,
    "last_good_hash": "67424d17",
@@ -213,8 +213,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T14:56:16Z",
-   "last_good_at": "2026-08-09T14:56:16Z",
+   "last_observed_at": "2026-08-09T15:37:53Z",
+   "last_good_at": "2026-08-09T15:37:53Z",
    "last_good_value": "The intelligent infrastructure for global employment. EOR, global payroll, contractor management, and compliant payments — worldwide, on one system of record.",
    "last_good_json": null,
    "last_good_hash": "b6adc7a1",
@@ -231,8 +231,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T14:56:16Z",
-   "last_good_at": "2026-08-09T14:56:16Z",
+   "last_observed_at": "2026-08-09T15:37:53Z",
+   "last_good_at": "2026-08-09T15:37:53Z",
    "last_good_value": "Global Employment Infrastructure | EOR, Payroll & Compliance, Worldwide | Remote",
    "last_good_json": null,
    "last_good_hash": "9221dd24",
@@ -249,7 +249,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T15:11:36Z",
+   "last_observed_at": "2026-08-09T15:36:27Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -267,7 +267,7 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T15:11:36Z",
+   "last_observed_at": "2026-08-09T15:36:27Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -285,8 +285,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T15:11:36Z",
-   "last_good_at": "2026-08-09T15:11:36Z",
+   "last_observed_at": "2026-08-09T15:36:27Z",
+   "last_good_at": "2026-08-09T15:36:27Z",
    "last_good_value": "Pricing & Plans: Low Flat Rates | Remote",
    "last_good_json": null,
    "last_good_hash": "a1748fff",
@@ -303,7 +303,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T15:11:36Z",
+   "last_observed_at": "2026-08-09T15:36:27Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -321,7 +321,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T15:11:36Z",
+   "last_observed_at": "2026-08-09T15:36:27Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -339,8 +339,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T14:56:16Z",
-   "last_good_at": "2026-08-09T14:56:16Z",
+   "last_observed_at": "2026-08-09T15:37:53Z",
+   "last_good_at": "2026-08-09T15:37:53Z",
    "last_good_value": "$500,000 more each year",
    "last_good_json": "{\"items\":[{\"claim\":\"$500,000 more each year\",\"kind\":\"money\"}],\"count\":1}",
    "last_good_hash": "f674124d",
@@ -357,8 +357,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T14:56:16Z",
-   "last_good_at": "2026-08-09T14:56:16Z",
+   "last_observed_at": "2026-08-09T15:37:53Z",
+   "last_good_at": "2026-08-09T15:37:53Z",
    "last_good_value": "Hire and pay anyone in the world — with the compliance, reliability, and local expertise that only owned infrastructure delivers.",
    "last_good_json": null,
    "last_good_hash": "6161c6bd",
@@ -376,6 +376,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://remote.com/",
+   "fetched_at": "2026-08-09T15:37:53Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.3.0 -> 1.4.0; re-baselining",
+   "bytes": 765280,
+   "duration_ms": 197,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
+  {
+   "kind": "pricing",
+   "url": "https://remote.com/pricing",
+   "fetched_at": "2026-08-09T15:36:27Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.3.0 -> 1.4.0; re-baselining",
+   "bytes": 593407,
+   "duration_ms": 347,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
   {
    "kind": "home",
    "url": "https://remote.com/",

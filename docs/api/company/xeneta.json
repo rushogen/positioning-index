@@ -13,8 +13,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-08T11:46:49Z",
-   "last_good_at": "2026-08-08T11:46:49Z",
+   "last_observed_at": "2026-08-09T15:34:28Z",
+   "last_good_at": "2026-08-09T15:34:28Z",
    "last_good_value": "8",
    "last_good_json": null,
    "last_good_hash": "3d0cb547",
@@ -31,8 +31,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-08T11:46:49Z",
-   "last_good_at": "2026-08-08T11:46:49Z",
+   "last_observed_at": "2026-08-09T15:34:28Z",
+   "last_good_at": "2026-08-09T15:34:28Z",
    "last_good_value": "logo_wall, proof, pricing_block",
    "last_good_json": "{\"present\":{\"logo_wall\":true,\"proof\":true,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":true,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "4cc996e1",
@@ -49,8 +49,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-08T11:46:49Z",
-   "last_good_at": "2026-08-08T11:46:49Z",
+   "last_observed_at": "2026-08-09T15:34:28Z",
+   "last_good_at": "2026-08-09T15:34:28Z",
    "last_good_value": "39",
    "last_good_json": null,
    "last_good_hash": "90f05fa1",
@@ -67,8 +67,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-08T11:46:49Z",
-   "last_good_at": "2026-08-08T11:46:49Z",
+   "last_observed_at": "2026-08-09T15:34:28Z",
+   "last_good_at": "2026-08-09T15:34:28Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -85,7 +85,7 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-08T11:46:49Z",
+   "last_observed_at": "2026-08-09T15:34:28Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -103,8 +103,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-08T11:46:49Z",
-   "last_good_at": "2026-08-08T11:46:49Z",
+   "last_observed_at": "2026-08-09T15:34:28Z",
+   "last_good_at": "2026-08-09T15:34:28Z",
    "last_good_value": "8",
    "last_good_json": null,
    "last_good_hash": "3d0cb547",
@@ -121,8 +121,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-08T11:46:49Z",
-   "last_good_at": "2026-08-08T11:46:49Z",
+   "last_observed_at": "2026-08-09T15:34:28Z",
+   "last_good_at": "2026-08-09T15:34:28Z",
    "last_good_value": "hero > features > proof > features > resources > logos > pricing > cta",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":59,\"merged\":1},{\"position\":2,\"type\":\"features\",\"heading\":\"Freight decisions need better data\",\"words\":116,\"merged\":2},{\"position\":3,\"type\":\"proof\",\"heading\":\"Why Xeneta data changes the conversation\",\"words\":26,\"merged\":1},{\"position\":4,\"type\":\"features\",\"heading\":\"Built for every team\",\"words\":84,\"merged\":1},{\"position\":5,\"type\":\"resources\",\"heading\":\"Ocean Outlook H2 2026\",\"words\":19,\"merged\":2},{\"position\":6,\"type\":\"logos\",\"heading\":\"Additional Resources\",\"words\":30,\"merged\":1},{\"position\":7,\"type\":\"pricing\",\"heading\":\"Frequently asked questions\",\"words\":921,\"merged\":1},{\"position\":8,\"type\":\"cta\",\"heading\":\"Ready to Move from Assumptions to Reality?\",\"words\":30,\"merged\":1}]}",
    "last_good_hash": "eefecf72",
@@ -139,8 +139,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-08T11:46:49Z",
-   "last_good_at": "2026-08-08T11:46:49Z",
+   "last_observed_at": "2026-08-09T15:34:28Z",
+   "last_good_at": "2026-08-09T15:34:28Z",
    "last_good_value": 1478,
    "last_good_json": null,
    "last_good_hash": "e820627f",
@@ -157,8 +157,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-08T11:46:49Z",
-   "last_good_at": "2026-08-08T11:46:49Z",
+   "last_observed_at": "2026-08-09T15:34:28Z",
+   "last_good_at": "2026-08-09T15:34:28Z",
    "last_good_value": "freight rate analytics platform",
    "last_good_json": null,
    "last_good_hash": "fd5ddeed",
@@ -175,8 +175,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-08T11:46:49Z",
-   "last_good_at": "2026-08-08T11:46:49Z",
+   "last_observed_at": "2026-08-09T15:34:28Z",
+   "last_good_at": "2026-08-09T15:34:28Z",
    "last_good_value": "ABF, BAT, Coca Cola, Customer Ceva, Electrolux, loreal, MidyearOutlook OceanThumbnail, Nestle, pfizer, rockwool, unilever 2, Volvo",
    "last_good_json": "{\"names\":[\"ABF\",\"BAT\",\"Coca Cola\",\"Customer Ceva\",\"Electrolux\",\"loreal\",\"MidyearOutlook OceanThumbnail\",\"Nestle\",\"pfizer\",\"rockwool\",\"unilever 2\",\"Volvo\"],\"count\":12,\"lead\":\"Our Customers Explore a feed of all the companies using Xeneta.\"}",
    "last_good_hash": "c74fa618",
@@ -193,8 +193,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-08T11:46:49Z",
-   "last_good_at": "2026-08-08T11:46:49Z",
+   "last_observed_at": "2026-08-09T15:34:28Z",
+   "last_good_at": "2026-08-09T15:34:28Z",
    "last_good_value": "Total freight market clarity.",
    "last_good_json": null,
    "last_good_hash": "8665af10",
@@ -211,8 +211,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-08T11:46:49Z",
-   "last_good_at": "2026-08-08T11:46:49Z",
+   "last_observed_at": "2026-08-09T15:34:28Z",
+   "last_good_at": "2026-08-09T15:34:28Z",
    "last_good_value": "Xeneta is the leading ocean and air freight rate benchmarking and market analytics platform transforming the shipping and logistics industry.",
    "last_good_json": null,
    "last_good_hash": "850d7c25",
@@ -229,8 +229,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-08T11:46:49Z",
-   "last_good_at": "2026-08-08T11:46:49Z",
+   "last_observed_at": "2026-08-09T15:34:28Z",
+   "last_good_at": "2026-08-09T15:34:28Z",
    "last_good_value": "Xeneta | Ocean and Air Freight Rate Analytics Platform",
    "last_good_json": null,
    "last_good_hash": "aafec415",
@@ -247,8 +247,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-08T11:46:49Z",
-   "last_good_at": "2026-08-08T11:46:49Z",
+   "last_observed_at": "2026-08-09T15:34:28Z",
+   "last_good_at": "2026-08-09T15:34:28Z",
    "last_good_value": "$2m versus market pricing | $37m savings across the",
    "last_good_json": "{\"items\":[{\"claim\":\"$2m versus market pricing\",\"kind\":\"money\"},{\"claim\":\"$37m savings across the\",\"kind\":\"money\"}],\"count\":2}",
    "last_good_hash": "938001ce",
@@ -265,8 +265,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-08T11:46:49Z",
-   "last_good_at": "2026-08-08T11:46:49Z",
+   "last_observed_at": "2026-08-09T15:34:28Z",
+   "last_good_at": "2026-08-09T15:34:28Z",
    "last_good_value": "Optimize your freight spend, evaluate carriers on cost and reliability, and budget with certainty using AI powered insights built on the world's most trusted freight data.",
    "last_good_json": null,
    "last_good_hash": "d71b8e82",
@@ -284,6 +284,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.xeneta.com/",
+   "fetched_at": "2026-08-09T15:34:28Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.3.0 -> 1.4.0; re-baselining",
+   "bytes": 205392,
+   "duration_ms": 125,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.xeneta.com/",

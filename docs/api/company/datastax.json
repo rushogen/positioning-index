@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T15:12:41Z",
-   "last_good_at": "2026-08-09T15:12:41Z",
+   "last_observed_at": "2026-08-09T15:36:50Z",
+   "last_good_at": "2026-08-09T15:36:50Z",
    "last_good_value": "5",
    "last_good_json": null,
    "last_good_hash": "300ca0d0",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T15:12:41Z",
-   "last_good_at": "2026-08-09T15:12:41Z",
+   "last_observed_at": "2026-08-09T15:36:50Z",
+   "last_good_at": "2026-08-09T15:36:50Z",
    "last_good_value": "integrations",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":true,\"media\":false}}",
    "last_good_hash": "75846fda",
@@ -50,7 +50,7 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T15:12:41Z",
+   "last_observed_at": "2026-08-09T15:36:50Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T15:12:41Z",
-   "last_good_at": "2026-08-09T15:12:41Z",
+   "last_observed_at": "2026-08-09T15:36:50Z",
+   "last_good_at": "2026-08-09T15:36:50Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T15:12:41Z",
-   "last_good_at": "2026-08-09T15:12:41Z",
+   "last_observed_at": "2026-08-09T15:36:50Z",
+   "last_good_at": "2026-08-09T15:36:50Z",
    "last_good_value": "2",
    "last_good_json": null,
    "last_good_hash": "370cabd5",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T15:12:41Z",
-   "last_good_at": "2026-08-09T15:12:41Z",
+   "last_observed_at": "2026-08-09T15:36:50Z",
+   "last_good_at": "2026-08-09T15:36:50Z",
    "last_good_value": "5",
    "last_good_json": null,
    "last_good_hash": "300ca0d0",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T15:12:41Z",
-   "last_good_at": "2026-08-09T15:12:41Z",
+   "last_observed_at": "2026-08-09T15:36:50Z",
+   "last_good_at": "2026-08-09T15:36:50Z",
    "last_good_value": "hero > security > integrations > features > resources",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":47,\"merged\":1},{\"position\":2,\"type\":\"security\",\"heading\":\"Manage data for AI at scale\",\"words\":223,\"merged\":1},{\"position\":3,\"type\":\"integrations\",\"heading\":\"Key Technologies\",\"words\":243,\"merged\":1},{\"position\":4,\"type\":\"features\",\"heading\":\"How we accelerate value together\",\"words\":203,\"merged\":1},{\"position\":5,\"type\":\"resources\",\"heading\":\"\",\"words\":99,\"merged\":1}]}",
    "last_good_hash": "b962afae",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T15:12:41Z",
-   "last_good_at": "2026-08-09T15:12:41Z",
+   "last_observed_at": "2026-08-09T15:36:50Z",
+   "last_good_at": "2026-08-09T15:36:50Z",
    "last_good_value": 816,
    "last_good_json": null,
    "last_good_hash": "399cf81c",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T15:12:41Z",
-   "last_good_at": "2026-08-09T15:12:41Z",
+   "last_observed_at": "2026-08-09T15:36:50Z",
+   "last_good_at": "2026-08-09T15:36:50Z",
    "last_good_value": "enterprise-ready ai apps",
    "last_good_json": null,
    "last_good_hash": "683d4c3a",
@@ -176,7 +176,7 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T15:12:41Z",
+   "last_observed_at": "2026-08-09T15:36:50Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T15:12:41Z",
-   "last_good_at": "2026-08-09T15:12:41Z",
+   "last_observed_at": "2026-08-09T15:36:50Z",
+   "last_good_at": "2026-08-09T15:36:50Z",
    "last_good_value": "DataStax, an IBM company",
    "last_good_json": null,
    "last_good_hash": "ce42fb41",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T15:12:41Z",
-   "last_good_at": "2026-08-09T15:12:41Z",
+   "last_observed_at": "2026-08-09T15:36:50Z",
+   "last_good_at": "2026-08-09T15:36:50Z",
    "last_good_value": "Deepening watsonx capabilities to address enterprise gen AI data needs with DataStax.",
    "last_good_json": null,
    "last_good_hash": "904daa75",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T15:12:41Z",
-   "last_good_at": "2026-08-09T15:12:41Z",
+   "last_observed_at": "2026-08-09T15:36:50Z",
+   "last_good_at": "2026-08-09T15:36:50Z",
    "last_good_value": "IBM DataStax",
    "last_good_json": null,
    "last_good_hash": "fa188741",
@@ -248,7 +248,7 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T15:12:41Z",
+   "last_observed_at": "2026-08-09T15:36:50Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -266,8 +266,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T15:12:41Z",
-   "last_good_at": "2026-08-09T15:12:41Z",
+   "last_observed_at": "2026-08-09T15:36:50Z",
+   "last_good_at": "2026-08-09T15:36:50Z",
    "last_good_value": "Deepening watsonx capabilities with DataStax to unlock enterprise data and build accurate, enterprise-ready AI apps",
    "last_good_json": null,
    "last_good_hash": "9d6dfe14",
@@ -285,6 +285,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.ibm.com/products/datastax",
+   "fetched_at": "2026-08-09T15:36:50Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.3.0 -> 1.4.0; re-baselining",
+   "bytes": 181108,
+   "duration_ms": 632,
+   "signals_found": 12,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.ibm.com/products/datastax",

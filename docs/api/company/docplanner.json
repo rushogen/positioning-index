@@ -13,8 +13,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-08T11:46:04Z",
-   "last_good_at": "2026-08-08T11:46:04Z",
+   "last_observed_at": "2026-08-09T15:36:28Z",
+   "last_good_at": "2026-08-09T15:36:28Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -31,8 +31,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-08T11:46:04Z",
-   "last_good_at": "2026-08-08T11:46:04Z",
+   "last_observed_at": "2026-08-09T15:36:28Z",
+   "last_good_at": "2026-08-09T15:36:28Z",
    "last_good_value": "none",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "ada7afdb",
@@ -49,8 +49,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-08T11:46:04Z",
-   "last_good_at": "2026-08-08T11:46:04Z",
+   "last_observed_at": "2026-08-09T15:36:28Z",
+   "last_good_at": "2026-08-09T15:36:28Z",
    "last_good_value": "14",
    "last_good_json": null,
    "last_good_hash": "17eb23f8",
@@ -67,8 +67,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-08T11:46:04Z",
-   "last_good_at": "2026-08-08T11:46:04Z",
+   "last_observed_at": "2026-08-09T15:36:28Z",
+   "last_good_at": "2026-08-09T15:36:28Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -85,8 +85,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-08T11:46:04Z",
-   "last_good_at": "2026-08-08T11:46:04Z",
+   "last_observed_at": "2026-08-09T15:36:28Z",
+   "last_good_at": "2026-08-09T15:36:28Z",
    "last_good_value": "10",
    "last_good_json": null,
    "last_good_hash": "1beb2a44",
@@ -103,8 +103,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-08T11:46:04Z",
-   "last_good_at": "2026-08-08T11:46:04Z",
+   "last_observed_at": "2026-08-09T15:36:28Z",
+   "last_good_at": "2026-08-09T15:36:28Z",
    "last_good_value": "3",
    "last_good_json": null,
    "last_good_hash": "360caa42",
@@ -121,8 +121,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-08T11:46:04Z",
-   "last_good_at": "2026-08-08T11:46:04Z",
+   "last_observed_at": "2026-08-09T15:36:28Z",
+   "last_good_at": "2026-08-09T15:36:28Z",
    "last_good_value": "hero > cta > features",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":89,\"merged\":1},{\"position\":2,\"type\":\"cta\",\"heading\":\"Find a doctor, book a visit and solve any health-related doubt\",\"words\":28,\"merged\":1},{\"position\":3,\"type\":\"features\",\"heading\":\"Save time managing visits and cut no-shows by half\",\"words\":25,\"merged\":2}]}",
    "last_good_hash": "33a941da",
@@ -139,8 +139,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-08T11:46:04Z",
-   "last_good_at": "2026-08-08T11:46:04Z",
+   "last_observed_at": "2026-08-09T15:36:28Z",
+   "last_good_at": "2026-08-09T15:36:28Z",
    "last_good_value": 336,
    "last_good_json": null,
    "last_good_hash": "414dac4f",
@@ -157,8 +157,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-08T11:46:04Z",
-   "last_good_at": "2026-08-08T11:46:04Z",
+   "last_observed_at": "2026-08-09T15:36:28Z",
+   "last_good_at": "2026-08-09T15:36:28Z",
    "last_good_value": "while integrating smart tools",
    "last_good_json": null,
    "last_good_hash": "0c250174",
@@ -175,8 +175,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-08T11:46:04Z",
-   "last_good_at": "2026-08-08T11:46:04Z",
+   "last_observed_at": "2026-08-09T15:36:28Z",
+   "last_good_at": "2026-08-09T15:36:28Z",
    "last_good_value": "CliniCloud, Docplanner Group, Doctoralia, Doktor Takvimi, Feegow, Gipo, Jameda, MioDottore, MyDr, TuoTempo, ZnamyLekar, ZnanyLekarz",
    "last_good_json": "{\"names\":[\"CliniCloud\",\"Docplanner Group\",\"Doctoralia\",\"Doktor Takvimi\",\"Feegow\",\"Gipo\",\"Jameda\",\"MioDottore\",\"MyDr\",\"TuoTempo\",\"ZnamyLekar\",\"ZnanyLekarz\"],\"count\":12,\"lead\":null}",
    "last_good_hash": "4ac38934",
@@ -193,8 +193,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-08T11:46:04Z",
-   "last_good_at": "2026-08-08T11:46:04Z",
+   "last_observed_at": "2026-08-09T15:36:28Z",
+   "last_good_at": "2026-08-09T15:36:28Z",
    "last_good_value": "Helping people live longer, healthier lives",
    "last_good_json": null,
    "last_good_hash": "cf2a1cf3",
@@ -211,8 +211,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-08T11:46:04Z",
-   "last_good_at": "2026-08-08T11:46:04Z",
+   "last_observed_at": "2026-08-09T15:36:28Z",
+   "last_good_at": "2026-08-09T15:36:28Z",
    "last_good_value": "Find the best physicians, search by location and specialty. Book your doctor appointment online on Doctoralia. Ask an expert.",
    "last_good_json": null,
    "last_good_hash": "916a7595",
@@ -229,8 +229,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-08T11:46:04Z",
-   "last_good_at": "2026-08-08T11:46:04Z",
+   "last_observed_at": "2026-08-09T15:36:28Z",
+   "last_good_at": "2026-08-09T15:36:28Z",
    "last_good_value": "Docplanner Group",
    "last_good_json": null,
    "last_good_hash": "0d014780",
@@ -247,7 +247,7 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-08T11:46:04Z",
+   "last_observed_at": "2026-08-09T15:36:28Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -265,8 +265,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-08T11:46:04Z",
-   "last_good_at": "2026-08-08T11:46:04Z",
+   "last_observed_at": "2026-08-09T15:36:28Z",
+   "last_good_at": "2026-08-09T15:36:28Z",
    "last_good_value": "Docplanner is creating a healthcare ecosystem that seamlessly connects patients with doctors while integrating smart tools to provide quicker, more precise diagnoses and treatments, with the goal of supporting 1 billion patient visits annually within the next decade.",
    "last_good_json": null,
    "last_good_hash": "bdbe19e4",
@@ -284,6 +284,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.docplanner.com/",
+   "fetched_at": "2026-08-09T15:36:28Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.3.0 -> 1.4.0; re-baselining",
+   "bytes": 56867,
+   "duration_ms": 798,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.docplanner.com/",

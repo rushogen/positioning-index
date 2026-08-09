@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-08T11:45:03Z",
-   "last_good_at": "2026-08-08T11:45:03Z",
+   "last_observed_at": "2026-08-09T15:36:49Z",
+   "last_good_at": "2026-08-09T15:36:49Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-08T11:45:03Z",
-   "last_good_at": "2026-08-08T11:45:03Z",
+   "last_observed_at": "2026-08-09T15:36:49Z",
+   "last_good_at": "2026-08-09T15:36:49Z",
    "last_good_value": "testimonial",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "e6a3d068",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-08T11:45:03Z",
-   "last_good_at": "2026-08-08T11:45:03Z",
+   "last_observed_at": "2026-08-09T15:36:49Z",
+   "last_good_at": "2026-08-09T15:36:49Z",
    "last_good_value": "46",
    "last_good_json": null,
    "last_good_hash": "8be38bcf",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-08T11:45:03Z",
-   "last_good_at": "2026-08-08T11:45:03Z",
+   "last_observed_at": "2026-08-09T15:36:49Z",
+   "last_good_at": "2026-08-09T15:36:49Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-08T11:45:03Z",
-   "last_good_at": "2026-08-08T11:45:03Z",
+   "last_observed_at": "2026-08-09T15:36:49Z",
+   "last_good_at": "2026-08-09T15:36:49Z",
    "last_good_value": "5",
    "last_good_json": null,
    "last_good_hash": "300ca0d0",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-08T11:45:03Z",
-   "last_good_at": "2026-08-08T11:45:03Z",
+   "last_observed_at": "2026-08-09T15:36:49Z",
+   "last_good_at": "2026-08-09T15:36:49Z",
    "last_good_value": "3",
    "last_good_json": null,
    "last_good_hash": "360caa42",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-08T11:45:03Z",
-   "last_good_at": "2026-08-08T11:45:03Z",
+   "last_observed_at": "2026-08-09T15:36:49Z",
+   "last_good_at": "2026-08-09T15:36:49Z",
    "last_good_value": "hero > testimonial > features",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":187,\"merged\":1},{\"position\":2,\"type\":\"testimonial\",\"heading\":\"Real results. End-to-end.\",\"words\":47,\"merged\":1},{\"position\":3,\"type\":\"features\",\"heading\":\"Ready to orchestrate?\",\"words\":27,\"merged\":1}]}",
    "last_good_hash": "e0331d99",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-08T11:45:03Z",
-   "last_good_at": "2026-08-08T11:45:03Z",
+   "last_observed_at": "2026-08-09T15:36:49Z",
+   "last_good_at": "2026-08-09T15:36:49Z",
    "last_good_value": 261,
    "last_good_json": null,
    "last_good_hash": "b6e2c5b8",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-08T11:45:03Z",
-   "last_good_at": "2026-08-08T11:45:03Z",
+   "last_observed_at": "2026-08-09T15:36:49Z",
+   "last_good_at": "2026-08-09T15:36:49Z",
    "last_good_value": "open platform for agentic orchestration",
    "last_good_json": null,
    "last_good_hash": "b9851acb",
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-08T11:45:03Z",
-   "last_good_at": "2026-08-08T11:45:03Z",
+   "last_observed_at": "2026-08-09T15:36:49Z",
+   "last_good_at": "2026-08-09T15:36:49Z",
    "last_good_value": "Atlassian, Barclays, BT, Deutsche Telekom, Hour Fitness, Intuit, Operate Process Instance Trace",
    "last_good_json": "{\"names\":[\"Atlassian\",\"Barclays\",\"BT\",\"Deutsche Telekom\",\"Hour Fitness\",\"Intuit\",\"Operate Process Instance Trace\"],\"count\":7,\"lead\":\"trusted by leading enterprises\\\" data-track-category=\\\"home\\\" data-track-label=\\\"bar\"}",
    "last_good_hash": "818d9014",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-08T11:45:03Z",
-   "last_good_at": "2026-08-08T11:45:03Z",
+   "last_observed_at": "2026-08-09T15:36:49Z",
+   "last_good_at": "2026-08-09T15:36:49Z",
    "last_good_value": "The open platform for agentic orchestration",
    "last_good_json": null,
    "last_good_hash": "6a836338",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-08T11:45:03Z",
-   "last_good_at": "2026-08-08T11:45:03Z",
+   "last_observed_at": "2026-08-09T15:36:49Z",
+   "last_good_at": "2026-08-09T15:36:49Z",
    "last_good_value": "Camunda is the open platform for agentic orchestration. Coordinate AI agents, people, and systems across end-to-end processes with governance and control.",
    "last_good_json": null,
    "last_good_hash": "971a402a",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-08T11:45:03Z",
-   "last_good_at": "2026-08-08T11:45:03Z",
+   "last_observed_at": "2026-08-09T15:36:49Z",
+   "last_good_at": "2026-08-09T15:36:49Z",
    "last_good_value": "Agentic Orchestration Platform | Camunda",
    "last_good_json": null,
    "last_good_hash": "747f80e5",
@@ -248,7 +248,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-08T11:47:02Z",
+   "last_observed_at": "2026-08-09T15:37:59Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -266,7 +266,7 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-08T11:47:02Z",
+   "last_observed_at": "2026-08-09T15:37:59Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -284,8 +284,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-08T11:47:02Z",
-   "last_good_at": "2026-08-08T11:47:02Z",
+   "last_observed_at": "2026-08-09T15:37:59Z",
+   "last_good_at": "2026-08-09T15:37:59Z",
    "last_good_value": "Camunda Pricing | Process Orchestration Plans | Camunda",
    "last_good_json": null,
    "last_good_hash": "05c6a3b9",
@@ -302,7 +302,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-08T11:47:02Z",
+   "last_observed_at": "2026-08-09T15:37:59Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -320,7 +320,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-08T11:47:02Z",
+   "last_observed_at": "2026-08-09T15:37:59Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -338,8 +338,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-08T11:45:03Z",
-   "last_good_at": "2026-08-08T11:45:03Z",
+   "last_observed_at": "2026-08-09T15:36:49Z",
+   "last_good_at": "2026-08-09T15:36:49Z",
    "last_good_value": "12x faster time to | 30x roi on tech | 750 enterprises | 93% reduction in cycle",
    "last_good_json": "{\"items\":[{\"claim\":\"12x faster time to\",\"kind\":\"multiplier\"},{\"claim\":\"30x roi on tech\",\"kind\":\"multiplier\"},{\"claim\":\"750 enterprises\",\"kind\":\"count\"},{\"claim\":\"93% reduction in cycle\",\"kind\":\"percent\"}],\"count\":4}",
    "last_good_hash": "5f715940",
@@ -356,8 +356,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-08T11:45:03Z",
-   "last_good_at": "2026-08-08T11:45:03Z",
+   "last_observed_at": "2026-08-09T15:36:49Z",
+   "last_good_at": "2026-08-09T15:36:49Z",
    "last_good_value": "Orchestrate AI agents, people, and systems across end-to-end business processes — with the trust, governance, and control that mission-critical operations demand.",
    "last_good_json": null,
    "last_good_hash": "d0b28dc0",
@@ -375,6 +375,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://camunda.com/pricing/",
+   "fetched_at": "2026-08-09T15:37:59Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.3.0 -> 1.4.0; re-baselining",
+   "bytes": 250062,
+   "duration_ms": 310,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://camunda.com/",
+   "fetched_at": "2026-08-09T15:36:49Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.3.0 -> 1.4.0; re-baselining",
+   "bytes": 112448,
+   "duration_ms": 337,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
   {
    "kind": "pricing",
    "url": "https://camunda.com/pricing/",

@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T14:56:50Z",
-   "last_good_at": "2026-08-09T14:56:50Z",
+   "last_observed_at": "2026-08-09T15:35:22Z",
+   "last_good_at": "2026-08-09T15:35:22Z",
    "last_good_value": "2",
    "last_good_json": null,
    "last_good_hash": "370cabd5",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T14:56:50Z",
-   "last_good_at": "2026-08-09T14:56:50Z",
+   "last_observed_at": "2026-08-09T15:35:22Z",
+   "last_good_at": "2026-08-09T15:35:22Z",
    "last_good_value": "proof",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":true,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "8cdc0989",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T14:56:50Z",
-   "last_good_at": "2026-08-09T14:56:50Z",
+   "last_observed_at": "2026-08-09T15:35:22Z",
+   "last_good_at": "2026-08-09T15:35:22Z",
    "last_good_value": "64",
    "last_good_json": null,
    "last_good_hash": "19e8e887",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T14:56:50Z",
-   "last_good_at": "2026-08-09T14:56:50Z",
+   "last_observed_at": "2026-08-09T15:35:22Z",
+   "last_good_at": "2026-08-09T15:35:22Z",
    "last_good_value": "28",
    "last_good_json": null,
    "last_good_hash": "95f2a617",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T14:56:50Z",
-   "last_good_at": "2026-08-09T14:56:50Z",
+   "last_observed_at": "2026-08-09T15:35:22Z",
+   "last_good_at": "2026-08-09T15:35:22Z",
    "last_good_value": "101",
    "last_good_json": null,
    "last_good_hash": "6833d62f",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T14:56:50Z",
-   "last_good_at": "2026-08-09T14:56:50Z",
+   "last_observed_at": "2026-08-09T15:35:22Z",
+   "last_good_at": "2026-08-09T15:35:22Z",
    "last_good_value": "2",
    "last_good_json": null,
    "last_good_hash": "370cabd5",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T14:56:50Z",
-   "last_good_at": "2026-08-09T14:56:50Z",
+   "last_observed_at": "2026-08-09T15:35:22Z",
+   "last_good_at": "2026-08-09T15:35:22Z",
    "last_good_value": "hero > proof",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":39,\"merged\":1},{\"position\":2,\"type\":\"proof\",\"heading\":\"Validated by analysts, customers, and the market.\",\"words\":49,\"merged\":1}]}",
    "last_good_hash": "5a327461",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T14:56:50Z",
-   "last_good_at": "2026-08-09T14:56:50Z",
+   "last_observed_at": "2026-08-09T15:35:22Z",
+   "last_good_at": "2026-08-09T15:35:22Z",
    "last_good_value": 88,
    "last_good_json": null,
    "last_good_hash": "9a01b6ed",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T14:56:50Z",
-   "last_good_at": "2026-08-09T14:56:50Z",
+   "last_observed_at": "2026-08-09T15:35:22Z",
+   "last_good_at": "2026-08-09T15:35:22Z",
    "last_good_value": "execution platform for enterprise ai",
    "last_good_json": null,
    "last_good_hash": "c3b77d6c",
@@ -176,7 +176,7 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T14:56:50Z",
+   "last_observed_at": "2026-08-09T15:35:22Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T14:56:50Z",
-   "last_good_at": "2026-08-09T14:56:50Z",
+   "last_observed_at": "2026-08-09T15:35:22Z",
+   "last_good_at": "2026-08-09T15:35:22Z",
    "last_good_value": "The Control and Execution Platform for Enterprise AI",
    "last_good_json": null,
    "last_good_hash": "b1087e39",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T14:56:50Z",
-   "last_good_at": "2026-08-09T14:56:50Z",
+   "last_observed_at": "2026-08-09T15:35:22Z",
+   "last_good_at": "2026-08-09T15:35:22Z",
    "last_good_value": "Govern every AI agent and execute the work across 14,000+ apps. Built on the #1 iPaaS, trusted by thousands.",
    "last_good_json": null,
    "last_good_hash": "394ab350",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T14:56:50Z",
-   "last_good_at": "2026-08-09T14:56:50Z",
+   "last_observed_at": "2026-08-09T15:35:22Z",
+   "last_good_at": "2026-08-09T15:35:22Z",
    "last_good_value": "The Control and Execution Platform for Enterprise AI | Workato",
    "last_good_json": null,
    "last_good_hash": "b1e250d0",
@@ -248,7 +248,7 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T14:56:50Z",
+   "last_observed_at": "2026-08-09T15:35:22Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -266,8 +266,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T14:56:50Z",
-   "last_good_at": "2026-08-09T14:56:50Z",
+   "last_observed_at": "2026-08-09T15:35:22Z",
+   "last_good_at": "2026-08-09T15:35:22Z",
    "last_good_value": "Trust your AI to do the work that runs your business. Governed, reliable, and production-grade.",
    "last_good_json": null,
    "last_good_hash": "5a62e23c",
@@ -285,6 +285,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.workato.com/",
+   "fetched_at": "2026-08-09T15:35:22Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.3.0 -> 1.4.0; re-baselining",
+   "bytes": 408954,
+   "duration_ms": 291,
+   "signals_found": 13,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.workato.com/",

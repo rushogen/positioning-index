@@ -13,8 +13,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-08T11:46:51Z",
-   "last_good_at": "2026-08-08T11:46:51Z",
+   "last_observed_at": "2026-08-09T15:35:35Z",
+   "last_good_at": "2026-08-09T15:35:35Z",
    "last_good_value": "5",
    "last_good_json": null,
    "last_good_hash": "300ca0d0",
@@ -31,8 +31,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-08T11:46:51Z",
-   "last_good_at": "2026-08-08T11:46:51Z",
+   "last_observed_at": "2026-08-09T15:35:35Z",
+   "last_good_at": "2026-08-09T15:35:35Z",
    "last_good_value": "logo_wall, proof",
    "last_good_json": "{\"present\":{\"logo_wall\":true,\"proof\":true,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "44fc8857",
@@ -49,8 +49,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-08T11:46:51Z",
-   "last_good_at": "2026-08-08T11:46:51Z",
+   "last_observed_at": "2026-08-09T15:35:35Z",
+   "last_good_at": "2026-08-09T15:35:35Z",
    "last_good_value": "17",
    "last_good_json": null,
    "last_good_hash": "1aeb28b1",
@@ -67,8 +67,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-08T11:46:51Z",
-   "last_good_at": "2026-08-08T11:46:51Z",
+   "last_observed_at": "2026-08-09T15:35:35Z",
+   "last_good_at": "2026-08-09T15:35:35Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -85,7 +85,7 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-08T11:46:51Z",
+   "last_observed_at": "2026-08-09T15:35:35Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -103,8 +103,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-08T11:46:51Z",
-   "last_good_at": "2026-08-08T11:46:51Z",
+   "last_observed_at": "2026-08-09T15:35:35Z",
+   "last_good_at": "2026-08-09T15:35:35Z",
    "last_good_value": "6",
    "last_good_json": null,
    "last_good_hash": "330ca589",
@@ -121,8 +121,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-08T11:46:51Z",
-   "last_good_at": "2026-08-08T11:46:51Z",
+   "last_observed_at": "2026-08-09T15:35:35Z",
+   "last_good_at": "2026-08-09T15:35:35Z",
    "last_good_value": "hero > security > logos > features > security > proof",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":28,\"merged\":1},{\"position\":2,\"type\":\"security\",\"heading\":\"Solutions for every stage of your journey\",\"words\":140,\"merged\":1},{\"position\":3,\"type\":\"logos\",\"heading\":\"Join other industry innovators\",\"words\":7,\"merged\":1},{\"position\":4,\"type\":\"features\",\"heading\":\"Secure, modernize and accelerate your IT stack\",\"words\":46,\"merged\":1},{\"position\":5,\"type\":\"security\",\"heading\":\"The future of open source, today\",\"words\":63,\"merged\":1},{\"position\":6,\"type\":\"proof\",\"heading\":\"60%\",\"words\":57,\"merged\":1}]}",
    "last_good_hash": "b579a3b2",
@@ -139,8 +139,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-08T11:46:51Z",
-   "last_good_at": "2026-08-08T11:46:51Z",
+   "last_observed_at": "2026-08-09T15:35:35Z",
+   "last_good_at": "2026-08-09T15:35:35Z",
    "last_good_value": 350,
    "last_good_json": null,
    "last_good_hash": "435cb9ff",
@@ -157,8 +157,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-08T11:46:51Z",
-   "last_good_at": "2026-08-08T11:46:51Z",
+   "last_observed_at": "2026-08-09T15:35:35Z",
+   "last_good_at": "2026-08-09T15:35:35Z",
    "last_good_value": "open source software",
    "last_good_json": null,
    "last_good_hash": "f25d33c3",
@@ -175,8 +175,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-08T11:46:51Z",
-   "last_good_at": "2026-08-08T11:46:51Z",
+   "last_observed_at": "2026-08-09T15:35:35Z",
+   "last_good_at": "2026-08-09T15:35:35Z",
    "last_good_value": "7logos Img, Bsky, Fn Fbook Ico, Fn Link Ico, X1 1, Youtube",
    "last_good_json": "{\"names\":[\"7logos Img\",\"Bsky\",\"Fn Fbook Ico\",\"Fn Link Ico\",\"X1 1\",\"Youtube\"],\"count\":6,\"lead\":\"powering secure innovation\"}",
    "last_good_hash": "8d4da8ae",
@@ -193,8 +193,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-08T11:46:51Z",
-   "last_good_at": "2026-08-08T11:46:51Z",
+   "last_observed_at": "2026-08-09T15:35:35Z",
+   "last_good_at": "2026-08-09T15:35:35Z",
    "last_good_value": "Exit VMware. Run on SUSE .",
    "last_good_json": null,
    "last_good_hash": "2a88e2ff",
@@ -211,8 +211,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-08T11:46:51Z",
-   "last_good_at": "2026-08-08T11:46:51Z",
+   "last_observed_at": "2026-08-09T15:35:35Z",
+   "last_good_at": "2026-08-09T15:35:35Z",
    "last_good_value": "Modernize your infrastructure with SUSE Linux Enterprise servers, cloud technology for IaaS, and SUSE's software-defined storage.",
    "last_good_json": null,
    "last_good_hash": "30bf439a",
@@ -229,8 +229,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-08T11:46:51Z",
-   "last_good_at": "2026-08-08T11:46:51Z",
+   "last_observed_at": "2026-08-09T15:35:35Z",
+   "last_good_at": "2026-08-09T15:35:35Z",
    "last_good_value": "Open Source Software Solutions for Enterprise Servers & Cloud | SUSE",
    "last_good_json": null,
    "last_good_hash": "db3d9f7c",
@@ -247,8 +247,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-08T11:46:51Z",
-   "last_good_at": "2026-08-08T11:46:51Z",
+   "last_observed_at": "2026-08-09T15:35:35Z",
+   "last_good_at": "2026-08-09T15:35:35Z",
    "last_good_value": "fortune 500",
    "last_good_json": "{\"items\":[{\"claim\":\"fortune 500\",\"kind\":\"rank\"}],\"count\":1}",
    "last_good_hash": "042a1825",
@@ -265,8 +265,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-08T11:46:51Z",
-   "last_good_at": "2026-08-08T11:46:51Z",
+   "last_observed_at": "2026-08-09T15:35:35Z",
+   "last_good_at": "2026-08-09T15:35:35Z",
    "last_good_value": "Automate migration with Coriolis and SUSE Virtualization. No manual rebuilds, no downtime, and a path to a modern, enterprise platform.",
    "last_good_json": null,
    "last_good_hash": "9f05c388",
@@ -284,6 +284,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.suse.com/",
+   "fetched_at": "2026-08-09T15:35:35Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.3.0 -> 1.4.0; re-baselining",
+   "bytes": 159438,
+   "duration_ms": 425,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.suse.com/",

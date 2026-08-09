@@ -15,8 +15,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T14:56:52Z",
-   "last_good_at": "2026-08-09T14:56:52Z",
+   "last_observed_at": "2026-08-09T15:35:13Z",
+   "last_good_at": "2026-08-09T15:35:13Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -33,8 +33,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T14:56:52Z",
-   "last_good_at": "2026-08-09T14:56:52Z",
+   "last_observed_at": "2026-08-09T15:35:13Z",
+   "last_good_at": "2026-08-09T15:35:13Z",
    "last_good_value": "none",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "ada7afdb",
@@ -51,8 +51,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T14:56:52Z",
-   "last_good_at": "2026-08-09T14:56:52Z",
+   "last_observed_at": "2026-08-09T15:35:13Z",
+   "last_good_at": "2026-08-09T15:35:13Z",
    "last_good_value": "98",
    "last_good_json": null,
    "last_good_hash": "13fea564",
@@ -69,8 +69,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T14:56:52Z",
-   "last_good_at": "2026-08-09T14:56:52Z",
+   "last_observed_at": "2026-08-09T15:35:13Z",
+   "last_good_at": "2026-08-09T15:35:13Z",
    "last_good_value": "9",
    "last_good_json": null,
    "last_good_hash": "3c0cb3b4",
@@ -87,8 +87,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T14:56:52Z",
-   "last_good_at": "2026-08-09T14:56:52Z",
+   "last_observed_at": "2026-08-09T15:35:13Z",
+   "last_good_at": "2026-08-09T15:35:13Z",
    "last_good_value": "2",
    "last_good_json": null,
    "last_good_hash": "370cabd5",
@@ -105,8 +105,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T14:56:52Z",
-   "last_good_at": "2026-08-09T14:56:52Z",
+   "last_observed_at": "2026-08-09T15:35:13Z",
+   "last_good_at": "2026-08-09T15:35:13Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -123,8 +123,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T14:56:52Z",
-   "last_good_at": "2026-08-09T14:56:52Z",
+   "last_observed_at": "2026-08-09T15:35:13Z",
+   "last_good_at": "2026-08-09T15:35:13Z",
    "last_good_value": "hero",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":64,\"merged\":1}]}",
    "last_good_hash": "1b3b5c59",
@@ -141,8 +141,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T14:56:52Z",
-   "last_good_at": "2026-08-09T14:56:52Z",
+   "last_observed_at": "2026-08-09T15:35:13Z",
+   "last_good_at": "2026-08-09T15:35:13Z",
    "last_good_value": 64,
    "last_good_json": null,
    "last_good_hash": "19e8e887",
@@ -159,8 +159,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T14:56:52Z",
-   "last_good_at": "2026-08-09T14:56:52Z",
+   "last_observed_at": "2026-08-09T15:35:13Z",
+   "last_good_at": "2026-08-09T15:35:13Z",
    "last_good_value": "ai-first work platform",
    "last_good_json": null,
    "last_good_hash": "e767bed4",
@@ -177,8 +177,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T14:56:52Z",
-   "last_good_at": "2026-08-09T14:56:52Z",
+   "last_observed_at": "2026-08-09T15:35:13Z",
+   "last_good_at": "2026-08-09T15:35:13Z",
    "last_good_value": "Capital One, ExxonMobil, G2, Gartner Peer Insights, Moffitt, The York Times, Trust Radius, Walmart, Werner",
    "last_good_json": "{\"names\":[\"Capital One\",\"ExxonMobil\",\"G2\",\"Gartner Peer Insights\",\"Moffitt\",\"The York Times\",\"Trust Radius\",\"Walmart\",\"Werner\"],\"count\":9,\"lead\":\"Trusted by millions. Built for you. <div class=\"}",
    "last_good_hash": "92a0db75",
@@ -195,8 +195,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T14:56:52Z",
-   "last_good_at": "2026-08-09T14:56:52Z",
+   "last_observed_at": "2026-08-09T15:35:13Z",
+   "last_good_at": "2026-08-09T15:35:13Z",
    "last_good_value": "Find out what's possible when work connects",
    "last_good_json": null,
    "last_good_hash": "044fe8cf",
@@ -213,8 +213,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T14:56:52Z",
-   "last_good_at": "2026-08-09T14:56:52Z",
+   "last_observed_at": "2026-08-09T15:35:13Z",
+   "last_good_at": "2026-08-09T15:35:13Z",
    "last_good_value": "Modernize workflows with Zoom's trusted collaboration tools: including video meetings, Zoom Chat, VoIP phone, webinars, whiteboard, contact center, and events.",
    "last_good_json": null,
    "last_good_hash": "2d0729de",
@@ -231,8 +231,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T14:56:52Z",
-   "last_good_at": "2026-08-09T14:56:52Z",
+   "last_observed_at": "2026-08-09T15:35:13Z",
+   "last_good_at": "2026-08-09T15:35:13Z",
    "last_good_value": "One platform to connect | Zoom",
    "last_good_json": null,
    "last_good_hash": "e787569c",
@@ -249,7 +249,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T15:11:52Z",
+   "last_observed_at": "2026-08-09T15:37:28Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -267,7 +267,7 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T15:11:52Z",
+   "last_observed_at": "2026-08-09T15:37:28Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -285,8 +285,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T15:11:52Z",
-   "last_good_at": "2026-08-09T15:11:52Z",
+   "last_observed_at": "2026-08-09T15:37:28Z",
+   "last_good_at": "2026-08-09T15:37:28Z",
    "last_good_value": "Zoom Workplace Pricing - Zoom",
    "last_good_json": null,
    "last_good_hash": "d0edb772",
@@ -303,7 +303,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T15:11:52Z",
+   "last_observed_at": "2026-08-09T15:37:28Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -321,7 +321,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T15:11:52Z",
+   "last_observed_at": "2026-08-09T15:37:28Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -339,8 +339,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T14:56:52Z",
-   "last_good_at": "2026-08-09T14:56:52Z",
+   "last_observed_at": "2026-08-09T15:35:13Z",
+   "last_good_at": "2026-08-09T15:35:13Z",
    "last_good_value": "90% call abandonment rates",
    "last_good_json": "{\"items\":[{\"claim\":\"90% call abandonment rates\",\"kind\":\"percent-trailing\"}],\"count\":1}",
    "last_good_hash": "0c149cc3",
@@ -357,8 +357,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T14:56:52Z",
-   "last_good_at": "2026-08-09T14:56:52Z",
+   "last_observed_at": "2026-08-09T15:35:13Z",
+   "last_good_at": "2026-08-09T15:35:13Z",
    "last_good_value": "Bridge the gap between talking and doing with the AI-first work platform built for you.",
    "last_good_json": null,
    "last_good_hash": "6d7de4f3",
@@ -376,6 +376,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://zoom.us/pricing",
+   "fetched_at": "2026-08-09T15:37:28Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.3.0 -> 1.4.0; re-baselining",
+   "bytes": 221266,
+   "duration_ms": 565,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://www.zoom.com/",
+   "fetched_at": "2026-08-09T15:35:13Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.3.0 -> 1.4.0; re-baselining",
+   "bytes": 263390,
+   "duration_ms": 220,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.zoom.com/",

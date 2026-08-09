@@ -15,8 +15,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T14:56:47Z",
-   "last_good_at": "2026-08-09T14:56:47Z",
+   "last_observed_at": "2026-08-09T15:37:11Z",
+   "last_good_at": "2026-08-09T15:37:11Z",
    "last_good_value": "14",
    "last_good_json": null,
    "last_good_hash": "17eb23f8",
@@ -33,8 +33,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T14:56:47Z",
-   "last_good_at": "2026-08-09T14:56:47Z",
+   "last_observed_at": "2026-08-09T15:37:11Z",
+   "last_good_at": "2026-08-09T15:37:11Z",
    "last_good_value": "logo_wall, integrations",
    "last_good_json": "{\"present\":{\"logo_wall\":true,\"proof\":false,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":true,\"media\":false}}",
    "last_good_hash": "c90e60c4",
@@ -51,8 +51,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T14:56:47Z",
-   "last_good_at": "2026-08-09T14:56:47Z",
+   "last_observed_at": "2026-08-09T15:37:11Z",
+   "last_good_at": "2026-08-09T15:37:11Z",
    "last_good_value": "37",
    "last_good_json": null,
    "last_good_hash": "8af0562f",
@@ -69,8 +69,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T14:56:47Z",
-   "last_good_at": "2026-08-09T14:56:47Z",
+   "last_observed_at": "2026-08-09T15:37:11Z",
+   "last_good_at": "2026-08-09T15:37:11Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -87,8 +87,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T14:56:47Z",
-   "last_good_at": "2026-08-09T14:56:47Z",
+   "last_observed_at": "2026-08-09T15:37:11Z",
+   "last_good_at": "2026-08-09T15:37:11Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -105,8 +105,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T14:56:47Z",
-   "last_good_at": "2026-08-09T14:56:47Z",
+   "last_observed_at": "2026-08-09T15:37:11Z",
+   "last_good_at": "2026-08-09T15:37:11Z",
    "last_good_value": "6",
    "last_good_json": null,
    "last_good_hash": "330ca589",
@@ -123,8 +123,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T14:56:47Z",
-   "last_good_at": "2026-08-09T14:56:47Z",
+   "last_observed_at": "2026-08-09T15:37:11Z",
+   "last_good_at": "2026-08-09T15:37:11Z",
    "last_good_value": "hero > features > integrations > logos > cta > features",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":29,\"merged\":1},{\"position\":2,\"type\":\"features\",\"heading\":\"Proactive physical security, powered by AI\",\"words\":92,\"merged\":1},{\"position\":3,\"type\":\"integrations\",\"heading\":\"Why security and IT leaders choose Verkada\",\"words\":58,\"merged\":1},{\"position\":4,\"type\":\"logos\",\"heading\":\"More than 30,000 organizations worldwide trust Verkada\",\"words\":60,\"merged\":1},{\"position\":5,\"type\":\"cta\",\"heading\":\"Modern protection for any space\",\"words\":27,\"merged\":2},{\"position\":6,\"type\":\"features\",\"heading\":\"Try Verkada for free\",\"words\":20,\"merged\":1}]}",
    "last_good_hash": "3eaf2b82",
@@ -141,8 +141,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T14:56:47Z",
-   "last_good_at": "2026-08-09T14:56:47Z",
+   "last_observed_at": "2026-08-09T15:37:11Z",
+   "last_good_at": "2026-08-09T15:37:11Z",
    "last_good_value": 311,
    "last_good_json": null,
    "last_good_hash": "ca530128",
@@ -159,8 +159,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T14:56:47Z",
-   "last_good_at": "2026-08-09T14:56:47Z",
+   "last_observed_at": "2026-08-09T15:37:11Z",
+   "last_good_at": "2026-08-09T15:37:11Z",
    "last_good_value": "one platform",
    "last_good_json": null,
    "last_good_hash": "f780271a",
@@ -177,8 +177,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T14:56:47Z",
-   "last_good_at": "2026-08-09T14:56:47Z",
+   "last_observed_at": "2026-08-09T15:37:11Z",
+   "last_good_at": "2026-08-09T15:37:11Z",
    "last_good_value": "Canada Goose, City Of Las Vegas, G2, La Rams",
    "last_good_json": "{\"names\":[\"Canada Goose\",\"City Of Las Vegas\",\"G2\",\"La Rams\"],\"count\":4,\"lead\":null}",
    "last_good_hash": "74b356b5",
@@ -195,8 +195,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T14:56:47Z",
-   "last_good_at": "2026-08-09T14:56:47Z",
+   "last_observed_at": "2026-08-09T15:37:11Z",
+   "last_good_at": "2026-08-09T15:37:11Z",
    "last_good_value": "VerkadaOne is back",
    "last_good_json": null,
    "last_good_hash": "6db178d8",
@@ -213,8 +213,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T14:56:47Z",
-   "last_good_at": "2026-08-09T14:56:47Z",
+   "last_observed_at": "2026-08-09T15:37:11Z",
+   "last_good_at": "2026-08-09T15:37:11Z",
    "last_good_value": "Modern, cloud-managed security cameras, access control, and smart building solutions in a single, fully integrated security system. Free 30-day trial. Easy setup.",
    "last_good_json": null,
    "last_good_hash": "2ac5d69b",
@@ -231,8 +231,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T14:56:47Z",
-   "last_good_at": "2026-08-09T14:56:47Z",
+   "last_observed_at": "2026-08-09T15:37:11Z",
+   "last_good_at": "2026-08-09T15:37:11Z",
    "last_good_value": "Security Systems for the Modern Enterprise | Verkada",
    "last_good_json": null,
    "last_good_hash": "00e9258d",
@@ -249,7 +249,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T15:11:46Z",
+   "last_observed_at": "2026-08-09T15:34:39Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -267,7 +267,7 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T15:11:46Z",
+   "last_observed_at": "2026-08-09T15:34:39Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -285,8 +285,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T15:11:46Z",
-   "last_good_at": "2026-08-09T15:11:46Z",
+   "last_observed_at": "2026-08-09T15:34:39Z",
+   "last_good_at": "2026-08-09T15:34:39Z",
    "last_good_value": "Verkada Pricing | Cloud-Based Physical Security Solutions",
    "last_good_json": null,
    "last_good_hash": "280b0545",
@@ -303,7 +303,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T15:11:46Z",
+   "last_observed_at": "2026-08-09T15:34:39Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -321,7 +321,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T15:11:46Z",
+   "last_observed_at": "2026-08-09T15:34:39Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -339,8 +339,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T14:56:47Z",
-   "last_good_at": "2026-08-09T14:56:47Z",
+   "last_observed_at": "2026-08-09T15:37:11Z",
+   "last_good_at": "2026-08-09T15:37:11Z",
    "last_good_value": "24 hours | 30,000 organizations | fortune 500",
    "last_good_json": "{\"items\":[{\"claim\":\"24 hours\",\"kind\":\"count\"},{\"claim\":\"30,000 organizations\",\"kind\":\"count\"},{\"claim\":\"fortune 500\",\"kind\":\"rank\"}],\"count\":3}",
    "last_good_hash": "1d00baa9",
@@ -357,8 +357,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T14:56:47Z",
-   "last_good_at": "2026-08-09T14:56:47Z",
+   "last_observed_at": "2026-08-09T15:37:11Z",
+   "last_good_at": "2026-08-09T15:37:11Z",
    "last_good_value": "Join the leaders redefining physical security with real-world AI. One platform. One community. One unforgettable experience.",
    "last_good_json": null,
    "last_good_hash": "35b1a6d3",
@@ -376,6 +376,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.verkada.com/",
+   "fetched_at": "2026-08-09T15:37:11Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.3.0 -> 1.4.0; re-baselining",
+   "bytes": 333603,
+   "duration_ms": 242,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
+  {
+   "kind": "pricing",
+   "url": "https://www.verkada.com/pricing/",
+   "fetched_at": "2026-08-09T15:34:39Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.3.0 -> 1.4.0; re-baselining",
+   "bytes": 1499220,
+   "duration_ms": 3260,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
   {
    "kind": "home",
    "url": "https://www.verkada.com/",

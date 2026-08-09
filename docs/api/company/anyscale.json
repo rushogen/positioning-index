@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T14:55:22Z",
-   "last_good_at": "2026-08-09T14:55:22Z",
+   "last_observed_at": "2026-08-09T15:34:50Z",
+   "last_good_at": "2026-08-09T15:34:50Z",
    "last_good_value": "8",
    "last_good_json": null,
    "last_good_hash": "3d0cb547",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T14:55:22Z",
-   "last_good_at": "2026-08-09T14:55:22Z",
+   "last_observed_at": "2026-08-09T15:34:50Z",
+   "last_good_at": "2026-08-09T15:34:50Z",
    "last_good_value": "logo_wall, testimonial",
    "last_good_json": "{\"present\":{\"logo_wall\":true,\"proof\":false,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "97603fa2",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T14:55:22Z",
-   "last_good_at": "2026-08-09T14:55:22Z",
+   "last_observed_at": "2026-08-09T15:34:50Z",
+   "last_good_at": "2026-08-09T15:34:50Z",
    "last_good_value": "25",
    "last_good_json": null,
    "last_good_hash": "88f291a0",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T14:55:22Z",
-   "last_good_at": "2026-08-09T14:55:22Z",
+   "last_observed_at": "2026-08-09T15:34:50Z",
+   "last_good_at": "2026-08-09T15:34:50Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T14:55:22Z",
-   "last_good_at": "2026-08-09T14:55:22Z",
+   "last_observed_at": "2026-08-09T15:34:50Z",
+   "last_good_at": "2026-08-09T15:34:50Z",
    "last_good_value": "6",
    "last_good_json": null,
    "last_good_hash": "330ca589",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T14:55:22Z",
-   "last_good_at": "2026-08-09T14:55:22Z",
+   "last_observed_at": "2026-08-09T15:34:50Z",
+   "last_good_at": "2026-08-09T15:34:50Z",
    "last_good_value": "6",
    "last_good_json": null,
    "last_good_hash": "330ca589",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T14:55:22Z",
-   "last_good_at": "2026-08-09T14:55:22Z",
+   "last_observed_at": "2026-08-09T15:34:50Z",
+   "last_good_at": "2026-08-09T15:34:50Z",
    "last_good_value": "hero > testimonial > features > testimonial > logos > testimonial",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":39,\"merged\":1},{\"position\":2,\"type\":\"testimonial\",\"heading\":\"Anyscale powers the data-intensive workloads required to build and scale Foundation Models.\",\"words\":953,\"merged\":1},{\"position\":3,\"type\":\"features\",\"heading\":\"Anyscale is Built on Ray by the Creators of Ray\",\"words\":206,\"merged\":1},{\"position\":4,\"type\":\"testimonial\",\"heading\":\"AI builders choose Anyscale\",\"words\":28,\"merged\":1},{\"position\":5,\"type\":\"logos\",\"heading\":\"13x\",\"words\":4,\"merged\":1},{\"position\":6,\"type\":\"testimonial\",\"heading\":\"4x\",\"words\":90,\"merged\":1}]}",
    "last_good_hash": "89d60283",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T14:55:22Z",
-   "last_good_at": "2026-08-09T14:55:22Z",
+   "last_observed_at": "2026-08-09T15:34:50Z",
+   "last_good_at": "2026-08-09T15:34:50Z",
    "last_good_value": 1320,
    "last_good_json": null,
    "last_good_hash": "ea62f217",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T14:55:22Z",
-   "last_good_at": "2026-08-09T14:55:22Z",
+   "last_observed_at": "2026-08-09T15:34:50Z",
+   "last_good_at": "2026-08-09T15:34:50Z",
    "last_good_value": "adopted ai compute engine",
    "last_good_json": null,
    "last_good_hash": "9d33dc8b",
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T14:55:22Z",
-   "last_good_at": "2026-08-09T14:55:22Z",
+   "last_observed_at": "2026-08-09T15:34:50Z",
+   "last_good_at": "2026-08-09T15:34:50Z",
    "last_good_value": "attentive, Bonsai, Character ai, grab, Physical Intelligence, Recursion, TwelveLabs",
    "last_good_json": "{\"names\":[\"attentive\",\"Bonsai\",\"Character ai\",\"grab\",\"Physical Intelligence\",\"Recursion\",\"TwelveLabs\"],\"count\":7,\"lead\":null}",
    "last_good_hash": "5b43dc77",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T14:55:22Z",
-   "last_good_at": "2026-08-09T14:55:22Z",
+   "last_observed_at": "2026-08-09T15:34:50Z",
+   "last_good_at": "2026-08-09T15:34:50Z",
    "last_good_value": "Foundation Model builders scale distributed training multimodal data curation embedding generation post-training workloads on Anyscale",
    "last_good_json": null,
    "last_good_hash": "eea58792",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T14:55:22Z",
-   "last_good_at": "2026-08-09T14:55:22Z",
+   "last_observed_at": "2026-08-09T15:34:50Z",
+   "last_good_at": "2026-08-09T15:34:50Z",
    "last_good_value": "Powered by Ray, Anyscale helps AI builders run data-intensive workloads to build and deploy Foundation Models and AI at scale on any cloud.",
    "last_good_json": null,
    "last_good_hash": "e47d2ebf",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T14:55:22Z",
-   "last_good_at": "2026-08-09T14:55:22Z",
+   "last_observed_at": "2026-08-09T15:34:50Z",
+   "last_good_at": "2026-08-09T15:34:50Z",
    "last_good_value": "Production-scale AI with Ray | Anyscale",
    "last_good_json": null,
    "last_good_hash": "dd783c1d",
@@ -248,8 +248,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T14:55:22Z",
-   "last_good_at": "2026-08-09T14:55:22Z",
+   "last_observed_at": "2026-08-09T15:34:50Z",
+   "last_good_at": "2026-08-09T15:34:50Z",
    "last_good_value": "$100 credit foundation model | $100 credit get started | 13x faster model loading | 4x faster experimentation for",
    "last_good_json": "{\"items\":[{\"claim\":\"$100 credit foundation model\",\"kind\":\"money\"},{\"claim\":\"$100 credit get started\",\"kind\":\"money\"},{\"claim\":\"13x faster model loading\",\"kind\":\"multiplier\"},{\"claim\":\"4x faster experimentation for\",\"kind\":\"multiplier\"}],\"count\":4}",
    "last_good_hash": "f90d4b92",
@@ -266,8 +266,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T14:55:22Z",
-   "last_good_at": "2026-08-09T14:55:22Z",
+   "last_observed_at": "2026-08-09T15:34:50Z",
+   "last_good_at": "2026-08-09T15:34:50Z",
    "last_good_value": "Powered by Ray, the world’s most widely adopted AI compute engine.",
    "last_good_json": null,
    "last_good_hash": "155ba45e",
@@ -285,6 +285,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.anyscale.com/",
+   "fetched_at": "2026-08-09T15:34:50Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.3.0 -> 1.4.0; re-baselining",
+   "bytes": 268389,
+   "duration_ms": 208,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.anyscale.com/",

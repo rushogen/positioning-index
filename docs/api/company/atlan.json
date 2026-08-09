@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T14:40:24Z",
-   "last_good_at": "2026-08-09T14:40:24Z",
+   "last_observed_at": "2026-08-09T15:35:07Z",
+   "last_good_at": "2026-08-09T15:35:07Z",
    "last_good_value": "3",
    "last_good_json": null,
    "last_good_hash": "360caa42",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T14:40:24Z",
-   "last_good_at": "2026-08-09T14:40:24Z",
+   "last_observed_at": "2026-08-09T15:35:07Z",
+   "last_good_at": "2026-08-09T15:35:07Z",
    "last_good_value": "logo_wall, testimonial, integrations",
    "last_good_json": "{\"present\":{\"logo_wall\":true,\"proof\":false,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":true,\"media\":false}}",
    "last_good_hash": "8f184749",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T14:40:24Z",
-   "last_good_at": "2026-08-09T14:40:24Z",
+   "last_observed_at": "2026-08-09T15:35:07Z",
+   "last_good_at": "2026-08-09T15:35:07Z",
    "last_good_value": "47",
    "last_good_json": null,
    "last_good_hash": "8ae38a3c",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T14:40:24Z",
-   "last_good_at": "2026-08-09T14:40:24Z",
+   "last_observed_at": "2026-08-09T15:35:07Z",
+   "last_good_at": "2026-08-09T15:35:07Z",
    "last_good_value": "18",
    "last_good_json": null,
    "last_good_hash": "13eb1dac",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T14:40:24Z",
-   "last_good_at": "2026-08-09T14:40:24Z",
+   "last_observed_at": "2026-08-09T15:35:07Z",
+   "last_good_at": "2026-08-09T15:35:07Z",
    "last_good_value": "24",
    "last_good_json": null,
    "last_good_hash": "89f29333",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T14:40:24Z",
-   "last_good_at": "2026-08-09T14:40:24Z",
+   "last_observed_at": "2026-08-09T15:35:07Z",
+   "last_good_at": "2026-08-09T15:35:07Z",
    "last_good_value": "9",
    "last_good_json": null,
    "last_good_hash": "3c0cb3b4",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T14:40:24Z",
-   "last_good_at": "2026-08-09T14:40:24Z",
+   "last_observed_at": "2026-08-09T15:35:07Z",
+   "last_good_at": "2026-08-09T15:35:07Z",
    "last_good_value": "hero > logos > testimonial > logos > integrations > testimonial > features > security > cta",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":131,\"merged\":1},{\"position\":2,\"type\":\"logos\",\"heading\":\"Trusted by AI-forward enterprises\",\"words\":17,\"merged\":1},{\"position\":3,\"type\":\"testimonial\",\"heading\":\"Enterprise AI fails not because of the model, but because of missing context\",\"words\":167,\"merged\":2},{\"position\":4,\"type\":\"logos\",\"heading\":\"The only proven way to create context\",\"words\":22,\"merged\":1},{\"position\":5,\"type\":\"integrations\",\"heading\":\"Context doesn't come from a prompt. It comes from a pipeline.\",\"words\":386,\"merged\":1},{\"position\":6,\"type\":\"testimonial\",\"heading\":\"A leader across every context category\",\"words\":153,\"merged\":1},{\"position\":7,\"type\":\"features\",\"heading\":\"Context will make AI worthy of humanity’s most important moments\",\"words\":122,\"merged\":1},{\"position\":8,\"type\":\"security\",\"heading\":\"Frequently asked questions\",\"words\":866,\"merged\":1},{\"position\":9,\"type\":\"cta\",\"heading\":\"Bridge the context gap. Ship AI that works.\",\"words\":15,\"merged\":1}]}",
    "last_good_hash": "9ef4bedf",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T14:40:24Z",
-   "last_good_at": "2026-08-09T14:40:24Z",
+   "last_observed_at": "2026-08-09T15:35:07Z",
+   "last_good_at": "2026-08-09T15:35:07Z",
    "last_good_value": 1986,
    "last_good_json": null,
    "last_good_hash": "17475849",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T14:40:24Z",
-   "last_good_at": "2026-08-09T14:40:24Z",
+   "last_observed_at": "2026-08-09T15:35:07Z",
+   "last_good_at": "2026-08-09T15:35:07Z",
    "last_good_value": "context layer for ai",
    "last_good_json": null,
    "last_good_hash": "54574ef0",
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T14:40:24Z",
-   "last_good_at": "2026-08-09T14:40:24Z",
+   "last_observed_at": "2026-08-09T15:35:07Z",
+   "last_good_at": "2026-08-09T15:35:07Z",
    "last_good_value": "Achievement, Hubspot, Mastercard, spinner, Trusted by leading enterprises",
    "last_good_json": "{\"names\":[\"Achievement\",\"Hubspot\",\"Mastercard\",\"spinner\",\"Trusted by leading enterprises\"],\"count\":5,\"lead\":\"Trusted by <br/><span class=\\\\\\\"font-funnel-display text-blue-500\\\\\\\">AI-forward ent\"}",
    "last_good_hash": "f9cbc57e",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T14:40:24Z",
-   "last_good_at": "2026-08-09T14:40:24Z",
+   "last_observed_at": "2026-08-09T15:35:07Z",
+   "last_good_at": "2026-08-09T15:35:07Z",
    "last_good_value": "Your AI doesn't know your business. Let’s fix that.",
    "last_good_json": null,
    "last_good_hash": "092cbff5",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T14:40:24Z",
-   "last_good_at": "2026-08-09T14:40:24Z",
+   "last_observed_at": "2026-08-09T15:35:07Z",
+   "last_good_at": "2026-08-09T15:35:07Z",
    "last_good_value": "The missing context layer for enterprise AI. Atlan gives every AI agent the data graph, business logic, and governance to act on trusted data.",
    "last_good_json": null,
    "last_good_hash": "d9e8bb35",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T14:40:24Z",
-   "last_good_at": "2026-08-09T14:40:24Z",
+   "last_observed_at": "2026-08-09T15:35:07Z",
+   "last_good_at": "2026-08-09T15:35:07Z",
    "last_good_value": "Atlan - The Context Layer for AI",
    "last_good_json": null,
    "last_good_hash": "f4c779c8",
@@ -248,7 +248,7 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T14:40:24Z",
+   "last_observed_at": "2026-08-09T15:35:07Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -266,8 +266,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T14:40:24Z",
-   "last_good_at": "2026-08-09T14:40:24Z",
+   "last_observed_at": "2026-08-09T15:35:07Z",
+   "last_good_at": "2026-08-09T15:35:07Z",
    "last_good_value": "Build a shared understanding of your data, your business logic, and your institutional knowledge, and make it available to every AI tool you run.",
    "last_good_json": null,
    "last_good_hash": "1ce82e2c",
@@ -285,6 +285,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://atlan.com/",
+   "fetched_at": "2026-08-09T15:35:07Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.3.0 -> 1.4.0; re-baselining",
+   "bytes": 297374,
+   "duration_ms": 139,
+   "signals_found": 14,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://atlan.com/",

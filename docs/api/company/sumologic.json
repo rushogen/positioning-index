@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T14:56:43Z",
-   "last_good_at": "2026-08-09T14:56:43Z",
+   "last_observed_at": "2026-08-09T15:34:19Z",
+   "last_good_at": "2026-08-09T15:34:19Z",
    "last_good_value": "3",
    "last_good_json": null,
    "last_good_hash": "360caa42",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T14:56:43Z",
-   "last_good_at": "2026-08-09T14:56:43Z",
+   "last_observed_at": "2026-08-09T15:34:19Z",
+   "last_good_at": "2026-08-09T15:34:19Z",
    "last_good_value": "pricing_block",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":false,\"faq\":false,\"comparison\":false,\"pricing_block\":true,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "be5c5033",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T14:56:43Z",
-   "last_good_at": "2026-08-09T14:56:43Z",
+   "last_observed_at": "2026-08-09T15:34:19Z",
+   "last_good_at": "2026-08-09T15:34:19Z",
    "last_good_value": "68",
    "last_good_json": null,
    "last_good_hash": "0de8d5a3",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T14:56:43Z",
-   "last_good_at": "2026-08-09T14:56:43Z",
+   "last_observed_at": "2026-08-09T15:34:19Z",
+   "last_good_at": "2026-08-09T15:34:19Z",
    "last_good_value": "0",
    "last_good_json": null,
    "last_good_hash": "350ca8af",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T14:56:43Z",
-   "last_good_at": "2026-08-09T14:56:43Z",
+   "last_observed_at": "2026-08-09T15:34:19Z",
+   "last_good_at": "2026-08-09T15:34:19Z",
    "last_good_value": "86",
    "last_good_json": null,
    "last_good_hash": "8c01a0e3",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T14:56:43Z",
-   "last_good_at": "2026-08-09T14:56:43Z",
+   "last_observed_at": "2026-08-09T15:34:19Z",
+   "last_good_at": "2026-08-09T15:34:19Z",
    "last_good_value": "4",
    "last_good_json": null,
    "last_good_hash": "310ca263",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T14:56:43Z",
-   "last_good_at": "2026-08-09T14:56:43Z",
+   "last_observed_at": "2026-08-09T15:34:19Z",
+   "last_good_at": "2026-08-09T15:34:19Z",
    "last_good_value": "hero > security > features > pricing",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":56,\"merged\":1},{\"position\":2,\"type\":\"security\",\"heading\":\"Monitor, troubleshoot, automate, and defend.\",\"words\":167,\"merged\":1},{\"position\":3,\"type\":\"features\",\"heading\":\"Sumo Logic Dojo AI\",\"words\":28,\"merged\":1},{\"position\":4,\"type\":\"pricing\",\"heading\":\"Transform complexity into insights\",\"words\":393,\"merged\":1}]}",
    "last_good_hash": "4e9cb6d8",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T14:56:43Z",
-   "last_good_at": "2026-08-09T14:56:43Z",
+   "last_observed_at": "2026-08-09T15:34:19Z",
+   "last_good_at": "2026-08-09T15:34:19Z",
    "last_good_value": 644,
    "last_good_json": null,
    "last_good_hash": "7ca651c9",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T14:56:43Z",
-   "last_good_at": "2026-08-09T14:56:43Z",
+   "last_observed_at": "2026-08-09T15:34:19Z",
+   "last_good_at": "2026-08-09T15:34:19Z",
    "last_good_value": "logic provides best-in-class cloud",
    "last_good_json": null,
    "last_good_hash": "f8398f63",
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T14:56:43Z",
-   "last_good_at": "2026-08-09T14:56:43Z",
+   "last_observed_at": "2026-08-09T15:34:19Z",
+   "last_good_at": "2026-08-09T15:34:19Z",
    "last_good_value": "Alvin Lim, Bugcrowd, FedRAMP, IDC, Infor, lp app bricks, Microsoft Azure App Catalog, mobot powerpose faceleft, Omar Koncobo, OpenPayd, opentelemetry page, Paul Dyson, Pi 2, Pi 3, Ryan Breed, sumologic Homepage, Tc 1, Tc 2, Tc 3, Tc 4, Tc 5, Tc 6, Tc 7, Youngjip Kim",
    "last_good_json": "{\"names\":[\"Alvin Lim\",\"Bugcrowd\",\"FedRAMP\",\"IDC\",\"Infor\",\"lp app bricks\",\"Microsoft Azure App Catalog\",\"mobot powerpose faceleft\",\"Omar Koncobo\",\"OpenPayd\",\"opentelemetry page\",\"Paul Dyson\",\"Pi 2\",\"Pi 3\",\"Ryan Breed\",\"sumologic Homepage\",\"Tc 1\",\"Tc 2\",\"Tc 3\",\"Tc 4\",\"Tc 5\",\"Tc 6\",\"Tc 7\",\"Youngjip Kim\"],\"count\":24,\"lead\":\"Powering MTTR to zero. <img decoding=\\\"async\\\" class=\\\"home-demo-section__img\\\" src=\"}",
    "last_good_hash": "aebcba33",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T14:56:43Z",
-   "last_good_at": "2026-08-09T14:56:43Z",
+   "last_observed_at": "2026-08-09T15:34:19Z",
+   "last_good_at": "2026-08-09T15:34:19Z",
    "last_good_value": "Intelligent SecOps for the AI era",
    "last_good_json": null,
    "last_good_hash": "4e1935e7",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T14:56:43Z",
-   "last_good_at": "2026-08-09T14:56:43Z",
+   "last_observed_at": "2026-08-09T15:34:19Z",
+   "last_good_at": "2026-08-09T15:34:19Z",
    "last_good_value": "Sumo Logic provides best-in-class cloud monitoring, log management, SIEM tools, and real-time insights for web and SaaS based apps.",
    "last_good_json": null,
    "last_good_hash": "aa97f0b6",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T14:56:43Z",
-   "last_good_at": "2026-08-09T14:56:43Z",
+   "last_observed_at": "2026-08-09T15:34:19Z",
+   "last_good_at": "2026-08-09T15:34:19Z",
    "last_good_value": "Cloud log management, monitoring, SIEM tools Sumo Logic",
    "last_good_json": null,
    "last_good_hash": "238461da",
@@ -248,8 +248,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T14:56:43Z",
-   "last_good_at": "2026-08-09T14:56:43Z",
+   "last_observed_at": "2026-08-09T15:34:19Z",
+   "last_good_at": "2026-08-09T15:34:19Z",
    "last_good_value": "$2 billion growth products used | 22% improvement in response | 60% reduction in price | 80% decrease in mttr | 90% reduction in alert",
    "last_good_json": "{\"items\":[{\"claim\":\"$2 billion growth products used\",\"kind\":\"money\"},{\"claim\":\"22% improvement in response\",\"kind\":\"percent\"},{\"claim\":\"60% reduction in price\",\"kind\":\"percent\"},{\"claim\":\"80% decrease in mttr\",\"kind\":\"percent\"},{\"claim\":\"90% reduction in alert\",\"kind\":\"percent\"}],\"count\":5}",
    "last_good_hash": "a8c196ce",
@@ -266,8 +266,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T14:56:43Z",
-   "last_good_at": "2026-08-09T14:56:43Z",
+   "last_observed_at": "2026-08-09T15:34:19Z",
+   "last_good_at": "2026-08-09T15:34:19Z",
    "last_good_value": "Agentic AI-powered SIEM and security analytics to automate, detect and investigate at the speed of now.",
    "last_good_json": null,
    "last_good_hash": "2ae03912",
@@ -285,6 +285,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://www.sumologic.com/",
+   "fetched_at": "2026-08-09T15:34:19Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.3.0 -> 1.4.0; re-baselining",
+   "bytes": 250657,
+   "duration_ms": 52,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.sumologic.com/",

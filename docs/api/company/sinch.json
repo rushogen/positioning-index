@@ -13,8 +13,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-08T11:46:35Z",
-   "last_good_at": "2026-08-08T11:46:35Z",
+   "last_observed_at": "2026-08-09T15:35:49Z",
+   "last_good_at": "2026-08-09T15:35:49Z",
    "last_good_value": "15",
    "last_good_json": null,
    "last_good_hash": "18eb258b",
@@ -31,8 +31,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-08T11:46:35Z",
-   "last_good_at": "2026-08-08T11:46:35Z",
+   "last_observed_at": "2026-08-09T15:35:49Z",
+   "last_good_at": "2026-08-09T15:35:49Z",
    "last_good_value": "proof, testimonial",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":true,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "d6336940",
@@ -49,8 +49,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-08T11:46:35Z",
-   "last_good_at": "2026-08-08T11:46:35Z",
+   "last_observed_at": "2026-08-09T15:35:49Z",
+   "last_good_at": "2026-08-09T15:35:49Z",
    "last_good_value": "61",
    "last_good_json": null,
    "last_good_hash": "14e8e0a8",
@@ -67,8 +67,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-08T11:46:35Z",
-   "last_good_at": "2026-08-08T11:46:35Z",
+   "last_observed_at": "2026-08-09T15:35:49Z",
+   "last_good_at": "2026-08-09T15:35:49Z",
    "last_good_value": "1",
    "last_good_json": null,
    "last_good_hash": "340ca71c",
@@ -85,8 +85,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-08T11:46:35Z",
-   "last_good_at": "2026-08-08T11:46:35Z",
+   "last_observed_at": "2026-08-09T15:35:49Z",
+   "last_good_at": "2026-08-09T15:35:49Z",
    "last_good_value": "10",
    "last_good_json": null,
    "last_good_hash": "1beb2a44",
@@ -103,8 +103,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-08T11:46:35Z",
-   "last_good_at": "2026-08-08T11:46:35Z",
+   "last_observed_at": "2026-08-09T15:35:49Z",
+   "last_good_at": "2026-08-09T15:35:49Z",
    "last_good_value": "7",
    "last_good_json": null,
    "last_good_hash": "320ca3f6",
@@ -121,8 +121,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-08T11:46:35Z",
-   "last_good_at": "2026-08-08T11:46:35Z",
+   "last_observed_at": "2026-08-09T15:35:49Z",
+   "last_good_at": "2026-08-09T15:35:49Z",
    "last_good_value": "hero > cta > proof > testimonial > proof > testimonial > features",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":483,\"merged\":1},{\"position\":2,\"type\":\"cta\",\"heading\":\"Messaging, email, and voice APIs to help developers build better products\",\"words\":41,\"merged\":3},{\"position\":3,\"type\":\"proof\",\"heading\":\"Discover why over 200,000 businesses trust the Sinch Super Network\",\"words\":49,\"merged\":2},{\"position\":4,\"type\":\"testimonial\",\"heading\":\"How Your Voice scales smarter conversations with Sinch’s APIs and infrastructure\",\"words\":52,\"merged\":1},{\"position\":5,\"type\":\"proof\",\"heading\":\"How EasyPark Group keeps millions of users informed with SMS and RCS\",\"words\":28,\"merged\":1},{\"position\":6,\"type\":\"testimonial\",\"heading\":\"How Yandy earns a 20x ROI using SMS\",\"words\":65,\"merged\":1},{\"position\":7,\"type\":\"features\",\"heading\":\"See how Sinch AI powers safer, smarter conversational experiences\",\"words\":37,\"merged\":3}]}",
    "last_good_hash": "c05369f6",
@@ -139,8 +139,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-08T11:46:35Z",
-   "last_good_at": "2026-08-08T11:46:35Z",
+   "last_observed_at": "2026-08-09T15:35:49Z",
+   "last_good_at": "2026-08-09T15:35:49Z",
    "last_good_value": 918,
    "last_good_json": null,
    "last_good_hash": "dbcd1025",
@@ -157,8 +157,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-08T11:46:35Z",
-   "last_good_at": "2026-08-08T11:46:35Z",
+   "last_observed_at": "2026-08-09T15:35:49Z",
+   "last_good_at": "2026-08-09T15:35:49Z",
    "last_good_value": "communications infrastructure",
    "last_good_json": null,
    "last_good_hash": "6a45df37",
@@ -175,8 +175,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-08T11:46:35Z",
-   "last_good_at": "2026-08-08T11:46:35Z",
+   "last_observed_at": "2026-08-09T15:35:49Z",
+   "last_good_at": "2026-08-09T15:35:49Z",
    "last_good_value": "adobe, americanexpress, bolt, bt, clarins, clubmed, deutsche telekom, etsy, google, hsbc, lyft, paypal, ticketmaster, tmobile, tui, uber, virgin media",
    "last_good_json": "{\"names\":[\"adobe\",\"americanexpress\",\"bolt\",\"bt\",\"clarins\",\"clubmed\",\"deutsche telekom\",\"etsy\",\"google\",\"hsbc\",\"lyft\",\"paypal\",\"ticketmaster\",\"tmobile\",\"tui\",\"uber\",\"virgin media\"],\"count\":17,\"lead\":\"Powering-Trusted-Comms.png\\\" /> <meta name=\"}",
    "last_good_hash": "06ff4f1a",
@@ -193,8 +193,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-08T11:46:35Z",
-   "last_good_at": "2026-08-08T11:46:35Z",
+   "last_observed_at": "2026-08-09T15:35:49Z",
+   "last_good_at": "2026-08-09T15:35:49Z",
    "last_good_value": "The communications infrastructure the AI era runs on",
    "last_good_json": null,
    "last_good_hash": "8b27df92",
@@ -211,8 +211,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-08T11:46:35Z",
-   "last_good_at": "2026-08-08T11:46:35Z",
+   "last_observed_at": "2026-08-09T15:35:49Z",
+   "last_good_at": "2026-08-09T15:35:49Z",
    "last_good_value": "Unlock meaningful conversations across the customer journey with programmable SMS, voice, email, video, & verification APIs!",
    "last_good_json": null,
    "last_good_hash": "b0579283",
@@ -229,8 +229,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-08T11:46:35Z",
-   "last_good_at": "2026-08-08T11:46:35Z",
+   "last_observed_at": "2026-08-09T15:35:49Z",
+   "last_good_at": "2026-08-09T15:35:49Z",
    "last_good_value": "SMS Messaging, Voice, Email, Video & Verification APIs | Sinch",
    "last_good_json": null,
    "last_good_hash": "dd32fa94",
@@ -247,8 +247,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-08T11:46:35Z",
-   "last_good_at": "2026-08-08T11:46:35Z",
+   "last_observed_at": "2026-08-09T15:35:49Z",
+   "last_good_at": "2026-08-09T15:35:49Z",
    "last_good_value": "200,000 businesses | 200,000 customers | 20x roi using sms | 3.5x more redirections than",
    "last_good_json": "{\"items\":[{\"claim\":\"200,000 businesses\",\"kind\":\"count\"},{\"claim\":\"200,000 customers\",\"kind\":\"count\"},{\"claim\":\"20x roi using sms\",\"kind\":\"multiplier\"},{\"claim\":\"3.5x more redirections than\",\"kind\":\"multiplier\"}],\"count\":4}",
    "last_good_hash": "f46ed93c",
@@ -265,8 +265,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-08T11:46:35Z",
-   "last_good_at": "2026-08-08T11:46:35Z",
+   "last_observed_at": "2026-08-09T15:35:49Z",
+   "last_good_at": "2026-08-09T15:35:49Z",
    "last_good_value": "Enterprise-grade messaging, voice, and email with delivery, routing, compliance, and fraud prevention built in from day one. A single infrastructure for all - APIs for builders, ready-made applications for teams.",
    "last_good_json": null,
    "last_good_hash": "7c92f852",
@@ -284,6 +284,18 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://sinch.com/",
+   "fetched_at": "2026-08-09T15:35:49Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.3.0 -> 1.4.0; re-baselining",
+   "bytes": 432410,
+   "duration_ms": 87,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://sinch.com/",

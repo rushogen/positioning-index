@@ -17,7 +17,7 @@
    "magnitude": 1,
    "oscillating": 1,
    "summary": "Calls to action changed from \"6\" to \"10\" (a value this page has held recently -- likely an A/B test rather than a repositioning)",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-09T15:14:21Z",
@@ -36,7 +36,7 @@
    "magnitude": 0.333,
    "oscillating": 1,
    "summary": "Elements present: added integrations",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-09T15:14:21Z",
@@ -55,7 +55,7 @@
    "magnitude": 0.5,
    "oscillating": 0,
    "summary": "Section count changed from \"10\" to \"12\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-09T15:14:21Z",
@@ -74,7 +74,7 @@
    "magnitude": 0.488,
    "oscillating": 0,
    "summary": "Section sequence changed from \"hero > cta > testimonial > features > cta > features > testimonial > logos > security >…\" to \"hero > logos > features > integrations > features > integrations > testimonial > featur…\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-09T15:14:21Z",
@@ -93,7 +93,7 @@
    "magnitude": 0.5,
    "oscillating": 1,
    "summary": "Word count changed from \"1105\" to \"2165\" (a value this page has held recently -- likely an A/B test rather than a repositioning)",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-09T15:14:21Z",
@@ -112,7 +112,7 @@
    "magnitude": 0.5,
    "oscillating": 1,
    "summary": "Customer logos: added Dropbox, Person giving a presentation, Shopify; removed Allstate, Experian, Google, HP",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-09T15:14:21Z",
@@ -131,7 +131,7 @@
    "magnitude": 0.8,
    "oscillating": 1,
    "summary": "Hero headline changed from \"The automation layer for agentic AI\" to \"Your tools. Your rules. Any AI.\" (a value this page has held recently -- likely an A/B test rather than a repositioning)",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-09T15:14:21Z",
@@ -150,7 +150,7 @@
    "magnitude": 0.833,
    "oscillating": 1,
    "summary": "Proof points: added $1 million increase in potential, $1m recovered pipeline using, $40k+ headcount savings per, 42 hours +4 more; removed 100 hours, 20 hours",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-09T15:14:21Z",
@@ -169,7 +169,7 @@
    "magnitude": 0.725,
    "oscillating": 1,
    "summary": "Hero subhead changed from \"One MCP connection. 9,000+ apps. Set your policies and work across any model, surface, …\" to \"Zapier gives teams one place to set guardrails, manage model access, and see everything…\" (a value this page has held recently -- likely an A/B test rather than a repositioning)",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-09T15:13:57Z",
@@ -188,7 +188,7 @@
    "magnitude": 0.738,
    "oscillating": 0,
    "summary": "Hero headline changed from \"AI runtime for business\" to \"Vibe-code enterprise business applications\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-09T15:13:51Z",
@@ -207,7 +207,7 @@
    "magnitude": 0.25,
    "oscillating": 0,
    "summary": "Word count changed from \"1801\" to \"1802\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-09T15:13:48Z",
@@ -226,7 +226,7 @@
    "magnitude": 0.5,
    "oscillating": 0,
    "summary": "Proof points: added $0 usd, $12 usd, $30 when billed monthly; removed €0 eur, €12 eur, €30 when billed monthly",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-09T15:13:06Z",
@@ -245,7 +245,7 @@
    "magnitude": 0.667,
    "oscillating": 0,
    "summary": "Word count changed from \"860\" to \"854\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-09T15:13:05Z",
@@ -264,7 +264,7 @@
    "magnitude": 0.25,
    "oscillating": 0,
    "summary": "Word count changed from \"1094\" to \"1090\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-09T15:12:41Z",
@@ -283,7 +283,7 @@
    "magnitude": 1,
    "oscillating": 0,
    "summary": "Calls to action changed from \"6\" to \"7\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-09T15:12:41Z",
@@ -302,7 +302,7 @@
    "magnitude": 0.5,
    "oscillating": 0,
    "summary": "Elements present: removed testimonial",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-09T15:12:41Z",
@@ -321,7 +321,7 @@
    "magnitude": 1,
    "oscillating": 0,
    "summary": "Section count changed from \"7\" to \"5\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-09T15:12:41Z",
@@ -340,7 +340,7 @@
    "magnitude": 0.556,
    "oscillating": 0,
    "summary": "Section sequence changed from \"hero > logos > cta > testimonial > security > testimonial > cta\" to \"hero > features > logos > security > cta\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-09T15:12:41Z",
@@ -359,7 +359,7 @@
    "magnitude": 1,
    "oscillating": 0,
    "summary": "Word count changed from \"453\" to \"988\"",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-09T15:12:41Z",
@@ -378,7 +378,7 @@
    "magnitude": 0.823,
    "oscillating": 1,
    "summary": "Hero headline changed from \"All your teams, all their workflows—connected in one workspace\" to \"AI transformed individual work. Airtable transforms teamwork.\" (a value this page has held recently -- likely an A/B test rather than a repositioning)",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-09T15:12:41Z",
@@ -397,7 +397,7 @@
    "magnitude": 0.833,
    "oscillating": 1,
    "summary": "Proof points: added 100 companies, 50 projects, 500,000 companies, 60% cut creative-brief processing +5 more; removed 02 agents",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-09T15:12:41Z",
@@ -416,7 +416,7 @@
    "magnitude": 0.775,
    "oscillating": 1,
    "summary": "Hero subhead changed from \"Build AI-powered workflows that unify data, maximize collaboration, and set your teams …\" to \"It turns individual gains into team momentum — the apps, workflows, and agents one pers…\" (a value this page has held recently -- likely an A/B test rather than a repositioning)",
-   "confirmed": 0
+   "confirmed": 1
   },
   {
    "detected_at": "2026-08-09T15:03:43Z",

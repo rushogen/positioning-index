@@ -14,7 +14,7 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-08T11:45:13Z",
+   "last_observed_at": "2026-08-09T15:37:02Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -32,7 +32,7 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-08T11:45:13Z",
+   "last_observed_at": "2026-08-09T15:37:02Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -50,7 +50,7 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-08T11:45:13Z",
+   "last_observed_at": "2026-08-09T15:37:02Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -68,7 +68,7 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-08T11:45:13Z",
+   "last_observed_at": "2026-08-09T15:37:02Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -86,7 +86,7 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-08T11:45:13Z",
+   "last_observed_at": "2026-08-09T15:37:02Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -104,7 +104,7 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-08T11:45:13Z",
+   "last_observed_at": "2026-08-09T15:37:02Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -122,7 +122,7 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-08T11:45:13Z",
+   "last_observed_at": "2026-08-09T15:37:02Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -140,7 +140,7 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-08T11:45:13Z",
+   "last_observed_at": "2026-08-09T15:37:02Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -158,7 +158,7 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-08T11:45:13Z",
+   "last_observed_at": "2026-08-09T15:37:02Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -174,7 +174,7 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-08T11:45:13Z",
+   "last_observed_at": "2026-08-09T15:37:02Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -190,7 +190,7 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-08T11:45:13Z",
+   "last_observed_at": "2026-08-09T15:37:02Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -206,7 +206,7 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-08T11:45:13Z",
+   "last_observed_at": "2026-08-09T15:37:02Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -222,7 +222,7 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-08T11:45:13Z",
+   "last_observed_at": "2026-08-09T15:37:02Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -238,7 +238,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T15:03:58Z",
+   "last_observed_at": "2026-08-09T15:34:24Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -256,8 +256,8 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T15:03:58Z",
-   "last_good_at": "2026-08-09T15:03:58Z",
+   "last_observed_at": "2026-08-09T15:34:24Z",
+   "last_good_at": "2026-08-09T15:34:24Z",
    "last_good_value": "yes",
    "last_good_json": "{\"free\":true}",
    "last_good_hash": "4e9f3590",
@@ -274,8 +274,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T15:03:58Z",
-   "last_good_at": "2026-08-09T15:03:58Z",
+   "last_observed_at": "2026-08-09T15:34:24Z",
+   "last_good_at": "2026-08-09T15:34:24Z",
    "last_good_value": "Ramp Pricing and Plans",
    "last_good_json": null,
    "last_good_hash": "807a97be",
@@ -292,7 +292,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T15:03:58Z",
+   "last_observed_at": "2026-08-09T15:34:24Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -310,8 +310,8 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T15:03:58Z",
-   "last_good_at": "2026-08-09T15:03:58Z",
+   "last_observed_at": "2026-08-09T15:34:24Z",
+   "last_good_at": "2026-08-09T15:34:24Z",
    "last_good_value": "Free free | Enterprise custom",
    "last_good_json": "{\"tiers\":[{\"name\":\"Free\",\"amount\":0,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"free-phrase\"},{\"name\":\"Enterprise\",\"amount\":null,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"contact-sales\"}],\"count\":2}",
    "last_good_hash": "9a08ddc1",
@@ -328,7 +328,7 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-08T11:45:13Z",
+   "last_observed_at": "2026-08-09T15:37:02Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -344,7 +344,7 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-08T11:45:13Z",
+   "last_observed_at": "2026-08-09T15:37:02Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -361,6 +361,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://ramp.com/",
+   "fetched_at": "2026-08-09T15:37:02Z",
+   "http_status": 200,
+   "status": "blocked",
+   "reason": "server returned a non-HTML variant (agent-markdown); the human-facing page is not observable",
+   "bytes": 14032,
+   "duration_ms": 94,
+   "signals_found": 0,
+   "signals_expected": 15
+  },
+  {
+   "kind": "pricing",
+   "url": "https://ramp.com/pricing",
+   "fetched_at": "2026-08-09T15:34:24Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.3.0 -> 1.4.0; re-baselining",
+   "bytes": 1499894,
+   "duration_ms": 486,
+   "signals_found": 3,
+   "signals_expected": 5
+  },
   {
    "kind": "home",
    "url": "https://ramp.com/",
@@ -576,30 +600,6 @@
    "duration_ms": 678,
    "signals_found": 3,
    "signals_expected": 5
-  },
-  {
-   "kind": "pricing",
-   "url": "https://ramp.com/pricing",
-   "fetched_at": "2026-08-07T15:53:30Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": null,
-   "bytes": 1499894,
-   "duration_ms": 352,
-   "signals_found": 3,
-   "signals_expected": 5
-  },
-  {
-   "kind": "home",
-   "url": "https://ramp.com/",
-   "fetched_at": "2026-08-07T15:52:29Z",
-   "http_status": 200,
-   "status": "blocked",
-   "reason": "server returned a non-HTML variant (agent-markdown); the human-facing page is not observable",
-   "bytes": 14032,
-   "duration_ms": 402,
-   "signals_found": 0,
-   "signals_expected": 7
   }
  ]
 }

@@ -15,8 +15,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-09T14:56:46Z",
-   "last_good_at": "2026-08-09T14:56:46Z",
+   "last_observed_at": "2026-08-09T15:37:56Z",
+   "last_good_at": "2026-08-09T15:37:56Z",
    "last_good_value": "5",
    "last_good_json": null,
    "last_good_hash": "300ca0d0",
@@ -33,8 +33,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-09T14:56:46Z",
-   "last_good_at": "2026-08-09T14:56:46Z",
+   "last_observed_at": "2026-08-09T15:37:56Z",
+   "last_good_at": "2026-08-09T15:37:56Z",
    "last_good_value": "testimonial, faq",
    "last_good_json": "{\"present\":{\"logo_wall\":false,\"proof\":false,\"testimonial\":true,\"faq\":true,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "d2bb3dbc",
@@ -51,8 +51,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-09T14:56:46Z",
-   "last_good_at": "2026-08-09T14:56:46Z",
+   "last_observed_at": "2026-08-09T15:37:56Z",
+   "last_good_at": "2026-08-09T15:37:56Z",
    "last_good_value": "49",
    "last_good_json": null,
    "last_good_hash": "90e393ae",
@@ -69,8 +69,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-09T14:56:46Z",
-   "last_good_at": "2026-08-09T14:56:46Z",
+   "last_observed_at": "2026-08-09T15:37:56Z",
+   "last_good_at": "2026-08-09T15:37:56Z",
    "last_good_value": "22",
    "last_good_json": null,
    "last_good_hash": "8ff29ca5",
@@ -87,8 +87,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-09T14:56:46Z",
-   "last_good_at": "2026-08-09T14:56:46Z",
+   "last_observed_at": "2026-08-09T15:37:56Z",
+   "last_good_at": "2026-08-09T15:37:56Z",
    "last_good_value": "2",
    "last_good_json": null,
    "last_good_hash": "370cabd5",
@@ -105,8 +105,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-09T14:56:46Z",
-   "last_good_at": "2026-08-09T14:56:46Z",
+   "last_observed_at": "2026-08-09T15:37:56Z",
+   "last_good_at": "2026-08-09T15:37:56Z",
    "last_good_value": "8",
    "last_good_json": null,
    "last_good_hash": "3d0cb547",
@@ -123,8 +123,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-09T14:56:46Z",
-   "last_good_at": "2026-08-09T14:56:46Z",
+   "last_observed_at": "2026-08-09T15:37:56Z",
+   "last_good_at": "2026-08-09T15:37:56Z",
    "last_good_value": "hero > cta > features > security > testimonial > features > faq > cta",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":262,\"merged\":1},{\"position\":2,\"type\":\"cta\",\"heading\":\"Great — a couple more details\",\"words\":549,\"merged\":1},{\"position\":3,\"type\":\"features\",\"heading\":\"The governed runtime for AI-built apps.\",\"words\":183,\"merged\":1},{\"position\":4,\"type\":\"security\",\"heading\":\"Integrate data and AI.\",\"words\":189,\"merged\":1},{\"position\":5,\"type\":\"testimonial\",\"heading\":\"Why leading teams trust Tray.ai\",\"words\":89,\"merged\":1},{\"position\":6,\"type\":\"features\",\"heading\":\"The business case writes itself.\",\"words\":259,\"merged\":1},{\"position\":7,\"type\":\"faq\",\"heading\":\"Frequently asked questions\",\"words\":236,\"merged\":1},{\"position\":8,\"type\":\"cta\",\"heading\":\"Ready to orchestrate your stack?\",\"words\":33,\"merged\":1}]}",
    "last_good_hash": "168d5cf6",
@@ -141,8 +141,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-09T14:56:46Z",
-   "last_good_at": "2026-08-09T14:56:46Z",
+   "last_observed_at": "2026-08-09T15:37:56Z",
+   "last_good_at": "2026-08-09T15:37:56Z",
    "last_good_value": 2345,
    "last_good_json": null,
    "last_good_hash": "2ebddfa5",
@@ -159,8 +159,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-09T14:56:46Z",
-   "last_good_at": "2026-08-09T14:56:46Z",
+   "last_observed_at": "2026-08-09T15:37:56Z",
+   "last_good_at": "2026-08-09T15:37:56Z",
    "last_good_value": "building ai agents",
    "last_good_json": null,
    "last_good_hash": "e9be8781",
@@ -177,8 +177,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-09T14:56:46Z",
-   "last_good_at": "2026-08-09T14:56:46Z",
+   "last_observed_at": "2026-08-09T15:37:56Z",
+   "last_good_at": "2026-08-09T15:37:56Z",
    "last_good_value": "Airbnb, Apollo.io, Capital One, Cisco, CrowdStrike, FedEx, GitHub, Life360, Mixpanel, NetApp, Notion, Ramp, Relic, Tray Helix, Zendesk",
    "last_good_json": "{\"names\":[\"Airbnb\",\"Apollo.io\",\"Capital One\",\"Cisco\",\"CrowdStrike\",\"FedEx\",\"GitHub\",\"Life360\",\"Mixpanel\",\"NetApp\",\"Notion\",\"Ramp\",\"Relic\",\"Tray Helix\",\"Zendesk\"],\"count\":15,\"lead\":\"Trusted by <img src=\\\"/_astro/cisco.4k4dckX1_E1AmP\"}",
    "last_good_hash": "11faab4c",
@@ -195,8 +195,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-09T14:56:46Z",
-   "last_good_at": "2026-08-09T14:56:46Z",
+   "last_observed_at": "2026-08-09T15:37:56Z",
+   "last_good_at": "2026-08-09T15:37:56Z",
    "last_good_value": "Your teams build with AI. Helix runs and governs it all.",
    "last_good_json": null,
    "last_good_hash": "f5bf01f3",
@@ -213,8 +213,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-09T14:56:46Z",
-   "last_good_at": "2026-08-09T14:56:46Z",
+   "last_observed_at": "2026-08-09T15:37:56Z",
+   "last_good_at": "2026-08-09T15:37:56Z",
    "last_good_value": "Tray.ai is the AI-native enterprise iPaaS for building AI agents, governing Model Context Protocol (MCP), and integrating 700+ apps — orchestration for data…",
    "last_good_json": null,
    "last_good_hash": "5256749e",
@@ -231,8 +231,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-09T14:56:46Z",
-   "last_good_at": "2026-08-09T14:56:46Z",
+   "last_observed_at": "2026-08-09T15:37:56Z",
+   "last_good_at": "2026-08-09T15:37:56Z",
    "last_good_value": "Tray.ai — The AI-ready integration and automation platform",
    "last_good_json": null,
    "last_good_hash": "4b33c5d0",
@@ -249,7 +249,7 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-09T15:11:46Z",
+   "last_observed_at": "2026-08-09T15:36:34Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -267,7 +267,7 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-09T15:11:46Z",
+   "last_observed_at": "2026-08-09T15:36:34Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -285,8 +285,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-09T15:11:46Z",
-   "last_good_at": "2026-08-09T15:11:46Z",
+   "last_observed_at": "2026-08-09T15:36:34Z",
+   "last_good_at": "2026-08-09T15:36:34Z",
    "last_good_value": "Pricing | Tray.ai",
    "last_good_json": null,
    "last_good_hash": "24dec98d",
@@ -303,7 +303,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-09T15:11:46Z",
+   "last_observed_at": "2026-08-09T15:36:34Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -321,7 +321,7 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-09T15:11:46Z",
+   "last_observed_at": "2026-08-09T15:36:34Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -339,8 +339,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-09T14:56:46Z",
-   "last_good_at": "2026-08-09T14:56:46Z",
+   "last_observed_at": "2026-08-09T15:37:56Z",
+   "last_good_at": "2026-08-09T15:37:56Z",
    "last_good_value": "$1,240 deal-desk revops | $1,240 this month | $130k annual savings | $140 one pane | $300 launch-checker marketing | $610 accrual-checker finance | 10 minutes | 3 minutes | 3× faster and spend | 356% roi cost reduction | 60% less than with | 700 apps",
    "last_good_json": "{\"items\":[{\"claim\":\"$1,240 deal-desk revops\",\"kind\":\"money\"},{\"claim\":\"$1,240 this month\",\"kind\":\"money\"},{\"claim\":\"$130k annual savings\",\"kind\":\"money\"},{\"claim\":\"$140 one pane\",\"kind\":\"money\"},{\"claim\":\"$300 launch-checker marketing\",\"kind\":\"money\"},{\"claim\":\"$610 accrual-checker finance\",\"kind\":\"money\"},{\"claim\":\"10 minutes\",\"kind\":\"time\"},{\"claim\":\"3 minutes\",\"kind\":\"time\"},{\"claim\":\"3× faster and spend\",\"kind\":\"multiplier\"},{\"claim\":\"356% roi cost reduction\",\"kind\":\"percent\"},{\"claim\":\"60% less than with\",\"kind\":\"percent\"},{\"claim\":\"700 apps\",\"kind\":\"count\"}],\"count\":12}",
    "last_good_hash": "b9fe7913",
@@ -357,8 +357,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-09T14:56:46Z",
-   "last_good_at": "2026-08-09T14:56:46Z",
+   "last_observed_at": "2026-08-09T15:37:56Z",
+   "last_good_at": "2026-08-09T15:37:56Z",
    "last_good_value": "Tray.ai is the AI-native enterprise iPaaS for building AI agents, governing Model Context Protocol (MCP), and integrating 700+ apps — orchestration for data…",
    "last_good_json": null,
    "last_good_hash": "5256749e",
@@ -376,6 +376,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "home",
+   "url": "https://tray.ai/",
+   "fetched_at": "2026-08-09T15:37:56Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.3.0 -> 1.4.0; re-baselining",
+   "bytes": 467836,
+   "duration_ms": 279,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
+  {
+   "kind": "pricing",
+   "url": "https://tray.ai/pricing/",
+   "fetched_at": "2026-08-09T15:36:34Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.3.0 -> 1.4.0; re-baselining",
+   "bytes": 352538,
+   "duration_ms": 585,
+   "signals_found": 1,
+   "signals_expected": 5
+  },
   {
    "kind": "home",
    "url": "https://tray.ai/",

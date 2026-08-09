@@ -14,8 +14,8 @@
  "signals": [
   {
    "signal": "anatomy_cta_count",
-   "last_observed_at": "2026-08-08T11:45:18Z",
-   "last_good_at": "2026-08-08T11:45:18Z",
+   "last_observed_at": "2026-08-09T15:34:52Z",
+   "last_good_at": "2026-08-09T15:34:52Z",
    "last_good_value": "4",
    "last_good_json": null,
    "last_good_hash": "310ca263",
@@ -32,8 +32,8 @@
   },
   {
    "signal": "anatomy_elements",
-   "last_observed_at": "2026-08-08T11:45:18Z",
-   "last_good_at": "2026-08-08T11:45:18Z",
+   "last_observed_at": "2026-08-09T15:34:52Z",
+   "last_good_at": "2026-08-09T15:34:52Z",
    "last_good_value": "logo_wall, proof, testimonial",
    "last_good_json": "{\"present\":{\"logo_wall\":true,\"proof\":true,\"testimonial\":true,\"faq\":false,\"comparison\":false,\"pricing_block\":false,\"integrations\":false,\"media\":false}}",
    "last_good_hash": "d0962ce6",
@@ -50,8 +50,8 @@
   },
   {
    "signal": "anatomy_footer_links",
-   "last_observed_at": "2026-08-08T11:45:18Z",
-   "last_good_at": "2026-08-08T11:45:18Z",
+   "last_observed_at": "2026-08-09T15:34:52Z",
+   "last_good_at": "2026-08-09T15:34:52Z",
    "last_good_value": "62",
    "last_good_json": null,
    "last_good_hash": "17e8e561",
@@ -68,8 +68,8 @@
   },
   {
    "signal": "anatomy_form_fields",
-   "last_observed_at": "2026-08-08T11:45:18Z",
-   "last_good_at": "2026-08-08T11:45:18Z",
+   "last_observed_at": "2026-08-09T15:34:52Z",
+   "last_good_at": "2026-08-09T15:34:52Z",
    "last_good_value": "3",
    "last_good_json": null,
    "last_good_hash": "360caa42",
@@ -86,8 +86,8 @@
   },
   {
    "signal": "anatomy_nav_links",
-   "last_observed_at": "2026-08-08T11:45:18Z",
-   "last_good_at": "2026-08-08T11:45:18Z",
+   "last_observed_at": "2026-08-09T15:34:52Z",
+   "last_good_at": "2026-08-09T15:34:52Z",
    "last_good_value": "70",
    "last_good_json": null,
    "last_good_hash": "8fe5d0b2",
@@ -104,8 +104,8 @@
   },
   {
    "signal": "anatomy_section_count",
-   "last_observed_at": "2026-08-08T11:45:18Z",
-   "last_good_at": "2026-08-08T11:45:18Z",
+   "last_observed_at": "2026-08-09T15:34:52Z",
+   "last_good_at": "2026-08-09T15:34:52Z",
    "last_good_value": "9",
    "last_good_json": null,
    "last_good_hash": "3c0cb3b4",
@@ -122,8 +122,8 @@
   },
   {
    "signal": "anatomy_sections",
-   "last_observed_at": "2026-08-08T11:45:18Z",
-   "last_good_at": "2026-08-08T11:45:18Z",
+   "last_observed_at": "2026-08-09T15:34:52Z",
+   "last_good_at": "2026-08-09T15:34:52Z",
    "last_good_value": "hero > security > proof > testimonial > security > logos > resources > other > cta",
    "last_good_json": "{\"sections\":[{\"position\":1,\"type\":\"hero\",\"heading\":null,\"words\":53,\"merged\":1},{\"position\":2,\"type\":\"security\",\"heading\":\"Trust without compromise\",\"words\":86,\"merged\":1},{\"position\":3,\"type\":\"proof\",\"heading\":\"Performance at scale\",\"words\":20,\"merged\":1},{\"position\":4,\"type\":\"testimonial\",\"heading\":\"Partnerships that protect\",\"words\":223,\"merged\":1},{\"position\":5,\"type\":\"security\",\"heading\":\"AI-powered architecture, built for trust\",\"words\":274,\"merged\":2},{\"position\":6,\"type\":\"logos\",\"heading\":\"Built to meet global security and compliance standards\",\"words\":39,\"merged\":1},{\"position\":7,\"type\":\"resources\",\"heading\":\"Insights & Resources\",\"words\":119,\"merged\":1},{\"position\":8,\"type\":\"other\",\"heading\":\"Subscribe for insights\",\"words\":17,\"merged\":1},{\"position\":9,\"type\":\"cta\",\"heading\":\"Trust starts with Veriff\",\"words\":17,\"merged\":1}]}",
    "last_good_hash": "79d9425b",
@@ -140,8 +140,8 @@
   },
   {
    "signal": "anatomy_word_count",
-   "last_observed_at": "2026-08-08T11:45:18Z",
-   "last_good_at": "2026-08-08T11:45:18Z",
+   "last_observed_at": "2026-08-09T15:34:52Z",
+   "last_good_at": "2026-08-09T15:34:52Z",
    "last_good_value": 891,
    "last_good_json": null,
    "last_good_hash": "48b09771",
@@ -158,8 +158,8 @@
   },
   {
    "signal": "category_label",
-   "last_observed_at": "2026-08-08T11:45:18Z",
-   "last_good_at": "2026-08-08T11:45:18Z",
+   "last_observed_at": "2026-08-09T15:34:52Z",
+   "last_good_at": "2026-08-09T15:34:52Z",
    "last_good_value": "identity verification platform",
    "last_good_json": null,
    "last_good_hash": "d9709a2d",
@@ -176,8 +176,8 @@
   },
   {
    "signal": "customer_logos",
-   "last_observed_at": "2026-08-08T11:45:18Z",
-   "last_good_at": "2026-08-08T11:45:18Z",
+   "last_observed_at": "2026-08-09T15:34:52Z",
+   "last_good_at": "2026-08-09T15:34:52Z",
    "last_good_value": "Aws Carousel, Blockchain Carousel, Bolt Carousel, Bumble Carousel, Buttonarrow, Feeld Carousel, Instacart, Kueski Carousel, Monzo Carousel, Stake Carousel, Trust, Trustpilot Carousel, User Pink, Webull Carousel, Western Uniongray Carousel, Wise Carousel, World",
    "last_good_json": "{\"names\":[\"Aws Carousel\",\"Blockchain Carousel\",\"Bolt Carousel\",\"Bumble Carousel\",\"Buttonarrow\",\"Feeld Carousel\",\"Instacart\",\"Kueski Carousel\",\"Monzo Carousel\",\"Stake Carousel\",\"Trust\",\"Trustpilot Carousel\",\"User Pink\",\"Webull Carousel\",\"Western Uniongray Carousel\",\"Wise Carousel\",\"World\"],\"count\":17,\"lead\":\"Trusted by 3,000+ businesses worldwide <div class=\\\"sw\"}",
    "last_good_hash": "106a6fc7",
@@ -194,8 +194,8 @@
   },
   {
    "signal": "headline",
-   "last_observed_at": "2026-08-08T11:45:18Z",
-   "last_good_at": "2026-08-08T11:45:18Z",
+   "last_observed_at": "2026-08-09T15:34:52Z",
+   "last_good_at": "2026-08-09T15:34:52Z",
    "last_good_value": "Trust starts with the global leader in identity verification",
    "last_good_json": null,
    "last_good_hash": "b2835885",
@@ -212,8 +212,8 @@
   },
   {
    "signal": "meta_description",
-   "last_observed_at": "2026-08-08T11:45:18Z",
-   "last_good_at": "2026-08-08T11:45:18Z",
+   "last_observed_at": "2026-08-09T15:34:52Z",
+   "last_good_at": "2026-08-09T15:34:52Z",
    "last_good_value": "Automate KYC & AML compliance with Veriff’s AI identity verification. Prevent fraud with 99.6% accuracy and onboard users in seconds globally.",
    "last_good_json": null,
    "last_good_hash": "245e3918",
@@ -230,8 +230,8 @@
   },
   {
    "signal": "meta_title",
-   "last_observed_at": "2026-08-08T11:45:18Z",
-   "last_good_at": "2026-08-08T11:45:18Z",
+   "last_observed_at": "2026-08-09T15:34:52Z",
+   "last_good_at": "2026-08-09T15:34:52Z",
    "last_good_value": "Global AI Identity Verification & KYC Solutions - Veriff",
    "last_good_json": null,
    "last_good_hash": "3bf7a88b",
@@ -248,8 +248,8 @@
   },
   {
    "signal": "pricing_entry_price",
-   "last_observed_at": "2026-08-08T11:47:08Z",
-   "last_good_at": "2026-08-08T11:47:08Z",
+   "last_observed_at": "2026-08-09T15:37:16Z",
+   "last_good_at": "2026-08-09T15:37:16Z",
    "last_good_value": "USD 0.8",
    "last_good_json": "{\"amount\":0.8,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"tier\":\"Essential\"}",
    "last_good_hash": "2fb1b3f1",
@@ -266,8 +266,8 @@
   },
   {
    "signal": "pricing_free_tier",
-   "last_observed_at": "2026-08-08T11:47:08Z",
-   "last_good_at": "2026-08-08T11:47:08Z",
+   "last_observed_at": "2026-08-09T15:37:16Z",
+   "last_good_at": "2026-08-09T15:37:16Z",
    "last_good_value": "no",
    "last_good_json": "{\"free\":false}",
    "last_good_hash": "62366ffa",
@@ -284,8 +284,8 @@
   },
   {
    "signal": "pricing_meta_title",
-   "last_observed_at": "2026-08-08T11:47:08Z",
-   "last_good_at": "2026-08-08T11:47:08Z",
+   "last_observed_at": "2026-08-09T15:37:16Z",
+   "last_good_at": "2026-08-09T15:37:16Z",
    "last_good_value": "Self-Serve Plans with Flexibility & Scalability - Veriff",
    "last_good_json": null,
    "last_good_hash": "8591bc42",
@@ -302,7 +302,7 @@
   },
   {
    "signal": "pricing_seat_minimum",
-   "last_observed_at": "2026-08-08T11:47:08Z",
+   "last_observed_at": "2026-08-09T15:37:16Z",
    "last_good_at": null,
    "last_good_value": null,
    "last_good_json": null,
@@ -320,8 +320,8 @@
   },
   {
    "signal": "pricing_tiers",
-   "last_observed_at": "2026-08-08T11:47:08Z",
-   "last_good_at": "2026-08-08T11:47:08Z",
+   "last_observed_at": "2026-08-09T15:37:16Z",
+   "last_good_at": "2026-08-09T15:37:16Z",
    "last_good_value": "Essential USD 0.8 | Full auto i USD 0.8 | Plus USD 1.39 | Premium USD 1.89 | Enterprise custom",
    "last_good_json": "{\"tiers\":[{\"name\":\"Essential\",\"amount\":0.8,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Full auto i\",\"amount\":0.8,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Plus\",\"amount\":1.39,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Premium\",\"amount\":1.89,\"currency\":\"USD\",\"period\":null,\"unit\":null,\"source\":\"heuristic\"},{\"name\":\"Enterprise\",\"amount\":null,\"currency\":null,\"period\":null,\"unit\":null,\"source\":\"contact-sales\"}],\"count\":5}",
    "last_good_hash": "72dbd2ec",
@@ -338,8 +338,8 @@
   },
   {
    "signal": "proof_points",
-   "last_observed_at": "2026-08-08T11:45:18Z",
-   "last_good_at": "2026-08-08T11:45:18Z",
+   "last_observed_at": "2026-08-09T15:34:52Z",
+   "last_good_at": "2026-08-09T15:34:52Z",
    "last_good_value": "3,000 businesses | 500 companies | fortune 500",
    "last_good_json": "{\"items\":[{\"claim\":\"3,000 businesses\",\"kind\":\"count\"},{\"claim\":\"500 companies\",\"kind\":\"count\"},{\"claim\":\"fortune 500\",\"kind\":\"rank\"}],\"count\":3}",
    "last_good_hash": "385b9c2e",
@@ -356,8 +356,8 @@
   },
   {
    "signal": "subhead",
-   "last_observed_at": "2026-08-08T11:45:18Z",
-   "last_good_at": "2026-08-08T11:45:18Z",
+   "last_observed_at": "2026-08-09T15:34:52Z",
+   "last_good_at": "2026-08-09T15:34:52Z",
    "last_good_value": "Veriff’s identity verification platform analyzes 1,000+ signals per session to stop fraud, ensure KYC compliance, and enable global digital growth with ~99.6% accurate IDV decisions.",
    "last_good_json": null,
    "last_good_hash": "7769a236",
@@ -375,6 +375,30 @@
  ],
  "events": [],
  "fetches": [
+  {
+   "kind": "pricing",
+   "url": "https://www.veriff.com/plans/self-serve",
+   "fetched_at": "2026-08-09T15:37:16Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.3.0 -> 1.4.0; re-baselining",
+   "bytes": 535646,
+   "duration_ms": 37,
+   "signals_found": 4,
+   "signals_expected": 5
+  },
+  {
+   "kind": "home",
+   "url": "https://www.veriff.com/",
+   "fetched_at": "2026-08-09T15:34:52Z",
+   "http_status": 200,
+   "status": "ok",
+   "reason": "extractor 1.3.0 -> 1.4.0; re-baselining",
+   "bytes": 539538,
+   "duration_ms": 113,
+   "signals_found": 15,
+   "signals_expected": 15
+  },
   {
    "kind": "home",
    "url": "https://www.veriff.com/",
@@ -590,18 +614,6 @@
    "duration_ms": 810,
    "signals_found": 4,
    "signals_expected": 5
-  },
-  {
-   "kind": "home",
-   "url": "https://www.veriff.com/",
-   "fetched_at": "2026-08-07T23:17:59Z",
-   "http_status": 200,
-   "status": "ok",
-   "reason": null,
-   "bytes": 539695,
-   "duration_ms": 122,
-   "signals_found": 7,
-   "signals_expected": 7
   }
  ]
 }
