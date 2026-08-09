@@ -48,6 +48,7 @@ import { accuracyBlock, sectionInsight, pageInsight } from '../src/anatomy-compa
 import { scoreClassifier } from '../src/anatomy-score.js';
 import { neighbourGraph } from '../src/anatomy-similarity.js';
 import { layout3d } from '../src/anatomy-layout3d.js';
+import { clusterShapes } from '../src/anatomy-clusters.js';
 import { renderPositioning } from '../src/landing.js';
 import { renderAnatomy } from '../src/anatomy-view.js';
 import { MAX_BLOCK_HEIGHT, MIN_BLOCK_HEIGHT, SECTION_LABEL, WIREFRAME_WIDTH } from '../src/anatomy-svg.js';
@@ -111,9 +112,18 @@ const score = scoreClassifier({ seed, series, labels });
 // Which pages are shaped alike, computed here and published, so the claim is
 // part of the record rather than something the browser invented on load.
 const similarity = neighbourGraph(anatomy.companies, { k: 6 });
-// A deterministic 3D arrangement of the same graph, published so the WebGL point
-// cloud renders a fixed, checkable layout rather than inventing one on load.
-similarity.layout3d = layout3d(anatomy.companies, similarity);
+// The recurring shape families in the graph, then a deterministic 3D arrangement
+// seeded from them so the WebGL cloud renders separated, named lobes rather than
+// a formless blob. Both are published so the arrangement is checkable, not
+// invented on load. nodeCluster is only needed to build the layout; each node
+// carries its own family id, so it is dropped before publishing.
+const clusters = clusterShapes(anatomy, similarity);
+similarity.layout3d = layout3d(anatomy.companies, similarity, {
+  nodeCluster: clusters.nodeCluster,
+  clusterCount: clusters.clusters.length,
+});
+delete clusters.nodeCluster;
+similarity.clusters = clusters;
 const accuracy = accuracyBlock(score);
 
 // --------------------------------------------------------------------- write
@@ -316,7 +326,7 @@ function slimPage(p) {
 function renderIndexHtml(template) {
   const substitutions = [
     ['<!--POSITIONING-->', renderPositioning(positioning)],
-    ['<!--ANATOMY-->', renderAnatomy(anatomy, score)],
+    ['<!--ANATOMY-->', renderAnatomy(anatomy, score, similarity.clusters)],
     ['<!--COMPANY-COUNT-->', String(companies.length)],
     ['<!--STAT-SECTIONS-->', String(anatomy.quality.sections)],
     ['<!--STAT-READABLE-->', String(anatomy.positions.coverage.readable)],

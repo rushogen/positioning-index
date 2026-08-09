@@ -166,38 +166,88 @@ import * as THREE from './vendor/three.module.min.js';
     return tex;
   }
 
-  // ---- deterministic per-segment palette. Sort the unique segments and spread
-  // hues evenly around the wheel; lightness/saturation are picked per theme so
-  // the dots read on the panel surface in both light and dark. Colours are set
-  // through SRGB so three's colour management lands them where the eye expects.
+  // ---- shape-family palette. The dots are coloured by which recurring shape
+  // family they belong to, not by 28 near-identical segment hues -- that colour
+  // was the reason the cloud read as noise. Hues are spaced by the golden ratio
+  // for maximum separation between families; near-unique pages (no family) are a
+  // dim neutral so the coloured lobes are what the eye lands on. The legend and
+  // the floating labels below reuse these exact colours.
+  // Populated in build(), once the model has been fetched -- referencing `model`
+  // at module-eval time (before boot) would throw and take the whole globe down.
+  let families = [];
+  let clusterById = new Map();
+  let clusterOfSlug = new Map();
+
+  function familyLabel(c) {
+    if (!c) return 'Near-unique';
+    return c.sections && c.sections.length
+      ? c.sections.map((t) => model.labels[t] || t).join(' + ')
+      : 'Hero only';
+  }
+  function familyColor(id) {
+    const c = new THREE.Color();
+    if (id < 0) { c.setHSL(0, 0, darkMode ? 0.34 : 0.70, THREE.SRGBColorSpace); return c; }
+    const sat = darkMode ? 0.66 : 0.70;
+    const light = darkMode ? 0.63 : 0.50;
+    c.setHSL((id * 0.61803398875) % 1, sat, light, THREE.SRGBColorSpace);
+    return c;
+  }
+  const familyHex = (id) => '#' + familyColor(id).getHexString();
   function buildColors() {
-    const segs = [...new Set(layoutNodes.map((n) => n.segment || 'other'))].sort();
-    const hueOf = new Map(segs.map((s, i) => [s, i / Math.max(1, segs.length)]));
-    const sat = darkMode ? 0.62 : 0.66;
-    const light = darkMode ? 0.66 : 0.48;
-    return layoutNodes.map((n) => {
-      const c = new THREE.Color();
-      c.setHSL(hueOf.get(n.segment || 'other'), sat, light, THREE.SRGBColorSpace);
-      return c;
-    });
+    return layoutNodes.map((n) => familyColor(n.cluster));
   }
 
-  // ---- the panel, built exactly like anatomy-map.js describe(): title, the
-  // section shape, the closest-shapes list with real distances and #/anatomy
-  // links, and the caveat. All text nodes; never innerHTML with data.
+  // ---- the panel. With nothing selected it is the LEGEND -- the families, their
+  // colours and sizes -- so the cloud is readable at a glance without hovering
+  // 180 dots. With a company selected it is that page: its family, its section
+  // shape, and its closest shapes with the real distances and #/anatomy links.
+  // All text nodes; never innerHTML with data.
+  function renderLegend(panel) {
+    const cl = model.similarity.clusters;
+    panel.append(el('p', { class: 'wf-group' }, 'Shape families'));
+    const ul = el('ul', { class: 'wf-legend' });
+    for (const c of families) {
+      const dot = el('span', { class: 'wf-fam-dot' });
+      dot.style.background = familyHex(c.id);
+      ul.append(el('li', {}, dot, el('b', {}, familyLabel(c)),
+        el('span', { class: 'wf-item-note' }, `${c.size} pages`)));
+    }
+    // The near-unique majority, named as a swatch too so it is not a silent gap.
+    if (cl && cl.near_unique) {
+      const dot = el('span', { class: 'wf-fam-dot' });
+      dot.style.background = familyHex(-1);
+      ul.append(el('li', { class: 'wf-legend-rest' }, dot, 'Near-unique',
+        el('span', { class: 'wf-item-note' }, `${cl.near_unique} pages`)));
+    }
+    panel.append(ul);
+    if (cl) panel.append(el('p', { class: 'wf-caveat' },
+      `${cl.clustered} of ${cl.of} readable pages fall into ${families.length} recurring shapes; the other `
+      + `${cl.near_unique} are near-unique. Hover or focus a dot for one page and its closest shapes. Position `
+      + 'is a readable arrangement, not a measurement.'));
+  }
+
   function describe(slug) {
     const panel = document.getElementById('wf-globe-panel');
     if (!panel) return;
     panel.replaceChildren();
 
     const c = model.companies.find((x) => x.slug === slug);
-    if (!c) {
-      panel.append(el('p', { class: 'wf-empty' }, 'Hover or focus a dot to see its closest shapes.'));
-      return;
-    }
+    if (!c) { renderLegend(panel); return; }
     const near = model.similarity.neighbours[slug] || [];
 
     panel.append(el('p', { class: 'wf-panel-title' }, c.name));
+
+    // Which family this page is in -- the first thing to say, colour-matched to
+    // its dot, or the honest "near-unique" when it is in none.
+    const fid = clusterOfSlug.has(slug) ? clusterOfSlug.get(slug) : -1;
+    const fam = fid >= 0 ? clusterById.get(fid) : null;
+    const dot = el('span', { class: 'wf-fam-dot' });
+    dot.style.background = familyHex(fid);
+    panel.append(fam
+      ? el('p', { class: 'wf-fam' }, dot, el('b', {}, familyLabel(fam)),
+          el('span', { class: 'wf-item-note' }, `family of ${fam.size}`))
+      : el('p', { class: 'wf-fam' }, dot, 'Near-unique shape — in no family'));
+
     panel.append(el('p', { class: 'wf-map-shape' },
       (c.sections || []).map((s) => model.labels[s.type] || s.type).join(' › ') || 'no readable sequence'));
 
@@ -219,7 +269,7 @@ import * as THREE from './vendor/three.module.min.js';
     panel.append(ul);
     panel.append(el('p', { class: 'wf-caveat' },
       'Position in this cloud is a readable arrangement, not a measurement: read the '
-      + 'clusters, not the gaps. The distances beside each name are the real figures. '
+      + 'families, not the gaps. The distances beside each name are the real figures. '
       + (model.accuracy
         ? `Sequences come from the classifier, which agreed with the human label on `
           + `${model.accuracy.nonHeroCorrect} of ${model.accuracy.nonHeroOf} non-hero sections.`
@@ -275,6 +325,11 @@ import * as THREE from './vendor/three.module.min.js';
   function build() {
     const radius = (model.similarity.layout3d && model.similarity.layout3d.radius) || 100;
 
+    // Family lookups, now that the model is loaded.
+    families = (model.similarity.clusters && model.similarity.clusters.clusters) || [];
+    clusterById = new Map(families.map((c) => [c.id, c]));
+    clusterOfSlug = new Map(layoutNodes.map((n) => [n.slug, n.cluster]));
+
     renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
     renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -324,8 +379,12 @@ import * as THREE from './vendor/three.module.min.js';
     points = new THREE.Points(geo, dotMat);
     group.add(points);
 
-    // ---- faint neighbour edges, de-duplicated. Kept very low opacity so they
-    // hint at structure without muddying the clusters.
+    // ---- edges, but ONLY between genuinely-alike pairs (below the family
+    // threshold), de-duplicated. Drawing all six neighbours of every page was
+    // most of why the cloud read as noise: a page's "sixth closest" can still be
+    // very unlike it. Restricting to close pairs means the lines trace the
+    // families instead of hazing over them.
+    const threshold = (model.similarity.clusters && model.similarity.clusters.threshold) || 0.34;
     const idx = new Map(layoutNodes.map((d, i) => [d.slug, i]));
     const seen = new Set();
     const linePos = [];
@@ -333,6 +392,7 @@ import * as THREE from './vendor/three.module.min.js';
       const a = idx.get(slug);
       if (a === undefined) continue;
       for (const nb of near) {
+        if (nb.distance >= threshold) continue;
         const b = idx.get(nb.slug);
         if (b === undefined) continue;
         const key = a < b ? `${a}|${b}` : `${b}|${a}`;
@@ -349,7 +409,7 @@ import * as THREE from './vendor/three.module.min.js';
       const lmat = new THREE.LineBasicMaterial({
         color: new THREE.Color(cssVar('--ink-3', '#7a8089')),
         transparent: true,
-        opacity: darkMode ? 0.10 : 0.09,
+        opacity: darkMode ? 0.28 : 0.24,
         depthWrite: false,
       });
       group.add(new THREE.LineSegments(lgeo, lmat));
@@ -366,6 +426,49 @@ import * as THREE from './vendor/three.module.min.js';
     highlight.scale.setScalar(radius * 0.14);
     highlight.visible = false;
     group.add(highlight);
+
+    // ---- floating family labels, one per lobe, so a reader can name a cluster
+    // without hovering it. Billboards (Sprites always face the camera), added to
+    // the group so each label rides its own lobe as the cloud turns, drawn on
+    // top (depthTest off) so a label is never lost behind its own dots.
+    const labelSprite = (text, hex) => {
+      const fs = 34;
+      const measure = document.createElement('canvas').getContext('2d');
+      measure.font = `600 ${fs}px Roboto, system-ui, sans-serif`;
+      const pad = 10;
+      const w = Math.ceil(measure.measureText(text).width) + pad * 2;
+      const h = fs + pad * 2;
+      const cv = document.createElement('canvas'); cv.width = w; cv.height = h;
+      const g = cv.getContext('2d');
+      g.font = `600 ${fs}px Roboto, system-ui, sans-serif`;
+      g.textBaseline = 'middle';
+      g.fillStyle = darkMode ? 'rgba(20,21,26,0.74)' : 'rgba(251,250,248,0.82)';
+      if (g.roundRect) { g.beginPath(); g.roundRect(0, 0, w, h, 9); g.fill(); } else { g.fillRect(0, 0, w, h); }
+      g.fillStyle = hex;
+      g.fillText(text, pad, h / 2 + 1);
+      const tex = new THREE.CanvasTexture(cv); tex.colorSpace = THREE.SRGBColorSpace;
+      const sp = new THREE.Sprite(new THREE.SpriteMaterial({ map: tex, transparent: true, depthWrite: false, depthTest: false }));
+      const k = radius * 0.0065;
+      sp.scale.set(w * k, h * k, 1);
+      return sp;
+    };
+    const cen = new Map();
+    for (const nd of layoutNodes) {
+      if (nd.cluster < 0) continue;
+      const a = cen.get(nd.cluster) || { x: 0, y: 0, z: 0, n: 0 };
+      a.x += nd.x; a.y += nd.y; a.z += nd.z; a.n++;
+      cen.set(nd.cluster, a);
+    }
+    for (const c of families) {
+      const a = cen.get(c.id);
+      if (!a || !a.n) continue;
+      const cx = a.x / a.n, cy = a.y / a.n, cz = a.z / a.n;
+      const len = Math.hypot(cx, cy, cz) || 1;
+      const push = radius * 0.18;
+      const sp = labelSprite(familyLabel(c), familyHex(c.id));
+      sp.position.set(cx + (cx / len) * push, cy + (cy / len) * push + radius * 0.12, cz + (cz / len) * push);
+      group.add(sp);
+    }
 
     raycaster = new THREE.Raycaster();
     raycaster.params.Points = { threshold: radius * 0.035 };

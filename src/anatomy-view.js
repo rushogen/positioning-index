@@ -85,7 +85,7 @@ function renderArchetype(a, accuracy) {
   });
 }
 
-export function renderAnatomy(a, accuracy = undefined) {
+export function renderAnatomy(a, accuracy = undefined, clusters = null) {
   const q = a.quality;
   const readable = a.positions.coverage;
   const chip = judgedChip(accuracy);
@@ -114,20 +114,24 @@ export function renderAnatomy(a, accuracy = undefined) {
     }) : '',
   });
 
-  // "Which pages are shaped alike" is now shown twice from one set of distances:
-  // a WebGL point cloud (mounted at #wf-globe, driven by anatomy-globe.js) above,
-  // and the existing flat, keyboard-navigable map (#wf-map, owned by
-  // anatomy-map.js) below. The globe script hides .wf-globe-stage when WebGL is
-  // unavailable, so the flat map is the fallback and must stay exactly as it was.
-  // No single distance number is available in this function, so there is no stat;
-  // the finding leads with heading, caption and the judged chip.
+  // "Which pages are shaped alike" is shown twice from one set of distances: a
+  // WebGL point cloud (mounted at #wf-globe, driven by anatomy-globe.js) above,
+  // coloured by shape family and labelled per lobe, and the flat, keyboard-
+  // navigable map (#wf-map, owned by anatomy-map.js) below. The globe hides
+  // .wf-globe-stage when WebGL is unavailable, so the flat map is the fallback.
+  // The lead stat is how many recurring families exist; the caption names the
+  // near-unique majority, so the diagram does not oversell its own clustering.
   const map = finding({
     id: 'anatomy-map-section',
+    stat: clusters ? { figure: clusters.clusters.length, unit: `recurring shape families among the ${clusters.of} readable pages` } : undefined,
     heading: 'Which pages are shaped alike',
-    caption:
-      'Every readable page as a point, pulled towards the six pages whose section sequence is closest '
-      + 'to its own — shown here in 3D and, below, as a flat keyboard-navigable map, both drawn from the '
-      + 'same distances published in the API.',
+    caption: clusters
+      ? `Most pages are structurally near-unique: only <b>${clusters.clustered} of ${clusters.of}</b> fall into `
+        + `<b>${clusters.clusters.length}</b> recurring shapes, the coloured, labelled lobes in the cloud; the `
+        + `other <b>${clusters.near_unique}</b> sit on their own. Drag to explore, or read the flat, `
+        + `keyboard-first map below — both are the same published distances.`
+      : 'Every readable page as a point, pulled towards the pages whose section sequence is closest to its '
+        + 'own, coloured by shape family — shown in 3D and, below, as a flat keyboard-navigable map.',
     chips: [chip],
     chart: `
       <div class="wf-globe-stage">
@@ -154,8 +158,7 @@ export function renderAnatomy(a, accuracy = undefined) {
     extra: `
       <p class="note">
         Position is a readable arrangement of a graph, not a projection with axes.
-        Read the clusters, not the pixels; the distances are in the panel, and most
-        of them are high.
+        Read the families, not the pixels; the exact edit distances are in the panel.
       </p>`,
     method:
       'Similarity is normalised edit distance over the ordered list of section types, computed when the '

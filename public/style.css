@@ -1024,6 +1024,19 @@ footer h2 { font-size: 1.05rem; margin-bottom: 1rem; }
 }
 @media (forced-colors: active) { .wf-globe { border-color: CanvasText; } }
 
+/* The globe's side panel doubles as the family legend when nothing is hovered. */
+.wf-legend { list-style: none; margin: .3rem 0 .7rem; padding: 0; display: flex; flex-direction: column; gap: .34rem; }
+.wf-legend li { display: flex; align-items: baseline; gap: .45rem; font-size: .86rem; line-height: 1.3; }
+.wf-legend b { font-weight: 600; }
+.wf-legend li .wf-item-note { margin-left: auto; white-space: nowrap; color: var(--ink-3); }
+.wf-legend-rest { color: var(--ink-2); }
+.wf-fam { display: flex; align-items: baseline; gap: .45rem; margin: .1rem 0 .55rem; font-size: .9rem; }
+.wf-fam .wf-item-note { color: var(--ink-3); }
+.wf-fam-dot {
+  flex: 0 0 auto; width: .62rem; height: .62rem; border-radius: 999px;
+  display: inline-block; align-self: center; box-shadow: 0 0 0 1px var(--rule);
+}
+
 .wf-map-link { stroke: var(--ink-3); stroke-opacity: .22; stroke-width: 1; }
 
 .wf-map-node {
