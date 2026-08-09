@@ -3,10 +3,13 @@ import type { Anatomy, Facts, Positioning } from './types';
 
 /**
  * Fetch a published JSON file once, cache it in memory, and expose it as a hook.
- * Same-origin only ("/api/..."), so no third-party request. The data is the
- * archive's output; the app is a viewer over it.
+ * Same-origin only, so no third-party request. Paths are resolved against the
+ * app's base URL so the same build works at the VPS root ("/") and under the
+ * GitHub Pages project subpath ("/positioning-index/").
  */
 const cache = new Map<string, unknown>();
+
+const api = (name: string) => `${import.meta.env.BASE_URL}api/${name}`;
 
 export function useJson<T>(path: string): { data: T | null; error: string | null } {
   const [data, setData] = useState<T | null>((cache.get(path) as T) ?? null);
@@ -25,6 +28,6 @@ export function useJson<T>(path: string): { data: T | null; error: string | null
   return { data, error };
 }
 
-export const usePositioning = () => useJson<Positioning>('/api/positioning.json');
-export const useAnatomy = () => useJson<Anatomy>('/api/anatomy.json');
-export const useFacts = () => useJson<Facts>('/api/facts.json');
+export const usePositioning = () => useJson<Positioning>(api('positioning.json'));
+export const useAnatomy = () => useJson<Anatomy>(api('anatomy.json'));
+export const useFacts = () => useJson<Facts>(api('facts.json'));

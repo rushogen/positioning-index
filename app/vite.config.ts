@@ -6,7 +6,10 @@ import react from '@vitejs/plugin-react';
 // exactly like the old site. Everything is bundled and self-hosted: no runtime
 // third-party request, which keeps the project's no-consent-banner property.
 export default defineConfig({
-  base: '/',
+  // Root for the VPS (index.rushogen.com); the GitHub Pages build sets
+  // BASE_PATH=/positioning-index/ for the project subpath. The app reads asset,
+  // font and /api paths off import.meta.env.BASE_URL, so one codebase serves both.
+  base: process.env.BASE_PATH || '/',
   plugins: [react()],
   build: {
     outDir: 'dist',

@@ -1,0 +1,57 @@
+# Build the SPA and publish it to GitHub Pages.
+#
+# Pages serves the project at a SUBPATH (rushogen.github.io/positioning-index/),
+# so the app is built with BASE_PATH=/positioning-index/; it reads every asset,
+# font and /api path off import.meta.env.BASE_URL, so the same source also serves
+# the VPS at root. The latest committed archive data is copied under /api so Pages
+# shows the same numbers as the canonical build.
+name: pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  # Redeploy after a crawl commits fresh data, so Pages never lags the corpus.
+  workflow_run:
+    workflows: [crawl]
+    types: [completed]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# One Pages deployment at a time; do not cancel an in-flight publish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build the SPA for the Pages subpath
+        working-directory: app
+        env:
+          BASE_PATH: /positioning-index/
+        run: |
+          set -euo pipefail
+          npm install --no-audit --no-fund
+          npm run build
+          # Serve the latest committed archive data at /api (overwrites the
+          # bundled snapshot with whatever the last crawl published).
+          mkdir -p dist/api
+          cp ../docs/api/*.json dist/api/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: app/dist
+      - id: deployment
+        uses: actions/deploy-pages@v4
