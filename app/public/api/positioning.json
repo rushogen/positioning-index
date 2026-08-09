@@ -6215,7 +6215,7 @@
    {
     "slug": "deel",
     "name": "Deel",
-    "text": "Hire, manage, pay, & equip anyone, anywhere."
+    "text": "Hire, manage, pay, & equip anyone, anywhere"
    },
    {
     "slug": "deepl",
@@ -13468,7 +13468,7 @@
      {
       "slug": "huggingface",
       "name": "Hugging Face",
-      "text": "11 models · 13k models · 20 hours · 254 models · 2m models · 34 models · 35k models · 36 models · 45,000 models · 50,000 organizations · 534 models · 968 models"
+      "text": "11 models · 13k models · 21 hours · 254 models · 2m models · 34 models · 35k models · 36 models · 45,000 models · 50,000 organizations · 534 models · 968 models"
      },
      {
       "slug": "influxdata",
@@ -17694,6 +17694,10 @@
      "name": "Cockroach Labs"
     },
     {
+     "slug": "coda",
+     "name": "Coda"
+    },
+    {
      "slug": "confluent",
      "name": "Confluent"
     },
@@ -17732,6 +17736,10 @@
     {
      "slug": "dynatrace",
      "name": "Dynatrace"
+    },
+    {
+     "slug": "expensify",
+     "name": "Expensify"
     },
     {
      "slug": "figma",
@@ -17796,6 +17804,10 @@
     {
      "slug": "honeycomb",
      "name": "Honeycomb"
+    },
+    {
+     "slug": "hubspot",
+     "name": "HubSpot"
     },
     {
      "slug": "influxdata",
@@ -18170,8 +18182,8 @@
    ],
    "coverage": {
     "tracked": 361,
-    "readable": 142,
-    "unreadable": 219,
+    "readable": 145,
+    "unreadable": 216,
     "held": 0,
     "suspect": 0,
     "missing": [
@@ -18304,10 +18316,6 @@
       "name": "CoachHub"
      },
      {
-      "slug": "coda",
-      "name": "Coda"
-     },
-     {
       "slug": "cognigy",
       "name": "Cognigy"
      },
@@ -18424,10 +18432,6 @@
       "name": "Elastic"
      },
      {
-      "slug": "expensify",
-      "name": "Expensify"
-     },
-     {
       "slug": "factorial",
       "name": "Factorial"
      },
@@ -18506,10 +18510,6 @@
      {
       "slug": "hotjar",
       "name": "Hotjar"
-     },
-     {
-      "slug": "hubspot",
-      "name": "HubSpot"
      },
      {
       "slug": "ibm",
@@ -19152,6 +19152,11 @@
      "text": "Free free | Pro USD 20 | Business USD 200 | Advanced Certificate Manager USD 10/month"
     },
     {
+     "slug": "coda",
+     "name": "Coda",
+     "text": "Free free | Pro USD 12/month | Business USD 33/month | Enterprise custom | Company custom"
+    },
+    {
      "slug": "confluent",
      "name": "Confluent",
      "text": "Basic free | Standard USD 385/month | Enterprise USD 895/month | eCKU USD 0.14 | Data In/Out (Ingress/Egress) USD 0.05 | Data Stored USD 0.08 | 0/Month free | 385/Month USD 385/month"
@@ -19250,6 +19255,11 @@
      "slug": "honeycomb",
      "name": "Honeycomb",
      "text": "Free free | Pro USD 150/month"
+    },
+    {
+     "slug": "hubspot",
+     "name": "HubSpot",
+     "text": "Marketing Hub Starter - Monthly Billing USD 10/P1M | Marketing Hub Starter - Annual Commitmen… USD 84/P1Y | Marketing Hub Professional - Annual Comm… USD 890/P1M | Marketing Hub Professional - Annual Comm… USD 9600/P1Y | Marketing Hub Enterprise - Annual Commit… USD 43200/P1Y"
     },
     {
      "slug": "huggingface",
@@ -19579,6 +19589,11 @@
      "text": "Company"
     },
     {
+     "slug": "coda",
+     "name": "Coda",
+     "text": "Company, Enterprise"
+    },
+    {
      "slug": "customer-io",
      "name": "Customer.io",
      "text": "Enterprise"
@@ -19791,8 +19806,8 @@
    ],
    "coverage": {
     "tracked": 361,
-    "readable": 98,
-    "unreadable": 263,
+    "readable": 100,
+    "unreadable": 261,
     "held": 0,
     "suspect": 0,
     "missing": null
@@ -19993,7 +20008,7 @@
     {
      "key": "10-19",
      "label": "10.00 to 19.99",
-     "n": 16,
+     "n": 18,
      "companies": [
       {
        "slug": "airbyte",
@@ -20034,6 +20049,14 @@
        "currency": "USD",
        "tier": "Starter",
        "text": "USD 10"
+      },
+      {
+       "slug": "hubspot",
+       "name": "HubSpot",
+       "amount": 10,
+       "currency": "USD",
+       "tier": "Marketing Hub Starter - Monthly Billing",
+       "text": "USD 10/P1M"
       },
       {
        "slug": "linear",
@@ -20082,6 +20105,14 @@
        "currency": "USD",
        "tier": "Grow",
        "text": "USD 12/user/month"
+      },
+      {
+       "slug": "coda",
+       "name": "Coda",
+       "amount": 12,
+       "currency": "USD",
+       "tier": "Pro",
+       "text": "USD 12/month"
       },
       {
        "slug": "grammarly",
@@ -20661,6 +20692,14 @@
      "text": "USD 10"
     },
     {
+     "slug": "hubspot",
+     "name": "HubSpot",
+     "amount": 10,
+     "currency": "USD",
+     "tier": "Marketing Hub Starter - Monthly Billing",
+     "text": "USD 10/P1M"
+    },
+    {
      "slug": "linear",
      "name": "Linear",
      "amount": 10,
@@ -20707,6 +20746,14 @@
      "currency": "USD",
      "tier": "Grow",
      "text": "USD 12/user/month"
+    },
+    {
+     "slug": "coda",
+     "name": "Coda",
+     "amount": 12,
+     "currency": "USD",
+     "tier": "Pro",
+     "text": "USD 12/month"
     },
     {
      "slug": "grammarly",
@@ -21048,7 +21095,7 @@
    "currencies": [
     {
      "currency": "USD",
-     "n": 71
+     "n": 73
     },
     {
      "currency": "EUR",
@@ -21059,11 +21106,11 @@
      "n": 1
     }
    ],
-   "median": 19.99,
+   "median": 19,
    "coverage": {
     "tracked": 361,
-    "readable": 75,
-    "unreadable": 286,
+    "readable": 77,
+    "unreadable": 284,
     "held": 0,
     "suspect": 0,
     "missing": [
@@ -21254,10 +21301,6 @@
      {
       "slug": "cockroach-labs",
       "name": "Cockroach Labs"
-     },
-     {
-      "slug": "coda",
-      "name": "Coda"
      },
      {
       "slug": "cognigy",
@@ -21522,10 +21565,6 @@
      {
       "slug": "hotjar",
       "name": "Hotjar"
-     },
-     {
-      "slug": "hubspot",
-      "name": "HubSpot"
      },
      {
       "slug": "ibm",
@@ -54649,11 +54688,11 @@
       "label": "Work & product",
       "short": "Work & product",
       "n": 48,
-      "readable": 34,
-      "yes": 30,
+      "readable": 35,
+      "yes": 31,
       "no": 4,
-      "unreadable": 14,
-      "share": 88.2,
+      "unreadable": 13,
+      "share": 88.6,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -54680,6 +54719,10 @@
         {
          "slug": "clickup",
          "name": "ClickUp"
+        },
+        {
+         "slug": "coda",
+         "name": "Coda"
         },
         {
          "slug": "cursor",
@@ -54802,10 +54845,6 @@
          "name": "Box"
         },
         {
-         "slug": "coda",
-         "name": "Coda"
-        },
-        {
          "slug": "gitpod",
          "name": "Gitpod"
         },
@@ -54861,11 +54900,11 @@
       "label": "Go-to-market",
       "short": "Go-to-market",
       "n": 50,
-      "readable": 21,
-      "yes": 19,
+      "readable": 22,
+      "yes": 20,
       "no": 2,
-      "unreadable": 29,
-      "share": 90.5,
+      "unreadable": 28,
+      "share": 90.9,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -54912,6 +54951,10 @@
         {
          "slug": "grammarly",
          "name": "Grammarly"
+        },
+        {
+         "slug": "hubspot",
+         "name": "HubSpot"
         },
         {
          "slug": "klaviyo",
@@ -55000,10 +55043,6 @@
         {
          "slug": "highspot",
          "name": "Highspot"
-        },
-        {
-         "slug": "hubspot",
-         "name": "HubSpot"
         },
         {
          "slug": "insider",
@@ -55394,11 +55433,11 @@
       "label": "Finance & people ops",
       "short": "Finance & people",
       "n": 37,
-      "readable": 10,
-      "yes": 6,
+      "readable": 11,
+      "yes": 7,
       "no": 4,
-      "unreadable": 27,
-      "share": 60,
+      "unreadable": 26,
+      "share": 63.6,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -55409,6 +55448,10 @@
         {
          "slug": "bill",
          "name": "BILL"
+        },
+        {
+         "slug": "expensify",
+         "name": "Expensify"
         },
         {
          "slug": "navan",
@@ -55477,10 +55520,6 @@
         {
          "slug": "deel",
          "name": "Deel"
-        },
-        {
-         "slug": "expensify",
-         "name": "Expensify"
         },
         {
          "slug": "factorial",
@@ -56287,11 +56326,11 @@
       "label": "Go-to-market",
       "short": "Go-to-market",
       "n": 50,
-      "readable": 21,
-      "yes": 19,
+      "readable": 22,
+      "yes": 20,
       "no": 2,
-      "unreadable": 29,
-      "share": 90.5,
+      "unreadable": 28,
+      "share": 90.9,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -56338,6 +56377,10 @@
         {
          "slug": "grammarly",
          "name": "Grammarly"
+        },
+        {
+         "slug": "hubspot",
+         "name": "HubSpot"
         },
         {
          "slug": "klaviyo",
@@ -56428,10 +56471,6 @@
          "name": "Highspot"
         },
         {
-         "slug": "hubspot",
-         "name": "HubSpot"
-        },
-        {
          "slug": "insider",
          "name": "Insider"
         },
@@ -56507,11 +56546,11 @@
       "label": "Work & product",
       "short": "Work & product",
       "n": 48,
-      "readable": 34,
-      "yes": 30,
+      "readable": 35,
+      "yes": 31,
       "no": 4,
-      "unreadable": 14,
-      "share": 88.2,
+      "unreadable": 13,
+      "share": 88.6,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -56538,6 +56577,10 @@
         {
          "slug": "clickup",
          "name": "ClickUp"
+        },
+        {
+         "slug": "coda",
+         "name": "Coda"
         },
         {
          "slug": "cursor",
@@ -56660,10 +56703,6 @@
          "name": "Box"
         },
         {
-         "slug": "coda",
-         "name": "Coda"
-        },
-        {
          "slug": "gitpod",
          "name": "Gitpod"
         },
@@ -56710,6 +56749,174 @@
         {
          "slug": "workato",
          "name": "Workato"
+        }
+       ]
+      }
+     },
+     {
+      "group": "backoffice",
+      "label": "Finance & people ops",
+      "short": "Finance & people",
+      "n": 37,
+      "readable": 11,
+      "yes": 7,
+      "no": 4,
+      "unreadable": 26,
+      "share": 63.6,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "bamboohr",
+         "name": "BambooHR"
+        },
+        {
+         "slug": "bill",
+         "name": "BILL"
+        },
+        {
+         "slug": "expensify",
+         "name": "Expensify"
+        },
+        {
+         "slug": "navan",
+         "name": "Navan"
+        },
+        {
+         "slug": "qonto",
+         "name": "Qonto"
+        },
+        {
+         "slug": "ramp",
+         "name": "Ramp"
+        },
+        {
+         "slug": "tipalti",
+         "name": "Tipalti"
+        }
+       ],
+       "no": [
+        {
+         "slug": "brex",
+         "name": "Brex"
+        },
+        {
+         "slug": "greenhouse",
+         "name": "Greenhouse"
+        },
+        {
+         "slug": "melio",
+         "name": "Melio"
+        },
+        {
+         "slug": "pleo",
+         "name": "Pleo"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "15five",
+         "name": "15Five"
+        },
+        {
+         "slug": "anaplan",
+         "name": "Anaplan"
+        },
+        {
+         "slug": "ashby",
+         "name": "Ashby"
+        },
+        {
+         "slug": "avalara",
+         "name": "Avalara"
+        },
+        {
+         "slug": "blackline",
+         "name": "BlackLine"
+        },
+        {
+         "slug": "coachhub",
+         "name": "CoachHub"
+        },
+        {
+         "slug": "culture-amp",
+         "name": "Culture Amp"
+        },
+        {
+         "slug": "deel",
+         "name": "Deel"
+        },
+        {
+         "slug": "factorial",
+         "name": "Factorial"
+        },
+        {
+         "slug": "hibob",
+         "name": "HiBob"
+        },
+        {
+         "slug": "lattice",
+         "name": "Lattice"
+        },
+        {
+         "slug": "ledgy",
+         "name": "Ledgy"
+        },
+        {
+         "slug": "lever",
+         "name": "Lever"
+        },
+        {
+         "slug": "oyster",
+         "name": "Oyster"
+        },
+        {
+         "slug": "payfit",
+         "name": "PayFit"
+        },
+        {
+         "slug": "paylocity",
+         "name": "Paylocity"
+        },
+        {
+         "slug": "pennylane",
+         "name": "Pennylane"
+        },
+        {
+         "slug": "personio",
+         "name": "Personio"
+        },
+        {
+         "slug": "remote",
+         "name": "Remote"
+        },
+        {
+         "slug": "rippling",
+         "name": "Rippling"
+        },
+        {
+         "slug": "silverfin",
+         "name": "Silverfin"
+        },
+        {
+         "slug": "spendesk",
+         "name": "Spendesk"
+        },
+        {
+         "slug": "stripe",
+         "name": "Stripe"
+        },
+        {
+         "slug": "workable",
+         "name": "Workable"
+        },
+        {
+         "slug": "workday",
+         "name": "Workday"
+        },
+        {
+         "slug": "workhuman",
+         "name": "Workhuman"
         }
        ]
       }
@@ -56834,174 +57041,6 @@
         {
          "slug": "workiva",
          "name": "Workiva"
-        }
-       ]
-      }
-     },
-     {
-      "group": "backoffice",
-      "label": "Finance & people ops",
-      "short": "Finance & people",
-      "n": 37,
-      "readable": 10,
-      "yes": 6,
-      "no": 4,
-      "unreadable": 27,
-      "share": 60,
-      "suppressed": false,
-      "companies": {
-       "yes": [
-        {
-         "slug": "bamboohr",
-         "name": "BambooHR"
-        },
-        {
-         "slug": "bill",
-         "name": "BILL"
-        },
-        {
-         "slug": "navan",
-         "name": "Navan"
-        },
-        {
-         "slug": "qonto",
-         "name": "Qonto"
-        },
-        {
-         "slug": "ramp",
-         "name": "Ramp"
-        },
-        {
-         "slug": "tipalti",
-         "name": "Tipalti"
-        }
-       ],
-       "no": [
-        {
-         "slug": "brex",
-         "name": "Brex"
-        },
-        {
-         "slug": "greenhouse",
-         "name": "Greenhouse"
-        },
-        {
-         "slug": "melio",
-         "name": "Melio"
-        },
-        {
-         "slug": "pleo",
-         "name": "Pleo"
-        }
-       ],
-       "unreadable": [
-        {
-         "slug": "15five",
-         "name": "15Five"
-        },
-        {
-         "slug": "anaplan",
-         "name": "Anaplan"
-        },
-        {
-         "slug": "ashby",
-         "name": "Ashby"
-        },
-        {
-         "slug": "avalara",
-         "name": "Avalara"
-        },
-        {
-         "slug": "blackline",
-         "name": "BlackLine"
-        },
-        {
-         "slug": "coachhub",
-         "name": "CoachHub"
-        },
-        {
-         "slug": "culture-amp",
-         "name": "Culture Amp"
-        },
-        {
-         "slug": "deel",
-         "name": "Deel"
-        },
-        {
-         "slug": "expensify",
-         "name": "Expensify"
-        },
-        {
-         "slug": "factorial",
-         "name": "Factorial"
-        },
-        {
-         "slug": "hibob",
-         "name": "HiBob"
-        },
-        {
-         "slug": "lattice",
-         "name": "Lattice"
-        },
-        {
-         "slug": "ledgy",
-         "name": "Ledgy"
-        },
-        {
-         "slug": "lever",
-         "name": "Lever"
-        },
-        {
-         "slug": "oyster",
-         "name": "Oyster"
-        },
-        {
-         "slug": "payfit",
-         "name": "PayFit"
-        },
-        {
-         "slug": "paylocity",
-         "name": "Paylocity"
-        },
-        {
-         "slug": "pennylane",
-         "name": "Pennylane"
-        },
-        {
-         "slug": "personio",
-         "name": "Personio"
-        },
-        {
-         "slug": "remote",
-         "name": "Remote"
-        },
-        {
-         "slug": "rippling",
-         "name": "Rippling"
-        },
-        {
-         "slug": "silverfin",
-         "name": "Silverfin"
-        },
-        {
-         "slug": "spendesk",
-         "name": "Spendesk"
-        },
-        {
-         "slug": "stripe",
-         "name": "Stripe"
-        },
-        {
-         "slug": "workable",
-         "name": "Workable"
-        },
-        {
-         "slug": "workday",
-         "name": "Workday"
-        },
-        {
-         "slug": "workhuman",
-         "name": "Workhuman"
         }
        ]
       }
@@ -57551,174 +57590,130 @@
      }
     },
     "bottom": {
-     "group": "backoffice",
-     "label": "Finance & people ops",
-     "short": "Finance & people",
-     "n": 37,
-     "readable": 10,
-     "yes": 6,
-     "no": 4,
-     "unreadable": 27,
-     "share": 60,
+     "group": "risk",
+     "label": "Risk, compliance & identity",
+     "short": "Risk & compliance",
+     "n": 26,
+     "readable": 8,
+     "yes": 5,
+     "no": 3,
+     "unreadable": 18,
+     "share": 62.5,
      "suppressed": false,
      "companies": {
       "yes": [
        {
-        "slug": "bamboohr",
-        "name": "BambooHR"
+        "slug": "clerk",
+        "name": "Clerk"
        },
        {
-        "slug": "bill",
-        "name": "BILL"
+        "slug": "okta",
+        "name": "Okta"
        },
        {
-        "slug": "navan",
-        "name": "Navan"
+        "slug": "stytch",
+        "name": "Stytch"
        },
        {
-        "slug": "qonto",
-        "name": "Qonto"
+        "slug": "usercentrics",
+        "name": "Usercentrics"
        },
        {
-        "slug": "ramp",
-        "name": "Ramp"
-       },
-       {
-        "slug": "tipalti",
-        "name": "Tipalti"
+        "slug": "workos",
+        "name": "WorkOS"
        }
       ],
       "no": [
        {
-        "slug": "brex",
-        "name": "Brex"
+        "slug": "dataguard",
+        "name": "DataGuard"
        },
        {
-        "slug": "greenhouse",
-        "name": "Greenhouse"
+        "slug": "docusign",
+        "name": "Docusign"
        },
        {
-        "slug": "melio",
-        "name": "Melio"
-       },
-       {
-        "slug": "pleo",
-        "name": "Pleo"
+        "slug": "veriff",
+        "name": "Veriff"
        }
       ],
       "unreadable": [
        {
-        "slug": "15five",
-        "name": "15Five"
+        "slug": "complyadvantage",
+        "name": "ComplyAdvantage"
        },
        {
-        "slug": "anaplan",
-        "name": "Anaplan"
+        "slug": "diligent",
+        "name": "Diligent"
        },
        {
-        "slug": "ashby",
-        "name": "Ashby"
+        "slug": "drata",
+        "name": "Drata"
        },
        {
-        "slug": "avalara",
-        "name": "Avalara"
+        "slug": "feedzai",
+        "name": "Feedzai"
        },
        {
-        "slug": "blackline",
-        "name": "BlackLine"
+        "slug": "fenergo",
+        "name": "Fenergo"
        },
        {
-        "slug": "coachhub",
-        "name": "CoachHub"
+        "slug": "icertis",
+        "name": "Icertis"
        },
        {
-        "slug": "culture-amp",
-        "name": "Culture Amp"
+        "slug": "idnow",
+        "name": "IDnow"
        },
        {
-        "slug": "deel",
-        "name": "Deel"
+        "slug": "ironclad",
+        "name": "Ironclad"
        },
        {
-        "slug": "expensify",
-        "name": "Expensify"
+        "slug": "jumpcloud",
+        "name": "JumpCloud"
        },
        {
-        "slug": "factorial",
-        "name": "Factorial"
+        "slug": "juro",
+        "name": "Juro"
        },
        {
-        "slug": "hibob",
-        "name": "HiBob"
+        "slug": "luminance",
+        "name": "Luminance"
        },
        {
-        "slug": "lattice",
-        "name": "Lattice"
+        "slug": "navex",
+        "name": "NAVEX"
        },
        {
-        "slug": "ledgy",
-        "name": "Ledgy"
+        "slug": "onetrust",
+        "name": "OneTrust"
        },
        {
-        "slug": "lever",
-        "name": "Lever"
+        "slug": "red-points",
+        "name": "Red Points"
        },
        {
-        "slug": "oyster",
-        "name": "Oyster"
+        "slug": "relativity",
+        "name": "Relativity"
        },
        {
-        "slug": "payfit",
-        "name": "PayFit"
+        "slug": "sailpoint",
+        "name": "SailPoint"
        },
        {
-        "slug": "paylocity",
-        "name": "Paylocity"
+        "slug": "signicat",
+        "name": "Signicat"
        },
        {
-        "slug": "pennylane",
-        "name": "Pennylane"
-       },
-       {
-        "slug": "personio",
-        "name": "Personio"
-       },
-       {
-        "slug": "remote",
-        "name": "Remote"
-       },
-       {
-        "slug": "rippling",
-        "name": "Rippling"
-       },
-       {
-        "slug": "silverfin",
-        "name": "Silverfin"
-       },
-       {
-        "slug": "spendesk",
-        "name": "Spendesk"
-       },
-       {
-        "slug": "stripe",
-        "name": "Stripe"
-       },
-       {
-        "slug": "workable",
-        "name": "Workable"
-       },
-       {
-        "slug": "workday",
-        "name": "Workday"
-       },
-       {
-        "slug": "workhuman",
-        "name": "Workhuman"
+        "slug": "workiva",
+        "name": "Workiva"
        }
       ]
      }
     },
-    "spread": 4,
+    "spread": 3,
     "lead_over_runner_up": 3,
     "drawn": false,
     "withheld": {
@@ -57727,10 +57722,10 @@
      "groups": 10
     },
     "overall": {
-     "yes": 123,
+     "yes": 126,
      "no": 19,
-     "unreadable": 219,
-     "readable": 142,
+     "unreadable": 216,
+     "readable": 145,
      "tracked": 361
     }
    }
@@ -57761,5 +57756,5 @@
    "missing": []
   }
  },
- "generated_at": "2026-08-09T16:10:17Z"
+ "generated_at": "2026-08-09T16:38:19Z"
 }
