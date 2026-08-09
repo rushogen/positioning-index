@@ -481,7 +481,7 @@
    },
    {
     "word": "agentic",
-    "n": 19,
+    "n": 18,
     "companies": [
      {
       "slug": "anaplan",
@@ -572,11 +572,6 @@
       "slug": "voyado",
       "name": "Voyado",
       "text": "The Agentic CX Suite for Retail"
-     },
-     {
-      "slug": "zapier",
-      "name": "Zapier",
-      "text": "The automation layer for agentic AI"
      }
     ]
    },
@@ -652,7 +647,7 @@
      {
       "slug": "sigma",
       "name": "Sigma",
-      "text": "AI runtime for business"
+      "text": "Vibe-code enterprise business applications"
      },
      {
       "slug": "synthesia",
@@ -768,87 +763,6 @@
     ]
    },
    {
-    "word": "one",
-    "n": 15,
-    "companies": [
-     {
-      "slug": "airtable",
-      "name": "Airtable",
-      "text": "All your teams, all their workflows—connected in one workspace"
-     },
-     {
-      "slug": "bigcommerce",
-      "name": "BigCommerce",
-      "text": "From one-size-fits-all to anything you can imagine."
-     },
-     {
-      "slug": "bloomreach",
-      "name": "Bloomreach",
-      "text": "One Prompt for a Full Campaign"
-     },
-     {
-      "slug": "coda",
-      "name": "Coda",
-      "text": "Your all-in-one collaborative workspace."
-     },
-     {
-      "slug": "grafana",
-      "name": "Grafana Labs",
-      "text": "AI for observability. Observability for AI. One platform for both."
-     },
-     {
-      "slug": "hibob",
-      "name": "HiBob",
-      "text": "Connect HR, Payroll, and Finance in one people platform."
-     },
-     {
-      "slug": "loom",
-      "name": "Loom",
-      "text": "One video is worth a thousand words"
-     },
-     {
-      "slug": "mongodb",
-      "name": "MongoDB",
-      "text": "One data platform. Unlimited AI potential."
-     },
-     {
-      "slug": "odoo",
-      "name": "Odoo",
-      "text": "All your business on one platform."
-     },
-     {
-      "slug": "prefect",
-      "name": "Prefect",
-      "text": "Start with one flow. Scale to millions."
-     },
-     {
-      "slug": "replicate",
-      "name": "Replicate",
-      "text": "Run and fine-tune models. Deploy custom models. All with one line of code."
-     },
-     {
-      "slug": "staffbase",
-      "name": "Staffbase",
-      "text": "Finally, one platform to reach every employee. Wherever they work."
-     },
-     {
-      "slug": "synthesia",
-      "name": "Synthesia",
-      "text": "All-in-one AI Video platform for business"
-     },
-     {
-      "slug": "teamleader",
-      "name": "Teamleader",
-      "text": "Just one platform to run your whole business."
-     },
-     {
-      "slug": "tipalti",
-      "name": "Tipalti",
-      "text": "One Solution for All Your Finance Operations"
-     }
-    ]
-   },
-   {
     "word": "built",
     "n": 14,
     "companies": [
@@ -921,6 +835,82 @@
       "slug": "sentinelone",
       "name": "SentinelOne",
       "text": "The Autonomous Security Platform Built for Advantage"
+     }
+    ]
+   },
+   {
+    "word": "one",
+    "n": 14,
+    "companies": [
+     {
+      "slug": "bigcommerce",
+      "name": "BigCommerce",
+      "text": "From one-size-fits-all to anything you can imagine."
+     },
+     {
+      "slug": "bloomreach",
+      "name": "Bloomreach",
+      "text": "One Prompt for a Full Campaign"
+     },
+     {
+      "slug": "coda",
+      "name": "Coda",
+      "text": "Your all-in-one collaborative workspace."
+     },
+     {
+      "slug": "grafana",
+      "name": "Grafana Labs",
+      "text": "AI for observability. Observability for AI. One platform for both."
+     },
+     {
+      "slug": "hibob",
+      "name": "HiBob",
+      "text": "Connect HR, Payroll, and Finance in one people platform."
+     },
+     {
+      "slug": "loom",
+      "name": "Loom",
+      "text": "One video is worth a thousand words"
+     },
+     {
+      "slug": "mongodb",
+      "name": "MongoDB",
+      "text": "One data platform. Unlimited AI potential."
+     },
+     {
+      "slug": "odoo",
+      "name": "Odoo",
+      "text": "All your business on one platform."
+     },
+     {
+      "slug": "prefect",
+      "name": "Prefect",
+      "text": "Start with one flow. Scale to millions."
+     },
+     {
+      "slug": "replicate",
+      "name": "Replicate",
+      "text": "Run and fine-tune models. Deploy custom models. All with one line of code."
+     },
+     {
+      "slug": "staffbase",
+      "name": "Staffbase",
+      "text": "Finally, one platform to reach every employee. Wherever they work."
+     },
+     {
+      "slug": "synthesia",
+      "name": "Synthesia",
+      "text": "All-in-one AI Video platform for business"
+     },
+     {
+      "slug": "teamleader",
+      "name": "Teamleader",
+      "text": "Just one platform to run your whole business."
+     },
+     {
+      "slug": "tipalti",
+      "name": "Tipalti",
+      "text": "One Solution for All Your Finance Operations"
      }
     ]
    },
@@ -1303,7 +1293,7 @@
     }
    ]
   },
-  "distinct_words": 711
+  "distinct_words": 716
  },
  "category_nouns": {
   "groups": [
@@ -2996,7 +2986,7 @@
    "tracked": 361,
    "readable": 304,
    "unreadable": 57,
-   "held": 0,
+   "held": 1,
    "suspect": 0,
    "missing": [
     {
@@ -3317,12 +3307,14 @@
     "slug": "airtable",
     "name": "Airtable",
     "terms": [
+     "agent",
      "ai"
     ],
     "fields": [
+     "headline",
      "subhead"
     ],
-    "text": "All your teams, all their workflows—connected in one workspace"
+    "text": "AI transformed individual work. Airtable transforms teamwork."
    },
    {
     "slug": "airwallex",
@@ -4005,17 +3997,6 @@
      "category_label"
     ],
     "text": "Accelerate agent adoption, safely."
-   },
-   {
-    "slug": "docusign",
-    "name": "Docusign",
-    "terms": [
-     "ai"
-    ],
-    "fields": [
-     "subhead"
-    ],
-    "text": "Do (much) more with IAM"
    },
    {
     "slug": "dremio",
@@ -5465,11 +5446,10 @@
      "ai"
     ],
     "fields": [
-     "headline",
      "subhead",
      "category_label"
     ],
-    "text": "AI runtime for business"
+    "text": "Vibe-code enterprise business applications"
    },
    {
     "slug": "signicat",
@@ -6046,14 +6026,13 @@
     "slug": "zapier",
     "name": "Zapier",
     "terms": [
-     "agent",
      "ai"
     ],
     "fields": [
      "headline",
      "subhead"
     ],
-    "text": "The automation layer for agentic AI"
+    "text": "Your tools. Your rules. Any AI."
    },
    {
     "slug": "zendesk",
@@ -6219,7 +6198,7 @@
    {
     "slug": "deel",
     "name": "Deel",
-    "text": "Hire, manage, pay, & equip anyone, anywhere"
+    "text": "Hire, manage, pay, & equip anyone, anywhere."
    },
    {
     "slug": "deepl",
@@ -6240,6 +6219,11 @@
     "slug": "docplanner",
     "name": "Docplanner",
     "text": "Helping people live longer, healthier lives"
+   },
+   {
+    "slug": "docusign",
+    "name": "Docusign",
+    "text": "Everything you need to agree"
    },
    {
     "slug": "expensify",
@@ -6671,6 +6655,11 @@
       "slug": "aircall",
       "name": "Aircall",
       "text": "Customer communications, evolved with AI that handles customer interactions, end to end."
+     },
+     {
+      "slug": "airtable",
+      "name": "Airtable",
+      "text": "AI transformed individual work. Airtable transforms teamwork."
      },
      {
       "slug": "anaplan",
@@ -7223,11 +7212,6 @@
       "text": "Fast Project Management for Software Teams and their Agents"
      },
      {
-      "slug": "sigma",
-      "name": "Sigma",
-      "text": "AI runtime for business"
-     },
-     {
       "slug": "signicat",
       "name": "Signicat",
       "text": "Fight fraud with digital identity powered by AI"
@@ -7370,7 +7354,7 @@
      {
       "slug": "zapier",
       "name": "Zapier",
-      "text": "The automation layer for agentic AI"
+      "text": "Your tools. Your rules. Any AI."
      },
      {
       "slug": "zendesk",
@@ -7381,7 +7365,7 @@
    },
    {
     "field": "subhead",
-    "n": 173,
+    "n": 172,
     "companies": [
      {
       "slug": "15five",
@@ -7416,7 +7400,7 @@
      {
       "slug": "airtable",
       "name": "Airtable",
-      "text": "Build AI-powered workflows that unify data, maximize collaboration, and set your teams up for long-term success. No code required."
+      "text": "It turns individual gains into team momentum — the apps, workflows, and agents one person builds become systems the whole company runs on."
      },
      {
       "slug": "airwallex",
@@ -7597,11 +7581,6 @@
       "slug": "docker",
       "name": "Docker",
       "text": "MicroVM isolation for every agent session. Network and filesystem locked down at the runtime."
-     },
-     {
-      "slug": "docusign",
-      "name": "Docusign",
-      "text": "Save time and unlock value from your agreements. With our pre-configured IAM applications, you can automate workflows, manage and analyze documents with AI, and seamlessly connect agreement data across systems."
      },
      {
       "slug": "dremio",
@@ -8231,7 +8210,7 @@
      {
       "slug": "zapier",
       "name": "Zapier",
-      "text": "One MCP connection. 9,000+ apps. Set your policies and work across any model, surface, or agent harness — without connections or rules breaking."
+      "text": "Zapier gives teams one place to set guardrails, manage model access, and see everything — so everyone can build with AI confidently, on any model, without waiting for permission."
      },
      {
       "slug": "zendesk",
@@ -8855,7 +8834,7 @@
   "by_term": [
    {
     "term": "ai",
-    "n": 209,
+    "n": 208,
     "companies": [
      {
       "slug": "15five",
@@ -8942,12 +8921,14 @@
       "slug": "airtable",
       "name": "Airtable",
       "terms": [
+       "agent",
        "ai"
       ],
       "fields": [
+       "headline",
        "subhead"
       ],
-      "text": "All your teams, all their workflows—connected in one workspace"
+      "text": "AI transformed individual work. Airtable transforms teamwork."
      },
      {
       "slug": "airwallex",
@@ -9548,17 +9529,6 @@
        "category_label"
       ],
       "text": "The Agentic CS Platform Behind Exceptional Ecommerce Brands"
-     },
-     {
-      "slug": "docusign",
-      "name": "Docusign",
-      "terms": [
-       "ai"
-      ],
-      "fields": [
-       "subhead"
-      ],
-      "text": "Do (much) more with IAM"
      },
      {
       "slug": "dremio",
@@ -10866,11 +10836,10 @@
        "ai"
       ],
       "fields": [
-       "headline",
        "subhead",
        "category_label"
       ],
-      "text": "AI runtime for business"
+      "text": "Vibe-code enterprise business applications"
      },
      {
       "slug": "signicat",
@@ -11389,14 +11358,13 @@
       "slug": "zapier",
       "name": "Zapier",
       "terms": [
-       "agent",
        "ai"
       ],
       "fields": [
        "headline",
        "subhead"
       ],
-      "text": "The automation layer for agentic AI"
+      "text": "Your tools. Your rules. Any AI."
      },
      {
       "slug": "zendesk",
@@ -11497,6 +11465,19 @@
        "category_label"
       ],
       "text": "The context layer for AI agents."
+     },
+     {
+      "slug": "airtable",
+      "name": "Airtable",
+      "terms": [
+       "agent",
+       "ai"
+      ],
+      "fields": [
+       "headline",
+       "subhead"
+      ],
+      "text": "AI transformed individual work. Airtable transforms teamwork."
      },
      {
       "slug": "anaplan",
@@ -12432,11 +12413,10 @@
        "ai"
       ],
       "fields": [
-       "headline",
        "subhead",
        "category_label"
       ],
-      "text": "AI runtime for business"
+      "text": "Vibe-code enterprise business applications"
      },
      {
       "slug": "singlestore",
@@ -12768,19 +12748,6 @@
       "text": "WRITER is the enterprise AI agent platform trusted by Fortune 500 companies, built to help teams execute and scale on-brand, compliant work."
      },
      {
-      "slug": "zapier",
-      "name": "Zapier",
-      "terms": [
-       "agent",
-       "ai"
-      ],
-      "fields": [
-       "headline",
-       "subhead"
-      ],
-      "text": "The automation layer for agentic AI"
-     },
-     {
       "slug": "zendesk",
       "name": "Zendesk",
       "terms": [
@@ -13012,7 +12979,7 @@
    "tracked": 361,
    "readable": 342,
    "unreadable": 19,
-   "held": 0,
+   "held": 1,
    "suspect": 0,
    "missing": [
     {
@@ -13101,7 +13068,7 @@
     "label": "Scale counts",
     "note": "customers, users, records, teams",
     "n": 170,
-    "claims": 314,
+    "claims": 317,
     "companies": [
      {
       "slug": "15five",
@@ -13126,7 +13093,7 @@
      {
       "slug": "airtable",
       "name": "Airtable",
-      "text": "02 agents · 10,000 hours · 100m records"
+      "text": "10,000 hours · 100 companies · 100m records · 50 projects · 500,000 companies"
      },
      {
       "slug": "airwallex",
@@ -13941,7 +13908,7 @@
      {
       "slug": "zapier",
       "name": "Zapier",
-      "text": "100 hours · 20 hours · 9,000 apps"
+      "text": "42 hours · 450k agents · 9,000 apps · 9,000 integrations"
      },
      {
       "slug": "zendesk",
@@ -13959,8 +13926,8 @@
     "key": "percent",
     "label": "Percentage gains",
     "note": "\"40% faster\", \"cut costs by 30%\"",
-    "n": 154,
-    "claims": 445,
+    "n": 156,
+    "claims": 451,
     "companies": [
      {
       "slug": "acronis",
@@ -13971,6 +13938,11 @@
       "slug": "adyen",
       "name": "Adyen",
       "text": "10% and increased conversion · 10% increased conversion"
+     },
+     {
+      "slug": "airtable",
+      "name": "Airtable",
+      "text": "60% cut creative-brief processing · 60% reduction in creative · 70% faster turnaround time · 70% faster unify global · 90% faster feedback triage"
      },
      {
       "slug": "aiven",
@@ -14723,6 +14695,11 @@
       "text": "75% chipotle reduced time-to-hire · 75% reduced time-to-hire"
      },
      {
+      "slug": "zapier",
+      "name": "Zapier",
+      "text": "87% reduction in lead"
+     },
+     {
       "slug": "zendesk",
       "name": "Zendesk",
       "text": "11 % decrease in email · 36 % increase in ai · 51.5 % automate · 6 % increase in automated"
@@ -14738,8 +14715,8 @@
     "key": "money",
     "label": "Money amounts",
     "note": "\"$2.4M saved\", \"$1B processed\"",
-    "n": 95,
-    "claims": 221,
+    "n": 96,
+    "claims": 224,
     "companies": [
      {
       "slug": "15five",
@@ -14934,7 +14911,7 @@
      {
       "slug": "grammarly",
       "name": "Grammarly",
-      "text": "$210k saved in the · $5,000 per employee per · €0 eur · €12 eur · €30 when billed monthly"
+      "text": "$0 usd · $12 usd · $210k saved in the · $30 when billed monthly · $5,000 per employee per"
      },
      {
       "slug": "heap",
@@ -15215,6 +15192,11 @@
       "slug": "xeneta",
       "name": "Xeneta",
       "text": "$2m versus market pricing · $37m savings across the"
+     },
+     {
+      "slug": "zapier",
+      "name": "Zapier",
+      "text": "$1 million increase in potential · $1m recovered pipeline using · $40k+ headcount savings per"
      }
     ]
    },
@@ -15222,8 +15204,8 @@
     "key": "multiplier",
     "label": "Multipliers",
     "note": "\"10x faster\"",
-    "n": 67,
-    "claims": 98,
+    "n": 68,
+    "claims": 99,
     "companies": [
      {
       "slug": "activecampaign",
@@ -15556,6 +15538,11 @@
       "text": "10x more"
      },
      {
+      "slug": "zapier",
+      "name": "Zapier",
+      "text": "5.5x roi with zapier"
+     },
+     {
       "slug": "zendesk",
       "name": "Zendesk",
       "text": "2 x increase in ai"
@@ -15566,9 +15553,14 @@
     "key": "rank",
     "label": "Rankings and lists",
     "note": "\"Fortune 500\", \"G2 leader\"",
-    "n": 44,
-    "claims": 46,
+    "n": 45,
+    "claims": 47,
     "companies": [
+     {
+      "slug": "airtable",
+      "name": "Airtable",
+      "text": "fortune 100"
+     },
      {
       "slug": "aqua-security",
       "name": "Aqua Security",
@@ -15966,13 +15958,13 @@
     ]
    }
   ],
-  "total_claims": 1161,
+  "total_claims": 1175,
   "coverage": {
    "tracked": 361,
    "readable": 270,
    "unreadable": 91,
    "held": 0,
-   "suspect": 2,
+   "suspect": 0,
    "missing": [
     {
      "slug": "1password",
@@ -17228,7 +17220,7 @@
     ]
    }
   ],
-  "distinct_logos": 2904,
+  "distinct_logos": 2903,
   "coverage": {
    "tracked": 361,
    "readable": 279,
@@ -17571,6 +17563,10 @@
   "free_tier": {
    "yes": [
     {
+     "slug": "airbyte",
+     "name": "Airbyte"
+    },
+    {
      "slug": "aiven",
      "name": "Aiven"
     },
@@ -17591,6 +17587,10 @@
      "name": "Attio"
     },
     {
+     "slug": "bamboohr",
+     "name": "BambooHR"
+    },
+    {
      "slug": "bird",
      "name": "Bird"
     },
@@ -17603,8 +17603,20 @@
      "name": "Calendly"
     },
     {
+     "slug": "census",
+     "name": "Census"
+    },
+    {
+     "slug": "circleci",
+     "name": "CircleCI"
+    },
+    {
      "slug": "clay",
      "name": "Clay"
+    },
+    {
+     "slug": "clerk",
+     "name": "Clerk"
     },
     {
      "slug": "clickup",
@@ -17619,16 +17631,60 @@
      "name": "Confluent"
     },
     {
+     "slug": "cursor",
+     "name": "Cursor"
+    },
+    {
+     "slug": "dagster",
+     "name": "Dagster Labs"
+    },
+    {
      "slug": "dbt-labs",
      "name": "dbt Labs"
+    },
+    {
+     "slug": "descript",
+     "name": "Descript"
     },
     {
      "slug": "fivetran",
      "name": "Fivetran"
     },
     {
+     "slug": "framer",
+     "name": "Framer"
+    },
+    {
+     "slug": "gitguardian",
+     "name": "GitGuardian"
+    },
+    {
      "slug": "gitlab",
      "name": "GitLab"
+    },
+    {
+     "slug": "grammarly",
+     "name": "Grammarly"
+    },
+    {
+     "slug": "heap",
+     "name": "Heap"
+    },
+    {
+     "slug": "helpscout",
+     "name": "Help Scout"
+    },
+    {
+     "slug": "hex",
+     "name": "Hex"
+    },
+    {
+     "slug": "honeycomb",
+     "name": "Honeycomb"
+    },
+    {
+     "slug": "influxdata",
+     "name": "InfluxData"
     },
     {
      "slug": "intercom",
@@ -17651,6 +17707,10 @@
      "name": "Loom"
     },
     {
+     "slug": "make",
+     "name": "Make"
+    },
+    {
      "slug": "mendix",
      "name": "Mendix"
     },
@@ -17663,12 +17723,24 @@
      "name": "Miro"
     },
     {
+     "slug": "modal",
+     "name": "Modal"
+    },
+    {
      "slug": "monday",
      "name": "monday.com"
     },
     {
      "slug": "mongodb",
      "name": "MongoDB"
+    },
+    {
+     "slug": "n8n",
+     "name": "n8n"
+    },
+    {
+     "slug": "navan",
+     "name": "Navan"
     },
     {
      "slug": "neo4j",
@@ -17695,12 +17767,28 @@
      "name": "Pendo"
     },
     {
+     "slug": "pinecone",
+     "name": "Pinecone"
+    },
+    {
+     "slug": "postman",
+     "name": "Postman"
+    },
+    {
      "slug": "productboard",
      "name": "Productboard"
     },
     {
+     "slug": "pulumi",
+     "name": "Pulumi"
+    },
+    {
      "slug": "qonto",
      "name": "Qonto"
+    },
+    {
+     "slug": "railway",
+     "name": "Railway"
     },
     {
      "slug": "ramp",
@@ -17711,6 +17799,10 @@
      "name": "Redis"
     },
     {
+     "slug": "resend",
+     "name": "Resend"
+    },
+    {
      "slug": "retool",
      "name": "Retool"
     },
@@ -17719,8 +17811,16 @@
      "name": "Salesforce"
     },
     {
+     "slug": "semgrep",
+     "name": "Semgrep"
+    },
+    {
      "slug": "sentry",
      "name": "Sentry"
+    },
+    {
+     "slug": "shortcut",
+     "name": "Shortcut"
     },
     {
      "slug": "slack",
@@ -17729,6 +17829,14 @@
     {
      "slug": "snyk",
      "name": "Snyk"
+    },
+    {
+     "slug": "split",
+     "name": "Split"
+    },
+    {
+     "slug": "statsig",
+     "name": "Statsig"
     },
     {
      "slug": "supabase",
@@ -17743,6 +17851,18 @@
      "name": "Trustpilot"
     },
     {
+     "slug": "weaviate",
+     "name": "Weaviate"
+    },
+    {
+     "slug": "wandb",
+     "name": "Weights & Biases"
+    },
+    {
+     "slug": "wistia",
+     "name": "Wistia"
+    },
+    {
      "slug": "zapier",
      "name": "Zapier"
     },
@@ -17752,6 +17872,10 @@
     }
    ],
    "no": [
+    {
+     "slug": "airwallex",
+     "name": "Airwallex"
+    },
     {
      "slug": "brex",
      "name": "Brex"
@@ -17769,12 +17893,32 @@
      "name": "Docusign"
     },
     {
+     "slug": "gorgias",
+     "name": "Gorgias"
+    },
+    {
+     "slug": "greenhouse",
+     "name": "Greenhouse"
+    },
+    {
+     "slug": "huggingface",
+     "name": "Hugging Face"
+    },
+    {
      "slug": "lokalise",
      "name": "Lokalise"
     },
     {
+     "slug": "melio",
+     "name": "Melio"
+    },
+    {
      "slug": "nextcloud",
      "name": "Nextcloud"
+    },
+    {
+     "slug": "planetscale",
+     "name": "PlanetScale"
     },
     {
      "slug": "pleo",
@@ -17803,8 +17947,8 @@
    ],
    "coverage": {
     "tracked": 361,
-    "readable": 57,
-    "unreadable": 304,
+    "readable": 95,
+    "unreadable": 266,
     "held": 0,
     "suspect": 0,
     "missing": [
@@ -17833,20 +17977,12 @@
       "name": "AFAS Software"
      },
      {
-      "slug": "airbyte",
-      "name": "Airbyte"
-     },
-     {
       "slug": "aircall",
       "name": "Aircall"
      },
      {
       "slug": "airtable",
       "name": "Airtable"
-     },
-     {
-      "slug": "airwallex",
-      "name": "Airwallex"
      },
      {
       "slug": "alan",
@@ -17917,10 +18053,6 @@
       "name": "Backbase"
      },
      {
-      "slug": "bamboohr",
-      "name": "BambooHR"
-     },
-     {
       "slug": "basecamp",
       "name": "Basecamp"
      },
@@ -17961,10 +18093,6 @@
       "name": "Celonis"
      },
      {
-      "slug": "census",
-      "name": "Census"
-     },
-     {
       "slug": "checkout-com",
       "name": "Checkout.com"
      },
@@ -17973,16 +18101,8 @@
       "name": "Chronosphere"
      },
      {
-      "slug": "circleci",
-      "name": "CircleCI"
-     },
-     {
       "slug": "clari",
       "name": "Clari"
-     },
-     {
-      "slug": "clerk",
-      "name": "Clerk"
      },
      {
       "slug": "clickhouse",
@@ -18053,14 +18173,6 @@
       "name": "Culture Amp"
      },
      {
-      "slug": "cursor",
-      "name": "Cursor"
-     },
-     {
-      "slug": "dagster",
-      "name": "Dagster Labs"
-     },
-     {
       "slug": "darktrace",
       "name": "Darktrace"
      },
@@ -18099,10 +18211,6 @@
      {
       "slug": "demandbase",
       "name": "Demandbase"
-     },
-     {
-      "slug": "descript",
-      "name": "Descript"
      },
      {
       "slug": "dialpad",
@@ -18193,10 +18301,6 @@
       "name": "Fortnox"
      },
      {
-      "slug": "framer",
-      "name": "Framer"
-     },
-     {
       "slug": "freshworks",
       "name": "Freshworks"
      },
@@ -18217,10 +18321,6 @@
       "name": "Genesys"
      },
      {
-      "slug": "gitguardian",
-      "name": "GitGuardian"
-     },
-     {
       "slug": "github",
       "name": "GitHub"
      },
@@ -18237,20 +18337,8 @@
       "name": "Gong"
      },
      {
-      "slug": "gorgias",
-      "name": "Gorgias"
-     },
-     {
       "slug": "grafana",
       "name": "Grafana Labs"
-     },
-     {
-      "slug": "grammarly",
-      "name": "Grammarly"
-     },
-     {
-      "slug": "greenhouse",
-      "name": "Greenhouse"
      },
      {
       "slug": "guru",
@@ -18259,18 +18347,6 @@
      {
       "slug": "harness",
       "name": "Harness"
-     },
-     {
-      "slug": "heap",
-      "name": "Heap"
-     },
-     {
-      "slug": "helpscout",
-      "name": "Help Scout"
-     },
-     {
-      "slug": "hex",
-      "name": "Hex"
      },
      {
       "slug": "hibob",
@@ -18285,10 +18361,6 @@
       "name": "Hightouch"
      },
      {
-      "slug": "honeycomb",
-      "name": "Honeycomb"
-     },
-     {
       "slug": "hornetsecurity",
       "name": "Hornetsecurity"
      },
@@ -18301,10 +18373,6 @@
       "name": "HubSpot"
      },
      {
-      "slug": "huggingface",
-      "name": "Hugging Face"
-     },
-     {
       "slug": "ibm",
       "name": "IBM"
      },
@@ -18315,10 +18383,6 @@
      {
       "slug": "idnow",
       "name": "IDnow"
-     },
-     {
-      "slug": "influxdata",
-      "name": "InfluxData"
      },
      {
       "slug": "informatica",
@@ -18401,10 +18465,6 @@
       "name": "Mailchimp"
      },
      {
-      "slug": "make",
-      "name": "Make"
-     },
-     {
       "slug": "mambu",
       "name": "Mambu"
      },
@@ -18421,10 +18481,6 @@
       "name": "Matillion"
      },
      {
-      "slug": "melio",
-      "name": "Melio"
-     },
-     {
       "slug": "mentimeter",
       "name": "Mentimeter"
      },
@@ -18435,10 +18491,6 @@
      {
       "slug": "mixpanel",
       "name": "Mixpanel"
-     },
-     {
-      "slug": "modal",
-      "name": "Modal"
      },
      {
       "slug": "mode",
@@ -18459,14 +18511,6 @@
      {
       "slug": "motion",
       "name": "Motion"
-     },
-     {
-      "slug": "n8n",
-      "name": "n8n"
-     },
-     {
-      "slug": "navan",
-      "name": "Navan"
      },
      {
       "slug": "navex",
@@ -18577,10 +18621,6 @@
       "name": "Personio"
      },
      {
-      "slug": "pinecone",
-      "name": "Pinecone"
-     },
-     {
       "slug": "pipedrive",
       "name": "Pipedrive"
      },
@@ -18589,16 +18629,8 @@
       "name": "Plaid"
      },
      {
-      "slug": "planetscale",
-      "name": "PlanetScale"
-     },
-     {
       "slug": "posthog",
       "name": "PostHog"
-     },
-     {
-      "slug": "postman",
-      "name": "Postman"
      },
      {
       "slug": "prefect",
@@ -18617,10 +18649,6 @@
       "name": "PTC"
      },
      {
-      "slug": "pulumi",
-      "name": "Pulumi"
-     },
-     {
       "slug": "qualtrics",
       "name": "Qualtrics"
      },
@@ -18631,10 +18659,6 @@
      {
       "slug": "quantexa",
       "name": "Quantexa"
-     },
-     {
-      "slug": "railway",
-      "name": "Railway"
      },
      {
       "slug": "rapid7",
@@ -18667,10 +18691,6 @@
      {
       "slug": "replit",
       "name": "Replit"
-     },
-     {
-      "slug": "resend",
-      "name": "Resend"
      },
      {
       "slug": "ringcentral",
@@ -18725,10 +18745,6 @@
       "name": "Seismic"
      },
      {
-      "slug": "semgrep",
-      "name": "Semgrep"
-     },
-     {
       "slug": "sennder",
       "name": "sennder"
      },
@@ -18747,10 +18763,6 @@
      {
       "slug": "shopify",
       "name": "Shopify"
-     },
-     {
-      "slug": "shortcut",
-      "name": "Shortcut"
      },
      {
       "slug": "showpad",
@@ -18805,10 +18817,6 @@
       "name": "Spendesk"
      },
      {
-      "slug": "split",
-      "name": "Split"
-     },
-     {
       "slug": "splunk",
       "name": "Splunk"
      },
@@ -18823,10 +18831,6 @@
      {
       "slug": "starburst",
       "name": "Starburst"
-     },
-     {
-      "slug": "statsig",
-      "name": "Statsig"
      },
      {
       "slug": "stripe",
@@ -18957,24 +18961,12 @@
       "name": "Voyado"
      },
      {
-      "slug": "weaviate",
-      "name": "Weaviate"
-     },
-     {
       "slug": "webflow",
       "name": "Webflow"
      },
      {
-      "slug": "wandb",
-      "name": "Weights & Biases"
-     },
-     {
       "slug": "wise",
       "name": "Wise"
-     },
-     {
-      "slug": "wistia",
-      "name": "Wistia"
      },
      {
       "slug": "wiz",
@@ -19030,6 +19022,16 @@
   "tiers": {
    "companies": [
     {
+     "slug": "airbyte",
+     "name": "Airbyte",
+     "text": "Airbyte Agents Free free | Airbyte Agents Individual USD 29 | Airbyte Agents Team USD 299 | Airbyte Core free | Airbyte Standard USD 10"
+    },
+    {
+     "slug": "airwallex",
+     "name": "Airwallex",
+     "text": "Grow USD 12/user/month | Enterprise Capabilities USD 1000"
+    },
+    {
      "slug": "aiven",
      "name": "Aiven",
      "text": "Free free | Developer USD 5/month | Startup USD 75/month | Business USD 180/month | Premium USD 270/month"
@@ -19055,6 +19057,11 @@
      "text": "Free free | Enterprise custom"
     },
     {
+     "slug": "bamboohr",
+     "name": "BambooHR",
+     "text": "Core custom | Pro custom | Elite custom"
+    },
+    {
      "slug": "bird",
      "name": "Bird",
      "text": "Free free | Startup USD 0.3 | Growth USD 0.8"
@@ -19075,9 +19082,24 @@
      "text": "Free free | Always free free"
     },
     {
+     "slug": "census",
+     "name": "Census",
+     "text": "Free free | Free Plan overview free"
+    },
+    {
+     "slug": "circleci",
+     "name": "CircleCI",
+     "text": "Free free | Scale custom"
+    },
+    {
      "slug": "clay",
      "name": "Clay",
      "text": "Free free | Launch USD 167/month | Growth USD 446/month | Company custom"
+    },
+    {
+     "slug": "clerk",
+     "name": "Clerk",
+     "text": "Pro USD 20 | Business USD 250"
     },
     {
      "slug": "clickup",
@@ -19095,9 +19117,19 @@
      "text": "Basic free | Standard USD 385/month | Enterprise USD 895/month | eCKU USD 0.14 | Data In/Out (Ingress/Egress) USD 0.05 | Data Stored USD 0.08 | 0/Month free | 385/Month USD 385/month"
     },
     {
+     "slug": "cursor",
+     "name": "Cursor",
+     "text": "Hobby free | Pro USD 20 | Pro+ USD 60 | Ultra USD 200 | Teams USD 40 | Hobby free | Pro USD 20 | Pro+ USD 60"
+    },
+    {
      "slug": "customer-io",
      "name": "Customer.io",
      "text": "Essentials USD 100/month | Premium USD 1000/month | Enterprise custom"
+    },
+    {
+     "slug": "dagster",
+     "name": "Dagster Labs",
+     "text": "Solo Plan USD 10/month | Starter Plan USD 100/month | Pro Plan custom | Starter USD 120/month | Enterprise Plan custom"
     },
     {
      "slug": "dataguard",
@@ -19110,6 +19142,11 @@
      "text": "Starter USD 100/user/month | Enterprise custom | Enterprise+ custom"
     },
     {
+     "slug": "descript",
+     "name": "Descript",
+     "text": "Business USD 50/month | Free free"
+    },
+    {
      "slug": "docusign",
      "name": "Docusign",
      "text": "Personal USD 132 | Standard USD 360 | Business Pro USD 540"
@@ -19120,9 +19157,64 @@
      "text": "Free free | Free Plan overview free"
     },
     {
+     "slug": "framer",
+     "name": "Framer",
+     "text": "Free free | Basic USD 10 | Pro USD 30"
+    },
+    {
+     "slug": "gitguardian",
+     "name": "GitGuardian",
+     "text": "Custom custom | Starter free | Free free | Business custom | Enterprise free"
+    },
+    {
      "slug": "gitlab",
      "name": "GitLab",
      "text": "Free free | Premium USD 29"
+    },
+    {
+     "slug": "gorgias",
+     "name": "Gorgias",
+     "text": "Starter USD 10 | Basic USD 77 | Pro USD 471 | Advanced USD 1227"
+    },
+    {
+     "slug": "grammarly",
+     "name": "Grammarly",
+     "text": "Free free | Pro USD 12 | Enterprise custom"
+    },
+    {
+     "slug": "greenhouse",
+     "name": "Greenhouse",
+     "text": "Core custom | Plus custom | Pro custom"
+    },
+    {
+     "slug": "heap",
+     "name": "Heap",
+     "text": "Free free | Pro custom"
+    },
+    {
+     "slug": "helpscout",
+     "name": "Help Scout",
+     "text": "Standard USD 25/user/month | Plus USD 45/user/month | Pro USD 75/user/month | 3-month free trial free | Free free | Start for Free free"
+    },
+    {
+     "slug": "hex",
+     "name": "Hex",
+     "text": "Community free | Professional USD 36 | Team USD 75"
+    },
+    {
+     "slug": "honeycomb",
+     "name": "Honeycomb",
+     "text": "Free free | Pro USD 150/month"
+    },
+    {
+     "slug": "huggingface",
+     "name": "Hugging Face",
+     "text": "PRO Account USD 9/month | Team USD 20/month | Enterprise USD 50/month"
+    },
+    {
+     "slug": "influxdata",
+     "name": "InfluxData",
+     "text": "InfluxDB 3 Enterprise custom | Cloud Dedicated custom | Cloud Serverless USD 250 | InfluxDB 3 Core free | Telegraf Enterprise custom | Custom pricing USD 18000/year | Company custom"
     },
     {
      "slug": "intercom",
@@ -19155,6 +19247,16 @@
      "text": "Starter free | Business USD 18/user/month | Business + AI USD 24/user/month | Enterprise custom"
     },
     {
+     "slug": "make",
+     "name": "Make",
+     "text": "Free free | Enterprise custom"
+    },
+    {
+     "slug": "melio",
+     "name": "Melio",
+     "text": "Core USD 25 | Unlimited USD 80"
+    },
+    {
      "slug": "mendix",
      "name": "Mendix",
      "text": "Mendix Free Plan free | Mendix Basic Plan USD 75 | Mendix Standard Plan USD 998 | Mendix Premium Plan free"
@@ -19170,6 +19272,11 @@
      "text": "Free free | Enterprise custom | Enterprise Guard custom"
     },
     {
+     "slug": "modal",
+     "name": "Modal",
+     "text": "Traditional cloud: $5,400 USD 5400 | Starter free | Team USD 250 | Enterprise USD 30/month"
+    },
+    {
      "slug": "monday",
      "name": "monday.com",
      "text": "Free USD 10/month | Basic USD 90 | Standard USD 120 | Pro USD 190 | Enterprise custom | Ultimate custom"
@@ -19178,6 +19285,16 @@
      "slug": "mongodb",
      "name": "MongoDB",
      "text": "Free free | Dedicated USD 0.08 | Free Cluster free"
+    },
+    {
+     "slug": "n8n",
+     "name": "n8n",
+     "text": "Starter EUR 20/month | Pro EUR 50/month | Business EUR 667/month | Enterprise custom"
+    },
+    {
+     "slug": "navan",
+     "name": "Navan",
+     "text": "Free free | Company custom"
     },
     {
      "slug": "neo4j",
@@ -19215,9 +19332,24 @@
      "text": "Free free | Core custom | Ultimate custom"
     },
     {
+     "slug": "pinecone",
+     "name": "Pinecone",
+     "text": "Starter free | Standard USD 50/month | Enterprise USD 500/month"
+    },
+    {
+     "slug": "planetscale",
+     "name": "PlanetScale",
+     "text": "Business support included custom | Custom pricing custom"
+    },
+    {
      "slug": "pleo",
      "name": "Pleo",
      "text": "Starter GBP 9.5/month | Essential GBP 45/year | Advanced GBP 109/year | Business GBP 249/month"
+    },
+    {
+     "slug": "postman",
+     "name": "Postman",
+     "text": "Free free | Solo USD 9/month | Team USD 19/user/month | Enterprise USD 49/user/month | Advanced Security Controls USD 29/user/month | Company custom"
     },
     {
      "slug": "productboard",
@@ -19225,9 +19357,19 @@
      "text": "Business — billed annually USD 59/12 | Business — billed monthly USD 75/1 | Plus — billed annually USD 19/12 | Plus — billed monthly USD 25/1 | Business — billed annually USD 59/12 | Business — billed monthly USD 75/1"
     },
     {
+     "slug": "pulumi",
+     "name": "Pulumi",
+     "text": "Individual free | Team USD 40/month | Enterprise USD 400/month | Business Critical USD 10000"
+    },
+    {
      "slug": "qonto",
      "name": "Qonto",
      "text": "Basic EUR 9/month | Premium EUR 39/month | Essential EUR 49/month | Business EUR 109/month | Enterprise EUR 199/month | Team Spend Controls EUR 39/month"
+    },
+    {
+     "slug": "railway",
+     "name": "Railway",
+     "text": "Free USD 5/month | Hobby USD 5/month | Pro USD 20/month"
     },
     {
      "slug": "ramp",
@@ -19238,6 +19380,11 @@
      "slug": "redis",
      "name": "Redis",
      "text": "Essentials free | Free free | Pro USD 0.01"
+    },
+    {
+     "slug": "resend",
+     "name": "Resend",
+     "text": "Free free | Pro USD 20/month | Scale USD 90/month"
     },
     {
      "slug": "retool",
@@ -19255,9 +19402,19 @@
      "text": "Revenue Cloud USD 200/user/month | Start your trial free"
     },
     {
+     "slug": "semgrep",
+     "name": "Semgrep",
+     "text": "Free Edition free | Teams USD 30/month | Enterprise custom"
+    },
+    {
      "slug": "sentry",
      "name": "Sentry",
      "text": "developer free | team USD 26/month | business USD 80/month | enterprise free"
+    },
+    {
+     "slug": "shortcut",
+     "name": "Shortcut",
+     "text": "Free Plan free | Business Plan custom | Enterprise Plan custom"
     },
     {
      "slug": "slack",
@@ -19273,6 +19430,16 @@
      "slug": "snyk",
      "name": "Snyk",
      "text": "Enterprise custom | Free free | Team USD 25/month | Company & Community custom"
+    },
+    {
+     "slug": "split",
+     "name": "Split",
+     "text": "Free Plan free | Essentials Plan custom | Enterprise Plan custom | Essentials custom | Enterprise custom"
+    },
+    {
+     "slug": "statsig",
+     "name": "Statsig",
+     "text": "Developer free | Free free | Enterprise custom | Custom custom"
     },
     {
      "slug": "supabase",
@@ -19305,6 +19472,21 @@
      "text": "Essential USD 0.8 | Full auto i USD 0.8 | Plus USD 1.39 | Premium USD 1.89 | Enterprise custom"
     },
     {
+     "slug": "weaviate",
+     "name": "Weaviate",
+     "text": "Free free | Premium USD 400/month"
+    },
+    {
+     "slug": "wandb",
+     "name": "Weights & Biases",
+     "text": "Free free | Pro USD 60/month | Personal free | Enterprise custom"
+    },
+    {
+     "slug": "wistia",
+     "name": "Wistia",
+     "text": "Free free | Business USD 79/month | Enterprise custom"
+    },
+    {
      "slug": "zapier",
      "name": "Zapier",
      "text": "Free free | Professional USD 19.99/month | Team USD 69/month | Enterprise custom | Agents Free free | Agents Pro USD 400/year | Agents Enterprise custom | Chatbots Free free"
@@ -19322,9 +19504,19 @@
      "text": "Enterprise"
     },
     {
+     "slug": "bamboohr",
+     "name": "BambooHR",
+     "text": "Core, Elite, Pro"
+    },
+    {
      "slug": "brex",
      "name": "Brex",
      "text": "Custom pricing, Enterprise, Essentials, Premium"
+    },
+    {
+     "slug": "circleci",
+     "name": "CircleCI",
+     "text": "Scale"
     },
     {
      "slug": "clay",
@@ -19337,6 +19529,11 @@
      "text": "Enterprise"
     },
     {
+     "slug": "dagster",
+     "name": "Dagster Labs",
+     "text": "Enterprise Plan, Pro Plan"
+    },
+    {
      "slug": "dataguard",
      "name": "DataGuard",
      "text": "Enterprise, Pro"
@@ -19345,6 +19542,31 @@
      "slug": "dbt-labs",
      "name": "dbt Labs",
      "text": "Enterprise, Enterprise+"
+    },
+    {
+     "slug": "gitguardian",
+     "name": "GitGuardian",
+     "text": "Business, Custom"
+    },
+    {
+     "slug": "grammarly",
+     "name": "Grammarly",
+     "text": "Enterprise"
+    },
+    {
+     "slug": "greenhouse",
+     "name": "Greenhouse",
+     "text": "Core, Plus, Pro"
+    },
+    {
+     "slug": "heap",
+     "name": "Heap",
+     "text": "Pro"
+    },
+    {
+     "slug": "influxdata",
+     "name": "InfluxData",
+     "text": "Cloud Dedicated, Company, InfluxDB 3 Enterprise, Telegraf Enterprise"
     },
     {
      "slug": "launchdarkly",
@@ -19357,6 +19579,11 @@
      "text": "Enterprise"
     },
     {
+     "slug": "make",
+     "name": "Make",
+     "text": "Enterprise"
+    },
+    {
      "slug": "miro",
      "name": "Miro",
      "text": "Enterprise, Enterprise Guard"
@@ -19365,6 +19592,16 @@
      "slug": "monday",
      "name": "monday.com",
      "text": "Enterprise, Ultimate"
+    },
+    {
+     "slug": "n8n",
+     "name": "n8n",
+     "text": "Enterprise"
+    },
+    {
+     "slug": "navan",
+     "name": "Navan",
+     "text": "Company"
     },
     {
      "slug": "neo4j",
@@ -19392,6 +19629,16 @@
      "text": "Core, Ultimate"
     },
     {
+     "slug": "planetscale",
+     "name": "PlanetScale",
+     "text": "Business support included, Custom pricing"
+    },
+    {
+     "slug": "postman",
+     "name": "Postman",
+     "text": "Company"
+    },
+    {
      "slug": "ramp",
      "name": "Ramp",
      "text": "Enterprise"
@@ -19400,6 +19647,16 @@
      "slug": "rossum",
      "name": "Rossum",
      "text": "Business, Company, Enterprise, Ultimate"
+    },
+    {
+     "slug": "semgrep",
+     "name": "Semgrep",
+     "text": "Enterprise"
+    },
+    {
+     "slug": "shortcut",
+     "name": "Shortcut",
+     "text": "Business Plan, Enterprise Plan"
     },
     {
      "slug": "slack",
@@ -19415,6 +19672,16 @@
      "slug": "snyk",
      "name": "Snyk",
      "text": "Company & Community, Enterprise"
+    },
+    {
+     "slug": "split",
+     "name": "Split",
+     "text": "Enterprise, Enterprise Plan, Essentials, Essentials Plan"
+    },
+    {
+     "slug": "statsig",
+     "name": "Statsig",
+     "text": "Custom, Enterprise"
     },
     {
      "slug": "supabase",
@@ -19447,6 +19714,16 @@
      "text": "Enterprise"
     },
     {
+     "slug": "wandb",
+     "name": "Weights & Biases",
+     "text": "Enterprise"
+    },
+    {
+     "slug": "wistia",
+     "name": "Wistia",
+     "text": "Enterprise"
+    },
+    {
      "slug": "zapier",
      "name": "Zapier",
      "text": "Agents Enterprise, Enterprise"
@@ -19454,8 +19731,8 @@
    ],
    "coverage": {
     "tracked": 361,
-    "readable": 57,
-    "unreadable": 304,
+    "readable": 95,
+    "unreadable": 266,
     "held": 0,
     "suspect": 0,
     "missing": null
@@ -19545,7 +19822,7 @@
     {
      "key": "1-9",
      "label": "1.00 to 9.99",
-     "n": 9,
+     "n": 12,
      "companies": [
       {
        "slug": "aiven",
@@ -19553,6 +19830,14 @@
        "amount": 5,
        "currency": "USD",
        "tier": "Developer",
+       "text": "USD 5/month"
+      },
+      {
+       "slug": "railway",
+       "name": "Railway",
+       "amount": 5,
+       "currency": "USD",
+       "tier": "Free",
        "text": "USD 5/month"
       },
       {
@@ -19596,11 +19881,27 @@
        "text": "USD 9"
       },
       {
+       "slug": "huggingface",
+       "name": "Hugging Face",
+       "amount": 9,
+       "currency": "USD",
+       "tier": "PRO Account",
+       "text": "USD 9/month"
+      },
+      {
        "slug": "netlify",
        "name": "Netlify",
        "amount": 9,
        "currency": "USD",
        "tier": "Personal",
+       "text": "USD 9/month"
+      },
+      {
+       "slug": "postman",
+       "name": "Postman",
+       "amount": 9,
+       "currency": "USD",
+       "tier": "Solo",
        "text": "USD 9/month"
       },
       {
@@ -19624,8 +19925,16 @@
     {
      "key": "10-19",
      "label": "10.00 to 19.99",
-     "n": 10,
+     "n": 16,
      "companies": [
+      {
+       "slug": "airbyte",
+       "name": "Airbyte",
+       "amount": 10,
+       "currency": "USD",
+       "tier": "Airbyte Standard",
+       "text": "USD 10"
+      },
       {
        "slug": "cloudflare",
        "name": "Cloudflare",
@@ -19633,6 +19942,30 @@
        "currency": "USD",
        "tier": "Advanced Certificate Manager",
        "text": "USD 10/month"
+      },
+      {
+       "slug": "dagster",
+       "name": "Dagster Labs",
+       "amount": 10,
+       "currency": "USD",
+       "tier": "Solo Plan",
+       "text": "USD 10/month"
+      },
+      {
+       "slug": "framer",
+       "name": "Framer",
+       "amount": 10,
+       "currency": "USD",
+       "tier": "Basic",
+       "text": "USD 10"
+      },
+      {
+       "slug": "gorgias",
+       "name": "Gorgias",
+       "amount": 10,
+       "currency": "USD",
+       "tier": "Starter",
+       "text": "USD 10"
       },
       {
        "slug": "linear",
@@ -19675,6 +20008,22 @@
        "text": "USD 10.99"
       },
       {
+       "slug": "airwallex",
+       "name": "Airwallex",
+       "amount": 12,
+       "currency": "USD",
+       "tier": "Grow",
+       "text": "USD 12/user/month"
+      },
+      {
+       "slug": "grammarly",
+       "name": "Grammarly",
+       "amount": 12,
+       "currency": "USD",
+       "tier": "Pro",
+       "text": "USD 12"
+      },
+      {
        "slug": "loom",
        "name": "Loom",
        "amount": 18,
@@ -19711,8 +20060,24 @@
     {
      "key": "20-49",
      "label": "20.00 to 49.99",
-     "n": 7,
+     "n": 17,
      "companies": [
+      {
+       "slug": "clerk",
+       "name": "Clerk",
+       "amount": 20,
+       "currency": "USD",
+       "tier": "Pro",
+       "text": "USD 20"
+      },
+      {
+       "slug": "cursor",
+       "name": "Cursor",
+       "amount": 20,
+       "currency": "USD",
+       "tier": "Pro",
+       "text": "USD 20"
+      },
       {
        "slug": "klaviyo",
        "name": "Klaviyo",
@@ -19720,6 +20085,38 @@
        "currency": "USD",
        "tier": "Email Plan (entry)",
        "text": "USD 20"
+      },
+      {
+       "slug": "n8n",
+       "name": "n8n",
+       "amount": 20,
+       "currency": "EUR",
+       "tier": "Starter",
+       "text": "EUR 20/month"
+      },
+      {
+       "slug": "resend",
+       "name": "Resend",
+       "amount": 20,
+       "currency": "USD",
+       "tier": "Pro",
+       "text": "USD 20/month"
+      },
+      {
+       "slug": "helpscout",
+       "name": "Help Scout",
+       "amount": 25,
+       "currency": "USD",
+       "tier": "Standard",
+       "text": "USD 25/user/month"
+      },
+      {
+       "slug": "melio",
+       "name": "Melio",
+       "amount": 25,
+       "currency": "USD",
+       "tier": "Core",
+       "text": "USD 25"
       },
       {
        "slug": "snyk",
@@ -19762,6 +20159,38 @@
        "text": "USD 29"
       },
       {
+       "slug": "modal",
+       "name": "Modal",
+       "amount": 30,
+       "currency": "USD",
+       "tier": "Enterprise",
+       "text": "USD 30/month"
+      },
+      {
+       "slug": "semgrep",
+       "name": "Semgrep",
+       "amount": 30,
+       "currency": "USD",
+       "tier": "Teams",
+       "text": "USD 30/month"
+      },
+      {
+       "slug": "hex",
+       "name": "Hex",
+       "amount": 36,
+       "currency": "USD",
+       "tier": "Professional",
+       "text": "USD 36"
+      },
+      {
+       "slug": "pulumi",
+       "name": "Pulumi",
+       "amount": 40,
+       "currency": "USD",
+       "tier": "Team",
+       "text": "USD 40/month"
+      },
+      {
        "slug": "pagerduty",
        "name": "PagerDuty",
        "amount": 48,
@@ -19774,8 +20203,24 @@
     {
      "key": "50-99",
      "label": "50.00 to 99.99",
-     "n": 4,
+     "n": 8,
      "companies": [
+      {
+       "slug": "descript",
+       "name": "Descript",
+       "amount": 50,
+       "currency": "USD",
+       "tier": "Business",
+       "text": "USD 50/month"
+      },
+      {
+       "slug": "pinecone",
+       "name": "Pinecone",
+       "amount": 50,
+       "currency": "USD",
+       "tier": "Standard",
+       "text": "USD 50/month"
+      },
       {
        "slug": "supermetrics",
        "name": "Supermetrics",
@@ -19783,6 +20228,14 @@
        "currency": "USD",
        "tier": "Starter",
        "text": "USD 55"
+      },
+      {
+       "slug": "wandb",
+       "name": "Weights & Biases",
+       "amount": 60,
+       "currency": "USD",
+       "tier": "Pro",
+       "text": "USD 60/month"
       },
       {
        "slug": "nextcloud",
@@ -19801,6 +20254,14 @@
        "text": "USD 75"
       },
       {
+       "slug": "wistia",
+       "name": "Wistia",
+       "amount": 79,
+       "currency": "USD",
+       "tier": "Business",
+       "text": "USD 79/month"
+      },
+      {
        "slug": "trustpilot",
        "name": "Trustpilot",
        "amount": 99,
@@ -19813,7 +20274,7 @@
     {
      "key": "100-plus",
      "label": "100.00 and up",
-     "n": 7,
+     "n": 10,
      "companies": [
       {
        "slug": "customer-io",
@@ -19848,6 +20309,14 @@
        "text": "USD 144/month"
       },
       {
+       "slug": "honeycomb",
+       "name": "Honeycomb",
+       "amount": 150,
+       "currency": "USD",
+       "tier": "Pro",
+       "text": "USD 150/month"
+      },
+      {
        "slug": "clay",
        "name": "Clay",
        "amount": 167,
@@ -19862,6 +20331,22 @@
        "currency": "USD",
        "tier": "Revenue Cloud",
        "text": "USD 200/user/month"
+      },
+      {
+       "slug": "influxdata",
+       "name": "InfluxData",
+       "amount": 250,
+       "currency": "USD",
+       "tier": "Cloud Serverless",
+       "text": "USD 250"
+      },
+      {
+       "slug": "weaviate",
+       "name": "Weaviate",
+       "amount": 400,
+       "currency": "USD",
+       "tier": "Premium",
+       "text": "USD 400/month"
       },
       {
        "slug": "rossum",
@@ -19956,6 +20441,14 @@
      "text": "USD 5/month"
     },
     {
+     "slug": "railway",
+     "name": "Railway",
+     "amount": 5,
+     "currency": "USD",
+     "tier": "Free",
+     "text": "USD 5/month"
+    },
+    {
      "slug": "okta",
      "name": "Okta",
      "amount": 6,
@@ -19996,11 +20489,27 @@
      "text": "USD 9"
     },
     {
+     "slug": "huggingface",
+     "name": "Hugging Face",
+     "amount": 9,
+     "currency": "USD",
+     "tier": "PRO Account",
+     "text": "USD 9/month"
+    },
+    {
      "slug": "netlify",
      "name": "Netlify",
      "amount": 9,
      "currency": "USD",
      "tier": "Personal",
+     "text": "USD 9/month"
+    },
+    {
+     "slug": "postman",
+     "name": "Postman",
+     "amount": 9,
+     "currency": "USD",
+     "tier": "Solo",
      "text": "USD 9/month"
     },
     {
@@ -20020,12 +20529,44 @@
      "text": "GBP 9.5/month"
     },
     {
+     "slug": "airbyte",
+     "name": "Airbyte",
+     "amount": 10,
+     "currency": "USD",
+     "tier": "Airbyte Standard",
+     "text": "USD 10"
+    },
+    {
      "slug": "cloudflare",
      "name": "Cloudflare",
      "amount": 10,
      "currency": "USD",
      "tier": "Advanced Certificate Manager",
      "text": "USD 10/month"
+    },
+    {
+     "slug": "dagster",
+     "name": "Dagster Labs",
+     "amount": 10,
+     "currency": "USD",
+     "tier": "Solo Plan",
+     "text": "USD 10/month"
+    },
+    {
+     "slug": "framer",
+     "name": "Framer",
+     "amount": 10,
+     "currency": "USD",
+     "tier": "Basic",
+     "text": "USD 10"
+    },
+    {
+     "slug": "gorgias",
+     "name": "Gorgias",
+     "amount": 10,
+     "currency": "USD",
+     "tier": "Starter",
+     "text": "USD 10"
     },
     {
      "slug": "linear",
@@ -20068,6 +20609,22 @@
      "text": "USD 10.99"
     },
     {
+     "slug": "airwallex",
+     "name": "Airwallex",
+     "amount": 12,
+     "currency": "USD",
+     "tier": "Grow",
+     "text": "USD 12/user/month"
+    },
+    {
+     "slug": "grammarly",
+     "name": "Grammarly",
+     "amount": 12,
+     "currency": "USD",
+     "tier": "Pro",
+     "text": "USD 12"
+    },
+    {
      "slug": "loom",
      "name": "Loom",
      "amount": 18,
@@ -20100,12 +20657,60 @@
      "text": "USD 19.99/month"
     },
     {
+     "slug": "clerk",
+     "name": "Clerk",
+     "amount": 20,
+     "currency": "USD",
+     "tier": "Pro",
+     "text": "USD 20"
+    },
+    {
+     "slug": "cursor",
+     "name": "Cursor",
+     "amount": 20,
+     "currency": "USD",
+     "tier": "Pro",
+     "text": "USD 20"
+    },
+    {
      "slug": "klaviyo",
      "name": "Klaviyo",
      "amount": 20,
      "currency": "USD",
      "tier": "Email Plan (entry)",
      "text": "USD 20"
+    },
+    {
+     "slug": "n8n",
+     "name": "n8n",
+     "amount": 20,
+     "currency": "EUR",
+     "tier": "Starter",
+     "text": "EUR 20/month"
+    },
+    {
+     "slug": "resend",
+     "name": "Resend",
+     "amount": 20,
+     "currency": "USD",
+     "tier": "Pro",
+     "text": "USD 20/month"
+    },
+    {
+     "slug": "helpscout",
+     "name": "Help Scout",
+     "amount": 25,
+     "currency": "USD",
+     "tier": "Standard",
+     "text": "USD 25/user/month"
+    },
+    {
+     "slug": "melio",
+     "name": "Melio",
+     "amount": 25,
+     "currency": "USD",
+     "tier": "Core",
+     "text": "USD 25"
     },
     {
      "slug": "snyk",
@@ -20148,6 +20753,38 @@
      "text": "USD 29"
     },
     {
+     "slug": "modal",
+     "name": "Modal",
+     "amount": 30,
+     "currency": "USD",
+     "tier": "Enterprise",
+     "text": "USD 30/month"
+    },
+    {
+     "slug": "semgrep",
+     "name": "Semgrep",
+     "amount": 30,
+     "currency": "USD",
+     "tier": "Teams",
+     "text": "USD 30/month"
+    },
+    {
+     "slug": "hex",
+     "name": "Hex",
+     "amount": 36,
+     "currency": "USD",
+     "tier": "Professional",
+     "text": "USD 36"
+    },
+    {
+     "slug": "pulumi",
+     "name": "Pulumi",
+     "amount": 40,
+     "currency": "USD",
+     "tier": "Team",
+     "text": "USD 40/month"
+    },
+    {
      "slug": "pagerduty",
      "name": "PagerDuty",
      "amount": 48,
@@ -20156,12 +20793,36 @@
      "text": "USD 48/year"
     },
     {
+     "slug": "descript",
+     "name": "Descript",
+     "amount": 50,
+     "currency": "USD",
+     "tier": "Business",
+     "text": "USD 50/month"
+    },
+    {
+     "slug": "pinecone",
+     "name": "Pinecone",
+     "amount": 50,
+     "currency": "USD",
+     "tier": "Standard",
+     "text": "USD 50/month"
+    },
+    {
      "slug": "supermetrics",
      "name": "Supermetrics",
      "amount": 55,
      "currency": "USD",
      "tier": "Starter",
      "text": "USD 55"
+    },
+    {
+     "slug": "wandb",
+     "name": "Weights & Biases",
+     "amount": 60,
+     "currency": "USD",
+     "tier": "Pro",
+     "text": "USD 60/month"
     },
     {
      "slug": "nextcloud",
@@ -20178,6 +20839,14 @@
      "currency": "USD",
      "tier": "Mendix Basic Plan",
      "text": "USD 75"
+    },
+    {
+     "slug": "wistia",
+     "name": "Wistia",
+     "amount": 79,
+     "currency": "USD",
+     "tier": "Business",
+     "text": "USD 79/month"
     },
     {
      "slug": "trustpilot",
@@ -20220,6 +20889,14 @@
      "text": "USD 144/month"
     },
     {
+     "slug": "honeycomb",
+     "name": "Honeycomb",
+     "amount": 150,
+     "currency": "USD",
+     "tier": "Pro",
+     "text": "USD 150/month"
+    },
+    {
      "slug": "clay",
      "name": "Clay",
      "amount": 167,
@@ -20236,6 +20913,22 @@
      "text": "USD 200/user/month"
     },
     {
+     "slug": "influxdata",
+     "name": "InfluxData",
+     "amount": 250,
+     "currency": "USD",
+     "tier": "Cloud Serverless",
+     "text": "USD 250"
+    },
+    {
+     "slug": "weaviate",
+     "name": "Weaviate",
+     "amount": 400,
+     "currency": "USD",
+     "tier": "Premium",
+     "text": "USD 400/month"
+    },
+    {
      "slug": "rossum",
      "name": "Rossum",
      "amount": 18000,
@@ -20247,22 +20940,22 @@
    "currencies": [
     {
      "currency": "USD",
-     "n": 43
+     "n": 68
     },
     {
      "currency": "EUR",
-     "n": 2
+     "n": 3
     },
     {
      "currency": "GBP",
      "n": 1
     }
    ],
-   "median": 10,
+   "median": 19,
    "coverage": {
     "tracked": 361,
-    "readable": 46,
-    "unreadable": 315,
+    "readable": 72,
+    "unreadable": 289,
     "held": 0,
     "suspect": 0,
     "missing": [
@@ -20291,20 +20984,12 @@
       "name": "AFAS Software"
      },
      {
-      "slug": "airbyte",
-      "name": "Airbyte"
-     },
-     {
       "slug": "aircall",
       "name": "Aircall"
      },
      {
       "slug": "airtable",
       "name": "Airtable"
-     },
-     {
-      "slug": "airwallex",
-      "name": "Airwallex"
      },
      {
       "slug": "alan",
@@ -20455,10 +21140,6 @@
       "name": "Clari"
      },
      {
-      "slug": "clerk",
-      "name": "Clerk"
-     },
-     {
       "slug": "clickhouse",
       "name": "ClickHouse"
      },
@@ -20527,14 +21208,6 @@
       "name": "Culture Amp"
      },
      {
-      "slug": "cursor",
-      "name": "Cursor"
-     },
-     {
-      "slug": "dagster",
-      "name": "Dagster Labs"
-     },
-     {
       "slug": "darktrace",
       "name": "Darktrace"
      },
@@ -20577,10 +21250,6 @@
      {
       "slug": "demandbase",
       "name": "Demandbase"
-     },
-     {
-      "slug": "descript",
-      "name": "Descript"
      },
      {
       "slug": "dialpad",
@@ -20675,10 +21344,6 @@
       "name": "Fortnox"
      },
      {
-      "slug": "framer",
-      "name": "Framer"
-     },
-     {
       "slug": "freshworks",
       "name": "Freshworks"
      },
@@ -20719,16 +21384,8 @@
       "name": "Gong"
      },
      {
-      "slug": "gorgias",
-      "name": "Gorgias"
-     },
-     {
       "slug": "grafana",
       "name": "Grafana Labs"
-     },
-     {
-      "slug": "grammarly",
-      "name": "Grammarly"
      },
      {
       "slug": "greenhouse",
@@ -20747,14 +21404,6 @@
       "name": "Heap"
      },
      {
-      "slug": "helpscout",
-      "name": "Help Scout"
-     },
-     {
-      "slug": "hex",
-      "name": "Hex"
-     },
-     {
       "slug": "hibob",
       "name": "HiBob"
      },
@@ -20765,10 +21414,6 @@
      {
       "slug": "hightouch",
       "name": "Hightouch"
-     },
-     {
-      "slug": "honeycomb",
-      "name": "Honeycomb"
      },
      {
       "slug": "hornetsecurity",
@@ -20783,10 +21428,6 @@
       "name": "HubSpot"
      },
      {
-      "slug": "huggingface",
-      "name": "Hugging Face"
-     },
-     {
       "slug": "ibm",
       "name": "IBM"
      },
@@ -20797,10 +21438,6 @@
      {
       "slug": "idnow",
       "name": "IDnow"
-     },
-     {
-      "slug": "influxdata",
-      "name": "InfluxData"
      },
      {
       "slug": "informatica",
@@ -20907,10 +21544,6 @@
       "name": "Matillion"
      },
      {
-      "slug": "melio",
-      "name": "Melio"
-     },
-     {
       "slug": "mentimeter",
       "name": "Mentimeter"
      },
@@ -20925,10 +21558,6 @@
      {
       "slug": "mixpanel",
       "name": "Mixpanel"
-     },
-     {
-      "slug": "modal",
-      "name": "Modal"
      },
      {
       "slug": "mode",
@@ -20949,10 +21578,6 @@
      {
       "slug": "motion",
       "name": "Motion"
-     },
-     {
-      "slug": "n8n",
-      "name": "n8n"
      },
      {
       "slug": "navan",
@@ -21071,10 +21696,6 @@
       "name": "Personio"
      },
      {
-      "slug": "pinecone",
-      "name": "Pinecone"
-     },
-     {
       "slug": "pipedrive",
       "name": "Pipedrive"
      },
@@ -21089,10 +21710,6 @@
      {
       "slug": "posthog",
       "name": "PostHog"
-     },
-     {
-      "slug": "postman",
-      "name": "Postman"
      },
      {
       "slug": "prefect",
@@ -21111,10 +21728,6 @@
       "name": "PTC"
      },
      {
-      "slug": "pulumi",
-      "name": "Pulumi"
-     },
-     {
       "slug": "qualtrics",
       "name": "Qualtrics"
      },
@@ -21125,10 +21738,6 @@
      {
       "slug": "quantexa",
       "name": "Quantexa"
-     },
-     {
-      "slug": "railway",
-      "name": "Railway"
      },
      {
       "slug": "ramp",
@@ -21165,10 +21774,6 @@
      {
       "slug": "replit",
       "name": "Replit"
-     },
-     {
-      "slug": "resend",
-      "name": "Resend"
      },
      {
       "slug": "ringcentral",
@@ -21221,10 +21826,6 @@
      {
       "slug": "seismic",
       "name": "Seismic"
-     },
-     {
-      "slug": "semgrep",
-      "name": "Semgrep"
      },
      {
       "slug": "sennder",
@@ -21459,24 +22060,12 @@
       "name": "Voyado"
      },
      {
-      "slug": "weaviate",
-      "name": "Weaviate"
-     },
-     {
       "slug": "webflow",
       "name": "Webflow"
      },
      {
-      "slug": "wandb",
-      "name": "Weights & Biases"
-     },
-     {
       "slug": "wise",
       "name": "Wise"
-     },
-     {
-      "slug": "wistia",
-      "name": "Wistia"
      },
      {
       "slug": "wiz",
@@ -24646,10 +25235,10 @@
       "short": "Risk & compliance",
       "n": 26,
       "readable": 24,
-      "yes": 15,
-      "no": 9,
+      "yes": 14,
+      "no": 10,
       "unreadable": 2,
-      "share": 62.5,
+      "share": 58.3,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -24664,10 +25253,6 @@
         {
          "slug": "diligent",
          "name": "Diligent"
-        },
-        {
-         "slug": "docusign",
-         "name": "Docusign"
         },
         {
          "slug": "icertis",
@@ -24718,6 +25303,10 @@
         {
          "slug": "clerk",
          "name": "Clerk"
+        },
+        {
+         "slug": "docusign",
+         "name": "Docusign"
         },
         {
          "slug": "feedzai",
@@ -26384,10 +26973,10 @@
       "short": "Risk & compliance",
       "n": 26,
       "readable": 24,
-      "yes": 15,
-      "no": 9,
+      "yes": 14,
+      "no": 10,
       "unreadable": 2,
-      "share": 62.5,
+      "share": 58.3,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -26402,10 +26991,6 @@
         {
          "slug": "diligent",
          "name": "Diligent"
-        },
-        {
-         "slug": "docusign",
-         "name": "Docusign"
         },
         {
          "slug": "icertis",
@@ -26456,6 +27041,10 @@
         {
          "slug": "clerk",
          "name": "Clerk"
+        },
+        {
+         "slug": "docusign",
+         "name": "Docusign"
         },
         {
          "slug": "feedzai",
@@ -27256,8 +27845,8 @@
     "drawn": true,
     "withheld": null,
     "overall": {
-     "yes": 233,
-     "no": 109,
+     "yes": 232,
+     "no": 110,
      "unreadable": 19,
      "readable": 342,
      "tracked": 361
@@ -35315,13 +35904,17 @@
       "short": "Work & product",
       "n": 48,
       "readable": 38,
-      "yes": 20,
-      "no": 18,
+      "yes": 22,
+      "no": 16,
       "unreadable": 10,
-      "share": 52.6,
+      "share": 57.9,
       "suppressed": false,
       "companies": {
        "yes": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
         {
          "slug": "basecamp",
          "name": "Basecamp"
@@ -35401,13 +35994,13 @@
         {
          "slug": "uipath",
          "name": "UiPath"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
         }
        ],
        "no": [
-        {
-         "slug": "airtable",
-         "name": "Airtable"
-        },
         {
          "slug": "asana",
          "name": "Asana"
@@ -35471,10 +36064,6 @@
         {
          "slug": "wrike",
          "name": "Wrike"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
         }
        ],
        "unreadable": [
@@ -37197,13 +37786,17 @@
       "short": "Work & product",
       "n": 48,
       "readable": 38,
-      "yes": 20,
-      "no": 18,
+      "yes": 22,
+      "no": 16,
       "unreadable": 10,
-      "share": 52.6,
+      "share": 57.9,
       "suppressed": false,
       "companies": {
        "yes": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
         {
          "slug": "basecamp",
          "name": "Basecamp"
@@ -37283,13 +37876,13 @@
         {
          "slug": "uipath",
          "name": "UiPath"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
         }
        ],
        "no": [
-        {
-         "slug": "airtable",
-         "name": "Airtable"
-        },
         {
          "slug": "asana",
          "name": "Asana"
@@ -37353,10 +37946,6 @@
         {
          "slug": "wrike",
          "name": "Wrike"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
         }
        ],
        "unreadable": [
@@ -38473,8 +39062,8 @@
     "drawn": true,
     "withheld": null,
     "overall": {
-     "yes": 154,
-     "no": 116,
+     "yes": 156,
+     "no": 114,
      "unreadable": 91,
      "readable": 270,
      "tracked": 361
@@ -39036,10 +39625,10 @@
       "short": "Work & product",
       "n": 48,
       "readable": 38,
-      "yes": 10,
-      "no": 28,
+      "yes": 11,
+      "no": 27,
       "unreadable": 10,
-      "share": 26.3,
+      "share": 28.9,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -39082,6 +39671,10 @@
         {
          "slug": "uipath",
          "name": "UiPath"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
         }
        ],
        "no": [
@@ -39192,10 +39785,6 @@
         {
          "slug": "wrike",
          "name": "Wrike"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
         }
        ],
        "unreadable": [
@@ -41109,6 +41698,218 @@
       }
      },
      {
+      "group": "work",
+      "label": "Work & product",
+      "short": "Work & product",
+      "n": 48,
+      "readable": 38,
+      "yes": 11,
+      "no": 27,
+      "unreadable": 10,
+      "share": 28.9,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "clickup",
+         "name": "ClickUp"
+        },
+        {
+         "slug": "coda",
+         "name": "Coda"
+        },
+        {
+         "slug": "monday",
+         "name": "monday.com"
+        },
+        {
+         "slug": "n8n",
+         "name": "n8n"
+        },
+        {
+         "slug": "otter",
+         "name": "Otter.ai"
+        },
+        {
+         "slug": "replit",
+         "name": "Replit"
+        },
+        {
+         "slug": "retool",
+         "name": "Retool"
+        },
+        {
+         "slug": "teamleader",
+         "name": "Teamleader"
+        },
+        {
+         "slug": "tray",
+         "name": "Tray.ai"
+        },
+        {
+         "slug": "uipath",
+         "name": "UiPath"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
+        }
+       ],
+       "no": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
+        {
+         "slug": "asana",
+         "name": "Asana"
+        },
+        {
+         "slug": "basecamp",
+         "name": "Basecamp"
+        },
+        {
+         "slug": "calendly",
+         "name": "Calendly"
+        },
+        {
+         "slug": "cursor",
+         "name": "Cursor"
+        },
+        {
+         "slug": "figma",
+         "name": "Figma"
+        },
+        {
+         "slug": "fireflies",
+         "name": "Fireflies.ai"
+        },
+        {
+         "slug": "framer",
+         "name": "Framer"
+        },
+        {
+         "slug": "github",
+         "name": "GitHub"
+        },
+        {
+         "slug": "gitlab",
+         "name": "GitLab"
+        },
+        {
+         "slug": "gitpod",
+         "name": "Gitpod"
+        },
+        {
+         "slug": "guru",
+         "name": "Guru"
+        },
+        {
+         "slug": "loom",
+         "name": "Loom"
+        },
+        {
+         "slug": "m-files",
+         "name": "M-Files"
+        },
+        {
+         "slug": "make",
+         "name": "Make"
+        },
+        {
+         "slug": "mentimeter",
+         "name": "Mentimeter"
+        },
+        {
+         "slug": "miro",
+         "name": "Miro"
+        },
+        {
+         "slug": "motion",
+         "name": "Motion"
+        },
+        {
+         "slug": "notion",
+         "name": "Notion"
+        },
+        {
+         "slug": "productboard",
+         "name": "Productboard"
+        },
+        {
+         "slug": "rossum",
+         "name": "Rossum"
+        },
+        {
+         "slug": "slack",
+         "name": "Slack"
+        },
+        {
+         "slug": "smartsheet",
+         "name": "Smartsheet"
+        },
+        {
+         "slug": "sourcegraph",
+         "name": "Sourcegraph"
+        },
+        {
+         "slug": "teamwork",
+         "name": "Teamwork"
+        },
+        {
+         "slug": "templafy",
+         "name": "Templafy"
+        },
+        {
+         "slug": "wrike",
+         "name": "Wrike"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "atlassian",
+         "name": "Atlassian"
+        },
+        {
+         "slug": "box",
+         "name": "Box"
+        },
+        {
+         "slug": "jetbrains",
+         "name": "JetBrains"
+        },
+        {
+         "slug": "linear",
+         "name": "Linear"
+        },
+        {
+         "slug": "nextcloud",
+         "name": "Nextcloud"
+        },
+        {
+         "slug": "shortcut",
+         "name": "Shortcut"
+        },
+        {
+         "slug": "sonarsource",
+         "name": "SonarSource"
+        },
+        {
+         "slug": "tricentis",
+         "name": "Tricentis"
+        },
+        {
+         "slug": "unity",
+         "name": "Unity"
+        },
+        {
+         "slug": "workato",
+         "name": "Workato"
+        }
+       ]
+      }
+     },
+     {
       "group": "dev",
       "label": "Developer & infrastructure",
       "short": "Dev & infrastructure",
@@ -41464,218 +42265,6 @@
         {
          "slug": "nice",
          "name": "NICE"
-        }
-       ]
-      }
-     },
-     {
-      "group": "work",
-      "label": "Work & product",
-      "short": "Work & product",
-      "n": 48,
-      "readable": 38,
-      "yes": 10,
-      "no": 28,
-      "unreadable": 10,
-      "share": 26.3,
-      "suppressed": false,
-      "companies": {
-       "yes": [
-        {
-         "slug": "clickup",
-         "name": "ClickUp"
-        },
-        {
-         "slug": "coda",
-         "name": "Coda"
-        },
-        {
-         "slug": "monday",
-         "name": "monday.com"
-        },
-        {
-         "slug": "n8n",
-         "name": "n8n"
-        },
-        {
-         "slug": "otter",
-         "name": "Otter.ai"
-        },
-        {
-         "slug": "replit",
-         "name": "Replit"
-        },
-        {
-         "slug": "retool",
-         "name": "Retool"
-        },
-        {
-         "slug": "teamleader",
-         "name": "Teamleader"
-        },
-        {
-         "slug": "tray",
-         "name": "Tray.ai"
-        },
-        {
-         "slug": "uipath",
-         "name": "UiPath"
-        }
-       ],
-       "no": [
-        {
-         "slug": "airtable",
-         "name": "Airtable"
-        },
-        {
-         "slug": "asana",
-         "name": "Asana"
-        },
-        {
-         "slug": "basecamp",
-         "name": "Basecamp"
-        },
-        {
-         "slug": "calendly",
-         "name": "Calendly"
-        },
-        {
-         "slug": "cursor",
-         "name": "Cursor"
-        },
-        {
-         "slug": "figma",
-         "name": "Figma"
-        },
-        {
-         "slug": "fireflies",
-         "name": "Fireflies.ai"
-        },
-        {
-         "slug": "framer",
-         "name": "Framer"
-        },
-        {
-         "slug": "github",
-         "name": "GitHub"
-        },
-        {
-         "slug": "gitlab",
-         "name": "GitLab"
-        },
-        {
-         "slug": "gitpod",
-         "name": "Gitpod"
-        },
-        {
-         "slug": "guru",
-         "name": "Guru"
-        },
-        {
-         "slug": "loom",
-         "name": "Loom"
-        },
-        {
-         "slug": "m-files",
-         "name": "M-Files"
-        },
-        {
-         "slug": "make",
-         "name": "Make"
-        },
-        {
-         "slug": "mentimeter",
-         "name": "Mentimeter"
-        },
-        {
-         "slug": "miro",
-         "name": "Miro"
-        },
-        {
-         "slug": "motion",
-         "name": "Motion"
-        },
-        {
-         "slug": "notion",
-         "name": "Notion"
-        },
-        {
-         "slug": "productboard",
-         "name": "Productboard"
-        },
-        {
-         "slug": "rossum",
-         "name": "Rossum"
-        },
-        {
-         "slug": "slack",
-         "name": "Slack"
-        },
-        {
-         "slug": "smartsheet",
-         "name": "Smartsheet"
-        },
-        {
-         "slug": "sourcegraph",
-         "name": "Sourcegraph"
-        },
-        {
-         "slug": "teamwork",
-         "name": "Teamwork"
-        },
-        {
-         "slug": "templafy",
-         "name": "Templafy"
-        },
-        {
-         "slug": "wrike",
-         "name": "Wrike"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
-        }
-       ],
-       "unreadable": [
-        {
-         "slug": "atlassian",
-         "name": "Atlassian"
-        },
-        {
-         "slug": "box",
-         "name": "Box"
-        },
-        {
-         "slug": "jetbrains",
-         "name": "JetBrains"
-        },
-        {
-         "slug": "linear",
-         "name": "Linear"
-        },
-        {
-         "slug": "nextcloud",
-         "name": "Nextcloud"
-        },
-        {
-         "slug": "shortcut",
-         "name": "Shortcut"
-        },
-        {
-         "slug": "sonarsource",
-         "name": "SonarSource"
-        },
-        {
-         "slug": "tricentis",
-         "name": "Tricentis"
-        },
-        {
-         "slug": "unity",
-         "name": "Unity"
-        },
-        {
-         "slug": "workato",
-         "name": "Workato"
         }
        ]
       }
@@ -42130,8 +42719,8 @@
     "drawn": true,
     "withheld": null,
     "overall": {
-     "yes": 95,
-     "no": 175,
+     "yes": 96,
+     "no": 174,
      "unreadable": 91,
      "readable": 270,
      "tracked": 361
@@ -42693,10 +43282,10 @@
       "short": "Work & product",
       "n": 48,
       "readable": 38,
-      "yes": 8,
-      "no": 30,
+      "yes": 9,
+      "no": 29,
       "unreadable": 10,
-      "share": 21.1,
+      "share": 23.7,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -42731,6 +43320,10 @@
         {
          "slug": "wrike",
          "name": "Wrike"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
         }
        ],
        "no": [
@@ -42849,10 +43442,6 @@
         {
          "slug": "uipath",
          "name": "UiPath"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
         }
        ],
        "unreadable": [
@@ -44558,10 +45147,10 @@
       "short": "Work & product",
       "n": 48,
       "readable": 38,
-      "yes": 8,
-      "no": 30,
+      "yes": 9,
+      "no": 29,
       "unreadable": 10,
-      "share": 21.1,
+      "share": 23.7,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -44596,6 +45185,10 @@
         {
          "slug": "wrike",
          "name": "Wrike"
+        },
+        {
+         "slug": "zapier",
+         "name": "Zapier"
         }
        ],
        "no": [
@@ -44714,10 +45307,6 @@
         {
          "slug": "uipath",
          "name": "UiPath"
-        },
-        {
-         "slug": "zapier",
-         "name": "Zapier"
         }
        ],
        "unreadable": [
@@ -46020,8 +46609,8 @@
     "drawn": true,
     "withheld": null,
     "overall": {
-     "yes": 67,
-     "no": 203,
+     "yes": 68,
+     "no": 202,
      "unreadable": 91,
      "readable": 270,
      "tracked": 361
@@ -46583,13 +47172,17 @@
       "short": "Work & product",
       "n": 48,
       "readable": 38,
-      "yes": 13,
-      "no": 25,
+      "yes": 14,
+      "no": 24,
       "unreadable": 10,
-      "share": 34.2,
+      "share": 36.8,
       "suppressed": false,
       "companies": {
        "yes": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
         {
          "slug": "asana",
          "name": "Asana"
@@ -46644,10 +47237,6 @@
         }
        ],
        "no": [
-        {
-         "slug": "airtable",
-         "name": "Airtable"
-        },
         {
          "slug": "basecamp",
          "name": "Basecamp"
@@ -47806,13 +48395,17 @@
       "short": "Work & product",
       "n": 48,
       "readable": 38,
-      "yes": 13,
-      "no": 25,
+      "yes": 14,
+      "no": 24,
       "unreadable": 10,
-      "share": 34.2,
+      "share": 36.8,
       "suppressed": false,
       "companies": {
        "yes": [
+        {
+         "slug": "airtable",
+         "name": "Airtable"
+        },
         {
          "slug": "asana",
          "name": "Asana"
@@ -47867,10 +48460,6 @@
         }
        ],
        "no": [
-        {
-         "slug": "airtable",
-         "name": "Airtable"
-        },
         {
          "slug": "basecamp",
          "name": "Basecamp"
@@ -49448,13 +50037,17 @@
      "short": "Work & product",
      "n": 48,
      "readable": 38,
-     "yes": 13,
-     "no": 25,
+     "yes": 14,
+     "no": 24,
      "unreadable": 10,
-     "share": 34.2,
+     "share": 36.8,
      "suppressed": false,
      "companies": {
       "yes": [
+       {
+        "slug": "airtable",
+        "name": "Airtable"
+       },
        {
         "slug": "asana",
         "name": "Asana"
@@ -49509,10 +50102,6 @@
        }
       ],
       "no": [
-       {
-        "slug": "airtable",
-        "name": "Airtable"
-       },
        {
         "slug": "basecamp",
         "name": "Basecamp"
@@ -49738,12 +50327,12 @@
      }
     },
     "spread": 6,
-    "lead_over_runner_up": 5,
+    "lead_over_runner_up": 4,
     "drawn": true,
     "withheld": null,
     "overall": {
-     "yes": 44,
-     "no": 226,
+     "yes": 45,
+     "no": 225,
      "unreadable": 91,
      "readable": 270,
      "tracked": 361
@@ -53421,10 +54010,10 @@
       "label": "Developer & infrastructure",
       "short": "Dev & infrastructure",
       "n": 61,
-      "readable": 8,
-      "yes": 8,
+      "readable": 18,
+      "yes": 18,
       "no": 0,
-      "unreadable": 53,
+      "unreadable": 43,
       "share": 100,
       "suppressed": false,
       "companies": {
@@ -53434,12 +54023,28 @@
          "name": "Aiven"
         },
         {
+         "slug": "circleci",
+         "name": "CircleCI"
+        },
+        {
          "slug": "cloudflare",
          "name": "Cloudflare"
         },
         {
+         "slug": "gitguardian",
+         "name": "GitGuardian"
+        },
+        {
+         "slug": "honeycomb",
+         "name": "Honeycomb"
+        },
+        {
          "slug": "launchdarkly",
          "name": "LaunchDarkly"
+        },
+        {
+         "slug": "modal",
+         "name": "Modal"
         },
         {
          "slug": "netlify",
@@ -53450,12 +54055,36 @@
          "name": "PagerDuty"
         },
         {
+         "slug": "postman",
+         "name": "Postman"
+        },
+        {
+         "slug": "pulumi",
+         "name": "Pulumi"
+        },
+        {
+         "slug": "railway",
+         "name": "Railway"
+        },
+        {
+         "slug": "resend",
+         "name": "Resend"
+        },
+        {
+         "slug": "semgrep",
+         "name": "Semgrep"
+        },
+        {
          "slug": "sentry",
          "name": "Sentry"
         },
         {
          "slug": "snyk",
          "name": "Snyk"
+        },
+        {
+         "slug": "split",
+         "name": "Split"
         },
         {
          "slug": "supabase",
@@ -53483,10 +54112,6 @@
         {
          "slug": "chronosphere",
          "name": "Chronosphere"
-        },
-        {
-         "slug": "circleci",
-         "name": "CircleCI"
         },
         {
          "slug": "crowdstrike",
@@ -53517,20 +54142,12 @@
          "name": "Fly.io"
         },
         {
-         "slug": "gitguardian",
-         "name": "GitGuardian"
-        },
-        {
          "slug": "grafana",
          "name": "Grafana Labs"
         },
         {
          "slug": "harness",
          "name": "Harness"
-        },
-        {
-         "slug": "honeycomb",
-         "name": "Honeycomb"
         },
         {
          "slug": "hornetsecurity",
@@ -53543,10 +54160,6 @@
         {
          "slug": "lacework",
          "name": "Lacework"
-        },
-        {
-         "slug": "modal",
-         "name": "Modal"
         },
         {
          "slug": "netskope",
@@ -53577,24 +54190,12 @@
          "name": "Palo Alto Networks"
         },
         {
-         "slug": "postman",
-         "name": "Postman"
-        },
-        {
          "slug": "proton",
          "name": "Proton"
         },
         {
-         "slug": "pulumi",
-         "name": "Pulumi"
-        },
-        {
          "slug": "qualys",
          "name": "Qualys"
-        },
-        {
-         "slug": "railway",
-         "name": "Railway"
         },
         {
          "slug": "rapid7",
@@ -53605,24 +54206,12 @@
          "name": "Render"
         },
         {
-         "slug": "resend",
-         "name": "Resend"
-        },
-        {
          "slug": "scaleway",
          "name": "Scaleway"
         },
         {
-         "slug": "semgrep",
-         "name": "Semgrep"
-        },
-        {
          "slug": "sentinelone",
          "name": "SentinelOne"
-        },
-        {
-         "slug": "split",
-         "name": "Split"
         },
         {
          "slug": "splunk",
@@ -53684,21 +54273,33 @@
       "label": "Data & analytics",
       "short": "Data & analytics",
       "n": 65,
-      "readable": 11,
-      "yes": 10,
-      "no": 1,
-      "unreadable": 54,
-      "share": 90.9,
+      "readable": 23,
+      "yes": 20,
+      "no": 3,
+      "unreadable": 42,
+      "share": 87,
       "suppressed": false,
       "companies": {
        "yes": [
+        {
+         "slug": "airbyte",
+         "name": "Airbyte"
+        },
         {
          "slug": "amplitude",
          "name": "Amplitude"
         },
         {
+         "slug": "census",
+         "name": "Census"
+        },
+        {
          "slug": "confluent",
          "name": "Confluent"
+        },
+        {
+         "slug": "dagster",
+         "name": "Dagster Labs"
         },
         {
          "slug": "dbt-labs",
@@ -53707,6 +54308,18 @@
         {
          "slug": "fivetran",
          "name": "Fivetran"
+        },
+        {
+         "slug": "heap",
+         "name": "Heap"
+        },
+        {
+         "slug": "hex",
+         "name": "Hex"
+        },
+        {
+         "slug": "influxdata",
+         "name": "InfluxData"
         },
         {
          "slug": "metabase",
@@ -53725,25 +54338,45 @@
          "name": "Pendo"
         },
         {
+         "slug": "pinecone",
+         "name": "Pinecone"
+        },
+        {
          "slug": "redis",
          "name": "Redis"
         },
         {
+         "slug": "statsig",
+         "name": "Statsig"
+        },
+        {
          "slug": "thoughtspot",
          "name": "ThoughtSpot"
+        },
+        {
+         "slug": "weaviate",
+         "name": "Weaviate"
+        },
+        {
+         "slug": "wandb",
+         "name": "Weights & Biases"
         }
        ],
        "no": [
+        {
+         "slug": "huggingface",
+         "name": "Hugging Face"
+        },
+        {
+         "slug": "planetscale",
+         "name": "PlanetScale"
+        },
         {
          "slug": "supermetrics",
          "name": "Supermetrics"
         }
        ],
        "unreadable": [
-        {
-         "slug": "airbyte",
-         "name": "Airbyte"
-        },
         {
          "slug": "alteryx",
          "name": "Alteryx"
@@ -53765,10 +54398,6 @@
          "name": "Atlan"
         },
         {
-         "slug": "census",
-         "name": "Census"
-        },
-        {
          "slug": "clickhouse",
          "name": "ClickHouse"
         },
@@ -53787,10 +54416,6 @@
         {
          "slug": "contentsquare",
          "name": "Contentsquare"
-        },
-        {
-         "slug": "dagster",
-         "name": "Dagster Labs"
         },
         {
          "slug": "databricks",
@@ -53817,14 +54442,6 @@
          "name": "FullStory"
         },
         {
-         "slug": "heap",
-         "name": "Heap"
-        },
-        {
-         "slug": "hex",
-         "name": "Hex"
-        },
-        {
          "slug": "hightouch",
          "name": "Hightouch"
         },
@@ -53833,16 +54450,8 @@
          "name": "Hotjar"
         },
         {
-         "slug": "huggingface",
-         "name": "Hugging Face"
-        },
-        {
          "slug": "ibm",
          "name": "IBM"
-        },
-        {
-         "slug": "influxdata",
-         "name": "InfluxData"
         },
         {
          "slug": "informatica",
@@ -53879,14 +54488,6 @@
         {
          "slug": "palantir",
          "name": "Palantir"
-        },
-        {
-         "slug": "pinecone",
-         "name": "Pinecone"
-        },
-        {
-         "slug": "planetscale",
-         "name": "PlanetScale"
         },
         {
          "slug": "posthog",
@@ -53941,20 +54542,8 @@
          "name": "Starburst"
         },
         {
-         "slug": "statsig",
-         "name": "Statsig"
-        },
-        {
          "slug": "timescale",
          "name": "Timescale"
-        },
-        {
-         "slug": "weaviate",
-         "name": "Weaviate"
-        },
-        {
-         "slug": "wandb",
-         "name": "Weights & Biases"
         }
        ]
       }
@@ -53964,11 +54553,11 @@
       "label": "Work & product",
       "short": "Work & product",
       "n": 48,
-      "readable": 18,
-      "yes": 14,
+      "readable": 23,
+      "yes": 19,
       "no": 4,
-      "unreadable": 30,
-      "share": 77.8,
+      "unreadable": 25,
+      "share": 82.6,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -53989,6 +54578,14 @@
          "name": "ClickUp"
         },
         {
+         "slug": "cursor",
+         "name": "Cursor"
+        },
+        {
+         "slug": "framer",
+         "name": "Framer"
+        },
+        {
          "slug": "gitlab",
          "name": "GitLab"
         },
@@ -54001,12 +54598,20 @@
          "name": "Loom"
         },
         {
+         "slug": "make",
+         "name": "Make"
+        },
+        {
          "slug": "miro",
          "name": "Miro"
         },
         {
          "slug": "monday",
          "name": "monday.com"
+        },
+        {
+         "slug": "n8n",
+         "name": "n8n"
         },
         {
          "slug": "notion",
@@ -54019,6 +54624,10 @@
         {
          "slug": "retool",
          "name": "Retool"
+        },
+        {
+         "slug": "shortcut",
+         "name": "Shortcut"
         },
         {
          "slug": "slack",
@@ -54065,20 +54674,12 @@
          "name": "Coda"
         },
         {
-         "slug": "cursor",
-         "name": "Cursor"
-        },
-        {
          "slug": "figma",
          "name": "Figma"
         },
         {
          "slug": "fireflies",
          "name": "Fireflies.ai"
-        },
-        {
-         "slug": "framer",
-         "name": "Framer"
         },
         {
          "slug": "github",
@@ -54101,10 +54702,6 @@
          "name": "M-Files"
         },
         {
-         "slug": "make",
-         "name": "Make"
-        },
-        {
          "slug": "mentimeter",
          "name": "Mentimeter"
         },
@@ -54113,20 +54710,12 @@
          "name": "Motion"
         },
         {
-         "slug": "n8n",
-         "name": "n8n"
-        },
-        {
          "slug": "otter",
          "name": "Otter.ai"
         },
         {
          "slug": "replit",
          "name": "Replit"
-        },
-        {
-         "slug": "shortcut",
-         "name": "Shortcut"
         },
         {
          "slug": "sonarsource",
@@ -54176,11 +54765,11 @@
       "label": "Go-to-market",
       "short": "Go-to-market",
       "n": 50,
-      "readable": 9,
-      "yes": 7,
+      "readable": 12,
+      "yes": 10,
       "no": 2,
-      "unreadable": 41,
-      "share": 77.8,
+      "unreadable": 38,
+      "share": 83.3,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -54201,6 +54790,14 @@
          "name": "Clay"
         },
         {
+         "slug": "descript",
+         "name": "Descript"
+        },
+        {
+         "slug": "grammarly",
+         "name": "Grammarly"
+        },
+        {
          "slug": "klaviyo",
          "name": "Klaviyo"
         },
@@ -54211,6 +54808,10 @@
         {
          "slug": "trustpilot",
          "name": "Trustpilot"
+        },
+        {
+         "slug": "wistia",
+         "name": "Wistia"
         }
        ],
        "no": [
@@ -54277,20 +54878,12 @@
          "name": "Demandbase"
         },
         {
-         "slug": "descript",
-         "name": "Descript"
-        },
-        {
          "slug": "drift",
          "name": "Drift"
         },
         {
          "slug": "gong",
          "name": "Gong"
-        },
-        {
-         "slug": "grammarly",
-         "name": "Grammarly"
         },
         {
          "slug": "highspot",
@@ -54381,10 +54974,6 @@
          "name": "Webflow"
         },
         {
-         "slug": "wistia",
-         "name": "Wistia"
-        },
-        {
          "slug": "writer",
          "name": "Writer"
         }
@@ -54396,13 +54985,17 @@
       "label": "Customer service",
       "short": "Service",
       "n": 19,
-      "readable": 2,
-      "yes": 2,
-      "no": 0,
-      "unreadable": 17,
+      "readable": 4,
+      "yes": 3,
+      "no": 1,
+      "unreadable": 15,
       "suppressed": true,
       "companies": {
        "yes": [
+        {
+         "slug": "helpscout",
+         "name": "Help Scout"
+        },
         {
          "slug": "intercom",
          "name": "Intercom"
@@ -54412,7 +55005,12 @@
          "name": "Zendesk"
         }
        ],
-       "no": [],
+       "no": [
+        {
+         "slug": "gorgias",
+         "name": "Gorgias"
+        }
+       ],
        "unreadable": [
         {
          "slug": "aircall",
@@ -54445,14 +55043,6 @@
         {
          "slug": "genesys",
          "name": "Genesys"
-        },
-        {
-         "slug": "gorgias",
-         "name": "Gorgias"
-        },
-        {
-         "slug": "helpscout",
-         "name": "Help Scout"
         },
         {
          "slug": "livechat",
@@ -54490,13 +55080,17 @@
       "label": "Risk, compliance & identity",
       "short": "Risk & compliance",
       "n": 26,
-      "readable": 4,
-      "yes": 1,
+      "readable": 5,
+      "yes": 2,
       "no": 3,
-      "unreadable": 22,
+      "unreadable": 21,
       "suppressed": true,
       "companies": {
        "yes": [
+        {
+         "slug": "clerk",
+         "name": "Clerk"
+        },
         {
          "slug": "okta",
          "name": "Okta"
@@ -54517,10 +55111,6 @@
         }
        ],
        "unreadable": [
-        {
-         "slug": "clerk",
-         "name": "Clerk"
-        },
         {
          "slug": "complyadvantage",
          "name": "ComplyAdvantage"
@@ -54707,13 +55297,22 @@
       "label": "Finance & people ops",
       "short": "Finance & people",
       "n": 37,
-      "readable": 4,
-      "yes": 2,
-      "no": 2,
-      "unreadable": 33,
-      "suppressed": true,
+      "readable": 8,
+      "yes": 4,
+      "no": 4,
+      "unreadable": 29,
+      "share": 50,
+      "suppressed": false,
       "companies": {
        "yes": [
+        {
+         "slug": "bamboohr",
+         "name": "BambooHR"
+        },
+        {
+         "slug": "navan",
+         "name": "Navan"
+        },
         {
          "slug": "qonto",
          "name": "Qonto"
@@ -54727,6 +55326,14 @@
         {
          "slug": "brex",
          "name": "Brex"
+        },
+        {
+         "slug": "greenhouse",
+         "name": "Greenhouse"
+        },
+        {
+         "slug": "melio",
+         "name": "Melio"
         },
         {
          "slug": "pleo",
@@ -54749,10 +55356,6 @@
         {
          "slug": "avalara",
          "name": "Avalara"
-        },
-        {
-         "slug": "bamboohr",
-         "name": "BambooHR"
         },
         {
          "slug": "bill",
@@ -54783,10 +55386,6 @@
          "name": "Factorial"
         },
         {
-         "slug": "greenhouse",
-         "name": "Greenhouse"
-        },
-        {
          "slug": "hibob",
          "name": "HiBob"
         },
@@ -54801,14 +55400,6 @@
         {
          "slug": "lever",
          "name": "Lever"
-        },
-        {
-         "slug": "melio",
-         "name": "Melio"
-        },
-        {
-         "slug": "navan",
-         "name": "Navan"
         },
         {
          "slug": "oyster",
@@ -54874,22 +55465,23 @@
       "label": "Financial infrastructure",
       "short": "Financial infra",
       "n": 16,
-      "readable": 0,
+      "readable": 1,
       "yes": 0,
-      "no": 0,
-      "unreadable": 16,
+      "no": 1,
+      "unreadable": 15,
       "suppressed": true,
       "companies": {
        "yes": [],
-       "no": [],
+       "no": [
+        {
+         "slug": "airwallex",
+         "name": "Airwallex"
+        }
+       ],
        "unreadable": [
         {
          "slug": "adyen",
          "name": "Adyen"
-        },
-        {
-         "slug": "airwallex",
-         "name": "Airwallex"
         },
         {
          "slug": "avaloq",
@@ -55054,10 +55646,10 @@
       "label": "Developer & infrastructure",
       "short": "Dev & infrastructure",
       "n": 61,
-      "readable": 8,
-      "yes": 8,
+      "readable": 18,
+      "yes": 18,
       "no": 0,
-      "unreadable": 53,
+      "unreadable": 43,
       "share": 100,
       "suppressed": false,
       "companies": {
@@ -55067,12 +55659,28 @@
          "name": "Aiven"
         },
         {
+         "slug": "circleci",
+         "name": "CircleCI"
+        },
+        {
          "slug": "cloudflare",
          "name": "Cloudflare"
         },
         {
+         "slug": "gitguardian",
+         "name": "GitGuardian"
+        },
+        {
+         "slug": "honeycomb",
+         "name": "Honeycomb"
+        },
+        {
          "slug": "launchdarkly",
          "name": "LaunchDarkly"
+        },
+        {
+         "slug": "modal",
+         "name": "Modal"
         },
         {
          "slug": "netlify",
@@ -55083,12 +55691,36 @@
          "name": "PagerDuty"
         },
         {
+         "slug": "postman",
+         "name": "Postman"
+        },
+        {
+         "slug": "pulumi",
+         "name": "Pulumi"
+        },
+        {
+         "slug": "railway",
+         "name": "Railway"
+        },
+        {
+         "slug": "resend",
+         "name": "Resend"
+        },
+        {
+         "slug": "semgrep",
+         "name": "Semgrep"
+        },
+        {
          "slug": "sentry",
          "name": "Sentry"
         },
         {
          "slug": "snyk",
          "name": "Snyk"
+        },
+        {
+         "slug": "split",
+         "name": "Split"
         },
         {
          "slug": "supabase",
@@ -55116,10 +55748,6 @@
         {
          "slug": "chronosphere",
          "name": "Chronosphere"
-        },
-        {
-         "slug": "circleci",
-         "name": "CircleCI"
         },
         {
          "slug": "crowdstrike",
@@ -55150,20 +55778,12 @@
          "name": "Fly.io"
         },
         {
-         "slug": "gitguardian",
-         "name": "GitGuardian"
-        },
-        {
          "slug": "grafana",
          "name": "Grafana Labs"
         },
         {
          "slug": "harness",
          "name": "Harness"
-        },
-        {
-         "slug": "honeycomb",
-         "name": "Honeycomb"
         },
         {
          "slug": "hornetsecurity",
@@ -55176,10 +55796,6 @@
         {
          "slug": "lacework",
          "name": "Lacework"
-        },
-        {
-         "slug": "modal",
-         "name": "Modal"
         },
         {
          "slug": "netskope",
@@ -55210,24 +55826,12 @@
          "name": "Palo Alto Networks"
         },
         {
-         "slug": "postman",
-         "name": "Postman"
-        },
-        {
          "slug": "proton",
          "name": "Proton"
         },
         {
-         "slug": "pulumi",
-         "name": "Pulumi"
-        },
-        {
          "slug": "qualys",
          "name": "Qualys"
-        },
-        {
-         "slug": "railway",
-         "name": "Railway"
         },
         {
          "slug": "rapid7",
@@ -55238,24 +55842,12 @@
          "name": "Render"
         },
         {
-         "slug": "resend",
-         "name": "Resend"
-        },
-        {
          "slug": "scaleway",
          "name": "Scaleway"
         },
         {
-         "slug": "semgrep",
-         "name": "Semgrep"
-        },
-        {
          "slug": "sentinelone",
          "name": "SentinelOne"
-        },
-        {
-         "slug": "split",
-         "name": "Split"
         },
         {
          "slug": "splunk",
@@ -55317,21 +55909,33 @@
       "label": "Data & analytics",
       "short": "Data & analytics",
       "n": 65,
-      "readable": 11,
-      "yes": 10,
-      "no": 1,
-      "unreadable": 54,
-      "share": 90.9,
+      "readable": 23,
+      "yes": 20,
+      "no": 3,
+      "unreadable": 42,
+      "share": 87,
       "suppressed": false,
       "companies": {
        "yes": [
+        {
+         "slug": "airbyte",
+         "name": "Airbyte"
+        },
         {
          "slug": "amplitude",
          "name": "Amplitude"
         },
         {
+         "slug": "census",
+         "name": "Census"
+        },
+        {
          "slug": "confluent",
          "name": "Confluent"
+        },
+        {
+         "slug": "dagster",
+         "name": "Dagster Labs"
         },
         {
          "slug": "dbt-labs",
@@ -55340,6 +55944,18 @@
         {
          "slug": "fivetran",
          "name": "Fivetran"
+        },
+        {
+         "slug": "heap",
+         "name": "Heap"
+        },
+        {
+         "slug": "hex",
+         "name": "Hex"
+        },
+        {
+         "slug": "influxdata",
+         "name": "InfluxData"
         },
         {
          "slug": "metabase",
@@ -55358,25 +55974,45 @@
          "name": "Pendo"
         },
         {
+         "slug": "pinecone",
+         "name": "Pinecone"
+        },
+        {
          "slug": "redis",
          "name": "Redis"
         },
         {
+         "slug": "statsig",
+         "name": "Statsig"
+        },
+        {
          "slug": "thoughtspot",
          "name": "ThoughtSpot"
+        },
+        {
+         "slug": "weaviate",
+         "name": "Weaviate"
+        },
+        {
+         "slug": "wandb",
+         "name": "Weights & Biases"
         }
        ],
        "no": [
+        {
+         "slug": "huggingface",
+         "name": "Hugging Face"
+        },
+        {
+         "slug": "planetscale",
+         "name": "PlanetScale"
+        },
         {
          "slug": "supermetrics",
          "name": "Supermetrics"
         }
        ],
        "unreadable": [
-        {
-         "slug": "airbyte",
-         "name": "Airbyte"
-        },
         {
          "slug": "alteryx",
          "name": "Alteryx"
@@ -55398,10 +56034,6 @@
          "name": "Atlan"
         },
         {
-         "slug": "census",
-         "name": "Census"
-        },
-        {
          "slug": "clickhouse",
          "name": "ClickHouse"
         },
@@ -55420,10 +56052,6 @@
         {
          "slug": "contentsquare",
          "name": "Contentsquare"
-        },
-        {
-         "slug": "dagster",
-         "name": "Dagster Labs"
         },
         {
          "slug": "databricks",
@@ -55450,14 +56078,6 @@
          "name": "FullStory"
         },
         {
-         "slug": "heap",
-         "name": "Heap"
-        },
-        {
-         "slug": "hex",
-         "name": "Hex"
-        },
-        {
          "slug": "hightouch",
          "name": "Hightouch"
         },
@@ -55466,16 +56086,8 @@
          "name": "Hotjar"
         },
         {
-         "slug": "huggingface",
-         "name": "Hugging Face"
-        },
-        {
          "slug": "ibm",
          "name": "IBM"
-        },
-        {
-         "slug": "influxdata",
-         "name": "InfluxData"
         },
         {
          "slug": "informatica",
@@ -55512,14 +56124,6 @@
         {
          "slug": "palantir",
          "name": "Palantir"
-        },
-        {
-         "slug": "pinecone",
-         "name": "Pinecone"
-        },
-        {
-         "slug": "planetscale",
-         "name": "PlanetScale"
         },
         {
          "slug": "posthog",
@@ -55574,20 +56178,8 @@
          "name": "Starburst"
         },
         {
-         "slug": "statsig",
-         "name": "Statsig"
-        },
-        {
          "slug": "timescale",
          "name": "Timescale"
-        },
-        {
-         "slug": "weaviate",
-         "name": "Weaviate"
-        },
-        {
-         "slug": "wandb",
-         "name": "Weights & Biases"
         }
        ]
       }
@@ -55597,11 +56189,11 @@
       "label": "Go-to-market",
       "short": "Go-to-market",
       "n": 50,
-      "readable": 9,
-      "yes": 7,
+      "readable": 12,
+      "yes": 10,
       "no": 2,
-      "unreadable": 41,
-      "share": 77.8,
+      "unreadable": 38,
+      "share": 83.3,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -55622,6 +56214,14 @@
          "name": "Clay"
         },
         {
+         "slug": "descript",
+         "name": "Descript"
+        },
+        {
+         "slug": "grammarly",
+         "name": "Grammarly"
+        },
+        {
          "slug": "klaviyo",
          "name": "Klaviyo"
         },
@@ -55632,6 +56232,10 @@
         {
          "slug": "trustpilot",
          "name": "Trustpilot"
+        },
+        {
+         "slug": "wistia",
+         "name": "Wistia"
         }
        ],
        "no": [
@@ -55698,20 +56302,12 @@
          "name": "Demandbase"
         },
         {
-         "slug": "descript",
-         "name": "Descript"
-        },
-        {
          "slug": "drift",
          "name": "Drift"
         },
         {
          "slug": "gong",
          "name": "Gong"
-        },
-        {
-         "slug": "grammarly",
-         "name": "Grammarly"
         },
         {
          "slug": "highspot",
@@ -55802,10 +56398,6 @@
          "name": "Webflow"
         },
         {
-         "slug": "wistia",
-         "name": "Wistia"
-        },
-        {
          "slug": "writer",
          "name": "Writer"
         }
@@ -55817,11 +56409,11 @@
       "label": "Work & product",
       "short": "Work & product",
       "n": 48,
-      "readable": 18,
-      "yes": 14,
+      "readable": 23,
+      "yes": 19,
       "no": 4,
-      "unreadable": 30,
-      "share": 77.8,
+      "unreadable": 25,
+      "share": 82.6,
       "suppressed": false,
       "companies": {
        "yes": [
@@ -55842,6 +56434,14 @@
          "name": "ClickUp"
         },
         {
+         "slug": "cursor",
+         "name": "Cursor"
+        },
+        {
+         "slug": "framer",
+         "name": "Framer"
+        },
+        {
          "slug": "gitlab",
          "name": "GitLab"
         },
@@ -55854,12 +56454,20 @@
          "name": "Loom"
         },
         {
+         "slug": "make",
+         "name": "Make"
+        },
+        {
          "slug": "miro",
          "name": "Miro"
         },
         {
          "slug": "monday",
          "name": "monday.com"
+        },
+        {
+         "slug": "n8n",
+         "name": "n8n"
         },
         {
          "slug": "notion",
@@ -55872,6 +56480,10 @@
         {
          "slug": "retool",
          "name": "Retool"
+        },
+        {
+         "slug": "shortcut",
+         "name": "Shortcut"
         },
         {
          "slug": "slack",
@@ -55918,20 +56530,12 @@
          "name": "Coda"
         },
         {
-         "slug": "cursor",
-         "name": "Cursor"
-        },
-        {
          "slug": "figma",
          "name": "Figma"
         },
         {
          "slug": "fireflies",
          "name": "Fireflies.ai"
-        },
-        {
-         "slug": "framer",
-         "name": "Framer"
         },
         {
          "slug": "github",
@@ -55954,10 +56558,6 @@
          "name": "M-Files"
         },
         {
-         "slug": "make",
-         "name": "Make"
-        },
-        {
          "slug": "mentimeter",
          "name": "Mentimeter"
         },
@@ -55966,20 +56566,12 @@
          "name": "Motion"
         },
         {
-         "slug": "n8n",
-         "name": "n8n"
-        },
-        {
          "slug": "otter",
          "name": "Otter.ai"
         },
         {
          "slug": "replit",
          "name": "Replit"
-        },
-        {
-         "slug": "shortcut",
-         "name": "Shortcut"
         },
         {
          "slug": "sonarsource",
@@ -56023,6 +56615,174 @@
         }
        ]
       }
+     },
+     {
+      "group": "backoffice",
+      "label": "Finance & people ops",
+      "short": "Finance & people",
+      "n": 37,
+      "readable": 8,
+      "yes": 4,
+      "no": 4,
+      "unreadable": 29,
+      "share": 50,
+      "suppressed": false,
+      "companies": {
+       "yes": [
+        {
+         "slug": "bamboohr",
+         "name": "BambooHR"
+        },
+        {
+         "slug": "navan",
+         "name": "Navan"
+        },
+        {
+         "slug": "qonto",
+         "name": "Qonto"
+        },
+        {
+         "slug": "ramp",
+         "name": "Ramp"
+        }
+       ],
+       "no": [
+        {
+         "slug": "brex",
+         "name": "Brex"
+        },
+        {
+         "slug": "greenhouse",
+         "name": "Greenhouse"
+        },
+        {
+         "slug": "melio",
+         "name": "Melio"
+        },
+        {
+         "slug": "pleo",
+         "name": "Pleo"
+        }
+       ],
+       "unreadable": [
+        {
+         "slug": "15five",
+         "name": "15Five"
+        },
+        {
+         "slug": "anaplan",
+         "name": "Anaplan"
+        },
+        {
+         "slug": "ashby",
+         "name": "Ashby"
+        },
+        {
+         "slug": "avalara",
+         "name": "Avalara"
+        },
+        {
+         "slug": "bill",
+         "name": "BILL"
+        },
+        {
+         "slug": "blackline",
+         "name": "BlackLine"
+        },
+        {
+         "slug": "coachhub",
+         "name": "CoachHub"
+        },
+        {
+         "slug": "culture-amp",
+         "name": "Culture Amp"
+        },
+        {
+         "slug": "deel",
+         "name": "Deel"
+        },
+        {
+         "slug": "expensify",
+         "name": "Expensify"
+        },
+        {
+         "slug": "factorial",
+         "name": "Factorial"
+        },
+        {
+         "slug": "hibob",
+         "name": "HiBob"
+        },
+        {
+         "slug": "lattice",
+         "name": "Lattice"
+        },
+        {
+         "slug": "ledgy",
+         "name": "Ledgy"
+        },
+        {
+         "slug": "lever",
+         "name": "Lever"
+        },
+        {
+         "slug": "oyster",
+         "name": "Oyster"
+        },
+        {
+         "slug": "payfit",
+         "name": "PayFit"
+        },
+        {
+         "slug": "paylocity",
+         "name": "Paylocity"
+        },
+        {
+         "slug": "pennylane",
+         "name": "Pennylane"
+        },
+        {
+         "slug": "personio",
+         "name": "Personio"
+        },
+        {
+         "slug": "remote",
+         "name": "Remote"
+        },
+        {
+         "slug": "rippling",
+         "name": "Rippling"
+        },
+        {
+         "slug": "silverfin",
+         "name": "Silverfin"
+        },
+        {
+         "slug": "spendesk",
+         "name": "Spendesk"
+        },
+        {
+         "slug": "stripe",
+         "name": "Stripe"
+        },
+        {
+         "slug": "tipalti",
+         "name": "Tipalti"
+        },
+        {
+         "slug": "workable",
+         "name": "Workable"
+        },
+        {
+         "slug": "workday",
+         "name": "Workday"
+        },
+        {
+         "slug": "workhuman",
+         "name": "Workhuman"
+        }
+       ]
+      }
      }
     ],
     "top": {
@@ -56030,10 +56790,10 @@
      "label": "Developer & infrastructure",
      "short": "Dev & infrastructure",
      "n": 61,
-     "readable": 8,
-     "yes": 8,
+     "readable": 18,
+     "yes": 18,
      "no": 0,
-     "unreadable": 53,
+     "unreadable": 43,
      "share": 100,
      "suppressed": false,
      "companies": {
@@ -56043,12 +56803,28 @@
         "name": "Aiven"
        },
        {
+        "slug": "circleci",
+        "name": "CircleCI"
+       },
+       {
         "slug": "cloudflare",
         "name": "Cloudflare"
        },
        {
+        "slug": "gitguardian",
+        "name": "GitGuardian"
+       },
+       {
+        "slug": "honeycomb",
+        "name": "Honeycomb"
+       },
+       {
         "slug": "launchdarkly",
         "name": "LaunchDarkly"
+       },
+       {
+        "slug": "modal",
+        "name": "Modal"
        },
        {
         "slug": "netlify",
@@ -56059,12 +56835,36 @@
         "name": "PagerDuty"
        },
        {
+        "slug": "postman",
+        "name": "Postman"
+       },
+       {
+        "slug": "pulumi",
+        "name": "Pulumi"
+       },
+       {
+        "slug": "railway",
+        "name": "Railway"
+       },
+       {
+        "slug": "resend",
+        "name": "Resend"
+       },
+       {
+        "slug": "semgrep",
+        "name": "Semgrep"
+       },
+       {
         "slug": "sentry",
         "name": "Sentry"
        },
        {
         "slug": "snyk",
         "name": "Snyk"
+       },
+       {
+        "slug": "split",
+        "name": "Split"
        },
        {
         "slug": "supabase",
@@ -56092,10 +56892,6 @@
        {
         "slug": "chronosphere",
         "name": "Chronosphere"
-       },
-       {
-        "slug": "circleci",
-        "name": "CircleCI"
        },
        {
         "slug": "crowdstrike",
@@ -56126,20 +56922,12 @@
         "name": "Fly.io"
        },
        {
-        "slug": "gitguardian",
-        "name": "GitGuardian"
-       },
-       {
         "slug": "grafana",
         "name": "Grafana Labs"
        },
        {
         "slug": "harness",
         "name": "Harness"
-       },
-       {
-        "slug": "honeycomb",
-        "name": "Honeycomb"
        },
        {
         "slug": "hornetsecurity",
@@ -56152,10 +56940,6 @@
        {
         "slug": "lacework",
         "name": "Lacework"
-       },
-       {
-        "slug": "modal",
-        "name": "Modal"
        },
        {
         "slug": "netskope",
@@ -56186,24 +56970,12 @@
         "name": "Palo Alto Networks"
        },
        {
-        "slug": "postman",
-        "name": "Postman"
-       },
-       {
         "slug": "proton",
         "name": "Proton"
        },
        {
-        "slug": "pulumi",
-        "name": "Pulumi"
-       },
-       {
         "slug": "qualys",
         "name": "Qualys"
-       },
-       {
-        "slug": "railway",
-        "name": "Railway"
        },
        {
         "slug": "rapid7",
@@ -56214,24 +56986,12 @@
         "name": "Render"
        },
        {
-        "slug": "resend",
-        "name": "Resend"
-       },
-       {
         "slug": "scaleway",
         "name": "Scaleway"
        },
        {
-        "slug": "semgrep",
-        "name": "Semgrep"
-       },
-       {
         "slug": "sentinelone",
         "name": "SentinelOne"
-       },
-       {
-        "slug": "split",
-        "name": "Split"
        },
        {
         "slug": "splunk",
@@ -56293,21 +57053,33 @@
      "label": "Data & analytics",
      "short": "Data & analytics",
      "n": 65,
-     "readable": 11,
-     "yes": 10,
-     "no": 1,
-     "unreadable": 54,
-     "share": 90.9,
+     "readable": 23,
+     "yes": 20,
+     "no": 3,
+     "unreadable": 42,
+     "share": 87,
      "suppressed": false,
      "companies": {
       "yes": [
+       {
+        "slug": "airbyte",
+        "name": "Airbyte"
+       },
        {
         "slug": "amplitude",
         "name": "Amplitude"
        },
        {
+        "slug": "census",
+        "name": "Census"
+       },
+       {
         "slug": "confluent",
         "name": "Confluent"
+       },
+       {
+        "slug": "dagster",
+        "name": "Dagster Labs"
        },
        {
         "slug": "dbt-labs",
@@ -56316,6 +57088,18 @@
        {
         "slug": "fivetran",
         "name": "Fivetran"
+       },
+       {
+        "slug": "heap",
+        "name": "Heap"
+       },
+       {
+        "slug": "hex",
+        "name": "Hex"
+       },
+       {
+        "slug": "influxdata",
+        "name": "InfluxData"
        },
        {
         "slug": "metabase",
@@ -56334,25 +57118,45 @@
         "name": "Pendo"
        },
        {
+        "slug": "pinecone",
+        "name": "Pinecone"
+       },
+       {
         "slug": "redis",
         "name": "Redis"
        },
        {
+        "slug": "statsig",
+        "name": "Statsig"
+       },
+       {
         "slug": "thoughtspot",
         "name": "ThoughtSpot"
+       },
+       {
+        "slug": "weaviate",
+        "name": "Weaviate"
+       },
+       {
+        "slug": "wandb",
+        "name": "Weights & Biases"
        }
       ],
       "no": [
+       {
+        "slug": "huggingface",
+        "name": "Hugging Face"
+       },
+       {
+        "slug": "planetscale",
+        "name": "PlanetScale"
+       },
        {
         "slug": "supermetrics",
         "name": "Supermetrics"
        }
       ],
       "unreadable": [
-       {
-        "slug": "airbyte",
-        "name": "Airbyte"
-       },
        {
         "slug": "alteryx",
         "name": "Alteryx"
@@ -56374,10 +57178,6 @@
         "name": "Atlan"
        },
        {
-        "slug": "census",
-        "name": "Census"
-       },
-       {
         "slug": "clickhouse",
         "name": "ClickHouse"
        },
@@ -56396,10 +57196,6 @@
        {
         "slug": "contentsquare",
         "name": "Contentsquare"
-       },
-       {
-        "slug": "dagster",
-        "name": "Dagster Labs"
        },
        {
         "slug": "databricks",
@@ -56426,14 +57222,6 @@
         "name": "FullStory"
        },
        {
-        "slug": "heap",
-        "name": "Heap"
-       },
-       {
-        "slug": "hex",
-        "name": "Hex"
-       },
-       {
         "slug": "hightouch",
         "name": "Hightouch"
        },
@@ -56442,16 +57230,8 @@
         "name": "Hotjar"
        },
        {
-        "slug": "huggingface",
-        "name": "Hugging Face"
-       },
-       {
         "slug": "ibm",
         "name": "IBM"
-       },
-       {
-        "slug": "influxdata",
-        "name": "InfluxData"
        },
        {
         "slug": "informatica",
@@ -56488,14 +57268,6 @@
        {
         "slug": "palantir",
         "name": "Palantir"
-       },
-       {
-        "slug": "pinecone",
-        "name": "Pinecone"
-       },
-       {
-        "slug": "planetscale",
-        "name": "PlanetScale"
        },
        {
         "slug": "posthog",
@@ -56550,249 +57322,193 @@
         "name": "Starburst"
        },
        {
-        "slug": "statsig",
-        "name": "Statsig"
-       },
-       {
         "slug": "timescale",
         "name": "Timescale"
-       },
-       {
-        "slug": "weaviate",
-        "name": "Weaviate"
-       },
-       {
-        "slug": "wandb",
-        "name": "Weights & Biases"
        }
       ]
      }
     },
     "bottom": {
-     "group": "work",
-     "label": "Work & product",
-     "short": "Work & product",
-     "n": 48,
-     "readable": 18,
-     "yes": 14,
+     "group": "backoffice",
+     "label": "Finance & people ops",
+     "short": "Finance & people",
+     "n": 37,
+     "readable": 8,
+     "yes": 4,
      "no": 4,
-     "unreadable": 30,
-     "share": 77.8,
+     "unreadable": 29,
+     "share": 50,
      "suppressed": false,
      "companies": {
       "yes": [
        {
-        "slug": "asana",
-        "name": "Asana"
+        "slug": "bamboohr",
+        "name": "BambooHR"
        },
        {
-        "slug": "atlassian",
-        "name": "Atlassian"
+        "slug": "navan",
+        "name": "Navan"
        },
        {
-        "slug": "calendly",
-        "name": "Calendly"
+        "slug": "qonto",
+        "name": "Qonto"
        },
        {
-        "slug": "clickup",
-        "name": "ClickUp"
-       },
-       {
-        "slug": "gitlab",
-        "name": "GitLab"
-       },
-       {
-        "slug": "linear",
-        "name": "Linear"
-       },
-       {
-        "slug": "loom",
-        "name": "Loom"
-       },
-       {
-        "slug": "miro",
-        "name": "Miro"
-       },
-       {
-        "slug": "monday",
-        "name": "monday.com"
-       },
-       {
-        "slug": "notion",
-        "name": "Notion"
-       },
-       {
-        "slug": "productboard",
-        "name": "Productboard"
-       },
-       {
-        "slug": "retool",
-        "name": "Retool"
-       },
-       {
-        "slug": "slack",
-        "name": "Slack"
-       },
-       {
-        "slug": "zapier",
-        "name": "Zapier"
+        "slug": "ramp",
+        "name": "Ramp"
        }
       ],
       "no": [
        {
-        "slug": "nextcloud",
-        "name": "Nextcloud"
+        "slug": "brex",
+        "name": "Brex"
        },
        {
-        "slug": "rossum",
-        "name": "Rossum"
+        "slug": "greenhouse",
+        "name": "Greenhouse"
        },
        {
-        "slug": "smartsheet",
-        "name": "Smartsheet"
+        "slug": "melio",
+        "name": "Melio"
        },
        {
-        "slug": "uipath",
-        "name": "UiPath"
+        "slug": "pleo",
+        "name": "Pleo"
        }
       ],
       "unreadable": [
        {
-        "slug": "airtable",
-        "name": "Airtable"
+        "slug": "15five",
+        "name": "15Five"
        },
        {
-        "slug": "basecamp",
-        "name": "Basecamp"
+        "slug": "anaplan",
+        "name": "Anaplan"
        },
        {
-        "slug": "box",
-        "name": "Box"
+        "slug": "ashby",
+        "name": "Ashby"
        },
        {
-        "slug": "coda",
-        "name": "Coda"
+        "slug": "avalara",
+        "name": "Avalara"
        },
        {
-        "slug": "cursor",
-        "name": "Cursor"
+        "slug": "bill",
+        "name": "BILL"
        },
        {
-        "slug": "figma",
-        "name": "Figma"
+        "slug": "blackline",
+        "name": "BlackLine"
        },
        {
-        "slug": "fireflies",
-        "name": "Fireflies.ai"
+        "slug": "coachhub",
+        "name": "CoachHub"
        },
        {
-        "slug": "framer",
-        "name": "Framer"
+        "slug": "culture-amp",
+        "name": "Culture Amp"
        },
        {
-        "slug": "github",
-        "name": "GitHub"
+        "slug": "deel",
+        "name": "Deel"
        },
        {
-        "slug": "gitpod",
-        "name": "Gitpod"
+        "slug": "expensify",
+        "name": "Expensify"
        },
        {
-        "slug": "guru",
-        "name": "Guru"
+        "slug": "factorial",
+        "name": "Factorial"
        },
        {
-        "slug": "jetbrains",
-        "name": "JetBrains"
+        "slug": "hibob",
+        "name": "HiBob"
        },
        {
-        "slug": "m-files",
-        "name": "M-Files"
+        "slug": "lattice",
+        "name": "Lattice"
        },
        {
-        "slug": "make",
-        "name": "Make"
+        "slug": "ledgy",
+        "name": "Ledgy"
        },
        {
-        "slug": "mentimeter",
-        "name": "Mentimeter"
+        "slug": "lever",
+        "name": "Lever"
        },
        {
-        "slug": "motion",
-        "name": "Motion"
+        "slug": "oyster",
+        "name": "Oyster"
        },
        {
-        "slug": "n8n",
-        "name": "n8n"
+        "slug": "payfit",
+        "name": "PayFit"
        },
        {
-        "slug": "otter",
-        "name": "Otter.ai"
+        "slug": "paylocity",
+        "name": "Paylocity"
        },
        {
-        "slug": "replit",
-        "name": "Replit"
+        "slug": "pennylane",
+        "name": "Pennylane"
        },
        {
-        "slug": "shortcut",
-        "name": "Shortcut"
+        "slug": "personio",
+        "name": "Personio"
        },
        {
-        "slug": "sonarsource",
-        "name": "SonarSource"
+        "slug": "remote",
+        "name": "Remote"
        },
        {
-        "slug": "sourcegraph",
-        "name": "Sourcegraph"
+        "slug": "rippling",
+        "name": "Rippling"
        },
        {
-        "slug": "teamleader",
-        "name": "Teamleader"
+        "slug": "silverfin",
+        "name": "Silverfin"
        },
        {
-        "slug": "teamwork",
-        "name": "Teamwork"
+        "slug": "spendesk",
+        "name": "Spendesk"
        },
        {
-        "slug": "templafy",
-        "name": "Templafy"
+        "slug": "stripe",
+        "name": "Stripe"
        },
        {
-        "slug": "tray",
-        "name": "Tray.ai"
+        "slug": "tipalti",
+        "name": "Tipalti"
        },
        {
-        "slug": "tricentis",
-        "name": "Tricentis"
+        "slug": "workable",
+        "name": "Workable"
        },
        {
-        "slug": "unity",
-        "name": "Unity"
+        "slug": "workday",
+        "name": "Workday"
        },
        {
-        "slug": "workato",
-        "name": "Workato"
-       },
-       {
-        "slug": "wrike",
-        "name": "Wrike"
+        "slug": "workhuman",
+        "name": "Workhuman"
        }
       ]
      }
     },
     "spread": 4,
-    "lead_over_runner_up": 1,
+    "lead_over_runner_up": 3,
     "drawn": false,
     "withheld": {
      "rule": "coverage",
-     "drawable": 4,
+     "drawable": 5,
      "groups": 10
     },
     "overall": {
-     "yes": 45,
-     "no": 12,
-     "unreadable": 304,
-     "readable": 57,
+     "yes": 77,
+     "no": 18,
+     "unreadable": 266,
+     "readable": 95,
      "tracked": 361
     }
    }
@@ -56823,5 +57539,5 @@
    "missing": []
   }
  },
- "generated_at": "2026-08-09T15:04:36Z"
+ "generated_at": "2026-08-09T15:14:42Z"
 }
